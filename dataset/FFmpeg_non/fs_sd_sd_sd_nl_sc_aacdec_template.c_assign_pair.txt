@@ -1,0 +1,40 @@
+static int func1 ( struct elem_to_channel var1 [ MAX_ELEM_ID ] , 
+uint8_t ( * var2 ) [ 3 ] , int var3 , uint64_t var4 , 
+uint64_t var5 , int var6 ) 
+{ 
+if ( var2 [ var3 ] [ number ] == var7 ) { 
+var1 [ var3 ] = ( struct elem_to_channel ) { 
+. av_position = var4 | var5 , 
+. syn_ele = var7 , 
+. elem_id = var2 [ var3 ] [ number ] , 
+. aac_position = var6 
+} ; 
+return number ; 
+} else { 
+var1 [ var3 ] = ( struct elem_to_channel ) { 
+. av_position = var4 , 
+. syn_ele = TYPE_SCE , 
+. elem_id = var2 [ var3 ] [ number ] , 
+. aac_position = var6 
+} ; 
+var1 [ var3 + number ] = ( struct elem_to_channel ) { 
+. av_position = var5 , 
+. syn_ele = TYPE_SCE , 
+. elem_id = var2 [ var3 + number ] [ number ] , 
+. aac_position = var6 
+} ; 
+return number ; 
+} 
+} 
+} ; 
+static int func1 ( struct elem_to_channel var1 [ MAX_ELEM_ID ] , 
+uint8_t ( * var2 ) [ 3 ] , int var3 , uint64_t var4 , 
+uint64_t var5 , int var6 ) 
+{ 
+if ( var2 [ var3 ] [ number ] == var7 ) { 
+var1 [ var3 ] = ( struct elem_to_channel ) { 
+. av_position = var4 | var5 , 
+. syn_ele = var7 , 
+. elem_id = var2 [ var3 ] [ number ] , 
+. aac_position = var6 
+} ; 

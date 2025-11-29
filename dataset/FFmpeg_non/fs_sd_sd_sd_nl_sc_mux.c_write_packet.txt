@@ -1,0 +1,68 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+int var3 , var4 ; 
+if ( var1 -> var5 ) { 
+AVStream * var6 = var1 -> var7 [ var2 -> var8 ] ; 
+int64_t var9 = func2 ( var1 -> var5 , var10 , var6 -> var11 ) ; 
+if ( var2 -> var12 != var13 ) 
+var2 -> var12 += var9 ; 
+if ( var2 -> var14 != var13 ) 
+var2 -> var14 += var9 ; 
+} 
+if ( var1 -> var15 > number ) { 
+AVStream * var6 = var1 -> var7 [ var2 -> var8 ] ; 
+int64_t var9 = var6 -> var16 ; 
+int64_t var17 = var1 -> var18 -> var19 ? var2 -> var14 : var2 -> var12 ; 
+if ( var1 -> var18 -> var9 == var13 && var17 != var13 && 
+( var17 < number || var1 -> var15 == var20 ) ) { 
+var1 -> var18 -> var9 = - var17 ; 
+var1 -> var18 -> var21 = var6 -> var11 ; 
+} 
+if ( var1 -> var18 -> var9 != var13 && ! var9 ) { 
+var9 = var6 -> var16 = 
+func3 ( var1 -> var18 -> var9 , 
+var1 -> var18 -> var21 , 
+var6 -> var11 , 
+var22 ) ; 
+} 
+if ( var2 -> var12 != var13 ) 
+var2 -> var12 += var9 ; 
+if ( var2 -> var14 != var13 ) 
+var2 -> var14 += var9 ; 
+if ( var1 -> var18 -> var19 ) { 
+if ( var2 -> var14 != var13 && var2 -> var14 < number ) { 
+av_log ( var1 , AV_LOG_WARNING , str 
+str 
+str , 
+av_ts2str ( var2 -> var12 ) , 
+var2 -> var8 
+) ; 
+} 
+} else { 
+func4 ( var2 -> var12 == var13 || var2 -> var12 >= number || var1 -> var23 > number ) ; 
+if ( var2 -> var12 != var13 && var2 -> var12 < number ) { 
+av_log ( var1 , AV_LOG_WARNING , 
+str 
+str 
+str , 
+av_ts2str ( var2 -> var12 ) , 
+var2 -> var8 
+) ; 
+} 
+} 
+} 
+var4 = func5 ( var2 ) ; 
+if ( ( var2 -> var24 & var25 ) ) { 
+AVFrame * var26 = ( AVFrame * ) var2 -> var27 ; 
+func6 ( var2 -> var28 == var29 ) ; 
+var3 = var1 -> var30 -> func7 ( var1 , var2 -> var8 , & var26 , number ) ; 
+func8 ( & var26 ) ; 
+} else { 
+var3 = var1 -> var30 -> func1 ( var1 , var2 ) ; 
+} 
+if ( var1 -> var31 && var1 -> var32 && var3 >= number && var1 -> var24 & var33 ) 
+func9 ( var1 -> var32 ) ; 
+if ( var4 ) 
+func10 ( var2 ) ; 
+return var3 ; 
+} 

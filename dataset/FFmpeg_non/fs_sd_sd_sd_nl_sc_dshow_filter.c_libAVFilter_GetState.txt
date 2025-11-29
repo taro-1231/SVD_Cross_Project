@@ -1,0 +1,8 @@
+func1 ( libAVFilter * var1 , DWORD var2 , FILTER_STATE * var3 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var3 ) 
+return var4 ; 
+* var3 = var1 -> var3 ; 
+return var5 ; 
+} 

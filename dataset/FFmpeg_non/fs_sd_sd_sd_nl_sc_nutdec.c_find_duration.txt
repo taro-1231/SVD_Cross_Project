@@ -1,0 +1,9 @@
+static int64_t func1 ( NUTContext * var1 , int64_t var2 ) 
+{ 
+AVFormatContext * var3 = var1 -> var4 ; 
+int64_t var5 = number ; 
+func2 ( var3 , - number , & var5 , var6 , var7 ) ; 
+if ( var5 > number ) 
+var3 -> var8 = var9 ; 
+return var5 ; 
+} 

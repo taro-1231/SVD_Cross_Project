@@ -1,0 +1,149 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+RMDemuxContext * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+AVIOContext * var5 = var1 -> var5 ; 
+unsigned int var6 ; 
+int var7 ; 
+unsigned int var8 , var9 ; 
+unsigned int var10 = number , var11 = number ; 
+char var12 [ number ] , var13 [ number ] ; 
+int var14 = number ; 
+int var15 = - number ; 
+unsigned var16 , var17 ; 
+int64_t var18 ; 
+var6 = func2 ( var5 ) ; 
+if ( var6 == func3 ( str , str , str , number ) ) { 
+return func4 ( var1 ) ; 
+} else if ( var6 != func3 ( str , str , str , str ) ) { 
+return func5 ( var19 ) ; 
+} 
+var7 = func6 ( var5 ) ; 
+func7 ( var5 , var7 - number ) ; 
+for ( ; ; ) { 
+if ( func8 ( var5 ) ) 
+goto var20 ; 
+var6 = func2 ( var5 ) ; 
+var7 = func6 ( var5 ) ; 
+func9 ( var5 ) ; 
+func10 ( var1 , var21 , str , 
+( var6 ) & number , 
+( var6 >> number ) & number , 
+( var6 >> number ) & number , 
+( var6 >> number ) & number , 
+var6 , 
+var7 ) ; 
+if ( var7 < number && var6 != func3 ( str , str , str , str ) ) 
+goto var20 ; 
+switch ( var6 ) { 
+case func3 ( str , str , str , str ) : 
+func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+var9 = func6 ( var5 ) ; 
+var1 -> var9 = func11 ( var9 , var22 , number ) ; 
+func6 ( var5 ) ; 
+var11 = func6 ( var5 ) ; 
+var10 = func6 ( var5 ) ; 
+func9 ( var5 ) ; 
+var14 = func9 ( var5 ) ; 
+break ; 
+case func3 ( str , str , str , str ) : 
+func12 ( var1 , var5 , number ) ; 
+break ; 
+case func3 ( str , str , str , str ) : 
+var4 = func13 ( var1 , var23 ) ; 
+if ( ! var4 ) { 
+var15 = func5 ( var24 ) ; 
+goto var20 ; 
+} 
+var4 -> var25 = func9 ( var5 ) ; 
+func6 ( var5 ) ; 
+var4 -> var26 -> var27 = func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+var8 = func6 ( var5 ) ; 
+func6 ( var5 ) ; 
+var9 = func6 ( var5 ) ; 
+var4 -> var8 = var8 ; 
+var4 -> var9 = var9 ; 
+if ( var9 > number ) 
+var1 -> var9 = var28 ; 
+func14 ( var5 , var12 , sizeof ( var12 ) ) ; 
+func14 ( var5 , var13 , sizeof ( var13 ) ) ; 
+var4 -> var26 -> var29 = var30 ; 
+var4 -> var3 = func15 ( ) ; 
+if ( ! var4 -> var3 ) 
+return func5 ( var24 ) ; 
+var16 = func6 ( var5 ) ; 
+var18 = func16 ( var5 ) ; 
+func17 ( var5 , number ) ; 
+var17 = func6 ( var5 ) ; 
+if ( var17 == func18 ( str , str , str , str ) ) { 
+int var31 = func9 ( var5 ) ; 
+int var32 ; 
+int var33 ; 
+unsigned var34 ; 
+for ( var33 = number ; var33 < var31 ; var33 ++ ) 
+func9 ( var5 ) ; 
+var32 = func9 ( var5 ) ; 
+if ( var32 != number ) { 
+func19 ( var1 , str , var32 ) ; 
+} 
+for ( var33 = number ; var33 < var32 ; var33 ++ ) { 
+AVStream * var35 ; 
+if ( var33 > number ) { 
+var35 = func13 ( var1 , var23 ) ; 
+if ( ! var35 ) { 
+var15 = func5 ( var24 ) ; 
+goto var20 ; 
+} 
+var35 -> var25 = var4 -> var25 + ( var33 << number ) ; 
+var35 -> var26 -> var27 = var4 -> var26 -> var27 ; 
+var35 -> var8 = var4 -> var8 ; 
+var35 -> var9 = var4 -> var9 ; 
+var35 -> var26 -> var29 = var30 ; 
+var35 -> var3 = func15 ( ) ; 
+if ( ! var35 -> var3 ) 
+return func5 ( var24 ) ; 
+} else 
+var35 = var4 ; 
+var34 = func6 ( var5 ) ; 
+if ( func20 ( var1 , var1 -> var5 , var35 , var35 -> var3 , 
+var34 , var13 ) < number ) 
+goto var20 ; 
+} 
+func21 ( var5 , var18 + var16 , var36 ) ; 
+} else { 
+func7 ( var5 , - number ) ; 
+if ( func20 ( var1 , var1 -> var5 , var4 , var4 -> var3 , 
+var16 , var13 ) < number ) 
+goto var20 ; 
+} 
+break ; 
+case func3 ( str , str , str , str ) : 
+goto var37 ; 
+var38 : 
+func7 ( var5 , var7 - number ) ; 
+break ; 
+} 
+} 
+var37 : 
+var2 -> var39 = func6 ( var5 ) ; 
+if ( ! var2 -> var39 && ( var14 & number ) ) 
+var2 -> var39 = number * number ; 
+func6 ( var5 ) ; 
+if ( ! var10 ) 
+var10 = func16 ( var5 ) - number ; 
+if ( var11 && var5 -> var40 && ! ( var1 -> var14 & var41 ) && 
+func21 ( var5 , var11 , var36 ) >= number ) { 
+func22 ( var1 ) ; 
+func21 ( var5 , var10 + number , var36 ) ; 
+} 
+return number ; 
+var20 : 
+func23 ( var1 ) ; 
+return var15 ; 
+} 

@@ -1,0 +1,34 @@
+int func1 ( uint8_t * var1 [ number ] , enum AVPixelFormat var2 , int var3 , 
+uint8_t * var4 , const int var5 [ number ] ) 
+{ 
+int var6 , var7 , var8 [ number ] = { number } , var9 [ number ] = { number } ; 
+const AVPixFmtDescriptor * var10 = func2 ( var2 ) ; 
+memset ( var1 , number , sizeof ( var1 [ number ] ) * number ) ; 
+if ( ! var10 || var10 -> var11 & var12 ) 
+return func3 ( var13 ) ; 
+var1 [ number ] = var4 ; 
+if ( var5 [ number ] > ( var14 - number ) / var3 ) 
+return func3 ( var13 ) ; 
+var8 [ number ] = var5 [ number ] * var3 ; 
+if ( var10 -> var11 & var15 || 
+var10 -> var11 & var16 ) { 
+var8 [ number ] = ( var8 [ number ] + number ) & ~ number ; 
+var1 [ number ] = var4 + var8 [ number ] ; 
+return var8 [ number ] + number * number ; 
+} 
+for ( var6 = number ; var6 < number ; var6 ++ ) 
+var9 [ var10 -> var18 [ var6 ] . var19 ] = number ; 
+var7 = var8 [ number ] ; 
+for ( var6 = number ; var6 < number && var9 [ var6 ] ; var6 ++ ) { 
+int var20 , var21 = ( var6 == number || var6 == number ) ? var10 -> var22 : number ; 
+var1 [ var6 ] = var1 [ var6 - number ] + var8 [ var6 - number ] ; 
+var20 = ( var3 + ( number << var21 ) - number ) >> var21 ; 
+if ( var5 [ var6 ] > var14 / var20 ) 
+return func3 ( var13 ) ; 
+var8 [ var6 ] = var20 * var5 [ var6 ] ; 
+if ( var7 > var14 - var8 [ var6 ] ) 
+return func3 ( var13 ) ; 
+var7 += var8 [ var6 ] ; 
+} 
+return var7 ; 
+} 

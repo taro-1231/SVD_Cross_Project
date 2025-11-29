@@ -1,0 +1,67 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+ASFContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+const GUIDParseTable * var5 = var6 ; 
+ff_asf_guid var7 ; 
+int var8 , var9 ; 
+uint64_t var10 ; 
+var2 -> var11 = number ; 
+var2 -> var12 = number ; 
+func2 ( var4 , & var7 ) ; 
+if ( func3 ( & var7 , & var13 ) ) 
+return var14 ; 
+func4 ( var4 , number ) ; 
+func4 ( var4 , number ) ; 
+var2 -> var15 = number ; 
+while ( number ) { 
+if ( func5 ( var4 ) == var2 -> var16 ) 
+break ; 
+var2 -> var16 = func5 ( var4 ) ; 
+if ( ( var9 = func2 ( var4 , & var7 ) ) < number ) { 
+if ( var9 == var17 && var2 -> var15 ) 
+break ; 
+else 
+goto var18 ; 
+} 
+var5 = func6 ( var7 ) ; 
+if ( var5 ) { 
+var2 -> var19 = var2 -> var16 ; 
+var2 -> var20 = number ; 
+if ( ( var9 = var5 -> func7 ( var1 , var5 ) ) < number ) 
+goto var18 ; 
+} else { 
+var10 = func8 ( var4 ) ; 
+func9 ( var4 , var2 -> var16 , var10 ) ; 
+} 
+if ( var2 -> var15 && ( ! var4 -> var21 || ( var2 -> var22 & var23 ) ) ) 
+break ; 
+} 
+if ( ! var2 -> var15 ) { 
+func10 ( var1 , var24 , str ) ; 
+var9 = var14 ; 
+goto var18 ; 
+} 
+if ( var4 -> var21 ) 
+func11 ( var4 , var2 -> var25 , var26 ) ; 
+for ( var8 = number ; var8 < var2 -> var27 ; var8 ++ ) { 
+const char * var28 = var2 -> var29 [ var2 -> var30 [ var8 ] -> var31 ] . var32 ; 
+AVStream * var33 = var1 -> var34 [ var2 -> var30 [ var8 ] -> var35 ] ; 
+func12 ( var1 , var28 , & var33 -> var36 ) ; 
+} 
+for ( var8 = number ; var8 < var37 ; var8 ++ ) { 
+AVStream * var33 = var6 ; 
+var33 = func13 ( var1 , var8 ) ; 
+if ( var33 ) { 
+func14 ( & var33 -> var36 , var2 -> var29 [ var8 ] . var38 , var39 ) ; 
+if ( var2 -> var29 [ var8 ] . var40 . var41 > number && var2 -> var29 [ var8 ] . var40 . var42 > number ) { 
+var33 -> var43 . var41 = var2 -> var29 [ var8 ] . var40 . var41 ; 
+var33 -> var43 . var42 = var2 -> var29 [ var8 ] . var40 . var42 ; 
+} 
+} 
+} 
+return number ; 
+var18 : 
+func15 ( var1 ) ; 
+return var9 ; 
+} 

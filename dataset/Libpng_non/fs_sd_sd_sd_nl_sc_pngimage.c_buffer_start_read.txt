@@ -1,0 +1,5 @@
+func1 ( struct var1 * var1 ) 
+{ 
+var1 -> var2 = & var1 -> var3 ; 
+var1 -> var4 = number ; 
+} 

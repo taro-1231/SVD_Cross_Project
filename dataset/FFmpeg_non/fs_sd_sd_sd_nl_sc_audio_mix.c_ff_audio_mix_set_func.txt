@@ -1,0 +1,74 @@
+void func1 ( AudioMix * var1 , enum AVSampleFormat var2 , 
+enum AVMixCoeffType var3 , int var4 , 
+int var5 , int var6 , int var7 , 
+const char * var8 , void * var9 ) 
+{ 
+if ( var2 == var1 -> var2 && var3 == var1 -> var3 && 
+( var4 == var1 -> var10 || var4 == number ) && 
+( var5 == var1 -> var11 || var5 == number ) ) { 
+char var12 [ number ] ; 
+var1 -> var13 = var9 ; 
+var1 -> var14 = var8 ; 
+var1 -> var6 = var6 ; 
+var1 -> var7 = var7 ; 
+if ( var6 == number && var7 == number ) { 
+var1 -> var15 = var9 ; 
+var1 -> var16 = var8 ; 
+} else { 
+var1 -> var17 = number ; 
+} 
+if ( var4 ) { 
+if ( var5 ) 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var4 , var5 ) ; 
+else 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var4 ) ; 
+} else if ( var5 ) { 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var5 ) ; 
+} else { 
+snprintf ( var12 , sizeof ( var12 ) , str ) ; 
+} 
+av_log ( var1 -> avr , AV_LOG_DEBUG , str 
+str , av_get_sample_fmt_name ( var2 ) , 
+coeff_type_names [ var3 ] , var12 , var8 ) ; 
+} 
+} 
+} ; 
+void func1 ( AudioMix * var1 , enum AVSampleFormat var2 , 
+enum AVMixCoeffType var3 , int var4 , 
+int var5 , int var6 , int var7 , 
+const char * var8 , void * var9 ) 
+{ 
+if ( var2 == var1 -> var2 && var3 == var1 -> var3 && 
+( var4 == var1 -> var10 || var4 == number ) && 
+( var5 == var1 -> var11 || var5 == number ) ) { 
+char var12 [ number ] ; 
+var1 -> var13 = var9 ; 
+var1 -> var14 = var8 ; 
+var1 -> var6 = var6 ; 
+var1 -> var7 = var7 ; 
+if ( var6 == number && var7 == number ) { 
+var1 -> var15 = var9 ; 
+var1 -> var16 = var8 ; 
+} else { 
+var1 -> var17 = number ; 
+} 
+if ( var4 ) { 
+if ( var5 ) 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var4 , var5 ) ; 
+else 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var4 ) ; 
+} else if ( var5 ) { 
+snprintf ( var12 , sizeof ( var12 ) , str , 
+var5 ) ; 
+} else { 
+snprintf ( var12 , sizeof ( var12 ) , str ) ; 
+} 
+av_log ( var1 -> avr , AV_LOG_DEBUG , str 
+str , av_get_sample_fmt_name ( var2 ) , 
+coeff_type_names [ var3 ] , var12 , var8 ) ; 
+} 

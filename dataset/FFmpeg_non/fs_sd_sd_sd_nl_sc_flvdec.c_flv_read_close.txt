@@ -1,0 +1,8 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+FLVContext * var3 = var1 -> var4 ; 
+for ( var2 = number ; var2 < var5 ; var2 ++ ) 
+func2 ( & var3 -> var6 [ var2 ] ) ; 
+return number ; 
+} 

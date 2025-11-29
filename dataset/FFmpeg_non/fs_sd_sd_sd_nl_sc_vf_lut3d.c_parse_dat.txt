@@ -1,0 +1,29 @@
+static int func1 ( AVFilterContext * var1 , FILE * var2 ) 
+{ 
+LUT3DContext * var3 = var1 -> var4 ; 
+char var5 [ var6 ] ; 
+int var7 , var8 , var9 , var10 ; 
+var3 -> var11 = var10 = number ; 
+func2 ( func3 ( var5 ) ) ; 
+if ( ! strncmp ( var5 , str , number ) ) { 
+var10 = func4 ( var5 + number , var12 , number ) ; 
+if ( var10 < number || var10 > var13 ) { 
+func5 ( var1 , var14 , str ) ; 
+return func6 ( var15 ) ; 
+} 
+var3 -> var11 = var10 ; 
+func2 ( func3 ( var5 ) ) ; 
+} 
+for ( var9 = number ; var9 < var10 ; var9 ++ ) { 
+for ( var8 = number ; var8 < var10 ; var8 ++ ) { 
+for ( var7 = number ; var7 < var10 ; var7 ++ ) { 
+struct rgbvec * var16 = & var3 -> var17 [ var9 ] [ var8 ] [ var7 ] ; 
+if ( var9 != number || var8 != number || var7 != number ) 
+func2 ( func3 ( var5 ) ) ; 
+if ( sscanf ( var5 , str , & var16 -> var18 , & var16 -> var19 , & var16 -> var20 ) != number ) 
+return var21 ; 
+} 
+} 
+} 
+return number ; 
+} 

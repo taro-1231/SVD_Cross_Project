@@ -1,0 +1,116 @@
+static inline void func1 ( uint8_t * var1 , int var2 , PPContext * var3 ) { 
+uint8_t * var4 = var1 ; 
+const vector signed int var5 = func2 ( number ) ; 
+const int var6 = ( var2 % number ) ; 
+const int var7 = ( ( unsigned long ) var4 % number ) ; 
+DECLARE_ALIGNED ( number , short , var8 ) [ number ] = { var3 -> QP } ; 
+vector signed short var9 = func3 ( number , var8 ) ; 
+vector signed short var10 , var11 , var12 , var13 , var14 , var15 , var16 , var17 , var18 , var19 ; 
+vector unsigned char var20 , var21 ( var22 ) , var21 ( var23 ) , var21 ( var24 ) , var21 ( var25 ) , var21 ( var26 ) , var21 ( var27 ) , var21 ( var28 ) , var21 ( var29 ) , var30 ; 
+vector unsigned char var31 , var21 ( var32 ) , var21 ( var33 ) , var21 ( var34 ) , var21 ( var35 ) , var21 ( var36 ) , var21 ( var37 ) , var21 ( var38 ) , var21 ( var39 ) , var40 ; 
+vector unsigned char var41 , var42 , var43 , var44 , var45 , var46 , var47 , var48 , var49 , var50 ; 
+vector unsigned char var51 , var52 , var53 , var54 , var55 , 
+var56 , var57 , var58 , var59 , var60 ; 
+register int var61 = number , 
+var62 = var2 , 
+var63 = number * var2 , 
+var64 = number * var2 , 
+var65 = number * var2 , 
+var66 = number * var2 , 
+var67 = number * var2 , 
+var68 = number * var2 , 
+var69 = number * var2 , 
+var70 = number * var2 ; 
+var9 = func4 ( var9 , number ) ; 
+var4 += var2 * number ; 
+( vector signed short ) vec_mergeh ( ( vector unsigned char ) var5 , \ 
+( vector signed short ) vec_mergeh ( ( vector signed char ) var5 , \ 
+if ( var6 && var7 ) { 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+} else { 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+func5 ( number ) ; 
+} 
+{ 
+const vector unsigned short var72 = func8 ( number ) ; 
+const vector unsigned short var73 = func8 ( number ) ; 
+const vector signed short var74 = func9 ( var10 , var11 ) ; 
+const vector unsigned short var75 = 
+( const vector unsigned short ) func10 ( func11 ( var74 ) , var9 ) ; 
+const vector signed short var76 = func12 ( var11 , var10 , var75 ) ; 
+const vector signed short var77 = func9 ( var18 , var19 ) ; 
+const vector unsigned short var78 = 
+( const vector unsigned short ) func10 ( func11 ( var77 ) , var9 ) ; 
+const vector signed short var79 = func12 ( var18 , var19 , var78 ) ; 
+const vector signed short temp01 = vec_mladd ( var76 , ( vector signed short ) var73 , var11 ) ; 
+const vector signed short var80 = func13 ( var12 , var13 ) ; 
+const vector signed short var81 = func13 ( temp01 , ( vector signed short ) var73 ) ; 
+const vector signed short var82 = func13 ( var80 , var81 ) ; 
+const vector signed short var83 = func9 ( var82 , var76 ) ; 
+const vector signed short var84 = func13 ( var83 , var14 ) ; 
+const vector signed short var85 = func9 ( var84 , var76 ) ; 
+const vector signed short var86 = func13 ( var85 , var15 ) ; 
+const vector signed short var87 = func9 ( var86 , var76 ) ; 
+const vector signed short var88 = func13 ( var87 , var16 ) ; 
+const vector signed short var89 = func9 ( var88 , var76 ) ; 
+const vector signed short var90 = func13 ( var89 , var17 ) ; 
+const vector signed short var91 = func9 ( var90 , var11 ) ; 
+const vector signed short var92 = func13 ( var91 , var18 ) ; 
+const vector signed short var93 = func9 ( var92 , var12 ) ; 
+const vector signed short var94 = func13 ( var93 , var79 ) ; 
+const vector signed short var95 = func9 ( var94 , var13 ) ; 
+const vector signed short var96 = func13 ( var95 , var79 ) ; 
+const vector signed short var97 = func9 ( var96 , var14 ) ; 
+const vector signed short var98 = func13 ( var97 , var79 ) ; 
+const vector signed short var99 = func9 ( var98 , var15 ) ; 
+const vector signed short var100 = func13 ( var99 , var79 ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+func14 ( number , number , number ) ; 
+const vector signed char var101 = func15 ( - number ) ; 
+const vector unsigned char permHH = ( const vector unsigned char ) { 0x00 , 0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 
+0x18 , 0x19 , 0x1A , 0x1B , 0x1C , 0x1D , 0x1E , 0x1F } ; 
+func16 ( var71 * var2 , var4 ) ; \ 
+if ( var6 && var7 ) { 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+PACK_AND_STORE_ALIGNED ( number ) 
+} else { 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+PACK_AND_STORE ( number ) 
+} 
+} 
+} 

@@ -1,0 +1,9 @@
+void func1 ( float * var1 , float var2 , float * var3 , int var4 ) 
+{ 
+float var5 = var3 [ var4 - number ] ; 
+int var6 ; 
+for ( var6 = var4 - number ; var6 > number ; var6 -- ) 
+var3 [ var6 ] -= var2 * var3 [ var6 - number ] ; 
+var3 [ number ] -= var2 ** var1 ; 
+* var1 = var5 ; 
+} 

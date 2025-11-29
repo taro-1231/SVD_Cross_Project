@@ -1,0 +1,42 @@
+int AC3_NAME ( func1 ) ( AVCodecContext * var1 , AVPacket * var2 , 
+const AVFrame * var3 , int * var4 ) 
+{ 
+AC3EncodeContext * var5 = var1 -> var6 ; 
+int var7 ; 
+if ( var5 -> var8 . var9 ) { 
+var7 = func2 ( var5 ) ; 
+if ( var7 ) 
+return var7 ; 
+} 
+if ( var5 -> var10 . var11 == number || var5 -> var12 ) 
+func3 ( var5 ) ; 
+func4 ( var5 , ( SampleType ** ) var3 -> var13 ) ; 
+func5 ( var5 ) ; 
+if ( var5 -> var14 ) 
+func6 ( var5 ) ; 
+func7 ( & var5 -> var15 , var5 -> var16 [ number ] . var17 [ number ] , 
+var18 * var5 -> var19 * var5 -> var20 ) ; 
+var5 -> var21 = var5 -> var22 ; 
+func8 ( var5 ) ; 
+if ( var5 -> var21 ) 
+func9 ( var5 ) ; 
+func10 ( var5 ) ; 
+if ( ! var5 -> var14 ) 
+func6 ( var5 ) ; 
+func11 ( var5 ) ; 
+func12 ( var5 ) ; 
+var7 = func13 ( var5 ) ; 
+if ( var7 ) { 
+func14 ( var1 , var23 , str ) ; 
+return var7 ; 
+} 
+func15 ( var5 ) ; 
+func16 ( var5 ) ; 
+if ( ( var7 = func17 ( var1 , var2 , var5 -> var24 , number ) ) < number ) 
+return var7 ; 
+func18 ( var5 , var2 -> var25 ) ; 
+if ( var3 -> var26 != var27 ) 
+var2 -> var26 = var3 -> var26 - func19 ( var1 , var1 -> var28 ) ; 
+* var4 = number ; 
+return number ; 
+} 

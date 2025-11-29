@@ -1,0 +1,12 @@
+static unsigned int func1 ( unsigned int var1 , unsigned int var2 , unsigned int var3 ) 
+{ 
+unsigned int var4 ; 
+var4 = number ; 
+while ( var2 ) { 
+if ( var2 & number ) 
+var4 = func2 ( var4 , var1 , var3 ) ; 
+var1 = func2 ( var1 , var1 , var3 ) ; 
+var2 >>= number ; 
+} 
+return var4 ; 
+} 

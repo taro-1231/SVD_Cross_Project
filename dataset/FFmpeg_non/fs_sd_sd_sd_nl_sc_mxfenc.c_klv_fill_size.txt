@@ -1,0 +1,8 @@
+static unsigned func1 ( uint64_t var1 ) 
+{ 
+unsigned var2 = var3 - ( var1 & ( var3 - number ) ) ; 
+if ( var2 < number ) 
+return var2 + var3 ; 
+else 
+return var2 & ( var3 - number ) ; 
+} 

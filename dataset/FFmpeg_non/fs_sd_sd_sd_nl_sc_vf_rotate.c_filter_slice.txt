@@ -1,0 +1,82 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+ThreadData * var5 = var2 ; 
+AVFrame * var6 = var5 -> var6 ; 
+AVFrame * var7 = var5 -> var7 ; 
+RotContext * var8 = var1 -> var9 ; 
+const int var10 = var5 -> var10 , var11 = var5 -> var11 ; 
+const int var12 = var5 -> var12 , var13 = var5 -> var13 ; 
+const int var14 = var5 -> var14 ; 
+const int var15 = var5 -> var15 , var16 = var5 -> var16 ; 
+const int var17 = var5 -> var17 , var18 = var5 -> var18 ; 
+const int var19 = ( var11 * var3 ) / var4 ; 
+const int var20 = ( var11 * ( var3 + number ) ) / var4 ; 
+int var21 = var5 -> var21 + var19 * var18 ; 
+int var22 = var5 -> var22 + var19 * var17 ; 
+int var23 , var24 , var25 , var26 ; 
+for ( var24 = var19 ; var24 < var20 ; var24 ++ ) { 
+var25 = var21 + var15 + var27 * ( var12 - number ) / number ; 
+var26 = var22 + var16 + var27 * ( var13 - number ) / number ; 
+if ( fabs ( var8 -> var28 - number ) < var29 && var10 == var12 && var11 == var13 ) { 
+func2 ( var7 -> var30 [ var14 ] + var24 * var7 -> var31 [ var14 ] , 
+var6 -> var30 [ var14 ] + var24 * var6 -> var31 [ var14 ] , 
+var6 -> var31 [ var14 ] , number , var8 -> var32 . var33 [ var14 ] , var10 ) ; 
+} else if ( fabs ( var8 -> var28 - var34 / number ) < var29 && var10 == var13 && var11 == var12 ) { 
+func2 ( var7 -> var30 [ var14 ] + var24 * var7 -> var31 [ var14 ] , 
+var6 -> var30 [ var14 ] + var24 * var8 -> var32 . var33 [ var14 ] , 
+var6 -> var31 [ var14 ] , number , var8 -> var32 . var33 [ var14 ] , var10 ) ; 
+} else if ( fabs ( var8 -> var28 - var34 ) < var29 && var10 == var12 && var11 == var13 ) { 
+func2 ( var7 -> var30 [ var14 ] + var24 * var7 -> var31 [ var14 ] , 
+var6 -> var30 [ var14 ] + ( var11 - var24 - number ) * var6 -> var31 [ var14 ] , 
+var6 -> var31 [ var14 ] , number , var8 -> var32 . var33 [ var14 ] , var10 ) ; 
+} else if ( fabs ( var8 -> var28 - number * var34 / number ) < var29 && var10 == var13 && var11 == var12 ) { 
+func2 ( var7 -> var30 [ var14 ] + var24 * var7 -> var31 [ var14 ] , 
+var6 -> var30 [ var14 ] + ( var11 - var24 - number ) * var8 -> var32 . var33 [ var14 ] , 
+var6 -> var31 [ var14 ] , number , var8 -> var32 . var33 [ var14 ] , var10 ) ; 
+} else { 
+for ( var23 = number ; var23 < var10 ; var23 ++ ) { 
+int32_t var35 ; 
+int var36 , var37 ; 
+uint8_t * var38 , * var39 ; 
+var36 = var25 >> number ; 
+var37 = var26 >> number ; 
+if ( var36 >= - number && var36 <= var12 && var37 >= - number && var37 <= var13 ) { 
+uint8_t var40 [ number ] ; 
+var39 = var7 -> var30 [ var14 ] + var24 * var7 -> var31 [ var14 ] + var23 * var8 -> var32 . var33 [ var14 ] ; 
+if ( var8 -> var41 ) { 
+var38 = func3 ( var40 , 
+var6 -> var30 [ var14 ] , var6 -> var31 [ var14 ] , var8 -> var32 . var33 [ var14 ] , 
+var25 , var26 , var12 - number , var13 - number ) ; 
+} else { 
+int var42 = func4 ( var36 , number , var12 - number ) ; 
+int var43 = func4 ( var37 , number , var13 - number ) ; 
+var38 = var6 -> var30 [ var14 ] + var43 * var6 -> var31 [ var14 ] + var42 * var8 -> var32 . var33 [ var14 ] ; 
+} 
+switch ( var8 -> var32 . var33 [ var14 ] ) { 
+case number : 
+* var39 = * var38 ; 
+break ; 
+case number : 
+* ( ( uint16_t * ) var39 ) = * ( ( uint16_t * ) var38 ) ; 
+break ; 
+case number : 
+var35 = func5 ( var38 ) ; 
+func6 ( var39 , var35 ) ; 
+break ; 
+case number : 
+* ( ( uint32_t * ) var39 ) = * ( ( uint32_t * ) var38 ) ; 
+break ; 
+var44 : 
+memcpy ( var39 , var38 , var8 -> var32 . var33 [ var14 ] ) ; 
+break ; 
+} 
+} 
+var25 += var17 ; 
+var26 -= var18 ; 
+} 
+} 
+var21 += var18 ; 
+var22 += var17 ; 
+} 
+return number ; 
+} 

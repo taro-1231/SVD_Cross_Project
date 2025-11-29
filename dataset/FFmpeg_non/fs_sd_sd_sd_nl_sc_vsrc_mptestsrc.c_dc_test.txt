@@ -1,0 +1,11 @@
+static void func1 ( uint8_t * var1 , int var2 , int var3 , int var4 , int var5 ) 
+{ 
+const int var6 = func2 ( number / ( var3 * var4 / number ) , number ) ; 
+int var7 , var8 , var9 = var5 ; 
+for ( var8 = number ; var8 < var4 ; var8 += number ) { 
+for ( var7 = number ; var7 < var3 ; var7 += number ) { 
+func3 ( var1 + var7 + var8 * var2 , var2 , var9 , number , number ) ; 
+var9 += var6 ; 
+} 
+} 
+} 

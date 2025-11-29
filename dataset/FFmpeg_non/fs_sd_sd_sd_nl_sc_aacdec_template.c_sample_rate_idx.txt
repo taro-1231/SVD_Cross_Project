@@ -1,0 +1,15 @@
+static int func1 ( int var1 ) 
+{ 
+if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else if ( number <= var1 ) return number ; 
+else return number ; 
+} 

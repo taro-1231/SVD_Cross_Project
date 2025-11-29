@@ -1,0 +1,12 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+EQContext * var2 = var1 -> var3 ; 
+func2 ( var2 -> var4 ) ; var2 -> var4 = var5 ; 
+func2 ( var2 -> var6 ) ; var2 -> var6 = var5 ; 
+func2 ( var2 -> var7 ) ; var2 -> var7 = var5 ; 
+func2 ( var2 -> var8 ) ; var2 -> var8 = var5 ; 
+func2 ( var2 -> var9 ) ; var2 -> var9 = var5 ; 
+func2 ( var2 -> var10 ) ; var2 -> var10 = var5 ; 
+func2 ( var2 -> var11 ) ; var2 -> var11 = var5 ; 
+func2 ( var2 -> var12 ) ; var2 -> var12 = var5 ; 
+} 

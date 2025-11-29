@@ -1,0 +1,17 @@
+int func1 ( enum AVPixelFormat var1 , 
+int var2 , int var3 , int var4 ) 
+{ 
+uint8_t * var5 [ number ] ; 
+int var6 [ number ] ; 
+int var7 ; 
+const AVPixFmtDescriptor * var8 = func2 ( var1 ) ; 
+if ( ! var8 ) 
+return func3 ( var9 ) ; 
+var7 = func4 ( var2 , var3 , number , var10 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+if ( var8 -> var11 & var12 ) 
+return var2 * var3 ; 
+return func5 ( var5 , var6 , var10 , var1 , 
+var2 , var3 , var4 ) ; 
+} 

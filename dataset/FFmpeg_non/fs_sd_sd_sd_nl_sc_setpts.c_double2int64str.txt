@@ -1,0 +1,6 @@
+static inline char * func1 ( char * var2 , double var3 ) 
+{ 
+if ( isnan ( var3 ) ) snprintf ( var2 , var1 , str ) ; 
+else snprintf ( var2 , var1 , str PRId64 , ( int64_t ) var3 ) ; 
+return var2 ; 
+} 

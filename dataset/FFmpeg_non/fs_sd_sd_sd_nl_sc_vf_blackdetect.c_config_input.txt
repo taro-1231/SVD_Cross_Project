@@ -1,0 +1,16 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+BlackDetectContext * var4 = var2 -> var5 ; 
+var4 -> var6 = 
+var4 -> var7 / func2 ( var1 -> var8 ) ; 
+var4 -> var9 = func3 ( var1 -> var10 , var11 ) ? 
+var4 -> var12 * number : 
+number + var4 -> var12 * ( number - number ) ; 
+func4 ( var4 , var13 , 
+str , 
+func5 ( var4 -> var6 , & var1 -> var8 ) , 
+var4 -> var12 , var4 -> var9 , 
+var4 -> var14 ) ; 
+return number ; 
+} 

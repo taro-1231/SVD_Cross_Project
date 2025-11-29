@@ -1,0 +1,9 @@
+void func1 ( mainprog_info * var1 ) 
+{ 
+png_structp var2 = ( png_structp ) var1 -> var2 ; 
+png_infop var3 = ( png_infop ) var1 -> var3 ; 
+if ( var2 && var3 ) 
+func2 ( & var2 , & var3 , var4 ) ; 
+var1 -> var2 = var4 ; 
+var1 -> var3 = var4 ; 
+} 

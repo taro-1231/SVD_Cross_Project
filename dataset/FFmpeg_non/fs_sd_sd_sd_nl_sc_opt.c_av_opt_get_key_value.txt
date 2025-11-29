@@ -1,0 +1,20 @@
+int func1 ( const char ** var1 , 
+const char * var2 , const char * var3 , 
+unsigned var4 , 
+char ** var5 , char ** var6 ) 
+{ 
+int var7 ; 
+char * var8 = var9 , * var10 ; 
+const char * var11 = * var1 ; 
+if ( ( var7 = func2 ( & var11 , var2 , & var8 ) ) < number && 
+! ( var4 & var12 ) ) 
+return func3 ( var13 ) ; 
+if ( ! ( var10 = func4 ( & var11 , var3 ) ) ) { 
+func5 ( var8 ) ; 
+return func3 ( var14 ) ; 
+} 
+* var1 = var11 ; 
+* var5 = var8 ; 
+* var6 = var10 ; 
+return number ; 
+} 

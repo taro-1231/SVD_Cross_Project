@@ -1,0 +1,10 @@
+AVFilter * func1 ( const char * var1 ) 
+{ 
+const AVFilter * var2 = var3 ; 
+if ( ! var1 ) 
+return var3 ; 
+while ( ( var2 = func2 ( var2 ) ) ) 
+if ( ! strcmp ( var2 -> var1 , var1 ) ) 
+return ( AVFilter * ) var2 ; 
+return var3 ; 
+} 

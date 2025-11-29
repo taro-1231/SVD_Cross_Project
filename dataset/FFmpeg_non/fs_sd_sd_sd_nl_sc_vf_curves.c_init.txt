@@ -1,0 +1,70 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 , var3 , var4 ; 
+CurvesContext * var5 = var1 -> var6 ; 
+struct keypoint * var7 [ var8 + number ] = { number } ; 
+char ** var9 = var5 -> var10 ; 
+const char * var11 = var5 -> var12 ; 
+if ( var11 ) { 
+for ( var2 = number ; var2 < var8 ; var2 ++ ) { 
+if ( ! var9 [ var2 ] ) 
+var9 [ var2 ] = func2 ( var11 ) ; 
+if ( ! var9 [ var2 ] ) 
+return func3 ( var16 ) ; 
+} 
+} 
+if ( var5 -> var17 ) { 
+var4 = func4 ( var1 , var5 -> var17 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+if ( var5 -> var13 != var14 ) { 
+if ( ! var9 [ var18 ] && var15 [ var5 -> var13 ] . var19 ) { \ 
+var9 [ var18 ] = func2 ( var15 [ var5 -> var13 ] . var19 ) ; \ 
+if ( ! var9 [ var18 ] ) \ 
+return func3 ( var16 ) ; \ 
+} \ 
+} while ( number ) 
+func5 ( number , r ) ; 
+func5 ( number , var20 ) ; 
+func5 ( number , var21 ) ; 
+func5 ( number , var22 ) ; 
+} 
+for ( var2 = number ; var2 < var8 + number ; var2 ++ ) { 
+var4 = func6 ( var1 , var7 + var2 , var5 -> var10 [ var2 ] ) ; 
+if ( var4 < number ) 
+return var4 ; 
+var4 = func7 ( var1 , var5 -> var23 [ var2 ] , var7 [ var2 ] ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+if ( var9 [ var8 ] ) { 
+for ( var2 = number ; var2 < var8 ; var2 ++ ) 
+for ( var3 = number ; var3 < number ; var3 ++ ) 
+var5 -> var23 [ var2 ] [ var3 ] = var5 -> var23 [ var8 ] [ var5 -> var23 [ var2 ] [ var3 ] ] ; 
+} 
+if ( func8 ( ) >= var24 ) { 
+for ( var2 = number ; var2 < var8 ; var2 ++ ) { 
+struct keypoint * var25 = var7 [ var2 ] ; 
+func9 ( var1 , var24 , str , var2 ) ; 
+while ( var25 ) { 
+func9 ( var1 , var24 , str , var25 -> var26 , var25 -> var27 ) ; 
+var25 = var25 -> var28 ; 
+} 
+func9 ( var1 , var24 , str ) ; 
+func9 ( var1 , var24 , str , var2 ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) 
+func9 ( var1 , var24 , str , var5 -> var23 [ var2 ] [ var3 ] ) ; 
+func9 ( var1 , var24 , str ) ; 
+} 
+} 
+for ( var2 = number ; var2 < var8 + number ; var2 ++ ) { 
+struct keypoint * var25 = var7 [ var2 ] ; 
+while ( var25 ) { 
+struct keypoint * var28 = var25 -> var28 ; 
+func10 ( var25 ) ; 
+var25 = var28 ; 
+} 
+} 
+return number ; 
+} 

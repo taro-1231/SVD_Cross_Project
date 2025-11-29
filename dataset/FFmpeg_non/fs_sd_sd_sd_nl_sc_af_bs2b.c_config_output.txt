@@ -1,0 +1,30 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+Bs2bContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+int var8 = var6 -> var9 ; 
+switch ( var6 -> var10 ) { 
+case var11 : 
+var4 -> var12 = var13 ; 
+break ; 
+case var14 : 
+var4 -> var12 = ( void * ) var15 ; 
+break ; 
+case var16 : 
+var4 -> var12 = ( void * ) var17 ; 
+break ; 
+case var18 : 
+var4 -> var12 = ( void * ) var19 ; 
+break ; 
+case var20 : 
+var4 -> var12 = ( void * ) var21 ; 
+break ; 
+var22 : 
+return var23 ; 
+} 
+if ( ( var8 < var24 ) || ( var8 > var25 ) ) 
+return func2 ( var26 ) ; 
+func3 ( var4 -> var27 , var8 ) ; 
+return number ; 
+} 

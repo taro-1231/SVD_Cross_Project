@@ -1,0 +1,14 @@
+static void func1 ( void ) 
+{ 
+int var1 = number ; 
+const char * var2 ; 
+printf ( str ) ; 
+printf ( str ) ; 
+do { 
+var2 = func2 ( var1 ) ; 
+if ( var2 ) 
+printf ( str , var2 ) ; 
+var1 ++ ; 
+} while ( var2 ) ; 
+printf ( str ) ; 
+} 

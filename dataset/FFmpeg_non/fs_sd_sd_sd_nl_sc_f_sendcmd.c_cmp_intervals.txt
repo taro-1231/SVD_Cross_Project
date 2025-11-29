@@ -1,0 +1,9 @@
+static int func1 ( const void * var1 , const void * var2 ) 
+{ 
+const Interval * var3 = var1 ; 
+const Interval * var4 = var2 ; 
+int64_t var5 = var3 -> var6 - var4 -> var6 ; 
+int var7 ; 
+var7 = var5 > number ? number : var5 < number ? - number : number ; 
+return var7 == number ? var3 -> var8 - var4 -> var8 : var7 ; 
+} 

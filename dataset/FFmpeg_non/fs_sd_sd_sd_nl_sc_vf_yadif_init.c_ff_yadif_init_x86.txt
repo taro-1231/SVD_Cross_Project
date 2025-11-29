@@ -1,0 +1,30 @@
+av_cold void func1 ( YADIFContext * var1 ) 
+{ 
+int var2 = func2 ( ) ; 
+int var3 = ( ! var1 -> var4 ) ? number 
+: var1 -> var4 -> var5 [ number ] . var6 + number ; 
+if ( var3 >= number ) { 
+if ( func3 ( var2 ) ) 
+var1 -> var7 = var8 ; 
+if ( func4 ( var2 ) ) 
+var1 -> var7 = var9 ; 
+if ( func5 ( var2 ) ) 
+var1 -> var7 = var10 ; 
+if ( func6 ( var2 ) ) 
+var1 -> var7 = var11 ; 
+} else if ( var3 >= number && var3 <= number ) { 
+if ( func3 ( var2 ) ) 
+var1 -> var7 = var12 ; 
+if ( func4 ( var2 ) ) 
+var1 -> var7 = var13 ; 
+if ( func5 ( var2 ) ) 
+var1 -> var7 = var14 ; 
+} else { 
+if ( func3 ( var2 ) ) 
+var1 -> var7 = var15 ; 
+if ( func4 ( var2 ) ) 
+var1 -> var7 = var16 ; 
+if ( func5 ( var2 ) ) 
+var1 -> var7 = var17 ; 
+} 
+} 

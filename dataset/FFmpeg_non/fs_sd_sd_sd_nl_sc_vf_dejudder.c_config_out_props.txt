@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DejudderContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var1 -> var3 -> var7 [ number ] ; 
+var1 -> var8 = func2 ( var6 -> var8 , func3 ( number , number * var4 -> var9 ) ) ; 
+var1 -> var10 = func2 ( var6 -> var10 , func3 ( number * var4 -> var9 , number ) ) ; 
+func4 ( var2 , var11 , str , var4 -> var9 ) ; 
+return number ; 
+} 

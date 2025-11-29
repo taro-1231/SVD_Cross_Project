@@ -1,0 +1,21 @@
+static inline void func1 ( const uint8_t var4 [ ] , int var5 , uint8_t var6 [ ] , int var7 , int var8 , int var9 , 
+const QP_STORE_T var1 [ ] , int var2 , int var3 , pp_mode * var10 , pp_context * var11 ) 
+{ 
+pp_fn func2 = var12 ; 
+PPContext * var13 = ( PPContext * ) var11 ; 
+PPMode * var14 = ( PPMode * ) var10 ; 
+var13 -> var14 = * var14 ; 
+if ( ! ( var14 -> var15 & var16 ) ) { 
+if ( var13 -> var17 & var18 ) func2 = var19 ; 
+else if ( var13 -> var17 & var20 ) func2 = var21 ; 
+else if ( var13 -> var17 & var22 ) func2 = var23 ; 
+else if ( var13 -> var17 & var24 ) func2 = var25 ; 
+if ( var13 -> var17 & AV_CPU_FLAG_ALTIVEC ) func2 = postProcess_altivec ; 
+func2 = var19 ; 
+func2 = var21 ; 
+func2 = var23 ; 
+func2 = var25 ; 
+func2 = postProcess_altivec ; 
+} 
+func2 ( var4 , var5 , var6 , var7 , var8 , var9 , var1 , var2 , var3 , var13 ) ; 
+} 

@@ -1,0 +1,13 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+PermsContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 == var5 ) { 
+uint32_t var6 ; 
+if ( var2 -> var7 == - number ) 
+var2 -> var7 = func2 ( ) ; 
+var6 = var2 -> var7 ; 
+func3 ( var1 , var8 , str , var6 ) ; 
+func4 ( & var2 -> var9 , var6 ) ; 
+} 
+return number ; 
+} 

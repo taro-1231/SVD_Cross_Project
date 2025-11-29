@@ -1,0 +1,10 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , AVPacket * var3 , int var4 ) 
+{ 
+if ( var1 -> var5 -> func1 ) { 
+int var6 = var1 -> var5 -> func1 ( var1 , var2 , var3 , var4 ) ; 
+if ( var3 ) 
+func2 ( var3 ) ; 
+return var6 ; 
+} else 
+return func3 ( var1 , var2 , var3 , var4 ) ; 
+} 

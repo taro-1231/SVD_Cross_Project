@@ -1,0 +1,25 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 ) ; 
+for ( var4 = number ; var4 < var1 -> var6 ; var4 ++ ) 
+var1 -> var7 [ var4 ] -> var3 = var8 ; 
+for ( var4 = number ; var4 < var2 -> var9 ; var4 ++ ) { 
+func3 ( var2 -> var10 + var4 , number ) ; 
+} 
+func2 ( & var2 -> var11 ) ; 
+func2 ( & var2 -> var10 ) ; 
+func2 ( & var2 -> var12 ) ; 
+func2 ( & var2 -> var13 ) ; 
+if ( var2 -> var14 ) { 
+for ( var4 = number ; var4 < var2 -> var15 ; var4 ++ ) { 
+func2 ( & var2 -> var14 [ var4 ] . var16 ) ; 
+func2 ( & var2 -> var14 [ var4 ] . var17 ) ; 
+func2 ( & var2 -> var14 [ var4 ] . var18 ) ; 
+func2 ( & var2 -> var14 [ var4 ] . var19 ) ; 
+} 
+} 
+func2 ( & var2 -> var14 ) ; 
+return number ; 
+} 

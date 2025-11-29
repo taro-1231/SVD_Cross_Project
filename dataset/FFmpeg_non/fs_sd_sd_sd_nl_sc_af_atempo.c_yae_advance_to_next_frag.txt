@@ -1,0 +1,12 @@
+static void func1 ( ATempoContext * var1 ) 
+{ 
+const double var2 = var1 -> var3 * ( double ) ( var1 -> var4 / number ) ; 
+const AudioFragment * var5 ; 
+AudioFragment * var6 ; 
+var1 -> var7 ++ ; 
+var5 = func2 ( var1 ) ; 
+var6 = func3 ( var1 ) ; 
+var6 -> var8 [ number ] = var5 -> var8 [ number ] + ( int64_t ) var2 ; 
+var6 -> var8 [ number ] = var5 -> var8 [ number ] + var1 -> var4 / number ; 
+var6 -> var9 = number ; 
+} 

@@ -1,0 +1,24 @@
+static int func1 ( MatroskaDemuxContext * var1 , 
+AVPacket * var2 ) 
+{ 
+if ( var1 -> var3 > number ) { 
+memcpy ( var2 , var1 -> var4 [ number ] , sizeof ( AVPacket ) ) ; 
+func2 ( & var1 -> var4 [ number ] ) ; 
+if ( var1 -> var3 > number ) { 
+void * var5 ; 
+memmove ( & var1 -> var4 [ number ] , & var1 -> var4 [ number ] , 
+( var1 -> var3 - number ) * sizeof ( AVPacket * ) ) ; 
+var5 = func3 ( var1 -> var4 , 
+( var1 -> var3 - number ) * 
+sizeof ( AVPacket * ) ) ; 
+if ( var5 ) 
+var1 -> var4 = var5 ; 
+} else { 
+func2 ( & var1 -> var4 ) ; 
+var1 -> var6 = var7 ; 
+} 
+var1 -> var3 -- ; 
+return number ; 
+} 
+return - number ; 
+} 

@@ -1,0 +1,15 @@
+static int func1 ( const PanContext * var1 ) 
+{ 
+int var2 , var3 ; 
+for ( var2 = number ; var2 < var4 ; var2 ++ ) { 
+int var5 = number ; 
+for ( var3 = number ; var3 < var4 ; var3 ++ ) { 
+double var6 = var1 -> var6 [ var2 ] [ var3 ] ; 
+if ( var6 != number && var6 != number ) 
+return number ; 
+if ( var6 && var5 ++ ) 
+return number ; 
+} 
+} 
+return number ; 
+} 

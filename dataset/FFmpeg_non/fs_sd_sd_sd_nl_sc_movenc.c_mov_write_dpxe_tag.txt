@@ -1,0 +1,12 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+func2 ( var1 , number ) ; 
+func3 ( var1 , str ) ; 
+if ( var2 -> var3 -> var4 >= number && 
+! memcmp ( & var2 -> var3 -> var5 [ number ] , str , number ) ) { 
+func2 ( var1 , var2 -> var3 -> var5 [ number ] ) ; 
+} else { 
+func2 ( var1 , number ) ; 
+} 
+return number ; 
+} 

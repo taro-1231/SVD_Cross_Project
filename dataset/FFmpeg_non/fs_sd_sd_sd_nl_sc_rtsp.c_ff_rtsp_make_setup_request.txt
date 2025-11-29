@@ -1,0 +1,192 @@
+int func1 ( AVFormatContext * var1 , const char * var2 , int var3 , 
+int var4 , const char * var5 ) 
+{ 
+RTSPState * var6 = var1 -> var7 ; 
+int var8 = number , var9 , var10 , var11 , var12 = number , var13 ; 
+RTSPStream * var14 ; 
+RTSPMessageHeader var15 , * var16 = & var15 ; 
+char var17 [ number ] ; 
+const char * var18 ; 
+if ( var6 -> var19 == var20 ) 
+var18 = str ; 
+else if ( var6 -> var19 == var21 ) 
+var18 = str ; 
+else 
+var18 = str ; 
+var6 -> var22 = number ; 
+var13 = func2 ( ) % ( ( var6 -> var23 - var6 -> var24 ) / number ) ; 
+var13 -= var13 & number ; 
+for ( var9 = var6 -> var24 + var13 , var10 = number ; var10 < var6 -> var25 ; ++ var10 ) { 
+char var19 [ number ] ; 
+if ( var4 == var26 && 
+var6 -> var27 == var28 ) { 
+if ( var10 == number ) { 
+for ( var8 = number ; var8 < var6 -> var25 ; var8 ++ ) { 
+int var29 = strlen ( var6 -> var30 [ var8 ] -> var31 ) ; 
+if ( var29 >= number && 
+! strcmp ( var6 -> var30 [ var8 ] -> var31 + var29 - number , 
+str ) ) 
+break ; 
+} 
+if ( var8 == var6 -> var25 ) 
+return - number ; 
+var14 = var6 -> var30 [ var8 ] ; 
+} else 
+var14 = var6 -> var30 [ var10 > var8 ? var10 : var10 - number ] ; 
+} else 
+var14 = var6 -> var30 [ var10 ] ; 
+if ( var4 == var26 ) { 
+char var32 [ number ] ; 
+if ( var6 -> var27 == var28 && var10 > number ) { 
+var3 = var16 -> var33 [ number ] . var34 ; 
+goto var35 ; 
+} 
+while ( var9 <= var6 -> var23 ) { 
+AVDictionary * var36 = func3 ( var6 ) ; 
+func4 ( var32 , sizeof ( var32 ) , str , var37 , var2 , - number , 
+str , var9 ) ; 
+var9 += number ; 
+var11 = func5 ( & var14 -> var38 , var32 , var39 , 
+& var1 -> var40 , & var36 ) ; 
+func6 ( & var36 ) ; 
+if ( ! var11 ) 
+goto var41 ; 
+} 
+func7 ( var1 , var42 , str ) ; 
+var11 = func8 ( var43 ) ; 
+goto var44 ; 
+var41 : 
+var3 = func9 ( var14 -> var38 ) ; 
+var35 : 
+snprintf ( var19 , sizeof ( var19 ) - number , 
+str , var18 ) ; 
+if ( var6 -> var27 != var45 ) 
+func10 ( var19 , str , sizeof ( var19 ) ) ; 
+func11 ( var19 , sizeof ( var19 ) , 
+str , var3 ) ; 
+if ( var6 -> var19 == var46 && 
+! ( var6 -> var27 == var28 && var10 > number ) ) 
+func11 ( var19 , sizeof ( var19 ) , str , var3 + number ) ; 
+} 
+else if ( var4 == var47 ) { 
+if ( var6 -> var27 == var28 && 
+( var14 -> var48 < number || 
+var1 -> var49 [ var14 -> var48 ] -> var50 -> var51 == 
+var52 ) ) 
+continue ; 
+snprintf ( var19 , sizeof ( var19 ) - number , 
+str , var18 ) ; 
+if ( var6 -> var19 != var20 ) 
+func10 ( var19 , str , sizeof ( var19 ) ) ; 
+func11 ( var19 , sizeof ( var19 ) , 
+str , 
+var12 , var12 + number ) ; 
+var12 += number ; 
+} 
+else if ( var4 == var53 ) { 
+snprintf ( var19 , sizeof ( var19 ) - number , 
+str , var18 ) ; 
+} 
+if ( var1 -> var54 ) { 
+func10 ( var19 , str , sizeof ( var19 ) ) ; 
+} else if ( var6 -> var27 == var45 || 
+var6 -> var27 == var28 ) 
+func10 ( var19 , str , sizeof ( var19 ) ) ; 
+snprintf ( var17 , sizeof ( var17 ) , 
+str , 
+var19 ) ; 
+if ( var6 -> var55 ) 
+func10 ( var17 , str , sizeof ( var17 ) ) ; 
+if ( var56 && var10 == number && var6 -> var27 == var45 ) { 
+char var57 [ number ] , var58 [ number ] ; 
+func12 ( var57 , var58 , 
+var5 ) ; 
+func11 ( var17 , sizeof ( var17 ) , 
+str 
+str , 
+var6 -> session_id , var57 , var58 ) ; 
+} 
+func13 ( var1 , str , var14 -> var31 , var17 , var16 , var37 ) ; 
+if ( var16 -> var59 == number && var10 == number ) { 
+var11 = number ; 
+goto var44 ; 
+} else if ( var16 -> var59 != var60 || 
+var16 -> var61 != number ) { 
+var11 = func14 ( var16 -> var59 , var62 ) ; 
+goto var44 ; 
+} 
+if ( var10 > number ) { 
+if ( var16 -> var33 [ number ] . var4 != var6 -> var4 || 
+var16 -> var33 [ number ] . var19 != var6 -> var19 ) { 
+var11 = var62 ; 
+goto var44 ; 
+} 
+} else { 
+var6 -> var4 = var16 -> var33 [ number ] . var4 ; 
+var6 -> var19 = var16 -> var33 [ number ] . var19 ; 
+} 
+if ( var16 -> var33 [ number ] . var4 != var4 ) { 
+func7 ( var1 , var42 , str ) ; 
+var11 = var62 ; 
+goto var44 ; 
+} 
+switch ( var16 -> var33 [ number ] . var4 ) { 
+case var47 : 
+var14 -> var63 = var16 -> var33 [ number ] . var63 ; 
+var14 -> var64 = var16 -> var33 [ number ] . var64 ; 
+break ; 
+case var26 : { 
+char var65 [ number ] , var66 [ number ] = str ; 
+const char * var67 = var2 ; 
+if ( var6 -> var68 & var69 ) 
+func15 ( var66 , str , sizeof ( var66 ) ) ; 
+if ( var16 -> var33 [ number ] . var70 [ number ] ) 
+var67 = var16 -> var33 [ number ] . var70 ; 
+func4 ( var65 , sizeof ( var65 ) , str , var37 , var67 , 
+var16 -> var33 [ number ] . var71 , str , var66 ) ; 
+if ( ! ( var6 -> var27 == var28 && var10 > number ) && 
+func16 ( var14 -> var38 , var65 ) < number ) { 
+var11 = var62 ; 
+goto var44 ; 
+} 
+break ; 
+} 
+case var53 : { 
+char var65 [ number ] , var72 [ number ] , var73 [ number ] = str ; 
+struct sockaddr_storage var74 ; 
+int var3 , var75 ; 
+if ( var16 -> var33 [ number ] . var76 . var77 ) { 
+var74 = var16 -> var33 [ number ] . var76 ; 
+var3 = var16 -> var33 [ number ] . var78 ; 
+var75 = var16 -> var33 [ number ] . var75 ; 
+} else { 
+var74 = var14 -> var79 ; 
+var3 = var14 -> var80 ; 
+var75 = var14 -> var81 ; 
+} 
+if ( var75 > number ) 
+snprintf ( var73 , sizeof ( var73 ) , str , var75 ) ; 
+func17 ( ( struct sockaddr * ) & var74 , sizeof ( var74 ) , 
+var72 , sizeof ( var72 ) , var37 , number , var82 ) ; 
+func4 ( var65 , sizeof ( var65 ) , str , var37 , var72 , 
+var3 , str , var73 ) ; 
+if ( func5 ( & var14 -> var38 , var65 , var39 , 
+& var1 -> var40 , var37 ) < number ) { 
+var11 = var62 ; 
+goto var44 ; 
+} 
+break ; 
+} 
+} 
+if ( ( var11 = func18 ( var1 , var14 ) ) ) 
+goto var44 ; 
+} 
+if ( var6 -> var25 && var16 -> var22 > number ) 
+var6 -> var22 = var16 -> var22 ; 
+if ( var6 -> var27 == var45 ) 
+var6 -> var83 = number ; 
+return number ; 
+var44 : 
+func19 ( var1 , number ) ; 
+return var11 ; 
+} 

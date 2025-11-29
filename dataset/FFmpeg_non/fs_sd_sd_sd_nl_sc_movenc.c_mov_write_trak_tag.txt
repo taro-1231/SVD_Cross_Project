@@ -1,0 +1,44 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+MOVTrack * var3 , AVStream * var4 ) 
+{ 
+int64_t var5 = func2 ( var1 ) ; 
+int var6 = var3 -> var7 ; 
+int var8 = var3 -> var9 ; 
+int var10 ; 
+if ( var2 -> var11 & var12 ) 
+var3 -> var9 = var3 -> var7 = number ; 
+func3 ( var1 , number ) ; 
+func4 ( var1 , str ) ; 
+func5 ( var1 , var2 , var3 , var4 ) ; 
+func6 ( var2 -> var13 >= number ) ; 
+if ( var3 -> var14 != var15 ) { 
+if ( var2 -> var13 ) 
+func7 ( var1 , var2 , var3 ) ; 
+else if ( ( var3 -> var7 && var3 -> var16 [ number ] . var17 ) || var3 -> var18 == var19 || func8 ( var3 ) ) 
+func9 ( var2 -> var20 , var21 , 
+str ) ; 
+} 
+if ( var3 -> var22 ) 
+func10 ( var1 , var3 ) ; 
+if ( ( var10 = func11 ( var1 , var2 , var3 ) ) < number ) 
+return var10 ; 
+if ( var3 -> var18 == var19 ) 
+func12 ( var1 , var3 ) ; 
+if ( var3 -> var23 == func13 ( str , str , str , str ) ) 
+func14 ( var1 , var3 ) ; 
+if ( var3 -> var18 == var24 ) { 
+if ( var3 -> var25 -> var26 == var27 ) { 
+double var28 = func15 ( var4 -> var28 ) ; 
+if ( var4 -> var28 . var29 && number != var28 ) { 
+func16 ( var1 , var3 ) ; 
+} 
+} 
+if ( func8 ( var3 ) && var4 -> var28 . var29 ) { 
+func16 ( var1 , var3 ) ; 
+} 
+} 
+func17 ( var1 , var2 , var4 ) ; 
+var3 -> var7 = var6 ; 
+var3 -> var9 = var8 ; 
+return func18 ( var1 , var5 ) ; 
+} 

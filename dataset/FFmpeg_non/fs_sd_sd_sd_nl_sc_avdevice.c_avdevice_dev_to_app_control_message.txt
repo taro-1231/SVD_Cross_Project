@@ -1,0 +1,7 @@
+int func1 ( struct AVFormatContext * func2 , enum AVDevToAppMessageType var1 , 
+void * var2 , size_t var3 ) 
+{ 
+if ( ! func3 ( func2 ) ) 
+return func4 ( var4 ) ; 
+return func3 ( func2 ) ( func2 , var1 , var2 , var3 ) ; 
+} 

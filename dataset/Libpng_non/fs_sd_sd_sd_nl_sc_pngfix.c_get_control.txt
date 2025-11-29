@@ -1,0 +1,6 @@
+func1 ( png_const_structrp var2 ) 
+{ 
+struct var3 * var3 = png_voidcast ( struct var3 * , 
+png_get_error_ptr ( var2 ) ) ; 
+return & var3 -> var1 ; 
+} 

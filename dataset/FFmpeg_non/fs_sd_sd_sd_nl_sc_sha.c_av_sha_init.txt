@@ -1,0 +1,40 @@
+av_cold int func1 ( AVSHA * var1 , int var2 ) 
+{ 
+var1 -> var3 = var2 >> number ; 
+switch ( var2 ) { 
+case 160 : 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var5 = var6 ; 
+break ; 
+case 224 : 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var5 = var7 ; 
+break ; 
+case 256 : 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var4 [ number ] = number ; 
+var1 -> var5 = var7 ; 
+break ; 
+var8 : 
+return - number ; 
+} 
+var1 -> var9 = number ; 
+return number ; 
+} 

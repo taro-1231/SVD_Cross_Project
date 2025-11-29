@@ -1,0 +1,16 @@
+static void func1 ( AVStream * var1 , 
+uint32_t var2 , 
+const StreamType * var3 ) 
+{ 
+if ( func2 ( var1 -> var4 ) ) { 
+func3 ( var5 , var6 , str ) ; 
+return ; 
+} 
+for ( ; var3 -> var2 ; var3 ++ ) 
+if ( var2 == var3 -> var2 ) { 
+var1 -> var4 -> var7 = var3 -> var7 ; 
+var1 -> var4 -> var8 = var3 -> var8 ; 
+var1 -> var9 = number ; 
+return ; 
+} 
+} 

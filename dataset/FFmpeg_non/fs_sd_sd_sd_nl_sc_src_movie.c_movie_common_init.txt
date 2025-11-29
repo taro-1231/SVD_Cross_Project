@@ -1,0 +1,107 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+MovieContext * var2 = var1 -> var3 ; 
+AVInputFormat * var4 = var5 ; 
+int64_t var6 ; 
+int var7 = number , var8 , var9 ; 
+char var10 [ number ] , * var11 , * var12 , * var13 ; 
+char var14 [ number ] ; 
+AVStream * var15 ; 
+if ( ! var2 -> var16 ) { 
+func2 ( var1 , var17 , str ) ; 
+return func3 ( var18 ) ; 
+} 
+var2 -> var19 = var2 -> var20 * number + number ; 
+var11 = var2 -> var11 ; 
+if ( ! var11 ) { 
+snprintf ( var10 , sizeof ( var10 ) , str , 
+! strcmp ( var1 -> var21 -> var14 , str ) ? str : str , 
+var2 -> var22 ) ; 
+var11 = var10 ; 
+} 
+for ( var13 = var11 ; * var13 ; var13 ++ ) 
+if ( * var13 == str ) 
+var7 ++ ; 
+if ( var2 -> var23 != number && var7 != number ) { 
+func2 ( var1 , var17 , 
+str ) ; 
+return var25 ; 
+} 
+func4 ( ) ; 
+var4 = var2 -> var26 ? func5 ( var2 -> var26 ) : var5 ; 
+var2 -> var27 = var5 ; 
+if ( ( var8 = func6 ( & var2 -> var27 , var2 -> var16 , var4 , var5 ) ) < number ) { 
+func2 ( var1 , var17 , 
+str , var2 -> var16 ) ; 
+return var8 ; 
+} 
+if ( ( var8 = func7 ( var2 -> var27 , var5 ) ) < number ) 
+func2 ( var1 , var28 , str ) ; 
+if ( var2 -> var19 > number ) { 
+var6 = var2 -> var19 ; 
+if ( var2 -> var27 -> var29 != var30 ) { 
+if ( var6 > var31 - var2 -> var27 -> var29 ) { 
+func2 ( var1 , var17 , 
+str PRId64 str PRId64 str , 
+var2 -> var16 , var2 -> var27 -> var29 , var2 -> var19 ) ; 
+return func3 ( var18 ) ; 
+} 
+var6 += var2 -> var27 -> var29 ; 
+} 
+if ( ( var8 = func8 ( var2 -> var27 , - number , var6 , var32 ) ) < number ) { 
+func2 ( var1 , var17 , str PRId64 str , 
+var2 -> var16 , var6 ) ; 
+return var8 ; 
+} 
+} 
+for ( var9 = number ; var9 < var2 -> var27 -> var7 ; var9 ++ ) 
+var2 -> var27 -> var24 [ var9 ] -> var33 = var34 ; 
+var2 -> var15 = func9 ( var7 , sizeof ( * var2 -> var15 ) ) ; 
+if ( ! var2 -> var15 ) 
+return func3 ( var35 ) ; 
+for ( var9 = number ; var9 < var7 ; var9 ++ ) { 
+var12 = func10 ( var11 , str , & var13 ) ; 
+if ( ! var12 ) 
+return var36 ; 
+var11 = var5 ; 
+var15 = func11 ( var1 , var2 -> var27 , var12 ) ; 
+if ( ! var15 ) 
+return func3 ( var18 ) ; 
+var15 -> var33 = var37 ; 
+var2 -> var15 [ var9 ] . var15 = var15 ; 
+var2 -> var38 = func12 ( var2 -> var38 , var15 -> var39 ) ; 
+} 
+if ( func10 ( var5 , str , & var13 ) ) 
+return var36 ; 
+var2 -> var40 = func9 ( var2 -> var38 + number , 
+sizeof ( * var2 -> var40 ) ) ; 
+if ( ! var2 -> var40 ) 
+return func3 ( var35 ) ; 
+for ( var9 = number ; var9 <= var2 -> var38 ; var9 ++ ) 
+var2 -> var40 [ var9 ] = - number ; 
+for ( var9 = number ; var9 < var7 ; var9 ++ ) { 
+AVFilterPad var41 = { number } ; 
+var2 -> var40 [ var2 -> var15 [ var9 ] . var15 -> var39 ] = var9 ; 
+snprintf ( var14 , sizeof ( var14 ) , str , var9 ) ; 
+var41 . var42 = var2 -> var15 [ var9 ] . var15 -> var43 -> var44 ; 
+var41 . var14 = func13 ( var14 ) ; 
+if ( ! var41 . var14 ) 
+return func3 ( var35 ) ; 
+var41 . var45 = var46 ; 
+var41 . var47 = var48 ; 
+func14 ( var1 , var9 , & var41 ) ; 
+var8 = func15 ( var1 , & var2 -> var15 [ var9 ] ) ; 
+if ( var8 < number ) 
+return var8 ; 
+if ( var2 -> var15 [ var9 ] . var15 -> var43 -> var43 -> var42 == var49 && 
+! var2 -> var15 [ var9 ] . var15 -> var43 -> var50 ) { 
+var8 = func16 ( & var2 -> var15 [ var9 ] , var9 , var1 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+} 
+} 
+func2 ( var1 , AV_LOG_VERBOSE , str PRIi64 str , 
+var2 -> var19 , var2 -> var26 , var2 -> var16 , 
+var2 -> var22 ) ; 
+return number ; 
+} 

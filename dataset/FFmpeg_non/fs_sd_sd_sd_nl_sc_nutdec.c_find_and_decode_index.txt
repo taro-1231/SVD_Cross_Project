@@ -1,0 +1,103 @@
+static int func1 ( NUTContext * var1 ) 
+{ 
+AVFormatContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var2 -> var5 ; 
+uint64_t var6 , var7 ; 
+int var8 , var9 , var10 ; 
+int64_t var11 = func2 ( var4 ) ; 
+int64_t * var12 = var13 ; 
+uint64_t var14 ; 
+int8_t * var15 = var13 ; 
+int var16 = var17 ; 
+if ( var11 <= number ) 
+return - number ; 
+func3 ( var4 , var11 - number , var18 ) ; 
+func3 ( var4 , var11 - func4 ( var4 ) , var18 ) ; 
+if ( func4 ( var4 ) != var19 ) { 
+func5 ( var2 , var20 , str ) ; 
+if ( var2 -> var22 <= number ) 
+var2 -> var22 = func6 ( var1 , var11 ) ; 
+return var16 ; 
+} 
+var7 = func7 ( var1 , var4 , number , var19 ) ; 
+var7 += func8 ( var4 ) ; 
+var14 = func9 ( var4 ) ; 
+var2 -> var22 = func10 ( var14 / var1 -> var23 , 
+var1 -> var24 [ var14 % var1 -> var23 ] , 
+var25 ) ; 
+var2 -> var26 = var27 ; 
+func11 ( var10 , var6 < var28 / number && var6 > number ) ; 
+var12 = func12 ( var10 , sizeof ( int64_t ) ) ; 
+var15 = func12 ( var10 + number , sizeof ( int8_t ) ) ; 
+if ( ! var12 || ! var15 ) { 
+var16 = func13 ( var29 ) ; 
+goto var30 ; 
+} 
+for ( var8 = number ; var8 < var10 ; var8 ++ ) { 
+var12 [ var8 ] = func9 ( var4 ) ; 
+if ( var12 [ var8 ] <= number ) 
+goto var30 ; 
+if ( var8 ) 
+var12 [ var8 ] += var12 [ var8 - number ] ; 
+} 
+for ( var8 = number ; var8 < var2 -> var31 ; var8 ++ ) { 
+int64_t var32 = - number ; 
+for ( var9 = number ; var9 < var10 ; ) { 
+uint64_t var33 = func9 ( var4 ) ; 
+int var34 = var33 & number ; 
+int var21 = var9 ; 
+var33 >>= number ; 
+if ( var34 ) { 
+int var35 = var33 & number ; 
+var33 >>= number ; 
+if ( var21 + var33 >= var10 + number ) { 
+func5 ( var2 , var20 , str PRIu64 str , var21 , var33 , var10 + number ) ; 
+goto var30 ; 
+} 
+while ( var33 -- ) 
+var15 [ var21 ++ ] = var35 ; 
+var15 [ var21 ++ ] = ! var35 ; 
+} else { 
+if ( var33 <= number ) { 
+func5 ( var2 , var20 , str PRIu64 str , var33 ) ; 
+goto var30 ; 
+} 
+while ( var33 != number ) { 
+if ( var21 >= var10 + number ) { 
+func5 ( var2 , var20 , str ) ; 
+goto var30 ; 
+} 
+var15 [ var21 ++ ] = var33 & number ; 
+var33 >>= number ; 
+} 
+} 
+if ( var15 [ number ] ) { 
+func5 ( var2 , var20 , str ) ; 
+goto var30 ; 
+} 
+func14 ( var21 <= var10 + number ) ; 
+for ( ; var9 < var21 && var9 < var10 ; var9 ++ ) { 
+if ( var15 [ var9 ] ) { 
+uint64_t var37 , var36 = func9 ( var4 ) ; 
+if ( ! var36 ) { 
+var36 = func9 ( var4 ) ; 
+var37 = func9 ( var4 ) ; 
+} else 
+var37 = number ; 
+func15 ( var2 -> var38 [ var8 ] , number * var12 [ var9 - number ] , 
+var32 + var36 , number , number , var39 ) ; 
+var32 += var36 + var37 ; 
+} 
+} 
+} 
+} 
+if ( func16 ( var4 , var7 ) || func17 ( var4 ) ) { 
+func5 ( var2 , var20 , str ) ; 
+goto var30 ; 
+} 
+var16 = number ; 
+var30 : 
+func18 ( var12 ) ; 
+func18 ( var15 ) ; 
+return var16 ; 
+} 

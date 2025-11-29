@@ -1,0 +1,33 @@
+static int func1 ( AVFilterContext * var1 , int var2 ) 
+{ 
+W3FDIFContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var1 -> var6 [ number ] ; 
+AVFrame * var7 , * var8 ; 
+ThreadData var9 ; 
+int var10 ; 
+var7 = func2 ( var5 , var5 -> var11 , var5 -> var12 ) ; 
+if ( ! var7 ) 
+return func3 ( var13 ) ; 
+func4 ( var7 , var3 -> var14 ) ; 
+var7 -> var15 = number ; 
+if ( ! var2 ) { 
+if ( var7 -> var16 != var17 ) 
+var7 -> var16 *= number ; 
+} else { 
+int64_t var18 = var3 -> var14 -> var16 ; 
+int64_t var19 = var3 -> var20 -> var16 ; 
+if ( var19 != var17 && var18 != var17 ) { 
+var7 -> var16 = var18 + var19 ; 
+} else { 
+var7 -> var16 = var17 ; 
+} 
+} 
+var8 = var3 -> var21 ? var3 -> var20 : var3 -> var22 ; 
+var9 . var7 = var7 ; var9 . var14 = var3 -> var14 ; var9 . var8 = var8 ; 
+for ( var10 = number ; var10 < var3 -> var23 ; var10 ++ ) { 
+var9 . var10 = var10 ; 
+var1 -> var24 -> func5 ( var1 , var25 , & var9 , var26 , func6 ( var3 -> var27 [ var10 ] , var3 -> var28 ) ) ; 
+} 
+var3 -> var21 = ! var3 -> var21 ; 
+return func7 ( var5 , var7 ) ; 
+} 

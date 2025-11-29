@@ -1,0 +1,60 @@
+static int func1 ( URLContext * var1 , RTMPPacket * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+char * var5 = var6 ; 
+int var7 = number ; 
+if ( ( var7 = func2 ( var1 , var2 , number , & var5 ) ) < number ) 
+return var7 ; 
+if ( ! var5 ) { 
+return var7 ; 
+} 
+if ( ! strcmp ( var5 , str ) ) { 
+if ( ! var3 -> var8 ) { 
+if ( ( var7 = func3 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+if ( ( var7 = func4 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+} else { 
+if ( ( var7 = func5 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+} 
+if ( ( var7 = func6 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+if ( var3 -> var8 ) { 
+if ( var3 -> var10 ) { 
+if ( ( var7 = func7 ( var1 , var3 , var3 -> var10 ) ) < number ) 
+goto var9 ; 
+} else if ( var3 -> var11 == - number ) { 
+if ( ( var7 = func7 ( var1 , var3 , var3 -> var12 ) ) < number ) 
+goto var9 ; 
+} 
+} 
+} else if ( ! strcmp ( var5 , str ) ) { 
+double var13 ; 
+if ( func8 ( var2 , & var13 ) ) { 
+func9 ( var1 , var14 , str ) ; 
+} else { 
+var3 -> var13 = var13 ; 
+} 
+if ( ! var3 -> var8 ) { 
+if ( ( var7 = func10 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+} else { 
+if ( var3 -> var11 != - number ) { 
+if ( ( var7 = func11 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+} 
+if ( ( var7 = func12 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+if ( ( var7 = func13 ( var1 , var3 ) ) < number ) 
+goto var9 ; 
+} 
+} else if ( ! strcmp ( var5 , str ) ) { 
+if ( func8 ( var2 , & var3 -> var15 ) ) { 
+func9 ( var1 , var14 , str ) ; 
+} 
+} 
+var9 : 
+func14 ( var5 ) ; 
+return var7 ; 
+} 

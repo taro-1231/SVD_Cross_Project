@@ -1,0 +1,9 @@
+static int func1 ( AVFilterContext * var1 , 
+const char * var2 , 
+const char * var3 , 
+char * var4 , 
+int var5 , 
+int var6 ) 
+{ 
+return ! strcmp ( var2 , str ) ? func2 ( var1 , var3 ) : func3 ( var7 ) ; 
+} 

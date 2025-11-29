@@ -1,0 +1,68 @@
+static int func1 ( DecodeContext * var1 , AVCodecContext * var2 , 
+AVFrame * var3 , AVPacket * var4 , 
+AVIOContext * var5 ) 
+{ 
+int var6 = number ; 
+int var7 = number ; 
+while ( var4 -> var8 > number || ( ! var4 -> var9 && var7 ) ) { 
+var6 = func2 ( var2 , var3 , & var7 , var4 ) ; 
+if ( var6 < number ) { 
+fprintf ( var10 , str ) ; 
+return var6 ; 
+} 
+var4 -> var9 += var6 ; 
+var4 -> var8 -= var6 ; 
+if ( var7 ) { 
+mfxFrameSurface1 * var11 = ( mfxFrameSurface1 * ) var3 -> var9 [ number ] ; 
+VASurfaceID var12 = * ( VASurfaceID * ) var11 -> var13 . var14 ; 
+VAImageFormat var15 = { 
+. fourcc = VA_FOURCC_NV12 , 
+. byte_order = VA_LSB_FIRST , 
+. bits_per_pixel = 8 , 
+. depth = 8 , 
+} ; 
+VAImage var16 ; 
+VAStatus var17 ; 
+uint8_t * var9 ; 
+int var18 , var19 ; 
+var16 . var20 = var21 ; 
+var16 . var22 = var21 ; 
+var17 = func3 ( var1 -> var23 , & var15 , 
+var3 -> var24 , var3 -> var25 , & var16 ) ; 
+if ( var17 != var26 ) { 
+fprintf ( var10 , str , 
+func4 ( var17 ) ) ; 
+var6 = var27 ; 
+goto var28 ; 
+} 
+var17 = func5 ( var1 -> var23 , var12 , number , number , 
+var3 -> var24 , var3 -> var25 , 
+var16 . var22 ) ; 
+if ( var17 != var26 ) { 
+fprintf ( var10 , str , 
+func4 ( var17 ) ) ; 
+var6 = var27 ; 
+goto var28 ; 
+} 
+var17 = func6 ( var1 -> var23 , var16 . var20 , ( void ** ) & var9 ) ; 
+if ( var17 != var26 ) { 
+fprintf ( var10 , str , 
+func4 ( var17 ) ) ; 
+var6 = var27 ; 
+goto var28 ; 
+} 
+for ( var18 = number ; var18 < var16 . var29 ; var18 ++ ) 
+for ( var19 = number ; var19 < ( var16 . var25 >> ( var18 > number ) ) ; var19 ++ ) 
+func7 ( var5 , var9 + var16 . var30 [ var18 ] + var19 * var16 . var31 [ var18 ] , var16 . var24 ) ; 
+var28 : 
+if ( var16 . var20 != var21 ) 
+func8 ( var1 -> var23 , var16 . var20 ) ; 
+if ( var16 . var22 != var21 ) 
+func9 ( var1 -> var23 , var16 . var22 ) ; 
+func10 ( var3 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,31 @@
+LRESULT CALLBACK func1 ( HWND var1 , UINT var2 , WPARAM var3 , LPARAM var4 ) 
+{ 
+HDC var5 ; 
+PAINTSTRUCT var6 ; 
+int var7 ; 
+switch ( var2 ) { 
+case var8 : 
+return number ; 
+case var9 : 
+var5 = func2 ( var1 , & var6 ) ; 
+var7 = func3 ( var5 , number , number , var10 . var11 , var10 . var12 , 
+number , number , var10 . var11 , var10 . var12 , 
+var13 , ( BITMAPINFO * ) var14 , 
+number , var15 ) ; 
+func4 ( var1 , & var6 ) ; 
+return number ; 
+case var16 : 
+switch ( var3 ) { 
+case str : 
+case str : 
+case 0x1B : 
+func5 ( number ) ; 
+} 
+return number ; 
+case var17 : 
+case var18 : 
+func5 ( number ) ; 
+return number ; 
+} 
+return func6 ( var1 , var2 , var3 , var4 ) ; 
+} 

@@ -1,0 +1,10 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+ANullContext * var2 = var1 -> var3 ; 
+int64_t var4 [ ] = { var2 -> var5 , - number } ; 
+int var6 [ ] = { var2 -> var7 , - number } ; 
+func2 ( var1 , func3 ( var8 ) ) ; 
+func4 ( var1 , func5 ( var4 ) ) ; 
+func6 ( var1 , func7 ( var6 ) ) ; 
+return number ; 
+} 

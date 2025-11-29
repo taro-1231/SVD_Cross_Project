@@ -1,0 +1,33 @@
+func1 ( AVFormatContext * var1 , IPin * var2 ) 
+{ 
+struct dshow_ctx * var3 = var1 -> var4 ; 
+IAMBufferNegotiation * var5 = var6 ; 
+ALLOCATOR_PROPERTIES var7 = { - number , - number , - number , - number } ; 
+IAMStreamConfig * var8 = var6 ; 
+AM_MEDIA_TYPE * var9 = var6 ; 
+int var10 = func2 ( var11 ) ; 
+if ( func3 ( var2 , & var12 , ( void ** ) & var8 ) != var13 ) 
+goto var14 ; 
+if ( func4 ( var8 , & var9 ) != var13 ) 
+goto var14 ; 
+if ( ! func5 ( & var9 -> var15 , & var16 ) ) 
+goto var14 ; 
+var7 . var17 = ( ( ( WAVEFORMATEX * ) var9 -> var18 ) -> var19 ) 
+* var3 -> var20 / number ; 
+if ( func3 ( var2 , & var21 , ( void ** ) & var5 ) != var13 ) 
+goto var14 ; 
+if ( func6 ( var5 , & var7 ) != var13 ) 
+goto var14 ; 
+var10 = number ; 
+var14 : 
+if ( var5 ) 
+func7 ( var5 ) ; 
+if ( var9 ) { 
+if ( var9 -> var18 ) 
+func8 ( var9 -> var18 ) ; 
+func8 ( var9 ) ; 
+} 
+if ( var8 ) 
+func9 ( var8 ) ; 
+return var10 ; 
+} 

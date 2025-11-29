@@ -1,0 +1,34 @@
+int func1 ( GetBitContext * var1 , AACADTSHeaderInfo * var2 ) 
+{ 
+int var3 , var4 , var5 , var6 ; 
+int var7 , var8 ; 
+if ( func2 ( var1 , number ) != number ) 
+return var9 ; 
+func3 ( var1 ) ; 
+func4 ( var1 , number ) ; 
+var8 = func5 ( var1 ) ; 
+var7 = func2 ( var1 , number ) ; 
+var6 = func2 ( var1 , number ) ; 
+if ( ! var10 [ var6 ] ) 
+return var11 ; 
+func3 ( var1 ) ; 
+var5 = func2 ( var1 , number ) ; 
+func3 ( var1 ) ; 
+func3 ( var1 ) ; 
+func3 ( var1 ) ; 
+func3 ( var1 ) ; 
+var3 = func2 ( var1 , number ) ; 
+if ( var3 < var12 ) 
+return var13 ; 
+func4 ( var1 , number ) ; 
+var4 = func2 ( var1 , number ) ; 
+var2 -> var14 = var7 + number ; 
+var2 -> var15 = var5 ; 
+var2 -> var16 = var8 ; 
+var2 -> var17 = var4 + number ; 
+var2 -> var18 = var6 ; 
+var2 -> var19 = var10 [ var6 ] ; 
+var2 -> var20 = ( var4 + number ) * number ; 
+var2 -> var21 = var3 * number * var2 -> var19 / var2 -> var20 ; 
+return var3 ; 
+} 

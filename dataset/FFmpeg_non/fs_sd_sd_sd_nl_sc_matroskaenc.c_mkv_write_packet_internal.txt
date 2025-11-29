@@ -1,0 +1,72 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , int var3 ) 
+{ 
+MatroskaMuxContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+AVCodecContext * var7 = var1 -> var8 [ var2 -> var9 ] -> var7 ; 
+int var10 = ! ! ( var2 -> var11 & var12 ) ; 
+int var13 = var2 -> var13 ; 
+int var14 ; 
+int64_t var15 = var4 -> var16 [ var2 -> var9 ] . var17 ? var2 -> var18 : var2 -> var19 ; 
+int64_t var20 ; 
+int var21 = var4 -> var22 ? var4 -> var23 : var2 -> var9 + number ; 
+if ( var15 == var24 ) { 
+func2 ( var1 , var25 , str ) ; 
+return func3 ( var26 ) ; 
+} 
+var15 += var4 -> var16 [ var2 -> var9 ] . var27 ; 
+if ( var4 -> var28 != - number ) { 
+int64_t var29 = var15 - var4 -> var30 + var4 -> var16 [ var2 -> var9 ] . var27 ; 
+if ( ( int16_t ) var29 != var29 ) { 
+func2 ( var1 , var31 , str ) ; 
+func4 ( var1 , var2 ) ; 
+} 
+} 
+if ( ! var1 -> var6 -> var33 ) { 
+if ( ! var4 -> var34 ) { 
+var14 = func5 ( & var4 -> var34 ) ; 
+if ( var14 < number ) { 
+func2 ( var1 , var25 , str ) ; 
+return var14 ; 
+} 
+} 
+var6 = var4 -> var34 ; 
+} 
+if ( var4 -> var28 == - number ) { 
+var4 -> var28 = func6 ( var1 -> var6 ) ; 
+var4 -> var32 = func7 ( var6 , var35 , number ) ; 
+func8 ( var6 , var36 , func9 ( number , var15 ) ) ; 
+var4 -> var30 = func9 ( number , var15 ) ; 
+} 
+var20 = func6 ( var1 -> var6 ) - var4 -> var32 . var37 ; 
+if ( var7 -> var38 != var39 ) { 
+func10 ( var1 , var6 , var40 , var2 , var10 ) ; 
+if ( var1 -> var6 -> var33 && ( var7 -> var38 == var41 && var10 || var3 ) ) { 
+var14 = func11 ( var4 -> var42 , var2 -> var9 , var21 , var15 , var4 -> var28 , var20 , - number ) ; 
+if ( var14 < number ) return var14 ; 
+} 
+} else { 
+if ( var7 -> var43 == var44 ) { 
+var13 = func12 ( var1 , var6 , var2 ) ; 
+} else { 
+ebml_master var45 = func7 ( var6 , var46 , 
+func13 ( var2 -> var47 ) ) ; 
+if ( var2 -> var48 > number ) { 
+var13 = var2 -> var48 ; 
+} 
+func10 ( var1 , var6 , var49 , var2 , number ) ; 
+func8 ( var6 , var50 , var13 ) ; 
+func14 ( var6 , var45 ) ; 
+} 
+if ( var1 -> var6 -> var33 ) { 
+var14 = func11 ( var4 -> var42 , var2 -> var9 , var21 , var15 , 
+var4 -> var28 , var20 , var13 ) ; 
+if ( var14 < number ) 
+return var14 ; 
+} 
+} 
+var4 -> var13 = func9 ( var4 -> var13 , var15 + var13 ) ; 
+if ( var4 -> var51 ) 
+var4 -> var51 [ var2 -> var9 ] = 
+func9 ( var4 -> var51 [ var2 -> var9 ] , var15 + var13 ) ; 
+return number ; 
+} 

@@ -1,0 +1,81 @@
+static int func1 ( MpegEncContext * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+AVCodecContext * var4 = var1 -> var4 ; 
+Mpeg1Context * var5 = ( Mpeg1Context * ) var1 ; 
+int var6 ; 
+if ( var1 -> var7 || var1 -> var8 == var9 ) { 
+AVFrameSideData * var10 ; 
+if ( ( var6 = func2 ( var1 , var4 ) ) < number ) 
+return var6 ; 
+func3 ( var1 ) ; 
+var1 -> var11 -> var12 -> var13 = number ; 
+if ( var1 -> var14 ) { 
+if ( var1 -> var15 ) { 
+if ( var1 -> var16 ) 
+var1 -> var11 -> var12 -> var13 = number ; 
+else 
+var1 -> var11 -> var12 -> var13 = number ; 
+} else if ( var1 -> var17 ) { 
+var1 -> var11 -> var12 -> var13 = number ; 
+} 
+} 
+var10 = func4 ( var1 -> var11 -> var12 , 
+var18 , 
+sizeof ( var5 -> var10 ) ) ; 
+if ( ! var10 ) 
+return func5 ( var19 ) ; 
+memcpy ( var10 -> var20 , & var5 -> var10 , sizeof ( var5 -> var10 ) ) ; 
+if ( var5 -> var21 ) { 
+AVFrameSideData * var22 = func4 ( 
+var1 -> var11 -> var12 , var23 , 
+var5 -> var24 ) ; 
+if ( var22 ) 
+memcpy ( var22 -> var20 , var5 -> var21 , var5 -> var24 ) ; 
+func6 ( & var5 -> var21 ) ; 
+var4 -> var25 |= var26 ; 
+} 
+if ( var5 -> var27 ) { 
+AVStereo3D * var28 = func7 ( var1 -> var11 -> var12 ) ; 
+if ( ! var28 ) 
+return func5 ( var19 ) ; 
+* var28 = var5 -> var29 ; 
+var5 -> var27 = number ; 
+} 
+if ( var5 -> var30 ) { 
+AVFrameSideData * var22 = 
+func4 ( var1 -> var11 -> var12 , 
+var31 , number ) ; 
+if ( ! var22 ) 
+return func5 ( var19 ) ; 
+* var22 -> var20 = var5 -> var32 ; 
+var5 -> var30 = number ; 
+} 
+if ( var33 && ( var4 -> var34 & var35 ) ) 
+func8 ( var4 ) ; 
+} else { 
+int var36 ; 
+if ( ! var1 -> var11 ) { 
+func9 ( var1 -> var4 , var37 , str ) ; 
+return var38 ; 
+} 
+if ( var1 -> var4 -> var39 && 
+( var1 -> var4 -> var40 & var41 ) ) { 
+if ( ( var6 = var1 -> var4 -> var39 -> func10 ( var1 -> var4 ) ) < number ) { 
+func9 ( var4 , var37 , 
+str ) ; 
+return var6 ; 
+} 
+} 
+for ( var36 = number ; var36 < number ; var36 ++ ) { 
+var1 -> var42 . var12 -> var20 [ var36 ] = var1 -> var11 -> var12 -> var20 [ var36 ] ; 
+if ( var1 -> var8 == var43 ) 
+var1 -> var42 . var12 -> var20 [ var36 ] += 
+var1 -> var11 -> var12 -> var44 [ var36 ] ; 
+} 
+} 
+if ( var4 -> var39 ) { 
+if ( ( var6 = var4 -> var39 -> func11 ( var4 , var2 , var3 ) ) < number ) 
+return var6 ; 
+} 
+return number ; 
+} 

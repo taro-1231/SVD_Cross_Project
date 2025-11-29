@@ -1,0 +1,62 @@
+func1 ( ICaptureGraphBuilder2 * var1 , 
+IBaseFilter * var2 , enum dshowDeviceType var3 , AVFormatContext * var4 ) 
+{ 
+struct dshow_ctx * var5 = var4 -> var6 ; 
+IAMCrossbar * var7 = var8 ; 
+IBaseFilter * var9 = var8 ; 
+IAMTVTuner * var10 = var8 ; 
+IBaseFilter * var11 = var8 ; 
+IAMAudioInputMixer * var12 = var8 ; 
+IBaseFilter * var13 = var8 ; 
+HRESULT var14 ; 
+var14 = func2 ( var1 , & var15 , ( const GUID * ) var8 , 
+var2 , & var16 , ( void ** ) & var7 ) ; 
+if ( var14 != var17 ) { 
+var14 = var17 ; 
+goto var18 ; 
+} 
+if ( var3 == var19 && var5 -> var20 || 
+var3 == var21 && var5 -> var22 ) { 
+var14 = func3 ( var7 , & var23 , ( void ** ) & var9 ) ; 
+if ( var14 != var17 ) 
+goto var18 ; 
+func4 ( var9 , var4 ) ; 
+} 
+if ( var3 == var19 && var5 -> var24 ) { 
+var14 = func2 ( var1 , & var15 , var8 , 
+var2 , & var25 , ( void ** ) & var10 ) ; 
+if ( var14 == var17 ) { 
+var14 = func3 ( var10 , & var23 , ( void ** ) & var11 ) ; 
+if ( var14 != var17 ) 
+goto var18 ; 
+func4 ( var11 , var4 ) ; 
+} else { 
+func5 ( var4 , var26 , str ) ; 
+} 
+} 
+if ( var3 == var21 && var5 -> var27 ) { 
+var14 = func2 ( var1 , & var15 , var8 , 
+var2 , & var28 , ( void ** ) & var12 ) ; 
+if ( var14 == var17 ) { 
+var14 = func3 ( var12 , & var23 , ( void ** ) & var13 ) ; 
+if ( var14 != var17 ) 
+goto var18 ; 
+func4 ( var13 , var4 ) ; 
+} else { 
+func5 ( var4 , var26 , str ) ; 
+} 
+} 
+var14 = func6 ( var7 , var3 , var4 ) ; 
+if ( var14 != var17 ) 
+goto var18 ; 
+var18 : 
+if ( var7 ) 
+func7 ( var7 ) ; 
+if ( var9 ) 
+func8 ( var9 ) ; 
+if ( var10 ) 
+func9 ( var10 ) ; 
+if ( var11 ) 
+func8 ( var11 ) ; 
+return var14 ; 
+} 

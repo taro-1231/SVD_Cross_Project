@@ -1,0 +1,50 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+struct LATMContext * var5 = var1 -> var6 ; 
+int var7 , var8 ; 
+GetBitContext var9 ; 
+if ( ( var8 = func2 ( & var9 , var4 -> var10 , var4 -> var11 ) ) < number ) 
+return var8 ; 
+if ( func3 ( & var9 , number ) != var12 ) 
+return var13 ; 
+var7 = func3 ( & var9 , number ) + number ; 
+if ( var7 > var4 -> var11 ) 
+return var13 ; 
+if ( ( var8 = func4 ( var5 , & var9 ) ) < number ) 
+return var8 ; 
+if ( ! var5 -> var14 ) { 
+if ( ! var1 -> var15 ) { 
+* var3 = number ; 
+return var4 -> var11 ; 
+} else { 
+func5 ( & var5 -> var16 ) ; 
+if ( ( var8 = decode_audio_specific_config ( 
+& var5 -> var16 , var1 , & var5 -> var16 . var17 [ number ] . var18 , 
+var1 -> var15 , var1 -> extradata_size * 8LL , number ) ) < number ) { 
+func6 ( & var5 -> var16 ) ; 
+return var8 ; 
+} 
+var5 -> var14 = number ; 
+} 
+} 
+if ( func7 ( & var9 , number ) == number ) { 
+av_log ( var5 -> var16 . var1 , AV_LOG_ERROR , 
+str 
+str ) ; 
+return var13 ; 
+} 
+switch ( var5 -> var16 . var17 [ number ] . var18 . var19 ) { 
+case var20 : 
+case var21 : 
+case var22 : 
+case var23 : 
+var8 = func8 ( var1 , var2 , var3 , & var9 ) ; 
+break ; 
+var24 : 
+var8 = func9 ( var1 , var2 , var3 , & var9 , var4 ) ; 
+} 
+if ( var8 < number ) 
+return var8 ; 
+return var7 ; 
+} 

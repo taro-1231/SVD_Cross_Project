@@ -1,0 +1,47 @@
+static void func1 ( AlacEncodeContext * var1 , int var2 ) 
+{ 
+int var3 ; 
+AlacLPCContext var4 = var1 -> var4 [ var2 ] ; 
+int32_t * var5 = var1 -> var6 [ var2 ] ; 
+if ( var4 . var7 == number ) { 
+var5 [ number ] = var1 -> var8 [ var2 ] [ number ] ; 
+for ( var3 = number ; var3 < var1 -> var9 ; var3 ++ ) { 
+var5 [ var3 ] = var1 -> var8 [ var2 ] [ var3 ] - 
+var1 -> var8 [ var2 ] [ var3 - number ] ; 
+} 
+return ; 
+} 
+if ( var4 . var7 > number ) { 
+int32_t * var10 = var1 -> var8 [ var2 ] ; 
+var5 [ number ] = var10 [ number ] ; 
+for ( var3 = number ; var3 <= var4 . var7 ; var3 ++ ) 
+var5 [ var3 ] = func2 ( var10 [ var3 ] - var10 [ var3 - number ] , var1 -> var11 ) ; 
+for ( var3 = var4 . var7 + number ; var3 < var1 -> var9 ; var3 ++ ) { 
+int var12 = number << ( var4 . var13 - number ) , var14 , var15 ; 
+for ( var15 = number ; var15 < var4 . var7 ; var15 ++ ) { 
+var12 += ( var10 [ var4 . var7 - var15 ] - var10 [ number ] ) * 
+var4 . var16 [ var15 ] ; 
+} 
+var12 >>= var4 . var13 ; 
+var12 += var10 [ number ] ; 
+var5 [ var3 ] = func2 ( var10 [ var4 . var7 + number ] - var12 , 
+var1 -> var11 ) ; 
+var14 = var5 [ var3 ] ; 
+if ( var14 ) { 
+int var17 = var4 . var7 - number ; 
+int var18 = ( var14 < number ) ; 
+while ( var17 >= number && ( var18 ? ( var14 < number ) : ( var14 > number ) ) ) { 
+int var19 = var10 [ number ] - var10 [ var4 . var7 - var17 ] ; 
+int var20 = ( var19 ? func3 ( var19 ) : number ) ; 
+if ( var18 ) 
+var20 *= - number ; 
+var4 . var16 [ var17 ] -= var20 ; 
+var19 *= var20 ; 
+var14 -= ( var19 >> var4 . var13 ) * ( var4 . var7 - var17 ) ; 
+var17 -- ; 
+} 
+} 
+var10 ++ ; 
+} 
+} 
+} 

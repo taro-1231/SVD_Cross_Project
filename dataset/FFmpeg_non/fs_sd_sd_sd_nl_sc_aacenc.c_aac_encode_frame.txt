@@ -1,0 +1,225 @@
+static int func1 ( AVCodecContext * var1 , AVPacket * var2 , 
+const AVFrame * var3 , int * var4 ) 
+{ 
+AACEncContext * var5 = var1 -> var6 ; 
+float ** var7 = var5 -> var8 , * var9 , * var10 , * var11 ; 
+ChannelElement * var12 ; 
+SingleChannelElement * var13 ; 
+int var14 , var15 , var16 , var17 , var18 , var19 , var20 ; 
+int var21 = number , var22 = number , var23 = number , var24 = number ; 
+int var25 [ number ] ; 
+FFPsyWindowInfo var26 [ var27 ] ; 
+if ( var5 -> var28 == number ) 
+return number ; 
+if ( var3 ) { 
+if ( ( var20 = func2 ( & var5 -> var29 , var3 ) ) < number ) 
+return var20 ; 
+} 
+func3 ( var5 , var3 ) ; 
+if ( var5 -> var30 ) 
+func4 ( var5 -> var30 , var5 -> var8 , var5 -> var31 ) ; 
+if ( ! var1 -> var32 ) 
+return number ; 
+var19 = number ; 
+for ( var14 = number ; var14 < var5 -> var33 [ number ] ; var14 ++ ) { 
+FFPsyWindowInfo * var34 = var26 + var19 ; 
+var18 = var5 -> var33 [ var14 + number ] ; 
+var17 = var18 == var35 ? number : number ; 
+var12 = & var5 -> var12 [ var14 ] ; 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+IndividualChannelStream * var36 = & var12 -> var15 [ var15 ] . var36 ; 
+int var37 = var19 + var15 ; 
+float var38 ; 
+var11 = & var7 [ var37 ] [ number ] ; 
+var9 = var11 + number ; 
+var10 = var9 + ( number + number ) ; 
+if ( ! var3 ) 
+var10 = var39 ; 
+if ( var18 == var40 ) { 
+var34 [ var15 ] . var41 [ number ] = var42 ; 
+var34 [ var15 ] . var43 = number ; 
+var34 [ var15 ] . var44 = number ; 
+var34 [ var15 ] . var45 [ number ] = number ; 
+var36 -> var46 = var5 -> var47 >= number ? number : number ; 
+} else { 
+var34 [ var15 ] = var5 -> var48 . var49 -> func5 ( & var5 -> var48 , var9 , var10 , var37 , 
+var36 -> var50 [ number ] ) ; 
+} 
+var36 -> var50 [ number ] = var36 -> var50 [ number ] ; 
+var36 -> var50 [ number ] = var34 [ var15 ] . var41 [ number ] ; 
+var36 -> var51 [ number ] = var36 -> var51 [ number ] ; 
+var36 -> var51 [ number ] = var34 [ var15 ] . var43 ; 
+var36 -> var44 = var34 [ var15 ] . var44 ; 
+var36 -> var52 = var5 -> var48 . var53 [ var36 -> var44 == number ] ; 
+var36 -> var46 = var18 == var40 ? var36 -> var46 : var5 -> var48 . var54 [ var36 -> var44 == number ] ; 
+var36 -> var55 = var34 [ var15 ] . var41 [ number ] == var56 ? 
+var57 [ var5 -> var47 ] : 
+var58 [ var5 -> var47 ] ; 
+var36 -> var59 = var34 [ var15 ] . var41 [ number ] == var56 ? 
+var60 [ var5 -> var47 ] : 
+var61 [ var5 -> var47 ] ; 
+var38 = number ; 
+for ( var16 = number ; var16 < var36 -> var44 ; var16 ++ ) 
+var36 -> var62 [ var16 ] = var34 [ var15 ] . var45 [ var16 ] ; 
+for ( var16 = number ; var16 < var36 -> var44 ; var16 ++ ) { 
+if ( var34 [ var15 ] . var63 [ var16 ] > var64 ) { 
+var36 -> var65 [ var16 ] = number ; 
+var38 = func6 ( var38 , var34 [ var15 ] . var63 [ var16 ] ) ; 
+} else { 
+var36 -> var65 [ var16 ] = number ; 
+} 
+} 
+if ( var38 > var64 ) { 
+var36 -> var38 = var64 / var38 ; 
+} else { 
+var36 -> var38 = number ; 
+} 
+func7 ( var5 , & var12 -> var15 [ var15 ] , var11 ) ; 
+if ( isnan ( var12 -> var15 -> var66 [ number ] ) ) { 
+func8 ( var1 , var67 , str ) ; 
+return func9 ( var68 ) ; 
+} 
+func10 ( var5 , & var12 -> var15 [ var15 ] ) ; 
+} 
+var19 += var17 ; 
+} 
+if ( ( var20 = func11 ( var1 , var2 , number * var5 -> var31 , number ) ) < number ) 
+return var20 ; 
+do { 
+int var69 ; 
+func12 ( & var5 -> var70 , var2 -> var71 , var2 -> var72 ) ; 
+if ( ( var1 -> var32 & number ) == number && ! ( var1 -> var73 & var74 ) ) 
+func13 ( var5 , var75 ) ; 
+var19 = number ; 
+memset ( var25 , number , sizeof ( var25 ) ) ; 
+for ( var14 = number ; var14 < var5 -> var33 [ number ] ; var14 ++ ) { 
+FFPsyWindowInfo * var34 = var26 + var19 ; 
+const float * var66 [ number ] ; 
+var18 = var5 -> var33 [ var14 + number ] ; 
+var17 = var18 == var35 ? number : number ; 
+var12 = & var5 -> var12 [ var14 ] ; 
+var12 -> var76 = number ; 
+memset ( var12 -> var77 , number , sizeof ( var12 -> var77 ) ) ; 
+memset ( var12 -> var78 , number , sizeof ( var12 -> var78 ) ) ; 
+func14 ( & var5 -> var70 , number , var18 ) ; 
+func14 ( & var5 -> var70 , number , var25 [ var18 ] ++ ) ; 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var13 = & var12 -> var15 [ var15 ] ; 
+var66 [ var15 ] = var13 -> var66 ; 
+var13 -> var36 . var79 = number ; 
+memset ( & var13 -> var36 . var80 , number , sizeof ( var13 -> var36 . var80 ) ) ; 
+memset ( & var13 -> var81 , number , sizeof ( TemporalNoiseShaping ) ) ; 
+for ( var16 = number ; var16 < number ; var16 ++ ) 
+if ( var13 -> var82 [ var16 ] > var83 ) 
+var13 -> var82 [ var16 ] = number ; 
+} 
+var5 -> var48 . var49 -> func15 ( & var5 -> var48 , var19 , var66 , var34 ) ; 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var5 -> var37 = var19 + var15 ; 
+var5 -> var84 -> func16 ( var1 , var5 , & var12 -> var15 [ var15 ] , var5 -> var85 ) ; 
+} 
+if ( var17 > number 
+&& var34 [ number ] . var41 [ number ] == var34 [ number ] . var41 [ number ] 
+&& var34 [ number ] . var43 == var34 [ number ] . var43 ) { 
+var12 -> var76 = number ; 
+for ( var16 = number ; var16 < var34 [ number ] . var44 ; var16 ++ ) { 
+if ( var34 [ number ] . var45 [ var16 ] != var34 [ number ] . var45 [ var16 ] ) { 
+var12 -> var76 = number ; 
+break ; 
+} 
+} 
+} 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var13 = & var12 -> var15 [ var15 ] ; 
+var5 -> var37 = var19 + var15 ; 
+if ( var5 -> var86 . var87 && var5 -> var84 -> func17 ) 
+var5 -> var84 -> func17 ( var5 , var1 , var13 ) ; 
+if ( var5 -> var86 . var81 && var5 -> var84 -> func18 ) 
+var5 -> var84 -> func18 ( var5 , var13 ) ; 
+if ( var5 -> var86 . var81 && var5 -> var84 -> func19 ) 
+var5 -> var84 -> func19 ( var5 , var13 ) ; 
+if ( var13 -> var81 . var88 ) 
+var23 = number ; 
+} 
+var5 -> var37 = var19 ; 
+if ( var5 -> var86 . var89 ) { 
+if ( var5 -> var84 -> func20 ) 
+var5 -> var84 -> func20 ( var5 , var1 , var12 ) ; 
+if ( var12 -> var22 ) var22 = number ; 
+func21 ( var12 ) ; 
+} 
+if ( var5 -> var86 . var90 ) { 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var13 = & var12 -> var15 [ var15 ] ; 
+var5 -> var37 = var19 + var15 ; 
+if ( var5 -> var86 . var90 && var5 -> var84 -> func22 ) 
+var5 -> var84 -> func22 ( var5 , var13 ) ; 
+if ( var12 -> var15 [ var15 ] . var36 . var79 ) var24 = number ; 
+} 
+if ( var5 -> var84 -> func23 ) 
+var5 -> var84 -> func23 ( var5 , var12 ) ; 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var13 = & var12 -> var15 [ var15 ] ; 
+var5 -> var37 = var19 + var15 ; 
+if ( var5 -> var86 . var90 && var5 -> var84 -> func24 ) 
+var5 -> var84 -> func24 ( var5 , var13 ) ; 
+} 
+var5 -> var37 = var19 ; 
+} 
+if ( var5 -> var86 . var91 ) { 
+if ( var5 -> var86 . var91 == - number && var5 -> var84 -> func25 ) 
+var5 -> var84 -> func25 ( var5 , var12 ) ; 
+else if ( var12 -> var76 ) 
+memset ( var12 -> var78 , number , sizeof ( var12 -> var78 ) ) ; 
+for ( var16 = number ; var16 < number ; var16 ++ ) 
+var12 -> var78 [ var16 ] = var12 -> var77 [ var16 ] ? number : var12 -> var78 [ var16 ] ; 
+func26 ( var12 ) ; 
+} 
+func27 ( var12 , var17 ) ; 
+if ( var17 == number ) { 
+func14 ( & var5 -> var70 , number , var12 -> var76 ) ; 
+if ( var12 -> var76 ) { 
+func28 ( var5 , & var12 -> var15 [ number ] . var36 ) ; 
+if ( var5 -> var84 -> func29 ) 
+var5 -> var84 -> func29 ( var5 , & var12 -> var15 [ number ] ) ; 
+func30 ( & var5 -> var70 , var12 ) ; 
+if ( var12 -> var21 ) var21 = number ; 
+} 
+} 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+var5 -> var37 = var19 + var15 ; 
+func31 ( var1 , var5 , & var12 -> var15 [ var15 ] , var12 -> var76 ) ; 
+} 
+var19 += var17 ; 
+} 
+var69 = func32 ( & var5 -> var70 ) ; 
+if ( var69 <= number * var5 -> var31 - number ) { 
+var5 -> var48 . var92 . var93 = var69 / var5 -> var31 ; 
+break ; 
+} 
+if ( var22 || var21 || var23 || var24 ) { 
+for ( var14 = number ; var14 < var5 -> var33 [ number ] ; var14 ++ ) { 
+var17 = var18 == var35 ? number : number ; 
+var12 = & var5 -> var12 [ var14 ] ; 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) 
+memcpy ( var12 -> var15 [ var15 ] . var66 , var12 -> var15 [ var15 ] . var94 , sizeof ( var12 -> var15 [ var15 ] . var66 ) ) ; 
+} 
+} 
+var5 -> var85 *= var1 -> var95 * number / var1 -> var96 / var69 ; 
+} while ( number ) ; 
+func14 ( & var5 -> var70 , number , var97 ) ; 
+func33 ( & var5 -> var70 ) ; 
+var1 -> var69 = func32 ( & var5 -> var70 ) ; 
+if ( ! ( var1 -> var73 & var98 ) ) { 
+float var99 = var1 -> var95 * number / var1 -> var96 / var1 -> var69 ; 
+var5 -> var85 *= var99 ; 
+var5 -> var85 = func34 ( var5 -> var85 , number ) ; 
+} 
+if ( ! var3 ) 
+var5 -> var28 ++ ; 
+func35 ( & var5 -> var29 , var1 -> var100 , & var2 -> var101 , 
+& var2 -> var102 ) ; 
+var2 -> var72 = func32 ( & var5 -> var70 ) >> number ; 
+* var4 = number ; 
+return number ; 
+} 

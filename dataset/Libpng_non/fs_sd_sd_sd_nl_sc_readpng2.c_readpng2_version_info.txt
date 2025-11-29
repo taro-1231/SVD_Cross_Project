@@ -1,0 +1,7 @@
+void func1 ( void ) 
+{ 
+fprintf ( var1 , str , 
+var2 , var3 ) ; 
+fprintf ( var1 , str , 
+var4 , var5 ) ; 
+} 

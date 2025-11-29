@@ -1,0 +1,72 @@
+static inline int func1 ( MpegEncContext * var1 , 
+int16_t * var2 , int var3 ) 
+{ 
+int var4 , var5 , var6 , var7 , var8 , var9 ; 
+int var10 ; 
+RLTable * var11 ; 
+uint8_t * const var12 = var1 -> var13 . var14 ; 
+const uint16_t * var15 ; 
+const int var16 = var1 -> var16 ; 
+int var17 ; 
+if ( var3 < number ) { 
+var15 = var1 -> var18 ; 
+var10 = number ; 
+} else { 
+var15 = var1 -> var19 ; 
+var10 = ( var3 & number ) + number ; 
+} 
+var6 = func2 ( & var1 -> var20 , var10 ) ; 
+if ( var6 >= number ) 
+return var21 ; 
+var5 = var1 -> var22 [ var10 ] ; 
+var5 += var6 ; 
+var1 -> var22 [ var10 ] = var5 ; 
+var2 [ number ] = var5 << ( number - var1 -> var23 ) ; 
+func3 ( var1 -> var24 , str , var2 [ number ] ) ; 
+var17 = var2 [ number ] ^ number ; 
+var7 = number ; 
+if ( var1 -> var25 ) 
+var11 = & var26 ; 
+else 
+var11 = & var27 ; 
+{ 
+func4 ( var28 , & var1 -> var20 ) ; 
+for ( ; ; ) { 
+func5 ( var28 , & var1 -> var20 ) ; 
+func6 ( var4 , var9 , var28 , & var1 -> var20 , var11 -> var29 [ number ] , 
+var30 , number , number ) ; 
+if ( var4 == number ) { 
+break ; 
+} else if ( var4 != number ) { 
+var7 += var9 ; 
+func7 ( var1 , var7 ) ; 
+var8 = var12 [ var7 ] ; 
+var4 = ( var4 * var16 * var15 [ var8 ] ) >> number ; 
+var4 = ( var4 ^ func8 ( var28 , & var1 -> var20 , number ) ) - 
+func8 ( var28 , & var1 -> var20 , number ) ; 
+func9 ( var28 , & var1 -> var20 , number ) ; 
+} else { 
+var9 = func10 ( var28 , & var1 -> var20 , number ) + number ; 
+func9 ( var28 , & var1 -> var20 , number ) ; 
+func5 ( var28 , & var1 -> var20 ) ; 
+var4 = func8 ( var28 , & var1 -> var20 , number ) ; 
+func11 ( var28 , & var1 -> var20 , number ) ; 
+var7 += var9 ; 
+func7 ( var1 , var7 ) ; 
+var8 = var12 [ var7 ] ; 
+if ( var4 < number ) { 
+var4 = ( - var4 * var16 * var15 [ var8 ] ) >> number ; 
+var4 = - var4 ; 
+} else { 
+var4 = ( var4 * var16 * var15 [ var8 ] ) >> number ; 
+} 
+} 
+var17 ^= var4 ; 
+var2 [ var8 ] = var4 ; 
+} 
+func12 ( var28 , & var1 -> var20 ) ; 
+} 
+var2 [ number ] ^= var17 & number ; 
+var1 -> var31 [ var3 ] = var7 ; 
+return number ; 
+} 

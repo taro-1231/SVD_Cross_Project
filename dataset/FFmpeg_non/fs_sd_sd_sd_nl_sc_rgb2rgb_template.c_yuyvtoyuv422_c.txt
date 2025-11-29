@@ -1,0 +1,30 @@
+static void func1 ( uint8_t * var1 , uint8_t * var2 , uint8_t * var3 , 
+const uint8_t * var4 , int var5 , int var6 , 
+int var7 , int var8 , int var9 ) 
+{ 
+int var10 ; 
+const int var11 = func2 ( var5 , number ) ; 
+for ( var10 = number ; var10 < var6 ; var10 ++ ) { 
+func3 ( var4 , var1 , var5 ) ; 
+func4 ( var4 , var2 , var3 , var11 ) ; 
+var4 += var9 ; 
+var1 += var7 ; 
+var2 += var8 ; 
+var3 += var8 ; 
+} 
+} 
+} 
+static void func1 ( uint8_t * var1 , uint8_t * var2 , uint8_t * var3 , 
+const uint8_t * var4 , int var5 , int var6 , 
+int var7 , int var8 , int var9 ) 
+{ 
+int var10 ; 
+const int var11 = func2 ( var5 , number ) ; 
+for ( var10 = number ; var10 < var6 ; var10 ++ ) { 
+func3 ( var4 , var1 , var5 ) ; 
+func4 ( var4 , var2 , var3 , var11 ) ; 
+var4 += var9 ; 
+var1 += var7 ; 
+var2 += var8 ; 
+var3 += var8 ; 
+} 

@@ -1,0 +1,28 @@
+static int func1 ( AVFilterContext * var1 , unsigned long var2 , LADSPA_Data var3 ) 
+{ 
+LADSPAContext * var4 = var1 -> var5 ; 
+const char * var6 = var4 -> var7 -> var8 ; 
+LADSPA_PortRangeHint * var9 = ( LADSPA_PortRangeHint * ) var4 -> var7 -> var10 + 
+var4 -> var11 [ var2 ] ; 
+if ( var2 >= var4 -> var12 ) { 
+func2 ( var1 , var13 , str , 
+var2 , var4 -> var12 ) ; 
+return func3 ( var14 ) ; 
+} 
+if ( func4 ( var9 -> var15 ) && 
+var3 < var9 -> var16 ) { 
+func2 ( var1 , var13 , 
+str , 
+var6 , var2 , var9 -> var16 ) ; 
+return func3 ( var14 ) ; 
+} 
+if ( func5 ( var9 -> var15 ) && 
+var3 > var9 -> var17 ) { 
+func2 ( var1 , var13 , 
+str , 
+var6 , var2 , var9 -> var17 ) ; 
+return func3 ( var14 ) ; 
+} 
+var4 -> var18 [ var2 ] = var3 ; 
+return number ; 
+} 

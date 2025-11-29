@@ -1,0 +1,28 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+char * var4 , * var5 ; 
+func2 ( var6 ) ; 
+var4 = func3 ( var3 ? var3 : str ) ; 
+if ( ! var4 ) 
+return func4 ( var7 ) ; 
+var5 = strchr ( var4 , str ) ; 
+if ( var5 ) 
+* var5 += number ; 
+if ( ! * var4 ) { 
+func5 ( var4 , var5 ) ; 
+} else if ( ! strcmp ( var4 , str ) ) { 
+func6 ( var5 , number ) ; 
+} else if ( ! strcmp ( var4 , str ) ) { 
+func6 ( var5 , number ) ; 
+} else if ( ! strcmp ( var4 , str ) ) { 
+func7 ( var5 ) ; 
+} else if ( ! strcmp ( var4 , str ) ) { 
+func8 ( var5 ) ; 
+} else if ( ! strcmp ( var4 , str ) ) { 
+func9 ( var5 ) ; 
+} else { 
+func5 ( var4 , var5 ) ; 
+} 
+func10 ( & var4 ) ; 
+return number ; 
+} 

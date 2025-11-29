@@ -1,0 +1,4 @@
+static Frame * func1 ( FrameQueue * var1 ) 
+{ 
+return & var1 -> var2 [ ( var1 -> var3 + var1 -> var4 ) % var1 -> var5 ] ; 
+} 

@@ -1,0 +1,7 @@
+static void func1 ( int * var1 , int var2 ) 
+{ 
+int var3 ; 
+srand ( func2 ( ) ) ; 
+for ( var3 = number ; var3 < var2 ; var3 ++ ) 
+var1 [ var3 ] = rand ( ) ; 
+} 

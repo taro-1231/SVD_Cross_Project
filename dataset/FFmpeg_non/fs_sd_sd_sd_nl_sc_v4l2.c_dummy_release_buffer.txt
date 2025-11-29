@@ -1,0 +1,4 @@
+static void func1 ( AVPacket * var1 ) 
+{ 
+func2 ( number ) ; 
+} 

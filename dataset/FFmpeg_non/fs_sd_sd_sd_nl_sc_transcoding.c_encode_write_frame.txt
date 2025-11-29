@@ -1,0 +1,28 @@
+static int func1 ( AVFrame * var1 , unsigned int var2 , int * var3 ) { 
+int var4 ; 
+int var5 ; 
+AVPacket var6 ; 
+int ( * func2 ) ( AVCodecContext * , AVPacket * , const AVFrame * , int * ) = 
+( var7 -> var8 [ var2 ] -> var9 -> var10 == 
+var11 ) ? var12 : var13 ; 
+if ( ! var3 ) 
+var3 = & var5 ; 
+func3 ( var14 , var15 , str ) ; 
+var6 . var16 = var14 ; 
+var6 . var17 = number ; 
+func4 ( & var6 ) ; 
+var4 = func2 ( var18 -> var8 [ var2 ] -> var9 , & var6 , 
+var1 , var3 ) ; 
+func5 ( & var1 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+if ( ! ( * var3 ) ) 
+return number ; 
+var6 . var2 = var2 ; 
+func6 ( & var6 , 
+var18 -> var8 [ var2 ] -> var9 -> var19 , 
+var18 -> var8 [ var2 ] -> var19 ) ; 
+func3 ( var14 , var20 , str ) ; 
+var4 = func7 ( var18 , & var6 ) ; 
+return var4 ; 
+} 

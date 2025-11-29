@@ -1,0 +1,7 @@
+static int func1 ( AVFormatContext * var1 , int var2 , 
+AVFrame ** var3 , unsigned var4 ) 
+{ 
+if ( ( var4 & var5 ) ) 
+return number ; 
+return func2 ( var1 , * var3 , number , number ) ; 
+} 

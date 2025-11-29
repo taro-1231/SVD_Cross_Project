@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVFilterContext * var1 , void * var2 ) 
+{ 
+BufferSinkContext * var3 = var1 -> var4 ; 
+AVABufferSinkParams * var5 = var2 ; 
+int var6 ; 
+if ( var5 ) { 
+if ( ( var6 = func2 ( var3 , str , var5 -> var7 , var8 , number ) ) < number || 
+( var6 = func2 ( var3 , str , var5 -> var9 , - number , number ) ) < number || 
+( var6 = func2 ( var3 , str , var5 -> var10 , - number , number ) ) < number || 
+( var6 = func2 ( var3 , str , var5 -> var11 , - number , number ) ) < number || 
+( var6 = func3 ( var3 , str , var5 -> var12 , number ) ) < number ) 
+return var6 ; 
+} 
+return func4 ( var1 ) ; 
+} 

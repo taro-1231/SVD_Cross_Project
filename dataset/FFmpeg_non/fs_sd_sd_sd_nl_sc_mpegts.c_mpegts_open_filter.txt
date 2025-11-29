@@ -1,0 +1,18 @@
+static MpegTSFilter * func1 ( MpegTSContext * var1 , unsigned int var2 , 
+enum MpegTSFilterType var3 ) 
+{ 
+MpegTSFilter * var4 ; 
+func2 ( var1 -> var5 , var6 , str , var2 ) ; 
+if ( var2 >= var7 || var1 -> var8 [ var2 ] ) 
+return var9 ; 
+var4 = func3 ( sizeof ( MpegTSFilter ) ) ; 
+if ( ! var4 ) 
+return var9 ; 
+var1 -> var8 [ var2 ] = var4 ; 
+var4 -> var3 = var3 ; 
+var4 -> var2 = var2 ; 
+var4 -> var10 = - number ; 
+var4 -> var11 = - number ; 
+var4 -> var12 = - number ; 
+return var4 ; 
+} 

@@ -1,0 +1,71 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+static const char var2 [ ] = var2 ; 
+ShowCQTContext * var3 = var1 -> var4 ; 
+FT_Library var5 = var6 ; 
+FT_Face var7 = var6 ; 
+int var8 = var3 -> var9 ? number : number ; 
+int var10 = ( var11 / number ) * var8 ; 
+int var12 = ( var13 / number ) * var8 ; 
+int var14 = number * var8 ; 
+int var15 = var14 * number ; 
+int var16 = var14 * number ; 
+int var17 = number ; 
+int var18 ; 
+var3 -> var19 = var6 ; 
+if ( ! var3 -> var20 ) 
+return ; 
+if ( func2 ( & var5 ) ) 
+goto var21 ; 
+if ( func3 ( var5 , var3 -> var20 , number , & var7 ) ) 
+goto var21 ; 
+if ( func4 ( var7 , number * number , number , number , number ) ) 
+goto var21 ; 
+if ( func5 ( var7 , var2 , var22 ) ) 
+goto var21 ; 
+if ( func4 ( var7 , number * number * var16 / var7 -> var23 -> var24 , number , number , number ) ) 
+goto var21 ; 
+var3 -> var19 = func6 ( var12 , var10 ) ; 
+if ( ! var3 -> var19 ) 
+goto var21 ; 
+memset ( var3 -> var19 , number , var12 * var10 ) ; 
+for ( var18 = number ; var18 < number ; var18 ++ ) { 
+int var25 , var26 , var27 , var28 , var29 , var30 , var31 ; 
+if ( var2 [ var18 ] == var2 ) 
+continue ; 
+if ( func5 ( var7 , var2 [ var18 ] , var22 ) ) 
+goto var21 ; 
+if ( var7 -> var23 -> var32 . var18 != var14 * number && ! var17 ) { 
+func7 ( var1 , var33 , var2 ) ; 
+var17 = number ; 
+} 
+var26 = var12 - number * var8 - var7 -> var23 -> var34 ; 
+for ( var27 = number ; var27 < number ; var27 ++ ) { 
+var25 = var27 * var15 + var18 * var14 + var7 -> var23 -> var35 ; 
+for ( var29 = number ; var29 < var7 -> var23 -> var36 . var37 ; var29 ++ ) { 
+var31 = var29 + var26 ; 
+if ( var31 < number ) 
+continue ; 
+if ( var31 >= var12 ) 
+break ; 
+for ( var28 = number ; var28 < var7 -> var23 -> var36 . var38 ; var28 ++ ) { 
+var30 = var28 + var25 ; 
+if ( var30 < number ) 
+continue ; 
+if ( var30 >= var10 ) 
+break ; 
+var3 -> var19 [ var31 * var10 + var30 ] = var7 -> var23 -> var36 . var39 [ var29 * var7 -> var23 -> var36 . var38 + var28 ] ; 
+} 
+} 
+} 
+} 
+func8 ( var7 ) ; 
+func9 ( var5 ) ; 
+return ; 
+var21 : 
+func7 ( var1 , var33 , var2 ) ; 
+func8 ( var7 ) ; 
+func9 ( var5 ) ; 
+func10 ( & var3 -> var19 ) ; 
+return ; 
+} 

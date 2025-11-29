@@ -1,0 +1,6 @@
+static unsigned func1 ( uint64_t var1 ) 
+{ 
+unsigned var2 = number ; 
+for ( ; var2 && ! ( var1 & number ) ; -- var2 , var1 >>= number ) ; 
+return var2 ; 
+} 

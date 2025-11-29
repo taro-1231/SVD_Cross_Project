@@ -1,0 +1,52 @@
+static int func1 ( void * var1 , const unsigned char * var2 , int var3 , int var4 , int var5 ) 
+{ 
+int var6 = number ; 
+int var7 = var4 ; 
+const uint16_t * var8 = ( const uint16_t * ) var2 ; 
+switch ( var5 ) { 
+case number : 
+while ( var4 >= number ) { 
+var6 += var2 [ number ] + var2 [ var3 ] + var2 [ number * var3 ] + var2 [ number * var3 ] 
++ var2 [ number * var3 ] + var2 [ number * var3 ] + var2 [ number * var3 ] + var2 [ number * var3 ] ; 
+var2 += number * var3 ; 
+var4 -= number ; 
+} 
+while ( -- var4 >= number ) { 
+var6 += var2 [ number ] ; 
+var2 += var3 ; 
+} 
+break ; 
+case number : 
+var3 >>= number ; 
+while ( var4 >= number ) { 
+var6 += var8 [ number ] + var8 [ var3 ] + var8 [ number * var3 ] + var8 [ number * var3 ] 
++ var8 [ number * var3 ] + var8 [ number * var3 ] + var8 [ number * var3 ] + var8 [ number * var3 ] ; 
+var8 += number * var3 ; 
+var4 -= number ; 
+} 
+while ( -- var4 >= number ) { 
+var6 += var8 [ number ] ; 
+var8 += var3 ; 
+} 
+break ; 
+case number : 
+case number : 
+while ( var4 >= number ) { 
+var6 += var2 [ number ] + var2 [ number ] + var2 [ number ] 
++ var2 [ var3 ] + var2 [ number + var3 ] + var2 [ number + var3 ] 
++ var2 [ number * var3 ] + var2 [ number + number * var3 ] + var2 [ number + number * var3 ] 
++ var2 [ number * var3 ] + var2 [ number + number * var3 ] + var2 [ number + number * var3 ] ; 
+var2 += number * var3 ; 
+var4 -= number ; 
+} 
+while ( -- var4 >= number ) { 
+var6 += var2 [ number ] + var2 [ number ] + var2 [ number ] ; 
+var2 += var3 ; 
+} 
+var7 *= number ; 
+break ; 
+} 
+var6 /= var7 ; 
+func2 ( var1 , var9 , str , var6 ) ; 
+return var6 ; 
+} 

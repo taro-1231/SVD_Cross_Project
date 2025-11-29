@@ -1,0 +1,14 @@
+static void func1 ( uint64_t var1 [ number ] , double var2 [ number ] , int var3 , int var4 , int var5 ) 
+{ 
+printf ( str , 
+func2 ( var1 [ number ] , ( uint64_t ) var3 * var4 * var5 ) , 
+func2 ( var1 [ number ] , ( uint64_t ) var3 * var4 * var5 / number ) , 
+func2 ( var1 [ number ] , ( uint64_t ) var3 * var4 * var5 / number ) , 
+func2 ( var1 [ number ] + var1 [ number ] + var1 [ number ] , ( uint64_t ) var3 * var4 * var5 * number / number ) ) ; 
+printf ( str , 
+var2 [ number ] / var3 , 
+var2 [ number ] / var3 , 
+var2 [ number ] / var3 , 
+( var2 [ number ] * number + var2 [ number ] + var2 [ number ] ) / ( var3 * number ) , 
+func3 ( var2 [ number ] * number + var2 [ number ] + var2 [ number ] , var3 * number ) ) ; 
+} 

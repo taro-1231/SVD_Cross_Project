@@ -1,0 +1,19 @@
+static void func1 ( VideoState * var1 ) 
+{ 
+if ( var1 ) { 
+func2 ( var1 ) ; 
+} 
+if ( var2 ) 
+func3 ( var2 ) ; 
+if ( var3 ) 
+func4 ( var3 ) ; 
+func5 ( var4 ) ; 
+func6 ( ) ; 
+func7 ( & var5 ) ; 
+func8 ( ) ; 
+if ( var6 ) 
+printf ( str ) ; 
+func9 ( ) ; 
+func10 ( var4 , var7 , str , str ) ; 
+exit ( number ) ; 
+} 

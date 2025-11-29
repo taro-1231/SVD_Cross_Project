@@ -1,0 +1,20 @@
+static int func1 ( MpegEncContext * func2 ) { 
+int var1 = number ; 
+int var2 = number ; 
+if ( func2 -> var3 * number + number > func2 -> var4 ) var1 = func2 -> var4 - func2 -> var3 * number ; 
+if ( func2 -> var5 * number + number > func2 -> var6 ) var2 = func2 -> var6 - func2 -> var5 * number ; 
+if ( var1 == number && var2 == number ) 
+if ( func2 -> var7 -> var8 == var9 ) { 
+return func2 -> func3 . func4 [ number ] ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var13 * number , func2 -> var14 [ number ] , func2 -> var13 , number ) + 
+func2 -> func3 . func4 [ number ] ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , func2 -> var15 , number ) + 
+func2 -> func3 . func4 [ number ] ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , func2 -> var15 , number ) ; 
+} else { 
+return func2 -> func3 . func5 [ number ] ( var16 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var13 * number , func2 -> var14 [ number ] , func2 -> var13 , number ) + 
+func2 -> func3 . func5 [ number ] ( var16 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , func2 -> var15 , number ) + 
+func2 -> func3 . func5 [ number ] ( var16 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , func2 -> var15 , number ) ; 
+} 
+else 
+return func5 ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var13 * number , func2 -> var14 [ number ] , var1 , var2 , func2 -> var13 ) 
++ func5 ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , var1 >> number , var2 >> number , func2 -> var15 ) 
++ func5 ( func2 , func2 -> var10 . var11 -> var12 [ number ] + func2 -> var3 * number + func2 -> var5 * func2 -> var15 * number , func2 -> var14 [ number ] , var1 >> number , var2 >> number , func2 -> var15 ) ; 
+} 

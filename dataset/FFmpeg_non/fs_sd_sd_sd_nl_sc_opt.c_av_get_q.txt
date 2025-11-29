@@ -1,0 +1,12 @@
+AVRational func1 ( void * var1 , const char * var2 , const AVOption ** var3 ) 
+{ 
+int64_t var4 = number ; 
+double var5 = number ; 
+int var6 = number ; 
+if ( func2 ( var1 , var2 , var3 , & var5 , & var6 , & var4 , number ) < number ) 
+return ( AVRational ) { number , number } ; 
+if ( var5 == number && ( int ) var4 == var4 ) 
+return ( AVRational ) { var4 , var6 } ; 
+else 
+return func3 ( var5 * var4 / var6 , number << number ) ; 
+} 

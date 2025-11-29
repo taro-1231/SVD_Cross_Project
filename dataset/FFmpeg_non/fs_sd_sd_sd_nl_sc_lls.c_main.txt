@@ -1,0 +1,26 @@
+int func1 ( void ) 
+{ 
+LLSModel var2 ; 
+int var3 , var4 ; 
+AVLFG var1 ; 
+func2 ( & var1 , number ) ; 
+func3 ( & var2 , number ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+LOCAL_ALIGNED ( 32 , double , var5 , [ 4 ] ) ; 
+double var6 ; 
+var5 [ number ] = ( func4 ( & var1 ) / ( double ) var7 - number ) * number ; 
+var5 [ number ] = var5 [ number ] + func4 ( & var1 ) / ( double ) var7 - number ; 
+var5 [ number ] = var5 [ number ] + func4 ( & var1 ) / ( double ) var7 - number ; 
+var5 [ number ] = var5 [ number ] + func4 ( & var1 ) / ( double ) var7 - number ; 
+var2 . func5 ( & var2 , var5 ) ; 
+func6 ( & var2 , number , number ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var6 = var2 . func7 ( & var2 , var5 + number , var4 ) ; 
+printf ( str , 
+var5 [ number ] , var4 , var6 , sqrt ( var2 . var8 [ var4 ] / ( var3 + number ) ) , 
+var2 . var9 [ var4 ] [ number ] , var2 . var9 [ var4 ] [ number ] , 
+var2 . var9 [ var4 ] [ number ] ) ; 
+} 
+} 
+return number ; 
+} 

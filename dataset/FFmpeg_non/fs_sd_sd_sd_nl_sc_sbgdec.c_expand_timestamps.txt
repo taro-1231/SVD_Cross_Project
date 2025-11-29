@@ -1,0 +1,47 @@
+static void func1 ( void * var1 , struct sbg_script * var2 ) 
+{ 
+int var3 , var4 = number ; 
+int64_t var5 , var6 , var7 = number ; 
+for ( var3 = number ; var3 < var2 -> var8 ; var3 ++ ) 
+var4 += var2 -> var9 [ var3 ] . var10 . var11 == str ; 
+if ( var4 == var2 -> var8 ) { 
+var5 = number ; 
+if ( var2 -> var12 != var13 ) 
+func2 ( var1 , var14 , 
+str ) ; 
+} else if ( var4 == number && var2 -> var12 != var13 || 
+var2 -> var16 ) { 
+if ( var2 -> var12 == var13 ) 
+var2 -> var12 = var2 -> var9 [ number ] . var10 . var17 ; 
+var5 = var2 -> var12 ; 
+} else { 
+time_t var18 ; 
+struct var19 * var19 , var20 ; 
+func2 ( var1 , var14 , 
+str 
+str ) ; 
+var15 ( & var18 ) ; 
+var19 = func3 ( & var18 , & var20 ) ; 
+var5 = var19 ? var19 -> var21 * number + var19 -> var22 * number + var19 -> var23 : 
+var18 % var24 ; 
+func2 ( var1 , var25 , str , 
+( int ) ( var5 / number ) , ( int ) ( var5 / number ) % number , ( int ) var5 % number ) ; 
+var5 *= var26 ; 
+for ( var3 = number ; var3 < var2 -> var8 ; var3 ++ ) { 
+if ( var2 -> var9 [ var3 ] . var10 . var11 == str ) { 
+var2 -> var9 [ var3 ] . var10 . var17 += var5 ; 
+var2 -> var9 [ var3 ] . var10 . var11 = str ; 
+} 
+} 
+} 
+if ( var2 -> var12 == var13 ) 
+var2 -> var12 = var2 -> var16 ? var2 -> var9 [ number ] . var10 . var17 : var5 ; 
+var2 -> var27 = var2 -> var28 ? var2 -> var12 + var2 -> var28 : 
+var13 ; 
+var6 = var5 ; 
+for ( var3 = number ; var3 < var2 -> var8 ; var3 ++ ) { 
+if ( var2 -> var9 [ var3 ] . var10 . var17 + var7 < var6 ) 
+var7 += var29 ; 
+var6 = var2 -> var9 [ var3 ] . var10 . var17 += var7 ; 
+} 
+} 

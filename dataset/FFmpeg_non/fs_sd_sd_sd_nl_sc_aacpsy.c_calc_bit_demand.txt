@@ -1,0 +1,23 @@
+static int func1 ( AacPsyContext * var1 , float var2 , int var3 , int var4 , 
+int var5 ) 
+{ 
+const float var6 = var5 ? var7 : var8 ; 
+const float var9 = var5 ? var10 : var11 ; 
+const float var12 = var5 ? var13 : var14 ; 
+const float var15 = var5 ? var16 : var17 ; 
+const float var18 = var5 ? var19 : var20 ; 
+const float var21 = var5 ? var22 : var23 ; 
+float var24 , var25 , var26 , var27 , var28 ; 
+var1 -> var28 += var1 -> var29 - var3 ; 
+var1 -> var28 = func2 ( var1 -> var28 , number , var4 ) ; 
+var28 = func3 ( ( float ) var1 -> var28 / var4 , var18 , var21 ) ; 
+var24 = func3 ( var2 , var1 -> var2 . var30 , var1 -> var2 . var31 ) ; 
+var25 = ( var28 + var9 ) * var6 ; 
+assert ( var25 <= number && var25 >= - number ) ; 
+var26 = ( var28 + var15 ) * var12 ; 
+assert ( var26 <= number && var26 >= - number ) ; 
+var27 = number - var25 + ( ( var26 - var25 ) / ( var1 -> var2 . var31 - var1 -> var2 . var30 ) ) * ( var24 - var1 -> var2 . var30 ) ; 
+var1 -> var2 . var31 = func4 ( var2 , var1 -> var2 . var31 ) ; 
+var1 -> var2 . var30 = func5 ( var2 , var1 -> var2 . var30 ) ; 
+return func5 ( var1 -> var29 * var27 , var1 -> var29 + var4 - var3 ) ; 
+} 

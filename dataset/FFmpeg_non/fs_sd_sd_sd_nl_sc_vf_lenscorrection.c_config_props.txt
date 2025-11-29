@@ -1,0 +1,13 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+LenscorrectionCtx * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+const AVPixFmtDescriptor * var8 = func2 ( var6 -> var9 ) ; 
+var4 -> var10 = var8 -> var11 ; 
+var4 -> var12 = var8 -> var13 ; 
+var1 -> var14 = var4 -> var15 = var6 -> var14 ; 
+var1 -> var16 = var4 -> var17 = var6 -> var16 ; 
+var4 -> var18 = func3 ( var6 -> var9 ) ; 
+return number ; 
+} 

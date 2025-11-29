@@ -1,0 +1,75 @@
+static int func1 ( AVFormatContext * var1 , int var2 , 
+AVCodecContext * var3 , AVFrame * var4 , uint64_t var5 , uint64_t var6 , int var7 ) 
+{ 
+int var8 ; 
+int var9 = number ; 
+int var10 ; 
+int var11 = number ; 
+int var12 ; 
+uint8_t * var13 ; 
+int64_t var14 ; 
+AVPacket var15 ; 
+var12 = func2 ( var3 -> var16 , var3 -> var17 , var3 -> var18 , number ) ; 
+var13 = func3 ( var12 ) ; 
+if ( ! var13 ) { 
+func4 ( var19 , var20 , str ) ; 
+return func5 ( var21 ) ; 
+} 
+if ( ! var7 ) { 
+var10 = func6 ( var1 , var2 , var5 , var22 ) ; 
+printf ( str PRId64 str PRId64 str , var5 , var6 ) ; 
+if ( var10 < number ) { 
+func4 ( var19 , var20 , str ) ; 
+return var10 ; 
+} 
+func7 ( var3 ) ; 
+} 
+func8 ( & var15 ) ; 
+do { 
+if ( ! var11 ) 
+if ( func9 ( var1 , & var15 ) < number ) 
+var11 = number ; 
+if ( var11 ) { 
+var15 . var24 = var19 ; 
+var15 . var25 = number ; 
+} 
+if ( var15 . var26 == var2 || var11 ) { 
+var9 = number ; 
+if ( ( var15 . var23 == var27 ) && ( ! var11 ) ) { 
+func4 ( var19 , var20 , str ) ; 
+return - number ; 
+} 
+var10 = func10 ( var3 , var4 , & var9 , & var15 ) ; 
+if ( var10 < number ) { 
+func4 ( var19 , var20 , str ) ; 
+return var10 ; 
+} 
+if ( var9 ) { 
+var8 = av_image_copy_to_buffer ( var13 , var12 , 
+( const uint8_t * const * ) var4 -> var24 , ( const int * ) var4 -> linesize , 
+var3 -> var16 , var3 -> var17 , var3 -> var18 , number ) ; 
+if ( var8 < number ) { 
+func4 ( var19 , var20 , str ) ; 
+return var8 ; 
+} 
+if ( ( var4 -> var28 > var6 ) && ( ! var7 ) ) 
+break ; 
+var14 = func11 ( number , ( const uint8_t * ) var13 , var8 ) ; 
+printf ( str PRId64 str , var4 -> var28 , var14 ) ; 
+if ( var7 ) { 
+if ( func12 ( var14 , var4 -> var28 ) < number ) 
+return - number ; 
+} 
+else { 
+if ( func13 ( var14 , var4 -> var28 ) < number ) 
+return - number ; 
+} 
+} 
+} 
+func14 ( & var15 ) ; 
+func8 ( & var15 ) ; 
+} while ( ( ! var11 || var9 ) && ( var7 || ( var4 -> var28 + func15 ( var4 ) <= var6 ) ) ) ; 
+func14 ( & var15 ) ; 
+func16 ( & var13 ) ; 
+return number ; 
+} 

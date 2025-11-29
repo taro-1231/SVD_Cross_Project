@@ -1,0 +1,21 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ReplayGainContext * var4 = var2 -> var5 ; 
+int var6 ; 
+for ( var6 = number ; var6 < func2 ( var7 ) ; var6 ++ ) { 
+if ( var7 [ var6 ] . var8 == var1 -> var8 ) 
+break ; 
+} 
+func3 ( var6 < func2 ( var7 ) ) ; 
+var4 -> var9 = var7 [ var6 ] . var10 ; 
+var4 -> var11 = var7 [ var6 ] . var12 ; 
+var4 -> var13 = var7 [ var6 ] . var14 ; 
+var4 -> var15 = var7 [ var6 ] . var16 ; 
+var4 -> var17 = number ; 
+var4 -> var18 = number ; 
+var1 -> var19 = 
+var1 -> var20 = 
+var1 -> var21 = var1 -> var8 / number ; 
+return number ; 
+} 

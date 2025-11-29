@@ -1,0 +1,22 @@
+BOOL CALLBACK func1 ( HWND var1 , UINT var2 , 
+WPARAM var3 , LPARAM var4 ) 
+{ 
+switch ( var2 ) 
+{ 
+case var5 : 
+func2 ( var1 , var6 ) ; 
+func3 ( var1 , func4 ( var1 , var7 ) ) ; 
+func2 ( var1 , var8 ) ; 
+return var9 ; 
+case var10 : 
+switch ( func5 ( var3 ) ) 
+{ 
+case var11 : 
+case var12 : 
+func6 ( var1 , number ) ; 
+return var9 ; 
+} 
+break ; 
+} 
+return var13 ; 
+} 

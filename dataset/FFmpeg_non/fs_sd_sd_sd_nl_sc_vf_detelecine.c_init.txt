@@ -1,0 +1,36 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+DetelecineContext * var2 = var1 -> var3 ; 
+const char * var4 ; 
+int var5 = number ; 
+if ( ! strlen ( var2 -> var6 ) ) { 
+func2 ( var1 , var7 , str ) ; 
+return var8 ; 
+} 
+for ( var4 = var2 -> var6 ; * var4 ; var4 ++ ) { 
+if ( ! func3 ( * var4 ) ) { 
+func2 ( var1 , var7 , str ) ; 
+return var8 ; 
+} 
+var5 = func4 ( * var4 - str , var5 ) ; 
+var2 -> var9 . var10 += * var4 - str ; 
+var2 -> var9 . var11 += number ; 
+} 
+var2 -> var12 = number ; 
+var2 -> var13 = number ; 
+var2 -> var14 = var15 ; 
+if ( var2 -> var16 != number ) { 
+int var17 = number ; 
+for ( var4 = var2 -> var6 ; * var4 ; var4 ++ ) { 
+var17 += * var4 - str ; 
+var2 -> var13 ++ ; 
+if ( var17 >= number * var2 -> var16 ) { 
+var2 -> var12 = var17 - number * var2 -> var16 ; 
+break ; 
+} 
+} 
+} 
+func2 ( var1 , var18 , str , 
+var2 -> var6 , ( var5 + number ) / number , var2 -> var9 . var10 , var2 -> var9 . var11 ) ; 
+return number ; 
+} 

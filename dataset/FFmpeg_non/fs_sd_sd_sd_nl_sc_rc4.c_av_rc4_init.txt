@@ -1,0 +1,19 @@
+int func1 ( AVRC4 * var1 , const var2 * var3 , int var4 , int var5 ) { 
+int var6 , var7 ; 
+var2 var8 ; 
+var2 * var9 = var1 -> var9 ; 
+int var10 = var4 >> number ; 
+if ( var4 & number ) 
+return - number ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) 
+var9 [ var6 ] = var6 ; 
+var8 = number ; 
+for ( var7 = number , var6 = number ; var6 < number ; var6 ++ , var7 ++ ) { 
+if ( var7 == var10 ) var7 = number ; 
+var8 += var9 [ var6 ] + var3 [ var7 ] ; 
+func2 ( var2 , var9 [ var6 ] , var9 [ var8 ] ) ; 
+} 
+var1 -> var11 = number ; 
+var1 -> var8 = var9 [ number ] ; 
+return number ; 
+} 

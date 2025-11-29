@@ -1,0 +1,5 @@
+func1 ( struct display * var1 ) 
+{ 
+var2 ( & var1 -> var3 ) ; 
+var2 ( & var1 -> var4 ) ; 
+} 

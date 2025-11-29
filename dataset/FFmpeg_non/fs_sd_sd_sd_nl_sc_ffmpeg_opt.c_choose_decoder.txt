@@ -1,0 +1,11 @@
+static AVCodec * func1 ( OptionsContext * var1 , AVFormatContext * var2 , AVStream * var3 ) 
+{ 
+char * var4 = var5 ; 
+func2 ( var6 , var7 , var4 , var2 , var3 ) ; 
+if ( var4 ) { 
+AVCodec * var8 = func3 ( var4 , var3 -> var9 -> var10 , number ) ; 
+var3 -> var9 -> var11 = var8 -> var12 ; 
+return var8 ; 
+} else 
+return func4 ( var3 -> var9 -> var11 ) ; 
+} 

@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+PaletteGenContext * var6 = var2 -> var7 ; 
+int var8 ; 
+var8 = func2 ( var4 ) ; 
+if ( var8 == var9 && ! var6 -> var10 && var6 -> var11 ) { 
+var8 = func3 ( var1 , func4 ( var2 ) ) ; 
+var6 -> var10 = number ; 
+return var8 ; 
+} 
+return var8 ; 
+} 

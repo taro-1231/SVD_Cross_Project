@@ -1,0 +1,37 @@
+static void func1 ( MpegEncContext * var1 ) 
+{ 
+if ( var1 -> var2 && 
+var1 -> var3 . var4 && 
+! var1 -> var5 ) { 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 -> var8 ) ; 
+int var9 = var6 -> var10 ; 
+int var11 = var6 -> var12 ; 
+var1 -> var13 . func3 ( var1 -> var3 . var14 -> var15 [ number ] , 
+var1 -> var3 . var14 -> var16 [ number ] , 
+var1 -> var17 , var1 -> var18 , 
+var19 , var19 , 
+var20 | var21 ) ; 
+var1 -> var13 . func3 ( var1 -> var3 . var14 -> var15 [ number ] , 
+var1 -> var3 . var14 -> var16 [ number ] , 
+var1 -> var17 >> var9 , 
+var1 -> var18 >> var11 , 
+var19 >> var9 , 
+var19 >> var11 , 
+var20 | var21 ) ; 
+var1 -> var13 . func3 ( var1 -> var3 . var14 -> var15 [ number ] , 
+var1 -> var3 . var14 -> var16 [ number ] , 
+var1 -> var17 >> var9 , 
+var1 -> var18 >> var11 , 
+var19 >> var9 , 
+var19 >> var11 , 
+var20 | var21 ) ; 
+} 
+func4 ( ) ; 
+var1 -> var22 = var1 -> var23 ; 
+var1 -> var24 [ var1 -> var23 ] = var1 -> var25 -> var14 -> var26 ; 
+if ( var1 -> var23 != var27 ) 
+var1 -> var28 = var1 -> var23 ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var29 ( var1 -> var7 -> var30 , var1 -> var3 . var14 ) ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+} 

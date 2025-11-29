@@ -1,0 +1,11 @@
+static int func1 ( AVFormatContext * var1 , AVStream * var2 , AVRational var3 ) 
+{ 
+MXFContext * var4 = var1 -> var5 ; 
+AVDictionaryEntry * var6 = func2 ( var1 -> var7 , str , var8 , number ) ; 
+if ( ! var6 ) 
+var6 = func2 ( var2 -> var7 , str , var8 , number ) ; 
+if ( var6 ) 
+return func3 ( & var4 -> var9 , var3 , var6 -> var10 , var1 ) ; 
+else 
+return func4 ( & var4 -> var9 , var3 , number , number , var1 ) ; 
+} 

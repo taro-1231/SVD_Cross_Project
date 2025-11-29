@@ -1,0 +1,16 @@
+static void func1 ( AACEncContext * var1 , const AVFrame * var2 ) 
+{ 
+int var3 ; 
+int var4 = number + ( var2 ? var2 -> var5 : number ) ; 
+const uint8_t * var6 = var7 [ var1 -> var8 - number ] ; 
+for ( var3 = number ; var3 < var1 -> var8 ; var3 ++ ) { 
+memcpy ( & var1 -> var9 [ var3 ] [ number ] , & var1 -> var9 [ var3 ] [ number ] , number * sizeof ( var1 -> var9 [ number ] [ number ] ) ) ; 
+if ( var2 ) { 
+memcpy ( & var1 -> var9 [ var3 ] [ number ] , 
+var2 -> var10 [ var6 [ var3 ] ] , 
+var2 -> var5 * sizeof ( var1 -> var9 [ number ] [ number ] ) ) ; 
+} 
+memset ( & var1 -> var9 [ var3 ] [ var4 ] , number , 
+( number - var4 ) * sizeof ( var1 -> var9 [ number ] [ number ] ) ) ; 
+} 
+} 

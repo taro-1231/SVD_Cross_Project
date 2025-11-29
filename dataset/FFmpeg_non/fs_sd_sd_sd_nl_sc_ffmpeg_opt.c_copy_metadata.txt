@@ -1,0 +1,75 @@
+static int func1 ( char * var1 , char * var2 , AVFormatContext * var3 , AVFormatContext * var4 , OptionsContext * var5 ) 
+{ 
+AVDictionary ** var6 = var7 ; 
+AVDictionary ** var8 = var7 ; 
+int var9 , var10 = number ; 
+char var11 , var12 ; 
+const char * var13 = var7 , * var14 = var7 ; 
+int var15 = number , var16 = number ; 
+func2 ( var2 , & var11 , & var15 , & var13 ) ; 
+func2 ( var1 , & var12 , & var16 , & var14 ) ; 
+if ( ! var4 ) { 
+if ( var12 == str || ! * var1 ) 
+var5 -> var17 = number ; 
+if ( var12 == str || ! * var1 ) 
+var5 -> var18 = number ; 
+if ( var12 == str || ! * var1 ) 
+var5 -> var19 = number ; 
+return number ; 
+} 
+if ( var11 == str || var12 == str ) 
+var5 -> var17 = number ; 
+if ( var11 == str || var12 == str ) 
+var5 -> var18 = number ; 
+if ( var11 == str || var12 == str ) 
+var5 -> var19 = number ; 
+if ( ! var4 ) 
+return number ; 
+if ( ( var20 ) < number || ( var20 ) >= ( var21 ) ) { \ 
+func3 ( var7 , var23 , str , \ 
+( var22 ) , ( var20 ) ) ; \ 
+func4 ( number ) ; \ 
+} 
+switch ( var25 ) { \ 
+case str : \ 
+var26 = & var27 -> var24 ; \ 
+break ; \ 
+case str : \ 
+METADATA_CHECK_INDEX ( var20 , var27 -> nb_chapters , str ) \ 
+var26 = & var27 -> var28 [ var20 ] -> var24 ; \ 
+break ; \ 
+case str : \ 
+METADATA_CHECK_INDEX ( var20 , var27 -> nb_programs , str ) \ 
+var26 = & var27 -> var29 [ var20 ] -> var24 ; \ 
+break ; \ 
+case str : \ 
+break ; \ 
+var30 : func6 ( number ) ; \ 
+} \ 
+func5 ( var11 , var6 , var4 , var15 ) ; 
+func5 ( var12 , var8 , var3 , var16 ) ; 
+if ( var11 == str ) { 
+for ( var9 = number ; var9 < var4 -> var31 ; var9 ++ ) { 
+if ( ( var10 = func7 ( var4 , var4 -> var32 [ var9 ] , var13 ) ) > number ) { 
+var6 = & var4 -> var32 [ var9 ] -> var24 ; 
+break ; 
+} else if ( var10 < number ) 
+func4 ( number ) ; 
+} 
+if ( ! var6 ) { 
+func3 ( var7 , var23 , str , var13 ) ; 
+func4 ( number ) ; 
+} 
+} 
+if ( var12 == str ) { 
+for ( var9 = number ; var9 < var3 -> var31 ; var9 ++ ) { 
+if ( ( var10 = func7 ( var3 , var3 -> var32 [ var9 ] , var14 ) ) > number ) { 
+var8 = & var3 -> var32 [ var9 ] -> var24 ; 
+func8 ( var8 , * var6 , var33 ) ; 
+} else if ( var10 < number ) 
+func4 ( number ) ; 
+} 
+} else 
+func8 ( var8 , * var6 , var33 ) ; 
+return number ; 
+} 

@@ -1,0 +1,8 @@
+static void func1 ( const SignalstatsContext * var1 , AVFrame * var2 , int var3 , int var4 ) 
+{ 
+const int var5 = var3 >> var1 -> var6 ; 
+const int var7 = var4 >> var1 -> var8 ; 
+var2 -> var9 [ number ] [ var4 * var2 -> var10 [ number ] + var3 ] = var1 -> var11 [ number ] ; 
+var2 -> var9 [ number ] [ var7 * var2 -> var10 [ number ] + var5 ] = var1 -> var11 [ number ] ; 
+var2 -> var9 [ number ] [ var7 * var2 -> var10 [ number ] + var5 ] = var1 -> var11 [ number ] ; 
+} 

@@ -1,0 +1,27 @@
+static int func1 ( void * var1 ) 
+{ 
+VideoState * var2 = var1 ; 
+Frame * var3 ; 
+int var4 ; 
+double var5 ; 
+for ( ; ; ) { 
+if ( ! ( var3 = func2 ( & var2 -> var6 ) ) ) 
+return number ; 
+if ( ( var4 = func3 ( & var2 -> var7 , var8 , & var3 -> var9 ) ) < number ) 
+break ; 
+var5 = number ; 
+if ( var4 && var3 -> var9 . var10 == number ) { 
+if ( var3 -> var9 . var5 != var11 ) 
+var5 = var3 -> var9 . var5 / ( double ) var12 ; 
+var3 -> var5 = var5 ; 
+var3 -> var13 = var2 -> var7 . var14 ; 
+var3 -> var15 = var2 -> var7 . var16 -> var15 ; 
+var3 -> var17 = var2 -> var7 . var16 -> var17 ; 
+var3 -> var18 = number ; 
+func4 ( & var2 -> var6 ) ; 
+} else if ( var4 ) { 
+func5 ( & var3 -> var9 ) ; 
+} 
+} 
+return number ; 
+} 

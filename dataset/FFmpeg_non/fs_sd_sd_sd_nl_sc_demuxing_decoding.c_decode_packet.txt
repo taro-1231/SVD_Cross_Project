@@ -1,0 +1,53 @@
+static int func1 ( int * var2 , int var3 ) 
+{ 
+int var4 = number ; 
+int var5 = var6 . var7 ; 
+* var2 = number ; 
+if ( var6 . var8 == var9 ) { 
+var4 = func2 ( var10 , var11 , var2 , & var6 ) ; 
+if ( var4 < number ) { 
+fprintf ( var12 , str , func3 ( var4 ) ) ; 
+return var4 ; 
+} 
+if ( * var2 ) { 
+if ( var11 -> var13 != var13 || var11 -> var14 != var14 || 
+var11 -> var15 != var16 ) { 
+fprintf ( var12 , str 
+str 
+str 
+str 
+str , 
+var13 , var14 , av_get_pix_fmt_name ( var16 ) , 
+var11 -> var13 , var11 -> var14 , 
+av_get_pix_fmt_name ( var11 -> var15 ) ) ; 
+return - number ; 
+} 
+printf ( str , 
+var3 ? str : str , 
+var18 ++ , var11 -> var19 , 
+func4 ( var11 -> var17 , & var10 -> var20 ) ) ; 
+func5 ( var21 , var22 , 
+( const uint8_t ** ) ( var11 -> var23 ) , var11 -> var24 , 
+var16 , var13 , var14 ) ; 
+fwrite ( var21 [ number ] , number , var25 , var26 ) ; 
+} 
+} else if ( var6 . var8 == var27 ) { 
+var4 = func6 ( var28 , var11 , var2 , & var6 ) ; 
+if ( var4 < number ) { 
+fprintf ( var12 , str , func3 ( var4 ) ) ; 
+return var4 ; 
+} 
+var5 = func7 ( var4 , var6 . var7 ) ; 
+if ( * var2 ) { 
+size_t var29 = var11 -> var30 * func8 ( var11 -> var15 ) ; 
+printf ( str , 
+var3 ? str : str , 
+var31 ++ , var11 -> var30 , 
+func4 ( var11 -> var17 , & var28 -> var20 ) ) ; 
+fwrite ( var11 -> var32 [ number ] , number , var29 , var33 ) ; 
+} 
+} 
+if ( * var2 && var1 == var34 ) 
+func9 ( var11 ) ; 
+return var5 ; 
+} 

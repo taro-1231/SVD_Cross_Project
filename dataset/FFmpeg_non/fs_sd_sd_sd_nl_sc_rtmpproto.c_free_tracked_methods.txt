@@ -1,0 +1,9 @@
+static void func1 ( RTMPContext * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) 
+func2 ( & var1 -> var4 [ var2 ] . var5 ) ; 
+func2 ( & var1 -> var4 ) ; 
+var1 -> var6 = number ; 
+var1 -> var3 = number ; 
+} 

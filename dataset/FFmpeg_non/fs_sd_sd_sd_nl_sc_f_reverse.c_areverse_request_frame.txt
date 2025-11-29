@@ -1,0 +1,48 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ReverseContext * var4 = var2 -> var5 ; 
+int var6 , var7 , var8 , var9 ; 
+var6 = func2 ( var2 -> var10 [ number ] ) ; 
+if ( var6 == var11 && var4 -> var12 > number ) { 
+AVFrame * var13 = var4 -> var14 [ var4 -> var12 - number ] ; 
+var13 -> var15 = var4 -> var15 [ var4 -> var16 ++ ] ; 
+for ( var7 = number ; var7 < var1 -> var17 ; var7 ++ ) { 
+switch ( var1 -> var18 ) { 
+case var19 : { 
+var20 * var21 = ( var20 * ) var13 -> var22 [ var7 ] ; 
+for ( var8 = number , var9 = var13 -> var23 - number ; var8 < var9 ; var8 ++ , var9 -- ) 
+func3 ( var20 , var21 [ var8 ] , var21 [ var9 ] ) ; 
+} 
+break ; 
+case var24 : { 
+var25 * var21 = ( var25 * ) var13 -> var22 [ var7 ] ; 
+for ( var8 = number , var9 = var13 -> var23 - number ; var8 < var9 ; var8 ++ , var9 -- ) 
+func3 ( var25 , var21 [ var8 ] , var21 [ var9 ] ) ; 
+} 
+break ; 
+case var26 : { 
+var27 * var21 = ( var27 * ) var13 -> var22 [ var7 ] ; 
+for ( var8 = number , var9 = var13 -> var23 - number ; var8 < var9 ; var8 ++ , var9 -- ) 
+func3 ( var27 , var21 [ var8 ] , var21 [ var9 ] ) ; 
+} 
+break ; 
+case var28 : { 
+var29 * var21 = ( var29 * ) var13 -> var22 [ var7 ] ; 
+for ( var8 = number , var9 = var13 -> var23 - number ; var8 < var9 ; var8 ++ , var9 -- ) 
+func3 ( var29 , var21 [ var8 ] , var21 [ var9 ] ) ; 
+} 
+break ; 
+case var30 : { 
+var31 * var21 = ( var31 * ) var13 -> var22 [ var7 ] ; 
+for ( var8 = number , var9 = var13 -> var23 - number ; var8 < var9 ; var8 ++ , var9 -- ) 
+func3 ( var31 , var21 [ var8 ] , var21 [ var9 ] ) ; 
+} 
+break ; 
+} 
+} 
+var6 = func4 ( var1 , var13 ) ; 
+var4 -> var12 -- ; 
+} 
+return var6 ; 
+} 

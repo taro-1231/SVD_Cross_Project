@@ -1,0 +1,14 @@
+void func1 ( AVTreeNode * var1 , void * var2 , 
+int ( * func2 ) ( void * var2 , void * var3 ) , 
+int ( * func3 ) ( void * var2 , void * var3 ) ) 
+{ 
+if ( var1 ) { 
+int var4 = func2 ? func2 ( var2 , var1 -> var3 ) : number ; 
+if ( var4 >= number ) 
+func1 ( var1 -> var5 [ number ] , var2 , func2 , func3 ) ; 
+if ( var4 == number ) 
+func3 ( var2 , var1 -> var3 ) ; 
+if ( var4 <= number ) 
+func1 ( var1 -> var5 [ number ] , var2 , func2 , func3 ) ; 
+} 
+} 

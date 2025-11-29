@@ -1,0 +1,5 @@
+int func1 ( AVFilterContext ** var1 , AVFilter * var2 , const char * var3 ) 
+{ 
+* var1 = func2 ( var2 , var3 ) ; 
+return * var1 ? number : func3 ( var4 ) ; 
+} 

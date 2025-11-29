@@ -1,0 +1,4 @@
+static void func1 ( AVIOContext * var1 , int64_t var2 ) 
+{ 
+func2 ( var1 , number * func3 ( var2 ) - ( var2 > number ) ) ; 
+} 

@@ -1,0 +1,105 @@
+static int func1 ( AVFormatContext * var1 , uint8_t * var2 , 
+int var3 ) 
+{ 
+MpegMuxContext * var4 = var1 -> var5 ; 
+int var6 , var7 , var8 , var9 ; 
+PutBitContext var10 ; 
+func2 ( & var10 , var2 , number ) ; 
+func3 ( & var10 , var11 ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var4 -> var12 ) ; 
+func4 ( & var10 , number , number ) ; 
+if ( var4 -> var13 && var3 == var14 ) { 
+func4 ( & var10 , number , number ) ; 
+} else 
+func4 ( & var10 , number , var4 -> var15 ) ; 
+if ( var4 -> var13 ) { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} else { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} 
+if ( var4 -> var13 || var4 -> var16 ) { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} else { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} 
+func4 ( & var10 , number , number ) ; 
+if ( var4 -> var13 && ( var3 & number ) == var17 ) { 
+func4 ( & var10 , number , number ) ; 
+} else 
+func4 ( & var10 , number , var4 -> var18 ) ; 
+if ( var4 -> var16 ) { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} else 
+func4 ( & var10 , number , number ) ; 
+if ( var4 -> var16 ) { 
+int var19 = number ; 
+int var20 = number ; 
+int var21 = number ; 
+for ( var7 = number ; var7 < var1 -> var22 ; var7 ++ ) { 
+StreamInfo * var23 = var1 -> var24 [ var7 ] -> var5 ; 
+var9 = var23 -> var9 ; 
+if ( var9 == number && var23 -> var25 > var21 ) { 
+var21 = var23 -> var25 ; 
+} else if ( var9 >= number && var9 <= number && 
+var23 -> var25 > var20 ) { 
+var20 = var23 -> var25 ; 
+} else if ( var9 == number && 
+var23 -> var25 > var19 ) { 
+var19 = var23 -> var25 ; 
+} 
+} 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var19 / number ) ; 
+if ( var20 == number ) 
+var20 = number ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var20 / number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var21 / number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , number ) ; 
+} else { 
+var8 = number ; 
+for ( var7 = number ; var7 < var1 -> var22 ; var7 ++ ) { 
+StreamInfo * var23 = var1 -> var24 [ var7 ] -> var5 ; 
+if ( ! var4 -> var13 || var23 -> var9 == var3 || 
+var3 == number ) { 
+var9 = var23 -> var9 ; 
+if ( var9 < number ) { 
+if ( var8 ) 
+continue ; 
+var8 = number ; 
+var9 = number ; 
+} 
+func4 ( & var10 , number , var9 ) ; 
+func4 ( & var10 , number , number ) ; 
+if ( var9 < number ) { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var23 -> var25 / number ) ; 
+} else { 
+func4 ( & var10 , number , number ) ; 
+func4 ( & var10 , number , var23 -> var25 / number ) ; 
+} 
+} 
+} 
+} 
+func5 ( & var10 ) ; 
+var6 = func6 ( & var10 ) - var10 . var2 ; 
+func7 ( var2 + number , var6 - number ) ; 
+return var6 ; 
+} 

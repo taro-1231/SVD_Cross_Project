@@ -1,0 +1,85 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+const char * var3 = var4 ; 
+const char * var5 = var4 ; 
+FILE * var6 = var4 ; 
+FILE * var7 = var4 ; 
+char * var8 = var4 ; 
+AVFilterGraph * var9 = func2 ( sizeof ( AVFilterGraph ) ) ; 
+char var10 ; 
+func3 ( var11 ) ; 
+while ( ( var10 = func4 ( var1 , var2 , str ) ) != - number ) { 
+switch ( var10 ) { 
+case str : 
+func5 ( ) ; 
+return number ; 
+case str : 
+var5 = var12 ; 
+break ; 
+case str : 
+var3 = var12 ; 
+break ; 
+case str : 
+return number ; 
+} 
+} 
+if ( ! var5 || ! strcmp ( var5 , str ) ) 
+var5 = str ; 
+var7 = fopen ( var5 , str ) ; 
+if ( ! var7 ) { 
+fprintf ( var13 , str , 
+var5 , strerror ( var14 ) ) ; 
+return number ; 
+} 
+if ( ! var3 || ! strcmp ( var3 , str ) ) 
+var3 = str ; 
+var6 = fopen ( var3 , str ) ; 
+if ( ! var6 ) { 
+fprintf ( var13 , str , 
+var3 , strerror ( var14 ) ) ; 
+return number ; 
+} 
+{ 
+int64_t var15 = number ; 
+struct var16 * var16 , * var17 , * var18 ; 
+char * var19 ; 
+var17 = var18 = func6 ( sizeof ( struct var16 ) ) ; 
+if ( ! var17 ) { 
+fprintf ( var13 , str ) ; 
+return number ; 
+} 
+while ( fgets ( var17 -> var20 , sizeof ( var17 -> var20 ) , var7 ) ) { 
+struct var16 * var21 = func6 ( sizeof ( struct var16 ) ) ; 
+if ( ! var21 ) { 
+fprintf ( var13 , str ) ; 
+return number ; 
+} 
+var15 += strlen ( var17 -> var20 ) ; 
+var17 -> var22 = var21 ; 
+var17 = var21 ; 
+} 
+var17 -> var22 = var4 ; 
+var8 = func6 ( var15 + number ) ; 
+if ( ! var8 ) { 
+fprintf ( var13 , str ) ; 
+return number ; 
+} 
+var19 = var8 ; 
+for ( var16 = var18 ; var16 -> var22 ; var16 = var16 -> var22 ) { 
+size_t var23 = strlen ( var16 -> var20 ) ; 
+memcpy ( var19 , var16 -> var20 , var23 ) ; 
+var19 += var23 ; 
+} 
+* var19 = str ; 
+} 
+func7 ( ) ; 
+if ( func8 ( var9 , var8 , var4 , var4 , var4 ) < number ) { 
+fprintf ( var13 , str ) ; 
+return number ; 
+} 
+if ( func9 ( var9 , var4 ) < number ) 
+return number ; 
+func10 ( var6 , var9 ) ; 
+fflush ( var6 ) ; 
+return number ; 
+} 

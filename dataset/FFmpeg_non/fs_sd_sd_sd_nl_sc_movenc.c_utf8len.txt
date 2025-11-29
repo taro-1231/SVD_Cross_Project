@@ -1,0 +1,10 @@
+static int func1 ( const uint8_t * var1 ) 
+{ 
+int var2 = number ; 
+int var3 ; 
+while ( * var1 ) { 
+GET_UTF8 ( var3 , * var1 ++ , return - number ; ) 
+var2 ++ ; 
+} 
+return var2 ; 
+} 

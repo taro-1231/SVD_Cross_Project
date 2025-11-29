@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+SilenceDetectContext * var3 = var1 -> var4 -> var5 ; 
+const int var6 = var1 -> var7 ; 
+const int var8 = var1 -> var9 ; 
+const int var10 = var2 -> var10 * var6 ; 
+const int64_t var11 = var8 * var3 -> var12 * var6 ; 
+if ( var3 -> var13 && var3 -> var13 != var8 ) 
+var3 -> var14 = var8 * var3 -> var14 / var3 -> var13 ; 
+var3 -> var13 = var8 ; 
+var3 -> func2 ( var3 , var2 , var10 , var11 , 
+var1 -> var15 ) ; 
+return func3 ( var1 -> var4 -> var16 [ number ] , var2 ) ; 
+} 

@@ -1,0 +1,53 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+SendCmdContext * var5 = var3 -> var6 ; 
+int64_t var7 ; 
+int var8 , var9 , var10 ; 
+if ( var2 -> var11 == var12 ) 
+goto var13 ; 
+var7 = func2 ( var2 -> var11 , var1 -> var14 , var15 ) ; 
+for ( var8 = number ; var8 < var5 -> var18 ; var8 ++ ) { 
+Interval * var19 = & var5 -> var20 [ var8 ] ; 
+int var21 = number ; 
+if ( ! var19 -> var22 && func3 ( var7 , var19 -> var16 , var19 -> var17 ) ) { 
+var21 += var23 ; 
+var19 -> var22 = number ; 
+} 
+if ( var19 -> var22 && ! func3 ( var7 , var19 -> var16 , var19 -> var17 ) ) { 
+var21 += var24 ; 
+var19 -> var22 = number ; 
+} 
+if ( var21 ) { 
+AVBPrint var25 ; 
+func4 ( var3 , var26 , 
+str , 
+func5 ( & var25 , var21 ) , var19 -> var27 , 
+( double ) var19 -> var16 / number , ( double ) var19 -> var17 / number , 
+( double ) var7 / number ) ; 
+for ( var9 = number ; var21 && var9 < var19 -> var28 ; var9 ++ ) { 
+Command * var29 = & var19 -> var30 [ var9 ] ; 
+char var31 [ number ] ; 
+if ( var29 -> var21 & var21 ) { 
+func4 ( var3 , var26 , 
+str , 
+var29 -> var27 , var29 -> var33 , var29 -> var32 , var29 -> var34 ) ; 
+var10 = func6 ( var1 -> var35 , 
+var29 -> var33 , var29 -> var32 , var29 -> var34 , 
+var31 , sizeof ( var31 ) , 
+var36 ) ; 
+func4 ( var3 , var26 , 
+str , 
+var29 -> var27 , func7 ( var10 ) , var31 ) ; 
+} 
+} 
+} 
+} 
+var13 : 
+switch ( var1 -> var37 ) { 
+case var38 : 
+case var39 : 
+return func8 ( var1 -> var4 -> var40 [ number ] , var2 ) ; 
+} 
+return func9 ( var41 ) ; 
+} 

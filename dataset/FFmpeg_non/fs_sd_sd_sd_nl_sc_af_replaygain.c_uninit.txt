@@ -1,0 +1,7 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+ReplayGainContext * var2 = var1 -> var3 ; 
+float var4 = func2 ( var2 -> var5 ) ; 
+func3 ( var1 , var6 , str , var4 ) ; 
+func3 ( var1 , var6 , str , var2 -> var7 ) ; 
+} 

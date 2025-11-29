@@ -1,0 +1,6 @@
+static av_cold int func1 ( AVFilterLink * var1 ) 
+{ 
+SineContext * var2 = var1 -> var3 -> var4 ; 
+var2 -> var5 = func2 ( var2 -> var5 , var2 -> var6 , var7 ) ; 
+return number ; 
+} 

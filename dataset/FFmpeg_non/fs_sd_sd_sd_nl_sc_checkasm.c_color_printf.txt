@@ -1,0 +1,31 @@
+static void func1 ( int var1 , const char * var2 , ... ) 
+{ 
+static int var3 = - number ; 
+va_list var4 ; 
+static HANDLE var5 ; 
+static WORD var6 ; 
+if ( var3 < number ) { 
+CONSOLE_SCREEN_BUFFER_INFO var7 ; 
+var5 = func2 ( var8 ) ; 
+if ( var5 && var5 != var9 && func3 ( var5 , & var7 ) ) { 
+var6 = var7 . var10 ; 
+var3 = number ; 
+} else 
+var3 = number ; 
+} 
+if ( var3 ) 
+func4 ( var5 , ( var6 & number ) | ( var1 & number ) ) ; 
+if ( var3 < number ) { 
+const char * term = getenv ( str ) ; 
+var3 = term && strcmp ( term , str ) && isatty ( 2 ) ; 
+} 
+if ( var3 ) 
+fprintf ( var11 , str , ( var1 & 0x08 ) >> 3 , var1 & 0x07 ) ; 
+func5 ( var4 , var2 ) ; 
+vfprintf ( var11 , var2 , var4 ) ; 
+func6 ( var4 ) ; 
+if ( var3 ) { 
+func4 ( var5 , var6 ) ; 
+fprintf ( var11 , str ) ; 
+} 
+} 

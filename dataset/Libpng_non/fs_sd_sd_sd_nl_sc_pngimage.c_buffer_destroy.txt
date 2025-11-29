@@ -1,0 +1,6 @@
+func1 ( struct var1 * var1 ) 
+{ 
+struct buffer_list * var2 = var1 -> var3 . var4 ; 
+func2 ( var1 ) ; 
+func3 ( var2 ) ; 
+} 

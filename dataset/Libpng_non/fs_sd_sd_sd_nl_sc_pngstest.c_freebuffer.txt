@@ -1,0 +1,7 @@
+func1 ( Image * var1 ) 
+{ 
+if ( var1 -> var2 ) free ( var1 -> var2 ) ; 
+var1 -> var2 = var3 ; 
+var1 -> var4 = number ; 
+var1 -> var5 = number ; 
+} 

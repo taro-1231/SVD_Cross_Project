@@ -1,0 +1,13 @@
+func1 ( png_modifier * var1 , png_infopp var2 , png_uint_32 var3 , 
+PNG_CONST char * var4 ) 
+{ 
+var1 -> var5 = var6 ; 
+var1 -> var7 = number ; 
+var1 -> var8 = number ; 
+var1 -> var9 = number ; 
+var1 -> var10 = number ; 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+var1 -> var13 = number ; 
+return func2 ( & var1 -> var14 , var2 , var3 , var4 ) ; 
+} 

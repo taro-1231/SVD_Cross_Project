@@ -1,0 +1,8 @@
+static double func1 ( PNG_CONST png_modifier * var1 , int var2 , int var3 ) 
+{ 
+if ( var1 -> var4 || 
+( var1 -> var5 ? var2 : var3 ) == number ) 
+return var1 -> var6 ; 
+else 
+return var1 -> var7 ; 
+} 

@@ -1,0 +1,10 @@
+static PullupBuffer * func1 ( PullupBuffer * var1 , int var2 ) 
+{ 
+if ( ! var1 ) 
+return var3 ; 
+if ( ( var2 + number ) & number ) 
+var1 -> var4 [ number ] ++ ; 
+if ( ( var2 + number ) & number ) 
+var1 -> var4 [ number ] ++ ; 
+return var1 ; 
+} 

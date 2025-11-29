@@ -1,0 +1,41 @@
+static AVFrame * func1 ( AVFilterContext * var1 , AVFrame * var2 , 
+const AVFrame * var3 ) 
+{ 
+PSNRContext * var4 = var1 -> var5 ; 
+double var6 [ number ] , var7 = number ; 
+int var8 , var9 ; 
+AVDictionary ** var10 = func2 ( var2 ) ; 
+func3 ( var4 , ( const uint8_t ** ) var2 -> var11 , var2 -> var12 , 
+( const uint8_t ** ) var3 -> var11 , var3 -> var12 , 
+var2 -> var13 , var2 -> var14 , var6 ) ; 
+for ( var8 = number ; var8 < var4 -> var15 ; var8 ++ ) 
+var7 += var6 [ var8 ] * var4 -> var16 [ var8 ] ; 
+var4 -> var17 = func4 ( var4 -> var17 , var7 ) ; 
+var4 -> var18 = func5 ( var4 -> var18 , var7 ) ; 
+var4 -> var7 += var7 ; 
+for ( var8 = number ; var8 < var4 -> var15 ; var8 ++ ) 
+var4 -> var19 [ var8 ] += var6 [ var8 ] ; 
+var4 -> var20 ++ ; 
+for ( var8 = number ; var8 < var4 -> var15 ; var8 ++ ) { 
+var9 = var4 -> var21 ? var4 -> var22 [ var8 ] : var8 ; 
+func6 ( var10 , str , var4 -> var23 [ var8 ] , var6 [ var9 ] ) ; 
+func6 ( var10 , str , var4 -> var23 [ var8 ] , func7 ( var6 [ var9 ] , number , var4 -> var24 [ var9 ] ) ) ; 
+} 
+func6 ( var10 , str , number , var7 ) ; 
+func6 ( var10 , str , number , func7 ( var7 , number , var4 -> var25 ) ) ; 
+if ( var4 -> var26 ) { 
+fprintf ( var4 -> var26 , str PRId64 str 
+for ( var8 = number ; var8 < var4 -> var15 ; var8 ++ ) { 
+var9 = var4 -> var21 ? var4 -> var22 [ var8 ] : var8 ; 
+fprintf ( var4 -> var26 , str , var4 -> var23 [ var8 ] , var6 [ var9 ] ) ; 
+} 
+fprintf ( var4 -> var26 , str , func7 ( var7 , number , var4 -> var25 ) ) ; 
+for ( var8 = number ; var8 < var4 -> var15 ; var8 ++ ) { 
+var9 = var4 -> var21 ? var4 -> var22 [ var8 ] : var8 ; 
+fprintf ( var4 -> var26 , str , var4 -> var23 [ var8 ] , 
+func7 ( var6 [ var9 ] , number , var4 -> var24 [ var9 ] ) ) ; 
+} 
+fprintf ( var4 -> var26 , str ) ; 
+} 
+return var2 ; 
+} 

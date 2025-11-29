@@ -1,0 +1,24 @@
+static int func1 ( Stream * var1 , AVFilterGraph * var2 , 
+AVFilterContext * var3 , int var4 ) 
+{ 
+enum AVMediaType var5 = func2 ( var3 -> var6 , var4 ) ; 
+const char * var7 ; 
+int var8 ; 
+switch ( var5 ) { 
+case var9 : var7 = str ; break ; 
+case var10 : var7 = str ; break ; 
+var11 : 
+func3 ( var12 , var13 , str ) ; 
+return func4 ( var14 ) ; 
+} 
+var8 = func5 ( & var1 -> var15 , 
+func6 ( var7 ) , 
+var12 , var12 , var12 , var2 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+var8 = func7 ( var3 , var4 , var1 -> var15 , number ) ; 
+if ( var8 < number ) 
+return var8 ; 
+var1 -> var16 = var1 -> var15 -> var17 [ number ] ; 
+return number ; 
+} 

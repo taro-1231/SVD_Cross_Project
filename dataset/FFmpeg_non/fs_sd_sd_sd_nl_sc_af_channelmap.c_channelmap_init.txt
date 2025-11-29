@@ -1,0 +1,156 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ChannelMapContext * var2 = var1 -> var3 ; 
+char * var4 , var5 = str ; 
+int var6 = number ; 
+char var7 [ number ] ; 
+enum MappingMode var8 ; 
+uint64_t var9 = number ; 
+int var10 ; 
+var4 = var2 -> var11 ; 
+if ( ! var4 ) { 
+var8 = var12 ; 
+} else { 
+char * var13 = strchr ( var4 , str ) ; 
+if ( ! var13 ) { 
+if ( func2 ( * var4 ) ) 
+var8 = var14 ; 
+else 
+var8 = var15 ; 
+} else if ( func2 ( * var4 ) ) { 
+if ( func2 ( * ( var13 + number ) ) ) 
+var8 = var16 ; 
+else 
+var8 = var17 ; 
+} else { 
+if ( func2 ( * ( var13 + number ) ) ) 
+var8 = var18 ; 
+else 
+var8 = var19 ; 
+} 
+if ( strchr ( var4 , str ) ) { 
+func3 ( var1 , AV_LOG_WARNING , str 
+str ) ; 
+var5 = str ; 
+} 
+} 
+if ( var8 != var12 ) { 
+char * var20 = var4 ; 
+var6 = number ; 
+while ( ( var20 = strchr ( var20 , var5 ) ) ) { 
+if ( * ++ var20 ) 
+var6 ++ ; 
+} 
+} 
+if ( var6 > var21 ) { 
+func3 ( var1 , var22 , str , var6 ) ; 
+return func4 ( var23 ) ; 
+} 
+for ( var10 = number ; var10 < var6 ; var10 ++ ) { 
+int var24 = - number , var25 = - number ; 
+uint64_t var26 = number , var27 = number ; 
+static const char var28 [ ] = str ; 
+switch ( var8 ) { 
+case var14 : 
+if ( func5 ( & var4 , & var24 , var5 , var21 ) < number ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var30 = var24 ; 
+var2 -> var29 [ var10 ] . var31 = var10 ; 
+break ; 
+case var15 : 
+if ( func6 ( & var4 , & var26 , var5 ) < number ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var32 = var26 ; 
+var2 -> var29 [ var10 ] . var31 = var10 ; 
+break ; 
+case var16 : 
+if ( func5 ( & var4 , & var24 , str , var21 ) < number || 
+func5 ( & var4 , & var25 , var5 , var21 ) < number ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var30 = var24 ; 
+var2 -> var29 [ var10 ] . var31 = var25 ; 
+break ; 
+case var17 : 
+if ( func5 ( & var4 , & var24 , str , var21 ) < number || 
+func6 ( & var4 , & var27 , var5 ) < number || 
+var27 & var9 ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var30 = var24 ; 
+var2 -> var29 [ var10 ] . var33 = var27 ; 
+var9 |= var27 ; 
+break ; 
+case var18 : 
+if ( func6 ( & var4 , & var26 , str ) < number || 
+func5 ( & var4 , & var25 , var5 , var21 ) < number ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var32 = var26 ; 
+var2 -> var29 [ var10 ] . var31 = var25 ; 
+break ; 
+case var19 : 
+if ( func6 ( & var4 , & var26 , str ) < number || 
+func6 ( & var4 , & var27 , var5 ) < number || 
+var27 & var9 ) { 
+func3 ( var1 , var22 , var28 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var29 [ var10 ] . var32 = var26 ; 
+var2 -> var29 [ var10 ] . var33 = var27 ; 
+var9 |= var27 ; 
+break ; 
+} 
+} 
+var2 -> var8 = var8 ; 
+var2 -> var34 = var6 ; 
+var2 -> var35 = var9 ? var9 : 
+func7 ( var6 ) ; 
+if ( var2 -> var36 ) { 
+uint64_t var37 ; 
+if ( ( var37 = func8 ( var2 -> var36 ) ) == number ) { 
+func3 ( var1 , var22 , str , 
+var2 -> var36 ) ; 
+return func4 ( var23 ) ; 
+} 
+if ( var8 == var12 ) { 
+int var10 ; 
+var2 -> var34 = func9 ( var37 ) ; 
+for ( var10 = number ; var10 < var2 -> var34 ; var10 ++ ) { 
+var2 -> var29 [ var10 ] . var30 = var10 ; 
+var2 -> var29 [ var10 ] . var31 = var10 ; 
+} 
+} else if ( var9 && var9 != var37 ) { 
+func10 ( var7 , sizeof ( var7 ) , number , var9 ) ; 
+func3 ( var1 , var22 , 
+str , 
+var2 -> var36 , var7 ) ; 
+return func4 ( var23 ) ; 
+} else if ( var2 -> var34 != func9 ( var37 ) ) { 
+func3 ( var1 , var22 , 
+str , 
+var2 -> var36 , var2 -> var34 ) ; 
+return func4 ( var23 ) ; 
+} 
+var2 -> var35 = var37 ; 
+} 
+if ( ! var2 -> var35 ) { 
+func3 ( var1 , var22 , str 
+str ) ; 
+return func4 ( var23 ) ; 
+} 
+if ( var8 == var17 || var8 == var19 ) { 
+for ( var10 = number ; var10 < var2 -> var34 ; var10 ++ ) { 
+var2 -> var29 [ var10 ] . var31 = func11 ( 
+var2 -> var35 , var2 -> var29 [ var10 ] . var33 ) ; 
+} 
+} 
+return number ; 
+} 

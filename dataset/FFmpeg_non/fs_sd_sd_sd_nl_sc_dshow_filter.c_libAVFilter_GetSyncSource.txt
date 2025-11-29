@@ -1,0 +1,10 @@
+func1 ( libAVFilter * var1 , IReferenceClock ** var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+if ( var1 -> var2 ) 
+func3 ( var1 -> var2 ) ; 
+* var2 = var1 -> var2 ; 
+return var4 ; 
+} 

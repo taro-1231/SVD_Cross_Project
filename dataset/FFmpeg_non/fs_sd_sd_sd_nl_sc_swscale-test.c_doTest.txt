@@ -1,0 +1,133 @@
+static int func1 ( uint8_t * var1 [ number ] , int var3 [ number ] , int var4 , int var5 , 
+enum AVPixelFormat var6 , enum AVPixelFormat var7 , 
+int var8 , int var9 , int var10 , int var11 , int var12 , 
+struct Results * var13 ) 
+{ 
+const AVPixFmtDescriptor * var14 = func2 ( var15 ) ; 
+const AVPixFmtDescriptor * var16 = func2 ( var6 ) ; 
+const AVPixFmtDescriptor * var17 = func2 ( var7 ) ; 
+static enum AVPixelFormat var18 ; 
+static int var19 , var20 ; 
+static uint8_t * var21 [ number ] ; 
+static int var22 [ number ] ; 
+uint8_t * var23 [ number ] = { number } ; 
+uint8_t * var2 [ number ] = { number } ; 
+int var24 [ number ] = { number } ; 
+int var25 ; 
+uint64_t var26 , var27 = number , var28 = number , var29 = number ; 
+struct SwsContext * var30 = var31 , * var32 = var31 ; 
+uint32_t var33 = number ; 
+int var34 = number ; 
+if ( var18 != var6 || var19 != var8 || var20 != var9 ) { 
+struct SwsContext * var35 = var31 ; 
+int var36 ; 
+for ( var36 = number ; var36 < number ; var36 ++ ) 
+func3 ( & var21 [ var36 ] ) ; 
+func4 ( var22 , var6 , var8 ) ; 
+for ( var36 = number ; var36 < number ; var36 ++ ) { 
+var22 [ var36 ] = func5 ( var22 [ var36 ] , number ) ; 
+if ( var22 [ var36 ] ) 
+var21 [ var36 ] = func6 ( var22 [ var36 ] * var9 + number ) ; 
+if ( var22 [ var36 ] && ! var21 [ var36 ] ) { 
+perror ( str ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+} 
+var35 = func7 ( var4 , var5 , var15 , var8 , var9 , 
+var6 , var38 , var31 , var31 , var31 ) ; 
+if ( ! var35 ) { 
+fprintf ( var39 , str , 
+var14 -> var40 , 
+var16 -> var40 ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+sws_scale ( var35 , ( const uint8_t * const * ) var1 , var3 , number , var5 , var21 , var22 ) ; 
+func8 ( var35 ) ; 
+var18 = var6 ; 
+var19 = var8 ; 
+var20 = var9 ; 
+} 
+func4 ( var24 , var7 , var10 ) ; 
+for ( var25 = number ; var25 < number ; var25 ++ ) { 
+var24 [ var25 ] = func5 ( var24 [ var25 ] , number ) ; 
+if ( var24 [ var25 ] ) 
+var23 [ var25 ] = func6 ( var24 [ var25 ] * var11 + number ) ; 
+if ( var24 [ var25 ] && ! var23 [ var25 ] ) { 
+perror ( str ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+} 
+var30 = func7 ( var8 , var9 , var6 , var10 , var11 , var7 , 
+var12 , var31 , var31 , var31 ) ; 
+if ( ! var30 ) { 
+fprintf ( var39 , str , 
+var16 -> var40 , var17 -> var40 ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+printf ( str , 
+var16 -> var40 , var8 , var9 , 
+var17 -> var40 , var10 , var11 , 
+var12 ) ; 
+fflush ( var41 ) ; 
+sws_scale ( var30 , ( const uint8_t * const * ) var21 , var22 , number , var9 , var23 , var24 ) ; 
+for ( var25 = number ; var25 < number && var24 [ var25 ] ; var25 ++ ) 
+var33 = func9 ( func10 ( var42 ) , var33 , var23 [ var25 ] , 
+var24 [ var25 ] * var11 ) ; 
+if ( var13 && var33 == var13 -> var33 ) { 
+var26 = var13 -> var26 ; 
+var27 = var13 -> var27 ; 
+var28 = var13 -> var28 ; 
+var29 = var13 -> var29 ; 
+} else { 
+for ( var25 = number ; var25 < number ; var25 ++ ) { 
+var3 [ var25 ] = func5 ( var3 [ var25 ] , number ) ; 
+if ( var3 [ var25 ] ) 
+var2 [ var25 ] = func6 ( var3 [ var25 ] * var5 ) ; 
+if ( var3 [ var25 ] && ! var2 [ var25 ] ) { 
+perror ( str ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+} 
+var32 = func7 ( var10 , var11 , var7 , var4 , var5 , 
+var15 , var38 , 
+var31 , var31 , var31 ) ; 
+if ( ! var32 ) { 
+fprintf ( var39 , str , 
+var17 -> var40 , 
+var14 -> var40 ) ; 
+var34 = - number ; 
+goto var37 ; 
+} 
+sws_scale ( var32 , ( const uint8_t * const * ) var23 , var24 , number , var11 , var2 , var3 ) ; 
+var26 = func11 ( var1 [ number ] , var2 [ number ] , var3 [ number ] , var3 [ number ] , var4 , var5 ) ; 
+if ( func12 ( var6 ) && func12 ( var7 ) ) { 
+var27 = func11 ( var1 [ number ] , var2 [ number ] , var3 [ number ] , var3 [ number ] , 
+( var4 + number ) >> number , ( var5 + number ) >> number ) ; 
+var28 = func11 ( var1 [ number ] , var2 [ number ] , var3 [ number ] , var3 [ number ] , 
+( var4 + number ) >> number , ( var5 + number ) >> number ) ; 
+} 
+if ( func13 ( var6 ) && func13 ( var7 ) ) 
+var29 = func11 ( var1 [ number ] , var2 [ number ] , var3 [ number ] , var3 [ number ] , var4 , var5 ) ; 
+var26 /= var4 * var5 ; 
+var27 /= var4 * var5 / number ; 
+var28 /= var4 * var5 / number ; 
+var29 /= var4 * var5 ; 
+func8 ( var32 ) ; 
+for ( var25 = number ; var25 < number ; var25 ++ ) 
+if ( var3 [ var25 ] ) 
+func14 ( var2 [ var25 ] ) ; 
+} 
+printf ( str PRId64 str PRId64 str PRId64 str PRId64 str , 
+var33 , var26 , var27 , var28 , var29 ) ; 
+var37 : 
+func8 ( var30 ) ; 
+for ( var25 = number ; var25 < number ; var25 ++ ) 
+if ( var24 [ var25 ] ) 
+func14 ( var23 [ var25 ] ) ; 
+return var34 ; 
+} 

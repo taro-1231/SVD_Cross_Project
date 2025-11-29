@@ -1,0 +1,11 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+RotContext * var2 = var1 -> var3 ; 
+if ( ! strcmp ( var2 -> var4 , str ) ) 
+var2 -> var5 = number ; 
+else if ( func2 ( var2 -> var6 , var2 -> var4 , - number , var1 ) >= number ) 
+var2 -> var5 = number ; 
+else 
+return func3 ( var7 ) ; 
+return number ; 
+} 

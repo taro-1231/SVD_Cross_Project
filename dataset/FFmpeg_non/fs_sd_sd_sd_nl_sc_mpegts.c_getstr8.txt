@@ -1,0 +1,20 @@
+static char * func1 ( const uint8_t ** var1 , const uint8_t * var2 ) 
+{ 
+int var3 ; 
+const uint8_t * var4 ; 
+char * var5 ; 
+var4 = * var1 ; 
+var3 = func2 ( & var4 , var2 ) ; 
+if ( var3 < number ) 
+return var6 ; 
+if ( var3 > var2 - var4 ) 
+return var6 ; 
+var5 = func3 ( var3 + number ) ; 
+if ( ! var5 ) 
+return var6 ; 
+memcpy ( var5 , var4 , var3 ) ; 
+var5 [ var3 ] = var5 ; 
+var4 += var3 ; 
+* var1 = var4 ; 
+return var5 ; 
+} 

@@ -1,0 +1,69 @@
+static void func1 ( FilterGraph * var1 , AVFilterInOut * var2 ) 
+{ 
+InputStream * var3 = var4 ; 
+enum AVMediaType var5 = func2 ( var2 -> var6 -> var7 , var2 -> var8 ) ; 
+int var9 ; 
+if ( var5 != var10 && var5 != var11 ) { 
+func3 ( var4 , var12 , str 
+str ) ; 
+func4 ( number ) ; 
+} 
+if ( var2 -> var14 ) { 
+AVFormatContext * var15 ; 
+AVStream * var16 = var4 ; 
+char * var17 ; 
+int var18 = func5 ( var2 -> var14 , & var17 , number ) ; 
+if ( var18 < number || var18 >= var19 ) { 
+func3 ( var4 , var12 , str , 
+var18 , var1 -> var21 ) ; 
+func4 ( number ) ; 
+} 
+var15 = var22 [ var18 ] -> var23 ; 
+for ( var9 = number ; var9 < var15 -> var24 ; var9 ++ ) { 
+enum AVMediaType var25 = var15 -> var26 [ var9 ] -> var27 -> var28 ; 
+if ( var25 != var5 && 
+! ( var25 == var29 && 
+var5 == var10 ) 
+continue ; 
+if ( func6 ( var15 , var15 -> var26 [ var9 ] , * var17 == str ? var17 + number : var17 ) == number ) { 
+var16 = var15 -> var26 [ var9 ] ; 
+break ; 
+} 
+} 
+if ( ! var16 ) { 
+func3 ( var4 , var12 , str 
+str , var17 , var1 -> var21 ) ; 
+func4 ( number ) ; 
+} 
+var3 = var30 [ var22 [ var18 ] -> var31 + var16 -> var20 ] ; 
+} else { 
+for ( var9 = number ; var9 < var32 ; var9 ++ ) { 
+var3 = var30 [ var9 ] ; 
+if ( var3 -> var33 -> var28 == var5 && var3 -> var34 ) 
+break ; 
+} 
+if ( var9 == var32 ) { 
+func3 ( var4 , var12 , str 
+str , var2 -> var8 , 
+var2 -> var6 -> var14 ) ; 
+func4 ( number ) ; 
+} 
+} 
+func7 ( var3 ) ; 
+var3 -> var34 = number ; 
+var3 -> var35 |= var36 ; 
+var3 -> var16 -> var34 = var37 ; 
+func8 ( var1 -> var38 , var1 -> var39 ) ; 
+if ( ! ( var1 -> var38 [ var1 -> var39 - number ] = func9 ( sizeof ( * var1 -> var38 [ number ] ) ) ) ) 
+func4 ( number ) ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var3 = var3 ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var40 = var1 ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var41 = - number ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var5 = var3 -> var16 -> var27 -> var28 ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var14 = func10 ( var1 , var2 , number ) ; 
+var1 -> var38 [ var1 -> var39 - number ] -> var42 = func11 ( number * sizeof ( AVFrame * ) ) ; 
+if ( ! var1 -> var38 [ var1 -> var39 - number ] -> var42 ) 
+func4 ( number ) ; 
+func8 ( var3 -> var13 , var3 -> var43 ) ; 
+var3 -> var13 [ var3 -> var43 - number ] = var1 -> var38 [ var1 -> var39 - number ] ; 
+} 

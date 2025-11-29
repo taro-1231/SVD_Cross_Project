@@ -1,0 +1,37 @@
+static void * func1 ( void * var1 ) 
+{ 
+InputFile * var2 = var1 ; 
+unsigned var3 = var2 -> var4 ? var5 : number ; 
+int var6 = number ; 
+while ( number ) { 
+AVPacket var7 ; 
+var6 = func2 ( var2 -> var8 , & var7 ) ; 
+if ( var6 == func3 ( var9 ) ) { 
+func4 ( number ) ; 
+continue ; 
+} 
+if ( var6 < number ) { 
+func5 ( var2 -> var10 , var6 ) ; 
+break ; 
+} 
+var6 = func6 ( var2 -> var10 , & var7 , var3 ) ; 
+if ( var3 && var6 == func3 ( var9 ) ) { 
+var3 = number ; 
+var6 = func6 ( var2 -> var10 , & var7 , var3 ) ; 
+func7 ( var2 -> var8 , AV_LOG_WARNING , 
+str 
+str , 
+var2 -> thread_queue_size ) ; 
+} 
+if ( var6 < number ) { 
+if ( var6 != var11 ) 
+func7 ( var2 -> var8 , var12 , 
+str , 
+func8 ( var6 ) ) ; 
+func9 ( & var7 ) ; 
+func5 ( var2 -> var10 , var6 ) ; 
+break ; 
+} 
+} 
+return var13 ; 
+} 

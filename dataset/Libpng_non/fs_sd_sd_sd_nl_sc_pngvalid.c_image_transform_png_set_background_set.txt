@@ -1,0 +1,35 @@
+func1 ( PNG_CONST image_transform * var1 , 
+transform_display * var2 , png_structp var3 , png_infop var4 ) 
+{ 
+png_byte var5 , var6 ; 
+png_byte var7 [ number ] ; 
+int var8 ; 
+png_color_16 var9 ; 
+func2 ( var7 ) ; 
+var5 = var2 -> var1 . var5 ; 
+if ( var5 == number ) 
+{ 
+var5 = var10 ; 
+var6 = number ; 
+var8 = number ; 
+} 
+else 
+{ 
+var6 = var2 -> var1 . var6 ; 
+var8 = number ; 
+} 
+func3 ( & var11 , var7 , var5 , 
+var6 , number number ; 
+func2 ( var9 ) ; 
+if ( var5 & var12 ) 
+{ 
+var9 . var13 = ( png_uint_16 ) var11 . var13 ; 
+var9 . var14 = ( png_uint_16 ) var11 . var14 ; 
+var9 . var15 = ( png_uint_16 ) var11 . var15 ; 
+} 
+else 
+var9 . var16 = ( png_uint_16 ) var11 . var13 ; 
+var17 ( var3 , & var9 , var18 , var8 , number ) ; 
+png_set_background_fixed ( var3 , & var9 , var18 , var8 , number ) ; 
+var1 -> next -> set ( var1 -> next , var2 , var3 , var4 ) ; 
+} 

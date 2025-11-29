@@ -1,0 +1,7 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+AudioFadeContext * var2 = var1 -> var3 ; 
+if ( var4 - var2 -> var5 < var2 -> var6 ) 
+return func2 ( var7 ) ; 
+return number ; 
+} 

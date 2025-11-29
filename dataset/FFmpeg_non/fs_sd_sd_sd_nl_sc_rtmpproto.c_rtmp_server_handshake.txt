@@ -1,0 +1,63 @@
+static int func1 ( URLContext * var1 , RTMPContext * var2 ) 
+{ 
+uint8_t var3 [ var4 ] ; 
+uint32_t var5 ; 
+uint32_t var6 ; 
+uint8_t var7 [ var4 ] ; 
+uint8_t var8 [ var4 ] ; 
+uint32_t var9 ; 
+uint32_t var10 = number ; 
+int var11 = number ; 
+int var12 = number ; 
+int var13 ; 
+var12 = func2 ( var2 -> var14 , var3 , number ) ; 
+if ( var12 <= number ) { 
+func3 ( var1 , var15 , str ) ; 
+return func4 ( var16 ) ; 
+} 
+if ( var3 [ number ] != number ) { 
+func3 ( var1 , var15 , str ) ; 
+return func4 ( var16 ) ; 
+} 
+if ( func5 ( var2 -> var14 , var3 , number ) <= number ) { 
+func3 ( var1 , var15 , 
+str ) ; 
+return func4 ( var16 ) ; 
+} 
+var13 = func6 ( var2 , & var5 , & var9 , var7 , 
+var4 ) ; 
+if ( var13 ) { 
+func3 ( var1 , var15 , str ) ; 
+return var13 ; 
+} 
+var6 = var5 ; 
+for ( var11 = number ; var11 < ( var4 ) ; 
+var11 += number ) 
+func7 ( var8 + var11 , func8 ( ) ) ; 
+var13 = func9 ( var2 , var6 , number , var8 , 
+var4 ) ; 
+if ( var13 ) { 
+func3 ( var1 , var15 , str ) ; 
+return var13 ; 
+} 
+var13 = func9 ( var2 , var5 , number , var7 , 
+var4 ) ; 
+if ( var13 ) { 
+func3 ( var1 , var15 , str ) ; 
+return var13 ; 
+} 
+var13 = func6 ( var2 , & var10 , & var9 , var3 , 
+var4 ) ; 
+if ( var13 ) { 
+func3 ( var1 , var15 , str ) ; 
+return var13 ; 
+} 
+if ( var10 != var6 ) 
+func3 ( var1 , var17 , 
+str ) ; 
+if ( memcmp ( var3 + number , var8 + number , 
+var4 - number ) ) 
+func3 ( var1 , var17 , 
+str ) ; 
+return number ; 
+} 

@@ -1,0 +1,134 @@
+static uint64_t func1 ( uint8_t ( * var1 ) [ 3 ] , int var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+struct elem_to_channel var6 [ number * var7 ] = { { number } } ; 
+int var8 , var9 , var10 ; 
+uint64_t var11 ; 
+if ( func2 ( var6 ) < var2 ) 
+return number ; 
+var3 = number ; 
+var8 = 
+func3 ( var1 , var2 , var12 , & var3 ) ; 
+if ( var8 < number ) 
+return number ; 
+var9 = 
+func3 ( var1 , var2 , var13 , & var3 ) ; 
+if ( var9 < number ) 
+return number ; 
+var10 = 
+func3 ( var1 , var2 , var14 , & var3 ) ; 
+if ( var10 < number ) 
+return number ; 
+if ( var9 == number && var10 >= number ) { 
+var9 = number ; 
+var10 -= number ; 
+} 
+var3 = number ; 
+if ( var8 & number ) { 
+var6 [ var3 ] = ( struct elem_to_channel ) { 
+. var15 = AV_CH_FRONT_CENTER , 
+. var16 = TYPE_SCE , 
+. var17 = var1 [ var3 ] [ number ] , 
+. var18 = var12 
+} ; 
+var3 ++ ; 
+var8 -- ; 
+} 
+if ( var8 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var19 , 
+var20 , 
+var12 ) ; 
+var8 -= number ; 
+} 
+if ( var8 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var21 , 
+var22 , 
+var12 ) ; 
+var8 -= number ; 
+} 
+while ( var8 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var23 , 
+var23 , 
+var12 ) ; 
+var8 -= number ; 
+} 
+if ( var9 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var24 , 
+var25 , 
+var12 ) ; 
+var9 -= number ; 
+} 
+while ( var9 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var23 , 
+var23 , 
+var13 ) ; 
+var9 -= number ; 
+} 
+while ( var10 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var23 , 
+var23 , 
+var14 ) ; 
+var10 -= number ; 
+} 
+if ( var10 >= number ) { 
+var3 += func4 ( var6 , var1 , var3 , 
+var26 , 
+var27 , 
+var14 ) ; 
+var10 -= number ; 
+} 
+if ( var10 ) { 
+var6 [ var3 ] = ( struct elem_to_channel ) { 
+. var15 = AV_CH_BACK_CENTER , 
+. var16 = TYPE_SCE , 
+. var17 = var1 [ var3 ] [ number ] , 
+. var18 = var14 
+} ; 
+var3 ++ ; 
+var10 -- ; 
+} 
+if ( var3 < var2 && var1 [ var3 ] [ number ] == var28 ) { 
+var6 [ var3 ] = ( struct elem_to_channel ) { 
+. var15 = AV_CH_LOW_FREQUENCY , 
+. var16 = TYPE_LFE , 
+. var17 = var1 [ var3 ] [ number ] , 
+. var18 = var28 
+} ; 
+var3 ++ ; 
+} 
+while ( var3 < var2 && var1 [ var3 ] [ number ] == var28 ) { 
+var6 [ var3 ] = ( struct elem_to_channel ) { 
+. var15 = var23 , 
+. var16 = TYPE_LFE , 
+. var17 = var1 [ var3 ] [ number ] , 
+. var18 = var28 
+} ; 
+var3 ++ ; 
+} 
+var5 = var4 = var3 ; 
+do { 
+int var29 = number ; 
+for ( var3 = number ; var3 < var4 ; var3 ++ ) 
+if ( var6 [ var3 - number ] . var15 > var6 [ var3 ] . var15 ) { 
+FFSWAP ( struct elem_to_channel , var6 [ var3 - number ] , var6 [ var3 ] ) ; 
+var29 = var3 ; 
+} 
+var4 = var29 ; 
+} while ( var4 > number ) ; 
+var11 = number ; 
+for ( var3 = number ; var3 < var5 ; var3 ++ ) { 
+var1 [ var3 ] [ number ] = var6 [ var3 ] . var16 ; 
+var1 [ var3 ] [ number ] = var6 [ var3 ] . var17 ; 
+var1 [ var3 ] [ number ] = var6 [ var3 ] . var18 ; 
+if ( var6 [ var3 ] . var15 != var23 ) { 
+var11 |= var6 [ var3 ] . var15 ; 
+} 
+} 
+return var11 ; 
+} 

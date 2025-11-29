@@ -1,0 +1,30 @@
+static int func1 ( struct sockaddr_in * var1 ) 
+{ 
+int var2 , var3 ; 
+var2 = func2 ( var4 , var5 , number ) ; 
+if ( var2 < number ) { 
+perror ( str ) ; 
+return - number ; 
+} 
+var3 = number ; 
+if ( func3 ( var2 , var6 , var7 , & var3 , sizeof ( var3 ) ) ) 
+func4 ( var8 , var9 , str ) ; 
+var1 -> var10 = var4 ; 
+if ( func5 ( var2 , ( struct sockaddr * ) var1 , sizeof ( * var1 ) ) < number ) { 
+char var11 [ number ] ; 
+snprintf ( var11 , sizeof ( var11 ) , str , 
+func6 ( var1 -> var12 ) ) ; 
+perror ( var11 ) ; 
+goto var13 ; 
+} 
+if ( func7 ( var2 , number ) < number ) { 
+perror ( str ) ; 
+goto var13 ; 
+} 
+if ( func8 ( var2 , number ) < number ) 
+func4 ( var8 , var9 , str ) ; 
+return var2 ; 
+var13 : 
+func9 ( var2 ) ; 
+return - number ; 
+} 

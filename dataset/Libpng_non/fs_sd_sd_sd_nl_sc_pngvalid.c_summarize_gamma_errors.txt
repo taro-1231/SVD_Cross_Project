@@ -1,0 +1,21 @@
+func1 ( png_modifier * var1 , png_const_charp var2 , int var3 , 
+int var4 ) 
+{ 
+fflush ( var5 ) ; 
+if ( var2 ) 
+printf ( str , var2 ) ; 
+else 
+printf ( str ) ; 
+if ( var3 ) 
+{ 
+func2 ( str , var1 -> var6 ) ; 
+func2 ( str , var1 -> var7 ) ; 
+func2 ( str , var1 -> var8 ) ; 
+func2 ( str , var1 -> var9 ) ; 
+if ( var4 ) 
+func2 ( str , var1 -> var10 ) ; 
+} 
+func2 ( str , var1 -> var11 ) ; 
+func2 ( str , var1 -> var12 ) ; 
+fflush ( var13 ) ; 
+} 

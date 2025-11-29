@@ -1,0 +1,9 @@
+static void func1 ( FilterGraph * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) 
+var1 -> var4 [ var2 ] -> var5 = ( AVFilterContext * ) var6 ; 
+for ( var2 = number ; var2 < var1 -> var7 ; var2 ++ ) 
+var1 -> var8 [ var2 ] -> var5 = ( AVFilterContext * ) var6 ; 
+func2 ( & var1 -> var9 ) ; 
+} 

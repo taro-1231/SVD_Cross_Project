@@ -1,0 +1,83 @@
+static int func1 ( struct Tracks * var1 , const char * var2 ) 
+{ 
+AVFormatContext * var3 = var4 ; 
+int var5 = number , var6 , var7 = var1 -> var8 ; 
+char var9 [ number ] , * var10 ; 
+struct Track * var11 ; 
+var5 = func2 ( & var3 , var2 , var4 , var4 ) ; 
+if ( var5 < number ) { 
+func3 ( var5 , var9 , sizeof ( var9 ) ) ; 
+fprintf ( var12 , str , var2 , var9 ) ; 
+return number ; 
+} 
+var5 = func4 ( var3 , var4 ) ; 
+if ( var5 < number ) { 
+func3 ( var5 , var9 , sizeof ( var9 ) ) ; 
+fprintf ( var12 , str , var2 , var9 ) ; 
+goto var13 ; 
+} 
+if ( var3 -> var14 < number ) { 
+fprintf ( var12 , str , var2 ) ; 
+goto var13 ; 
+} 
+if ( var3 -> var14 > number ) 
+var1 -> var16 = number ; 
+for ( var6 = number ; var6 < var3 -> var14 ; var6 ++ ) { 
+struct Track ** var17 ; 
+AVStream * var18 = var3 -> var15 [ var6 ] ; 
+if ( var18 -> var19 -> var20 == number ) { 
+fprintf ( var12 , str , 
+var18 -> var22 , var2 ) ; 
+continue ; 
+} 
+var11 = func5 ( sizeof ( * var11 ) ) ; 
+if ( ! var11 ) { 
+var5 = func6 ( var23 ) ; 
+goto var13 ; 
+} 
+var17 = func7 ( var1 -> var1 , var1 -> var8 + number , 
+sizeof ( * var1 -> var1 ) ) ; 
+if ( ! var17 ) { 
+func8 ( var11 ) ; 
+var5 = func6 ( var23 ) ; 
+goto var13 ; 
+} 
+var1 -> var1 = var17 ; 
+var1 -> var1 [ var1 -> var8 ] = var11 ; 
+var11 -> var24 = var2 ; 
+if ( ( var10 = strrchr ( var2 , str ) ) ) 
+var11 -> var24 = var10 + number ; 
+var11 -> var21 = var18 -> var19 -> var20 ; 
+var11 -> var25 = var18 -> var22 ; 
+var11 -> var26 = var18 -> var27 . var28 ; 
+var11 -> var29 = var18 -> var29 ; 
+var11 -> var30 = var18 -> var19 -> var31 == var32 ; 
+var11 -> var33 = var18 -> var19 -> var31 == var34 ; 
+if ( ! var11 -> var30 && ! var11 -> var33 ) { 
+fprintf ( var12 , 
+str , 
+var11 -> var25 , var2 ) ; 
+func9 ( & var1 -> var1 [ var1 -> var8 ] ) ; 
+continue ; 
+} 
+var1 -> var29 = func10 ( var1 -> var29 , 
+func11 ( var11 -> var29 , var35 , 
+var11 -> var26 , var36 ) ) ; 
+if ( var11 -> var30 ) { 
+var11 -> var37 = var18 -> var19 -> var37 ; 
+var11 -> var38 = var18 -> var19 -> var38 ; 
+} 
+if ( var11 -> var33 ) { 
+var11 -> var39 = var18 -> var19 -> var39 ; 
+var11 -> var40 = var18 -> var19 -> var40 ; 
+} 
+func12 ( var18 -> var19 , var11 -> var41 , sizeof ( var11 -> var41 ) ) ; 
+var1 -> var8 ++ ; 
+} 
+func13 ( & var3 ) ; 
+var5 = func14 ( var1 , var7 , var2 ) ; 
+var13 : 
+if ( var3 ) 
+func13 ( & var3 ) ; 
+return var5 ; 
+} 

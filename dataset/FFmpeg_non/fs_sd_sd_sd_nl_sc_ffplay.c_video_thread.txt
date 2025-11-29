@@ -1,0 +1,88 @@
+static int func1 ( void * var1 ) 
+{ 
+VideoState * var2 = var1 ; 
+AVFrame * var3 = func2 ( ) ; 
+double var4 ; 
+double var5 ; 
+int var6 ; 
+AVRational var7 = var2 -> var8 -> var9 ; 
+AVRational var10 = func3 ( var2 -> var11 , var2 -> var8 , var12 ) ; 
+AVFilterGraph * var13 = func4 ( ) ; 
+AVFilterContext * var14 = var12 , * var15 = var12 ; 
+int var16 = number ; 
+int var17 = number ; 
+enum AVPixelFormat var18 = - number ; 
+int var19 = - number ; 
+int var20 = number ; 
+if ( ! var13 ) { 
+func5 ( & var3 ) ; 
+return func6 ( var21 ) ; 
+} 
+if ( ! var3 ) { 
+func7 ( & var13 ) ; 
+return func6 ( var21 ) ; 
+} 
+for ( ; ; ) { 
+var6 = func8 ( var2 , var3 ) ; 
+if ( var6 < number ) 
+goto var22 ; 
+if ( ! var6 ) 
+continue ; 
+if ( var16 != var3 -> var23 
+|| var17 != var3 -> var24 
+|| var18 != var3 -> var25 
+|| var19 != var2 -> var26 . var27 
+|| var20 != var2 -> var28 ) { 
+func9 ( var12 , var29 , 
+str , 
+var16 , var17 , 
+( const char * ) func10 ( func11 ( var18 ) , str ) , var19 , 
+var3 -> var23 , var3 -> var24 , 
+( const char * ) func10 ( func11 ( var3 -> var25 ) , str ) , var2 -> var26 . var27 ) ; 
+func7 ( & var13 ) ; 
+var13 = func4 ( ) ; 
+if ( ( var6 = func12 ( var13 , var2 , var30 ? var30 [ var2 -> var28 ] : var12 , var3 ) ) < number ) { 
+SDL_Event var31 ; 
+var31 . var32 = var33 ; 
+var31 . var34 . var35 = var2 ; 
+func13 ( & var31 ) ; 
+goto var22 ; 
+} 
+var15 = var2 -> var36 ; 
+var14 = var2 -> var37 ; 
+var16 = var3 -> var23 ; 
+var17 = var3 -> var24 ; 
+var18 = var3 -> var25 ; 
+var19 = var2 -> var26 . var27 ; 
+var20 = var2 -> var28 ; 
+var10 = func14 ( var14 ) ; 
+} 
+var6 = func15 ( var15 , var3 ) ; 
+if ( var6 < number ) 
+goto var22 ; 
+while ( var6 >= number ) { 
+var2 -> var38 = func16 ( ) / number ; 
+var6 = func17 ( var14 , var3 , number ) ; 
+if ( var6 < number ) { 
+if ( var6 == var39 ) 
+var2 -> var26 . var40 = var2 -> var26 . var27 ; 
+var6 = number ; 
+break ; 
+} 
+var2 -> var41 = func16 ( ) / number - var2 -> var38 ; 
+if ( fabs ( var2 -> var41 ) > var42 / number ) 
+var2 -> var41 = number ; 
+var7 = func18 ( var14 ) ; 
+var5 = ( var10 . num && var10 . den ? func19 ( ( AVRational ) { var10 . den , var10 . num } ) : number ) ; 
+var4 = ( var3 -> var4 == var43 ) ? var44 : var3 -> var4 * func19 ( var7 ) ; 
+var6 = func20 ( var2 , var3 , var4 , var5 , func21 ( var3 ) , var2 -> var26 . var27 ) ; 
+func22 ( var3 ) ; 
+} 
+if ( var6 < number ) 
+goto var22 ; 
+} 
+var22 : 
+func7 ( & var13 ) ; 
+func5 ( & var3 ) ; 
+return number ; 
+} 

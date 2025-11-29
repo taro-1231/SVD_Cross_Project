@@ -1,0 +1,4 @@
+static void func1 ( AVCodec * var1 , int var2 ) 
+{ 
+func2 ( number ) ; 
+} 

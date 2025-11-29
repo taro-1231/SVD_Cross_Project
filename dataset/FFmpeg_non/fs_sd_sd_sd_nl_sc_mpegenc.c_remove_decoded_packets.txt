@@ -1,0 +1,23 @@
+static int func1 ( AVFormatContext * var1 , int64_t var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < var1 -> var4 ; var3 ++ ) { 
+AVStream * var5 = var1 -> var6 [ var3 ] ; 
+StreamInfo * var7 = var5 -> var8 ; 
+PacketDesc * var9 ; 
+while ( ( var9 = var7 -> var10 ) && 
+var2 > var9 -> var11 ) { 
+if ( var7 -> var12 < var9 -> var13 || 
+var7 -> var10 == var7 -> var14 ) { 
+func2 ( var1 , var15 , 
+str , 
+var3 , var7 -> var12 , var9 -> var13 ) ; 
+break ; 
+} 
+var7 -> var12 -= var9 -> var13 ; 
+var7 -> var10 = var9 -> var16 ; 
+func3 ( & var9 ) ; 
+} 
+} 
+return number ; 
+} 

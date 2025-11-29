@@ -1,0 +1,4 @@
+static int func1 ( FFDrawContext * var1 , int var2 , int var3 ) 
+{ 
+return ( var1 -> var4 [ var2 ] >> var3 ) & number ; 
+} 

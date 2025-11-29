@@ -1,0 +1,33 @@
+static double func1 ( AVFilterContext * var1 , AVFrame * var2 ) 
+{ 
+double var3 = number ; 
+SelectContext * var4 = var1 -> var5 ; 
+AVFrame * var6 = var4 -> var6 ; 
+if ( var6 && 
+var2 -> var7 == var6 -> var7 && 
+var2 -> var8 == var6 -> var8 ) { 
+int var9 , var10 , var11 = number ; 
+int64_t func2 = number ; 
+double var12 , var13 ; 
+uint8_t * var14 = var2 -> var15 [ number ] ; 
+uint8_t * var16 = var6 -> var15 [ number ] ; 
+const int var17 = var2 -> var18 [ number ] ; 
+const int var19 = var6 -> var18 [ number ] ; 
+for ( var10 = number ; var10 < var2 -> var7 - number ; var10 += number ) { 
+for ( var9 = number ; var9 < var2 -> var8 * number - number ; var9 += number ) { 
+func2 += var4 -> func2 ( var14 + var9 , var17 , var16 + var9 , var19 ) ; 
+var11 += number * number ; 
+} 
+var14 += number * var17 ; 
+var16 += number * var19 ; 
+} 
+func3 ( ) ; 
+var12 = var11 ? ( double ) func2 / var11 : number ; 
+var13 = fabs ( var12 - var4 -> var20 ) ; 
+var3 = func4 ( func5 ( var12 , var13 ) / number , number , number ) ; 
+var4 -> var20 = var12 ; 
+func6 ( & var6 ) ; 
+} 
+var4 -> var6 = func7 ( var2 ) ; 
+return var3 ; 
+} 

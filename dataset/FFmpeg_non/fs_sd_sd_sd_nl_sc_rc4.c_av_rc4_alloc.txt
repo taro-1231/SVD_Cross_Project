@@ -1,0 +1,4 @@
+AVRC4 * func1 ( void ) 
+{ 
+return func2 ( sizeof ( struct AVRC4 ) ) ; 
+} 

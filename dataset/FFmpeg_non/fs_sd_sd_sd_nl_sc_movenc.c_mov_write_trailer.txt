@@ -1,0 +1,83 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MOVMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+int var5 = number ; 
+int var6 ; 
+int64_t var7 ; 
+for ( var6 = number ; var6 < var2 -> var8 ; var6 ++ ) { 
+MOVTrack * var9 = & var2 -> var10 [ var6 ] ; 
+if ( var9 -> var11 -> var12 == var13 && 
+! var9 -> var14 ) { 
+func2 ( var1 , var6 , var9 -> var15 ) ; 
+var9 -> var14 = number ; 
+} 
+} 
+if ( ! var2 -> var16 && ! ( var2 -> var17 & var18 ) ) { 
+if ( var2 -> var19 & ( var20 | var21 | var22 ) && var1 -> var23 ) { 
+var2 -> var16 = var2 -> var8 ++ ; 
+if ( ( var5 = func3 ( var1 , var2 -> var16 ) ) < number ) 
+goto var24 ; 
+} 
+} 
+if ( ! ( var2 -> var17 & var18 ) ) { 
+var7 = func4 ( var4 ) ; 
+if ( var2 -> var25 + number <= var26 ) { 
+func5 ( var4 , var2 -> var27 , var28 ) ; 
+func6 ( var4 , var2 -> var25 + number ) ; 
+} else { 
+func5 ( var4 , var2 -> var27 - number , var28 ) ; 
+func6 ( var4 , number ) ; 
+func7 ( var4 , str ) ; 
+func8 ( var4 , var2 -> var25 + number ) ; 
+} 
+func5 ( var4 , var2 -> var29 > number ? var2 -> var30 : var7 , var28 ) ; 
+if ( var2 -> var17 & var31 ) { 
+func9 ( var1 , var32 , str ) ; 
+var5 = func10 ( var1 ) ; 
+if ( var5 == number ) { 
+func5 ( var4 , var2 -> var30 , var28 ) ; 
+if ( ( var5 = func11 ( var4 , var2 , var1 ) ) < number ) 
+goto var24 ; 
+} 
+} else if ( var2 -> var29 > number ) { 
+int64_t var33 ; 
+if ( ( var5 = func11 ( var4 , var2 , var1 ) ) < number ) 
+goto var24 ; 
+var33 = var2 -> var29 - ( func4 ( var4 ) - var2 -> var30 ) ; 
+if ( var33 < number ) { 
+func9 ( var1 , AV_LOG_ERROR , str PRId64 str , number - var33 ) ; 
+var5 = func12 ( var34 ) ; 
+goto var24 ; 
+} 
+func6 ( var4 , var33 ) ; 
+func7 ( var4 , str ) ; 
+func13 ( var4 , number , var33 - number ) ; 
+func5 ( var4 , var7 , var28 ) ; 
+} else { 
+if ( ( var5 = func11 ( var4 , var2 , var1 ) ) < number ) 
+goto var24 ; 
+} 
+var5 = number ; 
+} else { 
+func14 ( var1 ) ; 
+for ( var6 = number ; var6 < var2 -> var8 ; var6 ++ ) 
+var2 -> var10 [ var6 ] . var35 = number ; 
+if ( var2 -> var17 & var36 ) { 
+func9 ( var1 , var32 , str ) ; 
+var5 = func10 ( var1 ) ; 
+if ( var5 == number ) { 
+int64_t var37 = func4 ( var4 ) ; 
+func5 ( var4 , var2 -> var30 , var28 ) ; 
+func15 ( var4 , var2 , - number , number ) ; 
+func5 ( var4 , var37 , var28 ) ; 
+func16 ( var4 , var2 ) ; 
+} 
+} else { 
+func16 ( var4 , var2 ) ; 
+} 
+} 
+var24 : 
+func17 ( var1 ) ; 
+return var5 ; 
+} 

@@ -1,0 +1,12 @@
+func1 ( struct var1 * var1 ) 
+{ 
+switch ( var1 -> var2 [ number ] >> number ) 
+{ 
+case 0 : return str ; 
+case number : return str ; 
+case 2 : return str ; 
+case 3 : return str ; 
+var3 : assert ( var4 ) ; 
+} 
+return str ; 
+} 

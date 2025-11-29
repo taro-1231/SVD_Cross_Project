@@ -1,0 +1,13 @@
+void func1 ( void * var1 ) 
+{ 
+int var2 ; 
+char ** var3 ; 
+if ( ! var1 ) 
+return ; 
+var3 = * ( char ** ) var1 ; 
+if ( ! var3 ) 
+return ; 
+for ( var2 = number ; var2 < var4 ; var2 ++ ) 
+func2 ( var3 [ var2 ] ) ; 
+func3 ( var1 ) ; 
+} 

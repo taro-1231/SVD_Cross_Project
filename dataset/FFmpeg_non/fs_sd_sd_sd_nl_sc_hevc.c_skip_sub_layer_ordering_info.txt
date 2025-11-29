@@ -1,0 +1,6 @@
+static void func1 ( GetBitContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+func2 ( var1 ) ; 
+func2 ( var1 ) ; 
+} 

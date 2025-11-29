@@ -1,0 +1,4 @@
+AVFilter ** func1 ( AVFilter ** var1 ) 
+{ 
+return var1 ? & ( * var1 ) -> var2 : & var3 ; 
+} 

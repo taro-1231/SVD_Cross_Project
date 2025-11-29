@@ -1,0 +1,33 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+ATempoContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+int var9 = number ; 
+int var10 = var2 -> var11 ; 
+int var12 = ( int ) ( number + ( ( double ) var10 ) / var5 -> var13 ) ; 
+const uint8_t * var14 = var2 -> var15 [ number ] ; 
+const uint8_t * var16 = var14 + var10 * var5 -> var17 ; 
+while ( var14 < var16 ) { 
+if ( ! var5 -> var18 ) { 
+var5 -> var18 = func2 ( var7 , var12 ) ; 
+if ( ! var5 -> var18 ) 
+return func3 ( var19 ) ; 
+func4 ( var5 -> var18 , var2 ) ; 
+var5 -> var4 = var5 -> var18 -> var15 [ number ] ; 
+var5 -> var20 = var5 -> var4 + var12 * var5 -> var17 ; 
+} 
+func5 ( var5 , & var14 , var16 , & var5 -> var4 , var5 -> var20 ) ; 
+if ( var5 -> var4 == var5 -> var20 ) { 
+int var21 = ( ( var5 -> var4 - var5 -> var18 -> var15 [ number ] ) / 
+var5 -> var17 ) ; 
+var9 = func6 ( var5 , var7 , var21 ) ; 
+if ( var9 < number ) 
+goto var22 ; 
+} 
+} 
+var5 -> var23 += var10 ; 
+var22 : 
+func7 ( & var2 ) ; 
+return var9 ; 
+} 

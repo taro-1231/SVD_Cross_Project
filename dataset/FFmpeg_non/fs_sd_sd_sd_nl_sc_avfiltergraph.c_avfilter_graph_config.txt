@@ -1,0 +1,15 @@
+int func1 ( AVFilterGraph * var1 , void * var2 ) 
+{ 
+int var3 ; 
+if ( ( var3 = func2 ( var1 , var2 ) ) ) 
+return var3 ; 
+if ( ( var3 = func3 ( var1 , var2 ) ) < number ) 
+return var3 ; 
+if ( ( var3 = func4 ( var1 , var2 ) ) ) 
+return var3 ; 
+if ( ( var3 = func5 ( var1 , var2 ) ) ) 
+return var3 ; 
+if ( ( var3 = func6 ( var1 , var2 ) ) ) 
+return var3 ; 
+return number ; 
+} 

@@ -1,0 +1,5 @@
+var1 func1 ( AVFilterFormats ** var2 , int64_t var3 ) 
+{ 
+func2 ( var2 , var3 , var1 , var4 , var5 ) ; 
+return number ; 
+} 

@@ -1,0 +1,46 @@
+static void func1 ( WriterContext * var1 , InputFile * var2 , AVPacket * var3 , int var4 ) 
+{ 
+char var5 [ number ] ; 
+AVStream * var6 = var2 -> var7 [ var3 -> var8 ] . var6 ; 
+AVBPrint var9 ; 
+const char * var10 ; 
+func2 ( & var9 , number , var11 ) ; 
+func3 ( var1 , var12 ) ; 
+var10 = func4 ( var6 -> var13 -> var14 ) ; 
+if ( var10 ) func5 ( str , var10 ) ; 
+else func6 ( str , str ) ; 
+func7 ( str , var3 -> var8 ) ; 
+func8 ( str , var3 -> var15 ) ; 
+func9 ( str , var3 -> var15 , & var6 -> var16 ) ; 
+func8 ( str , var3 -> var17 ) ; 
+func9 ( str , var3 -> var17 , & var6 -> var16 ) ; 
+func10 ( str , var3 -> var18 ) ; 
+func11 ( str , var3 -> var18 , & var6 -> var16 ) ; 
+func10 ( str , var3 -> var19 ) ; 
+func11 ( str , var3 -> var19 , & var6 -> var16 ) ; 
+func12 ( str , var3 -> var20 , var21 ) ; 
+if ( var3 -> var22 != - number ) func13 ( str , str PRId64 , var3 -> var22 ) ; 
+else func6 ( str , str ) ; 
+func13 ( str , str , var3 -> var23 & var24 ? str : str , 
+var3 -> var23 & var25 ? str : str ) ; 
+if ( var3 -> var26 ) { 
+int var20 ; 
+const uint8_t * var27 ; 
+var27 = func14 ( var3 , var28 , & var20 ) ; 
+if ( var27 && var20 && var29 ) { 
+AVDictionary * var30 = var31 ; 
+if ( func15 ( var27 , var20 , & var30 ) >= number ) 
+func16 ( var1 , var30 , var32 ) ; 
+func17 ( & var30 ) ; 
+} 
+func18 ( var1 , var6 -> var13 , var3 -> var33 , var3 -> var26 , 
+var34 , 
+var35 ) ; 
+} 
+if ( var36 ) 
+func19 ( var1 , str , var3 -> var37 , var3 -> var20 ) ; 
+func20 ( var1 , str , var3 -> var37 , var3 -> var20 ) ; 
+func21 ( var1 ) ; 
+func22 ( & var9 , var31 ) ; 
+fflush ( var38 ) ; 
+} 

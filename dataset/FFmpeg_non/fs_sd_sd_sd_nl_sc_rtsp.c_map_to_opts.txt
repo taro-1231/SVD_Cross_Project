@@ -1,0 +1,8 @@
+static AVDictionary * func1 ( RTSPState * var1 ) 
+{ 
+AVDictionary * var2 = var3 ; 
+char var4 [ number ] ; 
+snprintf ( var4 , sizeof ( var4 ) , str , var1 -> var5 ) ; 
+func2 ( & var2 , str , var4 , number ) ; 
+return var2 ; 
+} 

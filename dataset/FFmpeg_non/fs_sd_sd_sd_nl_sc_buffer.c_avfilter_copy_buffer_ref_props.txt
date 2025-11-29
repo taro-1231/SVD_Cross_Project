@@ -1,0 +1,17 @@
+void func1 ( AVFilterBufferRef * var1 , const AVFilterBufferRef * var2 ) 
+{ 
+var1 -> var3 = var2 -> var3 ; 
+var1 -> var4 = var2 -> var4 ; 
+switch ( var2 -> var5 ) { 
+case var6 : { 
+if ( var1 -> var7 -> var8 ) 
+func2 ( & var1 -> var7 -> var8 ) ; 
+func3 ( var1 -> var7 , var2 -> var7 ) ; 
+break ; 
+} 
+case var9 : * var1 -> var10 = * var2 -> var10 ; break ; 
+var11 : break ; 
+} 
+func4 ( & var1 -> var12 ) ; 
+func5 ( & var1 -> var12 , var2 -> var12 , number ) ; 
+} 

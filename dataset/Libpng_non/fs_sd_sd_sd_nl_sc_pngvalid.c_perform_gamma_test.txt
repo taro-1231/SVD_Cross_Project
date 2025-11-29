@@ -1,0 +1,101 @@
+func1 ( png_modifier * var1 , int var2 ) 
+{ 
+unsigned int var3 = 
+var1 -> var3 ; 
+double var4 = var1 -> var4 ; 
+if ( ! var1 -> var5 . var6 && var1 -> var7 ) 
+{ 
+func2 ( var1 ) ; 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+if ( var1 -> var8 ) 
+{ 
+if ( var2 ) 
+{ 
+fflush ( var9 ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str ) ; 
+fflush ( var10 ) ; 
+} 
+func4 ( var1 ) ; 
+if ( var1 -> var11 ) 
+var1 -> var3 = number ; 
+func5 ( var1 ) ; 
+if ( ! var3 ) 
+var1 -> var3 = number ; 
+if ( var2 ) 
+func6 ( var1 , number number number ; 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+if ( var1 -> var12 ) 
+{ 
+func4 ( var1 ) ; 
+func7 ( var1 ) ; 
+if ( var2 ) 
+func6 ( var1 , str , var1 -> var13 < number , number ; 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+if ( var1 -> var14 ) 
+{ 
+func4 ( var1 ) ; 
+func8 ( var1 ) ; 
+if ( var2 ) 
+{ 
+fflush ( var9 ) ; 
+printf ( str ) ; 
+printf ( str , var1 -> var15 ) ; 
+printf ( str , var1 -> var16 ) ; 
+fflush ( var10 ) ; 
+} 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+if ( var1 -> var17 ) 
+{ 
+func4 ( var1 ) ; 
+if ( var1 -> var11 ) 
+{ 
+var1 -> var3 = number ; 
+var1 -> var4 = number ; 
+} 
+func9 ( var1 , var18 , 
+var1 -> var11 ) ; 
+if ( ! var3 ) 
+var1 -> var3 = number ; 
+var1 -> var4 = var4 ; 
+if ( var2 ) 
+func6 ( var1 , str , number , number ; 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+if ( var1 -> var19 ) 
+{ 
+int var20 ; 
+func4 ( var1 ) ; 
+if ( var1 -> var11 ) 
+var1 -> var3 = number ; 
+for ( var20 = var21 + var22 ; 
+var20 <= var21 + var23 && ! func3 ( var1 ) ; 
+++ var20 ) 
+func9 ( var1 , var20 , 
+var1 -> var11 ) ; 
+if ( ! var3 ) 
+var1 -> var3 = number ; 
+if ( var2 ) 
+func6 ( var1 , str , number , number ; 
+if ( func3 ( var1 ) ) 
+return ; 
+} 
+} 

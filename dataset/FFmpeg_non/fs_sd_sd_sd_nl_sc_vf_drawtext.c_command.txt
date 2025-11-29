@@ -1,0 +1,15 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , char * var4 , int var5 , int var6 ) 
+{ 
+DrawTextContext * var7 = var1 -> var8 ; 
+if ( ! strcmp ( var2 , str ) ) { 
+int var10 ; 
+func2 ( var1 ) ; 
+var7 -> var9 = number ; 
+if ( ( var10 = func3 ( var1 , var3 , str , str ) ) < number ) 
+return var10 ; 
+if ( ( var10 = func4 ( var1 ) ) < number ) 
+return var10 ; 
+return func5 ( var1 -> var11 [ number ] ) ; 
+} 
+return func6 ( var12 ) ; 
+} 

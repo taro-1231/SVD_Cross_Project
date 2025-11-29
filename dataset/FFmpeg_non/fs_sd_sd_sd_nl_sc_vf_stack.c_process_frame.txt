@@ -1,0 +1,46 @@
+static int func1 ( FFFrameSync * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+StackContext * var6 = var1 -> var7 ; 
+AVFrame ** var8 = var6 -> var9 ; 
+AVFrame * var10 ; 
+int var11 , var12 , var13 , var14 [ number ] = { number } ; 
+for ( var11 = number ; var11 < var6 -> var15 ; var11 ++ ) { 
+if ( ( var13 = func2 ( & var6 -> var1 , var11 , & var8 [ var11 ] , number ) ) < number ) 
+return var13 ; 
+} 
+var10 = func3 ( var4 , var4 -> var16 , var4 -> var17 ) ; 
+if ( ! var10 ) 
+return func4 ( var18 ) ; 
+var10 -> var19 = func5 ( var6 -> var1 . var19 , var6 -> var1 . var20 , var4 -> var20 ) ; 
+for ( var11 = number ; var11 < var6 -> var15 ; var11 ++ ) { 
+AVFilterLink * var21 = var2 -> var22 [ var11 ] ; 
+int var23 [ number ] ; 
+int var24 [ number ] ; 
+if ( ( var13 = func6 ( var23 , var21 -> var25 , var21 -> var16 ) ) < number ) { 
+func7 ( & var10 ) ; 
+return var13 ; 
+} 
+var24 [ number ] = var24 [ number ] = func8 ( var21 -> var17 , var6 -> var26 -> var27 ) ; 
+var24 [ number ] = var24 [ number ] = var21 -> var17 ; 
+for ( var12 = number ; var12 < var6 -> var28 ; var12 ++ ) { 
+if ( var6 -> var29 ) { 
+func9 ( var10 -> var30 [ var12 ] + var14 [ var12 ] * var10 -> var23 [ var12 ] , 
+var10 -> var23 [ var12 ] , 
+var8 [ var11 ] -> var30 [ var12 ] , 
+var8 [ var11 ] -> var23 [ var12 ] , 
+var23 [ var12 ] , var24 [ var12 ] ) ; 
+var14 [ var12 ] += var24 [ var12 ] ; 
+} else { 
+func9 ( var10 -> var30 [ var12 ] + var14 [ var12 ] , 
+var10 -> var23 [ var12 ] , 
+var8 [ var11 ] -> var30 [ var12 ] , 
+var8 [ var11 ] -> var23 [ var12 ] , 
+var23 [ var12 ] , var24 [ var12 ] ) ; 
+var14 [ var12 ] += var23 [ var12 ] ; 
+} 
+} 
+} 
+return func10 ( var4 , var10 ) ; 
+} 

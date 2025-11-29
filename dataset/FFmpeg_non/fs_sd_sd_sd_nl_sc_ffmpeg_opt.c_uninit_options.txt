@@ -1,0 +1,27 @@
+static void func1 ( OptionsContext * var1 ) 
+{ 
+const OptionDef * var2 = var3 ; 
+int var4 ; 
+while ( var2 -> var5 ) { 
+void * var6 = ( uint8_t * ) var1 + var2 -> var7 . var8 ; 
+if ( var2 -> var9 & var10 ) { 
+SpecifierOpt ** var11 = var6 ; 
+int var4 , * var12 = ( int * ) ( var11 + number ) ; 
+for ( var4 = number ; var4 < * var12 ; var4 ++ ) { 
+func2 ( & ( * var11 ) [ var4 ] . var13 ) ; 
+if ( var2 -> var9 & var14 ) 
+func2 ( & ( * var11 ) [ var4 ] . var7 . var15 ) ; 
+} 
+func2 ( var11 ) ; 
+* var12 = number ; 
+} else if ( var2 -> var9 & var16 && var2 -> var9 & var14 ) 
+func2 ( var6 ) ; 
+var2 ++ ; 
+} 
+for ( var4 = number ; var4 < var1 -> var17 ; var4 ++ ) 
+func2 ( & var1 -> var18 [ var4 ] . var19 ) ; 
+func2 ( & var1 -> var18 ) ; 
+func2 ( & var1 -> var20 ) ; 
+func2 ( & var1 -> var21 ) ; 
+func2 ( & var1 -> var22 ) ; 
+} 

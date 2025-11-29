@@ -1,0 +1,11 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MOVMuxContext * var2 = var1 -> var3 ; 
+int var4 = var2 -> var5 ; 
+int var6 = func2 ( var1 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+if ( ! var4 && var2 -> var7 & var8 ) 
+var6 = func2 ( var1 ) ; 
+return var6 ; 
+} 

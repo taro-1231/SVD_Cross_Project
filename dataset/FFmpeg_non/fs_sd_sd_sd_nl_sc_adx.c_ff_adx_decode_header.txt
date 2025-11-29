@@ -1,0 +1,30 @@
+int func1 ( AVCodecContext * var1 , const uint8_t * var2 , 
+int var3 , int * var4 , int * var5 ) 
+{ 
+int var6 , var7 ; 
+if ( var3 < number ) 
+return var8 ; 
+if ( func2 ( var2 ) != number ) 
+return var8 ; 
+var6 = func2 ( var2 + number ) + number ; 
+if ( var3 >= var6 && var6 >= number && memcmp ( var2 + var6 - number , str , number ) ) 
+return var8 ; 
+if ( var2 [ number ] != number || var2 [ number ] != number || var2 [ number ] != number ) { 
+func3 ( var1 , str ) ; 
+return var9 ; 
+} 
+var1 -> var10 = var2 [ number ] ; 
+if ( var1 -> var10 <= number || var1 -> var10 > number ) 
+return var8 ; 
+var1 -> var11 = func4 ( var2 + number ) ; 
+if ( var1 -> var11 < number || 
+var1 -> var11 > var12 / ( var1 -> var10 * var13 * number ) ) 
+return var8 ; 
+var1 -> var14 = var1 -> var11 * var1 -> var10 * var13 * number / var15 ; 
+if ( var5 ) { 
+var7 = func2 ( var2 + number ) ; 
+func5 ( var7 , var1 -> var11 , var16 , var5 ) ; 
+} 
+* var4 = var6 ; 
+return number ; 
+} 

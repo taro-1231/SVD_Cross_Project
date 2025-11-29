@@ -1,0 +1,34 @@
+static int func1 ( AVFilterLink * var1 , AVRational * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+AspectContext * var5 = var1 -> var4 -> var6 ; 
+const AVPixFmtDescriptor * var7 = func2 ( var1 -> var8 ) ; 
+double var9 [ var10 ] , var11 ; 
+int var12 ; 
+var9 [ var13 ] = var1 -> var14 ; 
+var9 [ var15 ] = var1 -> var16 ; 
+var9 [ var17 ] = ( double ) var1 -> var14 / var1 -> var16 ; 
+var9 [ var18 ] = var1 -> var19 . var20 ? 
+( double ) var1 -> var19 . var20 / var1 -> var19 . var21 : number ; 
+var9 [ var22 ] = var9 [ var17 ] * var9 [ var18 ] ; 
+var9 [ var23 ] = number << var7 -> var24 ; 
+var9 [ var25 ] = number << var7 -> var26 ; 
+var12 = func3 ( & var11 , var5 -> var27 , 
+var28 , var9 , 
+var29 , var29 , var29 , var29 , var29 , number , var3 ) ; 
+if ( var12 < number ) { 
+var12 = func4 ( var2 , var5 -> var27 , var5 -> var30 , number , var3 ) ; 
+} else 
+* var2 = func5 ( var11 , var5 -> var30 ) ; 
+if ( var12 < number ) { 
+func6 ( var3 , var31 , 
+str , var5 -> var27 ) ; 
+return var12 ; 
+} 
+if ( var2 -> var20 < number || var2 -> var21 <= number ) { 
+func6 ( var3 , var31 , 
+str , var5 -> var27 ) ; 
+return func7 ( var32 ) ; 
+} 
+return number ; 
+} 

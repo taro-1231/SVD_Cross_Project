@@ -1,0 +1,36 @@
+static int func1 ( AVFormatContext * var1 , 
+AVIOContext * var2 , AVCodecContext * var3 ) 
+{ 
+int var4 = ( var3 -> var5 && 
+! ( var3 -> var5 & var6 ) && 
+! func2 ( var3 -> var5 ) ) ; 
+int var7 = func3 ( var2 , var3 -> var8 , var3 -> var9 , 
+! var4 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+if ( var4 ) { 
+const char * var10 = ( var1 -> var11 & var12 ) ? 
+str : var13 ; 
+AVDictionary * var14 = var15 ; 
+uint8_t var16 [ number ] , * var17 , * var18 ; 
+int64_t var19 ; 
+snprintf ( var16 , sizeof ( var16 ) , str PRIx64 , var3 -> var5 ) ; 
+func4 ( & var14 , str , var16 , number ) ; 
+var19 = func5 ( var14 , var10 ) ; 
+if ( var19 >= ( ( number << number ) - number ) ) 
+return func6 ( var20 ) ; 
+var17 = func7 ( var19 + number ) ; 
+if ( ! var17 ) { 
+func8 ( & var14 ) ; 
+return func6 ( var21 ) ; 
+} 
+var17 [ number ] = number ; 
+func9 ( var17 + number , var19 ) ; 
+var18 = var17 + number ; 
+func10 ( & var18 , & var14 , var10 ) ; 
+func11 ( var2 , var17 , var19 + number ) ; 
+func12 ( & var17 ) ; 
+func8 ( & var14 ) ; 
+} 
+return number ; 
+} 

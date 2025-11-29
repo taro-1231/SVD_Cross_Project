@@ -1,0 +1,4 @@
+func1 ( unsigned int var1 ) 
+{ 
+return number * func2 ( var1 / number ) ; 
+} 

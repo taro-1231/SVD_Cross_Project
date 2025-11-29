@@ -1,0 +1,14 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 ) 
+{ 
+MXFTaggedValue * var4 = var1 ; 
+uint8_t var5 [ number ] ; 
+if ( var3 <= number ) 
+return number ; 
+func2 ( var2 , var5 , number ) ; 
+if ( memcmp ( var5 , var6 , number ) == number ) { 
+return func3 ( var2 , var3 - number , & var4 -> var7 ) ; 
+} else if ( memcmp ( var5 , var8 , number ) == number ) { 
+return func4 ( var2 , var3 - number , & var4 -> var7 ) ; 
+} 
+return number ; 
+} 

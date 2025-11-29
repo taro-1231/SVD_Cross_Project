@@ -1,0 +1,54 @@
+func1 ( gamma_display * var1 , png_structp var2 , png_infop var3 ) 
+{ 
+func2 ( & var1 -> var4 , var2 , var3 ) ; 
+if ( var1 -> var5 ) 
+var6 ( var2 ) ; 
+var7 ( var2 ) ; 
+png_error ( var2 , str ) ; 
+if ( var1 -> expand16 ) 
+png_set_expand_16 ( var2 ) ; 
+png_error ( var2 , str ) ; 
+if ( var1 -> do_background >= ALPHA_MODE_OFFSET ) 
+{ 
+{ 
+int mode = var1 -> do_background - ALPHA_MODE_OFFSET ; 
+PNG_CONST double sg = var1 -> screen_gamma ; 
+PNG_CONST png_fixed_point g = fix ( sg ) ; 
+png_set_alpha_mode ( var2 , mode , sg ) ; 
+png_set_alpha_mode_fixed ( var2 , mode , g ) ; 
+if ( mode == PNG_ALPHA_STANDARD && sg != 1 ) 
+{ 
+png_set_gamma ( var2 , sg , var1 -> file_gamma ) ; 
+png_fixed_point f = fix ( var1 -> file_gamma ) ; 
+png_set_gamma_fixed ( var2 , g , f ) ; 
+} 
+} 
+png_error ( var2 , str ) ; 
+} 
+else 
+{ 
+png_set_gamma ( var2 , var1 -> screen_gamma , var1 -> file_gamma ) ; 
+{ 
+png_fixed_point s = fix ( var1 -> screen_gamma ) ; 
+png_fixed_point f = fix ( var1 -> file_gamma ) ; 
+png_set_gamma_fixed ( var2 , s , f ) ; 
+} 
+if ( var1 -> do_background ) 
+{ 
+PNG_CONST double bg = var1 -> background_gamma ; 
+PNG_CONST png_fixed_point g = fix ( bg ) ; 
+png_set_background ( var2 , & var1 -> background_color , var1 -> do_background , 
+0 bg ) ; 
+png_set_background_fixed ( var2 , & var1 -> background_color , 
+var1 -> do_background , 0 g ) ; 
+png_error ( var2 , str ) ; 
+} 
+} 
+{ 
+int i = var1 -> var4 . use_update_info ; 
+do 
+png_read_update_info ( var2 , var3 ) ; 
+while ( -- i > 0 ) ; 
+} 
+standard_info_part2 ( & var1 -> var4 , var2 , var3 , 1 ; 
+} 

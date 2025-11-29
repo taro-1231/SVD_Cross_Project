@@ -1,0 +1,13 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+SPPContext * var7 = var1 -> var8 ; 
+if ( ! strcmp ( var2 , str ) ) { 
+if ( ! strcmp ( var3 , str ) ) 
+var7 -> var9 = var10 ; 
+else 
+var7 -> var9 = func2 ( func3 ( var3 , var11 , number ) , number , var10 ) ; 
+return number ; 
+} 
+return func4 ( var12 ) ; 
+} 

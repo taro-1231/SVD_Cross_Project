@@ -1,0 +1,34 @@
+static int func1 ( SwsContext * var1 , SwsFilterDescriptor * var2 , int var3 , int var4 ) 
+{ 
+int var5 = var2 -> var6 -> var7 ; 
+ColorContext * var8 = var2 -> var8 ; 
+uint32_t * var9 = var8 -> var9 ; 
+int var10 ; 
+var2 -> var11 -> var12 [ number ] . var3 = var3 ; 
+var2 -> var11 -> var12 [ number ] . var4 = var4 ; 
+var2 -> var11 -> var12 [ number ] . var3 = var3 ; 
+var2 -> var11 -> var12 [ number ] . var4 = var4 ; 
+for ( var10 = number ; var10 < var4 ; ++ var10 ) { 
+int var13 = var3 + var10 - var2 -> var6 -> var12 [ number ] . var3 ; 
+int var14 = ( ( var3 + var10 ) >> var2 -> var6 -> var15 ) - var2 -> var6 -> var12 [ number ] . var3 ; 
+const uint8_t * var6 [ number ] = { var2 -> var6 -> var12 [ number ] . var16 [ var13 ] , 
+var2 -> var6 -> var12 [ number ] . var16 [ var14 ] , 
+var2 -> var6 -> var12 [ number ] . var16 [ var14 ] , 
+var2 -> var6 -> var12 [ number ] . var16 [ var13 ] } ; 
+uint8_t * var11 = var2 -> var11 -> var12 [ number ] . var16 [ var10 ] ; 
+if ( var1 -> func2 ) { 
+var1 -> func2 ( var11 , var6 [ number ] , var6 [ number ] , var6 [ number ] , var5 , var9 ) ; 
+} else if ( var1 -> func3 ) { 
+var1 -> func3 ( var11 , var6 , var5 , var1 -> var17 ) ; 
+} 
+if ( var2 -> var18 ) { 
+var11 = var2 -> var11 -> var12 [ number ] . var16 [ var10 ] ; 
+if ( var1 -> func4 ) { 
+var1 -> func4 ( var11 , var6 [ number ] , var6 [ number ] , var6 [ number ] , var5 , var9 ) ; 
+} else if ( var1 -> func5 ) { 
+var1 -> func5 ( var11 , var6 , var5 , var19 ) ; 
+} 
+} 
+} 
+return var4 ; 
+} 

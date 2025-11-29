@@ -1,0 +1,8 @@
+func1 ( png_modifier * var1 , png_modification * var2 , int var3 ) 
+{ 
+UNUSED ( var3 ) 
+func2 ( var1 -> var4 , number ) ; 
+func2 ( var1 -> var4 + number , var5 ) ; 
+func2 ( var1 -> var4 + number , ( ( gama_modification * ) var2 ) -> var6 ) ; 
+return number ; 
+} 

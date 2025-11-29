@@ -1,0 +1,34 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+MOVTrack * var3 ) 
+{ 
+int var4 = var3 -> var5 < var6 ? number : number ; 
+if ( var3 -> var7 == var8 ) 
+var4 = number ; 
+( var4 == number ) ? func2 ( var1 , number ) : func2 ( var1 , number ) ; 
+func3 ( var1 , str ) ; 
+func4 ( var1 , var4 ) ; 
+func5 ( var1 , number ) ; 
+if ( var4 == number ) { 
+func6 ( var1 , var3 -> var9 ) ; 
+func6 ( var1 , var3 -> var9 ) ; 
+} else { 
+func2 ( var1 , var3 -> var9 ) ; 
+func2 ( var1 , var3 -> var9 ) ; 
+} 
+func2 ( var1 , var3 -> var10 ) ; 
+if ( ! var3 -> var11 && var2 -> var7 == var8 ) 
+( var4 == number ) ? func6 ( var1 , func7 ( number ) ) : func2 ( var1 , number ) ; 
+else if ( ! var3 -> var11 ) 
+( var4 == number ) ? func6 ( var1 , number ) : func2 ( var1 , number ) ; 
+else 
+( var4 == number ) ? func6 ( var1 , var3 -> var5 ) : func2 ( var1 , var3 -> var5 ) ; 
+func8 ( var1 , var3 -> var12 ) ; 
+func8 ( var1 , number ) ; 
+if ( var4 != number && var3 -> var7 == var13 ) { 
+av_log ( NULL , AV_LOG_ERROR , 
+str 
+str 
+str ) ; 
+} 
+return number ; 
+} 

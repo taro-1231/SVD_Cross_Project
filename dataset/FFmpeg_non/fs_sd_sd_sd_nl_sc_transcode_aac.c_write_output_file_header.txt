@@ -1,0 +1,10 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+if ( ( var2 = func2 ( var1 , var3 ) ) < number ) { 
+fprintf ( var4 , str , 
+func3 ( var2 ) ) ; 
+return var2 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,12 @@
+int func1 ( FFFrameSync * var1 , AVFilterLink * var2 , 
+AVFrame * var3 ) 
+{ 
+int var4 ; 
+if ( ( var4 = func2 ( var1 , number ) ) < number ) 
+return var4 ; 
+if ( ( var4 = func3 ( var1 , func4 ( var2 ) , var3 ) ) < number ) 
+return var4 ; 
+if ( ( var4 = func2 ( var1 , number ) ) < number ) 
+return var4 ; 
+return number ; 
+} 

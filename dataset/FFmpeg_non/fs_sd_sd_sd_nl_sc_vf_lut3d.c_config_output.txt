@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+LUT3DContext * var4 = var2 -> var5 ; 
+int var6 ; 
+var1 -> var7 = var2 -> var8 [ number ] -> var7 ; 
+var1 -> var9 = var2 -> var8 [ number ] -> var9 ; 
+var1 -> var10 = var2 -> var8 [ number ] -> var10 ; 
+if ( ( var6 = func2 ( var2 , & var4 -> var11 ) ) < number ) 
+return var6 ; 
+return number ; 
+} 

@@ -1,0 +1,4 @@
+unsigned func1 ( AVFilterContext * var1 ) 
+{ 
+return ( ( BufferSourceContext * ) var1 -> var2 ) -> var3 ; 
+} 

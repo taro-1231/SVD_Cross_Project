@@ -1,0 +1,12 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+uint8_t var3 [ number ] = { number } ; 
+int var4 ; 
+if ( ( var4 = func2 ( var2 , var3 ) ) < number ) 
+return var4 ; 
+func3 ( var1 , var2 -> var5 + number + sizeof ( var3 ) ) ; 
+func4 ( var1 , str ) ; 
+func5 ( var1 , var3 , sizeof ( var3 ) ) ; 
+func5 ( var1 , var2 -> var6 , var2 -> var5 ) ; 
+return number ; 
+} 

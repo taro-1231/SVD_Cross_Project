@@ -1,0 +1,43 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVDictionary ** var3 , int64_t * var4 , 
+ID3v2ExtraMetaAPIC ** var5 , ID3v2ExtraMeta ** var6 ) 
+{ 
+static const char var7 [ ] = str ; 
+ID3v2ExtraMeta * var8 ; 
+func2 ( var2 , var3 , var9 , var6 ) ; 
+for ( var8 = * var6 ; var8 ; var8 = var8 -> var10 ) { 
+if ( ! strcmp ( var8 -> var11 , str ) ) { 
+ID3v2ExtraMetaPRIV * var12 = var8 -> var13 ; 
+if ( var12 -> var14 == number && ! strcmp ( var12 -> var15 , var7 ) ) { 
+int64_t var16 = func3 ( var12 -> var13 ) ; 
+av_log ( var1 , AV_LOG_DEBUG , str PRId64 str , var16 ) ; 
+if ( ( var16 & ~ ( ( 1ULL << 33 ) - 1 ) ) == 0 ) 
+* var4 = var16 ; 
+else 
+av_log ( var1 , AV_LOG_ERROR , str PRId64 str , var16 ) ; 
+} 
+} else if ( ! strcmp ( var8 -> var11 , str ) && var5 ) 
+* var5 = var8 -> var13 ; 
+} 
+} 
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVDictionary ** var3 , int64_t * var4 , 
+ID3v2ExtraMetaAPIC ** var5 , ID3v2ExtraMeta ** var6 ) 
+{ 
+static const char var7 [ ] = str ; 
+ID3v2ExtraMeta * var8 ; 
+func2 ( var2 , var3 , var9 , var6 ) ; 
+for ( var8 = * var6 ; var8 ; var8 = var8 -> var10 ) { 
+if ( ! strcmp ( var8 -> var11 , str ) ) { 
+ID3v2ExtraMetaPRIV * var12 = var8 -> var13 ; 
+if ( var12 -> var14 == number && ! strcmp ( var12 -> var15 , var7 ) ) { 
+int64_t var16 = func3 ( var12 -> var13 ) ; 
+av_log ( var1 , AV_LOG_DEBUG , str PRId64 str , var16 ) ; 
+if ( ( var16 & ~ ( ( 1ULL << 33 ) - 1 ) ) == 0 ) 
+* var4 = var16 ; 
+else 
+av_log ( var1 , AV_LOG_ERROR , str PRId64 str , var16 ) ; 
+} 
+} else if ( ! strcmp ( var8 -> var11 , str ) && var5 ) 
+* var5 = var8 -> var13 ; 
+} 

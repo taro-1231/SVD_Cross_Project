@@ -1,0 +1,33 @@
+static int func1 ( struct color_node * var1 , 
+uint8_t * var2 , 
+int * var3 , 
+const uint32_t * var4 , 
+const struct color_rect * var5 ) 
+{ 
+uint32_t var6 ; 
+int var7 , var8 ; 
+int var9 = - number , var10 = - number ; 
+struct color_node * var11 ; 
+struct color_rect var12 , var13 ; 
+const int var14 = func2 ( var2 , var4 , & var7 , var5 ) ; 
+if ( var14 < number ) 
+return - number ; 
+var8 = ( * var3 ) ++ ; 
+var6 = var4 [ var14 ] ; 
+var11 = & var1 [ var8 ] ; 
+var11 -> var15 = var7 ; 
+var11 -> var16 = var14 ; 
+var11 -> var17 [ number ] = var6 >> number & number ; 
+var11 -> var17 [ number ] = var6 >> number & number ; 
+var11 -> var17 [ number ] = var6 & number ; 
+var2 [ var14 ] = number ; 
+var12 = var13 = * var5 ; 
+var12 . var18 [ var7 ] = var11 -> var17 [ var7 ] ; 
+var13 . var19 [ var7 ] = var11 -> var17 [ var7 ] + number ; 
+var9 = func1 ( var1 , var2 , var3 , var4 , & var12 ) ; 
+if ( var13 . var19 [ var7 ] <= var13 . var18 [ var7 ] ) 
+var10 = func1 ( var1 , var2 , var3 , var4 , & var13 ) ; 
+var11 -> var20 = var9 ; 
+var11 -> var21 = var10 ; 
+return var8 ; 
+} 

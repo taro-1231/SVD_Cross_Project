@@ -1,0 +1,14 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 != var5 ) 
+return ; 
+if ( var1 -> var6 != number || 
+var1 -> var7 [ number ] -> var8 -> var9 != var10 || 
+! func2 ( var1 -> var7 [ number ] -> var8 -> var11 ) || 
+var2 -> var12 != number || 
+var2 -> var13 [ number ] . var14 != number || 
+var2 -> var13 [ number ] . var15 [ number ] -> var16 >= number ) 
+return ; 
+var2 -> var17 = number ; 
+} 

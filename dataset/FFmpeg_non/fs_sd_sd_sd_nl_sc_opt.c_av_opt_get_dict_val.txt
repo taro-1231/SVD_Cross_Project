@@ -1,0 +1,13 @@
+int func1 ( void * var1 , const char * var2 , int var3 , AVDictionary ** var4 ) 
+{ 
+void * var5 ; 
+AVDictionary * var6 ; 
+const AVOption * var7 = func2 ( var1 , var2 , var8 , number , var3 , & var5 ) ; 
+if ( ! var7 || ! var5 ) 
+return var9 ; 
+if ( var7 -> var10 != var11 ) 
+return func3 ( var12 ) ; 
+var6 = * ( AVDictionary ** ) ( ( ( uint8_t * ) var5 ) + var7 -> var13 ) ; 
+func4 ( var4 , var6 , number ) ; 
+return number ; 
+} 

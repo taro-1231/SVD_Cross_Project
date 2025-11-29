@@ -1,0 +1,17 @@
+static av_cold void func1 ( AVFilterContext * var2 ) 
+{ 
+ShowWavesContext * var1 = var2 -> var3 ; 
+func2 ( & var1 -> var4 ) ; 
+func3 ( & var1 -> var5 ) ; 
+if ( var1 -> var6 ) { 
+struct frame_node * var7 = var1 -> var8 ; 
+while ( var7 ) { 
+struct frame_node * var9 = var7 ; 
+var7 = var7 -> var10 ; 
+func2 ( & var9 -> var11 ) ; 
+func3 ( & var9 ) ; 
+} 
+func3 ( & var1 -> var12 ) ; 
+var1 -> var13 = var14 ; 
+} 
+} 

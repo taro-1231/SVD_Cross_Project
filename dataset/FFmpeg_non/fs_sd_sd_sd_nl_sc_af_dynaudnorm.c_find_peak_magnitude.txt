@@ -1,0 +1,17 @@
+static double func1 ( AVFrame * var1 , int var2 ) 
+{ 
+double var3 = var4 ; 
+int var5 , var6 ; 
+if ( var2 == - number ) { 
+for ( var5 = number ; var5 < func2 ( var1 ) ; var5 ++ ) { 
+double * var7 = ( double * ) var1 -> var8 [ var5 ] ; 
+for ( var6 = number ; var6 < var1 -> var9 ; var6 ++ ) 
+var3 = func3 ( var3 , fabs ( var7 [ var6 ] ) ) ; 
+} 
+} else { 
+double * var7 = ( double * ) var1 -> var8 [ var2 ] ; 
+for ( var6 = number ; var6 < var1 -> var9 ; var6 ++ ) 
+var3 = func3 ( var3 , fabs ( var7 [ var6 ] ) ) ; 
+} 
+return var3 ; 
+} 

@@ -1,0 +1,141 @@
+static int func1 ( void ) 
+{ 
+int var1 = number , var2 , var3 , var4 ; 
+AVFormatContext * var5 ; 
+OutputStream * var6 ; 
+InputStream * var7 ; 
+char var8 [ number ] = { number } ; 
+for ( var2 = number ; var2 < var9 ; var2 ++ ) { 
+FilterGraph * var10 = var11 [ var2 ] ; 
+for ( var3 = number ; var3 < var10 -> var12 ; var3 ++ ) { 
+OutputFilter * var13 = var10 -> var14 [ var3 ] ; 
+if ( ! var13 -> var6 || var13 -> var6 -> var15 >= number ) 
+continue ; 
+if ( var10 -> var16 != number ) 
+continue ; 
+for ( var4 = var17 - number ; var4 >= number ; var4 -- ) 
+if ( var10 -> var18 [ number ] -> var7 == var19 [ var4 ] ) 
+break ; 
+var13 -> var6 -> var15 = var4 ; 
+} 
+} 
+for ( var2 = number ; var2 < var20 ; var2 ++ ) { 
+InputFile * var21 = var22 [ var2 ] ; 
+if ( var21 -> var23 ) 
+for ( var3 = number ; var3 < var21 -> var24 ; var3 ++ ) 
+var19 [ var3 + var21 -> var25 ] -> var26 = func2 ( ) ; 
+} 
+for ( var2 = number ; var2 < var17 ; var2 ++ ) 
+if ( ( var1 = func3 ( var2 , var8 , sizeof ( var8 ) ) ) < number ) { 
+for ( var2 = number ; var2 < var27 ; var2 ++ ) { 
+var6 = var28 [ var2 ] ; 
+func4 ( var6 -> var29 ) ; 
+} 
+goto var30 ; 
+} 
+for ( var2 = number ; var2 < var27 ; var2 ++ ) { 
+if ( var28 [ var2 ] -> var31 ) 
+continue ; 
+var1 = func5 ( var28 [ var2 ] , var8 , sizeof ( var8 ) ) ; 
+if ( var1 < number ) 
+goto var30 ; 
+} 
+for ( var2 = number ; var2 < var20 ; var2 ++ ) { 
+InputFile * var21 = var22 [ var2 ] ; 
+for ( var3 = number ; var3 < var21 -> var32 -> var33 ; var3 ++ ) { 
+AVProgram * var34 = var21 -> var32 -> var35 [ var3 ] ; 
+int var36 = var37 ; 
+for ( var4 = number ; var4 < var34 -> var38 ; var4 ++ ) 
+if ( ! var19 [ var21 -> var25 + var34 -> var39 [ var4 ] ] -> var36 ) { 
+var36 = var40 ; 
+break ; 
+} 
+var34 -> var36 = var36 ; 
+} 
+} 
+for ( var2 = number ; var2 < var41 ; var2 ++ ) { 
+var5 = var42 [ var2 ] -> var32 ; 
+if ( var5 -> var43 -> var44 & var45 && var5 -> var24 == number ) { 
+var1 = func6 ( var42 [ var2 ] , var2 ) ; 
+if ( var1 < number ) 
+goto var30 ; 
+} 
+} 
+var30 : 
+func7 ( var46 , var47 , str ) ; 
+for ( var2 = number ; var2 < var17 ; var2 ++ ) { 
+var7 = var19 [ var2 ] ; 
+for ( var3 = number ; var3 < var7 -> var48 ; var3 ++ ) { 
+if ( ! func8 ( var7 -> var49 [ var3 ] -> var50 ) ) { 
+func7 ( var46 , var47 , str , 
+var7 -> var51 , var7 -> var52 -> var53 , var7 -> var54 ? var7 -> var54 -> var55 : str , 
+var7 -> var49 [ var3 ] -> var55 ) ; 
+if ( var9 > number ) 
+func7 ( var46 , var47 , str , var7 -> var49 [ var3 ] -> var50 -> var53 ) ; 
+func7 ( var46 , var47 , str ) ; 
+} 
+} 
+} 
+for ( var2 = number ; var2 < var27 ; var2 ++ ) { 
+var6 = var28 [ var2 ] ; 
+if ( var6 -> var56 ) { 
+func7 ( var46 , var47 , str , 
+var6 -> var56 , var6 -> var51 , var6 -> var53 ) ; 
+continue ; 
+} 
+if ( var6 -> var31 && ! func8 ( var6 -> var31 -> var50 ) ) { 
+func7 ( var46 , var47 , str , var6 -> var31 -> var55 ) ; 
+if ( var9 > number ) 
+func7 ( var46 , var47 , str , var6 -> var31 -> var50 -> var53 ) ; 
+func7 ( var46 , var47 , str , var6 -> var51 , 
+var6 -> var53 , var6 -> var57 ? var6 -> var57 -> var55 : str ) ; 
+continue ; 
+} 
+func7 ( var46 , var47 , str , 
+var19 [ var6 -> var15 ] -> var51 , 
+var19 [ var6 -> var15 ] -> var52 -> var53 , 
+var6 -> var51 , 
+var6 -> var53 ) ; 
+if ( var6 -> var58 != var19 [ var6 -> var15 ] ) 
+func7 ( var46 , var47 , str , 
+var6 -> var58 -> var51 , 
+var6 -> var58 -> var52 -> var53 ) ; 
+if ( var6 -> var59 ) 
+func7 ( var46 , var47 , str ) ; 
+else { 
+const AVCodec * var60 = var19 [ var6 -> var15 ] -> var54 ; 
+const AVCodec * var61 = var6 -> var57 ; 
+const char * var62 = str ; 
+const char * var63 = str ; 
+const char * var64 = str ; 
+const char * var65 = str ; 
+const AVCodecDescriptor * var66 ; 
+if ( var60 ) { 
+var62 = var60 -> var55 ; 
+var66 = func9 ( var60 -> var67 ) ; 
+if ( var66 ) 
+var63 = var66 -> var55 ; 
+if ( ! strcmp ( var62 , var63 ) ) 
+var62 = str ; 
+} 
+if ( var61 ) { 
+var64 = var61 -> var55 ; 
+var66 = func9 ( var61 -> var67 ) ; 
+if ( var66 ) 
+var65 = var66 -> var55 ; 
+if ( ! strcmp ( var64 , var65 ) ) 
+var64 = str ; 
+} 
+func7 ( var46 , var47 , str , 
+var63 , var62 , 
+var65 , var64 ) ; 
+} 
+func7 ( var46 , var47 , str ) ; 
+} 
+if ( var1 ) { 
+func7 ( var46 , var68 , str , var8 ) ; 
+return var1 ; 
+} 
+func10 ( & var69 , number ) ; 
+return number ; 
+} 

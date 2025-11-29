@@ -1,0 +1,5 @@
+static double func1 ( void * var1 , double var2 ) 
+{ 
+var2 = func2 ( var2 , number , number ) ; 
+return ( int ) ( var2 * number + number ) << number ; 
+} 

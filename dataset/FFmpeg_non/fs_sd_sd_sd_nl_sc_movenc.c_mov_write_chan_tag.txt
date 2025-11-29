@@ -1,0 +1,23 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+uint32_t var3 , var4 ; 
+int64_t var5 = func2 ( var1 ) ; 
+var3 = func3 ( var2 -> var6 -> var7 , 
+var2 -> var6 -> var8 , 
+& var4 ) ; 
+if ( ! var3 ) { 
+av_log ( var2 -> var6 , AV_LOG_WARNING , str 
+str ) ; 
+return number ; 
+} 
+if ( var2 -> var9 ) 
+return number ; 
+func4 ( var1 , number ) ; 
+func5 ( var1 , str ) ; 
+func6 ( var1 , number ) ; 
+func7 ( var1 , number ) ; 
+func4 ( var1 , var3 ) ; 
+func4 ( var1 , var4 ) ; 
+func4 ( var1 , number ) ; 
+return func8 ( var1 , var5 ) ; 
+} 

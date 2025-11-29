@@ -1,0 +1,58 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+FadeContext * var5 = var3 -> var6 ; 
+double var7 = var2 -> var8 == var9 ? - number : var2 -> var8 * func2 ( var1 -> var10 ) ; 
+if ( var5 -> var11 == var12 ) { 
+var5 -> var13 = number ; 
+if ( var7 >= var5 -> var14 / ( double ) var15 
+&& var1 -> var16 >= var5 -> var17 ) { 
+var5 -> var11 = var18 ; 
+if ( var5 -> var14 == number && var5 -> var17 != number ) { 
+var5 -> var14 = var7 * ( double ) var15 ; 
+} 
+if ( var5 -> var14 != number && var5 -> var17 == number ) { 
+var5 -> var17 = var1 -> var16 ; 
+} 
+} 
+} 
+if ( var5 -> var11 == var18 ) { 
+if ( var5 -> var19 == number ) { 
+var5 -> var13 = ( var1 -> var16 - var5 -> var17 ) * var5 -> var20 ; 
+if ( var1 -> var16 > var5 -> var17 + var5 -> var21 ) { 
+var5 -> var11 = var22 ; 
+} 
+} else { 
+var5 -> var13 = ( var7 - var5 -> var14 / ( double ) var15 ) 
+* ( float ) var23 / ( var5 -> var19 / ( double ) var15 ) ; 
+if ( var7 > var5 -> var14 / ( double ) var15 
++ var5 -> var19 / ( double ) var15 ) { 
+var5 -> var11 = var22 ; 
+} 
+} 
+} 
+if ( var5 -> var11 == var22 ) { 
+var5 -> var13 = var23 ; 
+} 
+var5 -> var13 = func3 ( var5 -> var13 ) ; 
+if ( var5 -> var24 == var25 ) { 
+var5 -> var13 = var23 - var5 -> var13 ; 
+} 
+if ( var5 -> var13 < var23 ) { 
+if ( var5 -> var26 ) { 
+var3 -> var27 -> func4 ( var3 , var28 , var2 , var29 , 
+func5 ( var2 -> var30 , var3 -> var31 -> var32 ) ) ; 
+} else if ( var5 -> var33 && ! var5 -> var34 ) { 
+var3 -> var27 -> func4 ( var3 , var35 , var2 , var29 , 
+func5 ( var2 -> var30 , var3 -> var31 -> var32 ) ) ; 
+} else { 
+var3 -> var27 -> func4 ( var3 , var36 , var2 , var29 , 
+func5 ( var2 -> var30 , var3 -> var31 -> var32 ) ) ; 
+if ( var2 -> var37 [ number ] && var2 -> var37 [ number ] ) { 
+var3 -> var27 -> func4 ( var3 , var38 , var2 , var29 , 
+func5 ( var2 -> var30 , var3 -> var31 -> var32 ) ) ; 
+} 
+} 
+} 
+return func6 ( var1 -> var4 -> var39 [ number ] , var2 ) ; 
+} 

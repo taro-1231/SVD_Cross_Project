@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 , AVFrame * var2 , 
+int var3 ) 
+{ 
+LavfiContext * var4 = var1 -> var5 ; 
+AVFrameSideData * var6 ; 
+int var7 , var8 , var9 ; 
+if ( ( var7 = var4 -> var10 [ var3 ] ) < number ) 
+return number ; 
+for ( var8 = number ; var8 < var2 -> var11 ; var8 ++ ) 
+if ( var2 -> var12 [ var8 ] -> var13 == var14 ) 
+break ; 
+if ( var8 >= var2 -> var11 ) 
+return number ; 
+var6 = var2 -> var12 [ var8 ] ; 
+if ( ( var9 = func2 ( & var4 -> var15 , var6 -> var16 ) ) < number ) 
+return var9 ; 
+memcpy ( var4 -> var15 . var17 , var6 -> var17 , var6 -> var16 ) ; 
+var4 -> var15 . var18 = var7 ; 
+var4 -> var15 . var19 = var2 -> var19 ; 
+var4 -> var15 . var20 = func3 ( var2 ) ; 
+return number ; 
+} 

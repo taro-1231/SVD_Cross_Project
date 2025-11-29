@@ -1,0 +1,37 @@
+static av_cold int func1 ( AVFilterContext * var1 , const char * var2 ) 
+{ 
+OCVContext * var3 = var1 -> var4 ; 
+SmoothContext * var5 = var3 -> var4 ; 
+char var6 [ number ] = str ; 
+var5 -> var7 = number ; 
+var5 -> var8 = number ; 
+var5 -> var9 = number ; 
+var5 -> var10 = number ; 
+if ( var2 ) 
+sscanf ( var2 , str , var6 , & var5 -> var7 , & var5 -> var8 , & var5 -> var9 , & var5 -> var10 ) ; 
+if ( ! strcmp ( var6 , str ) ) var5 -> var11 = var12 ; 
+else if ( ! strcmp ( var6 , str ) ) var5 -> var11 = var13 ; 
+else if ( ! strcmp ( var6 , str ) ) var5 -> var11 = var14 ; 
+else if ( ! strcmp ( var6 , str ) ) var5 -> var11 = var15 ; 
+else if ( ! strcmp ( var6 , str ) ) var5 -> var11 = var16 ; 
+else { 
+func2 ( var1 , var17 , str , var6 ) ; 
+return func3 ( var18 ) ; 
+} 
+if ( var5 -> var7 < number || ! ( var5 -> var7 % number ) ) { 
+func2 ( var1 , var17 , 
+str , 
+var5 -> var7 ) ; 
+return func3 ( var18 ) ; 
+} 
+if ( ( var5 -> var11 == var12 || var5 -> var11 == var13 || var5 -> var11 == var15 ) && 
+( var5 -> var8 < number || ( var5 -> var8 && ! ( var5 -> var8 % number ) ) ) ) { 
+func2 ( var1 , var17 , 
+str , 
+var5 -> var8 ) ; 
+return func3 ( var18 ) ; 
+} 
+func2 ( var1 , var19 , str , 
+var6 , var5 -> var7 , var5 -> var8 , var5 -> var9 , var5 -> var10 ) ; 
+return number ; 
+} 

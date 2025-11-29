@@ -1,0 +1,70 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DrawBoxContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+double var8 [ var9 ] , var10 ; 
+char * var11 ; 
+int var12 ; 
+int var13 ; 
+var4 -> var14 = var6 -> var15 ; 
+var4 -> var16 = var6 -> var17 ; 
+var8 [ var18 ] = var8 [ var19 ] = var1 -> var20 ; 
+var8 [ var21 ] = var8 [ var22 ] = var1 -> var23 ; 
+var8 [ var24 ] = var1 -> var25 . var26 ? func3 ( var1 -> var25 ) : number ; 
+var8 [ var27 ] = ( double ) var1 -> var23 / var1 -> var20 * var8 [ var24 ] ; 
+var8 [ var28 ] = var4 -> var14 ; 
+var8 [ var29 ] = var4 -> var16 ; 
+var8 [ var30 ] = var31 ; 
+var8 [ var32 ] = var31 ; 
+var8 [ var33 ] = var31 ; 
+var8 [ var34 ] = var31 ; 
+var8 [ var35 ] = var31 ; 
+for ( var13 = number ; var13 <= var36 ; var13 ++ ) { 
+var8 [ var37 ] = var1 -> var23 ; 
+if ( ( var12 = func4 ( & var10 , ( var11 = var4 -> var38 ) , 
+var39 , var8 , 
+var40 , var40 , var40 , var40 , var40 , number , var2 ) ) < number && var13 == var36 ) 
+goto var41 ; 
+var4 -> var42 = var8 [ var30 ] = var10 ; 
+var8 [ var37 ] = var1 -> var20 ; 
+if ( ( var12 = func4 ( & var10 , ( var11 = var4 -> var43 ) , 
+var39 , var8 , 
+var40 , var40 , var40 , var40 , var40 , number , var2 ) ) < number && var13 == var36 ) 
+goto var41 ; 
+var4 -> var44 = var8 [ var32 ] = var10 ; 
+var8 [ var37 ] = var1 -> var23 - var4 -> var42 ; 
+if ( ( var12 = func4 ( & var10 , ( var11 = var4 -> var45 ) , 
+var39 , var8 , 
+var40 , var40 , var40 , var40 , var40 , number , var2 ) ) < number && var13 == var36 ) 
+goto var41 ; 
+var4 -> var23 = var8 [ var34 ] = var10 ; 
+var8 [ var37 ] = var1 -> var20 - var4 -> var44 ; 
+if ( ( var12 = func4 ( & var10 , ( var11 = var4 -> var46 ) , 
+var39 , var8 , 
+var40 , var40 , var40 , var40 , var40 , number , var2 ) ) < number && var13 == var36 ) 
+goto var41 ; 
+var4 -> var20 = var8 [ var33 ] = var10 ; 
+var8 [ var37 ] = var47 ; 
+if ( ( var12 = func4 ( & var10 , ( var11 = var4 -> var48 ) , 
+var39 , var8 , 
+var40 , var40 , var40 , var40 , var40 , number , var2 ) ) < number && var13 == var36 ) 
+goto var41 ; 
+var4 -> var49 = var8 [ var35 ] = var10 ; 
+} 
+var4 -> var23 = ( var4 -> var23 > number ) ? var4 -> var23 : var1 -> var23 ; 
+var4 -> var20 = ( var4 -> var20 > number ) ? var4 -> var20 : var1 -> var20 ; 
+if ( var4 -> var23 < number || var4 -> var20 < number ) { 
+func5 ( var2 , var50 , str ) ; 
+return func6 ( var51 ) ; 
+} 
+func5 ( var2 , var52 , str , 
+var4 -> var42 , var4 -> var44 , var4 -> var23 , var4 -> var20 , 
+var4 -> var53 [ var54 ] , var4 -> var53 [ var55 ] , var4 -> var53 [ var56 ] , var4 -> var53 [ var57 ] ) ; 
+return number ; 
+var41 : 
+func5 ( var2 , var50 , 
+str , 
+var11 ) ; 
+return var12 ; 
+} 

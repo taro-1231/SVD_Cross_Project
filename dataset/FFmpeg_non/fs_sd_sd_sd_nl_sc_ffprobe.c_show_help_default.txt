@@ -1,0 +1,9 @@
+void func1 ( const char * var1 , const char * var2 ) 
+{ 
+func2 ( var3 ) ; 
+func3 ( ) ; 
+func4 ( var4 , str , number , number , number ) ; 
+printf ( str ) ; 
+func5 ( func6 ( ) , var5 ) ; 
+func5 ( func7 ( ) , var5 ) ; 
+} 

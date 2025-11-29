@@ -1,0 +1,16 @@
+AVInteger func1 ( AVInteger var1 , AVInteger var2 ) { 
+AVInteger var3 ; 
+int var4 , var5 ; 
+int var6 = ( func2 ( var1 ) + number ) >> number ; 
+int var7 = ( func2 ( var2 ) + number ) >> number ; 
+memset ( & var3 , number , sizeof ( var3 ) ) ; 
+for ( var4 = number ; var4 < var6 ; var4 ++ ) { 
+unsigned int var8 = number ; 
+if ( var1 . var9 [ var4 ] ) 
+for ( var5 = var4 ; var5 < var10 && var5 - var4 <= var7 ; var5 ++ ) { 
+var8 = ( var8 >> number ) + var3 . var9 [ var5 ] + var1 . var9 [ var4 ] * var2 . var9 [ var5 - var4 ] ; 
+var3 . var9 [ var5 ] = var8 ; 
+} 
+} 
+return var3 ; 
+} 

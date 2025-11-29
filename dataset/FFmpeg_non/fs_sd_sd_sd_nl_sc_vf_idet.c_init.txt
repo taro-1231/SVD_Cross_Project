@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+IDETContext * var2 = var1 -> var3 ; 
+var2 -> var4 = number ; 
+var2 -> var5 = var6 ; 
+memset ( var2 -> var7 , var6 , var8 ) ; 
+if ( var2 -> var9 > number ) 
+var2 -> var10 = ( uint64_t ) round ( var11 * exp2 ( - number / var2 -> var9 ) ) ; 
+else 
+var2 -> var10 = var11 ; 
+var2 -> var12 = var13 ; 
+if ( var14 ) 
+func2 ( var2 , number ) ; 
+return number ; 
+} 

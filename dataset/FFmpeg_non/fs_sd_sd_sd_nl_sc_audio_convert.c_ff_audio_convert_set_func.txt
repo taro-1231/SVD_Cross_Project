@@ -1,0 +1,62 @@
+void func1 ( AudioConvert * var1 , enum AVSampleFormat var2 , 
+enum AVSampleFormat var3 , int var4 , 
+int var5 , int var6 , 
+const char * var7 , void * var8 ) 
+{ 
+int var9 = number ; 
+switch ( var1 -> var10 ) { 
+case var11 : 
+if ( func2 ( var1 -> var3 ) == var3 && 
+func2 ( var1 -> var2 ) == var2 ) { 
+var1 -> var12 = var8 ; 
+var1 -> var13 = var7 ; 
+var1 -> var5 = var5 ; 
+var1 -> var6 = var6 ; 
+if ( var5 == number && var6 == number ) { 
+var1 -> var14 = var8 ; 
+var1 -> var15 = var7 ; 
+} else { 
+var1 -> var16 = number ; 
+} 
+var9 = number ; 
+} 
+break ; 
+case var17 : 
+if ( var1 -> var3 == var3 && var1 -> var2 == var2 && 
+( ! var4 || var1 -> var4 == var4 ) ) { 
+var1 -> var18 = var8 ; 
+var1 -> var13 = var7 ; 
+var1 -> var5 = var5 ; 
+var1 -> var6 = var6 ; 
+if ( var5 == number && var6 == number ) { 
+var1 -> var19 = var8 ; 
+var1 -> var15 = var7 ; 
+} else { 
+var1 -> var16 = number ; 
+} 
+var9 = number ; 
+} 
+break ; 
+case var20 : 
+if ( var1 -> var3 == var3 && var1 -> var2 == var2 && 
+( ! var4 || var1 -> var4 == var4 ) ) { 
+var1 -> var21 = var8 ; 
+var1 -> var13 = var7 ; 
+var1 -> var5 = var5 ; 
+var1 -> var6 = var6 ; 
+if ( var5 == number && var6 == number ) { 
+var1 -> var22 = var8 ; 
+var1 -> var15 = var7 ; 
+} else { 
+var1 -> var16 = number ; 
+} 
+var9 = number ; 
+} 
+break ; 
+} 
+if ( var9 ) { 
+av_log ( var1 -> avr , AV_LOG_DEBUG , str 
+str , av_get_sample_fmt_name ( var1 -> var3 ) , 
+av_get_sample_fmt_name ( var1 -> var2 ) , var7 ) ; 
+} 
+} 

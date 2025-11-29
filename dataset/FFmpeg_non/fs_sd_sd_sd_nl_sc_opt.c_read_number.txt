@@ -1,0 +1,19 @@
+static int func1 ( const AVOption * var1 , const void * var2 , double * var3 , int * var4 , int64_t * var5 ) 
+{ 
+switch ( var1 -> var6 ) { 
+case var7 : * var5 = * ( unsigned int * ) var2 ; return number ; 
+case var8 : * var5 = * ( enum AVPixelFormat * ) var2 ; return number ; 
+case var9 : * var5 = * ( enum AVSampleFormat * ) var2 ; return number ; 
+case var10 : * var5 = * ( int * ) var2 ; return number ; 
+case var11 : 
+case var12 : 
+case var13 : * var5 = * ( int64_t * ) var2 ; return number ; 
+case var14 : * var3 = * ( float * ) var2 ; return number ; 
+case var15 : * var3 = * ( double * ) var2 ; return number ; 
+case var16 : * var5 = ( ( AVRational * ) var2 ) -> var3 ; 
+* var4 = ( ( AVRational * ) var2 ) -> var4 ; 
+return number ; 
+case var17 : * var3 = var1 -> var18 . var19 ; return number ; 
+} 
+return func2 ( var20 ) ; 
+} 

@@ -1,0 +1,4 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+return var3 ; 
+} 

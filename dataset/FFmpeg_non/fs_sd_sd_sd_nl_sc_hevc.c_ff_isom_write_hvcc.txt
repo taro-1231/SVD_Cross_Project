@@ -1,0 +1,47 @@
+int func1 ( AVIOContext * var1 , const uint8_t * var2 , 
+int var3 , int var4 ) 
+{ 
+int var5 = number ; 
+uint8_t * var6 , * var7 , * var8 = var9 ; 
+HEVCDecoderConfigurationRecord var10 ; 
+func2 ( & var10 ) ; 
+if ( var3 < number ) { 
+var5 = var11 ; 
+goto var7 ; 
+} else if ( * var2 == number ) { 
+func3 ( var1 , var2 , var3 ) ; 
+goto var7 ; 
+} else if ( ! ( func4 ( var2 ) == number || func5 ( var2 ) == number ) ) { 
+var5 = var11 ; 
+goto var7 ; 
+} 
+var5 = func6 ( var2 , & var8 , & var3 ) ; 
+if ( var5 < number ) 
+goto var7 ; 
+var6 = var8 ; 
+var7 = var8 + var3 ; 
+while ( var7 - var6 > number ) { 
+uint32_t var12 = func7 ( func5 ( var6 ) , var7 - var6 - number ) ; 
+uint8_t var13 = ( var6 [ number ] >> number ) & number ; 
+var6 += number ; 
+switch ( var13 ) { 
+case var14 : 
+case var15 : 
+case var16 : 
+case var17 : 
+case var18 : 
+var5 = func8 ( var6 , var12 , var4 , & var10 ) ; 
+if ( var5 < number ) 
+goto var7 ; 
+break ; 
+var19 : 
+break ; 
+} 
+var6 += var12 ; 
+} 
+var5 = func9 ( var1 , & var10 ) ; 
+var7 : 
+func10 ( & var10 ) ; 
+func11 ( var8 ) ; 
+return var5 ; 
+} 

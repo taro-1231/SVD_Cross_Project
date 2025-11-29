@@ -1,0 +1,7 @@
+static void func1 ( ff_asf_guid var1 ) 
+{ 
+FFSWAP ( unsigned char , var1 [ 0 ] , var1 [ 3 ] ) ; 
+FFSWAP ( unsigned char , var1 [ 1 ] , var1 [ 2 ] ) ; 
+FFSWAP ( unsigned char , var1 [ 4 ] , var1 [ 5 ] ) ; 
+FFSWAP ( unsigned char , var1 [ 6 ] , var1 [ 7 ] ) ; 
+} 

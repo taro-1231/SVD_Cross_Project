@@ -1,0 +1,30 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+VideoData * var3 = var1 -> var4 ; 
+int64_t var5 , var6 ; 
+struct timespec var7 ; 
+var3 -> var8 += func2 ( number ) ; 
+for ( ; ; ) { 
+var5 = func3 ( ) ; 
+var6 = var3 -> var8 * var3 -> var9 . var10 / var3 -> var9 . var11 - var5 ; 
+if ( var6 <= number ) { 
+if ( var6 < func2 ( - number ) * var3 -> var9 . var10 / var3 -> var9 . var11 ) { 
+var3 -> var8 += func2 ( number ) ; 
+} 
+break ; 
+} 
+var7 . var12 = var6 / number ; 
+var7 . var13 = ( var6 % number ) * number ; 
+func4 ( & var7 , var14 ) ; 
+} 
+if ( func5 ( var2 , var3 -> var15 ) < number ) 
+return func6 ( var16 ) ; 
+var2 -> var17 = var5 ; 
+if ( var3 -> var18 ) { 
+return func7 ( var3 , var2 -> var19 ) ; 
+} else { 
+if ( func8 ( var3 -> var20 , var2 -> var19 , var2 -> var21 ) != var2 -> var21 ) 
+return func6 ( var16 ) ; 
+return var3 -> var15 ; 
+} 
+} 

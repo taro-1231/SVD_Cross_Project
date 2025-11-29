@@ -1,0 +1,31 @@
+static void func1 ( float ** var1 , float ** var2 , int var3 , 
+int var4 , int var5 ) 
+{ 
+float var6 ; 
+float * var7 = var1 [ number ] ; 
+float * var8 = var1 [ number ] ; 
+float * var9 = var7 ; 
+float var10 = var2 [ number ] [ number ] ; 
+float var11 = var2 [ number ] [ number ] ; 
+while ( var3 > number ) { 
+var6 = * var9 ++ ; 
+* var7 += var6 * var10 ; 
+* var8 += var6 * var11 ; 
+var6 = * var9 ++ ; 
+* var7 += var6 * var10 ; 
+* var8 += var6 * var11 ; 
+var6 = * var9 ++ ; 
+* var7 += var6 * var10 ; 
+* var8 += var6 * var11 ; 
+var6 = * var9 ++ ; 
+* var7 += var6 * var10 ; 
+* var8 += var6 * var11 ; 
+var3 -= number ; 
+} 
+while ( var3 > number ) { 
+var6 = * var9 ++ ; 
+* var7 += var6 * var10 ; 
+* var8 += var6 * var11 ; 
+var3 -- ; 
+} 
+} 

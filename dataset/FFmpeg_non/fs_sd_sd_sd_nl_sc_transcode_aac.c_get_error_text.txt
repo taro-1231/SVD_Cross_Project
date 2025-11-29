@@ -1,0 +1,6 @@
+static const char * func1 ( const int var1 ) 
+{ 
+static char var2 [ number ] ; 
+func2 ( var1 , var2 , sizeof ( var2 ) ) ; 
+return var2 ; 
+} 

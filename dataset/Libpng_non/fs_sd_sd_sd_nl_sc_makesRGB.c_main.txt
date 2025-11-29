@@ -1,0 +1,291 @@
+func1 ( int var1 , char ** var2 ) 
+{ 
+unsigned int var3 , var4 , var5 ; 
+double var6 = number ; 
+double var7 = number ; 
+double var8 = number ; 
+double var9 = number ; 
+double var10 ; 
+double var11 = number , var12 = number , var13 = number ; 
+unsigned int var14 = number , var15 = number , var16 = number ; 
+unsigned int var17 = number ; 
+unsigned int var18 = number ; 
+int var19 = number ; 
+if ( var1 > number ) 
+var19 = strcmp ( str , var2 [ number ] ) == number ; 
+for ( var3 = number ; var3 < number ; ++ var3 ) 
+{ 
+var20 [ var3 ] = func2 ( var3 ) ; 
+} 
+for ( ; ; ) 
+{ 
+if ( var14 == number ) 
+var10 = var11 ; 
+else if ( var15 == number ) 
+var10 = var12 ; 
+else if ( var16 == number ) 
+var10 = var13 ; 
+else if ( var16 < var15 ) 
+var10 = ( var13 + var12 ) / number ; 
+else if ( var16 < var14 ) 
+var10 = ( var13 + var11 ) / number ; 
+else 
+{ 
+fprintf ( var21 , str , var14 , var16 , var15 ) ; 
+exit ( number ) ; 
+} 
+for ( var3 = number ; var3 <= number ; ++ var3 ) 
+{ 
+double var22 = number * func3 ( var3 << number ) ; 
+double var23 = number * func3 ( ( var3 + number ) << number ) ; 
+unsigned int var24 ; 
+var24 = nearbyint ( ( var22 + var10 ) * number ) ; 
+if ( var24 > number ) 
+{ 
+fprintf ( var21 , str , var3 , var24 , 
+var24 ) ; 
+exit ( number ) ; 
+} 
+var25 [ var3 ] = var24 ; 
+var24 = nearbyint ( ( var23 - var22 ) * number ) ; 
+if ( var24 > number ) 
+{ 
+fprintf ( var21 , str , var3 , var24 , 
+var24 ) ; 
+exit ( number ) ; 
+} 
+var26 [ var3 ] = var24 ; 
+} 
+var18 = number ; 
+for ( var4 = number ; var4 <= number ; ++ var4 ) 
+{ 
+unsigned int var3 = number * var4 ; 
+unsigned int var27 = nearbyint ( number * func3 ( var3 ) ) ; 
+unsigned int var28 = func4 ( var3 ) ; 
+if ( var28 != var27 ) 
+++ var18 ; 
+} 
+if ( var14 == number ) 
+var14 = var18 ; 
+else if ( var15 == number ) 
+var15 = var18 ; 
+else if ( var16 == number ) 
+{ 
+var16 = var18 ; 
+printf ( str , var14 , var16 , 
+var15 ) ; 
+} 
+else if ( var18 < var16 ) 
+{ 
+printf ( str , var10 , var16 , 
+var18 ) ; 
+var16 = var18 ; 
+var13 = var10 ; 
+} 
+else if ( var10 < var13 && var18 < var14 ) 
+{ 
+printf ( str , var10 , var14 , 
+var18 ) ; 
+var14 = var18 ; 
+var11 = var10 ; 
+} 
+else if ( var10 > var13 && var18 < var15 ) 
+{ 
+printf ( str , var10 , var15 , 
+var18 ) ; 
+var15 = var18 ; 
+var12 = var10 ; 
+} 
+else 
+{ 
+var10 = var13 ; 
+printf ( str , var10 , var16 ) ; 
+break ; 
+} 
+} 
+for ( var5 = number ; var5 < number ; var5 += number ) 
+{ 
+png_uint_16 var29 = var25 [ var5 >> number ] , var30 = var29 , var31 = var29 ; 
+png_byte var32 = var26 [ var5 >> number ] , var33 = var32 , var34 = var32 ; 
+unsigned int var35 = number , var36 ; 
+for ( ; ; ) 
+{ 
+var25 [ var5 >> number ] = var30 ; 
+var26 [ var5 >> number ] = var33 ; 
+var18 = number ; 
+for ( var4 = var5 ; var4 < var5 + number ; ++ var4 ) 
+{ 
+unsigned int var3 = number * var4 ; 
+unsigned int var27 = nearbyint ( number * func3 ( var3 ) ) ; 
+unsigned int var28 = func4 ( var3 ) ; 
+if ( var28 != var27 ) 
+++ var18 ; 
+} 
+if ( var18 == number ) 
+break ; 
+if ( var35 == number ) 
+{ 
+var36 = var35 = var18 ; 
+++ var30 ; 
+} 
+else if ( var18 < var35 ) 
+{ 
+if ( var30 > var29 ) 
+{ 
+var29 = var30 ; 
+++ var30 ; 
+} 
+else if ( var30 < var29 ) 
+{ 
+var29 = var30 ; 
+-- var30 ; 
+} 
+else if ( var33 > var32 ) 
+{ 
+var32 = var33 ; 
+++ var33 ; 
+} 
+else if ( var33 < var32 ) 
+{ 
+var32 = var33 ; 
+-- var33 ; 
+} 
+else 
+{ 
+fprintf ( var21 , str ) ; 
+exit ( number ) ; 
+} 
+var35 = var18 ; 
+} 
+else 
+{ 
+if ( var30 > var29 ) 
+var30 = var29 - number ; 
+else if ( var30 < var29 ) 
+{ 
+var30 = var29 ; 
+++ var33 ; 
+} 
+else if ( var33 > var32 ) 
+var33 = var32 - number ; 
+else if ( var33 < var32 ) 
+break ; 
+} 
+} 
+var25 [ var5 >> number ] = var29 ; 
+var26 [ var5 >> number ] = var32 ; 
+if ( var29 != var31 || var32 != var34 ) 
+{ 
+printf ( str , 
+var5 >> number , var31 , var34 , var29 , var32 , var36 , var35 ) ; 
+} 
+else if ( number ) 
+printf ( str , var5 >> number , var31 , var34 , 
+var35 ) ; 
+} 
+var6 = - number ; 
+var7 = number ; 
+var17 = number ; 
+for ( var3 = number ; var3 <= var37 ; ++ var3 ) 
+{ 
+unsigned int var27 = nearbyint ( number * func3 ( var3 ) ) ; 
+unsigned int var28 = func4 ( var3 ) ; 
+if ( var28 != var27 ) 
+{ 
+double var38 = number * func3 ( var3 ) - var28 ; 
+if ( var38 > ( var7 + number ) || var38 < ( var6 - number ) ) 
+{ 
+printf ( 
+str , 
+var3 , var27 , var28 , var25 [ var3 >> number ] , 
+var26 [ var3 >> number ] , var38 ) ; 
+} 
+++ var17 ; 
+if ( var38 > var7 ) 
+var7 = var38 ; 
+else if ( var38 < var6 ) 
+var6 = var38 ; 
+} 
+} 
+var18 = number ; 
+var9 = number ; 
+var8 = number ; 
+for ( var4 = number ; var4 <= number ; ++ var4 ) 
+{ 
+unsigned int var3 = number * var4 ; 
+unsigned int var27 = nearbyint ( number * func3 ( var3 ) ) ; 
+unsigned int var28 = func4 ( var3 ) ; 
+if ( var28 != var27 ) 
+{ 
+double var38 = number * func3 ( var3 ) - var28 ; 
+++ var18 ; 
+if ( var38 > var9 ) 
+var9 = var38 ; 
+else if ( var38 < var8 ) 
+var8 = var38 ; 
+if ( abs ( var28 - var27 ) > number ) 
+printf ( 
+str , 
+var4 , var27 , var28 , var25 [ var3 >> number ] , 
+var26 [ var3 >> number ] , var38 ) ; 
+} 
+} 
+for ( var4 = number ; var4 <= number ; ++ var4 ) 
+{ 
+unsigned int var3 = number * var20 [ var4 ] ; 
+unsigned int var27 = nearbyint ( number * func3 ( var3 ) ) ; 
+unsigned int var28 = func4 ( var3 ) ; 
+if ( var4 != var27 ) 
+{ 
+fprintf ( var21 , str , var4 , var27 ) ; 
+exit ( number ) ; 
+} 
+if ( var28 != var4 ) 
+{ 
+double var39 = func5 ( var4 ) ; 
+printf ( str , 
+var4 , var39 , var28 , func6 ( number * var39 ) ) ; 
+} 
+} 
+printf ( str , 
+var6 , var7 , var17 , ( number * var17 ) / var37 ) ; 
+printf ( str , 
+var8 , var9 , var18 , ( number * var18 ) / number ) ; 
+if ( ! var19 ) 
+{ 
+printf ( str ) ; 
+for ( var3 = number ; var3 < number ; ) 
+{ 
+do 
+{ 
+printf ( str , var20 [ var3 ++ ] ) ; 
+} 
+while ( ( var3 & number ) != number && var3 < number ) ; 
+if ( var3 < number ) printf ( str ) ; 
+} 
+printf ( str , var20 [ var3 ] ) ; 
+printf ( str ) ; 
+for ( var3 = number ; var3 < number ; ) 
+{ 
+do 
+{ 
+printf ( str , var25 [ var3 ++ ] ) ; 
+} 
+while ( ( var3 & number ) != number && var3 < number ) ; 
+if ( var3 < number ) printf ( str ) ; 
+} 
+printf ( str , var25 [ var3 ] ) ; 
+printf ( str ) ; 
+for ( var3 = number ; var3 < number ; ) 
+{ 
+do 
+{ 
+printf ( str , var26 [ var3 ++ ] ) ; 
+} 
+while ( ( var3 & number ) != number && var3 < number ) ; 
+if ( var3 < number ) printf ( str ) ; 
+} 
+printf ( str , var26 [ var3 ] ) ; 
+} 
+return number ; 
+} 

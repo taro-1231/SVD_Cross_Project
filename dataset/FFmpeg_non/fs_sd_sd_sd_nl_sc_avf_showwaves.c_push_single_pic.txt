@@ -1,0 +1,45 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+ShowWavesContext * var6 = var2 -> var7 ; 
+int64_t var8 = number , var9 = var6 -> var10 / var1 -> var11 ; 
+AVFrame * var12 = var6 -> var13 ; 
+struct frame_node * var14 ; 
+const int var15 = var4 -> var16 ; 
+const int var17 = number / ( var6 -> var18 ? number : var15 ) ; 
+const int var19 = var6 -> var18 ? var1 -> var20 / var15 : var1 -> var20 ; 
+const int var21 = var12 -> var21 [ number ] ; 
+int var22 = number ; 
+int64_t * var23 = var6 -> var23 ; 
+if ( var9 == number ) { 
+func2 ( var2 , var24 , str ) ; 
+return func3 ( var25 ) ; 
+} 
+func2 ( var2 , AV_LOG_DEBUG , str PRId64 str , var9 ) ; 
+memset ( var23 , number , var15 ) ; 
+for ( var14 = var6 -> var27 ; var14 ; var14 = var14 -> var28 ) { 
+int var29 ; 
+const AVFrame * var26 = var14 -> var26 ; 
+const int16_t * var30 = ( const int16_t * ) var26 -> var31 [ number ] ; 
+for ( var29 = number ; var29 < var26 -> var32 ; var29 ++ ) { 
+int var33 ; 
+for ( var33 = number ; var33 < var15 ; var33 ++ ) 
+var23 [ var33 ] += abs ( var30 [ var33 + var29 * var15 ] ) << number ; 
+if ( var8 += var9 ) { 
+for ( var33 = number ; var33 < var15 ; var33 ++ ) { 
+int16_t var34 = var23 [ var33 ] / var9 ; 
+uint8_t * var35 = var12 -> var31 [ number ] + var22 ; 
+if ( var6 -> var18 ) 
+var35 += var33 * var19 * var21 ; 
+func4 ( var22 < var1 -> var11 ) ; 
+var6 -> func5 ( var35 , var19 , var21 , var34 , & var6 -> var36 [ var33 ] , var17 ) ; 
+var23 [ var33 ] = number ; 
+} 
+var22 ++ ; 
+var8 = number ; 
+} 
+} 
+} 
+return func6 ( var1 ) ; 
+} 

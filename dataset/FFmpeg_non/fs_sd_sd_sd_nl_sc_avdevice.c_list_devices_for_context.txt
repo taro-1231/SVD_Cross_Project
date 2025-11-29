@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 , AVDictionary * var2 , 
+AVDeviceInfoList ** var3 ) 
+{ 
+AVDictionary * var4 = var5 ; 
+int var6 ; 
+func2 ( & var4 , var2 , number ) ; 
+if ( ( var6 = func3 ( var1 , & var4 , var7 ) ) < number ) 
+goto var8 ; 
+var6 = func4 ( var1 , var3 ) ; 
+var8 : 
+func5 ( & var4 ) ; 
+func6 ( var1 ) ; 
+return var6 ; 
+} 

@@ -1,0 +1,19 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+MergePlanesContext * var2 = var1 -> var3 ; 
+AVFilterFormats * var4 = var5 ; 
+int var6 ; 
+var2 -> var7 = func2 ( var2 -> var8 ) ; 
+for ( var6 = number ; func2 ( var6 ) ; var6 ++ ) { 
+const AVPixFmtDescriptor * var9 = func2 ( var6 ) ; 
+if ( var9 -> var10 [ number ] . var11 == var2 -> var7 -> var10 [ number ] . var11 && 
+func3 ( var6 ) == var9 -> var12 ) 
+func4 ( & var4 , var6 ) ; 
+} 
+for ( var6 = number ; var6 < var2 -> var13 ; var6 ++ ) 
+func5 ( var4 , & var1 -> var14 [ var6 ] -> var15 ) ; 
+var4 = var5 ; 
+func4 ( & var4 , var2 -> var8 ) ; 
+func5 ( var4 , & var1 -> var16 [ number ] -> var17 ) ; 
+return number ; 
+} 

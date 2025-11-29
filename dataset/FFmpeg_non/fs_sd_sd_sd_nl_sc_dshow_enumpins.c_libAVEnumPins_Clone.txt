@@ -1,0 +1,13 @@
+func1 ( libAVEnumPins * var1 , libAVEnumPins ** var2 ) 
+{ 
+libAVEnumPins * new ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+new = func3 ( var1 -> var4 , var1 -> var5 ) ; 
+if ( ! new ) 
+return var6 ; 
+new -> var7 = var1 -> var7 ; 
+* var2 = new ; 
+return var8 ; 
+} 

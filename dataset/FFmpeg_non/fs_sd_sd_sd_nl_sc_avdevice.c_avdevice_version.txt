@@ -1,0 +1,5 @@
+unsigned func1 ( void ) 
+{ 
+func2 ( var1 >= number ) ; 
+return var2 ; 
+} 

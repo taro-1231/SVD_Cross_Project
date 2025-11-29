@@ -1,0 +1,9 @@
+int func1 ( const AVFilterPad * var1 ) 
+{ 
+int var2 ; 
+if ( ! var1 ) 
+return number ; 
+for ( var2 = number ; var1 -> var3 ; var2 ++ ) 
+var1 ++ ; 
+return var2 ; 
+} 

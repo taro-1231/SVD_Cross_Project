@@ -1,0 +1,105 @@
+static av_cold int func1 ( const char * var1 , int var2 , int var3 , 
+int var4 , int * var5 , int * var6 , int var7 , double var8 ) 
+{ 
+struct meteor_geomet var9 ; 
+int var10 ; 
+long var11 ; 
+char * var12 ; 
+int var13 ; 
+struct func2 var14 = { { number } } , var15 ; 
+int var16 ; 
+char var17 [ number ] ; 
+if ( var7 < number || var7 > number ) 
+{ 
+var12 = getenv ( str ) ; 
+if ( var12 ) 
+var7 = atoi ( var12 ) ; 
+if ( var7 < number || var7 > number ) 
+var7 = number ; 
+} 
+if ( var4 < number || var4 > number ) 
+{ 
+var12 = getenv ( str ) ; 
+if ( var12 ) 
+var4 = atoi ( var12 ) ; 
+if ( var4 < number || var4 > number ) 
+var4 = var18 ; 
+} 
+if ( var8 <= number ) 
+{ 
+var12 = getenv ( str ) ; 
+if ( var12 ) 
+var8 = atof ( var12 ) ; 
+if ( var8 <= number ) 
+var8 = number ; 
+} 
+func3 ( & var14 . var19 ) ; 
+var14 . var20 = var21 ; 
+func2 ( var22 , & var14 , & var15 ) ; 
+* var6 = func4 ( str , var23 ) ; 
+if ( * var6 < number ) 
+func5 ( var24 , var25 , str , strerror ( var26 ) ) ; 
+* var5 = func4 ( var1 , var23 ) ; 
+if ( * var5 < number ) { 
+var16 = func6 ( var26 ) ; 
+func7 ( var16 , var17 , sizeof ( var17 ) ) ; 
+func5 ( var24 , var25 , str , var1 , var17 ) ; 
+return var16 ; 
+} 
+var9 . var27 = var3 ; 
+var9 . var28 = var2 ; 
+var9 . var29 = number ; 
+var9 . var30 = var31 | var32 ; 
+switch ( var4 ) { 
+case var33 : var10 = var34 ; var13 = var35 ; break ; 
+case var36 : var10 = var34 ; var13 = var37 ; break ; 
+case var38 : var10 = var34 ; var13 = var39 ; break ; 
+case var40 : var10 = var41 ; var13 = var42 ; break ; 
+case var43 : var10 = var44 ; var13 = var45 ; break ; 
+case var46 : var10 = var44 ; var13 = var47 ; break ; 
+var48 : var10 = var34 ; var13 = var35 ; break ; 
+} 
+if ( var3 <= var10 / number ) 
+var9 . var30 |= var49 ; 
+if ( func8 ( * var5 , var50 , & var9 ) < number ) { 
+var16 = func6 ( var26 ) ; 
+func7 ( var16 , var17 , sizeof ( var17 ) ) ; 
+func5 ( var24 , var25 , str , var17 ) ; 
+return var16 ; 
+} 
+if ( func8 ( * var5 , var51 , & var13 ) < number ) { 
+var16 = func6 ( var26 ) ; 
+func7 ( var16 , var17 , sizeof ( var17 ) ) ; 
+func5 ( var24 , var25 , str , var17 ) ; 
+return var16 ; 
+} 
+var13 = var52 [ var7 ] ; 
+if ( func8 ( * var5 , var53 , & var13 ) < number ) { 
+var16 = func6 ( var26 ) ; 
+func7 ( var16 , var17 , sizeof ( var17 ) ) ; 
+func5 ( var24 , var25 , str , var17 ) ; 
+return var16 ; 
+} 
+var54 = var2 * var3 * number / number ; 
+var55 = ( uint8_t * ) func9 ( ( caddr_t ) number , var54 , 
+var56 , var57 , * var5 , ( off_t ) number ) ; 
+if ( var55 == var58 ) { 
+var16 = func6 ( var26 ) ; 
+func7 ( var16 , var17 , sizeof ( var17 ) ) ; 
+func5 ( var24 , var25 , str , var17 ) ; 
+return var16 ; 
+} 
+if ( var8 != number ) { 
+var11 = ( unsigned long ) ( var8 * number ) ; 
+if ( func8 ( * var6 , var59 , & var11 ) < number ) 
+func5 ( var24 , var25 , str , strerror ( var26 ) ) ; 
+} 
+var13 = var60 ; 
+if ( func8 ( * var6 , var61 , & var13 ) < number ) 
+func5 ( var24 , var25 , str , strerror ( var26 ) ) ; 
+var13 = var62 ; 
+func8 ( * var5 , var63 , & var13 ) ; 
+var13 = var22 ; 
+func8 ( * var5 , var64 , & var13 ) ; 
+return number ; 
+} 

@@ -1,0 +1,7 @@
+static void func1 ( AVFrameSideData ** var1 ) 
+{ 
+AVFrameSideData * var2 = * var1 ; 
+func2 ( & var2 -> var3 ) ; 
+func3 ( & var2 -> var4 ) ; 
+func4 ( var1 ) ; 
+} 

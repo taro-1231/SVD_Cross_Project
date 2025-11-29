@@ -1,0 +1,138 @@
+func1 ( png_modifier * var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+while ( var3 > number ) 
+{ 
+size_t var4 ; 
+png_uint_32 var5 , var6 ; 
+png_modification * func2 ; 
+if ( var1 -> var7 >= var1 -> var8 ) switch ( var1 -> var9 ) 
+{ 
+static png_byte var10 [ number ] = { number , number , number , number , number , number , number , number } ; 
+case var11 : 
+func3 ( & var1 -> var12 , var1 -> var13 , number ) ; 
+var1 -> var8 = number ; 
+var1 -> var7 = number ; 
+if ( memcmp ( var1 -> var13 , var10 , number ) != number ) 
+func4 ( var1 -> var12 . var14 , str ) ; 
+var1 -> var9 = var15 ; 
+break ; 
+case var15 : 
+func3 ( & var1 -> var12 , var1 -> var13 , number + number ) ; 
+var1 -> var8 = number + number ; 
+var1 -> var7 = number ; 
+if ( func5 ( var1 -> var13 ) != number || 
+func5 ( var1 -> var13 + number ) != var16 ) 
+func4 ( var1 -> var12 . var14 , str ) ; 
+func2 = var1 -> var17 ; 
+while ( func2 != var18 ) 
+{ 
+if ( func2 -> var6 == var16 && func2 -> func6 && 
+( * func2 -> func6 ) ( var1 , func2 , number ) ) 
+{ 
+func2 -> var19 = number ; 
+func7 ( var1 ) ; 
+} 
+func2 = func2 -> var20 ; 
+} 
+var1 -> var21 = var1 -> var13 [ number + number ] ; 
+var1 -> var22 = var1 -> var13 [ number + number + number ] ; 
+var1 -> var9 = var23 ; 
+var1 -> var24 = number ; 
+break ; 
+case var23 : 
+var25 : 
+if ( ( var4 = var1 -> var24 ) > number ) 
+{ 
+if ( var4 > var3 ) var4 = var3 ; 
+var1 -> var24 -= var4 ; 
+func3 ( & var1 -> var12 , var2 , var4 ) ; 
+var2 += var4 ; 
+var3 -= var4 ; 
+if ( var3 == number ) return ; 
+} 
+if ( var1 -> var26 != number ) 
+{ 
+func8 ( var1 -> var13 , var1 -> var27 ) ; 
+func8 ( var1 -> var13 + number , var1 -> var26 ) ; 
+var1 -> var27 = number ; 
+var1 -> var26 = number ; 
+} 
+else 
+func3 ( & var1 -> var12 , var1 -> var13 , number ) ; 
+var1 -> var8 = number ; 
+var1 -> var7 = number ; 
+var5 = func5 ( var1 -> var13 ) ; 
+var6 = func5 ( var1 -> var13 + number ) ; 
+if ( var6 == var28 || var6 == var29 || 
+var6 == var30 ) 
+{ 
+func2 = var1 -> var17 ; 
+while ( func2 != var18 ) 
+{ 
+if ( ( func2 -> var31 == var6 || 
+( func2 -> var31 == var28 && var6 == var29 ) ) && 
+func2 -> func6 != var18 && ! func2 -> var19 && ! func2 -> var32 ) 
+{ 
+func2 -> var32 = number ; 
+if ( ( * func2 -> func6 ) ( var1 , func2 , number ) 
+{ 
+if ( var1 -> var8 > number ) 
+func7 ( var1 ) ; 
+else 
+{ 
+var1 -> var7 = number ; 
+func2 -> var33 = number ; 
+} 
+var1 -> var27 = var5 ; 
+var1 -> var26 = var6 ; 
+break ; 
+} 
+} 
+func2 = func2 -> var20 ; 
+} 
+if ( func2 != var18 ) 
+break ; 
+} 
+if ( var5 + number <= sizeof var1 -> var13 ) 
+{ 
+func3 ( & var1 -> var12 , var1 -> var13 + var1 -> var8 , 
+var5 + number - var1 -> var8 ) ; 
+var1 -> var8 = var5 + number ; 
+func2 = var1 -> var17 ; 
+while ( func2 != var18 ) 
+{ 
+if ( func2 -> var6 == var6 ) 
+{ 
+if ( func2 -> func6 == var18 ) 
+{ 
+var1 -> var8 = var1 -> var7 = number ; 
+func2 -> var33 = number ; 
+break ; 
+} 
+else if ( ( * func2 -> func6 ) ( var1 , func2 , number ) ) 
+{ 
+func2 -> var19 = number ; 
+if ( var1 -> var8 == number ) 
+{ 
+var1 -> var7 = number ; 
+break ; 
+} 
+func7 ( var1 ) ; 
+} 
+} 
+func2 = func2 -> var20 ; 
+} 
+} 
+else 
+var1 -> var24 = var5 + number - var1 -> var8 ; 
+break ; 
+} 
+var4 = var1 -> var8 - var1 -> var7 ; 
+if ( var4 > var3 ) 
+var4 = var3 ; 
+memcpy ( var2 , var1 -> var13 + var1 -> var7 , var4 ) ; 
+var3 -= var4 ; 
+var2 += var4 ; 
+var1 -> var7 += var4 ; 
+} 
+} 

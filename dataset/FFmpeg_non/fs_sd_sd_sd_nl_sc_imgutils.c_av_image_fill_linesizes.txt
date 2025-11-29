@@ -1,0 +1,17 @@
+int func1 ( int var1 [ number ] , enum AVPixelFormat var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var2 ) ; 
+int var7 [ number ] ; 
+int var8 [ number ] ; 
+memset ( var1 , number , number * sizeof ( var1 [ number ] ) ) ; 
+if ( ! var6 || var6 -> var9 & var10 ) 
+return func3 ( var11 ) ; 
+func4 ( var7 , var8 , var6 ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+if ( ( var5 = func5 ( var3 , var4 , var7 [ var4 ] , var8 [ var4 ] , var6 ) ) < number ) 
+return var5 ; 
+var1 [ var4 ] = var5 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,84 @@
+static int func1 ( void * var2 ) 
+{ 
+AVFormatContext * var3 = var2 ; 
+SDLContext * var4 = var3 -> var5 ; 
+int var6 = var1 | ( var4 -> var7 ? var8 : number ) ; 
+AVStream * var9 = var3 -> var10 [ number ] ; 
+AVCodecContext * var11 = var9 -> var12 ; 
+if ( func2 ( var13 ) != number ) { 
+func3 ( var3 , var14 , str , func4 ( ) ) ; 
+var4 -> var15 = func5 ( var16 ) ; 
+goto var17 ; 
+} 
+func6 ( var4 -> var18 , var4 -> var19 ) ; 
+var4 -> var20 = func7 ( var4 -> var21 , var4 -> var22 , 
+number , var6 ) ; 
+if ( ! var4 -> var20 ) { 
+func3 ( var4 , var14 , str , func4 ( ) ) ; 
+var4 -> var15 = func5 ( var16 ) ; 
+goto var17 ; 
+} 
+var4 -> var23 = func8 ( var11 -> var24 , var11 -> var25 , 
+var4 -> var26 , var4 -> var20 ) ; 
+if ( ! var4 -> var23 || var4 -> var23 -> var27 [ number ] < var11 -> var24 ) { 
+func3 ( var3 , var14 , 
+str , 
+var11 -> var24 , var11 -> var25 ) ; 
+var4 -> var15 = func5 ( var16 ) ; 
+goto var17 ; 
+} 
+var4 -> var15 = number ; 
+func3 ( var3 , var28 , str , 
+var11 -> var24 , var11 -> var25 , func9 ( var11 -> var31 ) , 
+var4 -> var32 . var29 , var4 -> var32 . var30 ) ; 
+var17 : 
+func10 ( var4 -> var33 ) ; 
+var4 -> var34 = number ; 
+func11 ( var4 -> var33 ) ; 
+func12 ( var4 -> var35 ) ; 
+if ( var4 -> var15 < number ) 
+return var4 -> var15 ; 
+while ( ! var4 -> var36 ) { 
+int var37 ; 
+SDL_Event var38 ; 
+func13 ( ) ; 
+var37 = func14 ( & var38 , number , var39 , var40 ) ; 
+if ( var37 < number ) { 
+func3 ( var3 , var14 , str , func4 ( ) ) ; 
+continue ; 
+} 
+if ( var37 == number ) { 
+func15 ( number ) ; 
+continue ; 
+} 
+switch ( var38 . var41 ) { 
+case var42 : 
+switch ( var38 . var43 . var44 . var45 ) { 
+case var46 : 
+case var47 : 
+var4 -> var36 = number ; 
+break ; 
+} 
+break ; 
+case var48 : 
+var4 -> var36 = number ; 
+break ; 
+case var49 : 
+var4 -> var21 = var38 . var50 . var29 ; 
+var4 -> var22 = var38 . var50 . var30 ; 
+func10 ( var4 -> var33 ) ; 
+var4 -> var20 = func7 ( var4 -> var21 , var4 -> var22 , number , var1 ) ; 
+if ( ! var4 -> var20 ) { 
+func3 ( var3 , var14 , str , func4 ( ) ) ; 
+var4 -> var36 = number ; 
+} else { 
+func16 ( var3 ) ; 
+} 
+func11 ( var4 -> var33 ) ; 
+break ; 
+var51 : 
+break ; 
+} 
+} 
+return number ; 
+} 

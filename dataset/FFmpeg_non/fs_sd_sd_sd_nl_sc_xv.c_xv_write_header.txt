@@ -1,0 +1,110 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+XVContext * var2 = var1 -> var3 ; 
+unsigned int var4 ; 
+XvAdaptorInfo * var5 ; 
+XvImageFormatValues * var6 ; 
+XColor var7 ; 
+XWindowAttributes var8 ; 
+int var9 = number , var10 , var11 , var12 ; 
+AVCodecContext * var13 = var1 -> var14 [ number ] -> var15 ; 
+if ( var1 -> var16 > number 
+|| var13 -> var17 != var18 
+|| var13 -> var19 != var20 ) { 
+func2 ( var1 , var21 , str ) ; 
+return func3 ( var22 ) ; 
+} 
+if ( ! ( var11 = func4 ( var13 -> var23 ) ) ) { 
+func2 ( var1 , var21 , 
+str , 
+func5 ( var13 -> var23 ) ) ; 
+return var25 ; 
+} 
+var2 -> var26 = var13 -> var23 ; 
+var2 -> var27 = func6 ( var2 -> var28 ) ; 
+if ( ! var2 -> var27 ) { 
+func2 ( var1 , var21 , str , var2 -> var28 ) ; 
+return func3 ( var22 ) ; 
+} 
+var2 -> var29 = var13 -> var30 ; 
+var2 -> var31 = var13 -> var32 ; 
+if ( ! var2 -> var33 && ! var2 -> var34 ) { 
+AVRational var35 = var13 -> var36 ; 
+var2 -> var33 = var13 -> var30 ; 
+var2 -> var34 = var13 -> var32 ; 
+if ( var35 . var37 ) { 
+if ( var35 . var37 > var35 . var38 ) 
+var2 -> var33 = func7 ( var2 -> var33 , var35 . var37 , var35 . var38 ) ; 
+if ( var35 . var37 < var35 . var38 ) 
+var2 -> var34 = func7 ( var2 -> var34 , var35 . var38 , var35 . var37 ) ; 
+} 
+} 
+if ( ! var2 -> var39 ) { 
+var2 -> var40 = func8 ( var2 -> var27 , func9 ( var2 -> var27 ) , 
+var2 -> var41 , var2 -> var42 , 
+var2 -> var33 , var2 -> var34 , 
+number , number , number ) ; 
+if ( ! var2 -> var43 ) { 
+if ( ! ( var2 -> var43 = func10 ( var1 -> var44 ) ) ) { 
+var12 = func3 ( var45 ) ; 
+goto var46 ; 
+} 
+} 
+func11 ( var2 -> var27 , var2 -> var40 , var2 -> var43 ) ; 
+var2 -> var47 = func12 ( var2 -> var27 , str , var48 ) ; 
+func13 ( var2 -> var27 , var2 -> var40 , & var2 -> var47 , number ) ; 
+func14 ( var2 -> var27 , var2 -> var40 ) ; 
+} else 
+var2 -> var40 = var2 -> var39 ; 
+if ( func15 ( var2 -> var27 , func9 ( var2 -> var27 ) , & var4 , & var5 ) != var49 ) { 
+var12 = var50 ; 
+goto var46 ; 
+} 
+if ( ! var4 ) { 
+func2 ( var1 , var21 , str ) ; 
+return func3 ( var51 ) ; 
+} 
+var2 -> var52 = var5 [ number ] . var53 ; 
+func16 ( var5 ) ; 
+var6 = func17 ( var2 -> var27 , var2 -> var52 , & var9 ) ; 
+if ( ! var6 ) { 
+var12 = var50 ; 
+goto var46 ; 
+} 
+for ( var10 = number ; var10 < var9 ; var10 ++ ) { 
+if ( var6 [ var10 ] . var54 == var11 ) { 
+break ; 
+} 
+} 
+func18 ( var6 ) ; 
+if ( var10 >= var9 ) { 
+func2 ( var1 , var21 , 
+str , 
+func5 ( var13 -> var23 ) ) ; 
+var12 = func3 ( var22 ) ; 
+goto var46 ; 
+} 
+var2 -> var55 = func19 ( var2 -> var27 , var2 -> var40 , number , number ) ; 
+var2 -> var29 = var13 -> var30 ; 
+var2 -> var31 = var13 -> var32 ; 
+var2 -> var56 = func20 ( var2 -> var27 , var2 -> var52 , var11 , number , 
+var2 -> var29 , var2 -> var31 , & var2 -> var57 ) ; 
+var2 -> var57 . var58 = func21 ( var59 , var2 -> var56 -> var60 , 
+var61 | number ) ; 
+var2 -> var57 . var62 = ( char * ) func22 ( var2 -> var57 . var58 , number , number ) ; 
+var2 -> var56 -> var63 = var2 -> var57 . var62 ; 
+var2 -> var57 . var64 = var48 ; 
+func23 ( var2 -> var27 , & var2 -> var57 ) ; 
+func24 ( var2 -> var27 , var48 ) ; 
+func25 ( var2 -> var57 . var58 , var65 , number ) ; 
+func26 ( var2 -> var27 , var2 -> var40 , & var8 ) ; 
+var7 . var66 = var7 . var67 = var7 . var68 = number ; 
+var7 . var69 = var70 | var71 | var72 ; 
+func27 ( var2 -> var27 , var8 . var73 , & var7 ) ; 
+func28 ( var2 -> var27 , var2 -> var55 , var7 . var24 ) ; 
+var2 -> var33 = var2 -> var34 = number ; 
+return number ; 
+var46 : 
+func29 ( var1 ) ; 
+return var12 ; 
+} 

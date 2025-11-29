@@ -1,0 +1,45 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const AVCodecDescriptor ** var4 ; 
+unsigned var5 , var6 = func2 ( & var4 ) ; 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str ) ; 
+for ( var5 = number ; var5 < var6 ; var5 ++ ) { 
+const AVCodecDescriptor * var8 = var4 [ var5 ] ; 
+const AVCodec * var7 = var9 ; 
+if ( strstr ( var8 -> var10 , str ) ) 
+continue ; 
+printf ( str ) ; 
+printf ( func3 ( var8 -> var11 ) ? str : str ) ; 
+printf ( func4 ( var8 -> var11 ) ? str : str ) ; 
+printf ( str , func5 ( var8 -> var12 ) ) ; 
+printf ( ( var8 -> var13 & var14 ) ? str : str ) ; 
+printf ( ( var8 -> var13 & var15 ) ? str : str ) ; 
+printf ( ( var8 -> var13 & var16 ) ? str : str ) ; 
+printf ( str , var8 -> var10 , var8 -> var17 ? var8 -> var17 : str ) ; 
+while ( ( var7 = func6 ( var8 -> var11 , var7 , number ) ) ) { 
+if ( strcmp ( var7 -> var10 , var8 -> var10 ) ) { 
+func7 ( var8 -> var11 , number ) ; 
+break ; 
+} 
+} 
+var7 = var9 ; 
+while ( ( var7 = func6 ( var8 -> var11 , var7 , number ) ) ) { 
+if ( strcmp ( var7 -> var10 , var8 -> var10 ) ) { 
+func7 ( var8 -> var11 , number ) ; 
+break ; 
+} 
+} 
+printf ( str ) ; 
+} 
+func8 ( var4 ) ; 
+return number ; 
+} 

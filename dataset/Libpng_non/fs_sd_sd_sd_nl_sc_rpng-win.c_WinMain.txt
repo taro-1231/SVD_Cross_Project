@@ -1,0 +1,190 @@
+int WINAPI func1 ( HINSTANCE var1 , HINSTANCE var2 , PSTR var3 , int var4 ) 
+{ 
+char * var5 [ number ] ; 
+char * var6 , * var7 , ** var8 = var5 ; 
+int var9 = number ; 
+int var10 , var11 , var12 ; 
+int var13 = number ; 
+int var14 = var15 ; 
+double var16 ; 
+double var17 = number ; 
+double var18 ; 
+MSG var19 ; 
+var20 = ( char * ) var21 ; 
+func2 ( ) ; 
+freopen ( str , str , var22 ) ; 
+freopen ( str , str , var23 ) ; 
+var16 = number / number ; 
+var16 = number / number . number ; 
+var24 = fopen ( str , str ) ; 
+if ( var24 ) { 
+double sgi_gamma ; 
+fgets ( tmpline , 80 , var24 ) ; 
+fclose ( var24 ) ; 
+sgi_gamma = atof ( tmpline ) ; 
+if ( sgi_gamma > number ) 
+var16 = number / sgi_gamma ; 
+} 
+var16 = number . 8 / number . 61 ; 
+var16 = number ; 
+var18 = var16 * var17 ; 
+if ( ( var6 = getenv ( str ) ) != var21 ) 
+var26 = atof ( var6 ) ; 
+else 
+var26 = var18 ; 
+var8 [ var9 ++ ] = var27 ; 
+var6 = var3 ; 
+for ( ; ; ) { 
+if ( * var6 == str ) 
+while ( * ++ var6 == str ) 
+; 
+if ( * var6 == str ) 
+break ; 
+var8 [ var9 ++ ] = var7 = var6 ; 
+while ( * var7 && * var7 != str ) 
+++ var7 ; 
+if ( * var7 == str ) 
+break ; 
+* var7 = str ; 
+var6 = var7 + number ; 
+} 
+var8 [ var9 ] = var21 ; 
+while ( * ++ var8 && ! var13 ) { 
+if ( ! strncmp ( * var8 , str , number ) ) { 
+if ( ! * ++ var8 ) 
+++ var13 ; 
+else { 
+var26 = atof ( * var8 ) ; 
+if ( var26 <= number ) 
+++ var13 ; 
+} 
+} else if ( ! strncmp ( * var8 , str , number ) ) { 
+if ( ! * ++ var8 ) 
+++ var13 ; 
+else { 
+var28 = * var8 ; 
+if ( strlen ( var28 ) != number || var28 [ number ] != str ) 
+++ var13 ; 
+else 
+var14 = var29 ; 
+} 
+} else { 
+if ( ** var8 != str ) { 
+var20 = * var8 ; 
+if ( var8 [ number ] ) 
+++ var13 ; 
+} else 
+++ var13 ; 
+} 
+} 
+if ( ! var20 ) 
+++ var13 ; 
+if ( var13 ) { 
+int var30 ; 
+fprintf ( var22 , str , var27 , var31 , var32 ) ; 
+func3 ( ) ; 
+fprintf ( var22 , str 
+str 
+str gamma str 
+str % . 1f str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , var27 , var18 ) ; 
+do 
+var30 = func4 ( ) ; 
+while ( var30 != str && var30 != str && var30 != number ) ; 
+exit ( number ) ; 
+} 
+if ( ! ( var24 = fopen ( var20 , str ) ) ) { 
+fprintf ( var22 , var27 str , var20 ) ; 
+++ var13 ; 
+} else { 
+if ( ( var10 = func5 ( var24 , & var34 , & var35 ) ) != number ) { 
+switch ( var10 ) { 
+case number : 
+fprintf ( var22 , var27 
+str , 
+var20 ) ; 
+break ; 
+case number : 
+fprintf ( var22 , var27 
+str , var20 ) ; 
+break ; 
+case number : 
+fprintf ( var22 , var27 str ) ; 
+break ; 
+var36 : 
+fprintf ( var22 , var27 
+str ) ; 
+break ; 
+} 
+++ var13 ; 
+} 
+if ( var13 ) 
+fclose ( var24 ) ; 
+} 
+if ( var13 ) { 
+int var30 ; 
+fprintf ( var22 , var27 str ) ; 
+do 
+var30 = func4 ( ) ; 
+while ( var30 != str && var30 != str && var30 != number ) ; 
+exit ( number ) ; 
+} else { 
+fprintf ( var22 , str , var27 , var31 , var32 ) ; 
+fprintf ( var22 , 
+str , 
+var27 ) ; 
+} 
+var11 = strlen ( var32 ) ; 
+var12 = strlen ( var20 ) ; 
+if ( var11 + var12 + number > number ) 
+sprintf ( var37 , str , var32 , var20 + ( var11 + var12 + number - number ) ) ; 
+else 
+sprintf ( var37 , str , var32 , var20 ) ; 
+if ( var14 ) { 
+unsigned var25 , var33 , var38 ; 
+sscanf ( var28 + number , str , & var25 , & var33 , & var38 ) ; 
+var39 = ( uch ) var25 ; 
+var40 = ( uch ) var33 ; 
+var41 = ( uch ) var38 ; 
+} else if ( func6 ( & var39 , & var40 , & var41 ) > number ) { 
+func7 ( var29 ) ; 
+fprintf ( var22 , var27 
+str ) ; 
+exit ( number ) ; 
+} 
+if ( func8 ( var1 , var4 ) ) 
+exit ( number ) ; 
+Trace ( ( var22 , str ) ) 
+var42 = func9 ( var26 , & var43 , 
+& var44 ) ; 
+Trace ( ( var22 , str ) ) 
+func7 ( var15 ) ; 
+fclose ( var24 ) ; 
+if ( ! var42 ) { 
+fprintf ( var22 , var27 str ) ; 
+exit ( number ) ; 
+} 
+Trace ( ( var22 , str ) ) 
+if ( func10 ( ) ) { 
+free ( var42 ) ; 
+exit ( number ) ; 
+} 
+Trace ( ( var22 , str ) ) 
+printf ( 
+str 
+str 
+) ; 
+fflush ( var23 ) ; 
+while ( func11 ( & var19 , var21 , number , number ) ) { 
+func12 ( & var19 ) ; 
+func13 ( & var19 ) ; 
+} 
+func14 ( ) ; 
+return var19 . var45 ; 
+} 

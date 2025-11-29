@@ -1,0 +1,167 @@
+static int func1 ( const FieldMatchContext * var1 , const AVFrame * var2 ) 
+{ 
+int var3 , var4 , var5 , var6 = number ; 
+const int var7 = var1 -> var7 ; 
+const int var8 = var7 * number ; 
+for ( var5 = number ; var5 < ( var1 -> var9 ? number : number ) ; var5 ++ ) { 
+const uint8_t * var10 = var2 -> var11 [ var5 ] ; 
+const int var12 = var2 -> var13 [ var5 ] ; 
+const int var14 = func2 ( var1 , var2 , var5 ) ; 
+const int var15 = func3 ( var1 , var2 , var5 ) ; 
+uint8_t * var16 = var1 -> var17 [ var5 ] ; 
+const int var18 = var1 -> var19 [ var5 ] ; 
+if ( var7 < number ) { 
+func4 ( var16 , var14 , var15 , var18 , number ) ; 
+continue ; 
+} 
+func4 ( var16 , var14 , var15 , var18 , number ) ; 
+abs ( number * var10 [ var3 ] \ 
+- number * ( var10 [ var3 + ( xm1 ) * var12 ] + var10 [ var3 + ( xp1 ) * var12 ] ) \ 
++ ( var10 [ var3 + ( xm2 ) * var12 ] + var10 [ var3 + ( xp2 ) * var12 ] ) ) > var8 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+const int var20 = abs ( var10 [ var3 ] - var10 [ var3 + var12 ] ) ; 
+if ( var20 > var7 && func5 ( number , number , number , number ) ) 
+var16 [ var3 ] = number ; 
+} 
+var10 += var12 ; 
+var16 += var18 ; 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+const int var20 = abs ( var10 [ var3 ] - var10 [ var3 - var12 ] ) ; 
+const int var21 = abs ( var10 [ var3 ] - var10 [ var3 + var12 ] ) ; 
+if ( var20 > var7 && var21 > var7 && func5 ( number , - number , number , number ) ) 
+var16 [ var3 ] = number ; 
+} 
+var10 += var12 ; 
+var16 += var18 ; 
+for ( var4 = number ; var4 < var15 - number ; var4 ++ ) { 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+const int var20 = abs ( var10 [ var3 ] - var10 [ var3 - var12 ] ) ; 
+const int var21 = abs ( var10 [ var3 ] - var10 [ var3 + var12 ] ) ; 
+if ( var20 > var7 && var21 > var7 && func5 ( - number , - number , number , number ) ) 
+var16 [ var3 ] = number ; 
+} 
+var10 += var12 ; 
+var16 += var18 ; 
+} 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+const int var20 = abs ( var10 [ var3 ] - var10 [ var3 - var12 ] ) ; 
+const int var21 = abs ( var10 [ var3 ] - var10 [ var3 + var12 ] ) ; 
+if ( var20 > var7 && var21 > var7 && func5 ( - number , - number , number , - number ) ) 
+var16 [ var3 ] = number ; 
+} 
+var10 += var12 ; 
+var16 += var18 ; 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+const int var20 = abs ( var10 [ var3 ] - var10 [ var3 - var12 ] ) ; 
+if ( var20 > var7 && func5 ( - number , - number , - number , - number ) ) 
+var16 [ var3 ] = number ; 
+} 
+} 
+if ( var1 -> var9 ) { 
+uint8_t * var16 = var1 -> var17 [ number ] ; 
+uint8_t * var22 = var1 -> var17 [ number ] ; 
+uint8_t * var23 = var1 -> var17 [ number ] ; 
+const int var14 = func6 ( var2 -> var14 , var1 -> var24 ) ; 
+const int var15 = func6 ( var2 -> var15 , var1 -> var25 ) ; 
+const int var18 = var1 -> var19 [ number ] << number ; 
+const int var26 = var1 -> var19 [ number ] ; 
+uint8_t * var27 = var16 - ( var18 >> number ) ; 
+uint8_t * var28 = var16 + ( var18 >> number ) ; 
+uint8_t * var29 = var16 + var18 ; 
+for ( var4 = number ; var4 < var15 - number ; var4 ++ ) { 
+var27 += var18 ; 
+var16 += var18 ; 
+var28 += var18 ; 
+var29 += var18 ; 
+var23 += var26 ; 
+var22 += var26 ; 
+for ( var3 = number ; var3 < var14 - number ; var3 ++ ) { 
+p [ ( var3 ) - number ] == number || p [ ( var3 ) + number ] == number || \ 
+p [ ( var3 ) - number + ( lz ) ] == number || p [ ( var3 ) + ( lz ) ] == number || p [ ( var3 ) + number + ( lz ) ] == number ) 
+if ( ( var23 [ var3 ] == number && func7 ( var23 , var26 ) ) || 
+( var22 [ var3 ] == number && func7 ( var22 , var26 ) ) ) { 
+( ( uint16_t * ) var16 ) [ var3 ] = number ; 
+( ( uint16_t * ) var28 ) [ var3 ] = number ; 
+if ( var4 & number ) ( ( uint16_t * ) var27 ) [ var3 ] = number ; 
+else ( ( uint16_t * ) var29 ) [ var3 ] = number ; 
+} 
+} 
+} 
+} 
+{ 
+const int var30 = var1 -> var30 ; 
+const int var31 = var1 -> var31 ; 
+const int var32 = var30 / number ; 
+const int var33 = var31 / number ; 
+const int var18 = var1 -> var19 [ number ] ; 
+const uint8_t * var16 = var1 -> var17 [ number ] + var18 ; 
+const int var14 = var2 -> var14 ; 
+const int var15 = var2 -> var15 ; 
+const int var34 = ( ( var14 + var32 ) / var30 ) + number ; 
+const int var35 = var34 << number ; 
+const int var36 = ( ( var15 + var33 ) / var31 ) + number ; 
+int * var37 = var1 -> var37 ; 
+const int var38 = ( var34 * var36 ) << number ; 
+int var39 = ( var15 / ( var31 / number ) ) * ( var31 / number ) ; 
+const int var40 = ( var14 / ( var30 / number ) ) * ( var30 / number ) ; 
+if ( var39 == var15 ) 
+var39 = var15 - var33 ; 
+memset ( var37 , number , var38 * sizeof ( * var37 ) ) ; 
+const int var42 = ( var3 / var30 ) * number ; \ 
+const int var43 = ( ( var3 + var32 ) / var30 ) * number ; \ 
+var37 [ var44 + var42 ] += var41 ; \ 
+var37 [ var44 + var43 + number ] += var41 ; \ 
+var37 [ var45 + var42 + number ] += var41 ; \ 
+var37 [ var45 + var43 + number ] += var41 ; \ 
+} while ( number ) 
+for ( var4 = var46 ; var4 < var47 ; var4 ++ ) { \ 
+const int var44 = ( var4 / var31 ) * var35 ; \ 
+const int var45 = ( ( var4 + var33 ) / var31 ) * var35 ; \ 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) \ 
+if ( var16 [ var3 - var18 ] == number && \ 
+var16 [ var3 ] == number && \ 
+var16 [ var3 + var18 ] == number ) \ 
+func8 ( number ) ; \ 
+var16 += var18 ; \ 
+} \ 
+} while ( number ) 
+func9 ( number , var33 ) ; 
+for ( var4 = var33 ; var4 < var39 ; var4 += var33 ) { 
+const int var44 = ( var4 / var31 ) * var35 ; 
+const int var45 = ( ( var4 + var33 ) / var31 ) * var35 ; 
+for ( var3 = number ; var3 < var40 ; var3 += var32 ) { 
+const uint8_t * var48 = var16 + var3 ; 
+int var49 , var41 , var50 = number ; 
+for ( var49 = number ; var49 < var33 ; var49 ++ ) { 
+for ( var41 = number ; var41 < var32 ; var41 ++ ) 
+if ( var48 [ var41 - var18 ] == number && 
+var48 [ var41 ] == number && 
+var48 [ var41 + var18 ] == number ) 
+var50 ++ ; 
+var48 += var18 ; 
+} 
+if ( var50 ) 
+func8 ( var50 ) ; 
+} 
+for ( var3 = var40 ; var3 < var14 ; var3 ++ ) { 
+const uint8_t * var48 = var16 + var3 ; 
+int var49 , var50 = number ; 
+for ( var49 = number ; var49 < var33 ; var49 ++ ) { 
+if ( var48 [ - var18 ] == number && 
+var48 [ number ] == number && 
+var48 [ var18 ] == number ) 
+var50 ++ ; 
+var48 += var18 ; 
+} 
+if ( var50 ) 
+func8 ( var50 ) ; 
+} 
+var16 += var18 * var33 ; 
+} 
+func9 ( var39 , var15 - number ) ; 
+for ( var3 = number ; var3 < var38 ; var3 ++ ) 
+if ( var37 [ var3 ] > var6 ) 
+var6 = var37 [ var3 ] ; 
+} 
+return var6 ; 
+} 

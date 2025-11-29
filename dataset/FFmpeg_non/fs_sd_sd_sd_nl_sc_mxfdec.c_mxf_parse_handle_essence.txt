@@ -1,0 +1,29 @@
+static int func1 ( MXFContext * var1 ) 
+{ 
+AVIOContext * var2 = var1 -> var3 -> var2 ; 
+int64_t var4 ; 
+if ( var1 -> var5 ) { 
+return func2 ( var1 ) ; 
+} else { 
+if ( ! var1 -> var6 ) { 
+func3 ( var1 -> var3 , var7 , str ) ; 
+return number ; 
+} 
+func3 ( var1 -> var3 , var7 , str ) ; 
+var1 -> var8 = func4 ( var2 ) ; 
+if ( ! var2 -> var9 ) { 
+func3 ( var1 -> var3 , var10 , str ) ; 
+return - number ; 
+} 
+if ( ( var4 = func5 ( var2 , var1 -> var11 + var1 -> var6 , var12 ) ) < number ) { 
+func3 ( var1 -> var3 , AV_LOG_ERROR , 
+str PRIx64 
+str PRId64 str , 
+var1 -> var11 + var1 -> var6 , var4 ) ; 
+return var4 ; 
+} 
+var1 -> var13 = var14 ; 
+var1 -> var5 = number ; 
+} 
+return number ; 
+} 

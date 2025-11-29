@@ -1,0 +1,31 @@
+static int func1 ( RTMPContext * var1 ) 
+{ 
+uint8_t * var2 ; 
+uint8_t * var4 = var1 -> var3 ; 
+if ( ! ( var1 -> var3 = func2 ( var1 -> var5 + number ) ) ) { 
+var1 -> var3 = var4 ; 
+return func3 ( var6 ) ; 
+} 
+memcpy ( var1 -> var3 , var4 , number ) ; 
+memcpy ( var1 -> var3 + number + number , var4 + number , var1 -> var5 - number ) ; 
+var1 -> var5 += number ; 
+func4 ( & var4 ) ; 
+var2 = var1 -> var3 + number ; 
+func5 ( & var2 , var7 ) ; 
+func6 ( & var2 , number ) ; 
+func6 ( & var2 , number ) ; 
+func7 ( & var2 , number ) ; 
+func5 ( & var2 , var8 ) ; 
+func8 ( & var2 , number ) ; 
+func9 ( & var2 , str , number ) ; 
+func5 ( & var2 , var9 ) ; 
+func7 ( & var2 , number ) ; 
+func8 ( & var2 , number ) ; 
+func9 ( & var2 , str , number ) ; 
+func5 ( & var2 , var11 ) ; 
+func10 ( & var2 , func11 ( var1 -> var10 ) ) ; 
+func8 ( & var2 , number ) ; 
+func5 ( & var2 , var12 ) ; 
+func7 ( & var2 , number ) ; 
+return number ; 
+} 

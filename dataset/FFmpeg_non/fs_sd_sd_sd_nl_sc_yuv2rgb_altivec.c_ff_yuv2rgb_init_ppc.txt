@@ -1,0 +1,47 @@
+av_cold SwsFunc func1 ( SwsContext * var1 ) 
+{ 
+if ( ! ( func2 ( ) & var2 ) ) 
+return var3 ; 
+if ( ( var1 -> var4 & number ) != number ) 
+return var3 ; 
+switch ( var1 -> var5 ) { 
+case var6 : 
+case var7 : 
+case var8 : 
+case var9 : 
+case var10 : 
+if ( ( var1 -> var11 & number ) != number ) 
+return var3 ; 
+switch ( var1 -> var12 ) { 
+case var13 : 
+func3 ( var1 , var14 , str ) ; 
+return var15 ; 
+case var16 : 
+func3 ( var1 , var14 , str ) ; 
+return var17 ; 
+case var18 : 
+func3 ( var1 , var14 , str ) ; 
+return var19 ; 
+case var20 : 
+func3 ( var1 , var14 , str ) ; 
+return var21 ; 
+case var22 : 
+func3 ( var1 , var14 , str ) ; 
+return var23 ; 
+case var24 : 
+func3 ( var1 , var14 , str ) ; 
+return var25 ; 
+var26 : return var3 ; 
+} 
+break ; 
+case var27 : 
+switch ( var1 -> var12 ) { 
+case var28 : 
+func3 ( var1 , var14 , str ) ; 
+return var29 ; 
+var26 : return var3 ; 
+} 
+break ; 
+} 
+return var3 ; 
+} 

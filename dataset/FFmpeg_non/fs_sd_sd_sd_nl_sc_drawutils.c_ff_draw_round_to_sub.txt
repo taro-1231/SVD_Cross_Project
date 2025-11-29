@@ -1,0 +1,10 @@
+int func1 ( FFDrawContext * var1 , int var2 , int var3 , 
+int var4 ) 
+{ 
+unsigned var5 = var2 ? var1 -> var6 : var1 -> var7 ; 
+if ( ! var5 ) 
+return var4 ; 
+if ( var3 >= number ) 
+var4 += var3 ? ( number << var5 ) - number : number << ( var5 - number ) ; 
+return ( var4 >> var5 ) << var5 ; 
+} 

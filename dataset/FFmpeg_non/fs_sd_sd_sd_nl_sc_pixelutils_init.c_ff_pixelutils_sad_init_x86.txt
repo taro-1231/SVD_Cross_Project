@@ -1,0 +1,18 @@
+void func1 ( av_pixelutils_sad_fn * var1 , int var2 ) 
+{ 
+int var3 = func2 ( ) ; 
+if ( func3 ( var3 ) ) { 
+var1 [ number ] = var4 ; 
+} 
+if ( func4 ( var3 ) ) { 
+var1 [ number ] = var5 ; 
+var1 [ number ] = var6 ; 
+} 
+if ( func5 ( var3 ) ) { 
+switch ( var2 ) { 
+case 0 : var1 [ number ] = var7 ; break ; 
+case 1 : var1 [ number ] = var8 ; break ; 
+case number : var1 [ number ] = var9 ; break ; 
+} 
+} 
+} 

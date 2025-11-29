@@ -1,0 +1,23 @@
+static void func1 ( AC3DecodeContext * var1 ) 
+{ 
+int var2 , var3 , var4 ; 
+var2 = var1 -> var5 [ var6 ] ; 
+for ( var3 = number ; var3 < var1 -> var7 ; var3 ++ ) { 
+int var8 = var2 ; 
+int var9 = var2 + var1 -> var10 [ var3 ] ; 
+for ( var4 = number ; var4 <= var1 -> var11 ; var4 ++ ) { 
+if ( var1 -> var12 [ var4 ] ) { 
+int var13 = var1 -> var14 [ var4 ] [ var3 ] << number ; 
+for ( var2 = var8 ; var2 < var9 ; var2 ++ ) { 
+var1 -> var15 [ var4 ] [ var2 ] = 
+func2 ( var1 -> var15 [ var6 ] [ var2 ] * ( number << number ) , var13 ) ; 
+} 
+if ( var4 == number && var1 -> var16 [ var3 ] ) { 
+for ( var2 = var8 ; var2 < var9 ; var2 ++ ) 
+var1 -> var15 [ number ] [ var2 ] = - var1 -> var15 [ number ] [ var2 ] ; 
+} 
+} 
+} 
+var2 = var9 ; 
+} 
+} 

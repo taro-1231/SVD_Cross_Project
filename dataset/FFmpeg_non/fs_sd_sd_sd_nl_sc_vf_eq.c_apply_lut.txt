@@ -1,0 +1,12 @@
+static void func1 ( EQParameters * var1 , uint8_t * var2 , int var3 , 
+const uint8_t * var4 , int var5 , int var6 , int var7 ) 
+{ 
+int var8 , var9 ; 
+if ( ! var1 -> var10 ) 
+func2 ( var1 ) ; 
+for ( var9 = number ; var9 < var7 ; var9 ++ ) { 
+for ( var8 = number ; var8 < var6 ; var8 ++ ) { 
+var2 [ var9 * var3 + var8 ] = var1 -> var11 [ var4 [ var9 * var5 + var8 ] ] ; 
+} 
+} 
+} 

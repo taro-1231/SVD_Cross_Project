@@ -1,0 +1,4 @@
+int attribute_align_arg func1 ( AVFilterContext * var1 , AVFilterBufferRef ** var2 ) 
+{ 
+return func2 ( var1 , var2 , number , number ) ; 
+} 

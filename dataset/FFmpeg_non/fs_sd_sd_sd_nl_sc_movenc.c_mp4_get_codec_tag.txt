@@ -1,0 +1,17 @@
+static int func1 ( AVFormatContext * var1 , MOVTrack * var2 ) 
+{ 
+int var3 = var2 -> var4 -> var5 ; 
+if ( ! func2 ( var6 , var2 -> var4 -> var7 ) ) 
+return number ; 
+if ( var2 -> var4 -> var7 == var8 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var9 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var10 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var11 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var12 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var13 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var14 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var15 == var16 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var15 == var17 ) var3 = func3 ( str , str , str , str ) ; 
+else if ( var2 -> var4 -> var7 == var18 ) var3 = func3 ( str , str , str , str ) ; 
+return var3 ; 
+} 

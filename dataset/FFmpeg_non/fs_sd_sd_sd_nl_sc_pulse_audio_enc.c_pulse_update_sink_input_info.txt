@@ -1,0 +1,29 @@
+Mainloop must be locked before calling this function as it operates on streams . * / 
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+PulseData * var2 = var1 -> var3 ; 
+pa_operation * var4 ; 
+enum pa_operation_state var5 ; 
+pa_mainloop * var6 = var7 ; 
+pa_context * var8 = var7 ; 
+int var9 = number ; 
+if ( ( var9 = func2 ( & var6 , & var8 , var2 -> var10 , str ) ) < number ) 
+return var9 ; 
+if ( ! ( var4 = func3 ( var8 , func4 ( var2 -> var11 ) , 
+var12 , var1 ) ) ) { 
+var9 = var13 ; 
+goto var14 ; 
+} 
+while ( ( var5 = func5 ( var4 ) ) == var15 ) 
+func6 ( var6 , number , var7 ) ; 
+func7 ( var4 ) ; 
+if ( var5 != var16 ) { 
+var9 = var13 ; 
+goto var14 ; 
+} 
+var14 : 
+func8 ( & var6 , & var8 ) ; 
+if ( var9 ) 
+func9 ( var2 , var17 , str ) ; 
+return var9 ; 
+} 

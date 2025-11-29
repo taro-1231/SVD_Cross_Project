@@ -1,0 +1,52 @@
+static HTTPContext * func1 ( struct sockaddr_in * var1 , 
+FFServerStream * var2 , 
+const char * var3 , 
+enum RTSPLowerTransport var4 ) 
+{ 
+HTTPContext * var5 = var6 ; 
+const char * var7 ; 
+if ( var8 >= var9 . var10 ) 
+goto var11 ; 
+var5 = func2 ( sizeof ( HTTPContext ) ) ; 
+if ( ! var5 ) 
+goto var11 ; 
+var5 -> var12 = - number ; 
+var5 -> var13 = var6 ; 
+var5 -> var1 = * var1 ; 
+var5 -> var14 = var15 ; 
+var5 -> var16 = func3 ( var5 -> var14 ) ; 
+if ( ! var5 -> var16 ) 
+goto var11 ; 
+var8 ++ ; 
+var5 -> var2 = var2 ; 
+func4 ( var5 -> var3 , var3 , sizeof ( var5 -> var3 ) ) ; 
+var5 -> var17 = var18 ; 
+var5 -> var19 = number ; 
+var5 -> var4 = var4 ; 
+switch ( var5 -> var4 ) { 
+case var20 : 
+var7 = str ; 
+break ; 
+case var21 : 
+var7 = str ; 
+break ; 
+case var22 : 
+var7 = str ; 
+break ; 
+var23 : 
+var7 = str ; 
+break ; 
+} 
+func4 ( var5 -> var24 , str , sizeof ( var5 -> var24 ) ) ; 
+func5 ( var5 -> var24 , var7 , sizeof ( var5 -> var24 ) ) ; 
+var25 += var2 -> var26 ; 
+var5 -> var27 = var28 ; 
+var28 = var5 ; 
+return var5 ; 
+var11 : 
+if ( var5 ) { 
+func6 ( & var5 -> var16 ) ; 
+func7 ( var5 ) ; 
+} 
+return var6 ; 
+} 

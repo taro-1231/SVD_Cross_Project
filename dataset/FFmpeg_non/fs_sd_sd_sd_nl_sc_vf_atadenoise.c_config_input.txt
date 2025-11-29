@@ -1,0 +1,24 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+const AVPixFmtDescriptor * var2 = func2 ( var1 -> var3 ) ; 
+AVFilterContext * var4 = var1 -> var5 ; 
+ATADenoiseContext * var6 = var4 -> var7 ; 
+int var8 ; 
+var6 -> var9 = var2 -> var10 ; 
+var6 -> var11 [ number ] = var6 -> var11 [ number ] = func3 ( var1 -> var12 , var2 -> var13 ) ; 
+var6 -> var11 [ number ] = var6 -> var11 [ number ] = var1 -> var12 ; 
+var6 -> var14 [ number ] = var6 -> var14 [ number ] = func3 ( var1 -> var15 , var2 -> var16 ) ; 
+var6 -> var14 [ number ] = var6 -> var14 [ number ] = var1 -> var15 ; 
+var8 = var2 -> var17 [ number ] . var18 + number ; 
+if ( var8 == number ) 
+var6 -> var19 = var20 ; 
+else 
+var6 -> var19 = var21 ; 
+var6 -> var22 [ number ] = var6 -> var23 [ number ] * ( number << var8 ) - number ; 
+var6 -> var22 [ number ] = var6 -> var23 [ number ] * ( number << var8 ) - number ; 
+var6 -> var22 [ number ] = var6 -> var23 [ number ] * ( number << var8 ) - number ; 
+var6 -> var24 [ number ] = var6 -> var25 [ number ] * ( number << var8 ) - number ; 
+var6 -> var24 [ number ] = var6 -> var25 [ number ] * ( number << var8 ) - number ; 
+var6 -> var24 [ number ] = var6 -> var25 [ number ] * ( number << var8 ) - number ; 
+return number ; 
+} 

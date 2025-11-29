@@ -1,0 +1,7 @@
+static int func1 ( ASyncContext * var1 , AVFrame * var2 ) 
+{ 
+int var3 = func2 ( var1 -> var4 , var5 , number , number , var2 -> var6 , 
+var2 -> var7 [ number ] , var2 -> var8 ) ; 
+func3 ( & var2 ) ; 
+return var3 ; 
+} 

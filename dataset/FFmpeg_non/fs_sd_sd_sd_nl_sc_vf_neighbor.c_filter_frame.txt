@@ -1,0 +1,48 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var3 -> var6 [ number ] ; 
+NContext * var7 = var3 -> var8 ; 
+AVFrame * var9 ; 
+int var10 , var11 ; 
+var9 = func2 ( var5 , var5 -> var12 , var5 -> var13 ) ; 
+if ( ! var9 ) { 
+func3 ( & var2 ) ; 
+return func4 ( var14 ) ; 
+} 
+func5 ( var9 , var2 ) ; 
+for ( var10 = number ; var10 < var7 -> var15 ; var10 ++ ) { 
+const int var16 = var7 -> var16 [ var10 ] ; 
+if ( var16 ) { 
+const uint8_t * var17 = var2 -> var18 [ var10 ] ; 
+uint8_t * var4 = var9 -> var18 [ var10 ] ; 
+int var19 = var2 -> var20 [ var10 ] ; 
+int var21 = var7 -> var22 [ var10 ] ; 
+int var23 = var7 -> var24 [ var10 ] ; 
+uint8_t * var25 = var7 -> var26 + number ; 
+uint8_t * var27 = var25 + var7 -> var24 [ number ] ; 
+uint8_t * var28 = var27 + var7 -> var24 [ number ] ; 
+uint8_t * var29 = var25 , * var30 = var28 ; 
+func6 ( var25 , var17 + var19 , var23 , number ) ; 
+func6 ( var27 , var17 , var23 , number ) ; 
+for ( var11 = number ; var11 < var21 ; var11 ++ ) { 
+const uint8_t * var31 [ ] = { var25 - number , var25 , var25 + number , 
+var27 - number , var27 + number , 
+var28 - number , var28 , var28 + number } ; 
+var17 += var19 * ( var11 < var21 - number ? number : - number ) ; 
+func6 ( var28 , var17 , var23 , number ) ; 
+var7 -> func7 ( var4 , var27 , var23 , var16 , var31 , var7 -> var31 ) ; 
+var25 = var27 ; 
+var27 = var28 ; 
+var28 = ( var28 == var30 ) ? var29 : var28 + var7 -> var24 [ number ] ; 
+var4 += var9 -> var20 [ var10 ] ; 
+} 
+} else { 
+func8 ( var9 -> var18 [ var10 ] , var9 -> var20 [ var10 ] , 
+var2 -> var18 [ var10 ] , var2 -> var20 [ var10 ] , 
+var7 -> var24 [ var10 ] , var7 -> var22 [ var10 ] ) ; 
+} 
+} 
+func3 ( & var2 ) ; 
+return func9 ( var5 , var9 ) ; 
+} 

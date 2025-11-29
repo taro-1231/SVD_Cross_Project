@@ -1,0 +1,29 @@
+static int func1 ( const char ** var1 , AVFilterInOut ** var2 , 
+AVFilterInOut ** var3 , void * var4 ) 
+{ 
+AVFilterInOut * var5 = var6 ; 
+int var7 = number ; 
+while ( ** var1 == str ) { 
+char * var8 = func2 ( var1 , var4 ) ; 
+AVFilterInOut * var9 ; 
+if ( ! var8 ) 
+return func3 ( var10 ) ; 
+var9 = func4 ( var8 , var3 ) ; 
+if ( var9 ) { 
+func5 ( var8 ) ; 
+} else { 
+if ( ! ( var9 = func6 ( sizeof ( AVFilterInOut ) ) ) ) { 
+func5 ( var8 ) ; 
+return func3 ( var11 ) ; 
+} 
+var9 -> var8 = var8 ; 
+var9 -> var12 = var7 ; 
+} 
+func7 ( & var5 , & var9 ) ; 
+* var1 += strspn ( * var1 , var13 ) ; 
+var7 ++ ; 
+} 
+func7 ( & var5 , var2 ) ; 
+* var2 = var5 ; 
+return var7 ; 
+} 

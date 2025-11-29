@@ -1,0 +1,69 @@
+static av_cold void func1 ( func2 ) ( SwsContext * var1 ) 
+{ 
+enum AVPixelFormat var2 = var1 -> var2 ; 
+var1 -> var3 = number ; 
+if ( ! func3 ( var2 ) && ! func4 ( var2 ) && var2 != var4 
+&& var2 != var5 && ! ( var1 -> var6 & var7 ) ) { 
+if ( var1 -> var6 & var8 ) { 
+if ( ! ( var1 -> var6 & var9 ) ) { 
+switch ( var1 -> var2 ) { 
+case var10 : var1 -> var11 = func1 ( var12 ) ; break ; 
+case var13 : var1 -> var11 = func1 ( var14 ) ; break ; 
+case var15 : var1 -> var11 = func1 ( var16 ) ; break ; 
+case var17 : var1 -> var11 = func1 ( var18 ) ; break ; 
+case var19 : var1 -> var11 = func1 ( var20 ) ; break ; 
+var21 : break ; 
+} 
+} 
+} else { 
+var1 -> var3 = number ; 
+var1 -> var22 = func1 ( var23 ) ; 
+if ( ! ( var1 -> var6 & var9 ) ) { 
+switch ( var1 -> var2 ) { 
+case var10 : var1 -> var11 = func1 ( var24 ) ; break ; 
+case var25 : var1 -> var11 = func1 ( var26 ) ; break ; 
+case var13 : var1 -> var11 = func1 ( var27 ) ; break ; 
+case var15 : var1 -> var11 = func1 ( var28 ) ; break ; 
+case var17 : var1 -> var11 = func1 ( var29 ) ; break ; 
+case var19 : var1 -> var11 = func1 ( var30 ) ; break ; 
+var21 : break ; 
+} 
+} 
+} 
+if ( ! ( var1 -> var6 & var9 ) ) { 
+switch ( var1 -> var2 ) { 
+case var10 : 
+var1 -> var31 = func1 ( var32 ) ; 
+var1 -> var33 = func1 ( var34 ) ; 
+break ; 
+case var13 : 
+var1 -> var31 = func1 ( var35 ) ; 
+var1 -> var33 = func1 ( var36 ) ; 
+break ; 
+case var15 : 
+var1 -> var31 = func1 ( var37 ) ; 
+var1 -> var33 = func1 ( var38 ) ; 
+break ; 
+case var17 : 
+var1 -> var31 = func1 ( var39 ) ; 
+var1 -> var33 = func1 ( var40 ) ; 
+break ; 
+case var19 : 
+var1 -> var31 = func1 ( var41 ) ; 
+var1 -> var33 = func1 ( var42 ) ; 
+break ; 
+var21 : 
+break ; 
+} 
+} 
+} 
+if ( var1 -> var43 == number && var1 -> var44 <= number ) { 
+if ( var1 -> var6 & var45 && var1 -> var46 ) { 
+var1 -> var47 = var48 ; 
+var1 -> var49 = var50 ; 
+} else { 
+var1 -> var47 = var51 ; 
+var1 -> var49 = var51 ; 
+} 
+} 
+} 

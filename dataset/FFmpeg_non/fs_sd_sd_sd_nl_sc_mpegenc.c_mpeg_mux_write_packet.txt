@@ -1,0 +1,62 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+int var3 = var2 -> var3 ; 
+int var4 = var2 -> var4 ; 
+uint8_t * var5 = var2 -> var6 ; 
+MpegMuxContext * var7 = var1 -> var8 ; 
+AVStream * var9 = var1 -> var10 [ var3 ] ; 
+StreamInfo * var11 = var9 -> var8 ; 
+int64_t var12 , var13 ; 
+PacketDesc * var14 ; 
+int var15 ; 
+const int var16 = var9 -> var17 -> var18 == var19 && 
+( var2 -> var20 & var21 ) ; 
+var15 = func2 ( var7 -> var15 , number , var22 ) ; 
+var12 = var2 -> var12 ; 
+var13 = var2 -> var13 ; 
+if ( var7 -> var23 == var24 ) { 
+if ( var13 == var24 || ( var13 < var15 && var1 -> var25 ) || var7 -> var26 ) { 
+if ( var13 != var24 ) 
+var7 -> var15 += func2 ( - var13 , var22 , number ) ; 
+var7 -> var23 = number ; 
+} else { 
+var7 -> var23 = var13 - var15 ; 
+var7 -> var15 = number ; 
+} 
+var15 = func2 ( var7 -> var15 , number , var22 ) ; 
+func3 ( var1 , AV_LOG_DEBUG , str PRId64 str PRId64 str , var7 -> var23 , var13 + var15 ) ; 
+} 
+if ( var13 != var24 ) var13 += var15 ; 
+if ( var12 != var24 ) var12 += var15 ; 
+func3 ( var1 , var27 , str , 
+var13 / number , var12 / number , var2 -> var20 , 
+var2 -> var3 , var12 != var24 ) ; 
+if ( ! var11 -> var28 ) 
+var11 -> var29 = & var11 -> var28 ; 
+* var11 -> var29 = 
+var14 = func4 ( sizeof ( PacketDesc ) ) ; 
+var14 -> var12 = var12 ; 
+var14 -> var13 = var13 ; 
+var14 -> var30 = 
+var14 -> var4 = var4 ; 
+if ( ! var11 -> var31 ) 
+var11 -> var31 = var14 ; 
+var11 -> var29 = & var14 -> var32 ; 
+if ( func5 ( var11 -> var33 , func6 ( var11 -> var33 ) + var4 ) < number ) 
+return - number ; 
+if ( var7 -> var26 ) { 
+if ( var16 && 
+( var7 -> var34 == number || 
+( var12 - var11 -> var35 >= number ) ) ) { 
+var11 -> var36 = func6 ( var11 -> var33 ) ; 
+var11 -> var37 = number ; 
+var11 -> var35 = var12 ; 
+} 
+} 
+func7 ( var11 -> var33 , var5 , var4 , var38 ) ; 
+for ( ; ; ) { 
+int var39 = func8 ( var1 , number ) ; 
+if ( var39 <= number ) 
+return var39 ; 
+} 
+} 

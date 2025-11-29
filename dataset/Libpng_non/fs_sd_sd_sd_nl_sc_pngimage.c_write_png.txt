@@ -1,0 +1,27 @@
+func1 ( struct display * var1 , png_infop var2 , int var3 ) 
+{ 
+func2 ( var1 ) ; 
+func3 ( & var1 -> var4 ) ; 
+var1 -> var5 = str ; 
+var1 -> var3 = var3 ; 
+var1 -> var6 = func4 ( var7 , var1 , 
+var8 , var9 ) ; 
+if ( var1 -> var6 == var10 ) 
+func5 ( var1 , var11 , str ) ; 
+func6 ( var1 -> var6 , & var1 -> var4 , var12 , 
+var10 ; 
+var13 ( var1 -> var6 , number , number ) ; 
+if ( var3 & ( var14 | 
+var15 | 
+var16 ) ) 
+{ 
+int var17 = var1 -> var18 ; 
+if ( var3 & ( var15 | 
+var16 ) ) 
+var17 &= var19 ; 
+func7 ( var1 -> var6 , var2 , var1 -> var20 , var1 -> var21 , var1 -> var22 , var17 , 
+var1 -> var23 , var1 -> var24 , var1 -> var25 ) ; 
+} 
+func8 ( var1 -> var6 , var2 , var3 , var10 ; 
+func2 ( var1 ) ; 
+} 

@@ -1,0 +1,20 @@
+static void func1 ( int16_t ** var1 , int16_t ** var2 , int var3 , 
+int var4 , int var5 ) 
+{ 
+int16_t * var6 = var1 [ number ] ; 
+int16_t * var7 = var1 [ number ] ; 
+int16_t * var8 = var6 ; 
+int16_t var9 = var2 [ number ] [ number ] ; 
+int16_t var10 = var2 [ number ] [ number ] ; 
+while ( var3 > number ) { 
+* var8 += ( * var6 ++ * var9 + * var7 ++ * var10 ) >> number ; 
+* var8 += ( * var6 ++ * var9 + * var7 ++ * var10 ) >> number ; 
+* var8 += ( * var6 ++ * var9 + * var7 ++ * var10 ) >> number ; 
+* var8 += ( * var6 ++ * var9 + * var7 ++ * var10 ) >> number ; 
+var3 -= number ; 
+} 
+while ( var3 > number ) { 
+* var8 += ( * var6 ++ * var9 + * var7 ++ * var10 ) >> number ; 
+var3 -- ; 
+} 
+} 

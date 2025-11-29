@@ -1,0 +1,6 @@
+static void func1 ( AVFilterContext * var1 , IplImage * var2 , IplImage * var3 ) 
+{ 
+OCVContext * var4 = var1 -> var5 ; 
+SmoothContext * var6 = var4 -> var5 ; 
+func2 ( var2 , var3 , var6 -> var7 , var6 -> var8 , var6 -> var9 , var6 -> var10 , var6 -> var11 ) ; 
+} 

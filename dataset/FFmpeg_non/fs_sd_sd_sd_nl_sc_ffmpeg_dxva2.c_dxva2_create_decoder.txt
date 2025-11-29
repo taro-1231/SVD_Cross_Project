@@ -1,0 +1,115 @@
+static int func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+int var4 = ( var2 -> var5 == var6 ) ? var7 : var8 ; 
+DXVA2Context * var9 = var2 -> var10 ; 
+struct dxva_context * var11 = var1 -> var12 ; 
+GUID * var13 = var14 ; 
+unsigned var15 = number , var16 , var17 ; 
+GUID var18 = var19 ; 
+const D3DFORMAT var20 = ( var1 -> var21 == var22 ) ? func2 ( str , str , str , str ) : func2 ( str , str , str , str ) ; 
+D3DFORMAT var23 = number ; 
+DXVA2_VideoDesc var24 = { number } ; 
+DXVA2_ConfigPictureDecode var25 ; 
+HRESULT var26 ; 
+int var27 , var28 ; 
+int var29 ; 
+AVDXVA2FramesContext * var30 ; 
+AVHWFramesContext * var31 ; 
+var26 = func3 ( var9 -> var32 , & var15 , & var13 ) ; 
+if ( func4 ( var26 ) ) { 
+func5 ( var14 , var4 , str ) ; 
+goto var34 ; 
+} 
+for ( var16 = number ; var35 [ var16 ] . var36 ; var16 ++ ) { 
+D3DFORMAT * var37 = var14 ; 
+unsigned var38 = number ; 
+const dxva2_mode * var39 = & var35 [ var16 ] ; 
+if ( var39 -> var40 != var1 -> var41 ) 
+continue ; 
+for ( var17 = number ; var17 < var15 ; var17 ++ ) { 
+if ( func6 ( var39 -> var36 , & var13 [ var17 ] ) ) 
+break ; 
+} 
+if ( var17 == var15 ) 
+continue ; 
+var26 = func7 ( var9 -> var32 , var39 -> var36 , & var38 , & var37 ) ; 
+if ( func4 ( var26 ) ) { 
+continue ; 
+} 
+for ( var17 = number ; var17 < var38 ; var17 ++ ) { 
+const D3DFORMAT var42 = var37 [ var17 ] ; 
+if ( var42 == var20 ) { 
+var23 = var42 ; 
+break ; 
+} 
+} 
+func8 ( var37 ) ; 
+if ( var23 ) { 
+var18 = * var39 -> var36 ; 
+break ; 
+} 
+} 
+func8 ( var13 ) ; 
+if ( func6 ( & var18 , & var19 ) ) { 
+func5 ( var14 , var4 , str ) ; 
+goto var34 ; 
+} 
+var24 . var43 = var1 -> var44 ; 
+var24 . var45 = var1 -> var46 ; 
+var24 . var47 = var23 ; 
+var29 = func9 ( var1 , & var18 , & var24 , & var25 ) ; 
+if ( var29 < number ) { 
+goto var34 ; 
+} 
+if ( var1 -> var41 == var48 ) 
+var27 = number ; 
+else if ( var1 -> var41 == var49 ) 
+var27 = number ; 
+else 
+var27 = number ; 
+var28 = number ; 
+if ( var1 -> var41 == var50 || var1 -> var41 == var49 ) 
+var28 += number ; 
+else if ( var1 -> var41 == var51 ) 
+var28 += number ; 
+else 
+var28 += number ; 
+if ( var1 -> var52 & var53 ) 
+var28 += var1 -> var54 ; 
+var9 -> var55 = func10 ( var9 -> var56 ) ; 
+if ( ! var9 -> var55 ) 
+goto var34 ; 
+var31 = ( AVHWFramesContext * ) var9 -> var55 -> var57 ; 
+var30 = var31 -> var58 ; 
+var31 -> var42 = var59 ; 
+var31 -> var60 = ( var23 == func2 ( str , str , str , str ) ? var61 : var62 ) ; 
+var31 -> var63 = func11 ( var1 -> var44 , var27 ) ; 
+var31 -> var64 = func11 ( var1 -> var46 , var27 ) ; 
+var31 -> var65 = var28 ; 
+var30 -> var66 = var67 ; 
+var29 = func12 ( var9 -> var55 ) ; 
+if ( var29 < number ) { 
+func5 ( var14 , var4 , str ) ; 
+goto var34 ; 
+} 
+var26 = func13 ( var9 -> var32 , & var18 , 
+& var24 , & var25 , var30 -> var68 , 
+var30 -> var69 , & var30 -> var70 ) ; 
+if ( func4 ( var26 ) ) { 
+func5 ( var14 , var4 , str ) ; 
+goto var34 ; 
+} 
+var9 -> var71 = var18 ; 
+var9 -> var72 = var25 ; 
+var11 -> var73 = & var9 -> var72 ; 
+var11 -> var33 = var30 -> var70 ; 
+var11 -> var74 = var30 -> var68 ; 
+var11 -> var75 = var30 -> var69 ; 
+if ( func6 ( & var9 -> var71 , & var76 ) ) 
+var11 -> var77 |= var78 ; 
+return number ; 
+var34 : 
+func14 ( & var9 -> var55 ) ; 
+return func15 ( var79 ) ; 
+} 

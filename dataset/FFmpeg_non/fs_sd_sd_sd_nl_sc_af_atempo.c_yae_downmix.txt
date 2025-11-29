@@ -1,0 +1,16 @@
+static void func1 ( ATempoContext * var1 , AudioFragment * var2 ) 
+{ 
+const var3 * var4 = var2 -> var5 ; 
+memset ( var2 -> var6 , number , sizeof ( FFTComplex ) * var1 -> var7 ) ; 
+if ( var1 -> var8 == var9 ) { 
+func2 ( var3 , number ) ; 
+} else if ( var1 -> var8 == var10 ) { 
+func2 ( var11 , number ) ; 
+} else if ( var1 -> var8 == var12 ) { 
+func2 ( var13 , number ) ; 
+} else if ( var1 -> var8 == var14 ) { 
+func2 ( var15 , number ) ; 
+} else if ( var1 -> var8 == var16 ) { 
+func2 ( var17 , number ) ; 
+} 
+} 

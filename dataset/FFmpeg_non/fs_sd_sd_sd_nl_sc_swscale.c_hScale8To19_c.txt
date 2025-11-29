@@ -1,0 +1,32 @@
+static void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , const int16_t * var5 , 
+const int32_t * var6 , int var7 ) 
+{ 
+int var8 ; 
+int32_t * var9 = ( int32_t * ) var2 ; 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+int var10 ; 
+int var11 = var6 [ var8 ] ; 
+int var12 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) { 
+var12 += ( ( int ) var4 [ var11 + var10 ] ) * var5 [ var7 * var8 + var10 ] ; 
+} 
+var9 [ var8 ] = func2 ( var12 >> number , ( number << number ) - number ) ; 
+} 
+} 
+} 
+static void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , const int16_t * var5 , 
+const int32_t * var6 , int var7 ) 
+{ 
+int var8 ; 
+int32_t * var9 = ( int32_t * ) var2 ; 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+int var10 ; 
+int var11 = var6 [ var8 ] ; 
+int var12 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) { 
+var12 += ( ( int ) var4 [ var11 + var10 ] ) * var5 [ var7 * var8 + var10 ] ; 
+} 
+var9 [ var8 ] = func2 ( var12 >> number , ( number << number ) - number ) ; 
+} 

@@ -1,0 +1,5 @@
+func1 ( void * var1 , size_t var2 ) 
+{ 
+static png_uint_32 var3 [ number ] = { number , number } ; 
+func2 ( var3 , var1 , var2 ) ; 
+} 

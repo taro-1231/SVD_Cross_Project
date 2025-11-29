@@ -1,0 +1,18 @@
+int func1 ( AVFilterContext ** var1 , const AVFilter * var2 , 
+const char * var3 , const char * var4 , void * var5 , 
+AVFilterGraph * var6 ) 
+{ 
+int var7 ; 
+* var1 = func2 ( var6 , var2 , var3 ) ; 
+if ( ! * var1 ) 
+return func3 ( var8 ) ; 
+var7 = func4 ( * var1 , var4 ) ; 
+if ( var7 < number ) 
+goto var9 ; 
+return number ; 
+var9 : 
+if ( * var1 ) 
+func5 ( * var1 ) ; 
+* var1 = var10 ; 
+return var7 ; 
+} 

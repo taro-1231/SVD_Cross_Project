@@ -1,0 +1,63 @@
+func1 ( ATempoContext * var1 , 
+const uint8_t ** var2 , 
+const uint8_t * var3 , 
+uint8_t ** var4 , 
+uint8_t * var5 ) 
+{ 
+while ( number ) { 
+if ( var1 -> var6 == var7 ) { 
+if ( func2 ( var1 , var2 , var3 ) != number ) { 
+break ; 
+} 
+func3 ( var1 , func4 ( var1 ) ) ; 
+func5 ( var1 -> var8 , func4 ( var1 ) -> var9 ) ; 
+if ( ! var1 -> var10 ) { 
+func6 ( var1 ) ; 
+continue ; 
+} 
+var1 -> var6 = var11 ; 
+} 
+if ( var1 -> var6 == var11 ) { 
+if ( func7 ( var1 ) ) { 
+var1 -> var6 = var12 ; 
+} else { 
+var1 -> var6 = var13 ; 
+} 
+} 
+if ( var1 -> var6 == var12 ) { 
+if ( func2 ( var1 , var2 , var3 ) != number ) { 
+break ; 
+} 
+func3 ( var1 , func4 ( var1 ) ) ; 
+func5 ( var1 -> var8 , func4 ( var1 ) -> var9 ) ; 
+var1 -> var6 = var13 ; 
+} 
+if ( var1 -> var6 == var13 ) { 
+if ( func8 ( var1 , var4 , var5 ) != number ) { 
+break ; 
+} 
+func6 ( var1 ) ; 
+var1 -> var6 = var7 ; 
+} 
+} 
+} 
+static void 
+func1 ( ATempoContext * var1 , 
+const uint8_t ** var2 , 
+const uint8_t * var3 , 
+uint8_t ** var4 , 
+uint8_t * var5 ) 
+{ 
+while ( number ) { 
+if ( var1 -> var6 == var7 ) { 
+if ( func2 ( var1 , var2 , var3 ) != number ) { 
+break ; 
+} 
+func3 ( var1 , func4 ( var1 ) ) ; 
+func5 ( var1 -> var8 , func4 ( var1 ) -> var9 ) ; 
+if ( ! var1 -> var10 ) { 
+func6 ( var1 ) ; 
+continue ; 
+} 
+var1 -> var6 = var11 ; 
+} 

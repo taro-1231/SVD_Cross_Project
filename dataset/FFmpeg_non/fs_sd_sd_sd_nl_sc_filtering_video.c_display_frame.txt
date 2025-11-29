@@ -1,0 +1,25 @@
+static void func1 ( const AVFrame * var1 , AVRational var2 ) 
+{ 
+int var3 , var4 ; 
+uint8_t * var5 , * var6 ; 
+int64_t var7 ; 
+if ( var1 -> var8 != var9 ) { 
+if ( var10 != var9 ) { 
+var7 = func2 ( var1 -> var8 - var10 , 
+var2 , var11 ) ; 
+if ( var7 > number && var7 < number ) 
+func3 ( var7 ) ; 
+} 
+var10 = var1 -> var8 ; 
+} 
+var5 = var1 -> var12 [ number ] ; 
+puts ( str ) ; 
+for ( var4 = number ; var4 < var1 -> var13 ; var4 ++ ) { 
+var6 = var5 ; 
+for ( var3 = number ; var3 < var1 -> var14 ; var3 ++ ) 
+putchar ( str [ * ( var6 ++ ) / number ] ) ; 
+putchar ( str ) ; 
+var5 += var1 -> var15 [ number ] ; 
+} 
+fflush ( var16 ) ; 
+} 

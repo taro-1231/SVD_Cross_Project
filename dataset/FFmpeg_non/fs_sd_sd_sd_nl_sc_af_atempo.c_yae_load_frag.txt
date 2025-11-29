@@ -1,0 +1,53 @@
+static int func1 ( ATempoContext * var1 , 
+const uint8_t ** var2 , 
+const uint8_t * var3 ) 
+{ 
+AudioFragment * var4 = func2 ( var1 ) ; 
+uint8_t * var5 ; 
+int64_t var6 , var7 , var8 ; 
+uint32_t var9 ; 
+const uint8_t * var10 , * var11 ; 
+int var12 , var13 , var14 , var15 , var16 , var17 ; 
+int64_t var18 = var4 -> var19 [ number ] + var1 -> var20 ; 
+if ( var2 && func3 ( var1 , var2 , var3 , var18 ) != number ) { 
+return func4 ( var21 ) ; 
+} 
+var6 = 
+var18 > var1 -> var19 [ number ] ? 
+var18 - var1 -> var19 [ number ] : number ; 
+var9 = 
+var6 < ( int64_t ) var1 -> var20 ? 
+( uint32_t ) ( var1 -> var20 - var6 ) : number ; 
+var4 -> var9 = var9 ; 
+var5 = var4 -> var23 ; 
+var7 = var1 -> var19 [ number ] - var1 -> var24 ; 
+var8 = number ; 
+if ( var4 -> var19 [ number ] < var7 ) { 
+var8 = func5 ( var7 - var4 -> var19 [ number ] , ( int64_t ) var9 ) ; 
+func6 ( var8 != var9 ) ; 
+memset ( var5 , number , var8 * var1 -> var25 ) ; 
+var5 += var8 * var1 -> var25 ; 
+} 
+if ( var8 == var9 ) { 
+return number ; 
+} 
+var16 = ( var1 -> var27 < var1 -> var28 ? 
+var1 -> var28 - var1 -> var27 : 
+var1 -> var26 - var1 -> var27 ) ; 
+var17 = var1 -> var27 < var1 -> var28 ? number : var1 -> var28 ; 
+func6 ( var9 <= var8 + var16 + var17 ) ; 
+var10 = var1 -> var22 + var1 -> var27 * var1 -> var25 ; 
+var11 = var1 -> var22 ; 
+var12 = var4 -> var19 [ number ] + var8 - var7 ; 
+var13 = var12 < var16 ? number : var12 - var16 ; 
+var14 = var12 < var16 ? func5 ( var16 - var12 , ( int ) ( var9 - var8 ) ) : number ; 
+var15 = var9 - var8 - var14 ; 
+if ( var14 ) { 
+memcpy ( var5 , var10 + var12 * var1 -> var25 , var14 * var1 -> var25 ) ; 
+var5 += var14 * var1 -> var25 ; 
+} 
+if ( var15 ) { 
+memcpy ( var5 , var11 + var13 * var1 -> var25 , var15 * var1 -> var25 ) ; 
+} 
+return number ; 
+} 

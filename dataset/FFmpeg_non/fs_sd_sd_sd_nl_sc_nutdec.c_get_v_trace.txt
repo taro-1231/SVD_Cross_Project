@@ -1,0 +1,8 @@
+static inline uint64_t func1 ( AVIOContext * var1 , const char * var2 , 
+const char * var3 , int var4 ) 
+{ 
+uint64_t var5 = func2 ( var1 ) ; 
+av_log ( NULL , AV_LOG_DEBUG , str PRId64 str PRIX64 str , 
+var5 , var5 , var2 , var3 , var4 ) ; 
+return var5 ; 
+} 

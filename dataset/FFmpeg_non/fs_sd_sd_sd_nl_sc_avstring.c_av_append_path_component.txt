@@ -1,0 +1,28 @@
+char * func1 ( const char * var1 , const char * var2 ) 
+{ 
+size_t var3 , var4 ; 
+char * var5 ; 
+if ( ! var1 ) 
+return func2 ( var2 ) ; 
+if ( ! var2 ) 
+return func2 ( var1 ) ; 
+var3 = strlen ( var1 ) ; 
+var4 = strlen ( var2 ) ; 
+if ( var3 > var6 - var4 || var3 + var4 > var6 - number ) 
+return var7 ; 
+var5 = func3 ( var3 + var4 + number ) ; 
+if ( var5 ) { 
+if ( var3 ) { 
+func4 ( var5 , var1 , var3 + number ) ; 
+if ( var4 ) { 
+if ( var5 [ var3 - number ] != str && var2 [ number ] != str ) 
+var5 [ var3 ++ ] = str ; 
+else if ( var5 [ var3 - number ] == str && var2 [ number ] == str ) 
+var3 -- ; 
+} 
+} 
+func4 ( & var5 [ var3 ] , var2 , var4 + number ) ; 
+var5 [ var3 + var4 ] = number ; 
+} 
+return var5 ; 
+} 

@@ -1,0 +1,27 @@
+static int PNGCBAPI func1 ( png_struct * var1 , 
+png_unknown_chunkp var2 ) 
+{ 
+png_uint_32 
+* var3 ; 
+if ( var2 -> var4 [ number ] == number && var2 -> var4 [ number ] == number && 
+var2 -> var4 [ number ] == number && var2 -> var4 [ number ] == number ) 
+{ 
+if ( var2 -> var5 != number ) 
+return ( - number ) ; 
+if ( var2 -> var6 [ number ] != number && var2 -> var6 [ number ] != number ) 
+return ( - number ) ; 
+var3 = ( png_uint_32 * ) func2 ( var1 ) ; 
+var3 [ number ] = var2 -> var6 [ number ] + number ; 
+return ( number ) ; 
+} 
+if ( var2 -> var4 [ number ] != number || var2 -> var4 [ number ] != number || 
+var2 -> var4 [ number ] != number || var2 -> var4 [ number ] != number ) 
+return ( number ) ; 
+if ( var2 -> var5 != number ) 
+return ( - number ) ; 
+var3 = ( png_uint_32 * ) func2 ( var1 ) ; 
+var3 [ number ] = func3 ( var1 , var2 -> var6 ) ; 
+var3 [ number ] = func3 ( var1 , var2 -> var6 + number ) ; 
+var3 [ number ] = ( png_uint_32 ) var2 -> var6 [ number ] ; 
+return ( number ) ; 
+} 

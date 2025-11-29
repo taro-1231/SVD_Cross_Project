@@ -1,0 +1,52 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 ) 
+{ 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_d str 
+str REG_d str REG_c str 
+str REG_c str 
+str 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+PAVGB ( % % mm2 , % % mm1 ) 
+PAVGB ( % % mm3 , % % mm0 ) 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+str 
+str 
+str 
+str 
+str 
+str \ 
+DEINT_CUBIC ( ( % 0 ) , ( % % REGa , % 1 ) , ( % % REGa , % 1 , 2 ) , ( % 0 , % 1 , 4 ) , ( % % REGd , % 1 ) ) 
+DEINT_CUBIC ( ( % % REGa , % 1 ) , ( % 0 , % 1 , 4 ) , ( % % REGd ) , ( % % REGd , % 1 ) , ( % 0 , % 1 , 8 ) ) 
+DEINT_CUBIC ( ( % 0 , % 1 , 4 ) , ( % % REGd , % 1 ) , ( % % REGd , % 1 , 2 ) , ( % 0 , % 1 , 8 ) , ( % % REGc ) ) 
+DEINT_CUBIC ( ( % % REGd , % 1 ) , ( % 0 , % 1 , 8 ) , ( % % REGd , % 1 , 4 ) , ( % % REGc ) , ( % % REGc , % 1 , 2 ) ) 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) 
+: 
+XMM_CLOBBERS ( str , str , str , str , str , ) 
+str REG_a , str REG_d , str REG_c 
+) ; 
+int x ; 
+var1 += var2 * number ; 
+for ( x = 0 ; x < 8 ; x ++ ) { 
+var1 [ var2 * number ] = av_clip_uint8 ( ( - var1 [ 0 ] + 9 * var1 [ var2 * 2 ] + 9 * var1 [ var2 * 4 ] - var1 [ var2 * 6 ] ) >> 4 ) ; 
+var1 [ var2 * 5 ] = av_clip_uint8 ( ( - var1 [ var2 * 2 ] + 9 * var1 [ var2 * 4 ] + 9 * var1 [ var2 * 6 ] - var1 [ var2 * 8 ] ) >> 4 ) ; 
+var1 [ var2 * 7 ] = av_clip_uint8 ( ( - var1 [ var2 * 4 ] + 9 * var1 [ var2 * 6 ] + 9 * var1 [ var2 * 8 ] - var1 [ var2 * 10 ] ) >> 4 ) ; 
+var1 [ var2 * 9 ] = av_clip_uint8 ( ( - var1 [ var2 * 6 ] + 9 * var1 [ var2 * 8 ] + 9 * var1 [ var2 * 10 ] - var1 [ var2 * 12 ] ) >> 4 ) ; 
+var1 ++ ; 
+} 
+} 

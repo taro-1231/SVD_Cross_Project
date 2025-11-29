@@ -1,0 +1,13 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+AVBPrint var2 ; 
+func2 ( & var2 , number , var3 ) ; 
+func3 ( var1 , var4 ) ; 
+func4 ( str , var5 ) ; 
+func5 ( str , str , 
+var6 , var7 ) ; 
+func4 ( str , var8 ) ; 
+func4 ( str , var9 ) ; 
+func6 ( var1 ) ; 
+func7 ( & var2 , var10 ) ; 
+} 

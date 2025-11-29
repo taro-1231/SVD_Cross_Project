@@ -1,0 +1,53 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+NUTContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var5 ; 
+int64_t var6 ; 
+int var7 ; 
+var2 -> var8 = var1 ; 
+var6 = number ; 
+do { 
+var6 = func2 ( var4 , var9 , var6 ) + number ; 
+if ( var6 < number + number ) { 
+func3 ( var1 , var10 , str ) ; 
+goto var12 ; 
+} 
+} while ( func4 ( var2 ) < number ) ; 
+var6 = number ; 
+for ( var7 = number ; var7 < var1 -> var13 ; ) { 
+var6 = func2 ( var4 , var14 , var6 ) + number ; 
+if ( var6 < number + number ) { 
+func3 ( var1 , var10 , str ) ; 
+goto var12 ; 
+} 
+if ( func5 ( var2 ) >= number ) 
+var7 ++ ; 
+} 
+var6 = number ; 
+for ( ; ; ) { 
+uint64_t var11 = func6 ( var4 , var6 ) ; 
+var6 = func7 ( var4 ) ; 
+if ( var11 == number ) { 
+func3 ( var1 , var10 , str ) ; 
+goto var12 ; 
+} else if ( var11 == var15 ) { 
+var2 -> var16 = var11 ; 
+break ; 
+} else if ( var11 != var17 ) { 
+continue ; 
+} 
+func8 ( var2 ) ; 
+} 
+var1 -> var18 -> var19 = var6 - number ; 
+if ( var4 -> var20 ) { 
+int64_t var21 = func7 ( var4 ) ; 
+func9 ( var2 ) ; 
+func10 ( var4 , var21 , var22 ) ; 
+} 
+func11 ( var2 -> var16 == var15 ) ; 
+func12 ( var1 , var23 , var24 ) ; 
+return number ; 
+var12 : 
+func13 ( var1 ) ; 
+return var25 ; 
+} 

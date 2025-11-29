@@ -1,0 +1,22 @@
+static int func1 ( AVIOContext * var1 , AVFormatContext * var2 ) 
+{ 
+int64_t var3 = func2 ( var1 ) ; 
+int var4 , var5 = func3 ( var2 -> var5 , number ) ; 
+func4 ( var1 , number ) ; 
+func5 ( var1 , str ) ; 
+func4 ( var1 , number ) ; 
+func4 ( var1 , number ) ; 
+func6 ( var1 , var5 ) ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) { 
+AVChapter * var6 = var2 -> var7 [ var4 ] ; 
+AVDictionaryEntry * var8 ; 
+avio_wb64 ( var1 , av_rescale_q ( var6 -> start , var6 -> time_base , ( AVRational ) { 1 , 10000000 } ) ) ; 
+if ( ( var8 = func7 ( var6 -> var9 , str , var10 , number ) ) ) { 
+int var11 = func3 ( strlen ( var8 -> var12 ) , number ) ; 
+func6 ( var1 , var11 ) ; 
+func8 ( var1 , var8 -> var12 , var11 ) ; 
+} else 
+func6 ( var1 , number ) ; 
+} 
+return func9 ( var1 , var3 ) ; 
+} 

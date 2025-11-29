@@ -1,0 +1,45 @@
+static mfxStatus func1 ( mfxHDL var1 , mfxFrameAllocRequest * var2 , 
+mfxFrameAllocResponse * var3 ) 
+{ 
+DecodeContext * var4 = var1 ; 
+int var5 , var6 ; 
+if ( var4 -> var7 ) { 
+fprintf ( var8 , str ) ; 
+return var9 ; 
+} 
+if ( ! ( var2 -> var10 & var11 ) ) { 
+fprintf ( var8 , str , var2 -> var10 ) ; 
+return var12 ; 
+} 
+if ( var2 -> var13 . var14 != number || var2 -> var13 . var15 != number || 
+var2 -> var13 . var16 || var2 -> var13 . var17 != var18 || 
+var2 -> var13 . var19 != var20 ) { 
+fprintf ( var8 , str ) ; 
+return var12 ; 
+} 
+var4 -> var7 = func2 ( var2 -> var21 , sizeof ( * var4 -> var7 ) ) ; 
+var4 -> var22 = func2 ( var2 -> var21 , sizeof ( * var4 -> var22 ) ) ; 
+var4 -> var23 = func3 ( var2 -> var21 , sizeof ( * var4 -> var23 ) ) ; 
+if ( ! var4 -> var7 || ! var4 -> var22 || ! var4 -> var23 ) 
+goto var24 ; 
+var5 = func4 ( var4 -> var25 , var26 , 
+var2 -> var13 . var27 , var2 -> var13 . var28 , 
+var4 -> var7 , var2 -> var21 , 
+var29 , number ) ; 
+if ( var5 != var30 ) { 
+fprintf ( var8 , str ) ; 
+goto var24 ; 
+} 
+var4 -> var31 = var2 -> var21 ; 
+for ( var6 = number ; var6 < var4 -> var31 ; var6 ++ ) 
+var4 -> var22 [ var6 ] = & var4 -> var7 [ var6 ] ; 
+var3 -> var32 = var4 -> var22 ; 
+var3 -> var33 = var4 -> var31 ; 
+var4 -> var34 = var2 -> var13 ; 
+return var35 ; 
+var24 : 
+func5 ( & var4 -> var7 ) ; 
+func5 ( & var4 -> var22 ) ; 
+func5 ( & var4 -> var23 ) ; 
+return var9 ; 
+} 

@@ -1,0 +1,22 @@
+static void func1 ( int var1 ) 
+{ 
+pid_t var2 ; 
+int var3 ; 
+time_t var4 ; 
+while ( ( var2 = func2 ( - number , & var3 , var5 ) ) > number ) { 
+FFServerStream * var6 ; 
+for ( var6 = var7 . var8 ; var6 ; var6 = var6 -> var9 ) { 
+if ( var6 -> var2 != var2 ) 
+continue ; 
+var4 = time ( number ) - var6 -> var10 ; 
+var6 -> var2 = number ; 
+fprintf ( stderr , 
+str PRId64 str PRId64 str 
+str , 
+var6 -> filename , ( int64_t ) var2 , var3 , ( int64_t ) var4 ) ; 
+if ( var4 < number ) 
+func3 ( & var6 -> var11 ) ; 
+} 
+} 
+var12 = number ; 
+} 

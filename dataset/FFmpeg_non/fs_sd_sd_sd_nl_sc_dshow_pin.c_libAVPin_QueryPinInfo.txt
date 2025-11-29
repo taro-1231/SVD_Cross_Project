@@ -1,0 +1,12 @@
+func1 ( libAVPin * var1 , PIN_INFO * var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+if ( var1 -> var4 ) 
+func3 ( var1 -> var4 ) ; 
+var2 -> var5 = ( IBaseFilter * ) var1 -> var4 ; 
+var2 -> var6 = var7 ; 
+wcscpy ( var2 -> achName , L str ) ; 
+return var8 ; 
+} 

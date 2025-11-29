@@ -1,0 +1,16 @@
+static int func1 ( MixContext * var1 ) 
+{ 
+int var2 ; 
+int var3 = var4 ; 
+func2 ( var1 -> var5 > number ) ; 
+for ( var2 = number ; var2 < var1 -> var5 ; var2 ++ ) { 
+int var6 ; 
+if ( var1 -> var7 [ var2 ] == var8 ) 
+continue ; 
+var6 = func3 ( var1 -> var9 [ var2 ] ) ; 
+var3 = func4 ( var3 , var6 ) ; 
+} 
+if ( var3 == var4 ) 
+return number ; 
+return var3 ; 
+} 

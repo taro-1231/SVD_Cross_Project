@@ -1,0 +1,5 @@
+static int64_t func1 ( FFFrameSync * var1 , unsigned var2 , 
+int64_t var3 ) 
+{ 
+return var3 + number ; 
+} 

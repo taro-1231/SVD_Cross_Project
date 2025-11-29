@@ -1,0 +1,14 @@
+static void func1 ( X11GrabContext * var1 ) 
+{ 
+Display * var2 = var1 -> var2 ; 
+Window var3 = var1 -> var4 ; 
+int var5 = func2 ( var2 ) ; 
+GC var6 = func3 ( var2 , var3 , number , number ) ; 
+func4 ( var2 , var6 , func5 ( var2 , var5 ) ) ; 
+func6 ( var2 , var6 , func7 ( var2 , var5 ) ) ; 
+func8 ( var2 , var6 , var7 , var8 , number , number ) ; 
+func9 ( var2 , var3 , var6 , number , number , 
+( var1 -> var9 + var7 * number ) - number * number - number , 
+( var1 -> var10 + var7 * number ) - number * number - number ) ; 
+func10 ( var2 , var6 ) ; 
+} 

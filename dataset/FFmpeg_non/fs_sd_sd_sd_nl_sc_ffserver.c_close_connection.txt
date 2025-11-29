@@ -1,0 +1,67 @@
+static void func1 ( HTTPContext * var1 ) 
+{ 
+HTTPContext ** var2 , * var3 ; 
+int var4 , var5 ; 
+AVFormatContext * var6 ; 
+AVStream * var7 ; 
+var2 = & var8 ; 
+while ( * var2 ) { 
+var3 = * var2 ; 
+if ( var3 == var1 ) 
+* var2 = var1 -> var9 ; 
+else 
+var2 = & var3 -> var9 ; 
+} 
+for ( var3 = var8 ; var3 ; var3 = var3 -> var9 ) { 
+if ( var3 -> var10 == var1 ) 
+var3 -> var10 = var11 ; 
+} 
+if ( var1 -> var12 >= number ) 
+func2 ( var1 -> var12 ) ; 
+if ( var1 -> var13 ) { 
+for ( var4 = number ; var4 < var1 -> var13 -> var5 ; var4 ++ ) { 
+var7 = var1 -> var13 -> var14 [ var4 ] ; 
+if ( var7 -> var15 -> var15 ) 
+func3 ( var7 -> var15 ) ; 
+} 
+func4 ( & var1 -> var13 ) ; 
+} 
+var5 = number ; 
+if ( var1 -> var16 ) 
+var5 = var1 -> var16 -> var5 ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) { 
+var6 = var1 -> var17 [ var4 ] ; 
+if ( var6 ) { 
+func5 ( var6 ) ; 
+func6 ( & var6 -> var18 ) ; 
+func7 ( & var6 -> var14 [ number ] ) ; 
+func7 ( & var6 ) ; 
+} 
+func8 ( var1 -> var19 [ var4 ] ) ; 
+} 
+var6 = var1 -> var20 ; 
+if ( var6 ) { 
+if ( ! var1 -> var21 && var1 -> var22 == var23 ) { 
+if ( var6 -> var24 && func9 ( & var6 -> var25 ) >= number ) { 
+func5 ( var6 ) ; 
+func7 ( & var1 -> var26 ) ; 
+func10 ( var6 -> var25 , & var1 -> var26 ) ; 
+} 
+} 
+for ( var4 = number ; var4 < var6 -> var5 ; var4 ++ ) 
+func7 ( & var6 -> var14 [ var4 ] ) ; 
+func7 ( & var6 -> var14 ) ; 
+func7 ( & var6 -> var27 ) ; 
+} 
+if ( var1 -> var16 && ! var1 -> var28 && var1 -> var16 -> var29 == var30 ) 
+var31 -= var1 -> var16 -> var32 ; 
+if ( var1 -> var22 == var33 && var1 -> var16 ) { 
+var1 -> var16 -> var34 = number ; 
+func11 ( var1 -> var35 ) ; 
+} 
+func7 ( & var1 -> var26 ) ; 
+func7 ( & var1 -> var36 ) ; 
+func7 ( & var1 -> var37 ) ; 
+func12 ( var1 ) ; 
+var38 -- ; 
+} 

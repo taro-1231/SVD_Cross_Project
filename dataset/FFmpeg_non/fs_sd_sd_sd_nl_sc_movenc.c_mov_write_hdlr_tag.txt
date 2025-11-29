@@ -1,0 +1,65 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+const char * var3 , * var4 = var5 , * var6 = var5 ; 
+int64_t var7 = func2 ( var1 ) ; 
+var3 = str ; 
+var6 = str ; 
+var4 = str ; 
+if ( var2 ) { 
+var3 = ( var2 -> var8 == var9 ) ? str : str ; 
+if ( var2 -> var10 -> var11 == var12 ) { 
+var6 = str ; 
+var4 = str ; 
+} else if ( var2 -> var10 -> var11 == var13 ) { 
+var6 = str ; 
+var4 = str ; 
+} else if ( var2 -> var10 -> var11 == var14 ) { 
+if ( func3 ( var2 ) ) { 
+var6 = str ; 
+var4 = str ; 
+} else { 
+if ( var2 -> var15 == func4 ( str , str , str , str ) ) { 
+var6 = str ; 
+} else if ( var2 -> var15 == func4 ( str , str , str , str ) ) { 
+var6 = str ; 
+} else { 
+var6 = str ; 
+} 
+var4 = str ; 
+} 
+} else if ( var2 -> var10 -> var17 == func4 ( str , str , str , str ) ) { 
+var6 = str ; 
+var4 = str ; 
+} else if ( var2 -> var10 -> var17 == func4 ( str , str , str , str ) ) { 
+var6 = str ; 
+var4 = str ; 
+} else { 
+char var18 [ number ] ; 
+func5 ( var18 , sizeof ( var18 ) , 
+var2 -> var10 -> var17 ) ; 
+func6 ( var2 -> var10 , var19 , 
+str , 
+var18 , var2 -> var10 -> var17 ) ; 
+} 
+if ( var2 -> var20 ) { 
+AVDictionaryEntry * var16 ; 
+var16 = func7 ( var2 -> var20 -> var21 , str , var5 , number ) ; 
+if ( var16 && func8 ( var16 -> var22 ) ) 
+var4 = var16 -> var22 ; 
+} 
+} 
+func9 ( var1 , number ) ; 
+func10 ( var1 , str ) ; 
+func9 ( var1 , number ) ; 
+func11 ( var1 , var3 , number ) ; 
+func10 ( var1 , var6 ) ; 
+func9 ( var1 , number ) ; 
+func9 ( var1 , number ) ; 
+func9 ( var1 , number ) ; 
+if ( ! var2 || var2 -> var8 == var9 ) 
+func12 ( var1 , strlen ( var4 ) ) ; 
+func11 ( var1 , var4 , strlen ( var4 ) ) ; 
+if ( var2 && var2 -> var8 != var9 ) 
+func12 ( var1 , number ) ; 
+return func13 ( var1 , var7 ) ; 
+} 

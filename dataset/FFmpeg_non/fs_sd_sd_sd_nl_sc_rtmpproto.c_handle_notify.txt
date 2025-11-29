@@ -1,0 +1,43 @@
+static int func1 ( URLContext * var1 , RTMPPacket * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+uint8_t var5 [ number ] ; 
+char var6 [ number ] ; 
+int var7 , var8 , var9 = number ; 
+GetByteContext var10 ; 
+func2 ( & var10 , var2 -> var11 , var2 -> var12 ) ; 
+if ( func3 ( & var10 , var5 , sizeof ( var5 ) , 
+& var7 ) ) 
+return var13 ; 
+if ( ! strcmp ( var5 , str ) ) { 
+if ( func4 ( & var10 ) == var14 ) { 
+var3 -> var15 = number ; 
+func5 ( & var10 , number ) ; 
+while ( func6 ( & var10 ) > number ) { 
+if ( func7 ( & var10 , var6 , sizeof ( var6 ) , 
+& var7 ) ) 
+return var13 ; 
+var7 = func8 ( var10 . var16 , var10 . var17 ) ; 
+if ( var7 < number ) 
+return var13 ; 
+func5 ( & var10 , var7 ) ; 
+if ( ! strcmp ( var6 , str ) ) { 
+var3 -> var18 = number ; 
+} 
+if ( ! strcmp ( var6 , str ) ) { 
+var3 -> var19 = number ; 
+} 
+} 
+if ( func9 ( & var10 ) != var20 ) 
+return var13 ; 
+} 
+} 
+if ( ! strcmp ( var5 , str ) ) { 
+var9 = var10 . var16 - var2 -> var11 ; 
+var8 = func3 ( & var10 , var6 , 
+sizeof ( var6 ) , & var7 ) ; 
+if ( var8 < number ) 
+return var13 ; 
+} 
+return func10 ( var3 , var2 , var9 ) ; 
+} 

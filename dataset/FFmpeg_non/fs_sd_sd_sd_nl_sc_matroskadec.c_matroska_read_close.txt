@@ -1,0 +1,13 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaDemuxContext * var2 = var1 -> var3 ; 
+MatroskaTrack * var4 = var2 -> var4 . var5 ; 
+int var6 ; 
+func2 ( var2 ) ; 
+for ( var6 = number ; var6 < var2 -> var4 . var7 ; var6 ++ ) 
+if ( var4 [ var6 ] . var8 == var9 ) 
+func3 ( & var4 [ var6 ] . var10 . var11 ) ; 
+func4 ( var12 , & var2 -> var13 ) ; 
+func4 ( var14 , var2 ) ; 
+return number ; 
+} 

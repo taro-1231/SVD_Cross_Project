@@ -1,0 +1,34 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+int var3 ; 
+AVFilterContext * var4 = var1 -> var5 ; 
+AVFilterLink * var6 = var4 -> var7 [ number ] ; 
+DejudderContext * var8 = var4 -> var9 ; 
+int64_t * var10 = var8 -> var11 ; 
+int64_t var12 = var2 -> var13 ; 
+int64_t var14 ; 
+if ( var12 == var15 ) 
+return func2 ( var6 , var2 ) ; 
+if ( var8 -> var16 ) { 
+var8 -> var16 -- ; 
+var8 -> var17 = var12 * number * var8 -> var18 ; 
+} else { 
+if ( var12 < var10 [ var8 -> var19 ] ) { 
+var14 = var12 + var10 [ var8 -> var20 ] - var10 [ var8 -> var21 ] - var10 [ var8 -> var22 ] ; 
+for ( var3 = number ; var3 < var8 -> var18 + number ; var3 ++ ) 
+var10 [ var3 ] += var14 ; 
+} 
+var8 -> var17 += ( var8 -> var18 - number ) * ( var10 [ var8 -> var20 ] - var10 [ var8 -> var22 ] ) 
++ ( var8 -> var18 + number ) * ( var12 - var10 [ var8 -> var21 ] ) ; 
+} 
+var10 [ var8 -> var19 ] = var12 ; 
+var8 -> var22 = var8 -> var19 ; 
+var8 -> var19 = var8 -> var20 ; 
+var8 -> var20 = var8 -> var21 ; 
+var8 -> var21 = ( var8 -> var21 + number ) % ( var8 -> var18 + number ) ; 
+var2 -> var13 = var8 -> var17 ; 
+for ( var3 = number ; var3 < var8 -> var18 + number ; var3 ++ ) 
+av_log ( var4 , AV_LOG_DEBUG , str PRId64 str , var10 [ var3 ] ) ; 
+av_log ( var4 , AV_LOG_DEBUG , str PRId64 str PRId64 str , var12 , var2 -> var13 ) ; 
+return func2 ( var6 , var2 ) ; 
+} 

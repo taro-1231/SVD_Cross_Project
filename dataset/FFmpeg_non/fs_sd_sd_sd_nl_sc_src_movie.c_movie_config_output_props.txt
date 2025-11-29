@@ -1,0 +1,19 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+MovieContext * var4 = var2 -> var5 ; 
+unsigned var6 = func2 ( var1 ) ; 
+MovieStream * var7 = & var4 -> var7 [ var6 ] ; 
+AVCodecContext * var8 = var7 -> var7 -> var9 ; 
+var1 -> var10 = var7 -> var7 -> var10 ; 
+switch ( var8 -> var11 ) { 
+case var12 : 
+var1 -> var13 = var8 -> var14 ; 
+var1 -> var15 = var8 -> var16 ; 
+var1 -> var17 = var7 -> var7 -> var18 ; 
+break ; 
+case var19 : 
+break ; 
+} 
+return number ; 
+} 

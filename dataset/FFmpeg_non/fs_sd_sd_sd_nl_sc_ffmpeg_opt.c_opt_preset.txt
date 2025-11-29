@@ -1,0 +1,40 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+OptionsContext * var4 = var1 ; 
+FILE * var5 = var6 ; 
+char var7 [ number ] , var8 [ number ] , var9 [ number ] ; 
+const char * var10 = var6 ; 
+var9 [ number ] = * var2 ; 
+var9 [ number ] = number ; 
+func2 ( var11 , var12 , var10 , var6 , var9 ) ; 
+if ( ! ( var5 = func3 ( var7 , sizeof ( var7 ) , var3 , * var2 == var12 , var10 ) ) ) { 
+if ( ! strncmp ( var3 , var12 , strlen ( var12 ) ) ) { 
+func4 ( var6 , var13 , var12 ) ; 
+} else 
+func4 ( var6 , var13 , var12 , var3 ) ; 
+func5 ( number ) ; 
+} 
+while ( fgets ( var8 , sizeof ( var8 ) , var5 ) ) { 
+char * var14 = var9 , * var15 , * var16 ; 
+if ( strcspn ( var8 , var12 ) == number ) 
+continue ; 
+func6 ( var9 , var8 , sizeof ( var9 ) ) ; 
+if ( ! func7 ( var14 , var12 , & var15 ) || 
+! func7 ( var15 , var12 , & var16 ) ) { 
+func4 ( var6 , var13 , var12 , var7 , var8 ) ; 
+func5 ( number ) ; 
+} 
+func4 ( var6 , var17 , var12 , var7 , var14 , var15 ) ; 
+if ( ! strcmp ( var14 , var12 ) ) func8 ( var4 , var14 , var15 ) ; 
+else if ( ! strcmp ( var14 , var12 ) ) func9 ( var4 , var14 , var15 ) ; 
+else if ( ! strcmp ( var14 , var12 ) ) func10 ( var4 , var14 , var15 ) ; 
+else if ( ! strcmp ( var14 , var12 ) ) func11 ( var4 , var14 , var15 ) ; 
+else if ( func12 ( var4 , var14 , var15 ) < number ) { 
+func4 ( var6 , var13 , var12 , 
+var7 , var8 , var14 , var15 ) ; 
+func5 ( number ) ; 
+} 
+} 
+fclose ( var5 ) ; 
+return number ; 
+} 

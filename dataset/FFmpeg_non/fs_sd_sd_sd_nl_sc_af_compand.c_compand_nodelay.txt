@@ -1,0 +1,37 @@
+static int func1 ( AVFilterContext * var1 , AVFrame * var2 ) 
+{ 
+CompandContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var1 -> var6 [ number ] ; 
+const int var7 = var5 -> var7 ; 
+const int var8 = var2 -> var8 ; 
+AVFrame * var9 ; 
+int var10 , var11 ; 
+int var12 ; 
+if ( func2 ( var2 ) ) { 
+var9 = var2 ; 
+} else { 
+var9 = func3 ( var5 , var8 ) ; 
+if ( ! var9 ) { 
+func4 ( & var2 ) ; 
+return func5 ( var13 ) ; 
+} 
+var12 = func6 ( var9 , var2 ) ; 
+if ( var12 < number ) { 
+func4 ( & var9 ) ; 
+func4 ( & var2 ) ; 
+return var12 ; 
+} 
+} 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) { 
+const double * var14 = ( double * ) var2 -> var15 [ var10 ] ; 
+double * var16 = ( double * ) var9 -> var15 [ var10 ] ; 
+ChanParam * var17 = & var3 -> var7 [ var10 ] ; 
+for ( var11 = number ; var11 < var8 ; var11 ++ ) { 
+func7 ( var17 , fabs ( var14 [ var11 ] ) ) ; 
+var16 [ var11 ] = func8 ( var14 [ var11 ] * func9 ( var3 , var17 -> var18 ) , - number , number ) ; 
+} 
+} 
+if ( var2 != var9 ) 
+func4 ( & var2 ) ; 
+return func10 ( var1 -> var19 [ number ] , var9 ) ; 
+} 

@@ -1,0 +1,57 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+struct dv1394_data * var3 = var1 -> var4 ; 
+int var5 ; 
+var5 = func2 ( var3 -> var6 , var2 ) ; 
+if ( var5 > number ) 
+return var5 ; 
+if ( ! var3 -> var7 ) { 
+struct dv1394_status var8 ; 
+struct pollfd var9 ; 
+if ( var3 -> var10 ) { 
+if ( func3 ( var3 -> var11 , var12 , var3 -> var10 ) < number ) { 
+func4 ( var1 , var13 , str ) ; 
+func5 ( var3 ) ; 
+func6 ( var3 ) ; 
+} 
+var3 -> var10 = number ; 
+} 
+var14 : 
+var9 . var11 = var3 -> var11 ; 
+var9 . var15 = var16 | var17 | var18 ; 
+if ( func7 ( & var9 , number , - number ) < number ) { 
+if ( var19 == var20 || var19 == var21 ) 
+goto var14 ; 
+func4 ( var1 , var13 , str , strerror ( var19 ) ) ; 
+return func8 ( var22 ) ; 
+} 
+if ( func3 ( var3 -> var11 , var23 , & var8 ) < number ) { 
+func4 ( var1 , var13 , str , strerror ( var19 ) ) ; 
+return func8 ( var22 ) ; 
+} 
+func4 ( var1 , var24 , str 
+str 
+str 
+str 
+str , 
+var8 . active_frame , var8 . var25 , 
+var8 . var26 , var8 . var27 ) ; 
+var3 -> var7 = var8 . var26 ; 
+var3 -> var28 = var8 . var25 ; 
+var3 -> var10 = number ; 
+if ( var8 . var27 ) { 
+func4 ( var1 , var13 , str , 
+var8 . var27 ) ; 
+func5 ( var3 ) ; 
+func6 ( var3 ) ; 
+} 
+} 
+func4 ( var1 , var24 , str , var3 -> var28 , var3 -> var7 , 
+var3 -> var10 ) ; 
+var5 = func9 ( var3 -> var6 , var2 , 
+var3 -> var29 + ( var3 -> var28 * var30 ) , 
+var30 , - number ) ; 
+var3 -> var28 = ( var3 -> var28 + number ) % var31 ; 
+var3 -> var10 ++ ; var3 -> var7 -- ; 
+return var5 ; 
+} 

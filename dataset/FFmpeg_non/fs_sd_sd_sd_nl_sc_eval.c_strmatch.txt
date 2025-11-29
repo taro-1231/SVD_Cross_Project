@@ -1,0 +1,8 @@
+static int func2 ( const char * var1 , const char * var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var2 [ var3 ] ; var3 ++ ) { 
+if ( var2 [ var3 ] != var1 [ var3 ] ) return number ; 
+} 
+return ! func1 ( var1 [ var3 ] ) ; 
+} 

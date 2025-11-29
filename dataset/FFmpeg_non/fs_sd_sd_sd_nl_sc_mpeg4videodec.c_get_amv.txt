@@ -1,0 +1,39 @@
+static inline int func1 ( Mpeg4DecContext * var1 , int var2 ) 
+{ 
+MpegEncContext * var3 = & var1 -> var4 ; 
+int var5 , var6 , var7 , var8 , var9 , var10 , var11 ; 
+int var12 = number << ( var3 -> var13 + number ) ; 
+const int var14 = var3 -> var15 ; 
+if ( var3 -> var16 & var17 ) 
+var12 >>= var3 -> var18 ; 
+if ( var3 -> var19 == number ) { 
+if ( var1 -> var20 == number && var1 -> var21 == number ) 
+var8 = var3 -> var22 [ number ] [ var2 ] / ( number << ( var14 - var3 -> var18 ) ) ; 
+else 
+var8 = func2 ( var3 -> var22 [ number ] [ var2 ] << var3 -> var18 , var14 ) ; 
+} else { 
+var9 = var3 -> var23 [ var2 ] [ number ] ; 
+var10 = var3 -> var23 [ var2 ] [ number ] ; 
+var11 = var1 -> var24 [ number ] ; 
+if ( var2 ) 
+var10 -= number << ( var11 + var14 + number ) ; 
+else 
+var9 -= number << ( var11 + var14 + number ) ; 
+var7 = var3 -> var22 [ number ] [ var2 ] + var9 * var3 -> var25 * number + var10 * var3 -> var26 * number ; 
+var8 = number ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+int var27 ; 
+var27 = var7 + var10 * var6 ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+var8 += var27 >> var11 ; 
+var27 += var9 ; 
+} 
+} 
+var8 = func2 ( var8 , var14 + number - var3 -> var18 ) ; 
+} 
+if ( var8 < - var12 ) 
+var8 = - var12 ; 
+else if ( var8 >= var12 ) 
+var8 = var12 - number ; 
+return var8 ; 
+} 

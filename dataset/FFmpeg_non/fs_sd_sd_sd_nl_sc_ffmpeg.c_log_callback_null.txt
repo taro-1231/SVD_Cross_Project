@@ -1,0 +1,3 @@
+static void func1 ( void * var1 , int var2 , const char * var3 , va_list var4 ) 
+{ 
+} 

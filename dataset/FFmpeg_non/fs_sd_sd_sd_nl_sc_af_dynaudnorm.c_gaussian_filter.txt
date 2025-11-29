@@ -1,0 +1,9 @@
+static double func1 ( DynamicAudioNormalizerContext * var1 , cqueue * var2 ) 
+{ 
+double var3 = number ; 
+int var4 ; 
+for ( var4 = number ; var4 < func2 ( var2 ) ; var4 ++ ) { 
+var3 += func3 ( var2 , var4 ) * var1 -> var5 [ var4 ] ; 
+} 
+return var3 ; 
+} 

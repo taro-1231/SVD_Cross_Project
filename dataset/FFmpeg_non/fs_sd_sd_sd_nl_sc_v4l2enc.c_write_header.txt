@@ -1,0 +1,47 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 = number , var3 = var4 ; 
+struct v4l2_format var5 = { 
+. type = V4L2_BUF_TYPE_VIDEO_OUTPUT 
+} ; 
+V4L2Context * var6 = var1 -> var7 ; 
+AVCodecContext * var8 ; 
+uint32_t var9 ; 
+if ( var1 -> var3 & var10 ) 
+var3 |= var11 ; 
+var6 -> var12 = func2 ( var1 -> var13 , var3 ) ; 
+if ( var6 -> var12 < number ) { 
+var2 = func3 ( var14 ) ; 
+func4 ( var1 , var15 , str , var1 -> var13 ) ; 
+return var2 ; 
+} 
+if ( var1 -> var16 != number || 
+var1 -> var17 [ number ] -> var18 -> var19 != var20 || 
+var1 -> var17 [ number ] -> var18 -> var21 != var22 ) { 
+func4 ( var1 , var15 , 
+str ) ; 
+return func3 ( var23 ) ; 
+} 
+var8 = var1 -> var17 [ number ] -> var18 ; 
+var9 = func5 ( var8 -> var24 , var22 ) ; 
+if ( ! var9 ) { 
+func4 ( var1 , var15 , str , 
+func6 ( var8 -> var24 ) ) ; 
+return func3 ( var23 ) ; 
+} 
+if ( func7 ( var6 -> var12 , var25 , & var5 ) < number ) { 
+var2 = func3 ( var14 ) ; 
+func4 ( var1 , var15 , str , func8 ( var2 ) ) ; 
+return var2 ; 
+} 
+var5 . var5 . var26 . var27 = var8 -> var27 ; 
+var5 . var5 . var26 . var28 = var8 -> var28 ; 
+var5 . var5 . var26 . var29 = var9 ; 
+var5 . var5 . var26 . var30 = func9 ( var8 -> var24 , var8 -> var27 , var8 -> var28 , number ) ; 
+if ( func7 ( var6 -> var12 , var31 , & var5 ) < number ) { 
+var2 = func3 ( var14 ) ; 
+func4 ( var1 , var15 , str , func8 ( var2 ) ) ; 
+return var2 ; 
+} 
+return var2 ; 
+} 

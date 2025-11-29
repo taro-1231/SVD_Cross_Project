@@ -1,0 +1,29 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+XCBGrabContext * var3 = var1 -> var4 ; 
+xcb_query_pointer_cookie_t var5 ; 
+xcb_get_geometry_cookie_t var6 ; 
+xcb_query_pointer_reply_t * var7 = var8 ; 
+xcb_get_geometry_reply_t * var9 = var8 ; 
+int var10 = number ; 
+func2 ( var1 , var2 ) ; 
+if ( var3 -> var11 || var3 -> var12 ) { 
+var5 = func3 ( var3 -> var13 , var3 -> var14 -> var15 ) ; 
+var6 = func4 ( var3 -> var13 , var3 -> var14 -> var15 ) ; 
+var7 = func5 ( var3 -> var13 , var5 , var8 ) ; 
+var9 = func6 ( var3 -> var13 , var6 , var8 ) ; 
+} 
+if ( var3 -> var11 && var7 -> var16 ) 
+func7 ( var1 , var7 , var9 ) ; 
+if ( var3 -> var17 ) 
+func8 ( var1 ) ; 
+if ( var3 -> var18 && func9 ( var1 , var2 ) < number ) 
+var3 -> var18 = number ; 
+if ( ! var3 -> var18 ) 
+var10 = func10 ( var1 , var2 ) ; 
+if ( var10 >= number && var3 -> var12 && var7 -> var16 ) 
+func11 ( var1 , var2 , var7 , var9 ) ; 
+free ( var7 ) ; 
+free ( var9 ) ; 
+return var10 ; 
+} 

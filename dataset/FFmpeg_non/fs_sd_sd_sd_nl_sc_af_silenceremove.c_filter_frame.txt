@@ -1,0 +1,163 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var3 -> var6 [ number ] ; 
+SilenceRemoveContext * var7 = var3 -> var8 ; 
+int var9 , var10 , var11 , var12 = number ; 
+int var13 , var14 , var15 ; 
+double * var16 , * var17 = ( double * ) var2 -> var18 [ number ] ; 
+AVFrame * var19 ; 
+var14 = var15 = number ; 
+switch ( var7 -> var20 ) { 
+case var21 : 
+var22 : 
+var13 = var2 -> var23 - var14 / var1 -> var24 ; 
+if ( ! var13 ) 
+break ; 
+for ( var9 = number ; var9 < var13 ; var9 ++ ) { 
+var11 = number ; 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) { 
+var11 |= func2 ( var7 , var17 [ var10 ] ) > var7 -> var25 ; 
+} 
+if ( var11 ) { 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) { 
+func3 ( var7 , * var17 ) ; 
+var7 -> var26 [ var7 -> var27 ++ ] = * var17 ++ ; 
+var14 ++ ; 
+} 
+if ( var7 -> var27 >= var7 -> var28 * var1 -> var24 ) { 
+if ( ++ var7 -> var29 >= var7 -> var30 ) { 
+var7 -> var20 = var31 ; 
+goto var32 ; 
+} 
+var7 -> var33 = number ; 
+var7 -> var27 = number ; 
+} 
+} else { 
+var7 -> var27 = number ; 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) 
+func3 ( var7 , var17 [ var10 ] ) ; 
+var17 += var1 -> var24 ; 
+var14 += var1 -> var24 ; 
+} 
+} 
+break ; 
+case var31 : 
+var32 : 
+var13 = var7 -> var27 - var7 -> var33 ; 
+var13 -= var13 % var1 -> var24 ; 
+if ( ! var13 ) 
+break ; 
+var19 = func4 ( var1 , var13 / var1 -> var24 ) ; 
+if ( ! var19 ) { 
+func5 ( & var2 ) ; 
+return func6 ( var34 ) ; 
+} 
+memcpy ( var19 -> var18 [ number ] , & var7 -> var26 [ var7 -> var33 ] , 
+var13 * sizeof ( double ) ) ; 
+var7 -> var33 += var13 ; 
+var12 = func7 ( var5 , var19 ) ; 
+if ( var7 -> var33 == var7 -> var27 ) { 
+var7 -> var33 = number ; 
+var7 -> var27 = number ; 
+var7 -> var20 = var35 ; 
+goto var36 ; 
+} 
+break ; 
+case var35 : 
+var36 : 
+var13 = var2 -> var23 - var14 / var1 -> var24 ; 
+if ( ! var13 ) 
+break ; 
+var19 = func4 ( var1 , var13 ) ; 
+if ( ! var19 ) { 
+func5 ( & var2 ) ; 
+return func6 ( var34 ) ; 
+} 
+var16 = ( double * ) var19 -> var18 [ number ] ; 
+if ( var7 -> var37 ) { 
+for ( var9 = number ; var9 < var13 ; var9 ++ ) { 
+var11 = number ; 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) 
+var11 &= func2 ( var7 , var17 [ var10 ] ) > var7 -> var38 ; 
+if ( var11 && var7 -> var39 && ! var7 -> var40 ) { 
+var7 -> var20 = var41 ; 
+func8 ( var19 , var5 , & var15 , & var12 ) ; 
+goto var42 ; 
+} else if ( var11 ) { 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) { 
+func3 ( var7 , * var17 ) ; 
+* var16 += * var17 ++ ; 
+var14 ++ ; 
+var15 ++ ; 
+} 
+} else if ( ! var11 ) { 
+for ( var10 = number ; var10 < var1 -> var24 ; var10 ++ ) { 
+func3 ( var7 , * var17 ) ; 
+if ( var7 -> var40 ) { 
+* var16 += * var17 ; 
+var15 ++ ; 
+} 
+var7 -> var43 [ var7 -> var39 ++ ] = * var17 ++ ; 
+var14 ++ ; 
+} 
+if ( var7 -> var39 >= var7 -> var44 * var1 -> var24 ) { 
+if ( ++ var7 -> var45 >= var7 -> var37 ) { 
+var7 -> var46 = number ; 
+var7 -> var39 = number ; 
+if ( ! var7 -> var47 ) { 
+var7 -> var20 = var48 ; 
+func8 ( var19 , var5 , & var15 , & var12 ) ; 
+goto var49 ; 
+} else { 
+var7 -> var45 = number ; 
+var7 -> var29 = number ; 
+var7 -> var33 = number ; 
+var7 -> var27 = number ; 
+func9 ( var7 ) ; 
+var7 -> var20 = var21 ; 
+func8 ( var19 , var5 , & var15 , & var12 ) ; 
+goto var22 ; 
+} 
+} 
+var7 -> var20 = var41 ; 
+func8 ( var19 , var5 , & var15 , & var12 ) ; 
+goto var42 ; 
+} 
+} 
+} 
+func8 ( var19 , var5 , & var15 , & var12 ) ; 
+} else { 
+memcpy ( var16 , var17 , sizeof ( double ) * var13 * var1 -> var24 ) ; 
+var12 = func7 ( var5 , var19 ) ; 
+} 
+break ; 
+case var41 : 
+var42 : 
+var13 = var7 -> var39 - var7 -> var46 ; 
+var13 -= var13 % var1 -> var24 ; 
+if ( ! var13 ) 
+break ; 
+var19 = func4 ( var1 , var13 / var1 -> var24 ) ; 
+if ( ! var19 ) { 
+func5 ( & var2 ) ; 
+return func6 ( var34 ) ; 
+} 
+memcpy ( var19 -> var18 [ number ] , & var7 -> var43 [ var7 -> var46 ] , 
+var13 * sizeof ( double ) ) ; 
+var7 -> var46 += var13 ; 
+var12 = func7 ( var5 , var19 ) ; 
+if ( var7 -> var46 == var7 -> var39 ) { 
+var7 -> var46 = number ; 
+var7 -> var39 = number ; 
+var7 -> var20 = var35 ; 
+goto var36 ; 
+} 
+break ; 
+case var48 : 
+var49 : 
+break ; 
+} 
+func5 ( & var2 ) ; 
+return var12 ; 
+} 

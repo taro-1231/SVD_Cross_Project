@@ -1,0 +1,39 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AC3DecodeContext * var2 = var1 -> var3 ; 
+int var4 ; 
+var2 -> var1 = var1 ; 
+func2 ( ) ; 
+func3 ( ) ; 
+func4 ( & var2 -> var5 , number , number , number ) ; 
+func4 ( & var2 -> var6 , number , number , number ) ; 
+func5 ( func6 ) ( var2 -> var7 , number , number ) ; 
+func7 ( & var2 -> var8 ) ; 
+var2 -> var10 = func8 ( var1 -> var11 & var12 ) ; 
+var2 -> var10 = avpriv_float_dsp_alloc ( var1 -> var11 & var12 ) ; 
+ff_fmt_convert_init ( & var2 -> fmt_conv , var1 ) ; 
+func9 ( & var2 -> var13 , var1 -> var11 & var12 ) ; 
+func10 ( & var2 -> var14 , number ) ; 
+if ( var9 ) 
+var1 -> var15 = var16 ; 
+else 
+var1 -> var15 = var17 ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+if ( var1 -> var18 == number ) 
+var1 -> var19 = var20 ; 
+else if ( var1 -> var18 == number ) 
+var1 -> var19 = var21 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+if ( var1 -> var22 > number && 
+var1 -> var19 == var20 ) 
+var1 -> var22 = number ; 
+else if ( var1 -> var22 > number && 
+var1 -> var19 == var21 ) 
+var1 -> var22 = number ; 
+var2 -> var23 = number ; 
+for ( var4 = number ; var4 < var24 ; var4 ++ ) { 
+var2 -> var25 [ var4 ] = var2 -> var26 [ var4 ] ; 
+var2 -> var27 [ var4 ] = var2 -> var28 [ var4 ] ; 
+} 
+return number ; 
+} 

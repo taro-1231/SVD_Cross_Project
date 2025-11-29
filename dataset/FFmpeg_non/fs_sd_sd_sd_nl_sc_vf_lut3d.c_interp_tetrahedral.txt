@@ -1,0 +1,52 @@
+static inline struct rgbvec func1 ( const LUT3DContext * var1 , 
+const struct rgbvec * var2 ) 
+{ 
+const int var3 [ ] = { func2 ( var2 -> var4 ) , func2 ( var2 -> var5 ) , func2 ( var2 -> var6 ) } ; 
+const int var7 [ ] = { func3 ( var2 -> var4 ) , func3 ( var2 -> var5 ) , func3 ( var2 -> var6 ) } ; 
+const struct rgbvec var8 = { var2 -> var4 - var3 [ number ] , var2 -> var5 - var3 [ number ] , var2 -> var6 - var3 [ number ] } ; 
+const struct rgbvec var9 = var1 -> var10 [ var3 [ number ] ] [ var3 [ number ] ] [ var3 [ number ] ] ; 
+const struct rgbvec var11 = var1 -> var10 [ var7 [ number ] ] [ var7 [ number ] ] [ var7 [ number ] ] ; 
+struct rgbvec var12 ; 
+if ( var8 . var4 > var8 . var5 ) { 
+if ( var8 . var5 > var8 . var6 ) { 
+const struct rgbvec var13 = var1 -> var10 [ var7 [ number ] ] [ var3 [ number ] ] [ var3 [ number ] ] ; 
+const struct rgbvec var14 = var1 -> var10 [ var7 [ number ] ] [ var7 [ number ] ] [ var3 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var4 ) * var9 . var4 + ( var8 . var4 - var8 . var5 ) * var13 . var4 + ( var8 . var5 - var8 . var6 ) * var14 . var4 + ( var8 . var6 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var4 ) * var9 . var5 + ( var8 . var4 - var8 . var5 ) * var13 . var5 + ( var8 . var5 - var8 . var6 ) * var14 . var5 + ( var8 . var6 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var4 ) * var9 . var6 + ( var8 . var4 - var8 . var5 ) * var13 . var6 + ( var8 . var5 - var8 . var6 ) * var14 . var6 + ( var8 . var6 ) * var11 . var6 ; 
+} else if ( var8 . var4 > var8 . var6 ) { 
+const struct rgbvec var13 = var1 -> var10 [ var7 [ number ] ] [ var3 [ number ] ] [ var3 [ number ] ] ; 
+const struct rgbvec var15 = var1 -> var10 [ var7 [ number ] ] [ var3 [ number ] ] [ var7 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var4 ) * var9 . var4 + ( var8 . var4 - var8 . var6 ) * var13 . var4 + ( var8 . var6 - var8 . var5 ) * var15 . var4 + ( var8 . var5 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var4 ) * var9 . var5 + ( var8 . var4 - var8 . var6 ) * var13 . var5 + ( var8 . var6 - var8 . var5 ) * var15 . var5 + ( var8 . var5 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var4 ) * var9 . var6 + ( var8 . var4 - var8 . var6 ) * var13 . var6 + ( var8 . var6 - var8 . var5 ) * var15 . var6 + ( var8 . var5 ) * var11 . var6 ; 
+} else { 
+const struct rgbvec var16 = var1 -> var10 [ var3 [ number ] ] [ var3 [ number ] ] [ var7 [ number ] ] ; 
+const struct rgbvec var15 = var1 -> var10 [ var7 [ number ] ] [ var3 [ number ] ] [ var7 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var6 ) * var9 . var4 + ( var8 . var6 - var8 . var4 ) * var16 . var4 + ( var8 . var4 - var8 . var5 ) * var15 . var4 + ( var8 . var5 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var6 ) * var9 . var5 + ( var8 . var6 - var8 . var4 ) * var16 . var5 + ( var8 . var4 - var8 . var5 ) * var15 . var5 + ( var8 . var5 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var6 ) * var9 . var6 + ( var8 . var6 - var8 . var4 ) * var16 . var6 + ( var8 . var4 - var8 . var5 ) * var15 . var6 + ( var8 . var5 ) * var11 . var6 ; 
+} 
+} else { 
+if ( var8 . var6 > var8 . var5 ) { 
+const struct rgbvec var16 = var1 -> var10 [ var3 [ number ] ] [ var3 [ number ] ] [ var7 [ number ] ] ; 
+const struct rgbvec var17 = var1 -> var10 [ var3 [ number ] ] [ var7 [ number ] ] [ var7 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var6 ) * var9 . var4 + ( var8 . var6 - var8 . var5 ) * var16 . var4 + ( var8 . var5 - var8 . var4 ) * var17 . var4 + ( var8 . var4 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var6 ) * var9 . var5 + ( var8 . var6 - var8 . var5 ) * var16 . var5 + ( var8 . var5 - var8 . var4 ) * var17 . var5 + ( var8 . var4 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var6 ) * var9 . var6 + ( var8 . var6 - var8 . var5 ) * var16 . var6 + ( var8 . var5 - var8 . var4 ) * var17 . var6 + ( var8 . var4 ) * var11 . var6 ; 
+} else if ( var8 . var6 > var8 . var4 ) { 
+const struct rgbvec var18 = var1 -> var10 [ var3 [ number ] ] [ var7 [ number ] ] [ var3 [ number ] ] ; 
+const struct rgbvec var17 = var1 -> var10 [ var3 [ number ] ] [ var7 [ number ] ] [ var7 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var5 ) * var9 . var4 + ( var8 . var5 - var8 . var6 ) * var18 . var4 + ( var8 . var6 - var8 . var4 ) * var17 . var4 + ( var8 . var4 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var5 ) * var9 . var5 + ( var8 . var5 - var8 . var6 ) * var18 . var5 + ( var8 . var6 - var8 . var4 ) * var17 . var5 + ( var8 . var4 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var5 ) * var9 . var6 + ( var8 . var5 - var8 . var6 ) * var18 . var6 + ( var8 . var6 - var8 . var4 ) * var17 . var6 + ( var8 . var4 ) * var11 . var6 ; 
+} else { 
+const struct rgbvec var18 = var1 -> var10 [ var3 [ number ] ] [ var7 [ number ] ] [ var3 [ number ] ] ; 
+const struct rgbvec var14 = var1 -> var10 [ var7 [ number ] ] [ var7 [ number ] ] [ var3 [ number ] ] ; 
+var12 . var4 = ( number - var8 . var5 ) * var9 . var4 + ( var8 . var5 - var8 . var4 ) * var18 . var4 + ( var8 . var4 - var8 . var6 ) * var14 . var4 + ( var8 . var6 ) * var11 . var4 ; 
+var12 . var5 = ( number - var8 . var5 ) * var9 . var5 + ( var8 . var5 - var8 . var4 ) * var18 . var5 + ( var8 . var4 - var8 . var6 ) * var14 . var5 + ( var8 . var6 ) * var11 . var5 ; 
+var12 . var6 = ( number - var8 . var5 ) * var9 . var6 + ( var8 . var5 - var8 . var4 ) * var18 . var6 + ( var8 . var4 - var8 . var6 ) * var14 . var6 + ( var8 . var6 ) * var11 . var6 ; 
+} 
+} 
+return var12 ; 
+} 

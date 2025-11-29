@@ -1,0 +1,62 @@
+func1 ( AVFormatContext * var1 ) 
+{ 
+struct dshow_ctx * var2 = var1 -> var3 ; 
+AVPacketList * var4 ; 
+if ( var2 -> var5 ) { 
+func2 ( var2 -> var5 ) ; 
+func3 ( var2 -> var5 ) ; 
+} 
+if ( var2 -> var6 ) 
+func4 ( var2 -> var6 ) ; 
+if ( var2 -> var7 ) { 
+IEnumFilters * var8 ; 
+int var9 ; 
+var9 = func5 ( var2 -> var7 , & var8 ) ; 
+if ( var9 == var10 ) { 
+IBaseFilter * var11 ; 
+func6 ( var8 ) ; 
+while ( func7 ( var8 , number , & var11 , var12 ) == var10 ) { 
+if ( func8 ( var2 -> var7 , var11 ) == var10 ) 
+func6 ( var8 ) ; 
+func9 ( var11 ) ; 
+} 
+func10 ( var8 ) ; 
+} 
+func11 ( var2 -> var7 ) ; 
+} 
+if ( var2 -> var13 [ var14 ] ) 
+func12 ( var2 -> var13 [ var14 ] ) ; 
+if ( var2 -> var13 [ var15 ] ) 
+func12 ( var2 -> var13 [ var15 ] ) ; 
+if ( var2 -> var16 [ var14 ] ) 
+func13 ( var2 -> var16 [ var14 ] ) ; 
+if ( var2 -> var16 [ var15 ] ) 
+func13 ( var2 -> var16 [ var15 ] ) ; 
+if ( var2 -> var17 [ var14 ] ) 
+func14 ( var2 -> var17 [ var14 ] ) ; 
+if ( var2 -> var17 [ var15 ] ) 
+func14 ( var2 -> var17 [ var15 ] ) ; 
+if ( var2 -> var18 [ var14 ] ) 
+func9 ( var2 -> var18 [ var14 ] ) ; 
+if ( var2 -> var18 [ var15 ] ) 
+func9 ( var2 -> var18 [ var15 ] ) ; 
+if ( var2 -> var19 [ number ] ) 
+func15 ( & var2 -> var19 [ number ] ) ; 
+if ( var2 -> var19 [ number ] ) 
+func15 ( & var2 -> var19 [ number ] ) ; 
+if ( var2 -> var20 ) 
+func16 ( var2 -> var20 ) ; 
+if ( var2 -> var21 [ number ] ) 
+func16 ( var2 -> var21 [ number ] ) ; 
+if ( var2 -> var21 [ number ] ) 
+func16 ( var2 -> var21 [ number ] ) ; 
+var4 = var2 -> var4 ; 
+while ( var4 ) { 
+AVPacketList * var22 = var4 -> var22 ; 
+func17 ( & var4 -> var23 ) ; 
+func18 ( var4 ) ; 
+var4 = var22 ; 
+} 
+func19 ( ) ; 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+FPSContext * var2 = var1 -> var3 -> var4 ; 
+var1 -> var5 = func2 ( var2 -> var6 ) ; 
+var1 -> var7 = var2 -> var6 ; 
+var1 -> var8 = var1 -> var3 -> var9 [ number ] -> var8 ; 
+var1 -> var10 = var1 -> var3 -> var9 [ number ] -> var10 ; 
+return number ; 
+} 

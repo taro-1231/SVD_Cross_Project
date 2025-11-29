@@ -1,0 +1,20 @@
+func1 ( chrm_modification * var1 , png_modifier * var2 , 
+PNG_CONST color_encoding * var3 ) 
+{ 
+CIE_color var4 = func2 ( var3 ) ; 
+var1 -> var3 = var3 ; 
+var1 -> var5 = func3 ( func4 ( var4 ) ) ; 
+var1 -> var6 = func3 ( func5 ( var4 ) ) ; 
+var1 -> var7 = func3 ( func4 ( var3 -> var8 ) ) ; 
+var1 -> var9 = func3 ( func5 ( var3 -> var8 ) ) ; 
+var1 -> var10 = func3 ( func4 ( var3 -> var11 ) ) ; 
+var1 -> var12 = func3 ( func5 ( var3 -> var11 ) ) ; 
+var1 -> var13 = func3 ( func4 ( var3 -> var14 ) ) ; 
+var1 -> var15 = func3 ( func5 ( var3 -> var14 ) ) ; 
+func6 ( & var1 -> var16 ) ; 
+var1 -> var16 . var17 = var18 ; 
+var1 -> var16 . var19 = var20 ; 
+var1 -> var16 . var21 = var22 ; 
+var1 -> var16 . var23 = var2 -> var24 ; 
+var2 -> var24 = & var1 -> var16 ; 
+} 

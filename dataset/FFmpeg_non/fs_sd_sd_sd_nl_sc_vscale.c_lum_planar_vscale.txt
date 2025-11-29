@@ -1,0 +1,27 @@
+static int func1 ( SwsContext * var1 , SwsFilterDescriptor * var2 , int var3 , int var4 ) 
+{ 
+VScalerContext * func2 = var2 -> var5 ; 
+int var6 = var2 -> var7 -> var8 ; 
+int var9 = func3 ( number - func2 -> var10 , func2 -> var11 [ var3 ] ) ; 
+int var12 = var9 - var2 -> var13 -> var14 [ number ] . var3 ; 
+int var15 = var3 - var2 -> var7 -> var14 [ number ] . var3 ; 
+uint8_t ** var13 = var2 -> var13 -> var14 [ number ] . var16 + var12 ; 
+uint8_t ** var7 = var2 -> var7 -> var14 [ number ] . var16 + var15 ; 
+uint16_t * var17 = func2 -> var17 [ number ] + ( func2 -> var18 ? number : var3 * func2 -> var10 ) ; 
+if ( func2 -> var10 == number ) 
+( ( yuv2planar1_fn ) func2 -> func4 ) ( ( const int16_t * ) var13 [ number ] , var7 [ number ] , var6 , var1 -> var19 , number ) ; 
+else 
+( ( yuv2planarX_fn ) func2 -> func4 ) ( var17 , func2 -> var10 , ( const int16_t ** ) var13 , var7 [ number ] , var6 , var1 -> var19 , number ) ; 
+if ( var2 -> var20 ) { 
+int var12 = var9 - var2 -> var13 -> var14 [ number ] . var3 ; 
+int var15 = var3 - var2 -> var7 -> var14 [ number ] . var3 ; 
+uint8_t ** var13 = var2 -> var13 -> var14 [ number ] . var16 + var12 ; 
+uint8_t ** var7 = var2 -> var7 -> var14 [ number ] . var16 + var15 ; 
+uint16_t * var17 = func2 -> var17 [ number ] + ( func2 -> var18 ? number : var3 * func2 -> var10 ) ; 
+if ( func2 -> var10 == number ) 
+( ( yuv2planar1_fn ) func2 -> func4 ) ( ( const int16_t * ) var13 [ number ] , var7 [ number ] , var6 , var1 -> var19 , number ) ; 
+else 
+( ( yuv2planarX_fn ) func2 -> func4 ) ( var17 , func2 -> var10 , ( const int16_t ** ) var13 , var7 [ number ] , var6 , var1 -> var19 , number ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,34 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+VolDetectContext * var2 = var1 -> var3 ; 
+int var4 , var5 , var6 ; 
+uint64_t var7 = number , var8 = number , var9 = number , var10 = number ; 
+uint64_t var11 [ var12 + number ] = { number } ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var7 += var2 -> var13 [ var4 ] ; 
+func2 ( var1 , var14 , str PRId64 str , var7 ) ; 
+if ( ! var7 ) 
+return ; 
+var6 = func3 ( var7 >> number ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var9 += var2 -> var13 [ var4 ] >> var6 ; 
+var8 += ( var4 - number ) * ( var4 - number ) * ( var2 -> var13 [ var4 ] >> var6 ) ; 
+} 
+if ( ! var9 ) 
+return ; 
+var8 = ( var8 + var9 / number ) / var9 ; 
+func4 ( var8 <= number * number ) ; 
+func2 ( var1 , var14 , str , - func5 ( var8 ) ) ; 
+var5 = number ; 
+while ( var5 > number && ! var2 -> var13 [ number + var5 ] && 
+! var2 -> var13 [ number - var5 ] ) 
+var5 -- ; 
+func2 ( var1 , var14 , str , - func5 ( var5 * var5 ) ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var11 [ ( int ) func5 ( ( var4 - number ) * ( var4 - number ) ) ] += var2 -> var13 [ var4 ] ; 
+for ( var4 = number ; var4 <= var12 && ! var11 [ var4 ] ; var4 ++ ) ; 
+for ( ; var4 <= var12 && var10 < var7 / number ; var4 ++ ) { 
+func2 ( var1 , var14 , str PRId64 str , var4 , var11 [ var4 ] ) ; 
+var10 += var11 [ var4 ] ; 
+} 
+} 

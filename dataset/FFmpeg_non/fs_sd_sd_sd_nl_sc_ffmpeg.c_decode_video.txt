@@ -1,0 +1,103 @@
+static int func1 ( InputStream * var1 , AVPacket * var2 , int * var3 , int var4 , 
+int * var5 ) 
+{ 
+AVFrame * var6 ; 
+int var7 , var8 = number , var9 = number ; 
+int64_t var10 ; 
+int64_t var11 = var12 ; 
+AVPacket var13 ; 
+if ( ! var4 && var2 && var2 -> var14 == number ) 
+return number ; 
+if ( ! var1 -> var6 && ! ( var1 -> var6 = func2 ( ) ) ) 
+return func3 ( var15 ) ; 
+if ( ! var1 -> var16 && ! ( var1 -> var16 = func2 ( ) ) ) 
+return func3 ( var15 ) ; 
+var6 = var1 -> var6 ; 
+if ( var1 -> var11 != var12 ) 
+var11 = func4 ( var1 -> var11 , var17 , var1 -> var18 -> var19 ) ; 
+if ( var2 ) { 
+var13 = * var2 ; 
+var13 . var11 = var11 ; 
+} 
+if ( var4 ) { 
+void * new = func5 ( var1 -> var20 , var1 -> var21 + number , sizeof ( var1 -> var20 [ number ] ) ) ; 
+if ( ! new ) 
+return func3 ( var15 ) ; 
+var1 -> var20 = new ; 
+var1 -> var20 [ var1 -> var21 ++ ] = var11 ; 
+} 
+func6 ( var22 ) ; 
+var8 = func7 ( var1 -> var23 , var6 , var3 , var2 ? & var13 : var22 ) ; 
+func6 ( str , var1 -> var24 , var1 -> var18 -> var25 ) ; 
+if ( var8 < number ) 
+* var5 = number ; 
+if ( var1 -> var18 -> var27 -> var28 < var1 -> var23 -> var26 ) { 
+if ( var1 -> var23 -> var29 == var30 ) { 
+var1 -> var18 -> var27 -> var28 = var1 -> var23 -> var26 ; 
+} else 
+func8 ( var1 -> var23 , AV_LOG_WARNING , 
+str 
+str 
+str 
+str , 
+var1 -> var23 -> var26 , 
+var1 -> var18 -> var27 -> var28 ) ; 
+} 
+if ( var8 != var31 ) 
+func9 ( var1 , var3 , var8 ) ; 
+if ( * var3 && var8 >= number ) { 
+if ( var1 -> var23 -> var32 != var6 -> var32 || 
+var1 -> var23 -> var33 != var6 -> var33 || 
+var1 -> var23 -> var34 != var6 -> var35 ) { 
+func8 ( var22 , var36 , str , 
+var6 -> var32 , 
+var6 -> var33 , 
+var6 -> var35 , 
+var1 -> var23 -> var32 , 
+var1 -> var23 -> var33 , 
+var1 -> var23 -> var34 ) ; 
+} 
+} 
+if ( ! * var3 || var8 < number ) 
+return var8 ; 
+if ( var1 -> var37 >= number ) 
+var6 -> var37 = var1 -> var37 ; 
+var1 -> var38 ++ ; 
+if ( var1 -> func10 && var6 -> var35 == var1 -> var39 ) { 
+var9 = var1 -> func10 ( var1 -> var23 , var6 ) ; 
+if ( var9 < number ) 
+goto var40 ; 
+} 
+var1 -> var41 = var6 -> var35 ; 
+var10 = func11 ( var6 ) ; 
+if ( var1 -> var42 . var43 ) 
+var10 = var1 -> var44 ++ ; 
+if ( var4 && var10 == var12 && var1 -> var21 > number ) { 
+var10 = var1 -> var20 [ number ] ; 
+for ( var7 = number ; var7 < var1 -> var21 - number ; var7 ++ ) 
+var1 -> var20 [ var7 ] = var1 -> var20 [ var7 + number ] ; 
+var1 -> var21 -- ; 
+} 
+if ( var10 != var12 ) { 
+int64_t var45 = func4 ( var6 -> var46 = var10 , var1 -> var18 -> var19 , var17 ) ; 
+if ( var45 != var12 ) 
+var1 -> var47 = var1 -> var46 = var45 ; 
+} 
+if ( var48 ) { 
+func8 ( var22 , AV_LOG_INFO , str 
+str PRId64 str , 
+var1 -> var18 -> var25 , av_ts2str ( var6 -> var46 ) , 
+av_ts2timestr ( var6 -> var46 , & var1 -> var18 -> var19 ) , 
+var10 , 
+av_ts2timestr ( var10 , & var1 -> var18 -> var19 ) , 
+var6 -> key_frame , var6 -> pict_type , 
+var1 -> var18 -> var19 . var43 , var1 -> var18 -> var19 . den ) ; 
+} 
+if ( var1 -> var18 -> var49 . var43 ) 
+var6 -> var49 = var1 -> var18 -> var49 ; 
+var9 = func12 ( var1 , var6 ) ; 
+var40 : 
+func13 ( var1 -> var16 ) ; 
+func13 ( var6 ) ; 
+return var9 < number ? var9 : var8 ; 
+} 

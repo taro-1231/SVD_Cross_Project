@@ -1,0 +1,8 @@
+static void func1 ( ChanParam * var1 , double var2 ) 
+{ 
+double var3 = var2 - var1 -> var4 ; 
+if ( var3 > number ) 
+var1 -> var4 += var3 * var1 -> var5 ; 
+else 
+var1 -> var4 += var3 * var1 -> var6 ; 
+} 

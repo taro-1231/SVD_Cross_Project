@@ -1,0 +1,42 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+const AVPixFmtDescriptor * var2 = func2 ( var1 -> var3 ) ; 
+AVFilterContext * var4 = var1 -> var5 ; 
+PSNRContext * var6 = var4 -> var7 ; 
+unsigned var8 ; 
+int var9 ; 
+var6 -> var10 = var2 -> var10 ; 
+if ( var4 -> var11 [ number ] -> var12 != var4 -> var11 [ number ] -> var12 || 
+var4 -> var11 [ number ] -> var13 != var4 -> var11 [ number ] -> var13 ) { 
+func3 ( var4 , var14 , str ) ; 
+return func4 ( var15 ) ; 
+} 
+if ( var4 -> var11 [ number ] -> var3 != var4 -> var11 [ number ] -> var3 ) { 
+func3 ( var4 , var14 , str ) ; 
+return func4 ( var15 ) ; 
+} 
+var6 -> var16 [ number ] = ( number << ( var2 -> var17 [ number ] . var18 + number ) ) - number ; 
+var6 -> var16 [ number ] = ( number << ( var2 -> var17 [ number ] . var18 + number ) ) - number ; 
+var6 -> var16 [ number ] = ( number << ( var2 -> var17 [ number ] . var18 + number ) ) - number ; 
+var6 -> var16 [ number ] = ( number << ( var2 -> var17 [ number ] . var18 + number ) ) - number ; 
+var6 -> var19 = func5 ( var6 -> var20 , var1 -> var3 ) >= number ; 
+var6 -> var21 [ number ] = var6 -> var19 ? str : str ; 
+var6 -> var21 [ number ] = var6 -> var19 ? str : str ; 
+var6 -> var21 [ number ] = var6 -> var19 ? str : str ; 
+var6 -> var21 [ number ] = str ; 
+var6 -> var22 [ number ] = var6 -> var22 [ number ] = func6 ( var1 -> var13 , var2 -> var23 ) ; 
+var6 -> var22 [ number ] = var6 -> var22 [ number ] = var1 -> var13 ; 
+var6 -> var24 [ number ] = var6 -> var24 [ number ] = func6 ( var1 -> var12 , var2 -> var25 ) ; 
+var6 -> var24 [ number ] = var6 -> var24 [ number ] = var1 -> var12 ; 
+var8 = number ; 
+for ( var9 = number ; var9 < var6 -> var10 ; var9 ++ ) 
+var8 += var6 -> var22 [ var9 ] * var6 -> var24 [ var9 ] ; 
+for ( var9 = number ; var9 < var6 -> var10 ; var9 ++ ) { 
+var6 -> var26 [ var9 ] = ( double ) var6 -> var22 [ var9 ] * var6 -> var24 [ var9 ] / var8 ; 
+var6 -> var27 += var6 -> var16 [ var9 ] * var6 -> var26 [ var9 ] ; 
+} 
+var6 -> var28 . var29 = var2 -> var17 [ number ] . var18 > number ? var30 : var31 ; 
+if ( var32 ) 
+func7 ( & var6 -> var28 , var2 -> var17 [ number ] . var18 + number ) ; 
+return number ; 
+} 

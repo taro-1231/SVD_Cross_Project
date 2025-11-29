@@ -1,0 +1,16 @@
+static void func1 ( SwsSlice * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < number ; ++ var2 ) { 
+int var3 = var1 -> var4 [ var2 ] . var5 ; 
+int var6 ; 
+for ( var6 = number ; var6 < var3 ; ++ var6 ) { 
+func2 ( & var1 -> var4 [ var2 ] . var7 [ var6 ] ) ; 
+if ( var1 -> var8 ) 
+var1 -> var4 [ var2 ] . var7 [ var6 + var3 ] = var9 ; 
+} 
+} 
+for ( var2 = number ; var2 < number ; ++ var2 ) 
+memset ( var1 -> var4 [ var2 ] . var7 , number , sizeof ( uint8_t * ) * var1 -> var4 [ var2 ] . var5 * ( var1 -> var8 ? number : number ) ) ; 
+var1 -> var10 = number ; 
+} 

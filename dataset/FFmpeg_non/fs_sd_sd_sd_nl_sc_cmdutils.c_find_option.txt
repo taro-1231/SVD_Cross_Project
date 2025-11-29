@@ -1,0 +1,11 @@
+static const OptionDef * func1 ( const OptionDef * var1 , const char * var2 ) 
+{ 
+const char * var3 = strchr ( var2 , str ) ; 
+int var4 = var3 ? var3 - var2 : strlen ( var2 ) ; 
+while ( var1 -> var2 ) { 
+if ( ! strncmp ( var2 , var1 -> var2 , var4 ) && strlen ( var1 -> var2 ) == var4 ) 
+break ; 
+var1 ++ ; 
+} 
+return var1 ; 
+} 

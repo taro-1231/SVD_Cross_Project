@@ -1,0 +1,12 @@
+int64_t func1 ( void ) 
+{ 
+struct timeval var1 ; 
+func2 ( & var1 , var2 ) ; 
+return ( int64_t ) var1 . var3 * number + var1 . var4 ; 
+FILETIME ft ; 
+int64_t t ; 
+GetSystemTimeAsFileTime ( & ft ) ; 
+t = ( int64_t ) ft . dwHighDateTime << 32 | ft . dwLowDateTime ; 
+return t / 10 - 11644473600000000 ; 
+return - 1 ; 
+} 

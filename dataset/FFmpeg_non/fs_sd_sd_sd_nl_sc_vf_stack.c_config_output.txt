@@ -1,0 +1,49 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+StackContext * var4 = var2 -> var5 ; 
+AVRational var6 = var2 -> var7 [ number ] -> var6 ; 
+AVRational var8 = var2 -> var7 [ number ] -> var8 ; 
+int var9 = var2 -> var7 [ number ] -> var10 ; 
+int var11 = var2 -> var7 [ number ] -> var12 ; 
+FFFrameSyncIn * var13 ; 
+int var14 , var15 ; 
+if ( var4 -> var16 ) { 
+for ( var14 = number ; var14 < var4 -> var17 ; var14 ++ ) { 
+if ( var2 -> var7 [ var14 ] -> var12 != var11 ) { 
+func2 ( var2 , var18 , str , var14 , var2 -> var7 [ var14 ] -> var12 , number , var11 ) ; 
+return func3 ( var19 ) ; 
+} 
+var9 += var2 -> var7 [ var14 ] -> var10 ; 
+} 
+} else { 
+for ( var14 = number ; var14 < var4 -> var17 ; var14 ++ ) { 
+if ( var2 -> var7 [ var14 ] -> var10 != var9 ) { 
+func2 ( var2 , var18 , str , var14 , var2 -> var7 [ var14 ] -> var10 , number , var9 ) ; 
+return func3 ( var19 ) ; 
+} 
+var11 += var2 -> var7 [ var14 ] -> var12 ; 
+} 
+} 
+var4 -> var20 = func4 ( var1 -> var21 ) ; 
+if ( ! var4 -> var20 ) 
+return var22 ; 
+var4 -> var23 = func5 ( var1 -> var21 ) ; 
+var1 -> var12 = var11 ; 
+var1 -> var10 = var9 ; 
+var1 -> var6 = var6 ; 
+var1 -> var8 = var8 ; 
+if ( ( var15 = func6 ( & var4 -> var24 , var2 , var4 -> var17 ) ) < number ) 
+return var15 ; 
+var13 = var4 -> var24 . var13 ; 
+var4 -> var24 . var25 = var4 ; 
+var4 -> var24 . var26 = var27 ; 
+for ( var14 = number ; var14 < var4 -> var17 ; var14 ++ ) { 
+AVFilterLink * var28 = var2 -> var7 [ var14 ] ; 
+var13 [ var14 ] . var6 = var28 -> var6 ; 
+var13 [ var14 ] . var29 = number ; 
+var13 [ var14 ] . var30 = var31 ; 
+var13 [ var14 ] . var32 = var33 ; 
+} 
+return func7 ( & var4 -> var24 ) ; 
+} 

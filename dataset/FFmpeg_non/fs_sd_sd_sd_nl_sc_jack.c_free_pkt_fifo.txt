@@ -1,0 +1,9 @@
+static void func1 ( AVFifoBuffer ** var1 ) 
+{ 
+AVPacket var2 ; 
+while ( func2 ( * var1 ) ) { 
+func3 ( * var1 , & var2 , sizeof ( var2 ) , var3 ) ; 
+func4 ( & var2 ) ; 
+} 
+func5 ( var1 ) ; 
+} 

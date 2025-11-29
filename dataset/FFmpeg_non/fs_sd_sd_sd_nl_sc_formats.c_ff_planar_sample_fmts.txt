@@ -1,0 +1,9 @@
+AVFilterFormats * func1 ( void ) 
+{ 
+AVFilterFormats * var1 = var2 ; 
+int var3 ; 
+for ( var3 = number ; func2 ( var3 ) > number ; var3 ++ ) 
+if ( func3 ( var3 ) ) 
+func4 ( & var1 , var3 ) ; 
+return var1 ; 
+} 

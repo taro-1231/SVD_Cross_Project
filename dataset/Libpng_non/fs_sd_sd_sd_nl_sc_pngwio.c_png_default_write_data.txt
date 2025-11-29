@@ -1,0 +1,46 @@
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_size_t var4 ; 
+if ( var1 == var5 ) 
+return ; 
+var4 = fwrite ( var2 , number , var3 , ( png_FILE_p ) ( var1 -> var6 ) ) ; 
+if ( var4 != var3 ) 
+func2 ( var1 , str ) ; 
+} 
+void PNGCBAPI 
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_uint_32 var4 ; 
+png_byte * near_data ; 
+png_FILE_p var6 ; 
+if ( var1 == var5 ) 
+return ; 
+near_data = ( png_byte * ) CVT_PTR_NOCHECK ( var2 ) ; 
+var6 = ( png_FILE_p ) CVT_PTR ( var1 -> var6 ) ; 
+if ( ( png_bytep ) near_data == var2 ) 
+{ 
+var4 = fwrite ( near_data , number , var3 , var6 ) ; 
+} 
+else 
+{ 
+png_byte buf [ NEAR_BUF_SIZE ] ; 
+png_size_t written , remaining , err ; 
+var4 = 0 ; 
+remaining = var3 ; 
+do 
+{ 
+written = MIN ( NEAR_BUF_SIZE , remaining ) ; 
+png_memcpy ( buf , var2 , written ) ; 
+err = fwrite ( buf , number , written , var6 ) ; 
+if ( err != written ) 
+break ; 
+else 
+var4 += err ; 
+var2 += written ; 
+remaining -= written ; 
+} 
+while ( remaining != 0 ) ; 
+} 
+if ( var4 != var3 ) 
+func2 ( var1 , str ) ; 
+} 

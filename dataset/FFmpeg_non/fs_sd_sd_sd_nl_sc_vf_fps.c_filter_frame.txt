@@ -1,0 +1,74 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+FPSContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+int64_t var9 ; 
+int var10 , var11 ; 
+var5 -> var12 ++ ; 
+if ( var5 -> var13 == var14 ) { 
+if ( var2 -> var15 != var14 ) { 
+var11 = func2 ( var5 -> var16 , var2 ) ; 
+if ( var11 < number ) 
+return var11 ; 
+if ( var5 -> var17 != var18 && var5 -> var17 != var14 ) { 
+double var13 = var5 -> var17 * var19 ; 
+var13 = func3 ( func4 ( var13 , var20 ) , var21 ) ; 
+var5 -> var13 = func5 ( var13 , var22 , 
+var1 -> var23 ) ; 
+func6 ( var3 , AV_LOG_VERBOSE , str PRId64 str PRId64 str , 
+var5 -> var13 , func5 ( var13 , var22 , 
+var7 -> var23 ) ) ; 
+} else { 
+var5 -> var13 = var2 -> var15 ; 
+} 
+} else { 
+func6 ( var3 , AV_LOG_WARNING , str 
+str ) ; 
+func7 ( & var2 ) ; 
+var5 -> var24 ++ ; 
+} 
+return number ; 
+} 
+if ( var2 -> var15 == var14 || func8 ( var5 -> var16 ) <= number ) { 
+return func2 ( var5 -> var16 , var2 ) ; 
+} 
+var9 = func9 ( var2 -> var15 - var5 -> var13 , var1 -> var23 , 
+var7 -> var23 , var5 -> var25 ) - var5 -> var26 ; 
+if ( var9 < number ) { 
+int var24 = func8 ( var5 -> var16 ) / sizeof ( AVFrame * ) ; 
+func6 ( var3 , var27 , str , var24 ) ; 
+var5 -> var24 += var24 ; 
+func10 ( var5 -> var16 ) ; 
+var11 = func2 ( var5 -> var16 , var2 ) ; 
+return var11 ; 
+} 
+for ( var10 = number ; var10 < var9 ; var10 ++ ) { 
+AVFrame * var28 ; 
+func11 ( var5 -> var16 , & var28 , sizeof ( var28 ) , var29 ) ; 
+if ( ! func8 ( var5 -> var16 ) && var10 < var9 - number ) { 
+AVFrame * var30 = func12 ( var28 ) ; 
+func6 ( var3 , var27 , str ) ; 
+if ( var30 ) 
+var11 = func2 ( var5 -> var16 , var30 ) ; 
+else 
+var11 = func13 ( var31 ) ; 
+if ( var11 < number ) { 
+func7 ( & var28 ) ; 
+func7 ( & var2 ) ; 
+return var11 ; 
+} 
+var5 -> var30 ++ ; 
+} 
+var28 -> var15 = func5 ( var5 -> var13 , var1 -> var23 , 
+var7 -> var23 ) + var5 -> var26 ; 
+if ( ( var11 = func14 ( var7 , var28 ) ) < number ) { 
+func7 ( & var2 ) ; 
+return var11 ; 
+} 
+var5 -> var26 ++ ; 
+} 
+func10 ( var5 -> var16 ) ; 
+var11 = func2 ( var5 -> var16 , var2 ) ; 
+return var11 ; 
+} 

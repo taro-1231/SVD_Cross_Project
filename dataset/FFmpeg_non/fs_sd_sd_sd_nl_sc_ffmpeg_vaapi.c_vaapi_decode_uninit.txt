@@ -1,0 +1,15 @@
+static void func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+VAAPIDecoderContext * var4 = var2 -> var5 ; 
+if ( var4 ) { 
+func2 ( & var4 -> var6 ) ; 
+func2 ( & var4 -> var7 ) ; 
+func3 ( var4 ) ; 
+} 
+func2 ( & var2 -> var8 ) ; 
+var2 -> var5 = var9 ; 
+var2 -> var10 = var9 ; 
+var2 -> var11 = var9 ; 
+var2 -> var12 = var9 ; 
+} 

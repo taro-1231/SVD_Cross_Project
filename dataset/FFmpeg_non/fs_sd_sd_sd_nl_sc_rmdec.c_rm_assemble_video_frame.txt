@@ -1,0 +1,101 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+RMDemuxContext * var3 , RMStream * var4 , 
+AVPacket * var5 , int var6 , int * var7 , 
+int64_t * var8 ) 
+{ 
+int var9 ; 
+int var10 = number , var11 = number , var12 = number , var13 = number ; 
+int var14 ; 
+int var15 ; 
+var9 = func2 ( var2 ) ; var6 -- ; 
+var14 = var9 >> number ; 
+if ( var14 != number ) { 
+var10 = func2 ( var2 ) ; var6 -- ; 
+} 
+if ( var14 != number ) { 
+var12 = func3 ( var2 , & var6 ) ; 
+var13 = func3 ( var2 , & var6 ) ; 
+var11 = func2 ( var2 ) ; var6 -- ; 
+} 
+if ( var6 < number ) { 
+func4 ( var1 , var16 , str ) ; 
+return - number ; 
+} 
+var3 -> var18 = var6 ; 
+if ( var14 & number ) { 
+if ( var14 == number ) { 
+var6 = var12 ; 
+* var8 = var13 ; 
+} 
+if ( var3 -> var18 < var6 ) { 
+func4 ( var1 , var16 , str ) ; 
+return - number ; 
+} 
+var3 -> var18 -= var6 ; 
+if ( func5 ( var5 , var6 + number ) < number ) 
+return func6 ( var19 ) ; 
+var5 -> var17 [ number ] = number ; 
+func7 ( var5 -> var17 + number , number ) ; 
+func7 ( var5 -> var17 + number , number ) ; 
+if ( ( var15 = func8 ( var2 , var5 -> var17 + number , var6 ) ) != var6 ) { 
+func9 ( var5 ) ; 
+func4 ( var1 , var16 , str , var6 ) ; 
+return var15 < number ? var15 : func6 ( var19 ) ; 
+} 
+return number ; 
+} 
+* var7 = var10 ; 
+if ( ( var10 & number ) == number || var4 -> var20 != var11 ) { 
+if ( var12 > func10 ( var2 , var12 ) ) { 
+func4 ( var1 , var16 , str ) ; 
+return var21 ; 
+} 
+var4 -> var22 = ( ( var9 & number ) << number ) + number ; 
+var4 -> var23 = var12 + number * var4 -> var22 + number ; 
+func9 ( & var4 -> var5 ) ; 
+if ( func5 ( & var4 -> var5 , var4 -> var23 ) < number ) 
+return func6 ( var24 ) ; 
+memset ( var4 -> var5 . var17 , number , var4 -> var5 . var25 ) ; 
+var4 -> var26 = number * var4 -> var22 + number ; 
+var4 -> var27 = number ; 
+var4 -> var20 = var11 ; 
+var4 -> var28 = func11 ( var2 ) ; 
+} 
+if ( var14 == number ) 
+var6 = func12 ( var6 , var13 ) ; 
+if ( ++ var4 -> var27 > var4 -> var22 ) { 
+func4 ( var1 , var16 , str , var4 -> var27 ) ; 
+return number ; 
+} 
+if ( ! var4 -> var5 . var17 ) 
+return func6 ( var24 ) ; 
+func7 ( var4 -> var5 . var17 - number + number * var4 -> var27 , number ) ; 
+func7 ( var4 -> var5 . var17 - number + number * var4 -> var27 , var4 -> var26 - number * var4 -> var22 - number ) ; 
+if ( var4 -> var26 + var6 > var4 -> var23 ) { 
+func4 ( var1 , var16 , str ) ; 
+return number ; 
+} 
+if ( func8 ( var2 , var4 -> var5 . var17 + var4 -> var26 , var6 ) != var6 ) 
+return func6 ( var19 ) ; 
+var4 -> var26 += var6 ; 
+var3 -> var18 -= var6 ; 
+if ( var14 == number || var4 -> var26 == var4 -> var23 ) { 
+var4 -> var5 . var17 [ number ] = var4 -> var27 - number ; 
+* var5 = var4 -> var5 ; 
+var4 -> var5 . var17 = var29 ; 
+var4 -> var5 . var25 = number ; 
+var4 -> var5 . var30 = var29 ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var4 -> var5 . var31 = var29 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+if ( var4 -> var22 != var4 -> var27 ) 
+memmove ( var5 -> var17 + number + number * var4 -> var27 , var5 -> var17 + number + number * var4 -> var22 , 
+var4 -> var26 - number - number * var4 -> var22 ) ; 
+var5 -> var25 = var4 -> var26 + number * ( var4 -> var27 - var4 -> var22 ) ; 
+var5 -> var32 = var33 ; 
+var5 -> var13 = var4 -> var28 ; 
+var4 -> var22 = number ; 
+return number ; 
+} 
+return number ; 
+} 

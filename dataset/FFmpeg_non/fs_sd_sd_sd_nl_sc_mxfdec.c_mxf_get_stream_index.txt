@@ -1,0 +1,10 @@
+static int func1 ( AVFormatContext * var1 , KLVPacket * var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < var1 -> var4 ; var3 ++ ) { 
+MXFTrack * var5 = var1 -> var6 [ var3 ] -> var7 ; 
+if ( ! memcmp ( var2 -> var8 + sizeof ( mxf_essence_element_key ) , var5 -> var9 , sizeof ( var5 -> var9 ) ) ) 
+return var3 ; 
+} 
+return var1 -> var4 == number ? number : - number ; 
+} 

@@ -1,0 +1,18 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+WaveformContext * var2 = var1 -> var3 ; 
+AVFilterFormats * var4 ; 
+const enum AVPixelFormat * var5 ; 
+switch ( var2 -> var6 ) { 
+case var7 : var5 = var8 ; break ; 
+case var9 : 
+case var10 : 
+case var11 : 
+case var12 : var5 = var13 ; break ; 
+case var14 : var5 = var15 ; break ; 
+} 
+var4 = func2 ( var5 ) ; 
+if ( ! var4 ) 
+return func3 ( var16 ) ; 
+return func4 ( var1 , var4 ) ; 
+} 

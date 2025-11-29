@@ -1,0 +1,84 @@
+static void func1 ( USPPContext * var1 , uint8_t * var2 [ number ] , uint8_t * var3 [ number ] , 
+int var4 [ number ] , int var5 [ number ] , int var6 , 
+int var7 , uint8_t * var8 , int var9 ) 
+{ 
+int var10 , var11 , var12 , var13 ; 
+const int var14 = number << var1 -> var15 ; 
+for ( var12 = number ; var12 < number ; var12 ++ ) { 
+int var16 = ! ! var12 ; 
+int var17 = func2 ( var6 , var16 ? var1 -> var18 : number ) ; 
+int var19 = func2 ( var7 , var16 ? var1 -> var20 : number ) ; 
+int var21 = var1 -> var22 [ var12 ] ; 
+int var23 = var24 >> ( var16 ? var1 -> var18 : number ) ; 
+if ( ! var3 [ var12 ] || ! var2 [ var12 ] ) 
+continue ; 
+for ( var11 = number ; var11 < var19 ; var11 ++ ) { 
+int var25 = var23 + var23 * var21 + var11 * var21 ; 
+memcpy ( var1 -> var3 [ var12 ] + var25 , var3 [ var12 ] + var11 * var5 [ var12 ] , var17 ) ; 
+for ( var10 = number ; var10 < var23 ; var10 ++ ) { 
+var1 -> var3 [ var12 ] [ var25 - var10 - number ] = var1 -> var3 [ var12 ] [ var25 + var10 ] ; 
+var1 -> var3 [ var12 ] [ var25 + var17 + var10 ] = var1 -> var3 [ var12 ] [ var25 + var17 - var10 - number ] ; 
+} 
+} 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+memcpy ( var1 -> var3 [ var12 ] + ( var23 - number - var11 ) * var21 , var1 -> var3 [ var12 ] + ( var11 + var23 ) * var21 , var21 ) ; 
+memcpy ( var1 -> var3 [ var12 ] + ( var19 + var23 + var11 ) * var21 , var1 -> var3 [ var12 ] + ( var19 - var11 + var23 - number ) * var21 , var21 ) ; 
+} 
+var1 -> var26 -> var27 [ var12 ] = var21 ; 
+memset ( var1 -> var28 [ var12 ] , number , ( var19 + number * var23 ) * var21 * sizeof ( int16_t ) ) ; 
+} 
+if ( var1 -> var29 ) 
+var1 -> var26 -> var30 = var1 -> var29 * var31 ; 
+else { 
+int var32 = number ; 
+int var33 = ( var7 >> number ) * ( var7 >> number ) ; 
+for ( var11 = number ; var11 < ( var7 >> number ) ; var11 ++ ) { 
+for ( var10 = number ; var10 < ( var6 >> number ) ; var10 ++ ) 
+var32 += var8 [ var10 + var11 * var9 ] ; 
+} 
+var1 -> var26 -> var30 = func3 ( ( var32 + var33 / number ) / var33 , var1 -> var34 ) * var31 ; 
+} 
+var1 -> var26 -> var7 = var7 ; 
+var1 -> var26 -> var6 = var6 ; 
+for ( var12 = number ; var12 < var14 ; var12 ++ ) { 
+const int var35 = var36 [ var12 + var14 - number ] [ number ] ; 
+const int var37 = var36 [ var12 + var14 - number ] [ number ] ; 
+const int var38 = var35 >> var1 -> var18 ; 
+const int var39 = var37 >> var1 -> var20 ; 
+const int var40 = var24 >> var1 -> var18 ; 
+int var36 ; 
+AVPacket var41 = { number } ; 
+int var42 ; 
+func4 ( & var41 ) ; 
+var41 . var43 = var1 -> var44 ; 
+var41 . var45 = var1 -> var46 ; 
+var1 -> var26 -> var43 [ number ] = var1 -> var3 [ number ] + var35 + var37 * var1 -> var26 -> var27 [ number ] ; 
+var1 -> var26 -> var43 [ number ] = var1 -> var3 [ number ] + var38 + var39 * var1 -> var26 -> var27 [ number ] ; 
+var1 -> var26 -> var43 [ number ] = var1 -> var3 [ number ] + var38 + var39 * var1 -> var26 -> var27 [ number ] ; 
+var1 -> var26 -> var47 = var1 -> var48 [ var12 ] -> var49 ; 
+func5 ( var1 -> var48 [ var12 ] , & var41 , var1 -> var26 , & var42 ) ; 
+var1 -> var50 = var1 -> var48 [ var12 ] -> var51 ; 
+var36 = ( var24 - var35 ) + ( var24 - var37 ) * var1 -> var50 -> var27 [ number ] ; 
+for ( var11 = number ; var11 < var7 ; var11 ++ ) 
+for ( var10 = number ; var10 < var6 ; var10 ++ ) 
+var1 -> var28 [ number ] [ var10 + var11 * var1 -> var22 [ number ] ] += var1 -> var50 -> var43 [ number ] [ var10 + var11 * var1 -> var50 -> var27 [ number ] + var36 ] ; 
+if ( ! var3 [ number ] || ! var2 [ number ] ) 
+continue ; 
+var36 = ( var40 - var38 ) + ( var40 - var39 ) * var1 -> var50 -> var27 [ number ] ; 
+for ( var11 = number ; var11 < func2 ( var7 , var1 -> var20 ) ; var11 ++ ) { 
+for ( var10 = number ; var10 < func2 ( var6 , var1 -> var18 ) ; var10 ++ ) { 
+var1 -> var28 [ number ] [ var10 + var11 * var1 -> var22 [ number ] ] += var1 -> var50 -> var43 [ number ] [ var10 + var11 * var1 -> var50 -> var27 [ number ] + var36 ] ; 
+var1 -> var28 [ number ] [ var10 + var11 * var1 -> var22 [ number ] ] += var1 -> var50 -> var43 [ number ] [ var10 + var11 * var1 -> var50 -> var27 [ number ] + var36 ] ; 
+} 
+} 
+} 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+int var16 = ! ! var13 ; 
+if ( ! var2 [ var13 ] ) 
+continue ; 
+func6 ( var2 [ var13 ] , var1 -> var28 [ var13 ] , var4 [ var13 ] , var1 -> var22 [ var13 ] , 
+func2 ( var6 , var16 ? var1 -> var18 : number ) , 
+func2 ( var7 , var16 ? var1 -> var20 : number ) , 
+number - var1 -> var15 ) ; 
+} 
+} 

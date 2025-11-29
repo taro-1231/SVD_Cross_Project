@@ -1,0 +1,12 @@
+func1 ( png_byte var1 [ SIZE_ROWMAX ] , png_uint_32 var2 , png_uint_32 var3 ) 
+{ 
+var3 = ( ( var3 & number ) << number ) + ( ( var3 & number ) << number ) + ( ( var3 & number ) << number ) + ( ( var3 & number ) << number ) ; 
+var3 ^= number ; 
+while ( var2 >= number ) 
+* var1 += ( png_byte ) var3 ++ , var2 -= number ; 
+if ( var2 > number ) 
+{ 
+png_uint_32 var4 = ( number << ( number - var2 ) ) - number ; 
+* var1 = ( png_byte ) ( ( * var1 & var4 ) | ( var3 & ~ var4 ) ) ; 
+} 
+} 

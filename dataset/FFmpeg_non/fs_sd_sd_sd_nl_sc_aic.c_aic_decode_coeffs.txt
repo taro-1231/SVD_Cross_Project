@@ -1,0 +1,44 @@
+static int func1 ( GetBitContext * var1 , int16_t * var2 , 
+int var3 , int var4 , int var5 ) 
+{ 
+int var6 , var7 , var8 , var9 , var10 ; 
+const int var11 = var12 [ var3 ] ; 
+const uint8_t * var13 = var14 [ var3 | var5 ] ; 
+int var15 , var16 ; 
+unsigned var17 ; 
+var6 = func2 ( var1 ) ; 
+var7 = func2 ( var1 ) ; 
+var8 = func3 ( var1 , number ) ; 
+if ( var6 ) { 
+var9 = func2 ( var1 ) ; 
+var10 = func3 ( var1 , number ) ; 
+for ( var15 = number ; var15 < var4 ; var15 ++ ) { 
+var16 = - number ; 
+do { 
+func4 ( var17 , var9 , var10 ) ; 
+if ( var17 >= number ) 
+return var18 ; 
+var16 += var17 + number ; 
+if ( var16 >= var11 ) 
+break ; 
+func4 ( var17 , var7 , var8 ) ; 
+var17 ++ ; 
+if ( var17 >= number ) 
+return var18 ; 
+var2 [ var13 [ var16 ] ] = var17 ; 
+} while ( var16 < var11 - number ) ; 
+var2 += var11 ; 
+} 
+} else { 
+for ( var15 = number ; var15 < var4 ; var15 ++ ) { 
+for ( var16 = number ; var16 < var11 ; var16 ++ ) { 
+func4 ( var17 , var7 , var8 ) ; 
+if ( var17 >= number ) 
+return var18 ; 
+var2 [ var13 [ var16 ] ] = var17 ; 
+} 
+var2 += var11 ; 
+} 
+} 
+return number ; 
+} 

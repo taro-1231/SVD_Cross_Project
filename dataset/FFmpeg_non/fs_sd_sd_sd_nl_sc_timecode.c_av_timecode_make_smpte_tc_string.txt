@@ -1,0 +1,11 @@
+char * func1 ( char * var1 , uint32_t var2 , int var3 ) 
+{ 
+unsigned var4 = func2 ( var2 & number ) ; 
+unsigned var5 = func2 ( var2 >> number & number ) ; 
+unsigned var6 = func2 ( var2 >> number & number ) ; 
+unsigned var7 = func2 ( var2 >> number & number ) ; 
+unsigned var8 = var2 & number << number && ! var3 ; 
+snprintf ( var1 , var9 , str , 
+var4 , var5 , var6 , var8 ? str : str , var7 ) ; 
+return var1 ; 
+} 

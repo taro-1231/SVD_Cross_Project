@@ -1,0 +1,19 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+PSNRContext * var2 = var1 -> var3 ; 
+var2 -> var4 = + var5 ; 
+var2 -> var6 = - var5 ; 
+if ( var2 -> var7 ) { 
+var2 -> var8 = fopen ( var2 -> var7 , str ) ; 
+if ( ! var2 -> var8 ) { 
+int var9 = func2 ( var10 ) ; 
+char var11 [ number ] ; 
+func3 ( var9 , var11 , sizeof ( var11 ) ) ; 
+func4 ( var1 , var12 , str , 
+var2 -> var7 , var11 ) ; 
+return var9 ; 
+} 
+} 
+var2 -> var13 . var14 = var15 ; 
+return number ; 
+} 

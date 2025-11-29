@@ -1,0 +1,10 @@
+func1 ( PNG_CONST png_store * var1 , png_const_structp var2 , int var3 , 
+png_uint_32 var4 ) 
+{ 
+png_size_t var5 = ( var3 * var1 -> var6 + var4 ) * ( var1 -> var7 + number ) + number ; 
+if ( var1 -> var8 == var9 ) 
+func2 ( var2 , str ) ; 
+if ( var5 + var1 -> var7 + number > var1 -> var10 ) 
+func2 ( var2 , str ) ; 
+return var1 -> var8 + var5 ; 
+} 

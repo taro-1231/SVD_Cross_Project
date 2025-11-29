@@ -1,0 +1,14 @@
+static void func1 ( CheckasmFunc * var1 ) 
+{ 
+if ( var1 ) { 
+CheckasmFuncVersion * var2 = var1 -> var3 . var4 ; 
+while ( var2 ) { 
+CheckasmFuncVersion * var4 = var2 -> var4 ; 
+free ( var2 ) ; 
+var2 = var4 ; 
+} 
+func1 ( var1 -> var5 [ number ] ) ; 
+func1 ( var1 -> var5 [ number ] ) ; 
+free ( var1 ) ; 
+} 
+} 

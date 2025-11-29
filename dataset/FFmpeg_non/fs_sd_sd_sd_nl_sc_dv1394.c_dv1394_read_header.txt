@@ -1,0 +1,28 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct dv1394_data * var2 = var1 -> var3 ; 
+var2 -> var4 = func2 ( var1 ) ; 
+if ( ! var2 -> var4 ) 
+goto var5 ; 
+var2 -> var6 = func3 ( var1 -> var7 , var8 ) ; 
+if ( var2 -> var6 < number ) { 
+func4 ( var1 , var9 , str , strerror ( var10 ) ) ; 
+goto var5 ; 
+} 
+if ( func5 ( var2 ) < number ) { 
+func4 ( var1 , var9 , str , strerror ( var10 ) ) ; 
+goto var5 ; 
+} 
+var2 -> var11 = func6 ( var12 , var13 * var14 , 
+var15 , var16 , var2 -> var6 , number ) ; 
+if ( var2 -> var11 == var17 ) { 
+func4 ( var1 , var9 , str , strerror ( var10 ) ) ; 
+goto var5 ; 
+} 
+if ( func7 ( var2 ) < number ) 
+goto var5 ; 
+return number ; 
+var5 : 
+func8 ( var2 -> var6 ) ; 
+return func9 ( var18 ) ; 
+} 

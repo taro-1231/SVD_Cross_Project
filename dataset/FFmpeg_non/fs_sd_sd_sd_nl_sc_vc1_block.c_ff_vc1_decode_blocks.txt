@@ -1,0 +1,35 @@
+void func1 ( VC1Context * var1 ) 
+{ 
+var1 -> var2 . var3 = number ; 
+if ( var1 -> var4 ) { 
+func2 ( & var1 -> var5 , number * var1 -> var6 + var1 -> var7 , var1 -> var6 * ! var1 -> var8 ) ; 
+} else { 
+var1 -> var9 = number ; 
+var1 -> var10 = - number ; 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+switch ( var1 -> var2 . var13 ) { 
+case var14 : 
+if ( var1 -> var15 == var16 ) 
+func3 ( var1 ) ; 
+else 
+func4 ( var1 ) ; 
+break ; 
+case var17 : 
+if ( var1 -> var18 ) 
+func5 ( var1 ) ; 
+else 
+func6 ( var1 ) ; 
+break ; 
+case var19 : 
+if ( var1 -> var20 ) { 
+if ( var1 -> var15 == var16 ) 
+func3 ( var1 ) ; 
+else 
+func4 ( var1 ) ; 
+} else 
+func7 ( var1 ) ; 
+break ; 
+} 
+} 
+} 

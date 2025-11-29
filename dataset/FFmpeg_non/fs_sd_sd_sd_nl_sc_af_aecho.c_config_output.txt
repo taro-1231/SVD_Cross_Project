@@ -1,0 +1,33 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AudioEchoContext * var4 = var2 -> var5 ; 
+float var6 = number ; 
+int var7 ; 
+for ( var7 = number ; var7 < var4 -> var8 ; var7 ++ ) { 
+var4 -> var9 [ var7 ] = var4 -> var10 [ var7 ] * var1 -> var11 / number ; 
+var4 -> var12 = func2 ( var4 -> var12 , var4 -> var9 [ var7 ] ) ; 
+var6 += var4 -> var13 [ var7 ] ; 
+} 
+if ( var4 -> var12 <= number ) { 
+func3 ( var2 , var14 , str ) ; 
+return func4 ( var15 ) ; 
+} 
+var4 -> var16 = var4 -> var12 ; 
+if ( var6 * var4 -> var17 * var4 -> var18 > number ) 
+func3 ( var2 , var19 , 
+str , var4 -> var18 ) ; 
+switch ( var1 -> var20 ) { 
+case var21 : var4 -> var22 = var23 ; break ; 
+case var24 : var4 -> var22 = var25 ; break ; 
+case var26 : var4 -> var22 = var27 ; break ; 
+case var28 : var4 -> var22 = var29 ; break ; 
+} 
+if ( var4 -> var30 ) 
+func5 ( & var4 -> var30 [ number ] ) ; 
+func5 ( & var4 -> var30 ) ; 
+return func6 ( & var4 -> var30 , var31 , 
+var1 -> var32 , 
+var4 -> var12 , 
+var1 -> var20 , number ) ; 
+} 

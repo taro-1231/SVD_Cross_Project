@@ -1,0 +1,12 @@
+void func1 ( cl_mem * var1 ) 
+{ 
+cl_int var2 = number ; 
+if ( ! var1 ) 
+return ; 
+var2 = func2 ( * var1 ) ; 
+if ( var2 != var3 ) { 
+func3 ( & var4 , var5 , 
+str , func4 ( var2 ) ) ; 
+} 
+memset ( var1 , number , sizeof ( * var1 ) ) ; 
+} 

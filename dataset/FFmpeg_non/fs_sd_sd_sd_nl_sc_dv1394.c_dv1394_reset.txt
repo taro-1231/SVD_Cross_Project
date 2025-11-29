@@ -1,0 +1,12 @@
+static int func1 ( struct dv1394_data * var1 ) 
+{ 
+struct dv1394_init var2 ; 
+var2 . var3 = var1 -> var3 ; 
+var2 . var4 = var5 ; 
+var2 . var6 = var7 ; 
+var2 . var8 = var9 ; 
+if ( func2 ( var1 -> var10 , var11 , & var2 ) < number ) 
+return - number ; 
+var1 -> var12 = var1 -> var13 = number ; 
+return number ; 
+} 

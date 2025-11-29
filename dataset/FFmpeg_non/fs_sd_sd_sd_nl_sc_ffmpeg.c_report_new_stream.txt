@@ -1,0 +1,13 @@
+static void func1 ( int var1 , AVPacket * var2 ) 
+{ 
+InputFile * var3 = var4 [ var1 ] ; 
+AVStream * var5 = var3 -> var6 -> var7 [ var2 -> var8 ] ; 
+if ( var2 -> var8 < var3 -> var9 ) 
+return ; 
+av_log ( var3 -> var6 , AV_LOG_WARNING , 
+str PRId64 str , 
+av_get_media_type_string ( var5 -> codecpar -> codec_type ) , 
+var1 , var2 -> var8 , 
+var2 -> pos , av_ts2timestr ( var2 -> dts , & var5 -> time_base ) ) ; 
+var3 -> var9 = var2 -> var8 + number ; 
+} 

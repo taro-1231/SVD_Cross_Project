@@ -1,0 +1,9 @@
+int func1 ( int var1 , const int * var2 ) 
+{ 
+const int * var3 ; 
+for ( var3 = var2 ; * var3 != - number ; var3 ++ ) { 
+if ( var1 == * var3 ) 
+return number ; 
+} 
+return number ; 
+} 

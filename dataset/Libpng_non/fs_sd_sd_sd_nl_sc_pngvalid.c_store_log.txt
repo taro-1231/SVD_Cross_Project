@@ -1,0 +1,9 @@
+func1 ( png_store * var1 , png_const_structp var2 , png_const_charp var3 , 
+int var4 ) 
+{ 
+if ( var4 ? ( var1 -> var5 ) += number : 
+( var1 -> var6 ) += number && var1 -> var5 == number ) 
+func2 ( var1 , var2 , var1 -> var7 , sizeof var1 -> var7 , number , var3 ) ; 
+if ( var1 -> var8 ) 
+func3 ( var1 , var2 , var4 ? str : str , var3 ) ; 
+} 

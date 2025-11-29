@@ -1,0 +1,167 @@
+static int func1 ( AVFilterGraph * var2 , AVClass * var3 ) 
+{ 
+int var4 , var5 , var6 ; 
+int var7 = number , var8 = number ; 
+int var9 = number ; 
+int var10 = number ; 
+int var11 = number ; 
+int var12 = number ; 
+for ( var4 = number ; var4 < var2 -> var13 ; var4 ++ ) { 
+AVFilterContext * var14 = var2 -> var15 [ var4 ] ; 
+if ( func2 ( var14 ) ) 
+continue ; 
+if ( var14 -> var16 -> func1 ) 
+var6 = func3 ( var14 ) ; 
+else 
+var6 = func4 ( var14 ) ; 
+if ( var6 < number && var6 != func5 ( var17 ) ) 
+return var6 ; 
+var9 += var6 >= number ; 
+} 
+for ( var4 = number ; var4 < var2 -> var13 ; var4 ++ ) { 
+AVFilterContext * var16 = var2 -> var15 [ var4 ] ; 
+for ( var5 = number ; var5 < var16 -> var18 ; var5 ++ ) { 
+AVFilterLink * var19 = var16 -> var20 [ var5 ] ; 
+int var21 = number ; 
+if ( ! var19 ) 
+continue ; 
+if ( var19 -> var22 != var19 -> var23 
+&& var19 -> var22 && var19 -> var23 ) 
+if ( ! func6 ( var19 -> var22 , var19 -> var23 , 
+var19 -> var24 , number ) ) 
+var21 = number ; 
+if ( var19 -> var24 == var25 ) { 
+if ( var19 -> var26 != var19 -> var27 
+&& var19 -> var26 && var19 -> var27 ) 
+if ( ! func6 ( var19 -> var26 , 
+var19 -> var27 , 
+number , number ) ) 
+var21 = number ; 
+} 
+var12 ++ ; \ 
+var11 ++ ; \ 
+} else if ( ! var21 ) { \ 
+var10 ++ ; \ 
+statement \ 
+} 
+if ( var19 -> var24 == var25 ) { 
+MERGE_DISPATCH ( channel_layouts , 
+if ( ! func7 ( var19 -> var28 , 
+var19 -> var29 ) ) 
+var21 = number ; 
+) 
+MERGE_DISPATCH ( samplerates , 
+if ( ! func8 ( var19 -> var26 , 
+var19 -> var27 ) ) 
+var21 = number ; 
+) 
+} 
+MERGE_DISPATCH ( formats , 
+if ( ! func9 ( var19 -> var22 , var19 -> var23 , 
+var19 -> var24 ) ) 
+var21 = number ; 
+) 
+if ( var21 ) { 
+AVFilterContext * var30 ; 
+AVFilter * var16 ; 
+AVFilterLink * var31 , * var32 ; 
+char var33 [ number ] ; 
+char var34 [ number ] ; 
+switch ( var19 -> var24 ) { 
+case var35 : 
+if ( ! ( var16 = func10 ( str ) ) ) { 
+av_log ( var3 , AV_LOG_ERROR , str 
+str ) ; 
+return func5 ( var36 ) ; 
+} 
+snprintf ( var34 , sizeof ( var34 ) , str , 
+var7 ++ ) ; 
+if ( ( var6 = func11 ( & var30 , var16 , 
+var34 , var2 -> var37 , var38 , 
+var2 ) ) < number ) 
+return var6 ; 
+break ; 
+case var25 : 
+if ( ! ( var16 = func10 ( str ) ) ) { 
+av_log ( var3 , AV_LOG_ERROR , str 
+str ) ; 
+return func5 ( var36 ) ; 
+} 
+snprintf ( var34 , sizeof ( var34 ) , str , 
+var8 ++ ) ; 
+var33 [ number ] = str ; 
+if ( var2 -> var39 ) 
+snprintf ( var33 , sizeof ( var33 ) , str , 
+var2 -> var39 ) ; 
+if ( ( var6 = func11 ( & var30 , var16 , 
+var34 , var2 -> var39 , 
+var38 , var2 ) ) < number ) 
+return var6 ; 
+break ; 
+var40 : 
+return func5 ( var36 ) ; 
+} 
+if ( ( var6 = func12 ( var19 , var30 , number , number ) ) < number ) 
+return var6 ; 
+if ( ( var6 = func3 ( var30 ) ) < number ) 
+return var6 ; 
+var31 = var30 -> var20 [ number ] ; 
+var32 = var30 -> var41 [ number ] ; 
+func13 ( var31 -> var22 -> var42 > number ) ; 
+func13 ( var31 -> var23 -> var42 > number ) ; 
+func13 ( var32 -> var22 -> var42 > number ) ; 
+func13 ( var32 -> var23 -> var42 > number ) ; 
+if ( var32 -> var24 == var25 ) { 
+func13 ( var31 -> var26 -> var42 > number ) ; 
+func13 ( var31 -> var27 -> var42 > number ) ; 
+func13 ( var32 -> var26 -> var42 > number ) ; 
+func13 ( var32 -> var27 -> var42 > number ) ; 
+func13 ( var31 -> var28 -> var42 > number ) ; 
+func13 ( var31 -> var29 -> var42 > number ) ; 
+func13 ( var32 -> var28 -> var42 > number ) ; 
+func13 ( var32 -> var29 -> var42 > number ) ; 
+} 
+if ( ! func9 ( var31 -> var22 , var31 -> var23 , var31 -> var24 ) || 
+! func9 ( var32 -> var22 , var32 -> var23 , var32 -> var24 ) ) 
+var6 = func5 ( var43 ) ; 
+if ( var31 -> var24 == var25 && 
+( ! func8 ( var31 -> var26 , 
+var31 -> var27 ) || 
+! func7 ( var31 -> var28 , 
+var31 -> var29 ) ) ) 
+var6 = func5 ( var43 ) ; 
+if ( var32 -> var24 == var25 && 
+( ! func8 ( var32 -> var26 , 
+var32 -> var27 ) || 
+! func7 ( var32 -> var28 , 
+var32 -> var29 ) ) ) 
+var6 = func5 ( var43 ) ; 
+if ( var6 < number ) { 
+av_log ( var3 , AV_LOG_ERROR , 
+str 
+str , var19 -> src -> var44 , var19 -> dst -> var44 ) ; 
+return var6 ; 
+} 
+} 
+} 
+} 
+av_log ( var2 , AV_LOG_DEBUG , str 
+str , 
+var9 , var10 , var11 , var12 ) ; 
+if ( var12 ) { 
+AVBPrint var45 ; 
+if ( var9 || var10 ) 
+return func5 ( var17 ) ; 
+func14 ( & var45 , number , var46 ) ; 
+for ( var4 = number ; var4 < var2 -> var13 ; var4 ++ ) 
+if ( ! func2 ( var2 -> var15 [ var4 ] ) ) 
+func15 ( & var45 , str , var45 . var47 ? str : str , 
+var2 -> var15 [ var4 ] -> var44 ) ; 
+av_log ( var2 , AV_LOG_ERROR , 
+str 
+str 
+str , var45 . str ) ; 
+return func5 ( var48 ) ; 
+} 
+return number ; 
+} 

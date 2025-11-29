@@ -1,0 +1,17 @@
+int func1 ( InputFilter * var1 , const AVFrame * var2 ) 
+{ 
+func2 ( & var1 -> var3 ) ; 
+var1 -> var4 = var2 -> var4 ; 
+var1 -> var5 = var2 -> var5 ; 
+var1 -> var6 = var2 -> var6 ; 
+var1 -> var7 = var2 -> var7 ; 
+var1 -> var8 = var2 -> var8 ; 
+var1 -> var9 = func3 ( var2 ) ; 
+var1 -> var10 = var2 -> var10 ; 
+if ( var2 -> var3 ) { 
+var1 -> var3 = func4 ( var2 -> var3 ) ; 
+if ( ! var1 -> var3 ) 
+return func5 ( var11 ) ; 
+} 
+return number ; 
+} 

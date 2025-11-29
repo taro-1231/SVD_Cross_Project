@@ -1,0 +1,105 @@
+static void func1 ( void ) 
+{ 
+int var1 , var2 ; 
+for ( var1 = number ; var1 < var3 ; var1 ++ ) { 
+OutputStream * var4 = var5 [ var1 ] ; 
+AVCodecContext * var6 = var4 -> var7 ; 
+OutputFile * var8 = var9 [ var4 -> var10 ] ; 
+if ( ! var4 -> var11 ) 
+continue ; 
+if ( ! var4 -> var12 ) { 
+FilterGraph * var13 = var4 -> var14 -> var15 ; 
+char var16 [ number ] = str ; 
+func2 ( var17 , var18 , 
+str , 
+var4 -> var10 , var4 -> var20 -> var21 ) ; 
+if ( var4 -> var14 && ! var13 -> var15 ) { 
+int var22 ; 
+for ( var22 = number ; var22 < var13 -> var23 ; var22 ++ ) { 
+InputFilter * var24 = var13 -> var25 [ var22 ] ; 
+if ( var24 -> var26 < number ) { 
+AVCodecParameters * var27 = var24 -> var28 -> var20 -> var29 ; 
+var24 -> var26 = var27 -> var26 ; 
+var24 -> var30 = var27 -> var30 ; 
+var24 -> var31 = var27 -> var31 ; 
+var24 -> var32 = var27 -> var32 ; 
+var24 -> var33 = var27 -> var33 ; 
+var24 -> var34 = var27 -> var34 ; 
+var24 -> var35 = var27 -> var35 ; 
+} 
+} 
+if ( ! func3 ( var13 ) ) 
+continue ; 
+var2 = func4 ( var13 ) ; 
+if ( var2 < number ) { 
+func2 ( var17 , var36 , str ) ; 
+func5 ( number ) ; 
+} 
+func6 ( var4 ) ; 
+} 
+var2 = func7 ( var4 , var16 , sizeof ( var16 ) ) ; 
+if ( var2 < number ) { 
+func2 ( var17 , var36 , str , 
+var4 -> var10 , var4 -> var21 , var16 ) ; 
+func5 ( number ) ; 
+} 
+} 
+if ( var6 -> var37 == var38 && var6 -> var39 <= number ) 
+continue ; 
+if ( var6 -> var37 == var40 && ( var8 -> var41 -> var42 -> var43 & var44 ) && var6 -> var45 -> var46 == var47 ) 
+continue ; 
+if ( var6 -> var37 != var40 && var6 -> var37 != var38 ) 
+continue ; 
+for ( ; ; ) { 
+const char * var48 = var17 ; 
+AVPacket var49 ; 
+int var50 ; 
+switch ( var6 -> var37 ) { 
+case var38 : 
+var48 = str ; 
+break ; 
+case var40 : 
+var48 = str ; 
+break ; 
+var51 : 
+func8 ( number ) ; 
+} 
+func9 ( & var49 ) ; 
+var49 . var19 = var17 ; 
+var49 . var52 = number ; 
+func10 ( var17 ) ; 
+while ( ( var2 = func11 ( var6 , & var49 ) ) == func12 ( var53 ) ) { 
+var2 = func13 ( var6 , var17 ) ; 
+if ( var2 < number ) { 
+func2 ( var17 , var54 , str , 
+var48 , 
+func14 ( var2 ) ) ; 
+func5 ( number ) ; 
+} 
+} 
+func10 ( str , var48 , var4 -> var10 , var4 -> var21 ) ; 
+if ( var2 < number && var2 != var55 ) { 
+func2 ( var17 , var54 , str , 
+var48 , 
+func14 ( var2 ) ) ; 
+func5 ( number ) ; 
+} 
+if ( var4 -> var56 && var6 -> var57 ) { 
+fprintf ( var4 -> var56 , str , var6 -> var57 ) ; 
+} 
+if ( var2 == var55 ) { 
+break ; 
+} 
+if ( var4 -> var58 & var59 ) { 
+func15 ( & var49 ) ; 
+continue ; 
+} 
+func16 ( & var49 , var6 -> var60 , var4 -> var61 ) ; 
+var50 = var49 . var52 ; 
+func17 ( var8 , & var49 , var4 ) ; 
+if ( var4 -> var7 -> var37 == var40 && var62 ) { 
+func18 ( var4 , var50 ) ; 
+} 
+} 
+} 
+} 

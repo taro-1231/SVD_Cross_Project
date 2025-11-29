@@ -1,0 +1,9 @@
+static void func1 ( AVDictionary ** var1 , int64_t var2 ) 
+{ 
+char var3 [ number ] ; 
+time_t var4 = var2 / number + number ; 
+struct tm var5 , * var6 = func2 ( & var4 , & var5 ) ; 
+if ( ! var6 ) return ; 
+if ( strftime ( var3 , sizeof ( var3 ) , str , var6 ) ) 
+func3 ( var1 , str , var3 , number ) ; 
+} 

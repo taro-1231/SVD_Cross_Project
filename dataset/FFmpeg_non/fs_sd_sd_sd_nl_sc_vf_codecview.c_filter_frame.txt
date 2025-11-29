@@ -1,0 +1,22 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+CodecViewContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+AVFrameSideData * var9 = func2 ( var2 , var10 ) ; 
+if ( var9 ) { 
+int var11 ; 
+const AVMotionVector * var12 = ( const AVMotionVector * ) var9 -> var13 ; 
+for ( var11 = number ; var11 < var9 -> var14 / sizeof ( * var12 ) ; var11 ++ ) { 
+const AVMotionVector * var15 = & var12 [ var11 ] ; 
+const int var16 = var15 -> var17 > number ; 
+if ( ( var16 == number && ( var5 -> var15 & var18 ) && var2 -> var19 == var20 ) || 
+( var16 == number && ( var5 -> var15 & var21 ) && var2 -> var19 == var22 ) || 
+( var16 == number && ( var5 -> var15 & var23 ) && var2 -> var19 == var22 ) ) 
+func3 ( var2 -> var13 [ number ] , var15 -> var24 , var15 -> var25 , var15 -> var26 , var15 -> var27 , 
+var2 -> var28 , var2 -> var29 , var2 -> var30 [ number ] , 
+number , number , var15 -> var17 > number ) ; 
+} 
+} 
+return func4 ( var7 , var2 ) ; 
+} 

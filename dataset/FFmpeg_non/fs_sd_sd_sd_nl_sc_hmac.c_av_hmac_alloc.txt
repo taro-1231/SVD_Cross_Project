@@ -1,0 +1,66 @@
+AVHMAC * func1 ( enum AVHMACType var1 ) 
+{ 
+AVHMAC * var2 = func2 ( sizeof ( * var2 ) ) ; 
+if ( ! var2 ) 
+return var3 ; 
+switch ( var1 ) { 
+case var4 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = ( void * ) var8 ; 
+var2 -> var9 = ( void * ) var10 ; 
+var2 -> var11 = ( void * ) var12 ; 
+var2 -> var13 = func3 ( ) ; 
+break ; 
+case var14 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = var15 ; 
+var2 -> var9 = ( void * ) var16 ; 
+var2 -> var11 = ( void * ) var17 ; 
+var2 -> var13 = func4 ( ) ; 
+break ; 
+case var18 : 
+case var19 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = var20 ; 
+var2 -> var9 = ( void * ) var16 ; 
+var2 -> var11 = ( void * ) var17 ; 
+var2 -> var13 = func4 ( ) ; 
+break ; 
+case var21 : 
+case var22 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = var23 ; 
+var2 -> var9 = ( void * ) var16 ; 
+var2 -> var11 = ( void * ) var17 ; 
+var2 -> var13 = func4 ( ) ; 
+break ; 
+case var24 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = var25 ; 
+var2 -> var9 = ( void * ) var26 ; 
+var2 -> var11 = ( void * ) var27 ; 
+var2 -> var13 = func5 ( ) ; 
+break ; 
+case var28 : 
+var2 -> var5 = number ; 
+var2 -> var6 = number ; 
+var2 -> var7 = var29 ; 
+var2 -> var9 = ( void * ) var26 ; 
+var2 -> var11 = ( void * ) var27 ; 
+var2 -> var13 = func5 ( ) ; 
+break ; 
+var30 : 
+func6 ( var2 ) ; 
+return var3 ; 
+} 
+if ( ! var2 -> var13 ) { 
+func6 ( var2 ) ; 
+return var3 ; 
+} 
+return var2 ; 
+} 

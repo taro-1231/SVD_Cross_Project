@@ -1,0 +1,142 @@
+static inline void RENAME ( func1 ) ( uint8_t * var1 , int var2 , PPContext * var3 ) 
+{ 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_c str 
+str REG_c str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm6 , % % mm0 ) 
+PAVGB ( % % mm6 , % % mm0 ) 
+str 
+str 
+PAVGB ( ( % % REGa ) , % % mm2 ) 
+PAVGB ( ( % 0 , % 1 , 2 ) , % % mm2 ) 
+str 
+str 
+PAVGB ( % % mm4 , % % mm3 ) 
+PAVGB ( % % mm0 , % % mm3 ) 
+str 
+str 
+PAVGB ( % % mm6 , % % mm0 ) 
+str 
+PAVGB ( ( % 0 , % 1 , 2 ) , % % mm3 ) 
+PAVGB ( ( % % REGa , % 1 , 2 ) , % % mm5 ) 
+PAVGB ( ( % % REGa ) , % % mm5 ) 
+PAVGB ( % % mm5 , % % mm3 ) 
+PAVGB ( % % mm0 , % % mm3 ) 
+str 
+PAVGB ( % % mm4 , % % mm6 ) 
+str REG_c str 
+PAVGB ( ( % % REGa , % 1 , 2 ) , % % mm0 ) 
+str 
+PAVGB ( % % mm1 , % % mm0 ) 
+PAVGB ( % % mm6 , % % mm0 ) 
+PAVGB ( % % mm2 , % % mm0 ) 
+str 
+str 
+str REG_a str 
+PAVGB ( ( % % REGc ) , % % mm0 ) 
+PAVGB ( % % mm0 , % % mm6 ) 
+PAVGB ( % % mm1 , % % mm4 ) 
+PAVGB ( % % mm2 , % % mm1 ) 
+PAVGB ( % % mm1 , % % mm6 ) 
+PAVGB ( % % mm5 , % % mm6 ) 
+str REG_a str 
+str REG_a str 
+str REG_a str 
+PAVGB ( % % mm7 , % % mm6 ) 
+PAVGB ( % % mm4 , % % mm6 ) 
+PAVGB ( % % mm3 , % % mm6 ) 
+PAVGB ( % % mm5 , % % mm2 ) 
+str 
+PAVGB ( % % mm4 , % % mm2 ) 
+PAVGB ( % % mm2 , % % mm6 ) 
+str 
+PAVGB ( % % mm7 , % % mm1 ) 
+PAVGB ( % % mm4 , % % mm5 ) 
+PAVGB ( % % mm5 , % % mm0 ) 
+str REG_a str 
+PAVGB ( % % mm6 , % % mm1 ) 
+PAVGB ( % % mm0 , % % mm1 ) 
+str REG_a str 
+PAVGB ( ( % % REGc ) , % % mm2 ) 
+str REG_a str 
+PAVGB ( % % mm0 , % % mm6 ) 
+PAVGB ( % % mm7 , % % mm6 ) 
+PAVGB ( % % mm2 , % % mm6 ) 
+str REG_c str 
+PAVGB ( % % mm7 , % % mm5 ) 
+PAVGB ( % % mm7 , % % mm5 ) 
+PAVGB ( % % mm3 , % % mm0 ) 
+PAVGB ( % % mm0 , % % mm5 ) 
+str REG_a str 
+str 
+: 
+: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) 
+: str REG_a , str REG_c 
+) ; 
+const int l1 = var2 ; 
+const int l2 = var2 + l1 ; 
+const int l3 = var2 + l2 ; 
+const int l4 = var2 + l3 ; 
+const int l5 = var2 + l4 ; 
+const int l6 = var2 + l5 ; 
+const int l7 = var2 + l6 ; 
+const int l8 = var2 + l7 ; 
+const int l9 = var2 + l8 ; 
+int x ; 
+var1 += var2 * number ; 
+for ( x = 0 ; x < BLOCK_SIZE ; x ++ ) { 
+const int first = FFABS ( var1 [ 0 ] - var1 [ l1 ] ) < var3 -> QP ? var1 [ 0 ] : var1 [ l1 ] ; 
+const int last = FFABS ( var1 [ l8 ] - var1 [ l9 ] ) < var3 -> QP ? var1 [ l9 ] : var1 [ l8 ] ; 
+int sums [ 10 ] ; 
+sums [ 0 ] = 4 * first + var1 [ l1 ] + var1 [ l2 ] + var1 [ l3 ] + 4 ; 
+sums [ 1 ] = sums [ 0 ] - first + var1 [ l4 ] ; 
+sums [ 2 ] = sums [ 1 ] - first + var1 [ l5 ] ; 
+sums [ number ] = sums [ 2 ] - first + var1 [ l6 ] ; 
+sums [ 4 ] = sums [ number ] - first + var1 [ l7 ] ; 
+sums [ 5 ] = sums [ 4 ] - var1 [ l1 ] + var1 [ l8 ] ; 
+sums [ 6 ] = sums [ 5 ] - var1 [ l2 ] + last ; 
+sums [ 7 ] = sums [ 6 ] - var1 [ l3 ] + last ; 
+sums [ 8 ] = sums [ 7 ] - var1 [ l4 ] + last ; 
+sums [ 9 ] = sums [ 8 ] - var1 [ l5 ] + last ; 
+var1 [ l1 ] = ( sums [ 0 ] + sums [ 2 ] + 2 * var1 [ l1 ] ) >> 4 ; 
+var1 [ l2 ] = ( sums [ 1 ] + sums [ number ] + 2 * var1 [ l2 ] ) >> 4 ; 
+var1 [ l3 ] = ( sums [ 2 ] + sums [ 4 ] + 2 * var1 [ l3 ] ) >> 4 ; 
+var1 [ l4 ] = ( sums [ number ] + sums [ 5 ] + 2 * var1 [ l4 ] ) >> 4 ; 
+var1 [ l5 ] = ( sums [ 4 ] + sums [ 6 ] + 2 * var1 [ l5 ] ) >> 4 ; 
+var1 [ l6 ] = ( sums [ 5 ] + sums [ 7 ] + 2 * var1 [ l6 ] ) >> 4 ; 
+var1 [ l7 ] = ( sums [ 6 ] + sums [ 8 ] + 2 * var1 [ l7 ] ) >> 4 ; 
+var1 [ l8 ] = ( sums [ 7 ] + sums [ 9 ] + 2 * var1 [ l8 ] ) >> 4 ; 
+var1 ++ ; 
+} 
+} 

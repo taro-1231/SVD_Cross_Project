@@ -1,0 +1,7 @@
+func1 ( png_const_structp var1 , png_uint_32 var2 ) 
+{ 
+png_uint_32 var3 = func2 ( var2 ) ; 
+if ( var3 == number ) 
+var3 = func3 ( var1 , func4 ( var2 ) , func5 ( var2 ) ) ; 
+return var3 ; 
+} 

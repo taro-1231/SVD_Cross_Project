@@ -1,0 +1,116 @@
+static void func1 ( float ** var1 , float ( * var2 ) [ 2 ] , 
+int var3 , int var4 , int var5 ) 
+{ 
+int var6 , var7 , var8 , var9 , var10 ; 
+float var11 , var12 , var13 , var14 ; 
+float var15 , var16 , var17 , var18 ; 
+float var19 , var20 , var21 , var22 , var23 , var24 ; 
+float * var25 , * var26 , * var27 , ** var28 , ** var29 ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str PTRLOG str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_L str 
+str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+PTR_ADDIU str PTRSIZE str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_L str 
+PTR_L str PTRSIZE str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_L str 
+str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+PTR_ADDIU str PTRSIZE str 
+str 
+str 
+str 
+str 
+str 
+PTR_L str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: [ var25 ] str ( var25 ) , [ var23 ] str ( var23 ) , [ var24 ] str ( var24 ) , 
+[ var19 ] str ( var19 ) , [ var20 ] str ( var20 ) , 
+[ var21 ] str ( var21 ) , [ var22 ] str ( var22 ) , 
+[ var11 ] str ( var11 ) , [ var12 ] str ( var12 ) , [ var13 ] str ( var13 ) , [ var14 ] str ( var14 ) , 
+[ var15 ] str ( var15 ) , [ var16 ] str ( var16 ) , [ var17 ] str ( var17 ) , [ var18 ] str ( var18 ) , 
+[ var28 ] str ( var28 ) , [ var27 ] str ( var27 ) , 
+[ var29 ] str ( var29 ) , [ var26 ] str ( var26 ) , 
+[ var8 ] str ( var8 ) , [ var9 ] str ( var9 ) , [ var10 ] str ( var10 ) , [ var6 ] str ( var6 ) , 
+[ var7 ] str ( var7 ) , [ var5 ] str ( var5 ) 
+: [ var1 ] str ( var1 ) , [ var2 ] str ( var2 ) , 
+[ var4 ] str ( var4 ) , [ var3 ] str ( var3 ) 
+: str 
+) ; 
+} 

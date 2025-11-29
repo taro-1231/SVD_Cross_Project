@@ -1,0 +1,22 @@
+static BOOL WINAPI func1 ( DWORD var1 ) 
+{ 
+func2 ( var2 , var3 , str , var1 ) ; 
+switch ( var1 ) 
+{ 
+case var4 : 
+case var5 : 
+func3 ( var6 ) ; 
+return var7 ; 
+case var8 : 
+case var9 : 
+case var10 : 
+func3 ( var11 ) ; 
+while ( ! var12 ) { 
+func4 ( number ) ; 
+} 
+return var7 ; 
+var13 : 
+func2 ( var2 , var14 , str , var1 ) ; 
+return var15 ; 
+} 
+} 

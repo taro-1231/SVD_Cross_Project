@@ -1,0 +1,10 @@
+int func1 ( int var1 , char ** var2 ) ; 
+int func2 ( int var1 , char ** var2 ) 
+{ 
+short var3 ; 
+__asm__ volatile ( str 
+str 
+str 
+: str ( var3 ) ) ; 
+return func1 ( var1 , var2 ) ; 
+} 

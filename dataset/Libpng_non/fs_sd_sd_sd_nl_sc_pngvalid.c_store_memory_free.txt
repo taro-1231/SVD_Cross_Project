@@ -1,0 +1,21 @@
+func1 ( png_const_structp var1 , store_pool * var2 , store_memory * var3 ) 
+{ 
+if ( var3 -> var2 != var2 ) 
+func2 ( var2 -> var4 , var1 , str ) ; 
+else if ( memcmp ( var3 -> var5 , var2 -> var5 , sizeof var3 -> var5 ) != number ) 
+func2 ( var2 -> var4 , var1 , str ) ; 
+else 
+{ 
+png_alloc_size_t var6 = var3 -> var7 ; 
+if ( var6 > var2 -> var8 ) 
+func2 ( var2 -> var4 , var1 , str ) ; 
+else if ( memcmp ( ( png_bytep ) ( var3 + number ) + var6 , var2 -> var5 , sizeof var2 -> var5 ) 
+!= number ) 
+func2 ( var2 -> var4 , var1 , str ) ; 
+else 
+{ 
+var2 -> var9 -= var6 ; 
+free ( var3 ) ; 
+} 
+} 
+} 

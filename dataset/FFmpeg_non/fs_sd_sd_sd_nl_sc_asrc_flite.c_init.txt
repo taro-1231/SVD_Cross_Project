@@ -1,0 +1,48 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+FliteContext * var2 = var1 -> var3 ; 
+int var4 = number ; 
+if ( var2 -> func2 ) { 
+func2 ( var1 , str ) ; 
+return var5 ; 
+} 
+if ( ! var6 ) { 
+if ( func3 ( ) < number ) { 
+func4 ( var1 , var7 , str ) ; 
+return var8 ; 
+} 
+var6 ++ ; 
+} 
+if ( ( var4 = func5 ( & var2 -> var9 , var2 -> var10 , var1 ) ) < number ) 
+return var4 ; 
+var2 -> var11 = var2 -> var9 -> var11 ; 
+if ( var2 -> var12 && var2 -> var13 ) { 
+func4 ( var1 , var7 , 
+str ) ; 
+return func6 ( var14 ) ; 
+} 
+if ( var2 -> var12 ) { 
+uint8_t * var15 ; 
+size_t var16 ; 
+if ( ( var4 = func7 ( var2 -> var12 , & var15 , & var16 , number , var1 ) ) < number ) { 
+func4 ( var1 , var7 , 
+str , 
+var2 -> var12 , func8 ( var4 ) ) ; 
+return var4 ; 
+} 
+if ( ! ( var2 -> var13 = func9 ( var16 + number ) ) ) 
+return func6 ( var17 ) ; 
+memcpy ( var2 -> var13 , var15 , var16 ) ; 
+var2 -> var13 [ var16 ] = number ; 
+func10 ( var15 , var16 ) ; 
+} 
+if ( ! var2 -> var13 ) { 
+func4 ( var1 , var7 , 
+str ) ; 
+return func6 ( var14 ) ; 
+} 
+var2 -> var18 = func11 ( var2 -> var13 , var2 -> var11 ) ; 
+var2 -> var19 = var2 -> var18 -> var20 ; 
+var2 -> var21 = var2 -> var18 -> var22 ; 
+return number ; 
+} 

@@ -1,0 +1,8 @@
+static const HWAccel * func1 ( enum AVPixelFormat var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var3 [ var2 ] . var4 ; var2 ++ ) 
+if ( var3 [ var2 ] . var1 == var1 ) 
+return & var3 [ var2 ] ; 
+return var5 ; 
+} 

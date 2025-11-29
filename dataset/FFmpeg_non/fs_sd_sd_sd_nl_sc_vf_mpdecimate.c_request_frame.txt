@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+DecimateContext * var2 = var1 -> var3 -> var4 ; 
+AVFilterLink * var5 = var1 -> var3 -> var6 [ number ] ; 
+int var7 ; 
+do { 
+var7 = func2 ( var5 ) ; 
+} while ( var2 -> var8 > number && var7 >= number ) ; 
+return var7 ; 
+} 

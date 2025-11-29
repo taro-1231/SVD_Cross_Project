@@ -1,0 +1,44 @@
+static int func1 ( OptionsContext * var1 , AVFormatContext * var2 , const char * var3 ) 
+{ 
+int var4 , var5 ; 
+AVFormatContext * var6 = func2 ( ) ; 
+var6 -> var7 |= var8 ; 
+var6 -> var9 = var10 ; 
+var5 = func3 ( & var6 , var3 , var11 , var11 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+for ( var4 = number ; var4 < var6 -> var12 ; var4 ++ ) { 
+AVStream * var13 ; 
+OutputStream * var14 ; 
+AVCodec * var15 ; 
+const char * var16 ; 
+var15 = func4 ( var6 -> var17 [ var4 ] -> var18 -> var19 ) ; 
+if ( ! var15 ) { 
+func5 ( var2 , var20 , str , var6 -> var17 [ var4 ] -> var18 -> var19 ) ; 
+return func6 ( var21 ) ; 
+} 
+if ( var15 -> var22 == var23 ) 
+func7 ( var1 , str , var15 -> var24 ) ; 
+else if ( var15 -> var22 == var25 ) 
+func8 ( var1 , str , var15 -> var24 ) ; 
+var14 = func9 ( var1 , var2 , var15 -> var22 , - number ) ; 
+var13 = var14 -> var13 ; 
+func10 ( var13 -> var15 , var15 ) ; 
+var16 = func11 ( var6 -> var17 [ var4 ] ) ; 
+if ( var16 ) { 
+AVDictionary * var26 = var11 ; 
+func12 ( & var26 , var16 , str , str , number ) ; 
+func13 ( var13 -> var15 , & var26 , var27 ) ; 
+func14 ( & var26 ) ; 
+} 
+if ( var13 -> var18 -> var28 == var23 && ! var14 -> var29 ) 
+func15 ( var13 , var15 ) ; 
+else if ( var13 -> var18 -> var28 == var25 && ! var14 -> var29 ) 
+func16 ( var13 , var13 -> var15 , var15 , var13 -> var18 -> var30 ) ; 
+func17 ( var14 -> var31 , var13 -> var15 ) ; 
+if ( var16 ) 
+func12 ( & var14 -> var32 , var16 , str , str , number ) ; 
+} 
+func18 ( & var6 ) ; 
+return var5 ; 
+} 

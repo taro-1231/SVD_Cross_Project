@@ -1,0 +1,382 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 , PPContext * var3 ) 
+{ 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str REG_a str 
+str REG_a str REG_c str 
+str 
+str 
+str 
+PAVGB ( % % mm7 , % % mm0 ) 
+PAVGB ( % % mm1 , % % mm0 ) 
+PAVGB ( % % mm2 , % % mm0 ) 
+str REG_a str 
+str REG_a str 
+str 
+PAVGB ( % % mm7 , % % mm1 ) 
+PAVGB ( % % mm3 , % % mm1 ) 
+PAVGB ( % % mm4 , % % mm1 ) 
+str 
+str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm7 , % % mm0 ) 
+PAVGB ( % % mm2 , % % mm0 ) 
+PAVGB ( % % mm4 , % % mm0 ) 
+str REG_c str 
+str 
+PAVGB ( % % mm7 , % % mm3 ) 
+PAVGB ( % % mm2 , % % mm3 ) 
+PAVGB ( % % mm5 , % % mm3 ) 
+str 
+str 
+str 
+str 
+str 
+str REG_c str 
+str 
+PAVGB ( % % mm7 , % % mm6 ) 
+PAVGB ( % % mm4 , % % mm6 ) 
+PAVGB ( % % mm5 , % % mm6 ) 
+str REG_c str 
+str 
+PAVGB ( % % mm7 , % % mm2 ) 
+PAVGB ( % % mm5 , % % mm2 ) 
+PAVGB ( % % mm4 , % % mm2 ) 
+str 
+str 
+str 
+str 
+PMINUB ( % % mm2 , % % mm1 , % % mm4 ) 
+str 
+str MANGLE ( b01 ) str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm7 , % % mm3 ) 
+PAVGB ( % % mm7 , % % mm3 ) 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PMINUB ( % % mm5 , % % mm3 , % % mm0 ) 
+str MANGLE ( b01 ) str 
+PAVGB ( % % mm7 , % % mm3 ) 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+PAVGB ( % % mm1 , % % mm0 ) 
+str REG_a str 
+str REG_a str 
+str 
+str 
+str MANGLE ( b80 ) str 
+str REG_a str REG_c str 
+PAVGB ( % % mm3 , % % mm2 ) 
+PAVGB ( % % mm0 , % % mm4 ) 
+PAVGB ( % % mm2 , % % mm4 ) 
+PAVGB ( % % mm0 , % % mm4 ) 
+str REG_a str 
+str 
+PAVGB ( % % mm3 , % % mm2 ) 
+PAVGB ( ( % 0 ) , % % mm1 ) 
+str MANGLE ( b80 ) str 
+PAVGB ( % % mm2 , % % mm3 ) 
+PAVGB ( % % mm1 , % % mm3 ) 
+PAVGB ( % % mm2 , % % mm3 ) 
+PAVGB ( ( % % REGc , % 1 ) , % % mm5 ) 
+str REG_c str 
+str 
+PAVGB ( ( % 0 , % 1 , number ) , % % mm1 ) 
+str MANGLE ( b80 ) str 
+PAVGB ( % % mm5 , % % mm2 ) 
+PAVGB ( % % mm1 , % % mm2 ) 
+PAVGB ( % % mm5 , % % mm2 ) 
+str MANGLE ( b00 ) str 
+str MANGLE ( b00 ) str 
+str 
+str 
+PMAXUB ( % % mm1 , % % mm2 ) 
+PMAXUB ( % % mm5 , % % mm3 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm1 ) 
+str MANGLE ( b00 ) str 
+str 
+PAVGB ( % % mm6 , % % mm2 ) 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( b01 ) str 
+PAVGB ( % % mm7 , % % mm4 ) 
+PAVGB ( % % mm7 , % % mm4 ) 
+str 
+str 
+str MANGLE ( b80 ) str 
+str 
+str 
+str 
+str 
+PMINUB ( % % mm5 , % % mm4 , % % mm3 ) 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+: 
+: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) 
+NAMED_CONSTRAINTS_ADD ( b80 , b00 , b01 ) 
+: str REG_a , str REG_c 
+) ; 
+DECLARE_ALIGNED ( 8 , uint64_t , tmp ) [ number ] ; 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( w05 ) str 
+str 
+str 
+str MANGLE ( w20 ) str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var1 ) 
+: str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) , str ( tmp ) 
+NAMED_CONSTRAINTS_ADD ( w05 , w20 ) 
+: str REG_a 
+) ; 
+const int l1 = var2 ; 
+const int l2 = var2 + l1 ; 
+const int l3 = var2 + l2 ; 
+const int l4 = var2 + l3 ; 
+const int l5 = var2 + l4 ; 
+const int l6 = var2 + l5 ; 
+const int l7 = var2 + l6 ; 
+const int l8 = var2 + l7 ; 
+int x ; 
+var1 += var2 * 3 ; 
+for ( x = 0 ; x < BLOCK_SIZE ; x ++ ) { 
+const int middleEnergy = 5 * ( var1 [ l5 ] - var1 [ l4 ] ) + 2 * ( var1 [ l3 ] - var1 [ l6 ] ) ; 
+if ( FFABS ( middleEnergy ) < 8 * var3 -> QP ) { 
+const int q = ( var1 [ l4 ] - var1 [ l5 ] ) / 2 ; 
+const int leftEnergy = 5 * ( var1 [ l3 ] - var1 [ l2 ] ) + 2 * ( var1 [ l1 ] - var1 [ l4 ] ) ; 
+const int rightEnergy = 5 * ( var1 [ l7 ] - var1 [ l6 ] ) + 2 * ( var1 [ l5 ] - var1 [ l8 ] ) ; 
+int d = FFABS ( middleEnergy ) - FFMIN ( FFABS ( leftEnergy ) , FFABS ( rightEnergy ) ) ; 
+d = FFMAX ( d , 0 ) ; 
+d = ( 5 * d + 32 ) >> 6 ; 
+d *= FFSIGN ( - middleEnergy ) ; 
+if ( q > 0 ) { 
+d = FFMAX ( d , 0 ) ; 
+d = FFMIN ( d , q ) ; 
+} else { 
+d = FFMIN ( d , 0 ) ; 
+d = FFMAX ( d , q ) ; 
+} 
+var1 [ l4 ] -= d ; 
+var1 [ l5 ] += d ; 
+} 
+var1 ++ ; 
+} 
+} 

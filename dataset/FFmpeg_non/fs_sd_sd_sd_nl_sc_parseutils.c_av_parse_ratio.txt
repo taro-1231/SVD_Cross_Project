@@ -1,0 +1,18 @@
+int func1 ( AVRational * var1 , const char * var2 , int var3 , 
+int var4 , void * var5 ) 
+{ 
+char var6 ; 
+int var7 ; 
+if ( sscanf ( var2 , var2 , & var1 -> var9 , & var1 -> var10 , & var6 ) != number ) { 
+double var8 ; 
+var7 = func2 ( & var8 , var2 , var11 , var11 , 
+var11 , var11 , var11 , var11 , 
+var11 , var4 , var5 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+* var1 = func3 ( var8 , var3 ) ; 
+} else { 
+func4 ( & var1 -> var9 , & var1 -> var10 , var1 -> var9 , var1 -> var10 , var3 ) ; 
+} 
+return number ; 
+} 

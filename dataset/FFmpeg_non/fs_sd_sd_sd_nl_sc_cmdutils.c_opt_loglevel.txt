@@ -1,0 +1,13 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const struct { const char * name ; int level ; } log_levels [ ] = { 
+{ str , AV_LOG_QUIET } , 
+{ str , AV_LOG_PANIC } , 
+{ str , AV_LOG_FATAL } , 
+{ str , AV_LOG_ERROR } , 
+{ str , AV_LOG_WARNING } , 
+{ str , AV_LOG_INFO } , 
+{ str , AV_LOG_VERBOSE } , 
+{ str , AV_LOG_DEBUG } , 
+{ str , AV_LOG_TRACE } , 
+} ; 

@@ -1,0 +1,11 @@
+static void func1 ( PullupFrame * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) 
+func2 ( var1 -> var4 [ var2 ] , var1 -> var5 ^ ( var2 & number ) ) ; 
+func2 ( var1 -> var6 [ number ] , number ) ; 
+func2 ( var1 -> var6 [ number ] , number ) ; 
+if ( var1 -> var7 ) 
+func2 ( var1 -> var7 , number ) ; 
+var1 -> var8 -- ; 
+} 

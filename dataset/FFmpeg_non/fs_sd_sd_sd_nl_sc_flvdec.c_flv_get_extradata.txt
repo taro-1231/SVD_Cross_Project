@@ -1,0 +1,7 @@
+static int func1 ( AVFormatContext * var1 , AVStream * var2 , int var3 ) 
+{ 
+func2 ( & var2 -> var4 -> var5 ) ; 
+if ( func3 ( var2 -> var4 , var1 -> var6 , var3 ) < number ) 
+return func4 ( var7 ) ; 
+return number ; 
+} 

@@ -1,0 +1,24 @@
+static void func1 ( AVFormatContext * var1 , AVStream * var2 , AVPacket * var3 ) 
+{ 
+MXFContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+MXFStreamContext * var7 = var2 -> var5 ; 
+int var8 = ( uint64_t ) var7 -> var9 * var4 -> var10 . var11 / 
+( number * var4 -> var10 . var12 ) ; 
+int var13 ; 
+var8 += number + number ; 
+var8 += func2 ( var8 ) ; 
+func3 ( var6 , var3 -> var14 ) ; 
+func4 ( var6 , var3 -> var15 , var3 -> var14 ) ; 
+var13 = var8 - var3 -> var14 - number - number ; 
+if ( var13 > number ) { 
+func4 ( var1 -> var6 , var16 , number ) ; 
+var13 -= number + number ; 
+func3 ( var1 -> var6 , var13 ) ; 
+func5 ( var1 -> var6 , number , var13 ) ; 
+func6 ( ! ( func7 ( var1 -> var6 ) & ( var17 - number ) ) ) ; 
+} else { 
+func8 ( var1 , var18 , str ) ; 
+func5 ( var1 -> var6 , number , var13 ) ; 
+} 
+} 

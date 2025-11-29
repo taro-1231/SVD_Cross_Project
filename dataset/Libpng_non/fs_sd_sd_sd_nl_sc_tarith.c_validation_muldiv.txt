@@ -1,0 +1,96 @@
+int func1 ( int var1 , int var2 , char ** var3 ) 
+{ 
+int var4 = number ; 
+int var5 = number ; 
+int var6 = number ; 
+int var7 = number ; 
+int var8 = number ; 
+int var9 = number ; 
+png_uint_32 var10 ; 
+png_fixed_point var11 ; 
+png_int_32 var12 , var13 ; 
+while ( -- var2 > number ) 
+{ 
+fprintf ( var14 , str , * ++ var3 ) ; 
+return number ; 
+} 
+var10 = var16 ; 
+while ( var10 != number ) ++ var9 , var10 >>= number ; 
+printf ( str , var9 ) ; 
+for ( var13 = number ; var13 < number ; var13 += var9 ) 
+var10 = ( var10 << var9 ) ^ rand ( ) ; 
+var11 = number ; 
+var12 = var13 = number ; 
+do 
+{ 
+png_fixed_point var17 ; 
+long long int var18 , var19 ; 
+unsigned long var20 , var21 ; 
+int var22 ; 
+{ 
+long var23 , var24 ; 
+int var15 = number ; 
+if ( var11 < number ) var23 = - var11 , var15 = number ; else var23 = var11 ; 
+if ( var12 < number ) var24 = - var12 , var15 = ! var15 ; else var24 = var12 ; 
+func2 ( var23 , var24 , & var20 , & var21 ) ; 
+if ( var15 ) 
+{ 
+var21 = ( ( ~ var21 ) + number ) & number ; 
+var20 = ~ var20 ; 
+if ( var21 == number ) ++ var20 ; 
+} 
+} 
+var18 = var11 ; 
+var18 *= var12 ; 
+if ( ( var18 & number ) != var21 || ( ( var18 >> number ) & number ) != var20 ) 
+{ 
+fprintf ( var14 , str , 
+var11 , var12 , var20 , var21 , var18 ) ; 
+++ var7 ; 
+} 
+if ( var13 != number ) 
+{ 
+if ( ( var18 < number ) != ( var13 < number ) ) 
+var18 -= var13 / number ; 
+else 
+var18 += var13 / number ; 
+var18 /= var13 ; 
+var19 = var18 ; 
+var22 = var19 <= var26 && 
+var19 >= - number - ( long long int ) var26 ; 
+if ( ! var22 ) ++ var5 ; 
+} 
+else 
+var22 = number , ++ var5 , var19 = var18 
+if ( var27 ) 
+fprintf ( var14 , str , var11 , var12 , var13 , 
+var18 , var22 ? str : str ) ; 
+++ var4 ; 
+if ( func3 ( & var17 , var11 , var12 , var13 ) != var22 ) 
+{ 
+++ var6 ; 
+if ( var22 ) 
+fprintf ( var14 , str , var11 , 
+var12 , var13 , var18 ) ; 
+else 
+fprintf ( var14 , str , var11 , 
+var12 , var13 , var17 , var18 ) ; 
+} 
+else if ( var22 && var17 != var19 ) 
+{ 
+++ var6 ; 
+fprintf ( var14 , str , var11 , var12 , var13 , var17 , 
+var18 ) ; 
+} 
+else 
+++ var8 ; 
+var11 += var12 ; 
+var12 += var13 ; 
+var13 = var10 ; 
+var10 = ( var10 << var9 ) ^ rand ( ) ; 
+} 
+while ( -- var1 > number ) ; 
+printf ( str 
+str , var4 , var5 , var8 , var6 , var7 ) ; 
+return number ; 
+} 

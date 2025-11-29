@@ -1,0 +1,33 @@
+static int func1 ( AVFormatContext * var1 , int var2 , int var3 , const char * var4 ) 
+{ 
+int var5 ; 
+MOVMuxContext * var6 = var1 -> var7 ; 
+MOVTrack * var8 = & var6 -> var9 [ var2 ] ; 
+AVStream * var10 = var1 -> var11 [ var3 ] ; 
+AVTimecode var12 ; 
+AVPacket var13 = { . stream_index = var2 , . var14 = AV_PKT_FLAG_KEY , . var15 = 4 } ; 
+AVRational var16 = func2 ( var1 , var10 ) ; 
+var5 = func3 ( & var12 , var16 , var4 , var1 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+var8 -> var17 = var6 -> var17 ; 
+var8 -> var18 = func4 ( str , str , str , str ) ; 
+var8 -> var19 = var3 ; 
+var8 -> var20 = var6 -> var9 [ var3 ] . var20 ; 
+if ( var12 . var14 & var21 ) 
+var8 -> var22 |= var23 ; 
+var8 -> var24 = var10 ; 
+var8 -> var25 = func5 ( var26 ) ; 
+if ( ! var8 -> var25 ) 
+return func6 ( var27 ) ; 
+var8 -> var25 -> var28 = var29 ; 
+var8 -> var25 -> var30 = var8 -> var18 ; 
+var8 -> var25 -> var31 = func7 ( var16 ) ; 
+var13 . var32 = func8 ( var13 . var15 ) ; 
+if ( ! var13 . var32 ) 
+return func6 ( var27 ) ; 
+func9 ( var13 . var32 , var12 . var33 ) ; 
+var5 = func10 ( var1 , & var13 ) ; 
+func11 ( var13 . var32 ) ; 
+return var5 ; 
+} 

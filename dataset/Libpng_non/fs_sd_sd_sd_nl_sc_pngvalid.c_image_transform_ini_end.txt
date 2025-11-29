@@ -1,0 +1,6 @@
+func1 ( PNG_CONST image_transform * var1 , 
+transform_display * var2 ) 
+{ 
+UNUSED ( var1 ) 
+UNUSED ( var2 ) 
+} 

@@ -1,0 +1,78 @@
+int func1 ( AVFilterContext * var1 , AVFilterBufferRef * var2 , 
+int var3 ) 
+{ 
+BufferSourceContext * var4 = var1 -> var5 ; 
+AVFrame * var6 = var7 ; 
+AVBufferRef * var8 = var7 ; 
+int var9 = number , var10 , var11 ; 
+if ( ! var2 ) { 
+var4 -> var12 = number ; 
+return number ; 
+} else if ( var4 -> var12 ) 
+return func2 ( var13 ) ; 
+var6 = func3 ( ) ; 
+if ( ! var6 ) 
+return func2 ( var14 ) ; 
+var8 = func4 ( var7 , number , var15 , var2 , 
+( var2 -> var16 & var17 ) ? number : var18 ) ; 
+if ( ! var8 ) { 
+var9 = func2 ( var14 ) ; 
+goto var19 ; 
+} 
+AV_NOWARN_DEPRECATED ( 
+if ( ( var9 = func5 ( var6 , var2 ) ) < number ) 
+goto var19 ; 
+) 
+do { \ 
+AVBufferRef * var23 = func7 ( var8 ) ; \ 
+if ( ! var23 ) { \ 
+var9 = func2 ( var14 ) ; \ 
+goto var19 ; \ 
+} \ 
+var20 = func4 ( var21 , var22 , var24 , \ 
+var23 , ( var2 -> var16 & var17 ) ? number : var18 ) ; \ 
+if ( ! var20 ) { \ 
+func8 ( & var23 ) ; \ 
+func9 ( var6 ) ; \ 
+var9 = func2 ( var14 ) ; \ 
+goto var19 ; \ 
+} \ 
+} while ( number ) 
+if ( var1 -> var25 [ number ] -> var26 == var27 ) { 
+const AVPixFmtDescriptor * var28 = func10 ( var6 -> var29 ) ; 
+var10 = func11 ( var6 -> var29 ) ; 
+if ( ! var28 || var10 <= number ) { 
+var9 = func2 ( var13 ) ; 
+goto var19 ; 
+} 
+for ( var11 = number ; var11 < var10 ; var11 ++ ) { 
+int var30 = ( var11 == number || var11 == number ) ? var28 -> var31 : number ; 
+int var32 = ( var6 -> var33 >> var30 ) * var6 -> var34 [ var11 ] ; 
+func6 ( var6 -> var2 [ var11 ] , var6 -> var21 [ var11 ] , var32 ) ; 
+} 
+} else { 
+int var35 = func12 ( var6 -> var29 ) ; 
+int var36 = func13 ( var6 -> var37 ) ; 
+var10 = var35 ? var36 : number ; 
+if ( var10 > func14 ( var6 -> var2 ) ) { 
+var6 -> var38 = var10 - func14 ( var6 -> var2 ) ; 
+var6 -> var39 = func15 ( sizeof ( * var6 -> var39 ) , 
+var6 -> var38 ) ; 
+if ( ! var6 -> var39 ) { 
+var9 = func2 ( var14 ) ; 
+goto var19 ; 
+} 
+} 
+for ( var11 = number ; var11 < func16 ( var10 , func14 ( var6 -> var2 ) ) ; var11 ++ ) 
+func6 ( var6 -> var2 [ var11 ] , var6 -> var40 [ var11 ] , var6 -> var34 [ number ] ) ; 
+for ( var11 = number ; var11 < var10 - func14 ( var6 -> var2 ) ; var11 ++ ) 
+func6 ( var6 -> var39 [ var11 ] , 
+var6 -> var40 [ var11 + func14 ( var6 -> var2 ) ] , 
+var6 -> var34 [ number ] ) ; 
+} 
+var9 = func17 ( var1 , var6 , var3 ) ; 
+var19 : 
+func8 ( & var8 ) ; 
+func18 ( & var6 ) ; 
+return var9 ; 
+} 

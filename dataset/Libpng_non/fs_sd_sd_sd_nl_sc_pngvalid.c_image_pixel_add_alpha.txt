@@ -1,0 +1,40 @@
+func1 ( image_pixel * var1 , PNG_CONST standard_display * var2 ) 
+{ 
+if ( var1 -> var3 == var4 ) 
+func2 ( var1 ) ; 
+if ( ( var1 -> var3 & var5 ) == number ) 
+{ 
+if ( var1 -> var3 == var6 ) 
+{ 
+if ( var1 -> var7 < number ) 
+var1 -> var7 = number ; 
+if ( var1 -> var8 ) 
+{ 
+var1 -> var8 = number ; 
+if ( var1 -> var9 == var2 -> var10 . var9 ) 
+var1 -> var11 = number ; 
+else 
+var1 -> var11 = number ; 
+} 
+else 
+var1 -> var11 = number ; 
+var1 -> var3 = var12 ; 
+} 
+else if ( var1 -> var3 == var13 ) 
+{ 
+if ( var1 -> var8 ) 
+{ 
+var1 -> var8 = number ; 
+if ( var1 -> var9 == var2 -> var10 . var9 && 
+var1 -> var14 == var2 -> var10 . var14 && 
+var1 -> var15 == var2 -> var10 . var15 ) 
+var1 -> var11 = number ; 
+else 
+var1 -> var11 = number ; 
+var1 -> var3 = var16 ; 
+} 
+} 
+var1 -> var17 = number ; 
+var1 -> var18 = var2 -> var18 ; 
+} 
+} 

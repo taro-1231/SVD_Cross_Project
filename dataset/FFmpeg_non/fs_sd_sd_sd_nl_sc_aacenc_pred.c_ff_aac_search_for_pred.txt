@@ -1,0 +1,77 @@
+void func1 ( AACEncContext * var1 , SingleChannelElement * var2 ) 
+{ 
+int var3 , var4 , var5 = number , var6 = number , var7 = number ; 
+const int var8 = func2 ( var2 -> var9 . var10 , var11 [ var1 -> var12 ] ) ; 
+float * var13 = & var1 -> var14 [ number * number ] , * var15 = & var1 -> var14 [ number * number ] ; 
+float * var16 = & var1 -> var14 [ number * number ] , * var17 = & var1 -> var14 [ number * number ] ; 
+float * var18 = & var1 -> var14 [ number * number ] ; 
+if ( var2 -> var9 . var19 [ number ] == var20 ) { 
+var2 -> var9 . var21 = number ; 
+return ; 
+} 
+if ( ! var2 -> var9 . var22 ) { 
+func3 ( var2 -> var23 ) ; 
+var2 -> var9 . var22 = number ; 
+memcpy ( var2 -> var24 , var2 -> var25 , number * sizeof ( float ) ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var2 -> var9 . var26 [ var4 ] = var4 ; 
+} 
+func4 ( var2 ) ; 
+memcpy ( var2 -> var27 , var2 -> var28 , sizeof ( var2 -> var28 ) ) ; 
+for ( var3 = var29 ; var3 < var8 ; var3 ++ ) { 
+int var30 , var31 , var32 ; 
+float var33 , var34 , var35 = number ; 
+const int var36 = var2 -> var28 [ var3 ] ; 
+const int var37 = var2 -> var9 . var38 [ var3 ] ; 
+const int var39 = var2 -> var9 . var38 [ var3 + number ] - var37 ; 
+const FFPsyBand * var40 = & var1 -> var41 . var42 [ var1 -> var43 ] . var44 [ var3 ] ; 
+if ( var37 + var39 > var45 ) 
+continue ; 
+func5 ( var13 , & var2 -> var25 [ var37 ] , var39 ) ; 
+var33 = func6 ( var1 , var46 , & var2 -> var25 [ var37 ] , var46 , 
+var13 , var39 , var2 -> var47 [ var3 ] , 
+var36 , var1 -> var48 / var40 -> var49 , var50 , & var30 , number ) ; 
+var6 += var30 ; 
+for ( var4 = number ; var4 < var39 ; var4 ++ ) 
+var16 [ var4 ] = var2 -> var25 [ var37 + var4 ] - var2 -> var24 [ var37 + var4 ] ; 
+func5 ( var17 , var16 , var39 ) ; 
+if ( var36 < var51 ) 
+var32 = func7 ( func8 ( number , var39 , var17 ) , var2 -> var47 [ var3 ] ) ; 
+else 
+var32 = var36 ; 
+func6 ( var1 , var46 , var16 , var18 , var17 , var39 , 
+var2 -> var47 [ var3 ] , var32 , var1 -> var48 / var40 -> var49 , var50 , 
+& var31 , number ) ; 
+for ( var4 = number ; var4 < var39 ; var4 ++ ) 
+var2 -> var24 [ var37 + var4 ] += var18 [ var4 ] != number ? ( var2 -> var24 [ var37 + var4 ] - var18 [ var4 ] ) : number ; 
+func5 ( var15 , & var2 -> var24 [ var37 ] , var39 ) ; 
+if ( var36 < var51 ) 
+var32 = func7 ( func8 ( number , var39 , var15 ) , var2 -> var47 [ var3 ] ) ; 
+else 
+var32 = var36 ; 
+var34 = func6 ( var1 , var46 , & var2 -> var24 [ var37 ] , var46 , 
+var15 , var39 , var2 -> var47 [ var3 ] , 
+var32 , var1 -> var48 / var40 -> var49 , var50 , var46 , number ) ; 
+for ( var4 = number ; var4 < var39 ; var4 ++ ) 
+var35 += ( var13 [ var4 ] - var15 [ var4 ] ) * ( var13 [ var4 ] - var15 [ var4 ] ) ; 
+var35 *= var1 -> var48 / var40 -> var49 ; 
+var34 += var35 ; 
+if ( var34 <= var33 && var32 <= var36 ) { 
+var7 += var31 ; 
+var2 -> var9 . var52 [ var3 ] = number ; 
+var2 -> var27 [ var3 ] = var36 ; 
+var2 -> var28 [ var3 ] = var32 ; 
+var5 ++ ; 
+} else { 
+var7 += var30 ; 
+var2 -> var27 [ var3 ] = var32 ; 
+} 
+} 
+if ( var5 && var6 < var7 ) { 
+var5 = number ; 
+for ( var3 = var29 ; var3 < var8 ; var3 ++ ) 
+func9 ( var2 , var3 ) ; 
+memset ( & var2 -> var9 . var52 , number , sizeof ( var2 -> var9 . var52 ) ) ; 
+} 
+var2 -> var9 . var21 = ! ! var5 ; 
+} 

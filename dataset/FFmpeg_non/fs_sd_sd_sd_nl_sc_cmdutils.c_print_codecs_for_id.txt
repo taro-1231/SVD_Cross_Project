@@ -1,0 +1,8 @@
+static void func1 ( enum AVCodecID var1 , int var2 ) 
+{ 
+const AVCodec * var3 = var4 ; 
+printf ( str , var2 ? str : str ) ; 
+while ( ( var3 = func2 ( var1 , var3 , var2 ) ) ) 
+printf ( str , var3 -> var5 ) ; 
+printf ( str ) ; 
+} 

@@ -1,0 +1,5 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+Frei0rContext * var2 = var1 -> var3 ; 
+return func2 ( var1 , var2 -> var4 , var5 ) ; 
+} 

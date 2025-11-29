@@ -1,0 +1,40 @@
+int func1 ( int var1 , char * var2 [ ] ) 
+{ 
+const char * var3 = var4 ; 
+int var5 ; 
+func2 ( var6 ) ; 
+if ( var1 < number ) { 
+func3 ( var2 [ number ] ) ; 
+return number ; 
+} 
+func4 ( ) ; 
+func5 ( ) ; 
+var3 = var2 [ number ] ; 
+if ( strcmp ( var3 , str ) == number ) { 
+if ( var1 < number ) { 
+func6 ( var4 , var7 , str ) ; 
+var5 = func7 ( var8 ) ; 
+} else { 
+var5 = func8 ( var2 [ number ] ) ; 
+} 
+} else if ( strcmp ( var3 , str ) == number ) { 
+if ( var1 < number ) { 
+func6 ( var4 , var7 , str ) ; 
+var5 = func7 ( var8 ) ; 
+} else { 
+var5 = func9 ( var2 [ number ] ) ; 
+} 
+} else if ( strcmp ( var3 , str ) == number ) { 
+if ( var1 < number ) { 
+func6 ( var4 , var7 , str ) ; 
+var5 = func7 ( var8 ) ; 
+} else { 
+var5 = func10 ( var2 [ number ] , var2 [ number ] ) ; 
+} 
+} else { 
+func6 ( var4 , var7 , str , var3 ) ; 
+var5 = func7 ( var8 ) ; 
+} 
+func11 ( ) ; 
+return var5 < number ? number : number ; 
+} 

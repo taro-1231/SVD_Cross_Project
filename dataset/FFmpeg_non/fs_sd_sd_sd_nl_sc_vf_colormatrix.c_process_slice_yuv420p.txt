@@ -1,0 +1,51 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+const ThreadData * var5 = var2 ; 
+const AVFrame * var6 = var5 -> var6 ; 
+AVFrame * var7 = var5 -> var7 ; 
+const int var8 = func2 ( var6 -> var8 , number ) >> number ; 
+const int var9 = var6 -> var9 ; 
+const int var10 = ( ( var8 * var3 ) / var4 ) << number ; 
+const int var11 = ( ( var8 * ( var3 + number ) ) / var4 ) << number ; 
+const int var12 = var6 -> var13 [ number ] ; 
+const int var14 = var6 -> var13 [ number ] ; 
+const int var15 = var7 -> var13 [ number ] ; 
+const int var16 = var7 -> var13 [ number ] ; 
+const unsigned char * var17 = var6 -> var18 [ number ] + var12 * var10 ; 
+const unsigned char * var19 = var6 -> var18 [ number ] + var14 * ( var10 >> number ) ; 
+const unsigned char * var20 = var6 -> var18 [ number ] + var14 * ( var10 >> number ) ; 
+const unsigned char * var21 = var6 -> var18 [ number ] + var12 * ( var10 + number ) ; 
+unsigned char * var22 = var7 -> var18 [ number ] + var16 * ( var10 >> number ) ; 
+unsigned char * var23 = var7 -> var18 [ number ] + var16 * ( var10 >> number ) ; 
+unsigned char * var24 = var7 -> var18 [ number ] + var15 * var10 ; 
+unsigned char * var25 = var7 -> var18 [ number ] + var15 * ( var10 + number ) ; 
+const int var26 = var5 -> var26 ; 
+const int var27 = var5 -> var27 ; 
+const int var28 = var5 -> var28 ; 
+const int var29 = var5 -> var29 ; 
+const int var30 = var5 -> var30 ; 
+const int var31 = var5 -> var31 ; 
+int var32 , var33 ; 
+for ( var33 = var10 ; var33 < var11 ; var33 += number ) { 
+for ( var32 = number ; var32 < var9 ; var32 += number ) { 
+const int var34 = var19 [ var32 >> number ] - number ; 
+const int var35 = var20 [ var32 >> number ] - number ; 
+const int var36 = var26 * var34 + var27 * var35 + number ; 
+var24 [ var32 + number ] = func3 ( ( number * ( var17 [ var32 + number ] - number ) + var36 ) >> number ) ; 
+var24 [ var32 + number ] = func3 ( ( number * ( var17 [ var32 + number ] - number ) + var36 ) >> number ) ; 
+var25 [ var32 + number ] = func3 ( ( number * ( var21 [ var32 + number ] - number ) + var36 ) >> number ) ; 
+var25 [ var32 + number ] = func3 ( ( number * ( var21 [ var32 + number ] - number ) + var36 ) >> number ) ; 
+var22 [ var32 >> number ] = func3 ( ( var28 * var34 + var29 * var35 + number ) >> number ) ; 
+var23 [ var32 >> number ] = func3 ( ( var30 * var34 + var31 * var35 + number ) >> number ) ; 
+} 
+var17 += var12 << number ; 
+var24 += var15 << number ; 
+var21 += var12 << number ; 
+var25 += var15 << number ; 
+var19 += var14 ; 
+var20 += var14 ; 
+var22 += var16 ; 
+var23 += var16 ; 
+} 
+return number ; 
+} 

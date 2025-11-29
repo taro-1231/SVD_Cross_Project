@@ -1,0 +1,4 @@
+static double func1 ( double var1 ) 
+{ 
+return number - number / ( number + var1 * ( number + var1 / number * ( number + var1 / number ) ) ) ; 
+} 

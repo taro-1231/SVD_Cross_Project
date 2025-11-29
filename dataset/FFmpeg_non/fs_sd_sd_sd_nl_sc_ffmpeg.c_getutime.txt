@@ -1,0 +1,12 @@
+static int64_t func1 ( void ) 
+{ 
+struct var1 var1 ; 
+func2 ( var2 , & var1 ) ; 
+return ( var1 . var3 . tv_sec * 1000000LL ) + var1 . var3 . var4 ; 
+HANDLE proc ; 
+FILETIME c , e , k , u ; 
+proc = GetCurrentProcess ( ) ; 
+GetProcessTimes ( proc , & c , & e , & k , & u ) ; 
+return ( ( int64_t ) u . dwHighDateTime << 32 | u . dwLowDateTime ) / 10 ; 
+return av_gettime_relative ( ) ; 
+} 

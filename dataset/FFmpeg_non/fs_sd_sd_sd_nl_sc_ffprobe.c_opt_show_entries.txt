@@ -1,0 +1,43 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const char * var4 = var3 ; 
+int var5 = number ; 
+while ( * var4 ) { 
+AVDictionary * var6 = var7 ; 
+char * var8 = func2 ( & var4 , str ) ; 
+int var9 = number ; 
+if ( ! var8 ) { 
+func3 ( var7 , var10 , 
+str , var2 ) ; 
+return func4 ( var11 ) ; 
+} 
+if ( * var4 == str ) { 
+var4 ++ ; 
+while ( * var4 && * var4 != str ) { 
+char * var12 = func2 ( & var4 , str ) ; 
+if ( ! var12 ) 
+break ; 
+func3 ( var7 , var13 , 
+str , 
+var12 , var8 ) ; 
+func5 ( & var6 , var12 , str , var14 ) ; 
+if ( * var4 == str ) 
+var4 ++ ; 
+} 
+} else { 
+var9 = number ; 
+} 
+var5 = func6 ( var8 , var9 , var6 ) ; 
+if ( var5 == number ) { 
+func3 ( var7 , var10 , str , var8 ) ; 
+var5 = func4 ( var11 ) ; 
+} 
+func7 ( & var6 ) ; 
+func8 ( var8 ) ; 
+if ( var5 <= number ) 
+break ; 
+if ( * var4 ) 
+var4 ++ ; 
+} 
+return var5 ; 
+} 

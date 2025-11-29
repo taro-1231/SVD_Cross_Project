@@ -1,0 +1,4 @@
+static png_uint_32 func1 ( png_uint_32 var1 ) 
+{ 
+return ( png_uint_32 ) floor ( number + exp ( var1 * - var2 ) * number ) ; 
+} 

@@ -1,0 +1,30 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FrameRateContext * var4 = var2 -> var5 ; 
+int var6 , var7 ; 
+func2 ( var2 , str ) ; 
+if ( ! var4 -> var9 [ var4 -> var10 ] && ! var4 -> var8 ) { 
+func2 ( var2 , str ) ; 
+if ( ( var6 = func3 ( var1 -> var3 -> var11 [ number ] ) ) < number ) { 
+func2 ( var2 , str , var6 ) ; 
+return var6 ; 
+} 
+func2 ( var2 , str , var6 ) ; 
+return number ; 
+} 
+func2 ( var2 , str ) ; 
+if ( var4 -> var12 <= number ) { 
+func2 ( var2 , str ) ; 
+return var13 ; 
+} 
+func2 ( var2 , str ) ; 
+for ( var7 = var4 -> var14 ; var7 > var4 -> var10 ; var7 -- ) { 
+if ( ! var4 -> var9 [ var7 - number ] && var4 -> var9 [ var7 ] ) { 
+func2 ( var2 , str , var7 , var7 - number ) ; 
+var4 -> var9 [ var7 - number ] = var4 -> var9 [ var7 ] ; 
+} 
+} 
+func4 ( var2 ) ; 
+return func5 ( var2 , number ) ; 
+} 

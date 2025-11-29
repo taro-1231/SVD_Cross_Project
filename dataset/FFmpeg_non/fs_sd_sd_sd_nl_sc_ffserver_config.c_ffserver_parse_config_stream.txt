@@ -1,0 +1,368 @@
+static int func1 ( FFServerConfig * var1 , const char * var2 , 
+const char ** var3 , 
+FFServerStream ** var4 ) 
+{ 
+char var5 [ number ] , var6 [ number ] ; 
+FFServerStream * var7 ; 
+int var8 ; 
+func2 ( var4 ) ; 
+var7 = * var4 ; 
+if ( ! func3 ( var2 , str ) ) { 
+char * var9 ; 
+FFServerStream * var10 ; 
+var7 = func4 ( sizeof ( FFServerStream ) ) ; 
+if ( ! var7 ) 
+return func5 ( var11 ) ; 
+var1 -> var12 = func6 ( var13 ) ; 
+var1 -> var14 = func6 ( var13 ) ; 
+if ( ! var1 -> var14 || ! var1 -> var12 ) { 
+func7 ( var7 ) ; 
+func8 ( & var1 -> var14 ) ; 
+func8 ( & var1 -> var12 ) ; 
+return func5 ( var11 ) ; 
+} 
+var1 -> var12 -> var15 = var16 ; 
+var1 -> var14 -> var15 = var17 ; 
+func9 ( var7 -> var18 , sizeof ( var7 -> var18 ) , var3 ) ; 
+var9 = strrchr ( var7 -> var18 , str ) ; 
+if ( var9 ) 
+* var9 = str ; 
+for ( var10 = var1 -> var19 ; var10 ; var10 = var10 -> var20 ) { 
+if ( ! strcmp ( var7 -> var18 , var10 -> var18 ) ) 
+func10 ( str , var10 -> var18 ) ; 
+} 
+var7 -> var21 = func11 ( var13 , var7 -> var18 , var13 ) ; 
+if ( var7 -> var21 ) { 
+var1 -> var22 = var7 -> var21 -> var23 ; 
+var1 -> var24 = var7 -> var21 -> var25 ; 
+} else { 
+var1 -> var22 = var26 ; 
+var1 -> var24 = var26 ; 
+} 
+var1 -> var27 = var1 -> var28 ; 
+* var4 = var7 ; 
+return number ; 
+} 
+func2 ( var7 ) ; 
+if ( ! func3 ( var2 , str ) ) { 
+FFServerStream * var29 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var29 = var1 -> var30 ; 
+while ( var29 ) { 
+if ( ! strcmp ( var29 -> var18 , var5 ) ) 
+break ; 
+var29 = var29 -> var31 ; 
+} 
+if ( ! var29 ) 
+func10 ( str , var5 , 
+var7 -> var18 ) ; 
+else 
+var7 -> var33 = var29 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( ! strcmp ( var5 , str ) ) { 
+var7 -> var34 = var35 ; 
+var7 -> var21 = var13 ; 
+} else { 
+var7 -> var34 = var36 ; 
+if ( ! strcmp ( var5 , str ) ) { 
+strcpy ( var5 , str ) ; 
+var7 -> var37 = number ; 
+} 
+var7 -> var21 = func11 ( var5 , var13 , var13 ) ; 
+if ( ! var7 -> var21 ) 
+func10 ( str , var5 ) ; 
+} 
+if ( var7 -> var21 ) { 
+var1 -> var22 = var7 -> var21 -> var23 ; 
+var1 -> var24 = var7 -> var21 -> var25 ; 
+} 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var7 -> var38 = func12 ( var5 ) ; 
+if ( ! var7 -> var38 ) 
+func10 ( str , var5 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( var7 -> var34 == var35 ) 
+func9 ( var7 -> var39 , 
+sizeof ( var7 -> var39 ) , var3 ) ; 
+else 
+func10 ( str ) ; 
+} else if ( ! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) ) { 
+char var40 [ number ] ; 
+int var41 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+for ( var41 = number ; var41 < strlen ( var2 ) ; var41 ++ ) 
+var40 [ var41 ] = func13 ( var2 [ var41 ] ) ; 
+var40 [ var41 ] = number ; 
+func14 ( str 
+str , var2 , var40 ) ; 
+if ( func15 ( & var7 -> var42 , var40 , var5 , number ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func9 ( var6 , sizeof ( var6 ) , var3 ) ; 
+if ( func15 ( & var7 -> var42 , var5 , var6 , number ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var7 -> var44 = atof ( var5 ) * number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var7 -> var45 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func16 ( var1 -> var12 , var5 , var1 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func16 ( var1 -> var14 , var5 , var1 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var7 -> var46 = atof ( var5 ) * number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+float var47 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func17 ( & var47 , var5 , number , - var48 , var48 , var1 , 
+str , var2 , var5 ) ; 
+if ( func18 ( str , ( int64_t ) func19 ( var47 ) , 
+var49 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var49 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var49 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+int var50 , var51 ; 
+char * var52 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var52 = strchr ( var5 , str ) ; 
+if ( var52 ) { 
+* var52 = str ; 
+var52 ++ ; 
+if ( func21 ( & var50 , var5 , number , number , var53 , var1 , str , var2 , var5 ) >= number && 
+func21 ( & var51 , var52 , number , number , var53 , var1 , str , var2 , var5 ) >= number ) { 
+if ( func18 ( str , var50 , var54 , var1 ) < number || 
+func18 ( str , var51 , var54 , var1 ) < number ) 
+goto var43 ; 
+} 
+} else 
+func10 ( str 
+str , var5 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var49 , var1 ) < number || 
+func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var49 , var1 ) < number || 
+func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number * number , number , var53 , var1 , 
+str , var2 , var5 ) ; 
+if ( func18 ( str , var8 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number , var55 , var53 , var1 , 
+str , var2 , var5 ) ; 
+if ( func18 ( str , var8 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number , var55 , var53 , var1 , 
+str , var2 , var5 ) ; 
+if ( func18 ( str , var8 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+int var56 , var57 , var58 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var56 = func22 ( & var57 , & var58 , var5 ) ; 
+if ( var56 < number ) 
+func10 ( str , var5 ) ; 
+else { 
+if ( var57 % number || var58 % number ) 
+func14 ( str ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( & var5 [ number ] , sizeof ( var5 ) - number , var3 ) ; 
+var5 [ number ] = str ; var5 [ number ] = str ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+enum AVPixelFormat var59 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+var59 = func23 ( var5 ) ; 
+if ( var59 == var60 ) 
+func10 ( str , var5 ) ; 
+else if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( func20 ( str , str , var54 , var1 ) < number || 
+func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) ) { 
+int var56 ; 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func9 ( var6 , sizeof ( var6 ) , var3 ) ; 
+if ( ! func3 ( var2 , str ) ) 
+var56 = func20 ( var5 , var6 , var54 , 
+var1 ) ; 
+else 
+var56 = func20 ( var5 , var6 , var49 , 
+var1 ) ; 
+if ( var56 < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( ! func3 ( var2 , str ) ) 
+func24 ( var5 , var54 , var1 ) ; 
+else 
+func24 ( var5 , var49 , var1 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( strlen ( var5 ) == number && 
+func18 ( str , 
+func25 ( var5 [ number ] , var5 [ number ] , var5 [ number ] , var5 [ number ] ) , 
+var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var1 -> var61 = number ; 
+if ( func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( func20 ( str , str , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number , var55 , var53 , var1 , 
+str , var5 ) ; 
+if ( func20 ( str , str , var54 , var1 ) < number || 
+func18 ( str , var62 * var8 , 
+var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func20 ( str , var5 , var54 , var1 ) < number ) 
+goto var43 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var1 -> var63 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var1 -> var64 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func26 ( var7 , var13 , var13 , * var3 , var1 -> var18 , 
+var1 -> var65 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var7 -> var66 , sizeof ( var7 -> var66 ) , var3 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func27 ( & var7 -> var67 ) ; 
+var7 -> var67 = func28 ( var5 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+if ( func29 ( & var7 -> var68 , var5 ) ) 
+func10 ( str , var5 ) ; 
+var7 -> var69 = number ; 
+var7 -> var70 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number , number , number , var1 , 
+str , var5 ) ; 
+var7 -> var71 = var8 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+func9 ( var5 , sizeof ( var5 ) , var3 ) ; 
+func21 ( & var8 , var5 , number , var55 , var53 , var1 , 
+str , var5 ) ; 
+var7 -> var72 = var8 ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var7 -> var70 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+var1 -> var27 &= number ; 
+if ( var7 -> var33 && var7 -> var21 && strcmp ( var7 -> var21 -> var32 , str ) ) { 
+if ( var1 -> var12 -> var73 == var26 ) 
+var1 -> var12 -> var73 = var1 -> var22 ; 
+if ( ! var1 -> var64 && 
+var1 -> var12 -> var73 != var26 ) { 
+AVCodecContext * var74 = func6 ( func30 ( var1 -> var12 -> var73 ) ) ; 
+func31 ( var7 , var74 , var1 ) ; 
+} 
+if ( var1 -> var14 -> var73 == var26 ) 
+var1 -> var14 -> var73 = var1 -> var24 ; 
+if ( ! var1 -> var63 && 
+var1 -> var14 -> var73 != var26 ) { 
+AVCodecContext * var75 = func6 ( func30 ( var1 -> var14 -> var73 ) ) ; 
+func31 ( var7 , var75 , var1 ) ; 
+} 
+} 
+func32 ( & var1 -> var76 ) ; 
+func32 ( & var1 -> var77 ) ; 
+func8 ( & var1 -> var14 ) ; 
+func8 ( & var1 -> var12 ) ; 
+var1 -> var63 = number ; 
+var1 -> var64 = number ; 
+* var4 = var13 ; 
+} else if ( ! func3 ( var2 , str ) || 
+! func3 ( var2 , str ) ) { 
+func9 ( var7 -> var39 , sizeof ( var7 -> var39 ) , 
+var3 ) ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( var1 -> var27 > number ) 
+func14 ( str ) ; 
+var1 -> var27 = number ; 
+} else if ( ! func3 ( var2 , str ) ) { 
+if ( var1 -> var27 > number ) 
+func14 ( str ) ; 
+var1 -> var27 = number ; 
+} else { 
+func10 ( str , var2 ) ; 
+} 
+return number ; 
+var43 : 
+func33 ( var13 , var78 , str ) ; 
+func32 ( & var1 -> var76 ) ; 
+func32 ( & var1 -> var77 ) ; 
+func8 ( & var1 -> var14 ) ; 
+func8 ( & var1 -> var12 ) ; 
+return func5 ( var11 ) ; 
+} 

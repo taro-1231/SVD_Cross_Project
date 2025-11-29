@@ -1,0 +1,30 @@
+static int func1 ( float * var1 , const char * var2 , 
+float var3 , float var4 , float var5 , 
+FFServerConfig * var6 , 
+const char * var7 , ... ) 
+{ 
+double var8 ; 
+char * var9 ; 
+if ( ! var2 || ! var2 [ number ] ) 
+goto var10 ; 
+var11 = number ; 
+var8 = strtod ( var2 , & var9 ) ; 
+if ( var8 < var4 || var8 > var5 ) 
+goto var10 ; 
+if ( var3 ) 
+var8 *= var3 ; 
+if ( var9 [ number ] || var11 ) 
+goto var10 ; 
+if ( var1 ) 
+* var1 = var8 ; 
+return number ; 
+var10 : 
+if ( var6 ) { 
+va_list var12 ; 
+func2 ( var12 , var7 ) ; 
+func3 ( var6 -> var13 , var6 -> var14 , var15 , 
+& var6 -> var16 , var7 , var12 ) ; 
+func4 ( var12 ) ; 
+} 
+return func5 ( var17 ) ; 
+} 

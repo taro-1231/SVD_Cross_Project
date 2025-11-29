@@ -1,0 +1,75 @@
+static int func1 ( const char * var1 , const char * var2 , const char * var3 ) 
+{ 
+AVCodec * var4 = var5 ; 
+AVCodecContext * var6 = var5 , * var7 = var5 ; 
+AVFrame * var8 = var5 ; 
+AVFormatContext * var9 = var5 ; 
+int var10 ; 
+int var11 ; 
+int var12 , var13 ; 
+long int var14 , var15 ; 
+var16 = number ; 
+var17 = number ; 
+var18 = var19 = var5 ; 
+var11 = func2 ( & var9 , var1 , var5 , var5 ) ; 
+if ( var11 < number ) { 
+func3 ( var5 , var20 , str ) ; 
+return var11 ; 
+} 
+var11 = func4 ( var9 , var5 ) ; 
+if ( var11 < number ) { 
+func3 ( var5 , var20 , str ) ; 
+return var11 ; 
+} 
+var14 = func5 ( var2 ) ; 
+var15 = func5 ( var3 ) ; 
+if ( ( var14 < number ) || ( var15 < number ) ) 
+return - number ; 
+var10 = func6 ( var9 , var21 , - number , - number , var5 , number ) ; 
+if ( var10 < number ) { 
+func3 ( var5 , var20 , str ) ; 
+return - number ; 
+} 
+var6 = var9 -> var22 [ var10 ] -> var4 ; 
+var4 = func7 ( var6 -> var23 ) ; 
+if ( ! var4 ) { 
+func3 ( var5 , var20 , str ) ; 
+return - number ; 
+} 
+var7 = func8 ( var4 ) ; 
+if ( ! var7 ) { 
+func3 ( var5 , var20 , str ) ; 
+return func9 ( var24 ) ; 
+} 
+var11 = func10 ( var7 , var6 ) ; 
+if ( var11 ) { 
+func3 ( var5 , var20 , str ) ; 
+return var11 ; 
+} 
+var11 = func11 ( var7 , var4 , var5 ) ; 
+if ( var11 < number ) { 
+func3 ( var7 , var20 , str ) ; 
+return var11 ; 
+} 
+var8 = func12 ( ) ; 
+if ( ! var8 ) { 
+func3 ( var5 , var20 , str ) ; 
+return func9 ( var24 ) ; 
+} 
+var11 = func13 ( var9 , var10 , var7 , var8 , var12 , var13 , number ) ; 
+if ( var11 != number ) 
+return - number ; 
+for ( var12 = var14 ; var12 < var15 ; var12 += number ) { 
+for ( var13 = var12 + number ; var13 < var15 ; var13 += number ) 
+var11 = func13 ( var9 , var10 , var7 , var8 , var12 , var13 , number ) ; 
+if ( var11 != number ) 
+return - number ; 
+} 
+func14 ( & var18 ) ; 
+func14 ( & var19 ) ; 
+func15 ( & var8 ) ; 
+func16 ( var7 ) ; 
+func17 ( & var9 ) ; 
+func18 ( & var7 ) ; 
+return number ; 
+} 

@@ -1,0 +1,86 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AlacEncodeContext * var2 = var1 -> var3 ; 
+int var4 ; 
+uint8_t * var5 ; 
+var1 -> var6 = var2 -> var6 = var7 ; 
+if ( var1 -> var8 == var9 ) { 
+if ( var1 -> var10 != number ) 
+func2 ( var1 , var11 , str ) ; 
+var1 -> var10 = number ; 
+} else { 
+var1 -> var10 = number ; 
+var2 -> var12 = number ; 
+} 
+if ( var1 -> var13 == var14 ) 
+var2 -> var13 = number ; 
+else 
+var2 -> var13 = func3 ( var1 -> var13 , number , number ) ; 
+var2 -> var15 . var16 = number ; 
+var2 -> var15 . var17 = number ; 
+var2 -> var15 . var18 = number ; 
+var2 -> var15 . var19 = number ; 
+var2 -> var20 = func4 ( var1 -> var6 , 
+var1 -> var21 , 
+var1 -> var10 ) ; 
+var1 -> var22 = func5 ( var23 + var24 ) ; 
+if ( ! var1 -> var22 ) { 
+var4 = func6 ( var25 ) ; 
+goto var26 ; 
+} 
+var1 -> var27 = var23 ; 
+var5 = var1 -> var22 ; 
+func7 ( var5 , var23 ) ; 
+func7 ( var5 + number , func8 ( str , str , str , str ) ) ; 
+func7 ( var5 + number , var1 -> var6 ) ; 
+func9 ( var5 + number , var1 -> var10 ) ; 
+func9 ( var5 + number , var1 -> var21 ) ; 
+func7 ( var5 + number , var2 -> var20 ) ; 
+func7 ( var5 + number , 
+var1 -> var28 * var1 -> var21 * var1 -> var10 ) ; 
+func7 ( var5 + number , var1 -> var28 ) ; 
+if ( var2 -> var13 > number ) { 
+func9 ( var5 + number , var2 -> var15 . var16 ) ; 
+func9 ( var5 + number , var2 -> var15 . var17 ) ; 
+func9 ( var5 + number , var2 -> var15 . var18 ) ; 
+} 
+var2 -> var29 = var30 ; 
+if ( var1 -> var29 >= number ) { 
+if ( var1 -> var29 < var31 || 
+var1 -> var29 > var32 ) { 
+func2 ( var1 , var33 , str , 
+var1 -> var29 ) ; 
+var4 = func6 ( var34 ) ; 
+goto var26 ; 
+} 
+var2 -> var29 = var1 -> var29 ; 
+} 
+var2 -> var35 = var36 ; 
+if ( var1 -> var35 >= number ) { 
+if ( var1 -> var35 < var31 || 
+var1 -> var35 > var32 ) { 
+func2 ( var1 , var33 , str , 
+var1 -> var35 ) ; 
+var4 = func6 ( var34 ) ; 
+goto var26 ; 
+} 
+var2 -> var35 = var1 -> var35 ; 
+} 
+if ( var2 -> var35 < var2 -> var29 ) { 
+func2 ( var1 , var33 , 
+str , 
+var2 -> var29 , var2 -> var35 ) ; 
+var4 = func6 ( var34 ) ; 
+goto var26 ; 
+} 
+var2 -> var1 = var1 ; 
+if ( ( var4 = func10 ( & var2 -> var37 , var1 -> var6 , 
+var2 -> var35 , 
+var38 ) ) < number ) { 
+goto var26 ; 
+} 
+return number ; 
+var26 : 
+func11 ( var1 ) ; 
+return var4 ; 
+} 

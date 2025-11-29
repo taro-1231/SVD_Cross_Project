@@ -1,0 +1,66 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 = number ; 
+FILE * var4 = tmpfile ( ) ; 
+if ( var4 != var5 ) 
+{ 
+int var6 = number ; 
+int var7 = number ; 
+if ( var1 > number ) 
+{ 
+int var8 ; 
+for ( var8 = number ; var8 < var1 ; ++ var8 ) 
+{ 
+if ( func2 ( var4 , var2 [ var8 ] ) ) 
+++ var7 ; 
+else 
+{ 
+var6 = number ; 
+break ; 
+} 
+} 
+} 
+else 
+{ 
+char var9 [ var10 + number ] ; 
+while ( fgets ( var9 , var10 + number , var11 ) ) 
+{ 
+size_t var12 = strlen ( var9 ) ; 
+if ( var9 [ var12 - number ] == str ) 
+{ 
+var9 [ var12 - number ] = number ; 
+if ( func2 ( var4 , var9 ) ) 
+++ var7 ; 
+else 
+{ 
+var6 = number ; 
+break ; 
+} 
+} 
+else 
+{ 
+fprintf ( var13 , str , 
+var9 + var12 - number ) ; 
+var6 = number ; 
+break ; 
+} 
+} 
+if ( ferror ( var11 ) ) 
+{ 
+fprintf ( var13 , str ) ; 
+var6 = number ; 
+} 
+} 
+if ( ! var6 ) 
+{ 
+if ( var7 > number ) 
+var3 = func3 ( var4 , var7 ) ; 
+else 
+fprintf ( var13 , str ) ; 
+} 
+( void ) fclose ( var4 ) ; 
+} 
+else 
+fprintf ( var13 , str ) ; 
+return var3 == number ; 
+} 

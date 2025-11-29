@@ -1,0 +1,50 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+CoverContext * var5 = var3 -> var6 ; 
+AVDictionaryEntry * var7 , * var8 , * var9 , * var10 ; 
+int var11 = - number , var12 = - number , var13 = - number , var14 = - number ; 
+char * var15 = var16 , * var17 = var16 , * var18 = var16 , * var19 = var16 ; 
+var7 = func2 ( var2 -> var20 , str , var16 , var21 ) ; 
+var8 = func2 ( var2 -> var20 , str , var16 , var21 ) ; 
+var9 = func2 ( var2 -> var20 , str , var16 , var21 ) ; 
+var10 = func2 ( var2 -> var20 , str , var16 , var21 ) ; 
+if ( var7 && var8 && var9 && var10 ) { 
+var11 = func3 ( var7 -> var22 , & var15 , number ) ; 
+var12 = func3 ( var8 -> var22 , & var17 , number ) ; 
+var13 = func3 ( var9 -> var22 , & var18 , number ) ; 
+var14 = func3 ( var10 -> var22 , & var19 , number ) ; 
+} 
+if ( ! var15 || * var15 || ! var17 || * var17 || 
+! var18 || * var18 || ! var19 || ! var19 
+) { 
+return func4 ( var3 -> var23 [ number ] , var2 ) ; 
+} 
+if ( var11 < number ) { 
+var13 += var11 ; 
+var11 = number ; 
+} 
+if ( var12 < number ) { 
+var14 += var12 ; 
+var12 = number ; 
+} 
+var13 = func5 ( var13 , var2 -> var24 - var11 ) ; 
+var14 = func5 ( var14 , var2 -> var25 - var12 ) ; 
+if ( var13 > var2 -> var24 || var14 > var2 -> var25 || var13 <= number || var14 <= number ) 
+return func6 ( var26 ) ; 
+if ( var5 -> var27 ) { 
+if ( var13 != var5 -> var27 -> var24 || var14 != var5 -> var27 -> var25 ) 
+return func6 ( var26 ) ; 
+} 
+var5 -> var24 = var13 ; 
+var5 -> var25 = var14 ; 
+var11 = func7 ( var11 , number , var2 -> var24 - var13 ) ; 
+var12 = func7 ( var12 , number , var2 -> var25 - var14 ) ; 
+func8 ( var2 ) ; 
+if ( var5 -> var28 == var29 ) { 
+func9 ( var5 , var2 , var11 , var12 ) ; 
+} else { 
+func10 ( var5 , var2 , var11 , var12 ) ; 
+} 
+return func4 ( var3 -> var23 [ number ] , var2 ) ; 
+} 

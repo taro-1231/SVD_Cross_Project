@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+SeparateFieldsContext * var4 = var2 -> var5 ; 
+int var6 ; 
+var6 = func2 ( var2 -> var7 [ number ] ) ; 
+if ( var6 == var8 && var4 -> var9 ) { 
+var4 -> var9 -> var10 *= number ; 
+func3 ( var4 -> var9 , var4 -> var11 , var4 -> var9 -> var12 ) ; 
+var6 = func4 ( var1 , var4 -> var9 ) ; 
+var4 -> var9 = number ; 
+} 
+return var6 ; 
+} 

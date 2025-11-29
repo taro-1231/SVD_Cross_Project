@@ -1,0 +1,64 @@
+static void func1 ( int32_t * var1 , const float * var2 , unsigned int var3 ) 
+{ 
+const float var4 = number << number ; 
+float var5 , var6 , var7 , var8 , var9 , var10 , var11 , var12 ; 
+int var13 , var14 , var15 , var16 , var17 , var18 , var19 , var20 ; 
+do { 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: [ var1 ] str ( var1 ) , [ var2 ] str ( var2 ) , 
+[ var5 ] str ( var5 ) , [ var6 ] str ( var6 ) , 
+[ var7 ] str ( var7 ) , [ var8 ] str ( var8 ) , 
+[ var9 ] str ( var9 ) , [ var10 ] str ( var10 ) , 
+[ var11 ] str ( var11 ) , [ var12 ] str ( var12 ) , 
+[ var13 ] str ( var13 ) , [ var14 ] str ( var14 ) , 
+[ var15 ] str ( var15 ) , [ var16 ] str ( var16 ) , 
+[ var17 ] str ( var17 ) , [ var18 ] str ( var18 ) , 
+[ var19 ] str ( var19 ) , [ var20 ] str ( var20 ) 
+: [ var4 ] str ( var4 ) 
+: str 
+) ; 
+var2 = var2 + number ; 
+var1 = var1 + number ; 
+var3 -= number ; 
+} while ( var3 > number ) ; 
+} 

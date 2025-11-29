@@ -1,0 +1,22 @@
+int func1 ( void ) 
+{ 
+AVXTEA var1 ; 
+uint8_t var2 [ number ] , var3 [ number ] ; 
+int var4 ; 
+static const uint8_t var5 [ number ] = str ; 
+uint8_t var6 [ number ] ; 
+uint8_t var7 [ number ] ; 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+func2 ( & var1 , var9 [ var4 ] ) ; 
+func3 ( & var1 , var2 , var10 [ var4 ] , var11 [ var4 ] , number , var12 , number , str ) ; 
+func3 ( & var1 , var2 , var11 [ var4 ] , var10 [ var4 ] , number , var12 , number , str ) ; 
+memcpy ( var3 , str , number ) ; 
+func4 ( & var1 , var6 , var5 , number , var3 , number ) ; 
+memcpy ( var3 , str , number ) ; 
+func3 ( & var1 , var7 , var6 , var5 , number , var3 , number , str ) ; 
+memcpy ( var3 , str , number ) ; 
+func3 ( & var1 , var6 , var6 , var5 , number , var3 , number , str ) ; 
+} 
+printf ( str ) ; 
+return number ; 
+} 

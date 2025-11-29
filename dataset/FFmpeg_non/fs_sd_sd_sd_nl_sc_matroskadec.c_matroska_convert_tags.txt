@@ -1,0 +1,32 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaDemuxContext * var2 = var1 -> var3 ; 
+MatroskaTags * var4 = var2 -> var4 . var5 ; 
+int var6 , var7 ; 
+for ( var6 = number ; var6 < var2 -> var4 . var8 ; var6 ++ ) { 
+if ( var4 [ var6 ] . var9 . var10 ) { 
+MatroskaAttachment * var11 = var2 -> var12 . var5 ; 
+for ( var7 = number ; var7 < var2 -> var12 . var8 ; var7 ++ ) 
+if ( var11 [ var7 ] . var13 == var4 [ var6 ] . var9 . var10 && 
+var11 [ var7 ] . var14 ) 
+func2 ( var1 , & var4 [ var6 ] . var15 , 
+& var11 [ var7 ] . var14 -> var16 , var17 ) ; 
+} else if ( var4 [ var6 ] . var9 . var18 ) { 
+MatroskaChapter * var19 = var2 -> var20 . var5 ; 
+for ( var7 = number ; var7 < var2 -> var20 . var8 ; var7 ++ ) 
+if ( var19 [ var7 ] . var13 == var4 [ var6 ] . var9 . var18 && 
+var19 [ var7 ] . var19 ) 
+func2 ( var1 , & var4 [ var6 ] . var15 , 
+& var19 [ var7 ] . var19 -> var16 , var17 ) ; 
+} else if ( var4 [ var6 ] . var9 . var21 ) { 
+MatroskaTrack * var22 = var2 -> var23 . var5 ; 
+for ( var7 = number ; var7 < var2 -> var23 . var8 ; var7 ++ ) 
+if ( var22 [ var7 ] . var13 == var4 [ var6 ] . var9 . var21 && var22 [ var7 ] . var14 ) 
+func2 ( var1 , & var4 [ var6 ] . var15 , 
+& var22 [ var7 ] . var14 -> var16 , var17 ) ; 
+} else { 
+func2 ( var1 , & var4 [ var6 ] . var15 , & var1 -> var16 , 
+var4 [ var6 ] . var9 . var24 ) ; 
+} 
+} 
+} 

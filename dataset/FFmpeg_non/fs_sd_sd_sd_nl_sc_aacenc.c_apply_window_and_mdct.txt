@@ -1,0 +1,14 @@
+static void func1 ( AACEncContext * var1 , SingleChannelElement * func2 , 
+float * var2 ) 
+{ 
+int var3 ; 
+float * var4 = func2 -> var5 ; 
+func3 [ func2 -> func4 . func5 [ number ] ] ( var1 -> var6 , func2 , var2 ) ; 
+if ( func2 -> func4 . func5 [ number ] != var7 ) 
+var1 -> var8 . func6 ( & var1 -> var8 , func2 -> var9 , var4 ) ; 
+else 
+for ( var3 = number ; var3 < number ; var3 += number ) 
+var1 -> var10 . func6 ( & var1 -> var10 , & func2 -> var9 [ var3 ] , var4 + var3 * number ) ; 
+memcpy ( var2 , var2 + number , sizeof ( var2 [ number ] ) * number ) ; 
+memcpy ( func2 -> var11 , func2 -> var9 , sizeof ( func2 -> var11 ) ) ; 
+} 

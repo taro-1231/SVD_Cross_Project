@@ -1,0 +1,105 @@
+static int func1 ( struct Tracks * var1 , const char * var2 , int var3 , 
+int var4 , const char * var5 , 
+const char * var6 ) 
+{ 
+AVFormatContext * var7 = var8 ; 
+int var9 = number , var10 , var11 = var1 -> var12 ; 
+char var13 [ number ] , * var14 ; 
+struct Track * var15 ; 
+var9 = func2 ( & var7 , var2 , var8 , var8 ) ; 
+if ( var9 < number ) { 
+func3 ( var9 , var13 , sizeof ( var13 ) ) ; 
+fprintf ( var16 , str , var2 , var13 ) ; 
+return number ; 
+} 
+var9 = func4 ( var7 , var8 ) ; 
+if ( var9 < number ) { 
+func3 ( var9 , var13 , sizeof ( var13 ) ) ; 
+fprintf ( var16 , str , var2 , var13 ) ; 
+goto var17 ; 
+} 
+if ( var7 -> var18 < number ) { 
+fprintf ( var16 , str , var2 ) ; 
+goto var17 ; 
+} 
+for ( var10 = number ; var10 < var7 -> var18 ; var10 ++ ) { 
+struct Track ** var20 ; 
+AVStream * var21 = var7 -> var19 [ var10 ] ; 
+if ( var21 -> var22 -> var23 == number ) { 
+fprintf ( var16 , str , 
+var21 -> var25 , var2 ) ; 
+continue ; 
+} 
+var15 = func5 ( sizeof ( * var15 ) ) ; 
+if ( ! var15 ) { 
+var9 = func6 ( var26 ) ; 
+goto var17 ; 
+} 
+var20 = func7 ( var1 -> var1 , 
+var1 -> var12 + number , 
+sizeof ( * var1 -> var1 ) ) ; 
+if ( ! var20 ) { 
+func8 ( var15 ) ; 
+var9 = func6 ( var26 ) ; 
+goto var17 ; 
+} 
+var1 -> var1 = var20 ; 
+var1 -> var1 [ var1 -> var12 ] = var15 ; 
+var15 -> var27 = var2 ; 
+if ( ( var14 = strrchr ( var2 , str ) ) ) 
+var15 -> var27 = var14 + number ; 
+var15 -> var24 = var21 -> var22 -> var23 ; 
+var15 -> var28 = var21 -> var25 ; 
+var15 -> var29 = var21 -> var30 . var31 ; 
+var15 -> var32 = var21 -> var32 ; 
+var15 -> var33 = var21 -> var22 -> var34 == var35 ; 
+var15 -> var36 = var21 -> var22 -> var34 == var37 ; 
+if ( ! var15 -> var33 && ! var15 -> var36 ) { 
+fprintf ( var16 , 
+str , 
+var15 -> var28 , var2 ) ; 
+func9 ( & var1 -> var1 [ var1 -> var12 ] ) ; 
+continue ; 
+} 
+var1 -> var32 = func10 ( var1 -> var32 , 
+func11 ( var15 -> var32 , var38 , 
+var15 -> var29 , var39 ) ) ; 
+if ( var15 -> var33 ) { 
+if ( var1 -> var40 < number ) 
+var1 -> var40 = var1 -> var12 ; 
+var1 -> var41 ++ ; 
+var15 -> var42 = var21 -> var22 -> var42 ; 
+var15 -> var43 = var21 -> var22 -> var43 ; 
+if ( var21 -> var22 -> var44 == var45 ) { 
+var15 -> var46 = str ; 
+var15 -> var47 = number ; 
+var15 -> var48 = number ; 
+} else if ( var21 -> var22 -> var44 == var49 ) { 
+var15 -> var46 = str ; 
+var15 -> var47 = var21 -> var22 -> var50 ; 
+var15 -> var48 = var21 -> var22 -> var51 ; 
+} 
+func12 ( var15 , var21 -> var22 ) ; 
+} 
+if ( var15 -> var36 ) { 
+if ( var1 -> var52 < number ) 
+var1 -> var52 = var1 -> var12 ; 
+var1 -> var53 ++ ; 
+var15 -> var54 = var21 -> var22 -> var54 ; 
+var15 -> var55 = var21 -> var22 -> var55 ; 
+if ( var21 -> var22 -> var44 == var56 ) 
+var15 -> var46 = str ; 
+else if ( var21 -> var22 -> var44 == var57 ) 
+var15 -> var46 = str ; 
+func13 ( var15 , var21 -> var22 ) ; 
+} 
+var1 -> var12 ++ ; 
+} 
+func14 ( & var7 ) ; 
+var9 = func15 ( var1 , var11 , var2 , var3 , var4 , var5 , 
+var6 ) ; 
+var17 : 
+if ( var7 ) 
+func14 ( & var7 ) ; 
+return var9 ; 
+} 

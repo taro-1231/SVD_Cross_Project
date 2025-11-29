@@ -1,0 +1,62 @@
+AVFilterContext * func1 ( const AVFilter * var1 , const char * var2 ) 
+{ 
+AVFilterContext * var3 ; 
+if ( ! var1 ) 
+return var4 ; 
+var3 = func2 ( sizeof ( AVFilterContext ) ) ; 
+if ( ! var3 ) 
+return var4 ; 
+var3 -> var5 = & var6 ; 
+var3 -> var1 = var1 ; 
+var3 -> var7 = var2 ? func3 ( var2 ) : var4 ; 
+if ( var1 -> var8 ) { 
+var3 -> var9 = func2 ( var1 -> var8 ) ; 
+if ( ! var3 -> var9 ) 
+goto var10 ; 
+} 
+func4 ( var3 ) ; 
+if ( var1 -> var11 ) { 
+* ( const AVClass ** ) var3 -> var9 = var1 -> var11 ; 
+func4 ( var3 -> var9 ) ; 
+} 
+var3 -> var12 = func2 ( sizeof ( * var3 -> var12 ) ) ; 
+if ( ! var3 -> var12 ) 
+goto var10 ; 
+var3 -> var12 -> var13 = var14 ; 
+var3 -> var15 = func5 ( var1 -> var16 ) ; 
+if ( var3 -> var15 ) { 
+var3 -> var17 = func6 ( var3 -> var15 , sizeof ( AVFilterPad ) ) ; 
+if ( ! var3 -> var17 ) 
+goto var10 ; 
+memcpy ( var3 -> var17 , var1 -> var16 , sizeof ( AVFilterPad ) * var3 -> var15 ) ; 
+var3 -> var16 = func7 ( var3 -> var15 , sizeof ( AVFilterLink * ) ) ; 
+if ( ! var3 -> var16 ) 
+goto var10 ; 
+} 
+var3 -> var18 = func5 ( var1 -> var19 ) ; 
+if ( var3 -> var18 ) { 
+var3 -> var20 = func6 ( var3 -> var18 , sizeof ( AVFilterPad ) ) ; 
+if ( ! var3 -> var20 ) 
+goto var10 ; 
+memcpy ( var3 -> var20 , var1 -> var19 , sizeof ( AVFilterPad ) * var3 -> var18 ) ; 
+var3 -> var19 = func7 ( var3 -> var18 , sizeof ( AVFilterLink * ) ) ; 
+if ( ! var3 -> var19 ) 
+goto var10 ; 
+} 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var3 -> var21 = var3 -> var18 ; 
+var3 -> var22 = var3 -> var15 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+return var3 ; 
+var10 : 
+func8 ( & var3 -> var16 ) ; 
+func8 ( & var3 -> var17 ) ; 
+var3 -> var15 = number ; 
+func8 ( & var3 -> var19 ) ; 
+func8 ( & var3 -> var20 ) ; 
+var3 -> var18 = number ; 
+func8 ( & var3 -> var9 ) ; 
+func8 ( & var3 -> var12 ) ; 
+func9 ( var3 ) ; 
+return var4 ; 
+} 

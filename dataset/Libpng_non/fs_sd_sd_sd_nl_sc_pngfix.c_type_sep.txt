@@ -1,0 +1,5 @@
+func1 ( FILE * var1 ) 
+{ 
+putc ( str , var1 ) ; 
+putc ( str , var1 ) ; 
+} 

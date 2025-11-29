@@ -1,0 +1,8 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+FormatContext * var2 = var1 -> var3 ; 
+AVFilterFormats * var4 = func2 ( var2 -> var4 ) ; 
+if ( ! var4 ) 
+return func3 ( var5 ) ; 
+return func4 ( var1 , var4 ) ; 
+} 

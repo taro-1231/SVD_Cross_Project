@@ -1,0 +1,77 @@
+static void func1 ( FSPPContext * var1 , uint8_t * var2 , uint8_t * var3 , 
+int var4 , int var5 , 
+int var6 , int var7 , 
+uint8_t * var8 , int var9 , int var10 ) 
+{ 
+int var11 , var12 , var13 , var14 , var15 , var16 ; 
+const int var17 = var10 ? var1 -> var18 : ( var6 + number ) ; 
+const int var19 = number - var1 -> var20 ; 
+const int var21 = number - var1 -> var22 * ! var10 ; 
+const int var23 = number - var1 -> var24 * ! var10 ; 
+func2 ( number , var25 , var26 ) [ number * number * var27 + number * number * var27 ] ; 
+int16_t * var28 = ( int16_t * ) var26 ; 
+int16_t * var29 = ( int16_t * ) ( var26 + number * number * var27 ) ; 
+memset ( var29 , number , number * number * var27 ) ; 
+if ( ! var3 || ! var2 ) return ; 
+for ( var13 = number ; var13 < var7 ; var13 ++ ) { 
+int var30 = number + number * var17 + var13 * var17 ; 
+memcpy ( var1 -> var3 + var30 , var3 + var13 * var5 , var6 ) ; 
+for ( var11 = number ; var11 < number ; var11 ++ ) { 
+var1 -> var3 [ var30 - var11 - number ] = var1 -> var3 [ var30 + var11 ] ; 
+var1 -> var3 [ var30 + var6 + var11 ] = var1 -> var3 [ var30 + var6 - var11 - number ] ; 
+} 
+} 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+memcpy ( var1 -> var3 + ( number - var13 ) * var17 , var1 -> var3 + ( var13 + number ) * var17 , var17 ) ; 
+memcpy ( var1 -> var3 + ( var7 + number + var13 ) * var17 , var1 -> var3 + ( var7 - var13 + number ) * var17 , var17 ) ; 
+} 
+for ( var13 = number ; var13 < number ; var13 ++ ) 
+memset ( var1 -> var31 + number + var13 * var17 , number , var6 * sizeof ( int16_t ) ) ; 
+for ( var13 = var19 ; var13 < var7 + number ; var13 += var19 ) { 
+const int var32 = var13 - number + var19 ; 
+var15 = var13 - number ; 
+if ( var15 > var7 - number ) var15 = var7 - number ; 
+if ( var15 < number ) var15 = number ; 
+var15 = ( var15 >> var23 ) * var9 ; 
+var1 -> func3 ( var28 , var1 -> var3 + var13 * var17 + number - ( var13 & number ) , var17 , number ) ; 
+for ( var12 = number ; var12 < var6 + number - number * ( var27 - number ) ; var12 += number * ( var27 - number ) ) { 
+var1 -> func3 ( var28 + number * number , var1 -> var3 + var13 * var17 + number + var12 + number - ( var13 & number ) , var17 , number * ( var27 - number ) ) ; 
+if ( var1 -> var33 ) 
+var1 -> func4 ( ( int16_t * ) ( & var1 -> var34 [ number ] ) , var28 + number * number , var29 + number * number , number * ( var27 - number ) ) ; 
+else 
+for ( var11 = number ; var11 < number * ( var27 - number ) ; var11 += number ) { 
+var16 = var11 + var12 - number ; 
+if ( var16 < number ) var16 = number ; 
+var16 = var8 [ var15 + ( var16 >> var21 ) ] ; 
+var16 = func5 ( var16 , var1 -> var35 ) ; 
+if ( var16 != var1 -> var36 ) var1 -> var36 = var16 , var1 -> func6 ( ( int16_t * ) ( & var1 -> var37 [ number ] ) , ( int16_t * ) ( & var1 -> var34 [ number ] ) , var16 ) ; 
+var1 -> func4 ( ( int16_t * ) ( & var1 -> var34 [ number ] ) , var28 + var11 * number , var29 + var11 * number , number ) ; 
+} 
+var1 -> func7 ( var29 + number * number , var1 -> var31 + ( var13 & number ) * var17 + var12 + number - ( var13 & number ) , var17 , number * ( var27 - number ) ) ; 
+memmove ( var28 , var28 + ( var27 - number ) * number , number * number * sizeof ( int16_t ) ) ; 
+memmove ( var29 , var29 + ( var27 - number ) * number , number * number * sizeof ( int16_t ) ) ; 
+} 
+var14 = var6 + number - var12 ; 
+if ( var14 > number ) 
+var1 -> func3 ( var28 + number * number , var1 -> var3 + var13 * var17 + number + var12 + number - ( var13 & number ) , var17 , ( var14 - number ) >> number ) ; 
+var1 -> func4 ( ( int16_t * ) ( & var1 -> var34 [ number ] ) , var28 , var29 , var14 & ( ~ number ) ) ; 
+if ( var14 > number ) 
+var1 -> func7 ( var29 + number * number , var1 -> var31 + ( var13 & number ) * var17 + var12 + number - ( var13 & number ) , var17 , var14 >> number ) ; 
+if ( ! ( var32 & number ) && var32 ) { 
+if ( var32 & number ) 
+var1 -> func8 ( var2 + ( var32 - number ) * var4 , var1 -> var31 + number + number * var17 , 
+var4 , var17 , var6 , number , number - var1 -> var20 ) ; 
+else 
+var1 -> func9 ( var2 + ( var32 - number ) * var4 , var1 -> var31 + number + number * var17 , 
+var4 , var17 , var6 , number , number - var1 -> var20 ) ; 
+} 
+} 
+if ( var13 & number ) { 
+if ( var13 & number ) 
+var1 -> func8 ( var2 + ( ( var13 - number ) & ~ number ) * var4 , var1 -> var31 + number + number * var17 , 
+var4 , var17 , var6 , var13 & number , number - var1 -> var20 ) ; 
+else 
+var1 -> func9 ( var2 + ( ( var13 - number ) & ~ number ) * var4 , var1 -> var31 + number + number * var17 , 
+var4 , var17 , var6 , var13 & number , number - var1 -> var20 ) ; 
+} 
+} 

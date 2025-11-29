@@ -1,0 +1,6 @@
+static int func1 ( char var1 ) { 
+if ( var1 >= str && var1 <= str ) return var1 - str ; 
+if ( var1 >= str && var1 <= str ) return var1 - str + number ; 
+if ( var1 >= str && var1 <= str ) return var1 - str + number ; 
+return - number ; 
+} 

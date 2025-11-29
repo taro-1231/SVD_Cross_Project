@@ -1,0 +1,8 @@
+static inline void func1 ( AVFrame * var1 , int var2 , int var3 , uint8_t var4 [ number ] ) 
+{ 
+uint32_t var5 = func2 ( var1 -> var6 [ number ] + var3 * var1 -> var7 [ number ] + var2 * number ) ; 
+if ( ( var5 & number ) != number ) 
+func3 ( var1 -> var6 [ number ] + var3 * var1 -> var7 [ number ] + var2 * number , func2 ( var4 ) | var5 ) ; 
+else 
+func3 ( var1 -> var6 [ number ] + var3 * var1 -> var7 [ number ] + var2 * number , func2 ( var4 ) ) ; 
+} 

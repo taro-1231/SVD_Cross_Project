@@ -1,0 +1,29 @@
+static void func1 ( AACContext * var1 , SingleChannelElement * var2 ) 
+{ 
+IndividualChannelStream * var3 = & var2 -> var3 ; 
+INTFLOAT * var4 = var2 -> var4 ; 
+INTFLOAT * var5 = var2 -> var6 ; 
+const INTFLOAT * var7 = var3 -> var8 [ number ] ? func2 ( var9 ) : func2 ( var10 ) ; 
+const INTFLOAT * var11 = var3 -> var8 [ number ] ? func2 ( var12 ) : func2 ( var13 ) ; 
+int var14 ; 
+if ( var3 -> var15 [ number ] == var16 ) { 
+memcpy ( var5 , var4 , number * sizeof ( * var5 ) ) ; 
+memset ( var5 + number , number , number * sizeof ( * var5 ) ) ; 
+var1 -> var17 -> func3 ( var5 + number , var1 -> var18 + number , & var11 [ number ] , number ) ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) 
+var5 [ var14 + number ] = func4 ( var1 -> var18 [ number - var14 ] , var11 [ number - var14 ] ) ; 
+} else if ( var3 -> var15 [ number ] == var19 ) { 
+memcpy ( var5 , var1 -> var18 + number , number * sizeof ( * var5 ) ) ; 
+memset ( var5 + number , number , number * sizeof ( * var5 ) ) ; 
+var1 -> var17 -> func3 ( var5 + number , var1 -> var18 + number , & var11 [ number ] , number ) ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) 
+var5 [ var14 + number ] = func4 ( var1 -> var18 [ number - var14 ] , var11 [ number - var14 ] ) ; 
+} else { 
+var1 -> var17 -> func3 ( var5 , var1 -> var18 + number , & var7 [ number ] , number ) ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) 
+var5 [ var14 + number ] = func4 ( var1 -> var18 [ number - var14 ] , var7 [ number - var14 ] ) ; 
+} 
+memcpy ( var2 -> var20 , var2 -> var20 + number , number * sizeof ( * var2 -> var20 ) ) ; 
+memcpy ( var2 -> var20 + number , var2 -> var21 , number * sizeof ( * var2 -> var20 ) ) ; 
+memcpy ( var2 -> var20 + number , var5 , number * sizeof ( * var2 -> var20 ) ) ; 
+} 

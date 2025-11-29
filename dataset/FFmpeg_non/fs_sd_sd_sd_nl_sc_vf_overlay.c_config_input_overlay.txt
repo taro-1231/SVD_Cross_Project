@@ -1,0 +1,39 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+OverlayContext * var4 = var1 -> var3 -> var5 ; 
+int var6 ; 
+const AVPixFmtDescriptor * var7 = func2 ( var1 -> var8 ) ; 
+func3 ( var4 -> var9 , var10 , var7 ) ; 
+var4 -> var11 [ var12 ] = var4 -> var11 [ var13 ] = var2 -> var14 [ var15 ] -> var16 ; 
+var4 -> var11 [ var17 ] = var4 -> var11 [ var18 ] = var2 -> var14 [ var15 ] -> var19 ; 
+var4 -> var11 [ var20 ] = var4 -> var11 [ var21 ] = var2 -> var14 [ var22 ] -> var16 ; 
+var4 -> var11 [ var23 ] = var4 -> var11 [ var24 ] = var2 -> var14 [ var22 ] -> var19 ; 
+var4 -> var11 [ var25 ] = number << var7 -> var26 ; 
+var4 -> var11 [ var27 ] = number << var7 -> var28 ; 
+var4 -> var11 [ var29 ] = var30 ; 
+var4 -> var11 [ var31 ] = var30 ; 
+var4 -> var11 [ var32 ] = number ; 
+var4 -> var11 [ var33 ] = var30 ; 
+var4 -> var11 [ var34 ] = var30 ; 
+if ( ( var6 = func4 ( & var4 -> var35 , var4 -> var36 , str , var2 ) ) < number || 
+( var6 = func4 ( & var4 -> var38 , var4 -> var39 , str , var2 ) ) < number ) 
+return var6 ; 
+var4 -> var41 = 
+func5 ( var4 -> var42 , var1 -> var8 ) >= number ; 
+var4 -> var43 = func6 ( var1 -> var8 , var44 ) ; 
+if ( var4 -> var45 == var46 ) { 
+func7 ( var2 ) ; 
+func8 ( var2 , var47 , str , 
+var4 -> var11 [ var29 ] , var4 -> var37 , 
+var4 -> var11 [ var31 ] , var4 -> var40 ) ; 
+} 
+func8 ( var2 , var47 , 
+str , 
+var2 -> var14 [ var15 ] -> var16 , var2 -> var14 [ var15 ] -> var19 , 
+func9 ( var2 -> var14 [ var15 ] -> var8 ) , 
+var2 -> var14 [ var22 ] -> var16 , var2 -> var14 [ var22 ] -> var19 , 
+func9 ( var2 -> var14 [ var22 ] -> var8 ) , 
+var49 [ var4 -> var48 ] ) ; 
+return number ; 
+} 

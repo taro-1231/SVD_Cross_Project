@@ -1,0 +1,41 @@
+static int func1 ( NUTContext * var1 , AVIOContext * var2 ) { 
+int var3 ; 
+Syncpoint var4 = { . var5 = number } ; 
+Syncpoint * var6 [ number ] = { var7 } ; 
+int64_t var8 = func2 ( var2 ) ; 
+int64_t var9 ; 
+func3 ( var1 , var1 -> var10 , var2 , var1 -> var11 ) ; 
+func4 ( var2 , var1 -> var12 ) ; 
+for ( var3 = number ; var3 < var1 -> var12 ; var3 ++ ) { 
+func5 ( var1 -> var13 , & var4 , ( void * ) var14 , ( void ** ) var6 ) ; 
+func4 ( var2 , ( var6 [ number ] -> var5 >> number ) - ( var4 . var5 >> number ) ) ; 
+var4 . var5 = var6 [ number ] -> var5 ; 
+} 
+for ( var3 = number ; var3 < var1 -> var15 -> var16 ; var3 ++ ) { 
+StreamContext * var17 = & var1 -> var18 [ var3 ] ; 
+int64_t var19 = - number ; 
+int var20 , var21 ; 
+for ( var20 = number ; var20 < var1 -> var12 ; var20 ++ ) { 
+int var22 ; 
+int var23 = number ; 
+if ( var20 && var17 -> var24 [ var20 ] == var17 -> var24 [ var20 - number ] ) { 
+func6 ( var1 -> var15 , var25 , str ) ; 
+var17 -> var24 [ var20 ] = var26 ; 
+} 
+var22 = ( var17 -> var24 [ var20 ] != var26 ) ^ ( var20 + number == var1 -> var12 ) ; 
+for ( ; var20 < var1 -> var12 && ( var17 -> var24 [ var20 ] != var26 ) == var22 ; var20 ++ ) 
+var23 ++ ; 
+func4 ( var2 , number + number * var22 + number * var23 ) ; 
+for ( var21 = var20 - var23 ; var21 <= var20 && var21 < var1 -> var12 ; var21 ++ ) { 
+if ( var17 -> var24 [ var21 ] == var26 ) 
+continue ; 
+func7 ( var17 -> var24 [ var21 ] > var19 ) ; 
+func4 ( var2 , var17 -> var24 [ var21 ] - var19 ) ; 
+var19 = var17 -> var24 [ var21 ] ; 
+} 
+} 
+} 
+var9 = func2 ( var2 ) - var8 + number + number ; 
+func8 ( var2 , number + var9 + func9 ( var9 ) / number + number + number * ( var9 > number ) ) ; 
+return number ; 
+} 

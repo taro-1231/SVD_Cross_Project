@@ -1,0 +1,216 @@
+func1 ( Image * var1 , Image * var2 , int var3 , 
+png_const_colorp var4 ) 
+{ 
+ptrdiff_t var5 = var1 -> var6 ; 
+ptrdiff_t var7 = var2 -> var6 ; 
+png_const_bytep var8 = var1 -> var9 + number ; 
+png_const_bytep var10 = var2 -> var9 + number ; 
+const png_uint_32 var11 = var1 -> var12 . var11 ; 
+const png_uint_32 var13 = var1 -> var12 . var13 ; 
+const png_uint_32 var14 = var1 -> var12 . var15 ; 
+const png_uint_32 var16 = var2 -> var12 . var15 ; 
+const unsigned int var17 = func2 ( var14 ) ; 
+const unsigned int var18 = func2 ( var16 ) ; 
+int var19 , var20 ; 
+int var21 ; 
+int var22 [ number ] ; 
+png_uint_32 var23 ; 
+Transform var24 ; 
+if ( var11 != var2 -> var12 . var11 || var13 != var2 -> var12 . var13 ) 
+return func3 ( var1 , var1 -> var25 , str , 
+var2 -> var25 ) ; 
+func4 ( & var24 , var1 , var2 , var4 , var3 ) ; 
+if ( ! ( var14 & var27 ) && 
+( var14 & var28 ) ) 
+var5 *= number ; 
+if ( ! ( var16 & var27 ) && 
+( var16 & var28 ) ) 
+var7 *= number ; 
+if ( var5 < number ) var8 += ( var13 - number ) * ( - var5 ) ; 
+if ( var7 < number ) var10 += ( var13 - number ) * ( - var7 ) ; 
+if ( var14 & var16 & var27 ) 
+{ 
+png_const_bytep var29 , var30 ; 
+int var31 ; 
+png_byte var32 [ number ] , var33 = number , var34 = number ; 
+memset ( var32 , number , sizeof var32 ) ; 
+var29 = var8 ; 
+var30 = var10 ; 
+for ( var23 = number , var31 = number ; var23 < var13 && var31 ; ++ var23 , var29 += var5 , var30 += var7 ) 
+{ 
+png_uint_32 var26 ; 
+for ( var26 = number ; var26 < var11 ; ++ var26 ) 
+{ 
+png_byte var35 = var30 [ var26 ] ; 
+png_byte var36 = var29 [ var26 ] ; 
+if ( var35 > var34 ) 
+var34 = var35 ; 
+if ( var35 != var36 ) 
+var31 = number ; 
+var32 [ var36 ] = number ; 
+if ( var36 > var33 ) 
+var33 = var36 ; 
+} 
+} 
+if ( var31 ) 
+{ 
+png_const_bytep var37 = ( png_const_bytep ) var1 -> var38 ; 
+png_const_bytep var39 = ( png_const_bytep ) var2 -> var38 ; 
+int var40 = number ; 
+var24 . var41 = number ; 
+for ( var23 = number ; var23 < number ; ++ var23 , var37 += var17 , var39 += var18 ) 
+if ( var32 [ var23 ] ) 
+{ 
+if ( var23 >= var1 -> var12 . var42 ) 
+{ 
+if ( ( var1 -> var43 & var44 ) == number ) 
+{ 
+char var45 [ number ] ; 
+sprintf ( var45 , str , ( unsigned long ) var23 , 
+( unsigned long ) var1 -> var12 . var42 ) ; 
+func3 ( var1 , var1 -> var25 , str , var45 ) ; 
+} 
+var40 = number ; 
+} 
+else if ( var23 >= var2 -> var12 . var42 ) 
+{ 
+if ( ( var1 -> var43 & var44 ) == number ) 
+{ 
+char var45 [ number ] ; 
+sprintf ( var45 , str , ( unsigned long ) var23 , 
+( unsigned long ) var2 -> var12 . var42 ) ; 
+func3 ( var2 , var2 -> var25 , str , var45 ) ; 
+} 
+var40 = number ; 
+} 
+else if ( ! func5 ( & var24 , var37 , var39 , number , var23 ) ) 
+var40 = number ; 
+} 
+if ( var1 -> var43 & var44 ) 
+{ 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var40 = number ; 
+} 
+return var40 ; 
+} 
+else if ( ( var1 -> var43 & var44 ) == number ) 
+{ 
+if ( var33 >= var1 -> var12 . var42 ) 
+{ 
+char var45 [ number ] ; 
+sprintf ( var45 , str , var33 , 
+( unsigned long ) var1 -> var12 . var42 ) ; 
+return func3 ( var1 , var1 -> var25 , str , var45 ) ; 
+} 
+else if ( var34 >= var2 -> var12 . var42 ) 
+{ 
+char var45 [ number ] ; 
+sprintf ( var45 , str , var34 , 
+( unsigned long ) var2 -> var12 . var42 ) ; 
+return func3 ( var2 , var2 -> var25 , str , var45 ) ; 
+} 
+} 
+} 
+if ( ! ( ( ( var14 ^ var16 ) & var28 ) | 
+( var14 & ( var16 ^ var48 ) & var48 ) ) ) 
+{ 
+const png_uint_32 var49 = ( var14 ^ var16 ) & 
+var50 ; 
+var20 = ( var14 & var49 ) != number ; 
+var19 = ( var16 & var49 ) != number ; 
+{ 
+int var51 ; 
+png_byte var52 [ number ] ; 
+png_byte var53 [ number ] ; 
+( void ) func6 ( var52 , var14 ) ; 
+var21 = func6 ( var53 , var16 ) ; 
+for ( var51 = number ; var51 < number ; ++ var51 ) if ( var53 [ var51 ] < number ) 
+var22 [ var53 [ var51 ] ] = var52 [ var51 ] ; 
+if ( var19 ) 
+var19 = var53 [ number ] ; 
+else 
+var19 = number ; 
+if ( var20 ) 
+var20 = var52 [ number ] ; 
+else 
+var20 = number ; 
+} 
+} 
+else 
+{ 
+var21 = number ; 
+var20 = var19 = number ; 
+var22 [ number ] = var22 [ number ] = var22 [ number ] = var22 [ number ] = number ; 
+} 
+for ( var23 = number ; var23 < var13 ; ++ var23 , var8 += var5 , var10 += var7 ) 
+{ 
+png_const_bytep var29 , var30 ; 
+png_uint_32 var26 ; 
+for ( var26 = number , var29 = var8 , var30 = var10 ; var26 < var11 ; ++ var26 ) 
+{ 
+png_const_bytep var54 , var55 ; 
+if ( var14 & var27 ) 
+var54 = ( png_const_bytep ) var1 -> var38 + var17 ** var29 ++ ; 
+else 
+var54 = var29 , var29 += var17 ; 
+if ( var16 & var27 ) 
+var55 = ( png_const_bytep ) var2 -> var38 + var18 ** var30 ++ ; 
+else 
+var55 = var30 , var30 += var18 ; 
+if ( var21 ) 
+{ 
+if ( var16 & var28 ) 
+{ 
+var56 var57 = func7 ( var56 , var54 ) ; 
+var56 var58 = func7 ( var56 , var55 ) ; 
+switch ( var21 ) 
+{ 
+case number : 
+if ( var57 [ var22 [ number ] ] != var58 [ number ] ) break ; 
+case number : 
+if ( var57 [ var22 [ number ] ] != var58 [ number ] ) break ; 
+case number : 
+if ( var57 [ var22 [ number ] ] != var58 [ number ] ) break ; 
+case number : 
+if ( var57 [ var22 [ number ] ] != var58 [ number ] ) break ; 
+if ( var19 != number && var58 [ var19 ] != number ) break ; 
+continue ; 
+var59 : 
+break ; 
+} 
+} 
+else if ( var20 == number || var54 [ var20 ] == number ) 
+{ 
+switch ( var21 ) 
+{ 
+case number : 
+if ( var54 [ var22 [ number ] ] != var55 [ number ] ) break ; 
+case number : 
+if ( var54 [ var22 [ number ] ] != var55 [ number ] ) break ; 
+case number : 
+if ( var54 [ var22 [ number ] ] != var55 [ number ] ) break ; 
+case number : 
+if ( var54 [ var22 [ number ] ] != var55 [ number ] ) break ; 
+if ( var19 != number && var55 [ var19 ] != number ) break ; 
+continue ; 
+var59 : 
+break ; 
+} 
+} 
+} 
+if ( ! func5 ( & var24 , var54 , var55 , var26 , var23 ) && ( var1 -> var43 & var60 ) == number ) 
+return number ; 
+} 
+} 
+if ( var1 -> var43 & var44 ) 
+{ 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+var24 . var46 [ number ] = var24 . var47 [ number ] ; 
+} 
+return number ; 
+} 

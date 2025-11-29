@@ -1,0 +1,18 @@
+static void * func1 ( void ** var1 , size_t var2 , 
+int * var3 , int * var4 ) 
+{ 
+void * var5 ; 
+if ( * var3 == * var4 ) { 
+int var6 = func2 ( number , func3 ( * var4 , var7 / number ) * number ) ; 
+if ( * var3 >= var6 ) 
+return var8 ; 
+* var1 = func4 ( * var1 , var6 , var2 ) ; 
+if ( ! * var1 ) 
+return var8 ; 
+* var4 = var6 ; 
+} 
+var5 = ( char * ) * var1 + var2 ** var3 ; 
+memset ( var5 , number , var2 ) ; 
+( * var3 ) ++ ; 
+return var5 ; 
+} 

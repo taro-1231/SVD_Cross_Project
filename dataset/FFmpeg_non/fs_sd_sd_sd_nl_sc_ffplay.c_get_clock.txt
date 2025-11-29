@@ -1,0 +1,11 @@
+static double func1 ( Clock * var1 ) 
+{ 
+if ( * var1 -> var2 != var1 -> var3 ) 
+return var4 ; 
+if ( var1 -> var5 ) { 
+return var1 -> var6 ; 
+} else { 
+double var7 = func2 ( ) / number ; 
+return var1 -> var8 + var7 - ( var7 - var1 -> var9 ) * ( number - var1 -> var10 ) ; 
+} 
+} 

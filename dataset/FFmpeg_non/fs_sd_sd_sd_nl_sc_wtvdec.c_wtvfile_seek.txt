@@ -1,0 +1,16 @@
+static int64_t func1 ( void * var1 , int64_t var2 , int var3 ) 
+{ 
+WtvFile * var4 = var1 ; 
+AVIOContext * var5 = var4 -> var6 ; 
+if ( var3 == var7 ) 
+return var4 -> var8 ; 
+else if ( var3 == var9 ) 
+var2 = var4 -> var10 + var2 ; 
+else if ( var3 == var11 ) 
+var2 = var4 -> var8 ; 
+var4 -> var12 = var2 < number || var2 >= var4 -> var8 || 
+func2 ( var5 , var4 -> var13 [ var2 >> var4 -> var14 ] , 
+var2 & ( ( number << var4 -> var14 ) - number ) ) < number ; 
+var4 -> var10 = var2 ; 
+return var2 ; 
+} 

@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+JoinContext * var2 = var1 -> var3 ; 
+AVFilterChannelLayouts * var4 = var5 ; 
+int var6 ; 
+func2 ( & var4 , var2 -> var7 ) ; 
+func3 ( var4 , & var1 -> var8 [ number ] -> var9 ) ; 
+for ( var6 = number ; var6 < var1 -> var10 ; var6 ++ ) { 
+var4 = func4 ( ) ; 
+if ( ! var4 ) 
+return func5 ( var11 ) ; 
+func3 ( var4 , & var1 -> var12 [ var6 ] -> var13 ) ; 
+} 
+func6 ( var1 , func7 ( ) ) ; 
+func8 ( var1 , func9 ( ) ) ; 
+return number ; 
+} 

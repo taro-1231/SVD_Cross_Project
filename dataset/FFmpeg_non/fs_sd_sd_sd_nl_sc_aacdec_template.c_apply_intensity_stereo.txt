@@ -1,0 +1,41 @@
+static void func1 ( AACContext * var1 , 
+ChannelElement * var2 , int var3 ) 
+{ 
+const IndividualChannelStream * var4 = & var2 -> var5 [ number ] . var4 ; 
+SingleChannelElement * var6 = & var2 -> var5 [ number ] ; 
+INTFLOAT * var7 = var2 -> var5 [ number ] . var8 , * var9 = var2 -> var5 [ number ] . var8 ; 
+const uint16_t * var10 = var4 -> var11 ; 
+int var12 , var13 , var14 , var15 = number ; 
+int var16 ; 
+INTFLOAT var17 ; 
+for ( var12 = number ; var12 < var4 -> var18 ; var12 ++ ) { 
+for ( var14 = number ; var14 < var4 -> var19 ; ) { 
+if ( var6 -> var20 [ var15 ] == var21 || 
+var6 -> var20 [ var15 ] == var22 ) { 
+const int var23 = var6 -> var24 [ var15 ] ; 
+for ( ; var14 < var23 ; var14 ++ , var15 ++ ) { 
+var16 = - number + number * ( var6 -> var20 [ var15 ] - number ) ; 
+if ( var3 ) 
+var16 *= number - number * var2 -> var25 [ var15 ] ; 
+var17 = var16 * var6 -> var26 [ var15 ] ; 
+for ( var13 = number ; var13 < var4 -> var27 [ var12 ] ; var13 ++ ) 
+var1 -> func2 ( var9 + var13 * number + var10 [ var14 ] , 
+var7 + var13 * number + var10 [ var14 ] , 
+var17 , 
+number , 
+var10 [ var14 + number ] - var10 [ var14 ] ) ; 
+var1 -> fdsp -> vector_fmul_scalar ( var9 + var13 * number + var10 [ var14 ] , 
+var7 + var13 * number + var10 [ var14 ] , 
+var17 , 
+var10 [ var14 + number ] - var10 [ var14 ] ) ; 
+} 
+} else { 
+int var23 = var6 -> var24 [ var15 ] ; 
+var15 += var23 - var14 ; 
+var14 = var23 ; 
+} 
+} 
+var7 += var4 -> var27 [ var12 ] * number ; 
+var9 += var4 -> var27 [ var12 ] * number ; 
+} 
+} 

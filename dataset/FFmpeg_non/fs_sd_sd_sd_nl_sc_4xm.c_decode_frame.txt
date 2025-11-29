@@ -1,0 +1,109 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+const uint8_t * var5 = var4 -> var2 ; 
+int var6 = var4 -> var7 ; 
+FourXContext * const var8 = var1 -> var9 ; 
+AVFrame * var10 = var2 ; 
+int var11 , var12 , var13 , var14 ; 
+if ( var6 < number ) 
+return var15 ; 
+func2 ( var1 -> var16 % number == number && var1 -> var17 % number == number ) ; 
+if ( var6 < func3 ( var5 + number ) + number ) { 
+func4 ( var8 -> var1 , var18 , str PRIu32 str , 
+var6 , func3 ( var5 + number ) ) ; 
+return var15 ; 
+} 
+var12 = func3 ( var5 ) ; 
+if ( var12 == func3 ( str ) ) { 
+int var20 = - number ; 
+int var21 , var22 ; 
+const int var23 = var6 - number ; 
+CFrameBuffer * var19 ; 
+if ( var8 -> var24 <= number ) { 
+func4 ( var8 -> var1 , var18 , str , var8 -> var24 ) ; 
+return var15 ; 
+} 
+var21 = func3 ( var5 + number ) ; 
+var22 = func3 ( var5 + number ) ; 
+if ( var23 < number || var22 < number ) { 
+func4 ( var8 -> var1 , var18 , str ) ; 
+return var15 ; 
+} 
+for ( var11 = number ; var11 < var25 ; var11 ++ ) 
+if ( var8 -> var19 [ var11 ] . var21 && var8 -> var19 [ var11 ] . var21 < var1 -> var26 ) 
+func4 ( var8 -> var1 , var18 , str , 
+var8 -> var19 [ var11 ] . var21 ) ; 
+for ( var11 = number ; var11 < var25 ; var11 ++ ) { 
+if ( var8 -> var19 [ var11 ] . var21 == var21 ) 
+break ; 
+if ( var8 -> var19 [ var11 ] . var7 == number ) 
+var20 = var11 ; 
+} 
+if ( var11 >= var25 ) { 
+var11 = var20 ; 
+var8 -> var19 [ var11 ] . var21 = var21 ; 
+} 
+var19 = & var8 -> var19 [ var11 ] ; 
+if ( var23 > var27 - var19 -> var7 - var28 ) 
+return var15 ; 
+var19 -> var2 = func5 ( var19 -> var2 , & var19 -> var29 , 
+var19 -> var7 + var23 + var28 ) ; 
+if ( ! var19 -> var2 ) { 
+func4 ( var8 -> var1 , var18 , str ) ; 
+return func6 ( var30 ) ; 
+} 
+memcpy ( var19 -> var2 + var19 -> var7 , var5 + number , var23 ) ; 
+var19 -> var7 += var23 ; 
+if ( var19 -> var7 >= var22 ) { 
+var5 = var19 -> var2 ; 
+var13 = var19 -> var7 ; 
+if ( var21 != var1 -> var26 ) 
+func4 ( var8 -> var1 , var18 , str , 
+var21 , var1 -> var26 ) ; 
+if ( var8 -> var24 <= number ) 
+return var15 ; 
+var19 -> var7 = var19 -> var21 = number ; 
+var12 = func3 ( str ) ; 
+} else 
+return var6 ; 
+} else { 
+var5 = var5 + number ; 
+var13 = var6 - number ; 
+} 
+if ( ( var14 = func7 ( var1 , var10 , number ) ) < number ) 
+return var14 ; 
+if ( var12 == func3 ( str ) ) { 
+var10 -> var31 = var32 ; 
+if ( ( var14 = func8 ( var8 , var5 - number , var13 + number ) ) < number ) { 
+func4 ( var8 -> var1 , var18 , str ) ; 
+return var14 ; 
+} 
+} else if ( var12 == func3 ( str ) ) { 
+var10 -> var31 = var32 ; 
+if ( ( var14 = func9 ( var8 , var5 , var13 ) ) < number ) { 
+func4 ( var8 -> var1 , var18 , str ) ; 
+return var14 ; 
+} 
+} else if ( var12 == func3 ( str ) || var12 == func3 ( str ) ) { 
+var10 -> var31 = var33 ; 
+if ( ( var14 = func10 ( var8 , var5 , var13 ) ) < number ) { 
+func4 ( var8 -> var1 , var18 , str ) ; 
+return var14 ; 
+} 
+} else if ( var12 == func3 ( str ) ) { 
+func4 ( var1 , var18 , str , 
+var6 ) ; 
+} else { 
+func4 ( var1 , var18 , str , 
+var6 ) ; 
+} 
+var10 -> var34 = var10 -> var31 == var32 ; 
+func11 ( var10 -> var2 [ number ] , var10 -> var35 [ number ] , 
+( const uint8_t * ) var8 -> var36 , var1 -> var16 * number , 
+var1 -> var16 * number , var1 -> var17 ) ; 
+FFSWAP ( uint16_t * , var8 -> var36 , var8 -> last_frame_buffer ) ; 
+* var3 = number ; 
+func12 ( ) ; 
+return var6 ; 
+} 

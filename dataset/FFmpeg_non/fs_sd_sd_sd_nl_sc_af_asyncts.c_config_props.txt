@@ -1,0 +1,21 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ASyncContext * var2 = var1 -> var3 -> var4 ; 
+int var5 ; 
+var2 -> var6 = var2 -> var7 * var1 -> var8 ; 
+var1 -> time_base = ( AVRational ) { number , var1 -> var8 } ; 
+var2 -> var9 = func2 ( ) ; 
+if ( ! var2 -> var9 ) 
+return func3 ( var10 ) ; 
+func4 ( var2 -> var9 , str , var1 -> var11 , number ) ; 
+func4 ( var2 -> var9 , str , var1 -> var11 , number ) ; 
+func4 ( var2 -> var9 , str , var1 -> var12 , number ) ; 
+func4 ( var2 -> var9 , str , var1 -> var12 , number ) ; 
+func4 ( var2 -> var9 , str , var1 -> var8 , number ) ; 
+func4 ( var2 -> var9 , str , var1 -> var8 , number ) ; 
+if ( var2 -> var13 ) 
+func4 ( var2 -> var9 , str , number , number ) ; 
+if ( ( var5 = func5 ( var2 -> var9 ) ) < number ) 
+return var5 ; 
+return number ; 
+} 

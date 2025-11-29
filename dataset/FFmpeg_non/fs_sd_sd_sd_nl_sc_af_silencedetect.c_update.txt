@@ -1,0 +1,29 @@
+static av_always_inline void func1 ( SilenceDetectContext * var1 , AVFrame * var2 , 
+int var3 , int64_t var4 , 
+AVRational var5 ) 
+{ 
+if ( var3 ) { 
+if ( ! var1 -> var6 ) { 
+var1 -> var7 ++ ; 
+if ( var1 -> var7 >= var4 ) { 
+var1 -> var6 = var2 -> var8 - ( int64_t ) ( var1 -> var9 / func2 ( var5 ) + number ) ; 
+func3 ( & var2 -> var10 , str , 
+func4 ( var1 -> var6 , & var5 ) , number ) ; 
+func5 ( var1 , var11 , str , 
+func6 ( var2 , str ) ) ; 
+} 
+} 
+} else { 
+if ( var1 -> var6 ) { 
+func3 ( & var2 -> var10 , str , 
+func4 ( var2 -> var8 , & var5 ) , number ) ; 
+func3 ( & var2 -> var10 , str , 
+func4 ( var2 -> var8 - var1 -> var6 , & var5 ) , number ) ; 
+func5 ( var1 , var11 , 
+str , 
+func6 ( var2 , str ) , 
+func6 ( var2 , str ) ) ; 
+} 
+var1 -> var7 = var1 -> var6 = number ; 
+} 
+} 

@@ -1,0 +1,10 @@
+static void func1 ( const AVFormatContext * var1 , const AVPacket * var2 , const char * var3 ) 
+{ 
+AVRational * var4 = & var1 -> var5 [ var2 -> var6 ] -> var4 ; 
+printf ( str , 
+var3 , 
+func2 ( var2 -> var7 ) , func3 ( var2 -> var7 , var4 ) , 
+func2 ( var2 -> var8 ) , func3 ( var2 -> var8 , var4 ) , 
+func2 ( var2 -> var9 ) , func3 ( var2 -> var9 , var4 ) , 
+var2 -> var6 ) ; 
+} 

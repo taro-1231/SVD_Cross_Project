@@ -1,0 +1,47 @@
+func1 ( struct var1 * var1 ) 
+{ 
+if ( ! var1 -> var2 -> var3 ) 
+{ 
+if ( var1 -> var4 < number ) 
+{ 
+const char * var5 ; 
+if ( var1 -> var6 ) 
+var5 = str ; 
+else if ( var1 -> var4 > var1 -> var7 ) 
+var5 = str ; 
+else if ( var1 -> var4 == var1 -> var7 ) 
+var5 = str ; 
+else 
+var5 = str ; 
+func2 ( var1 -> var8 -> var9 , var10 ) ; 
+printf ( str , var5 , func3 ( var1 ) , var1 -> var7 , 
+var1 -> var4 ) ; 
+func4 ( var1 -> var11 , var1 -> var12 , var10 ) ; 
+putc ( str , var10 ) ; 
+func4 ( var1 -> var13 , var1 -> var14 , 
+var10 ) ; 
+putc ( str , var10 ) ; 
+fputs ( var1 -> var15 -> var16 , var10 ) ; 
+putc ( str , var10 ) ; 
+} 
+else 
+{ 
+func2 ( var1 -> var8 -> var9 , var10 ) ; 
+printf ( str , func3 ( var1 ) , var1 -> var7 , 
+func5 ( var1 ) ) ; 
+func4 ( var1 -> var11 , var1 -> var12 , var10 ) ; 
+putc ( str , var10 ) ; 
+func6 ( var1 -> var17 . var18 ? var1 -> var17 . var18 : str , var10 ) ; 
+putc ( str , var10 ) ; 
+fputs ( var1 -> var15 -> var16 , var10 ) ; 
+putc ( str , var10 ) ; 
+} 
+} 
+if ( var1 -> var19 >= number ) 
+{ 
+var1 -> var20 = func7 ( & var1 -> var17 ) ; 
+if ( var1 -> var20 != var21 ) 
+func8 ( var1 , number ; 
+} 
+func9 ( * var1 ) ; 
+} 

@@ -1,0 +1,51 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+GEQContext * var2 = var1 -> var3 ; 
+int var4 , var5 = number ; 
+if ( ! var2 -> var6 [ var7 ] && ! var2 -> var6 [ var8 ] && ! var2 -> var6 [ var9 ] && ! var2 -> var6 [ var10 ] ) { 
+var23 ( var1 , var11 , str ) ; 
+var5 = func3 ( var13 ) ; 
+goto var14 ; 
+} 
+var2 -> var15 = ! var2 -> var6 [ var7 ] ; 
+if ( ( var2 -> var6 [ var7 ] || var2 -> var6 [ var16 ] || var2 -> var6 [ var17 ] ) && ( var2 -> var6 [ var8 ] || var2 -> var6 [ var9 ] || var2 -> var6 [ var10 ] ) ) { 
+var23 ( var1 , var11 , str ) ; 
+var5 = func3 ( var13 ) ; 
+goto var14 ; 
+} 
+if ( ! var2 -> var6 [ var16 ] && ! var2 -> var6 [ var17 ] ) { 
+var2 -> var6 [ var16 ] = func4 ( var2 -> var6 [ var7 ] ) ; 
+var2 -> var6 [ var17 ] = func4 ( var2 -> var6 [ var7 ] ) ; 
+} else { 
+if ( ! var2 -> var6 [ var16 ] ) var2 -> var6 [ var16 ] = func4 ( var2 -> var6 [ var17 ] ) ; 
+if ( ! var2 -> var6 [ var17 ] ) var2 -> var6 [ var17 ] = func4 ( var2 -> var6 [ var16 ] ) ; 
+} 
+if ( ! var2 -> var6 [ var12 ] ) 
+var2 -> var6 [ var12 ] = func4 ( str ) ; 
+if ( ! var2 -> var6 [ var8 ] ) 
+var2 -> var6 [ var8 ] = func4 ( str ) ; 
+if ( ! var2 -> var6 [ var9 ] ) 
+var2 -> var6 [ var9 ] = func4 ( str ) ; 
+if ( ! var2 -> var6 [ var10 ] ) 
+var2 -> var6 [ var10 ] = func4 ( str ) ; 
+if ( var2 -> var15 ? 
+( ! var2 -> var6 [ var8 ] || ! var2 -> var6 [ var9 ] || ! var2 -> var6 [ var10 ] ) 
+: 
+( ! var2 -> var6 [ var16 ] || ! var2 -> var6 [ var17 ] || ! var2 -> var6 [ var12 ] ) ) { 
+var5 = func3 ( var18 ) ; 
+goto var14 ; 
+} 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+static double ( * p [ ] ) ( void * , double , double ) = { lum , cb , cr , alpha } ; 
+static const char * const var19 [ ] = { str , str , str , str , str , var20 } ; 
+static const char * const var21 [ ] = { str , str , str , str , str , var20 } ; 
+const char * const * var22 = var2 -> var15 ? var21 : var19 ; 
+double ( * var23 [ ] ) ( void * , double , double ) = { lum , cb , cr , alpha , p [ var4 ] , var20 } ; 
+var5 = func5 ( & var2 -> var24 [ var4 ] , var2 -> var6 [ var4 < number && var2 -> var15 ? var4 + number : var4 ] , var25 , 
+var20 , var20 , var22 , var23 , number , var1 ) ; 
+if ( var5 < number ) 
+break ; 
+} 
+var14 : 
+return var5 ; 
+} 

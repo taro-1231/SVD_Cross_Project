@@ -1,0 +1,5 @@
+static const char * func1 ( void * var1 ) 
+{ 
+AVFilterContext * var2 = var1 ; 
+return var2 -> var3 ? var2 -> var3 : var2 -> var4 -> var3 ; 
+} 

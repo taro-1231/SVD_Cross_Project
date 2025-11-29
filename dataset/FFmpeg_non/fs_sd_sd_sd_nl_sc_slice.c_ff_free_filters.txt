@@ -1,0 +1,15 @@
+int func1 ( SwsContext * var1 ) 
+{ 
+int var2 ; 
+if ( var1 -> var3 ) { 
+for ( var2 = number ; var2 < var1 -> var4 ; ++ var2 ) 
+func2 ( & var1 -> var3 [ var2 ] . var5 ) ; 
+func2 ( & var1 -> var3 ) ; 
+} 
+if ( var1 -> var6 ) { 
+for ( var2 = number ; var2 < var1 -> var7 ; ++ var2 ) 
+func3 ( & var1 -> var6 [ var2 ] ) ; 
+func2 ( & var1 -> var6 ) ; 
+} 
+return number ; 
+} 

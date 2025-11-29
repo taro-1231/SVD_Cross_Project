@@ -1,0 +1,7 @@
+static int func1 ( cqueue * var1 ) 
+{ 
+func2 ( ! func3 ( var1 ) ) ; 
+var1 -> var2 = ( var1 -> var2 + number ) % var1 -> var3 ; 
+var1 -> var4 -- ; 
+return number ; 
+} 

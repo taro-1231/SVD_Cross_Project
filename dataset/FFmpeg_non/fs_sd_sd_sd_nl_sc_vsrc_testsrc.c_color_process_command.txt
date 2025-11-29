@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+TestSourceContext * var7 = var1 -> var8 ; 
+int var9 ; 
+if ( ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) ) { 
+uint8_t var11 [ number ] ; 
+var9 = func2 ( var11 , var3 , - number , var1 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+memcpy ( var7 -> var11 , var11 , sizeof ( var11 ) ) ; 
+func3 ( & var7 -> var12 , & var7 -> var10 , var7 -> var11 ) ; 
+var7 -> var13 = number ; 
+return number ; 
+} 
+return func4 ( var14 ) ; 
+} 

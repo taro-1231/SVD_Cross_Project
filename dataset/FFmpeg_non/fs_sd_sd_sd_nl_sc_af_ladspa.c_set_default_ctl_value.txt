@@ -1,0 +1,35 @@
+static void func1 ( LADSPAContext * var1 , int var2 , 
+unsigned long * var3 , LADSPA_Data * var4 ) 
+{ 
+const LADSPA_PortRangeHint * var5 = var1 -> var6 -> var7 + var3 [ var2 ] ; 
+const LADSPA_Data var8 = var5 -> var9 ; 
+const LADSPA_Data var10 = var5 -> var11 ; 
+if ( func2 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = var8 ; 
+} else if ( func3 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = var10 ; 
+} else if ( func4 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = number ; 
+} else if ( func5 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = number ; 
+} else if ( func6 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = number ; 
+} else if ( func7 ( var5 -> var12 ) ) { 
+var4 [ var2 ] = number ; 
+} else if ( func8 ( var5 -> var12 ) ) { 
+if ( func9 ( var5 -> var12 ) ) 
+var4 [ var2 ] = exp ( log ( var8 ) * number + log ( var10 ) * number ) ; 
+else 
+var4 [ var2 ] = var8 * number + var10 * number ; 
+} else if ( func10 ( var5 -> var12 ) ) { 
+if ( func9 ( var5 -> var12 ) ) 
+var4 [ var2 ] = exp ( log ( var8 ) * number + log ( var10 ) * number ) ; 
+else 
+var4 [ var2 ] = var8 * number + var10 * number ; 
+} else if ( func11 ( var5 -> var12 ) ) { 
+if ( func9 ( var5 -> var12 ) ) 
+var4 [ var2 ] = exp ( log ( var8 ) * number + log ( var10 ) * number ) ; 
+else 
+var4 [ var2 ] = var8 * number + var10 * number ; 
+} 
+} 

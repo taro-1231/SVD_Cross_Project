@@ -1,0 +1,70 @@
+static int func1 ( MatroskaDemuxContext * var1 , 
+MatroskaTrack * var2 , AVStream * var3 , 
+uint8_t * var4 , int var5 , uint64_t var6 , 
+int64_t var7 ) 
+{ 
+int var8 = var3 -> var9 -> var10 ; 
+int var11 = var2 -> var12 . var13 ; 
+int var14 = var2 -> var12 . var15 ; 
+int var16 = var2 -> var12 . var17 ; 
+int var18 = var2 -> var12 . var19 ; 
+int var20 = var2 -> var12 . var21 ; 
+int var22 ; 
+if ( ! var2 -> var12 . var23 ) { 
+if ( var2 -> var12 . var19 == number ) 
+var2 -> var12 . var24 = var6 ; 
+if ( var3 -> var9 -> var25 == var26 ) { 
+if ( var5 < var14 * var16 / number ) { 
+func2 ( var1 -> var27 , var28 , 
+str ) ; 
+return var29 ; 
+} 
+for ( var22 = number ; var22 < var16 / number ; var22 ++ ) 
+memcpy ( var2 -> var12 . var30 + var22 * number * var20 + var18 * var14 , 
+var4 + var22 * var14 , var14 ) ; 
+} else if ( var3 -> var9 -> var25 == var31 ) { 
+if ( var5 < var20 ) { 
+func2 ( var1 -> var27 , var28 , 
+str ) ; 
+return var29 ; 
+} 
+memcpy ( var2 -> var12 . var30 + var18 * var20 , var4 , var20 ) ; 
+} else { 
+if ( var5 < var11 * var20 / var11 || var16 <= number || var20 % var11 ) { 
+func2 ( var1 -> var27 , var28 , 
+str ) ; 
+return var29 ; 
+} 
+for ( var22 = number ; var22 < var20 / var11 ; var22 ++ ) 
+memcpy ( var2 -> var12 . var30 + 
+var11 * ( var16 * var22 + ( ( var16 + number ) / number ) * ( var18 & number ) + ( var18 >> number ) ) , 
+var4 + var22 * var11 , var11 ) ; 
+} 
+if ( ++ var2 -> var12 . var19 >= var16 ) { 
+if ( var3 -> var9 -> var25 == var31 ) 
+func3 ( var2 -> var12 . var30 , var16 , var20 ) ; 
+var2 -> var12 . var19 = number ; 
+var2 -> var12 . var23 = var16 * var20 / var8 ; 
+} 
+} 
+while ( var2 -> var12 . var23 ) { 
+int var32 ; 
+AVPacket * var33 = func4 ( sizeof ( AVPacket ) ) ; 
+if ( ! var33 ) 
+return func5 ( var34 ) ; 
+var32 = func6 ( var33 , var8 ) ; 
+if ( var32 < number ) { 
+func7 ( var33 ) ; 
+return var32 ; 
+} 
+memcpy ( var33 -> var4 , 
+var2 -> var12 . var30 + var8 * ( var16 * var20 / var8 - var2 -> var12 . var23 -- ) , 
+var8 ) ; 
+var33 -> var35 = var2 -> var12 . var24 ; 
+var2 -> var12 . var24 = var36 ; 
+var33 -> var7 = var7 ; 
+var33 -> var37 = var3 -> var38 ; 
+func8 ( & var1 -> var39 , & var1 -> var40 , var33 ) ; 
+} 
+return number ; 
+} 

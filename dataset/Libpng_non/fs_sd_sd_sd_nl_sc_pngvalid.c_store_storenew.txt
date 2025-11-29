@@ -1,0 +1,12 @@
+func1 ( png_store * var1 ) 
+{ 
+png_store_buffer * var2 ; 
+if ( var1 -> var3 != var4 ) 
+func2 ( var1 -> var5 , str ) ; 
+var2 = voidcast ( png_store_buffer * , malloc ( sizeof * var2 ) ) ; 
+if ( var2 == var6 ) 
+func2 ( var1 -> var5 , str ) ; 
+* var2 = var1 -> new ; 
+var1 -> new . var7 = var2 ; 
+var1 -> var3 = number ; 
+} 

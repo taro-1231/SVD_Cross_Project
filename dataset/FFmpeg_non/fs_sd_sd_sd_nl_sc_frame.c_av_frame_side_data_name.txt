@@ -1,0 +1,14 @@
+const char * func1 ( enum AVFrameSideDataType var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : return str ; 
+case var3 : return str ; 
+case var4 : return str ; 
+case var5 : return str ; 
+case var6 : return str ; 
+case var7 : return str ; 
+case var8 : return str ; 
+case var9 : return str ; 
+} 
+return var10 ; 
+} 

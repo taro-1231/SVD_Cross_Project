@@ -1,0 +1,28 @@
+static void func1 ( AVFrame * var1 , int var2 , int var3 , int var4 , const uint8_t * var5 , const char * var6 , ... ) 
+{ 
+int var7 ; 
+char var8 [ number ] = { number } ; 
+const uint8_t * var9 ; 
+int var10 ; 
+va_list var11 ; 
+if ( var4 == var12 ) var9 = var13 , var10 = number ; 
+else if ( var4 == var14 ) var9 = var15 , var10 = number ; 
+else return ; 
+func2 ( var11 , var6 ) ; 
+vsnprintf ( var8 , sizeof ( var8 ) , var6 , var11 ) ; 
+func3 ( var11 ) ; 
+for ( var7 = number ; var8 [ var7 ] ; var7 ++ ) { 
+int var16 , var17 ; 
+uint8_t * var18 = var1 -> var19 [ number ] + var3 * var1 -> var20 [ number ] + ( var2 + var7 * number ) * number ; 
+for ( var16 = number ; var16 < var10 ; var16 ++ ) { 
+for ( var17 = number ; var17 ; var17 >>= number ) { 
+if ( var9 [ var8 [ var7 ] * var10 + var16 ] & var17 ) 
+memcpy ( var18 , var5 , number ) ; 
+else 
+memcpy ( var18 , str , number ) ; 
+var18 += number ; 
+} 
+var18 += var1 -> var20 [ number ] - number * number ; 
+} 
+} 
+} 

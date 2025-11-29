@@ -1,0 +1,5 @@
+func1 ( libAVFilter * var1 ) 
+{ 
+func2 ( var1 -> var2 ) ; 
+return number ; 
+} 

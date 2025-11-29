@@ -1,0 +1,31 @@
+static int func1 ( uint8_t ( * var1 ) [ 3 ] , int var2 , int var3 , 
+int * var4 ) 
+{ 
+int var5 = number ; 
+int var6 = number ; 
+int var7 = number ; 
+int var8 ; 
+for ( var8 = * var4 ; var8 < var2 ; var8 ++ ) { 
+if ( var1 [ var8 ] [ number ] != var3 ) 
+break ; 
+if ( var1 [ var8 ] [ number ] == var9 ) { 
+if ( var7 ) { 
+if ( var3 == var10 && ! var6 ) { 
+var7 = number ; 
+} else { 
+return - number ; 
+} 
+} 
+var5 += number ; 
+var6 = number ; 
+} else { 
+var5 ++ ; 
+var7 ^= number ; 
+} 
+} 
+if ( var7 && 
+( ( var3 == var10 && var6 ) || var3 == var11 ) ) 
+return - number ; 
+* var4 = var8 ; 
+return var5 ; 
+} 

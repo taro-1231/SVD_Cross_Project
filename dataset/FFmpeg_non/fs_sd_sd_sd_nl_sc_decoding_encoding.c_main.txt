@@ -1,0 +1,30 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+const char * var3 ; 
+func2 ( ) ; 
+if ( var1 < number ) { 
+printf ( str 
+str 
+str 
+str 
+str 
+str , 
+var2 [ number ] ) ; 
+return number ; 
+} 
+var3 = var2 [ number ] ; 
+if ( ! strcmp ( var3 , str ) ) { 
+func3 ( str , var4 ) ; 
+} else if ( ! strcmp ( var3 , str ) ) { 
+func4 ( str ) ; 
+func5 ( str , str ) ; 
+} else if ( ! strcmp ( var3 , str ) ) { 
+func3 ( str , var5 ) ; 
+func6 ( str , str ) ; 
+} else { 
+fprintf ( var6 , str , 
+var3 ) ; 
+return number ; 
+} 
+return number ; 
+} 

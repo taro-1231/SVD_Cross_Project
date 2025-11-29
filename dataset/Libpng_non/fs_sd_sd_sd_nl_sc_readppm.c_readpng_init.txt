@@ -1,0 +1,37 @@
+int func1 ( FILE * var1 , ulg * var2 , ulg * var3 ) 
+{ 
+static uch var4 [ number ] ; 
+int var5 ; 
+var6 = var1 ; 
+fgets ( var4 , number , var1 ) ; 
+if ( var4 [ number ] != str || var4 [ number ] != str ) { 
+fprintf ( var7 , str ) ; 
+return number ; 
+} 
+if ( var4 [ number ] == str ) { 
+var8 = number ; 
+var9 = number ; 
+} else if ( var4 [ number ] == str ) { 
+var8 = number ; 
+var9 = number ; 
+} else { 
+var8 = number ; 
+var9 = number ; 
+} 
+do { 
+fgets ( var4 , number , var1 ) ; 
+} while ( var4 [ number ] == str ) ; 
+sscanf ( var4 , str , & var10 , & var11 ) ; 
+do { 
+fgets ( var4 , number , var1 ) ; 
+} while ( var4 [ number ] == str ) ; 
+sscanf ( var4 , str , & var5 ) ; 
+if ( var5 != number ) { 
+fprintf ( var7 , str , var5 ) ; 
+return number ; 
+} 
+var12 = number ; 
+* var2 = var10 ; 
+* var3 = var11 ; 
+return number ; 
+} 

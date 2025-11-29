@@ -1,0 +1,41 @@
+func1 ( IBaseFilter * var1 , AVFormatContext * var2 ) { 
+ISpecifyPropertyPages * var3 = var4 ; 
+IUnknown * var5 = var4 ; 
+HRESULT var6 ; 
+FILTER_INFO var7 = { number } ; 
+CAUUID var8 = { number } ; 
+var6 = func2 ( var1 , & var9 , ( void ** ) & var3 ) ; 
+if ( var6 != var10 ) { 
+func3 ( var2 , var11 , str ) ; 
+goto var12 ; 
+} 
+var6 = func4 ( var1 , & var7 ) ; 
+if ( var6 != var10 ) { 
+goto var13 ; 
+} 
+var6 = func2 ( var1 , & var14 , ( void ** ) & var5 ) ; 
+if ( var6 != var10 ) { 
+goto var13 ; 
+} 
+var6 = func5 ( var3 , & var8 ) ; 
+if ( var6 != var10 ) { 
+goto var13 ; 
+} 
+var6 = func6 ( var4 , number , number , var7 . var15 , number , & var5 , var8 . var16 , 
+var8 . var17 , number , number , var4 ) ; 
+if ( var6 != var10 ) { 
+goto var13 ; 
+} 
+goto var12 ; 
+var13 : 
+func3 ( var2 , var18 , str ) ; 
+var12 : 
+if ( var3 ) 
+func7 ( var3 ) ; 
+if ( var5 ) 
+func8 ( var5 ) ; 
+if ( var7 . var19 ) 
+func9 ( var7 . var19 ) ; 
+if ( var8 . var17 ) 
+func10 ( var8 . var17 ) ; 
+} 

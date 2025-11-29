@@ -1,0 +1,39 @@
+int func1 ( int var2 , char ** var3 ) 
+{ 
+int var4 = var1 ; 
+while ( var2 > number ) 
+{ 
+if ( var2 > number && strcmp ( var3 [ number ] , str ) == number ) 
+{ 
+var4 = atoi ( var3 [ number ] ) ; 
+var2 -= number ; 
+var3 += number ; 
+} 
+else if ( strcmp ( var3 [ number ] , str ) == number ) 
+{ 
+++ var5 ; 
+-- var2 ; 
+++ var3 ; 
+} 
+else 
+break ; 
+} 
+if ( var4 > number && var2 > number ) 
+{ 
+if ( strcmp ( var3 [ number ] , str ) == number ) 
+return func2 ( var4 , var2 - number , var3 + number ) ; 
+else if ( strcmp ( var3 [ number ] , str ) == number ) 
+return func3 ( var4 , var2 - number , var3 + number ) ; 
+else if ( strcmp ( var3 [ number ] , str ) == number ) 
+return func4 ( var4 , var2 - number , var3 + number ) ; 
+else if ( strcmp ( var3 [ number ] , str ) == number ) 
+return func5 ( var2 - number , var3 + number ) ; 
+} 
+fprintf ( var6 , 
+str ) ; 
+fprintf ( var6 , str ) ; 
+fprintf ( var6 , str ) ; 
+fprintf ( var6 , str ) ; 
+fprintf ( var6 , str ) ; 
+return number ; 
+} 

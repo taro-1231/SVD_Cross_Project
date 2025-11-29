@@ -1,0 +1,35 @@
+static void func1 ( OutputFile * var1 , OutputStream * var2 ) 
+{ 
+AVDictionaryEntry * var3 ; 
+uint8_t * var4 ; 
+int var5 ; 
+int var6 = number ; 
+int var7 = number ; 
+if ( func2 ( var2 -> var8 -> var9 , str , var10 , number ) ) 
+return ; 
+var3 = func2 ( var1 -> var11 , str , var10 , number ) ; 
+if ( var3 ) { 
+const AVOption * var12 = func3 ( var1 -> var13 , str , var10 , number , number ) ; 
+if ( ! var12 ) 
+return ; 
+func4 ( var1 -> var13 , var12 , var3 -> var14 , & var6 ) ; 
+} 
+var3 = func2 ( var2 -> var15 , str , var10 , number ) ; 
+if ( var3 ) { 
+const AVOption * var12 = func3 ( var2 -> var16 , str , var10 , number , number ) ; 
+if ( ! var12 ) 
+return ; 
+func4 ( var2 -> var16 , var12 , var3 -> var14 , & var7 ) ; 
+} 
+var5 = sizeof ( LIBAVCODEC_IDENT ) + strlen ( var2 -> var17 -> var18 ) + number ; 
+var4 = func5 ( var5 ) ; 
+if ( ! var4 ) 
+func6 ( number ) ; 
+if ( ! ( var6 & var19 ) && ! ( var7 & var20 ) ) 
+func7 ( var4 , LIBAVCODEC_IDENT str , var5 ) ; 
+else 
+func7 ( var4 , str , var5 ) ; 
+func8 ( var4 , var2 -> var17 -> var18 , var5 ) ; 
+func9 ( & var2 -> var8 -> var9 , str , var4 , 
+var21 | var22 ) ; 
+} 

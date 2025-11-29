@@ -1,0 +1,81 @@
+func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVStream * var3 , RMStream * var4 , int var5 , AVPacket * var6 , 
+int * var7 , int var8 , int64_t var9 ) 
+{ 
+RMDemuxContext * var10 = var1 -> var11 ; 
+int var12 ; 
+if ( var3 -> var13 -> var14 == var15 ) { 
+var10 -> var16 = var3 -> var17 ; 
+var12 = func2 ( var1 , var2 , var10 , var4 , var6 , var5 , var7 , & var9 ) ; 
+if ( var12 ) 
+return var12 < number ? var12 : - number ; 
+} else if ( var3 -> var13 -> var14 == var18 ) { 
+if ( ( var4 -> var19 == var20 ) || 
+( var4 -> var19 == var21 ) || 
+( var4 -> var19 == var22 ) ) { 
+int var23 ; 
+int var24 = var4 -> var25 ; 
+int var26 = var4 -> var27 ; 
+int var28 = var4 -> var29 ; 
+int var30 = var4 -> var31 ; 
+int var32 = var4 -> var33 ; 
+if ( var8 & number ) 
+var30 = var4 -> var31 = number ; 
+if ( ! var30 ) 
+var4 -> var34 = var9 ; 
+switch ( var4 -> var19 ) { 
+case var21 : 
+for ( var23 = number ; var23 < var28 / number ; var23 ++ ) 
+func3 ( var1 , var2 , var4 -> var6 . var35 + var23 * number * var32 + var30 * var26 , var26 ) ; 
+break ; 
+case var20 : 
+for ( var23 = number ; var23 < var32 / var24 ; var23 ++ ) 
+func3 ( var1 , var2 , var4 -> var6 . var35 + var24 * ( var28 * var23 + ( ( var28 + number ) / number ) * ( var30 & number ) + ( var30 >> number ) ) , var24 ) ; 
+break ; 
+case var22 : 
+func3 ( var1 , var2 , var4 -> var6 . var35 + var30 * var32 , var32 ) ; 
+break ; 
+} 
+if ( ++ ( var4 -> var31 ) < var28 ) 
+return - number ; 
+if ( var4 -> var19 == var22 ) 
+func4 ( var4 -> var6 . var35 , var28 , var32 ) ; 
+var4 -> var31 = number ; 
+var10 -> var36 = var3 -> var37 ; 
+var10 -> var38 = var28 * var32 / var3 -> var13 -> var39 ; 
+} else if ( ( var4 -> var19 == var40 ) || 
+( var4 -> var19 == var41 ) ) { 
+int var23 ; 
+var10 -> var36 = var3 -> var37 ; 
+var4 -> var31 = ( func5 ( var2 ) & number ) >> number ; 
+if ( var4 -> var31 ) { 
+for ( var23 = number ; var23 < var4 -> var31 ; var23 ++ ) 
+var4 -> var42 [ var23 ] = func5 ( var2 ) ; 
+var10 -> var38 = var4 -> var31 ; 
+var4 -> var34 = var9 ; 
+} else 
+return - number ; 
+} else { 
+if ( ( var12 = func6 ( var2 , var6 , var5 ) ) < number ) 
+return var12 ; 
+func7 ( var3 , var6 ) ; 
+} 
+} else { 
+if ( ( var12 = func6 ( var2 , var6 , var5 ) ) < number ) 
+return var12 ; 
+} 
+var6 -> var43 = var3 -> var37 ; 
+if ( var3 -> var13 -> var14 == var15 ) { 
+if ( var3 -> var13 -> var44 == var45 ) { 
+int var7 = number * ( var6 -> var35 [ number ] & number ) + ( var6 -> var35 [ number ] >> number ) ; 
+av_log ( var1 , AV_LOG_DEBUG , str PRId64 str , * var9 , * var9 * 512LL / 25 , var7 ) ; 
+var7 |= ( var9 & var46 ) ; 
+if ( var7 - var9 > number ) var7 -= number ; 
+if ( var7 - var9 < - number ) var7 += number ; 
+} 
+} 
+var6 -> var47 = var9 ; 
+if ( var8 & number ) 
+var6 -> var8 |= var48 ; 
+return var3 -> var13 -> var14 == var18 ? var10 -> var38 : number ; 
+} 

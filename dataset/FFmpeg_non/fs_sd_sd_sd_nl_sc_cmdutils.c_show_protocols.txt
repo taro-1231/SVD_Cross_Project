@@ -1,0 +1,13 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+void * var4 = var5 ; 
+const char * var6 ; 
+printf ( str 
+str ) ; 
+while ( ( var6 = func2 ( & var4 , number ) ) ) 
+printf ( str , var6 ) ; 
+printf ( str ) ; 
+while ( ( var6 = func2 ( & var4 , number ) ) ) 
+printf ( str , var6 ) ; 
+return number ; 
+} 

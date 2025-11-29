@@ -1,0 +1,5 @@
+static void func1 ( AVFrame * var1 , const IplImage * var2 , enum AVPixelFormat var3 ) 
+{ 
+var1 -> var4 [ number ] = var2 -> var5 ; 
+var1 -> var6 [ number ] = var2 -> var7 ; 
+} 

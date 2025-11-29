@@ -1,0 +1,6 @@
+static int func1 ( int var1 , int var2 , int var3 , int var4 , int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+int var10 [ number ] = { var2 , var3 , var4 , var5 , var6 , var7 , var8 , var9 } ; 
+qsort ( & var10 , number , sizeof ( var10 [ number ] ) , var11 ) ; 
+return func2 ( var1 , var10 [ number - number ] , var10 [ number - number ] ) ; 
+} 

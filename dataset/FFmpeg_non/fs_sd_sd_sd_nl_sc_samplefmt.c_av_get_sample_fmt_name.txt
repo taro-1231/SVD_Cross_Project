@@ -1,0 +1,6 @@
+const char * func1 ( enum AVSampleFormat var1 ) 
+{ 
+if ( var1 < number || var1 >= var2 ) 
+return var3 ; 
+return var4 [ var1 ] . var5 ; 
+} 

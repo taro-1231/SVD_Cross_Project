@@ -1,0 +1,44 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+VideoData * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+AVRational var5 ; 
+int var6 = number ; 
+if ( ! var2 -> var5 ) 
+switch ( var2 -> var7 ) { 
+case var8 : var2 -> var5 = func2 ( str ) ; break ; 
+case var9 : var2 -> var5 = func2 ( str ) ; break ; 
+case var10 : var2 -> var5 = func2 ( str ) ; break ; 
+var11 : 
+func3 ( var1 , var12 , str ) ; 
+var6 = func4 ( var13 ) ; 
+goto var14 ; 
+} 
+if ( ( var6 = func5 ( & var5 , var2 -> var5 ) ) < number ) { 
+func3 ( var1 , var12 , str , var2 -> var5 ) ; 
+goto var14 ; 
+} 
+var4 = func6 ( var1 , var15 ) ; 
+if ( ! var4 ) { 
+var6 = func4 ( var16 ) ; 
+goto var14 ; 
+} 
+func7 ( var4 , number , number , number ) ; 
+var2 -> var17 = ( ( uint64_t ) number * var5 . var18 ) / var5 . var19 ; 
+var4 -> var20 -> var21 = var22 ; 
+var4 -> var20 -> var23 = var24 ; 
+var4 -> var20 -> var25 = var26 ; 
+var4 -> var20 -> var27 = var2 -> var27 ; 
+var4 -> var20 -> var28 = var2 -> var28 ; 
+var4 -> var20 -> var29 . var18 = var5 . var19 ; 
+var4 -> var20 -> var29 . var19 = var5 . var18 ; 
+if ( func8 ( var1 -> var30 , var2 -> var27 , var2 -> var28 , var2 -> var7 , 
+& var2 -> var31 , & var2 -> var32 , - number , number ) < number ) { 
+var6 = func4 ( var33 ) ; 
+goto var14 ; 
+} 
+var34 = number ; 
+var35 = number ; 
+var14 : 
+return var6 ; 
+} 

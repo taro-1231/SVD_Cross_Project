@@ -1,0 +1,9 @@
+static double func1 ( cqueue * var1 ) 
+{ 
+double var2 = var3 ; 
+int var4 ; 
+for ( var4 = number ; var4 < func2 ( var1 ) ; var4 ++ ) { 
+var2 = func3 ( var2 , func4 ( var1 , var4 ) ) ; 
+} 
+return var2 ; 
+} 

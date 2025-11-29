@@ -1,0 +1,46 @@
+func1 ( png_bytep var1 , png_bytep var2 , 
+unsigned int * var3 , int var4 ) 
+{ 
+if ( * var2 == number ) 
+{ 
+* var1 = number ; 
+if ( var4 ) 
+* var2 = number ; 
+else 
+* var2 = number ; 
+* var3 = number ; 
+return number ; 
+} 
+if ( * var1 == number ) 
+{ 
+if ( ++ * var3 < func2 ( * var2 ) ) 
+return number ; 
+* var3 = number ; 
+} 
+* var2 = ( png_byte ) ( * var2 << number ) ; 
+if ( * var2 <= number 
+|| ( * var1 != number && * var2 <= 16 ) 
+) 
+return number ; 
+switch ( * var1 ) 
+{ 
+case number : 
+* var1 = number ; 
+* var2 = number ; 
+return number ; 
+case number : 
+* var1 = number ; 
+* var2 = number ; 
+return number ; 
+case number : 
+* var1 = number ; 
+* var2 = number ; 
+return number ; 
+case number : 
+* var1 = number ; 
+* var2 = number ; 
+return number ; 
+var5 : 
+return number ; 
+} 
+} 

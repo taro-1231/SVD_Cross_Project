@@ -1,0 +1,5 @@
+int func1 ( int var1 ) 
+{ 
+var1 = func2 ( var1 ) ; 
+return func3 ( var1 ) || ( var1 >= str && var1 <= str ) ; 
+} 

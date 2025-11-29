@@ -1,0 +1,15 @@
+static void func1 ( IplImage * var1 , const AVFrame * var2 , enum AVPixelFormat var3 ) 
+{ 
+IplImage * var4 ; 
+int var5 , var6 ; 
+if ( var3 == var7 ) { var5 = var8 ; var6 = number ; } 
+else if ( var3 == var9 ) { var5 = var8 ; var6 = number ; } 
+else if ( var3 == var10 ) { var5 = var8 ; var6 = number ; } 
+else return ; 
+var4 = cvCreateImageHeader ( ( CvSize ) { var2 -> width , var2 -> height } , var5 , var6 ) ; 
+* var1 = * var4 ; 
+var1 -> var11 = var1 -> var12 = var2 -> var13 [ number ] ; 
+var1 -> var14 = var15 ; 
+var1 -> var16 = var17 ; 
+var1 -> var18 = var2 -> var19 [ number ] ; 
+} 

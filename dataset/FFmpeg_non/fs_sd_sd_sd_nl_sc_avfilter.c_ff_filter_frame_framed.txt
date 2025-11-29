@@ -1,0 +1,84 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+int ( * func2 ) ( AVFilterLink * , AVFrame * ) ; 
+AVFilterContext * var3 = var1 -> var4 ; 
+AVFilterPad * var4 = var1 -> var5 ; 
+AVFrame * var6 = var7 ; 
+int var8 ; 
+AVFilterCommand * var9 = var1 -> var4 -> var10 ; 
+int64_t var11 ; 
+if ( var1 -> var12 ) { 
+func3 ( & var2 ) ; 
+return var13 ; 
+} 
+if ( ! ( func2 = var4 -> func2 ) ) 
+func2 = var14 ; 
+if ( var4 -> var15 && ! func4 ( var2 ) ) { 
+func5 ( var1 -> var4 , var16 , str ) ; 
+switch ( var1 -> var18 ) { 
+case var19 : 
+var6 = func6 ( var1 , var1 -> var20 , var1 -> var21 ) ; 
+break ; 
+case var22 : 
+var6 = func7 ( var1 , var2 -> var23 ) ; 
+break ; 
+var24 : 
+var8 = func8 ( var25 ) ; 
+goto var26 ; 
+} 
+if ( ! var6 ) { 
+var8 = func8 ( var27 ) ; 
+goto var26 ; 
+} 
+var8 = func9 ( var6 , var2 ) ; 
+if ( var8 < number ) 
+goto var26 ; 
+switch ( var1 -> var18 ) { 
+case var19 : 
+func10 ( var6 -> var17 , var6 -> var28 , ( const uint8_t ** ) var2 -> var17 , var2 -> var28 , 
+var2 -> var29 , var2 -> var30 , var2 -> var31 ) ; 
+break ; 
+case var22 : 
+func11 ( var6 -> var32 , var2 -> var32 , 
+number , number , var2 -> var23 , 
+func12 ( var2 -> var33 ) , 
+var2 -> var29 ) ; 
+break ; 
+var24 : 
+var8 = func8 ( var25 ) ; 
+goto var26 ; 
+} 
+func3 ( & var2 ) ; 
+} else 
+var6 = var2 ; 
+while ( var9 && var9 -> var34 <= var6 -> var11 * func13 ( var1 -> var35 ) ) { 
+func5 ( var1 -> var4 , var16 , 
+str , 
+var9 -> var34 , var9 -> var36 , var9 -> var37 ) ; 
+func14 ( var1 -> var4 , var9 -> var36 , var9 -> var37 , number , number , var9 -> var38 ) ; 
+func15 ( var1 -> var4 ) ; 
+var9 = var1 -> var4 -> var10 ; 
+} 
+var11 = var6 -> var11 ; 
+if ( var3 -> var39 ) { 
+int64_t var40 = func16 ( var6 ) ; 
+var3 -> var41 [ var42 ] = var1 -> var43 ; 
+var3 -> var41 [ var44 ] = var11 == var45 ? var46 : var11 * func13 ( var1 -> var35 ) ; 
+var3 -> var41 [ var47 ] = var1 -> var20 ; 
+var3 -> var41 [ var48 ] = var1 -> var21 ; 
+var3 -> var41 [ var49 ] = var40 == - number ? var46 : var40 ; 
+var3 -> var50 = fabs ( func17 ( var3 -> var51 , var3 -> var41 , var7 ) ) < number ; 
+if ( var3 -> var50 && 
+( var3 -> var52 -> var38 & var53 ) ) 
+func2 = var14 ; 
+} 
+var8 = func2 ( var1 , var6 ) ; 
+var1 -> var43 ++ ; 
+var1 -> var54 = number ; 
+func18 ( var1 , var11 ) ; 
+return var8 ; 
+var26 : 
+func3 ( & var6 ) ; 
+func3 ( & var2 ) ; 
+return var8 ; 
+} 

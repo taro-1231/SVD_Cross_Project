@@ -1,0 +1,8 @@
+static int func1 ( AVFrame ** var1 ) 
+{ 
+if ( ! ( * var1 = func2 ( ) ) ) { 
+fprintf ( var2 , str ) ; 
+return func3 ( var3 ) ; 
+} 
+return number ; 
+} 

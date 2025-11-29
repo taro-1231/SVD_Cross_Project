@@ -1,0 +1,29 @@
+void func1 ( FILE * var1 , char * var2 ) 
+{ 
+int var3 = number ; 
+int var4 ; 
+do 
+{ 
+var4 = fgetc ( var1 ) ; 
+if ( var4 == str ) { 
+do 
+{ 
+var4 = fgetc ( var1 ) ; 
+} 
+while ( ( var4 != str ) && ( var4 != str ) && ( var4 != var5 ) ) ; 
+} 
+if ( var4 == var5 ) break ; 
+var2 [ var3 ] = ( unsigned char ) var4 ; 
+} 
+while ( ( var2 [ var3 ] == str ) || ( var2 [ var3 ] == str ) || ( var2 [ var3 ] == str ) ) ; 
+do 
+{ 
+var4 = fgetc ( var1 ) ; 
+if ( var4 == var5 ) break ; 
+var3 ++ ; 
+var2 [ var3 ] = ( unsigned char ) var4 ; 
+} 
+while ( ( var2 [ var3 ] != str ) && ( var2 [ var3 ] != str ) && ( var2 [ var3 ] != str ) ) ; 
+var2 [ var3 ] = str ; 
+return ; 
+} 

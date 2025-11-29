@@ -1,0 +1,36 @@
+func1 ( png_store * var1 , store_pool * var2 ) 
+{ 
+if ( var2 -> var3 != var4 ) 
+{ 
+fprintf ( var5 , str , var1 -> var6 , 
+var2 == & var1 -> var7 ? str : str , 
+var2 == & var1 -> var7 ? ( var1 -> var8 != var4 ? 
+var1 -> var8 -> var9 : str ) : var1 -> var10 ) ; 
+++ var1 -> var11 ; 
+do 
+{ 
+store_memory * var12 = var2 -> var3 ; 
+var2 -> var3 = var12 -> var12 ; 
+var12 -> var12 = var4 ; 
+fprintf ( var5 , str , 
+( unsigned long ) var12 -> var13 , ( PNG_CONST void * ) ( var12 + number ) ) ; 
+func2 ( var4 , var2 , var12 ) ; 
+} 
+while ( var2 -> var3 != var4 ) ; 
+} 
+if ( var2 -> var14 > var2 -> var15 ) var2 -> var15 = var2 -> var14 ; 
+var2 -> var14 = number ; 
+if ( var2 -> var8 != number ) 
+fprintf ( var5 , str , 
+var1 -> var6 , var2 == & var1 -> var7 ? str : str , 
+var2 == & var1 -> var7 ? ( var1 -> var8 != var4 ? 
+var1 -> var8 -> var9 : str ) : var1 -> var10 ) ; 
+var2 -> var8 = number ; 
+if ( var2 -> var16 > var2 -> var17 ) 
+var2 -> var17 = var2 -> var16 ; 
+var2 -> var16 = number ; 
+if ( var2 -> var18 > var2 -> var19 ) 
+var2 -> var19 = var2 -> var18 ; 
+var2 -> var18 = number ; 
+func3 ( var2 -> var20 ) ; 
+} 

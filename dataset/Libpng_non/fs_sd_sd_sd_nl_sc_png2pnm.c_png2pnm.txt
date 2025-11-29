@@ -1,0 +1,178 @@
+BOOL func1 ( FILE * var1 , FILE * var2 , FILE * var3 , 
+volatile BOOL var4 , BOOL var5 ) 
+{ 
+png_struct * var6 = var7 ; 
+png_info * var8 = var7 ; 
+png_byte var9 [ number ] ; 
+png_byte * var10 = var7 ; 
+png_byte ** var11 = var7 ; 
+png_byte * var12 = var7 ; 
+png_uint_32 var13 ; 
+png_uint_32 var14 ; 
+png_uint_32 var15 ; 
+int var16 ; 
+int var17 ; 
+int var18 ; 
+int var19 ; 
+int var20 , var21 ; 
+int var22 ; 
+int var23 ; 
+long var24 ; 
+var22 = fread ( var9 , number , number , var1 ) ; 
+if ( var22 != number ) 
+return var25 ; 
+var22 = func2 ( var9 , number , number ) ; 
+if ( var22 ) 
+return var25 ; 
+var6 = func3 ( func4 ( var7 ) , 
+var7 , var7 , var7 ) ; 
+if ( ! var6 ) 
+return var25 ; 
+var8 = func5 ( var6 ) ; 
+if ( ! var8 ) 
+{ 
+func6 ( & var6 , var7 , var7 ) ; 
+return var25 ; 
+} 
+if ( func7 ( func8 ( var6 ) ) ) 
+{ 
+func6 ( & var6 , & var8 , var7 ) ; 
+return var25 ; 
+} 
+func9 ( var6 , var1 ) ; 
+func10 ( var6 , number ) ; 
+func11 ( var6 , var8 ) ; 
+func12 ( var6 , var8 , 
+& var14 , & var15 , & var16 , & var18 , 
+var7 , var7 , var7 ) ; 
+if ( var18 == var26 ) 
+func13 ( var6 ) ; 
+if ( var18 == var27 && var16 < number ) 
+func13 ( var6 ) ; 
+if ( func14 ( var6 , var8 , var28 ) ) 
+func13 ( var6 ) ; 
+if ( var16 == number ) 
+func15 ( var6 ) ; 
+if ( var18 == var27 || 
+var18 == var29 ) 
+func16 ( var6 ) ; 
+if ( func17 ( var6 , var8 , & var30 ) ) 
+func18 ( var6 , ( double ) number , var30 ) ; 
+func19 ( var6 , var8 ) ; 
+func12 ( var6 , var8 , & var14 , & var15 , & var16 , & var18 , 
+var7 , var7 , var7 ) ; 
+if ( var16 == number ) 
+{ 
+var4 = var25 ; 
+var2 -> var31 &= ~ ( ( unsigned ) var32 ) ; 
+} 
+if ( var18 == var27 ) 
+var17 = number ; 
+else if ( var18 == var29 ) 
+var17 = number ; 
+else if ( var18 == var33 ) 
+var17 = number ; 
+else if ( var18 == var34 ) 
+var17 = number ; 
+else 
+var17 = number ; 
+var19 = ( var17 - number ) % number ; 
+if ( var5 && ! var19 ) 
+{ 
+fprintf ( var35 , str ) ; 
+fprintf ( var35 , str ) ; 
+exit ( number ) ; 
+} 
+var13 = func20 ( var6 , var8 ) ; 
+if ( ( var10 = ( png_byte * ) 
+malloc ( var13 * var15 * sizeof ( png_byte ) ) ) == var7 ) { 
+func6 ( & var6 , & var8 , var7 ) ; 
+return var25 ; 
+} 
+if ( ( var11 = ( png_byte ** ) 
+malloc ( var15 * sizeof ( png_bytep ) ) ) == var7 ) 
+{ 
+func6 ( & var6 , & var8 , var7 ) ; 
+free ( var10 ) ; 
+var10 = var7 ; 
+return var25 ; 
+} 
+for ( var23 = number ; var23 < ( ( int ) var15 ) ; var23 ++ ) 
+var11 [ var23 ] = var10 + var23 * var13 ; 
+func21 ( var6 , var11 ) ; 
+func22 ( var6 , var8 ) ; 
+func6 ( & var6 , & var8 , ( png_infopp ) var7 ) ; 
+if ( ( var18 == var27 ) || 
+( var18 == var29 ) ) 
+{ 
+fprintf ( var2 , str , ( var4 ) ? str : str ) ; 
+fprintf ( var2 , str , ( int ) var14 , ( int ) var15 ) ; 
+fprintf ( var2 , str , ( ( number << ( int ) var16 ) - number ) ) ; 
+} 
+else if ( ( var18 == var33 ) || 
+( var18 == var34 ) ) 
+{ 
+fprintf ( var2 , str , ( var4 ) ? str : str ) ; 
+fprintf ( var2 , str , ( int ) var14 , ( int ) var15 ) ; 
+fprintf ( var2 , str , ( ( number << ( int ) var16 ) - number ) ) ; 
+} 
+if ( ( var5 ) && 
+( ( var18 == var29 ) || 
+( var18 == var34 ) ) ) 
+{ 
+fprintf ( var3 , str , ( var4 ) ? str : str ) ; 
+fprintf ( var3 , str , ( int ) var14 , ( int ) var15 ) ; 
+fprintf ( var3 , str , ( ( number << ( int ) var16 ) - number ) ) ; 
+} 
+var12 = var10 ; 
+for ( var20 = number ; var20 < ( int ) var15 ; var20 ++ ) 
+{ 
+for ( var21 = number ; var21 < ( int ) var14 ; var21 ++ ) 
+{ 
+for ( var23 = number ; var23 < ( var17 - var19 ) ; var23 ++ ) 
+{ 
+if ( var4 ) 
+fputc ( ( int ) * var12 ++ , var2 ) ; 
+else 
+if ( var16 == number ) { 
+var24 = ( long ) * var12 ++ ; 
+fprintf ( var2 , str , ( var24 << number ) + ( ( long ) * var12 ++ ) ) ; 
+} 
+else 
+fprintf ( var2 , str , ( long ) * var12 ++ ) ; 
+} 
+if ( var19 ) 
+{ 
+if ( ! var5 ) 
+{ 
+var12 ++ ; 
+if ( var16 == number ) 
+var12 ++ ; 
+} 
+else 
+{ 
+if ( var4 ) 
+fputc ( ( int ) * var12 ++ , var3 ) ; 
+else 
+if ( var16 == number ) { 
+var24 = ( long ) * var12 ++ ; 
+fprintf ( var3 , str , ( var24 << number ) + ( long ) * var12 ++ ) ; 
+} 
+else 
+fprintf ( var3 , str , ( long ) * var12 ++ ) ; 
+} 
+} 
+if ( ! var4 ) 
+if ( var21 % number == number ) 
+fprintf ( var2 , str ) ; 
+} 
+if ( ! var4 ) 
+if ( var21 % number != number ) 
+fprintf ( var2 , str ) ; 
+} 
+if ( var11 != ( unsigned char ** ) var7 ) 
+free ( var11 ) ; 
+if ( var10 != ( unsigned char * ) var7 ) 
+free ( var10 ) ; 
+return var36 ; 
+} 

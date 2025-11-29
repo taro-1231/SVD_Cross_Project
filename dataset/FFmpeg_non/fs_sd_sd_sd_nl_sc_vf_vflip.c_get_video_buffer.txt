@@ -1,0 +1,18 @@
+static AVFrame * func1 ( AVFilterLink * var1 , int var2 , int var3 ) 
+{ 
+FlipContext * var4 = var1 -> var5 -> var6 ; 
+AVFrame * var7 ; 
+int var8 ; 
+var7 = func2 ( var1 -> var5 -> var9 [ number ] , var2 , var3 ) ; 
+if ( ! var7 ) 
+return var10 ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+int var11 = var8 == number || var8 == number ? var4 -> var11 : number ; 
+int var12 = func3 ( var3 , var11 ) ; 
+if ( var7 -> var13 [ var8 ] ) { 
+var7 -> var13 [ var8 ] += ( var12 - number ) * var7 -> var14 [ var8 ] ; 
+var7 -> var14 [ var8 ] = - var7 -> var14 [ var8 ] ; 
+} 
+} 
+return var7 ; 
+} 

@@ -1,0 +1,4 @@
+uint64_t func1 ( const char * var1 ) 
+{ 
+return func2 ( var1 , number ) ; 
+} 

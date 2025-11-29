@@ -1,0 +1,16 @@
+int AC3_NAME ( func1 ) ( AC3EncodeContext * var1 ) 
+{ 
+int var2 ; 
+func2 ( var1 -> var3 , var1 -> var4 , var5 * 
+sizeof ( * var1 -> var4 ) , var6 ) ; 
+func3 ( var1 -> var3 , var1 -> var7 , var1 -> var8 , sizeof ( * var1 -> var7 ) , 
+var6 ) ; 
+for ( var2 = number ; var2 < var1 -> var8 ; var2 ++ ) { 
+func4 ( var1 -> var3 , var1 -> var7 [ var2 ] , 
+( var9 + var10 ) * sizeof ( ** var1 -> var7 ) , 
+var6 ) ; 
+} 
+return number ; 
+var6 : 
+return func5 ( var11 ) ; 
+} 

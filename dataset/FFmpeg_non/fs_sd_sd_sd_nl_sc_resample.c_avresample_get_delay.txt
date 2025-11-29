@@ -1,0 +1,7 @@
+int func1 ( AVAudioResampleContext * var1 ) 
+{ 
+ResampleContext * var2 = var1 -> var3 ; 
+if ( ! var1 -> var4 || ! var1 -> var3 ) 
+return number ; 
+return func2 ( var2 -> var5 -> var6 - var2 -> var7 , number ) ; 
+} 

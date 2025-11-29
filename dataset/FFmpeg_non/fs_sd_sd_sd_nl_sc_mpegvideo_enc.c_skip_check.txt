@@ -1,0 +1,36 @@
+static int func1 ( MpegEncContext * func2 , Picture * var1 , Picture * var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+int var6 = number ; 
+int64_t var7 = number ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+const int var8 = var1 -> var9 -> var10 [ var5 ] ; 
+const int var11 = var5 ? number : number ; 
+for ( var4 = number ; var4 < func2 -> var12 * var11 ; var4 ++ ) { 
+for ( var3 = number ; var3 < func2 -> var13 * var11 ; var3 ++ ) { 
+int var14 = var1 -> var15 ? number : number ; 
+uint8_t * var16 = var1 -> var9 -> var17 [ var5 ] + number * ( var3 + var4 * var8 ) + var14 ; 
+uint8_t * var18 = var2 -> var9 -> var17 [ var5 ] + number * ( var3 + var4 * var8 ) ; 
+int var19 = func2 -> func3 . func4 [ number ] ( func2 , var16 , var18 , var8 , number ) ; 
+switch ( func5 ( func2 -> var20 -> var21 ) ) { 
+case number : var6 = func6 ( var6 , var19 ) ; break ; 
+case number : var6 += func5 ( var19 ) ; break ; 
+case number : var7 += var19 * ( int64_t ) var19 ; break ; 
+case number : var7 += func5 ( var19 * ( int64_t ) var19 * var19 ) ; break ; 
+case 4 : var7 += ( var19 * ( int64_t ) var19 ) * ( var19 * ( int64_t ) var19 ) ; break ; 
+} 
+} 
+} 
+} 
+func7 ( ) ; 
+if ( var6 ) 
+var7 = var6 ; 
+if ( func2 -> var20 -> var21 < number ) 
+var7 = pow ( var7 / ( double ) ( func2 -> var13 * func2 -> var12 ) , 
+- number / func2 -> var20 -> var21 ) ; 
+if ( var7 < func2 -> var20 -> var22 ) 
+return number ; 
+if ( var7 < ( ( func2 -> var20 -> var23 * ( int64_t ) func2 -> var24 ) >> number ) ) 
+return number ; 
+return number ; 
+} 

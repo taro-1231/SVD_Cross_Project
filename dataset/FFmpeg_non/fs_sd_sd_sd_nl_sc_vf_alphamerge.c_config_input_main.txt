@@ -1,0 +1,7 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AlphaMergeContext * var2 = var1 -> var3 -> var4 ; 
+var2 -> var5 = 
+func2 ( var2 -> var6 , var1 -> var7 ) >= number ; 
+return number ; 
+} 

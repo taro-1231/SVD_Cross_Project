@@ -1,0 +1,25 @@
+static void func1 ( AVFilterContext * var1 , AVFrameSideData * var2 ) 
+{ 
+AVStereo3D * var3 ; 
+func2 ( var1 , var4 , str ) ; 
+if ( var2 -> var5 < sizeof ( * var3 ) ) { 
+func2 ( var1 , var4 , str ) ; 
+return ; 
+} 
+var3 = ( AVStereo3D * ) var2 -> var6 ; 
+func2 ( var1 , var4 , str ) ; 
+switch ( var3 -> var7 ) { 
+case var8 : func2 ( var1 , var4 , str ) ; break ; 
+case var9 : func2 ( var1 , var4 , str ) ; break ; 
+case var10 : func2 ( var1 , var4 , str ) ; break ; 
+case var11 : func2 ( var1 , var4 , str ) ; break ; 
+case var12 : func2 ( var1 , var4 , str ) ; break ; 
+case var13 : func2 ( var1 , var4 , str ) ; break ; 
+case var14 : func2 ( var1 , var4 , str ) ; break ; 
+case var15 : func2 ( var1 , var4 , str 
+str ) ; break ; 
+var16 : func2 ( var1 , var17 , str ) ; break ; 
+} 
+if ( var3 -> var18 & var19 ) 
+func2 ( var1 , var4 , str ) ; 
+} 

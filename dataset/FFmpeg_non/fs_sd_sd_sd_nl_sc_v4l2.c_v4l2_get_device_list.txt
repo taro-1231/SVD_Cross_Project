@@ -1,0 +1,58 @@
+static int func1 ( AVFormatContext * var1 , AVDeviceInfoList * var2 ) 
+{ 
+struct video_data * var3 = var1 -> var4 ; 
+DIR * var5 ; 
+struct dirent * var6 ; 
+AVDeviceInfo * var7 = var8 ; 
+struct v4l2_capability var9 ; 
+int var10 = number ; 
+if ( ! var2 ) 
+return func2 ( var11 ) ; 
+var5 = func3 ( str ) ; 
+if ( ! var5 ) { 
+var10 = func2 ( var12 ) ; 
+func4 ( var1 , var13 , str , func5 ( var10 ) ) ; 
+return var10 ; 
+} 
+while ( ( var6 = func6 ( var5 ) ) ) { 
+if ( ! func7 ( var6 -> var14 ) ) 
+continue ; 
+snprintf ( var1 -> var15 , sizeof ( var1 -> var15 ) , str , var6 -> var14 ) ; 
+if ( ( var3 -> var16 = func8 ( var1 ) ) < number ) 
+continue ; 
+if ( func9 ( var3 -> var16 , var17 , & var9 ) < number ) { 
+var10 = func2 ( var12 ) ; 
+func4 ( var1 , var13 , str , func5 ( var10 ) ) ; 
+goto var18 ; 
+} 
+var7 = func10 ( sizeof ( AVDeviceInfo ) ) ; 
+if ( ! var7 ) { 
+var10 = func2 ( var19 ) ; 
+goto var18 ; 
+} 
+var7 -> var20 = func11 ( var1 -> var15 ) ; 
+var7 -> var21 = func11 ( var9 . var22 ) ; 
+if ( ! var7 -> var20 || ! var7 -> var21 ) { 
+var10 = func2 ( var19 ) ; 
+goto var18 ; 
+} 
+if ( ( var10 = func12 ( & var2 -> var23 , 
+& var2 -> var24 , var7 ) ) < number ) 
+goto var18 ; 
+func13 ( var3 -> var16 ) ; 
+var3 -> var16 = - number ; 
+continue ; 
+var18 : 
+if ( var7 ) { 
+func14 ( & var7 -> var20 ) ; 
+func14 ( & var7 -> var21 ) ; 
+func14 ( & var7 ) ; 
+} 
+if ( var3 -> var16 >= number ) 
+func13 ( var3 -> var16 ) ; 
+var3 -> var16 = - number ; 
+break ; 
+} 
+func15 ( var5 ) ; 
+return var10 ; 
+} 

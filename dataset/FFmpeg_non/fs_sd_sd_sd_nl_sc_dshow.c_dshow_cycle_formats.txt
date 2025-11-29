@@ -1,0 +1,131 @@
+func1 ( AVFormatContext * var1 , enum dshowDeviceType var2 , 
+IPin * var3 , int * var4 ) 
+{ 
+struct dshow_ctx * var5 = var1 -> var6 ; 
+IAMStreamConfig * var7 = var8 ; 
+AM_MEDIA_TYPE * var9 = var8 ; 
+int var10 = number ; 
+void * var11 = var8 ; 
+int var12 , var13 , var14 , var15 ; 
+if ( func2 ( var3 , & var16 , ( void ** ) & var7 ) != var17 ) 
+return ; 
+if ( func3 ( var7 , & var13 , & var14 ) != var17 ) 
+goto var18 ; 
+var11 = func4 ( var14 ) ; 
+if ( ! var11 ) 
+goto var18 ; 
+for ( var12 = number ; var12 < var13 && ! var10 ; var12 ++ ) { 
+var15 = func5 ( var7 , var12 , & var9 , ( void * ) var11 ) ; 
+if ( var15 != var17 ) 
+goto var19 ; 
+func6 ( var9 ) ; 
+if ( var2 == var20 ) { 
+VIDEO_STREAM_CONFIG_CAPS * var21 = var11 ; 
+BITMAPINFOHEADER * var22 ; 
+int64_t * var23 ; 
+const AVCodecTag * const var24 [ ] = { avformat_get_riff_video_tags ( ) , var8 } ; 
+func7 ( var21 ) ; 
+if ( func8 ( & var9 -> var25 , & var26 ) ) { 
+VIDEOINFOHEADER * var27 = ( void * ) var9 -> var28 ; 
+var23 = & var27 -> var29 ; 
+var22 = & var27 -> var30 ; 
+} else if ( func8 ( & var9 -> var25 , & var31 ) ) { 
+VIDEOINFOHEADER2 * var27 = ( void * ) var9 -> var28 ; 
+var23 = & var27 -> var29 ; 
+var22 = & var27 -> var30 ; 
+} else { 
+goto var19 ; 
+} 
+if ( ! var4 ) { 
+enum AVPixelFormat var32 = func9 ( var22 -> var33 , var22 -> var34 ) ; 
+if ( var32 == var35 ) { 
+enum AVCodecID var36 = func10 ( var24 , var22 -> var33 ) ; 
+AVCodec * var37 = func11 ( var36 ) ; 
+if ( var36 == var38 || ! var37 ) { 
+func12 ( var1 , var39 , str , ( int ) var22 -> var33 ) ; 
+} else { 
+func12 ( var1 , var39 , str , var37 -> var40 ) ; 
+} 
+} else { 
+func12 ( var1 , var39 , str , func13 ( var32 ) ) ; 
+} 
+func12 ( var1 , var39 , str , 
+var21 -> var42 . var43 , var21 -> var42 . var44 , 
+number / var21 -> var45 , 
+var21 -> var46 . var43 , var21 -> var46 . var44 , 
+number / var21 -> var47 ) ; 
+continue ; 
+} 
+if ( var5 -> var48 != var49 ) { 
+if ( var5 -> var48 != func10 ( var24 , var22 -> var33 ) ) 
+goto var19 ; 
+} 
+if ( var5 -> var41 != var35 && 
+var5 -> var41 != func9 ( var22 -> var33 , var22 -> var34 ) ) { 
+goto var19 ; 
+} 
+if ( var5 -> var50 ) { 
+int64_t var50 = ( ( int64_t ) var5 -> var51 . var52 * number ) 
+/ var5 -> var51 . var53 ; 
+if ( var50 > var21 -> var45 || 
+var50 < var21 -> var47 ) 
+goto var19 ; 
+* var23 = var50 ; 
+} 
+if ( var5 -> var54 && var5 -> var55 ) { 
+if ( var5 -> var54 > var21 -> var46 . var43 || 
+var5 -> var54 < var21 -> var42 . var43 || 
+var5 -> var55 > var21 -> var46 . var44 || 
+var5 -> var55 < var21 -> var42 . var44 ) 
+goto var19 ; 
+var22 -> var56 = var5 -> var54 ; 
+var22 -> var57 = var5 -> var55 ; 
+} 
+} else { 
+AUDIO_STREAM_CONFIG_CAPS * var58 = var11 ; 
+WAVEFORMATEX * var59 ; 
+func14 ( var58 ) ; 
+if ( func8 ( & var9 -> var25 , & var60 ) ) { 
+var59 = ( void * ) var9 -> var28 ; 
+} else { 
+goto var19 ; 
+} 
+if ( ! var4 ) { 
+func12 ( var1 , var39 , str , 
+var58 -> var61 , var58 -> var62 , var58 -> var63 , 
+var58 -> var64 , var58 -> var65 , var58 -> var66 ) ; 
+continue ; 
+} 
+if ( var5 -> var67 ) { 
+if ( var5 -> var67 > var58 -> var66 || 
+var5 -> var67 < var58 -> var63 ) 
+goto var19 ; 
+var59 -> var68 = var5 -> var67 ; 
+} 
+if ( var5 -> var69 ) { 
+if ( var5 -> var69 > var58 -> var65 || 
+var5 -> var69 < var58 -> var62 ) 
+goto var19 ; 
+var59 -> var70 = var5 -> var69 ; 
+} 
+if ( var5 -> var71 ) { 
+if ( var5 -> var71 > var58 -> var64 || 
+var5 -> var71 < var58 -> var61 ) 
+goto var19 ; 
+var59 -> var72 = var5 -> var71 ; 
+} 
+} 
+if ( func15 ( var7 , var9 ) != var17 ) 
+goto var19 ; 
+var10 = number ; 
+var19 : 
+if ( var9 -> var28 ) 
+func16 ( var9 -> var28 ) ; 
+func16 ( var9 ) ; 
+} 
+var18 : 
+func17 ( var7 ) ; 
+func18 ( var11 ) ; 
+if ( var4 ) 
+* var4 = var10 ; 
+} 

@@ -1,0 +1,120 @@
+static int func1 ( void ) 
+{ 
+int var1 = number , var2 = number ; 
+int var3 , var4 ; 
+struct pollfd * var5 , * var6 ; 
+HTTPContext * var7 , * var8 ; 
+var5 = func2 ( var9 . var10 + number , 
+sizeof ( * var5 ) ) ; 
+if ( ! var5 ) { 
+func3 ( str 
+str , var9 . var10 ) ; 
+return - number ; 
+} 
+if ( var9 . var11 . var12 ) { 
+var1 = func5 ( & var9 . var11 ) ; 
+if ( var1 < number ) 
+goto var13 ; 
+} 
+if ( var9 . var14 . var12 ) { 
+var2 = func5 ( & var9 . var14 ) ; 
+if ( var2 < number ) { 
+func6 ( var1 ) ; 
+goto var13 ; 
+} 
+} 
+if ( ! var2 && ! var1 ) { 
+func3 ( str ) ; 
+goto var13 ; 
+} 
+func3 ( str ) ; 
+func7 ( var9 . var15 ) ; 
+func8 ( ) ; 
+for ( ; ; ) { 
+var6 = var5 ; 
+if ( var1 ) { 
+var6 -> var16 = var1 ; 
+var6 -> var17 = var18 ; 
+var6 ++ ; 
+} 
+if ( var2 ) { 
+var6 -> var16 = var2 ; 
+var6 -> var17 = var18 ; 
+var6 ++ ; 
+} 
+var7 = var19 ; 
+var4 = number ; 
+while ( var7 ) { 
+int var16 ; 
+var16 = var7 -> var16 ; 
+switch ( var7 -> var20 ) { 
+case var21 : 
+case var22 : 
+case var23 : 
+var7 -> var6 = var6 ; 
+var6 -> var16 = var16 ; 
+var6 -> var17 = var24 ; 
+var6 ++ ; 
+break ; 
+case var25 : 
+case var26 : 
+case var27 : 
+if ( ! var7 -> var28 ) { 
+var7 -> var6 = var6 ; 
+var6 -> var16 = var16 ; 
+var6 -> var17 = var24 ; 
+var6 ++ ; 
+} else { 
+if ( var4 > number ) 
+var4 = number ; 
+} 
+break ; 
+case var29 : 
+case var30 : 
+case var31 : 
+case var32 : 
+var7 -> var6 = var6 ; 
+var6 -> var16 = var16 ; 
+var6 -> var17 = var18 ; 
+var6 ++ ; 
+break ; 
+var33 : 
+var7 -> var6 = var34 ; 
+break ; 
+} 
+var7 = var7 -> var35 ; 
+} 
+do { 
+var3 = func4 ( var5 , var6 - var5 , var4 ) ; 
+if ( var3 < number && func9 ( ) != func10 ( var36 ) && 
+func9 ( ) != func10 ( var37 ) ) { 
+goto var13 ; 
+} 
+} while ( var3 < number ) ; 
+var38 = func11 ( ) / number ; 
+if ( var39 ) { 
+var39 = number ; 
+func7 ( var9 . var15 ) ; 
+} 
+for ( var7 = var19 ; var7 ; var7 = var8 ) { 
+var8 = var7 -> var35 ; 
+if ( func12 ( var7 ) < number ) { 
+func13 ( var7 ) ; 
+func14 ( var7 ) ; 
+} 
+} 
+var6 = var5 ; 
+if ( var1 ) { 
+if ( var6 -> var40 & var18 ) 
+func15 ( var1 , number ) ; 
+var6 ++ ; 
+} 
+if ( var2 ) { 
+if ( var6 -> var40 & var18 ) 
+func15 ( var2 , number ) ; 
+} 
+} 
+var13 : 
+func16 ( var5 ) ; 
+return - number ; 
+} 

@@ -1,0 +1,35 @@
+int func1 ( mainprog_info * var1 ) 
+{ 
+png_structp var2 ; 
+png_infop var3 ; 
+var2 = func2 ( var4 , var1 , 
+var5 , var6 ) ; 
+if ( ! var2 ) 
+return number ; 
+var3 = func3 ( var2 ) ; 
+if ( ! var3 ) { 
+func4 ( & var2 , var6 , var6 ) ; 
+return number ; 
+} 
+if ( func5 ( var1 -> var7 ) ) { 
+func4 ( & var2 , & var3 , var6 ) ; 
+return number ; 
+} 
+{ 
+static PNG_CONST png_byte var8 [ ] = { 
+98 , 75 , 71 , 68 , str , 
+103 , 65 , 77 , 65 , str , 
+115 , 82 , 71 , 66 , str , 
+} ; 
+func6 ( var2 , - number 
+var6 , - number ) ; 
+func6 ( var2 , 
+number var8 , 
+sizeof ( var8 ) / number ) ; 
+} 
+func7 ( var2 , var1 , 
+var9 , var10 , var11 ) ; 
+var1 -> var2 = var2 ; 
+var1 -> var3 = var3 ; 
+return number ; 
+} 

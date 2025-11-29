@@ -1,0 +1,32 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ChannelMapContext * var4 = var2 -> var5 ; 
+int var6 = func2 ( var1 -> var7 ) ; 
+int var8 , var9 = number ; 
+const char * var10 ; 
+char var11 [ number ] ; 
+for ( var8 = number ; var8 < var4 -> var12 ; var8 ++ ) { 
+struct ChannelMap * var13 = & var4 -> var14 [ var8 ] ; 
+if ( var4 -> var15 == var16 || var4 -> var15 == var17 ) { 
+var13 -> var18 = func3 ( 
+var1 -> var7 , var13 -> var19 ) ; 
+} 
+if ( var13 -> var18 < number || var13 -> var18 >= var6 ) { 
+func4 ( var11 , sizeof ( var11 ) , 
+number , var1 -> var7 ) ; 
+if ( var13 -> var19 ) { 
+var10 = func5 ( var13 -> var19 ) ; 
+func6 ( var2 , var20 , 
+str , 
+var10 , var11 ) ; 
+} else { 
+func6 ( var2 , var20 , 
+str , 
+var13 -> var18 , var11 ) ; 
+} 
+var9 = func7 ( var21 ) ; 
+} 
+} 
+return var9 ; 
+} 

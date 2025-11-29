@@ -1,0 +1,91 @@
+static void func1 ( int16_t * var1 , int16_t * var2 , int16_t * var3 , int var4 ) 
+{ 
+int_simd16_t var5 , var6 , var7 , var8 , var9 , var10 , var11 , var12 ; 
+int_simd16_t var13 , var14 , var15 , var16 ; 
+int_simd16_t var17 , var18 , var19 , var20 , var21 , var22 , var23 , var24 , var25 ; 
+int_simd16_t var26 , var27 , var28 , var29 , var30 , var31 , var32 , var33 ; 
+int16_t * var34 ; 
+int16_t * var35 ; 
+int16_t * var36 ; 
+int var37 ; 
+var34 = var2 ; 
+var35 = var3 ; 
+for ( ; var4 > number ; var4 -= number ) { 
+var36 = ( int16_t * ) var1 
+for ( var37 = var38 ; var37 > number ; var37 -- ) { 
+var5 = var34 [ var38 * number ] + var34 [ var38 * number ] ; 
+var12 = var34 [ var38 * number ] - var34 [ var38 * number ] ; 
+var6 = var34 [ var38 * number ] + var34 [ var38 * number ] ; 
+var11 = var34 [ var38 * number ] - var34 [ var38 * number ] ; 
+var7 = var34 [ var38 * number ] + var34 [ var38 * number ] ; 
+var10 = var34 [ var38 * number ] - var34 [ var38 * number ] ; 
+var8 = var34 [ var38 * number ] + var34 [ var38 * number ] ; 
+var9 = var34 [ var38 * number ] - var34 [ var38 * number ] ; 
+var13 = var5 + var8 ; 
+var16 = var5 - var8 ; 
+var14 = var6 + var7 ; 
+var15 = var6 - var7 ; 
+var26 = var13 + var14 ; 
+var30 = var13 - var14 ; 
+var17 = func2 ( ( var15 + var16 ) << number , var39 ) ; 
+var28 = var16 + var17 ; 
+var32 = var16 - var17 ; 
+func3 ( var5 , var26 , var36 [ number * number ] ) ; 
+func3 ( var6 , var28 , var36 [ number * number ] ) ; 
+func3 ( var7 , var30 , var36 [ number * number ] ) ; 
+func3 ( var8 , var32 , var36 [ number * number ] ) ; 
+var5 += number ; 
+var13 = ( var5 + var7 ) >> number ; 
+var14 = ( var5 - var7 ) >> number ; 
+var16 = ( var6 + var8 ) >> number ; 
+var15 = func2 ( ( var6 - var8 ) , var40 ) - var16 ; 
+var5 = var13 + var16 ; 
+var8 = var13 - var16 ; 
+var6 = var14 + var15 ; 
+var7 = var14 - var15 ; 
+var13 = var9 + var10 ; 
+var14 = var10 + var11 ; 
+var15 = var11 + var12 ; 
+var21 = func2 ( ( var13 - var15 ) << number , var41 ) ; 
+var18 = func2 ( var13 << number , var42 ) + var21 ; 
+var20 = func2 ( var15 << number , var43 ) + var21 ; 
+var19 = func2 ( var14 << number , var39 ) ; 
+var23 = var12 + var19 ; 
+var25 = var12 - var19 ; 
+var31 = var25 + var18 ; 
+var29 = var25 - var18 ; 
+var27 = var23 + var20 ; 
+var33 = var23 - var20 ; 
+func3 ( var9 , var27 , var36 [ number * number ] ) ; 
+func3 ( var10 , var29 , var36 [ number * number ] ) ; 
+func3 ( var11 , var31 , var36 [ number * number ] ) ; 
+func3 ( var12 , var33 , var36 [ number * number ] ) ; 
+var25 = var11 + var10 ; 
+var22 = ( var11 - var10 ) << number ; 
+var23 = var9 + var12 ; 
+var24 = ( var9 - var12 ) << number ; 
+var12 = ( var23 + var25 ) >> number ; 
+var14 = func2 ( ( var23 - var25 ) << number , var44 ) ; 
+var21 = func2 ( var22 + var24 , var45 ) ; 
+var13 = func2 ( var24 , var46 ) - var21 ; 
+var15 = func2 ( var22 , var47 ) + var21 ; 
+var11 = var15 - var12 ; 
+var10 = var14 - var11 ; 
+var9 = var13 + var10 ; 
+var35 [ var38 * number ] += ( var5 + var12 ) ; 
+var35 [ var38 * number ] += ( var6 + var11 ) ; 
+var35 [ var38 * number ] += ( var7 + var10 ) ; 
+var35 [ var38 * number ] += ( var8 - var9 ) ; 
+var35 [ var38 * number ] += ( var8 + var9 ) ; 
+var35 [ var38 * number ] += ( var7 - var10 ) ; 
+var35 [ var38 * number ] = ( var6 - var11 ) ; 
+var35 [ var38 * number ] = ( var5 - var12 ) ; 
+/ 
+var34 ++ ; 
+var35 ++ ; 
+var36 ++ ; 
+} 
+var34 += number ; 
+var35 += number ; 
+} 
+} 

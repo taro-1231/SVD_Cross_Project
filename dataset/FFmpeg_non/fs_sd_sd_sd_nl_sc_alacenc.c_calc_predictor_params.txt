@@ -1,0 +1,27 @@
+static void func1 ( AlacEncodeContext * var1 , int var2 ) 
+{ 
+int32_t var3 [ var4 ] [ var4 ] ; 
+int var5 [ var4 ] ; 
+int var6 ; 
+if ( var1 -> var7 == number ) { 
+var1 -> var8 [ var2 ] . var9 = number ; 
+var1 -> var8 [ var2 ] . var10 = number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = - number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = - number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = number ; 
+var1 -> var8 [ var2 ] . var11 [ number ] = - number ; 
+} else { 
+var6 = func2 ( & var1 -> var12 , var1 -> var13 [ var2 ] , 
+var1 -> var14 , 
+var1 -> var15 , 
+var1 -> var16 , 
+var17 , var3 , var5 , 
+var18 , number , 
+var19 , var20 , number ) ; 
+var1 -> var8 [ var2 ] . var9 = var6 ; 
+var1 -> var8 [ var2 ] . var10 = var5 [ var6 - number ] ; 
+memcpy ( var1 -> var8 [ var2 ] . var11 , var3 [ var6 - number ] , var6 * sizeof ( int ) ) ; 
+} 
+} 

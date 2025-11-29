@@ -1,0 +1,7 @@
+static int func1 ( int var1 , int var2 ) 
+{ 
+int var3 = number * ( var1 & number ) + ( var2 & number ) ; 
+int var4 = ( number * ( var1 & number ) + ( var2 & number ) ) >> number ; 
+int var5 = number * ( var1 >> number ) + ( var2 >> number ) ; 
+return var5 / number * number + var4 / number * number + var3 / number ; 
+} 

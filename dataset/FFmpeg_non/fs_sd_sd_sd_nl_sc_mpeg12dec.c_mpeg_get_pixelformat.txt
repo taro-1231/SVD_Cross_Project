@@ -1,0 +1,17 @@
+static enum AVPixelFormat func1 ( AVCodecContext * var1 ) 
+{ 
+Mpeg1Context * var2 = var1 -> var3 ; 
+MpegEncContext * var4 = & var2 -> var5 ; 
+const enum AVPixelFormat * var6 ; 
+if ( var7 && ( var1 -> var8 & var9 ) ) 
+return var10 ; 
+if ( var4 -> var11 < number ) 
+var6 = var1 -> var12 == var13 ? 
+var14 : 
+var15 ; 
+else if ( var4 -> var11 == number ) 
+var6 = var16 ; 
+else 
+var6 = var17 ; 
+return func2 ( var1 , var6 ) ; 
+} 

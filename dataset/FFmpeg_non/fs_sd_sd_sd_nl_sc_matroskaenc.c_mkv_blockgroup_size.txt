@@ -1,0 +1,10 @@
+static int func1 ( int var1 ) 
+{ 
+int var2 = var1 + number ; 
+var2 += func2 ( var2 ) ; 
+var2 += number ; 
+var2 += number ; 
+var2 += func2 ( var2 ) ; 
+var2 += number ; 
+return var2 ; 
+} 

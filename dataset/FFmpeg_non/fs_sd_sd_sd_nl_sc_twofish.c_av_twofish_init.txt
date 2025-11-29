@@ -1,0 +1,42 @@
+av_cold int func1 ( AVTWOFISH * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+int var4 ; 
+uint8_t var5 [ number ] ; 
+uint32_t var6 [ number ] , var7 [ number ] , var8 [ number ] , var9 , var10 ; 
+const uint32_t var11 = number ; 
+if ( var3 < number ) 
+return - number ; 
+if ( var3 <= number ) { 
+var1 -> var12 = number ; 
+} else if ( var3 <= number ) { 
+var1 -> var12 = number ; 
+} else { 
+var1 -> var12 = number ; 
+} 
+memset ( var5 , number , sizeof ( var5 ) ) ; 
+if ( var3 <= number ) { 
+memcpy ( var5 , var2 , var3 >> number ) ; 
+} else { 
+memcpy ( var5 , var2 , number ) ; 
+} 
+for ( var4 = number ; var4 < number * var1 -> var12 ; var4 ++ ) 
+var6 [ var4 ] = func2 ( var5 + number * var4 ) ; 
+for ( var4 = number ; var4 < var1 -> var12 ; var4 ++ ) { 
+var7 [ var4 ] = var6 [ number * var4 ] ; 
+var8 [ var4 ] = var6 [ number * var4 + number ] ; 
+var1 -> var13 [ var1 -> var12 - var4 - number ] = func3 ( var7 [ var4 ] , var8 [ var4 ] ) ; 
+} 
+func4 ( var1 ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var9 = func5 ( ( number * var4 ) * var11 , var7 , var1 -> var12 ) ; 
+var10 = func5 ( ( number * var4 + number ) * var11 , var8 , var1 -> var12 ) ; 
+var10 = func6 ( var10 , number ) ; 
+var1 -> var14 [ number * var4 ] = var9 + var10 ; 
+var1 -> var14 [ number * var4 + number ] = func6 ( ( var9 + ( number * var10 ) ) , number ) ; 
+} 
+if ( var1 -> var12 << number != var3 ) { 
+return number ; 
+} else { 
+return number ; 
+} 
+} 

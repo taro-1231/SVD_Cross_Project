@@ -1,0 +1,11 @@
+static mfxStatus func1 ( mfxHDL var1 , mfxFrameAllocResponse * var2 ) 
+{ 
+DecodeContext * var3 = var1 ; 
+if ( var3 -> var4 ) 
+func2 ( var3 -> var5 , var3 -> var4 , var3 -> var6 ) ; 
+func3 ( & var3 -> var4 ) ; 
+func3 ( & var3 -> var7 ) ; 
+func3 ( & var3 -> var8 ) ; 
+var3 -> var6 = number ; 
+return var9 ; 
+} 

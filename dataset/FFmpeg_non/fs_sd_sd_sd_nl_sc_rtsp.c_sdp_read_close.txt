@@ -1,0 +1,6 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+func3 ( ) ; 
+return number ; 
+} 

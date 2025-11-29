@@ -1,0 +1,4 @@
+int func1 ( uint64_t var1 ) 
+{ 
+return func2 ( var1 ) ; 
+} 

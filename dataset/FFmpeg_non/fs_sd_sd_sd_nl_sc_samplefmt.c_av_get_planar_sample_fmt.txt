@@ -1,0 +1,8 @@
+enum AVSampleFormat func1 ( enum AVSampleFormat var1 ) 
+{ 
+if ( var1 < number || var1 >= var2 ) 
+return var3 ; 
+if ( var4 [ var1 ] . var5 ) 
+return var1 ; 
+return var4 [ var1 ] . var6 ; 
+} 

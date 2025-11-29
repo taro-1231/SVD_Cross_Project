@@ -1,0 +1,64 @@
+void func1 ( int * var1 , int * var2 , int var3 , 
+const int var4 , const int var5 , 
+int var6 , int var7 ) 
+{ 
+if ( var5 == number || ( var5 == number && var6 ) ) { 
+if ( var3 < number ) 
+var3 += number ; 
+else 
+var3 = number * var3 - number ; 
+} else { 
+if ( var7 == number ) { 
+int var8 = func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+if ( var3 < number ) { 
+var3 = number * ( var3 + var8 ) + number ; 
+} else if ( var3 < number ) { 
+var3 += number * var8 + number ; 
+} else { 
+var3 = number * ( var3 + var8 - number ) + number ; 
+} 
+} else { 
+var3 -- ; 
+if ( var7 == number ) { 
+var3 += number * func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+} else 
+var3 += number * func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+} 
+} 
+* var1 = var3 * number >> number ; 
+* var2 = var3 - number ** var1 - number ; 
+} 
+} 
+void func1 ( int * var1 , int * var2 , int var3 , 
+const int var4 , const int var5 , 
+int var6 , int var7 ) 
+{ 
+if ( var5 == number || ( var5 == number && var6 ) ) { 
+if ( var3 < number ) 
+var3 += number ; 
+else 
+var3 = number * var3 - number ; 
+} else { 
+if ( var7 == number ) { 
+int var8 = func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+if ( var3 < number ) { 
+var3 = number * ( var3 + var8 ) + number ; 
+} else if ( var3 < number ) { 
+var3 += number * var8 + number ; 
+} else { 
+var3 = number * ( var3 + var8 - number ) + number ; 
+} 
+} else { 
+var3 -- ; 
+if ( var7 == number ) { 
+var3 += number * func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+} else 
+var3 += number * func2 ( var4 - number , var9 , 
+var10 - number ) ; 
+} 
+} 

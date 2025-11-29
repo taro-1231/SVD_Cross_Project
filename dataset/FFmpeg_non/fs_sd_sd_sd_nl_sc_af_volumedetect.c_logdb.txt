@@ -1,0 +1,7 @@
+static inline double func1 ( uint64_t var2 ) 
+{ 
+double var3 = var2 / ( double ) ( number * number ) ; 
+if ( ! var2 ) 
+return var1 ; 
+return log ( var3 ) * - number ; 
+} 

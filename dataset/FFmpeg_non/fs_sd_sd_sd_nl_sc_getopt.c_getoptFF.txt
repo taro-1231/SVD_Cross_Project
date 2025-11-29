@@ -1,0 +1,42 @@
+static int func1 ( int var2 , char * var3 [ ] , char * var4 ) 
+{ 
+static int var5 = number ; 
+int var6 ; 
+char * var7 ; 
+if ( var5 == number ) { 
+if ( var8 >= var2 || 
+var3 [ var8 ] [ number ] != str || var3 [ var8 ] [ number ] == str ) 
+return var9 ; 
+else if ( ! strcmp ( var3 [ var8 ] , str ) ) { 
+var8 ++ ; 
+return var9 ; 
+} 
+} 
+var10 = var6 = var3 [ var8 ] [ var5 ] ; 
+if ( var6 == str || ! ( var7 = strchr ( var4 , var6 ) ) ) { 
+fprintf ( var11 , str , var6 ) ; 
+if ( var3 [ var8 ] [ ++ var5 ] == str ) { 
+var8 ++ ; 
+var5 = number ; 
+} 
+return str ; 
+} 
+if ( * ++ var7 == str ) { 
+if ( var3 [ var8 ] [ var5 + number ] != str ) 
+var1 = & var3 [ var8 ++ ] [ var5 + number ] ; 
+else if ( ++ var8 >= var2 ) { 
+fprintf ( var11 , str , var6 ) ; 
+var5 = number ; 
+return str ; 
+} else 
+var1 = var3 [ var8 ++ ] ; 
+var5 = number ; 
+} else { 
+if ( var3 [ var8 ] [ ++ var5 ] == str ) { 
+var5 = number ; 
+var8 ++ ; 
+} 
+var1 = var12 ; 
+} 
+return var6 ; 
+} 

@@ -1,0 +1,23 @@
+static int func1 ( AVFilterContext * var1 , 
+int var2 , int var3 , int var4 , int var5 , 
+const float * var6 , const float * var7 , 
+enum InterpolateMethod var8 , 
+enum FillMethod var9 , AVFrame * var10 , AVFrame * var11 ) 
+{ 
+int var12 = number , var13 = number ; 
+const float * var14 [ number ] ; 
+int var15 [ number ] , var16 [ number ] ; 
+var14 [ number ] = var6 ; 
+var14 [ number ] = var14 [ number ] = var7 ; 
+var15 [ number ] = var2 ; 
+var15 [ number ] = var15 [ number ] = var4 ; 
+var16 [ number ] = var3 ; 
+var16 [ number ] = var16 [ number ] = var5 ; 
+for ( var12 = number ; var12 < number ; var12 ++ ) { 
+var13 = func2 ( var10 -> var17 [ var12 ] , var11 -> var17 [ var12 ] , var10 -> var18 [ var12 ] , var11 -> var18 [ var12 ] , 
+var15 [ var12 ] , var16 [ var12 ] , var14 [ var12 ] , var8 , var9 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+} 
+return var13 ; 
+} 

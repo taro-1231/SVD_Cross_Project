@@ -1,0 +1,41 @@
+static void func1 ( CoverContext * var1 , AVFrame * var2 , int var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 ; 
+for ( var7 = number ; var7 < number ; var7 ++ ) { 
+int var8 = var3 >> ! ! var7 ; 
+int var9 = var4 >> ! ! var7 ; 
+int var10 = var2 -> var11 [ var7 ] ; 
+uint8_t * var12 = var2 -> var12 [ var7 ] + var8 + var9 * var10 ; 
+int var13 = func2 ( var1 -> var14 , ! ! var7 ) ; 
+int var15 = func2 ( var1 -> var16 , ! ! var7 ) ; 
+int var17 = func2 ( var2 -> var14 , ! ! var7 ) ; 
+int var18 = func2 ( var2 -> var16 , ! ! var7 ) ; 
+for ( var6 = number ; var6 < var15 ; var6 ++ ) { 
+for ( var5 = number ; var5 < var13 ; var5 ++ ) { 
+int var19 = number ; 
+int var20 = number ; 
+if ( var8 ) { 
+int var21 = number / ( var5 + number ) ; 
+var20 += var12 [ - number + var6 * var10 ] * var21 ; 
+var19 += var21 ; 
+} 
+if ( var9 ) { 
+int var21 = number / ( var6 + number ) ; 
+var20 += var12 [ var5 - var10 ] * var21 ; 
+var19 += var21 ; 
+} 
+if ( var8 + var13 < var17 ) { 
+int var21 = number / ( var13 - var5 ) ; 
+var20 += var12 [ var13 + var6 * var10 ] * var21 ; 
+var19 += var21 ; 
+} 
+if ( var9 + var15 < var18 ) { 
+int var21 = number / ( var15 - var6 ) ; 
+var20 += var12 [ var5 + var15 * var10 ] * var21 ; 
+var19 += var21 ; 
+} 
+var12 [ var5 + var6 * var10 ] = var19 ? ( var20 + ( var19 >> number ) ) / var19 : number ; 
+} 
+} 
+} 
+} 

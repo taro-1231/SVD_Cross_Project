@@ -1,0 +1,46 @@
+static int func1 ( AVCodecContext * var1 , 
+const uint8_t * var2 , int var3 ) 
+{ 
+Mpeg1Context * var4 = var1 -> var5 ; 
+if ( var3 >= number && 
+var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str && 
+var2 [ number ] == number && ( var2 [ number ] & number ) ) { 
+int var6 = var2 [ number ] & number ; 
+if ( var6 > number && var3 >= number + var6 * number ) { 
+func2 ( & var4 -> var7 ) ; 
+var4 -> var8 = var6 * number ; 
+var4 -> var7 = func3 ( var4 -> var8 ) ; 
+if ( var4 -> var7 ) 
+memcpy ( var4 -> var7 , var2 + number , var4 -> var8 ) ; 
+} 
+return number ; 
+} else if ( var3 >= number && 
+var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == number && var2 [ number ] == number ) { 
+int var6 = number ; 
+int var9 ; 
+for ( var9 = number ; var9 + number <= var3 && ( ( var2 [ var9 ] & number ) == number ) ; var9 += number ) 
+var6 ++ ; 
+if ( var6 > number ) { 
+func2 ( & var4 -> var7 ) ; 
+var4 -> var8 = var6 * number ; 
+var4 -> var7 = func3 ( var4 -> var8 ) ; 
+if ( var4 -> var7 ) { 
+uint8_t var10 = ! ! ( var2 [ number ] & number ) ; 
+uint8_t * var11 = var4 -> var7 ; 
+var2 += number ; 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) { 
+var11 [ number ] = ( var2 [ number ] == number && var10 ) ? number : number ; 
+var11 [ number ] = var2 [ number ] ; 
+var11 [ number ] = var2 [ number ] ; 
+var11 [ number ] = ( var2 [ number ] == number && ! var10 ) ? number : number ; 
+var11 [ number ] = var2 [ number ] ; 
+var11 [ number ] = var2 [ number ] ; 
+var11 += number ; 
+var2 += number ; 
+} 
+} 
+} 
+return number ; 
+} 
+return number ; 
+} 

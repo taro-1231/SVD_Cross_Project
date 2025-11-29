@@ -1,0 +1,35 @@
+static void func1 ( OutputFilter * var1 , OptionsContext * var2 , 
+AVFormatContext * var3 ) 
+{ 
+OutputStream * var4 ; 
+switch ( var1 -> var5 ) { 
+case var6 : var4 = func2 ( var2 , var3 , - number ) ; break ; 
+case var7 : var4 = func3 ( var2 , var3 , - number ) ; break ; 
+var8 : 
+av_log ( NULL , AV_LOG_FATAL , str 
+str ) ; 
+func4 ( number ) ; 
+} 
+var4 -> var10 = - number ; 
+var4 -> var11 = var1 ; 
+var1 -> var4 = var4 ; 
+var1 -> var12 = - number ; 
+if ( var4 -> var13 ) { 
+av_log ( NULL , AV_LOG_ERROR , str 
+str 
+str , var4 -> file_index , var4 -> index ) ; 
+func4 ( number ) ; 
+} 
+if ( var4 -> var14 && ( var4 -> var9 || var4 -> var15 ) ) { 
+const char * var16 = var4 -> var9 ? str : str ; 
+av_log ( NULL , AV_LOG_ERROR , 
+str 
+str 
+str , 
+var4 -> var9 ? str : str , 
+var4 -> var9 ? var4 -> var9 : var4 -> var15 , 
+var16 , var4 -> file_index , var4 -> index , var16 ) ; 
+func4 ( number ) ; 
+} 
+func5 ( & var1 -> var17 ) ; 
+} 

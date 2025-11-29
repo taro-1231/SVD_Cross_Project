@@ -1,0 +1,5 @@
+static void func1 ( HTTPContext * var1 , enum RTSPStatusCode var2 ) 
+{ 
+func2 ( var1 , var2 ) ; 
+func3 ( var1 -> var3 , str ) ; 
+} 

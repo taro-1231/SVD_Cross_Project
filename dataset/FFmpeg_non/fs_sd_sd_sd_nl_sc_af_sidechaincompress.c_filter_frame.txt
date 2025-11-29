@@ -1,0 +1,50 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+SidechainCompressContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+AVFilterLink * var9 = var3 -> var10 [ number ] ; 
+const double var11 = var5 -> var11 ; 
+const double * var12 ; 
+double * var13 ; 
+int var14 ; 
+int var15 , var16 , var17 ; 
+for ( var16 = number ; var16 < number ; var16 ++ ) 
+if ( var1 == var3 -> var8 [ var16 ] ) 
+break ; 
+func2 ( var16 < number && ! var5 -> var18 [ var16 ] ) ; 
+var5 -> var18 [ var16 ] = var2 ; 
+if ( ! var5 -> var18 [ number ] || ! var5 -> var18 [ number ] ) 
+return number ; 
+var14 = func3 ( var5 -> var18 [ number ] -> var14 , 
+var5 -> var18 [ number ] -> var14 ) ; 
+var13 = ( double * ) var5 -> var18 [ number ] -> var19 [ number ] ; 
+var12 = ( const double * ) var5 -> var18 [ number ] -> var19 [ number ] ; 
+for ( var16 = number ; var16 < var14 ; var16 ++ ) { 
+double var20 , var21 = number ; 
+var20 = func4 ( var12 [ number ] ) ; 
+if ( var5 -> var1 == number ) { 
+for ( var17 = number ; var17 < var7 -> var22 ; var17 ++ ) 
+var20 = func5 ( func4 ( var12 [ var17 ] ) , var20 ) ; 
+} else { 
+for ( var17 = number ; var17 < var7 -> var22 ; var17 ++ ) 
+var20 += func4 ( var12 [ var17 ] ) ; 
+var20 /= var7 -> var22 ; 
+} 
+if ( var5 -> var23 ) 
+var20 *= var20 ; 
+var5 -> var24 += ( var20 - var5 -> var24 ) * ( var20 > var5 -> var24 ? var5 -> var25 : var5 -> var26 ) ; 
+if ( var5 -> var24 > number && var5 -> var24 > var5 -> var27 ) 
+var21 = func6 ( var5 -> var24 , var5 -> var28 , var5 -> var29 , var5 -> var30 , 
+var5 -> var31 , var5 -> var32 , 
+var5 -> var33 , var5 -> var23 ) ; 
+for ( var17 = number ; var17 < var9 -> var22 ; var17 ++ ) 
+var13 [ var17 ] *= var21 * var11 ; 
+var13 += var9 -> var22 ; 
+var12 += var7 -> var22 ; 
+} 
+var15 = func7 ( var9 , var5 -> var18 [ number ] ) ; 
+var5 -> var18 [ number ] = var34 ; 
+func8 ( & var5 -> var18 [ number ] ) ; 
+return var15 ; 
+} 

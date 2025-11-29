@@ -1,0 +1,36 @@
+static int func1 ( AVExpr * var1 ) 
+{ 
+if ( ! var1 ) return number ; 
+switch ( var1 -> var2 ) { 
+case var3 : 
+case var4 : return number ; 
+case var5 : 
+case var6 : 
+case var7 : 
+case var8 : 
+case var9 : 
+case var10 : 
+case var11 : 
+case var12 : 
+case var13 : 
+case var14 : 
+case var15 : 
+case var16 : 
+case var17 : 
+return func1 ( var1 -> var18 [ number ] ) && ! var1 -> var18 [ number ] ; 
+case var19 : 
+return func1 ( var1 -> var18 [ number ] ) 
+&& ( ! var1 -> var18 [ number ] || func1 ( var1 -> var18 [ number ] ) ) ; 
+case var20 : 
+case var21 : 
+case var22 : 
+return func1 ( var1 -> var18 [ number ] ) && func1 ( var1 -> var18 [ number ] ) 
+&& ( ! var1 -> var18 [ number ] || func1 ( var1 -> var18 [ number ] ) ) ; 
+case var23 : 
+case var24 : 
+return func1 ( var1 -> var18 [ number ] ) && 
+func1 ( var1 -> var18 [ number ] ) && 
+func1 ( var1 -> var18 [ number ] ) ; 
+var25 : return func1 ( var1 -> var18 [ number ] ) && func1 ( var1 -> var18 [ number ] ) && ! var1 -> var18 [ number ] ; 
+} 
+} 

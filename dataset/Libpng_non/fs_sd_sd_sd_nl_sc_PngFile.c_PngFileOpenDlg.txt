@@ -1,0 +1,8 @@
+BOOL func1 ( HWND var1 , PTSTR var2 , PTSTR var3 ) 
+{ 
+var4 . var5 = var1 ; 
+var4 . var6 = var2 ; 
+var4 . var7 = var3 ; 
+var4 . var8 = var9 ; 
+return func2 ( & var4 ) ; 
+} 

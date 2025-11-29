@@ -1,0 +1,4 @@
+cl_command_queue func1 ( void ) 
+{ 
+return var1 . var2 ; 
+} 

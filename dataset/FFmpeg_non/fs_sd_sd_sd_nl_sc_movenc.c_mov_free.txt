@@ -1,0 +1,21 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MOVMuxContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( var2 -> var5 ) { 
+if ( var2 -> var6 [ var2 -> var5 ] . var7 ) 
+func2 ( & var2 -> var6 [ var2 -> var5 ] . var7 -> var8 ) ; 
+func2 ( & var2 -> var6 [ var2 -> var5 ] . var7 ) ; 
+} 
+for ( var4 = number ; var4 < var2 -> var9 ; var4 ++ ) { 
+if ( var2 -> var6 [ var4 ] . var10 == func3 ( str , str , str , str ) ) 
+func4 ( & var2 -> var6 [ var4 ] ) ; 
+else if ( var2 -> var6 [ var4 ] . var10 == func3 ( str , str , str , str ) && var2 -> var11 ) 
+func2 ( & var2 -> var6 [ var4 ] . var7 ) ; 
+func2 ( & var2 -> var6 [ var4 ] . var12 ) ; 
+func2 ( & var2 -> var6 [ var4 ] . var13 ) ; 
+if ( var2 -> var6 [ var4 ] . var14 ) 
+func2 ( & var2 -> var6 [ var4 ] . var15 ) ; 
+} 
+func2 ( & var2 -> var6 ) ; 
+} 

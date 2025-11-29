@@ -1,0 +1,95 @@
+static void func1 ( float * var1 , const float * var2 , 
+const float var3 [ 2 ] , 
+const float var4 [ 2 ] , 
+float var5 , float var6 [ 2 ] , int var7 ) 
+{ 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+PTR_ADDIU str 
+str 
+str 
+str 
+str 
+str 
+str 
+: [ var1 ] str ( var1 ) , 
+[ var2 ] str ( var2 ) , [ var5 ] str ( var5 ) , 
+[ var7 ] str ( var7 ) , [ var6 ] str ( var6 ) 
+: [ var3 ] str ( var3 ) , 
+[ var4 ] str ( var4 ) 
+: str , str , str , str , str , str , 
+str , str , str , str , str , str , 
+str , str , str , str , str , str 
+) ; 
+} 

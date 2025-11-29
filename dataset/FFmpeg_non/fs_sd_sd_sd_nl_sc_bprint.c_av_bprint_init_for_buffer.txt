@@ -1,0 +1,8 @@
+void func1 ( AVBPrint * var1 , char * var2 , unsigned var3 ) 
+{ 
+var1 -> var4 = var2 ; 
+var1 -> var5 = number ; 
+var1 -> var3 = var3 ; 
+var1 -> var6 = var3 ; 
+* var1 -> var4 = number ; 
+} 

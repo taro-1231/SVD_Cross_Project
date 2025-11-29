@@ -1,0 +1,56 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+VideoState * var4 ; 
+func2 ( ) ; 
+func3 ( var5 ) ; 
+func4 ( var1 , var2 , var6 ) ; 
+func5 ( ) ; 
+func6 ( ) ; 
+func7 ( ) ; 
+func8 ( ) ; 
+func9 ( ) ; 
+func10 ( var7 , var8 ) ; 
+func10 ( var9 , var8 ) ; 
+func11 ( var1 , var2 , var6 ) ; 
+func12 ( var10 , var1 , var2 , var6 , var11 ) ; 
+if ( ! var12 ) { 
+func13 ( ) ; 
+func14 ( var10 , var13 , str ) ; 
+func14 ( var10 , var13 , 
+str , var14 ) ; 
+exit ( number ) ; 
+} 
+if ( var15 ) { 
+var16 = number ; 
+} 
+var3 = var17 | var18 | var19 ; 
+if ( var20 ) 
+var3 &= ~ var18 ; 
+else { 
+if ( ! func15 ( str ) ) 
+func16 ( str , str , number ) ; 
+} 
+if ( var15 ) 
+var3 &= ~ var17 ; 
+if ( func17 ( var3 ) ) { 
+func14 ( var10 , var13 , str , func18 ( ) ) ; 
+func14 ( var10 , var13 , str ) ; 
+exit ( number ) ; 
+} 
+func19 ( var23 , var24 ) ; 
+func19 ( var25 , var24 ) ; 
+if ( func20 ( var26 ) ) { 
+func14 ( var10 , var13 , str ) ; 
+func21 ( var10 ) ; 
+} 
+func22 ( & var27 ) ; 
+var27 . var28 = ( uint8_t * ) & var27 ; 
+var4 = func23 ( var12 , var29 ) ; 
+if ( ! var4 ) { 
+func14 ( var10 , var13 , str ) ; 
+func21 ( var10 ) ; 
+} 
+func24 ( var4 ) ; 
+return number ; 
+} 

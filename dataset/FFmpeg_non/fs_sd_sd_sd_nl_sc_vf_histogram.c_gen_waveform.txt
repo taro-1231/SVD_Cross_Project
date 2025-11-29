@@ -1,0 +1,44 @@
+static void func1 ( HistogramContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 ) 
+{ 
+const int var8 = var1 -> var9 -> var10 [ var4 ] . var8 ; 
+const int var11 = var1 -> var12 ; 
+const int var13 = ( var4 == number || var4 == number ) ; 
+const int var14 = ( var13 ? var1 -> var9 -> var15 : number ) ; 
+const int var16 = ( var13 ? var1 -> var9 -> var17 : number ) ; 
+const int var18 = var2 -> var19 [ var8 ] ; 
+const int var20 = var3 -> var19 [ var8 ] ; 
+const int var21 = var20 * ( var11 == number ? - number : number ) ; 
+uint8_t * var22 = var2 -> var23 [ var8 ] ; 
+uint8_t * var24 = var3 -> var23 [ var8 ] + ( var7 ? ( var6 >> var16 ) * var20 : var6 >> var14 ) ; 
+uint8_t * const var25 = var24 + var20 * ( ( number >> var16 ) - number ) ; 
+uint8_t * const var26 = ( var11 ? var25 : var24 ) ; 
+const uint8_t var27 = number - var5 ; 
+const int var28 = func2 ( var2 -> var29 , var16 ) ; 
+const int var30 = func2 ( var2 -> var31 , var14 ) ; 
+uint8_t * var32 , * var33 ; 
+int var34 ; 
+if ( ! var7 && var11 ) 
+var24 += number >> var14 ; 
+for ( var34 = number ; var34 < var28 ; var34 ++ ) { 
+const uint8_t * var35 = var22 + var30 ; 
+var32 = var26 ; 
+for ( var33 = var22 ; var33 < var35 ; var33 ++ ) { 
+uint8_t * var36 ; 
+if ( var7 ) { 
+var36 = var32 ++ var21 * ( * var33 >> var16 ) ; 
+} else { 
+if ( var11 ) 
+var36 = var24 - ( * var33 >> var14 ) ; 
+else 
+var36 = var24 + ( * var33 >> var14 ) ; 
+} 
+if ( * var36 <= var27 ) 
+* var36 += var5 ; 
+else 
+* var36 = number ; 
+} 
+var22 += var18 ; 
+var24 += var20 ; 
+} 
+} 

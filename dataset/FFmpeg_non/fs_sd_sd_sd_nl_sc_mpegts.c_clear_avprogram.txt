@@ -1,0 +1,13 @@
+static void func1 ( MpegTSContext * var1 , unsigned int var2 ) 
+{ 
+AVProgram * var3 = var4 ; 
+int var5 ; 
+for ( var5 = number ; var5 < var1 -> var6 -> var7 ; var5 ++ ) 
+if ( var1 -> var6 -> var8 [ var5 ] -> var9 == var2 ) { 
+var3 = var1 -> var6 -> var8 [ var5 ] ; 
+break ; 
+} 
+if ( ! var3 ) 
+return ; 
+var3 -> var10 = number ; 
+} 

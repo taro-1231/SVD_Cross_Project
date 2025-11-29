@@ -1,0 +1,8 @@
+void * func1 ( size_t var1 ) { 
+int var2 ; 
+func2 ( var1 ) ; 
+if ( var2 ) 
+return func3 ( var1 ) ; 
+else 
+return number ; 
+} 

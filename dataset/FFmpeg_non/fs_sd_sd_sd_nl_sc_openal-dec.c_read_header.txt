@@ -1,0 +1,43 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+al_data * var2 = var1 -> var3 ; 
+static const ALCenum var4 [ 2 ] [ 2 ] = { 
+{ AL_FORMAT_MONO8 , AL_FORMAT_STEREO8 } , 
+{ AL_FORMAT_MONO16 , AL_FORMAT_STEREO16 } 
+} ; 
+int var5 = number ; 
+const char * var6 ; 
+AVStream * var7 = var8 ; 
+AVCodecContext * var9 = var8 ; 
+if ( var2 -> var10 ) { 
+func2 ( var1 ) ; 
+return var11 ; 
+} 
+var2 -> var12 = var4 [ var2 -> var13 / number - number ] [ var2 -> var14 - number ] ; 
+var2 -> var15 = 
+func3 ( var1 -> var16 [ number ] ? var1 -> var16 : var8 , 
+var2 -> var17 , 
+var2 -> var12 , 
+var2 -> var17 ) ; 
+if ( var5 = func4 ( var2 -> var15 , & var6 ) ) goto var18 ; 
+if ( ! ( var7 = func5 ( var1 , var8 ) ) ) { 
+var5 = func6 ( var19 ) ; 
+goto var18 ; 
+} 
+func7 ( var7 , number , number , number ) ; 
+var9 = var7 -> var9 ; 
+var9 -> var20 = var21 ; 
+var9 -> var17 = var2 -> var17 ; 
+var9 -> var14 = func8 ( var2 -> var12 ) -> var14 ; 
+var9 -> var22 = func8 ( var2 -> var12 ) -> var22 ; 
+var2 -> var23 = ( func9 ( func8 ( var2 -> var12 ) -> var22 ) * 
+func8 ( var2 -> var12 ) -> var14 ) / number ; 
+func10 ( var2 -> var15 ) ; 
+return number ; 
+var18 : 
+if ( var2 -> var15 ) 
+func11 ( var2 -> var15 ) ; 
+if ( var6 ) 
+func12 ( var1 , var24 , str , var6 ) ; 
+return var5 ; 
+} 

@@ -1,0 +1,6 @@
+void func1 ( uint8_t * var1 , size_t var2 ) 
+{ 
+func2 ( var1 , var2 ) ; 
+UnmapViewOfFile ( var1 ) ; 
+av_free ( var1 ) ; 
+} 

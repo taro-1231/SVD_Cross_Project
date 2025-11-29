@@ -1,0 +1,51 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+BufferSinkContext * var2 = var1 -> var3 ; 
+AVFilterFormats * var4 = var5 ; 
+AVFilterChannelLayouts * var6 = var5 ; 
+unsigned var7 ; 
+int var8 ; 
+CHECK_LIST_SIZE ( var9 ) 
+CHECK_LIST_SIZE ( var10 ) 
+CHECK_LIST_SIZE ( var11 ) 
+CHECK_LIST_SIZE ( var12 ) 
+if ( var2 -> var13 ) { 
+for ( var7 = number ; var7 < func2 ( var2 -> var9 ) ; var7 ++ ) 
+if ( ( var8 = func3 ( & var4 , var2 -> var9 [ var7 ] ) ) < number ) { 
+func4 ( & var4 ) ; 
+return var8 ; 
+} 
+func5 ( var1 , var4 ) ; 
+} 
+if ( var2 -> var14 || var2 -> var15 || 
+var2 -> var16 ) { 
+for ( var7 = number ; var7 < func2 ( var2 -> var11 ) ; var7 ++ ) 
+if ( ( var8 = func6 ( & var6 , var2 -> var11 [ var7 ] ) ) < number ) { 
+func7 ( & var6 ) ; 
+return var8 ; 
+} 
+for ( var7 = number ; var7 < func2 ( var2 -> var12 ) ; var7 ++ ) 
+if ( ( var8 = func6 ( & var6 , func8 ( var2 -> var12 [ var7 ] ) ) ) < number ) { 
+func7 ( & var6 ) ; 
+return var8 ; 
+} 
+if ( var2 -> var16 ) { 
+if ( var6 ) 
+func9 ( var1 , var17 , 
+str ) ; 
+else if ( ! ( var6 = func10 ( ) ) ) 
+return func11 ( var18 ) ; 
+} 
+func12 ( var1 , var6 ) ; 
+} 
+if ( var2 -> var19 ) { 
+var4 = var5 ; 
+for ( var7 = number ; var7 < func2 ( var2 -> var10 ) ; var7 ++ ) 
+if ( ( var8 = func3 ( & var4 , var2 -> var10 [ var7 ] ) ) < number ) { 
+func4 ( & var4 ) ; 
+return var8 ; 
+} 
+func13 ( var1 , var4 ) ; 
+} 
+return number ; 
+} 

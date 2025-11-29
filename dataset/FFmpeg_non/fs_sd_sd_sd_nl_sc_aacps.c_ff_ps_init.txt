@@ -1,0 +1,28 @@
+av_cold void AAC_RENAME ( func1 ) ( void ) { 
+static const struct { 
+const void * ps_codes , * ps_bits ; 
+const unsigned int table_size , elem_size ; 
+} ps_tmp [ ] = { 
+PS_VLC_ROW ( huff_iid_df1 ) , 
+PS_VLC_ROW ( huff_iid_dt1 ) , 
+PS_VLC_ROW ( huff_iid_df0 ) , 
+PS_VLC_ROW ( huff_iid_dt0 ) , 
+PS_VLC_ROW ( huff_icc_df ) , 
+PS_VLC_ROW ( huff_icc_dt ) , 
+PS_VLC_ROW ( huff_ipd_df ) , 
+PS_VLC_ROW ( huff_ipd_dt ) , 
+PS_VLC_ROW ( huff_opd_df ) , 
+PS_VLC_ROW ( huff_opd_dt ) , 
+} ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func2 ( number , number ) ; 
+func3 ( ) ; 
+} 

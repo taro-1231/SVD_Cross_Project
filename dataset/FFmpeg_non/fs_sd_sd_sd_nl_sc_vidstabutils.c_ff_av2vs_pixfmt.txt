@@ -1,0 +1,19 @@
+VSPixelFormat func1 ( AVFilterContext * var1 , enum AVPixelFormat var2 ) 
+{ 
+switch ( var2 ) { 
+case var3 : return var4 ; 
+case var5 : return var6 ; 
+case var7 : return var8 ; 
+case var9 : return var10 ; 
+case var11 : return var12 ; 
+case var13 : return var14 ; 
+case var15 : return var16 ; 
+case var17 : return var18 ; 
+case var19 : return var20 ; 
+case var21 : return var22 ; 
+case var23 : return var24 ; 
+var25 : 
+func2 ( var1 , var26 , str , var2 ) ; 
+return var27 ; 
+} 
+} 

@@ -1,0 +1,27 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+CropContext * var7 = var1 -> var8 ; 
+int var9 ; 
+if ( ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) 
+|| ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) 
+|| ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) ) { 
+int var14 = var7 -> var12 ; 
+int var15 = var7 -> var13 ; 
+int var16 = var7 -> var10 ; 
+int var17 = var7 -> var11 ; 
+AVFilterLink * var18 = var1 -> var19 [ number ] ; 
+AVFilterLink * var20 = var1 -> var21 [ number ] ; 
+func2 ( var7 , var2 , var3 , number ) ; 
+if ( ( var9 = func3 ( var20 ) ) < number ) { 
+var7 -> var12 = var14 ; 
+var7 -> var13 = var15 ; 
+var7 -> var10 = var16 ; 
+var7 -> var11 = var17 ; 
+return var9 ; 
+} 
+var9 = func4 ( var18 ) ; 
+} else 
+var9 = func5 ( var22 ) ; 
+return var9 ; 
+} 

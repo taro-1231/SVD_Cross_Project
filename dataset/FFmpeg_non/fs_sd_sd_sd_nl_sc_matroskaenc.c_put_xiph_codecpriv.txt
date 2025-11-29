@@ -1,0 +1,23 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , AVCodecContext * var3 ) 
+{ 
+const uint8_t * var4 [ number ] ; 
+int var5 [ number ] ; 
+int var6 ; 
+int var7 ; 
+if ( var3 -> var8 == var9 ) 
+var6 = number ; 
+else 
+var6 = number ; 
+if ( func2 ( var3 -> var10 , var3 -> var11 , 
+var6 , var4 , var5 ) < number ) { 
+func3 ( var1 , var12 , str ) ; 
+return - number ; 
+} 
+func4 ( var2 , number ) ; 
+for ( var7 = number ; var7 < number ; var7 ++ ) { 
+func5 ( var2 , var5 [ var7 ] ) ; 
+} 
+for ( var7 = number ; var7 < number ; var7 ++ ) 
+func6 ( var2 , var4 [ var7 ] , var5 [ var7 ] ) ; 
+return number ; 
+} 

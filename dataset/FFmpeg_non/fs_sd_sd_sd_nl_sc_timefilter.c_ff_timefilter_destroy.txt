@@ -1,0 +1,4 @@
+void func1 ( TimeFilter * var1 ) 
+{ 
+func2 ( & var1 ) ; 
+} 

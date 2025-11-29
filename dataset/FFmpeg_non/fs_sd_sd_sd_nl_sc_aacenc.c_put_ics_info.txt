@@ -1,0 +1,15 @@
+static void func1 ( AACEncContext * var1 , IndividualChannelStream * var2 ) 
+{ 
+int var3 ; 
+func2 ( & var1 -> var4 , number , number ) ; 
+func2 ( & var1 -> var4 , number , var2 -> var5 [ number ] ) ; 
+func2 ( & var1 -> var4 , number , var2 -> var6 [ number ] ) ; 
+if ( var2 -> var5 [ number ] != var7 ) { 
+func2 ( & var1 -> var4 , number , var2 -> var8 ) ; 
+func2 ( & var1 -> var4 , number , ! ! var2 -> var9 ) ; 
+} else { 
+func2 ( & var1 -> var4 , number , var2 -> var8 ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) 
+func2 ( & var1 -> var4 , number , ! var2 -> var10 [ var3 ] ) ; 
+} 
+} 

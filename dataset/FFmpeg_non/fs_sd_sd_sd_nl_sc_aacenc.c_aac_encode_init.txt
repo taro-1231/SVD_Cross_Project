@@ -1,0 +1,68 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AACEncContext * var2 = var1 -> var3 ; 
+int var4 , var5 = number ; 
+const uint8_t * var6 [ number ] ; 
+uint8_t var7 [ var8 ] ; 
+int var9 [ number ] ; 
+var1 -> var10 = number ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+if ( var1 -> var11 == var12 [ var4 ] ) 
+break ; 
+var2 -> var13 = var1 -> var13 ; 
+func2 ( var4 == number || var4 >= var14 || var4 >= var15 , 
+str , var1 -> var11 ) ; 
+func2 ( var2 -> var13 > var8 , 
+str , var2 -> var13 ) ; 
+func3 ( number * var1 -> var16 / var1 -> var11 > number * var2 -> var13 , 
+str ) ; 
+if ( var1 -> var17 == var18 ) { 
+var2 -> var19 . var20 = number ; 
+} else if ( ( var1 -> var17 == var21 || 
+var1 -> var17 == var22 ) && var2 -> var19 . var20 ) { 
+var2 -> var17 = number ; 
+func3 ( number , str ) ; 
+} else if ( var1 -> var17 == var21 || 
+var1 -> var17 == var22 ) { 
+var2 -> var17 = number ; 
+} else { 
+func2 ( number , str , var1 -> var17 ) ; 
+} 
+if ( var2 -> var19 . var23 != var24 ) { 
+var2 -> var19 . var25 = number ; 
+var2 -> var19 . var26 = number ; 
+} 
+var1 -> var16 = ( int ) func4 ( 
+number * var2 -> var13 / number * var1 -> var11 , 
+var1 -> var16 ) ; 
+var2 -> var27 = var4 ; 
+var2 -> var28 = var29 [ var2 -> var13 - number ] ; 
+if ( ( var5 = func5 ( var1 , var2 ) ) < number ) 
+goto var30 ; 
+if ( ( var5 = func6 ( var1 , var2 ) ) < number ) 
+goto var30 ; 
+var1 -> var31 = number ; 
+func7 ( var1 ) ; 
+var6 [ number ] = var32 [ var4 ] ; 
+var6 [ number ] = var33 [ var4 ] ; 
+var9 [ number ] = var34 [ var4 ] ; 
+var9 [ number ] = var35 [ var4 ] ; 
+for ( var4 = number ; var4 < var2 -> var28 [ number ] ; var4 ++ ) 
+var7 [ var4 ] = var2 -> var28 [ var4 + number ] == var36 ; 
+if ( ( var5 = func8 ( & var2 -> var37 , var1 , number , var6 , var9 , 
+var2 -> var28 [ number ] , var7 ) ) < number ) 
+goto var30 ; 
+var2 -> var38 = func9 ( var1 ) ; 
+var2 -> var39 = & var40 [ var2 -> var19 . var23 ] ; 
+func10 ( & var2 -> var41 , number * var1 -> var10 , var42 , var43 ) ; 
+if ( var44 ) 
+func11 ( var2 ) ; 
+var2 -> var45 = var1 -> var46 > number ? var1 -> var46 : number ; 
+func12 ( ) ; 
+var1 -> var47 = number ; 
+func13 ( var1 , & var2 -> var48 ) ; 
+return number ; 
+var30 : 
+func14 ( var1 ) ; 
+return var5 ; 
+} 

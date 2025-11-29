@@ -1,0 +1,55 @@
+static int func1 ( AVFormatContext * var1 , XImage * var2 , int * var3 ) 
+{ 
+func2 ( var1 , var4 , 
+str , 
+var2 -> var5 , 
+var2 -> var6 , 
+var2 -> var7 , 
+var2 -> var8 ) ; 
+* var3 = var9 ; 
+switch ( var2 -> var8 ) { 
+case 8 : 
+* var3 = var10 ; 
+break ; 
+case 16 : 
+if ( var2 -> var5 == number && 
+var2 -> var6 == number && 
+var2 -> var7 == number ) { 
+* var3 = var11 ; 
+} else if ( var2 -> var5 == number && 
+var2 -> var6 == number && 
+var2 -> var7 == number ) { 
+* var3 = var12 ; 
+} 
+break ; 
+case 24 : 
+if ( var2 -> var5 == number && 
+var2 -> var6 == number && 
+var2 -> var7 == number ) { 
+* var3 = var13 ; 
+} else if ( var2 -> var5 == number && 
+var2 -> var6 == number && 
+var2 -> var7 == number ) { 
+* var3 = var14 ; 
+} 
+break ; 
+case 32 : 
+if ( var2 -> var5 == number && 
+var2 -> var6 == number && 
+var2 -> var7 == number ) { 
+* var3 = var15 ; 
+} 
+break ; 
+} 
+if ( * var3 == var9 ) { 
+func2 ( var1 , AV_LOG_ERROR , 
+str 
+str , 
+var2 -> var5 , 
+var2 -> var6 , 
+var2 -> var7 , 
+var2 -> var8 ) ; 
+return var16 ; 
+} 
+return number ; 
+} 

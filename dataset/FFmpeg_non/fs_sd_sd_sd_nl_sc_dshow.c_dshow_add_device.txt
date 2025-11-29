@@ -1,0 +1,83 @@
+func1 ( AVFormatContext * var1 , 
+enum dshowDeviceType var2 ) 
+{ 
+struct dshow_ctx * var3 = var1 -> var4 ; 
+AM_MEDIA_TYPE var5 ; 
+AVCodecContext * var6 ; 
+AVStream * var7 ; 
+int var8 = func2 ( var9 ) ; 
+var7 = func3 ( var1 , var10 ) ; 
+if ( ! var7 ) { 
+var8 = func2 ( var11 ) ; 
+goto var12 ; 
+} 
+var7 -> var13 = var2 ; 
+var3 -> var14 [ var2 ] -> var15 = var7 -> var16 ; 
+func4 ( var3 -> var17 [ var2 ] , & var5 ) ; 
+var6 = var7 -> var6 ; 
+if ( var2 == var18 ) { 
+BITMAPINFOHEADER * var19 = var10 ; 
+AVRational var20 ; 
+if ( func5 ( & var5 . var21 , & var22 ) ) { 
+VIDEOINFOHEADER * var23 = ( void * ) var5 . var24 ; 
+var20 = ( AVRational ) { var23 -> AvgTimePerFrame , number } ; 
+var19 = & var23 -> var25 ; 
+} else if ( func5 ( & var5 . var21 , & var26 ) ) { 
+VIDEOINFOHEADER2 * var23 = ( void * ) var5 . var24 ; 
+var20 = ( AVRational ) { var23 -> AvgTimePerFrame , number } ; 
+var19 = & var23 -> var25 ; 
+} 
+if ( ! var19 ) { 
+func6 ( var1 , var27 , str ) ; 
+goto var12 ; 
+} 
+var6 -> var20 = var20 ; 
+var6 -> var28 = var29 ; 
+var6 -> var30 = var19 -> var31 ; 
+var6 -> var32 = var19 -> var33 ; 
+var6 -> var34 = var19 -> var35 ; 
+var6 -> var36 = func7 ( var19 -> var35 , var19 -> var37 ) ; 
+if ( var19 -> var35 == func8 ( str , str , str , str ) ) { 
+func6 ( var1 , var38 , str ) ; 
+var6 -> var39 = var40 ; 
+} 
+if ( var6 -> var36 == var41 ) { 
+const AVCodecTag * const var42 [ ] = { avformat_get_riff_video_tags ( ) , var10 } ; 
+var6 -> var43 = func9 ( var42 , var19 -> var35 ) ; 
+if ( var6 -> var43 == var44 ) { 
+func6 ( var1 , var27 , str 
+str , ( int ) var19 -> var35 ) ; 
+return var45 ; 
+} 
+var6 -> var46 = var19 -> var37 ; 
+} else { 
+var6 -> var43 = var47 ; 
+if ( var19 -> var35 == var48 || var19 -> var35 == var49 ) { 
+var6 -> var46 = var19 -> var37 ; 
+var6 -> var50 = func10 ( number + var51 ) ; 
+if ( var6 -> var50 ) { 
+var6 -> var52 = number ; 
+memcpy ( var6 -> var50 , str , number ) ; 
+} 
+} 
+} 
+} else { 
+WAVEFORMATEX * var53 = var10 ; 
+if ( func5 ( & var5 . var21 , & var54 ) ) { 
+var53 = ( void * ) var5 . var24 ; 
+} 
+if ( ! var53 ) { 
+func6 ( var1 , var27 , str ) ; 
+goto var12 ; 
+} 
+var6 -> var28 = var55 ; 
+var6 -> var56 = func11 ( var53 -> var57 ) ; 
+var6 -> var43 = func12 ( var6 -> var56 ) ; 
+var6 -> var58 = var53 -> var59 ; 
+var6 -> var60 = var53 -> var61 ; 
+} 
+func13 ( var7 , number , number , number ) ; 
+var8 = number ; 
+var12 : 
+return var8 ; 
+} 

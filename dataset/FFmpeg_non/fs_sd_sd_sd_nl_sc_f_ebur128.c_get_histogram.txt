@@ -1,0 +1,12 @@
+static struct hist_entry * func1 ( void ) 
+{ 
+int var2 ; 
+struct hist_entry * var3 = func2 ( var4 , sizeof ( * var3 ) ) ; 
+if ( ! var3 ) 
+return var5 ; 
+for ( var2 = number ; var2 < var4 ; var2 ++ ) { 
+var3 [ var2 ] . var6 = var2 / ( double ) var7 + var8 ; 
+var3 [ var2 ] . var1 = func3 ( var3 [ var2 ] . var6 ) ; 
+} 
+return var3 ; 
+} 

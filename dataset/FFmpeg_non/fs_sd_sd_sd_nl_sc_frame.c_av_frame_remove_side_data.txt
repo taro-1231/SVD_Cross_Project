@@ -1,0 +1,12 @@
+void func1 ( AVFrame * var1 , enum AVFrameSideDataType var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < var1 -> var4 ; var3 ++ ) { 
+AVFrameSideData * var5 = var1 -> var6 [ var3 ] ; 
+if ( var5 -> var2 == var2 ) { 
+func2 ( & var1 -> var6 [ var3 ] ) ; 
+var1 -> var6 [ var3 ] = var1 -> var6 [ var1 -> var4 - number ] ; 
+var1 -> var4 -- ; 
+} 
+} 
+} 

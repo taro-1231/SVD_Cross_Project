@@ -1,0 +1,36 @@
+int func1 ( AVHashContext ** var1 , const char * var2 ) 
+{ 
+AVHashContext * var3 ; 
+int var4 ; 
+* var1 = var5 ; 
+for ( var4 = number ; var4 < var6 ; var4 ++ ) 
+if ( func2 ( var2 , var7 [ var4 ] . var2 ) == number ) 
+break ; 
+if ( var4 >= var6 ) return func3 ( var8 ) ; 
+var3 = func4 ( sizeof ( * var3 ) ) ; 
+if ( ! var3 ) return func3 ( var9 ) ; 
+var3 -> var10 = var4 ; 
+switch ( var4 ) { 
+case var11 : var3 -> var1 = func5 ( ) ; break ; 
+case var12 : var3 -> var1 = func6 ( ) ; break ; 
+case var13 : 
+case var14 : 
+case var15 : 
+case var16 : var3 -> var1 = func7 ( ) ; break ; 
+case var17 : 
+case var18 : 
+case var19 : var3 -> var1 = func8 ( ) ; break ; 
+case var20 : 
+case var21 : 
+case var22 : 
+case var23 : var3 -> var1 = func9 ( ) ; break ; 
+case var24 : var3 -> var25 = func10 ( var26 ) ; break ; 
+case var27 : break ; 
+} 
+if ( var4 != var27 && var4 != var24 && ! var3 -> var1 ) { 
+func11 ( var3 ) ; 
+return func3 ( var9 ) ; 
+} 
+* var1 = var3 ; 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_uint_32 var4 ; 
+var4 = fwrite ( var2 , number , var3 , ( FILE * ) ( var1 -> var5 ) ) ; 
+if ( var4 != var3 ) 
+{ 
+func2 ( var1 , str ) ; 
+} 
+} 

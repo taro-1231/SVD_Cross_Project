@@ -1,0 +1,16 @@
+void func1 ( AVBPrint * var1 , char var2 , unsigned var3 ) 
+{ 
+unsigned var4 , var5 ; 
+while ( number ) { 
+var4 = func2 ( var1 ) ; 
+if ( var3 < var4 ) 
+break ; 
+if ( func3 ( var1 , var3 ) ) 
+break ; 
+} 
+if ( var4 ) { 
+var5 = func4 ( var3 , var4 - number ) ; 
+memset ( var1 -> var6 + var1 -> var7 , var2 , var5 ) ; 
+} 
+func5 ( var1 , var3 ) ; 
+} 

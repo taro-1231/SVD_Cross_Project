@@ -1,0 +1,18 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+DelogoContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 == - number ) { \ 
+return func4 ( var6 ) ; \ 
+} 
+func2 ( var7 ) ; 
+func2 ( var8 ) ; 
+func2 ( var9 ) ; 
+func2 ( var10 ) ; 
+func3 ( var1 , var11 , str , 
+var2 -> var7 , var2 -> var8 , var2 -> var9 , var2 -> var10 , var2 -> var12 , var2 -> var13 ) ; 
+var2 -> var9 += var2 -> var12 * number ; 
+var2 -> var10 += var2 -> var12 * number ; 
+var2 -> var7 -= var2 -> var12 ; 
+var2 -> var8 -= var2 -> var12 ; 
+return number ; 
+} 

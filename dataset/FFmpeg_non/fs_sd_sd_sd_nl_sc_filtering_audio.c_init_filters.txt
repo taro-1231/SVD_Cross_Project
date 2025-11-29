@@ -1,0 +1,78 @@
+static int func1 ( const char * var1 ) 
+{ 
+char var2 [ number ] ; 
+int var3 = number ; 
+AVFilter * var4 = func2 ( str ) ; 
+AVFilter * var5 = func2 ( str ) ; 
+AVFilterInOut * var6 = func3 ( ) ; 
+AVFilterInOut * var7 = func3 ( ) ; 
+static const enum AVSampleFormat var8 [ ] = { var9 , - number } ; 
+static const int64_t var10 [ ] = { var11 , - number } ; 
+static const int var12 [ ] = { number , - number } ; 
+const AVFilterLink * var13 ; 
+AVRational var14 = var15 -> var16 [ var17 ] -> var14 ; 
+var18 = func4 ( ) ; 
+if ( ! var6 || ! var7 || ! var18 ) { 
+var3 = func5 ( var19 ) ; 
+goto var20 ; 
+} 
+if ( ! var21 -> var22 ) 
+var21 -> var22 = func6 ( var21 -> var23 ) ; 
+snprintf ( var2 , sizeof ( var2 ) , 
+str PRIx64 , 
+var14 . num , var14 . den , var21 -> var24 , 
+func7 ( var21 -> sample_fmt ) , var21 -> var22 ) ; 
+var3 = func8 ( & var25 , var4 , str , 
+var2 , var26 , var18 ) ; 
+if ( var3 < number ) { 
+func9 ( var26 , var27 , str ) ; 
+goto var20 ; 
+} 
+var3 = func8 ( & var28 , var5 , str , 
+var26 , var26 , var18 ) ; 
+if ( var3 < number ) { 
+func9 ( var26 , var27 , str ) ; 
+goto var20 ; 
+} 
+var3 = func10 ( var28 , str , var8 , - number , 
+var29 ) ; 
+if ( var3 < number ) { 
+func9 ( var26 , var27 , str ) ; 
+goto var20 ; 
+} 
+var3 = func10 ( var28 , str , var10 , - number , 
+var29 ) ; 
+if ( var3 < number ) { 
+func9 ( var26 , var27 , str ) ; 
+goto var20 ; 
+} 
+var3 = func10 ( var28 , str , var12 , - number , 
+var29 ) ; 
+if ( var3 < number ) { 
+func9 ( var26 , var27 , str ) ; 
+goto var20 ; 
+} 
+var6 -> var31 = func11 ( str ) ; 
+var6 -> var32 = var25 ; 
+var6 -> var33 = number ; 
+var6 -> var34 = var26 ; 
+var7 -> var31 = func11 ( str ) ; 
+var7 -> var32 = var28 ; 
+var7 -> var33 = number ; 
+var7 -> var34 = var26 ; 
+if ( ( var3 = func12 ( var18 , var1 , 
+& var7 , & var6 , var26 ) ) < number ) 
+goto var20 ; 
+if ( ( var3 = func13 ( var18 , var26 ) ) < number ) 
+goto var20 ; 
+var13 = var28 -> var7 [ number ] ; 
+func14 ( var2 , sizeof ( var2 ) , - number , var13 -> var22 ) ; 
+func9 ( var26 , var35 , str , 
+( int ) var13 -> var24 , 
+( char * ) func15 ( func7 ( var13 -> var30 ) , str ) , 
+var2 ) ; 
+var20 : 
+func16 ( & var7 ) ; 
+func16 ( & var6 ) ; 
+return var3 ; 
+} 

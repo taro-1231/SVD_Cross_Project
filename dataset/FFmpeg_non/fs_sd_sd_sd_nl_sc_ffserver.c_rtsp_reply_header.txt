@@ -1,0 +1,16 @@
+static void func1 ( HTTPContext * var1 , enum RTSPStatusCode var2 ) 
+{ 
+const char * var3 ; 
+time_t var4 ; 
+struct var5 * var5 ; 
+char var6 [ number ] ; 
+var3 = func2 ( var2 ) ; 
+if ( ! var3 ) 
+var3 = var3 ; 
+func3 ( var1 -> var7 , var3 , var2 , var3 ) ; 
+func3 ( var1 -> var7 , var3 , var1 -> var8 ) ; 
+var4 = time ( var9 ) ; 
+var5 = gmtime ( & var4 ) ; 
+strftime ( var6 , sizeof ( var6 ) , var3 , var5 ) ; 
+func3 ( var1 -> var7 , var3 , var6 ) ; 
+} 

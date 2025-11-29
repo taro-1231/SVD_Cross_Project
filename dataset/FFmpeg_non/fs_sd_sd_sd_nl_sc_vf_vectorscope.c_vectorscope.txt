@@ -1,0 +1,138 @@
+static void func1 ( VectorscopeContext * var1 , AVFrame * var2 , AVFrame * var3 , int var4 ) 
+{ 
+const uint8_t * const * var5 = ( const uint8_t * const * ) var2 -> var6 ; 
+const int var7 = var2 -> var8 [ var1 -> var9 ] ; 
+const int var10 = var2 -> var8 [ var1 -> var11 ] ; 
+const int var12 = var2 -> var8 [ var4 ] ; 
+const int var13 = var3 -> var8 [ number ] ; 
+const int var14 = var1 -> var14 ; 
+const int var15 = var1 -> var9 , var16 = var1 -> var11 ; 
+const int var17 = var1 -> var18 [ var16 ] ; 
+const int var19 = var1 -> var20 [ var15 ] ; 
+const uint8_t * var21 = var5 [ var15 ] ; 
+const uint8_t * var22 = var5 [ var16 ] ; 
+const uint8_t * var23 = var5 [ var4 ] ; 
+const int var24 = var1 -> var24 ; 
+const int var25 = var1 -> var25 ; 
+uint8_t ** var26 = var3 -> var6 ; 
+uint8_t * var27 = var26 [ var15 ] ; 
+uint8_t * var28 = var26 [ var16 ] ; 
+uint8_t * var29 = var26 [ var4 ] ; 
+int var30 , var31 ; 
+switch ( var1 -> var32 ) { 
+case var33 : 
+case var34 : 
+if ( var1 -> var35 ) { 
+for ( var30 = number ; var30 < var17 ; var30 ++ ) { 
+const int var36 = var30 * var7 ; 
+const int var37 = var30 * var10 ; 
+for ( var31 = number ; var31 < var19 ; var31 ++ ) { 
+const int var9 = var21 [ var36 + var31 ] ; 
+const int var11 = var22 [ var37 + var31 ] ; 
+const int var38 = var11 * var13 + var9 ; 
+var29 [ var38 ] = func2 ( var29 [ var38 ] + var14 , number ) ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+} else { 
+for ( var30 = number ; var30 < var17 ; var30 ++ ) { 
+const int var36 = var30 * var7 ; 
+const int var37 = var30 * var10 ; 
+for ( var31 = number ; var31 < var19 ; var31 ++ ) { 
+const int var9 = var21 [ var36 + var31 ] ; 
+const int var11 = var22 [ var37 + var31 ] ; 
+const int var38 = var11 * var13 + var9 ; 
+var26 [ number ] [ var38 ] = func2 ( var26 [ number ] [ var38 ] + var14 , number ) ; 
+var26 [ number ] [ var38 ] = func2 ( var26 [ number ] [ var38 ] + var14 , number ) ; 
+var26 [ number ] [ var38 ] = func2 ( var26 [ number ] [ var38 ] + var14 , number ) ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+} 
+break ; 
+case var39 : 
+if ( var1 -> var35 ) { 
+for ( var30 = number ; var30 < var17 ; var30 ++ ) { 
+const int var40 = var30 * var7 ; 
+const int var41 = var30 * var10 ; 
+for ( var31 = number ; var31 < var19 ; var31 ++ ) { 
+const int var9 = var21 [ var40 + var31 ] ; 
+const int var11 = var22 [ var41 + var31 ] ; 
+const int var38 = var11 * var13 + var9 ; 
+if ( ! var29 [ var38 ] ) 
+var29 [ var38 ] = func3 ( number - var9 ) + func3 ( number - var11 ) ; 
+var27 [ var38 ] = var9 ; 
+var28 [ var38 ] = var11 ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+} else { 
+for ( var30 = number ; var30 < var17 ; var30 ++ ) { 
+const int var40 = var30 * var7 ; 
+const int var41 = var30 * var10 ; 
+for ( var31 = number ; var31 < var19 ; var31 ++ ) { 
+const int var9 = var21 [ var40 + var31 ] ; 
+const int var11 = var22 [ var41 + var31 ] ; 
+const int var38 = var11 * var13 + var9 ; 
+if ( ! var29 [ var38 ] ) 
+var29 [ var38 ] = func2 ( var9 + var11 , number ) ; 
+var27 [ var38 ] = var9 ; 
+var28 [ var38 ] = var11 ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+} 
+break ; 
+case var42 : 
+for ( var30 = number ; var30 < var17 ; var30 ++ ) { 
+const int var40 = var30 * var7 ; 
+const int var41 = var30 * var10 ; 
+for ( var31 = number ; var31 < var19 ; var31 ++ ) { 
+const int var9 = var21 [ var40 + var31 ] ; 
+const int var11 = var22 [ var41 + var31 ] ; 
+const int var38 = var11 * var13 + var9 ; 
+var29 [ var38 ] = func2 ( number , var29 [ var38 ] + var14 ) ; 
+var27 [ var38 ] = var9 ; 
+var28 [ var38 ] = var11 ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+break ; 
+case var43 : 
+for ( var30 = number ; var30 < var2 -> var44 ; var30 ++ ) { 
+const int var36 = ( var30 >> var25 ) * var7 ; 
+const int var37 = ( var30 >> var25 ) * var10 ; 
+const int var45 = var30 * var12 ; 
+for ( var31 = number ; var31 < var2 -> var46 ; var31 ++ ) { 
+const int var9 = var21 [ var36 + ( var31 >> var24 ) ] ; 
+const int var11 = var22 [ var37 + ( var31 >> var24 ) ] ; 
+const int var38 = var11 * var13 + var9 ; 
+var29 [ var38 ] = func4 ( var23 [ var45 + var31 ] , var29 [ var38 ] ) ; 
+var27 [ var38 ] = var9 ; 
+var28 [ var38 ] = var11 ; 
+if ( var26 [ number ] ) 
+var26 [ number ] [ var38 ] = number ; 
+} 
+} 
+break ; 
+var47 : 
+func5 ( number ) ; 
+} 
+func6 ( var1 , var3 ) ; 
+if ( var1 -> var32 == var33 ) { 
+for ( var30 = number ; var30 < var3 -> var44 ; var30 ++ ) { 
+for ( var31 = number ; var31 < var3 -> var46 ; var31 ++ ) { 
+if ( ! var29 [ var30 * var3 -> var8 [ var4 ] + var31 ] ) { 
+var27 [ var30 * var3 -> var8 [ var15 ] + var31 ] = var31 ; 
+var28 [ var30 * var3 -> var8 [ var16 ] + var31 ] = var30 ; 
+var29 [ var30 * var3 -> var8 [ var4 ] + var31 ] = number ; 
+} 
+} 
+} 
+} 
+} 

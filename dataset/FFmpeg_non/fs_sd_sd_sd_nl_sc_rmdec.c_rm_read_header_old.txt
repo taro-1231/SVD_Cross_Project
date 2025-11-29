@@ -1,0 +1,13 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+RMDemuxContext * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+var2 -> var5 = number ; 
+var4 = func2 ( var1 , var6 ) ; 
+if ( ! var4 ) 
+return - number ; 
+var4 -> var3 = func3 ( ) ; 
+if ( ! var4 -> var3 ) 
+return func4 ( var7 ) ; 
+return func5 ( var1 , var1 -> var8 , var4 , var4 -> var3 , number ) ; 
+} 

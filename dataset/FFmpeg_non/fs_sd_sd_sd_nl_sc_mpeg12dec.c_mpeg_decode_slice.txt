@@ -1,0 +1,224 @@
+static int func1 ( MpegEncContext * var1 , int var2 , 
+const uint8_t ** var3 , int var4 ) 
+{ 
+AVCodecContext * var5 = var1 -> var5 ; 
+const int var6 = var1 -> var5 -> var6 ; 
+const int var7 = var1 -> var8 != var9 ; 
+int var10 ; 
+var1 -> var11 = 
+var1 -> var12 = - number ; 
+func2 ( var2 < var1 -> var13 ) ; 
+func3 ( & var1 -> var14 , * var3 , var4 * number ) ; 
+if ( var1 -> var15 != var16 && var1 -> var13 > number / number ) 
+func4 ( & var1 -> var14 , number ) ; 
+func5 ( var1 ) ; 
+var1 -> var17 = number ; 
+var1 -> var18 = func6 ( var1 ) ; 
+if ( var1 -> var18 == number ) { 
+func7 ( var1 -> var5 , var19 , str ) ; 
+return var20 ; 
+} 
+if ( func8 ( & var1 -> var14 ) < number ) 
+return var20 ; 
+var1 -> var21 = number ; 
+if ( var2 == number && var1 -> var22 == func9 ( str ) ) { 
+func10 ( & var1 -> var14 ) ; 
+} else { 
+while ( func11 ( & var1 -> var14 ) > number ) { 
+int var23 = func12 ( & var1 -> var14 , var24 . var25 , 
+var26 , number ) ; 
+if ( var23 < number ) { 
+func7 ( var1 -> var5 , var19 , str ) ; 
+return var20 ; 
+} 
+if ( var23 >= number ) { 
+if ( var23 == number ) 
+var1 -> var21 += number ; 
+} else { 
+var1 -> var21 += var23 ; 
+break ; 
+} 
+} 
+} 
+if ( var1 -> var21 >= ( unsigned ) var1 -> var27 ) { 
+func7 ( var1 -> var5 , var19 , str ) ; 
+return var20 ; 
+} 
+if ( var5 -> var28 && var5 -> var28 -> func13 ) { 
+const uint8_t * var29 , * var30 = * var3 - number ; 
+int var31 = - number ; 
+var29 = func14 ( var30 + number , * var3 + var4 , & var31 ) ; 
+if ( var29 < * var3 + var4 ) 
+var29 -= number ; 
+var1 -> var2 = var2 ; 
+if ( var5 -> var28 -> func13 ( var5 , var30 , var29 - var30 ) < number ) 
+return var32 ; 
+* var3 = var29 ; 
+return var33 ; 
+} 
+var1 -> var11 = var1 -> var21 ; 
+var1 -> var12 = var1 -> var2 = var2 ; 
+var1 -> var34 = number ; 
+func15 ( var1 ) ; 
+if ( var1 -> var2 == number && var1 -> var21 == number && ( var1 -> var35 || var1 -> var8 == var9 ) ) { 
+if ( var1 -> var5 -> var36 & var37 ) { 
+func7 ( var1 -> var5 , var38 , 
+str , 
+var1 -> var18 , 
+var1 -> var39 [ number ] [ number ] , var1 -> var39 [ number ] [ number ] , 
+var1 -> var39 [ number ] [ number ] , var1 -> var39 [ number ] [ number ] , 
+var1 -> var40 == var41 ? str : 
+( var1 -> var40 == var42 ? str : 
+( var1 -> var40 == var43 ? str : str ) ) , 
+var1 -> var44 ? str : str , 
+var1 -> var45 ? str : str , 
+var1 -> var46 ? str : str , 
+var1 -> var47 ? str : str , 
+var1 -> var48 , var1 -> var8 , 
+var1 -> var49 , var1 -> var50 , 
+var1 -> var51 , var1 -> var52 , 
+var1 -> var53 , var1 -> var54 ? str : str ) ; 
+} 
+} 
+for ( ; ; ) { 
+if ( ( var55 || var56 ) && var1 -> var57 ) 
+func16 ( var1 ) ; 
+if ( ( var10 = func17 ( var1 , var1 -> var58 ) ) < number ) 
+return var10 ; 
+if ( var1 -> var60 . var59 [ number ] && ! var1 -> var61 ) { 
+const int var62 = var1 -> var63 ; 
+int var64 = var1 -> var21 * number + var1 -> var2 * number * var62 ; 
+int var65 = number * ( var1 -> var21 + var1 -> var2 * var1 -> var66 ) ; 
+int var67 , var68 , var69 , var70 ; 
+for ( var70 = number ; var70 < number ; var70 ++ ) { 
+for ( var69 = number ; var69 < number ; var69 ++ ) { 
+if ( var1 -> var71 || 
+( var69 == number && var1 -> var40 != var43 ) ) { 
+var67 = var68 = number ; 
+} else if ( var1 -> var72 == var73 || 
+( var1 -> var72 == var74 && var7 ) ) { 
+var67 = var1 -> var75 [ var69 ] [ number ] [ number ] ; 
+var68 = var1 -> var75 [ var69 ] [ number ] [ number ] ; 
+} else { 
+var67 = var1 -> var75 [ var69 ] [ var70 ] [ number ] ; 
+var68 = var1 -> var75 [ var69 ] [ var70 ] [ number ] ; 
+} 
+var1 -> var60 . var59 [ var69 ] [ var64 ] [ number ] = var67 ; 
+var1 -> var60 . var59 [ var69 ] [ var64 ] [ number ] = var68 ; 
+var1 -> var60 . var59 [ var69 ] [ var64 + number ] [ number ] = var67 ; 
+var1 -> var60 . var59 [ var69 ] [ var64 + number ] [ number ] = var68 ; 
+var1 -> var60 . var76 [ var69 ] [ var65 ] = 
+var1 -> var60 . var76 [ var69 ] [ var65 + number ] = var1 -> var77 [ var69 ] [ var70 ] ; 
+func18 ( var1 -> var77 [ var69 ] [ var70 ] == number || 
+var1 -> var77 [ var69 ] [ var70 ] == number ) ; 
+} 
+var64 += var62 ; 
+var65 += number ; 
+} 
+} 
+var1 -> var78 [ number ] += number >> var6 ; 
+var1 -> var78 [ number ] += ( number >> var6 ) >> var1 -> var79 ; 
+var1 -> var78 [ number ] += ( number >> var6 ) >> var1 -> var79 ; 
+func19 ( var1 , var1 -> var58 ) ; 
+if ( ++ var1 -> var21 >= var1 -> var27 ) { 
+const int var80 = number >> var1 -> var5 -> var6 ; 
+func20 ( var1 , var80 * ( var1 -> var2 >> var7 ) , var80 ) ; 
+func21 ( var1 ) ; 
+var1 -> var21 = number ; 
+var1 -> var2 += number << var7 ; 
+if ( var1 -> var2 >= var1 -> var13 ) { 
+int var81 = func11 ( & var1 -> var14 ) ; 
+int var82 = var1 -> var83 == number && 
+var1 -> var40 == var41 && 
+var5 -> var84 == number && var5 -> var85 == number && 
+var1 -> var48 == number && 
+var1 -> var51 == number && var1 -> var46 == number && 
+var1 -> var45 == number 
+if ( var81 >= number && ! var82 ) { 
+GetBitContext var14 = var1 -> var14 ; 
+func22 ( & var14 ) ; 
+if ( func23 ( & var14 , number ) == number ) { 
+func7 ( var5 , var38 , str ) ; 
+var82 = number ; 
+} 
+} 
+if ( var81 < number || 
+( var81 && func23 ( & var1 -> var14 , func24 ( var81 , number ) ) && ! var82 ) || 
+( ( var5 -> var86 & ( var87 | var88 ) ) && var81 > number ) ) { 
+func7 ( var5 , var19 , str , 
+var81 , func23 ( & var1 -> var14 , func24 ( var81 , number ) ) ) ; 
+return var20 ; 
+} else 
+goto var89 ; 
+} 
+if ( var1 -> var2 >= ( ( var1 -> var90 + number ) >> number ) && 
+! var1 -> var44 && 
+func11 ( & var1 -> var14 ) <= number && 
+func11 ( & var1 -> var14 ) >= number && 
+var1 -> var34 == - number && 
+func23 ( & var1 -> var14 , number ) == number ) 
+goto var89 ; 
+func15 ( var1 ) ; 
+} 
+if ( var1 -> var34 == - number ) { 
+var1 -> var34 = number ; 
+for ( ; ; ) { 
+int var23 = func12 ( & var1 -> var14 , var24 . var25 , 
+var26 , number ) ; 
+if ( var23 < number ) { 
+func7 ( var1 -> var5 , var19 , str ) ; 
+return var20 ; 
+} 
+if ( var23 >= number ) { 
+if ( var23 == number ) { 
+var1 -> var34 += number ; 
+} else if ( var23 == number ) { 
+if ( var1 -> var34 != number || func23 ( & var1 -> var14 , number ) != number ) { 
+func7 ( var1 -> var5 , var19 , str ) ; 
+return var20 ; 
+} 
+goto var89 ; 
+} 
+} else { 
+var1 -> var34 += var23 ; 
+break ; 
+} 
+} 
+if ( var1 -> var34 ) { 
+int var70 ; 
+if ( var1 -> var40 == var41 ) { 
+func7 ( var1 -> var5 , var19 , 
+str , var1 -> var21 , var1 -> var2 ) ; 
+return var20 ; 
+} 
+var1 -> var71 = number ; 
+for ( var70 = number ; var70 < number ; var70 ++ ) 
+var1 -> var91 [ var70 ] = - number ; 
+if ( var1 -> var8 == var9 ) 
+var1 -> var72 = var73 ; 
+else 
+var1 -> var72 = var74 ; 
+if ( var1 -> var40 == var42 ) { 
+var1 -> var92 = var93 ; 
+var1 -> var75 [ number ] [ number ] [ number ] = var1 -> var75 [ number ] [ number ] [ number ] = number ; 
+var1 -> var94 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] = number ; 
+var1 -> var94 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] = number ; 
+var1 -> var77 [ number ] [ number ] = ( var1 -> var8 - number ) & number ; 
+} else { 
+var1 -> var75 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] ; 
+var1 -> var75 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] ; 
+var1 -> var75 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] ; 
+var1 -> var75 [ number ] [ number ] [ number ] = var1 -> var94 [ number ] [ number ] [ number ] ; 
+} 
+} 
+} 
+} 
+var89 : 
+if ( func11 ( & var1 -> var14 ) < number ) { 
+func7 ( var1 , var19 , str , - func11 ( & var1 -> var14 ) ) ; 
+return var20 ; 
+} 
+* var3 += ( func25 ( & var1 -> var14 ) - number ) / number ; 
+func26 ( var1 , str , var1 -> var11 , var1 -> var12 , var1 -> var21 , var1 -> var2 ) ; 
+return number ; 
+} 

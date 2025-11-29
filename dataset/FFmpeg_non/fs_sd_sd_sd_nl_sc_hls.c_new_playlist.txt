@@ -1,0 +1,14 @@
+static struct playlist * func1 ( HLSContext * var1 , const char * var2 , 
+const char * var3 ) 
+{ 
+struct playlist * var4 = func2 ( sizeof ( struct playlist ) ) ; 
+if ( ! var4 ) 
+return var5 ; 
+func3 ( & var4 -> var6 ) ; 
+func4 ( var4 -> var2 , sizeof ( var4 -> var2 ) , var3 , var2 ) ; 
+var4 -> var7 = var8 ; 
+var4 -> var9 = - number ; 
+var4 -> var10 = var8 ; 
+func5 ( & var1 -> var11 , & var1 -> var12 , var4 ) ; 
+return var4 ; 
+} 

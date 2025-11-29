@@ -1,0 +1,44 @@
+static const cmp_func var1 [ ] = { cmp_r , cmp_g , cmp_b } ; 
+static int func1 ( const uint8_t * var2 , const uint32_t * var3 , 
+int * var4 , const struct color_rect * var5 ) 
+{ 
+int var6 , var7 , var8 ; 
+int var9 , var10 = number ; 
+unsigned var11 = number ; 
+struct color_rect var12 ; 
+struct color var13 [ number ] ; 
+cmp_func var14 ; 
+var12 . var15 [ number ] = var12 . var15 [ number ] = var12 . var15 [ number ] = number ; 
+var12 . var16 [ number ] = var12 . var16 [ number ] = var12 . var16 [ number ] = number ; 
+for ( var9 = number ; var9 < var17 ; var9 ++ ) { 
+const uint32_t var18 = var3 [ var9 ] ; 
+const uint8_t var19 = var18 >> number & number ; 
+const uint8_t var20 = var18 >> number & number ; 
+const uint8_t var21 = var18 & number ; 
+if ( var2 [ var9 ] || 
+var19 < var5 -> var15 [ number ] || var20 < var5 -> var15 [ number ] || var21 < var5 -> var15 [ number ] || 
+var19 > var5 -> var16 [ number ] || var20 > var5 -> var16 [ number ] || var21 > var5 -> var16 [ number ] ) 
+continue ; 
+if ( var19 < var12 . var15 [ number ] ) var12 . var15 [ number ] = var19 ; 
+if ( var20 < var12 . var15 [ number ] ) var12 . var15 [ number ] = var20 ; 
+if ( var21 < var12 . var15 [ number ] ) var12 . var15 [ number ] = var21 ; 
+if ( var19 > var12 . var16 [ number ] ) var12 . var16 [ number ] = var19 ; 
+if ( var20 > var12 . var16 [ number ] ) var12 . var16 [ number ] = var20 ; 
+if ( var21 > var12 . var16 [ number ] ) var12 . var16 [ number ] = var21 ; 
+var13 [ var11 ] . var22 = var18 ; 
+var13 [ var11 ] . var23 = var9 ; 
+var11 ++ ; 
+} 
+if ( ! var11 ) 
+return - number ; 
+var6 = var12 . var16 [ number ] - var12 . var15 [ number ] ; 
+var7 = var12 . var16 [ number ] - var12 . var15 [ number ] ; 
+var8 = var12 . var16 [ number ] - var12 . var15 [ number ] ; 
+if ( var6 >= var7 && var6 >= var8 ) var10 = number ; 
+if ( var7 >= var6 && var7 >= var8 ) var10 = number ; 
+if ( var8 >= var6 && var8 >= var7 ) var10 = number ; 
+var14 = var1 [ var10 ] ; 
+* var4 = var10 ; 
+AV_QSORT ( var13 , var11 , struct color , var14 ) ; 
+return var13 [ var11 >> number ] . var23 ; 
+} 

@@ -1,0 +1,9 @@
+av_cold void func1 ( LLSModel * var1 , int var2 ) 
+{ 
+memset ( var1 , number , sizeof ( LLSModel ) ) ; 
+var1 -> var2 = var2 ; 
+var1 -> var3 = var3 ; 
+var1 -> var4 = var4 ; 
+if ( var5 ) 
+func2 ( var1 ) ; 
+} 

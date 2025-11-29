@@ -1,0 +1,4 @@
+void func1 ( png_const_structrp var1 , png_const_charp var2 ) 
+{ 
+fprintf ( var3 , str , var2 ) ; 
+} 

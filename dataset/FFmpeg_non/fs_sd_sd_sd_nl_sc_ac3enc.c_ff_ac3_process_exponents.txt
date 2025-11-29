@@ -1,0 +1,7 @@
+void func1 ( AC3EncodeContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+func3 ( var1 ) ; 
+func4 ( var1 ) ; 
+func5 ( ) ; 
+} 

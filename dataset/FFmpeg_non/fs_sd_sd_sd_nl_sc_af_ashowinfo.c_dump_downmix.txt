@@ -1,0 +1,22 @@
+static void func1 ( AVFilterContext * var1 , AVFrameSideData * var2 ) 
+{ 
+AVDownmixInfo * var3 ; 
+func2 ( var1 , var4 , str ) ; 
+if ( var2 -> var5 < sizeof ( * var3 ) ) { 
+func2 ( var1 , var4 , str ) ; 
+return ; 
+} 
+var3 = ( AVDownmixInfo * ) var2 -> var6 ; 
+func2 ( var1 , var4 , str ) ; 
+switch ( var3 -> var7 ) { 
+case var8 : func2 ( var1 , var4 , str ) ; break ; 
+case var9 : func2 ( var1 , var4 , str ) ; break ; 
+case var10 : func2 ( var1 , var4 , str ) ; break ; 
+var11 : func2 ( var1 , var12 , str ) ; break ; 
+} 
+func2 ( var1 , var4 , str 
+str , 
+var3 -> center_mix_level , var3 -> center_mix_level_ltrt , 
+var3 -> surround_mix_level , var3 -> surround_mix_level_ltrt , 
+var3 -> lfe_mix_level ) ; 
+} 

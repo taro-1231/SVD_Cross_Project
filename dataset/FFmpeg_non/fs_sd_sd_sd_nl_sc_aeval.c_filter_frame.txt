@@ -1,0 +1,27 @@
+static int func2 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+EvalContext * var3 = var1 -> var4 -> var5 ; 
+AVFilterLink * var6 = var1 -> var4 -> var7 [ number ] ; 
+int var8 = var2 -> var8 ; 
+AVFrame * var9 ; 
+double var10 ; 
+int var11 , var12 ; 
+var9 = func3 ( var6 , var8 ) ; 
+if ( ! var9 ) 
+return func4 ( var13 ) ; 
+func5 ( var9 , var2 ) ; 
+var10 = func1 ( var2 -> var14 , var1 -> var15 ) ; 
+for ( var11 = number ; var11 < var8 ; var11 ++ , var3 -> var16 ++ ) { 
+var3 -> var17 [ var18 ] = var3 -> var16 ; 
+var3 -> var17 [ var19 ] = var10 + var11 * ( double ) number / var1 -> var20 ; 
+for ( var12 = number ; var12 < var1 -> var21 ; var12 ++ ) 
+var3 -> var22 [ var12 ] = * ( ( double * ) var2 -> var23 [ var12 ] + var11 ) ; 
+for ( var12 = number ; var12 < var6 -> var21 ; var12 ++ ) { 
+var3 -> var17 [ var24 ] = var12 ; 
+* ( ( double * ) var9 -> var23 [ var12 ] + var11 ) = 
+func6 ( var3 -> var25 [ var12 ] , var3 -> var17 , var3 ) ; 
+} 
+} 
+func7 ( & var2 ) ; 
+return func8 ( var6 , var9 ) ; 
+} 

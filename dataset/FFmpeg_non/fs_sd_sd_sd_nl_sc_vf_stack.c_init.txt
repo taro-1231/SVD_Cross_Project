@@ -1,0 +1,23 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+StackContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+if ( ! strcmp ( var1 -> var6 -> var7 , str ) ) 
+var2 -> var8 = number ; 
+var2 -> var9 = func2 ( var2 -> var10 , sizeof ( * var2 -> var9 ) ) ; 
+if ( ! var2 -> var9 ) 
+return func3 ( var11 ) ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+AVFilterPad var12 = { number } ; 
+var12 . var13 = var14 ; 
+var12 . var7 = func4 ( str , var4 ) ; 
+if ( ! var12 . var7 ) 
+return func3 ( var11 ) ; 
+var12 . var15 = var15 ; 
+if ( ( var5 = func5 ( var1 , var4 , & var12 ) ) < number ) { 
+func6 ( & var12 . var7 ) ; 
+return var5 ; 
+} 
+} 
+return number ; 
+} 

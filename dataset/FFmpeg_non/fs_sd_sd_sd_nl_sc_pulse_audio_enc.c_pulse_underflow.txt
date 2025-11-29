@@ -1,0 +1,5 @@
+static void func1 ( pa_stream * var1 , void * var2 ) 
+{ 
+AVFormatContext * var3 = var2 ; 
+func2 ( var3 , var4 , var5 , number ) ; 
+} 

@@ -1,0 +1,8 @@
+static void func1 ( WriterContext * var1 , const char * var2 , long long int var3 ) 
+{ 
+CompactContext * var4 = var1 -> var5 ; 
+if ( var1 -> var6 [ var1 -> var7 ] ) printf ( var11 , var4 -> var8 ) ; 
+if ( ! var4 -> var9 ) 
+printf ( var11 , var1 -> var10 [ var1 -> var7 ] . var11 , var2 ) ; 
+printf ( var11 , var3 ) ; 
+} 

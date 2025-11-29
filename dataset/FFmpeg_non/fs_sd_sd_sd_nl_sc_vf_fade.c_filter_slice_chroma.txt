@@ -1,0 +1,21 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , 
+int var4 ) 
+{ 
+FadeContext * var5 = var1 -> var6 ; 
+AVFrame * var7 = var2 ; 
+int var8 , var9 , var10 ; 
+const int var11 = func2 ( var7 -> var11 , var5 -> var12 ) ; 
+const int var13 = func2 ( var7 -> var13 , var5 -> var14 ) ; 
+int var15 = ( var13 * var3 ) / var4 ; 
+int var16 = ( var13 * ( var3 + number ) ) / var4 ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+for ( var8 = var15 ; var8 < var16 ; var8 ++ ) { 
+uint8_t * var17 = var7 -> var18 [ var10 ] + var8 * var7 -> var19 [ var10 ] ; 
+for ( var9 = number ; var9 < var11 ; var9 ++ ) { 
+* var17 = ( ( * var17 - number ) * var5 -> var20 + number ) >> number ; 
+var17 ++ ; 
+} 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,39 @@
+static int func1 ( void ) 
+{ 
+unsigned char var1 ; 
+int var2 = number ; 
+struct timeval var3 ; 
+fd_set var4 ; 
+func2 ( & var4 ) ; 
+func3 ( number , & var4 ) ; 
+var3 . var5 = number ; 
+var3 . var6 = number ; 
+var2 = func4 ( number , & var4 , var7 , var7 , & var3 ) ; 
+if ( var2 > number ) { 
+var2 = func5 ( number , & var1 , number ) ; 
+if ( var2 == number ) 
+return var1 ; 
+return var2 ; 
+} 
+static int is_pipe ; 
+static HANDLE input_handle ; 
+DWORD dw , nchars ; 
+if ( ! input_handle ) { 
+input_handle = GetStdHandle ( STD_INPUT_HANDLE ) ; 
+is_pipe = ! GetConsoleMode ( input_handle , & dw ) ; 
+} 
+if ( is_pipe ) { 
+if ( ! PeekNamedPipe ( input_handle , var7 , number , var7 , & nchars , var7 ) ) { 
+return - number ; 
+} 
+if ( nchars != number ) { 
+func5 ( number , & var1 , number ) ; 
+return var1 ; 
+} else { 
+return - number ; 
+} 
+} 
+if ( kbhit ( ) ) 
+return ( getch ( ) ) ; 
+return - number ; 
+} 

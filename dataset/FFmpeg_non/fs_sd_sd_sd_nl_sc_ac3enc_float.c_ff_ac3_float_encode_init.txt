@@ -1,0 +1,8 @@
+av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AC3EncodeContext * var2 = var1 -> var3 ; 
+var2 -> var4 = func2 ( var1 -> var5 & var6 ) ; 
+if ( ! var2 -> var4 ) 
+return func3 ( var7 ) ; 
+return func4 ( var1 ) ; 
+} 

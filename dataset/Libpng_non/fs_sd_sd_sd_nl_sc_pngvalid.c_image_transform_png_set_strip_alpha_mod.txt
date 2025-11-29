@@ -1,0 +1,12 @@
+func1 ( PNG_CONST image_transform * var1 , 
+image_pixel * var2 , png_const_structp var3 , 
+PNG_CONST transform_display * var4 ) 
+{ 
+if ( var2 -> var5 == var6 ) 
+var2 -> var5 = var7 ; 
+else if ( var2 -> var5 == var8 ) 
+var2 -> var5 = var9 ; 
+var2 -> var10 = number ; 
+var2 -> var11 = number ; 
+var1 -> var12 -> func2 ( var1 -> var12 , var2 , var3 , var4 ) ; 
+} 

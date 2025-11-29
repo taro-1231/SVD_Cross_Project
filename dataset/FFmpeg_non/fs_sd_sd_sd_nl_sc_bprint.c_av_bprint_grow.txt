@@ -1,0 +1,7 @@
+static void func1 ( AVBPrint * var1 , unsigned var2 ) 
+{ 
+var2 = func2 ( var2 , var3 - number - var1 -> var4 ) ; 
+var1 -> var4 += var2 ; 
+if ( var1 -> var5 ) 
+var1 -> var6 [ func2 ( var1 -> var4 , var1 -> var5 - number ) ] = number ; 
+} 

@@ -1,0 +1,49 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+OptionsContext * var4 = var1 ; 
+int var5 ; 
+AVStream * var6 ; 
+AudioChannelMap * var7 ; 
+func2 ( var4 -> var8 , var4 -> var9 ) ; 
+var7 = & var4 -> var8 [ var4 -> var9 - number ] ; 
+var5 = sscanf ( var3 , str , & var7 -> var10 , & var7 -> var11 , & var7 -> var12 ) ; 
+if ( ( var5 == number || var5 == number ) && var7 -> var10 == - number ) { 
+var7 -> var13 = var7 -> var14 = - number ; 
+if ( var5 == number ) 
+var7 -> var11 = var7 -> var12 = - number ; 
+return number ; 
+} 
+var5 = sscanf ( var3 , str , 
+& var7 -> var13 , & var7 -> var14 , & var7 -> var10 , 
+& var7 -> var11 , & var7 -> var12 ) ; 
+if ( var5 != number && var5 != number ) { 
+func3 ( var15 , var16 , str 
+str ) ; 
+func4 ( number ) ; 
+} 
+if ( var5 != number ) 
+var7 -> var11 = var7 -> var12 = - number ; 
+if ( var7 -> var13 < number || var7 -> var13 >= var17 ) { 
+func3 ( var15 , var16 , str , 
+var7 -> var13 ) ; 
+func4 ( number ) ; 
+} 
+if ( var7 -> var14 < number || 
+var7 -> var14 >= var18 [ var7 -> var13 ] -> var19 ) { 
+func3 ( var15 , var16 , str , 
+var7 -> var13 , var7 -> var14 ) ; 
+func4 ( number ) ; 
+} 
+var6 = var18 [ var7 -> var13 ] -> var20 -> var21 [ var7 -> var14 ] ; 
+if ( var6 -> var22 -> var23 != var24 ) { 
+func3 ( var15 , var16 , str , 
+var7 -> var13 , var7 -> var14 ) ; 
+func4 ( number ) ; 
+} 
+if ( var7 -> var10 < number || var7 -> var10 >= var6 -> var22 -> var25 ) { 
+func3 ( var15 , var16 , str , 
+var7 -> var13 , var7 -> var14 , var7 -> var10 ) ; 
+func4 ( number ) ; 
+} 
+return number ; 
+} 

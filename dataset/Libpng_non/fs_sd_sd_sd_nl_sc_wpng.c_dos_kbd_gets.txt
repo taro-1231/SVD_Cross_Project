@@ -1,0 +1,13 @@
+static char * func1 ( char * var1 , int var2 ) 
+{ 
+int var3 , var4 = number ; 
+do { 
+var1 [ var4 ++ ] = var3 = func2 ( ) ; 
+} while ( var3 != str && var4 < var2 - number ) ; 
+var1 [ var4 -- ] = str ; 
+if ( var1 [ var4 ] == str ) 
+var1 [ var4 ] = str ; 
+fprintf ( var5 , str ) ; 
+fflush ( var5 ) ; 
+return var1 ; 
+} 

@@ -1,0 +1,36 @@
+static void av_always_inline func1 ( float * var1 , const float * var2 , 
+int var3 , int var4 , 
+int var5 , int var6 ) 
+{ 
+int var7 ; 
+for ( var7 = number ; var7 < number ; var7 ++ ) { 
+const float var8 = var2 [ number * var5 ] + var2 [ number * var5 ] ; 
+const float var9 = var2 [ number * var5 ] + var2 [ number * var5 ] ; 
+const float var10 = var2 [ number * var5 ] + var2 [ number * var5 ] ; 
+const float var11 = var2 [ number * var5 ] + var2 [ number * var5 ] ; 
+const float var12 = var2 [ number * var5 ] - var2 [ number * var5 ] ; 
+const float var13 = var2 [ number * var5 ] - var2 [ number * var5 ] ; 
+const float var14 = var2 [ number * var5 ] - var2 [ number * var5 ] ; 
+const float var15 = var2 [ number * var5 ] - var2 [ number * var5 ] ; 
+const float var16 = var8 + var11 ; 
+const float var17 = var9 + var10 ; 
+const float var18 = var8 - var11 ; 
+const float var19 = var9 - var10 ; 
+const float var20 = number * var12 + number * var15 ; 
+const float var21 = number * var13 + number * var14 ; 
+const float var22 = - number * var13 + number * var14 ; 
+const float var23 = number * var12 - number * var15 ; 
+const float var24 = number * ( var20 - var21 ) ; 
+const float var25 = number * ( var22 - var23 ) ; 
+var1 [ number * var3 ] = number * ( var16 + var17 ) ; 
+var1 [ number * var3 ] = number * ( var20 + var21 ) ; 
+var1 [ number * var3 ] = number * var18 + number * var19 ; 
+var1 [ number * var3 ] = number * ( var24 - var25 ) ; 
+var1 [ number * var3 ] = number * ( var16 - var17 ) ; 
+var1 [ number * var3 ] = number * ( var24 + var25 ) ; 
+var1 [ number * var3 ] = number * var18 - number * var19 ; 
+var1 [ number * var3 ] = number * ( var22 + var23 ) ; 
+var1 += var4 ; 
+var2 += var6 ; 
+} 
+} 

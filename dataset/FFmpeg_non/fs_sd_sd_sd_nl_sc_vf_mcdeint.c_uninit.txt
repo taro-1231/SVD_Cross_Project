@@ -1,0 +1,8 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+MCDeintContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+func2 ( var2 -> var4 ) ; 
+func3 ( & var2 -> var4 ) ; 
+} 
+} 

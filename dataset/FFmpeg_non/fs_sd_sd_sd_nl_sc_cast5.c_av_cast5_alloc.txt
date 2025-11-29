@@ -1,0 +1,4 @@
+struct AVCAST5 * func1 ( void ) 
+{ 
+return func2 ( sizeof ( struct AVCAST5 ) ) ; 
+} 

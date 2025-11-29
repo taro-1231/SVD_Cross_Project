@@ -1,0 +1,59 @@
+av_cold int func1 ( AVFormatContext * var1 , int var2 , 
+const char * var3 ) 
+{ 
+SndioData * var4 = var1 -> var5 ; 
+struct sio_hdl * var6 ; 
+struct sio_par var7 ; 
+var6 = func2 ( var3 , var2 ? var8 : var9 , number ) ; 
+if ( ! var6 ) { 
+func3 ( var1 , var10 , str ) ; 
+return func4 ( var11 ) ; 
+} 
+func5 ( & var7 ) ; 
+var7 . var12 = number ; 
+var7 . var13 = number ; 
+var7 . var14 = var15 ; 
+if ( var2 ) 
+var7 . var16 = var4 -> var17 ; 
+else 
+var7 . var18 = var4 -> var17 ; 
+var7 . var19 = var4 -> var20 ; 
+if ( ! func6 ( var6 , & var7 ) || ! func7 ( var6 , & var7 ) ) { 
+func3 ( var1 , var10 , str 
+str , var4 -> var17 , var4 -> var20 ) ; 
+goto var21 ; 
+} 
+if ( var7 . var12 != number || var7 . var13 != number || 
+( var2 && ( var7 . var16 != var4 -> var17 ) ) || 
+( ! var2 && ( var7 . var18 != var4 -> var17 ) ) || 
+( var7 . var19 != var4 -> var20 ) ) { 
+func3 ( var1 , var10 , str 
+str , var4 -> var17 , var4 -> var20 ) ; 
+goto var21 ; 
+} 
+var4 -> var22 = var7 . var23 * var7 . var24 * 
+( var2 ? var7 . var16 : var7 . var18 ) ; 
+if ( var2 ) { 
+var4 -> var25 = func8 ( var4 -> var22 ) ; 
+if ( ! var4 -> var25 ) { 
+func3 ( var1 , var10 , str ) ; 
+goto var21 ; 
+} 
+} 
+var4 -> var26 = var7 . var14 ? var27 : var28 ; 
+var4 -> var17 = var2 ? var7 . var16 : var7 . var18 ; 
+var4 -> var20 = var7 . var19 ; 
+var4 -> var24 = var7 . var24 ; 
+func9 ( var6 , var29 , var4 ) ; 
+if ( ! func10 ( var6 ) ) { 
+func3 ( var1 , var10 , str ) ; 
+goto var21 ; 
+} 
+var4 -> var6 = var6 ; 
+return number ; 
+var21 : 
+func11 ( & var4 -> var25 ) ; 
+if ( var6 ) 
+func12 ( var6 ) ; 
+return func4 ( var11 ) ; 
+} 

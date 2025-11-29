@@ -1,0 +1,18 @@
+static const UID * func1 ( AVCodecContext * var1 ) 
+{ 
+int var2 = var1 -> var3 > number || var1 -> var4 ; 
+if ( var1 -> var5 == number ) { 
+if ( var1 -> var6 == number ) 
+return & var7 [ number + var2 ] ; 
+else if ( var1 -> var6 == number ) 
+return & var7 [ number + var2 ] ; 
+else if ( var1 -> var6 == number ) 
+return & var7 [ number + var2 ] ; 
+} else if ( var1 -> var5 == number ) { 
+if ( var1 -> var6 == number ) 
+return & var7 [ number + var2 ] ; 
+else if ( var1 -> var6 == number ) 
+return & var7 [ number + var2 ] ; 
+} 
+return var8 ; 
+} 

@@ -1,0 +1,14 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+if ( ! strcmp ( var3 , str ) ) 
+var4 = var5 ; 
+else if ( ! strcmp ( var3 , str ) ) 
+var4 = var6 ; 
+else if ( ! strcmp ( var3 , str ) ) 
+var4 = var7 ; 
+else { 
+func2 ( var8 , var9 , str , var2 , var3 ) ; 
+exit ( number ) ; 
+} 
+return number ; 
+} 

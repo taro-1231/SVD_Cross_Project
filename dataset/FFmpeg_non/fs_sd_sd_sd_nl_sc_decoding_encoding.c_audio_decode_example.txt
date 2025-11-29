@@ -1,0 +1,80 @@
+static void func1 ( const char * var1 , const char * var2 ) 
+{ 
+AVCodec * var3 ; 
+AVCodecContext * var4 = var5 ; 
+int var6 ; 
+FILE * var7 , * var8 ; 
+uint8_t var9 [ var10 + var11 ] ; 
+AVPacket var12 ; 
+AVFrame * var13 = var5 ; 
+func2 ( & var12 ) ; 
+printf ( str , var2 , var1 ) ; 
+var3 = func3 ( var14 ) ; 
+if ( ! var3 ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var4 = func4 ( var3 ) ; 
+if ( ! var4 ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+if ( func5 ( var4 , var3 , var5 ) < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var7 = fopen ( var2 , str ) ; 
+if ( ! var7 ) { 
+fprintf ( var15 , str , var2 ) ; 
+exit ( number ) ; 
+} 
+var8 = fopen ( var1 , str ) ; 
+if ( ! var8 ) { 
+func6 ( var4 ) ; 
+exit ( number ) ; 
+} 
+var12 . var16 = var9 ; 
+var12 . var17 = fread ( var9 , number , var10 , var7 ) ; 
+while ( var12 . var17 > number ) { 
+int var18 , var19 ; 
+int var20 = number ; 
+if ( ! var13 ) { 
+if ( ! ( var13 = func7 ( ) ) ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+} 
+var6 = func8 ( var4 , var13 , & var20 , & var12 ) ; 
+if ( var6 < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+if ( var20 ) { 
+int var21 = func9 ( var4 -> var22 ) ; 
+if ( var21 < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+for ( var18 = number ; var18 < var13 -> var23 ; var18 ++ ) 
+for ( var19 = number ; var19 < var4 -> var24 ; var19 ++ ) 
+fwrite ( var13 -> var16 [ var19 ] + var21 * var18 , number , var21 , var8 ) ; 
+} 
+var12 . var17 -= var6 ; 
+var12 . var16 += var6 ; 
+var12 . var25 = 
+var12 . var26 = var27 ; 
+if ( var12 . var17 < var28 ) { 
+memmove ( var9 , var12 . var16 , var12 . var17 ) ; 
+var12 . var16 = var9 ; 
+var6 = fread ( var12 . var16 + var12 . var17 , number , 
+var10 - var12 . var17 , var7 ) ; 
+if ( var6 > number ) 
+var12 . var17 += var6 ; 
+} 
+} 
+fclose ( var8 ) ; 
+fclose ( var7 ) ; 
+func10 ( var4 ) ; 
+func6 ( var4 ) ; 
+func11 ( & var13 ) ; 
+} 

@@ -1,0 +1,10 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+Frei0rContext * var2 = var1 -> var3 ; 
+if ( var2 -> func2 && var2 -> var4 ) 
+var2 -> func2 ( var2 -> var4 ) ; 
+if ( var2 -> func3 ) 
+var2 -> func3 ( ) ; 
+if ( var2 -> var5 ) 
+func4 ( var2 -> var5 ) ; 
+} 

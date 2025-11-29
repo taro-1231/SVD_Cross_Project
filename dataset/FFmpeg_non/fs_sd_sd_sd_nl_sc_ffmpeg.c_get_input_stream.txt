@@ -1,0 +1,6 @@
+static InputStream * func1 ( OutputStream * var1 ) 
+{ 
+if ( var1 -> var2 >= number ) 
+return var3 [ var1 -> var2 ] ; 
+return var4 ; 
+} 

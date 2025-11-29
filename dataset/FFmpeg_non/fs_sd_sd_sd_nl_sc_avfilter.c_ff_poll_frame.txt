@@ -1,0 +1,14 @@
+int func1 ( AVFilterLink * var1 ) 
+{ 
+int var2 , var3 = var4 ; 
+if ( var1 -> var5 -> func2 ) 
+return var1 -> var5 -> func2 ( var1 ) ; 
+for ( var2 = number ; var2 < var1 -> var6 -> var7 ; var2 ++ ) { 
+int var8 ; 
+if ( ! var1 -> var6 -> var9 [ var2 ] ) 
+return func3 ( var10 ) ; 
+var8 = func1 ( var1 -> var6 -> var9 [ var2 ] ) ; 
+var3 = func4 ( var3 , var8 ) ; 
+} 
+return var3 ; 
+} 

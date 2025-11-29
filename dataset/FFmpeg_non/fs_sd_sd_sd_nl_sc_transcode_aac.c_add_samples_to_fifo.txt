@@ -1,0 +1,16 @@
+static int func1 ( AVAudioFifo * var1 , 
+uint8_t ** var2 , 
+const int var3 ) 
+{ 
+int var4 ; 
+if ( ( var4 = func2 ( var1 , func3 ( var1 ) + var3 ) ) < number ) { 
+fprintf ( var5 , str ) ; 
+return var4 ; 
+} 
+if ( func4 ( var1 , ( void ** ) var2 , 
+var3 ) < var3 ) { 
+fprintf ( var5 , str ) ; 
+return var6 ; 
+} 
+return number ; 
+} 

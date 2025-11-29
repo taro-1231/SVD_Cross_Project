@@ -1,0 +1,19 @@
+static void func1 ( RTSPState * var1 , const char * var2 , 
+uint32_t var3 , uint32_t var4 ) 
+{ 
+int var5 ; 
+if ( ! var4 || ! var2 [ number ] ) 
+return ; 
+if ( var1 -> var6 != var7 ) 
+return ; 
+for ( var5 = number ; var5 < var1 -> var8 ; var5 ++ ) { 
+RTSPStream * var9 = var1 -> var10 [ var5 ] ; 
+RTPDemuxContext * var11 = var9 -> var12 ; 
+if ( ! var11 ) 
+continue ; 
+if ( ! strcmp ( var9 -> var13 , var2 ) ) { 
+var11 -> var14 = var4 ; 
+break ; 
+} 
+} 
+} 

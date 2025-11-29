@@ -1,0 +1,54 @@
+BOOL func1 ( 
+TCHAR * var1 , int var2 , int * var3 , 
+PTSTR var4 , PTSTR var5 ) 
+{ 
+if ( var2 > number ) 
+{ 
+if ( var4 != var6 ) 
+{ 
+if ( * var3 > number ) 
+* var3 -= number ; 
+else 
+* var3 = var2 - number ; 
+strcpy ( var4 , var1 + ( * var3 * var7 ) ) ; 
+} 
+if ( var5 != var6 ) 
+{ 
+if ( * var3 < var2 - number ) 
+* var3 += number ; 
+else 
+* var3 = number ; 
+strcpy ( var5 , var1 + ( * var3 * var7 ) ) ; 
+} 
+return var8 ; 
+} 
+else 
+{ 
+return var9 ; 
+} 
+} 
+* / 
+BOOL func1 ( 
+TCHAR * var1 , int var2 , int * var3 , 
+PTSTR var4 , PTSTR var5 ) 
+{ 
+if ( var2 > number ) 
+{ 
+if ( var4 != var6 ) 
+{ 
+if ( * var3 > number ) 
+* var3 -= number ; 
+else 
+* var3 = var2 - number ; 
+strcpy ( var4 , var1 + ( * var3 * var7 ) ) ; 
+} 
+if ( var5 != var6 ) 
+{ 
+if ( * var3 < var2 - number ) 
+* var3 += number ; 
+else 
+* var3 = number ; 
+strcpy ( var5 , var1 + ( * var3 * var7 ) ) ; 
+} 
+return var8 ; 
+} 

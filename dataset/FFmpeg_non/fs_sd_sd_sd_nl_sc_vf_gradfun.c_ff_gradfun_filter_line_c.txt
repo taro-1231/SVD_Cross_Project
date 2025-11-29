@@ -1,0 +1,13 @@
+void func1 ( uint8_t * var1 , const uint8_t * var2 , const uint16_t * var3 , int var4 , int var5 , const uint16_t * var6 ) 
+{ 
+int var7 ; 
+for ( var7 = number ; var7 < var4 ; var3 += var7 & number , var7 ++ ) { 
+int var8 = var2 [ var7 ] << number ; 
+int var9 = var3 [ number ] - var8 ; 
+int var10 = abs ( var9 ) * var5 >> number ; 
+var10 = func2 ( number , number - var10 ) ; 
+var10 = var10 * var10 * var9 >> number ; 
+var8 += var10 + var6 [ var7 & number ] ; 
+var1 [ var7 ] = func3 ( var8 >> number ) ; 
+} 
+} 

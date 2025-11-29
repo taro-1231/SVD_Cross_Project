@@ -1,0 +1,218 @@
+static inline void func1 ( uint8_t var1 [ ] , int var2 , PPContext * var3 ) { 
+const vector signed int var4 = func2 ( number ) ; 
+const vector unsigned int var5 = func3 ( number ) ; 
+const vector signed char var6 = func4 ( - number ) ; 
+const vector unsigned char var7 = ( vector unsigned char ) 
+{ 0x00 , 0x01 , 0x02 , 0x10 , 0x11 , 0x12 , 0x1F , 0x1F , 
+0x1F , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F } ; 
+const vector unsigned char var8 = ( vector unsigned char ) 
+{ 0x00 , 0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x10 , 0x11 , 
+0x12 , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F , 0x1F } ; 
+const vector unsigned char var9 = ( vector unsigned char ) 
+{ 0x01 , 0x01 , 0x01 , 0x01 , 0x01 , 0x01 , 0x00 , 0x00 , 
+0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 } ; 
+const vector unsigned char var10 = ( vector unsigned char ) 
+{ 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x01 , 0x01 , 
+0x01 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 } ; 
+const vector unsigned char magic = ( vector unsigned char ) 
+{ 0x01 , 0x02 , 0x01 , 0x02 , 0x04 , 0x02 , 0x01 , 0x02 , 
+0x01 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 } ; 
+const vector unsigned char extractPerm = ( vector unsigned char ) 
+{ 0x10 , 0x10 , 0x10 , 0x01 , 0x10 , 0x10 , 0x10 , 0x01 , 
+0x10 , 0x10 , 0x10 , 0x01 , 0x10 , 0x10 , 0x10 , 0x01 } ; 
+const vector unsigned char extractPermInc = ( vector unsigned char ) 
+{ 0x00 , 0x00 , 0x00 , 0x01 , 0x00 , 0x00 , 0x00 , 0x01 , 
+0x00 , 0x00 , 0x00 , 0x01 , 0x00 , 0x00 , 0x00 , 0x01 } ; 
+const vector unsigned char var11 = func5 ( number , ( unsigned char * ) number ) ; 
+const vector unsigned char var12 = ( vector unsigned char ) 
+{ 0x00 , 0x10 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 
+0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 } ; 
+const vector unsigned char var13 = ( vector unsigned char ) 
+{ 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 
+0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x00 , 0x08 } ; 
+uint8_t * var14 = var1 ; 
+DECLARE_ALIGNED ( number , uint8_t , var15 ) [ number ] = { deringThreshold } ; 
+const vector signed int var16 = func2 ( number ) ; 
+vector unsigned char var17 = func6 ( func7 ( number , var15 ) , number ) ; 
+func5 ( var18 * var2 , var14 ) ; \ 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+func8 ( number ) ; 
+vector unsigned char var19 ; 
+DECLARE_ALIGNED ( number , signed int , var20 ) [ number ] ; 
+DECLARE_ALIGNED ( number , int , var21 ) [ number ] = { var3 -> QP / number + number } ; 
+vector signed int var22 = func7 ( number , var21 ) ; 
+var22 = func6 ( var22 , number ) ; 
+{ 
+const vector unsigned char var23 = ( vector unsigned char ) 
+{ 0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 0x08 , 
+0x11 , 0x12 , 0x13 , 0x14 , 0x15 , 0x16 , 0x17 , 0x18 } ; 
+const vector unsigned char var24 = func9 ( var25 , var26 , var23 ) ; 
+const vector unsigned char var27 = func9 ( var28 , var29 , var23 ) ; 
+const vector unsigned char var30 = func9 ( var31 , var32 , var23 ) ; 
+const vector unsigned char var33 = func9 ( var34 , var35 , var23 ) ; 
+const vector unsigned char var40 = func11 ( var39 , var39 ) ; \ 
+const vector unsigned char var41 = func12 ( var39 , var39 ) ; \ 
+const vector unsigned char var43 = func11 ( var42 , var42 ) ; \ 
+const vector unsigned char var44 = func12 ( var42 , var42 ) ; \ 
+const vector unsigned char var46 = func11 ( var45 , var45 ) ; \ 
+const vector unsigned char var47 = func12 ( var45 , var45 ) ; \ 
+const vector unsigned char var49 = func11 ( var48 , var48 ) ; \ 
+const vector unsigned char var50 = func12 ( var48 , var48 ) ; \ 
+} while ( number ) 
+vector unsigned char var51 ; 
+vector unsigned char var52 ; 
+func10 ( var53 ) ; 
+func10 ( var54 ) ; 
+if ( func13 ( func14 ( var52 , var51 ) , var17 ) ) 
+return ; 
+var19 = func15 ( var51 , var52 ) ; 
+} 
+{ 
+const vector unsigned short var55 = ( vector unsigned short ) 
+{ 0x0001 , 0x0002 , 0x0004 , 0x0008 , 
+0x0010 , 0x0020 , 0x0040 , 0x0080 } ; 
+const vector unsigned short var56 = ( vector unsigned short ) 
+{ 0x0100 , 0x0200 , 0x0000 , 0x0000 , 
+0x0000 , 0x0000 , 0x0000 , 0x0000 } ; 
+const vector unsigned int var57 = func16 ( func3 ( number ) , func3 ( number ) ) ; 
+const vector unsigned int var58 = func3 ( number ) ; 
+vector signed int var59 ; 
+vector signed int var60 ; 
+vector signed int var61 , var62 , var63 , var64 , var65 ; 
+vector signed int var66 , var67 , var68 , var69 , var70 ; 
+do { \ 
+const vector unsigned char var71 = \ 
+const vector unsigned short var72 = \ 
+( vector unsigned short ) func11 ( var71 , var71 ) ; \ 
+const vector unsigned short var73 = \ 
+( vector unsigned short ) func12 ( var71 , var71 ) ; \ 
+const vector signed short var74 = \ 
+( vector signed short ) func18 ( var72 , var55 ) ; \ 
+const vector signed short var75 = \ 
+( vector signed short ) func18 ( var73 , var56 ) ; \ 
+const vector signed int var76 = func19 ( var74 , var16 ) ; \ 
+const vector signed int var77 = func19 ( var75 , var76 ) ; \ 
+} while ( number ) 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+func17 ( number ) ; 
+{ 
+const vector signed int var79 = func12 ( var61 , var63 ) ; 
+const vector signed int var80 = func12 ( var62 , var64 ) ; 
+const vector signed int var81 = func12 ( var79 , var80 ) ; 
+const vector signed int var82 = func12 ( var65 , var67 ) ; 
+const vector signed int var83 = func12 ( var66 , var68 ) ; 
+const vector signed int var84 = func12 ( var82 , var83 ) ; 
+const vector signed int var85 = func12 ( var69 , var16 ) ; 
+const vector signed int var86 = func12 ( var70 , var16 ) ; 
+const vector signed int var87 = func12 ( var85 , var86 ) ; 
+const vector signed int var88 = func16 ( func21 ( var16 , var81 ) , var57 ) ; 
+const vector signed int var89 = func16 ( func21 ( var16 , var84 ) , var57 ) ; 
+const vector signed int var90 = func16 ( func21 ( var16 , var87 ) , var57 ) ; 
+const vector signed int var91 = func22 ( var81 , var88 ) ; 
+const vector signed int var92 = func22 ( var84 , var89 ) ; 
+const vector signed int var93 = func22 ( var87 , var90 ) ; 
+const vector signed int var94 = func18 ( func23 ( var91 , var58 ) , 
+func16 ( var91 , var58 ) ) ; 
+const vector signed int var95 = func18 ( func23 ( var92 , var58 ) , 
+func16 ( var92 , var58 ) ) ; 
+const vector signed int var96 = func18 ( func23 ( var93 , var58 ) , 
+func16 ( var93 , var58 ) ) ; 
+const vector signed int var97 = func18 ( var91 , var94 ) ; 
+const vector signed int var98 = func18 ( var92 , var95 ) ; 
+const vector signed int var99 = func18 ( var93 , var96 ) ; 
+const vector unsigned char var100 = func5 ( number , ( unsigned char * ) number ) ; 
+const vector unsigned char var101 = func5 ( number , ( unsigned char * ) number ) ; 
+const vector signed int var102 = func9 ( var97 , var98 , var100 ) ; 
+const vector signed int var103 = func9 ( var97 , var98 , var101 ) ; 
+const vector signed int var104 = func9 ( var98 , var99 , var100 ) ; 
+const vector signed int var105 = func9 ( var98 , var99 , var101 ) ; 
+const vector signed int var106 = func18 ( var97 , 
+func18 ( var102 , var103 ) ) ; 
+const vector signed int var107 = func18 ( var98 , 
+func18 ( var104 , var105 ) ) ; 
+var59 = func22 ( var106 , 
+func23 ( var106 , 
+var57 ) ) ; 
+var60 = func22 ( var107 , 
+func23 ( var107 , 
+var57 ) ) ; 
+} 
+func24 ( var59 , number , var20 ) ; 
+func24 ( var60 , number , var20 ) ; 
+} 
+vector unsigned char var108 = var12 ; \ 
+vector unsigned char var109 = var7 ; \ 
+vector unsigned char var110 = var8 ; \ 
+vector unsigned char extractPermM = extractPerm 
+if ( var20 [ var18 ] & ( number << ( var113 + number ) ) ) { \ 
+const vector signed int var114 = \ 
+( vector signed int ) vec_msum ( a_B , magic , ( vector unsigned int ) var16 ) ; \ 
+vector signed int var115 = func27 ( func20 ( var114 , var4 ) , var5 ) ; \ 
+const vector signed int var116 = \ 
+extractPermM ) ; \ 
+const vector signed int var78 = func28 ( var116 , var22 ) ; \ 
+const vector signed int var117 = func14 ( var116 , var22 ) ; \ 
+vector signed int var118 ; \ 
+vector unsigned char var119 , var120 ; \ 
+var115 = func6 ( var115 , number ) ; \ 
+if ( func13 ( var78 , var115 ) ) \ 
+var118 = var78 ; \ 
+else if ( func29 ( var117 , var115 ) ) \ 
+var118 = var117 ; \ 
+else var118 = var115 ; \ 
+var119 = func6 ( ( vector unsigned char ) var118 , 15 ) ; \ 
+var120 = func28 ( var11 , var108 ) ; \ 
+} \ 
+var109 = func28 ( var109 , var9 ) ; \ 
+var110 = func28 ( var110 , var10 ) ; \ 
+var108 = func30 ( var108 , var13 ) ; \ 
+extractPermM = func28 ( extractPermM , extractPermInc ) 
+func25 ( ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+func26 ( var18 , var111 , var112 , number ) ; \ 
+} while ( number ) 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+func31 ( number , number , number ) ; 
+const vector unsigned char var121 = \ 
+func33 ( var18 * var2 , var14 ) ; \ 
+const vector unsigned char maskST = \ 
+func9 ( ( vector unsigned char ) var16 , \ 
+( vector unsigned char ) var6 , var121 ) ; \ 
+} while ( number ) 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+func32 ( number ) ; 
+} 

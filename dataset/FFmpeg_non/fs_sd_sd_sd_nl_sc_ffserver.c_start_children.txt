@@ -1,0 +1,62 @@
+static void func1 ( FFServerStream * var1 ) 
+{ 
+char * var2 ; 
+char * var3 ; 
+int var4 ; 
+size_t var5 ; 
+if ( var6 ) 
+return ; 
+var5 = strlen ( var7 ) ; 
+if ( var5 > var8 - number ) { 
+func2 ( str 
+str , var7 , var8 ) ; 
+return ; 
+} 
+var3 = strrchr ( var7 , str ) ; 
+if ( ! var3 ) { 
+var2 = func3 ( sizeof ( str ) ) ; 
+} else { 
+var2 = func3 ( var3 - var7 + sizeof ( str ) ) ; 
+if ( var2 != var9 ) { 
+memcpy ( var2 , var7 , var3 - var7 ) ; 
+} 
+} 
+if ( ! var2 ) { 
+func2 ( str ) ; 
+return ; 
+} 
+strcat ( var2 , str ) ; 
+for ( ; var1 ; var1 = var1 -> var10 ) { 
+if ( ! var1 -> var11 || var1 -> var12 ) 
+continue ; 
+var1 -> var13 = time ( number ) ; 
+var1 -> var12 = func4 ( ) ; 
+if ( var1 -> var12 < number ) { 
+func2 ( str , strerror ( var14 ) ) ; 
+func5 ( var2 ) ; 
+exit ( var15 ) ; 
+} 
+if ( var1 -> var12 ) 
+continue ; 
+func2 ( str ) ; 
+func2 ( str , var2 ) ; 
+for ( var4 = number ; var1 -> var11 [ var4 ] && var1 -> var11 [ var4 ] [ number ] ; var4 ++ ) 
+func2 ( str , var1 -> var11 [ var4 ] ) ; 
+func2 ( str ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+func6 ( var4 ) ; 
+if ( ! var16 . var17 ) { 
+if ( ! freopen ( str , str , var18 ) ) 
+func2 ( str ) ; 
+if ( ! freopen ( str , str , var19 ) ) 
+func2 ( str ) ; 
+if ( ! freopen ( str , str , var20 ) ) 
+func2 ( str ) ; 
+} 
+func7 ( var21 , var22 ) ; 
+func8 ( var2 , var1 -> var11 ) ; 
+func5 ( var2 ) ; 
+func9 ( number ) ; 
+} 
+func5 ( var2 ) ; 
+} 

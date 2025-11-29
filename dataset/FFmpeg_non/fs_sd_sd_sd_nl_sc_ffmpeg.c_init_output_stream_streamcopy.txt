@@ -1,0 +1,100 @@
+static int func1 ( OutputStream * var1 ) 
+{ 
+OutputFile * var2 = var3 [ var1 -> var4 ] ; 
+InputStream * var5 = func2 ( var1 ) ; 
+AVCodecParameters * var6 = var1 -> var7 -> var8 ; 
+AVCodecParameters * var9 = var1 -> var10 ; 
+AVRational var11 ; 
+int var12 , var13 ; 
+uint32_t var14 = var6 -> var14 ; 
+func3 ( var5 && ! var1 -> var15 ) ; 
+var13 = func4 ( var1 -> var16 , var5 -> var7 -> var8 ) ; 
+if ( var13 >= number ) 
+var13 = func5 ( var1 -> var16 , & var1 -> var17 ) ; 
+if ( var13 < number ) { 
+func6 ( var18 , var19 , 
+str ) ; 
+return var13 ; 
+} 
+func7 ( var9 , var1 -> var16 ) ; 
+if ( ! var14 ) { 
+unsigned int var20 ; 
+if ( ! var2 -> var21 -> var22 -> var14 || 
+func8 ( var2 -> var21 -> var22 -> var14 , var9 -> var14 ) == var9 -> var23 || 
+! func9 ( var2 -> var21 -> var22 -> var14 , var9 -> var23 , & var20 ) ) 
+var14 = var9 -> var14 ; 
+} 
+var13 = func10 ( var6 , var9 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+var6 -> var14 = var14 ; 
+if ( ! var1 -> var24 . var25 ) 
+var1 -> var24 = var5 -> var26 ; 
+var1 -> var7 -> var27 = var1 -> var24 ; 
+var13 = func11 ( var2 -> var21 -> var22 , var1 -> var7 , var5 -> var7 , var28 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+if ( var1 -> var7 -> var29 . var25 <= number || var1 -> var7 -> var29 . var30 <= number ) 
+var1 -> var7 -> var29 = av_add_q ( av_stream_get_codec_timebase ( var1 -> var7 ) , ( AVRational ) { number , number } ) ; 
+if ( var1 -> var7 -> var31 <= number && var5 -> var7 -> var31 > number ) 
+var1 -> var7 -> var31 = func12 ( var5 -> var7 -> var31 , var5 -> var7 -> var29 , var1 -> var7 -> var29 ) ; 
+var1 -> var7 -> var32 = var5 -> var7 -> var32 ; 
+if ( var5 -> var7 -> var33 ) { 
+var1 -> var7 -> var34 = func13 ( var18 , var5 -> var7 -> var33 , 
+sizeof ( * var5 -> var7 -> var34 ) ) ; 
+if ( ! var1 -> var7 -> var34 ) 
+return func14 ( var35 ) ; 
+var1 -> var7 -> var33 = number ; 
+for ( var12 = number ; var12 < var5 -> var7 -> var33 ; var12 ++ ) { 
+const AVPacketSideData * var36 = & var5 -> var7 -> var34 [ var12 ] ; 
+AVPacketSideData * var37 = & var1 -> var7 -> var34 [ var1 -> var7 -> var33 ] ; 
+var37 -> var38 = func15 ( var36 -> var39 ) ; 
+if ( ! var37 -> var38 ) 
+return func14 ( var35 ) ; 
+memcpy ( var37 -> var38 , var36 -> var38 , var36 -> var39 ) ; 
+var37 -> var39 = var36 -> var39 ; 
+var37 -> var40 = var36 -> var40 ; 
+var1 -> var7 -> var33 ++ ; 
+} 
+} 
+if ( var1 -> var41 ) { 
+uint8_t * var42 = func16 ( var1 -> var7 , var43 , 
+sizeof ( int32_t ) * number ) ; 
+if ( var42 ) 
+func17 ( ( int32_t * ) var42 , - var1 -> var44 ) ; 
+} 
+var1 -> var45 = func18 ( var6 -> var23 ) ; 
+var1 -> var46 = func19 ( var18 ) ; 
+if ( ! var1 -> var46 ) 
+return func14 ( var35 ) ; 
+switch ( var6 -> var47 ) { 
+case var48 : 
+if ( var49 != number ) { 
+func6 ( var18 , var19 , str ) ; 
+func20 ( number ) ; 
+} 
+if ( ( var6 -> var50 == number || var6 -> var50 == number || var6 -> var50 == number ) && var6 -> var23 == var51 ) 
+var6 -> var50 = number ; 
+if ( var6 -> var23 == var52 ) 
+var6 -> var50 = number ; 
+break ; 
+case var53 : 
+if ( var1 -> var54 . var25 ) { 
+var11 = 
+av_mul_q ( var1 -> var54 , 
+( AVRational ) { var6 -> height , var6 -> width } ) ; 
+func6 ( var18 , AV_LOG_WARNING , str 
+str ) ; 
+} 
+else if ( var5 -> var7 -> var55 . var25 ) 
+var11 = var5 -> var7 -> var55 ; 
+else 
+var11 = var9 -> var55 ; 
+var1 -> var7 -> var55 = var6 -> var55 = var11 ; 
+var1 -> var7 -> var27 = var5 -> var7 -> var27 ; 
+var1 -> var7 -> var56 = var5 -> var7 -> var56 ; 
+break ; 
+} 
+var1 -> var57 = var5 -> var7 -> var29 ; 
+return number ; 
+} 

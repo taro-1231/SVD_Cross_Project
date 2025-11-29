@@ -1,0 +1,4 @@
+AVFrame * func1 ( AVFilterLink * var2 , int var3 , int var1 ) 
+{ 
+return func2 ( var2 -> var4 -> var5 [ number ] , var3 , var1 ) ; 
+} 

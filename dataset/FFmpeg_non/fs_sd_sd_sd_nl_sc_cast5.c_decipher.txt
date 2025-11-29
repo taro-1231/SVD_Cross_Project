@@ -1,0 +1,31 @@
+static void func1 ( AVCAST5 * var1 , uint8_t * var2 , const uint8_t * var3 , uint8_t * var4 ) 
+{ 
+uint32_t var5 , var6 , var7 , var8 ; 
+var8 = func2 ( var3 ) ; 
+var7 = func2 ( var3 + number ) ; 
+if ( var1 -> var9 == number ) { 
+func3 ( var8 , var7 , number ) ; 
+func4 ( var7 , var8 , number ) ; 
+func5 ( var8 , var7 , number ) ; 
+func3 ( var7 , var8 , number ) ; 
+} 
+func4 ( var8 , var7 , number ) ; 
+func5 ( var7 , var8 , number ) ; 
+func3 ( var8 , var7 , number ) ; 
+func4 ( var7 , var8 , number ) ; 
+func5 ( var8 , var7 , number ) ; 
+func3 ( var7 , var8 , number ) ; 
+func4 ( var8 , var7 , number ) ; 
+func5 ( var7 , var8 , number ) ; 
+func3 ( var8 , var7 , number ) ; 
+func4 ( var7 , var8 , number ) ; 
+func5 ( var8 , var7 , number ) ; 
+func3 ( var7 , var8 , number ) ; 
+if ( var4 ) { 
+var7 ^= func2 ( var4 ) ; 
+var8 ^= func2 ( var4 + number ) ; 
+memcpy ( var4 , var3 , number ) ; 
+} 
+func6 ( var2 , var7 ) ; 
+func6 ( var2 + number , var8 ) ; 
+} 

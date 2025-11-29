@@ -1,0 +1,12 @@
+static void func1 ( AVIOContext * var1 , 
+const char * var2 , const char * var3 , int var4 ) 
+{ 
+int var5 = func2 ( var2 ) + number ; 
+if ( var5 <= number ) 
+return ; 
+func3 ( var1 , var5 * number + number ) ; 
+func4 ( var1 , var4 ) ; 
+func3 ( var1 , func5 ( var3 ) ) ; 
+func3 ( var1 , number ) ; 
+func6 ( var1 , var2 ) ; 
+} 

@@ -1,0 +1,47 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AudioDelayContext * var4 = var2 -> var5 ; 
+char * var6 , * var7 , * var8 = var9 ; 
+int var10 ; 
+var4 -> var11 = func2 ( var1 -> var12 , sizeof ( * var4 -> var11 ) ) ; 
+if ( ! var4 -> var11 ) 
+return func3 ( var13 ) ; 
+var4 -> var14 = var1 -> var12 ; 
+var4 -> var15 = func4 ( var1 -> var16 ) ; 
+var6 = var4 -> var17 ; 
+for ( var10 = number ; var10 < var4 -> var14 ; var10 ++ ) { 
+ChanDelay * var18 = & var4 -> var11 [ var10 ] ; 
+float var19 ; 
+if ( ! ( var7 = func5 ( var6 , str , & var8 ) ) ) 
+break ; 
+var6 = var9 ; 
+sscanf ( var7 , str , & var19 ) ; 
+var18 -> var19 = var19 * var1 -> var20 / number ; 
+if ( var18 -> var19 < number ) { 
+func6 ( var2 , var21 , str ) ; 
+return func3 ( var22 ) ; 
+} 
+} 
+for ( var10 = number ; var10 < var4 -> var14 ; var10 ++ ) { 
+ChanDelay * var18 = & var4 -> var11 [ var10 ] ; 
+if ( ! var18 -> var19 ) 
+continue ; 
+var18 -> var23 = func7 ( var18 -> var19 , var4 -> var15 ) ; 
+if ( ! var18 -> var23 ) 
+return func3 ( var13 ) ; 
+var4 -> var24 = func8 ( var4 -> var24 , var18 -> var19 ) ; 
+} 
+if ( ! var4 -> var24 ) { 
+func6 ( var2 , var21 , str ) ; 
+return func3 ( var22 ) ; 
+} 
+switch ( var1 -> var16 ) { 
+case var25 : var4 -> var26 = var27 ; break ; 
+case var28 : var4 -> var26 = var29 ; break ; 
+case var30 : var4 -> var26 = var31 ; break ; 
+case var32 : var4 -> var26 = var33 ; break ; 
+case var34 : var4 -> var26 = var35 ; break ; 
+} 
+return number ; 
+} 

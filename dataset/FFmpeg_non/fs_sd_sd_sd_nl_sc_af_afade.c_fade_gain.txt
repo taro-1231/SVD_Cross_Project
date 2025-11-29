@@ -1,0 +1,53 @@
+static double func1 ( int var1 , int64_t var2 , int var3 ) 
+{ 
+double var4 ; 
+var4 = func2 ( number * var2 / var3 , number , number ) ; 
+switch ( var1 ) { 
+case var5 : 
+var4 = sin ( var4 * var6 / number ) ; 
+break ; 
+case var7 : 
+var4 = number * asin ( var4 ) ; 
+break ; 
+case var8 : 
+var4 = number - cos ( var6 / number * ( pow ( number * var4 - number , number ) + number ) ) ; 
+break ; 
+case var9 : 
+var4 = ( number - cos ( var4 * var6 ) ) / number ; 
+break ; 
+case var10 : 
+var4 = number * acos ( number - number * var4 ) ; 
+break ; 
+case var11 : 
+var4 = pow ( number , ( number - var4 ) * number ) ; 
+break ; 
+case var12 : 
+var4 = func2 ( number * log ( number * var4 ) , number , number ) ; 
+break ; 
+case var13 : 
+var4 = number - sqrt ( number - var4 ) ; 
+break ; 
+case var14 : 
+var4 = ( number - ( number - var4 ) * ( number - var4 ) ) ; 
+break ; 
+case var15 : 
+var4 *= var4 ; 
+break ; 
+case var16 : 
+var4 = var4 * var4 * var4 ; 
+break ; 
+case var17 : 
+var4 = sqrt ( var4 ) ; 
+break ; 
+case var18 : 
+var4 = cbrt ( var4 ) ; 
+break ; 
+case var19 : 
+var4 = var4 <= number ? pow ( number * var4 , number / number ) / number : number - pow ( number * ( number - var4 ) , number / number ) / number ; 
+break ; 
+case var20 : 
+var4 = var4 <= number ? pow ( number * var4 , number ) / number : number - pow ( number * ( number - var4 ) , number ) / number ; 
+break ; 
+} 
+return var4 ; 
+} 

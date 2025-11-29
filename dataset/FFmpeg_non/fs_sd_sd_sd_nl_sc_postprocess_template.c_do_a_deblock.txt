@@ -1,0 +1,434 @@
+static av_always_inline void RENAME ( func1 ) ( uint8_t * var1 , int var2 , int var3 , const PPContext * var4 , int var5 ) { 
+int64_t var6 , var7 , var8 ; 
+int64_t var9 [ number * number * number ] ; 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str 
+:: str ( var4 -> mmxDcOffset [ var4 -> nonBQP ] ) , str ( var4 -> mmxDcThreshold [ var4 -> nonBQP ] ) 
+) ; 
+__asm__ volatile ( 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str REG_a str 
+str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var7 ) , str ( var6 ) 
+: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var4 -> pQPb ) , str ( var4 -> ppMode . flatnessThreshold ) 
+: str REG_a 
+) ; 
+var8 = var6 & var7 ; 
+if ( var8 ) { 
+x86_reg var10 = - number * var2 ; 
+int64_t * var11 = var9 ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( w04 ) str 
+str MANGLE ( w04 ) str 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+NEXT 
+NEXT 
+NEXT 
+str 
+str 
+NEXT 
+str 
+str 
+str 
+str 
+NEXT 
+str 
+str 
+str 
+str 
+NEXT 
+str 
+str 
+str 
+str 
+NEXT 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+NEXT 
+str 
+str 
+PREV 
+str 
+str 
+PREV 
+str 
+str 
+str 
+str 
+PREV 
+str 
+str 
+str 
+str 
+PREV 
+str 
+str 
+str 
+str 
+PREV 
+str 
+str 
+str 
+str 
+str 
+: str ( var1 ) 
+: str ( ( x86_reg ) var2 ) , str ( var4 -> pQPb ) , str ( var9 ) , str ( var1 ) 
+NAMED_CONSTRAINTS_ADD ( w04 ) 
+) ; 
+var1 += var2 ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var10 ) , str ( var11 ) 
+: str ( ( x86_reg ) var2 ) , str ( var1 - var10 ) , str ( var8 ) 
+) ; 
+} else 
+var1 += var2 ; 
+if ( var7 != - 1LL ) { 
+uint8_t * var12 = var1 ; 
+func2 ( number , var13 , var14 ) [ number ] ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( w05 ) str 
+str 
+str 
+str MANGLE ( w20 ) str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var12 ) 
+: str ( ( x86_reg ) var2 ) , str ( var4 -> pQPb ) , str ( var7 ) , str ( var14 ) 
+NAMED_CONSTRAINTS_ADD ( w05 , w20 ) 
+: str REG_a 
+) ; 
+} 
+} 

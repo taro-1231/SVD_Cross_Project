@@ -1,0 +1,35 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AICContext * var2 = var1 -> var3 ; 
+int var4 ; 
+uint8_t var5 [ number ] ; 
+var2 -> var1 = var1 ; 
+var1 -> var6 = var7 ; 
+func2 ( & var2 -> var8 , var1 ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var5 [ var4 ] = var4 ; 
+func3 ( var2 -> var8 . var9 , & var2 -> var10 , var5 ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var2 -> var11 [ var2 -> var8 . var9 [ var4 ] ] = var12 [ var4 ] ; 
+var2 -> var13 = func4 ( var1 -> var14 , number ) >> number ; 
+var2 -> var15 = func4 ( var1 -> var16 , number ) >> number ; 
+var2 -> var17 = ( var2 -> var13 + number ) >> number ; 
+var2 -> var18 = number ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+if ( ! ( var2 -> var13 % var4 ) && ( var2 -> var13 / var4 <= number ) ) { 
+var2 -> var18 = var2 -> var13 / var4 ; 
+var2 -> var17 = var4 ; 
+break ; 
+} 
+} 
+var2 -> var19 = func5 ( var2 -> var18 , var20 
+* sizeof ( * var2 -> var19 ) ) ; 
+if ( ! var2 -> var19 ) { 
+func6 ( var1 , var21 , str ) ; 
+return func7 ( var22 ) ; 
+} 
+for ( var4 = number ; var4 < var23 ; var4 ++ ) 
+var2 -> var24 [ var4 ] = var2 -> var19 + var2 -> var18 
+* var25 [ var4 ] ; 
+return number ; 
+} 

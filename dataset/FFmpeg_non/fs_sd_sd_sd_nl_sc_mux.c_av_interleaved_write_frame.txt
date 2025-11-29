@@ -1,0 +1,44 @@
+int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+int var3 , var4 = number ; 
+var3 = func2 ( var1 , var2 ) ; 
+if ( var3 < number ) 
+goto var5 ; 
+if ( var2 ) { 
+AVStream * var6 = var1 -> var7 [ var2 -> var8 ] ; 
+if ( var1 -> var9 & var10 ) 
+func3 ( var1 , var11 , str , 
+var2 -> var12 , func4 ( var2 -> var13 ) , func4 ( var2 -> var14 ) ) ; 
+if ( ( var3 = func5 ( var1 , var6 , var2 ) ) < number && ! ( var1 -> var15 -> var16 & var17 ) ) 
+goto var5 ; 
+if ( var2 -> var13 == var18 && ! ( var1 -> var15 -> var16 & var17 ) ) { 
+var3 = func6 ( var19 ) ; 
+goto var5 ; 
+} 
+} else { 
+func3 ( var1 , var11 , str ) ; 
+var4 = number ; 
+} 
+for ( ; ; ) { 
+AVPacket var20 ; 
+int var3 = func7 ( var1 , & var20 , var2 , var4 ) ; 
+if ( var2 ) { 
+memset ( var2 , number , sizeof ( * var2 ) ) ; 
+func8 ( var2 ) ; 
+var2 = var21 ; 
+} 
+if ( var3 <= number ) 
+return var3 ; 
+var3 = func9 ( var1 , & var20 ) ; 
+if ( var3 >= number ) 
+var1 -> var7 [ var20 . var8 ] -> var22 ++ ; 
+func10 ( & var20 ) ; 
+if ( var3 < number ) 
+return var3 ; 
+if ( var1 -> var23 && var1 -> var23 -> var24 ) 
+return var1 -> var23 -> var24 ; 
+} 
+var5 : 
+func11 ( var2 ) ; 
+return var3 ; 
+} 

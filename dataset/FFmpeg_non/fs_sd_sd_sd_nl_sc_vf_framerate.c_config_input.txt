@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FrameRateContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+int var8 ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+var4 -> var9 [ var8 ] = func3 ( var1 -> var7 , var1 -> var10 , 
+var8 ) ; 
+} 
+var4 -> var11 = var6 -> var12 ; 
+var4 -> var13 = func4 ( number , number , number , var4 ) ; 
+if ( ! var4 -> var13 ) 
+return func5 ( var14 ) ; 
+var4 -> var15 = var1 -> var16 ; 
+return number ; 
+} 

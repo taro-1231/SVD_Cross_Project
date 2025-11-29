@@ -1,0 +1,50 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVStream * var3 , int var4 ) 
+{ 
+NUTContext * var5 = var1 -> var6 ; 
+AVCodecContext * var7 = var3 -> var7 ; 
+func2 ( var2 , var4 ) ; 
+switch ( var7 -> var8 ) { 
+case var9 : func2 ( var2 , number ) ; break ; 
+case var10 : func2 ( var2 , number ) ; break ; 
+case var11 : func2 ( var2 , number ) ; break ; 
+var12 : func2 ( var2 , number ) ; break ; 
+} 
+func2 ( var2 , number ) ; 
+if ( var7 -> var13 ) { 
+func3 ( var2 , var7 -> var13 ) ; 
+} else { 
+func4 ( var1 , var14 , str , var4 ) ; 
+return func5 ( var16 ) ; 
+} 
+func2 ( var2 , var5 -> var15 [ var4 ] . var17 - var5 -> var17 ) ; 
+func2 ( var2 , var5 -> var15 [ var4 ] . var18 ) ; 
+func2 ( var2 , var5 -> var15 [ var4 ] . var19 ) ; 
+func2 ( var2 , var7 -> var20 ) ; 
+func6 ( var2 , number ) ; 
+func2 ( var2 , var7 -> var21 ) ; 
+func7 ( var2 , var7 -> var22 , var7 -> var21 ) ; 
+switch ( var7 -> var8 ) { 
+case var10 : 
+func2 ( var2 , var7 -> var23 ) ; 
+func2 ( var2 , number ) ; 
+func2 ( var2 , var7 -> var24 ) ; 
+break ; 
+case var9 : 
+func2 ( var2 , var7 -> var25 ) ; 
+func2 ( var2 , var7 -> var26 ) ; 
+if ( var3 -> var27 . var28 <= number || 
+var3 -> var27 . var29 <= number ) { 
+func2 ( var2 , number ) ; 
+func2 ( var2 , number ) ; 
+} else { 
+func2 ( var2 , var3 -> var27 . var28 ) ; 
+func2 ( var2 , var3 -> var27 . var29 ) ; 
+} 
+func2 ( var2 , number ) ; 
+break ; 
+var12 : 
+break ; 
+} 
+return number ; 
+} 

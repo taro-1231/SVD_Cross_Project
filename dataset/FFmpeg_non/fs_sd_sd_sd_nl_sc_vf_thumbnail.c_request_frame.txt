@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ThumbContext * var4 = var2 -> var5 ; 
+do { 
+int var6 = func2 ( var2 -> var7 [ number ] ) ; 
+if ( var6 == var8 && var4 -> var9 ) { 
+var6 = func3 ( var1 , func4 ( var2 ) ) ; 
+if ( var6 < number ) 
+return var6 ; 
+var6 = var8 ; 
+} 
+if ( var6 < number ) 
+return var6 ; 
+} while ( var4 -> var9 ) ; 
+return number ; 
+} 

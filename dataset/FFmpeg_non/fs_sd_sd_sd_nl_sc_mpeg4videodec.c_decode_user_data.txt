@@ -1,0 +1,41 @@
+static int func1 ( Mpeg4DecContext * var1 , GetBitContext * var2 ) 
+{ 
+MpegEncContext * var3 = & var1 -> var4 ; 
+char var5 [ number ] ; 
+int var6 ; 
+int var7 ; 
+int var8 = number , var9 = number , var10 = number , var11 = number ; 
+char var12 ; 
+for ( var6 = number ; var6 < number && func2 ( var2 ) < var2 -> var13 ; var6 ++ ) { 
+if ( func3 ( var2 , number ) == number ) 
+break ; 
+var5 [ var6 ] = func4 ( var2 , number ) ; 
+} 
+var5 [ var6 ] = number ; 
+var7 = sscanf ( var5 , str , & var8 , & var9 , & var12 ) ; 
+if ( var7 < number ) 
+var7 = sscanf ( var5 , str , & var8 , & var9 , & var12 ) ; 
+if ( var7 >= number ) { 
+var1 -> var14 = var8 ; 
+var1 -> var15 = var9 ; 
+var3 -> var16 = var7 == number && var12 == str ; 
+} 
+var7 = sscanf ( var5 , str , & var9 ) + number ; 
+if ( var7 != number ) 
+var7 = sscanf ( var5 , str , & var8 , & var10 , & var11 , & var9 ) ; 
+if ( var7 != number ) { 
+var7 = sscanf ( var5 , str , & var8 , & var10 , & var11 ) + number ; 
+if ( var7 > number ) 
+var9 = ( var8 << number ) + ( var10 << number ) + var11 ; 
+} 
+if ( var7 != number ) { 
+if ( strcmp ( var5 , str ) == number ) 
+var1 -> var17 = number ; 
+} 
+if ( var7 == number ) 
+var1 -> var17 = var9 ; 
+var7 = sscanf ( var5 , str , & var9 ) ; 
+if ( var7 == number ) 
+var1 -> var18 = var9 ; 
+return number ; 
+} 

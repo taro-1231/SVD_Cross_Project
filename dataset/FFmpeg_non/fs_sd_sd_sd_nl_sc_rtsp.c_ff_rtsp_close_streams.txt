@@ -1,0 +1,33 @@
+void func1 ( AVFormatContext * var1 ) 
+{ 
+RTSPState * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+RTSPStream * var6 ; 
+func2 ( var1 , number ) ; 
+for ( var4 = number ; var4 < var2 -> var7 ; var4 ++ ) { 
+var6 = var2 -> var8 [ var4 ] ; 
+if ( var6 ) { 
+if ( var6 -> var9 && var6 -> var10 ) { 
+if ( var6 -> var9 -> func3 ) 
+var6 -> var9 -> func3 ( 
+var6 -> var10 ) ; 
+func4 ( var6 -> var10 ) ; 
+} 
+for ( var5 = number ; var5 < var6 -> var11 ; var5 ++ ) 
+func5 ( & var6 -> var12 [ var5 ] ) ; 
+func5 ( & var6 -> var12 ) ; 
+for ( var5 = number ; var5 < var6 -> var13 ; var5 ++ ) 
+func5 ( & var6 -> var14 [ var5 ] ) ; 
+func5 ( & var6 -> var14 ) ; 
+func5 ( & var6 ) ; 
+} 
+} 
+func5 ( & var2 -> var8 ) ; 
+if ( var2 -> var15 ) { 
+func6 ( & var2 -> var15 ) ; 
+} 
+if ( var16 && var2 -> var17 ) 
+func7 ( var2 -> var17 ) ; 
+func5 ( & var2 -> var18 ) ; 
+func5 ( & var2 -> var19 ) ; 
+} 

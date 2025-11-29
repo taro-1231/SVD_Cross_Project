@@ -1,0 +1,21 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ExtractPlanesContext * var2 = var1 -> var3 ; 
+int var4 = ( var2 -> var5 & number ) | ( var2 -> var5 >> number ) ; 
+int var6 ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+char * var7 ; 
+AVFilterPad var8 = { number } ; 
+if ( ! ( var4 & ( number << var6 ) ) ) 
+continue ; 
+var7 = func2 ( str , var1 -> var9 ) ; 
+if ( ! var7 ) 
+return func3 ( var10 ) ; 
+var2 -> var11 [ var1 -> var9 ] = var6 ; 
+var8 . var7 = var7 ; 
+var8 . var12 = var13 ; 
+var8 . var14 = var15 ; 
+func4 ( var1 , var1 -> var9 , & var8 ) ; 
+} 
+return number ; 
+} 

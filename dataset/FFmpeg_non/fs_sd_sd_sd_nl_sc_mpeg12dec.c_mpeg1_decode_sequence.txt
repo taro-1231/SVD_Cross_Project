@@ -1,0 +1,77 @@
+static int func1 ( AVCodecContext * var1 , 
+const uint8_t * var2 , int var3 ) 
+{ 
+Mpeg1Context * var4 = var1 -> var5 ; 
+MpegEncContext * var6 = & var4 -> var7 ; 
+int var8 , var9 ; 
+int var10 , var11 , var12 ; 
+func2 ( & var6 -> var13 , var2 , var3 * number ) ; 
+var8 = func3 ( & var6 -> var13 , number ) ; 
+var9 = func3 ( & var6 -> var13 , number ) ; 
+if ( var8 == number || var9 == number ) { 
+func4 ( var1 , var14 , 
+str ) ; 
+if ( var1 -> var15 & ( var16 | var17 ) ) 
+return var18 ; 
+} 
+var6 -> var19 = func3 ( & var6 -> var13 , number ) ; 
+if ( var6 -> var19 == number ) { 
+func4 ( var1 , var20 , str ) ; 
+if ( var1 -> var15 & ( var16 | var17 ) ) 
+return var18 ; 
+} 
+var6 -> var21 = func3 ( & var6 -> var13 , number ) ; 
+if ( var6 -> var21 == number || var6 -> var21 > number ) { 
+func4 ( var1 , var14 , 
+str , var6 -> var21 ) ; 
+var6 -> var21 = number ; 
+} 
+var6 -> bit_rate = func3 ( & var6 -> var13 , 18 ) * 400LL ; 
+if ( func5 ( & var6 -> var13 , str ) == number ) { 
+return var18 ; 
+} 
+var6 -> var1 -> var22 = func3 ( & var6 -> var13 , number ) * number * number ; 
+func6 ( & var6 -> var13 , number ) ; 
+if ( func7 ( & var6 -> var13 ) ) { 
+func8 ( var6 , var6 -> var23 , var6 -> var24 , number ) ; 
+} else { 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+var12 = var6 -> var25 . var26 [ var10 ] ; 
+var11 = var27 [ var10 ] ; 
+var6 -> var24 [ var12 ] = var11 ; 
+var6 -> var23 [ var12 ] = var11 ; 
+} 
+} 
+if ( func7 ( & var6 -> var13 ) ) { 
+func8 ( var6 , var6 -> var28 , var6 -> var29 , number ) ; 
+} else { 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+int var12 = var6 -> var25 . var26 [ var10 ] ; 
+var11 = var30 [ var10 ] ; 
+var6 -> var29 [ var12 ] = var11 ; 
+var6 -> var28 [ var12 ] = var11 ; 
+} 
+} 
+if ( func9 ( & var6 -> var13 , number ) != number ) { 
+func4 ( var6 -> var1 , var20 , str ) ; 
+return var18 ; 
+} 
+var6 -> var8 = var8 ; 
+var6 -> var9 = var9 ; 
+var6 -> var31 = number ; 
+var6 -> var32 = number ; 
+var6 -> var33 = var34 ; 
+var6 -> var35 = number ; 
+var6 -> var36 = number ; 
+var6 -> var37 = number ; 
+var6 -> var38 = 
+var6 -> var1 -> var38 = var39 ; 
+var6 -> var40 = var41 ; 
+var6 -> var42 = number ; 
+if ( var6 -> var1 -> var43 & var44 ) 
+var6 -> var45 = number ; 
+if ( var6 -> var1 -> var46 & var47 ) 
+func4 ( var6 -> var1 , AV_LOG_DEBUG , str PRId64 str , 
+var6 -> var1 -> var22 , var6 -> bit_rate , var6 -> var19 ) ; 
+return number ; 
+} 

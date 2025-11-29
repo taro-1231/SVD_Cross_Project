@@ -1,0 +1,14 @@
+AVFilterGraph * func1 ( void ) 
+{ 
+AVFilterGraph * var1 = func2 ( sizeof ( * var1 ) ) ; 
+if ( ! var1 ) 
+return var2 ; 
+var1 -> var3 = func2 ( sizeof ( * var1 -> var3 ) ) ; 
+if ( ! var1 -> var3 ) { 
+func3 ( & var1 ) ; 
+return var2 ; 
+} 
+var1 -> var4 = & var5 ; 
+func4 ( var1 ) ; 
+return var1 ; 
+} 

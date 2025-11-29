@@ -1,0 +1,28 @@
+static int func1 ( RTMPContext * var1 , RTMPPacket * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+PutByteContext var6 ; 
+const uint8_t * var7 = var2 -> var7 + var3 ; 
+const int var8 = var2 -> var8 - var3 ; 
+uint32_t var9 = var2 -> var10 ; 
+if ( var2 -> var11 == var12 ) { 
+var1 -> var13 = number ; 
+} else if ( var2 -> var11 == var14 ) { 
+var1 -> var15 = number ; 
+} 
+var4 = func2 ( var1 , var8 + number ) ; 
+if ( ( var5 = func3 ( & var1 -> var16 , var1 -> var17 ) ) < number ) { 
+var1 -> var17 = var1 -> var18 = number ; 
+return var5 ; 
+} 
+func4 ( & var6 , var1 -> var16 , var1 -> var17 ) ; 
+func5 ( & var6 , var4 ) ; 
+func6 ( & var6 , var2 -> var11 ) ; 
+func7 ( & var6 , var8 ) ; 
+func7 ( & var6 , var9 ) ; 
+func6 ( & var6 , var9 >> number ) ; 
+func7 ( & var6 , number ) ; 
+func8 ( & var6 , var7 , var8 ) ; 
+func9 ( & var6 , number ) ; 
+return number ; 
+} 

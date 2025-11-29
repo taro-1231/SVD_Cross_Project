@@ -1,0 +1,14 @@
+static int func1 ( AVFilterContext * var1 , AVBPrint * var2 , 
+char * var3 , unsigned var4 , char ** var5 , int var6 ) 
+{ 
+const char * var7 = var4 ? var5 [ number ] : str ; 
+time_t var8 ; 
+struct var9 var9 ; 
+time ( & var8 ) ; 
+if ( var6 == str ) 
+func2 ( & var8 , & var9 ) ; 
+else 
+var9 = * func3 ( & var8 , & var9 ) ; 
+func4 ( var2 , var7 , & var9 ) ; 
+return number ; 
+} 

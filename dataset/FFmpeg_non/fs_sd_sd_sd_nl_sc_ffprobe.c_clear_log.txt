@@ -1,0 +1,14 @@
+static void func1 ( int var1 ) 
+{ 
+int var2 ; 
+if ( var1 ) 
+func2 ( & var3 ) ; 
+for ( var2 = number ; var2 < var4 ; var2 ++ ) { 
+func3 ( & var5 [ var2 ] . var6 ) ; 
+func3 ( & var5 [ var2 ] . var7 ) ; 
+func3 ( & var5 [ var2 ] . var8 ) ; 
+} 
+var4 = number ; 
+if ( var1 ) 
+func4 ( & var3 ) ; 
+} 

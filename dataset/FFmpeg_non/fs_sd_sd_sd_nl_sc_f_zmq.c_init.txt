@@ -1,0 +1,24 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ZMQContext * var2 = var1 -> var3 ; 
+var2 -> var2 = func2 ( ) ; 
+if ( ! var2 -> var2 ) { 
+func3 ( var1 , var4 , 
+str , func4 ( var5 ) ) ; 
+return var6 ; 
+} 
+var2 -> var7 = func5 ( var2 -> var2 , var8 ) ; 
+if ( ! var2 -> var7 ) { 
+func3 ( var1 , var4 , 
+str , func4 ( var5 ) ) ; 
+return var6 ; 
+} 
+if ( func6 ( var2 -> var7 , var2 -> var9 ) == - number ) { 
+func3 ( var1 , var4 , 
+str , 
+var2 -> var9 , func4 ( var5 ) ) ; 
+return var6 ; 
+} 
+var2 -> var10 = - number ; 
+return number ; 
+} 

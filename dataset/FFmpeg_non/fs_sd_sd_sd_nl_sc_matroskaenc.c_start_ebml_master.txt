@@ -1,0 +1,8 @@
+static ebml_master func1 ( AVIOContext * var1 , unsigned int var2 , 
+uint64_t var3 ) 
+{ 
+int var4 = var3 ? func2 ( var3 ) : number ; 
+func3 ( var1 , var2 ) ; 
+func4 ( var1 , var4 ) ; 
+return ( ebml_master ) { avio_tell ( var1 ) , var4 } ; 
+} 

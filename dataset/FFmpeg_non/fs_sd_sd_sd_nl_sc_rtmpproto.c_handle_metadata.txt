@@ -1,0 +1,41 @@
+static int func1 ( RTMPContext * var1 , RTMPPacket * var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+const uint8_t * var6 ; 
+uint8_t * var7 ; 
+uint32_t var8 ; 
+uint32_t var9 , var10 , var11 = number ; 
+var4 = func2 ( var1 , var2 -> var8 ) ; 
+if ( ( var3 = func3 ( & var1 -> var12 , var1 -> var13 ) ) < number ) { 
+var1 -> var13 = var1 -> var14 = number ; 
+return var3 ; 
+} 
+var6 = var2 -> var15 ; 
+var7 = var1 -> var12 + var4 ; 
+var9 = var2 -> var16 ; 
+while ( var6 - var2 -> var15 < var2 -> var8 - var17 ) { 
+var5 = func4 ( & var6 ) ; 
+var8 = func5 ( & var6 ) ; 
+var10 = func5 ( & var6 ) ; 
+var10 |= func4 ( & var6 ) << number ; 
+if ( ! var11 ) 
+var11 = var10 ; 
+var9 += var10 - var11 ; 
+var11 = var10 ; 
+if ( var8 + number + number > var2 -> var15 + var2 -> var8 - var6 ) 
+break ; 
+func6 ( & var7 , var5 ) ; 
+func7 ( & var7 , var8 ) ; 
+func7 ( & var7 , var9 ) ; 
+func6 ( & var7 , var9 >> number ) ; 
+memcpy ( var7 , var6 , var8 + number + number ) ; 
+var6 += var8 + number + number ; 
+var7 += var8 + number + number ; 
+} 
+if ( var7 != var1 -> var12 + var1 -> var13 ) { 
+av_log ( NULL , AV_LOG_WARNING , str 
+str ) ; 
+var1 -> var13 = var7 - var1 -> var12 ; 
+} 
+return number ; 
+} 

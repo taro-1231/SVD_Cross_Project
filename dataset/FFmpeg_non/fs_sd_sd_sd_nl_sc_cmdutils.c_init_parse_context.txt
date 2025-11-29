@@ -1,0 +1,16 @@
+static void func1 ( OptionParseContext * var1 , 
+const OptionGroupDef * var2 , int var3 ) 
+{ 
+static const OptionGroupDef var4 = { str } ; 
+int var5 ; 
+memset ( var1 , number , sizeof ( * var1 ) ) ; 
+var1 -> var3 = var3 ; 
+var1 -> var2 = func2 ( var1 -> var3 , sizeof ( * var1 -> var2 ) ) ; 
+if ( ! var1 -> var2 ) 
+func3 ( number ) ; 
+for ( var5 = number ; var5 < var1 -> var3 ; var5 ++ ) 
+var1 -> var2 [ var5 ] . var6 = & var2 [ var5 ] ; 
+var1 -> var7 . var6 = & var4 ; 
+var1 -> var7 . var8 = str ; 
+func4 ( ) ; 
+} 

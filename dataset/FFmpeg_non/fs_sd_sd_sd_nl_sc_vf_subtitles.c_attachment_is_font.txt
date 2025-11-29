@@ -1,0 +1,13 @@
+static int func1 ( AVStream * var1 ) 
+{ 
+const AVDictionaryEntry * var2 = var3 ; 
+int var4 ; 
+var2 = func2 ( var1 -> var5 , str , var3 , var6 ) ; 
+if ( var2 ) { 
+for ( var4 = number ; var7 [ var4 ] ; var4 ++ ) { 
+if ( func3 ( var7 [ var4 ] , var2 -> var8 ) == number ) 
+return number ; 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,10 @@
+static uint64_t func1 ( uint64_t var1 , const uint8_t * var2 , int var3 ) { 
+int var4 ; 
+uint64_t var5 = number ; 
+var2 += var3 - number ; 
+for ( var4 = number ; var4 < var3 ; var4 ++ ) { 
+var5 |= ( var1 & number ) << * var2 -- ; 
+var1 >>= number ; 
+} 
+return var5 ; 
+} 

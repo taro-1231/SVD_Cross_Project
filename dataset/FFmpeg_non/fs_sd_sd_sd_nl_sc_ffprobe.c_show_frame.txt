@@ -1,0 +1,90 @@
+static void func1 ( WriterContext * var1 , AVFrame * var2 , AVStream * var3 , 
+AVFormatContext * var4 ) 
+{ 
+AVBPrint var5 ; 
+char var6 [ number ] ; 
+const char * var7 ; 
+int var8 ; 
+func2 ( & var5 , number , var9 ) ; 
+func3 ( var1 , var10 ) ; 
+var7 = func4 ( var3 -> var11 -> var12 ) ; 
+if ( var7 ) func5 ( var33 , var7 ) ; 
+else func6 ( var33 , var33 ) ; 
+func7 ( var33 , var3 -> var13 ) ; 
+func7 ( var33 , var2 -> var14 ) ; 
+func8 ( var33 , var2 -> var15 ) ; 
+func9 ( var33 , var2 -> var15 , & var3 -> var16 ) ; 
+func8 ( var33 , var2 -> var17 ) ; 
+func9 ( var33 , var2 -> var17 , & var3 -> var16 ) ; 
+func8 ( var33 , func10 ( var2 ) ) ; 
+func9 ( var33 , func10 ( var2 ) , & var3 -> var16 ) ; 
+func11 ( var33 , func12 ( var2 ) ) ; 
+func13 ( var33 , func12 ( var2 ) , & var3 -> var16 ) ; 
+if ( func14 ( var2 ) != - number ) func15 ( var33 , str PRId64 , func14 ( var2 ) ) ; 
+else func6 ( var33 , var33 ) ; 
+if ( func16 ( var2 ) != - number ) func17 ( var33 , func16 ( var2 ) , var18 ) ; 
+else func6 ( var33 , var33 ) ; 
+switch ( var3 -> var11 -> var12 ) { 
+AVRational var19 ; 
+case var20 : 
+func7 ( var33 , var2 -> var21 ) ; 
+func7 ( var33 , var2 -> var22 ) ; 
+var7 = func18 ( var2 -> var23 ) ; 
+if ( var7 ) func5 ( var33 , var7 ) ; 
+else func6 ( var33 , var33 ) ; 
+var19 = func19 ( var4 , var3 , var2 ) ; 
+if ( var19 . var24 ) { 
+func20 ( var33 , var19 , var33 ) ; 
+} else { 
+func6 ( var33 , var33 ) ; 
+} 
+func15 ( var33 , var33 , func21 ( var2 -> var25 ) ) ; 
+func7 ( var33 , var2 -> var26 ) ; 
+func7 ( var33 , var2 -> var27 ) ; 
+func7 ( var33 , var2 -> var28 ) ; 
+func7 ( var33 , var2 -> var29 ) ; 
+func7 ( var33 , var2 -> var30 ) ; 
+break ; 
+case var31 : 
+var7 = func22 ( var2 -> var23 ) ; 
+if ( var7 ) func5 ( var33 , var7 ) ; 
+else func6 ( var33 , var33 ) ; 
+func7 ( var33 , var2 -> var32 ) ; 
+func7 ( var33 , func23 ( var2 ) ) ; 
+if ( func24 ( var2 ) ) { 
+func25 ( & var5 ) ; 
+func26 ( & var5 , func23 ( var2 ) , 
+func24 ( var2 ) ) ; 
+func5 ( var33 , var5 . var33 ) ; 
+} else 
+func6 ( var33 , var33 ) ; 
+break ; 
+} 
+if ( var34 ) 
+func27 ( var1 , func28 ( var2 ) , var35 ) ; 
+if ( var36 ) 
+func29 ( var1 , var37 , var38 , var36 ) ; 
+if ( var2 -> var39 ) { 
+func3 ( var1 , var40 ) ; 
+for ( var8 = number ; var8 < var2 -> var39 ; var8 ++ ) { 
+AVFrameSideData * var41 = var2 -> var42 [ var8 ] ; 
+const char * var43 ; 
+func3 ( var1 , var44 ) ; 
+var43 = func30 ( var41 -> var45 ) ; 
+func5 ( var33 , var43 ? var43 : var33 ) ; 
+if ( var41 -> var45 == var46 && var41 -> var47 >= number * number ) { 
+func31 ( var1 , var33 , var41 -> var48 , number , var33 , number , number , number ) ; 
+func7 ( var33 , func32 ( ( int32_t * ) var41 -> var48 ) ) ; 
+} else if ( var41 -> var45 == var49 && var41 -> var47 >= number ) { 
+char var50 [ var51 ] ; 
+func33 ( var50 , * ( int64_t * ) ( var41 -> var48 ) ) ; 
+func5 ( var33 , var50 ) ; 
+} 
+func34 ( var1 ) ; 
+} 
+func34 ( var1 ) ; 
+} 
+func34 ( var1 ) ; 
+func35 ( & var5 , var52 ) ; 
+fflush ( var53 ) ; 
+} 

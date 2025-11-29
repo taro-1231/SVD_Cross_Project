@@ -1,0 +1,14 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+PaletteUseContext * var2 = var1 -> var3 ; 
+var2 -> var4 . var5 = number ; 
+var2 -> var4 . var6 = var7 ; 
+var2 -> var8 = var9 [ var2 -> var10 ] [ var2 -> var11 ] ; 
+if ( var2 -> var11 == var12 ) { 
+int var13 ; 
+const int var14 = number << ( number - var2 -> var15 ) ; 
+for ( var13 = number ; var13 < func2 ( var2 -> var16 ) ; var13 ++ ) 
+var2 -> var16 [ var13 ] = ( func3 ( var13 ) >> var2 -> var15 ) - var14 ; 
+} 
+return number ; 
+} 

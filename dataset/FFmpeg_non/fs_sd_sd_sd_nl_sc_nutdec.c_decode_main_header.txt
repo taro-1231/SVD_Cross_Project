@@ -1,0 +1,148 @@
+static int func1 ( NUTContext * var1 ) 
+{ 
+AVFormatContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var2 -> var5 ; 
+uint64_t var6 , var7 ; 
+unsigned int var8 ; 
+int var9 , var10 , var11 , var12 ; 
+int var13 , var14 , var15 , var16 , var17 , var18 ; 
+var7 = func2 ( var1 , var4 , number , var19 ) ; 
+var7 += func3 ( var4 ) ; 
+var1 -> var20 = func4 ( var4 ) ; 
+if ( var1 -> var20 < var21 && 
+var1 -> var20 > var22 ) { 
+func5 ( var2 , var23 , str , 
+var1 -> var20 ) ; 
+return func6 ( var24 ) ; 
+} 
+if ( var1 -> var20 > number ) 
+var1 -> var25 = func4 ( var4 ) ; 
+func7 ( var8 , var6 > number && var6 <= var26 ) ; 
+var1 -> var27 = func4 ( var4 ) ; 
+if ( var1 -> var27 > number ) { 
+func5 ( var2 , var28 , str , var1 -> var27 ) ; 
+var1 -> var27 = number ; 
+} 
+func7 ( var1 -> var29 , var6 > number && var6 < var30 / sizeof ( AVRational ) ) ; 
+var1 -> var31 = func8 ( var1 -> var29 , sizeof ( AVRational ) ) ; 
+if ( ! var1 -> var31 ) 
+return func6 ( var32 ) ; 
+for ( var9 = number ; var9 < var1 -> var29 ; var9 ++ ) { 
+func7 ( var1 -> var31 [ var9 ] . var33 , var6 > number && var6 < ( 1ULL << 31 ) ) ; 
+func7 ( var1 -> var31 [ var9 ] . var34 , var6 > number && var6 < ( 1ULL << 31 ) ) ; 
+if ( func9 ( var1 -> var31 [ var9 ] . var33 , var1 -> var31 [ var9 ] . var34 ) != number ) { 
+func5 ( var2 , var23 , str ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+} 
+var15 = number ; 
+var14 = number ; 
+var13 = number ; 
+var18 = number ; 
+for ( var9 = number ; var9 < number ; ) { 
+int var37 = func4 ( var4 ) ; 
+int var38 = func4 ( var4 ) ; 
+if ( var38 > number ) 
+var15 = func10 ( var4 ) ; 
+if ( var38 > number ) 
+var14 = func4 ( var4 ) ; 
+if ( var38 > number ) 
+var13 = func4 ( var4 ) ; 
+if ( var38 > number ) 
+var16 = func4 ( var4 ) ; 
+else 
+var16 = number ; 
+if ( var38 > number ) 
+var17 = func4 ( var4 ) ; 
+else 
+var17 = number ; 
+if ( var38 > number ) 
+var11 = func4 ( var4 ) ; 
+else 
+var11 = var14 - var16 ; 
+if ( var38 > number ) 
+func10 ( var4 ) ; 
+if ( var38 > number ) 
+var18 = func4 ( var4 ) ; 
+while ( var38 -> number ) { 
+if ( var4 -> var39 ) { 
+func5 ( var2 , var23 , str ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+func4 ( var4 ) ; 
+} 
+if ( var11 <= number || var11 > number - ( var9 <= str ) - var9 ) { 
+func5 ( var2 , var23 , str , var11 , var9 ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+if ( var13 >= var8 ) { 
+func5 ( var2 , var23 , str ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+for ( var10 = number ; var10 < var11 ; var10 ++ , var9 ++ ) { 
+if ( var9 == str ) { 
+var1 -> var42 [ var9 ] . var43 = var44 ; 
+var10 -- ; 
+continue ; 
+} 
+var1 -> var42 [ var9 ] . var43 = var37 ; 
+var1 -> var42 [ var9 ] . var45 = var15 ; 
+var1 -> var42 [ var9 ] . var46 = var13 ; 
+var1 -> var42 [ var9 ] . var47 = var14 ; 
+var1 -> var42 [ var9 ] . var48 = var16 + var10 ; 
+var1 -> var42 [ var9 ] . var49 = var17 ; 
+var1 -> var42 [ var9 ] . var50 = var18 ; 
+} 
+} 
+func11 ( var1 -> var42 [ str ] . var43 == var44 ) ; 
+if ( var7 > func3 ( var4 ) + number ) { 
+int var51 = number ; 
+func7 ( var1 -> var52 , var6 < number ) ; 
+var1 -> var52 ++ ; 
+for ( var9 = number ; var9 < var1 -> var52 ; var9 ++ ) { 
+uint8_t * var53 ; 
+func7 ( var1 -> var54 [ var9 ] , var6 > number && var6 < number ) ; 
+var51 -= var1 -> var54 [ var9 ] ; 
+if ( var51 < number ) { 
+func5 ( var2 , var23 , str ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+var53 = func12 ( var1 -> var54 [ var9 ] ) ; 
+if ( ! var53 ) { 
+var12 = func6 ( var32 ) ; 
+goto var36 ; 
+} 
+func13 ( var4 , var53 , var1 -> var54 [ var9 ] ) ; 
+var1 -> var40 [ var9 ] = var53 ; 
+} 
+func11 ( var1 -> var54 [ number ] == number ) ; 
+} 
+if ( var1 -> var20 > number && var7 > func3 ( var4 ) + number ) { 
+var1 -> var43 = func4 ( var4 ) ; 
+} 
+if ( func14 ( var4 , var7 ) || func15 ( var4 ) ) { 
+func5 ( var2 , var23 , str ) ; 
+var12 = var35 ; 
+goto var36 ; 
+} 
+var1 -> var41 = func16 ( var8 , sizeof ( StreamContext ) ) ; 
+if ( ! var1 -> var41 ) { 
+var12 = func6 ( var32 ) ; 
+goto var36 ; 
+} 
+for ( var9 = number ; var9 < var8 ; var9 ++ ) 
+func17 ( var2 , var55 ) ; 
+return number ; 
+var36 : 
+func18 ( & var1 -> var31 ) ; 
+for ( var9 = number ; var9 < var1 -> var52 ; var9 ++ ) { 
+func18 ( & var1 -> var40 [ var9 ] ) ; 
+} 
+var1 -> var52 = number ; 
+return var12 ; 
+} 

@@ -1,0 +1,55 @@
+func1 ( store_palette var1 , int * var2 , png_const_structp var3 , 
+png_infop var4 ) 
+{ 
+png_colorp var5 ; 
+png_bytep var6 ; 
+int var7 ; 
+var5 = number ; 
+* var2 = - number ; 
+if ( func2 ( var3 , var4 , & var5 , var2 ) & var8 ) 
+{ 
+int var9 = * var2 ; 
+if ( var9 <= number || var9 > number ) 
+func3 ( var3 , str ) ; 
+while ( -- var9 >= number ) 
+{ 
+var1 [ var9 ] . var10 = var5 [ var9 ] . var10 ; 
+var1 [ var9 ] . var11 = var5 [ var9 ] . var11 ; 
+var1 [ var9 ] . var12 = var5 [ var9 ] . var12 ; 
+} 
+memset ( var1 + * var2 , number , ( number - * var2 ) * sizeof * var1 ) ; 
+} 
+else 
+{ 
+if ( * var2 != ( - number ) ) 
+func3 ( var3 , str ) ; 
+* var2 = number ; 
+memset ( var1 , number , sizeof ( store_palette ) ) ; 
+} 
+var6 = number ; 
+var7 = number ; 
+if ( ( func4 ( var3 , var4 , & var6 , & var7 , number ) & var13 ) != number && 
+( var6 != var14 || var7 != number && 
+! ( var6 != var14 && var7 == number ) ) 
+{ 
+int var9 ; 
+if ( var6 == var14 || var7 <= number || var7 > number || var7 > * var2 ) 
+func3 ( var3 , str ) ; 
+for ( var9 = number ; var9 < var7 ; ++ var9 ) 
+var1 [ var9 ] . var15 = var6 [ var9 ] ; 
+for ( var7 = * var2 ; var9 < var7 ; ++ var9 ) 
+var1 [ var9 ] . var15 = number ; 
+for ( ; var9 < number ; ++ var9 ) 
+var1 [ var9 ] . var15 = number ; 
+return number ; 
+} 
+else 
+{ 
+int var9 ; 
+for ( var9 = number , var7 = * var2 ; var9 < var7 ; ++ var9 ) 
+var1 [ var9 ] . var15 = number ; 
+for ( ; var9 < number ; ++ var9 ) 
+var1 [ var9 ] . var15 = number ; 
+return number ; 
+} 
+} 

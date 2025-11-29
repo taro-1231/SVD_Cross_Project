@@ -1,0 +1,76 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+AMergeContext * var5 = var3 -> var6 ; 
+AVFilterLink * const var7 = var3 -> var8 [ number ] ; 
+int var9 ; 
+int var10 , var11 , var12 ; 
+AVFrame * var13 , * var14 [ var15 ] ; 
+uint8_t * var16 [ var15 ] , * var17 ; 
+for ( var9 = number ; var9 < var5 -> var18 ; var9 ++ ) 
+if ( var1 == var3 -> var19 [ var9 ] ) 
+break ; 
+func2 ( var9 < var5 -> var18 ) ; 
+if ( func3 ( & var5 -> var20 [ var9 ] . var21 ) ) { 
+func4 ( & var2 ) ; 
+return func5 ( var22 ) ; 
+} 
+func6 ( var3 , & var5 -> var20 [ var9 ] . var21 , func7 ( var2 ) ) ; 
+var5 -> var20 [ var9 ] . var10 += var2 -> var10 ; 
+func4 ( & var2 ) ; 
+var10 = var5 -> var20 [ number ] . var10 ; 
+for ( var12 = number ; var12 < var5 -> var18 ; var12 ++ ) 
+var10 = func8 ( var10 , var5 -> var20 [ var12 ] . var10 ) ; 
+if ( ! var10 ) 
+return number ; 
+var13 = func9 ( var3 -> var8 [ number ] , var10 ) ; 
+if ( ! var13 ) 
+return func5 ( var22 ) ; 
+var17 = var13 -> var23 [ number ] ; 
+for ( var12 = number ; var12 < var5 -> var18 ; var12 ++ ) { 
+var14 [ var12 ] = func10 ( & var5 -> var20 [ var12 ] . var21 , number ) ; 
+var16 [ var12 ] = var14 [ var12 ] -> var23 [ number ] + 
+var5 -> var20 [ var12 ] . var24 * var5 -> var20 [ var12 ] . var25 * var5 -> var26 ; 
+} 
+func11 ( var13 , var14 [ number ] ) ; 
+var13 -> var27 = var14 [ number ] -> var27 == var28 ? var28 : 
+var14 [ number ] -> var27 + 
+func12 ( var5 -> var20 [ number ] . var24 , 
+func13 ( number , var3 -> var19 [ number ] -> var29 ) , 
+var3 -> var8 [ number ] -> var30 ) ; 
+var13 -> var10 = var10 ; 
+var13 -> var31 = var7 -> var31 ; 
+func14 ( var13 , var7 -> var32 ) ; 
+while ( var10 ) { 
+var11 = var10 ; 
+for ( var12 = number ; var12 < var5 -> var18 ; var12 ++ ) 
+var11 = func8 ( var11 , var14 [ var12 ] -> var10 - var5 -> var20 [ var12 ] . var24 ) ; 
+switch ( var5 -> var26 ) { 
+case number : 
+func15 ( var5 -> var18 , var5 -> var20 , var5 -> var33 , var16 , & var17 , var11 , number ) ; 
+break ; 
+case number : 
+func15 ( var5 -> var18 , var5 -> var20 , var5 -> var33 , var16 , & var17 , var11 , number ) ; 
+break ; 
+case number : 
+func15 ( var5 -> var18 , var5 -> var20 , var5 -> var33 , var16 , & var17 , var11 , number ) ; 
+break ; 
+var34 : 
+func15 ( var5 -> var18 , var5 -> var20 , var5 -> var33 , var16 , & var17 , var11 , var5 -> var26 ) ; 
+break ; 
+} 
+var10 -= var11 ; 
+for ( var12 = number ; var12 < var5 -> var18 ; var12 ++ ) { 
+var5 -> var20 [ var12 ] . var10 -= var11 ; 
+var5 -> var20 [ var12 ] . var24 += var11 ; 
+if ( var5 -> var20 [ var12 ] . var24 == var14 [ var12 ] -> var10 ) { 
+var5 -> var20 [ var12 ] . var24 = number ; 
+func4 ( & var14 [ var12 ] ) ; 
+func16 ( & var5 -> var20 [ var12 ] . var21 ) ; 
+var14 [ var12 ] = func10 ( & var5 -> var20 [ var12 ] . var21 , number ) ; 
+var16 [ var12 ] = var14 [ var12 ] ? var14 [ var12 ] -> var23 [ number ] : var35 ; 
+} 
+} 
+} 
+return func17 ( var3 -> var8 [ number ] , var13 ) ; 
+} 

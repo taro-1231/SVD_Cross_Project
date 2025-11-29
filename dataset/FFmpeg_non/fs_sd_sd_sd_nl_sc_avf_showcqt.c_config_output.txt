@@ -1,0 +1,179 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+ShowCQTContext * var6 = var2 -> var7 ; 
+AVExpr * var8 = var9 , * var10 = var9 , * var11 = var9 ; 
+uint8_t * var12 = var6 -> var12 ; 
+static const char * const var13 [ ] = { str , str , str , str , str , var9 } ; 
+static const char * const var16 [ ] = { str , str , str , var9 } ; 
+static const char * const var17 [ ] = { str , str , str , str , var9 } ; 
+static double ( * const var18 [ ] ) ( void * , double ) = { a_weighting , b_weighting , c_weighting , var9 } ; 
+static double ( * const var19 [ ] ) ( void * , double ) = { midi , r_func , g_func , b_func , var9 } ; 
+int var20 , var21 , var22 , var23 , var24 ; 
+int var25 = number ; 
+int var26 = var4 -> var27 ; 
+double var28 = var26 * ( double ) var6 -> var14 ; 
+int64_t var29 , var30 ; 
+int var31 = var6 -> var32 ? number : number ; 
+int var33 = ( var34 / number ) * var31 ; 
+int var35 = ( var36 / number ) * var31 ; 
+int var37 = ( var38 / number ) * var31 ; 
+var6 -> var39 = ceil ( log2 ( var28 ) ) ; 
+var20 = number << var6 -> var39 ; 
+if ( var26 % ( var6 -> var40 * var6 -> var41 ) ) { 
+func2 ( var2 , var42 , str , var26 , var6 -> var40 , var6 -> var41 ) ; 
+return func3 ( var43 ) ; 
+} 
+var6 -> var44 = func4 ( var20 , sizeof ( * var6 -> var44 ) ) ; 
+var6 -> var45 = func4 ( var20 , sizeof ( * var6 -> var45 ) ) ; 
+var6 -> var46 = func4 ( var20 , sizeof ( * var6 -> var46 ) ) ; 
+var6 -> var47 = func4 ( var20 , sizeof ( * var6 -> var47 ) ) ; 
+var6 -> var48 = func5 ( var6 -> var39 , number ) ; 
+if ( ! var6 -> var44 || ! var6 -> var45 || ! var6 -> var46 || ! var6 -> var47 || ! var6 -> var48 ) 
+return func3 ( var49 ) ; 
+func6 ( var2 ) ; 
+if ( var6 -> fontfile ) 
+func2 ( var2 , var50 , str ) ; 
+var6 -> font_alpha = var9 ; 
+func2 ( var2 , var51 , str ) ; 
+var29 = func7 ( ) ; 
+var24 = func8 ( & var8 , var6 -> var52 , var13 , var9 , var9 , var9 , var9 , number , var2 ) ; 
+if ( var24 < number ) 
+goto var53 ; 
+var24 = func8 ( & var10 , var6 -> var54 , var13 , var16 , 
+var18 , var9 , var9 , number , var2 ) ; 
+if ( var24 < number ) 
+goto var53 ; 
+var24 = func8 ( & var11 , var6 -> var55 , var13 , var17 , 
+var19 , var9 , var9 , number , var2 ) ; 
+if ( var24 < number ) 
+goto var53 ; 
+for ( var21 = number ; var21 < var34 ; var21 ++ ) { 
+int var56 = var20 >> number ; 
+float var57 = number ; 
+float var58 = number ; 
+double var15 = var59 * exp2 ( var21 * ( number / number ) ) ; 
+double var60 , var52 , var54 ; 
+double var61 [ ] = { var6 -> var14 , var6 -> var14 , var15 , var15 , var15 , number } ; 
+double var62 = number ; 
+double var63 = number / var62 ; 
+double var64 = number / var62 ; 
+double var65 = number / var62 ; 
+double var66 , var67 , var68 , var69 ; 
+double var70 , var71 , var72 , var73 , var74 ; 
+var52 = func9 ( var8 , var61 , var9 ) ; 
+if ( isnan ( var52 ) ) { 
+func2 ( var2 , var50 , str , var15 , var6 -> var14 ) ; 
+var52 = var6 -> var14 ; 
+} else if ( var52 < var75 ) { 
+func2 ( var2 , var50 , str , var15 , var52 , var75 ) ; 
+var52 = var75 ; 
+} else if ( var52 > var6 -> var14 ) { 
+func2 ( var2 , var50 , str , var15 , var52 , var6 -> var14 ) ; 
+var52 = var6 -> var14 ; 
+} 
+var54 = func10 ( func9 ( var10 , var61 , var9 ) ) ; 
+if ( isnan ( var54 ) ) { 
+func2 ( var2 , var50 , str , var15 ) ; 
+var54 = var76 ; 
+} else if ( var54 < var76 ) { 
+var54 = var76 ; 
+} else if ( var54 > var77 ) { 
+func2 ( var2 , var50 , str , var15 , var54 , var77 ) ; 
+var54 = var77 ; 
+} 
+if ( var6 -> var32 || ! ( var21 & number ) ) { 
+int var55 = func9 ( var11 , var61 , var9 ) ; 
+var12 [ number ] = ( var55 >> number ) & number ; 
+var12 [ number ] = ( var55 >> number ) & number ; 
+var12 [ number ] = var55 & number ; 
+var12 += number ; 
+} 
+var60 = var52 * var26 ; 
+var6 -> var44 [ number ] . var78 = number ; 
+var6 -> var44 [ number ] . var79 = number ; 
+var6 -> var44 [ var56 ] . var78 = ( number + var63 + var64 + var65 ) * ( number / var60 ) * var54 * ( number / var20 ) ; 
+var6 -> var44 [ var56 ] . var79 = number ; 
+var66 = var68 = sin ( number * var80 * var15 * ( number / var26 ) ) ; 
+var67 = var69 = cos ( number * var80 * var15 * ( number / var26 ) ) ; 
+var70 = var72 = sin ( number * var80 * ( number / var60 ) ) ; 
+var71 = var73 = cos ( number * var80 * ( number / var60 ) ) ; 
+for ( var22 = number ; var22 < number * var60 ; var22 ++ ) { 
+double var81 , var82 ; 
+double var83 , var84 , var85 ; 
+var83 = var73 * var73 - var72 * var72 ; 
+var85 = var73 * var72 + var72 * var73 ; 
+var84 = var73 * var83 - var72 * var85 ; 
+var74 = ( number + var63 * var73 + var64 * var83 + var65 * var84 ) * ( number / var60 ) * var54 * ( number / var20 ) ; 
+var6 -> var44 [ var56 + var22 ] . var78 = var74 * var69 ; 
+var6 -> var44 [ var56 + var22 ] . var79 = var74 * var68 ; 
+var6 -> var44 [ var56 - var22 ] . var78 = var6 -> var44 [ var56 + var22 ] . var78 ; 
+var6 -> var44 [ var56 - var22 ] . var79 = - var6 -> var44 [ var56 + var22 ] . var79 ; 
+var81 = var69 * var67 - var68 * var66 ; 
+var68 = var68 * var67 + var69 * var66 ; 
+var69 = var81 ; 
+var82 = var73 * var71 - var72 * var70 ; 
+var72 = var72 * var71 + var73 * var70 ; 
+var73 = var82 ; 
+} 
+for ( ; var22 < var56 ; var22 ++ ) { 
+var6 -> var44 [ var56 + var22 ] . var78 = number ; 
+var6 -> var44 [ var56 + var22 ] . var79 = number ; 
+var6 -> var44 [ var56 - var22 ] . var78 = number ; 
+var6 -> var44 [ var56 - var22 ] . var79 = number ; 
+} 
+func11 ( var6 -> var48 , var6 -> var44 ) ; 
+func12 ( var6 -> var48 , var6 -> var44 ) ; 
+for ( var22 = number ; var22 < var20 ; var22 ++ ) { 
+var6 -> var45 [ var22 ] . var86 = var22 ; 
+var6 -> var45 [ var22 ] . var87 = var6 -> var44 [ var22 ] . var78 ; 
+} 
+func13 ( var6 -> var45 , var20 , var88 , var89 ) ; 
+for ( var22 = number ; var22 < var20 ; var22 ++ ) 
+var57 += func14 ( var6 -> var45 [ var22 ] . var87 ) ; 
+for ( var22 = number ; var22 < var20 ; var22 ++ ) { 
+var58 += func14 ( var6 -> var45 [ var22 ] . var87 ) ; 
+if ( var58 > var57 * var6 -> var90 * var91 ) { 
+var6 -> var92 [ var21 ] = var20 - var22 ; 
+var25 += var6 -> var92 [ var21 ] ; 
+var6 -> var93 [ var21 ] = func4 ( var6 -> var92 [ var21 ] , sizeof ( * var6 -> var93 [ var21 ] ) ) ; 
+if ( ! var6 -> var93 [ var21 ] ) { 
+var24 = func3 ( var49 ) ; 
+goto var53 ; 
+} 
+for ( var23 = number ; var23 < var6 -> var92 [ var21 ] ; var23 ++ ) 
+var6 -> var93 [ var21 ] [ var23 ] = var6 -> var45 [ var22 + var23 ] ; 
+break ; 
+} 
+} 
+} 
+func15 ( var11 ) ; 
+func15 ( var10 ) ; 
+func15 ( var8 ) ; 
+var30 = func7 ( ) ; 
+func2 ( var2 , var51 , str , number * ( var30 - var29 ) , var20 , var25 ) ; 
+var1 -> var74 = var33 ; 
+var1 -> var94 = var35 ; 
+var6 -> var95 = number ; 
+var6 -> var96 = number ; 
+var6 -> var97 = number ; 
+var6 -> var98 = number ; 
+var6 -> var99 = var20 >> number ; 
+memset ( var6 -> var44 , number , var20 * sizeof ( * var6 -> var44 ) ) ; 
+var6 -> var100 = func16 ( var1 , var1 -> var74 , var1 -> var94 ) ; 
+if ( ! var6 -> var100 ) 
+return func3 ( var49 ) ; 
+var6 -> var101 = func17 ( var37 , var6 -> var100 -> var102 [ number ] ) ; 
+if ( ! var6 -> var101 ) 
+return func3 ( var49 ) ; 
+var1 -> var103 = func18 ( number , number ) ; 
+var1 -> var104 = func18 ( number , var6 -> var40 ) ; 
+var1 -> var105 = func18 ( var6 -> var40 , number ) ; 
+return number ; 
+var53 : 
+func15 ( var11 ) ; 
+func15 ( var10 ) ; 
+func15 ( var8 ) ; 
+return var24 ; 
+} 

@@ -1,0 +1,15 @@
+int func1 ( const char ** var1 , char * var2 , int var3 , 
+char * var4 , int var5 ) 
+{ 
+* var1 += strspn ( * var1 , var6 ) ; 
+if ( ** var1 ) { 
+func2 ( var2 , var3 , str , var1 ) ; 
+if ( ** var1 == str ) 
+( * var1 ) ++ ; 
+func2 ( var4 , var5 , str , var1 ) ; 
+if ( ** var1 == str ) 
+( * var1 ) ++ ; 
+return number ; 
+} 
+return number ; 
+} 

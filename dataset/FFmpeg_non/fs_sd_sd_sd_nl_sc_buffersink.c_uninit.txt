@@ -1,0 +1,14 @@
+static av_cold void func1 ( AVFilterContext * var2 ) 
+{ 
+BufferSinkContext * var3 = var2 -> var4 ; 
+AVFrame * var5 ; 
+if ( var3 -> var6 ) 
+func2 ( var3 -> var6 ) ; 
+if ( var3 -> var7 ) { 
+while ( func3 ( var3 -> var7 ) >= var1 ) { 
+func4 ( var3 -> var7 , & var5 , sizeof ( var5 ) , var8 ) ; 
+func5 ( & var5 ) ; 
+} 
+func6 ( & var3 -> var7 ) ; 
+} 
+} 

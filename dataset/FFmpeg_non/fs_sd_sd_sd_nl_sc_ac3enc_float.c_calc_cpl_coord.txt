@@ -1,0 +1,7 @@
+static CoefType func1 ( CoefSumType var1 , CoefSumType var2 ) 
+{ 
+float var3 = number ; 
+if ( var2 > number ) 
+var3 *= func2 ( var1 / var2 ) ; 
+return func3 ( var3 , var4 ) ; 
+} 

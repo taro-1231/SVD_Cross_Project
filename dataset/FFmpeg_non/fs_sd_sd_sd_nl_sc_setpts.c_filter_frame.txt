@@ -1,0 +1,53 @@
+static int func2 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+SetPTSContext * var3 = var1 -> var4 -> var5 ; 
+int64_t var6 = var2 -> var7 ; 
+double var8 ; 
+if ( isnan ( var3 -> var9 [ var10 ] ) ) { 
+var3 -> var9 [ var10 ] = func3 ( var2 -> var7 ) ; 
+var3 -> var9 [ var11 ] = func4 ( var2 -> var7 , var1 -> var12 ) ; 
+} 
+var3 -> var9 [ var13 ] = func3 ( var2 -> var7 ) ; 
+var3 -> var9 [ var14 ] = func4 ( var2 -> var7 , var1 -> var12 ) ; 
+var3 -> var9 [ var15 ] = func5 ( var2 ) == - number ? var16 : func5 ( var2 ) ; 
+var3 -> var9 [ var17 ] = func6 ( ) ; 
+if ( var1 -> var18 == var19 ) { 
+var3 -> var9 [ var20 ] = var2 -> var21 ; 
+} else if ( var1 -> var18 == var22 ) { 
+var3 -> var9 [ var23 ] = var2 -> var24 ; 
+var3 -> var9 [ var25 ] = var2 -> var24 ; 
+} 
+var8 = func7 ( var3 -> var26 , var3 -> var9 , var27 ) ; 
+var2 -> var7 = func8 ( var8 ) ; 
+func9 ( var1 -> var4 , var28 , 
+str PRId64 str , 
+( int64_t ) var3 -> var9 [ var29 ] , 
+func1 ( var3 -> var9 [ var13 ] ) , 
+var3 -> var9 [ var14 ] , 
+func1 ( var3 -> var9 [ var15 ] ) ) ; 
+switch ( var1 -> var18 ) { 
+case var19 : 
+func9 ( var1 -> var4 , var28 , str PRId64 , 
+( int64_t ) var3 -> var9 [ var20 ] ) ; 
+break ; 
+case var22 : 
+func9 ( var1 -> var4 , var28 , str PRId64 str PRId64 , 
+( int64_t ) var3 -> var9 [ var25 ] , 
+( int64_t ) var3 -> var9 [ var30 ] ) ; 
+break ; 
+} 
+func9 ( var1 -> var4 , var28 , str , func1 ( var8 ) , func4 ( var8 , var1 -> var12 ) ) ; 
+if ( var1 -> var18 == var19 ) { 
+var3 -> var9 [ var29 ] += number ; 
+} else { 
+var3 -> var9 [ var29 ] += var2 -> var24 ; 
+} 
+var3 -> var9 [ var31 ] = func3 ( var6 ) ; 
+var3 -> var9 [ var32 ] = func4 ( var6 , var1 -> var12 ) ; 
+var3 -> var9 [ var33 ] = func3 ( var2 -> var7 ) ; 
+var3 -> var9 [ var34 ] = func4 ( var2 -> var7 , var1 -> var12 ) ; 
+if ( var3 -> var18 == var22 ) { 
+var3 -> var9 [ var30 ] += var2 -> var24 ; 
+} 
+return func10 ( var1 -> var4 -> var35 [ number ] , var2 ) ; 
+} 

@@ -1,0 +1,23 @@
+static void func1 ( AC3DecodeContext * var1 ) 
+{ 
+int var2 = sizeof ( var1 -> var3 [ number ] ) ; 
+switch ( var1 -> var4 ) { 
+case var5 : 
+case var6 : 
+memcpy ( var1 -> var3 [ number ] , var1 -> var3 [ number ] , var2 ) ; 
+break ; 
+case var7 : 
+memset ( var1 -> var3 [ number ] , number , var2 ) ; 
+case var8 : 
+memset ( var1 -> var3 [ number ] , number , var2 ) ; 
+break ; 
+case var9 : 
+memset ( var1 -> var3 [ number ] , number , var2 ) ; 
+case var10 : 
+memset ( var1 -> var3 [ number ] , number , var2 ) ; 
+case var11 : 
+memcpy ( var1 -> var3 [ number ] , var1 -> var3 [ number ] , var2 ) ; 
+memset ( var1 -> var3 [ number ] , number , var2 ) ; 
+break ; 
+} 
+} 

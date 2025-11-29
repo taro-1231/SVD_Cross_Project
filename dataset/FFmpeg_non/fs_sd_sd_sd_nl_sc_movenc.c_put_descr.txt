@@ -1,0 +1,8 @@
+static void func1 ( AVIOContext * var1 , int var2 , unsigned int var3 ) 
+{ 
+int var4 = number ; 
+func2 ( var1 , var2 ) ; 
+for ( ; var4 > number ; var4 -- ) 
+func2 ( var1 , ( var3 >> ( number * var4 ) ) | number ) ; 
+func2 ( var1 , var3 & number ) ; 
+} 

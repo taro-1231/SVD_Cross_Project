@@ -1,0 +1,33 @@
+static int func1 ( AVFormatContext * var1 , int * var2 , int * var3 , 
+uint32_t var4 ) 
+{ 
+struct video_data * var5 = var1 -> var6 ; 
+struct v4l2_format var7 = { . type = V4L2_BUF_TYPE_VIDEO_CAPTURE } ; 
+int var8 = number ; 
+var7 . var7 . var9 . var2 = * var2 ; 
+var7 . var7 . var9 . var3 = * var3 ; 
+var7 . var7 . var9 . var4 = var4 ; 
+var7 . var7 . var9 . var10 = var11 ; 
+if ( func2 ( var5 -> var12 , var13 , & var7 ) < number ) 
+var8 = func3 ( var14 ) ; 
+if ( ( * var2 != var7 . var7 . var9 . var2 ) || ( * var3 != var7 . var7 . var9 . var3 ) ) { 
+func4 ( var1 , var15 , 
+str , 
+* var2 , * var3 , var7 . var7 . var9 . var2 , var7 . var7 . var9 . var3 ) ; 
+* var2 = var7 . var7 . var9 . var2 ; 
+* var3 = var7 . var7 . var9 . var3 ; 
+} 
+if ( var4 != var7 . var7 . var9 . var4 ) { 
+func4 ( var1 , var16 , 
+str 
+str , 
+var4 , var7 . var7 . var9 . var4 ) ; 
+var8 = func3 ( var17 ) ; 
+} 
+if ( var7 . var7 . var9 . var10 == var18 ) { 
+func4 ( var1 , var16 , 
+str ) ; 
+var5 -> var19 = number ; 
+} 
+return var8 ; 
+} 

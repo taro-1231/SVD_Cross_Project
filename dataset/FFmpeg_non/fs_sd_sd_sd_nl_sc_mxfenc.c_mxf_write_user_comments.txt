@@ -1,0 +1,15 @@
+static int func1 ( AVFormatContext * var1 , const AVDictionary * var2 ) 
+{ 
+MXFContext * var3 = var1 -> var4 ; 
+AVDictionaryEntry * var5 = var6 ; 
+int var7 = number ; 
+while ( ( var5 = func2 ( var2 , str , var5 , var8 ) ) ) { 
+if ( var3 -> var9 >= var10 ) { 
+func3 ( var1 , var11 , str ) ; 
+return var7 ; 
+} 
+if ( func4 ( var1 , var5 -> var12 + number , var5 -> var13 ) == number ) 
+var7 ++ ; 
+} 
+return var7 ; 
+} 

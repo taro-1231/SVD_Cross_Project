@@ -1,0 +1,38 @@
+static int func1 ( AACContext * var1 , 
+SpectralBandReplication * var2 , 
+GetBitContext * var3 ) 
+{ 
+if ( func2 ( var3 ) ) 
+func3 ( var3 , number ) ; 
+if ( ( var2 -> var4 = func2 ( var3 ) ) ) { 
+if ( func4 ( var1 , var2 , var3 , & var2 -> var5 [ number ] ) ) 
+return - number ; 
+func5 ( & var2 -> var5 [ number ] , & var2 -> var5 [ number ] ) ; 
+func6 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func6 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func7 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+memcpy ( var2 -> var5 [ number ] . var6 [ number ] , var2 -> var5 [ number ] . var6 [ number ] , sizeof ( var2 -> var5 [ number ] . var6 [ number ] ) ) ; 
+memcpy ( var2 -> var5 [ number ] . var6 [ number ] , var2 -> var5 [ number ] . var6 [ number ] , sizeof ( var2 -> var5 [ number ] . var6 [ number ] ) ) ; 
+func8 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func9 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func8 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func9 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+} else { 
+if ( func4 ( var1 , var2 , var3 , & var2 -> var5 [ number ] ) || 
+func4 ( var1 , var2 , var3 , & var2 -> var5 [ number ] ) ) 
+return - number ; 
+func6 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func6 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func7 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func7 ( var2 , var3 , & var2 -> var5 [ number ] ) ; 
+func8 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func8 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func9 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+func9 ( var2 , var3 , & var2 -> var5 [ number ] , number ) ; 
+} 
+if ( ( var2 -> var5 [ number ] . var7 = func2 ( var3 ) ) ) 
+func10 ( var3 , var2 -> var5 [ number ] . var8 , var2 -> var9 [ number ] ) ; 
+if ( ( var2 -> var5 [ number ] . var7 = func2 ( var3 ) ) ) 
+func10 ( var3 , var2 -> var5 [ number ] . var8 , var2 -> var9 [ number ] ) ; 
+return number ; 
+} 

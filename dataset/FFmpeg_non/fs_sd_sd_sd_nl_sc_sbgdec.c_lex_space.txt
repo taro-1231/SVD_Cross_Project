@@ -1,0 +1,7 @@
+static int func1 ( struct sbg_parser * var1 ) 
+{ 
+char * var2 = var1 -> var3 ; 
+while ( var1 -> var3 < var1 -> var4 && func2 ( * var1 -> var3 ) ) 
+var1 -> var3 ++ ; 
+return var1 -> var3 > var2 ; 
+} 

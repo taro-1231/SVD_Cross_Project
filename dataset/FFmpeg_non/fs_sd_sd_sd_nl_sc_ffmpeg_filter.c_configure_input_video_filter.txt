@@ -1,0 +1,106 @@
+static int func1 ( FilterGraph * var1 , InputFilter * var2 , 
+AVFilterInOut * var3 ) 
+{ 
+AVFilterContext * var4 ; 
+const AVFilter * var5 = func2 ( var41 ) ; 
+InputStream * var6 = var2 -> var6 ; 
+InputFile * var7 = var8 [ var6 -> var9 ] ; 
+AVRational var10 = var6 -> var11 . var12 ? func3 ( var6 -> var11 ) : 
+var6 -> var13 -> var14 ; 
+AVRational var15 = var6 -> var11 ; 
+AVRational var16 ; 
+AVBPrint var17 ; 
+char var18 [ number ] ; 
+int var19 , var20 = number ; 
+int64_t var21 = number ; 
+AVBufferSrcParameters * var22 = func4 ( ) ; 
+if ( ! var22 ) 
+return func5 ( var23 ) ; 
+memset ( var22 , number , sizeof ( * var22 ) ) ; 
+var22 -> var24 = var25 ; 
+if ( var6 -> var26 -> var27 == var28 ) { 
+func6 ( var29 , var30 , var41 ) ; 
+var19 = func5 ( var32 ) ; 
+goto var33 ; 
+} 
+if ( ! var15 . var12 ) 
+var15 = func7 ( var8 [ var6 -> var9 ] -> var34 , var6 -> var13 , var29 ) ; 
+if ( var6 -> var26 -> var27 == var35 ) { 
+var19 = func8 ( var6 , var2 ) ; 
+if ( var19 < number ) 
+goto var33 ; 
+} 
+var16 = var2 -> var36 ; 
+if ( ! var16 . var37 ) 
+var16 = ( AVRational ) { number , number } ; 
+func9 ( & var17 , number , number ) ; 
+func10 ( & var17 , 
+str 
+str , 
+var2 -> width , var2 -> height , var2 -> var24 , 
+var10 . var12 , var10 . var37 , var16 . var12 , var16 . var37 , 
+SWS_BILINEAR + ( ( var6 -> var26 -> flags & AV_CODEC_FLAG_BITEXACT ) ? var38 : number ) ) ; 
+if ( var15 . var12 && var15 . var37 ) 
+func10 ( & var17 , var41 , var15 . var12 , var15 . var37 ) ; 
+snprintf ( var18 , sizeof ( var18 ) , var41 , var1 -> var40 , 
+var6 -> var9 , var6 -> var13 -> var40 ) ; 
+if ( ( var19 = func11 ( & var2 -> var31 , var5 , var18 , 
+var17 . var41 , var29 , var1 -> var39 ) ) < number ) 
+goto var33 ; 
+var22 -> var42 = var2 -> var42 ; 
+var19 = func12 ( var2 -> var31 , var22 ) ; 
+if ( var19 < number ) 
+goto var33 ; 
+func13 ( & var22 ) ; 
+var4 = var2 -> var31 ; 
+if ( var6 -> var43 ) { 
+double var44 = func14 ( var6 -> var13 ) ; 
+if ( fabs ( var44 - number ) < number ) { 
+var19 = func15 ( & var4 , & var20 , var41 , var41 ) ; 
+} else if ( fabs ( var44 - number ) < number ) { 
+var19 = func15 ( & var4 , & var20 , var41 , var29 ) ; 
+if ( var19 < number ) 
+return var19 ; 
+var19 = func15 ( & var4 , & var20 , var41 , var29 ) ; 
+} else if ( fabs ( var44 - number ) < number ) { 
+var19 = func15 ( & var4 , & var20 , var41 , var41 ) ; 
+} else if ( fabs ( var44 ) > number ) { 
+char var45 [ number ] ; 
+snprintf ( var45 , sizeof ( var45 ) , var41 , var44 ) ; 
+var19 = func15 ( & var4 , & var20 , var41 , var45 ) ; 
+} 
+if ( var19 < number ) 
+return var19 ; 
+} 
+if ( var46 ) { 
+AVFilterContext * var47 ; 
+snprintf ( var18 , sizeof ( var18 ) , var41 , 
+var6 -> var9 , var6 -> var13 -> var40 ) ; 
+if ( ( var19 = func11 ( & var47 , 
+func2 ( var41 ) , 
+var18 , var41 , var29 , 
+var1 -> var39 ) ) < number ) 
+return var19 ; 
+if ( ( var19 = func16 ( var4 , number , var47 , number ) ) < number ) 
+return var19 ; 
+var4 = var47 ; 
+} 
+snprintf ( var18 , sizeof ( var18 ) , var41 , 
+var6 -> var9 , var6 -> var13 -> var40 ) ; 
+if ( var48 ) { 
+var21 = var7 -> var49 == var50 ? number : var7 -> var49 ; 
+if ( ! var51 && var7 -> var34 -> var49 != var50 ) 
+var21 += var7 -> var34 -> var49 ; 
+} 
+var19 = func17 ( ( ( var7 -> var49 == var50 ) || ! var7 -> var52 ) ? 
+var50 : var21 , var7 -> var53 , 
+& var4 , & var20 , var18 ) ; 
+if ( var19 < number ) 
+return var19 ; 
+if ( ( var19 = func16 ( var4 , number , var3 -> var54 , var3 -> var20 ) ) < number ) 
+return var19 ; 
+return number ; 
+var33 : 
+func13 ( & var22 ) ; 
+return var19 ; 
+} 

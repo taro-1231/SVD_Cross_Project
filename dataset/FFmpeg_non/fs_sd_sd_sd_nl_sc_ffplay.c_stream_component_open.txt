@@ -1,0 +1,129 @@
+static int func1 ( VideoState * var1 , int var2 ) 
+{ 
+AVFormatContext * var3 = var1 -> var3 ; 
+AVCodecContext * var4 ; 
+AVCodec * var5 ; 
+const char * var6 = var7 ; 
+AVDictionary * var8 = var7 ; 
+AVDictionaryEntry * var9 = var7 ; 
+int var10 , var11 ; 
+int64_t var12 ; 
+int var13 = number ; 
+int var14 = var15 ; 
+if ( var2 < number || var2 >= var3 -> var16 ) 
+return - number ; 
+var4 = func2 ( var7 ) ; 
+if ( ! var4 ) 
+return func3 ( var17 ) ; 
+var13 = func4 ( var4 , var3 -> var18 [ var2 ] -> var19 ) ; 
+if ( var13 < number ) 
+goto var20 ; 
+func5 ( var4 , var3 -> var18 [ var2 ] -> var21 ) ; 
+var5 = func6 ( var4 -> var22 ) ; 
+switch ( var4 -> var23 ) { 
+case var24 : var1 -> var25 = var2 ; var6 = var26 ; break ; 
+case var27 : var1 -> var28 = var2 ; var6 = var29 ; break ; 
+case var30 : var1 -> var31 = var2 ; var6 = var32 ; break ; 
+} 
+if ( var6 ) 
+var5 = func7 ( var6 ) ; 
+if ( ! var5 ) { 
+if ( var6 ) func8 ( var7 , var33 , 
+str , var6 ) ; 
+else func8 ( var7 , var33 , 
+str , var4 -> var22 ) ; 
+var13 = func3 ( var35 ) ; 
+goto var20 ; 
+} 
+var4 -> var22 = var5 -> var34 ; 
+if ( var14 > func9 ( var5 ) ) { 
+func8 ( var4 , var33 , str , 
+func9 ( var5 ) ) ; 
+var14 = func9 ( var5 ) ; 
+} 
+func10 ( var4 , var14 ) ; 
+if ( var14 ) var4 -> var36 |= var37 ; 
+if ( var38 ) 
+var4 -> var39 |= var40 ; 
+if ( var5 -> var41 & var42 ) 
+var4 -> var36 |= var37 ; 
+var8 = func11 ( var43 , var4 -> var22 , var3 , var3 -> var18 [ var2 ] , var5 ) ; 
+if ( ! func12 ( var8 , str , var7 , number ) ) 
+func13 ( & var8 , str , str , number ) ; 
+if ( var14 ) 
+func14 ( & var8 , str , var14 , number ) ; 
+if ( var4 -> var23 == var30 || var4 -> var23 == var24 ) 
+func13 ( & var8 , str , str , number ) ; 
+if ( ( var13 = func15 ( var4 , var5 , & var8 ) ) < number ) { 
+goto var20 ; 
+} 
+if ( ( var9 = func12 ( var8 , str , var7 , var44 ) ) ) { 
+func8 ( var7 , var45 , str , var9 -> var46 ) ; 
+var13 = var47 ; 
+goto var20 ; 
+} 
+var1 -> var48 = number ; 
+var3 -> var18 [ var2 ] -> var49 = var50 ; 
+switch ( var4 -> var23 ) { 
+case var24 : 
+{ 
+AVFilterContext * var51 ; 
+var1 -> var52 . var53 = var4 -> var10 ; 
+var1 -> var52 . var54 = var4 -> var54 ; 
+var1 -> var52 . var12 = func16 ( var4 -> var12 , var4 -> var54 ) ; 
+var1 -> var52 . var55 = var4 -> var56 ; 
+if ( ( var13 = func17 ( var1 , var57 , number ) ) < number ) 
+goto var20 ; 
+var51 = var1 -> var58 ; 
+var10 = func18 ( var51 ) ; 
+var11 = func19 ( var51 ) ; 
+var12 = func20 ( var51 ) ; 
+} 
+var10 = var4 -> var10 ; 
+var11 = var4 -> var54 ; 
+var12 = var4 -> var12 ; 
+if ( ( var13 = func21 ( var1 , var12 , var11 , var10 , & var1 -> var59 ) ) < number ) 
+goto var20 ; 
+var1 -> var60 = var13 ; 
+var1 -> var61 = var1 -> var59 ; 
+var1 -> var62 = number ; 
+var1 -> var63 = number ; 
+var1 -> var64 = exp ( log ( number ) / var65 ) ; 
+var1 -> var66 = number ; 
+var1 -> var67 = ( double ) ( var1 -> var60 ) / var1 -> var59 . var68 ; 
+var1 -> var69 = var2 ; 
+var1 -> var70 = var3 -> var18 [ var2 ] ; 
+func22 ( & var1 -> var71 , var4 , & var1 -> var72 , var1 -> var73 ) ; 
+if ( ( var1 -> var3 -> var74 -> var36 & ( var75 | var76 | var77 ) ) && ! var1 -> var3 -> var74 -> var78 ) { 
+var1 -> var71 . var79 = var1 -> var70 -> var80 ; 
+var1 -> var71 . var81 = var1 -> var70 -> var21 ; 
+} 
+if ( ( var13 = func23 ( & var1 -> var71 , var82 , var1 ) ) < number ) 
+goto var83 ; 
+func24 ( number ) ; 
+break ; 
+case var30 : 
+var1 -> var84 = var2 ; 
+var1 -> var85 = var3 -> var18 [ var2 ] ; 
+func22 ( & var1 -> var86 , var4 , & var1 -> var87 , var1 -> var73 ) ; 
+if ( ( var13 = func23 ( & var1 -> var86 , var88 , var1 ) ) < number ) 
+goto var83 ; 
+var1 -> var89 = number ; 
+break ; 
+case var27 : 
+var1 -> var90 = var2 ; 
+var1 -> var91 = var3 -> var18 [ var2 ] ; 
+func22 ( & var1 -> var92 , var4 , & var1 -> var93 , var1 -> var73 ) ; 
+if ( ( var13 = func23 ( & var1 -> var92 , var94 , var1 ) ) < number ) 
+goto var83 ; 
+break ; 
+var95 : 
+break ; 
+} 
+goto var83 ; 
+var20 : 
+func25 ( & var4 ) ; 
+var83 : 
+func26 ( & var8 ) ; 
+return var13 ; 
+} 

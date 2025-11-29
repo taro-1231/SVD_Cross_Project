@@ -1,0 +1,100 @@
+static int func1 ( NUTContext * var1 ) 
+{ 
+AVFormatContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var2 -> var5 ; 
+StreamContext * var6 ; 
+int class , var7 , var8 ; 
+uint64_t var9 , var10 ; 
+AVStream * var11 = var12 ; 
+var10 = func2 ( var1 , var4 , number , var13 ) ; 
+var10 += func3 ( var4 ) ; 
+func4 ( var7 , var9 < var2 -> var14 && ! var1 -> var15 [ var9 ] . var16 ) ; 
+var6 = & var1 -> var15 [ var7 ] ; 
+var11 = var2 -> var17 [ var7 ] ; 
+if ( ! var11 ) 
+return func5 ( var18 ) ; 
+class = func6 ( var4 ) ; 
+var9 = func7 ( var4 ) ; 
+var11 -> var19 -> var20 = var9 ; 
+switch ( class ) { 
+case number : 
+var11 -> var19 -> var21 = var22 ; 
+var11 -> var19 -> var23 = av_codec_get_id ( ( const AVCodecTag * const [ ] ) { 
+ff_nut_video_tags , 
+ff_codec_bmp_tags , 
+ff_codec_movvideo_tags , 
+number 
+} , 
+var9 ) ; 
+break ; 
+case number : 
+var11 -> var19 -> var21 = var24 ; 
+var11 -> var19 -> var23 = av_codec_get_id ( ( const AVCodecTag * const [ ] ) { 
+ff_nut_audio_tags , 
+ff_codec_wav_tags , 
+ff_nut_audio_extra_tags , 
+number 
+} , 
+var9 ) ; 
+break ; 
+case 2 : 
+var11 -> var19 -> var21 = var25 ; 
+var11 -> var19 -> var23 = func8 ( var26 , var9 ) ; 
+break ; 
+case 3 : 
+var11 -> var19 -> var21 = var27 ; 
+var11 -> var19 -> var23 = func8 ( var28 , var9 ) ; 
+break ; 
+var29 : 
+func9 ( var2 , var30 , str , class ) ; 
+return func5 ( var31 ) ; 
+} 
+if ( class < 3 && var11 -> var19 -> var23 == AV_CODEC_ID_NONE ) 
+func9 ( var2 , var30 , 
+str , 
+( unsigned int ) var9 , var7 ) ; 
+func4 ( var6 -> var32 , var9 < var1 -> var33 ) ; 
+func4 ( var6 -> var34 , var9 < number ) ; 
+var6 -> var35 = func6 ( var4 ) ; 
+func4 ( var6 -> var36 , var9 < number ) ; 
+var11 -> var19 -> var37 = var6 -> var36 ; 
+func6 ( var4 ) ; 
+func4 ( var11 -> var19 -> var38 , var9 < ( number << number ) ) ; 
+if ( var11 -> var19 -> var38 ) { 
+if ( func10 ( var11 -> var19 , var4 , var11 -> var19 -> var38 ) < number ) 
+return func5 ( var18 ) ; 
+} 
+if ( var11 -> var19 -> var21 == var22 ) { 
+func4 ( var11 -> var19 -> var39 , var9 > number ) ; 
+func4 ( var11 -> var19 -> var40 , var9 > number ) ; 
+var11 -> var41 . var42 = func6 ( var4 ) ; 
+var11 -> var41 . var43 = func6 ( var4 ) ; 
+if ( ( ! var11 -> var41 . var42 ) != ( ! var11 -> var41 . var43 ) ) { 
+func9 ( var2 , var30 , str , 
+var11 -> var41 . var42 , var11 -> var41 . var43 ) ; 
+var8 = var44 ; 
+goto var45 ; 
+} 
+func6 ( var4 ) ; 
+} else if ( var11 -> var19 -> var21 == var24 ) { 
+func4 ( var11 -> var19 -> var46 , var9 > number ) ; 
+func6 ( var4 ) ; 
+func4 ( var11 -> var19 -> var47 , var9 > number ) ; 
+} 
+if ( func11 ( var4 , var10 ) || func12 ( var4 ) ) { 
+func9 ( var2 , var30 , 
+str , var7 ) ; 
+var8 = var44 ; 
+goto var45 ; 
+} 
+var6 -> var16 = & var1 -> var16 [ var6 -> var32 ] ; 
+func13 ( var2 -> var17 [ var7 ] , number , var6 -> var16 -> var42 , 
+var6 -> var16 -> var43 ) ; 
+return number ; 
+var45 : 
+if ( var11 && var11 -> var19 ) { 
+func14 ( & var11 -> var19 -> var48 ) ; 
+var11 -> var19 -> var38 = number ; 
+} 
+return var8 ; 
+} 

@@ -1,0 +1,13 @@
+AVFilterBufferRef * func1 ( enum AVMediaType var1 , 
+const AVFrame * var2 , 
+int var3 ) 
+{ 
+switch ( var1 ) { 
+case var4 : 
+return func2 ( var2 , var3 ) ; 
+case var5 : 
+return func3 ( var2 , var3 ) ; 
+var6 : 
+return var7 ; 
+} 
+} 

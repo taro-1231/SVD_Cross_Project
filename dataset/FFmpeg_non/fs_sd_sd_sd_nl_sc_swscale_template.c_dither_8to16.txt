@@ -1,0 +1,24 @@
+func1 ( const uint8_t * var1 , int var2 ) 
+{ 
+if ( var2 ) { 
+__asm__ volatile ( str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+:: str ( var1 ) 
+) ; 
+} else { 
+__asm__ volatile ( str 
+str 
+str 
+str 
+str 
+:: str ( var1 ) 
+) ; 
+} 
+} 

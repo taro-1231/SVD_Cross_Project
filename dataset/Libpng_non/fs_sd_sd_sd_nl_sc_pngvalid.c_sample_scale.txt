@@ -1,0 +1,9 @@
+func1 ( double var1 , unsigned int var2 ) 
+{ 
+var1 = floor ( var1 * var2 + number ) ; 
+if ( ! ( var1 > number ) ) 
+var1 = number ; 
+else if ( var1 > var2 ) 
+var1 = var2 ; 
+return ( unsigned int ) var1 ; 
+} 

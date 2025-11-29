@@ -1,0 +1,11 @@
+static void func1 ( ASFPacket * var1 ) 
+{ 
+var1 -> var2 = number ; 
+var1 -> var3 = number ; 
+var1 -> var4 = number ; 
+var1 -> var5 = number ; 
+var1 -> var6 = number ; 
+var1 -> var4 = number ; 
+func2 ( & var1 -> var7 ) ; 
+func3 ( & var1 -> var7 ) ; 
+} 

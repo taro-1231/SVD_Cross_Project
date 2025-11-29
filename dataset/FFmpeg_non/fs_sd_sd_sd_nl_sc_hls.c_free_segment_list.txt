@@ -1,0 +1,11 @@
+static void func1 ( struct playlist * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) { 
+func2 ( & var1 -> var4 [ var2 ] -> var5 ) ; 
+func2 ( & var1 -> var4 [ var2 ] -> var6 ) ; 
+func2 ( & var1 -> var4 [ var2 ] ) ; 
+} 
+func2 ( & var1 -> var4 ) ; 
+var1 -> var3 = number ; 
+} 

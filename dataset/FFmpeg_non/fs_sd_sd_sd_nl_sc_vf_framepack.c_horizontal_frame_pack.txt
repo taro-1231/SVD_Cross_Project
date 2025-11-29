@@ -1,0 +1,37 @@
+static void func1 ( FramepackContext * var1 , 
+AVFrame * var2 , 
+int var3 ) 
+{ 
+int var4 , var5 ; 
+int var6 = var2 -> var7 / number ; 
+int var8 = var2 -> var9 ; 
+for ( var4 = number ; var4 < var1 -> var10 -> var11 ; var4 ++ ) { 
+const uint8_t * var12 = var1 -> var13 [ var14 ] -> var15 [ var4 ] ; 
+const uint8_t * var16 = var1 -> var13 [ var17 ] -> var15 [ var4 ] ; 
+uint8_t * var18 = var2 -> var15 [ var4 ] ; 
+if ( var4 == number || var4 == number ) { 
+var6 = func2 ( var2 -> var7 / number , var1 -> var10 -> var19 ) ; 
+var8 = func2 ( var2 -> var9 , var1 -> var10 -> var20 ) ; 
+} 
+if ( var3 ) { 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) { 
+int var21 ; 
+int var22 = number ; 
+for ( var21 = number ; var21 < var6 ; var21 ++ ) { 
+var18 [ var22 ++ ] = var12 [ var21 ] ; 
+var18 [ var22 ++ ] = var16 [ var21 ] ; 
+} 
+var18 += var2 -> var23 [ var4 ] ; 
+var12 += var1 -> var13 [ var14 ] -> var23 [ var4 ] ; 
+var16 += var1 -> var13 [ var17 ] -> var23 [ var4 ] ; 
+} 
+} else { 
+func3 ( var2 -> var15 [ var4 ] , var2 -> var23 [ var4 ] , 
+var12 , var1 -> var13 [ var14 ] -> var23 [ var4 ] , 
+var6 , var8 ) ; 
+func3 ( var2 -> var15 [ var4 ] + var6 , var2 -> var23 [ var4 ] , 
+var16 , var1 -> var13 [ var17 ] -> var23 [ var4 ] , 
+var6 , var8 ) ; 
+} 
+} 
+} 

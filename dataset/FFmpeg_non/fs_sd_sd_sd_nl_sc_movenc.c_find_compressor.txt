@@ -1,0 +1,24 @@
+static void func1 ( char * var1 , int var2 , MOVTrack * var3 ) 
+{ 
+AVDictionaryEntry * var4 ; 
+int var5 = ( var3 -> var6 -> var7 == number && var3 -> var6 -> var8 == number ) 
+|| ( var3 -> var6 -> var7 == number && var3 -> var6 -> var8 == number ) 
+|| ( var3 -> var6 -> var7 == number && var3 -> var6 -> var8 == number ) ; 
+if ( var3 -> var9 == var10 && 
+( var4 = func2 ( var3 -> var11 -> var12 , str , var13 , number ) ) ) { 
+func3 ( var1 , var4 -> var14 , number ) ; 
+} else if ( var3 -> var6 -> var15 == var16 && var5 ) { 
+int var17 = var3 -> var6 -> var18 > var19 ; 
+AVStream * var11 = var3 -> var11 ; 
+int var20 = func4 ( func5 ( var13 , var11 ) ) ; 
+func6 ( var1 , var2 , str ) ; 
+if ( var3 -> var6 -> var21 == var22 ) { 
+func6 ( var1 , var2 , str ) ; 
+} else if ( var3 -> var6 -> var7 == number ) { 
+func6 ( var1 , var2 , str ) ; 
+} else 
+func6 ( var1 , var2 , str ) ; 
+func6 ( var1 , var2 , str , var3 -> var6 -> var8 , var17 ? str : str ) ; 
+func6 ( var1 , var2 , str , var20 * ( var17 + number ) ) ; 
+} 
+} 

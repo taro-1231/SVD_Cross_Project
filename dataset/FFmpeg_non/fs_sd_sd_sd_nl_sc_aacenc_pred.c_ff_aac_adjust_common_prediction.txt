@@ -1,0 +1,52 @@
+void func1 ( AACEncContext * var1 , ChannelElement * var2 ) 
+{ 
+int var3 , var4 , var5 , var6 , var7 , var8 = number ; 
+SingleChannelElement * var9 = & var2 -> var10 [ number ] ; 
+SingleChannelElement * var11 = & var2 -> var10 [ number ] ; 
+const int var12 = func2 ( var9 -> var13 . var14 , var15 [ var1 -> var16 ] ) ; 
+const int var17 = func2 ( var11 -> var13 . var14 , var15 [ var1 -> var16 ] ) ; 
+const int var18 = func2 ( var12 , var17 ) ; 
+if ( ! var2 -> var19 || 
+var9 -> var13 . var20 [ number ] == var21 || 
+var11 -> var13 . var20 [ number ] == var21 ) 
+return ; 
+for ( var4 = number ; var4 < var9 -> var13 . var22 ; var4 += var9 -> var13 . var23 [ var4 ] ) { 
+var3 = number ; 
+for ( var6 = number ; var6 < var9 -> var13 . var24 ; var6 ++ ) { 
+int var25 = var4 * number + var6 ; 
+int var26 = var9 -> var13 . var27 [ var25 ] + var11 -> var13 . var27 [ var25 ] ; 
+float var28 = number , var29 = number , var30 = number ; 
+struct AACISError var31 , var32 , * var33 ; 
+if ( var25 < var34 || var25 > var18 || var26 != number ) { 
+func3 ( var9 , var25 ) ; 
+func3 ( var11 , var25 ) ; 
+var3 += var9 -> var13 . var35 [ var6 ] ; 
+continue ; 
+} 
+for ( var5 = number ; var5 < var9 -> var13 . var23 [ var4 ] ; var5 ++ ) { 
+for ( var7 = number ; var7 < var9 -> var13 . var35 [ var6 ] ; var7 ++ ) { 
+float var36 = var9 -> var37 [ var3 + ( var4 + var5 ) * number + var7 ] ; 
+float var38 = var11 -> var37 [ var3 + ( var4 + var5 ) * number + var7 ] ; 
+var28 += var36 * var36 ; 
+var29 += var38 * var38 ; 
+var30 += ( var36 + var38 ) * ( var36 + var38 ) ; 
+} 
+} 
+var31 = func4 ( var1 , var2 , var3 , var4 , var6 , 
+var28 , var29 , var30 , number , - number ) ; 
+var32 = func4 ( var1 , var2 , var3 , var4 , var6 , 
+var28 , var29 , var30 , number , + number ) ; 
+var33 = var31 . var39 < var32 . var39 ? & var31 : & var32 ; 
+if ( var33 -> var40 ) { 
+var9 -> var13 . var27 [ var25 ] = number ; 
+var11 -> var13 . var27 [ var25 ] = number ; 
+var8 ++ ; 
+} else { 
+func3 ( var9 , var25 ) ; 
+func3 ( var11 , var25 ) ; 
+} 
+var3 += var9 -> var13 . var35 [ var6 ] ; 
+} 
+} 
+var11 -> var13 . var41 = var9 -> var13 . var41 = ! ! var8 ; 
+} 

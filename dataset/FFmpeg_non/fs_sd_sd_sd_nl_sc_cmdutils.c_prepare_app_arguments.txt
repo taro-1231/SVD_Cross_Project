@@ -1,0 +1,3 @@
+static inline void func1 ( int * var1 , char ** var2 ) 
+{ 
+} 

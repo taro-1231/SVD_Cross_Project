@@ -1,0 +1,78 @@
+func1 ( void ) 
+{ 
+unsigned int var1 ; 
+unsigned char var2 [ var3 ] ; 
+unsigned long var4 ; 
+unsigned char var5 ; 
+int var6 ; 
+for ( var1 = number ; var1 ; var1 -- ) 
+{ 
+var5 = var7 ; 
+putchar ( var5 ) ; 
+} 
+if ( var6 != var8 ) 
+for ( ; ; ) 
+{ 
+unsigned long var9 ; 
+var5 = var7 ; var2 [ number ] = var5 ; var9 = var5 ; var9 <<= number ; 
+var5 = var7 ; var2 [ number ] = var5 ; var9 += var5 ; var9 <<= number ; 
+var5 = var7 ; var2 [ number ] = var5 ; var9 += var5 ; var9 <<= number ; 
+var5 = var7 ; var2 [ number ] = var5 ; var9 += var5 ; 
+var5 = var7 ; var2 [ number ] = var5 ; 
+var5 = var7 ; var2 [ number ] = var5 ; 
+var5 = var7 ; var2 [ number ] = var5 ; 
+var5 = var7 ; var2 [ number ] = var5 ; 
+if ( var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number ) 
+{ 
+if ( var9 >= var3 - number ) 
+break ; 
+var4 = func2 ( number , var10 , number ) ; 
+for ( var1 = number ; var1 < var9 + number ; var1 ++ ) 
+{ 
+var5 = var7 ; var2 [ var1 ] = var5 ; 
+} 
+var4 = func2 ( var4 , var2 + number , ( uInt ) var9 + number ) ; 
+for ( ; ; ) 
+{ 
+if ( ( ( var4 >> number ) & number ) == var2 [ var9 + number ] && 
+( ( var4 >> number ) & number ) == var2 [ var9 + number ] && 
+( ( var4 >> number ) & number ) == var2 [ var9 + number ] && 
+( ( var4 ) & number ) == var2 [ var9 + number ] ) 
+break ; 
+var9 ++ ; 
+if ( var9 >= var3 - number ) 
+break ; 
+var5 = var7 ; 
+var2 [ var9 + number ] = var5 ; 
+var4 = func2 ( var4 , var2 + number + var9 , number ) ; 
+} 
+var2 [ number ] = ( unsigned char ) ( ( var9 << number ) & number ) ; 
+var2 [ number ] = ( unsigned char ) ( ( var9 << number ) & number ) ; 
+var2 [ number ] = ( unsigned char ) ( ( var9 << number ) & number ) ; 
+var2 [ number ] = ( unsigned char ) ( ( var9 ) & number ) ; 
+for ( var1 = number ; var1 < var9 + number ; var1 ++ ) 
+putchar ( var2 [ var1 ] ) ; 
+} 
+else 
+{ 
+for ( var1 = number ; var1 < number ; var1 ++ ) 
+putchar ( var2 [ var1 ] ) ; 
+for ( var1 = number ; var1 < var9 + number ; var1 ++ ) 
+{ 
+var5 = var7 ; 
+putchar ( var5 ) ; 
+} 
+if ( var6 == var8 ) 
+{ 
+break ; 
+} 
+if ( var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number ) 
+break ; 
+} 
+if ( var6 == var8 ) 
+break ; 
+if ( var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number && var2 [ number ] == number ) 
+break ; 
+} 
+return number ; 
+} 

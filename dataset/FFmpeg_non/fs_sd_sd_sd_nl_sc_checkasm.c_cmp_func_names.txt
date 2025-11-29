@@ -1,0 +1,7 @@
+static int func1 ( const char * var1 , const char * var2 ) 
+{ 
+int var3 , var4 ; 
+for ( ; ! ( var3 = * var1 - * var2 ) && * var1 ; var1 ++ , var2 ++ ) ; 
+for ( ; func2 ( * var1 ) && func2 ( * var2 ) ; var1 ++ , var2 ++ ) ; 
+return ( var4 = func2 ( * var1 ) - func2 ( * var2 ) ) ? var4 : var3 ; 
+} 

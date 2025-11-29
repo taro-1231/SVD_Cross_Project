@@ -1,0 +1,14 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+DejudderContext * var2 = var1 -> var3 ; 
+var2 -> var4 = func2 ( var2 -> var5 + number , sizeof ( * var2 -> var4 ) ) ; 
+if ( ! var2 -> var4 ) 
+return func3 ( var6 ) ; 
+var2 -> var7 = number ; 
+var2 -> var8 = number ; 
+var2 -> var9 = number ; 
+var2 -> var10 = number ; 
+var2 -> var11 = number ; 
+var2 -> var12 = var2 -> var5 + number ; 
+return number ; 
+} 

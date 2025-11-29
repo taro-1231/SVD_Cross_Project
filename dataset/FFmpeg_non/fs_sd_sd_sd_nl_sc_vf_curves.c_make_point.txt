@@ -1,0 +1,10 @@
+static struct keypoint * func1 ( double var1 , double var2 , struct keypoint * var3 ) 
+{ 
+struct keypoint * var4 = func2 ( sizeof ( * var4 ) ) ; 
+if ( ! var4 ) 
+return var5 ; 
+var4 -> var1 = var1 ; 
+var4 -> var2 = var2 ; 
+var4 -> var3 = var3 ; 
+return var4 ; 
+} 

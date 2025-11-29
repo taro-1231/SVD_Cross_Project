@@ -1,0 +1,30 @@
+int func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+int var4 = ( var2 -> var5 == var6 ) ? var7 : var8 ; 
+DXVA2Context * var9 ; 
+int var10 ; 
+if ( ! var2 -> var11 ) { 
+var10 = func2 ( var1 ) ; 
+if ( var10 < number ) 
+return var10 ; 
+} 
+var9 = var2 -> var11 ; 
+if ( var1 -> var12 == var13 && 
+( var1 -> var14 & var15 ) > var16 ) { 
+func3 ( var17 , var4 , str , var1 -> var14 ) ; 
+return func4 ( var18 ) ; 
+} 
+if ( var1 -> var12 == var19 && 
+var1 -> var14 != var20 && var1 -> var14 != var21 ) { 
+func3 ( var17 , var4 , str , var1 -> var14 ) ; 
+return func4 ( var18 ) ; 
+} 
+func5 ( & var9 -> var22 ) ; 
+var10 = func6 ( var1 ) ; 
+if ( var10 < number ) { 
+func3 ( var17 , var4 , str ) ; 
+return var10 ; 
+} 
+return number ; 
+} 

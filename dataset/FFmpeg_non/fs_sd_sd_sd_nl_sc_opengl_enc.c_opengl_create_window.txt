@@ -1,0 +1,28 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+OpenGLContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( ! var2 -> var5 ) { 
+if ( ( var4 = func2 ( var1 ) ) < number ) { 
+func3 ( var2 , var6 , str ) ; 
+return var4 ; 
+} 
+func3 ( var2 , var6 , str ) ; 
+return AVERROR ( ENOSYS ) ; 
+} else { 
+AVDeviceRect var7 ; 
+var7 . var8 = var7 . var9 = number ; 
+var7 . var10 = var2 -> var11 ; 
+var7 . var12 = var2 -> var13 ; 
+if ( ( var4 = func4 ( var1 , var14 , 
+& var7 , sizeof ( var7 ) ) ) < number ) { 
+func3 ( var2 , var6 , str ) ; 
+return var4 ; 
+} 
+if ( ( var4 = func4 ( var1 , var15 , var16 , number ) ) < number ) { 
+func3 ( var2 , var6 , str ) ; 
+return var4 ; 
+} 
+} 
+return number ; 
+} 

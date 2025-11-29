@@ -1,0 +1,4 @@
+static double func1 ( void * var1 , double var2 ) 
+{ 
+return log2 ( var2 / number ) * number + number ; 
+} 

@@ -1,0 +1,16 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+func2 ( var4 ) ; 
+for ( var5 = number ; var5 <= number ; var5 = number * var5 + number ) { 
+func3 ( var6 , var7 , str , var5 ) ; 
+for ( var3 = var4 ; var3 >= var8 ; var3 -= number ) { 
+func3 ( var6 , var3 , str , var3 ) ; 
+func3 ( var6 , var9 , str ) ; 
+func3 ( var6 , var3 + number * number , str , var3 ) ; 
+func3 ( var6 , var9 , str ) ; 
+} 
+func3 ( var6 , var10 , str ) ; 
+} 
+return number ; 
+} 

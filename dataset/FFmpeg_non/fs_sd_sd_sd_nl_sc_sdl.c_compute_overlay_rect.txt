@@ -1,0 +1,28 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+AVRational var2 , var3 ; 
+SDLContext * var4 = var1 -> var5 ; 
+AVStream * var6 = var1 -> var7 [ number ] ; 
+AVCodecContext * var8 = var6 -> var9 ; 
+SDL_Rect * var10 = & var4 -> var10 ; 
+var2 = var6 -> var11 . var12 ? var6 -> var11 : ( AVRational ) { 1 , 1 } ; 
+var3 = av_mul_q ( var2 , ( AVRational ) { var8 -> width , var8 -> height } ) ; 
+if ( var4 -> var13 && var4 -> var14 ) { 
+if ( av_cmp_q ( var3 , ( AVRational ) { var4 -> var13 , var4 -> var14 } ) > number ) { 
+var10 -> var15 = var4 -> var13 ; 
+var10 -> var16 = func2 ( var10 -> var15 , var3 . var17 , var3 . var12 ) ; 
+} else { 
+var10 -> var16 = var4 -> var14 ; 
+var10 -> var15 = func2 ( var10 -> var16 , var3 . var12 , var3 . var17 ) ; 
+} 
+} else { 
+if ( var2 . var12 > var2 . var17 ) { 
+var10 -> var15 = var8 -> width ; 
+var10 -> var16 = func2 ( var10 -> var15 , var3 . var17 , var3 . var12 ) ; 
+} else { 
+var10 -> var16 = var8 -> height ; 
+var10 -> var15 = func2 ( var10 -> var16 , var3 . var12 , var3 . var17 ) ; 
+} 
+var4 -> var13 = var10 -> var15 ; 
+var4 -> var14 = var10 -> var16 ; 
+} 

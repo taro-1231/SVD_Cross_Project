@@ -1,0 +1,6 @@
+func1 ( Pixel * var1 , const Pixel * var2 , const Background * var3 ) 
+{ 
+( void ) var3 ; 
+var1 -> var4 = var1 -> var5 = var1 -> var6 = func2 ( func3 ( var2 -> var4 , var2 -> var5 , var2 -> var6 ) ) ; 
+var1 -> var7 = var2 -> var7 ; 
+} 

@@ -1,0 +1,30 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+Stereo3DContext * var2 = var1 -> var3 ; 
+const enum AVPixelFormat * var4 ; 
+AVFilterFormats * var5 ; 
+switch ( var2 -> var6 . var7 ) { 
+case var8 : 
+case var9 : 
+case var10 : 
+case var11 : 
+case var12 : 
+case var13 : 
+case var14 : 
+case var15 : 
+case var16 : 
+case var17 : 
+case var18 : 
+case var19 : 
+case var20 : 
+case var21 : 
+var4 = var22 ; 
+break ; 
+var23 : 
+var4 = var24 ; 
+} 
+var5 = func2 ( var4 ) ; 
+if ( ! var5 ) 
+return func3 ( var25 ) ; 
+return func4 ( var1 , var5 ) ; 
+} 

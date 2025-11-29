@@ -1,0 +1,13 @@
+static inline short func1 ( ADPCMChannelStatus * var1 , char var2 , int var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 ; 
+var5 = var2 & ( number << ( var3 - number ) ) ; 
+var6 = var2 & ( ( number << ( var3 - number ) ) - number ) ; 
+var7 = var6 << ( number + var1 -> var8 + var4 ) ; 
+var1 -> var9 = func2 ( var1 -> var9 + ( var5 ? - var7 : var7 ) , - number , number ) ; 
+if ( var6 >= ( number * var3 - number ) && var1 -> var8 < number ) 
+var1 -> var8 ++ ; 
+else if ( var6 == number && var1 -> var8 > number ) 
+var1 -> var8 -- ; 
+return ( short ) var1 -> var9 ; 
+} 

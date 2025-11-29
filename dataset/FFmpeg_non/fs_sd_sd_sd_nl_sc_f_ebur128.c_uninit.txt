@@ -1,0 +1,46 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 ; 
+EBUR128Context * var3 = var1 -> var4 ; 
+func2 ( var1 , var5 , str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , 
+var3 -> integrated_loudness , var3 -> var6 . rel_threshold , 
+var3 -> loudness_range , var3 -> var7 . rel_threshold , 
+var3 -> lra_low , var3 -> lra_high ) ; 
+int var9 ; \ 
+double var10 ; \ 
+var10 = number ; \ 
+for ( var9 = number ; var9 < var3 -> var11 ; var9 ++ ) \ 
+var10 = func4 ( var10 , var8 [ var9 ] ) ; \ 
+func2 ( var1 , var5 , str str str \ 
+str , \ 
+DBFS ( var10 ) ) ; \ 
+} \ 
+} while ( number ) 
+func3 ( str , var3 -> var12 , SAMPLES ) ; 
+func3 ( str , var3 -> var13 , var14 ) ; 
+func2 ( var1 , var5 , str ) ; 
+func5 ( & var3 -> var15 ) ; 
+func5 ( & var3 -> var16 ) ; 
+func5 ( & var3 -> var13 ) ; 
+func5 ( & var3 -> var12 ) ; 
+func5 ( & var3 -> var17 ) ; 
+func5 ( & var3 -> var6 . var18 ) ; 
+func5 ( & var3 -> var7 . var18 ) ; 
+for ( var2 = number ; var2 < var3 -> var11 ; var2 ++ ) { 
+func5 ( & var3 -> var6 . var19 [ var2 ] ) ; 
+func5 ( & var3 -> var7 . var19 [ var2 ] ) ; 
+} 
+for ( var2 = number ; var2 < var1 -> var20 ; var2 ++ ) 
+func5 ( & var1 -> var21 [ var2 ] . var22 ) ; 
+func6 ( & var3 -> var23 ) ; 
+func5 ( & var3 -> var24 ) ; 
+func7 ( & var3 -> var25 ) ; 
+} 

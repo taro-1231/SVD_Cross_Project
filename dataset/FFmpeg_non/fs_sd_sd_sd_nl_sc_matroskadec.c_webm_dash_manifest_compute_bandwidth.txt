@@ -1,0 +1,65 @@
+static int64_t func1 ( AVFormatContext * var1 , int64_t var2 ) 
+{ 
+MatroskaDemuxContext * var3 = var1 -> var4 ; 
+AVStream * var5 = var1 -> var6 [ number ] ; 
+double var7 = number ; 
+int var8 ; 
+for ( var8 = number ; var8 < var5 -> var9 ; var8 ++ ) { 
+int64_t var10 = number ; 
+int64_t var11 = var5 -> var12 [ var8 ] . var13 * var3 -> var14 ; 
+double var15 = number ; 
+int64_t var16 = var11 + var10 ; 
+double var17 = number ; 
+int64_t var18 = var10 ; 
+int64_t var19 , var20 ; 
+double var21 , var22 , var23 ; 
+CueDesc var24 = func2 ( var1 , var11 , var2 ) ; 
+CueDesc var25 = var24 ; 
+while ( var25 . var26 != - number && var25 . var27 < var16 ) { 
+var17 += var25 . var28 - var25 . var29 ; 
+var18 -= var25 . var27 - var25 . var26 ; 
+var25 = func2 ( var1 , var25 . var27 , var2 ) ; 
+} 
+if ( var25 . var26 == - number ) { 
+if ( var3 -> var30 * var3 -> var14 >= var16 ) 
+return - number ; 
+var23 = number ; 
+} else { 
+var19 = var25 . var28 - var25 . var29 ; 
+var20 = var25 . var27 - var25 . var26 ; 
+var21 = var20 / var15 ; 
+var17 += 
+var19 * ( ( var18 / var15 ) / var21 ) ; 
+var22 = var10 / var15 ; 
+var23 = number ; 
+do { 
+int64_t var31 = var25 . var28 - var24 . var29 ; 
+int64_t var32 = var25 . var27 - var24 . var26 ; 
+double var33 = var32 / var15 ; 
+double var34 = ( var31 * number ) / var33 ; 
+double var36 = ( var31 - var17 ) / var31 ; 
+double var37 = var34 * var36 ; 
+if ( var22 < var33 ) { 
+double var38 = 
+( double ) ( var3 -> var30 * var3 -> var14 ) / var15 ; 
+int64_t var35 = ( int64_t ) ( var37 ) + number ; 
+const double var39 = number ; 
+double var40 = var22 ; 
+double var41 = number ; 
+int var42 = func3 ( var16 , var38 , var35 , 
+var39 , & var40 , & var41 , 
+var1 , var2 ) ; 
+if ( var42 < number ) { 
+return - number ; 
+} else if ( var42 == number ) { 
+var23 = ( double ) ( var35 ) ; 
+break ; 
+} 
+} 
+var25 = func2 ( var1 , var25 . var27 , var2 ) ; 
+} while ( var25 . var26 != - number ) ; 
+} 
+if ( var7 < var23 ) var7 = var23 ; 
+} 
+return ( int64_t ) var7 ; 
+} 

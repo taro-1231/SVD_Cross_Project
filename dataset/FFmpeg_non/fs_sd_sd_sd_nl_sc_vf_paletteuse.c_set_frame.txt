@@ -1,0 +1,90 @@
+static av_always_inline int func1 ( PaletteUseContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 , 
+enum dithering_mode var8 , 
+const enum color_search_method var9 ) 
+{ 
+int var10 , var11 ; 
+const struct color_node * var12 = var1 -> var12 ; 
+struct cache_node * var13 = var1 -> var13 ; 
+const uint32_t * var14 = var1 -> var14 ; 
+const int var15 = var3 -> var16 [ number ] >> number ; 
+const int var17 = var2 -> var16 [ number ] ; 
+uint32_t * var18 = ( ( uint32_t * ) var3 -> var19 [ number ] ) + var5 * var15 ; 
+uint8_t * var20 = var2 -> var19 [ number ] + var5 * var17 ; 
+var6 += var4 ; 
+var7 += var5 ; 
+for ( var11 = var5 ; var11 < var7 ; var11 ++ ) { 
+for ( var10 = var4 ; var10 < var6 ; var10 ++ ) { 
+int var21 , var22 , var23 ; 
+if ( var8 == var24 ) { 
+const int var25 = var1 -> var26 [ ( var11 & number ) << number | ( var10 & number ) ] ; 
+const uint8_t var27 = var18 [ var10 ] >> number & number ; 
+const uint8_t var28 = var18 [ var10 ] >> number & number ; 
+const uint8_t var29 = var18 [ var10 ] & number ; 
+const uint8_t var30 = func2 ( var27 + var25 ) ; 
+const uint8_t var31 = func2 ( var28 + var25 ) ; 
+const uint8_t var32 = func2 ( var29 + var25 ) ; 
+const uint32_t var33 = var30 << number | var31 << number | var32 ; 
+const int var34 = func3 ( var13 , var33 , var30 , var31 , var32 , var12 , var14 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+} else if ( var8 == var35 ) { 
+const int var36 = var10 < var6 - number , var37 = var11 < var7 - number ; 
+const int var34 = func4 ( var13 , var18 [ var10 ] , var12 , var14 , & var21 , & var22 , & var23 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+if ( var36 ) var18 [ var10 + number ] = func5 ( var18 [ var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var37 ) var18 [ var15 + var10 ] = func5 ( var18 [ var15 + var10 ] , var21 , var22 , var23 , number , number ) ; 
+if ( var36 && var37 ) var18 [ var15 + var10 + number ] = func5 ( var18 [ var15 + var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+} else if ( var8 == var38 ) { 
+const int var36 = var10 < var6 - number , var37 = var11 < var7 - number , var39 = var10 > var4 ; 
+const int var34 = func4 ( var13 , var18 [ var10 ] , var12 , var14 , & var21 , & var22 , & var23 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+if ( var36 ) var18 [ var10 + number ] = func5 ( var18 [ var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var39 && var37 ) var18 [ var15 + var10 - number ] = func5 ( var18 [ var15 + var10 - number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var37 ) var18 [ var15 + var10 ] = func5 ( var18 [ var15 + var10 ] , var21 , var22 , var23 , number , number ) ; 
+if ( var36 && var37 ) var18 [ var15 + var10 + number ] = func5 ( var18 [ var15 + var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+} else if ( var8 == var40 ) { 
+const int var36 = var10 < var6 - number , var37 = var11 < var7 - number , var39 = var10 > var4 ; 
+const int var41 = var10 < var6 - number , var42 = var10 > var4 + number ; 
+const int var34 = func4 ( var13 , var18 [ var10 ] , var12 , var14 , & var21 , & var22 , & var23 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+if ( var36 ) var18 [ var10 + number ] = func5 ( var18 [ var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var41 ) var18 [ var10 + number ] = func5 ( var18 [ var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var37 ) { 
+if ( var42 ) var18 [ var15 + var10 - number ] = func5 ( var18 [ var15 + var10 - number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var39 ) var18 [ var15 + var10 - number ] = func5 ( var18 [ var15 + var10 - number ] , var21 , var22 , var23 , number , number ) ; 
+var18 [ var15 + var10 ] = func5 ( var18 [ var15 + var10 ] , var21 , var22 , var23 , number , number ) ; 
+if ( var36 ) var18 [ var15 + var10 + number ] = func5 ( var18 [ var15 + var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var41 ) var18 [ var15 + var10 + number ] = func5 ( var18 [ var15 + var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+} 
+} else if ( var8 == var43 ) { 
+const int var36 = var10 < var6 - number , var37 = var11 < var7 - number , var39 = var10 > var4 ; 
+const int var34 = func4 ( var13 , var18 [ var10 ] , var12 , var14 , & var21 , & var22 , & var23 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+if ( var36 ) var18 [ var10 + number ] = func5 ( var18 [ var10 + number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var39 && var37 ) var18 [ var15 + var10 - number ] = func5 ( var18 [ var15 + var10 - number ] , var21 , var22 , var23 , number , number ) ; 
+if ( var37 ) var18 [ var15 + var10 ] = func5 ( var18 [ var15 + var10 ] , var21 , var22 , var23 , number , number ) ; 
+} else { 
+const uint8_t var30 = var18 [ var10 ] >> number & number ; 
+const uint8_t var31 = var18 [ var10 ] >> number & number ; 
+const uint8_t var32 = var18 [ var10 ] & number ; 
+const int var34 = func3 ( var13 , var18 [ var10 ] & number , var30 , var31 , var32 , var12 , var14 , var9 ) ; 
+if ( var34 < number ) 
+return var34 ; 
+var20 [ var10 ] = var34 ; 
+} 
+} 
+var18 += var15 ; 
+var20 += var17 ; 
+} 
+return number ; 
+} 

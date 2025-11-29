@@ -1,0 +1,49 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+XCBGrabContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+const xcb_setup_t * var6 ; 
+char * var7 = func2 ( var1 -> var8 ) ; 
+if ( ! var7 ) 
+return func3 ( var9 ) ; 
+if ( ! sscanf ( var1 -> var8 , str , var7 , & var2 -> var10 , & var2 -> var11 ) ) { 
+* var7 = number ; 
+sscanf ( var1 -> var8 , str , & var2 -> var10 , & var2 -> var11 ) ; 
+} 
+var2 -> var12 = func4 ( var7 [ number ] ? var7 : var13 , & var4 ) ; 
+func5 ( & var7 ) ; 
+if ( ( var5 = func6 ( var2 -> var12 ) ) ) { 
+func7 ( var1 , var14 , str , 
+var1 -> var8 [ number ] ? var1 -> var8 : str , var5 ) ; 
+return func3 ( var15 ) ; 
+} 
+var6 = func8 ( var2 -> var12 ) ; 
+var2 -> var16 = func9 ( var6 , var4 ) ; 
+if ( ! var2 -> var16 ) { 
+func7 ( var1 , var14 , str , 
+var4 ) ; 
+func10 ( var1 ) ; 
+return func3 ( var15 ) ; 
+} 
+var5 = func11 ( var1 ) ; 
+if ( var5 < number ) { 
+func10 ( var1 ) ; 
+return var5 ; 
+} 
+if ( ( var2 -> var17 = func12 ( var2 -> var12 ) ) ) 
+var2 -> var18 = func13 ( var2 -> var12 ) ; 
+if ( var2 -> var19 ) { 
+if ( ! ( var2 -> var19 = func14 ( var2 -> var12 ) ) ) { 
+func7 ( var1 , var20 , 
+str ) ; 
+} 
+if ( var2 -> var21 < number ) { 
+func15 ( var1 , str , 
+var2 -> var21 ) ; 
+var2 -> var19 = number ; 
+} 
+} 
+if ( var2 -> var22 ) 
+func16 ( var1 ) ; 
+return number ; 
+} 

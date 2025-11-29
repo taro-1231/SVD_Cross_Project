@@ -1,0 +1,17 @@
+static void func1 ( VectorscopeContext * var1 , AVFrame * var2 ) 
+{ 
+const int var3 = var2 -> var4 [ number ] ; 
+uint8_t * var5 = var1 -> var6 == var7 || ! var1 -> var8 ? var2 -> var9 [ var1 -> var10 ] : var2 -> var9 [ number ] ; 
+int var11 , var12 ; 
+for ( var11 = number ; var11 < var2 -> var13 ; var11 ++ ) { 
+for ( var12 = number ; var12 < var2 -> var14 ; var12 ++ ) { 
+const int var15 = var11 * var3 + var12 ; 
+const int var16 = ( var11 - number ) * var3 + var12 ; 
+const int var17 = ( var11 + number ) * var3 + var12 ; 
+if ( var5 [ var15 ] && ( ( ( ! var12 || ! var5 [ var15 - number ] ) || ( ( var12 == ( var2 -> var14 - number ) ) || ! var5 [ var15 + number ] ) ) 
+|| ( ( ! var11 || ! var5 [ var16 ] ) || ( ( var11 == ( var2 -> var13 - number ) ) || ! var5 [ var17 ] ) ) ) ) { 
+var5 [ var15 ] = number ; 
+} 
+} 
+} 
+} 

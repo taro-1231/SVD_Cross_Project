@@ -1,0 +1,10 @@
+static int func1 ( PulseData * var1 ) 
+{ 
+pa_context_state_t var2 ; 
+while ( ( var2 = func2 ( var1 -> var3 ) ) != var4 ) { 
+if ( var2 == var5 || var2 == var6 ) 
+return var7 ; 
+func3 ( var1 -> var8 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,36 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFIndexTableSegment * var7 = var1 ; 
+switch ( var3 ) { 
+case 0x3F05 : 
+var7 -> var8 = func2 ( var2 ) ; 
+func3 ( var9 , var10 , str , var7 -> var8 ) ; 
+break ; 
+case 0x3F06 : 
+var7 -> var11 = func2 ( var2 ) ; 
+func3 ( var9 , var10 , str , var7 -> var11 ) ; 
+break ; 
+case 0x3F07 : 
+var7 -> var12 = func2 ( var2 ) ; 
+func3 ( var9 , var10 , str , var7 -> var12 ) ; 
+break ; 
+case 0x3F0A : 
+func3 ( var9 , var10 , str ) ; 
+return func4 ( var2 , var7 ) ; 
+case 0x3F0B : 
+var7 -> var13 . var14 = func2 ( var2 ) ; 
+var7 -> var13 . var15 = func2 ( var2 ) ; 
+func3 ( var9 , var10 , str , var7 -> var13 . var14 , 
+var7 -> var13 . var15 ) ; 
+break ; 
+case 0x3F0C : 
+var7 -> var16 = func5 ( var2 ) ; 
+func3 ( var9 , var10 , str PRId64 str , var7 -> var16 ) ; 
+break ; 
+case 0x3F0D : 
+var7 -> var17 = func5 ( var2 ) ; 
+func3 ( var9 , var10 , str PRId64 str , var7 -> var17 ) ; 
+break ; 
+} 
+return number ; 
+} 

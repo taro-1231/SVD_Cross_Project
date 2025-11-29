@@ -1,0 +1,4 @@
+AVRational func1 ( void ) 
+{ 
+return ( AVRational ) { 1 , AV_TIME_BASE } ; 
+} 

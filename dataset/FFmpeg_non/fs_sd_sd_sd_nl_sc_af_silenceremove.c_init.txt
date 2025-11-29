@@ -1,0 +1,9 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+SilenceRemoveContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 < number ) { 
+var2 -> var4 = - var2 -> var4 ; 
+var2 -> var5 = number ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,15 @@
+static void func1 ( SectionID var1 , int var2 ) 
+{ 
+const SectionID * var3 ; 
+const struct var4 * var4 = & var5 [ var1 ] ; 
+printf ( str , 
+var4 -> var6 & var7 ? str : str , 
+var4 -> var6 & var8 ? str : str , 
+var4 -> var6 & var9 ? str : str ) ; 
+printf ( str , var2 * number , str , var4 -> var10 ) ; 
+if ( var4 -> var11 ) 
+printf ( str , var4 -> var11 ) ; 
+printf ( str ) ; 
+for ( var3 = var4 -> var12 ; * var3 != - number ; var3 ++ ) 
+func1 ( * var3 , var2 + number ) ; 
+} 

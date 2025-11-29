@@ -1,0 +1,51 @@
+static int func1 ( struct Tracks * var1 , int var2 , 
+AVIOContext * var3 , const char * var4 , 
+int var5 , int var6 , const char * var7 ) 
+{ 
+char var8 [ number ] , var9 [ number ] , var10 [ number ] ; 
+int var11 , var12 , var13 = number , var14 ; 
+FILE * var15 = var16 ; 
+if ( var6 ) { 
+snprintf ( var10 , sizeof ( var10 ) , str , var7 , var4 ) ; 
+var15 = fopen ( var10 , str ) ; 
+if ( ! var15 ) { 
+var13 = func2 ( var17 ) ; 
+perror ( var10 ) ; 
+goto var18 ; 
+} 
+} 
+for ( var11 = var2 ; var11 < var1 -> var19 ; var11 ++ ) { 
+struct Track * var20 = var1 -> var1 [ var11 ] ; 
+const char * var21 = var20 -> var22 ? str : str ; 
+snprintf ( var8 , sizeof ( var8 ) , str , var7 , var20 -> var23 ) ; 
+if ( var5 ) { 
+if ( func3 ( var8 , number ) == - number && var17 != var24 ) { 
+var13 = func2 ( var17 ) ; 
+perror ( var8 ) ; 
+goto var18 ; 
+} 
+} 
+for ( var12 = number ; var12 < var20 -> var25 ; var12 ++ ) { 
+snprintf ( var9 , sizeof ( var9 ) , str PRId64 str , 
+var8 , var21 , var20 -> var26 [ var12 ] . time ) ; 
+func4 ( var3 , var20 -> var26 [ var12 ] . var27 , var28 ) ; 
+if ( var6 ) 
+fprintf ( var15 , str PRId64 , var9 , avio_tell ( var3 ) ) ; 
+if ( var5 ) 
+var14 = func5 ( var9 , var3 ) ; 
+else 
+var14 = func6 ( var3 ) ; 
+if ( var6 ) 
+fprintf ( var15 , str PRId64 str , avio_tell ( var3 ) ) ; 
+if ( var14 != number ) { 
+fprintf ( var29 , str , var12 , 
+var20 -> var30 , var20 -> var31 ) ; 
+var13 = var14 ; 
+} 
+} 
+} 
+var18 : 
+if ( var15 ) 
+fclose ( var15 ) ; 
+return var13 ; 
+} 

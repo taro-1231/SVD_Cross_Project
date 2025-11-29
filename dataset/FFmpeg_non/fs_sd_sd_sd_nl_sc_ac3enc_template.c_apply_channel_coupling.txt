@@ -1,0 +1,158 @@
+static void func1 ( AC3EncodeContext * var1 ) 
+{ 
+LOCAL_ALIGNED_16 ( CoefType , var2 , [ var3 ] , [ AC3_MAX_CHANNELS ] [ number ] ) ; 
+LOCAL_ALIGNED_16 ( int32_t , var4 , [ var3 ] , [ AC3_MAX_CHANNELS ] [ number ] ) ; 
+int32_t ( * var4 ) [ AC3_MAX_CHANNELS ] [ number ] = var2 ; 
+int var5 ( var6 ) , var7 , var8 , var9 , var10 ; 
+CoefSumType var11 [ var3 ] [ AC3_MAX_CHANNELS ] [ number ] = { { { number } } } ; 
+int var12 , var13 ; 
+memset ( var2 , number , var3 * sizeof ( * var2 ) ) ; 
+memset ( var4 , number , var3 * sizeof ( * var2 ) ) ; 
+var12 = var1 -> var14 [ var15 ] - number ; 
+var13 = func2 ( var1 -> var16 * number + number , number ) ; 
+var12 = func3 ( number , var12 + var13 ) - var13 ; 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+CoefType * var20 = & var18 -> var21 [ var15 ] [ var12 ] ; 
+if ( ! var18 -> var22 ) 
+continue ; 
+memset ( var20 , number , var13 * sizeof ( * var20 ) ) ; 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) { 
+CoefType * var24 = & var18 -> var21 [ var7 ] [ var12 ] ; 
+if ( ! var18 -> var25 [ var7 ] ) 
+continue ; 
+for ( var9 = number ; var9 < var13 ; var9 ++ ) 
+var20 [ var9 ] += var24 [ var9 ] ; 
+} 
+func4 ( & var1 -> var26 , var20 , var13 ) ; 
+} 
+var8 = number ; 
+var9 = var1 -> var14 [ var15 ] ; 
+while ( var9 < var1 -> var27 ) { 
+int var28 = var1 -> var29 [ var8 ] ; 
+for ( var7 = var15 ; var7 <= var1 -> var23 ; var7 ++ ) { 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+if ( ! var18 -> var22 || ( var7 > var15 && ! var18 -> var25 [ var7 ] ) ) 
+continue ; 
+for ( var10 = number ; var10 < var28 ; var10 ++ ) { 
+CoefType var30 = var18 -> var21 [ var7 ] [ var9 + var10 ] ; 
+func5 ( var11 [ var6 ] [ var7 ] [ var8 ] , var30 , var30 ) ; 
+} 
+} 
+} 
+var9 += var28 ; 
+var8 ++ ; 
+} 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+if ( ! var18 -> var22 ) 
+continue ; 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) { 
+if ( ! var18 -> var25 [ var7 ] ) 
+continue ; 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+var2 [ var6 ] [ var7 ] [ var8 ] = func6 ( var11 [ var6 ] [ var7 ] [ var8 ] , 
+var11 [ var6 ] [ var15 ] [ var8 ] ) ; 
+} 
+} 
+} 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+AC3Block * var32 = var6 ? & var1 -> var19 [ var6 - number ] : var33 ; 
+memset ( var18 -> var34 , number , sizeof ( var18 -> var34 ) ) ; 
+if ( var18 -> var22 ) { 
+if ( var6 == number || ! var32 -> var22 ) { 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) 
+var18 -> var34 [ var7 ] = number ; 
+} else { 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) { 
+if ( ! var18 -> var25 [ var7 ] ) 
+continue ; 
+if ( ! var32 -> var25 [ var7 ] ) { 
+var18 -> var34 [ var7 ] = number ; 
+} else { 
+CoefSumType var35 = number ; 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+var35 += func7 ( var2 [ var6 - number ] [ var7 ] [ var8 ] - 
+var2 [ var6 ] [ var7 ] [ var8 ] ) ; 
+} 
+var35 /= var1 -> var31 ; 
+if ( var35 > var36 ) 
+var18 -> var34 [ var7 ] = number ; 
+} 
+} 
+} 
+} 
+} 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+var6 = number ; 
+while ( var6 < var1 -> var17 ) { 
+int var5 ( var37 ) ; 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+if ( ! var18 -> var22 ) { 
+var6 ++ ; 
+continue ; 
+} 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) { 
+CoefSumType var38 , var39 ; 
+if ( ! var18 -> var25 [ var7 ] ) 
+continue ; 
+var39 = var11 [ var6 ] [ var15 ] [ var8 ] ; 
+var38 = var11 [ var6 ] [ var7 ] [ var8 ] ; 
+var37 = var6 + number ; 
+while ( var37 < var1 -> var17 && ! var1 -> var19 [ var37 ] . var34 [ var7 ] ) { 
+if ( var1 -> var19 [ var37 ] . var22 ) { 
+var39 += var11 [ var37 ] [ var15 ] [ var8 ] ; 
+var38 += var11 [ var37 ] [ var7 ] [ var8 ] ; 
+} 
+var37 ++ ; 
+} 
+var2 [ var6 ] [ var7 ] [ var8 ] = func6 ( var38 , var39 ) ; 
+} 
+var6 = var37 ; 
+} 
+} 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AC3Block * var18 = & var1 -> var19 [ var6 ] ; 
+if ( ! var18 -> var22 ) 
+continue ; 
+var1 -> var40 . func8 ( var4 [ var6 ] [ number ] , 
+var2 [ var6 ] [ number ] , 
+var1 -> var23 * number ) ; 
+var1 -> var40 . func9 ( var18 -> var41 [ number ] , 
+var4 [ var6 ] [ number ] , 
+var1 -> var23 * number ) ; 
+for ( var7 = number ; var7 <= var1 -> var23 ; var7 ++ ) { 
+int var8 , var42 , var43 , var44 ; 
+if ( ! var18 -> var34 [ var7 ] ) 
+continue ; 
+var42 = var43 = var18 -> var41 [ var7 ] [ number ] ; 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+int var45 = var18 -> var41 [ var7 ] [ var8 ] ; 
+var42 = func3 ( var45 , var42 ) ; 
+var43 = func10 ( var45 , var43 ) ; 
+} 
+var44 = ( ( var43 - number ) + number ) / number ; 
+var44 = func10 ( var44 , number ) ; 
+while ( var42 < var44 * number ) 
+var44 -- ; 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+var18 -> var41 [ var7 ] [ var8 ] = func11 ( var18 -> var41 [ var7 ] [ var8 ] - 
+var44 * number , number , number ) ; 
+} 
+var18 -> var46 [ var7 ] = var44 ; 
+for ( var8 = number ; var8 < var1 -> var31 ; var8 ++ ) { 
+int var47 = var18 -> var41 [ var7 ] [ var8 ] ; 
+int var48 = ( var4 [ var6 ] [ var7 ] [ var8 ] << ( number + var47 + var44 * number ) ) >> number ; 
+if ( var47 == number ) 
+var48 >>= number ; 
+else 
+var48 -= number ; 
+var18 -> var49 [ var7 ] [ var8 ] = var48 ; 
+} 
+} 
+} 
+if ( var50 && var1 -> var51 ) 
+func12 ( var1 ) ; 
+} 

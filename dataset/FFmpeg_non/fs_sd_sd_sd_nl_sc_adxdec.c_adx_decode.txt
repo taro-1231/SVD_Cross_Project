@@ -1,0 +1,25 @@
+static int func1 ( ADXContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , int var5 ) 
+{ 
+ADXChannelState * var6 = & var1 -> var6 [ var5 ] ; 
+GetBitContext var7 ; 
+int var8 = func2 ( var4 ) ; 
+int var9 ; 
+int var10 , var11 , var12 , var13 ; 
+if ( var8 & number ) 
+return - number ; 
+func3 ( & var7 , var4 + number , ( var14 - number ) * number ) ; 
+var2 += var3 ; 
+var11 = var6 -> var11 ; 
+var12 = var6 -> var12 ; 
+for ( var9 = number ; var9 < var15 ; var9 ++ ) { 
+var13 = func4 ( & var7 , number ) ; 
+var10 = ( ( var13 << var16 ) * var8 + var1 -> var17 [ number ] * var11 + var1 -> var17 [ number ] * var12 ) >> var16 ; 
+var12 = var11 ; 
+var11 = func5 ( var10 ) ; 
+* var2 += var11 ; 
+} 
+var6 -> var11 = var11 ; 
+var6 -> var12 = var12 ; 
+return number ; 
+} 

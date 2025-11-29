@@ -1,0 +1,7 @@
+static av_cold int func1 ( WriterContext * var2 ) 
+{ 
+JSONContext * var1 = var2 -> var3 ; 
+var1 -> var4 = var1 -> var5 ? str : str ; 
+var1 -> var6 = var1 -> var5 ? str : str ; 
+return number ; 
+} 

@@ -1,0 +1,7 @@
+int func1 ( int var1 ) 
+{ 
+if ( var1 < number ) 
+return var1 + number ; 
+else 
+return number * ( var1 - number ) ; 
+} 

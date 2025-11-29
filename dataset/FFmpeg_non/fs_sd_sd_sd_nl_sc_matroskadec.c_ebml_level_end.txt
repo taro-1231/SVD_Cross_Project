@@ -1,0 +1,13 @@
+static int func1 ( MatroskaDemuxContext * var1 ) 
+{ 
+AVIOContext * var2 = var1 -> var3 -> var2 ; 
+int64_t var4 = func2 ( var2 ) ; 
+if ( var1 -> var5 > number ) { 
+MatroskaLevel * var6 = & var1 -> var7 [ var1 -> var5 - number ] ; 
+if ( var4 - var6 -> var8 >= var6 -> var9 || var1 -> var10 ) { 
+var1 -> var5 -- ; 
+return number ; 
+} 
+} 
+return ( var1 -> var11 && var1 -> var3 -> var2 -> var12 ) ? number : number ; 
+} 

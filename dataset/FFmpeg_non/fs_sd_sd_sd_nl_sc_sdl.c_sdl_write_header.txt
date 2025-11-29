@@ -1,0 +1,70 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+SDLContext * var2 = var1 -> var3 ; 
+AVStream * var4 = var1 -> var5 [ number ] ; 
+AVCodecContext * var6 = var4 -> var7 ; 
+int var8 , var9 ; 
+if ( ! var2 -> var10 ) 
+var2 -> var10 = func2 ( var1 -> var11 ) ; 
+if ( ! var2 -> var12 ) 
+var2 -> var12 = func2 ( var2 -> var10 ) ; 
+if ( func3 ( var13 ) ) { 
+func4 ( var1 , var14 , 
+str ) ; 
+var2 -> var16 = number ; 
+var9 = func5 ( var17 ) ; 
+goto var18 ; 
+} 
+if ( var1 -> var19 > number 
+|| var6 -> var20 != var21 
+|| var6 -> var22 != var23 ) { 
+func4 ( var1 , var14 , str ) ; 
+var9 = func5 ( var17 ) ; 
+goto var18 ; 
+} 
+for ( var8 = number ; var24 [ var8 ] . var25 != var26 ; var8 ++ ) { 
+if ( var24 [ var8 ] . var25 == var6 -> var25 ) { 
+var2 -> var27 = var24 [ var8 ] . var27 ; 
+break ; 
+} 
+} 
+if ( ! var2 -> var27 ) { 
+func4 ( var1 , var14 , 
+str , 
+func6 ( var6 -> var25 ) ) ; 
+var9 = func5 ( var17 ) ; 
+goto var18 ; 
+} 
+func7 ( var1 ) ; 
+var2 -> var28 = func8 ( ) ; 
+if ( ! var2 -> var28 ) { 
+func4 ( var1 , var14 , str , func9 ( ) ) ; 
+var9 = var29 ; 
+goto var18 ; 
+} 
+var2 -> var30 = func10 ( ) ; 
+if ( ! var2 -> var30 ) { 
+func4 ( var1 , var14 , str , func9 ( ) ) ; 
+var9 = var29 ; 
+goto var18 ; 
+} 
+var2 -> var31 = func11 ( var31 , var1 ) ; 
+if ( ! var2 -> var31 ) { 
+func4 ( var1 , var14 , str , func9 ( ) ) ; 
+var9 = var29 ; 
+goto var18 ; 
+} 
+func12 ( var2 -> var30 ) ; 
+while ( ! var2 -> var15 ) { 
+func13 ( var2 -> var28 , var2 -> var30 ) ; 
+} 
+func14 ( var2 -> var30 ) ; 
+if ( var2 -> var32 < number ) { 
+var9 = var2 -> var32 ; 
+goto var18 ; 
+} 
+return number ; 
+var18 : 
+func15 ( var1 ) ; 
+return var9 ; 
+} 

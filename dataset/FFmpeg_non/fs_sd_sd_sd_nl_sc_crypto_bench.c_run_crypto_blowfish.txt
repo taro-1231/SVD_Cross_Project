@@ -1,0 +1,9 @@
+static void func1 ( uint8_t * var1 , 
+const uint8_t * var2 , unsigned var3 ) 
+{ 
+BF_KEY var4 ; 
+unsigned var5 ; 
+func2 ( & var4 , number , var6 ) ; 
+for ( var5 = number ; var5 < var3 ; var5 += number ) 
+func3 ( var2 + var5 , var1 + var5 , & var4 , number ) ; 
+} 

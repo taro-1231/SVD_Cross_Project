@@ -1,0 +1,34 @@
+static int func1 ( InputFile * var1 , OutputFile * var2 , int var3 ) 
+{ 
+AVFormatContext * var4 = var1 -> var5 ; 
+AVFormatContext * var6 = var2 -> var5 ; 
+AVChapter ** var7 ; 
+int var8 ; 
+var7 = func2 ( var6 -> var9 , var4 -> var10 + var6 -> var10 , sizeof ( * var6 -> var9 ) ) ; 
+if ( ! var7 ) 
+return func3 ( var11 ) ; 
+var6 -> var9 = var7 ; 
+for ( var8 = number ; var8 < var4 -> var10 ; var8 ++ ) { 
+AVChapter * var12 = var4 -> var9 [ var8 ] , * var13 ; 
+int64_t var14 = ( var2 -> var14 == var15 ) ? number : var2 -> var14 ; 
+int64_t var16 = func4 ( var14 - var1 -> var17 , 
+var18 , var12 -> var19 ) ; 
+int64_t var20 = ( var2 -> var21 == var22 ) ? var22 : 
+func4 ( var2 -> var21 , var18 , var12 -> var19 ) ; 
+if ( var12 -> var23 < var16 ) 
+continue ; 
+if ( var20 != var22 && var12 -> var24 > var20 + var16 ) 
+break ; 
+var13 = func5 ( sizeof ( AVChapter ) ) ; 
+if ( ! var13 ) 
+return func3 ( var11 ) ; 
+var13 -> var25 = var12 -> var25 ; 
+var13 -> var19 = var12 -> var19 ; 
+var13 -> var24 = func6 ( number , var12 -> var24 - var16 ) ; 
+var13 -> var23 = func7 ( var20 , var12 -> var23 - var16 ) ; 
+if ( var3 ) 
+func8 ( & var13 -> var26 , var12 -> var26 , number ) ; 
+var6 -> var9 [ var6 -> var10 ++ ] = var13 ; 
+} 
+return number ; 
+} 

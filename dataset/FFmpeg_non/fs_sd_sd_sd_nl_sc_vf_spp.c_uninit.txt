@@ -1,0 +1,12 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+SPPContext * var2 = var1 -> var3 ; 
+func2 ( & var2 -> var4 ) ; 
+func2 ( & var2 -> var5 ) ; 
+if ( var2 -> var6 ) { 
+func3 ( var2 -> var6 ) ; 
+func2 ( & var2 -> var6 ) ; 
+} 
+func2 ( & var2 -> var7 ) ; 
+func2 ( & var2 -> var8 ) ; 
+} 

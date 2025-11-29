@@ -1,0 +1,43 @@
+void func1 ( AACEncContext * var1 , AVCodecContext * var2 , ChannelElement * var3 ) 
+{ 
+SingleChannelElement * var4 = & var3 -> var5 [ number ] ; 
+SingleChannelElement * var6 = & var3 -> var5 [ number ] ; 
+int var7 = number , var8 = number , var9 , var10 , var11 , var12 ; 
+const float var13 = var2 -> var14 / ( number / var4 -> var15 . var16 ) / number ; 
+if ( ! var3 -> var17 ) 
+return ; 
+for ( var9 = number ; var9 < var4 -> var15 . var16 ; var9 += var4 -> var15 . var18 [ var9 ] ) { 
+var7 = number ; 
+for ( var11 = number ; var11 < var4 -> var15 . var19 ; var11 ++ ) { 
+if ( var7 * var13 > var20 * ( var1 -> var21 / number ) && 
+var3 -> var5 [ number ] . var22 [ var9 * number + var11 ] != var23 && ! var3 -> var5 [ number ] . var24 [ var9 * number + var11 ] && 
+var3 -> var5 [ number ] . var22 [ var9 * number + var11 ] != var23 && ! var3 -> var5 [ number ] . var24 [ var9 * number + var11 ] ) { 
+float var25 = number , var26 = number , var27 = number ; 
+struct AACISError var28 , var29 , * var30 ; 
+for ( var10 = number ; var10 < var4 -> var15 . var18 [ var9 ] ; var10 ++ ) { 
+for ( var12 = number ; var12 < var4 -> var15 . var31 [ var11 ] ; var12 ++ ) { 
+float var32 = var4 -> var33 [ var7 + ( var9 + var10 ) * number + var12 ] ; 
+float var34 = var6 -> var33 [ var7 + ( var9 + var10 ) * number + var12 ] ; 
+var25 += var32 * var32 ; 
+var26 += var34 * var34 ; 
+var27 += ( var32 + var34 ) * ( var32 + var34 ) ; 
+} 
+} 
+var28 = func2 ( var1 , var3 , var7 , var9 , var11 , 
+var25 , var26 , var27 , number , - number ) ; 
+var29 = func2 ( var1 , var3 , var7 , var9 , var11 , 
+var25 , var26 , var27 , number , + number ) ; 
+var30 = var28 . var35 < var29 . var35 ? & var28 : & var29 ; 
+if ( var30 -> var36 ) { 
+var3 -> var37 [ var9 * number + var11 ] = number ; 
+var3 -> var5 [ number ] . var38 [ var9 * number + var11 ] = sqrt ( var25 / var27 ) ; 
+var3 -> var5 [ number ] . var38 [ var9 * number + var11 ] = var25 / var26 ; 
+var3 -> var5 [ number ] . var22 [ var9 * number + var11 ] = var30 -> var39 ? var40 : var41 ; 
+var8 ++ ; 
+} 
+} 
+var7 += var4 -> var15 . var31 [ var11 ] ; 
+} 
+} 
+var3 -> var42 = ! ! var8 ; 
+} 

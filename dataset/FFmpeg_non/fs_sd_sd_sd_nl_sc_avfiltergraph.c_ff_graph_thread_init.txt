@@ -1,0 +1,6 @@
+int func1 ( AVFilterGraph * var1 ) 
+{ 
+var1 -> var2 = number ; 
+var1 -> var3 = number ; 
+return number ; 
+} 

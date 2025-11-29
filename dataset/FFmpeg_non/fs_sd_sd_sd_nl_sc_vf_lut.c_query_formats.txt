@@ -1,0 +1,11 @@
+static int func1 ( AVFilterContext * var2 ) 
+{ 
+LutContext * var3 = var2 -> var4 ; 
+const enum AVPixelFormat * var5 = var3 -> var6 ? var7 : 
+var3 -> var8 ? var9 : 
+var1 ; 
+AVFilterFormats * var10 = func2 ( var5 ) ; 
+if ( ! var10 ) 
+return func3 ( var11 ) ; 
+return func4 ( var2 , var10 ) ; 
+} 

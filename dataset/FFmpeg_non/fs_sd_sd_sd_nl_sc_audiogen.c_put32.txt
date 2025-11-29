@@ -1,0 +1,7 @@
+static void func1 ( uint32_t var1 ) 
+{ 
+fputc ( var1 & number , var2 ) ; 
+fputc ( ( var1 >> number ) & number , var2 ) ; 
+fputc ( ( var1 >> number ) & number , var2 ) ; 
+fputc ( ( var1 >> number ) & number , var2 ) ; 
+} 

@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 , MOVTrack * var2 ) 
+{ 
+int var3 = var2 -> var4 -> var5 ; 
+if ( ! ( var2 -> var4 -> var6 == var7 && 
+( var3 == func2 ( str , str , str , str ) || 
+var3 == func2 ( str , str , str , str ) ) ) ) 
+var3 = func3 ( var8 , var2 -> var4 -> var9 ) ; 
+if ( ! func4 ( var1 -> var10 , str ) && 
+! func4 ( var1 -> var10 , str ) && 
+! func4 ( var1 -> var10 , str ) ) 
+av_log ( var1 , AV_LOG_WARNING , str 
+str ) ; 
+return var3 ; 
+} 

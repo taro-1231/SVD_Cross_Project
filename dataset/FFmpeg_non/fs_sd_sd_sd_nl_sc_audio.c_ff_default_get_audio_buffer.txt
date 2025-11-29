@@ -1,0 +1,22 @@
+AVFrame * func1 ( AVFilterLink * var1 , int var2 ) 
+{ 
+AVFrame * var3 = func2 ( ) ; 
+int var4 = var1 -> var4 ; 
+int var5 ; 
+func3 ( var4 == func4 ( var1 -> var6 ) || ! func4 ( var1 -> var6 ) ) ; 
+if ( ! var3 ) 
+return var7 ; 
+var3 -> var2 = var2 ; 
+var3 -> var8 = var1 -> var8 ; 
+func5 ( var3 , var1 -> var4 ) ; 
+var3 -> var6 = var1 -> var6 ; 
+var3 -> var9 = var1 -> var9 ; 
+var5 = func6 ( var3 , number ) ; 
+if ( var5 < number ) { 
+func7 ( & var3 ) ; 
+return var7 ; 
+} 
+func8 ( var3 -> var10 , number , var2 , var4 , 
+var1 -> var8 ) ; 
+return var3 ; 
+} 

@@ -1,0 +1,36 @@
+static int func1 ( NUTContext * var1 , AVIOContext * var2 , int var3 ) { 
+AVFormatContext * var4 = var1 -> var5 ; 
+AVStream * var6 = var4 -> var7 [ var3 ] ; 
+AVDictionaryEntry * var8 = var9 ; 
+AVIOContext * var10 ; 
+uint8_t * var11 = var9 ; 
+int var12 = number , var13 , var14 ; 
+int var15 = func2 ( & var10 ) ; 
+if ( var15 < number ) 
+return var15 ; 
+while ( ( var8 = func3 ( var6 -> var16 , var23 , var8 , var17 ) ) ) 
+var12 += func4 ( var10 , var8 -> var18 , var8 -> var19 ) ; 
+for ( var14 = number ; var20 [ var14 ] . var21 ; ++ var14 ) { 
+if ( var6 -> var22 & var20 [ var14 ] . var21 ) 
+var12 += func4 ( var10 , var23 , var20 [ var14 ] . var23 ) ; 
+} 
+if ( var6 -> var24 -> var25 == var26 ) { 
+uint8_t var27 [ number ] ; 
+if ( var6 -> var28 . var29 > number && var6 -> var28 . var30 > number ) 
+snprintf ( var27 , sizeof ( var27 ) , var23 , var6 -> var28 . var29 , var6 -> var28 . var30 ) ; 
+else 
+snprintf ( var27 , sizeof ( var27 ) , var23 , var6 -> var24 -> var31 . var30 , var6 -> var24 -> var31 . var29 ) ; 
+var12 += func4 ( var10 , var23 , var27 ) ; 
+} 
+var13 = func5 ( var10 , & var11 ) ; 
+if ( var12 ) { 
+func6 ( var2 , var3 + number ) ; 
+func6 ( var2 , number ) ; 
+func6 ( var2 , number ) ; 
+func6 ( var2 , number ) ; 
+func6 ( var2 , var12 ) ; 
+func7 ( var2 , var11 , var13 ) ; 
+} 
+func8 ( var11 ) ; 
+return var12 ; 
+} 

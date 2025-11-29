@@ -1,0 +1,11 @@
+static void func1 ( AVIOContext * var1 , uint64_t var2 , int var3 ) 
+{ 
+int var4 , var5 = func2 ( var2 ) ; 
+func3 ( var2 < ( 1ULL << 56 ) - number ) ; 
+if ( var3 == number ) 
+var3 = var5 ; 
+func3 ( var3 >= var5 ) ; 
+var2 |= 1ULL << var3 * number ; 
+for ( var4 = var3 - number ; var4 >= number ; var4 -- ) 
+func4 ( var1 , ( uint8_t ) ( var2 >> var4 * number ) ) ; 
+} 

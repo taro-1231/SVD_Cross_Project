@@ -1,0 +1,28 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ASyncContext * var4 = var2 -> var5 ; 
+int var6 = number ; 
+int var7 ; 
+var4 -> var8 = number ; 
+while ( var6 >= number && ! var4 -> var8 ) 
+var6 = func2 ( var2 -> var9 [ number ] ) ; 
+if ( var6 == var10 ) { 
+if ( var4 -> var11 != var12 ) 
+func3 ( var2 ) ; 
+if ( var7 = func4 ( var4 ) ) { 
+AVFrame * var13 = func5 ( var1 , var7 ) ; 
+if ( ! var13 ) 
+return func6 ( var14 ) ; 
+var6 = func7 ( var4 -> var15 , var13 -> var16 , 
+var13 -> var17 [ number ] , var7 , var18 , number , number ) ; 
+if ( var6 <= number ) { 
+func8 ( & var13 ) ; 
+return ( var6 < number ) ? var6 : var10 ; 
+} 
+var13 -> var19 = var4 -> var19 ; 
+return func9 ( var1 , var13 ) ; 
+} 
+} 
+return var6 ; 
+} 

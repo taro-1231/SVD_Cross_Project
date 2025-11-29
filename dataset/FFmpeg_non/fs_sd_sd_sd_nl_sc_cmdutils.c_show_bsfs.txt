@@ -1,0 +1,10 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const AVBitStreamFilter * var4 = var5 ; 
+void * var6 = var5 ; 
+printf ( str ) ; 
+while ( ( var4 = func2 ( & var6 ) ) ) 
+printf ( str , var4 -> var7 ) ; 
+printf ( str ) ; 
+return number ; 
+} 

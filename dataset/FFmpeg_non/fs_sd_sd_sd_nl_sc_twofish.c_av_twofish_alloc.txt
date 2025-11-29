@@ -1,0 +1,4 @@
+struct AVTWOFISH * func1 ( void ) 
+{ 
+return func2 ( sizeof ( struct AVTWOFISH ) ) ; 
+} 

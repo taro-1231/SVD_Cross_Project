@@ -1,0 +1,27 @@
+enum AVPixelFormat func1 ( AVStream * var1 , AVCodecContext * var2 , AVCodec * var3 , enum AVPixelFormat var4 ) 
+{ 
+if ( var3 && var3 -> var5 ) { 
+const enum AVPixelFormat * var6 = var3 -> var5 ; 
+const AVPixFmtDescriptor * var7 = func2 ( var4 ) ; 
+int var8 = var7 ? var7 -> var9 % number == number : number ; 
+enum AVPixelFormat var10 = var11 ; 
+if ( var2 -> var12 <= var13 ) { 
+var6 = func3 ( var2 -> var14 , var6 ) ; 
+} 
+for ( ; * var6 != var11 ; var6 ++ ) { 
+var10 = func4 ( var10 , * var6 , var4 , var8 , var15 ) ; 
+if ( * var6 == var4 ) 
+break ; 
+} 
+if ( * var6 == var11 ) { 
+if ( var4 != var11 ) 
+func5 ( var15 , var16 , 
+str , 
+func6 ( var4 ) , 
+var3 -> var17 , 
+func6 ( var10 ) ) ; 
+return var10 ; 
+} 
+} 
+return var4 ; 
+} 

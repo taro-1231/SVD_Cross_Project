@@ -1,0 +1,19 @@
+static void func1 ( FFTSample * var1 , 
+RDFTContext * var2 , 
+const FFTComplex * var3 , 
+const FFTComplex * var4 , 
+const int var5 ) 
+{ 
+FFTComplex * var6 = ( FFTComplex * ) var1 ; 
+int var7 ; 
+var6 -> var8 = var3 -> var8 * var4 -> var8 ; 
+var6 -> var9 = var3 -> var9 * var4 -> var9 ; 
+var3 ++ ; 
+var4 ++ ; 
+var6 ++ ; 
+for ( var7 = number ; var7 < var5 ; var7 ++ , var3 ++ , var4 ++ , var6 ++ ) { 
+var6 -> var8 = ( var3 -> var8 * var4 -> var8 + var3 -> var9 * var4 -> var9 ) ; 
+var6 -> var9 = ( var3 -> var9 * var4 -> var8 - var3 -> var8 * var4 -> var9 ) ; 
+} 
+func2 ( var2 , var1 ) ; 
+} 

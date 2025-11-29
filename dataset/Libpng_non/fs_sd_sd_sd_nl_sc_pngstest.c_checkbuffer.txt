@@ -1,0 +1,15 @@
+func1 ( Image * var1 , const char * var2 ) 
+{ 
+if ( func2 ( var1 -> var3 , number ) ) 
+{ 
+fflush ( var4 ) ; 
+fprintf ( var5 , str , var2 ) ; 
+exit ( number ) ; 
+} 
+if ( func2 ( var1 -> var3 + number + var1 -> var6 , number ) ) 
+{ 
+fflush ( var4 ) ; 
+fprintf ( var5 , str , var2 ) ; 
+exit ( number ) ; 
+} 
+} 

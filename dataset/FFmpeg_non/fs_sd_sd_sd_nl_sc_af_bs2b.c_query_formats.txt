@@ -1,0 +1,29 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+AVFilterFormats * var2 = var3 ; 
+AVFilterChannelLayouts * var4 = var3 ; 
+static const enum AVSampleFormat var5 [ ] = { 
+AV_SAMPLE_FMT_U8 , 
+AV_SAMPLE_FMT_S16 , 
+AV_SAMPLE_FMT_S32 , 
+AV_SAMPLE_FMT_FLT , 
+AV_SAMPLE_FMT_DBL , 
+AV_SAMPLE_FMT_NONE , 
+} ; 
+int var6 ; 
+if ( func2 ( & var4 , var7 ) != number ) 
+return func3 ( var8 ) ; 
+var6 = func4 ( var1 , var4 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+var2 = func5 ( var5 ) ; 
+if ( ! var2 ) 
+return func3 ( var8 ) ; 
+var6 = func6 ( var1 , var2 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+var2 = func7 ( ) ; 
+if ( ! var2 ) 
+return func3 ( var8 ) ; 
+return func8 ( var1 , var2 ) ; 
+} 

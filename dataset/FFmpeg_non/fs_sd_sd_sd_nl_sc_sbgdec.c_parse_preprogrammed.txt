@@ -1,0 +1,6 @@
+static int func1 ( struct sbg_parser * var1 ) 
+{ 
+snprintf ( var1 -> var2 , sizeof ( var1 -> var2 ) , 
+str ) ; 
+return var3 ; 
+} 

@@ -1,0 +1,8 @@
+int8_t * func1 ( AVFrame * var1 , int * var2 , int * var3 ) 
+{ 
+* var2 = var1 -> var4 ; 
+* var3 = var1 -> var5 ; 
+if ( ! var1 -> var6 ) 
+return var7 ; 
+return var1 -> var6 -> var8 ; 
+} 

@@ -1,0 +1,6 @@
+static int func1 ( AVCodecContext ** var1 ) 
+{ 
+func2 ( * var1 ) ; 
+func3 ( var1 ) ; 
+return number ; 
+} 

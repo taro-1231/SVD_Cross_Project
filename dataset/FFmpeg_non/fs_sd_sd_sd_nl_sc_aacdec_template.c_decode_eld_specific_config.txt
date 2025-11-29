@@ -1,0 +1,53 @@
+static int func1 ( AACContext * var1 , AVCodecContext * var2 , 
+GetBitContext * var3 , 
+MPEG4AudioConfig * var4 , 
+int var5 ) 
+{ 
+int var6 , var7 , var8 ; 
+uint8_t var9 [ var10 * number ] [ number ] ; 
+int var11 = number ; 
+const int var12 = number ; 
+var4 -> var13 = number ; 
+var4 -> var14 = number ; 
+if ( func2 ( var3 ) ) { 
+func3 ( var2 , str ) ; 
+return var15 ; 
+} 
+var4 -> frame_length_short = func2 ( var3 ) ; 
+var8 = func4 ( var3 , number ) ; 
+if ( var8 ) { 
+func5 ( var2 , 
+str , 
+var8 ) ; 
+return var15 ; 
+} 
+if ( func2 ( var3 ) ) { 
+func5 ( var2 , 
+str ) ; 
+return var15 ; 
+} 
+while ( func4 ( var3 , number ) != var12 ) { 
+int var16 = func4 ( var3 , number ) ; 
+if ( var16 == number ) 
+var16 += func4 ( var3 , number ) ; 
+if ( var16 == number + number ) 
+var16 += func4 ( var3 , number ) ; 
+if ( func6 ( var3 ) < var16 * number + number ) { 
+func7 ( var2 , var17 , var18 ) ; 
+return var19 ; 
+} 
+func8 ( var3 , number * var16 ) ; 
+} 
+if ( ( var6 = func9 ( var2 , var9 , 
+& var11 , var5 ) ) ) 
+return var6 ; 
+if ( var1 && ( var6 = func10 ( var1 , var9 , var11 , var20 , number ) ) ) 
+return var6 ; 
+var7 = func4 ( var3 , number ) ; 
+if ( var7 ) { 
+func5 ( var2 , 
+str , var7 ) ; 
+return var15 ; 
+} 
+return number ; 
+} 

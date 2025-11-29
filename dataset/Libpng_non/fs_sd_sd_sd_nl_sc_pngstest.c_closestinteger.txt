@@ -1,0 +1,4 @@
+func1 ( double var1 ) 
+{ 
+return floor ( var1 + number ) ; 
+} 

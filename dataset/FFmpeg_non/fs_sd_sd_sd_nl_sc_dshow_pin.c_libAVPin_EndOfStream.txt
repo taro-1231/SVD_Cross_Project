@@ -1,0 +1,5 @@
+func1 ( libAVPin * var1 ) 
+{ 
+func2 ( str , var1 ) ; 
+return var2 ; 
+} 

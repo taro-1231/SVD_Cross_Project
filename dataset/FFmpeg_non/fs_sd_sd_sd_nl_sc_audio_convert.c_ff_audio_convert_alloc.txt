@@ -1,0 +1,45 @@
+AudioConvert * func1 ( AVAudioResampleContext * var1 , 
+enum AVSampleFormat var2 , 
+enum AVSampleFormat var3 , 
+int var4 , int var5 , 
+int var6 ) 
+{ 
+AudioConvert * var7 ; 
+int var8 , var9 ; 
+var7 = func2 ( sizeof ( * var7 ) ) ; 
+if ( ! var7 ) 
+return var10 ; 
+var7 -> var1 = var1 ; 
+var7 -> var2 = var2 ; 
+var7 -> var3 = var3 ; 
+var7 -> var4 = var4 ; 
+var7 -> var6 = var6 ; 
+if ( var1 -> var11 != var12 && 
+func3 ( var2 ) == var13 && 
+func4 ( var3 ) > number ) { 
+var7 -> var14 = func5 ( var1 , var2 , var3 , var4 , var5 , 
+var6 ) ; 
+if ( ! var7 -> var14 ) { 
+func6 ( var7 ) ; 
+return var10 ; 
+} 
+return var7 ; 
+} 
+var8 = func7 ( var3 , var4 ) ; 
+var9 = func7 ( var2 , var4 ) ; 
+if ( var8 == var9 ) { 
+var7 -> var15 = var16 ; 
+var7 -> var17 = var8 ? var7 -> var4 : number ; 
+} else if ( var8 ) 
+var7 -> var15 = var18 ; 
+else 
+var7 -> var15 = var19 ; 
+func8 ( var7 ) ; 
+if ( var20 ) 
+func9 ( var7 ) ; 
+if ( var21 ) 
+func10 ( var7 ) ; 
+if ( var22 ) 
+func11 ( var7 ) ; 
+return var7 ; 
+} 

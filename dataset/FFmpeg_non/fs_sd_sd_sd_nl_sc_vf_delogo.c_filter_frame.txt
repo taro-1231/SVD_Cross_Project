@@ -1,0 +1,42 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+DelogoContext * var3 = var1 -> var4 -> var5 ; 
+AVFilterLink * var6 = var1 -> var4 -> var7 [ number ] ; 
+const AVPixFmtDescriptor * var8 = func2 ( var1 -> var9 ) ; 
+AVFrame * var10 ; 
+int var11 = var8 -> var12 ; 
+int var13 = var8 -> var14 ; 
+int var15 = number ; 
+int var16 ; 
+AVRational var17 ; 
+if ( func3 ( var2 ) ) { 
+var15 = number ; 
+var10 = var2 ; 
+} else { 
+var10 = func4 ( var6 , var6 -> var18 , var6 -> var19 ) ; 
+if ( ! var10 ) { 
+func5 ( & var2 ) ; 
+return func6 ( var20 ) ; 
+} 
+func7 ( var10 , var2 ) ; 
+} 
+var17 = var2 -> var21 ; 
+if ( ! var17 . var22 ) 
+var17 . var22 = var17 . var23 = number ; 
+for ( var16 = number ; var16 < number && var2 -> var24 [ var16 ] && var2 -> var25 [ var16 ] ; var16 ++ ) { 
+int var26 = var16 == number || var16 == number ? var11 : number ; 
+int var27 = var16 == number || var16 == number ? var13 : number ; 
+func8 ( var10 -> var24 [ var16 ] , var10 -> var25 [ var16 ] , 
+var2 -> var24 [ var16 ] , var2 -> var25 [ var16 ] , 
+func9 ( var1 -> var18 , var26 ) , 
+func9 ( var1 -> var19 , var27 ) , 
+var17 , var3 -> var28 >> var26 , var3 -> var29 >> var27 , 
+func9 ( var3 -> var18 + ( var3 -> var28 & ( ( number << var26 ) - number ) ) , var26 ) , 
+func9 ( var3 -> var19 + ( var3 -> var29 & ( ( number << var27 ) - number ) ) , var27 ) , 
+var3 -> var30 >> func10 ( var26 , var27 ) , 
+var3 -> var31 , var15 ) ; 
+} 
+if ( ! var15 ) 
+func5 ( & var2 ) ; 
+return func11 ( var6 , var10 ) ; 
+} 

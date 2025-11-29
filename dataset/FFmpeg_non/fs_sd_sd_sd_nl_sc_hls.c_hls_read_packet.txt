@@ -1,0 +1,75 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+HLSContext * var3 = var1 -> var4 ; 
+int var5 , var6 , var7 = - number ; 
+func2 ( var1 , var3 -> var8 ) ; 
+for ( var6 = number ; var6 < var3 -> var9 ; var6 ++ ) { 
+struct playlist * var10 = var3 -> var11 [ var6 ] ; 
+if ( var10 -> var12 && ! var10 -> var2 . var13 ) { 
+while ( number ) { 
+int64_t var14 ; 
+AVRational var15 ; 
+var5 = func3 ( var10 -> var16 , & var10 -> var2 ) ; 
+if ( var5 < number ) { 
+if ( ! func4 ( & var10 -> var17 ) && var5 != var18 ) 
+return var5 ; 
+func5 ( & var10 -> var2 ) ; 
+break ; 
+} else { 
+if ( var10 -> var19 && var10 -> var2 . var20 == number ) { 
+func6 ( var10 ) ; 
+} 
+if ( var3 -> var21 == var22 && 
+var10 -> var2 . var23 != var22 ) 
+var3 -> var21 = func7 ( var10 -> var2 . var23 , 
+func8 ( var10 ) , var24 ) ; 
+} 
+if ( var10 -> var25 == var22 ) 
+break ; 
+if ( var10 -> var26 < number || 
+var10 -> var26 == var10 -> var2 . var20 ) { 
+if ( var10 -> var2 . var23 == var22 ) { 
+var10 -> var25 = var22 ; 
+break ; 
+} 
+var15 = func8 ( var10 ) ; 
+var14 = func9 ( var10 -> var2 . var23 , var27 , 
+var15 . var28 , var29 ) - 
+var10 -> var25 ; 
+if ( var14 >= number && ( var10 -> var30 & var31 || 
+var10 -> var2 . var32 & var33 ) ) { 
+var10 -> var25 = var22 ; 
+break ; 
+} 
+} 
+func10 ( & var10 -> var2 ) ; 
+func5 ( & var10 -> var2 ) ; 
+} 
+} 
+if ( var10 -> var2 . var13 ) { 
+struct playlist * var34 = var7 < number ? 
+var35 : var3 -> var11 [ var7 ] ; 
+if ( var7 < number ) { 
+var7 = var6 ; 
+} else { 
+int64_t var23 = var10 -> var2 . var23 ; 
+int64_t var36 = var34 -> var2 . var23 ; 
+if ( var23 == var22 || 
+( var36 != var22 && func11 ( var23 , var10 , var36 , var34 ) < number ) ) 
+var7 = var6 ; 
+} 
+} 
+} 
+if ( var7 >= number ) { 
+struct playlist * var10 = var3 -> var11 [ var7 ] ; 
+* var2 = var10 -> var2 ; 
+var2 -> var20 += var10 -> var37 ; 
+func5 ( & var3 -> var11 [ var7 ] -> var2 ) ; 
+if ( var2 -> var23 != var22 ) 
+var3 -> var38 = func7 ( var2 -> var23 , 
+var10 -> var16 -> var39 [ var10 -> var2 . var20 ] -> var40 , 
+var24 ) ; 
+return number ; 
+} 
+return var18 ; 
+} 

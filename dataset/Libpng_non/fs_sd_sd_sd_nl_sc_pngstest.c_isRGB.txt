@@ -1,0 +1,4 @@
+func1 ( int var1 ) 
+{ 
+return func2 ( var1 / number ) ; 
+} 

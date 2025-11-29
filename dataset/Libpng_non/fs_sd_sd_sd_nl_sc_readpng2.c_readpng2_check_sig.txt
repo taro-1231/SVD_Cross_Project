@@ -1,0 +1,4 @@
+int func1 ( uch * var1 , int var2 ) 
+{ 
+return ! func2 ( var1 , number , var2 ) ; 
+} 

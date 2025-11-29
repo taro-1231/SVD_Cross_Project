@@ -1,0 +1,17 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+XMLContext * var2 = var1 -> var3 ; 
+const struct var4 * var4 = var1 -> var4 [ var1 -> var5 ] ; 
+if ( var1 -> var5 == number ) { 
+printf ( str , var2 -> var6 ? str : str ) ; 
+} else if ( var2 -> var7 ) { 
+var2 -> var7 = number ; 
+printf ( str ) ; 
+var2 -> var8 -- ; 
+} else if ( var4 -> var9 & var10 ) { 
+var2 -> var8 -- ; 
+} else { 
+func2 ( ) ; printf ( str , var4 -> var11 ) ; 
+var2 -> var8 -- ; 
+} 
+} 

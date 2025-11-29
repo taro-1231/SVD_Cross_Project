@@ -1,0 +1,21 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) { 
+if ( ! var1 -> var4 [ var2 ] -> var5 ) 
+return number ; 
+if ( var1 -> var4 [ var2 ] -> var6 == var7 && 
+! ( var1 -> var4 [ var2 ] -> var8 && 
+var1 -> var4 [ var2 ] -> var9 ) ) 
+return number ; 
+} 
+for ( var2 = number ; var2 < var1 -> var10 ; var2 ++ ) { 
+if ( ! var1 -> var11 [ var2 ] -> var12 ) 
+return number ; 
+if ( var1 -> var11 [ var2 ] -> var6 == var7 && 
+! ( var1 -> var11 [ var2 ] -> var13 && 
+var1 -> var11 [ var2 ] -> var14 ) ) 
+return number ; 
+} 
+return number ; 
+} 

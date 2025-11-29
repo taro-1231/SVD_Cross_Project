@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+if ( ! strcmp ( var1 -> var2 -> var3 , str ) 
+|| ! strcmp ( var1 -> var2 -> var3 , str ) 
+|| ! strcmp ( var1 -> var2 -> var3 , str ) 
+) 
+return number ; 
+if ( var1 -> var4 && ( ! strncmp ( var1 -> var5 , str , number ) 
+|| ! strncmp ( var1 -> var5 , str , number ) 
+) 
+) 
+return number ; 
+return number ; 
+} 

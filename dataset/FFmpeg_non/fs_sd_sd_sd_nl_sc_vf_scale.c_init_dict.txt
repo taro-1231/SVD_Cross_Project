@@ -1,0 +1,42 @@
+static av_cold int func1 ( AVFilterContext * var1 , AVDictionary ** var2 ) 
+{ 
+ScaleContext * var3 = var1 -> var4 ; 
+int var5 ; 
+if ( var3 -> var6 && ( var3 -> var7 || var3 -> var8 ) ) { 
+func2 ( var1 , var9 , 
+str ) ; 
+return func3 ( var10 ) ; 
+} 
+if ( var3 -> var7 && ! var3 -> var8 ) 
+FFSWAP ( char * , var3 -> var7 , var3 -> var6 ) ; 
+if ( var3 -> var6 ) { 
+char var11 [ number ] ; 
+if ( ( var5 = func4 ( & var3 -> var12 , & var3 -> var13 , var3 -> var6 ) ) < number ) { 
+func2 ( var1 , var9 , 
+str , var3 -> var6 ) ; 
+return var5 ; 
+} 
+snprintf ( var11 , sizeof ( var11 ) - number , str , var3 -> var12 ) ; 
+func5 ( var3 , str , var11 , number ) ; 
+snprintf ( var11 , sizeof ( var11 ) - number , str , var3 -> var13 ) ; 
+func5 ( var3 , str , var11 , number ) ; 
+} 
+if ( ! var3 -> var7 ) 
+func5 ( var3 , str , str , number ) ; 
+if ( ! var3 -> var8 ) 
+func5 ( var3 , str , str , number ) ; 
+func2 ( var1 , var14 , str , 
+var3 -> var7 , var3 -> var8 , ( char * ) func6 ( var3 -> var16 , str ) , var3 -> var17 ) ; 
+var3 -> var15 = number ; 
+if ( var3 -> var16 ) { 
+const AVClass * class = func7 ( ) ; 
+const AVOption * o = av_opt_find ( & class , str , var18 , number , 
+AV_OPT_SEARCH_FAKE_OBJ ) ; 
+int var5 = av_opt_eval_flags ( & class , o , var3 -> var16 , & var3 -> var15 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+} 
+var3 -> var2 = * var2 ; 
+* var2 = var18 ; 
+return number ; 
+} 

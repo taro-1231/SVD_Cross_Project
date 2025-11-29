@@ -1,0 +1,12 @@
+func1 ( png_bytep var1 , png_const_bytep var2 , 
+unsigned int var3 , png_uint_32 var4 , int var5 ) 
+{ 
+png_uint_32 var6 , var7 , var8 ; 
+var7 = func2 ( var5 ) ; 
+var8 = number << func3 ( var5 ) ; 
+for ( var6 = number ; var7 < var4 ; var7 += var8 ) 
+{ 
+func4 ( var1 , var7 , var2 , var6 , var3 ) ; 
+++ var6 ; 
+} 
+} 

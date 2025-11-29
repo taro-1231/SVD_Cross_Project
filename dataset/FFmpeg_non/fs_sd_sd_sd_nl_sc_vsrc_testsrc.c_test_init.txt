@@ -1,0 +1,6 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+TestSourceContext * var2 = var1 -> var3 ; 
+var2 -> var4 = var5 ; 
+return func2 ( var1 ) ; 
+} 

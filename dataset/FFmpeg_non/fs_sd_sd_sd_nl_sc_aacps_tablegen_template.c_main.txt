@@ -1,0 +1,36 @@
+int func1 ( void ) 
+{ 
+func2 ( ) ; 
+func3 ( ) ; 
+printf ( str , var2 ) ; 
+func4 ( func5 ) ( var1 , number * number * number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( func5 ) ( var3 , number * number * number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var4 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var5 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var6 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var7 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var8 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var9 , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 4d_array ) ( var10 , number , number , number , number ) ; 
+printf ( str ) ; 
+printf ( str , var2 ) ; 
+func4 ( 3d_array ) ( var11 , number , number , number ) ; 
+printf ( str ) ; 
+return number ; 
+} 

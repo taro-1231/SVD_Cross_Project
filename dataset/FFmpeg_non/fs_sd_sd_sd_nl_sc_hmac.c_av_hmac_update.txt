@@ -1,0 +1,4 @@
+void func1 ( AVHMAC * var1 , const uint8_t * var2 , unsigned int var3 ) 
+{ 
+var1 -> func2 ( var1 -> var4 , var2 , var3 ) ; 
+} 

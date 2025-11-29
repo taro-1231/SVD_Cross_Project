@@ -1,0 +1,26 @@
+static int func1 ( MatroskaDemuxContext * var1 , EbmlSyntax * var2 , 
+void * var3 ) 
+{ 
+int var4 , var5 = number ; 
+for ( var4 = number ; var2 [ var4 ] . var6 ; var4 ++ ) 
+switch ( var2 [ var4 ] . var7 ) { 
+case var8 : 
+* ( uint64_t * ) ( ( char * ) var3 + var2 [ var4 ] . var9 ) = var2 [ var4 ] . var10 . var11 ; 
+break ; 
+case var12 : 
+* ( double * ) ( ( char * ) var3 + var2 [ var4 ] . var9 ) = var2 [ var4 ] . var10 . var13 ; 
+break ; 
+case var14 : 
+case var15 : 
+if ( var2 [ var4 ] . var10 . var16 ) { 
+uint8_t ** var17 = ( uint8_t ** ) ( ( uint8_t * ) var3 + var2 [ var4 ] . var9 ) ; 
+* var17 = func2 ( var2 [ var4 ] . var10 . var16 ) ; 
+if ( ! * var17 ) 
+return func3 ( var18 ) ; 
+} 
+break ; 
+} 
+while ( ! var5 && ! func4 ( var1 ) ) 
+var5 = func5 ( var1 , var2 , var3 ) ; 
+return var5 ; 
+} 

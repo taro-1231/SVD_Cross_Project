@@ -1,0 +1,16 @@
+static int func1 ( AACContext * var1 , 
+SpectralBandReplication * var2 , 
+GetBitContext * var3 ) 
+{ 
+if ( func2 ( var3 ) ) 
+func3 ( var3 , number ) ; 
+if ( func4 ( var1 , var2 , var3 , & var2 -> var4 [ number ] ) ) 
+return - number ; 
+func5 ( var2 , var3 , & var2 -> var4 [ number ] ) ; 
+func6 ( var2 , var3 , & var2 -> var4 [ number ] ) ; 
+func7 ( var2 , var3 , & var2 -> var4 [ number ] , number ) ; 
+func8 ( var2 , var3 , & var2 -> var4 [ number ] , number ) ; 
+if ( ( var2 -> var4 [ number ] . var5 = func2 ( var3 ) ) ) 
+func9 ( var3 , var2 -> var4 [ number ] . var6 , var2 -> var7 [ number ] ) ; 
+return number ; 
+} 

@@ -1,0 +1,5 @@
+AVOutputFormat * func1 ( AVOutputFormat * var1 ) 
+{ 
+return func2 ( var1 , number , var2 , 
+var3 ) ; 
+} 

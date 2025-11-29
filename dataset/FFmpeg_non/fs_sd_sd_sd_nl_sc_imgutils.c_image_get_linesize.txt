@@ -1,0 +1,18 @@
+int func1 ( int var1 , int var2 , 
+int var3 , int var4 , 
+const AVPixFmtDescriptor * var5 ) 
+{ 
+int var6 , var7 , var8 ; 
+if ( ! var5 ) 
+return func2 ( var9 ) ; 
+if ( var1 < number ) 
+return func2 ( var9 ) ; 
+var6 = ( var4 == number || var4 == number ) ? var5 -> var10 : number ; 
+var7 = ( ( var1 + ( number << var6 ) - number ) ) >> var6 ; 
+if ( var7 && var3 > var11 / var7 ) 
+return func2 ( var9 ) ; 
+var8 = var3 * var7 ; 
+if ( var5 -> var12 & var13 ) 
+var8 = ( var8 + number ) >> number ; 
+return var8 ; 
+} 

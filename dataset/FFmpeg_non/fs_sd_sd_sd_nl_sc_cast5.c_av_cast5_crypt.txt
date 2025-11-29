@@ -1,0 +1,12 @@
+void func1 ( AVCAST5 * var1 , uint8_t * var2 , const uint8_t * var3 , int var4 , int var5 ) 
+{ 
+while ( var4 -- ) { 
+if ( var5 ) { 
+func2 ( var1 , var2 , var3 , var6 ) ; 
+} else { 
+func3 ( var1 , var2 , var3 ) ; 
+} 
+var3 = var3 + number ; 
+var2 = var2 + number ; 
+} 
+} 

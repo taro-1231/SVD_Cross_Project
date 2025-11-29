@@ -1,0 +1,149 @@
+static int func1 ( AVFormatContext * var1 , AVStream * var2 , 
+AVStream * var3 , const char * var4 , 
+int64_t var5 , int var6 ) 
+{ 
+AVCodecContext * var7 , * var8 ; 
+FLVContext * var9 = var1 -> var10 ; 
+AVIOContext * var11 ; 
+AMFDataType var12 ; 
+char var13 [ number ] ; 
+double var14 ; 
+var14 = number ; 
+var11 = var1 -> var15 ; 
+var12 = func2 ( var11 ) ; 
+switch ( var12 ) { 
+case var16 : 
+var14 = func3 ( func4 ( var11 ) ) ; 
+break ; 
+case var17 : 
+var14 = func2 ( var11 ) ; 
+break ; 
+case var18 : 
+if ( func5 ( var11 , var13 , sizeof ( var13 ) ) < number ) { 
+func6 ( var1 , var19 , str ) ; 
+return - number ; 
+} 
+break ; 
+case var20 : 
+if ( ( var3 || var2 ) && var4 && 
+var11 -> var21 && 
+! strcmp ( var22 , var4 ) && var6 == number ) 
+if ( func7 ( var1 , var11 , var3 ? var3 : var2 , 
+var5 ) < number ) 
+func6 ( var1 , var19 , str ) ; 
+while ( func8 ( var11 ) < var5 - number && 
+func5 ( var11 , var13 , sizeof ( var13 ) ) > number ) 
+if ( func1 ( var1 , var2 , var3 , var13 , var5 , 
+var6 + number ) < number ) 
+return - number ; 
+if ( func2 ( var11 ) != var23 ) { 
+func6 ( var1 , var19 , str ) ; 
+return - number ; 
+} 
+break ; 
+case var24 : 
+case var25 : 
+case var26 : 
+break ; 
+case var27 : 
+func9 ( var11 , number ) ; 
+while ( func8 ( var11 ) < var5 - number && 
+func5 ( var11 , var13 , sizeof ( var13 ) ) > number ) 
+if ( func1 ( var1 , var2 , var3 , var13 , var5 , 
+var6 + number ) < number ) 
+return - number ; 
+if ( func2 ( var11 ) != var23 ) { 
+func6 ( var1 , var19 , str ) ; 
+return - number ; 
+} 
+break ; 
+case var28 : 
+{ 
+unsigned int var29 , var30 ; 
+var29 = func10 ( var11 ) ; 
+for ( var30 = number ; var30 < var29 && func8 ( var11 ) < var5 - number ; var30 ++ ) 
+if ( func1 ( var1 , var31 , var31 , var31 , var5 , 
+var6 + number ) < number ) 
+return - number ; 
+} 
+break ; 
+case var32 : 
+func9 ( var11 , number + number ) ; 
+break ; 
+var33 : 
+func6 ( var1 , var19 , str , var12 ) ; 
+return - number ; 
+} 
+if ( var4 ) { 
+var7 = var2 ? var2 -> var34 : var31 ; 
+var8 = var3 ? var3 -> var34 : var31 ; 
+if ( var6 == number ) { 
+if ( var12 == var16 || 
+var12 == var17 ) { 
+if ( ! strcmp ( var4 , str ) ) 
+var1 -> var35 = var14 * var36 ; 
+else if ( ! strcmp ( var4 , str ) && var8 && 
+number <= ( int ) ( var14 * number ) ) 
+var8 -> var37 = var14 * number ; 
+else if ( ! strcmp ( var4 , str ) && var7 && 
+number <= ( int ) ( var14 * number ) ) 
+var7 -> var37 = var14 * number ; 
+else if ( ! strcmp ( var4 , str ) ) { 
+AVStream * var38 = func11 ( var1 , var39 ) ; 
+if ( ! var38 ) 
+return func12 ( var40 ) ; 
+var38 -> var34 -> var41 = var42 ; 
+} else if ( var9 -> var43 ) { 
+if ( ! strcmp ( var4 , str ) && var8 ) { 
+func13 ( var1 , var3 , var14 , number ) ; 
+} else if ( ! strcmp ( var4 , str ) && var7 ) { 
+int var44 = ( ( int ) var14 ) << var45 ; 
+func14 ( var1 , var2 , var7 , var44 ) ; 
+} else if ( ! strcmp ( var4 , str ) && var7 ) { 
+var7 -> var46 = var14 ; 
+} else if ( ! strcmp ( var4 , str ) && var7 ) { 
+var7 -> var47 = var14 ; 
+} else if ( ! strcmp ( var4 , str ) && var7 ) { 
+var7 -> var48 = var14 + number ; 
+var7 -> var49 = var7 -> var48 == number ? 
+var50 : 
+var51 ; 
+} else if ( ! strcmp ( var4 , str ) && var8 ) { 
+var8 -> var52 = var14 ; 
+} else if ( ! strcmp ( var4 , str ) && var8 ) { 
+var8 -> var53 = var14 ; 
+} 
+} 
+} 
+} 
+if ( var12 == var20 && var1 -> var54 == number && 
+( ( ! var7 && ! strcmp ( var4 , str ) ) || 
+( ! var8 && ! strcmp ( var4 , str ) ) ) ) 
+var1 -> var55 &= var56 ; 
+if ( ! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) || 
+! strcmp ( var4 , str ) ) 
+return number ; 
+var1 -> var57 |= var58 ; 
+if ( var12 == var17 ) { 
+func15 ( var13 , var14 > number ? str : str , 
+sizeof ( var13 ) ) ; 
+func16 ( & var1 -> var59 , var4 , var13 , number ) ; 
+} else if ( var12 == var16 ) { 
+snprintf ( var13 , sizeof ( var13 ) , str , var14 ) ; 
+func16 ( & var1 -> var59 , var4 , var13 , number ) ; 
+} else if ( var12 == var18 ) 
+func16 ( & var1 -> var59 , var4 , var13 , number ) ; 
+} 
+return number ; 
+} 

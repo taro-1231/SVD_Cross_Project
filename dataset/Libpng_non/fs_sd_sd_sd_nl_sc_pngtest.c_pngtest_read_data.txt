@@ -1,0 +1,51 @@
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_size_t var4 = number ; 
+png_voidp var5 ; 
+var5 = func2 ( var1 ) ; 
+if ( var5 != var6 ) 
+{ 
+var4 = fread ( var2 , number , var3 , ( png_FILE_p ) var5 ) ; 
+} 
+if ( var4 != var3 ) 
+{ 
+func3 ( var1 , str ) ; 
+} 
+func4 ( var1 , var3 , var7 ) ; 
+} 
+static void PNGCBAPI 
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_size_t var4 ; 
+png_byte * n_data ; 
+png_FILE_p var5 ; 
+n_data = ( png_byte * ) CVT_PTR_NOCHECK ( var2 ) ; 
+var5 = ( png_FILE_p ) CVT_PTR ( func2 ( var1 ) ) ; 
+if ( ( png_bytep ) n_data == var2 ) 
+{ 
+var4 = fread ( n_data , number , var3 , var5 ) ; 
+} 
+else 
+{ 
+png_byte buf [ NEAR_BUF_SIZE ] ; 
+png_size_t read , remaining , err ; 
+var4 = number ; 
+remaining = var3 ; 
+do 
+{ 
+read = MIN ( NEAR_BUF_SIZE , remaining ) ; 
+err = fread ( buf , number , number , var5 ) ; 
+png_memcpy ( var2 , buf , read ) ; 
+if ( err != read ) 
+break ; 
+else 
+var4 += err ; 
+var2 += read ; 
+remaining -= read ; 
+} 
+while ( remaining != number ) ; 
+} 
+if ( var4 != var3 ) 
+func3 ( var1 , str ) ; 
+func4 ( var1 , var3 , var7 ) ; 
+} 

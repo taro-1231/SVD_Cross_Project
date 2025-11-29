@@ -1,0 +1,92 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+JoinContext * var4 = var2 -> var5 ; 
+AVFrame * var6 ; 
+int var7 = var8 ; 
+int var9 = number ; 
+int var10 = number ; 
+int var11 , var12 , var13 ; 
+for ( var11 = number ; var11 < var2 -> var14 ; var11 ++ ) { 
+AVFilterLink * var15 = var2 -> var16 [ var11 ] ; 
+if ( ! var4 -> var17 [ var11 ] && 
+( var13 = func2 ( var15 ) ) < number ) 
+return var13 ; 
+if ( var11 == number ) { 
+var9 = var4 -> var17 [ number ] -> var9 ; 
+for ( var12 = number ; ! var11 && var12 < var2 -> var14 ; var12 ++ ) 
+var2 -> var16 [ var12 ] -> var18 = var9 ; 
+} 
+} 
+var6 = func3 ( ) ; 
+if ( ! var6 ) 
+return func4 ( var19 ) ; 
+if ( var4 -> var20 > func5 ( var6 -> var21 ) ) { 
+var6 -> var22 = func6 ( var4 -> var20 , 
+sizeof ( * var6 -> var22 ) ) ; 
+if ( ! var6 -> var22 ) { 
+var13 = func4 ( var19 ) ; 
+goto var23 ; 
+} 
+} 
+for ( var11 = number ; var11 < var4 -> var20 ; var11 ++ ) { 
+ChannelMap * var24 = & var4 -> var25 [ var11 ] ; 
+AVFrame * var26 = var4 -> var17 [ var24 -> var27 ] ; 
+AVBufferRef * var28 ; 
+var6 -> var22 [ var11 ] = var26 -> var22 [ var24 -> var29 ] ; 
+var7 = func7 ( var7 , var26 -> var7 [ number ] ) ; 
+var28 = func8 ( var26 , var24 -> var29 ) ; 
+if ( ! var28 ) { 
+var13 = func4 ( var30 ) ; 
+goto var23 ; 
+} 
+for ( var12 = number ; var12 < var10 ; var12 ++ ) 
+if ( var4 -> var31 [ var12 ] -> var32 == var28 -> var32 ) 
+break ; 
+if ( var12 == var11 ) 
+var4 -> var31 [ var10 ++ ] = var28 ; 
+} 
+if ( var10 > func5 ( var6 -> var28 ) ) { 
+var6 -> var33 = var10 - func5 ( var6 -> var28 ) ; 
+var6 -> var34 = func6 ( var6 -> var33 , 
+sizeof ( * var6 -> var34 ) ) ; 
+if ( ! var6 -> var34 ) { 
+var6 -> var33 = number ; 
+var13 = func4 ( var19 ) ; 
+goto var23 ; 
+} 
+} 
+for ( var11 = number ; var11 < func7 ( func5 ( var6 -> var28 ) , var10 ) ; var11 ++ ) { 
+var6 -> var28 [ var11 ] = func9 ( var4 -> var31 [ var11 ] ) ; 
+if ( ! var6 -> var28 [ var11 ] ) { 
+var13 = func4 ( var19 ) ; 
+goto var23 ; 
+} 
+} 
+for ( var11 = number ; var11 < var6 -> var33 ; var11 ++ ) { 
+var6 -> var34 [ var11 ] = func9 ( var4 -> var31 [ var11 + 
+func5 ( var6 -> var28 ) ] ) ; 
+if ( ! var6 -> var34 [ var11 ] ) { 
+var13 = func4 ( var19 ) ; 
+goto var23 ; 
+} 
+} 
+var6 -> var9 = var9 ; 
+var6 -> var35 = var1 -> var35 ; 
+func10 ( var6 , var1 -> var25 ) ; 
+var6 -> var36 = var1 -> var36 ; 
+var6 -> var37 = var1 -> var37 ; 
+var6 -> var38 = var4 -> var17 [ number ] -> var38 ; 
+var6 -> var7 [ number ] = var7 ; 
+if ( var6 -> var21 != var6 -> var22 ) { 
+memcpy ( var6 -> var21 , var6 -> var22 , sizeof ( * var6 -> var21 ) * 
+func7 ( func5 ( var6 -> var21 ) , var4 -> var20 ) ) ; 
+} 
+var13 = func11 ( var1 , var6 ) ; 
+for ( var11 = number ; var11 < var2 -> var14 ; var11 ++ ) 
+func12 ( & var4 -> var17 [ var11 ] ) ; 
+return var13 ; 
+var23 : 
+func12 ( & var6 ) ; 
+return var13 ; 
+} 

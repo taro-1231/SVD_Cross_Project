@@ -1,0 +1,9 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+al_data * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+func2 ( var2 -> var4 ) ; 
+func3 ( var2 -> var4 ) ; 
+} 
+return number ; 
+} 

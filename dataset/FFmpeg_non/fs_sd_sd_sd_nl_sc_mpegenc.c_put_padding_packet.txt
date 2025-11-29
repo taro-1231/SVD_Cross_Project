@@ -1,0 +1,15 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+int var3 ) 
+{ 
+MpegMuxContext * var4 = var1 -> var5 ; 
+int var6 ; 
+func2 ( var2 , var7 ) ; 
+func3 ( var2 , var3 - number ) ; 
+if ( ! var4 -> var8 ) { 
+func4 ( var2 , number ) ; 
+var3 -= number ; 
+} else 
+var3 -= number ; 
+for ( var6 = number ; var6 < var3 ; var6 ++ ) 
+func4 ( var2 , number ) ; 
+} 

@@ -1,0 +1,8 @@
+AVFilterChannelLayouts * func1 ( void ) 
+{ 
+AVFilterChannelLayouts * var1 = func2 ( sizeof ( * var1 ) ) ; 
+if ( ! var1 ) 
+return var2 ; 
+var1 -> var3 = number ; 
+return var1 ; 
+} 

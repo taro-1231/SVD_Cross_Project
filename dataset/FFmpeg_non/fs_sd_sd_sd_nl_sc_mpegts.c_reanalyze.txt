@@ -1,0 +1,31 @@
+static void func1 ( MpegTSContext * var1 ) { 
+AVIOContext * var2 = var1 -> var3 -> var2 ; 
+int64_t var4 = func2 ( var2 ) ; 
+if ( var4 < number ) 
+return ; 
+var4 -= var1 -> var5 ; 
+if ( var4 == var6 ) { 
+var1 -> var7 [ number ] ++ ; 
+} else if ( var4 == var8 ) { 
+var1 -> var7 [ number ] ++ ; 
+} else if ( var4 == var9 ) { 
+var1 -> var7 [ number ] ++ ; 
+} 
+var1 -> var10 ++ ; 
+if ( var1 -> var10 > var11 ) { 
+int var12 = number ; 
+if ( var1 -> var7 [ number ] > var11 ) { 
+var12 = var6 ; 
+} else if ( var1 -> var7 [ number ] > var11 ) { 
+var12 = var8 ; 
+} else if ( var1 -> var7 [ number ] > var11 ) { 
+var12 = var9 ; 
+} 
+if ( var12 && var12 != var1 -> var13 ) { 
+func3 ( var1 -> var3 , var14 , str , var12 ) ; 
+var1 -> var13 = var12 ; 
+} 
+var1 -> var10 = number ; 
+memset ( var1 -> var7 , number , sizeof ( var1 -> var7 ) ) ; 
+} 
+} 

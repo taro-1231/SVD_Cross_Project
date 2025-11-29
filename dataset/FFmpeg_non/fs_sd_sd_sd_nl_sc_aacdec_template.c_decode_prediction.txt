@@ -1,0 +1,18 @@
+static int func1 ( AACContext * var1 , IndividualChannelStream * var2 , 
+GetBitContext * var3 ) 
+{ 
+int var4 ; 
+if ( func2 ( var3 ) ) { 
+var2 -> var5 = func3 ( var3 , number ) ; 
+if ( var2 -> var5 == number || 
+var2 -> var5 > number ) { 
+func4 ( var1 -> var6 , var7 , 
+str ) ; 
+return var8 ; 
+} 
+} 
+for ( var4 = number ; var4 < func5 ( var2 -> var9 , var10 [ var1 -> var11 [ number ] . var12 . var13 ] ) ; var4 ++ ) { 
+var2 -> var14 [ var4 ] = func2 ( var3 ) ; 
+} 
+return number ; 
+} 

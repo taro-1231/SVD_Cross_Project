@@ -1,0 +1,7 @@
+AVABufferSinkParams * func1 ( void ) 
+{ 
+AVABufferSinkParams * var1 = func2 ( sizeof ( AVABufferSinkParams ) ) ; 
+if ( ! var1 ) 
+return var2 ; 
+return var1 ; 
+} 

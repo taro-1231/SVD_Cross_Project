@@ -1,0 +1,63 @@
+static int func1 ( SwsContext * var1 , const uint8_t * var2 [ ] , 
+int var3 [ ] , int var4 , 
+int var5 , uint8_t * var6 [ ] , 
+int var7 [ ] ) 
+{ 
+uint8_t * var8 = var6 [ number ] + var7 [ number ] * var4 ; 
+const uint8_t * var11 = var2 [ number ] ; 
+const uint8_t * var12 = var2 [ number ] ; 
+const uint8_t * var13 = var2 [ number ] ; 
+const int var14 = var1 -> var9 ; 
+const int var15 = var5 ; 
+const int var16 = var3 [ number ] ; 
+const int var17 = var3 [ number ] ; 
+const int var10 = var7 [ number ] ; 
+const vector unsigned char var18 = func2 ( number , var11 ) ; 
+const int var19 = number ; 
+register unsigned int var20 ; 
+for ( var20 = number ; var20 < var15 ; var20 ++ ) { 
+int var21 ; 
+for ( var21 = number ; var21 < var14 - number ; var21 += number ) { 
+const unsigned int var22 = var21 >> number ; 
+vector unsigned char var23 = func3 ( var21 , var11 ) ; 
+vector unsigned char var24 = func3 ( var21 + number , var11 ) ; 
+vector unsigned char var25 = func3 ( var21 + number , var11 ) ; 
+vector unsigned char var26 = func4 ( var23 , var24 , var18 ) ; 
+vector unsigned char var27 = func4 ( var24 , var25 , var18 ) ; 
+vector unsigned char var28 = func3 ( var22 , var12 ) ; 
+vector unsigned char var29 = func3 ( var22 + number , var12 ) ; 
+vector unsigned char var30 = func4 ( var28 , var29 , func2 ( var22 , var12 ) ) ; 
+vector unsigned char var31 = func3 ( var22 , var13 ) ; 
+vector unsigned char var32 = func3 ( var22 + number , var13 ) ; 
+vector unsigned char var33 = func4 ( var31 , var32 , func2 ( var22 , var13 ) ) ; 
+vector unsigned char var34 = func5 ( var30 , var33 ) ; 
+vector unsigned char var35 = func6 ( var30 , var33 ) ; 
+vector unsigned char var36 = func5 ( var26 , var34 ) ; 
+vector unsigned char var37 = func6 ( var26 , var34 ) ; 
+vector unsigned char var38 = func5 ( var27 , var35 ) ; 
+vector unsigned char var39 = func6 ( var27 , var35 ) ; 
+func7 ( var36 , ( var21 << number ) , var8 ) ; 
+func7 ( var37 , ( var21 << number ) + number , var8 ) ; 
+func7 ( var38 , ( var21 << number ) + number , var8 ) ; 
+func7 ( var39 , ( var21 << number ) + number , var8 ) ; 
+} 
+if ( var21 < var14 ) { 
+const unsigned int var22 = var21 >> number ; 
+vector unsigned char var26 = func3 ( var21 , var11 ) ; 
+vector unsigned char var30 = func3 ( var22 , var12 ) ; 
+vector unsigned char var33 = func3 ( var22 , var13 ) ; 
+vector unsigned char var34 = func5 ( var30 , var33 ) ; 
+vector unsigned char var36 = func5 ( var26 , var34 ) ; 
+vector unsigned char var37 = func6 ( var26 , var34 ) ; 
+func7 ( var36 , ( var21 << number ) , var8 ) ; 
+func7 ( var37 , ( var21 << number ) + number , var8 ) ; 
+} 
+if ( ( var20 & ( var19 - number ) ) == var19 - number ) { 
+var12 += var17 ; 
+var13 += var17 ; 
+} 
+var11 += var16 ; 
+var8 += var10 ; 
+} 
+return var5 ; 
+} 

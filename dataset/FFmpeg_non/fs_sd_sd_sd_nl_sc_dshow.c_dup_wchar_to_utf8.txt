@@ -1,0 +1,9 @@
+static char * func1 ( wchar_t * var1 ) 
+{ 
+char * var2 = var3 ; 
+int var4 = func2 ( var5 , number , var1 , - number , number , number , number , number ) ; 
+var2 = func3 ( var4 ) ; 
+if ( var2 ) 
+func2 ( var5 , number , var1 , - number , var2 , var4 , number , number ) ; 
+return var2 ; 
+} 

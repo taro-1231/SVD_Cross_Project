@@ -1,0 +1,59 @@
+int func1 ( int var1 , char * var2 [ ] ) 
+{ 
+FILE * var3 [ number ] ; 
+var4 * var5 [ number ] , * var6 [ number ] [ number ] ; 
+int * var7 ; 
+uint64_t var8 [ number ] = { number , number , number } ; 
+double var9 [ number ] = { number , number , number } ; 
+int var10 , var11 , var12 ; 
+int var13 , var14 ; 
+int var15 ; 
+if ( var1 < number || number != sscanf ( var2 [ number ] , str , & var11 , & var12 ) ) 
+{ 
+printf ( str ) ; 
+return - number ; 
+} 
+var3 [ number ] = fopen ( var2 [ number ] , str ) ; 
+var3 [ number ] = fopen ( var2 [ number ] , str ) ; 
+sscanf ( var2 [ number ] , str , & var11 , & var12 ) ; 
+if ( var11 <= number || var12 <= number || var11 * ( int64_t ) var12 >= INT_MAX / number || 2LL * var11 + number >= INT_MAX / sizeof ( * var7 ) ) { 
+fprintf ( var16 , str ) ; 
+return - number ; 
+} 
+var10 = var11 * var12 * 3LL / number ; 
+for ( var15 = number ; var15 < number ; var15 ++ ) 
+{ 
+var5 [ var15 ] = malloc ( var10 ) ; 
+var6 [ var15 ] [ number ] = var5 [ var15 ] ; 
+var6 [ var15 ] [ number ] = var6 [ var15 ] [ number ] + var11 * var12 ; 
+var6 [ var15 ] [ number ] = var6 [ var15 ] [ number ] + var11 * var12 / number ; 
+} 
+var7 = malloc ( ( number * var11 + number ) * sizeof ( * var7 ) ) ; 
+var14 = var1 < number ? number : atoi ( var2 [ number ] ) ; 
+fseek ( var3 [ var14 < number ] , var14 < number ? - var14 : var14 , var17 ) ; 
+for ( var13 = number ; ; var13 ++ ) 
+{ 
+uint64_t var18 [ number ] ; 
+double var19 [ number ] ; 
+if ( fread ( var5 [ number ] , var10 , number , var3 [ number ] ) != number ) break ; 
+if ( fread ( var5 [ number ] , var10 , number , var3 [ number ] ) != number ) break ; 
+for ( var15 = number ; var15 < number ; var15 ++ ) 
+{ 
+var18 [ var15 ] = func2 ( var6 [ number ] [ var15 ] , var6 [ number ] [ var15 ] , var11 * var12 >> number * ! ! var15 ) ; 
+var19 [ var15 ] = func3 ( var6 [ number ] [ var15 ] , var11 >> ! ! var15 , 
+var6 [ number ] [ var15 ] , var11 >> ! ! var15 , 
+var11 >> ! ! var15 , var12 >> ! ! var15 , var7 , var20 ) ; 
+var8 [ var15 ] += var18 [ var15 ] ; 
+var9 [ var15 ] += var19 [ var15 ] ; 
+} 
+printf ( str , var13 ) ; 
+func4 ( var18 , var19 , number , var11 , var12 ) ; 
+printf ( str ) ; 
+fflush ( var21 ) ; 
+} 
+if ( ! var13 ) return number ; 
+printf ( str , var13 ) ; 
+func4 ( var8 , var9 , var13 , var11 , var12 ) ; 
+printf ( str ) ; 
+return number ; 
+} 

@@ -1,0 +1,31 @@
+static void func1 ( AVFormatContext * var1 , AVStream * var2 , enum MXFMetadataSetType var3 ) 
+{ 
+MXFContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+MXFStreamContext * var7 = var2 -> var5 ; 
+func2 ( var6 , number ) ; 
+func3 ( var1 , str , var6 -> var8 - number ) ; 
+func4 ( var6 , number ) ; 
+func5 ( var6 , number , number ) ; 
+func6 ( var6 , var3 == var9 ? var10 : var10 + var11 , var2 -> var12 ) ; 
+func3 ( var1 , str , var6 -> var8 - number ) ; 
+func5 ( var6 , number , number ) ; 
+func7 ( var6 , var2 -> var12 + number ) ; 
+func5 ( var6 , number , number ) ; 
+if ( var3 == var9 ) 
+func7 ( var6 , number ) ; 
+else 
+func8 ( var6 , var7 -> var13 + number , number ) ; 
+func5 ( var6 , number , number ) ; 
+if ( var2 == var4 -> var14 && var1 -> var15 == & var16 ) { 
+func7 ( var6 , var4 -> var17 . var18 . var19 ) ; 
+func7 ( var6 , var4 -> var17 . var18 . var20 ) ; 
+} else { 
+func7 ( var6 , var4 -> var21 . var20 ) ; 
+func7 ( var6 , var4 -> var21 . var19 ) ; 
+} 
+func5 ( var6 , number , number ) ; 
+func9 ( var6 , number ) ; 
+func5 ( var6 , number , number ) ; 
+func6 ( var6 , var3 == var9 ? var22 : var22 + var11 , var2 -> var12 ) ; 
+} 

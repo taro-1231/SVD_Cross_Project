@@ -1,0 +1,22 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+DASHContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+if ( ! var2 -> var6 ) 
+return ; 
+for ( var4 = number ; var4 < var1 -> var7 ; var4 ++ ) { 
+OutputStream * var8 = & var2 -> var6 [ var4 ] ; 
+if ( var8 -> var9 && var8 -> var10 ) 
+func2 ( var8 -> var9 ) ; 
+if ( var8 -> var9 && var8 -> var9 -> var11 ) 
+func3 ( var8 -> var9 -> var11 ) ; 
+func4 ( var8 -> var12 ) ; 
+var8 -> var12 = var13 ; 
+if ( var8 -> var9 ) 
+func5 ( var8 -> var9 ) ; 
+for ( var5 = number ; var5 < var8 -> var14 ; var5 ++ ) 
+func3 ( var8 -> var15 [ var5 ] ) ; 
+func3 ( var8 -> var15 ) ; 
+} 
+func6 ( & var2 -> var6 ) ; 
+} 

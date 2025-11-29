@@ -1,0 +1,47 @@
+int func1 ( AVDeviceInfoList * var1 , const char * var2 , int var3 ) 
+{ 
+pa_mainloop * var4 = var5 ; 
+pa_operation * var6 = var5 ; 
+pa_context * var7 = var5 ; 
+enum pa_operation_state var8 ; 
+PulseAudioDeviceList var9 = { number } ; 
+int var10 ; 
+var9 . var3 = var3 ; 
+var9 . var1 = var1 ; 
+if ( ! var1 ) 
+return func2 ( var11 ) ; 
+var1 -> var12 = number ; 
+var1 -> var1 = var5 ; 
+if ( ( var9 . var13 = func3 ( & var4 , & var7 , var2 , str ) ) < number ) 
+goto var14 ; 
+if ( var3 ) 
+var6 = func4 ( var7 , var15 , & var9 ) ; 
+else 
+var6 = func5 ( var7 , var16 , & var9 ) ; 
+while ( ( var8 = func6 ( var6 ) ) == var17 ) 
+func7 ( var4 , number , var5 ) ; 
+if ( var8 != var18 ) 
+var9 . var13 = var19 ; 
+func8 ( var6 ) ; 
+if ( var9 . var13 < number ) 
+goto var14 ; 
+var6 = func9 ( var7 , var20 , & var9 ) ; 
+while ( ( var8 = func6 ( var6 ) ) == var17 ) 
+func7 ( var4 , number , var5 ) ; 
+if ( var8 != var18 ) 
+var9 . var13 = var19 ; 
+func8 ( var6 ) ; 
+if ( var9 . var13 < number ) 
+goto var14 ; 
+var1 -> var21 = - number ; 
+for ( var10 = number ; var10 < var1 -> var12 ; var10 ++ ) { 
+if ( ! strcmp ( var1 -> var1 [ var10 ] -> var22 , var9 . var21 ) ) { 
+var1 -> var21 = var10 ; 
+break ; 
+} 
+} 
+var14 : 
+func10 ( var9 . var21 ) ; 
+func11 ( & var4 , & var7 ) ; 
+return var9 . var13 ; 
+} 

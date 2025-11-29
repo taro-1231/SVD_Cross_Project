@@ -1,0 +1,89 @@
+static int func1 ( MpegEncContext * func2 ) 
+{ 
+AVCodec * var1 = func3 ( func2 -> var2 -> var3 ) ; 
+AVCodecContext * var4 = func4 ( var5 ) ; 
+const int func5 = func2 -> var2 -> var6 ; 
+int var7 , var8 , var9 , var10 , var11 , var12 ; 
+int64_t var13 = var14 ; 
+int var15 = - number ; 
+if ( ! var4 ) 
+return func6 ( var16 ) ; 
+func7 ( func5 >= number && func5 <= number ) ; 
+var10 = func2 -> var19 [ var20 ] ; 
+var11 = func2 -> var19 [ var21 ] ; 
+if ( ! var11 ) 
+var11 = var10 ; 
+var12 = ( var11 * var11 + ( number << var22 ) / number ) >> 
+var22 ; 
+var4 -> var23 = func2 -> var23 >> func5 ; 
+var4 -> var24 = func2 -> var24 >> func5 ; 
+var4 -> var25 = var26 | var27 ; 
+var4 -> var25 |= func2 -> var2 -> var25 & var28 ; 
+var4 -> var29 = func2 -> var2 -> var29 ; 
+var4 -> var30 = func2 -> var2 -> var30 ; 
+var4 -> var31 = func2 -> var2 -> var31 ; 
+var4 -> var32 = func2 -> var2 -> var32 ; 
+var4 -> var33 = var34 ; 
+var4 -> var35 = func2 -> var2 -> var35 ; 
+var4 -> var36 = func2 -> var36 ; 
+if ( func8 ( var4 , var1 , var5 ) < number ) 
+return - number ; 
+for ( var7 = number ; var7 < func2 -> var36 + number ; var7 ++ ) { 
+Picture var37 , * var38 = var7 ? func2 -> var39 [ var7 - number ] : 
+func2 -> var17 ; 
+uint8_t * var40 [ number ] ; 
+if ( var38 && ( ! var7 || func2 -> var39 [ var7 - number ] ) ) { 
+var37 = * var38 ; 
+memcpy ( var40 , var38 -> var41 -> var40 , sizeof ( var40 ) ) ; 
+if ( ! var37 . var42 && var7 ) { 
+var40 [ number ] += var43 ; 
+var40 [ number ] += var43 ; 
+var40 [ number ] += var43 ; 
+} 
+func2 -> func9 . func10 [ func5 ] ( func2 -> var44 [ var7 ] -> var40 [ number ] , 
+func2 -> var44 [ var7 ] -> var45 [ number ] , 
+var40 [ number ] , 
+var37 . var41 -> var45 [ number ] , 
+var4 -> var23 , var4 -> var24 ) ; 
+func2 -> func9 . func10 [ func5 ] ( func2 -> var44 [ var7 ] -> var40 [ number ] , 
+func2 -> var44 [ var7 ] -> var45 [ number ] , 
+var40 [ number ] , 
+var37 . var41 -> var45 [ number ] , 
+var4 -> var23 >> number , var4 -> var24 >> number ) ; 
+func2 -> func9 . func10 [ func5 ] ( func2 -> var44 [ var7 ] -> var40 [ number ] , 
+func2 -> var44 [ var7 ] -> var45 [ number ] , 
+var40 [ number ] , 
+var37 . var41 -> var45 [ number ] , 
+var4 -> var23 >> number , var4 -> var24 >> number ) ; 
+} 
+} 
+for ( var8 = number ; var8 < func2 -> var36 + number ; var8 ++ ) { 
+int64_t var46 = number ; 
+if ( ! func2 -> var39 [ var8 ] ) 
+break ; 
+var4 -> var47 [ number ] = var4 -> var47 [ number ] = var4 -> var47 [ number ] = number ; 
+func2 -> var44 [ number ] -> var48 = var49 ; 
+func2 -> var44 [ number ] -> var18 = number * var50 ; 
+var9 = func11 ( var4 , func2 -> var44 [ number ] ) ; 
+for ( var7 = number ; var7 < func2 -> var36 + number ; var7 ++ ) { 
+int var51 = var7 % ( var8 + number ) == var8 || var7 == func2 -> var36 ; 
+func2 -> var44 [ var7 + number ] -> var48 = var51 ? 
+var20 : var21 ; 
+func2 -> var44 [ var7 + number ] -> var18 = var51 ? var10 : var11 ; 
+var9 = func11 ( var4 , func2 -> var44 [ var7 + number ] ) ; 
+var46 += ( var9 * var12 ) >> ( var22 - number ) ; 
+} 
+while ( var9 ) { 
+var9 = func11 ( var4 , var5 ) ; 
+var46 += ( var9 * var12 ) >> ( var22 - number ) ; 
+} 
+var46 += var4 -> var47 [ number ] + var4 -> var47 [ number ] + var4 -> var47 [ number ] ; 
+if ( var46 < var13 ) { 
+var13 = var46 ; 
+var15 = var8 ; 
+} 
+} 
+func12 ( var4 ) ; 
+func13 ( & var4 ) ; 
+return var15 ; 
+} 

@@ -1,0 +1,11 @@
+static void func1 ( WriterContext * var1 , const char * var2 , const char * var3 ) 
+{ 
+CompactContext * var4 = var1 -> var5 ; 
+AVBPrint var6 ; 
+if ( var1 -> var7 [ var1 -> var8 ] ) printf ( var12 , var4 -> var9 ) ; 
+if ( ! var4 -> var10 ) 
+printf ( var12 , var1 -> var11 [ var1 -> var8 ] . var12 , var2 ) ; 
+func2 ( & var6 , number , var13 ) ; 
+printf ( var12 , var4 -> func3 ( & var6 , var3 , var4 -> var9 , var1 ) ) ; 
+func4 ( & var6 , var14 ) ; 
+} 

@@ -1,0 +1,22 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+W3FDIFContext * var4 = var2 -> var5 ; 
+do { 
+int var6 ; 
+if ( var4 -> var7 ) 
+return var8 ; 
+var6 = func2 ( var2 -> var9 [ number ] ) ; 
+if ( var6 == var8 && var4 -> var10 ) { 
+AVFrame * var11 = func3 ( var4 -> var11 ) ; 
+if ( ! var11 ) 
+return func4 ( var12 ) ; 
+var11 -> var13 = var4 -> var11 -> var13 * number - var4 -> var10 -> var13 ; 
+func5 ( var2 -> var9 [ number ] , var11 ) ; 
+var4 -> var7 = number ; 
+} else if ( var6 < number ) { 
+return var6 ; 
+} 
+} while ( ! var4 -> var10 ) ; 
+return number ; 
+} 

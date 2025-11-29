@@ -1,0 +1,56 @@
+int WINAPI func1 ( HINSTANCE var1 , HINSTANCE var2 , 
+PSTR var3 , int var4 ) 
+{ 
+HACCEL var5 ; 
+HWND var6 ; 
+MSG var7 ; 
+WNDCLASS var8 ; 
+int var9 , var10 ; 
+var8 . var11 = var12 | var13 ; 
+var8 . var14 = var15 ; 
+var8 . var16 = number ; 
+var8 . var17 = number ; 
+var8 . var1 = var1 ; 
+var8 . var18 = func2 ( var1 , var19 ) ; 
+var8 . var20 = func3 ( var21 , var22 ) ; 
+var8 . var23 = var21 ; 
+var8 . var24 = var25 ; 
+var8 . var26 = var25 ; 
+if ( ! func4 ( & var8 ) ) 
+{ 
+func5 ( var21 , func6 ( str ) , 
+var25 , var27 ) ; 
+return number ; 
+} 
+if ( ( var3 != var21 ) && ( * var3 != str ) ) 
+if ( var3 [ number ] == str str 
+strncpy ( var28 , var3 + number , strlen ( var3 ) - number ) ; 
+else 
+strcpy ( var28 , var3 ) ; 
+else 
+strcpy ( var28 , str ) ; 
+var9 = number * ( func7 ( var29 ) + 
+func7 ( var30 ) ) ; 
+var10 = number * ( func7 ( var31 ) + 
+func7 ( var32 ) ) + 
+func7 ( var33 ) + 
+func7 ( var34 ) + 
+number ; 
+var6 = func8 ( var25 , var35 , 
+var36 , 
+var37 , var37 , 
+number + number * var38 + var9 , number + number * var38 + var10 , 
+var21 , var21 , var1 , var21 ) ; 
+func9 ( var6 , var4 ) ; 
+func10 ( var6 ) ; 
+var5 = func11 ( var1 , var25 ) ; 
+while ( func12 ( & var7 , var21 , number , number ) ) 
+{ 
+if ( ! func13 ( var6 , var5 , & var7 ) ) 
+{ 
+func14 ( & var7 ) ; 
+func15 ( & var7 ) ; 
+} 
+} 
+return var7 . var39 ; 
+} 

@@ -1,0 +1,5 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+PSNRContext * var3 = var1 -> var4 -> var5 ; 
+return func2 ( & var3 -> var6 , var1 , var2 ) ; 
+} 

@@ -1,0 +1,581 @@
+static int func1 ( OptionsContext * var1 , const char * var2 ) 
+{ 
+AVFormatContext * var3 ; 
+int var4 , var5 , var6 ; 
+AVOutputFormat * var7 ; 
+OutputFile * var8 ; 
+OutputStream * var9 ; 
+InputStream * var10 ; 
+AVDictionary * var11 = var12 ; 
+AVDictionaryEntry * var13 = var12 ; 
+int var14 = number ; 
+if ( var1 -> var15 != var16 && var1 -> var17 != var16 ) { 
+var1 -> var15 = var16 ; 
+func2 ( var12 , var18 , var87 ) ; 
+} 
+if ( var1 -> var15 != var16 && var1 -> var17 == var16 ) { 
+int64_t var19 = var1 -> var19 == var20 ? number : var1 -> var19 ; 
+if ( var1 -> var15 <= var19 ) { 
+func2 ( var12 , var21 , var87 ) ; 
+func3 ( number ) ; 
+} else { 
+var1 -> var17 = var1 -> var15 - var19 ; 
+} 
+} 
+func4 ( var23 , var24 ) ; 
+var8 = func5 ( sizeof ( * var8 ) ) ; 
+if ( ! var8 ) 
+func3 ( number ) ; 
+var23 [ var24 - number ] = var8 ; 
+var8 -> var25 = var26 ; 
+var8 -> var17 = var1 -> var17 ; 
+var8 -> var19 = var1 -> var19 ; 
+var8 -> var27 = var1 -> var27 ; 
+var8 -> var28 = var1 -> var28 ; 
+func6 ( & var8 -> var29 , var1 -> var30 -> var31 , number ) ; 
+if ( ! strcmp ( var2 , var87 ) ) 
+var2 = var87 ; 
+var6 = func7 ( & var3 , var12 , var1 -> var32 , var2 ) ; 
+if ( ! var3 ) { 
+func8 ( var2 , var6 ) ; 
+func3 ( number ) ; 
+} 
+var8 -> var33 = var3 ; 
+if ( var1 -> var17 != var16 ) 
+var3 -> var34 = var1 -> var17 ; 
+var7 = var3 -> var35 ; 
+var3 -> var36 = var37 ; 
+var13 = func9 ( var1 -> var30 -> var31 , var87 , var12 , number ) ; 
+if ( var13 ) { 
+const AVOption * var1 = func10 ( var3 , var87 , var12 , number , number ) ; 
+func11 ( var3 , var1 , var13 -> var22 , & var14 ) ; 
+} 
+for ( var4 = number ; var4 < var38 ; var4 ++ ) { 
+FilterGraph * var39 = var40 [ var4 ] ; 
+for ( var5 = number ; var5 < var39 -> var41 ; var5 ++ ) { 
+OutputFilter * var42 = var39 -> var43 [ var5 ] ; 
+if ( ! var42 -> var44 || var42 -> var44 -> var45 ) 
+continue ; 
+switch ( var42 -> var46 ) { 
+case var47 : var1 -> var48 = number ; break ; 
+case var49 : var1 -> var50 = number ; break ; 
+case var51 : var1 -> var52 = number ; break ; 
+} 
+func12 ( var42 , var1 , var3 ) ; 
+} 
+} 
+if ( ! strcmp ( var7 -> var45 , var87 ) && 
+! ( var14 & var53 ) && 
+func13 ( var2 , var87 , var12 ) ) { 
+int var6 = func14 ( var1 , var87 , var87 , var55 ) ; 
+if ( var6 < number ) { 
+func8 ( var2 , var6 ) ; 
+func3 ( number ) ; 
+} 
+} 
+if ( ! strcmp ( var7 -> var45 , var87 ) && ! var56 && 
+func13 ( var2 , var87 , var12 ) ) { 
+int var5 ; 
+int var6 = func15 ( var1 , var3 , var2 ) ; 
+if ( var6 < number ) { 
+func8 ( var2 , var6 ) ; 
+func3 ( number ) ; 
+} 
+for ( var5 = var26 - var3 -> var57 ; var5 < var26 ; var5 ++ ) { 
+var9 = var58 [ var5 ] ; 
+for ( var4 = number ; var4 < var59 ; var4 ++ ) { 
+var10 = var60 [ var4 ] ; 
+if ( var10 -> var61 -> var62 -> var63 == var9 -> var61 -> var62 -> var63 ) { 
+var9 -> var64 = var10 ; 
+var9 -> var65 = var4 ; 
+if ( var9 -> var61 -> var62 -> var63 == var49 ) var9 -> var66 = func16 ( var87 ) ; 
+if ( var9 -> var61 -> var62 -> var63 == var47 ) var9 -> var66 = func16 ( var87 ) ; 
+var10 -> var67 = number ; 
+var10 -> var61 -> var67 = var10 -> var68 ; 
+break ; 
+} 
+} 
+if ( ! var9 -> var64 ) { 
+func2 ( var12 , var69 , var87 , func17 ( var9 -> var61 -> var62 -> var63 ) ) ; 
+func3 ( number ) ; 
+} 
+} 
+} else if ( ! var1 -> var70 ) { 
+char * var71 = var12 ; 
+if ( ! var1 -> var48 && func18 ( var3 -> var35 , var12 , var2 , var12 , var47 ) != var72 ) { 
+int var73 = number , var74 = - number ; 
+int var75 = func19 ( var3 -> var35 , var3 -> var35 -> var76 , number ) ; 
+for ( var4 = number ; var4 < var59 ; var4 ++ ) { 
+int var77 ; 
+var10 = var60 [ var4 ] ; 
+var77 = var10 -> var61 -> var62 -> var78 * var10 -> var61 -> var62 -> var79 + number * ! ! var10 -> var61 -> var80 ; 
+if ( ( var75 != func20 ( var87 , var87 , var87 , var87 ) ) && ( var10 -> var61 -> var81 & var82 ) ) 
+var77 = number ; 
+if ( var10 -> var61 -> var62 -> var63 == var47 && 
+var77 > var73 ) { 
+if ( ( var75 == func20 ( var87 , var87 , var87 , var87 ) ) && ! ( var10 -> var61 -> var81 & var82 ) ) 
+continue ; 
+var73 = var77 ; 
+var74 = var4 ; 
+} 
+} 
+if ( var74 >= number ) 
+func21 ( var1 , var3 , var74 ) ; 
+} 
+if ( ! var1 -> var50 && func18 ( var3 -> var35 , var12 , var2 , var12 , var49 ) != var72 ) { 
+int var83 = number , var74 = - number ; 
+for ( var4 = number ; var4 < var59 ; var4 ++ ) { 
+int var84 ; 
+var10 = var60 [ var4 ] ; 
+var84 = var10 -> var61 -> var62 -> var85 + number * ! ! var10 -> var61 -> var80 ; 
+if ( var10 -> var61 -> var62 -> var63 == var49 && 
+var84 > var83 ) { 
+var83 = var84 ; 
+var74 = var4 ; 
+} 
+} 
+if ( var74 >= number ) 
+func22 ( var1 , var3 , var74 ) ; 
+} 
+func23 ( var86 , var87 , var71 , var3 , var87 ) ; 
+if ( ! var1 -> var52 && ( func24 ( var3 -> var35 -> var88 ) || var71 ) ) { 
+for ( var4 = number ; var4 < var59 ; var4 ++ ) 
+if ( var60 [ var4 ] -> var61 -> var62 -> var63 == var51 ) { 
+AVCodecDescriptor const * var89 = 
+func25 ( var60 [ var4 ] -> var61 -> var62 -> var90 ) ; 
+AVCodecDescriptor const * var91 = var12 ; 
+AVCodec const * var92 = 
+func24 ( var3 -> var35 -> var88 ) ; 
+int var93 = number , var94 = number ; 
+if ( var92 ) 
+var91 = func25 ( var92 -> var95 ) ; 
+if ( var89 ) 
+var93 = var89 -> var96 & ( var97 | var98 ) ; 
+if ( var91 ) 
+var94 = var91 -> var96 & ( var97 | var98 ) ; 
+if ( var71 || 
+var93 & var94 || 
+var89 && var91 && 
+( ! var89 -> var96 || 
+! var91 -> var96 ) ) { 
+func26 ( var1 , var3 , var4 ) ; 
+break ; 
+} 
+} 
+} 
+if ( ! var1 -> var99 ) { 
+enum AVCodecID var90 = func18 ( var3 -> var35 , var12 , var2 , var12 , var100 ) ; 
+for ( var4 = number ; var90 != var72 && var4 < var59 ; var4 ++ ) { 
+if ( var60 [ var4 ] -> var61 -> var62 -> var63 == var100 
+&& var60 [ var4 ] -> var61 -> var62 -> var90 == var90 ) 
+func27 ( var1 , var3 , var4 ) ; 
+} 
+} 
+} else { 
+for ( var4 = number ; var4 < var1 -> var70 ; var4 ++ ) { 
+StreamMap * var101 = & var1 -> var102 [ var4 ] ; 
+if ( var101 -> var103 ) 
+continue ; 
+if ( var101 -> var104 ) { 
+FilterGraph * var39 ; 
+OutputFilter * var42 = var12 ; 
+int var5 , var105 ; 
+for ( var5 = number ; var5 < var38 ; var5 ++ ) { 
+var39 = var40 [ var5 ] ; 
+for ( var105 = number ; var105 < var39 -> var41 ; var105 ++ ) { 
+AVFilterInOut * var106 = var39 -> var43 [ var105 ] -> var44 ; 
+if ( var106 && ! strcmp ( var106 -> var45 , var101 -> var104 ) ) { 
+var42 = var39 -> var43 [ var105 ] ; 
+goto var107 ; 
+} 
+} 
+} 
+var107 : 
+if ( ! var42 ) { 
+func2 ( var12 , var69 , str 
+str , var101 -> var104 ) ; 
+func3 ( number ) ; 
+} 
+func12 ( var42 , var1 , var3 ) ; 
+} else { 
+int var109 = var110 [ var101 -> var111 ] -> var112 + var101 -> var113 ; 
+var10 = var60 [ var110 [ var101 -> var111 ] -> var112 + var101 -> var113 ] ; 
+if ( var1 -> var52 && var10 -> var61 -> var62 -> var63 == var51 ) 
+continue ; 
+if ( var1 -> var50 && var10 -> var61 -> var62 -> var63 == var49 ) 
+continue ; 
+if ( var1 -> var48 && var10 -> var61 -> var62 -> var63 == var47 ) 
+continue ; 
+if ( var1 -> var99 && var10 -> var61 -> var62 -> var63 == var100 ) 
+continue ; 
+var9 = var12 ; 
+switch ( var10 -> var61 -> var62 -> var63 ) { 
+case var47 : var9 = func21 ( var1 , var3 , var109 ) ; break ; 
+case var49 : var9 = func22 ( var1 , var3 , var109 ) ; break ; 
+case var51 : var9 = func26 ( var1 , var3 , var109 ) ; break ; 
+case var100 : var9 = func27 ( var1 , var3 , var109 ) ; break ; 
+case var114 : var9 = func28 ( var1 , var3 , var109 ) ; break ; 
+case var115 : 
+if ( var116 ) { 
+var9 = func29 ( var1 , var3 , var109 ) ; 
+break ; 
+} 
+var117 : 
+func2 ( var12 , var118 ? var18 : var69 , 
+var87 , 
+var101 -> var111 , var101 -> var113 ) ; 
+if ( ! var118 ) { 
+func2 ( var12 , var69 , 
+str 
+str 
+str ) ; 
+func3 ( number ) ; 
+} 
+} 
+if ( var9 ) 
+var9 -> var64 = var60 [ var110 [ var101 -> var120 ] -> var112 
++ var101 -> var121 ] ; 
+} 
+} 
+} 
+for ( var4 = number ; var4 < var1 -> var122 ; var4 ++ ) { 
+AVIOContext * var123 ; 
+uint8_t * var124 ; 
+const char * var125 ; 
+int64_t var126 ; 
+if ( ( var6 = func30 ( & var123 , var1 -> var127 [ var4 ] , var128 , & var37 , var12 ) ) < number ) { 
+func2 ( var12 , var69 , var87 , 
+var1 -> var127 [ var4 ] ) ; 
+func3 ( number ) ; 
+} 
+if ( ( var126 = func31 ( var123 ) ) <= number ) { 
+func2 ( var12 , var69 , var87 , 
+var1 -> var127 [ var4 ] ) ; 
+func3 ( number ) ; 
+} 
+if ( ! ( var124 = func32 ( var126 ) ) ) { 
+func2 ( var12 , var69 , var87 , 
+var1 -> var127 [ var4 ] ) ; 
+func3 ( number ) ; 
+} 
+func33 ( var123 , var124 , var126 ) ; 
+var9 = func28 ( var1 , var3 , - number ) ; 
+var9 -> var129 = number ; 
+var9 -> var130 = var1 -> var127 [ var4 ] ; 
+var9 -> var61 -> var62 -> var131 = var124 ; 
+var9 -> var61 -> var62 -> var132 = var126 ; 
+var125 = strrchr ( var1 -> var127 [ var4 ] , var87 ) ; 
+func34 ( & var9 -> var61 -> var54 , var87 , ( var125 && * var125 ) ? var125 + number : var1 -> var127 [ var4 ] , var133 ) ; 
+func35 ( & var123 ) ; 
+} 
+for ( var4 = var26 - var3 -> var57 ; var4 < var26 ; var4 ++ ) { 
+AVDictionaryEntry * var13 ; 
+var9 = var58 [ var4 ] ; 
+if ( ( var9 -> var129 || var9 -> var130 ) 
+&& ( var13 = func9 ( var1 -> var30 -> var134 , var87 , var12 , var136 ) ) 
+&& ( ! var13 -> var137 [ number ] || func36 ( var3 , var9 -> var61 , var13 -> var137 + number ) ) ) 
+if ( func37 ( var9 -> var61 -> var138 , var87 , var13 -> var22 , number ) < number ) 
+func3 ( number ) ; 
+} 
+if ( ! var3 -> var57 && ! ( var3 -> var35 -> var135 & var139 ) ) { 
+func38 ( var3 , var24 - number , var3 -> var2 , number ) ; 
+func2 ( var12 , var21 , var87 , var24 - number ) ; 
+func3 ( number ) ; 
+} 
+var11 = func39 ( var1 -> var30 -> var134 ) ; 
+for ( var4 = var8 -> var25 ; var4 < var26 ; var4 ++ ) { 
+var13 = var12 ; 
+while ( ( var13 = func9 ( var58 [ var4 ] -> var140 , var87 , var13 , 
+var136 ) ) ) 
+func34 ( & var11 , var13 -> var137 , var12 , number ) ; 
+} 
+var13 = var12 ; 
+while ( ( var13 = func9 ( var11 , var87 , var13 , var136 ) ) ) { 
+const AVClass * class = func40 ( ) ; 
+const AVOption * var119 = func10 ( & class , var13 -> var137 , var12 , number , 
+var141 | var142 ) ; 
+const AVClass * var143 = func41 ( ) ; 
+const AVOption * var144 = func10 ( & var143 , var13 -> var137 , var12 , number , 
+var141 | var142 ) ; 
+if ( ! var119 || var144 ) 
+continue ; 
+if ( ! ( var119 -> var135 & var145 ) ) { 
+func2 ( var12 , var21 , str 
+str , var13 -> var137 , 
+var119 -> var146 ? var119 -> var146 : var87 , var24 - number , 
+var2 ) ; 
+func3 ( number ) ; 
+} 
+if ( ! strcmp ( var13 -> var137 , var87 ) ) 
+continue ; 
+func2 ( var12 , var18 , str 
+str 
+str 
+str 
+str , var13 -> var137 , 
+var119 -> var146 ? var119 -> var146 : var87 , var24 - number , var2 ) ; 
+} 
+func42 ( & var11 ) ; 
+for ( var4 = var8 -> var25 ; var4 < var26 ; var4 ++ ) { 
+OutputStream * var9 = var58 [ var4 ] ; 
+if ( var9 -> var148 && var9 -> var65 >= number ) { 
+InputStream * var10 = var60 [ var9 -> var65 ] ; 
+var10 -> var149 |= var150 ; 
+if ( var9 -> var61 -> var62 -> var63 == var47 || 
+var9 -> var61 -> var62 -> var63 == var49 ) { 
+var6 = func43 ( var10 , var9 ) ; 
+if ( var6 < number ) { 
+func2 ( var12 , var21 , 
+str 
+str , var10 -> var111 , var9 -> var65 , 
+var24 - number , var9 -> var61 -> var151 ) ; 
+func3 ( number ) ; 
+} 
+} 
+} 
+if ( var9 -> var108 ) { 
+OutputFilter * var152 = var9 -> var108 ; 
+int var153 ; 
+switch ( var9 -> var154 -> var63 ) { 
+case var47 : 
+var152 -> var155 = var9 -> var155 ; 
+var152 -> var78 = var9 -> var154 -> var78 ; 
+var152 -> var79 = var9 -> var154 -> var79 ; 
+if ( var9 -> var154 -> var156 != var157 ) { 
+var152 -> var32 = var9 -> var154 -> var156 ; 
+} else if ( var9 -> var158 -> var159 ) { 
+var153 = number ; 
+while ( var9 -> var158 -> var159 [ var153 ] != var157 ) 
+var153 ++ ; 
+var152 -> var160 = func44 ( var153 + number , sizeof ( * var152 -> var160 ) ) ; 
+if ( ! var152 -> var160 ) 
+func3 ( number ) ; 
+memcpy ( var152 -> var160 , var9 -> var158 -> var159 , ( var153 + number ) * sizeof ( * var152 -> var160 ) ) ; 
+} 
+break ; 
+case var49 : 
+if ( var9 -> var154 -> var161 != var162 ) { 
+var152 -> var32 = var9 -> var154 -> var161 ; 
+} else if ( var9 -> var158 -> var163 ) { 
+var153 = number ; 
+while ( var9 -> var158 -> var163 [ var153 ] != var162 ) 
+var153 ++ ; 
+var152 -> var160 = func44 ( var153 + number , sizeof ( * var152 -> var160 ) ) ; 
+if ( ! var152 -> var160 ) 
+func3 ( number ) ; 
+memcpy ( var152 -> var160 , var9 -> var158 -> var163 , ( var153 + number ) * sizeof ( * var152 -> var160 ) ) ; 
+} 
+if ( var9 -> var154 -> var164 ) { 
+var152 -> var164 = var9 -> var154 -> var164 ; 
+} else if ( var9 -> var158 -> var165 ) { 
+var153 = number ; 
+while ( var9 -> var158 -> var165 [ var153 ] ) 
+var153 ++ ; 
+var152 -> var166 = func44 ( var153 + number , sizeof ( * var152 -> var166 ) ) ; 
+if ( ! var152 -> var166 ) 
+func3 ( number ) ; 
+memcpy ( var152 -> var166 , var9 -> var158 -> var165 , 
+( var153 + number ) * sizeof ( * var152 -> var166 ) ) ; 
+} 
+if ( var9 -> var154 -> var85 ) { 
+var152 -> var167 = func45 ( var9 -> var154 -> var85 ) ; 
+} else if ( var9 -> var158 -> var168 ) { 
+var153 = number ; 
+while ( var9 -> var158 -> var168 [ var153 ] ) 
+var153 ++ ; 
+var152 -> var168 = func44 ( var153 + number , sizeof ( * var152 -> var168 ) ) ; 
+if ( ! var152 -> var168 ) 
+func3 ( number ) ; 
+memcpy ( var152 -> var168 , var9 -> var158 -> var168 , 
+( var153 + number ) * sizeof ( * var152 -> var168 ) ) ; 
+} 
+break ; 
+} 
+} 
+} 
+if ( var3 -> var35 -> var135 & var169 ) { 
+if ( ! func46 ( var3 -> var2 ) ) { 
+func8 ( var3 -> var2 , func47 ( var170 ) ) ; 
+func3 ( number ) ; 
+} 
+} 
+if ( ! ( var3 -> var35 -> var135 & var139 ) && ! var171 ) { 
+func2 ( var12 , var21 , 
+var87 ) ; 
+func3 ( number ) ; 
+} 
+if ( ! ( var3 -> var35 -> var135 & var172 ) ) { 
+func48 ( var2 ) ; 
+if ( ( var6 = func30 ( & var3 -> var123 , var2 , var173 , 
+& var3 -> var36 , 
+& var8 -> var29 ) ) < number ) { 
+func8 ( var2 , var6 ) ; 
+func3 ( number ) ; 
+} 
+} else if ( strcmp ( var3 -> var35 -> var45 , var87 ) == number && ! func46 ( var2 ) ) 
+func48 ( var2 ) ; 
+if ( var1 -> var174 ) { 
+func49 ( & var8 -> var29 , var87 , var1 -> var174 * var175 , number ) ; 
+} 
+var3 -> var176 = ( int ) ( var1 -> var177 * var175 ) ; 
+for ( var4 = number ; var4 < var1 -> var178 ; var4 ++ ) { 
+char * var125 ; 
+int var179 = func50 ( var1 -> var180 [ var4 ] . var181 . var87 , & var125 , number ) ; 
+if ( var179 >= var182 ) { 
+func2 ( var12 , var69 , var87 , var179 ) ; 
+func3 ( number ) ; 
+} 
+func51 ( var1 -> var180 [ var4 ] . var183 , * var125 ? var125 + number : var125 , var3 , 
+var179 >= number ? 
+var110 [ var179 ] -> var33 : var12 , var1 ) ; 
+} 
+if ( var1 -> var184 >= var182 ) { 
+if ( var1 -> var184 == var185 ) { 
+var1 -> var184 = - number ; 
+for ( var4 = number ; var4 < var182 ; var4 ++ ) 
+if ( var110 [ var4 ] -> var33 -> var186 ) { 
+var1 -> var184 = var4 ; 
+break ; 
+} 
+} else { 
+func2 ( var12 , var69 , var87 , 
+var1 -> var184 ) ; 
+func3 ( number ) ; 
+} 
+} 
+if ( var1 -> var184 >= number ) 
+func52 ( var110 [ var1 -> var184 ] , var8 , 
+! var1 -> var187 ) ; 
+if ( ! var1 -> var188 && var182 ) { 
+func6 ( & var3 -> var54 , var110 [ number ] -> var33 -> var54 , 
+var133 ) ; 
+if ( var1 -> var17 != var16 ) 
+func34 ( & var3 -> var54 , var87 , var12 , number ) ; 
+func34 ( & var3 -> var54 , var87 , var12 , number ) ; 
+} 
+if ( ! var1 -> var189 ) 
+for ( var4 = var8 -> var25 ; var4 < var26 ; var4 ++ ) { 
+InputStream * var10 ; 
+if ( var58 [ var4 ] -> var65 < number ) 
+continue ; 
+var10 = var60 [ var58 [ var4 ] -> var65 ] ; 
+func6 ( & var58 [ var4 ] -> var61 -> var54 , var10 -> var61 -> var54 , var133 ) ; 
+if ( ! var58 [ var4 ] -> var129 ) { 
+func34 ( & var58 [ var4 ] -> var61 -> var54 , var87 , var12 , number ) ; 
+} 
+} 
+for ( var4 = number ; var4 < var1 -> var190 ; var4 ++ ) { 
+const char * var125 = var1 -> var191 [ var4 ] . var181 . var87 ; 
+int var192 = var4 + number ; 
+AVProgram * var191 ; 
+while ( * var125 ) { 
+const char * var193 = func53 ( & var125 , var87 ) ; 
+const char * var194 = var193 ; 
+char * var137 ; 
+if ( ! var193 ) 
+break ; 
+if ( * var125 ) var125 ++ ; 
+var137 = func53 ( & var193 , var87 ) ; 
+if ( ! var137 || ! * var193 ) { 
+func54 ( & var194 ) ; 
+func54 ( & var137 ) ; 
+break ; 
+} 
+var193 ++ ; 
+if ( ! strcmp ( var137 , var87 ) ) 
+var192 = func50 ( var193 , var12 , number ) ; 
+func54 ( & var194 ) ; 
+func54 ( & var137 ) ; 
+} 
+var191 = func55 ( var3 , var192 ) ; 
+var125 = var1 -> var191 [ var4 ] . var181 . var87 ; 
+while ( * var125 ) { 
+const char * var193 = func53 ( & var125 , var87 ) ; 
+const char * var194 = var193 ; 
+char * var137 ; 
+if ( ! var193 ) 
+break ; 
+if ( * var125 ) var125 ++ ; 
+var137 = func53 ( & var193 , var87 ) ; 
+if ( ! var137 ) { 
+func2 ( var12 , var69 , 
+var87 , 
+var193 ) ; 
+func3 ( number ) ; 
+} 
+if ( ! * var193 ) 
+func3 ( number ) ; 
+var193 ++ ; 
+if ( ! strcmp ( var137 , var87 ) ) { 
+func34 ( & var191 -> var54 , var87 , var193 , number ) ; 
+} else if ( ! strcmp ( var137 , var87 ) ) { 
+} else if ( ! strcmp ( var137 , var87 ) ) { 
+int var195 = func50 ( var193 , var12 , number ) ; 
+func56 ( var3 , var192 , var195 ) ; 
+} else { 
+func2 ( var12 , var69 , var87 , var137 ) ; 
+func3 ( number ) ; 
+} 
+func54 ( & var194 ) ; 
+func54 ( & var137 ) ; 
+} 
+} 
+for ( var4 = number ; var4 < var1 -> var196 ; var4 ++ ) { 
+AVDictionary ** var197 ; 
+char var46 , * var198 ; 
+const char * var199 ; 
+int var151 = number , var5 , var200 = number ; 
+var198 = strchr ( var1 -> var54 [ var4 ] . var181 . var87 , var87 ) ; 
+if ( ! var198 ) { 
+func2 ( var12 , var69 , var87 , 
+var1 -> var54 [ var4 ] . var181 . var87 ) ; 
+func3 ( number ) ; 
+} 
+* var198 += number ; 
+func57 ( var1 -> var54 [ var4 ] . var183 , & var46 , & var151 , & var199 ) ; 
+if ( var46 == var87 ) { 
+for ( var5 = number ; var5 < var3 -> var57 ; var5 ++ ) { 
+var9 = var58 [ var26 - var3 -> var57 + var5 ] ; 
+if ( ( var200 = func36 ( var3 , var3 -> var147 [ var5 ] , var199 ) ) > number ) { 
+if ( ! strcmp ( var1 -> var54 [ var4 ] . var181 . var87 , var87 ) ) { 
+char * var201 ; 
+double var202 = func58 ( var198 , & var201 ) ; 
+if ( ! * var201 ) { 
+var9 -> var203 = number ; 
+var9 -> var204 = var202 ; 
+} 
+} else { 
+func34 ( & var3 -> var147 [ var5 ] -> var54 , var1 -> var54 [ var4 ] . var181 . var87 , * var198 ? var198 : var12 , number ) ; 
+} 
+} else if ( var200 < number ) 
+func3 ( number ) ; 
+} 
+} 
+else { 
+switch ( var46 ) { 
+case str : 
+var197 = & var3 -> var54 ; 
+break ; 
+case str : 
+if ( var151 < number || var151 >= var3 -> var186 ) { 
+func2 ( var12 , var69 , var87 , var151 ) ; 
+func3 ( number ) ; 
+} 
+var197 = & var3 -> var205 [ var151 ] -> var54 ; 
+break ; 
+case str : 
+if ( var151 < number || var151 >= var3 -> var206 ) { 
+func2 ( var12 , var69 , var87 , var151 ) ; 
+func3 ( number ) ; 
+} 
+var197 = & var3 -> var207 [ var151 ] -> var54 ; 
+break ; 
+var117 : 
+func2 ( var12 , var69 , var87 , var1 -> var54 [ var4 ] . var183 ) ; 
+func3 ( number ) ; 
+} 
+func34 ( var197 , var1 -> var54 [ var4 ] . var181 . var87 , * var198 ? var198 : var12 , number ) ; 
+} 
+} 
+return number ; 
+} 

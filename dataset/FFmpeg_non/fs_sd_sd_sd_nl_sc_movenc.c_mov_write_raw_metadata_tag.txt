@@ -1,0 +1,17 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+const char * var3 , const char * var4 ) 
+{ 
+int var5 ; 
+AVDictionaryEntry * var6 ; 
+if ( ! ( var6 = func2 ( var1 -> var7 , var4 , var8 , number ) ) ) 
+return number ; 
+var5 = strlen ( var6 -> var9 ) ; 
+if ( var5 > number ) { 
+int var10 = var5 + number ; 
+func3 ( var2 , var10 ) ; 
+func4 ( var2 , var3 ) ; 
+func5 ( var2 , var6 -> var9 , var5 ) ; 
+return var10 ; 
+} 
+return number ; 
+} 

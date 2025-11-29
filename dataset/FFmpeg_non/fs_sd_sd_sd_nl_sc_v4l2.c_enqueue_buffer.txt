@@ -1,0 +1,11 @@
+static int func1 ( struct video_data * var1 , struct v4l2_buffer * var2 ) 
+{ 
+int var3 = number ; 
+if ( func2 ( var1 -> var4 , var5 , var2 ) < number ) { 
+var3 = func3 ( var6 ) ; 
+func4 ( var7 , var8 , str , func5 ( var3 ) ) ; 
+} else { 
+func6 ( & var1 -> var9 , number ) ; 
+} 
+return var3 ; 
+} 

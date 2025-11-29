@@ -1,0 +1,54 @@
+func1 ( png_structp var1 , png_infop var2 , png_const_bytep var3 , 
+png_uint_32 var4 ) 
+{ 
+PNG_CONST unsigned int var5 = func2 ( var1 , var2 ) ; 
+switch ( func3 ( var1 , var2 ) ) 
+{ 
+case var6 : 
+printf ( str , func4 ( var3 , var4 , number , var5 , number ) ) ; 
+return ; 
+case var7 : 
+{ 
+PNG_CONST unsigned int var8 = func4 ( var3 , var4 , number , var5 , number ) ; 
+png_colorp var9 = var10 ; 
+int var11 = number ; 
+if ( ( func5 ( var1 , var2 , & var9 , & var11 ) & 
+var12 ) && var11 > number && var9 != var10 ) 
+{ 
+png_bytep var13 = var10 ; 
+int var14 = number ; 
+if ( ( func6 ( var1 , var2 , & var13 , & var14 , 
+var10 ) & var15 ) && var14 > number && 
+var13 != var10 ) 
+printf ( str , var8 , 
+var9 [ var8 ] . var16 , var9 [ var8 ] . var17 , 
+var9 [ var8 ] . var18 , 
+var8 < var14 ? var13 [ var8 ] : number ) ; 
+else 
+printf ( str , var8 , 
+var9 [ var8 ] . var16 , var9 [ var8 ] . var17 , 
+var9 [ var8 ] . var18 ) ; 
+} 
+else 
+printf ( str , var8 ) ; 
+} 
+return ; 
+case var19 : 
+printf ( str , func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) ) ; 
+return ; 
+case var20 : 
+printf ( str , func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) ) ; 
+return ; 
+case var21 : 
+printf ( str , func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) , 
+func4 ( var3 , var4 , number , var5 , number ) ) ; 
+return ; 
+var22 : 
+func7 ( var1 , str ) ; 
+} 
+} 

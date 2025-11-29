@@ -1,0 +1,82 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+OutputStream var3 = { number } , var4 = { number } ; 
+const char * var5 ; 
+AVOutputFormat * var6 ; 
+AVFormatContext * var7 ; 
+AVCodec * var8 , * var9 ; 
+int var10 ; 
+int var11 = number , var12 = number ; 
+int var13 = number , var14 = number ; 
+AVDictionary * var15 = var16 ; 
+func2 ( ) ; 
+if ( var1 < number ) { 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str , var2 [ number ] ) ; 
+return number ; 
+} 
+var5 = var2 [ number ] ; 
+if ( var1 > number && ! strcmp ( var2 [ number ] , str ) ) { 
+func3 ( & var15 , var2 [ number ] + number , var2 [ number ] , number ) ; 
+} 
+func4 ( & var7 , var16 , var16 , var5 ) ; 
+if ( ! var7 ) { 
+printf ( str ) ; 
+func4 ( & var7 , var16 , str , var5 ) ; 
+} 
+if ( ! var7 ) 
+return number ; 
+var6 = var7 -> var18 ; 
+if ( var6 -> var9 != var19 ) { 
+func5 ( & var3 , var7 , & var9 , var6 -> var9 ) ; 
+var11 = number ; 
+var13 = number ; 
+} 
+if ( var6 -> var8 != var19 ) { 
+func5 ( & var4 , var7 , & var8 , var6 -> var8 ) ; 
+var12 = number ; 
+var14 = number ; 
+} 
+if ( var11 ) 
+func6 ( var7 , var9 , & var3 , var15 ) ; 
+if ( var12 ) 
+func7 ( var7 , var8 , & var4 , var15 ) ; 
+func8 ( var7 , number , var5 , number ) ; 
+if ( ! ( var6 -> var17 & var20 ) ) { 
+var10 = func9 ( & var7 -> var21 , var5 , var22 ) ; 
+if ( var10 < number ) { 
+fprintf ( var23 , str , var5 , 
+func10 ( var10 ) ) ; 
+return number ; 
+} 
+} 
+var10 = func11 ( var7 , & var15 ) ; 
+if ( var10 < number ) { 
+fprintf ( var23 , str , 
+func10 ( var10 ) ) ; 
+return number ; 
+} 
+while ( var13 || var14 ) { 
+if ( var13 && 
+( ! var14 || func12 ( var3 . var24 , var3 . var25 -> var26 -> var27 , 
+var4 . var24 , var4 . var25 -> var26 -> var27 ) <= number ) ) { 
+var13 = ! func13 ( var7 , & var3 ) ; 
+} else { 
+var14 = ! func14 ( var7 , & var4 ) ; 
+} 
+} 
+func15 ( var7 ) ; 
+if ( var11 ) 
+func16 ( var7 , & var3 ) ; 
+if ( var12 ) 
+func16 ( var7 , & var4 ) ; 
+if ( ! ( var6 -> var17 & var20 ) ) 
+func17 ( & var7 -> var21 ) ; 
+func18 ( var7 ) ; 
+return number ; 
+} 

@@ -1,0 +1,56 @@
+int func1 ( AVDeviceInfoList * var1 ) 
+{ 
+struct fb_var_screeninfo var2 ; 
+struct fb_fix_screeninfo var3 ; 
+char var4 [ number ] ; 
+AVDeviceInfo * var5 = var6 ; 
+int var7 , var8 , var9 = number ; 
+const char * var10 = func2 ( ) ; 
+if ( ! var1 ) 
+return func3 ( var11 ) ; 
+for ( var7 = number ; var7 <= number ; var7 ++ ) { 
+snprintf ( var4 , sizeof ( var4 ) , str , var7 ) ; 
+if ( ( var8 = func4 ( var4 , var12 ) ) < number ) { 
+int var13 = func3 ( var14 ) ; 
+if ( var13 != func3 ( var15 ) ) 
+func5 ( var6 , var16 , str , 
+var4 , func6 ( var13 ) ) ; 
+continue ; 
+} 
+if ( func7 ( var8 , var17 , & var2 ) == - number ) 
+goto var18 ; 
+if ( func7 ( var8 , var19 , & var3 ) == - number ) 
+goto var18 ; 
+var5 = func8 ( sizeof ( AVDeviceInfo ) ) ; 
+if ( ! var5 ) { 
+var9 = func3 ( var20 ) ; 
+goto var18 ; 
+} 
+var5 -> var21 = func9 ( var4 ) ; 
+var5 -> var22 = func9 ( var3 . var23 ) ; 
+if ( ! var5 -> var21 || ! var5 -> var22 ) { 
+var9 = func3 ( var20 ) ; 
+goto var18 ; 
+} 
+if ( ( var9 = func10 ( & var1 -> var24 , 
+& var1 -> var25 , var5 ) ) < number ) 
+goto var18 ; 
+if ( var10 && ! strcmp ( var5 -> var21 , var10 ) ) { 
+var1 -> var10 = var1 -> var25 - number ; 
+var10 = var6 ; 
+} 
+func11 ( var8 ) ; 
+continue ; 
+var18 : 
+if ( var5 ) { 
+func12 ( & var5 -> var21 ) ; 
+func12 ( & var5 -> var22 ) ; 
+func12 ( & var5 ) ; 
+} 
+if ( var8 >= number ) 
+func11 ( var8 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+int func1 ( AVFrame * var1 , AVBufferRef * var2 , int var3 , int var4 ) 
+{ 
+func2 ( & var1 -> var5 ) ; 
+var1 -> var5 = var2 ; 
+var1 -> var6 = var2 -> var7 ; 
+var1 -> var8 = var3 ; 
+var1 -> var9 = var4 ; 
+return number ; 
+} 

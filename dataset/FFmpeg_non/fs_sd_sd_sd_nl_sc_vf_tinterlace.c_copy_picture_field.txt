@@ -1,0 +1,40 @@
+void func1 ( TInterlaceContext * var1 , 
+uint8_t * var2 [ 4 ] , int var3 [ 4 ] , 
+const uint8_t * var4 [ 4 ] , int var5 [ 4 ] , 
+enum AVPixelFormat var6 , int var7 , int var8 , 
+int var9 , int var10 , int var11 , 
+int var12 ) 
+{ 
+const AVPixFmtDescriptor * var13 = func2 ( var6 ) ; 
+int var14 = var13 -> var15 ; 
+int var16 , var17 = var13 -> var18 ; 
+int var19 = var9 == var20 ? number : number ; 
+int var21 ; 
+for ( var16 = number ; var16 < var13 -> var22 ; var16 ++ ) { 
+int var23 = var16 == number || var16 == number ? func3 ( var8 , var17 ) : var8 ; 
+int var24 = var16 == number || var16 == number ? func3 ( var7 , var14 ) : var7 ; 
+uint8_t * var25 = var2 [ var16 ] ; 
+const uint8_t * var26 = var4 [ var16 ] ; 
+var23 = ( var23 + ( var9 == var27 ) ) / var19 ; 
+if ( var9 == var28 ) 
+var26 += var5 [ var16 ] ; 
+if ( var10 && var11 == var28 ) 
+var25 += var3 [ var16 ] ; 
+if ( var12 & var29 ) { 
+int var30 = var5 [ var16 ] * var19 ; 
+int var31 = var3 [ var16 ] * ( var10 ? number : number ) ; 
+for ( var21 = var23 ; var21 > number ; var21 -- ) { 
+const uint8_t * var32 = var26 - var5 [ var16 ] ; 
+const uint8_t * var33 = var26 + var5 [ var16 ] ; 
+if ( var21 == var23 ) var32 = var26 ; 
+if ( var21 == number ) var33 = var26 ; 
+var1 -> func4 ( var25 , var24 , var26 , var32 , var33 ) ; 
+var25 += var31 ; 
+var26 += var30 ; 
+} 
+} else { 
+func5 ( var25 , var3 [ var16 ] * ( var10 ? number : number ) , 
+var26 , var5 [ var16 ] * var19 , var24 , var23 ) ; 
+} 
+} 
+} 

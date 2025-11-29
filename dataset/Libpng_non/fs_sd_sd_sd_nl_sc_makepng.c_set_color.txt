@@ -1,0 +1,9 @@
+func1 ( png_colorp var1 , png_bytep var2 , unsigned int var3 , 
+unsigned int var4 , unsigned int var5 , unsigned int var6 , 
+png_const_bytep var7 ) 
+{ 
+var1 -> var3 = var7 [ var3 ] ; 
+var1 -> var4 = var7 [ var4 ] ; 
+var1 -> var5 = var7 [ var5 ] ; 
+* var2 = ( png_byte ) var6 ; 
+} 

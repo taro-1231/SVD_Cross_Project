@@ -1,0 +1,19 @@
+static void func1 ( DynamicAudioNormalizerContext * var1 , AVFrame * var2 ) 
+{ 
+if ( var1 -> var3 ) { 
+func2 ( var1 , var2 ) ; 
+} 
+if ( var1 -> var4 > var5 ) { 
+func3 ( var1 , var2 ) ; 
+} 
+if ( var1 -> var6 ) { 
+const double var7 = func4 ( var1 , var2 , - number ) ; 
+int var8 ; 
+for ( var8 = number ; var8 < var1 -> var9 ; var8 ++ ) 
+func5 ( var1 , var8 , var7 ) ; 
+} else { 
+int var8 ; 
+for ( var8 = number ; var8 < var1 -> var9 ; var8 ++ ) 
+func5 ( var1 , var8 , func4 ( var1 , var2 , var8 ) ) ; 
+} 
+} 

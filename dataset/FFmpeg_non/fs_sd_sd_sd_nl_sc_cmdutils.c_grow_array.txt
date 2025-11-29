@@ -1,0 +1,18 @@
+void * func1 ( void * var1 , int var2 , int * var3 , int var4 ) 
+{ 
+if ( var4 >= var5 / var2 ) { 
+func2 ( var6 , var7 , str ) ; 
+func3 ( number ) ; 
+} 
+if ( * var3 < var4 ) { 
+uint8_t * var8 = func4 ( var1 , var4 , var2 ) ; 
+if ( ! var8 ) { 
+func2 ( var6 , var7 , str ) ; 
+func3 ( number ) ; 
+} 
+memset ( var8 + * var3 * var2 , number , ( var4 - * var3 ) * var2 ) ; 
+* var3 = var4 ; 
+return var8 ; 
+} 
+return var1 ; 
+} 

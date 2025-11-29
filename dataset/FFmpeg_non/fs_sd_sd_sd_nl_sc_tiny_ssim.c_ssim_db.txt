@@ -1,0 +1,4 @@
+static double func1 ( double var1 , double var2 ) 
+{ 
+return number * ( log ( var2 ) / log ( number ) - log ( var2 - var1 ) / log ( number ) ) ; 
+} 

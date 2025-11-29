@@ -1,0 +1,39 @@
+static inline int func1 ( MpegEncContext * var1 , int var2 , int var3 , int var4 , 
+int16_t ** var5 , int * var6 ) 
+{ 
+int var7 , var8 , var9 , var10 , var11 , var12 ; 
+int16_t * var13 ; 
+static const uint16_t var14 [ number ] = { 
+- number , number , number , number , number , number , number , number , number , 
+number , number , number , number , number , number , number , number , 
+number , number , number , number , number , number , number , number , 
+number , number , number , number , number , number , number 
+} ; 
+if ( var4 < number ) var12 = var1 -> var15 ; 
+else var12 = var1 -> var16 ; 
+var10 = var1 -> var17 [ var4 ] ; 
+var13 = var1 -> var13 [ number ] + var1 -> var18 [ var4 ] ; 
+var9 = var13 [ - number ] ; 
+var8 = var13 [ - number - var10 ] ; 
+var7 = var13 [ - var10 ] ; 
+if ( var3 < number || ! var2 ) { 
+if ( var1 -> var19 && ( var4 != number && var4 != number ) ) 
+var8 = var7 = var14 [ var12 ] ; 
+if ( var1 -> var20 == number && ( var4 != number && var4 != number ) ) 
+var8 = var9 = var14 [ var12 ] ; 
+} else { 
+if ( var1 -> var19 && ( var4 != number && var4 != number ) ) 
+var8 = var7 = number ; 
+if ( var1 -> var20 == number && ( var4 != number && var4 != number ) ) 
+var8 = var9 = number ; 
+} 
+if ( abs ( var7 - var8 ) <= abs ( var8 - var9 ) ) { 
+var11 = var9 ; 
+* var6 = number ; 
+} else { 
+var11 = var7 ; 
+* var6 = number ; 
+} 
+* var5 = & var13 [ number ] ; 
+return var11 ; 
+} 

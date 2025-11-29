@@ -1,0 +1,34 @@
+static void func1 ( int var1 , uint8_t * var2 , int var3 , 
+int var4 ) 
+{ 
+struct var5 { 
+int var6 , var7 , var8 , var9 ; 
+} var5 [ ] = { 
+{ number , number , number , number } , 
+{ number , number , number , number } , 
+{ number , number , number , number } , 
+{ number , number , number , number } , 
+{ number , number , number , number } , 
+{ number , number , number , number } , 
+{ number , number , number , number } 
+} ; 
+static const unsigned char var10 [ 10 ] = { 
+TOP_HBAR | BOT_HBAR | LEFT_TOP_VBAR | LEFT_BOT_VBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | MID_HBAR | BOT_HBAR | LEFT_BOT_VBAR | RIGHT_TOP_VBAR , 
+TOP_HBAR | MID_HBAR | BOT_HBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+MID_HBAR | LEFT_TOP_VBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | BOT_HBAR | MID_HBAR | LEFT_TOP_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | BOT_HBAR | MID_HBAR | LEFT_TOP_VBAR | LEFT_BOT_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | BOT_HBAR | MID_HBAR | LEFT_TOP_VBAR | LEFT_BOT_VBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+TOP_HBAR | BOT_HBAR | MID_HBAR | LEFT_TOP_VBAR | RIGHT_TOP_VBAR | RIGHT_BOT_VBAR , 
+} ; 
+unsigned var11 = var10 [ var1 ] ; 
+int var12 ; 
+func2 ( number , var2 , var3 , var4 , number , number , number , number ) ; 
+for ( var12 = number ; var12 < func3 ( var5 ) ; var12 ++ ) 
+if ( var11 & ( number << var12 ) ) 
+func2 ( number , var2 , var3 , var4 , 
+var5 [ var12 ] . var6 , var5 [ var12 ] . var7 , var5 [ var12 ] . var8 , var5 [ var12 ] . var9 ) ; 
+} 

@@ -1,0 +1,28 @@
+static int func1 ( WriterContext * var1 , InputFile * var2 ) 
+{ 
+AVFormatContext * var3 = var2 -> var3 ; 
+char var4 [ number ] ; 
+int64_t var5 = var3 -> var6 ? func2 ( var3 -> var6 ) : - number ; 
+int var7 = number ; 
+func3 ( var1 , var8 ) ; 
+func4 ( str , var3 -> var9 ) ; 
+func5 ( str , var3 -> var10 ) ; 
+func5 ( str , var3 -> var11 ) ; 
+func6 ( str , var3 -> var12 -> var13 ) ; 
+if ( ! var14 ) { 
+if ( var3 -> var12 -> var15 ) func6 ( str , var3 -> var12 -> var15 ) ; 
+else func7 ( str , str ) ; 
+} 
+func8 ( str , var3 -> var16 , & var17 ) ; 
+func8 ( str , var3 -> var18 , & var17 ) ; 
+if ( var5 >= number ) func9 ( str , var5 , var19 ) ; 
+else func7 ( str , str ) ; 
+if ( var3 -> var20 > number ) func9 ( str , var3 -> var20 , var21 ) ; 
+else func7 ( str , str ) ; 
+func5 ( str , func10 ( var3 ) ) ; 
+if ( var22 ) 
+var7 = func11 ( var1 , var3 -> var23 , var24 ) ; 
+func12 ( var1 ) ; 
+fflush ( var25 ) ; 
+return var7 ; 
+} 

@@ -1,0 +1,6 @@
+static int func1 ( const void * var1 , const void * var2 ) 
+{ 
+const int var3 = * ( const uint32_t * ) var1 & number ; 
+const int var4 = * ( const uint32_t * ) var2 & number ; 
+return var3 - var4 ; 
+} 

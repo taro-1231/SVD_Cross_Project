@@ -1,0 +1,9 @@
+static void func1 ( uint8_t * var1 [ 3 ] , int var2 [ 3 ] , int var3 , int var4 , int var5 ) 
+{ 
+if ( var3 & number ) func2 ( var1 [ number ] , var2 [ number ] , var4 , number , var5 ) ; 
+if ( var3 & number ) func2 ( var1 [ number ] + number , var2 [ number ] , var4 , number , var5 ) ; 
+if ( var3 & number ) func2 ( var1 [ number ] + number * var2 [ number ] , var2 [ number ] , var4 , number , var5 ) ; 
+if ( var3 & number ) func2 ( var1 [ number ] + number + number * var2 [ number ] , var2 [ number ] , var4 , number , var5 ) ; 
+if ( var3 & number ) func2 ( var1 [ number ] , var2 [ number ] , var4 , number , var5 ) ; 
+if ( var3 & number ) func2 ( var1 [ number ] , var2 [ number ] , var4 , number , var5 ) ; 
+} 

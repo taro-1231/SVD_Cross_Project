@@ -1,0 +1,15 @@
+static int func1 ( FilterGraph * var1 , InputFilter * var2 , 
+AVFilterInOut * var3 ) 
+{ 
+if ( ! var2 -> var4 -> var5 ) { 
+func2 ( var6 , var7 , 
+str , 
+var2 -> var4 -> var8 , var2 -> var4 -> var9 -> var10 ) ; 
+return var11 ; 
+} 
+switch ( func3 ( var3 -> var12 -> var13 , var3 -> var14 ) ) { 
+case var15 : return func4 ( var1 , var2 , var3 ) ; 
+case var16 : return func5 ( var1 , var2 , var3 ) ; 
+var17 : func6 ( number ) ; 
+} 
+} 

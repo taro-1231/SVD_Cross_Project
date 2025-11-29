@@ -1,0 +1,12 @@
+static inline void func1 ( const uint8_t * var1 , uint8_t * var2 , 
+int var3 ) 
+{ 
+int var4 = number - var3 ; 
+const uint8_t * var5 = var1 - var4 ; 
+uint8_t * var6 = var2 - var4 ; 
+for ( ; var4 < number ; var4 += number ) { 
+register unsigned var7 = * ( const uint32_t * ) & var5 [ var4 ] , var8 = var7 & number ; 
+var7 &= number ; 
+* ( uint32_t * ) & var6 [ var4 ] = ( var7 >> number ) + var8 + ( var7 << number ) ; 
+} 
+} 

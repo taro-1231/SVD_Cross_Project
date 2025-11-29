@@ -1,0 +1,149 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 = number , var4 ; 
+if ( var1 != number && var1 != number ) { 
+fprintf ( var5 , str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , var2 [ number ] ) ; 
+exit ( number ) ; 
+} 
+if ( var1 == number ) { 
+const char * var8 = var2 [ number ] + strlen ( str ) ; 
+if ( ! strcmp ( var8 , str ) ) var9 = var10 ; 
+else if ( ! strcmp ( var8 , str ) ) var9 = var11 ; 
+else if ( ! strcmp ( var8 , str ) ) var9 = var12 ; 
+else { 
+fprintf ( var5 , str , var8 ) ; 
+exit ( number ) ; 
+} 
+var2 ++ ; 
+} 
+var13 = var2 [ number ] ; 
+var14 = var2 [ number ] ; 
+var15 = var2 [ number ] ; 
+func2 ( ) ; 
+if ( func3 ( & var16 , var13 , var17 , var17 ) < number ) { 
+fprintf ( var5 , str , var13 ) ; 
+exit ( number ) ; 
+} 
+if ( func4 ( var16 , var17 ) < number ) { 
+fprintf ( var5 , str ) ; 
+exit ( number ) ; 
+} 
+if ( func5 ( & var18 , var16 , var19 ) >= number ) { 
+var20 = var16 -> var21 [ var18 ] ; 
+var22 = var20 -> var23 ; 
+var24 = fopen ( var14 , str ) ; 
+if ( ! var24 ) { 
+fprintf ( var5 , str , var14 ) ; 
+var3 = number ; 
+goto var25 ; 
+} 
+var26 = var22 -> var26 ; 
+var27 = var22 -> var27 ; 
+var28 = var22 -> var28 ; 
+var3 = func6 ( var29 , var30 , 
+var26 , var27 , var28 , number ) ; 
+if ( var3 < number ) { 
+fprintf ( var5 , str ) ; 
+goto var25 ; 
+} 
+var31 = var3 ; 
+} 
+if ( func5 ( & var32 , var16 , var33 ) >= number ) { 
+var34 = var16 -> var21 [ var32 ] ; 
+var35 = var34 -> var23 ; 
+var36 = fopen ( var15 , str ) ; 
+if ( ! var36 ) { 
+fprintf ( var5 , str , var15 ) ; 
+var3 = number ; 
+goto var25 ; 
+} 
+} 
+func7 ( var16 , number , var13 , number ) ; 
+if ( ! var34 && ! var20 ) { 
+fprintf ( var5 , str ) ; 
+var3 = number ; 
+goto var25 ; 
+} 
+if ( var9 == var10 ) 
+var6 = func8 ( ) ; 
+else 
+var6 = func9 ( ) ; 
+if ( ! var6 ) { 
+fprintf ( var5 , str ) ; 
+var3 = func10 ( var37 ) ; 
+goto var25 ; 
+} 
+func11 ( & var38 ) ; 
+var38 . var7 = var17 ; 
+var38 . var39 = number ; 
+if ( var20 ) 
+printf ( str , var13 , var14 ) ; 
+if ( var34 ) 
+printf ( str , var13 , var15 ) ; 
+while ( func12 ( var16 , & var38 ) >= number ) { 
+AVPacket var40 = var38 ; 
+do { 
+var3 = func13 ( & var4 , number ) ; 
+if ( var3 < number ) 
+break ; 
+var38 . var7 += var3 ; 
+var38 . var39 -= var3 ; 
+} while ( var38 . var39 > number ) ; 
+func14 ( & var40 ) ; 
+} 
+var38 . var7 = var17 ; 
+var38 . var39 = number ; 
+do { 
+func13 ( & var4 , number ) ; 
+} while ( var4 ) ; 
+printf ( str ) ; 
+if ( var20 ) { 
+printf ( str 
+str , 
+av_get_pix_fmt_name ( var28 ) , var26 , var27 , 
+var14 ) ; 
+} 
+if ( var34 ) { 
+enum AVSampleFormat var41 = var35 -> var42 ; 
+int var43 = var35 -> var44 ; 
+const char * var45 ; 
+if ( func15 ( var41 ) ) { 
+const char * var46 = func16 ( var41 ) ; 
+printf ( str 
+str , 
+var46 ? var46 : str ) ; 
+var41 = func17 ( var41 ) ; 
+var43 = number ; 
+} 
+if ( ( var3 = func18 ( & var45 , var41 ) ) < number ) 
+goto var25 ; 
+printf ( str 
+str , 
+var45 , var43 , var35 -> sample_rate , 
+var15 ) ; 
+} 
+var25 : 
+func19 ( var22 ) ; 
+func19 ( var35 ) ; 
+func20 ( & var16 ) ; 
+if ( var24 ) 
+fclose ( var24 ) ; 
+if ( var36 ) 
+fclose ( var36 ) ; 
+if ( var9 == var10 ) 
+func21 ( & var6 ) ; 
+else 
+func22 ( & var6 ) ; 
+func23 ( var29 [ number ] ) ; 
+return var3 < number ; 
+} 

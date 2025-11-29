@@ -1,0 +1,22 @@
+static int func1 ( SwsContext * var2 , SwsFilterDescriptor * var3 , int var4 , int var5 ) 
+{ 
+GammaContext * var6 = var3 -> var6 ; 
+uint16_t * var7 = var6 -> var7 ; 
+int var8 = var3 -> var1 -> var9 ; 
+int var10 ; 
+for ( var10 = number ; var10 < var5 ; ++ var10 ) { 
+uint8_t ** var1 = var3 -> var1 -> var11 [ number ] . var12 ; 
+int var13 = var4 + var10 - var3 -> var1 -> var11 [ number ] . var4 ; 
+uint16_t * var14 = ( uint16_t * ) * ( var1 + var13 ) ; 
+int var15 ; 
+for ( var15 = number ; var15 < var8 ; ++ var15 ) { 
+uint16_t var16 = func2 ( var14 + var15 * number + number ) ; 
+uint16_t var17 = func2 ( var14 + var15 * number + number ) ; 
+uint16_t var18 = func2 ( var14 + var15 * number + number ) ; 
+func3 ( var14 + var15 * number + number , var7 [ var16 ] ) ; 
+func3 ( var14 + var15 * number + number , var7 [ var17 ] ) ; 
+func3 ( var14 + var15 * number + number , var7 [ var18 ] ) ; 
+} 
+} 
+return var5 ; 
+} 

@@ -1,0 +1,42 @@
+int func1 ( void ) 
+{ 
+int var1 , var2 , var3 ; 
+AVSHA var4 ; 
+unsigned char var5 [ number ] ; 
+static const int var6 [ number ] = { number , number , number } ; 
+for ( var2 = number ; var2 < number ; var2 ++ ) { 
+printf ( str , var6 [ var2 ] ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+func2 ( & var4 , var6 [ var2 ] ) ; 
+if ( var3 == number ) 
+func3 ( & var4 , str , number ) ; 
+else if ( var3 == number ) 
+func3 ( & var4 , str , number ) ; 
+else 
+for ( var1 = number ; var1 < number * number ; var1 ++ ) 
+func3 ( & var4 , str , number ) ; 
+func4 ( & var4 , var5 ) ; 
+for ( var1 = number ; var1 < var6 [ var2 ] >> number ; var1 ++ ) 
+printf ( str , var5 [ var1 ] ) ; 
+putchar ( str ) ; 
+} 
+switch ( var2 ) { 
+case number : 
+printf ( str 
+str 
+str ) ; 
+break ; 
+case number : 
+printf ( str 
+str 
+str ) ; 
+break ; 
+case 2 : 
+printf ( str 
+str 
+str ) ; 
+break ; 
+} 
+} 
+return number ; 
+} 

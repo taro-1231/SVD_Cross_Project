@@ -1,0 +1,7 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+OCVContext * var2 = var1 -> var3 ; 
+if ( var2 -> func1 ) 
+var2 -> func1 ( var1 ) ; 
+func2 ( & var2 -> var3 ) ; 
+} 

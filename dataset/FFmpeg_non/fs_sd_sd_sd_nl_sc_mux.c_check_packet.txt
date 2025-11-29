@@ -1,0 +1,15 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+if ( ! var2 ) 
+return number ; 
+if ( var2 -> var3 < number || var2 -> var3 >= var1 -> var4 ) { 
+func2 ( var1 , var5 , str , 
+var2 -> var3 ) ; 
+return func3 ( var6 ) ; 
+} 
+if ( var1 -> var7 [ var2 -> var3 ] -> var8 -> var9 == var10 ) { 
+func2 ( var1 , var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+return number ; 
+} 

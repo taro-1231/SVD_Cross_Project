@@ -1,0 +1,29 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+DrawBoxContext * var3 = var1 -> var4 -> var5 ; 
+int var6 , var7 , var8 , var9 = var3 -> var7 , var10 = var3 -> var8 ; 
+unsigned char * var11 [ number ] ; 
+for ( var8 = func2 ( var10 , number ) ; var8 < var2 -> var12 && var8 < ( var10 + var3 -> var13 ) ; var8 ++ ) { 
+var11 [ number ] = var2 -> var14 [ number ] + var8 * var2 -> var15 [ number ] ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) 
+var11 [ var6 ] = var2 -> var14 [ var6 ] + 
+var2 -> var15 [ var6 ] * ( var8 >> var3 -> var16 ) ; 
+if ( var3 -> var17 ) { 
+for ( var7 = func2 ( var9 , number ) ; var7 < var9 + var3 -> var18 && var7 < var2 -> var19 ; var7 ++ ) 
+if ( ( var8 - var10 < var3 -> var20 ) || ( var10 + var3 -> var13 - number - var8 < var3 -> var20 ) || 
+( var7 - var9 < var3 -> var20 ) || ( var9 + var3 -> var18 - number - var7 < var3 -> var20 ) ) 
+var11 [ number ] [ var7 ] = number - var11 [ number ] [ var7 ] ; 
+} else { 
+for ( var7 = func2 ( var9 , number ) ; var7 < var9 + var3 -> var18 && var7 < var2 -> var19 ; var7 ++ ) { 
+double var21 = ( double ) var3 -> var22 [ var23 ] / number ; 
+if ( ( var8 - var10 < var3 -> var20 ) || ( var10 + var3 -> var13 - number - var8 < var3 -> var20 ) || 
+( var7 - var9 < var3 -> var20 ) || ( var9 + var3 -> var18 - number - var7 < var3 -> var20 ) ) { 
+var11 [ number ] [ var7 ] = ( number - var21 ) * var11 [ number ] [ var7 ] + var21 * var3 -> var22 [ var24 ] ; 
+var11 [ number ] [ var7 >> var3 -> var25 ] = ( number - var21 ) * var11 [ number ] [ var7 >> var3 -> var25 ] + var21 * var3 -> var22 [ var26 ] ; 
+var11 [ number ] [ var7 >> var3 -> var25 ] = ( number - var21 ) * var11 [ number ] [ var7 >> var3 -> var25 ] + var21 * var3 -> var22 [ var27 ] ; 
+} 
+} 
+} 
+} 
+return func3 ( var1 -> var4 -> var28 [ number ] , var2 ) ; 
+} 

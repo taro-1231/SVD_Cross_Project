@@ -1,0 +1,27 @@
+static PullupField * func1 ( PullupContext * var1 , int var2 ) 
+{ 
+PullupField * var3 , * var4 ; 
+var4 = var3 = func2 ( sizeof ( * var3 ) ) ; 
+if ( ! var4 ) 
+return var5 ; 
+if ( func3 ( var1 , var4 ) < number ) { 
+func4 ( var4 ) ; 
+return var5 ; 
+} 
+for ( ; var2 > number ; var2 -- ) { 
+var4 -> var6 = func2 ( sizeof ( * var4 -> var6 ) ) ; 
+if ( ! var4 -> var6 ) { 
+func5 ( var3 ) ; 
+return var5 ; 
+} 
+var4 -> var6 -> var7 = var4 ; 
+var4 = var4 -> var6 ; 
+if ( func3 ( var1 , var4 ) < number ) { 
+func5 ( var3 ) ; 
+return var5 ; 
+} 
+} 
+var4 -> var6 = var3 ; 
+var3 -> var7 = var4 ; 
+return var3 ; 
+} 

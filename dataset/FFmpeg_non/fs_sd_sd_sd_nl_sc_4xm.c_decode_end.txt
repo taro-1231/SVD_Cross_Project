@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+FourXContext * const var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 ) ; 
+func2 ( & var2 -> var6 ) ; 
+func2 ( & var2 -> var7 ) ; 
+var2 -> var8 = number ; 
+for ( var4 = number ; var4 < var9 ; var4 ++ ) { 
+func2 ( & var2 -> var10 [ var4 ] . var11 ) ; 
+var2 -> var10 [ var4 ] . var12 = number ; 
+} 
+func3 ( & var2 -> var13 ) ; 
+return number ; 
+} 

@@ -1,0 +1,176 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVStream * var3 , RMStream * var4 , int var5 ) 
+{ 
+char var6 [ number ] ; 
+uint32_t var7 ; 
+int var8 ; 
+var7 = func2 ( var2 ) ; 
+if ( var7 == number ) { 
+unsigned var9 ; 
+int var10 = func2 ( var2 ) ; 
+int64_t var11 = func3 ( var2 ) ; 
+func4 ( var2 , number ) ; 
+var9 = func2 ( var2 ) ; 
+func4 ( var2 , number ) ; 
+func5 ( var1 , var2 , number ) ; 
+if ( ( var11 + var10 ) >= func3 ( var2 ) + number ) { 
+func6 ( var2 ) ; 
+func7 ( var2 , var6 , sizeof ( var6 ) ) ; 
+} 
+if ( ( var11 + var10 ) > func3 ( var2 ) ) 
+func4 ( var2 , var10 + var11 - func3 ( var2 ) ) ; 
+if ( var9 ) 
+var3 -> var12 -> bit_rate = 8LL * var9 / number ; 
+var3 -> var12 -> var13 = number ; 
+var3 -> var12 -> var14 = number ; 
+var3 -> var12 -> var15 = var16 ; 
+var3 -> var12 -> var17 = var18 ; 
+var3 -> var12 -> var19 = var20 ; 
+var4 -> var21 = var22 ; 
+} else { 
+int var23 , var24 , var25 , var26 ; 
+int var27 ; 
+unsigned var9 ; 
+func4 ( var2 , number ) ; 
+func8 ( var2 ) ; 
+func8 ( var2 ) ; 
+func2 ( var2 ) ; 
+func8 ( var2 ) ; 
+var23 = func2 ( var2 ) ; 
+var4 -> var25 = var25 = func8 ( var2 ) ; 
+func8 ( var2 ) ; 
+var9 = func8 ( var2 ) ; 
+if ( var7 == number ) { 
+if ( var9 ) 
+var3 -> var12 -> bit_rate = 8LL * var9 / number ; 
+} 
+func8 ( var2 ) ; 
+var4 -> var24 = var24 = func2 ( var2 ) ; 
+var3 -> var12 -> var28 = func2 ( var2 ) ; 
+var4 -> var26 = var26 = func2 ( var2 ) ; 
+func2 ( var2 ) ; 
+if ( var7 == number ) { 
+func2 ( var2 ) ; func2 ( var2 ) ; func2 ( var2 ) ; 
+} 
+var3 -> var12 -> var13 = func2 ( var2 ) ; 
+func8 ( var2 ) ; 
+var3 -> var12 -> var14 = func2 ( var2 ) ; 
+if ( var7 == number ) { 
+var4 -> var21 = func9 ( var2 ) ; 
+func10 ( var2 , var6 , number ) ; 
+var6 [ number ] = number ; 
+} else { 
+func11 ( var6 , number ) ; 
+func7 ( var2 , var6 , sizeof ( var6 ) ) ; 
+var4 -> var21 = func12 ( var6 ) ; 
+func7 ( var2 , var6 , sizeof ( var6 ) ) ; 
+} 
+var3 -> var12 -> var17 = var18 ; 
+var3 -> var12 -> var29 = func12 ( var6 ) ; 
+var3 -> var12 -> var19 = func13 ( var30 , 
+var3 -> var12 -> var29 ) ; 
+switch ( var3 -> var12 -> var19 ) { 
+case var31 : 
+var3 -> var32 = var33 ; 
+break ; 
+case var34 : 
+var3 -> var12 -> var35 = number ; 
+var4 -> var36 = var3 -> var12 -> var28 ; 
+var3 -> var12 -> var28 = var25 ; 
+break ; 
+case var37 : 
+var3 -> var32 = var38 ; 
+case var39 : 
+case var40 : 
+if ( var5 ) { 
+var27 = number ; 
+} else { 
+func2 ( var2 ) ; func6 ( var2 ) ; 
+if ( var7 == number ) 
+func6 ( var2 ) ; 
+var27 = func8 ( var2 ) ; 
+if ( var27 + var41 <= ( unsigned ) var27 ) { 
+func14 ( var1 , var42 , str ) ; 
+return - number ; 
+} 
+} 
+var4 -> var36 = var3 -> var12 -> var28 ; 
+if ( var3 -> var12 -> var19 == var40 ) { 
+if ( var23 > number ) { 
+func14 ( var1 , var42 , str , 
+var23 ) ; 
+return - number ; 
+} 
+var3 -> var12 -> var28 = var43 [ var23 ] ; 
+} else { 
+if ( var26 <= number ) { 
+func14 ( var1 , var42 , str ) ; 
+return - number ; 
+} 
+var3 -> var12 -> var28 = var4 -> var26 ; 
+} 
+if ( ( var8 = func15 ( var2 , var3 -> var12 , var27 ) ) < number ) 
+return var8 ; 
+break ; 
+case var44 : 
+func2 ( var2 ) ; func6 ( var2 ) ; 
+if ( var7 == number ) 
+func6 ( var2 ) ; 
+var27 = func8 ( var2 ) ; 
+if ( var27 + var41 <= ( unsigned ) var27 ) { 
+func14 ( var1 , var42 , str ) ; 
+return - number ; 
+} 
+if ( var27 >= number ) { 
+func6 ( var2 ) ; 
+if ( ( var8 = func15 ( var2 , var3 -> var12 , var27 - number ) ) < number ) 
+return var8 ; 
+} 
+break ; 
+} 
+switch ( var4 -> var21 ) { 
+case var45 : 
+if ( var4 -> var25 > var4 -> var36 || 
+var24 <= number || 
+var4 -> var25 * var24 > ( number + ( var24 & number ) ) * var4 -> var36 ) 
+return var46 ; 
+if ( var4 -> var25 * var24 != number * var4 -> var36 ) { 
+func16 ( var1 , str ) ; 
+return var46 ; 
+} 
+break ; 
+case var47 : 
+if ( var4 -> var26 <= number || 
+var4 -> var26 > var4 -> var36 ) 
+return var46 ; 
+if ( var4 -> var36 % var4 -> var26 ) 
+return var46 ; 
+break ; 
+case var48 : 
+case var22 : 
+case var49 : 
+case var50 : 
+break ; 
+var51 : 
+func14 ( var1 , var42 , str PRIX32 str , var4 -> var21 ) ; 
+return var46 ; 
+} 
+if ( var4 -> var21 == var45 || 
+var4 -> var21 == var47 || 
+var4 -> var21 == var48 ) { 
+if ( var3 -> var12 -> var28 <= number || 
+var4 -> var36 * var24 > ( unsigned ) var52 || 
+var4 -> var36 * var24 < var3 -> var12 -> var28 ) 
+return var46 ; 
+if ( func17 ( & var4 -> var53 , var4 -> var36 * var24 ) < number ) 
+return func18 ( var54 ) ; 
+} 
+if ( var5 ) { 
+func6 ( var2 ) ; 
+func6 ( var2 ) ; 
+func6 ( var2 ) ; 
+func5 ( var1 , var2 , number ) ; 
+} 
+} 
+return number ; 
+} 

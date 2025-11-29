@@ -1,0 +1,11 @@
+av_cold int func1 ( HQXContext * var1 ) 
+{ 
+int var2 = func2 ( & var1 -> var3 , number , func3 ( var4 ) , 
+var4 , number , number , var5 , number , number , number ) ; 
+if ( var2 < number ) 
+return var2 ; 
+func4 ( number , var6 ) ; 
+func4 ( number , var7 ) ; 
+func4 ( number , var8 ) ; 
+return number ; 
+} 

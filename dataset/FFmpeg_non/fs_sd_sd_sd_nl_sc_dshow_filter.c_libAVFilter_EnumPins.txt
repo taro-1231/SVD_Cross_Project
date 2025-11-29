@@ -1,0 +1,12 @@
+func1 ( libAVFilter * var1 , IEnumPins ** var2 ) 
+{ 
+libAVEnumPins * new ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+new = func3 ( var1 -> var4 , var1 ) ; 
+if ( ! new ) 
+return var5 ; 
+* var2 = ( IEnumPins * ) new ; 
+return var6 ; 
+} 

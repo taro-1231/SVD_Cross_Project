@@ -1,0 +1,10 @@
+static int func1 ( AVIOContext * var1 , AVCodecContext * var2 , unsigned var3 ) 
+{ 
+if ( var3 >= number << number ) { 
+func2 ( var2 , var4 , str , var3 ) ; 
+return - number ; 
+} 
+if ( func3 ( var2 , var1 , var3 ) < number ) 
+return func4 ( var5 ) ; 
+return number ; 
+} 

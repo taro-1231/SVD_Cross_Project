@@ -1,0 +1,13 @@
+static void func1 ( InputStream * var1 , int * var2 , int var3 ) 
+{ 
+if ( * var2 || var3 < number ) 
+var4 [ var3 < number ] ++ ; 
+if ( var3 < number && var5 ) 
+func2 ( number ) ; 
+if ( var5 && * var2 && var1 ) { 
+if ( func3 ( var1 -> var6 ) || ( var1 -> var6 -> var7 & var8 ) ) { 
+func4 ( var9 , var10 , str , var11 [ var1 -> var12 ] -> var13 -> var14 , var1 -> var15 -> var16 ) ; 
+func2 ( number ) ; 
+} 
+} 
+} 

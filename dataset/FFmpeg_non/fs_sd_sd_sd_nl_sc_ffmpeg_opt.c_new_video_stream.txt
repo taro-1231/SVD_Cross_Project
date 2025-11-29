@@ -1,0 +1,174 @@
+static OutputStream * func1 ( OptionsContext * var1 , AVFormatContext * var2 , int var3 ) 
+{ 
+AVStream * var4 ; 
+OutputStream * var5 ; 
+AVCodecContext * var6 ; 
+char * var7 = var8 , * var9 = var8 ; 
+var5 = func2 ( var1 , var2 , var10 , var3 ) ; 
+var4 = var5 -> var4 ; 
+var6 = var5 -> var11 ; 
+func3 ( var12 , var13 , var7 , var2 , var4 ) ; 
+if ( var7 && func4 ( & var5 -> var7 , var7 ) < number ) { 
+func5 ( var8 , var14 , var13 , var7 ) ; 
+func6 ( number ) ; 
+} 
+if ( var7 && var15 == var16 ) 
+func5 ( var8 , var17 , var13 ) ; 
+func3 ( var18 , var13 , var9 , var2 , var4 ) ; 
+if ( var9 ) { 
+AVRational var19 ; 
+if ( func7 ( & var19 , var9 , number , number , var8 ) < number || 
+var19 . var20 <= number || var19 . var21 <= number ) { 
+func5 ( var8 , var14 , var13 , var9 ) ; 
+func6 ( number ) ; 
+} 
+var5 -> var9 = var19 ; 
+} 
+func3 ( var22 , var13 , var5 -> var23 , var2 , var4 ) ; 
+func3 ( var24 , var13 , var5 -> var24 , var2 , var4 ) ; 
+if ( ! var5 -> var25 ) { 
+const char * var26 = var8 ; 
+char * var27 = var8 ; 
+char * var28 = var8 ; 
+char * var29 = var8 , * var30 = var8 ; 
+char * var31 = var8 ; 
+int var32 = number ; 
+int var33 ; 
+func3 ( var34 , var13 , var27 , var2 , var4 ) ; 
+if ( var27 && func8 ( & var6 -> var35 , & var6 -> var36 , var27 ) < number ) { 
+func5 ( var8 , var14 , var13 , var27 ) ; 
+func6 ( number ) ; 
+} 
+var6 -> var37 = var38 ; 
+func3 ( var39 , var13 , var28 , var2 , var4 ) ; 
+if ( var28 && * var28 == var13 ) { 
+var5 -> var40 = number ; 
+if ( ! * ++ var28 ) 
+var28 = var8 ; 
+} 
+if ( var28 && ( var6 -> var41 = func9 ( var28 ) ) == var42 ) { 
+func5 ( var8 , var14 , var13 , var28 ) ; 
+func6 ( number ) ; 
+} 
+var4 -> var43 = var6 -> var43 ; 
+if ( var44 ) 
+var6 -> var45 = number ; 
+func3 ( var46 , var13 , var29 , var2 , var4 ) ; 
+if ( var29 ) { 
+if ( ! ( var6 -> var29 = func10 ( sizeof ( * var6 -> var29 ) * number ) ) ) { 
+func5 ( var8 , var14 , var13 ) ; 
+func6 ( number ) ; 
+} 
+func11 ( var6 -> var29 , var29 ) ; 
+} 
+func3 ( var47 , var13 , var31 , var2 , var4 ) ; 
+if ( var31 ) { 
+uint16_t * var26 = func10 ( sizeof ( * var6 -> var31 ) * number ) ; 
+if ( ! var26 ) { 
+func5 ( var8 , var14 , var13 ) ; 
+func6 ( number ) ; 
+} 
+func12 ( var6 , var26 ) ; 
+func11 ( var26 , var31 ) ; 
+} 
+func3 ( var48 , var13 , var30 , var2 , var4 ) ; 
+if ( var30 ) { 
+if ( ! ( var6 -> var30 = func10 ( sizeof ( * var6 -> var30 ) * number ) ) ) { 
+func5 ( var8 , var14 , var13 ) ; 
+func6 ( number ) ; 
+} 
+func11 ( var6 -> var30 , var30 ) ; 
+} 
+func3 ( var49 , var13 , var26 , var2 , var4 ) ; 
+for ( var33 = number ; var26 ; var33 ++ ) { 
+int var50 , var51 , var19 ; 
+int var52 = sscanf ( var26 , var13 , & var50 , & var51 , & var19 ) ; 
+if ( var52 != number ) { 
+func5 ( var8 , var14 , var13 ) ; 
+func6 ( number ) ; 
+} 
+var6 -> var53 = 
+func13 ( var6 -> var53 , 
+var33 + number , sizeof ( RcOverride ) ) ; 
+if ( ! var6 -> var53 ) { 
+func5 ( var8 , var14 , var13 ) ; 
+func6 ( number ) ; 
+} 
+var6 -> var53 [ var33 ] . var54 = var50 ; 
+var6 -> var53 [ var33 ] . var55 = var51 ; 
+if ( var19 > number ) { 
+var6 -> var53 [ var33 ] . var56 = var19 ; 
+var6 -> var53 [ var33 ] . var57 = number ; 
+} 
+else { 
+var6 -> var53 [ var33 ] . var56 = number ; 
+var6 -> var53 [ var33 ] . var57 = - var19 / number ; 
+} 
+var26 = strchr ( var26 , var13 ) ; 
+if ( var26 ) var26 ++ ; 
+} 
+var6 -> var58 = var33 ; 
+if ( var59 ) 
+var6 -> var60 |= var61 ; 
+func3 ( var62 , var33 , var32 , var2 , var4 ) ; 
+if ( var32 ) { 
+if ( var32 & number ) { 
+var6 -> var60 |= var63 ; 
+func14 ( & var5 -> var64 , var13 , var13 , var65 ) ; 
+} 
+if ( var32 & number ) { 
+var6 -> var60 |= var66 ; 
+func14 ( & var5 -> var64 , var13 , var13 , var65 ) ; 
+} 
+} 
+func3 ( var67 , var13 , var5 -> var68 , var2 , var4 ) ; 
+if ( var5 -> var68 && 
+! ( var5 -> var68 = func15 ( var5 -> var68 ) ) ) 
+func6 ( number ) ; 
+if ( var32 ) { 
+char var69 [ number ] ; 
+FILE * var70 ; 
+snprintf ( var69 , sizeof ( var69 ) , var13 , 
+var5 -> var68 ? var5 -> var68 : 
+var71 , 
+var33 ) ; 
+if ( ! strcmp ( var5 -> var72 -> var73 , var13 ) ) { 
+func14 ( & var5 -> var64 , var13 , var69 , var74 ) ; 
+} else { 
+if ( var6 -> var60 & var66 ) { 
+char * var75 = func16 ( var69 ) ; 
+if ( ! var75 ) { 
+func5 ( var8 , var14 , var13 , 
+var69 ) ; 
+func6 ( number ) ; 
+} 
+var6 -> var76 = var75 ; 
+} 
+if ( var6 -> var60 & var63 ) { 
+var70 = func17 ( var69 , var13 ) ; 
+if ( ! var70 ) { 
+func5 ( var8 , var14 , 
+var13 , 
+var69 , strerror ( var77 ) ) ; 
+func6 ( number ) ; 
+} 
+var5 -> var78 = var70 ; 
+} 
+} 
+} 
+func3 ( var79 , var13 , var5 -> var80 , var2 , var4 ) ; 
+if ( var5 -> var80 ) 
+var5 -> var80 = func15 ( var5 -> var80 ) ; 
+func3 ( var81 , var33 , var5 -> var81 , var2 , var4 ) ; 
+var5 -> var82 = - number ; 
+func3 ( var82 , var33 , var5 -> var82 , var2 , var4 ) ; 
+var5 -> var83 = func18 ( var1 , var2 , var5 ) ; 
+if ( ! var5 -> var83 ) 
+func6 ( number ) ; 
+} else { 
+func3 ( var84 , var33 , var5 -> var84 , var2 , var4 ) ; 
+} 
+if ( var5 -> var25 ) 
+func19 ( var1 , var2 , var5 , var10 ) ; 
+return var5 ; 
+} 

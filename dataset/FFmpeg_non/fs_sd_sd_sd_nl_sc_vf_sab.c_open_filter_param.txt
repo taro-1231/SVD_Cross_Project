@@ -1,0 +1,43 @@
+static int func1 ( FilterParam * var1 , int var2 , int var3 , unsigned int var4 ) 
+{ 
+SwsVector * var5 ; 
+SwsFilter var6 ; 
+int var7 , var8 , var9 ; 
+int var10 = func2 ( var2 , number ) ; 
+var1 -> var11 = func3 ( var10 * var3 ) ; 
+if ( ! var1 -> var11 ) 
+return func4 ( var12 ) ; 
+var1 -> var13 = var10 ; 
+var5 = func5 ( var1 -> var14 , var1 -> var15 ) ; 
+var6 . var16 = var6 . var17 = var5 ; 
+var6 . var18 = var6 . var19 = var20 ; 
+var1 -> var21 = func6 ( var2 , var3 , var22 , 
+var2 , var3 , var22 , 
+var4 , & var6 , var20 , var20 ) ; 
+func7 ( var5 ) ; 
+var5 = func5 ( var1 -> var23 , number ) ; 
+for ( var7 = number ; var7 < var24 ; var7 ++ ) { 
+double var25 ; 
+int var26 = var7 - var24 / number + var5 -> var27 / number ; 
+if ( var26 < number || var26 >= var5 -> var27 ) var25 = number ; 
+else var25 = var5 -> var28 [ var26 ] ; 
+var1 -> var29 [ var7 ] = ( int ) ( var25 / var5 -> var28 [ var5 -> var27 / number ] * ( number << number ) + number ) ; 
+} 
+func7 ( var5 ) ; 
+var5 = func5 ( var1 -> var30 , var1 -> var15 ) ; 
+var1 -> var31 = var5 -> var27 ; 
+var1 -> var32 = func2 ( var5 -> var27 , number ) ; 
+var1 -> var33 = func8 ( var1 -> var31 , var1 -> var32 * sizeof ( * var1 -> var33 ) ) ; 
+if ( ! var1 -> var33 ) { 
+func7 ( var5 ) ; 
+return func4 ( var12 ) ; 
+} 
+for ( var9 = number ; var9 < var5 -> var27 ; var9 ++ ) { 
+for ( var8 = number ; var8 < var5 -> var27 ; var8 ++ ) { 
+double var25 = var5 -> var28 [ var8 ] * var5 -> var28 [ var9 ] ; 
+var1 -> var33 [ var8 + var9 * var1 -> var32 ] = ( int ) ( var25 * ( number << number ) + number ) ; 
+} 
+} 
+func7 ( var5 ) ; 
+return number ; 
+} 

@@ -1,0 +1,19 @@
+static int func1 ( AVDictionary ** var1 , const char ** var2 , 
+const char * var3 , const char * var4 , 
+int var5 ) 
+{ 
+char * var6 = func2 ( var2 , var3 ) ; 
+char * var7 = var8 ; 
+int var9 ; 
+if ( var6 && * var6 && strspn ( * var2 , var3 ) ) { 
+( * var2 ) ++ ; 
+var7 = func2 ( var2 , var4 ) ; 
+} 
+if ( var6 && * var6 && var7 && * var7 ) 
+var9 = func3 ( var1 , var6 , var7 , var5 ) ; 
+else 
+var9 = func4 ( var10 ) ; 
+func5 ( & var6 ) ; 
+func5 ( & var7 ) ; 
+return var9 ; 
+} 

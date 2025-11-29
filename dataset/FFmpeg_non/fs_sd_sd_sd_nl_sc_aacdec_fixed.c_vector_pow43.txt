@@ -1,0 +1,12 @@
+static void func1 ( int * var1 , int var2 ) 
+{ 
+int var3 , var4 ; 
+for ( var3 = number ; var3 < var2 ; var3 ++ ) { 
+var4 = var1 [ var3 ] ; 
+if ( var4 < number ) 
+var4 = - ( int ) var5 [ - var4 ] ; 
+else 
+var4 = ( int ) var5 [ var4 ] ; 
+var1 [ var3 ] = var4 ; 
+} 
+} 

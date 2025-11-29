@@ -1,0 +1,74 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+uint8_t var2 [ var3 ] ; 
+char var4 [ number ] , var5 [ number ] ; 
+int var6 , var7 ; 
+URLContext * var8 = var9 ; 
+int var10 ; 
+AVCodecContext var11 = { number } ; 
+struct sockaddr_storage var12 ; 
+AVIOContext var13 ; 
+socklen_t var14 = sizeof ( var12 ) ; 
+RTSPState * var15 = var1 -> var16 ; 
+if ( ! func2 ( ) ) 
+return func3 ( var17 ) ; 
+var6 = func4 ( & var8 , var1 -> var18 , var19 , 
+& var1 -> var20 , var9 ) ; 
+if ( var6 ) 
+goto var21 ; 
+while ( number ) { 
+var6 = func5 ( var8 , var2 , sizeof ( var2 ) ) ; 
+if ( var6 == func3 ( var22 ) ) 
+continue ; 
+if ( var6 < number ) 
+goto var21 ; 
+if ( var6 < number ) { 
+func6 ( var1 , var23 , str ) ; 
+continue ; 
+} 
+if ( ( var2 [ number ] & number ) != number ) { 
+func6 ( var1 , var23 , str 
+str ) ; 
+continue ; 
+} 
+if ( func7 ( var2 [ number ] ) ) 
+continue ; 
+var10 = var2 [ number ] & number ; 
+break ; 
+} 
+func8 ( func9 ( var8 ) , ( struct sockaddr * ) & var12 , & var14 ) ; 
+func10 ( var8 ) ; 
+var8 = var9 ; 
+if ( func11 ( & var11 , var10 ) ) { 
+func6 ( var1 , AV_LOG_ERROR , str 
+str , 
+var10 ) ; 
+goto var21 ; 
+} 
+if ( var11 . var24 != var25 ) { 
+func6 ( var1 , var23 , str 
+str 
+str ) ; 
+} 
+func12 ( var9 , number , var9 , number , var4 , sizeof ( var4 ) , & var7 , 
+var9 , number , var1 -> var18 ) ; 
+snprintf ( var5 , sizeof ( var5 ) , 
+str , 
+var12 . var26 == var27 ? number : number , var4 , 
+var11 . var24 == var25 ? str : 
+var11 . var24 == var28 ? str : str , 
+var7 , var10 ) ; 
+func6 ( var1 , var29 , str , var5 ) ; 
+func13 ( & var13 , var5 , strlen ( var5 ) , number , var9 , var9 , var9 , var9 ) ; 
+var1 -> var13 = & var13 ; 
+func14 ( ) ; 
+var15 -> var30 = ( number << ( var31 + number ) ) - number ; 
+var6 = func15 ( var1 ) ; 
+var1 -> var13 = var9 ; 
+return var6 ; 
+var21 : 
+if ( var8 ) 
+func10 ( var8 ) ; 
+func14 ( ) ; 
+return var6 ; 
+} 

@@ -1,0 +1,9 @@
+static void func1 ( LongTermPrediction * var1 , 
+GetBitContext * var2 , uint8_t var3 ) 
+{ 
+int var4 ; 
+var1 -> var5 = func2 ( var2 , number ) ; 
+var1 -> var6 = var7 [ func2 ( var2 , number ) ] ; 
+for ( var4 = number ; var4 < func3 ( var3 , var8 ) ; var4 ++ ) 
+var1 -> var9 [ var4 ] = func4 ( var2 ) ; 
+} 

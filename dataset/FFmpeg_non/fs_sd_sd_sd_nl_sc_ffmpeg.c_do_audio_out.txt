@@ -1,0 +1,48 @@
+static void func1 ( OutputFile * var1 , OutputStream * var2 , 
+AVFrame * var3 ) 
+{ 
+AVCodecContext * var4 = var2 -> var5 ; 
+AVPacket var6 ; 
+int var7 ; 
+func2 ( & var6 ) ; 
+var6 . var8 = var9 ; 
+var6 . var10 = number ; 
+if ( ! func3 ( var2 ) ) 
+return ; 
+if ( var3 -> var11 == var12 || var13 < number ) 
+var3 -> var11 = var2 -> var14 ; 
+var2 -> var14 = var3 -> var11 + var3 -> var15 ; 
+var2 -> var16 += var3 -> var15 ; 
+var2 -> var17 ++ ; 
+func4 ( var6 . var10 || ! var6 . var8 ) ; 
+func5 ( var9 ) ; 
+if ( var18 ) { 
+func6 ( var9 , AV_LOG_INFO , str 
+str , 
+av_ts2str ( var3 -> var11 ) , av_ts2timestr ( var3 -> var11 , & var4 -> var19 ) , 
+var4 -> var19 . num , var4 -> var19 . den ) ; 
+} 
+var7 = func7 ( var4 , var3 ) ; 
+if ( var7 < number ) 
+goto var20 ; 
+while ( number ) { 
+var7 = func8 ( var4 , & var6 ) ; 
+if ( var7 == func9 ( var21 ) ) 
+break ; 
+if ( var7 < number ) 
+goto var20 ; 
+func5 ( str , var2 -> var22 , var2 -> var23 ) ; 
+func10 ( & var6 , var4 -> var19 , var2 -> var24 ) ; 
+if ( var18 ) { 
+func6 ( var9 , AV_LOG_INFO , str 
+str , 
+av_ts2str ( var6 . var11 ) , av_ts2timestr ( var6 . var11 , & var4 -> var19 ) , 
+av_ts2str ( var6 . dts ) , av_ts2timestr ( var6 . dts , & var4 -> var19 ) ) ; 
+} 
+func11 ( var1 , & var6 , var2 ) ; 
+} 
+return ; 
+var20 : 
+func6 ( var9 , var25 , str ) ; 
+func12 ( number ) ; 
+} 

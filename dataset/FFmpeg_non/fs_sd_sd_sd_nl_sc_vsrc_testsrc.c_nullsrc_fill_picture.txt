@@ -1,0 +1,10 @@
+static void func1 ( AVFilterContext * var1 , AVFrame * var2 ) { } 
+static av_cold int nullsrc_init ( AVFilterContext * var1 ) 
+AVFILTER_DEFINE_CLASS ( nullsrc ) ; 
+static void func1 ( AVFilterContext * var1 , AVFrame * var2 ) { } 
+static av_cold int nullsrc_init ( AVFilterContext * var1 ) 
+{ 
+TestSourceContext * test = var1 -> priv ; 
+test -> fill_picture_fn = func1 ; 
+return init ( var1 ) ; 
+} 

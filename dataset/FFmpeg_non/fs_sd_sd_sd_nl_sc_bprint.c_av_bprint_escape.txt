@@ -1,0 +1,34 @@
+void func1 ( AVBPrint * var2 , const char * var3 , const char * var4 , 
+enum AVEscapeMode var5 , int var6 ) 
+{ 
+const char * var7 = var3 ; 
+if ( var5 == var8 ) 
+var5 = var9 ; 
+switch ( var5 ) { 
+case var10 : 
+func2 ( var2 , str , number ) ; 
+for ( ; * var3 ; var3 ++ ) { 
+if ( * var3 == str ) 
+func3 ( var2 , str ) ; 
+else 
+func2 ( var2 , * var3 , number ) ; 
+} 
+func2 ( var2 , str , number ) ; 
+break ; 
+var11 : 
+for ( ; * var3 ; var3 ++ ) { 
+int var12 = var3 == var7 || ! * ( var3 + number ) ; 
+int var13 = ! ! strchr ( var1 , * var3 ) ; 
+int var14 = var4 && strchr ( var4 , * var3 ) ; 
+int var15 = 
+var14 || strchr ( str , * var3 ) || 
+( var13 && ( var6 & var16 ) ) ; 
+if ( var14 || 
+( ! ( var6 & var17 ) && 
+( var15 || ( var13 && var12 ) ) ) ) 
+func2 ( var2 , str , number ) ; 
+func2 ( var2 , * var3 , number ) ; 
+} 
+break ; 
+} 
+} 

@@ -1,0 +1,16 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+SendCmdContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+for ( var4 = number ; var4 < var2 -> var6 ; var4 ++ ) { 
+Interval * var7 = & var2 -> var8 [ var4 ] ; 
+for ( var5 = number ; var5 < var7 -> var9 ; var5 ++ ) { 
+Command * var10 = & var7 -> var11 [ var5 ] ; 
+func2 ( & var10 -> var12 ) ; 
+func2 ( & var10 -> var13 ) ; 
+func2 ( & var10 -> var14 ) ; 
+} 
+func2 ( & var7 -> var11 ) ; 
+} 
+func2 ( & var2 -> var8 ) ; 
+} 

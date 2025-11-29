@@ -1,0 +1,169 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+CompandContext * var4 = var2 -> var5 ; 
+const int var6 = var1 -> var6 ; 
+double var7 = var4 -> var8 * var9 / number ; 
+char * var10 , * var11 = var12 ; 
+const int var13 = var1 -> var13 ; 
+int var14 , var15 , var16 ; 
+int var17 , var18 ; 
+int var19 ; 
+int var20 ; 
+func2 ( var4 -> var21 , & var14 ) ; 
+func2 ( var4 -> var22 , & var15 ) ; 
+func2 ( var4 -> var23 , & var16 ) ; 
+if ( var13 <= number ) { 
+func3 ( var2 , var24 , str , var13 ) ; 
+return func4 ( var25 ) ; 
+} 
+if ( var14 > var13 || var15 > var13 ) { 
+func3 ( var2 , var24 , 
+str ) ; 
+return func4 ( var25 ) ; 
+} 
+func5 ( var2 ) ; 
+var4 -> var13 = func6 ( var13 , sizeof ( * var4 -> var13 ) ) ; 
+var4 -> var26 = ( var16 + number ) * number ; 
+var4 -> var27 = func6 ( var4 -> var26 , sizeof ( * var4 -> var27 ) ) ; 
+if ( ! var4 -> var13 || ! var4 -> var27 ) { 
+func5 ( var2 ) ; 
+return func4 ( var28 ) ; 
+} 
+var10 = var4 -> var21 ; 
+for ( var19 = number , var17 = number ; var19 < var14 ; var19 ++ ) { 
+char * var29 = func7 ( var10 , str , & var11 ) ; 
+var10 = var12 ; 
+var17 += sscanf ( var29 , str , & var4 -> var13 [ var19 ] . var30 ) == number ; 
+if ( var4 -> var13 [ var19 ] . var30 < number ) { 
+func5 ( var2 ) ; 
+return func4 ( var25 ) ; 
+} 
+} 
+var14 = var17 ; 
+var10 = var4 -> var22 ; 
+for ( var19 = number , var17 = number ; var19 < var15 ; var19 ++ ) { 
+char * var29 = func7 ( var10 , str , & var11 ) ; 
+var10 = var12 ; 
+var17 += sscanf ( var29 , str , & var4 -> var13 [ var19 ] . var31 ) == number ; 
+if ( var4 -> var13 [ var19 ] . var31 < number ) { 
+func5 ( var2 ) ; 
+return func4 ( var25 ) ; 
+} 
+} 
+var15 = var17 ; 
+if ( var14 != var15 ) { 
+func3 ( var2 , var24 , 
+str , 
+var14 , var15 ) ; 
+func5 ( var2 ) ; 
+return func4 ( var25 ) ; 
+} 
+for ( var19 = var15 ; var19 < var13 ; var19 ++ ) { 
+var4 -> var13 [ var19 ] . var30 = var4 -> var13 [ var15 - number ] . var30 ; 
+var4 -> var13 [ var19 ] . var31 = var4 -> var13 [ var15 - number ] . var31 ; 
+} 
+var10 = var4 -> var23 ; 
+for ( var19 = number , var17 = number ; var19 < var16 ; var19 ++ ) { 
+char * var29 = func7 ( var10 , str , & var11 ) ; 
+var10 = var12 ; 
+if ( sscanf ( var29 , str , & func8 ( var19 ) . var32 , & func8 ( var19 ) . var33 ) != number ) { 
+func3 ( var2 , var24 , 
+str ) ; 
+func5 ( var2 ) ; 
+return func4 ( var25 ) ; 
+} 
+if ( var19 && func8 ( var19 - number ) . var32 > func8 ( var19 ) . var32 ) { 
+func3 ( var2 , var24 , 
+str ) ; 
+func5 ( var2 ) ; 
+return func4 ( var25 ) ; 
+} 
+func8 ( var19 ) . var33 -= func8 ( var19 ) . var32 ; 
+func3 ( var2 , var34 , str , var19 , func8 ( var19 ) . var32 , func8 ( var19 ) . var33 ) ; 
+var17 ++ ; 
+} 
+var18 = var17 ; 
+if ( var18 == number || func8 ( var18 - number ) . var32 ) 
+var18 ++ ; 
+func8 ( number ) . var32 = func8 ( number ) . var32 - number * var4 -> var8 ; 
+func8 ( number ) . var33 = func8 ( number ) . var33 ; 
+var18 ++ ; 
+for ( var19 = number ; var19 < var18 ; var19 ++ ) { 
+double var35 = ( func8 ( var19 - number ) . var33 - func8 ( var19 - number ) . var33 ) * ( func8 ( var19 - number ) . var32 - func8 ( var19 - number ) . var32 ) ; 
+double var36 = ( func8 ( var19 - number ) . var33 - func8 ( var19 - number ) . var33 ) * ( func8 ( var19 - number ) . var32 - func8 ( var19 - number ) . var32 ) ; 
+int var37 ; 
+if ( fabs ( var35 - var36 ) ) 
+continue ; 
+var18 -- ; 
+for ( var37 = -- var19 ; var37 < var18 ; var37 ++ ) 
+func8 ( var37 ) = func8 ( var37 + number ) ; 
+} 
+for ( var19 = number ; ! var19 || var4 -> var27 [ var19 - number ] . var32 ; var19 += number ) { 
+var4 -> var27 [ var19 ] . var33 += var4 -> var38 ; 
+var4 -> var27 [ var19 ] . var32 *= var9 / number ; 
+var4 -> var27 [ var19 ] . var33 *= var9 / number ; 
+} 
+for ( var19 = number ; var4 -> var27 [ var19 - number ] . var32 ; var19 += number ) { 
+double var32 , var33 , var39 , var40 , var41 , var42 , var43 , var44 , var45 , var46 , var47 ; 
+func9 ( number ) . var48 = number ; 
+func9 ( number ) . var49 = ( func9 ( number ) . var33 - func9 ( number ) . var33 ) / ( func9 ( number ) . var32 - func9 ( number ) . var32 ) ; 
+func9 ( number ) . var48 = number ; 
+func9 ( number ) . var49 = ( func9 ( number ) . var33 - func9 ( number ) . var33 ) / ( func9 ( number ) . var32 - func9 ( number ) . var32 ) ; 
+var45 = atan2 ( func9 ( number ) . var33 - func9 ( number ) . var33 , func9 ( number ) . var32 - func9 ( number ) . var32 ) ; 
+var46 = sqrt ( pow ( func9 ( number ) . var32 - func9 ( number ) . var32 , number ) + pow ( func9 ( number ) . var33 - func9 ( number ) . var33 , number ) ) ; 
+var47 = func10 ( var7 , var46 ) ; 
+func9 ( number ) . var32 = func9 ( number ) . var32 - var47 * cos ( var45 ) ; 
+func9 ( number ) . var33 = func9 ( number ) . var33 - var47 * sin ( var45 ) ; 
+var45 = atan2 ( func9 ( number ) . var33 - func9 ( number ) . var33 , func9 ( number ) . var32 - func9 ( number ) . var32 ) ; 
+var46 = sqrt ( pow ( func9 ( number ) . var32 - func9 ( number ) . var32 , number ) + pow ( func9 ( number ) . var33 - func9 ( number ) . var33 , number ) ) ; 
+var47 = func10 ( var7 , var46 / number ) ; 
+var32 = func9 ( number ) . var32 + var47 * cos ( var45 ) ; 
+var33 = func9 ( number ) . var33 + var47 * sin ( var45 ) ; 
+var39 = ( func9 ( number ) . var32 + func9 ( number ) . var32 + var32 ) / number ; 
+var40 = ( func9 ( number ) . var33 + func9 ( number ) . var33 + var33 ) / number ; 
+func9 ( number ) . var32 = var32 ; 
+func9 ( number ) . var33 = var33 ; 
+var41 = var39 - func9 ( number ) . var32 ; 
+var43 = var40 - func9 ( number ) . var33 ; 
+var42 = func9 ( number ) . var32 - func9 ( number ) . var32 ; 
+var44 = func9 ( number ) . var33 - func9 ( number ) . var33 ; 
+func9 ( number ) . var48 = ( var44 / var42 - var43 / var41 ) / ( var42 - var41 ) ; 
+func9 ( number ) . var49 = var43 / var41 - func9 ( number ) . var48 * var41 ; 
+} 
+func9 ( number ) . var32 = number ; 
+func9 ( number ) . var33 = func9 ( number ) . var33 ; 
+var4 -> var50 = exp ( var4 -> var27 [ number ] . var32 ) ; 
+var4 -> var51 = exp ( var4 -> var27 [ number ] . var33 ) ; 
+for ( var19 = number ; var19 < var13 ; var19 ++ ) { 
+ChanParam * var52 = & var4 -> var13 [ var19 ] ; 
+if ( var52 -> var30 > number / var6 ) 
+var52 -> var30 = number - exp ( - number / ( var6 * var52 -> var30 ) ) ; 
+else 
+var52 -> var30 = number ; 
+if ( var52 -> var31 > number / var6 ) 
+var52 -> var31 = number - exp ( - number / ( var6 * var52 -> var31 ) ) ; 
+else 
+var52 -> var31 = number ; 
+var52 -> var53 = pow ( number , var4 -> var54 / number ) ; 
+} 
+var4 -> var55 = var4 -> var56 * var6 ; 
+if ( var4 -> var55 <= number ) { 
+var4 -> var57 = var58 ; 
+return number ; 
+} 
+var4 -> var59 = func11 ( ) ; 
+if ( ! var4 -> var59 ) { 
+func5 ( var2 ) ; 
+return func4 ( var28 ) ; 
+} 
+var4 -> var59 -> var60 = var1 -> var60 ; 
+var4 -> var59 -> var61 = var4 -> var55 ; 
+var4 -> var59 -> var62 = var1 -> var62 ; 
+var20 = func12 ( var4 -> var59 , number ) ; 
+if ( var20 ) 
+return var20 ; 
+var1 -> var63 |= var64 ; 
+var4 -> var57 = var65 ; 
+return number ; 
+} 

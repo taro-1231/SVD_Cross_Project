@@ -1,0 +1,10 @@
+static float func1 ( float var1 , float var2 , float var3 , 
+float var4 ) 
+{ 
+float var5 , var6 ; 
+if ( var4 == number ) 
+return number ; 
+var5 = func2 ( ( var1 - var3 ) / ( number * var4 ) ) ; 
+var6 = func2 ( ( var1 - var2 ) / ( number * var4 ) ) - var5 ; 
+return func3 ( var6 , number ) ; 
+} 

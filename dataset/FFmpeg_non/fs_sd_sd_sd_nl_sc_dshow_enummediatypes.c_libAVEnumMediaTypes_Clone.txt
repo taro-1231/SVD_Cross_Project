@@ -1,0 +1,13 @@
+func1 ( libAVEnumMediaTypes * var1 , libAVEnumMediaTypes ** var2 ) 
+{ 
+libAVEnumMediaTypes * new ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+new = func3 ( & var1 -> var4 ) ; 
+if ( ! new ) 
+return var5 ; 
+new -> var6 = var1 -> var6 ; 
+* var2 = new ; 
+return var7 ; 
+} 

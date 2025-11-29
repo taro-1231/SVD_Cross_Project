@@ -1,0 +1,36 @@
+static int func1 ( GetBitContext * var1 , unsigned int var2 , 
+unsigned int var3 , 
+unsigned int var4 [ MAX_SHORT_TERM_RPS_COUNT ] ) 
+{ 
+unsigned int var5 ; 
+if ( var2 && func2 ( var1 ) ) { 
+if ( var2 >= var3 ) 
+return var6 ; 
+func3 ( var1 ) ; 
+func4 ( var1 ) ; 
+var4 [ var2 ] = number ; 
+for ( var5 = number ; var5 <= var4 [ var2 - number ] ; var5 ++ ) { 
+uint8_t var7 = number ; 
+uint8_t var8 = func2 ( var1 ) ; 
+if ( ! var8 ) 
+var7 = func2 ( var1 ) ; 
+if ( var8 || var7 ) 
+var4 [ var2 ] ++ ; 
+} 
+} else { 
+unsigned int var9 = func4 ( var1 ) ; 
+unsigned int var10 = func4 ( var1 ) ; 
+if ( ( var10 + ( uint64_t ) var9 ) * number > func5 ( var1 ) ) 
+return var6 ; 
+var4 [ var2 ] = var9 + var10 ; 
+for ( var5 = number ; var5 < var9 ; var5 ++ ) { 
+func4 ( var1 ) ; 
+func3 ( var1 ) ; 
+} 
+for ( var5 = number ; var5 < var10 ; var5 ++ ) { 
+func4 ( var1 ) ; 
+func3 ( var1 ) ; 
+} 
+} 
+return number ; 
+} 

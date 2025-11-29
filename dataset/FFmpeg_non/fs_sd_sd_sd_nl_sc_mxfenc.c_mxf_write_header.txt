@@ -1,0 +1,167 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+uint8_t var6 [ func2 ( var7 ) ] = { number } ; 
+const MXFSamplesPerFrame * var8 = var9 ; 
+AVDictionaryEntry * var10 ; 
+int64_t var11 = number ; 
+if ( ! var1 -> var12 ) 
+return - number ; 
+if ( var1 -> var13 == & var14 && var1 -> var12 != number ) { 
+func3 ( var1 , var15 , str ) ; 
+return - number ; 
+} 
+for ( var4 = number ; var4 < var1 -> var12 ; var4 ++ ) { 
+AVStream * var16 = var1 -> var17 [ var4 ] ; 
+MXFStreamContext * var18 = func4 ( sizeof ( * var18 ) ) ; 
+if ( ! var18 ) 
+return func5 ( var19 ) ; 
+var16 -> var3 = var18 ; 
+if ( ( ( var4 == number ) ^ ( var16 -> var20 -> var21 == var22 ) ) && var1 -> var13 != & var14 ) { 
+func3 ( var1 , var15 , str ) ; 
+return - number ; 
+} 
+if ( var16 -> var20 -> var21 == var22 ) { 
+const AVPixFmtDescriptor * var23 = func6 ( var16 -> var20 -> var24 ) ; 
+AVRational var25 , var26 = var16 -> var27 ; 
+var18 -> var28 = number ; 
+var18 -> var29 = number ; 
+var18 -> var30 = number ; 
+if ( var23 ) { 
+var18 -> var28 = var23 -> var31 [ number ] . var32 + number ; 
+var18 -> var29 = number << var23 -> var33 ; 
+} 
+switch ( func7 ( var1 , var16 ) ) { 
+case var34 : var18 -> var30 = number ; break ; 
+case var35 : var18 -> var30 = number ; break ; 
+case var36 : var18 -> var30 = number ; break ; 
+case var37 : var18 -> var30 = number ; break ; 
+} 
+var2 -> var38 = ( var26 . var39 + var26 . var40 / number ) / var26 . var40 ; 
+var8 = func8 ( var1 , var26 ) ; 
+if ( ! var8 ) { 
+func3 ( var1 , var15 , str , 
+var26 . var39 , var26 . var40 ) ; 
+return func5 ( var41 ) ; 
+} 
+var2 -> var27 = var8 -> var27 ; 
+var25 = func9 ( var2 -> var27 ) ; 
+func10 ( var16 , number , var2 -> var27 . var40 , var2 -> var27 . var39 ) ; 
+if ( ( var5 = func11 ( var1 , var16 , var25 ) ) < number ) 
+return var5 ; 
+var18 -> var42 = var16 -> var20 -> var43 ? var16 -> var20 -> var43 : var16 -> var20 -> var44 ; 
+if ( var1 -> var13 == & var45 ) { 
+if ( ( var18 -> var42 == number ) && ( var2 -> var27 . var39 == number ) ) { 
+var18 -> var46 = number ; 
+} else if ( ( var18 -> var42 == number || var18 -> var42 == number ) && ( var2 -> var27 . var39 != number ) ) { 
+var18 -> var46 = number ; 
+} else if ( var18 -> var42 == number ) { 
+if ( var2 -> var27 . var39 == number ) var18 -> var46 = number ; 
+else var18 -> var46 = number ; 
+} else if ( var18 -> var42 == number ) { 
+if ( var2 -> var27 . var39 == number ) var18 -> var46 = number ; 
+else var18 -> var46 = number ; 
+} else { 
+func3 ( var1 , var15 , str ) ; 
+return - number ; 
+} 
+var2 -> var47 = var48 ; 
+var2 -> var47 += number + number + ( uint64_t ) var18 -> var42 * 
+var2 -> var27 . var40 / ( number * var2 -> var27 . var39 ) ; 
+var2 -> var47 += func12 ( var2 -> var47 ) ; 
+var2 -> var47 += number + number + number + var8 -> var49 [ number ] * number * number ; 
+var2 -> var47 += func12 ( var2 -> var47 ) ; 
+var18 -> var50 = number ; 
+} 
+if ( var2 -> var50 >= number ) 
+var18 -> var50 = var2 -> var50 ; 
+} else if ( var16 -> var20 -> var21 == var51 ) { 
+if ( var16 -> var20 -> var52 != number ) { 
+func3 ( var1 , var15 , str ) ; 
+return - number ; 
+} 
+func10 ( var16 , number , number , var16 -> var20 -> var52 ) ; 
+if ( var1 -> var13 == & var45 ) { 
+if ( var16 -> var46 != number ) { 
+func3 ( var1 , var15 , str ) ; 
+return - number ; 
+} 
+if ( var16 -> var20 -> var53 != var54 && 
+var16 -> var20 -> var53 != var55 ) { 
+func3 ( var1 , var15 , str ) ; 
+} 
+var18 -> var46 = ( ( MXFStreamContext * ) var1 -> var17 [ number ] -> var3 ) -> var46 + number ; 
+} else if ( var1 -> var13 == & var14 ) { 
+AVRational var26 = func9 ( var2 -> var56 ) ; 
+if ( var16 -> var20 -> var53 != var54 && 
+var16 -> var20 -> var53 != var55 ) { 
+func3 ( var1 , var15 , str ) ; 
+return var57 ; 
+} 
+if ( var16 -> var20 -> var58 != number ) { 
+func3 ( var1 , var15 , str ) ; 
+return func5 ( var41 ) ; 
+} 
+var8 = func8 ( var1 , var26 ) ; 
+if ( ! var8 ) { 
+func3 ( var1 , var15 , str , var26 . var39 , var26 . var40 ) ; 
+return func5 ( var41 ) ; 
+} 
+var2 -> var27 = var16 -> var27 ; 
+if ( ( var5 = func11 ( var1 , var16 , func9 ( var8 -> var27 ) ) ) < number ) 
+return var5 ; 
+var2 -> var38 = ( var26 . var39 + var26 . var40 / number ) / var26 . var40 ; 
+var2 -> var47 = ( func13 ( var16 -> var20 -> var53 ) * var16 -> var20 -> var58 ) >> number ; 
+var18 -> var46 = number ; 
+} else { 
+var2 -> var59 = number ; 
+} 
+} 
+if ( ! var18 -> var46 ) { 
+var18 -> var46 = func14 ( var16 -> var20 -> var53 ) ; 
+if ( var18 -> var46 == - number ) { 
+func3 ( var1 , var15 , str 
+str , var4 ) ; 
+return - number ; 
+} 
+} 
+var18 -> var60 = & var7 [ var18 -> var46 ] . var60 ; 
+memcpy ( var18 -> var61 , var7 [ var18 -> var46 ] . var62 , number ) ; 
+var18 -> var61 [ number ] = var6 [ var18 -> var46 ] ; 
+func15 ( var1 , str , var18 -> var61 ) ; 
+if ( ! var6 [ var18 -> var46 ] ) 
+var2 -> var63 ++ ; 
+var6 [ var18 -> var46 ] ++ ; 
+} 
+if ( var1 -> var13 == & var45 || var1 -> var13 == & var14 ) { 
+var2 -> var63 = number ; 
+} 
+if ( ! ( var1 -> var64 & var65 ) ) 
+func16 ( var1 ) ; 
+for ( var4 = number ; var4 < var1 -> var12 ; var4 ++ ) { 
+MXFStreamContext * var18 = var1 -> var17 [ var4 ] -> var3 ; 
+var18 -> var61 [ number ] = var6 [ var18 -> var46 ] ; 
+if ( ! memcmp ( var18 -> var61 , var7 [ number ] . var62 , number ) ) 
+var18 -> var66 = ( number << number ) | func17 ( var18 -> var61 + number ) ; 
+else 
+var18 -> var66 = func17 ( var18 -> var61 + number ) ; 
+} 
+if ( var10 = func18 ( var1 -> var67 , str , var9 , number ) ) 
+var11 = func19 ( var10 -> var68 ) ; 
+if ( var11 ) 
+var2 -> var11 = func20 ( var11 ) ; 
+var2 -> var69 = - number ; 
+var2 -> var70 = func4 ( sizeof ( * var2 -> var70 ) ) ; 
+if ( ! var2 -> var70 ) 
+return func5 ( var19 ) ; 
+var2 -> var70 -> var3 = func4 ( sizeof ( MXFStreamContext ) ) ; 
+if ( ! var2 -> var70 -> var3 ) 
+return func5 ( var19 ) ; 
+var2 -> var70 -> var46 = - number ; 
+if ( ! var8 ) 
+var8 = func8 ( var1 , ( AVRational ) { number , number } ) ; 
+if ( func21 ( var1 , var8 -> var49 , var2 -> var27 ) < number ) 
+return - number ; 
+return number ; 
+} 

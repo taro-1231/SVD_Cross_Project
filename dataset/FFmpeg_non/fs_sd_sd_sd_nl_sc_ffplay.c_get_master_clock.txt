@@ -1,0 +1,16 @@
+static double func1 ( VideoState * var1 ) 
+{ 
+double var2 ; 
+switch ( func2 ( var1 ) ) { 
+case var3 : 
+var2 = func3 ( & var1 -> var4 ) ; 
+break ; 
+case var5 : 
+var2 = func3 ( & var1 -> var6 ) ; 
+break ; 
+var7 : 
+var2 = func3 ( & var1 -> var8 ) ; 
+break ; 
+} 
+return var2 ; 
+} 

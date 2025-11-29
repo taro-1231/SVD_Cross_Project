@@ -1,0 +1,44 @@
+static int func1 ( AVFilterContext * var1 , 
+AVFilterBufferRef ** var2 , int var3 , int var4 ) 
+{ 
+AVFilterBufferRef * var5 ; 
+AVFrame * var6 ; 
+int var7 ; 
+if ( ! var2 ) 
+return func2 ( var1 -> var8 [ number ] ) ; 
+var6 = func3 ( ) ; 
+if ( ! var6 ) 
+return func4 ( var9 ) ; 
+if ( ! var3 ) 
+var7 = func5 ( var1 , var6 , var4 ) ; 
+else 
+var7 = func6 ( var1 , var6 , var3 ) ; 
+if ( var7 < number ) 
+goto var10 ; 
+AV_NOWARN_DEPRECATED ( 
+if ( var1 -> var8 [ number ] -> var11 == var12 ) { 
+var5 = func7 ( var6 -> var13 , var6 -> var14 , 
+var15 , 
+var6 -> var16 , var6 -> var17 , 
+var6 -> var18 ) ; 
+} else { 
+var5 = func8 ( var6 -> var19 , 
+var6 -> var14 [ number ] , var15 , 
+var6 -> var3 , 
+var6 -> var18 , 
+var6 -> var20 ) ; 
+} 
+if ( ! var5 ) { 
+var7 = func4 ( var9 ) ; 
+goto var10 ; 
+} 
+func9 ( var5 , var6 ) ; 
+) 
+var5 -> var5 -> var21 = var6 ; 
+var5 -> var5 -> var22 = var23 ; 
+* var2 = var5 ; 
+return number ; 
+var10 : 
+func10 ( & var6 ) ; 
+return var7 ; 
+} 

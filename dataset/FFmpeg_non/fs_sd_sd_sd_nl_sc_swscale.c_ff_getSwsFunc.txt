@@ -1,0 +1,9 @@
+SwsFunc func1 ( SwsContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+if ( var2 ) 
+func3 ( var1 ) ; 
+if ( var3 ) 
+func4 ( var1 ) ; 
+return var4 ; 
+} 

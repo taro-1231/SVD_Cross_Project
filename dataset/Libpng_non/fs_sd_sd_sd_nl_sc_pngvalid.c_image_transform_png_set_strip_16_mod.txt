@@ -1,0 +1,21 @@
+func1 ( PNG_CONST image_transform * var1 , 
+image_pixel * var2 , png_const_structp var3 , 
+PNG_CONST transform_display * var4 ) 
+{ 
+if ( var2 -> var5 == number ) 
+{ 
+var2 -> var6 = var2 -> var5 = number ; 
+if ( var2 -> var7 > number ) var2 -> var7 = number ; 
+if ( var2 -> var8 > number ) var2 -> var8 = number ; 
+if ( var2 -> var9 > number ) var2 -> var9 = number ; 
+if ( var2 -> var10 > number ) var2 -> var10 = number ; 
+{ 
+PNG_CONST double var11 = ( number - number ) / number ; 
+var2 -> var12 += var11 ; 
+var2 -> var13 += var11 ; 
+var2 -> var14 += var11 ; 
+var2 -> var15 += var11 ; 
+} 
+} 
+var1 -> var16 -> func2 ( var1 -> var16 , var2 , var3 , var4 ) ; 
+} 

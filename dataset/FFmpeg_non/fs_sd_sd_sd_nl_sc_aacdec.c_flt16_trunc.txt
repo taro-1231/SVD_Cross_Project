@@ -1,0 +1,7 @@
+static av_always_inline float func1 ( float var1 ) 
+{ 
+union av_intfloat32 var2 ; 
+var2 . var3 = var1 ; 
+var2 . var4 &= number ; 
+return var2 . var3 ; 
+} 

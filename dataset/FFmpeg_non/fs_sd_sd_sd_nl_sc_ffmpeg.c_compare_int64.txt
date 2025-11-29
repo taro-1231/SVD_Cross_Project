@@ -1,0 +1,4 @@
+static int func1 ( const void * var1 , const void * var2 ) 
+{ 
+return func2 ( * ( const int64_t * ) var1 , * ( const int64_t * ) var2 ) ; 
+} 

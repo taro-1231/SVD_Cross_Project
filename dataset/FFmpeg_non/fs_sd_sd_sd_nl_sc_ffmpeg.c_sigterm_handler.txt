@@ -1,0 +1,11 @@
+func1 ( int var1 ) 
+{ 
+var2 = var1 ; 
+var3 ++ ; 
+func2 ( ) ; 
+if ( var3 > number ) { 
+func3 ( number str , 
+strlen ( str ) ) ; 
+exit ( number ) ; 
+} 
+} 

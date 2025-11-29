@@ -1,0 +1,11 @@
+static int func1 ( AVFilterLink * var2 , AVFrame * var3 ) 
+{ 
+SetFieldContext * var1 = var2 -> var4 -> var5 ; 
+if ( var1 -> var6 == var7 ) { 
+var3 -> var8 = number ; 
+} else if ( var1 -> var6 != var9 ) { 
+var3 -> var8 = number ; 
+var3 -> var10 = var1 -> var6 ; 
+} 
+return func2 ( var2 -> var4 -> var11 [ number ] , var3 ) ; 
+} 

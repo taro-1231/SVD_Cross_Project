@@ -1,0 +1,4 @@
+const AVOption * func1 ( FF_CONST_AVUTIL55 void * var1 , const AVOption * var2 ) 
+{ 
+return func2 ( var1 , var2 ) ; 
+} 

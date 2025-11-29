@@ -1,0 +1,23 @@
+func1 ( png_modifier * var1 ) 
+{ 
+if ( ! var1 -> var2 && 
+var1 -> var3 ) 
+{ 
+if ( var1 -> var4 ) 
+{ 
+if ( ++ var1 -> var5 >= func2 ( var1 ) ) 
+var1 -> var5 = number ; 
+} 
+else 
+{ 
+if ( var1 -> var5 == number ) 
+var1 -> var5 = func3 ( func2 ( var1 ) - number ) + number ; 
+else 
+var1 -> var5 = number ; 
+} 
+if ( var1 -> var5 > number ) 
+var1 -> var2 = number ; 
+} 
+else if ( ! var1 -> var2 ) 
+var1 -> var5 = number ; 
+} 

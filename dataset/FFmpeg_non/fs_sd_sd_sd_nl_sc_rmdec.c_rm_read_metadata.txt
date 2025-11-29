@@ -1,0 +1,10 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , int var3 ) 
+{ 
+char var4 [ number ] ; 
+int var5 ; 
+for ( var5 = number ; var5 < func2 ( var6 ) ; var5 ++ ) { 
+int var7 = var3 ? func3 ( var2 ) : func4 ( var2 ) ; 
+func5 ( var2 , var4 , sizeof ( var4 ) , var7 ) ; 
+func6 ( & var1 -> var8 , var6 [ var5 ] , var4 , number ) ; 
+} 
+} 

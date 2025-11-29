@@ -1,0 +1,4 @@
+struct AVTEA * func1 ( void ) 
+{ 
+return func2 ( sizeof ( struct AVTEA ) ) ; 
+} 

@@ -1,0 +1,17 @@
+static void func1 ( FFFrameSync * var1 , unsigned var2 , AVFrame * var3 ) 
+{ 
+int64_t var4 ; 
+func2 ( ! var1 -> var2 [ var2 ] . var5 ) ; 
+if ( var3 ) { 
+var4 = func3 ( var3 -> var4 , var1 -> var2 [ var2 ] . var6 , var1 -> var6 ) ; 
+var3 -> var4 = var4 ; 
+} else { 
+var4 = var1 -> var2 [ var2 ] . var7 != var8 || var1 -> var2 [ var2 ] . var9 == var10 
+? var11 : func4 ( var1 , var2 , var1 -> var2 [ var2 ] . var4 ) ; 
+var1 -> var2 [ var2 ] . var12 = number ; 
+func5 ( var1 ) ; 
+} 
+var1 -> var2 [ var2 ] . var13 = var3 ; 
+var1 -> var2 [ var2 ] . var14 = var4 ; 
+var1 -> var2 [ var2 ] . var5 = number ; 
+} 

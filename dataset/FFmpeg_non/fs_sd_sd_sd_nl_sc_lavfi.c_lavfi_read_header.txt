@@ -1,0 +1,196 @@
+av_cold static int func1 ( AVFormatContext * var1 ) 
+{ 
+LavfiContext * var2 = var1 -> var3 ; 
+AVFilterInOut * var4 = var5 , * var6 = var5 , * var7 ; 
+AVFilter * var8 , * var9 ; 
+int * var10 = func2 ( var11 ) ; 
+enum AVMediaType var12 ; 
+int var13 = number , var14 , var15 ; 
+if ( ! var10 ) 
+func3 ( func4 ( var18 ) ) ; 
+func5 ( ) ; 
+var8 = func6 ( str ) ; 
+var9 = func6 ( str ) ; 
+if ( var2 -> var19 && var2 -> var20 ) { 
+func7 ( var1 , var21 , 
+str ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+if ( var2 -> var19 ) { 
+AVBPrint var24 ; 
+AVIOContext * var25 = var5 ; 
+var13 = func8 ( & var25 , var2 -> var19 , var26 ) ; 
+if ( var13 < number ) 
+goto var17 ; 
+func9 ( & var24 , number , var27 ) ; 
+var13 = func10 ( var25 , & var24 , var28 ) ; 
+func11 ( & var25 ) ; 
+func12 ( & var24 , str , number ) ; 
+if ( ! var13 && ! func13 ( & var24 ) ) 
+var13 = func4 ( var18 ) ; 
+if ( var13 ) { 
+func14 ( & var24 , var5 ) ; 
+goto var17 ; 
+} 
+if ( ( var13 = func14 ( & var24 , & var2 -> var20 ) ) ) 
+goto var17 ; 
+} 
+if ( ! var2 -> var20 ) 
+var2 -> var20 = func15 ( var1 -> var29 ) ; 
+if ( ! ( var2 -> var22 = func16 ( ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+if ( ( var13 = func17 ( var2 -> var22 , var2 -> var20 , 
+& var4 , & var6 , var1 ) ) < number ) 
+goto var17 ; 
+if ( var4 ) { 
+func7 ( var1 , var21 , 
+str ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+for ( var15 = number , var7 = var6 ; var7 ; var15 ++ , var7 = var7 -> var31 ) ; 
+var2 -> var32 = var15 ; 
+if ( ! ( var2 -> var33 = func18 ( sizeof ( int ) * var15 ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+if ( ! ( var2 -> var34 = func19 ( sizeof ( int ) * var15 ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+if ( ! ( var2 -> var35 = func18 ( sizeof ( int ) * var15 ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+if ( ! ( var2 -> var36 = func18 ( sizeof ( int ) * var15 ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+for ( var14 = number ; var14 < var15 ; var14 ++ ) 
+var2 -> var35 [ var14 ] = - number ; 
+for ( var14 = number , var7 = var6 ; var7 ; var14 ++ , var7 = var7 -> var31 ) { 
+int var37 = number , var38 = number , var39 = number ; 
+sscanf ( var7 -> var40 , str , & var38 , & var37 , & var38 ) ; 
+if ( ! var38 ) { 
+func7 ( var1 , var21 , 
+str , var7 -> var40 ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+if ( var7 -> var40 [ var38 ] ) { 
+if ( ! strcmp ( var7 -> var40 + var38 , str ) ) { 
+var39 = number ; 
+} else { 
+func7 ( var1 , var21 , 
+str , var7 -> var40 ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+} 
+if ( ( unsigned ) var37 >= var15 ) { 
+func7 ( var1 , var21 , 
+str 
+str , 
+var7 -> var40 , var15 ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+if ( var2 -> var35 [ var37 ] != - number ) { 
+func7 ( var1 , var21 , 
+str , 
+var37 ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+var2 -> var33 [ var14 ] = var37 ; 
+var2 -> var35 [ var37 ] = var14 ; 
+var2 -> var36 [ var14 ] = ! ! var39 ; 
+} 
+for ( var14 = number , var7 = var6 ; var7 ; var14 ++ , var7 = var7 -> var31 ) { 
+AVStream * var41 ; 
+if ( ! ( var41 = func20 ( var1 , var5 ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+var41 -> var42 = var14 ; 
+} 
+var2 -> var43 = func21 ( var2 -> var32 , sizeof ( AVFilterContext * ) ) ; 
+if ( ! var2 -> var43 ) 
+func3 ( func4 ( var18 ) ) ; 
+for ( var14 = number , var7 = var6 ; var7 ; var14 ++ , var7 = var7 -> var31 ) { 
+AVFilterContext * var44 ; 
+var12 = func22 ( var7 -> var45 -> var46 , var7 -> var47 ) ; 
+if ( var12 == var48 && ! var8 || 
+var12 == var49 && ! var9 ) { 
+func7 ( var1 , var21 , str ) ; 
+func3 ( var50 ) ; 
+} 
+if ( var12 == var48 ) { 
+var13 = func23 ( & var44 , var8 , 
+var7 -> var40 , var5 , 
+var5 , var2 -> var22 ) ; 
+if ( var13 >= number ) 
+var13 = func24 ( var44 , str , var10 , var51 , var52 ) ; 
+if ( var13 < number ) 
+goto var17 ; 
+} else if ( var12 == var49 ) { 
+enum AVSampleFormat var53 [ ] = { var54 , 
+var55 , 
+var56 , 
+var57 , 
+var58 , - number } ; 
+var13 = func23 ( & var44 , var9 , 
+var7 -> var40 , var5 , 
+var5 , var2 -> var22 ) ; 
+if ( var13 >= number ) 
+var13 = func24 ( var44 , str , var53 , var59 , var52 ) ; 
+if ( var13 < number ) 
+goto var17 ; 
+var13 = func25 ( var44 , str , number , 
+var52 ) ; 
+if ( var13 < number ) 
+goto var17 ; 
+} else { 
+func7 ( var1 , var21 , 
+str , var7 -> var40 ) ; 
+func3 ( func4 ( var23 ) ) ; 
+} 
+var2 -> var43 [ var14 ] = var44 ; 
+if ( ( var13 = func26 ( var7 -> var45 , var7 -> var47 , var44 , number ) ) < number ) 
+goto var17 ; 
+} 
+if ( ( var13 = func27 ( var2 -> var22 , var1 ) ) < number ) 
+goto var17 ; 
+if ( var2 -> var60 ) { 
+char * var61 = func28 ( var2 -> var22 , var2 -> var60 ) ; 
+fputs ( var61 , var62 ) ; 
+fflush ( var62 ) ; 
+func29 ( var61 ) ; 
+} 
+for ( var14 = number ; var14 < var2 -> var32 ; var14 ++ ) { 
+AVFilterLink * var63 = var2 -> var43 [ var2 -> var35 [ var14 ] ] -> var30 [ number ] ; 
+AVStream * var41 = var1 -> var64 [ var14 ] ; 
+var41 -> var65 -> var66 = var63 -> var12 ; 
+func30 ( var41 , number , var63 -> var67 . var68 , var63 -> var67 . var69 ) ; 
+if ( var63 -> var12 == var48 ) { 
+var41 -> var65 -> var70 = var71 ; 
+var41 -> var65 -> var72 = var63 -> var73 ; 
+var41 -> var65 -> var67 = var63 -> var67 ; 
+var41 -> var65 -> var74 = var63 -> var75 ; 
+var41 -> var65 -> var76 = var63 -> var77 ; 
+var41 -> var78 = 
+var41 -> var65 -> var78 = var63 -> var78 ; 
+var1 -> var79 = func31 ( var1 -> var79 , 
+var63 -> var75 * var63 -> var77 * 
+func32 ( func33 ( var63 -> var73 ) ) * 
+number ) ; 
+} else if ( var63 -> var12 == var49 ) { 
+var41 -> var65 -> var70 = func34 ( var63 -> var73 , - number ) ; 
+var41 -> var65 -> var80 = func35 ( var63 ) ; 
+var41 -> var65 -> var81 = var63 -> var73 ; 
+var41 -> var65 -> var82 = var63 -> var82 ; 
+var41 -> var65 -> var67 = var63 -> var67 ; 
+var41 -> var65 -> var83 = var63 -> var83 ; 
+if ( var41 -> var65 -> var70 == var84 ) 
+func7 ( var1 , var21 , 
+str , 
+func36 ( var63 -> var73 ) ) ; 
+} 
+} 
+if ( ( var13 = func37 ( var1 ) ) < number ) 
+goto var17 ; 
+if ( ! ( var2 -> var85 = func38 ( ) ) ) 
+func3 ( func4 ( var18 ) ) ; 
+var17 : 
+func29 ( var10 ) ; 
+func39 ( & var4 ) ; 
+func39 ( & var6 ) ; 
+if ( var13 < number ) 
+func40 ( var1 ) ; 
+return var13 ; 
+} 

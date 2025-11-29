@@ -1,0 +1,6 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AascContext * var2 = var1 -> var3 ; 
+func2 ( & var2 -> var4 ) ; 
+return number ; 
+} 

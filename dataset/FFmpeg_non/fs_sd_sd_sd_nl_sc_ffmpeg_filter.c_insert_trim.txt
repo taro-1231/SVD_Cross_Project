@@ -1,0 +1,43 @@
+static int func1 ( int64_t var1 , int64_t var2 , 
+AVFilterContext ** var3 , int * var4 , 
+const char * var5 ) 
+{ 
+AVFilterGraph * var6 = ( * var3 ) -> var6 ; 
+AVFilterContext * var7 ; 
+const AVFilter * var8 ; 
+enum AVMediaType var9 = func2 ( ( * var3 ) -> var10 , * var4 ) ; 
+const char * var11 = ( var9 == var12 ) ? str : str ; 
+int var13 = number ; 
+if ( var2 == var14 && var1 == var15 ) 
+return number ; 
+var8 = func3 ( var11 ) ; 
+if ( ! var8 ) { 
+func4 ( var16 , var17 , str 
+str , var11 ) ; 
+return var18 ; 
+} 
+var7 = func5 ( var6 , var8 , var5 ) ; 
+if ( ! var7 ) 
+return func6 ( var19 ) ; 
+if ( var2 != var14 ) { 
+var13 = func7 ( var7 , str , var2 , 
+var20 ) ; 
+} 
+if ( var13 >= number && var1 != var15 ) { 
+var13 = func7 ( var7 , str , var1 , 
+var20 ) ; 
+} 
+if ( var13 < number ) { 
+func4 ( var7 , var17 , str , var11 ) ; 
+return var13 ; 
+} 
+var13 = func8 ( var7 , var16 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+var13 = func9 ( * var3 , * var4 , var7 , number ) ; 
+if ( var13 < number ) 
+return var13 ; 
+* var3 = var7 ; 
+* var4 = number ; 
+return number ; 
+} 

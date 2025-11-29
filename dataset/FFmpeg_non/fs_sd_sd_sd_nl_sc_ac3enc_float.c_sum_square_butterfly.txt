@@ -1,0 +1,6 @@
+static void func1 ( AC3EncodeContext * var1 , float var2 [ 4 ] , 
+const float * var3 , const float * var4 , 
+int var5 ) 
+{ 
+var1 -> var6 . func2 ( var2 , var3 , var4 , var5 ) ; 
+} 

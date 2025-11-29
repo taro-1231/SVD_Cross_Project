@@ -1,0 +1,9 @@
+static void func1 ( WriterContext * var1 , const char * var2 , const char * var3 ) 
+{ 
+AVBPrint var4 ; 
+func2 ( & var4 , number , var5 ) ; 
+printf ( str , func3 ( & var4 , var2 ) ) ; 
+func4 ( & var4 ) ; 
+printf ( str , func3 ( & var4 , var3 ) ) ; 
+func5 ( & var4 , var6 ) ; 
+} 

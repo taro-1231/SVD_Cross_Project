@@ -1,0 +1,14 @@
+void func1 ( const char * var1 , ... ) 
+{ 
+if ( var2 . var3 -> var4 && var2 . var3 -> var5 ) { 
+va_list var6 ; 
+func2 ( ) ; 
+fprintf ( var7 , str , var2 . var8 -> var9 , func3 ( var2 . var3 -> var4 ) ) ; 
+func4 ( var6 , var1 ) ; 
+vfprintf ( var7 , var1 , var6 ) ; 
+func5 ( var6 ) ; 
+fprintf ( var7 , str ) ; 
+var2 . var3 -> var5 = number ; 
+var2 . var10 ++ ; 
+} 
+} 

@@ -1,0 +1,9 @@
+static void func1 ( AVFilterLink * var1 , AVFrame * var2 , int64_t var3 , int var4 ) 
+{ 
+if ( av_cmp_q ( var1 -> frame_rate , ( AVRational ) { 30000 , 1001 } ) == 0 && 
+av_cmp_q ( var1 -> time_base , ( AVRational ) { 1001 , 60000 } ) <= 0 
+) { 
+var2 -> var3 = var3 + av_rescale_q ( var4 , ( AVRational ) { 1001 , 60000 } , var1 -> time_base ) ; 
+} else 
+var2 -> var3 = AV_NOPTS_VALUE ; 
+} 

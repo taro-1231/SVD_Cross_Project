@@ -1,0 +1,34 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+int var6 ; 
+if ( var1 -> var7 == var8 ) { 
+var1 -> var9 = var10 ; 
+var1 -> var11 = var4 -> var11 ; 
+var1 -> var12 = var4 -> var12 ; 
+var1 -> var13 = var4 -> var13 ; 
+var1 -> var14 = var4 -> var14 ; 
+var1 -> frame_rate = ( AVRational ) { number , number } ; 
+for ( var6 = number ; var6 < var2 -> var15 ; var6 ++ ) { 
+AVFilterLink * var16 = var2 -> var5 [ var6 ] ; 
+if ( var1 -> var11 != var16 -> var11 || 
+var1 -> var12 != var16 -> var12 || 
+var1 -> var13 . var17 != var16 -> var13 . var17 || 
+var1 -> var13 . var18 != var16 -> var13 . var18 ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str 
+str , 
+var2 -> input_pads [ var6 ] . name , var16 -> var11 , var16 -> var12 , 
+var16 -> var13 . var17 , 
+var16 -> var13 . var18 , 
+var1 -> var11 , var1 -> var12 , 
+var1 -> var13 . var17 , 
+var1 -> var13 . var18 ) ; 
+return func2 ( var19 ) ; 
+} 
+} 
+} 
+var1 -> var20 |= var21 ; 
+return number ; 
+} 

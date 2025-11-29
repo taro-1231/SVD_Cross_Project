@@ -1,0 +1,4 @@
+static double func1 ( AVLFG * var1 ) 
+{ 
+return number * ( func2 ( var1 ) / ( double ) var2 ) - number ; 
+} 

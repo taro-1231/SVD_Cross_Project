@@ -1,0 +1,17 @@
+static inline int RENAME ( func1 ) ( SwsContext * var1 , const uint8_t * var2 [ ] , 
+int var3 [ ] , 
+int var4 , int var5 , 
+uint8_t * var6 [ ] , int var7 [ ] ) 
+{ 
+int var8 , var9 , var10 ; 
+YUV2RGB_LOOP ( 4 ) 
+const uint8_t * var11 = var2 [ number ] + var8 * var3 [ number ] ; 
+YUV2RGB_INITIAL_LOAD 
+YUV2RGB 
+RGB_PACK_INTERLEAVE 
+LOAD_ALPHA 
+RGB_PACK32 ( REG_BLUE , REG_GREEN , REG_RED , REG_ALPHA ) 
+YUV2RGB_ENDLOOP ( 4 ) 
+YUV2RGB_OPERANDS_ALPHA 
+YUV2RGB_ENDFUNC 
+} 

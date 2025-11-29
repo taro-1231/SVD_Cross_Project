@@ -1,0 +1,20 @@
+static int func1 ( AVFilterContext * var1 , 
+AVFilterChannelLayouts * ( func2 ) ( void ) ) 
+{ 
+int var2 ; 
+enum AVMediaType var3 = var1 -> var4 && var1 -> var4 [ number ] ? var1 -> var4 [ number ] -> var3 : 
+var1 -> var5 && var1 -> var5 [ number ] ? var1 -> var5 [ number ] -> var3 : 
+var6 ; 
+var2 = func3 ( var1 , func4 ( var3 ) ) ; 
+if ( var2 < number ) 
+return var2 ; 
+if ( var3 == var7 ) { 
+var2 = func5 ( var1 , func2 ( ) ) ; 
+if ( var2 < number ) 
+return var2 ; 
+var2 = func6 ( var1 , func7 ( ) ) ; 
+if ( var2 < number ) 
+return var2 ; 
+} 
+return number ; 
+} 

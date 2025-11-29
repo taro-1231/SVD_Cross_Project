@@ -1,0 +1,34 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FrameRateContext * var4 = var2 -> var5 ; 
+int var6 ; 
+func2 ( var2 , str ) ; 
+func2 ( var2 , 
+str , 
+var2 -> var7 [ number ] -> var8 . var9 , var2 -> var7 [ number ] -> var8 . var10 , 
+func3 ( var2 -> var7 [ number ] -> var8 ) ) ; 
+var6 = func4 ( & var4 -> var11 . var9 , & var4 -> var11 . var10 , 
+func5 ( ( int64_t ) var4 -> var12 . var9 * var4 -> var13 . var9 , 
+( int64_t ) var4 -> var12 . var10 * var4 -> var13 . var10 ) , 
+( int64_t ) var4 -> var12 . var10 * var4 -> var13 . var9 , var14 ) ; 
+func6 ( var2 , var15 , 
+str , 
+var4 -> var12 . var9 , var4 -> var12 . var10 , 
+var4 -> var11 . var9 , var4 -> var11 . var10 , var6 ) ; 
+if ( ! var6 ) { 
+func6 ( var2 , var16 , str ) ; 
+} 
+var1 -> var17 = var4 -> var13 ; 
+var1 -> var8 = var4 -> var11 ; 
+var1 -> var18 |= var19 ; 
+func2 ( var2 , 
+str , 
+var1 -> var8 . var9 , var1 -> var8 . var10 , 
+func3 ( var1 -> var8 ) , 
+var1 -> var20 , var1 -> var21 ) ; 
+func6 ( var2 , var15 , str , 
+var4 -> var13 . var9 , var4 -> var13 . var10 , 
+var4 -> var22 , var4 -> var23 , var4 -> var24 ) ; 
+return number ; 
+} 

@@ -1,0 +1,27 @@
+func1 ( int var1 ) 
+{ 
+int var2 , var3 , var4 = ( - number ) , var5 = number ; 
+++ var1 ; 
+for ( var3 = number ; var3 < number ; ++ var3 ) for ( var2 = number ; var2 < number ; ++ var2 ) if ( var6 [ var3 ] [ var2 ] == var1 ) 
+{ 
+if ( var4 == ( - number ) ) 
+var4 = var3 ; 
+else if ( var4 == var3 ) 
+{ } 
+else if ( var5 == var3 - var4 ) 
+var4 = var3 ; 
+else if ( var5 == number ) 
+var5 = var3 - var4 , var4 = var3 ; 
+else if ( var5 != var3 - var4 ) 
+return number ; 
+} 
+if ( var4 == ( - number ) ) return number ; 
+switch ( var5 ) 
+{ 
+case number : return number ; 
+case 4 : return number ; 
+case number : return number ; 
+var7 : break ; 
+} 
+return ( var5 << number ) + number ; 
+} 

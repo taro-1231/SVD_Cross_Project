@@ -1,0 +1,223 @@
+static int func1 ( AACContext * var1 , INTFLOAT var2 [ number ] , 
+GetBitContext * var3 , const INTFLOAT var4 [ 120 ] , 
+int var5 , const Pulse * var6 , 
+const IndividualChannelStream * var7 , 
+enum BandType var8 [ 120 ] ) 
+{ 
+int var9 , var10 , var11 , var12 = number ; 
+const int var13 = number / var7 -> var14 ; 
+const uint16_t * var15 = var7 -> var16 ; 
+INTFLOAT * var17 = var2 ; 
+for ( var11 = number ; var11 < var7 -> var14 ; var11 ++ ) 
+memset ( var2 + var11 * number + var15 [ var7 -> var18 ] , number , 
+sizeof ( INTFLOAT ) * ( var13 - var15 [ var7 -> var18 ] ) ) ; 
+for ( var11 = number ; var11 < var7 -> var19 ; var11 ++ ) { 
+unsigned var20 = var7 -> var21 [ var11 ] ; 
+for ( var9 = number ; var9 < var7 -> var18 ; var9 ++ , var12 ++ ) { 
+const unsigned var22 = var8 [ var12 ] - number ; 
+INTFLOAT * var23 = var2 + var15 [ var9 ] ; 
+int var24 = var15 [ var9 + number ] - var15 [ var9 ] ; 
+int var25 ; 
+if ( var22 >= var26 - number ) { 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+memset ( var23 , number , var24 * sizeof ( * var23 ) ) ; 
+} 
+} else if ( var22 == var27 - number ) { 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+float var28 ; 
+INTFLOAT var29 ; 
+for ( var10 = number ; var10 < var24 ; var10 ++ ) { 
+var1 -> var30 = func2 ( var1 -> var30 ) ; 
+var23 [ var10 ] = var1 -> var30 >> number ; 
+var23 [ var10 ] = var1 -> var30 ; 
+} 
+var29 = var1 -> var31 -> func3 ( var23 , var23 , var24 ) ; 
+var29 = func4 ( var29 , number ) ; 
+func5 ( var23 , var4 [ var12 ] , var29 , var24 ) ; 
+var29 = var1 -> var31 -> scalarproduct_float ( var23 , var23 , var24 ) ; 
+var28 = var4 [ var12 ] / sqrtf ( var29 ) ; 
+var1 -> var31 -> func6 ( var23 , var23 , var28 , var24 ) ; 
+} 
+} else { 
+const float * var32 = var33 [ var22 ] ; 
+const uint16_t * var34 = var35 [ var22 ] ; 
+func7 ( * var36 ) [ number ] = var37 [ var22 ] . var38 ; 
+func8 ( var39 , var3 ) ; 
+switch ( var22 >> number ) { 
+case number : 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+INTFLOAT * var40 = var23 ; 
+int var41 = var24 ; 
+do { 
+int var42 ; 
+unsigned var43 ; 
+func9 ( var39 , var3 ) ; 
+func10 ( var42 , var39 , var3 , var36 , number , number ) ; 
+var43 = var34 [ var42 ] ; 
+var40 = func11 ( var40 , var43 ) ; 
+var40 = VMUL4 ( var40 , var32 , var43 , var4 + var12 ) ; 
+} while ( var41 -= number ) ; 
+} 
+break ; 
+case number : 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+INTFLOAT * var40 = var23 ; 
+int var41 = var24 ; 
+do { 
+int var42 ; 
+unsigned var44 ; 
+unsigned var43 ; 
+uint32_t var45 ; 
+func9 ( var39 , var3 ) ; 
+func10 ( var42 , var39 , var3 , var36 , number , number ) ; 
+var43 = var34 [ var42 ] ; 
+var44 = var43 >> number & number ; 
+var45 = var44 ? func12 ( var39 , var3 ) : number ; 
+func13 ( var39 , var3 , var44 ) ; 
+var40 = func14 ( var40 , var43 , var45 ) ; 
+var40 = VMUL4S ( var40 , var32 , var43 , var45 , var4 + var12 ) ; 
+} while ( var41 -= number ) ; 
+} 
+break ; 
+case number : 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+INTFLOAT * var40 = var23 ; 
+int var41 = var24 ; 
+do { 
+int var42 ; 
+unsigned var43 ; 
+func9 ( var39 , var3 ) ; 
+func10 ( var42 , var39 , var3 , var36 , number , number ) ; 
+var43 = var34 [ var42 ] ; 
+var40 = func15 ( var40 , var43 ) ; 
+var40 = VMUL2 ( var40 , var32 , var43 , var4 + var12 ) ; 
+} while ( var41 -= number ) ; 
+} 
+break ; 
+case number : 
+case number : 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+INTFLOAT * var40 = var23 ; 
+int var41 = var24 ; 
+do { 
+int var42 ; 
+unsigned var44 ; 
+unsigned var43 ; 
+unsigned var46 ; 
+func9 ( var39 , var3 ) ; 
+func10 ( var42 , var39 , var3 , var36 , number , number ) ; 
+var43 = var34 [ var42 ] ; 
+var44 = var43 >> number & number ; 
+var46 = var44 ? func16 ( var39 , var3 , var44 ) << ( var43 >> number ) : number ; 
+func13 ( var39 , var3 , var44 ) ; 
+var40 = func17 ( var40 , var43 , var46 ) ; 
+var40 = VMUL2S ( var40 , var32 , var43 , var46 , var4 + var12 ) ; 
+} while ( var41 -= number ) ; 
+} 
+break ; 
+var47 : 
+for ( var25 = number ; var25 < ( AAC_SIGNE ) var20 ; var25 ++ , var23 += number ) { 
+int * var48 = var23 ; 
+int var49 ; 
+float * var40 = var23 ; 
+uint32_t * var48 = ( uint32_t * ) var40 ; 
+int var41 = var24 ; 
+do { 
+int var42 ; 
+unsigned var50 , var44 ; 
+unsigned var43 ; 
+uint32_t var45 ; 
+int var51 ; 
+func9 ( var39 , var3 ) ; 
+func10 ( var42 , var39 , var3 , var36 , number , number ) ; 
+if ( ! var42 ) { 
+* var48 += number ; 
+* var48 += number ; 
+continue ; 
+} 
+var43 = var34 [ var42 ] ; 
+var44 = var43 >> number ; 
+var50 = var43 >> number ; 
+var45 = func16 ( var39 , var3 , var44 ) << ( number - var44 ) ; 
+func13 ( var39 , var3 , var44 ) ; 
+for ( var51 = number ; var51 < number ; var51 ++ ) { 
+if ( var50 & number << var51 ) { 
+uint32_t var52 ; 
+int var53 ; 
+func9 ( var39 , var3 ) ; 
+var52 = func12 ( var39 , var3 ) ; 
+var52 = number - func18 ( ~ var52 ) ; 
+if ( var52 > number ) { 
+func19 ( var1 -> var55 , var56 , str ) ; 
+return var57 ; 
+} 
+func20 ( var39 , var3 , var52 + number ) ; 
+var52 += number ; 
+var53 = ( number << var52 ) + func16 ( var39 , var3 , var52 ) ; 
+func13 ( var39 , var3 , var52 ) ; 
+var49 = var53 ; 
+if ( var45 & number << number ) 
+var49 = - var49 ; 
+* var48 += var49 ; 
+* var48 += cbrt_tab [ var53 ] | ( var45 & number << number ) ; 
+var45 <<= number ; 
+} else { 
+var49 = var43 & number ; 
+if ( var45 & number << number ) 
+var49 = - var49 ; 
+* var48 += var49 ; 
+unsigned var49 = ( ( const uint32_t * ) var32 ) [ var43 & number ] ; 
+* var48 += ( var45 & number << number ) | var49 ; 
+var45 <<= ! ! var49 ; 
+} 
+var43 >>= number ; 
+} 
+} while ( var41 -= number ) ; 
+var1 -> var31 -> func6 ( var23 , var23 , var4 [ var12 ] , var24 ) ; 
+} 
+} 
+func21 ( var39 , var3 ) ; 
+} 
+} 
+var2 += var20 << number ; 
+} 
+if ( var5 ) { 
+var12 = number ; 
+for ( var9 = number ; var9 < var6 -> var58 ; var9 ++ ) { 
+INTFLOAT var59 = var17 [ var6 -> var60 [ var9 ] ] ; 
+while ( var15 [ var12 + number ] <= var6 -> var60 [ var9 ] ) 
+var12 ++ ; 
+if ( var8 [ var12 ] != var27 && var4 [ var12 ] ) { 
+INTFLOAT var61 = - var6 -> var62 [ var9 ] ; 
+if ( var59 ) { 
+var61 = var59 + ( var59 > number ? - var61 : var61 ) ; 
+} 
+var17 [ var6 -> var60 [ var9 ] ] = var61 ; 
+if ( var59 ) { 
+var59 /= var4 [ var12 ] ; 
+var61 = var59 / sqrtf ( sqrtf ( fabsf ( var59 ) ) ) + ( var59 > number ? - var61 : var61 ) ; 
+} 
+var17 [ var6 -> var60 [ var9 ] ] = cbrtf ( fabsf ( var61 ) ) * var61 * var4 [ var12 ] ; 
+} 
+} 
+} 
+var2 = var17 ; 
+var12 = number ; 
+for ( var11 = number ; var11 < var7 -> var19 ; var11 ++ ) { 
+unsigned var20 = var7 -> var21 [ var11 ] ; 
+for ( var9 = number ; var9 < var7 -> var18 ; var9 ++ , var12 ++ ) { 
+const unsigned var22 = var8 [ var12 ] - number ; 
+int * var23 = var2 + var15 [ var9 ] ; 
+int var24 = var15 [ var9 + number ] - var15 [ var9 ] ; 
+int var25 ; 
+if ( var22 < var27 - number ) { 
+for ( var25 = number ; var25 < ( int ) var20 ; var25 ++ , var23 += number ) { 
+var1 -> func22 ( var23 , var24 ) ; 
+var1 -> func23 ( var23 , var23 , var4 [ var12 ] , number , var24 ) ; 
+} 
+} 
+} 
+var2 += var20 << number ; 
+} 
+return number ; 
+} 

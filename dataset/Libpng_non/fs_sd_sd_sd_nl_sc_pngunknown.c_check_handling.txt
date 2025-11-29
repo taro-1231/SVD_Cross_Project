@@ -1,0 +1,94 @@
+func1 ( display * var1 , int var2 , png_uint_32 var3 , png_uint_32 var4 , 
+png_uint_32 var5 , const char * var6 , int var7 ) 
+{ 
+while ( var3 ) 
+{ 
+png_uint_32 var8 = var3 & - ( png_int_32 ) var3 ; 
+int var9 = func2 ( var8 ) ; 
+int var10 = var11 [ var9 ] . var10 ; 
+const char * var12 ; 
+const char * var13 = var14 ; 
+if ( var11 [ var9 ] . var5 ) 
+{ 
+if ( var10 == var15 ) 
+{ 
+var12 = str ; 
+var10 = var2 ; 
+} 
+else 
+var12 = str ; 
+if ( var8 & var4 ) 
+var13 = str ; 
+else switch ( var10 ) 
+{ 
+case var15 : 
+if ( var8 & var5 ) 
+var13 = str ; 
+break ; 
+case var17 : 
+if ( var8 & var5 ) 
+var13 = str ; 
+break ; 
+case var18 : 
+if ( func3 ( var11 [ var9 ] . var19 ) ) 
+{ 
+if ( ! ( var8 & var5 ) ) 
+var13 = str ; 
+} 
+else if ( var8 & var5 ) 
+var13 = str ; 
+break ; 
+case var20 : 
+if ( ! ( var8 & var5 ) ) 
+var13 = str ; 
+break ; 
+var16 : 
+var13 = str ; 
+break ; 
+} 
+} 
+else 
+{ 
+var12 = str ; 
+if ( var8 & var4 ) 
+{ 
+if ( var10 != var15 ) 
+var13 = str ; 
+} 
+else switch ( var10 ) 
+{ 
+case var15 : 
+var13 = str ; 
+break ; 
+case var17 : 
+if ( var8 & var5 ) 
+var13 = str ; 
+break ; 
+case var18 : 
+if ( func3 ( var11 [ var9 ] . var19 ) ) 
+{ 
+if ( ! ( var8 & var5 ) ) 
+var13 = str ; 
+} 
+else if ( var8 & var5 ) 
+var13 = str ; 
+break ; 
+case var20 : 
+if ( ! ( var8 & var5 ) ) 
+var13 = str ; 
+break ; 
+var16 : 
+var13 = str ; 
+break ; 
+} 
+} 
+if ( var13 != var14 ) 
+{ 
+++ ( var1 -> var21 ) ; 
+fprintf ( var22 , str , var1 -> var23 , var1 -> var24 , 
+var7 ? str : str , 
+var12 , var11 [ var9 ] . var19 , var6 , var13 ) ; 
+} 
+var3 &= ~ var8 ; 
+} 
+} 

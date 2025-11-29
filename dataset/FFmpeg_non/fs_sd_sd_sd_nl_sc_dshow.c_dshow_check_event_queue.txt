@@ -1,0 +1,12 @@
+static int func1 ( IMediaEvent * var1 ) 
+{ 
+LONG_PTR var2 , var3 ; 
+long var4 ; 
+int var5 = number ; 
+while ( func2 ( var1 , & var4 , & var2 , & var3 , number ) != var6 ) { 
+if ( var4 == var7 || var4 == var8 || var4 == var9 ) 
+var5 = - number ; 
+func3 ( var1 , var4 , var2 , var3 ) ; 
+} 
+return var5 ; 
+} 

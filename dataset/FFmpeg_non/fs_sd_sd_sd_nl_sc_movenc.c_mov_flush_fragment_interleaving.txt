@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 , MOVTrack * var2 ) 
+{ 
+MOVMuxContext * var3 = var1 -> var4 ; 
+int var5 , var6 ; 
+uint8_t * var7 ; 
+int var8 , var9 ; 
+if ( ! var2 -> var10 ) 
+return number ; 
+if ( ! var3 -> var10 ) { 
+if ( ( var5 = func2 ( & var3 -> var10 ) ) < number ) 
+return var5 ; 
+} 
+var6 = func3 ( var2 -> var10 , & var7 ) ; 
+var2 -> var10 = var11 ; 
+var9 = func4 ( var3 -> var10 ) ; 
+func5 ( var3 -> var10 , var7 , var6 ) ; 
+func6 ( var7 ) ; 
+for ( var8 = var2 -> var12 ; var8 < var2 -> var13 ; var8 ++ ) 
+var2 -> var14 [ var8 ] . var15 += var9 ; 
+var2 -> var12 = var2 -> var13 ; 
+return number ; 
+} 

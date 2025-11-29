@@ -1,0 +1,15 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+SidechainCompressContext * var4 = var2 -> var5 ; 
+int var6 , var7 ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+AVFilterLink * var8 = var2 -> var9 [ var6 ] ; 
+if ( ! var4 -> var10 [ var6 ] && 
+( var7 = func2 ( var8 ) ) < number ) 
+return var7 ; 
+if ( var6 == number ) 
+var2 -> var9 [ number ] -> var11 = var4 -> var10 [ number ] -> var12 ; 
+} 
+return number ; 
+} 

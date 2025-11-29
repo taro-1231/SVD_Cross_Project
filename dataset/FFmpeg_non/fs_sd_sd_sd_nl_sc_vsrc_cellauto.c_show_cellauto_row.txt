@@ -1,0 +1,14 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+CellAutoContext * var2 = var1 -> var3 ; 
+int var4 ; 
+uint8_t * var5 = var2 -> var6 + var2 -> var7 * var2 -> var8 ; 
+char * var9 = func2 ( var2 -> var7 + number ) ; 
+if ( ! var9 ) 
+return ; 
+for ( var4 = number ; var4 < var2 -> var7 ; var4 ++ ) 
+var9 [ var4 ] = var5 [ var4 ] ? str : str ; 
+var9 [ var4 ] = number ; 
+av_log ( var1 , AV_LOG_DEBUG , str PRId64 str , var2 -> generation , var9 ) ; 
+func3 ( var9 ) ; 
+} 

@@ -1,0 +1,40 @@
+func1 ( var1 * var2 , libAVFilter * var3 ) 
+{ 
+IPinVtbl * var4 = var2 -> var4 ; 
+IMemInputPinVtbl * var5 ; 
+if ( ! var3 ) 
+return number ; 
+var5 = func2 ( sizeof ( IMemInputPinVtbl ) ) ; 
+if ( ! var5 ) 
+return number ; 
+func3 ( var5 , var6 , var7 ) ; 
+func3 ( var5 , var6 , var8 ) ; 
+func3 ( var5 , var6 , var9 ) ; 
+func3 ( var5 , var6 , var10 ) ; 
+func3 ( var5 , var6 , var11 ) ; 
+func3 ( var5 , var6 , var12 ) ; 
+func3 ( var5 , var6 , var13 ) ; 
+func3 ( var5 , var6 , var14 ) ; 
+func3 ( var5 , var6 , var15 ) ; 
+var2 -> var5 = var5 ; 
+func3 ( var4 , var1 , var7 ) ; 
+func3 ( var4 , var1 , var8 ) ; 
+func3 ( var4 , var1 , var9 ) ; 
+func3 ( var4 , var1 , var16 ) ; 
+func3 ( var4 , var1 , var17 ) ; 
+func3 ( var4 , var1 , var18 ) ; 
+func3 ( var4 , var1 , var19 ) ; 
+func3 ( var4 , var1 , var20 ) ; 
+func3 ( var4 , var1 , var21 ) ; 
+func3 ( var4 , var1 , var22 ) ; 
+func3 ( var4 , var1 , var23 ) ; 
+func3 ( var4 , var1 , var24 ) ; 
+func3 ( var4 , var1 , var25 ) ; 
+func3 ( var4 , var1 , var26 ) ; 
+func3 ( var4 , var1 , var27 ) ; 
+func3 ( var4 , var1 , var28 ) ; 
+func3 ( var4 , var1 , var29 ) ; 
+func3 ( var4 , var1 , var30 ) ; 
+var2 -> var3 = var3 ; 
+return number ; 
+} 

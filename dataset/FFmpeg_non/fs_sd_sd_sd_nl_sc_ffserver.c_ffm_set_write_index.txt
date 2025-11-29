@@ -1,0 +1,7 @@
+static void func1 ( AVFormatContext * var1 , int64_t var2 , 
+int64_t var3 ) 
+{ 
+func2 ( var1 , str , number , var4 ) ; 
+func2 ( var1 , str , var2 , var4 ) ; 
+func2 ( var1 , str , var3 , var4 ) ; 
+} 

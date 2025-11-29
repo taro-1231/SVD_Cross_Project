@@ -1,0 +1,58 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+MOVTrack * var3 ) 
+{ 
+int64_t var4 = func2 ( var3 -> var5 , var6 , 
+var3 -> var7 , var8 ) ; 
+int var9 = var4 < var10 ? number : number ; 
+int var11 , var12 , var13 ; 
+int64_t var14 , var15 = var3 -> var16 ; 
+int64_t var17 = var3 -> var17 ; 
+if ( var3 -> var18 ) { 
+if ( var17 != var3 -> var19 [ number ] . var20 || var15 != var3 -> var19 [ number ] . var21 ) { 
+av_log ( var2 -> fc , AV_LOG_DEBUG , 
+str PRId64 str PRId64 str PRId64 str , 
+var3 -> var19 [ number ] . var20 , var3 -> var19 [ number ] . var21 , 
+var17 , var15 , var3 -> track_id ) ; 
+var17 = var3 -> var19 [ number ] . var20 ; 
+var15 = var3 -> var19 [ number ] . var21 ; 
+} 
+} 
+var14 = func2 ( var17 + var15 , var6 , 
+var3 -> var7 , var22 ) ; 
+var9 |= var14 < var10 ? number : number ; 
+var11 = ( var9 == number ) ? number : number ; 
+var12 = number + ( var14 > number ) ; 
+var13 = number + var12 * var11 ; 
+func3 ( var1 , var13 ) ; 
+func4 ( var1 , str ) ; 
+func3 ( var1 , var13 - number ) ; 
+func4 ( var1 , str ) ; 
+func5 ( var1 , var9 ) ; 
+func6 ( var1 , number ) ; 
+func3 ( var1 , var12 ) ; 
+if ( var14 > number ) { 
+if ( var9 == number ) { 
+func7 ( var1 , var14 ) ; 
+func7 ( var1 , - number ) ; 
+} else { 
+func3 ( var1 , var14 ) ; 
+func3 ( var1 , - number ) ; 
+} 
+func3 ( var1 , number ) ; 
+} else { 
+func8 ( func2 ( var17 , var6 , var3 -> var7 , var22 ) <= number ) ; 
+var15 = - func9 ( var17 , number ) ; 
+var4 += var14 ; 
+} 
+if ( var2 -> var23 & var24 ) 
+var4 = number ; 
+if ( var9 == number ) { 
+func7 ( var1 , var4 ) ; 
+func7 ( var1 , var15 ) ; 
+} else { 
+func3 ( var1 , var4 ) ; 
+func3 ( var1 , var15 ) ; 
+} 
+func3 ( var1 , number ) ; 
+return var13 ; 
+} 

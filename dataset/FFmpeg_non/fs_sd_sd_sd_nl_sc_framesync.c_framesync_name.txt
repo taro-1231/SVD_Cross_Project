@@ -1,0 +1,4 @@
+static const char * func1 ( void * var1 ) 
+{ 
+return str ; 
+} 

@@ -1,0 +1,20 @@
+static int av_cold func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+char var3 [ number ] ; 
+OpenGLContext * var4 = var1 -> var5 ; 
+AVDeviceRect var6 ; 
+if ( func2 ( var7 ) ) { 
+func3 ( var4 , var8 , str , func4 ( ) ) ; 
+return var9 ; 
+} 
+if ( ( var2 = func5 ( var4 , var4 -> var10 , 
+var4 -> var11 ) ) < number ) 
+return var2 ; 
+func3 ( var4 , var12 , str , func6 ( var3 , sizeof ( var3 ) ) ) ; 
+var6 . var13 = var4 -> var14 -> var15 ; 
+var6 . var16 = var4 -> var14 -> var1 ; 
+func7 ( var4 -> var17 , var18 ) ; 
+func8 ( var1 , var19 , & var6 , sizeof ( AVDeviceRect ) ) ; 
+return number ; 
+} 

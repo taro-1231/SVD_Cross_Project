@@ -1,0 +1,36 @@
+static int func1 ( AVCodecContext * var1 ) 
+{ 
+Mpeg1Context * var2 = var1 -> var3 ; 
+MpegEncContext * var4 = & var2 -> var5 ; 
+uint8_t var6 [ number ] ; 
+int var7 ; 
+if ( var1 -> var8 == var9 ) { 
+var1 -> var10 = func2 ( number / var11 [ var4 -> var12 ] , number ) ; 
+} else { 
+if ( var4 -> var12 > 1 ) { 
+AVRational dar = 
+av_mul_q ( av_div_q ( var13 [ var4 -> var12 ] , 
+( AVRational ) { var2 -> pan_scan . width , 
+var2 -> pan_scan . height } ) , 
+( AVRational ) { var4 -> width , var4 -> height } ) ; 
+if ( ( var2 -> pan_scan . width == 0 ) || ( var2 -> pan_scan . height == 0 ) || 
+( av_cmp_q ( dar , ( AVRational ) { 4 , 3 } ) && 
+av_cmp_q ( dar , ( AVRational ) { 16 , 9 } ) ) ) { 
+var4 -> var1 -> var10 = 
+av_div_q ( var13 [ var4 -> var12 ] , 
+( AVRational ) { var4 -> width , var4 -> height } ) ; 
+} else { 
+var4 -> var1 -> var10 = 
+av_div_q ( var13 [ var4 -> var12 ] , 
+( AVRational ) { var2 -> pan_scan . width , var2 -> pan_scan . height } ) ; 
+ff_dlog ( var1 , str , 
+var13 [ var4 -> var12 ] . num , 
+var13 [ var4 -> var12 ] . den ) ; 
+ff_dlog ( var1 , str , var4 -> var1 -> var10 . num , 
+var4 -> var1 -> var10 . den ) ; 
+} 
+} else { 
+var4 -> var1 -> var10 = 
+var13 [ var4 -> var12 ] ; 
+} 
+} 

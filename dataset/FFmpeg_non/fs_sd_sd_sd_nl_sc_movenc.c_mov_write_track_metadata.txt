@@ -1,0 +1,12 @@
+static int func1 ( AVIOContext * var1 , AVStream * var2 , 
+const char * var3 , const char * var4 ) 
+{ 
+int64_t var5 = func2 ( var1 ) ; 
+AVDictionaryEntry * var6 = func3 ( var2 -> var7 , var4 , var8 , number ) ; 
+if ( ! var6 || ! func4 ( var6 -> var9 ) ) 
+return number ; 
+func5 ( var1 , number ) ; 
+func6 ( var1 , var3 ) ; 
+func7 ( var1 , var6 -> var9 , strlen ( var6 -> var9 ) ) ; 
+return func8 ( var1 , var5 ) ; 
+} 

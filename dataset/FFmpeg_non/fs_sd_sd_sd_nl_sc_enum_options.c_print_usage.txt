@@ -1,0 +1,6 @@
+static void func1 ( void ) 
+{ 
+fprintf ( stderr , str 
+str ) ; 
+exit ( number ) ; 
+} 

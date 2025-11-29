@@ -1,0 +1,20 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+XCBGrabContext * var2 = var1 -> var3 ; 
+xcb_gcontext_t var4 = func2 ( var2 -> var5 ) ; 
+uint32_t var6 = var7 | 
+var8 | 
+var9 | 
+var10 | 
+var11 ; 
+uint32_t var12 [ ] = { var2 -> var13 -> var14 , 
+var2 -> var13 -> var15 , 
+var2 -> var16 , 
+var17 , 
+var18 } ; 
+xcb_rectangle_t var19 = { number , number , 
+var2 -> var20 + var2 -> var16 * number - number , 
+var2 -> var21 + var2 -> var16 * number - number } ; 
+func3 ( var2 -> var5 , var4 , var2 -> var22 , var6 , var12 ) ; 
+func4 ( var2 -> var5 , var2 -> var22 , var4 , number , & var19 ) ; 
+} 

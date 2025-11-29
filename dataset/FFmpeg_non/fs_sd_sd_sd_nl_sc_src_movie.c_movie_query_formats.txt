@@ -1,0 +1,28 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+MovieContext * var2 = var1 -> var3 ; 
+int var4 [ ] = { number , - number } ; 
+int64_t var5 [ ] = { number , - number } ; 
+int var6 ; 
+for ( var6 = number ; var6 < var1 -> var7 ; var6 ++ ) { 
+MovieStream * var8 = & var2 -> var8 [ var6 ] ; 
+AVCodecContext * var9 = var8 -> var8 -> var10 ; 
+AVFilterLink * var11 = var1 -> var12 [ var6 ] ; 
+switch ( var9 -> var13 ) { 
+case var14 : 
+var4 [ number ] = var9 -> var15 ; 
+func2 ( func3 ( var4 ) , & var11 -> var16 ) ; 
+break ; 
+case var17 : 
+var4 [ number ] = var9 -> var18 ; 
+func2 ( func3 ( var4 ) , & var11 -> var16 ) ; 
+var4 [ number ] = var9 -> var19 ; 
+func2 ( func3 ( var4 ) , & var11 -> var20 ) ; 
+var5 [ number ] = var9 -> var21 ; 
+func4 ( func5 ( var5 ) , 
+& var11 -> var22 ) ; 
+break ; 
+} 
+} 
+return number ; 
+} 

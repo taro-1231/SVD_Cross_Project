@@ -1,0 +1,13 @@
+static void * func1 ( MXFContext * var1 , UID * var2 , enum MXFMetadataSetType var3 ) 
+{ 
+int var4 ; 
+if ( ! var2 ) 
+return var5 ; 
+for ( var4 = number ; var4 < var1 -> var6 ; var4 ++ ) { 
+if ( ! memcmp ( * var2 , var1 -> var7 [ var4 ] -> var8 , number ) && 
+( var3 == var9 || var1 -> var7 [ var4 ] -> var3 == var3 ) ) { 
+return var1 -> var7 [ var4 ] ; 
+} 
+} 
+return var5 ; 
+} 

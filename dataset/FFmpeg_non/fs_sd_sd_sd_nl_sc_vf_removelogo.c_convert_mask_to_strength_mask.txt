@@ -1,0 +1,36 @@
+static void func1 ( uint8_t * var1 , int var2 , 
+int var3 , int var4 , int var5 , 
+int * var6 ) 
+{ 
+int var7 , var8 ; 
+int var9 = number ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+for ( var7 = number ; var7 < var3 ; var7 ++ ) 
+var1 [ var8 * var2 + var7 ] = var1 [ var8 * var2 + var7 ] > var5 ; 
+while ( number ) { 
+int var10 = number ; 
+uint8_t * var11 = var1 + number + var2 , * var12 ; 
+var9 ++ ; 
+for ( var8 = number ; var8 < var4 - number ; var8 ++ ) { 
+var12 = var11 ; 
+for ( var7 = number ; var7 < var3 - number ; var7 ++ ) { 
+if ( * var12 >= var9 && 
+* ( var12 + number ) >= var9 && 
+* ( var12 - number ) >= var9 && 
+* ( var12 + var2 ) >= var9 && 
+* ( var12 - var2 ) >= var9 ) { 
+( * var12 ) ++ ; 
+var10 = number ; 
+} 
+var12 ++ ; 
+} 
+var11 += var2 ; 
+} 
+if ( ! var10 ) 
+break ; 
+} 
+for ( var8 = number ; var8 < var4 - number ; var8 ++ ) 
+for ( var7 = number ; var7 < var3 - number ; var7 ++ ) 
+var1 [ ( var8 * var2 ) + var7 ] = func2 ( var1 [ ( var8 * var2 ) + var7 ] ) ; 
+* var6 = func2 ( var9 + number ) ; 
+} 

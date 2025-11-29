@@ -1,0 +1,13 @@
+static void func1 ( void * var1 , 
+void * var2 , void * var3 , void * var4 , 
+int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+uint8_t * var10 = var1 ; 
+uint8_t * var11 = var2 ; 
+uint8_t * var12 = var3 ; 
+uint8_t * var13 = var4 ; 
+int var14 ; 
+uint8_t * var15 = var8 ? var11 : var12 ; 
+uint8_t * var16 = var8 ? var12 : var13 ; 
+FILTER ( 0 , var5 , 1 ) 
+} 

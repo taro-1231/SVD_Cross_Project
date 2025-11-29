@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+ChannelSplitContext * var2 = var1 -> var3 ; 
+AVFilterChannelLayouts * var4 = var5 ; 
+int var6 ; 
+func2 ( var1 , func3 ( ) ) ; 
+func4 ( var1 , func5 ( ) ) ; 
+func6 ( & var4 , var2 -> var7 ) ; 
+func7 ( var4 , & var1 -> var8 [ number ] -> var9 ) ; 
+for ( var6 = number ; var6 < var1 -> var10 ; var6 ++ ) { 
+AVFilterChannelLayouts * var11 = var5 ; 
+uint64_t var12 = func8 ( var2 -> var7 , var6 ) ; 
+func6 ( & var11 , var12 ) ; 
+func7 ( var11 , & var1 -> var13 [ var6 ] -> var14 ) ; 
+} 
+return number ; 
+} 

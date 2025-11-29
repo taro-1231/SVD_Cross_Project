@@ -1,0 +1,101 @@
+static void func1 ( const char * var1 , int var2 ) 
+{ 
+AVCodec * var3 ; 
+AVCodecContext * var4 = var5 ; 
+int var6 , var7 , var8 , var9 , var10 ; 
+FILE * var11 ; 
+AVFrame * var12 ; 
+AVPacket var13 ; 
+uint8_t var14 [ ] = { number , number , number , number } ; 
+printf ( str , var1 ) ; 
+var3 = func2 ( var2 ) ; 
+if ( ! var3 ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var4 = func3 ( var3 ) ; 
+if ( ! var4 ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var4 -> var16 = number ; 
+var4 -> var17 = number ; 
+var4 -> var18 = number ; 
+var4 -> time_base = ( AVRational ) { number , number } ; 
+var4 -> var19 = number ; 
+var4 -> var20 = number ; 
+var4 -> var21 = var22 ; 
+if ( var2 == var23 ) 
+func4 ( var4 -> var24 , str , str , number ) ; 
+if ( func5 ( var4 , var3 , var5 ) < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var11 = fopen ( var1 , str ) ; 
+if ( ! var11 ) { 
+fprintf ( var15 , str , var1 ) ; 
+exit ( number ) ; 
+} 
+var12 = func6 ( ) ; 
+if ( ! var12 ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+var12 -> var25 = var4 -> var21 ; 
+var12 -> var17 = var4 -> var17 ; 
+var12 -> var18 = var4 -> var18 ; 
+var7 = func7 ( var12 -> var26 , var12 -> var27 , var4 -> var17 , var4 -> var18 , 
+var4 -> var21 , number ) ; 
+if ( var7 < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+func8 ( & var13 ) ; 
+var13 . var26 = var5 ; 
+var13 . var28 = number ; 
+fflush ( var29 ) ; 
+for ( var9 = number ; var9 < var4 -> var18 ; var9 ++ ) { 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) { 
+var12 -> var26 [ number ] [ var9 * var12 -> var27 [ number ] + var8 ] = var8 + var9 + var6 * number ; 
+} 
+} 
+for ( var9 = number ; var9 < var4 -> var18 / number ; var9 ++ ) { 
+for ( var8 = number ; var8 < var4 -> var17 / number ; var8 ++ ) { 
+var12 -> var26 [ number ] [ var9 * var12 -> var27 [ number ] + var8 ] = number + var9 + var6 * number ; 
+var12 -> var26 [ number ] [ var9 * var12 -> var27 [ number ] + var8 ] = number + var8 + var6 * number ; 
+} 
+} 
+var12 -> var30 = var6 ; 
+var7 = func9 ( var4 , & var13 , var12 , & var10 ) ; 
+if ( var7 < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+if ( var10 ) { 
+printf ( str , var6 , var13 . var28 ) ; 
+fwrite ( var13 . var26 , number , var13 . var28 , var11 ) ; 
+func10 ( & var13 ) ; 
+} 
+} 
+for ( var10 = number ; var10 ; var6 ++ ) { 
+fflush ( var29 ) ; 
+var7 = func9 ( var4 , & var13 , var5 , & var10 ) ; 
+if ( var7 < number ) { 
+fprintf ( var15 , str ) ; 
+exit ( number ) ; 
+} 
+if ( var10 ) { 
+printf ( str , var6 , var13 . var28 ) ; 
+fwrite ( var13 . var26 , number , var13 . var28 , var11 ) ; 
+func10 ( & var13 ) ; 
+} 
+} 
+fwrite ( var14 , number , sizeof ( var14 ) , var11 ) ; 
+fclose ( var11 ) ; 
+func11 ( var4 ) ; 
+func12 ( var4 ) ; 
+func13 ( & var12 -> var26 [ number ] ) ; 
+func14 ( & var12 ) ; 
+printf ( str ) ; 
+} 

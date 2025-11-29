@@ -1,0 +1,19 @@
+static int func1 ( AVFormatContext * var1 , 
+unsigned int var2 , unsigned int var3 , 
+ebml_master * var4 , ebml_master * var5 ) 
+{ 
+MatroskaMuxContext * var6 = var1 -> var7 ; 
+ebml_master var8 ; 
+int var9 ; 
+if ( ! var4 -> var10 ) { 
+var9 = func2 ( var6 -> var11 , var12 , func3 ( var1 -> var13 ) ) ; 
+if ( var9 < number ) return var9 ; 
+* var4 = func4 ( var1 -> var13 , var12 , number ) ; 
+} 
+* var5 = func4 ( var1 -> var13 , var14 , number ) ; 
+var8 = func4 ( var1 -> var13 , var15 , number ) ; 
+if ( var2 ) 
+func5 ( var1 -> var13 , var2 , var3 ) ; 
+func6 ( var1 -> var13 , var8 ) ; 
+return number ; 
+} 

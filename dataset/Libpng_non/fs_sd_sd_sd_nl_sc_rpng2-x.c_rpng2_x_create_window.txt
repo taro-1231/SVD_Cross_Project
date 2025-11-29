@@ -1,0 +1,171 @@
+static int func1 ( void ) 
+{ 
+ulg var1 = var2 . var1 ; 
+ulg var3 = var2 . var3 ; 
+ulg var4 = var2 . var4 ; 
+ulg var5 = number ; 
+ulg var6 ; 
+int var7 = var8 ; 
+int var9 , var10 ; 
+uch * var11 ; 
+Window var12 ; 
+XEvent var13 ; 
+XGCValues var14 ; 
+XSetWindowAttributes var15 ; 
+XTextProperty var16 , * var17 = & var16 ; 
+XTextProperty var18 , * var19 = & var18 ; 
+XVisualInfo var20 ; 
+XSizeHints * var21 ; 
+XWMHints * var22 ; 
+XClassHint * var23 ; 
+Trace ( ( var24 , str ) ) 
+var9 = func2 ( var25 ) ; 
+var26 = func3 ( var25 , var9 ) ; 
+var12 = func4 ( var25 , var9 ) ; 
+func5 ( var25 , var27 ) ; 
+if ( var26 != number && var26 != number && var26 != number ) { 
+int var28 = number ; 
+Trace ( ( var24 , str , 
+var26 ) ) 
+var20 . var9 = var9 ; 
+var20 . var26 = number ; 
+var29 = func6 ( var25 , 
+var30 | var31 , & var20 , & var28 ) ; 
+if ( var28 == number ) { 
+fprintf ( var24 , str 
+str , var26 ) ; 
+return number ; 
+} 
+Trace ( ( var24 , str , 
+var28 ) ) 
+var32 = var29 [ number ] . var32 ; 
+var26 = var29 [ number ] . var26 ; 
+var33 = var34 ; 
+var7 = var34 ; 
+} else { 
+func7 ( var25 , var9 , var26 , var35 , & var20 ) ; 
+var32 = var20 . var32 ; 
+} 
+var36 = var32 -> var37 ; 
+var38 = var32 -> var39 ; 
+var40 = var32 -> var41 ; 
+if ( var26 == number || var7 ) { 
+var42 = func8 ( var25 , var12 , var32 , var43 ) ; 
+if ( ! var42 ) { 
+fprintf ( var24 , str ) ; 
+return number ; 
+} 
+var44 = var34 ; 
+if ( var26 == number ) 
+var45 = var8 ; 
+} 
+if ( var26 == number || var26 == number ) { 
+var46 = number - func9 ( var36 ) ; 
+var47 = number - func9 ( var38 ) ; 
+var48 = number - func9 ( var40 ) ; 
+} else if ( var26 > number ) { 
+var46 = func9 ( var36 ) - number ; 
+var47 = func9 ( var38 ) - number ; 
+var48 = func9 ( var40 ) - number ; 
+} 
+if ( var26 >= number && ( var46 < number || var47 < number || var48 < number ) ) { 
+fprintf ( var24 , str ) ; 
+return number ; 
+} 
+var15 . var49 = var50 ; 
+var15 . var51 = var52 | var53 | var54 ; 
+var6 = var55 | var56 ; 
+if ( var33 ) { 
+var15 . var42 = var42 ; 
+var15 . var57 = number ; 
+var15 . var58 = number ; 
+var6 |= var59 | var60 | var61 ; 
+} 
+var62 = func10 ( var25 , var12 , number , number , var2 . var63 , 
+var2 . var64 , number , var26 , var65 , var32 , var6 , & var15 ) ; 
+if ( var62 == var66 ) { 
+fprintf ( var24 , str ) ; 
+return number ; 
+} else 
+var67 = var34 ; 
+if ( var26 == number ) 
+func11 ( var25 , var62 , var42 ) ; 
+if ( ! func12 ( & var68 , number , var17 ) ) 
+var17 = var69 ; 
+if ( ! func12 ( & var70 , number , var19 ) ) 
+var19 = var69 ; 
+if ( ( var21 = func13 ( ) ) != var69 ) { 
+var21 -> var71 = var72 | var73 ; 
+var21 -> var74 = var21 -> var75 = ( int ) var2 . var63 ; 
+var21 -> var76 = var21 -> var77 = 
+( int ) var2 . var64 ; 
+} 
+if ( ( var22 = func14 ( ) ) != var69 ) { 
+var22 -> var78 = var79 ; 
+var22 -> var80 = var27 ; 
+var22 -> var71 = var81 | var82 ; 
+} 
+if ( ( var23 = func15 ( ) ) != var69 ) { 
+var23 -> var83 = var83 ; 
+var23 -> var84 = var84 ; 
+} 
+func16 ( var25 , var62 , var17 , var19 , var69 , number , 
+var21 , var22 , var23 ) ; 
+if ( var17 ) 
+func17 ( var17 -> var85 ) ; 
+if ( var19 ) 
+func17 ( var19 -> var85 ) ; 
+if ( var21 ) 
+func17 ( var21 ) ; 
+if ( var22 ) 
+func17 ( var22 ) ; 
+if ( var23 ) 
+func17 ( var23 ) ; 
+func18 ( var25 , var62 ) ; 
+var86 = func19 ( var25 , var62 , number , & var14 ) ; 
+var87 = var34 ; 
+if ( var26 == number || var26 == number ) { 
+var11 = ( uch * ) malloc ( number * var2 . var63 * var2 . var64 ) ; 
+var10 = number ; 
+} else if ( var26 == number ) { 
+var11 = ( uch * ) malloc ( number * var2 . var63 * var2 . var64 ) ; 
+var10 = number ; 
+} else { 
+var11 = ( uch * ) malloc ( var2 . var63 * var2 . var64 ) ; 
+var10 = number ; 
+} 
+if ( ! var11 ) { 
+fprintf ( var24 , PROGNAME str ) ; 
+return number ; 
+} 
+var88 = func20 ( var25 , var32 , var26 , var89 , number , 
+( char * ) var11 , var2 . var63 , var2 . var64 , var10 , number ) ; 
+if ( ! var88 ) { 
+fprintf ( var24 , PROGNAME str ) ; 
+free ( var11 ) ; 
+return number ; 
+} 
+var88 -> var90 = var91 ; 
+if ( var45 ) 
+func21 ( ) ; 
+if ( ! var45 ) { 
+if ( var26 == number || var26 == number ) { 
+var5 = ( var1 << var46 ) | 
+( var3 << var47 ) | 
+( var4 << var48 ) ; 
+} else if ( var26 == number ) { 
+var5 = ( ( ( var1 << number ) >> var46 ) & var36 ) | 
+( ( ( var3 << number ) >> var47 ) & var38 ) | 
+( ( ( var4 << number ) >> var48 ) & var40 ) ; 
+} else { 
+} 
+func22 ( var25 , var86 , var5 ) ; 
+func23 ( var25 , var62 , var86 , number , number , var2 . var63 , 
+var2 . var64 ) ; 
+} 
+do 
+func24 ( var25 , & var13 ) ; 
+while ( var13 . var92 != var93 || var13 . var94 . var95 ) ; 
+func25 ( var25 ) ; 
+return number ; 
+} 

@@ -1,0 +1,29 @@
+static int func1 ( cl_mem var1 , cl_mem var2 , int var3 , int var4 ) 
+{ 
+int var5 = number ; 
+uint32_t * var6 , * var7 ; 
+size_t var8 = sizeof ( uint32_t ) * ( number * var3 + number ) ; 
+size_t var9 = sizeof ( uint32_t ) * ( number * var4 + number ) ; 
+var6 = func2 ( number * var3 + number , sizeof ( uint32_t ) ) ; 
+if ( ! var6 ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+var7 = func2 ( number * var4 + number , sizeof ( uint32_t ) ) ; 
+if ( ! var7 ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+var5 = func4 ( var3 , var6 ) ; 
+if ( var5 < number ) 
+goto var11 ; 
+var5 = func4 ( var4 , var7 ) ; 
+if ( var5 < number ) 
+goto var11 ; 
+var5 = func5 ( var1 , ( uint8_t * ) var6 , var8 ) ; 
+var5 = func5 ( var2 , ( uint8_t * ) var7 , var9 ) ; 
+var11 : 
+func6 ( & var6 ) ; 
+func6 ( & var7 ) ; 
+return var5 ; 
+} 

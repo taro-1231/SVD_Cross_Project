@@ -1,0 +1,48 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , AVPacket * var3 , int var4 ) 
+{ 
+int var5 , var6 = number ; 
+for ( var5 = number ; var5 < var1 -> var7 ; var5 ++ ) 
+var6 += ! ! var1 -> var8 [ var5 ] -> var9 ; 
+if ( var6 && ( var1 -> var7 == var6 || var4 ) ) { 
+AVPacketList * var10 = var1 -> var11 -> var12 ; 
+if ( var1 -> var7 != var6 ) { 
+AVPacketList * var13 = var14 ; 
+while ( var10 ) { 
+if ( ! var6 || var10 -> var3 . var15 == number ) 
+break ; 
+var13 = var10 ; 
+var10 = var10 -> var16 ; 
+var6 -- ; 
+} 
+while ( var10 ) { 
+AVPacketList * var16 = var10 -> var16 ; 
+if ( var1 -> var8 [ var10 -> var3 . var15 ] -> var9 == var10 ) 
+var1 -> var8 [ var10 -> var3 . var15 ] -> var9 = var14 ; 
+func2 ( & var10 -> var3 ) ; 
+func3 ( & var10 ) ; 
+var10 = var16 ; 
+} 
+if ( var13 ) 
+var13 -> var16 = var14 ; 
+else { 
+var1 -> var11 -> var12 = var14 ; 
+var1 -> var11 -> var17 = var14 ; 
+goto var2 ; 
+} 
+var10 = var1 -> var11 -> var12 ; 
+} 
+* var2 = var10 -> var3 ; 
+av_log ( var1 , AV_LOG_TRACE , str PRId64 str , ( * var2 ) . var15 , ( * var2 ) . dts ) ; 
+var1 -> var11 -> var12 = var10 -> var16 ; 
+if ( var1 -> var8 [ var10 -> var3 . var15 ] -> var9 == var10 ) 
+var1 -> var8 [ var10 -> var3 . var15 ] -> var9 = var14 ; 
+if ( ! var1 -> var11 -> var12 ) 
+var1 -> var11 -> var17 = var14 ; 
+func3 ( & var10 ) ; 
+return number ; 
+} else { 
+var2 : 
+func4 ( var2 ) ; 
+return number ; 
+} 
+} 

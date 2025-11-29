@@ -1,0 +1,13 @@
+static int64_t func1 ( AVIOContext * var1 ) 
+{ 
+uint64_t var2 = func2 ( var1 ) ; 
+if ( var2 & number ) { 
+int var3 = var2 & number ; 
+if ( var3 > number ) 
+return var4 ; 
+var2 = number ; 
+while ( var3 -- ) 
+var2 = var2 << number | func2 ( var1 ) ; 
+} 
+return var2 ; 
+} 

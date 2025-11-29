@@ -1,0 +1,10 @@
+static void func1 ( uint8_t * var1 , int var2 , int var3 , 
+int16_t var4 , int16_t * var5 , int var6 ) 
+{ 
+int var7 ; 
+const int var8 = func2 ( abs ( var4 ) , var2 , var9 ) ; 
+const int var10 = ( var2 - var8 ) / number ; 
+const int var11 = var10 + var8 ; 
+for ( var7 = var10 ; var7 < var11 ; var7 ++ ) 
+var1 [ var7 * var3 ] += var6 ; 
+} 

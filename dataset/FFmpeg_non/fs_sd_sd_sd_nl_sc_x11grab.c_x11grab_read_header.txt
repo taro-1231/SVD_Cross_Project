@@ -1,0 +1,109 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+X11GrabContext * var2 = var1 -> var3 ; 
+Display * var4 ; 
+AVStream * var5 = var6 ; 
+XImage * var7 ; 
+int var8 = number , var9 = number , var10 = number , var11 , var12 = number ; 
+char * var13 , * var14 ; 
+Colormap var15 ; 
+XColor var16 [ number ] ; 
+int var17 ; 
+var13 = func2 ( var1 -> var18 ) ; 
+if ( ! var13 ) 
+goto var19 ; 
+var14 = strchr ( var13 , str ) ; 
+if ( var14 ) { 
+sscanf ( var14 , str , & var8 , & var9 ) ; 
+if ( strstr ( var14 , str ) ) { 
+func3 ( var1 , var20 , 
+str 
+str ) ; 
+var2 -> var21 = number ; 
+} 
+* var14 = number ; 
+} 
+func3 ( var1 , var22 , 
+str , 
+var1 -> var18 , var13 , var8 , var9 , var2 -> var23 , var2 -> var24 ) ; 
+var4 = func4 ( var13 ) ; 
+func5 ( & var13 ) ; 
+if ( ! var4 ) { 
+func3 ( var1 , var25 , str ) ; 
+var10 = func6 ( var26 ) ; 
+goto var19 ; 
+} 
+var5 = func7 ( var1 , var6 ) ; 
+if ( ! var5 ) { 
+var10 = func6 ( var27 ) ; 
+goto var19 ; 
+} 
+func8 ( var5 , number , number , number ) ; 
+var11 = func9 ( var4 ) ; 
+if ( var2 -> var28 ) { 
+int var29 , var30 ; 
+Window var31 ; 
+var29 = func10 ( var4 , var11 ) ; 
+var30 = func11 ( var4 , var11 ) ; 
+func12 ( var4 , func13 ( var4 , var11 ) , & var31 , & var31 , & var8 , & var9 , 
+& var10 , & var10 , & var10 ) ; 
+var8 -= var2 -> var23 / number ; 
+var9 -= var2 -> var24 / number ; 
+var8 = func14 ( var8 , number , var29 - var2 -> var23 ) ; 
+var9 = func14 ( var9 , number , var30 - var2 -> var24 ) ; 
+func3 ( var1 , var22 , 
+str , 
+var8 , var9 ) ; 
+} 
+if ( var2 -> var12 ) { 
+var12 = func15 ( var4 ) ; 
+func3 ( var1 , var22 , 
+str , var12 ? str : str ) ; 
+} 
+if ( var12 && func16 ( var1 , var4 , & var7 ) < number ) { 
+func3 ( var1 , var20 , str ) ; 
+var12 = number ; 
+} 
+if ( ! var12 ) { 
+var7 = func17 ( var4 , func13 ( var4 , var11 ) , 
+var8 , var9 , 
+var2 -> var23 , var2 -> var24 , 
+var32 , var33 ) ; 
+} 
+if ( var2 -> var21 && func18 ( var4 , var11 ) < number ) { 
+func3 ( var1 , var20 , 
+str ) ; 
+var2 -> var21 = number ; 
+} 
+var2 -> var34 = var2 -> var23 * var2 -> var24 * var7 -> var35 / number ; 
+var2 -> var4 = var4 ; 
+var2 -> var36 = func19 ( var2 -> var37 ) ; 
+var2 -> var38 = func20 ( ) / func21 ( var2 -> var36 ) ; 
+var2 -> var8 = var8 ; 
+var2 -> var9 = var9 ; 
+var2 -> var7 = var7 ; 
+var2 -> var12 = var12 ; 
+var10 = func22 ( var1 , var7 , & var5 -> var39 -> var40 ) ; 
+if ( var10 < number ) 
+goto var19 ; 
+if ( var5 -> var39 -> var40 == var41 ) { 
+var15 = func23 ( var4 , var11 ) ; 
+for ( var17 = number ; var17 < number ; ++ var17 ) 
+var16 [ var17 ] . var42 = var17 ; 
+func24 ( var4 , var15 , var16 , number ) ; 
+for ( var17 = number ; var17 < number ; ++ var17 ) 
+var2 -> var43 [ var17 ] = ( var16 [ var17 ] . var44 & number ) << number | 
+( var16 [ var17 ] . var45 & number ) | 
+( var16 [ var17 ] . var46 & number ) >> number ; 
+var2 -> var47 = number ; 
+} 
+var5 -> var39 -> var48 = var49 ; 
+var5 -> var39 -> var50 = var51 ; 
+var5 -> var39 -> var23 = var2 -> var23 ; 
+var5 -> var39 -> var24 = var2 -> var24 ; 
+var5 -> var39 -> var36 = var2 -> var36 ; 
+var5 -> var39 -> var52 = var2 -> var34 * number / func21 ( var2 -> var36 ) * number ; 
+var19 : 
+func25 ( var13 ) ; 
+return var10 ; 
+} 

@@ -1,0 +1,111 @@
+static int func1 ( struct sbg_parser * var1 ) 
+{ 
+struct sbg_string var2 , var3 ; 
+char var4 = number ; 
+int var5 ; 
+char * var6 ; 
+double var7 ; 
+if ( var1 -> var8 == var1 -> var9 || * var1 -> var8 != str ) 
+return number ; 
+while ( func2 ( var1 , str ) && func3 ( var1 , & var2 ) ) { 
+for ( ; var2 . var10 < var2 . var11 ; var2 . var10 ++ ) { 
+char var12 = * var2 . var10 ; 
+switch ( var12 ) { 
+case str : 
+var1 -> var13 . var14 = number ; 
+break ; 
+case str : 
+var1 -> var13 . var15 = number ; 
+break ; 
+case str : 
+var4 = str ; 
+break ; 
+case str : 
+var4 = str ; 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var7 = strtod ( var3 . var10 , & var6 ) ; 
+if ( var3 . var11 != var6 ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var17 ; 
+} 
+var1 -> var13 . var18 = var7 * var19 / number ; 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var5 = func6 ( var3 . var10 , & var1 -> var13 . var20 ) ; 
+if ( var3 . var11 != var3 . var10 + var5 ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var17 ; 
+} 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var5 = func6 ( var3 . var10 , & var1 -> var13 . var21 ) ; 
+if ( var3 . var11 != var3 . var10 + var5 ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var17 ; 
+} 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var6 = func7 ( var3 . var11 - var3 . var10 + number ) ; 
+if ( ! var6 ) 
+return func8 ( var22 ) ; 
+memcpy ( var6 , var3 . var10 , var3 . var11 - var3 . var10 ) ; 
+var6 [ var3 . var11 - var3 . var10 ] = number ; 
+func9 ( var1 -> var13 . var23 ) ; 
+var1 -> var13 . var23 = var6 ; 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var7 = strtod ( var3 . var10 , & var6 ) ; 
+if ( var3 . var11 != var6 ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var17 ; 
+} 
+if ( var7 != number ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var24 ; 
+} 
+break ; 
+case str : 
+func4 ( func5 ( var1 , var12 , & var3 ) ) ; 
+var5 = func10 ( var3 . var10 , & var6 , number ) ; 
+if ( var3 . var11 != var6 ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var17 ; 
+} 
+if ( var5 < number ) { 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str ) ; 
+return var24 ; 
+} 
+var1 -> var13 . var25 = var5 ; 
+break ; 
+var26 : 
+snprintf ( var1 -> var16 , sizeof ( var1 -> var16 ) , 
+str , * var2 . var10 ) ; 
+return var17 ; 
+} 
+} 
+} 
+switch ( var4 ) { 
+case str : 
+return func11 ( var1 ) ; 
+case str : 
+return func12 ( var1 ) ; 
+case number : 
+if ( ! func13 ( var1 ) ) 
+return var17 ; 
+return number ; 
+} 
+return var27 ; 
+} 

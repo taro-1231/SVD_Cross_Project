@@ -1,0 +1,34 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ASNSContext * var2 = var1 -> var3 -> var4 ; 
+AVFrame * var5 = var6 ; 
+int var7 , var8 , var9 ; 
+if ( var2 -> var10 ) { 
+var8 = func2 ( var2 -> var11 ) ? var2 -> var8 : number ; 
+var9 = var8 - func3 ( var8 , func2 ( var2 -> var11 ) ) ; 
+} else { 
+var8 = func3 ( var2 -> var8 , func2 ( var2 -> var11 ) ) ; 
+var9 = number ; 
+} 
+if ( ! var8 ) 
+return number ; 
+var5 = func4 ( var1 , var8 ) ; 
+if ( ! var5 ) 
+return func5 ( var12 ) ; 
+func6 ( var2 -> var11 , 
+( void ** ) var5 -> var13 , var8 ) ; 
+if ( var9 ) 
+func7 ( var5 -> var13 , var8 - var9 , 
+var9 , var1 -> var14 , 
+var1 -> var15 ) ; 
+var5 -> var16 = var8 ; 
+var5 -> var17 = var1 -> var17 ; 
+var5 -> var18 = var1 -> var18 ; 
+var5 -> var19 = var2 -> var20 ; 
+if ( var2 -> var20 != var21 ) 
+var2 -> var20 += av_rescale_q ( var8 , ( AVRational ) { 1 , var1 -> var18 } , var1 -> time_base ) ; 
+var7 = func8 ( var1 , var5 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+return var8 ; 
+} 

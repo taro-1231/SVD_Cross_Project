@@ -1,0 +1,13 @@
+av_cold void func1 ( IDETContext * var1 , int var2 ) 
+{ 
+const int var3 = func2 ( ) ; 
+if ( func3 ( var3 ) ) { 
+var1 -> var4 = var2 ? ( ff_idet_filter_func ) var5 : var6 ; 
+} 
+if ( func4 ( var3 ) ) { 
+var1 -> var4 = var2 ? ( ff_idet_filter_func ) var5 : var7 ; 
+} 
+if ( func5 ( var3 ) ) { 
+var1 -> var4 = var2 ? ( ff_idet_filter_func ) var8 : var9 ; 
+} 
+} 

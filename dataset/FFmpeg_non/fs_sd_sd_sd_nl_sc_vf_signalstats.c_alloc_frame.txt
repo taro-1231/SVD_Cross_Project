@@ -1,0 +1,14 @@
+static AVFrame * func1 ( enum AVPixelFormat var1 , int var2 , int var3 ) 
+{ 
+AVFrame * var4 = func2 ( ) ; 
+if ( ! var4 ) 
+return var5 ; 
+var4 -> var6 = var1 ; 
+var4 -> var7 = var2 ; 
+var4 -> var8 = var3 ; 
+if ( func3 ( var4 , number ) < number ) { 
+func4 ( & var4 ) ; 
+return var5 ; 
+} 
+return var4 ; 
+} 

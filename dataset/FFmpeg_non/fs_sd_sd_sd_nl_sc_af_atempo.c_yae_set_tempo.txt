@@ -1,0 +1,21 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 ) 
+{ 
+const AudioFragment * var3 ; 
+ATempoContext * var4 = var1 -> var5 ; 
+char * var6 = var7 ; 
+double var8 = func2 ( var2 , & var6 ) ; 
+if ( var6 && * var6 ) { 
+func3 ( var1 , var9 , str , var2 ) ; 
+return func4 ( var10 ) ; 
+} 
+if ( var8 < number || var8 > number ) { 
+func3 ( var1 , var9 , str , 
+var8 ) ; 
+return func4 ( var10 ) ; 
+} 
+var3 = func5 ( var4 ) ; 
+var4 -> var11 [ number ] = var3 -> var12 [ number ] + var4 -> var13 / number ; 
+var4 -> var11 [ number ] = var3 -> var12 [ number ] + var4 -> var13 / number ; 
+var4 -> var8 = var8 ; 
+return number ; 
+} 

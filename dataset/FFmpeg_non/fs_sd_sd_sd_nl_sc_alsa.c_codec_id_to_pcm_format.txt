@@ -1,0 +1,26 @@
+static av_cold snd_pcm_format_t func1 ( int var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : return var3 ; 
+case var4 : return var5 ; 
+case var6 : return var7 ; 
+case var8 : return var9 ; 
+case var10 : return var11 ; 
+case var12 : return var13 ; 
+case var14 : return var15 ; 
+case var16 : return var17 ; 
+case var18 : return var19 ; 
+case var20 : return var21 ; 
+case var22 : return var23 ; 
+case var24 : return var25 ; 
+case var26 : return var27 ; 
+case var28 : return var29 ; 
+case var30 : return var31 ; 
+case var32 : return var33 ; 
+case var34 : return var35 ; 
+case var36 : return var37 ; 
+case var38 : return var39 ; 
+case var40 : return var41 ; 
+var42 : return var43 ; 
+} 
+} 

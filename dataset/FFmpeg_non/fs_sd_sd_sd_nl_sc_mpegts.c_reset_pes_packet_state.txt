@@ -1,0 +1,8 @@
+static void func1 ( PESContext * var1 ) 
+{ 
+var1 -> var2 = var3 ; 
+var1 -> var4 = var3 ; 
+var1 -> var5 = number ; 
+var1 -> var6 = number ; 
+func2 ( & var1 -> var7 ) ; 
+} 

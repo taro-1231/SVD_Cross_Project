@@ -1,0 +1,39 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+void * var4 ; 
+AVTreeNode * var5 = var6 , * var7 = var6 ; 
+AVLFG var8 ; 
+int var9 = var1 <= number ? var10 : atoi ( var2 [ number ] ) ; 
+func2 ( var9 ) ; 
+func3 ( & var8 , number ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+intptr_t var11 = func4 ( & var8 ) % number ; 
+if ( func5 ( var5 ) > number ) { 
+func6 ( var6 , var12 , str , var3 ) ; 
+func7 ( var5 , number ) ; 
+return number ; 
+} 
+func6 ( var6 , var13 , str , ( int ) var11 ) ; 
+if ( ! var7 ) 
+var7 = func8 ( ) ; 
+if ( ! var7 ) { 
+func6 ( var6 , var12 , str ) ; 
+return number ; 
+} 
+func9 ( & var5 , ( void * ) ( var11 + number ) , var14 , & var7 ) ; 
+var11 = func4 ( & var8 ) % number ; 
+{ 
+AVTreeNode * var15 = var6 ; 
+func6 ( var6 , var13 , str , ( int ) var11 ) ; 
+func9 ( & var5 , ( void * ) ( var11 + number ) , var14 , & var15 ) ; 
+var4 = func10 ( var5 , ( void * ) ( var11 + number ) , var14 , var6 ) ; 
+if ( var4 ) 
+func6 ( var6 , var12 , str , var3 ) ; 
+func11 ( var15 ) ; 
+} 
+} 
+func11 ( var7 ) ; 
+func12 ( var5 ) ; 
+return number ; 
+} 

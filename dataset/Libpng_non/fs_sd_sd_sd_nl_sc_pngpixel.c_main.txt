@@ -1,0 +1,108 @@
+int func1 ( int var1 , const char ** var2 ) 
+{ 
+volatile int var3 = number 
+if ( var1 == number ) 
+{ 
+long var4 = func2 ( var2 [ number ] ) ; 
+long var5 = func2 ( var2 [ number ] ) ; 
+FILE * var6 = fopen ( var2 [ number ] , str ) ; 
+volatile png_bytep var7 = var8 ; 
+if ( var6 != var8 ) 
+{ 
+png_structp var9 = func3 ( var10 , 
+var8 , var8 , var8 ) ; 
+if ( var9 != var8 ) 
+{ 
+png_infop var11 = func4 ( var9 ) ; 
+if ( var11 != var8 ) 
+{ 
+if ( func5 ( func6 ( var9 ) ) == number ) 
+{ 
+png_uint_32 var12 , var13 ; 
+int var14 , var15 , var16 , 
+var17 , var18 ; 
+png_bytep var19 ; 
+func7 ( var9 , var6 ) ; 
+func8 ( var9 , var11 ) ; 
+var7 = func9 ( var9 , func10 ( var9 , 
+var11 ) ) ; 
+var19 = var7 ; 
+if ( func11 ( var9 , var11 , & var12 , & var13 , 
+& var14 , & var15 , & var16 , 
+& var17 , & var18 ) ) 
+{ 
+int var20 , var21 ; 
+switch ( var16 ) 
+{ 
+case var22 : 
+var20 = number ; 
+break ; 
+case var23 : 
+var20 = var24 ; 
+break ; 
+var25 : 
+func12 ( var9 , str ) ; 
+} 
+func13 ( var9 ) ; 
+for ( var21 = number ; var21 < var20 ; ++ var21 ) 
+{ 
+png_uint_32 var26 , var27 , var28 , var29 ; 
+png_uint_32 var30 ; 
+if ( var16 == var23 ) 
+{ 
+if ( func14 ( var12 , var21 ) == number ) 
+continue ; 
+var27 = func15 ( var21 ) ; 
+var26 = func16 ( var21 ) ; 
+var29 = func17 ( var21 ) ; 
+var28 = func18 ( var21 ) ; 
+} 
+else 
+{ 
+var26 = var27 = number ; 
+var28 = var29 = number ; 
+} 
+for ( var30 = var26 ; var30 < var13 ; var30 += var28 ) 
+{ 
+png_uint_32 var31 , var32 ; 
+func19 ( var9 , var19 , var8 ) ; 
+if ( var5 == var30 ) for ( var31 = var27 , var32 = number ; 
+var31 < var12 ; var31 += var29 , ++ var32 ) if ( var4 == var31 ) 
+{ 
+func20 ( var9 , var11 , var19 , var32 ) ; 
+goto var33 ; 
+} 
+} 
+} 
+var33 : 
+var7 = var8 ; 
+func21 ( var9 , var19 ) ; 
+} 
+else 
+func12 ( var9 , str ) ; 
+} 
+else 
+{ 
+if ( var7 != var8 ) 
+{ 
+png_bytep var19 = var7 ; 
+var7 = var8 ; 
+func21 ( var9 , var19 ) ; 
+} 
+} 
+func22 ( var9 , & var11 ) ; 
+} 
+else 
+fprintf ( var34 , str ) ; 
+func23 ( & var9 , var8 , var8 ) ; 
+} 
+else 
+fprintf ( var34 , str ) ; 
+} 
+else 
+fprintf ( var34 , str , var2 [ number ] ) ; 
+} 
+else 
+fprintf ( var34 , str ) ; 
+return var3 ; 
+} 

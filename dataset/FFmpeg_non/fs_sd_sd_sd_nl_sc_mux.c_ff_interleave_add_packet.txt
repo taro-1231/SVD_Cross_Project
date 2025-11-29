@@ -1,0 +1,69 @@
+int func1 ( AVFormatContext * var2 , AVPacket * var3 , 
+int ( * func2 ) ( AVFormatContext * , AVPacket * , AVPacket * ) ) 
+{ 
+int var4 ; 
+AVPacketList ** var5 , * var6 ; 
+AVStream * var7 = var2 -> var8 [ var3 -> var9 ] ; 
+int var10 = var2 -> var11 || var2 -> var12 ; 
+var6 = func3 ( sizeof ( AVPacketList ) ) ; 
+if ( ! var6 ) 
+return func4 ( var13 ) ; 
+var6 -> var3 = * var3 ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var3 -> var14 = var15 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+var3 -> var16 = var15 ; 
+var3 -> var17 = var15 ; 
+var3 -> var18 = number ; 
+if ( ( var3 -> var19 & var20 ) ) { 
+func5 ( var3 -> var21 == var22 ) ; 
+func5 ( ( ( AVFrame * ) var3 -> var23 ) -> var16 ) ; 
+} else { 
+if ( ( var4 = func6 ( & var6 -> var3 ) ) < number ) { 
+func7 ( var6 ) ; 
+return var4 ; 
+} 
+} 
+if ( var2 -> var8 [ var3 -> var9 ] -> var24 ) { 
+var5 = & ( var7 -> var24 -> var25 ) ; 
+} else { 
+var5 = & var2 -> var26 -> var27 ; 
+} 
+if ( var10 ) { 
+uint64_t var28 = func8 ( var2 -> var12 , var29 , var7 -> var30 , var31 ) ; 
+var7 -> var32 += var3 -> var21 ; 
+var7 -> var33 += var3 -> var34 ; 
+if ( ( var2 -> var11 && var7 -> var32 > var2 -> var11 ) 
+|| ( var28 && var7 -> var33 > var28 ) ) { 
+var7 -> var32 = number ; 
+var6 -> var3 . var19 |= var1 ; 
+if ( var28 && var7 -> var33 > var28 ) { 
+int64_t var35 = ( var7 -> var36 -> var37 == var38 ) * var28 / number ; 
+int64_t var39 = func9 ( var3 -> var40 + var35 , number , var28 ) * var28 - var35 ; 
+var7 -> var33 += ( var3 -> var40 - var39 ) / number - var28 ; 
+} else 
+var7 -> var33 = number ; 
+} 
+} 
+if ( * var5 ) { 
+if ( var10 && ! ( var6 -> var3 . var19 & var1 ) ) 
+goto var41 ; 
+if ( func2 ( var2 , & var2 -> var26 -> var42 -> var3 , var3 ) ) { 
+while ( * var5 
+&& ( ( var10 && ! ( ( * var5 ) -> var3 . var19 & var1 ) ) 
+|| ! func2 ( var2 , & ( * var5 ) -> var3 , var3 ) ) ) 
+var5 = & ( * var5 ) -> var25 ; 
+if ( * var5 ) 
+goto var41 ; 
+} else { 
+var5 = & ( var2 -> var26 -> var42 -> var25 ) ; 
+} 
+} 
+func10 ( ! * var5 ) ; 
+var2 -> var26 -> var42 = var6 ; 
+var41 : 
+var6 -> var25 = * var5 ; 
+var2 -> var8 [ var3 -> var9 ] -> var24 = 
+* var5 = var6 ; 
+return number ; 
+} 

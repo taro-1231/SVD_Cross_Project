@@ -1,0 +1,162 @@
+static void func1 ( AVCodecContext * var1 , 
+const int16_t * var2 , uint8_t * var3 , 
+ADPCMChannelStatus * var4 , int var5 , int var6 ) 
+{ 
+ADPCMEncodeContext * var8 = var1 -> var9 ; 
+const int var7 = number << var1 -> var10 ; 
+const int var11 = var1 -> var12 -> var13 ; 
+TrellisPath * var14 = var8 -> var14 , * var15 ; 
+TrellisNode * var16 = var8 -> var16 ; 
+TrellisNode ** var17 = var8 -> var17 ; 
+TrellisNode ** var18 = var17 ; 
+TrellisNode ** var19 = var17 + var7 ; 
+int var20 = number , var21 = - number , var22 , var23 , var24 , var25 = number ; 
+uint8_t * var26 = var8 -> var27 ; 
+memset ( var26 , number , number * sizeof ( * var26 ) ) ; 
+memset ( var17 , number , number * var7 * sizeof ( * var17 ) ) ; 
+var18 [ number ] = var16 + var7 ; 
+var18 [ number ] -> var28 = number ; 
+var18 [ number ] -> var29 = number ; 
+var18 [ number ] -> var30 = var4 -> var31 ; 
+var18 [ number ] -> var32 = var4 -> var32 ; 
+var18 [ number ] -> var33 = var4 -> var33 ; 
+if ( var11 == var34 || 
+var11 == var35 || 
+var11 == var36 ) 
+var18 [ number ] -> var32 = var4 -> var37 ; 
+if ( var11 == var38 ) 
+var18 [ number ] -> var30 = var4 -> var39 ; 
+if ( var11 == var40 ) { 
+if ( var4 -> var30 == number ) { 
+var18 [ number ] -> var30 = number ; 
+var18 [ number ] -> var32 = number ; 
+} else { 
+var18 [ number ] -> var30 = var4 -> var30 ; 
+var18 [ number ] -> var32 = var4 -> var41 ; 
+} 
+} 
+for ( var22 = number ; var22 < var5 ; var22 ++ ) { 
+TrellisNode * var42 = var16 + var7 * ( var22 & number ) ; 
+TrellisNode ** var43 ; 
+int var44 = var2 [ var22 * var6 ] ; 
+int var45 = number ; 
+memset ( var19 , number , var7 * sizeof ( TrellisNode * ) ) ; 
+for ( var23 = number ; var23 < var7 && var18 [ var23 ] ; var23 ++ ) { 
+const int var46 = ( var23 < var7 / number ) ? number : number ; 
+const int var30 = var18 [ var23 ] -> var30 ; 
+int var47 ; 
+if ( var11 == var38 ) { 
+const int var41 = ( ( var18 [ var23 ] -> var32 * var4 -> var48 ) + 
+( var18 [ var23 ] -> var33 * var4 -> var49 ) ) / number ; 
+const int var50 = ( var44 - var41 ) / var30 ; 
+const int var51 = func2 ( var50 - var46 , - number , number ) ; 
+const int var52 = func2 ( var50 + var46 , - number , number ) ; 
+for ( var47 = var51 ; var47 <= var52 ; var47 ++ ) { 
+const int var53 = var47 & number ; 
+int var54 = var41 + var47 * var30 ; 
+int var57 ; \ 
+uint32_t var28 ; \ 
+int var58 ; \ 
+TrellisNode * var43 ; \ 
+uint8_t * var59 ; \ 
+var54 = func4 ( var54 ) ; \ 
+var57 = var44 - var54 ; \ 
+var28 = var18 [ var23 ] -> var28 + var57 * ( unsigned ) var57 ; \ 
+if ( var28 < var18 [ var23 ] -> var28 ) \ 
+\ 
+var59 = & var26 [ ( uint16_t ) var54 ] ; \ 
+if ( * var59 == var25 ) \ 
+if ( var45 < var7 ) { \ 
+var58 = var45 ++ ; \ 
+} else { \ 
+var58 = ( var7 >> number ) + \ 
+( var45 & ( ( var7 >> number ) - number ) ) ; \ 
+if ( var28 > var19 [ var58 ] -> var28 ) \ 
+var45 ++ ; \ 
+} \ 
+* var59 = var25 ; \ 
+var43 = var19 [ var58 ] ; \ 
+if ( ! var43 ) { \ 
+func5 ( var20 < var60 << var1 -> var10 ) ; \ 
+var43 = var42 ++ ; \ 
+var19 [ var58 ] = var43 ; \ 
+var43 -> var29 = var20 ++ ; \ 
+} \ 
+var43 -> var28 = var28 ; \ 
+var43 -> var30 = var56 ; \ 
+var43 -> var33 = var18 [ var23 ] -> var32 ; \ 
+var43 -> var32 = var54 ; \ 
+var14 [ var43 -> var29 ] . var53 = var53 ; \ 
+var14 [ var43 -> var29 ] . var61 = var18 [ var23 ] -> var29 ; \ 
+while ( var58 > number ) { \ 
+int var62 = ( var58 - number ) >> number ; \ 
+if ( var19 [ var62 ] -> var28 <= var28 ) \ 
+break ; \ 
+FFSWAP ( TrellisNode * , var19 [ var62 ] , var19 [ var58 ] ) ; \ 
+var58 = var62 ; \ 
+} \ 
+func3 ( var63 , func6 ( number , 
+( var64 [ var53 ] * var30 ) >> number ) ) ; 
+} 
+} else if ( var11 == var34 || 
+var11 == var35 || 
+var11 == var36 ) { 
+const int var41 = var18 [ var23 ] -> var32 ; \ 
+const int var50 = ( var44 - var41 ) * number / var65 ; \ 
+int var51 = func2 ( var50 - var46 , - number , number ) ; \ 
+int var52 = func2 ( var50 + var46 , - number , number ) ; \ 
+if ( var51 <= number ) \ 
+var51 -- ; 
+if ( var52 < number ) \ 
+var52 -- ; \ 
+for ( var47 = var51 ; var47 <= var52 ; var47 ++ ) { \ 
+const int var53 = var47 < number ? number - var47 : var47 ; \ 
+int var54 = var41 + \ 
+( var65 * \ 
+var66 [ var53 ] ) / number ; \ 
+func3 ( var55 , var56 ) ; \ 
+} 
+func7 ( var67 , var68 [ var30 ] , 
+func2 ( var30 + var69 [ var53 ] , number , number ) ) ; 
+} else { 
+func7 ( var70 , var30 , 
+func2 ( ( var30 * var71 [ var53 ] ) >> number , 
+number , number ) ) ; 
+} 
+} 
+var43 = var18 ; 
+var18 = var19 ; 
+var19 = var43 ; 
+var25 ++ ; 
+if ( var25 == number ) { 
+memset ( var26 , number , number * sizeof ( * var26 ) ) ; 
+var25 = number ; 
+} 
+if ( var18 [ number ] -> var28 > ( number << number ) ) { 
+for ( var23 = number ; var23 < var7 && var18 [ var23 ] ; var23 ++ ) 
+var18 [ var23 ] -> var28 -= var18 [ number ] -> var28 ; 
+var18 [ number ] -> var28 = number ; 
+} 
+if ( var22 == var21 + var60 ) { 
+var15 = & var14 [ var18 [ number ] -> var29 ] ; 
+for ( var24 = var22 ; var24 > var21 ; var24 -- ) { 
+var3 [ var24 ] = var15 -> var53 ; 
+var15 = & var14 [ var15 -> var61 ] ; 
+} 
+var21 = var22 ; 
+var20 = number ; 
+memset ( var18 + number , number , ( var7 - number ) * sizeof ( TrellisNode * ) ) ; 
+} 
+} 
+var15 = & var14 [ var18 [ number ] -> var29 ] ; 
+for ( var22 = var5 - number ; var22 > var21 ; var22 -- ) { 
+var3 [ var22 ] = var15 -> var53 ; 
+var15 = & var14 [ var15 -> var61 ] ; 
+} 
+var4 -> var41 = var18 [ number ] -> var32 ; 
+var4 -> var32 = var18 [ number ] -> var32 ; 
+var4 -> var33 = var18 [ number ] -> var33 ; 
+var4 -> var31 = var18 [ number ] -> var30 ; 
+var4 -> var30 = var18 [ number ] -> var30 ; 
+var4 -> var39 = var18 [ number ] -> var30 ; 
+} 

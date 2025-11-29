@@ -1,0 +1,16 @@
+static int func1 ( struct sbg_parser * var1 , 
+struct sbg_script_definition * var2 ) 
+{ 
+int var3 , var4 ; 
+func2 ( var1 ) ; 
+if ( ! func3 ( var1 ) ) 
+return var5 ; 
+var4 = var1 -> var6 ; 
+while ( number ) { 
+var3 = func4 ( var1 , number ) ; 
+if ( var3 < number ) 
+return var3 ; 
+if ( ! var3 ) 
+break ; 
+} 
+if ( ! lex_char ( var1 , str ) ) 

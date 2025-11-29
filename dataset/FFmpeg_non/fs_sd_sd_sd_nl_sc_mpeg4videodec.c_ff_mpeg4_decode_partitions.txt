@@ -1,0 +1,52 @@
+int func1 ( Mpeg4DecContext * var1 ) 
+{ 
+MpegEncContext * var2 = & var1 -> var3 ; 
+int var4 ; 
+const int var5 = var2 -> var6 == var7 ? ( var8 | var9 ) : var9 ; 
+const int var10 = var2 -> var6 == var7 ? ( var11 | var12 ) : var12 ; 
+var4 = func2 ( var1 ) ; 
+if ( var4 < number ) { 
+func3 ( & var2 -> var13 , var2 -> var14 , var2 -> var15 , 
+var2 -> var16 , var2 -> var17 , var5 ) ; 
+return - number ; 
+} 
+if ( var2 -> var14 + var2 -> var15 * var2 -> var18 + var4 > var2 -> var4 ) { 
+func4 ( var2 -> var19 , var20 , str ) ; 
+func3 ( & var2 -> var13 , var2 -> var14 , var2 -> var15 , 
+var2 -> var16 , var2 -> var17 , var5 ) ; 
+return - number ; 
+} 
+var2 -> var21 = var4 ; 
+if ( var2 -> var6 == var7 ) { 
+while ( func5 ( & var2 -> var22 , number ) == number ) 
+func6 ( & var2 -> var22 , number ) ; 
+if ( func7 ( & var2 -> var22 , number ) != var23 ) { 
+func4 ( var2 -> var19 , var20 , 
+str , 
+var2 -> var16 , var2 -> var17 ) ; 
+return - number ; 
+} 
+} else { 
+while ( func5 ( & var2 -> var22 , number ) == number ) 
+func6 ( & var2 -> var22 , number ) ; 
+if ( func8 ( & var2 -> var22 , number ) != var24 ) { 
+func4 ( var2 -> var19 , var20 , 
+str , 
+var2 -> var16 , var2 -> var17 ) ; 
+return - number ; 
+} 
+} 
+func3 ( & var2 -> var13 , var2 -> var14 , var2 -> var15 , 
+var2 -> var16 - number , var2 -> var17 , var10 ) ; 
+if ( func9 ( var2 , var4 ) < number ) { 
+if ( var2 -> var6 == var25 ) 
+func3 ( & var2 -> var13 , var2 -> var14 , var2 -> var15 , 
+var2 -> var16 , var2 -> var17 , var8 ) ; 
+return - number ; 
+} else { 
+if ( var2 -> var6 == var25 ) 
+func3 ( & var2 -> var13 , var2 -> var14 , var2 -> var15 , 
+var2 -> var16 - number , var2 -> var17 , var11 ) ; 
+} 
+return number ; 
+} 

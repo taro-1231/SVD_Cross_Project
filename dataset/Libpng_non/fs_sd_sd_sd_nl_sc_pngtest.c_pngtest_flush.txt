@@ -1,0 +1,4 @@
+func1 ( png_structp var1 ) 
+{ 
+PNG_UNUSED ( var1 ) 
+} 

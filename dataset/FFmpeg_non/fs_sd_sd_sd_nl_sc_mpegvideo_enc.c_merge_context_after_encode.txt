@@ -1,0 +1,28 @@
+static void func1 ( MpegEncContext * var1 , MpegEncContext * var2 ) { 
+int var3 ; 
+func2 ( var4 [ number ] ) ; 
+func2 ( var4 [ number ] ) ; 
+func2 ( var5 ) ; 
+func2 ( var6 ) ; 
+func2 ( var7 ) ; 
+func2 ( var8 ) ; 
+func2 ( var9 ) ; 
+func2 ( var10 ) ; 
+func2 ( var11 ) ; 
+func2 ( var12 ) ; 
+func2 ( var13 . var14 ) ; 
+func2 ( var15 ) ; 
+func2 ( var16 . var17 [ number ] ) ; 
+func2 ( var16 . var17 [ number ] ) ; 
+func2 ( var16 . var17 [ number ] ) ; 
+if ( var1 -> var18 -> var19 ) { 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+func2 ( var20 [ number ] [ var3 ] ) ; 
+func2 ( var20 [ number ] [ var3 ] ) ; 
+} 
+} 
+assert ( func3 ( & var2 -> var21 ) % number == number ) ; 
+assert ( func3 ( & var1 -> var21 ) % number == number ) ; 
+func4 ( & var1 -> var21 , var2 -> var21 . var22 , func3 ( & var2 -> var21 ) ) ; 
+func5 ( & var1 -> var21 ) ; 
+} 

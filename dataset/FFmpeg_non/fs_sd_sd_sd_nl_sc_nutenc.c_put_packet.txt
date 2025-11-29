@@ -1,0 +1,19 @@
+static void func1 ( NUTContext * var1 , AVIOContext * var2 , AVIOContext * var3 , 
+int var4 , uint64_t var5 ) 
+{ 
+uint8_t * var6 = var7 ; 
+int var8 = func2 ( var3 , & var6 ) ; 
+int var9 = var8 + number * var4 ; 
+if ( var9 > number ) 
+func3 ( var2 , var10 , number ) ; 
+func4 ( var2 , var5 ) ; 
+func5 ( var2 , var9 ) ; 
+if ( var9 > number ) 
+func6 ( var2 , func7 ( var2 ) ) ; 
+if ( var4 ) 
+func3 ( var2 , var10 , number ) ; 
+func8 ( var2 , var6 , var8 ) ; 
+if ( var4 ) 
+func6 ( var2 , func7 ( var2 ) ) ; 
+func9 ( var6 ) ; 
+} 

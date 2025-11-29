@@ -1,0 +1,118 @@
+static int func1 ( AACContext * var1 , SpectralBandReplication * var2 , 
+GetBitContext * var3 , SBRData * var4 ) 
+{ 
+int var5 ; 
+int var6 = number ; 
+int var7 = number ; 
+int var8 , var9 ; 
+unsigned var10 = var4 -> var11 ; 
+var4 -> var12 [ number ] = var4 -> var12 [ var4 -> var11 ] ; 
+var4 -> var13 = var2 -> var14 ; 
+var4 -> var15 = var4 -> var16 [ var10 ] ; 
+switch ( var4 -> var17 = func2 ( var3 , number ) ) { 
+case var18 : 
+var4 -> var11 = number << func2 ( var3 , number ) ; 
+var8 = var4 -> var11 - number ; 
+if ( var4 -> var11 == number ) 
+var4 -> var13 = number ; 
+if ( var4 -> var11 > number ) { 
+func3 ( var1 -> var19 , var20 , 
+str , 
+var4 -> var11 ) ; 
+return - number ; 
+} 
+var4 -> var16 [ number ] = number ; 
+var4 -> var16 [ var4 -> var11 ] = var7 ; 
+var7 = ( var7 + ( var4 -> var11 >> number ) ) / 
+var4 -> var11 ; 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) 
+var4 -> var16 [ var5 + number ] = var4 -> var16 [ var5 ] + var7 ; 
+var4 -> var12 [ number ] = func4 ( var3 ) ; 
+for ( var5 = number ; var5 < var4 -> var11 ; var5 ++ ) 
+var4 -> var12 [ var5 + number ] = var4 -> var12 [ number ] ; 
+break ; 
+case var21 : 
+var7 += func2 ( var3 , number ) ; 
+var9 = func2 ( var3 , number ) ; 
+var4 -> var11 = var9 + number ; 
+var4 -> var16 [ number ] = number ; 
+var4 -> var16 [ var4 -> var11 ] = var7 ; 
+for ( var5 = number ; var5 < var9 ; var5 ++ ) 
+var4 -> var16 [ var4 -> var11 - number - var5 ] = 
+var4 -> var16 [ var4 -> var11 - var5 ] - number * func2 ( var3 , number ) - number ; 
+var6 = func2 ( var3 , var22 [ var4 -> var11 ] ) ; 
+for ( var5 = number ; var5 < var4 -> var11 ; var5 ++ ) 
+var4 -> var12 [ var4 -> var11 - var5 ] = func4 ( var3 ) ; 
+break ; 
+case var23 : 
+var4 -> var16 [ number ] = func2 ( var3 , number ) ; 
+var8 = func2 ( var3 , number ) ; 
+var4 -> var11 = var8 + number ; 
+var4 -> var16 [ var4 -> var11 ] = var7 ; 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) 
+var4 -> var16 [ var5 + number ] = var4 -> var16 [ var5 ] + number * func2 ( var3 , number ) + number ; 
+var6 = func2 ( var3 , var22 [ var4 -> var11 ] ) ; 
+func5 ( var3 , var4 -> var12 + number , var4 -> var11 ) ; 
+break ; 
+case var24 : 
+var4 -> var16 [ number ] = func2 ( var3 , number ) ; 
+var7 += func2 ( var3 , number ) ; 
+var8 = func2 ( var3 , number ) ; 
+var9 = func2 ( var3 , number ) ; 
+var4 -> var11 = var8 + var9 + number ; 
+if ( var4 -> var11 > number ) { 
+func3 ( var1 -> var19 , var20 , 
+str , 
+var4 -> var11 ) ; 
+return - number ; 
+} 
+var4 -> var16 [ var4 -> var11 ] = var7 ; 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) 
+var4 -> var16 [ var5 + number ] = var4 -> var16 [ var5 ] + number * func2 ( var3 , number ) + number ; 
+for ( var5 = number ; var5 < var9 ; var5 ++ ) 
+var4 -> var16 [ var4 -> var11 - number - var5 ] = 
+var4 -> var16 [ var4 -> var11 - var5 ] - number * func2 ( var3 , number ) - number ; 
+var6 = func2 ( var3 , var22 [ var4 -> var11 ] ) ; 
+func5 ( var3 , var4 -> var12 + number , var4 -> var11 ) ; 
+break ; 
+} 
+func6 ( var6 >= number ) ; 
+if ( var6 > var4 -> var11 + number ) { 
+func3 ( var1 -> var19 , var20 , 
+str , 
+var6 ) ; 
+return - number ; 
+} 
+for ( var5 = number ; var5 <= var4 -> var11 ; var5 ++ ) { 
+if ( var4 -> var16 [ var5 - number ] > var4 -> var16 [ var5 ] ) { 
+func3 ( var1 -> var19 , var20 , str ) ; 
+return - number ; 
+} 
+} 
+var4 -> var25 = ( var4 -> var11 > number ) + number ; 
+var4 -> var26 [ number ] = var4 -> var16 [ number ] ; 
+var4 -> var26 [ var4 -> var25 ] = var4 -> var16 [ var4 -> var11 ] ; 
+if ( var4 -> var25 > number ) { 
+int var27 ; 
+if ( var4 -> var17 == var18 ) { 
+var27 = var4 -> var11 >> number ; 
+} else if ( var4 -> var17 & number ) { 
+var27 = var4 -> var11 - func7 ( var6 - number , number ) ; 
+} else { 
+if ( ! var6 ) 
+var27 = number ; 
+else if ( var6 == number ) 
+var27 = var4 -> var11 - number ; 
+else 
+var27 = var6 - number ; 
+} 
+var4 -> var26 [ number ] = var4 -> var16 [ var27 ] ; 
+} 
+var4 -> var28 [ number ] = - ( var4 -> var28 [ number ] != var10 ) ; 
+var4 -> var28 [ number ] = - number ; 
+if ( ( var4 -> var17 & number ) && var6 ) { 
+var4 -> var28 [ number ] = var4 -> var11 + number - var6 ; 
+} else if ( ( var4 -> var17 == number ) && ( var6 > number ) ) 
+var4 -> var28 [ number ] = var6 - number ; 
+return number ; 
+} 

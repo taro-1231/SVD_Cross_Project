@@ -1,0 +1,5 @@
+func1 ( double var1 ) 
+{ 
+var1 = func2 ( var1 ) ; 
+return ( png_uint_16 ) var1 ; 
+} 

@@ -1,0 +1,19 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MpegTSContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+int var5 , var6 ; 
+for ( var6 = number ; var6 < var2 -> var7 ; var6 ++ ) { 
+var5 = func2 ( var4 ) ; 
+if ( func3 ( var4 ) ) 
+return var8 ; 
+if ( var5 == number ) { 
+func4 ( var4 , - number , var9 ) ; 
+func5 ( var1 -> var3 ) ; 
+return number ; 
+} 
+} 
+func6 ( var1 , var10 , 
+str ) ; 
+return var11 ; 
+} 

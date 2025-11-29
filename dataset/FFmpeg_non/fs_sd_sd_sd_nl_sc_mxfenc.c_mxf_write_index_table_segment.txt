@@ -1,0 +1,101 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+int var5 , var6 , var7 = number ; 
+int var8 = var2 -> var9 ; 
+func2 ( var1 , var10 , str , var2 -> var11 ) ; 
+if ( ! var2 -> var11 && ! var2 -> var12 ) 
+return ; 
+func3 ( var4 , var13 , number ) ; 
+if ( var2 -> var12 ) { 
+func4 ( var4 , number ) ; 
+} else { 
+func4 ( var4 , 85 + 12 + ( var1 -> var14 + 1LL ) * number + 
+12 + var2 -> var11 * ( number + var2 -> var15 * 4LL ) ) ; 
+} 
+func5 ( var4 , number , number ) ; 
+func6 ( var4 , var16 , number ) ; 
+func5 ( var4 , number , number ) ; 
+func7 ( var4 , var2 -> var17 . var18 ) ; 
+func7 ( var4 , var2 -> var17 . var19 ) ; 
+func5 ( var4 , number , number ) ; 
+func8 ( var4 , var2 -> var20 ) ; 
+func5 ( var4 , number , number ) ; 
+if ( var2 -> var12 ) 
+func8 ( var4 , number ) ; 
+else 
+func8 ( var4 , var2 -> var11 ) ; 
+func5 ( var4 , number , number ) ; 
+func7 ( var4 , var2 -> var12 ) ; 
+func5 ( var4 , number , number ) ; 
+func7 ( var4 , number ) ; 
+func5 ( var4 , number , number ) ; 
+func7 ( var4 , number ) ; 
+if ( ! var2 -> var12 ) { 
+func5 ( var4 , number , number ) ; 
+func9 ( var4 , var2 -> var15 ) ; 
+func5 ( var4 , number + ( var1 -> var14 + number ) * number , number ) ; 
+func7 ( var4 , var1 -> var14 + number ) ; 
+func7 ( var4 , number ) ; 
+func9 ( var4 , number ) ; 
+func9 ( var4 , number ) ; 
+func7 ( var4 , number ) ; 
+for ( var5 = number ; var5 < var1 -> var14 ; var5 ++ ) { 
+AVStream * var21 = var1 -> var22 [ var5 ] ; 
+MXFStreamContext * var23 = var21 -> var3 ; 
+func9 ( var4 , var23 -> var7 ) ; 
+if ( var23 -> var7 ) 
+var7 = number ; 
+if ( var5 == number ) { 
+func9 ( var4 , number ) ; 
+func7 ( var4 , var24 ) ; 
+} else { 
+unsigned var25 = var23 -> var26 . var27 [ number ] * var23 -> var26 . var28 ; 
+var25 += func10 ( var25 ) ; 
+func9 ( var4 , number ) ; 
+func7 ( var4 , ( var5 - number ) * var25 ) ; 
+} 
+} 
+func5 ( var4 , number + var2 -> var11 * ( number + var2 -> var15 * number ) , number ) ; 
+func7 ( var4 , var2 -> var11 ) ; 
+func7 ( var4 , number + var2 -> var15 * number ) ; 
+for ( var5 = number ; var5 < var2 -> var11 ; var5 ++ ) { 
+int var29 = number ; 
+if ( ! ( var2 -> var30 [ var5 ] . var31 & number ) ) { 
+var2 -> var9 = var8 ; 
+var8 = var5 ; 
+} 
+if ( var7 ) { 
+int var32 = var5 - var8 ; 
+if ( var32 != var2 -> var30 [ var5 ] . var33 ) { 
+for ( var6 = var8 ; var6 < var2 -> var11 ; var6 ++ ) { 
+if ( var32 == var2 -> var30 [ var6 ] . var33 ) 
+break ; 
+} 
+if ( var6 == var2 -> var11 ) 
+func2 ( var1 , var34 , str ) ; 
+var29 = var6 - var8 - var32 ; 
+} 
+} 
+func9 ( var4 , var29 ) ; 
+if ( ( var2 -> var30 [ var5 ] . var31 & number ) == number ) { 
+func9 ( var4 , var2 -> var9 - var5 ) ; 
+} else { 
+func9 ( var4 , var8 - var5 ) ; 
+if ( ( var2 -> var30 [ var5 ] . var31 & number ) == number ) 
+var2 -> var9 = var8 ; 
+} 
+if ( ! ( var2 -> var30 [ var5 ] . var31 & number ) && 
+var2 -> var30 [ var5 ] . var31 & number && ! var29 ) 
+var2 -> var30 [ var5 ] . var31 |= number ; 
+func9 ( var4 , var2 -> var30 [ var5 ] . var31 ) ; 
+func8 ( var4 , var2 -> var30 [ var5 ] . var35 ) ; 
+if ( var1 -> var14 > number ) 
+func7 ( var4 , var2 -> var30 [ var5 ] . var36 ) ; 
+} 
+var2 -> var9 = var8 - var2 -> var11 ; 
+var2 -> var20 += var2 -> var11 ; 
+var2 -> var11 = number ; 
+} 
+} 

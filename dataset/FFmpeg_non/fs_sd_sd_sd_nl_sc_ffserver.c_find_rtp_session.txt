@@ -1,0 +1,11 @@
+static HTTPContext * func1 ( const char * var1 ) 
+{ 
+HTTPContext * var2 ; 
+if ( var1 [ number ] == str ) 
+return var3 ; 
+for ( var2 = var4 ; var2 ; var2 = var2 -> var5 ) { 
+if ( ! strcmp ( var2 -> var1 , var1 ) ) 
+return var2 ; 
+} 
+return var3 ; 
+} 

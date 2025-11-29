@@ -1,0 +1,12 @@
+func1 ( uarb var1 , int var2 , FILE * var3 ) 
+{ 
+while ( var2 > number ) 
+if ( var1 [ -- var2 ] > number ) 
+{ 
+fprintf ( var3 , str , var1 [ var2 ] ) ; 
+while ( var2 > number ) 
+fprintf ( var3 , str , var1 [ -- var2 ] ) ; 
+} 
+else if ( var2 == number ) 
+fputs ( str , var3 ) ; 
+} 

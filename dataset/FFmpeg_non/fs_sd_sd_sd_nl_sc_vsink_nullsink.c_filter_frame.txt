@@ -1,0 +1,5 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+func2 ( & var2 ) ; 
+return number ; 
+} 

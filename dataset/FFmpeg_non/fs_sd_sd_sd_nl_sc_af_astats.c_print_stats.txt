@@ -1,0 +1,68 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+AudioStatsContext * var2 = var1 -> var3 ; 
+uint64_t var4 = number , var5 = number , var6 = number , var7 = number ; 
+double var8 = number , var9 = number , 
+var10 = var11 , var12 = var13 , var14 = var11 , var15 = number , 
+var16 = number , 
+var17 = number , 
+var18 = number , 
+var19 = number , 
+var20 = var11 , 
+var21 = var13 ; 
+int var22 ; 
+for ( var22 = number ; var22 < var2 -> var23 ; var22 ++ ) { 
+ChannelStats * var24 = & var2 -> var25 [ var22 ] ; 
+if ( var24 -> var7 < var2 -> var26 ) 
+var24 -> var20 = var24 -> var21 = var24 -> var19 / var24 -> var7 ; 
+var10 = func2 ( var10 , var24 -> var10 ) ; 
+var12 = func3 ( var12 , var24 -> var12 ) ; 
+var14 = func2 ( var14 , var24 -> var14 ) ; 
+var15 = func3 ( var15 , var24 -> var15 ) ; 
+var17 += var24 -> var17 , 
+var20 = func2 ( var20 , var24 -> var20 ) ; 
+var21 = func3 ( var21 , var24 -> var21 ) ; 
+var18 += var24 -> var18 ; 
+var19 += var24 -> var19 ; 
+var5 += var24 -> var5 ; 
+var6 += var24 -> var6 ; 
+var8 += var24 -> var8 ; 
+var9 += var24 -> var9 ; 
+var4 |= var24 -> var4 ; 
+var7 += var24 -> var7 ; 
+if ( fabs ( var24 -> var18 ) > fabs ( var16 ) ) 
+var16 = var24 -> var18 ; 
+func4 ( var1 , var27 , str , var22 + number ) ; 
+func4 ( var1 , var27 , str , var24 -> var18 / var24 -> var7 ) ; 
+func4 ( var1 , var27 , str , var24 -> var10 ) ; 
+func4 ( var1 , var27 , str , var24 -> var12 ) ; 
+func4 ( var1 , var27 , str , var24 -> var14 ) ; 
+func4 ( var1 , var27 , str , var24 -> var15 ) ; 
+func4 ( var1 , var27 , str , var24 -> var17 / ( var24 -> var7 - number ) ) ; 
+func4 ( var1 , var27 , str , func5 ( func3 ( - var24 -> var10 , var24 -> var12 ) ) ) ; 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var24 -> var19 / var24 -> var7 ) ) ) ; 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var24 -> var21 ) ) ) ; 
+if ( var24 -> var20 != number ) 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var24 -> var20 ) ) ) ; 
+func4 ( var1 , var27 , str , var24 -> var19 ? func3 ( - var24 -> var10 , var24 -> var12 ) / sqrt ( var24 -> var19 / var24 -> var7 ) : number ) ; 
+func4 ( var1 , var27 , str , func5 ( ( var24 -> var8 + var24 -> var9 ) / ( var24 -> var5 + var24 -> var6 ) ) ) ; 
+func4 ( var1 , var27 , str PRId64 str , var24 -> var5 + var24 -> var6 ) ; 
+func4 ( var1 , var27 , str , func6 ( var24 -> var4 ) ) ; 
+} 
+func4 ( var1 , var27 , str ) ; 
+func4 ( var1 , var27 , str , var16 / ( var7 / var2 -> var23 ) ) ; 
+func4 ( var1 , var27 , str , var10 ) ; 
+func4 ( var1 , var27 , str , var12 ) ; 
+func4 ( var1 , var27 , str , var14 ) ; 
+func4 ( var1 , var27 , str , var15 ) ; 
+func4 ( var1 , var27 , str , var17 / ( var7 - var2 -> var23 ) ) ; 
+func4 ( var1 , var27 , str , func5 ( func3 ( - var10 , var12 ) ) ) ; 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var19 / var7 ) ) ) ; 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var21 ) ) ) ; 
+if ( var20 != number ) 
+func4 ( var1 , var27 , str , func5 ( sqrt ( var20 ) ) ) ; 
+func4 ( var1 , var27 , str , func5 ( ( var8 + var9 ) / ( var5 + var6 ) ) ) ; 
+func4 ( var1 , var27 , str , ( var5 + var6 ) / ( double ) var2 -> var23 ) ; 
+func4 ( var1 , var27 , str , func6 ( var4 ) ) ; 
+func4 ( var1 , var27 , str PRId64 str , var7 / var2 -> var23 ) ; 
+} 

@@ -1,0 +1,15 @@
+static int func1 ( GLenum var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : 
+case var3 : 
+case var4 : 
+return number ; 
+case var5 : 
+case var6 : 
+case var7 : 
+var8 : 
+break ; 
+} 
+return number ; 
+} 

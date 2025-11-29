@@ -1,0 +1,21 @@
+static OutputStream * func1 ( void ) 
+{ 
+int var1 ; 
+int64_t var2 = var3 ; 
+OutputStream * var4 = var5 ; 
+for ( var1 = number ; var1 < var6 ; var1 ++ ) { 
+OutputStream * var7 = var8 [ var1 ] ; 
+int64_t var9 = var7 -> var10 -> var11 == var12 ? var13 : 
+func2 ( var7 -> var10 -> var11 , var7 -> var10 -> var14 , 
+var15 ) ; 
+if ( var7 -> var10 -> var11 == var12 ) 
+func3 ( var5 , var16 , str ) ; 
+if ( ! var7 -> var17 && ! var7 -> var18 ) 
+return var7 ; 
+if ( ! var7 -> var19 && var9 < var2 ) { 
+var2 = var9 ; 
+var4 = var7 -> var20 ? var5 : var7 ; 
+} 
+} 
+return var4 ; 
+} 

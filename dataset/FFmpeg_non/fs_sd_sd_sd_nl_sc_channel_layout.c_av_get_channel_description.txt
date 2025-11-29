@@ -1,0 +1,10 @@
+const char * func1 ( uint64_t var1 ) 
+{ 
+int var2 ; 
+if ( func2 ( var1 ) != number ) 
+return var3 ; 
+for ( var2 = number ; var2 < func3 ( var4 ) ; var2 ++ ) 
+if ( ( 1ULL << var2 ) & var1 ) 
+return var4 [ var2 ] . var5 ; 
+return var3 ; 
+} 

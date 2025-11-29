@@ -1,0 +1,11 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AudioVectorScopeContext * var2 = var1 -> var3 -> var4 ; 
+var1 -> var5 = var2 -> var5 ; 
+var1 -> var6 = var2 -> var6 ; 
+var1 -> sample_aspect_ratio = ( AVRational ) { 1 , 1 } ; 
+var1 -> var7 = var2 -> var7 ; 
+var2 -> var8 = var2 -> var5 / number ; 
+var2 -> var9 = var2 -> var6 / number ; 
+return number ; 
+} 

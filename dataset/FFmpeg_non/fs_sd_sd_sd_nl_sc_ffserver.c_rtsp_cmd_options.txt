@@ -1,0 +1,8 @@
+static void func1 ( HTTPContext * var1 , const char * var2 ) 
+{ 
+func2 ( var1 -> var3 , str , var4 , str ) ; 
+func2 ( var1 -> var3 , str , var1 -> var5 ) ; 
+func2 ( var1 -> var3 , str , 
+str ) ; 
+func2 ( var1 -> var3 , str ) ; 
+} 

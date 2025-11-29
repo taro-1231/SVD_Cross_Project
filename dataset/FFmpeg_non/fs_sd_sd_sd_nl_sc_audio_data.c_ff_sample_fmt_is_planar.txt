@@ -1,0 +1,7 @@
+int func1 ( enum AVSampleFormat var1 , int var2 ) 
+{ 
+if ( var2 == number ) 
+return number ; 
+else 
+return func2 ( var1 ) ; 
+} 

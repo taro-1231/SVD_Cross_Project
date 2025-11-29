@@ -1,0 +1,12 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+OpenGLContext * var3 = var1 -> var4 ; 
+if ( ! var3 -> var5 ) { 
+func2 ( ) ; 
+} else if ( ( var2 = func3 ( var1 , var6 , var7 , number ) ) < number ) { 
+func4 ( var3 , var8 , str ) ; 
+return var2 ; 
+} 
+return number ; 
+} 

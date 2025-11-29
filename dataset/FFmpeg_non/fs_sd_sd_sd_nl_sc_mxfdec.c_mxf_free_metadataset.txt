@@ -1,0 +1,37 @@
+static void func1 ( MXFMetadataSet ** var1 , int var2 ) 
+{ 
+MXFIndexTableSegment * var3 ; 
+switch ( ( * var1 ) -> var4 ) { 
+case var5 : 
+func2 ( & ( ( MXFDescriptor * ) * var1 ) -> var6 ) ; 
+break ; 
+case var7 : 
+func2 ( & ( ( MXFDescriptor * ) * var1 ) -> var8 ) ; 
+break ; 
+case var9 : 
+func2 ( & ( ( MXFSequence * ) * var1 ) -> var10 ) ; 
+break ; 
+case var11 : 
+func2 ( & ( ( MXFEssenceGroup * ) * var1 ) -> var10 ) ; 
+break ; 
+case var12 : 
+case var13 : 
+func2 ( & ( ( MXFPackage * ) * var1 ) -> var14 ) ; 
+func2 ( & ( ( MXFPackage * ) * var1 ) -> var15 ) ; 
+func2 ( & ( ( MXFPackage * ) * var1 ) -> var16 ) ; 
+break ; 
+case var17 : 
+func2 ( & ( ( MXFTaggedValue * ) * var1 ) -> var15 ) ; 
+func2 ( & ( ( MXFTaggedValue * ) * var1 ) -> var18 ) ; 
+break ; 
+case var19 : 
+var3 = ( MXFIndexTableSegment * ) * var1 ; 
+func2 ( & var3 -> var20 ) ; 
+func2 ( & var3 -> var21 ) ; 
+func2 ( & var3 -> var22 ) ; 
+var23 : 
+break ; 
+} 
+if ( var2 ) 
+func2 ( var1 ) ; 
+} 

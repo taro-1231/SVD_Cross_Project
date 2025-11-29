@@ -1,0 +1,194 @@
+func1 ( int var1 , char * var2 [ ] ) 
+{ 
+int var3 = number ; 
+int var4 = number ; 
+fprintf ( var5 , str , var6 ) ; 
+fprintf ( var5 , str , var7 ) ; 
+fprintf ( var5 , str , func2 ( var8 ) ) ; 
+fprintf ( var5 , str , 
+( unsigned long ) func3 ( ) , 
+func4 ( var8 ) ) ; 
+fprintf ( var5 , str , ( unsigned long ) var9 , 
+var10 ) ; 
+fprintf ( var5 , str ) ; 
+fprintf ( var5 , str ) ; 
+if ( strcmp ( var11 , var6 ) ) 
+{ 
+fprintf ( var5 , 
+str ) ; 
+fprintf ( var5 , str , var6 ) ; 
+fprintf ( var5 , str , var11 ) ; 
+++ var4 ; 
+} 
+if ( var1 > number ) 
+{ 
+if ( strcmp ( var2 [ number ] , str ) == number ) 
+{ 
+var3 = number ; 
+var12 = number ; 
+} 
+else if ( strcmp ( var2 [ number ] , str ) == number || 
+strcmp ( var2 [ number ] , str ) == number ) 
+{ 
+var3 = number ; 
+var13 = number ; 
+var12 = number ; 
+} 
+else if ( strcmp ( var2 [ number ] , str ) == number ) 
+{ 
+var13 = number ; 
+var12 = number ; 
+var14 = var2 [ number ] ; 
+} 
+else 
+{ 
+var14 = var2 [ number ] ; 
+var12 = number ; 
+} 
+} 
+if ( ! var3 && var1 == number + var13 ) 
+var15 = var2 [ number + var13 ] ; 
+if ( ( ! var3 && var1 > number + var13 ) || ( var3 && var1 < number ) ) 
+{ 
+fprintf ( var5 , 
+str , 
+var2 [ number ] , var2 [ number ] ) ; 
+fprintf ( var5 , 
+str ) ; 
+fprintf ( var5 , 
+str , var15 ) ; 
+exit ( number ) ; 
+} 
+if ( var3 ) 
+{ 
+int var16 ; 
+int var17 = var18 ; 
+for ( var16 = number ; var16 < var1 ; ++ var16 ) 
+{ 
+int var19 ; 
+fprintf ( var5 , str , var2 [ var16 ] ) ; 
+var19 = func5 ( var2 [ var16 ] , var15 ) ; 
+if ( var19 == number ) 
+{ 
+int var20 ; 
+fprintf ( var5 , str , 
+( unsigned long ) var21 ) ; 
+fprintf ( var5 , str ) ; 
+for ( var20 = number ; var20 < number ; var20 ++ ) 
+if ( var22 [ var20 ] ) 
+fprintf ( var5 , str , 
+var20 , ( unsigned long ) var22 [ var20 ] ) ; 
+if ( var23 != number ) 
+fprintf ( var5 , str , var24 ) ; 
+var23 = number ; 
+} 
+else 
+{ 
+fprintf ( var5 , str ) ; 
+var4 += var19 ; 
+} 
+if ( var17 != var18 ) 
+fprintf ( var5 , str , 
+var18 - var17 ) ; 
+if ( var18 != number ) 
+{ 
+memory_infop var25 = var26 ; 
+fprintf ( var5 , str , 
+var18 ) ; 
+while ( var25 != var8 ) 
+{ 
+fprintf ( var5 , str , 
+( unsigned long ) var25 -> var27 , 
+( unsigned int ) var25 -> var28 ) ; 
+var25 = var25 -> var29 ; 
+} 
+} 
+} 
+fprintf ( var5 , str , 
+var18 ) ; 
+fprintf ( var5 , str , 
+var30 ) ; 
+fprintf ( var5 , str , 
+var31 ) ; 
+fprintf ( var5 , str , 
+var32 ) ; 
+} 
+else 
+{ 
+int var16 ; 
+for ( var16 = number ; var16 < number ; ++ var16 ) 
+{ 
+int var19 ; 
+int var17 = var18 ; 
+if ( var16 == number ) 
+var12 = number ; 
+else if ( var13 == number ) 
+var12 = number ; 
+if ( var16 == number || var13 == number || var4 != number ) 
+fprintf ( var5 , str , var14 ) ; 
+var19 = func5 ( var14 , var15 ) ; 
+if ( var19 == number ) 
+{ 
+if ( var13 == number || var16 == number ) 
+{ 
+int var20 ; 
+fprintf ( var5 , str , 
+( unsigned long ) var21 ) ; 
+fprintf ( var5 , str ) ; 
+for ( var20 = number ; var20 < number ; var20 ++ ) 
+if ( var22 [ var20 ] ) 
+fprintf ( var5 , str , 
+var20 , ( unsigned long ) var22 [ var20 ] ) ; 
+if ( var23 != number ) 
+fprintf ( var5 , str , var24 ) ; 
+} 
+} 
+else 
+{ 
+if ( var13 == number && var16 != number ) 
+fprintf ( var5 , str , var14 ) ; 
+fprintf ( var5 , str ) ; 
+var4 += var19 ; 
+} 
+if ( var17 != var18 ) 
+fprintf ( var5 , str , 
+var18 - var17 ) ; 
+if ( var18 != number ) 
+{ 
+memory_infop var25 = var26 ; 
+fprintf ( var5 , str , 
+var18 ) ; 
+while ( var25 != var8 ) 
+{ 
+fprintf ( var5 , str , 
+( unsigned long ) var25 -> var27 , ( unsigned int ) var25 -> var28 ) ; 
+var25 = var25 -> var29 ; 
+} 
+} 
+} 
+fprintf ( var5 , str , 
+var18 ) ; 
+fprintf ( var5 , str , 
+var30 ) ; 
+fprintf ( var5 , str , 
+var31 ) ; 
+fprintf ( var5 , str , 
+var32 ) ; 
+} 
+var33 = ( float ) clock ( ) ; 
+var34 += ( var33 - var35 ) ; 
+var35 = var33 ; 
+fprintf ( var5 , str , 
+( var34 + var36 + var37 ) / ( float ) var38 ) ; 
+fprintf ( var5 , str , 
+var36 / ( float ) var38 ) ; 
+fprintf ( var5 , str , 
+var37 / ( float ) var38 ) ; 
+fprintf ( var5 , str , 
+var34 / ( float ) var38 ) ; 
+if ( var4 == number ) 
+fprintf ( var5 , str ) ; 
+else 
+fprintf ( var5 , str ) ; 
+return ( int ) ( var4 != number ) ; 
+} 

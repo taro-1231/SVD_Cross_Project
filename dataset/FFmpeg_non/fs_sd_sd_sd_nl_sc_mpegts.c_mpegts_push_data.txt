@@ -1,0 +1,224 @@
+static int func1 ( MpegTSFilter * var1 , 
+const uint8_t * var2 , int var3 , int var4 , 
+int64_t var5 ) 
+{ 
+PESContext * var6 = var1 -> var7 . var8 . var9 ; 
+MpegTSContext * var10 = var6 -> var10 ; 
+const uint8_t * var11 ; 
+int var12 , var13 ; 
+if ( ! var10 -> var14 ) 
+return number ; 
+if ( var4 ) { 
+if ( var6 -> var15 == var16 && var6 -> var17 > number ) { 
+func2 ( var6 , var10 -> var14 ) ; 
+var10 -> var18 = number ; 
+} else { 
+func3 ( var6 ) ; 
+} 
+var6 -> var15 = var19 ; 
+var6 -> var20 = var5 ; 
+} 
+var11 = var2 ; 
+while ( var3 > number ) { 
+switch ( var6 -> var15 ) { 
+case var19 : 
+var12 = var21 - var6 -> var17 ; 
+if ( var12 > var3 ) 
+var12 = var3 ; 
+memcpy ( var6 -> var22 + var6 -> var17 , var11 , var12 ) ; 
+var6 -> var17 += var12 ; 
+var11 += var12 ; 
+var3 -= var12 ; 
+if ( var6 -> var17 == var21 ) { 
+if ( var6 -> var22 [ number ] == number && var6 -> var22 [ number ] == number && 
+var6 -> var22 [ number ] == number ) { 
+var13 = var6 -> var22 [ number ] | number ; 
+func4 ( var6 -> var23 , var24 , str , var6 -> var25 , 
+var13 ) ; 
+if ( ( var6 -> var26 && var6 -> var26 -> var27 == var28 && 
+( ! var6 -> var29 || 
+var6 -> var29 -> var27 == var28 ) ) || 
+var13 == number ) 
+goto var30 ; 
+if ( ! var6 -> var26 ) { 
+if ( var10 -> var31 ) 
+goto var30 ; 
+var6 -> var26 = func5 ( var10 -> var23 , var32 ) ; 
+if ( ! var6 -> var26 ) 
+return func6 ( var33 ) ; 
+var6 -> var26 -> var34 = var6 -> var25 ; 
+func7 ( var6 -> var26 , var6 , number , number ) ; 
+} 
+var6 -> var35 = func8 ( var6 -> var22 + number ) ; 
+if ( ! var6 -> var35 ) 
+var6 -> var35 = var36 ; 
+var6 -> var37 = func9 ( var6 -> var35 + 
+var38 ) ; 
+if ( ! var6 -> var37 ) 
+return func6 ( var33 ) ; 
+if ( var13 != number && var13 != number && 
+var13 != number && var13 != number && 
+var13 != number && var13 != number && 
+var13 != number ) { 
+var6 -> var15 = var39 ; 
+if ( var6 -> var26 -> var40 -> var41 == var42 && ! var6 -> var26 -> var43 ) { 
+func4 ( var6 -> var23 , var24 , 
+str , 
+var6 -> var25 , 
+var6 -> var44 ) ; 
+var6 -> var26 -> var43 = number ; 
+} 
+} else { 
+var6 -> var45 = number ; 
+var6 -> var15 = var16 ; 
+var6 -> var17 = number ; 
+} 
+} else { 
+var30 : 
+var6 -> var15 = var46 ; 
+continue ; 
+} 
+} 
+break ; 
+case var39 : 
+var12 = var47 - var6 -> var17 ; 
+if ( var12 < number ) 
+return var48 ; 
+if ( var12 > var3 ) 
+var12 = var3 ; 
+memcpy ( var6 -> var22 + var6 -> var17 , var11 , var12 ) ; 
+var6 -> var17 += var12 ; 
+var11 += var12 ; 
+var3 -= var12 ; 
+if ( var6 -> var17 == var47 ) { 
+var6 -> var45 = var6 -> var22 [ number ] + number ; 
+var6 -> var15 = var49 ; 
+} 
+break ; 
+case var49 : 
+var12 = var6 -> var45 - var6 -> var17 ; 
+if ( var12 < number ) 
+return var48 ; 
+if ( var12 > var3 ) 
+var12 = var3 ; 
+memcpy ( var6 -> var22 + var6 -> var17 , var11 , var12 ) ; 
+var6 -> var17 += var12 ; 
+var11 += var12 ; 
+var3 -= var12 ; 
+if ( var6 -> var17 == var6 -> var45 ) { 
+const uint8_t * var50 ; 
+unsigned int var51 , var52 , var30 ; 
+var51 = var6 -> var22 [ number ] ; 
+var50 = var6 -> var22 + number ; 
+var6 -> var53 = var54 ; 
+var6 -> var55 = var54 ; 
+if ( ( var51 & number ) == number ) { 
+var6 -> var55 = var6 -> var53 = func10 ( var50 ) ; 
+var50 += number ; 
+} else if ( ( var51 & number ) == number ) { 
+var6 -> var53 = func10 ( var50 ) ; 
+var50 += number ; 
+var6 -> var55 = func10 ( var50 ) ; 
+var50 += number ; 
+} 
+var6 -> var56 = - number ; 
+if ( var51 & number ) { 
+var52 = * var50 ++ ; 
+var30 = ( var52 >> number ) & number ; 
+var30 += var30 & number ; 
+var50 += var30 ; 
+if ( ( var52 & number ) == number && 
+( var50 + number ) <= ( var6 -> var22 + var6 -> var45 ) ) { 
+if ( ( var50 [ number ] & number ) > number && ( var50 [ number ] & number ) == number ) 
+var6 -> var56 = var50 [ number ] ; 
+} 
+} 
+var6 -> var15 = var16 ; 
+var6 -> var17 = number ; 
+if ( var6 -> var44 == number && var3 > number ) { 
+int var57 = func11 ( var6 , & var6 -> var58 , var11 , 
+var3 ) ; 
+var6 -> var45 += var57 ; 
+var11 += var57 ; 
+var3 -= var57 ; 
+} 
+if ( var6 -> var44 == number && var3 >= number ) { 
+var6 -> var45 += number ; 
+var11 += number ; 
+var3 -= number ; 
+} 
+if ( var6 -> var10 -> var59 
+&& ( var6 -> var26 -> var40 -> var41 == var60 
+|| var6 -> var26 -> var40 -> var41 == var61 ) 
+) { 
+AVProgram * var11 = var32 ; 
+while ( ( var11 = func12 ( var6 -> var23 , var11 , var6 -> var26 -> var62 ) ) ) { 
+if ( var11 -> var63 != - number && var11 -> var27 != var28 ) { 
+MpegTSFilter * var64 = var6 -> var10 -> var65 [ var11 -> var63 ] ; 
+if ( var64 ) { 
+AVStream * var26 = var32 ; 
+if ( var64 -> var66 == var67 ) { 
+PESContext * var68 = var64 -> var7 . var8 . var9 ; 
+if ( var68 ) 
+var26 = var68 -> var26 ; 
+} else if ( var64 -> var66 == var69 ) { 
+int var70 ; 
+for ( var70 = number ; var70 < var11 -> var71 ; var70 ++ ) { 
+AVStream * var72 = var6 -> var23 -> var73 [ var11 -> var74 [ var70 ] ] ; 
+if ( var72 -> var40 -> var75 == var76 ) 
+var26 = var72 ; 
+} 
+} 
+if ( var64 -> var77 != - number && var26 && var26 -> var27 != var28 ) { 
+int64_t var78 = var64 -> var77 / number ; 
+var6 -> var26 -> var79 = var26 -> var79 ; 
+var6 -> var26 -> var80 = var26 -> var80 ; 
+if ( var6 -> var55 == var54 || var6 -> var55 < var78 ) { 
+var6 -> var53 = var6 -> var55 = var78 ; 
+} else if ( var6 -> var26 -> var40 -> var41 == var60 && 
+var6 -> var55 > var78 + number + number ) { 
+var6 -> var53 = var6 -> var55 = var78 + number + number ; 
+} else if ( var6 -> var26 -> var40 -> var41 == var61 && 
+var6 -> var55 > var78 + number * number ) { 
+var6 -> var53 = var6 -> var55 = var78 + number + number ; 
+} 
+break ; 
+} 
+} 
+} 
+} 
+} 
+} 
+break ; 
+case var16 : 
+if ( var6 -> var37 ) { 
+if ( var6 -> var17 > number && 
+var6 -> var17 + var3 > var6 -> var35 ) { 
+func2 ( var6 , var10 -> var14 ) ; 
+var6 -> var35 = var36 ; 
+var6 -> var37 = func9 ( var6 -> var35 + 
+var38 ) ; 
+if ( ! var6 -> var37 ) 
+return func6 ( var33 ) ; 
+var10 -> var18 = number ; 
+} else if ( var6 -> var17 == number && 
+var3 > var6 -> var35 ) { 
+var3 = var6 -> var35 ; 
+} 
+memcpy ( var6 -> var37 -> var81 + var6 -> var17 , var11 , var3 ) ; 
+var6 -> var17 += var3 ; 
+if ( ! var10 -> var18 && var6 -> var35 < var36 && 
+var6 -> var45 + var6 -> var17 == var6 -> var35 + var21 ) { 
+var10 -> var18 = number ; 
+func2 ( var6 , var10 -> var14 ) ; 
+} 
+} 
+var3 = number ; 
+break ; 
+case var46 : 
+var3 = number ; 
+break ; 
+} 
+} 
+return number ; 
+} 

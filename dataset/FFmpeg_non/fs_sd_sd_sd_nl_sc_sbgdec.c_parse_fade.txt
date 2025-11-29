@@ -1,0 +1,22 @@
+static int func1 ( struct sbg_parser * var1 , struct sbg_fade * var2 ) 
+{ 
+struct sbg_fade var3 = { number } ; 
+if ( func2 ( var1 , str ) ) 
+var3 . var4 = var5 ; 
+else if ( func2 ( var1 , str ) ) 
+var3 . var4 = var6 ; 
+else if ( func2 ( var1 , str ) ) 
+var3 . var4 = var7 ; 
+else 
+return number ; 
+if ( func2 ( var1 , str ) ) 
+var3 . var8 = var5 ; 
+else if ( func2 ( var1 , str ) ) 
+var3 . var8 = var6 ; 
+else if ( func2 ( var1 , str ) ) 
+var3 . var8 = var7 ; 
+else 
+return var9 ; 
+* var2 = var3 ; 
+return number ; 
+} 

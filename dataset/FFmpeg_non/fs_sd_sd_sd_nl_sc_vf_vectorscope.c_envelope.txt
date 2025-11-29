@@ -1,0 +1,10 @@
+static void func1 ( VectorscopeContext * var2 , AVFrame * var3 ) 
+{ 
+if ( ! var2 -> func1 ) { 
+return ; 
+} else if ( var2 -> func1 == number ) { 
+func2 ( var2 , var3 ) ; 
+} else { 
+func3 ( var2 , var3 ) ; 
+} 
+} 

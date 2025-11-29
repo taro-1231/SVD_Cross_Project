@@ -1,0 +1,169 @@
+static void func1 ( int var1 , int64_t var2 , int64_t var3 ) 
+{ 
+char var4 [ number ] ; 
+AVBPrint var5 ; 
+OutputStream * var6 ; 
+AVFormatContext * var7 ; 
+int64_t var8 ; 
+AVCodecContext * var9 ; 
+int var10 , var11 , var12 ; 
+double var13 ; 
+double var14 ; 
+int64_t var15 = var16 + number ; 
+static int64_t var17 = - number ; 
+static int var18 [ number ] ; 
+int var19 , var20 , var21 , var22 ; 
+int var23 ; 
+float var24 ; 
+if ( ! var25 && ! var1 && ! var26 ) 
+return ; 
+if ( ! var1 ) { 
+if ( var17 == - number ) { 
+var17 = var3 ; 
+return ; 
+} 
+if ( ( var3 - var17 ) < number ) 
+return ; 
+var17 = var3 ; 
+} 
+var24 = ( var3 - var2 ) / number ; 
+var7 = var27 [ number ] -> var28 ; 
+var8 = func2 ( var7 -> var29 ) ; 
+if ( var8 <= number ) 
+var8 = func3 ( var7 -> var29 ) ; 
+var4 [ number ] = var70 ; 
+var11 = number ; 
+func4 ( & var5 , number , number ) ; 
+for ( var12 = number ; var12 < var30 ; var12 ++ ) { 
+float var31 = - number ; 
+var6 = var32 [ var12 ] ; 
+var9 = var6 -> var33 ; 
+if ( ! var6 -> var34 ) 
+var31 = var6 -> var35 / ( float ) var36 ; 
+if ( var11 && var9 -> var37 == var38 ) { 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , var31 ) ; 
+func5 ( & var5 , var70 , 
+var6 -> var39 , var6 -> var40 , var31 ) ; 
+} 
+if ( ! var11 && var9 -> var37 == var38 ) { 
+float var41 ; 
+var10 = var6 -> var10 ; 
+var41 = var24 > number ? var10 / var24 : number ; 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , 
+var10 , var41 < number , var41 , var31 ) ; 
+func5 ( & var5 , var70 , var10 ) ; 
+func5 ( & var5 , var70 , var41 ) ; 
+func5 ( & var5 , var70 , 
+var6 -> var39 , var6 -> var40 , var31 ) ; 
+if ( var1 ) 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 ) ; 
+if ( var42 ) { 
+int var43 ; 
+int var44 = func6 ( var31 ) ; 
+if ( var44 >= number && var44 < func7 ( var18 ) ) 
+var18 [ var44 ] ++ ; 
+for ( var43 = number ; var43 < number ; var43 ++ ) 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , func8 ( var18 [ var43 ] + number ) ) ; 
+} 
+if ( ( var9 -> var45 & var46 ) && ( var6 -> var47 != var48 || var1 ) ) { 
+int var43 ; 
+double var49 , var50 = number ; 
+double var51 , var52 = number ; 
+double var53 ; 
+char var54 [ number ] = { var70 , var70 , var70 } ; 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 ) ; 
+for ( var43 = number ; var43 < number ; var43 ++ ) { 
+if ( var1 ) { 
+var49 = var9 -> var49 [ var43 ] ; 
+var51 = var9 -> var55 * var9 -> var56 * number * number * var10 ; 
+} else { 
+var49 = var6 -> var49 [ var43 ] ; 
+var51 = var9 -> var55 * var9 -> var56 * number * number ; 
+} 
+if ( var43 ) 
+var51 /= number ; 
+var50 += var49 ; 
+var52 += var51 ; 
+var53 = func9 ( var49 / var51 ) ; 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , var54 [ var43 ] , var53 ) ; 
+func5 ( & var5 , var70 , 
+var6 -> var39 , var6 -> var40 , var54 [ var43 ] | number , var53 ) ; 
+} 
+var53 = func9 ( var50 / var52 ) ; 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , func9 ( var50 / var52 ) ) ; 
+func5 ( & var5 , var70 , 
+var6 -> var39 , var6 -> var40 , var53 ) ; 
+} 
+var11 = number ; 
+} 
+if ( func10 ( var6 -> var57 ) != var58 ) 
+var15 = func11 ( var15 , func12 ( func10 ( var6 -> var57 ) , 
+var6 -> var57 -> var59 , var60 ) ) ; 
+if ( var1 ) 
+var61 += var6 -> var62 ; 
+} 
+var21 = func13 ( var15 ) / var63 ; 
+var22 = func13 ( var15 ) % var63 ; 
+var20 = var21 / number ; 
+var21 %= number ; 
+var19 = var20 / number ; 
+var20 %= number ; 
+var13 = var15 && var8 >= number ? var8 * number / ( var15 / number ) : - number ; 
+var14 = var24 != number ? ( double ) var15 / var63 / var24 : - number ; 
+if ( var8 < number ) snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , 
+var70 ) ; 
+else snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , 
+var70 , var8 / number ) ; 
+if ( var15 < number ) 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 ) ; 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , 
+var70 , var19 , var20 , var21 , 
+( number * var22 ) / var63 ) ; 
+if ( var13 < number ) { 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 ) ; 
+func5 ( & var5 , var70 ) ; 
+} else { 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , var13 ) ; 
+func5 ( & var5 , var70 , var13 ) ; 
+} 
+if ( var8 < number ) func5 ( & var5 , var70 ) ; 
+else func5 ( & var5 , str PRId64 str , var8 ) ; 
+func5 ( & var5 , str PRId64 str , var15 ) ; 
+func5 ( & var5 , var70 , 
+var19 , var20 , var21 , var22 ) ; 
+if ( var65 || var61 ) 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , 
+var65 , var61 ) ; 
+func5 ( & var5 , var70 , var65 ) ; 
+func5 ( & var5 , var70 , var61 ) ; 
+if ( var14 < number ) { 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 ) ; 
+func5 ( & var5 , var70 ) ; 
+} else { 
+snprintf ( var4 + strlen ( var4 ) , sizeof ( var4 ) - strlen ( var4 ) , var70 , var14 ) ; 
+func5 ( & var5 , var70 , var14 ) ; 
+} 
+if ( var25 || var1 ) { 
+const char var66 = var1 ? var70 : var70 ; 
+if ( var25 == number && var67 > func14 ( ) ) { 
+fprintf ( var68 , var70 , var4 , var66 ) ; 
+} else 
+func15 ( var69 , var67 , var70 , var4 , var66 ) ; 
+fflush ( var68 ) ; 
+} 
+if ( var26 ) { 
+func5 ( & var5 , var70 , 
+var1 ? var70 : var70 ) ; 
+func16 ( var26 , var5 . var70 , 
+func17 ( var5 . var71 , var5 . var64 - number ) ) ; 
+func18 ( var26 ) ; 
+func19 ( & var5 , var69 ) ; 
+if ( var1 ) { 
+if ( ( var23 = func20 ( & var26 ) ) < number ) 
+func15 ( var69 , var72 , 
+var70 , func21 ( var23 ) ) ; 
+} 
+} 
+if ( var1 ) 
+func22 ( var8 ) ; 
+} 

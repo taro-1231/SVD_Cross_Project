@@ -1,0 +1,51 @@
+static int func1 ( struct sbg_parser * var1 , int var2 ) 
+{ 
+struct sbg_timestamp var3 ; 
+int64_t var4 ; 
+int var5 ; 
+struct sbg_fade var6 = { var7 , var7 , number } ; 
+struct sbg_string var8 ; 
+struct sbg_script_tseq * var9 ; 
+var5 = func2 ( var1 , & var3 , & var4 ) ; 
+if ( ! var5 ) 
+return number ; 
+if ( var5 < number ) 
+return var5 ; 
+if ( var3 . var10 ) { 
+if ( var2 ) 
+return var11 ; 
+var1 -> var12 . var10 = var3 . var10 ; 
+var1 -> var12 . var13 = var3 . var13 ; 
+} else if ( ! var2 && ! var1 -> var12 . var10 ) { 
+snprintf ( var1 -> var14 , sizeof ( var1 -> var14 ) , 
+str ) ; 
+return var11 ; 
+} 
+var3 . var10 = var1 -> var12 . var10 ; 
+var3 . var13 = var1 -> var12 . var13 + var4 ; 
+var5 = func3 ( var1 , & var6 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+func4 ( var1 ) ; 
+if ( ! func5 ( var1 , & var8 ) ) 
+return var11 ; 
+func4 ( var1 ) ; 
+if ( func6 ( var1 , str , number ) ) { 
+var6 . var15 = var16 ; 
+func4 ( var1 ) ; 
+} 
+if ( ! func7 ( var1 ) ) 
+return var11 ; 
+var9 = var2 ? 
+func8 ( ( void ** ) & var1 -> var17 . var18 , sizeof ( * var9 ) , 
+& var1 -> var19 , & var1 -> var20 ) : 
+func8 ( ( void ** ) & var1 -> var17 . var9 , sizeof ( * var9 ) , 
+& var1 -> var17 . var21 , & var1 -> var22 ) ; 
+if ( ! var9 ) 
+return func9 ( var23 ) ; 
+var9 -> var3 = var3 ; 
+var9 -> var8 = var8 . var24 ; 
+var9 -> var25 = var8 . var26 - var8 . var24 ; 
+var9 -> var6 = var6 ; 
+return number ; 
+} 

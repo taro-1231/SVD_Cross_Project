@@ -1,0 +1,17 @@
+static int func1 ( uint8_t * var1 , int var2 , int var3 , int var4 , int var5 ) 
+{ 
+int var6 = number ; 
+int var7 = number ; 
+int var8 , var9 , var10 ; 
+for ( var8 = number ; var8 <= var5 * number ; var8 ++ ) { 
+for ( var9 = number ; var9 <= number ; var9 ++ ) { 
+var10 = ( var3 - var8 ) * var4 + ( var2 - var9 ) ; 
+if ( var1 [ var10 ] < var7 ) 
+var7 = var1 [ var10 ] ; 
+else if ( var1 [ var10 ] > var6 ) { 
+var6 = var1 [ var10 ] ; 
+} 
+} 
+} 
+return var6 - var7 ; 
+} 

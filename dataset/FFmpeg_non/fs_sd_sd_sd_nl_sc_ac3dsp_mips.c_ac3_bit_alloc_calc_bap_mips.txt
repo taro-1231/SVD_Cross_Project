@@ -1,0 +1,71 @@
+static void func1 ( int16_t * var1 , int16_t * var2 , 
+int var3 , int var4 , 
+int var5 , int var6 , 
+const uint8_t * var7 , uint8_t * var8 ) 
+{ 
+int var9 , var10 , var11 ; 
+int var12 , var13 , var14 ; 
+int16_t * var15 , * var16 ; 
+uint8_t * var17 ; 
+if ( var5 == - number ) { 
+memset ( var8 , number , var18 ) ; 
+return ; 
+} 
+var15 = & var2 [ var3 ] ; 
+var17 = & var8 [ var3 ] ; 
+var9 = var19 [ var3 ] ; 
+do { 
+var12 = ( func2 ( var1 [ var9 ] - var5 - var6 , number ) & number ) + var6 ; 
+var10 = var20 [ ++ var9 ] ; 
+var10 = func3 ( var10 , var4 ) ; 
+var16 = var2 + var10 - number ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+PTR_ADDIU str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+: [ var13 ] str ( var13 ) , [ var14 ] str ( var14 ) , 
+[ var11 ] str ( var11 ) , [ var17 ] str ( var17 ) , 
+[ var15 ] str ( var15 ) , [ var16 ] str ( var16 ) 
+: [ var12 ] str ( var12 ) , [ var7 ] str ( var7 ) 
+: str 
+) ; 
+} while ( var4 > var10 ) ; 
+} 

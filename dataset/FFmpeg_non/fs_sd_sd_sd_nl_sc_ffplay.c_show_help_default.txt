@@ -1,0 +1,31 @@
+void func1 ( const char * var1 , const char * var2 ) 
+{ 
+func2 ( var3 ) ; 
+func3 ( ) ; 
+func4 ( var4 , str , number , var5 , number ) ; 
+func4 ( var4 , str , var5 , number , number ) ; 
+printf ( str ) ; 
+func5 ( func6 ( ) , var6 ) ; 
+func5 ( func7 ( ) , var6 ) ; 
+func5 ( func8 ( ) , var7 ) ; 
+func5 ( avfilter_get_class ( ) , AV_OPT_FLAG_FILTERING_PARAM ) ; 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+) ; 
+} 

@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+const AVPixFmtDescriptor * var2 = func2 ( var1 -> var3 ) ; 
+const int var4 = var2 -> var5 [ number ] . var6 + number ; 
+VectorscopeContext * var7 = var1 -> var8 -> var9 ; 
+var7 -> var10 = var7 -> var11 * ( ( number << var4 ) - number ) ; 
+var1 -> var12 = var1 -> var13 = number << var4 ; 
+var1 -> sample_aspect_ratio = ( AVRational ) { number , number } ; 
+return number ; 
+} 

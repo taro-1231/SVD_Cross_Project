@@ -1,0 +1,6 @@
+static void func1 ( RTMPContext * var1 , int var2 ) 
+{ 
+memmove ( & var1 -> var3 [ var2 ] , & var1 -> var3 [ var2 + number ] , 
+sizeof ( * var1 -> var3 ) * ( var1 -> var4 - var2 - number ) ) ; 
+var1 -> var4 -- ; 
+} 

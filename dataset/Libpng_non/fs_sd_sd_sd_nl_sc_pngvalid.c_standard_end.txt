@@ -1,0 +1,10 @@
+func1 ( png_structp var1 , png_infop var2 ) 
+{ 
+png_const_structp var3 = var1 ; 
+standard_display * var4 = voidcast ( standard_display * , 
+png_get_progressive_ptr ( var3 ) ) ; 
+UNUSED ( var2 ) 
+func2 ( var4 , var3 , var2 , 
+var5 >= number ; 
+func3 ( var4 , var3 , number , - number ) ; 
+} 

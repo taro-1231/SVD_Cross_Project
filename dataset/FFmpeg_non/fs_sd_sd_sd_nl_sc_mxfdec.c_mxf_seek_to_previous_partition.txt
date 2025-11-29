@@ -1,0 +1,30 @@
+static int func1 ( MXFContext * var1 ) 
+{ 
+AVIOContext * var2 = var1 -> var3 -> var2 ; 
+KLVPacket var4 ; 
+int64_t var5 ; 
+int var6 ; 
+if ( ! var1 -> var7 || 
+var1 -> var8 + var1 -> var7 -> var9 <= var1 -> var10 ) 
+return number ; 
+var5 = var1 -> var7 -> var11 ; 
+func2 ( var2 , var1 -> var8 + var1 -> var7 -> var9 , var12 ) ; 
+var1 -> var7 = var13 ; 
+func3 ( var1 -> var3 , var14 , str ) ; 
+if ( ( var6 = func4 ( & var4 , var2 ) ) < number ) { 
+func3 ( var1 -> var3 , var15 , str ) ; 
+return var6 ; 
+} 
+if ( ! func5 ( var4 . var16 ) ) { 
+func3 ( var1 -> var3 , var15 , str PRIx64 str , var4 . var17 ) ; 
+return var18 ; 
+} 
+if ( var4 . var17 >= var5 ) { 
+func3 ( var1 -> var3 , var15 , str 
+PRIx64 str , var5 ) ; 
+return var18 ; 
+} 
+if ( ( var6 = func6 ( var1 , var4 , var19 , number , number ) ) < number ) 
+return var6 ; 
+return number ; 
+} 

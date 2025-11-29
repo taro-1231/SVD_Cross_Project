@@ -1,0 +1,13 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+FlangerContext * var2 = var1 -> var3 ; 
+var2 -> var4 /= number ; 
+var2 -> var5 /= number ; 
+var2 -> var6 /= number ; 
+var2 -> var7 /= number ; 
+var2 -> var8 /= number ; 
+var2 -> var9 = number / ( number + var2 -> var5 ) ; 
+var2 -> var5 /= number + var2 -> var5 ; 
+var2 -> var5 *= number - fabs ( var2 -> var4 ) ; 
+return number ; 
+} 

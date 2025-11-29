@@ -1,0 +1,9 @@
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+png_size_t var4 ; 
+if ( var1 == var5 ) 
+return ; 
+var4 = fread ( var2 , number , var3 , func2 ( var6 , var1 -> var7 ) ) ; 
+if ( var4 != var3 ) 
+func3 ( var1 , str ) ; 
+} 

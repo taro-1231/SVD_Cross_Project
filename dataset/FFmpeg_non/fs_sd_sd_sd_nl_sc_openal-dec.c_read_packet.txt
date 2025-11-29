@@ -1,0 +1,21 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+al_data * var3 = var1 -> var4 ; 
+int var5 = number ; 
+const char * var6 ; 
+ALCint var7 ; 
+func2 ( var3 -> var8 , var9 , ( ALCsizei ) sizeof ( ALCint ) , & var7 ) ; 
+if ( var5 = func3 ( var3 -> var8 , & var6 ) ) goto var10 ; 
+if ( ( var5 = func4 ( var2 , var7 * var3 -> var11 ) ) < number ) 
+goto var10 ; 
+var2 -> var12 = func5 ( ) ; 
+func6 ( var3 -> var8 , var2 -> var13 , var7 ) ; 
+if ( var5 = func3 ( var3 -> var8 , & var6 ) ) goto var10 ; 
+return var2 -> var14 ; 
+var10 : 
+if ( var2 -> var13 ) 
+func7 ( var2 ) ; 
+if ( var6 ) 
+func8 ( var1 , var15 , str , var6 ) ; 
+return var5 ; 
+} 

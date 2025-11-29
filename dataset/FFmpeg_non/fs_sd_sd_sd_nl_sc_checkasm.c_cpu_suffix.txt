@@ -1,0 +1,8 @@
+static const char * func1 ( int var1 ) 
+{ 
+int var2 = func2 ( var3 ) ; 
+while ( -- var2 >= number ) 
+if ( var1 & var3 [ var2 ] . var4 ) 
+return var3 [ var2 ] . var5 ; 
+return str ; 
+} 

@@ -1,0 +1,8 @@
+double func1 ( AVExpr * var1 , const double * var2 , void * var3 ) 
+{ 
+Parser var4 = { number } ; 
+var4 . var5 = var1 -> var5 ; 
+var4 . var2 = var2 ; 
+var4 . var3 = var3 ; 
+return func2 ( & var4 , var1 ) ; 
+} 

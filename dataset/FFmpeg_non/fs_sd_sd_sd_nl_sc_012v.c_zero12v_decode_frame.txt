@@ -1,0 +1,87 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+int var5 , var6 ; 
+const int var7 = var1 -> var7 ; 
+AVFrame * var8 = var2 ; 
+uint16_t * var9 , * var10 , * var11 ; 
+const uint8_t * var12 , * var13 = var4 -> var2 ; 
+int var14 = var1 -> var7 * number / number ; 
+if ( var7 <= number || var1 -> var15 <= number ) { 
+func2 ( var1 , var16 , str , var7 , var1 -> var15 ) ; 
+return var17 ; 
+} 
+if ( var1 -> var18 == func3 ( str , str , str , str ) 
+&& var4 -> var19 % var1 -> var15 == number 
+&& var4 -> var19 / var1 -> var15 * number >= var7 * number ) 
+var14 = var4 -> var19 / var1 -> var15 ; 
+if ( var4 -> var19 < var1 -> var15 * var14 ) { 
+func2 ( var1 , var16 , str , 
+var4 -> var19 , var1 -> var15 * var14 ) ; 
+return var17 ; 
+} 
+if ( ( var6 = func4 ( var1 , var8 , number ) ) < number ) 
+return var6 ; 
+var8 -> var20 = var21 ; 
+var8 -> var22 = number ; 
+var12 = var4 -> var2 + var14 ; 
+for ( var5 = number ; var5 < var1 -> var15 ; var5 ++ ) { 
+uint16_t var23 [ number ] = { number , number , number , number , number , number } ; 
+uint16_t var24 [ number ] = { number , number , number } ; 
+uint16_t var25 [ number ] = { number , number , number } ; 
+int var26 ; 
+var9 = ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+var10 = ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+var11 = ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+for ( var26 = number ; var26 < var7 ; var26 += number ) { 
+uint32_t var28 ; 
+if ( var7 - var26 < number || var12 - var13 < number ) { 
+var9 = var23 ; 
+var10 = var24 ; 
+var11 = var25 ; 
+} 
+if ( var12 - var13 < number ) 
+break ; 
+var28 = func5 ( var13 ) ; 
+var13 += number ; 
+* var10 += var28 << number & number ; 
+* var9 += var28 >> number & number ; 
+* var11 += var28 >> number & number ; 
+if ( var12 - var13 < number ) 
+break ; 
+var28 = func5 ( var13 ) ; 
+var13 += number ; 
+* var9 += var28 << number & number ; 
+* var10 += var28 >> number & number ; 
+* var9 += var28 >> number & number ; 
+if ( var12 - var13 < number ) 
+break ; 
+var28 = func5 ( var13 ) ; 
+var13 += number ; 
+* var11 += var28 << number & number ; 
+* var9 += var28 >> number & number ; 
+* var10 += var28 >> number & number ; 
+if ( var12 - var13 < number ) 
+break ; 
+var28 = func5 ( var13 ) ; 
+var13 += number ; 
+* var9 += var28 << number & number ; 
+* var11 += var28 >> number & number ; 
+* var9 += var28 >> number & number ; 
+if ( var7 - var26 < number ) 
+break ; 
+} 
+if ( var26 < var7 ) { 
+var9 = var26 + ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+var10 = var26 / number + ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+var11 = var26 / number + ( uint16_t * ) ( var8 -> var2 [ number ] + var5 * var8 -> var27 [ number ] ) ; 
+memcpy ( var9 , var23 , sizeof ( * var9 ) * ( var7 - var26 ) ) ; 
+memcpy ( var10 , var24 , sizeof ( * var10 ) * ( var7 - var26 + number ) / number ) ; 
+memcpy ( var11 , var25 , sizeof ( * var11 ) * ( var7 - var26 + number ) / number ) ; 
+} 
+var12 += var14 ; 
+var13 = var12 - var14 ; 
+} 
+* var3 = number ; 
+return var4 -> var19 ; 
+} 

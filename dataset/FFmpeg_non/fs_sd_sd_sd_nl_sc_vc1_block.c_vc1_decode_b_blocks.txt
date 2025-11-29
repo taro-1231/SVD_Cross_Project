@@ -1,0 +1,57 @@
+static void func1 ( VC1Context * var1 ) 
+{ 
+MpegEncContext * var2 = & var1 -> var2 ; 
+switch ( var1 -> var3 ) { 
+case number : 
+var1 -> var4 = ( var1 -> var5 <= number ) ? var6 : var7 ; 
+break ; 
+case number : 
+var1 -> var4 = var8 ; 
+break ; 
+case 2 : 
+var1 -> var4 = var9 ; 
+break ; 
+} 
+switch ( var1 -> var3 ) { 
+case number : 
+var1 -> var10 = ( var1 -> var5 <= number ) ? var11 : var12 ; 
+break ; 
+case number : 
+var1 -> var10 = var13 ; 
+break ; 
+case 2 : 
+var1 -> var10 = var14 ; 
+break ; 
+} 
+var2 -> var15 = number ; 
+for ( var2 -> var16 = var2 -> var17 ; var2 -> var16 < var2 -> var18 ; var2 -> var16 ++ ) { 
+var2 -> var19 = number ; 
+func2 ( var1 ) ; 
+for ( ; var2 -> var19 < var2 -> var20 ; var2 -> var19 ++ ) { 
+func3 ( var2 ) ; 
+if ( var1 -> var21 == var22 ) 
+func4 ( var1 ) ; 
+else if ( var1 -> var21 == var23 ) 
+func5 ( var1 ) ; 
+else 
+func6 ( var1 ) ; 
+if ( func7 ( & var2 -> var24 ) > var1 -> var25 || func7 ( & var2 -> var24 ) < number ) { 
+func8 ( & var2 -> var26 , number , var2 -> var17 , var2 -> var19 , var2 -> var16 , var27 ) ; 
+func9 ( var2 -> var28 , var29 , str , 
+func7 ( & var2 -> var24 ) , var1 -> var25 , var2 -> var19 , var2 -> var16 ) ; 
+return ; 
+} 
+if ( var1 -> var2 . var30 ) 
+func10 ( var1 , var1 -> var31 ) ; 
+} 
+if ( ! var1 -> var2 . var30 ) 
+func11 ( var2 , var2 -> var16 * number , number ) ; 
+else if ( var2 -> var16 ) 
+func11 ( var2 , ( var2 -> var16 - number ) * number , number ) ; 
+var2 -> var15 = number ; 
+} 
+if ( var1 -> var2 . var30 ) 
+func11 ( var2 , ( var2 -> var18 - number ) * number , number ) ; 
+func8 ( & var2 -> var26 , number , var2 -> var17 << var1 -> var32 , var2 -> var20 - number , 
+( var2 -> var18 << var1 -> var32 ) - number , var33 ) ; 
+} 

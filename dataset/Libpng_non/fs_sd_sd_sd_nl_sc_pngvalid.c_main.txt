@@ -1,0 +1,6 @@
+int func1 ( void ) 
+{ 
+fprintf ( var1 , 
+str ) ; 
+return var2 ; 
+} 

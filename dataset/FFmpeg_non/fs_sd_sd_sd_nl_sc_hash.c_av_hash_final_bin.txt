@@ -1,0 +1,9 @@
+void func1 ( struct AVHashContext * var1 , uint8_t * var2 , int var3 ) 
+{ 
+uint8_t var4 [ var5 ] ; 
+unsigned var6 = func2 ( var1 ) ; 
+func3 ( var1 , var4 ) ; 
+memcpy ( var2 , var4 , func4 ( var3 , var6 ) ) ; 
+if ( var3 > var6 ) 
+memset ( var2 + var6 , number , var3 - var6 ) ; 
+} 

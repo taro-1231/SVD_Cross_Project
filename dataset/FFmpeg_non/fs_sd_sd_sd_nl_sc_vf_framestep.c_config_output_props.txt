@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var2 ) 
+{ 
+AVFilterContext * var3 = var2 -> var4 ; 
+FrameStepContext * var1 = var3 -> var5 ; 
+AVFilterLink * var6 = var3 -> var7 [ number ] ; 
+var2 -> var8 |= var9 ; 
+var2 -> var10 = 
+av_div_q ( var6 -> var10 , ( AVRational ) { var1 -> var11 , 1 } ) ; 
+func2 ( var3 , var12 , str , 
+var1 -> var11 , 
+var6 -> var10 . var13 , var6 -> var10 . var14 , func3 ( var6 -> var10 ) , 
+var2 -> var10 . var13 , var2 -> var10 . var14 , func3 ( var2 -> var10 ) ) ; 
+return number ; 
+} 

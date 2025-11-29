@@ -1,0 +1,43 @@
+static DASHTmplId func1 ( const char * var1 , char * var2 , 
+size_t var3 , const char ** var4 ) { 
+const char * var5 ; 
+DASHTmplId var6 = var7 ; 
+if ( func2 ( var1 , str , & var5 ) ) { 
+var6 = var8 ; 
+* var4 = var5 ; 
+} else if ( func2 ( var1 , str , & var5 ) ) { 
+var6 = var9 ; 
+func3 ( var2 , str , var3 ) ; 
+* var4 = var5 ; 
+} else { 
+if ( func2 ( var1 , str , & var5 ) ) 
+var6 = var10 ; 
+else if ( func2 ( var1 , str , & var5 ) ) 
+var6 = var11 ; 
+else if ( func2 ( var1 , str , & var5 ) ) 
+var6 = var12 ; 
+else 
+var6 = var7 ; 
+if ( var6 != var7 ) { 
+const char * var13 = ( var6 == var12 ) ? var14 : str ; 
+if ( var5 [ number ] == str ) { 
+snprintf ( var2 , var3 , str , var13 ) ; 
+* var4 = & var5 [ number ] ; 
+} else { 
+const char * var15 ; 
+if ( func2 ( var5 , str , & var15 ) && 
+func4 ( var15 [ number ] ) && 
+func2 ( & var15 [ number ] , str , & var5 ) ) { 
+snprintf ( var2 , var3 , str , str , var15 [ number ] , var13 ) ; 
+* var4 = var5 ; 
+} else { 
+av_log ( NULL , AV_LOG_WARNING , str 
+str 
+str , var5 ) ; 
+var6 = var7 ; 
+} 
+} 
+} 
+} 
+return var6 ; 
+} 

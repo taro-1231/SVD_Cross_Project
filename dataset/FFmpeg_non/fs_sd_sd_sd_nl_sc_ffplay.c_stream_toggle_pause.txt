@@ -1,0 +1,12 @@
+static void func1 ( VideoState * var1 ) 
+{ 
+if ( var1 -> var2 ) { 
+var1 -> var3 += func2 ( ) / number - var1 -> var4 . var5 ; 
+if ( var1 -> var6 != func3 ( var7 ) ) { 
+var1 -> var4 . var2 = number ; 
+} 
+func4 ( & var1 -> var4 , func5 ( & var1 -> var4 ) , var1 -> var4 . var8 ) ; 
+} 
+func4 ( & var1 -> var9 , func5 ( & var1 -> var9 ) , var1 -> var9 . var8 ) ; 
+var1 -> var2 = var1 -> var10 . var2 = var1 -> var4 . var2 = var1 -> var9 . var2 = ! var1 -> var2 ; 
+} 

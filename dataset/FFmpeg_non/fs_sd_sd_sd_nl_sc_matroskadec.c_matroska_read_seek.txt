@@ -1,0 +1,69 @@
+static int func1 ( AVFormatContext * var1 , int var2 , 
+int64_t var3 , int var4 ) 
+{ 
+MatroskaDemuxContext * var5 = var1 -> var6 ; 
+MatroskaTrack * var7 = var8 ; 
+AVStream * var9 = var1 -> var10 [ var2 ] ; 
+int var11 , var12 , var13 , var14 ; 
+if ( var5 -> var15 > number ) { 
+var5 -> var15 = number ; 
+func2 ( var5 ) ; 
+} 
+if ( ! var9 -> var16 ) 
+goto var17 ; 
+var3 = func3 ( var3 , var9 -> var18 [ number ] . var3 ) ; 
+if ( ( var12 = func4 ( var9 , var3 , var4 ) ) < number || var12 == var9 -> var16 - number ) { 
+func5 ( var1 -> var19 , var9 -> var18 [ var9 -> var16 - number ] . var20 , 
+var21 ) ; 
+var5 -> var22 = number ; 
+while ( ( var12 = func4 ( var9 , var3 , var4 ) ) < number || var12 == var9 -> var16 - number ) { 
+func6 ( var5 ) ; 
+if ( func7 ( var5 ) < number ) 
+break ; 
+} 
+} 
+func6 ( var5 ) ; 
+if ( var12 < number || ( var5 -> var15 < number && var12 == var9 -> var16 - number ) ) 
+goto var17 ; 
+var14 = var12 ; 
+var7 = var5 -> var7 . var23 ; 
+for ( var11 = number ; var11 < var5 -> var7 . var24 ; var11 ++ ) { 
+var7 [ var11 ] . var25 . var26 = number ; 
+var7 [ var11 ] . var25 . var27 = number ; 
+var7 [ var11 ] . var25 . var28 = var29 ; 
+var7 [ var11 ] . var30 = number ; 
+if ( var7 [ var11 ] . var31 == var32 && 
+var7 [ var11 ] . var33 -> var34 != var35 ) { 
+var13 = func4 ( 
+var7 [ var11 ] . var33 , var9 -> var18 [ var12 ] . var3 , 
+var36 ) ; 
+while ( var13 >= number && 
+var14 > number && 
+var7 [ var11 ] . var33 -> var18 [ var13 ] . var20 < var9 -> var18 [ var14 ] . var20 && 
+var9 -> var18 [ var12 ] . var3 - var7 [ var11 ] . var33 -> var18 [ var13 ] . var3 < number / var5 -> var37 ) 
+var14 -- ; 
+} 
+} 
+func5 ( var1 -> var19 , var9 -> var18 [ var14 ] . var20 , var21 ) ; 
+var5 -> var22 = number ; 
+if ( var4 & var38 ) { 
+var9 -> var39 = number ; 
+var5 -> var40 = var3 ; 
+} else { 
+var9 -> var39 = number ; 
+var5 -> var40 = var9 -> var18 [ var12 ] . var3 ; 
+} 
+var5 -> var39 = number ; 
+var5 -> var41 = number ; 
+var5 -> var42 = number ; 
+func8 ( var1 , var9 , var9 -> var18 [ var12 ] . var3 ) ; 
+return number ; 
+var17 : 
+func6 ( var5 ) ; 
+var5 -> var22 = number ; 
+var9 -> var39 = 
+var5 -> var39 = number ; 
+var5 -> var41 = number ; 
+var5 -> var42 = number ; 
+return - number ; 
+} 

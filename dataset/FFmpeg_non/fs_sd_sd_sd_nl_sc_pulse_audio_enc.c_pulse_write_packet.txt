@@ -1,0 +1,42 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+PulseData * var3 = var1 -> var4 ; 
+int var5 ; 
+int64_t var6 ; 
+if ( ! var2 ) 
+return func2 ( var3 ) ; 
+if ( var2 -> var7 != var8 ) 
+var3 -> var9 = var2 -> var7 ; 
+if ( var2 -> var10 ) { 
+var3 -> var9 += var2 -> var10 ; 
+} else { 
+AVStream * var11 = var1 -> var12 [ number ] ; 
+AVCodecContext * var13 = var11 -> var14 ; 
+AVRational var15 = { number , var13 -> var16 } ; 
+int64_t var17 = var2 -> var18 / ( func3 ( var13 -> var19 ) * var13 -> var20 ) ; 
+var3 -> var9 += func4 ( var17 , var15 , var11 -> var21 ) ; 
+} 
+func5 ( var3 -> var22 ) ; 
+if ( ! func6 ( func7 ( var3 -> var23 ) ) ) { 
+func8 ( var3 , var24 , str ) ; 
+goto var25 ; 
+} 
+while ( func9 ( var3 -> var23 ) < var3 -> var26 ) { 
+if ( var3 -> var27 ) { 
+func10 ( var3 -> var22 ) ; 
+return func11 ( var28 ) ; 
+} else 
+func12 ( var3 -> var22 ) ; 
+} 
+if ( ( var5 = func13 ( var3 -> var23 , var2 -> var29 , var2 -> var18 , var30 , number , var31 ) ) < number ) { 
+func8 ( var3 , var24 , str , func14 ( var5 ) ) ; 
+goto var25 ; 
+} 
+if ( ( var6 = func9 ( var3 -> var23 ) ) >= var3 -> var26 ) 
+func15 ( var1 , var32 , & var6 , sizeof ( var6 ) ) ; 
+func10 ( var3 -> var22 ) ; 
+return number ; 
+var25 : 
+func10 ( var3 -> var22 ) ; 
+return var33 ; 
+} 

@@ -1,0 +1,10 @@
+AVStereo3D * func1 ( AVFrame * var1 ) 
+{ 
+AVFrameSideData * var2 = func2 ( var1 , 
+var3 , 
+sizeof ( AVStereo3D ) ) ; 
+if ( ! var2 ) 
+return var4 ; 
+memset ( var2 -> var5 , number , sizeof ( AVStereo3D ) ) ; 
+return ( AVStereo3D * ) var2 -> var5 ; 
+} 

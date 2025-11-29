@@ -1,0 +1,16 @@
+void func1 ( AVFilterBufferRef * var1 ) 
+{ 
+if ( ! var1 ) 
+return ; 
+func2 ( var1 -> var2 -> var3 > number ) ; 
+if ( ! ( -- var1 -> var2 -> var3 ) ) 
+var1 -> var2 -> free ( var1 -> var2 ) ; 
+if ( var1 -> var4 != var1 -> var5 ) 
+func3 ( & var1 -> var4 ) ; 
+if ( var1 -> var6 ) 
+func3 ( & var1 -> var6 -> var7 ) ; 
+func3 ( & var1 -> var6 ) ; 
+func3 ( & var1 -> var8 ) ; 
+func4 ( & var1 -> var9 ) ; 
+func5 ( var1 ) ; 
+} 

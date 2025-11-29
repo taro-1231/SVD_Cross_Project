@@ -1,0 +1,74 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 , uint8_t * var3 , uint8_t * var4 ) 
+{ 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_d str 
+str 
+str 
+str 
+PAVGB ( t2 , % % mm3 ) \ 
+PAVGB ( t1 , % % mm4 ) \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+DEINT_L5 ( % % mm0 , % % mm1 , ( % 0 ) , ( % % REGa ) , ( % % REGa , % 1 ) ) 
+DEINT_L5 ( % % mm1 , % % mm0 , ( % % REGa ) , ( % % REGa , % 1 ) , ( % % REGa , % 1 , 2 ) ) 
+DEINT_L5 ( % % mm0 , % % mm1 , ( % % REGa , % 1 ) , ( % % REGa , % 1 , 2 ) , ( % 0 , % 1 , number ) ) 
+DEINT_L5 ( % % mm1 , % % mm0 , ( % % REGa , % 1 , 2 ) , ( % 0 , % 1 , number ) , ( % % REGd ) ) 
+DEINT_L5 ( % % mm0 , % % mm1 , ( % 0 , % 1 , number ) , ( % % REGd ) , ( % % REGd , % 1 ) ) 
+DEINT_L5 ( % % mm1 , % % mm0 , ( % % REGd ) , ( % % REGd , % 1 ) , ( % % REGd , % 1 , 2 ) ) 
+DEINT_L5 ( % % mm0 , % % mm1 , ( % % REGd , % 1 ) , ( % % REGd , % 1 , 2 ) , ( % 0 , % 1 , 8 ) ) 
+DEINT_L5 ( % % mm1 , % % mm0 , ( % % REGd , % 1 , 2 ) , ( % 0 , % 1 , 8 ) , ( % % REGd , % 1 , number ) ) 
+str 
+str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 ) , str ( var4 ) 
+: str REG_a , str REG_d 
+) ; 
+int x ; 
+var1 += var2 * number ; 
+for ( x = 0 ; x < 8 ; x ++ ) { 
+int t1 = var3 [ x ] ; 
+int t2 = var4 [ x ] ; 
+int t3 = var1 [ 0 ] ; 
+var1 [ var2 * 0 ] = av_clip_uint8 ( ( - ( t1 + var1 [ var2 * 2 ] ) + 2 * ( t2 + var1 [ var2 * 1 ] ) + 6 * t3 + number ) >> 3 ) ; 
+t1 = var1 [ var2 * 1 ] ; 
+var1 [ var2 * 1 ] = av_clip_uint8 ( ( - ( t2 + var1 [ var2 * 3 ] ) + 2 * ( t3 + var1 [ var2 * 2 ] ) + 6 * t1 + number ) >> 3 ) ; 
+t2 = var1 [ var2 * 2 ] ; 
+var1 [ var2 * 2 ] = av_clip_uint8 ( ( - ( t3 + var1 [ var2 * number ] ) + 2 * ( t1 + var1 [ var2 * 3 ] ) + 6 * t2 + number ) >> 3 ) ; 
+t3 = var1 [ var2 * 3 ] ; 
+var1 [ var2 * 3 ] = av_clip_uint8 ( ( - ( t1 + var1 [ var2 * 5 ] ) + 2 * ( t2 + var1 [ var2 * number ] ) + 6 * t3 + number ) >> 3 ) ; 
+t1 = var1 [ var2 * number ] ; 
+var1 [ var2 * number ] = av_clip_uint8 ( ( - ( t2 + var1 [ var2 * 6 ] ) + 2 * ( t3 + var1 [ var2 * 5 ] ) + 6 * t1 + number ) >> 3 ) ; 
+t2 = var1 [ var2 * 5 ] ; 
+var1 [ var2 * 5 ] = av_clip_uint8 ( ( - ( t3 + var1 [ var2 * 7 ] ) + 2 * ( t1 + var1 [ var2 * 6 ] ) + 6 * t2 + number ) >> 3 ) ; 
+t3 = var1 [ var2 * 6 ] ; 
+var1 [ var2 * 6 ] = av_clip_uint8 ( ( - ( t1 + var1 [ var2 * 8 ] ) + 2 * ( t2 + var1 [ var2 * 7 ] ) + 6 * t3 + number ) >> 3 ) ; 
+t1 = var1 [ var2 * 7 ] ; 
+var1 [ var2 * 7 ] = av_clip_uint8 ( ( - ( t2 + var1 [ var2 * 9 ] ) + 2 * ( t3 + var1 [ var2 * 8 ] ) + 6 * t1 + number ) >> 3 ) ; 
+var3 [ x ] = t3 ; 
+var4 [ x ] = t1 ; 
+var1 ++ ; 
+} 
+} 

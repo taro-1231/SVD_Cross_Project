@@ -1,0 +1,11 @@
+uint64_t func1 ( uint64_t var1 , int var2 ) 
+{ 
+int var3 ; 
+if ( func2 ( var1 ) <= var2 ) 
+return number ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+if ( ( 1ULL << var3 ) & var1 && ! var2 -- ) 
+return 1ULL << var3 ; 
+} 
+return number ; 
+} 

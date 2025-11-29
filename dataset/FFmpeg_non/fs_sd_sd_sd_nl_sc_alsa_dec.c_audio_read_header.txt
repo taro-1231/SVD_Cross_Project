@@ -1,0 +1,32 @@
+static av_cold int func1 ( AVFormatContext * var2 ) 
+{ 
+AlsaData * var3 = var2 -> var4 ; 
+AVStream * var5 ; 
+int var6 ; 
+enum AVCodecID var7 ; 
+var5 = func2 ( var2 , var8 ) ; 
+if ( ! var5 ) { 
+func3 ( var2 , var9 , str ) ; 
+return func4 ( var10 ) ; 
+} 
+var7 = var2 -> var11 ; 
+var6 = func5 ( var2 , var12 , & var3 -> var13 , var3 -> var14 , 
+& var7 ) ; 
+if ( var6 < number ) { 
+return func4 ( var15 ) ; 
+} 
+var5 -> var16 -> var17 = var18 ; 
+var5 -> var16 -> var7 = var7 ; 
+var5 -> var16 -> var13 = var3 -> var13 ; 
+var5 -> var16 -> var14 = var3 -> var14 ; 
+var5 -> var16 -> var19 = var3 -> var19 ; 
+func6 ( var5 , number , number , number ) ; 
+var3 -> var20 = func7 ( number / var3 -> var13 , 
+var3 -> var21 , number ) ; 
+if ( ! var3 -> var20 ) 
+goto var22 ; 
+return number ; 
+var22 : 
+func8 ( var3 -> var1 ) ; 
+return func4 ( var15 ) ; 
+} 

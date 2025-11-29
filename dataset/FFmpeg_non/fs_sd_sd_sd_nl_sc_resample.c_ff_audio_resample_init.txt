@@ -1,0 +1,89 @@
+ResampleContext * func1 ( AVAudioResampleContext * var1 ) 
+{ 
+ResampleContext * var2 ; 
+int var3 = var1 -> var4 ; 
+int var5 = var1 -> var6 ; 
+double var7 = func2 ( var3 * var1 -> var8 / var5 , number ) ; 
+int var9 = number << var1 -> var10 ; 
+int var11 ; 
+if ( var1 -> var12 != var13 && 
+var1 -> var12 != var14 && 
+var1 -> var12 != var15 && 
+var1 -> var12 != var16 ) { 
+func3 ( var1 , AV_LOG_ERROR , str 
+str , 
+func4 ( var1 -> var12 ) ) ; 
+return var17 ; 
+} 
+var2 = func5 ( sizeof ( * var2 ) ) ; 
+if ( ! var2 ) 
+return var17 ; 
+var2 -> var1 = var1 ; 
+var2 -> var10 = var1 -> var10 ; 
+var2 -> var18 = var9 - number ; 
+var2 -> var19 = var1 -> var20 ; 
+var2 -> var21 = func6 ( ( int ) ceil ( var1 -> var22 / var7 ) , number ) ; 
+var2 -> var23 = var1 -> var23 ; 
+var2 -> var24 = var1 -> var24 ; 
+switch ( var1 -> var12 ) { 
+case var16 : 
+var2 -> var25 = var2 -> var19 ? var26 : var27 ; 
+var2 -> var28 = var29 ; 
+var2 -> var30 = var31 ; 
+break ; 
+case var15 : 
+var2 -> var25 = var2 -> var19 ? var32 : var33 ; 
+var2 -> var28 = var34 ; 
+var2 -> var30 = var35 ; 
+break ; 
+case var14 : 
+var2 -> var25 = var2 -> var19 ? var36 : var37 ; 
+var2 -> var28 = var38 ; 
+var2 -> var30 = var39 ; 
+break ; 
+case var13 : 
+var2 -> var25 = var2 -> var19 ? var40 : var41 ; 
+var2 -> var28 = var42 ; 
+var2 -> var30 = var43 ; 
+break ; 
+} 
+if ( var44 ) 
+func7 ( var2 , var1 -> var12 ) ; 
+if ( var45 ) 
+func8 ( var2 , var1 -> var12 ) ; 
+var11 = func9 ( var1 -> var12 ) ; 
+var2 -> var46 = func5 ( var2 -> var21 * ( var9 + number ) * var11 ) ; 
+if ( ! var2 -> var46 ) 
+goto var47 ; 
+if ( func10 ( var2 , var7 ) < number ) 
+goto var47 ; 
+memcpy ( & var2 -> var46 [ ( var2 -> var21 * var9 + number ) * var11 ] , 
+var2 -> var46 , ( var2 -> var21 - number ) * var11 ) ; 
+memcpy ( & var2 -> var46 [ var2 -> var21 * var9 * var11 ] , 
+& var2 -> var46 [ ( var2 -> var21 - number ) * var11 ] , var11 ) ; 
+var2 -> var48 = number ; 
+if ( ! func11 ( & var2 -> var49 , & var2 -> var50 , var3 , 
+var5 * ( int64_t ) var9 , var51 / number ) ) 
+goto var47 ; 
+var2 -> var52 = var2 -> var50 ; 
+var2 -> var53 = ( var2 -> var21 - number ) / number ; 
+var2 -> var54 = number ; 
+var2 -> var55 = number ; 
+var2 -> var56 = number ; 
+var2 -> var57 = func12 ( var1 -> var58 , var2 -> var53 , 
+var1 -> var12 , 
+str ) ; 
+if ( ! var2 -> var57 ) 
+goto var47 ; 
+var2 -> var57 -> var59 = var2 -> var53 ; 
+var2 -> var60 = var2 -> var53 ; 
+func3 ( var1 , var61 , str , 
+func4 ( var1 -> var12 ) , 
+var1 -> var6 , var1 -> var4 ) ; 
+return var2 ; 
+var47 : 
+func13 ( & var2 -> var57 ) ; 
+func14 ( var2 -> var46 ) ; 
+func14 ( var2 ) ; 
+return var17 ; 
+} 

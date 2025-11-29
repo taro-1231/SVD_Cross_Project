@@ -1,0 +1,42 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+DebandContext * var5 = var1 -> var6 ; 
+ThreadData * var7 = var2 ; 
+AVFrame * var8 = var7 -> var8 ; 
+AVFrame * var9 = var7 -> var9 ; 
+int var10 , var11 , var12 ; 
+for ( var12 = number ; var12 < var5 -> var13 ; var12 ++ ) { 
+const uint16_t * var14 = ( const uint16_t * ) var8 -> var15 [ var12 ] ; 
+uint16_t * var16 = ( uint16_t * ) var9 -> var15 [ var12 ] ; 
+const int var17 = var9 -> var18 [ var12 ] / number ; 
+const int var19 = var8 -> var18 [ var12 ] / number ; 
+const int var20 = var5 -> var20 [ var12 ] ; 
+const int var21 = ( var5 -> var22 [ var12 ] * var3 ) / var4 ; 
+const int var23 = ( var5 -> var22 [ var12 ] * ( var3 + number ) ) / var4 ; 
+const int var24 = var5 -> var25 [ var12 ] - number ; 
+const int var26 = var5 -> var22 [ var12 ] - number ; 
+for ( var11 = var21 ; var11 < var23 ; var11 ++ ) { 
+const int var27 = var11 * var5 -> var22 [ number ] ; 
+for ( var10 = number ; var10 < var5 -> var25 [ var12 ] ; var10 ++ ) { 
+const int var28 = var5 -> var28 [ var27 + var10 ] ; 
+const int var29 = var5 -> var29 [ var27 + var10 ] ; 
+const int var30 = var14 [ func2 ( var11 + var29 , number , var26 ) * var19 + func2 ( var10 + var28 , number , var24 ) ] ; 
+const int var31 = var14 [ func2 ( var11 + - var29 , number , var26 ) * var19 + func2 ( var10 + var28 , number , var24 ) ] ; 
+const int var32 = var14 [ func2 ( var11 + - var29 , number , var26 ) * var19 + func2 ( var10 + - var28 , number , var24 ) ] ; 
+const int var33 = var14 [ func2 ( var11 + var29 , number , var26 ) * var19 + func2 ( var10 + - var28 , number , var24 ) ] ; 
+const int var34 = var14 [ var11 * var19 + var10 ] ; 
+if ( var5 -> var35 ) { 
+const int var36 = func3 ( var30 , var31 , var32 , var33 ) ; 
+const int var37 = func4 ( var34 - var36 ) ; 
+var16 [ var11 * var17 + var10 ] = var37 < var20 ? var36 : var34 ; 
+} else { 
+var16 [ var11 * var17 + var10 ] = ( func4 ( var34 - var30 ) < var20 ) && 
+( func4 ( var34 - var31 ) < var20 ) && 
+( func4 ( var34 - var32 ) < var20 ) && 
+( func4 ( var34 - var33 ) < var20 ) ? func3 ( var30 , var31 , var32 , var33 ) : var34 ; 
+} 
+} 
+} 
+} 
+return number ; 
+} 

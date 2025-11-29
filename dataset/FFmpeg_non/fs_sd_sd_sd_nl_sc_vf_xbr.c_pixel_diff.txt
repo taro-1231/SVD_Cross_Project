@@ -1,0 +1,8 @@
+static uint32_t func1 ( uint32_t var1 , uint32_t var2 , const uint32_t * var3 ) 
+{ 
+uint32_t var7 = var3 [ var1 & number ] ; 
+uint32_t var8 = var3 [ var2 & number ] ; 
+return ( abs ( ( var7 & var4 ) - ( var8 & var4 ) ) >> number ) + 
+( abs ( ( var7 & var5 ) - ( var8 & var5 ) ) >> number ) + 
+abs ( ( var7 & var6 ) - ( var8 & var6 ) ) ; 
+} 

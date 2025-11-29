@@ -1,0 +1,203 @@
+static int func1 ( int var1 ) 
+{ 
+InputFile * var2 = var3 [ var1 ] ; 
+AVFormatContext * var4 ; 
+InputStream * var5 ; 
+AVPacket var6 ; 
+int var7 , var8 , var9 ; 
+int64_t var10 ; 
+int64_t var11 ; 
+var4 = var2 -> var12 ; 
+var7 = func2 ( var2 , & var6 ) ; 
+if ( var7 == func3 ( var13 ) ) { 
+var2 -> var14 = number ; 
+return var7 ; 
+} 
+if ( var7 < number && var2 -> var15 ) { 
+if ( ( var7 = func4 ( var2 , var4 ) ) < number ) 
+return var7 ; 
+var7 = func2 ( var2 , & var6 ) ; 
+if ( var7 == func3 ( var13 ) ) { 
+var2 -> var14 = number ; 
+return var7 ; 
+} 
+} 
+if ( var7 < number ) { 
+if ( var7 != var16 ) { 
+func5 ( var4 -> var17 , var7 ) ; 
+if ( var18 ) 
+func6 ( number ) ; 
+} 
+for ( var8 = number ; var8 < var2 -> var19 ; var8 ++ ) { 
+var5 = var20 [ var2 -> var21 + var8 ] ; 
+if ( var5 -> var22 ) { 
+var7 = func7 ( var5 , var23 , number ) ; 
+if ( var7 > number ) 
+return number ; 
+} 
+for ( var9 = number ; var9 < var24 ; var9 ++ ) { 
+OutputStream * var25 = var26 [ var9 ] ; 
+if ( var25 -> var27 == var2 -> var21 + var8 && 
+( var25 -> var28 || var25 -> var29 -> var30 == var31 ) ) 
+func8 ( var25 ) ; 
+} 
+} 
+var2 -> var32 = number ; 
+return func3 ( var13 ) ; 
+} 
+func9 ( ) ; 
+if ( var33 ) { 
+func10 ( var23 , var34 , & var6 , var35 , 
+var4 -> var36 [ var6 . var37 ] ) ; 
+} 
+if ( var6 . var37 >= var2 -> var19 ) { 
+func11 ( var1 , & var6 ) ; 
+goto var38 ; 
+} 
+var5 = var20 [ var2 -> var21 + var6 . var37 ] ; 
+var5 -> var39 += var6 . var40 ; 
+var5 -> var41 ++ ; 
+if ( var5 -> var42 ) 
+goto var38 ; 
+if ( var18 && ( var6 . var43 & var44 ) ) { 
+func12 ( var23 , var45 , str , var4 -> var17 , var6 . var37 ) ; 
+func6 ( number ) ; 
+} 
+if ( var46 ) { 
+func12 ( var23 , var34 , str 
+str , 
+var2 -> var21 + var6 . var37 , func13 ( var5 -> var49 -> var50 ) , 
+func14 ( var5 -> var47 ) , func15 ( var5 -> var47 , & var51 ) , 
+func14 ( var5 -> next_pts ) , func15 ( var5 -> next_pts , & var51 ) , 
+func14 ( var6 . var52 ) , func15 ( var6 . var52 , & var5 -> var53 -> var54 ) , 
+func14 ( var6 . var55 ) , func15 ( var6 . var55 , & var5 -> var53 -> var54 ) , 
+func14 ( var3 [ var5 -> var1 ] -> var56 ) , 
+func15 ( var3 [ var5 -> var1 ] -> var56 , & var51 ) ) ; 
+} 
+if ( ! var5 -> var57 && var4 -> var58 != var59 && var5 -> var53 -> var60 < number ) { 
+int64_t var61 , var62 ; 
+if ( var5 -> var47 == var59 
+&& var2 -> var56 == - var4 -> var58 
+&& ( var4 -> var63 -> var43 & var64 ) ) { 
+int64_t var65 = var66 ; 
+for ( var8 = number ; var8 < var4 -> var19 ; var8 ++ ) { 
+AVStream * var53 = var4 -> var36 [ var8 ] ; 
+if ( var53 -> var42 == var67 || var53 -> var58 == var59 ) 
+continue ; 
+var65 = func16 ( var65 , func17 ( var53 -> var58 , var53 -> var54 , var51 ) ) ; 
+} 
+if ( var65 > var4 -> var58 ) { 
+func12 ( var4 , AV_LOG_VERBOSE , str PRId64 str , var65 - var4 -> var58 ) ; 
+var2 -> var56 = - var65 ; 
+} 
+} 
+var61 = func17 ( var4 -> var58 , var51 , var5 -> var53 -> var54 ) ; 
+var62 = var61 + ( 1ULL << var5 -> var53 -> var60 ) ; 
+var5 -> var57 = number ; 
+if ( var62 > var61 && var6 . var55 != var59 && var6 . var55 > var61 + ( 1LL << ( var5 -> var53 -> var60 - number ) ) ) { 
+var6 . var55 -= 1ULL << var5 -> var53 -> var60 ; 
+var5 -> var57 = number ; 
+} 
+if ( var62 > var61 && var6 . var52 != var59 && var6 . var52 > var61 + ( 1LL << ( var5 -> var53 -> var60 - number ) ) ) { 
+var6 . var52 -= 1ULL << var5 -> var53 -> var60 ; 
+var5 -> var57 = number ; 
+} 
+} 
+if ( var5 -> var41 == number ) { 
+for ( var8 = number ; var8 < var5 -> var53 -> var68 ; var8 ++ ) { 
+AVPacketSideData * var69 = & var5 -> var53 -> var70 [ var8 ] ; 
+uint8_t * var71 ; 
+if ( var69 -> var30 == var72 ) 
+continue ; 
+if ( func18 ( & var6 , var69 -> var30 , var23 ) ) 
+continue ; 
+var71 = func19 ( & var6 , var69 -> var30 , var69 -> var40 ) ; 
+if ( ! var71 ) 
+func6 ( number ) ; 
+memcpy ( var71 , var69 -> var73 , var69 -> var40 ) ; 
+} 
+} 
+if ( var6 . var55 != var59 ) 
+var6 . var55 += func17 ( var2 -> var56 , var51 , var5 -> var53 -> var54 ) ; 
+if ( var6 . var52 != var59 ) 
+var6 . var52 += func17 ( var2 -> var56 , var51 , var5 -> var53 -> var54 ) ; 
+if ( var6 . var52 != var59 ) 
+var6 . var52 *= var5 -> var74 ; 
+if ( var6 . var55 != var59 ) 
+var6 . var55 *= var5 -> var74 ; 
+var11 = func20 ( var6 . var55 , var5 -> var53 -> var54 , var51 , var75 | var76 ) ; 
+if ( ( var5 -> var49 -> var50 == var77 || 
+var5 -> var49 -> var50 == var78 ) && 
+var11 != var59 && var5 -> var47 == var59 && ! var79 
+&& ( var4 -> var63 -> var43 & var64 ) && var2 -> var80 != var59 ) { 
+int64_t var81 = var11 - var2 -> var80 ; 
+if ( var81 < - 1LL * dts_delta_threshold * AV_TIME_BASE || 
+var81 > 1LL * dts_delta_threshold * AV_TIME_BASE ) { 
+var2 -> var56 -= var81 ; 
+func12 ( var23 , AV_LOG_DEBUG , 
+str PRId64 str PRId64 str , 
+var81 , var2 -> var56 ) ; 
+var6 . var55 -= func17 ( var81 , var51 , var5 -> var53 -> var54 ) ; 
+if ( var6 . var52 != var59 ) 
+var6 . var52 -= func17 ( var81 , var51 , var5 -> var53 -> var54 ) ; 
+} 
+} 
+var10 = func17 ( var2 -> var10 , var2 -> var54 , var5 -> var53 -> var54 ) ; 
+if ( var6 . var52 != var59 ) { 
+var6 . var52 += var10 ; 
+var5 -> var82 = func21 ( var6 . var52 , var5 -> var82 ) ; 
+var5 -> var83 = func16 ( var6 . var52 , var5 -> var83 ) ; 
+} 
+if ( var6 . var55 != var59 ) 
+var6 . var55 += var10 ; 
+var11 = func20 ( var6 . var55 , var5 -> var53 -> var54 , var51 , var75 | var76 ) ; 
+if ( ( var5 -> var49 -> var50 == var77 || 
+var5 -> var49 -> var50 == var78 ) && 
+var11 != var59 && var5 -> var47 != var59 && 
+! var79 ) { 
+int64_t var81 = var11 - var5 -> var47 ; 
+if ( var4 -> var63 -> var43 & var64 ) { 
+if ( var81 < - 1LL * dts_delta_threshold * AV_TIME_BASE || 
+var81 > 1LL * dts_delta_threshold * AV_TIME_BASE || 
+var11 + AV_TIME_BASE / 10 < func21 ( var5 -> var52 , var5 -> var55 ) ) { 
+var2 -> var56 -= var81 ; 
+func12 ( var23 , AV_LOG_DEBUG , 
+str PRId64 str PRId64 str , 
+var81 , var2 -> var56 ) ; 
+var6 . var55 -= func17 ( var81 , var51 , var5 -> var53 -> var54 ) ; 
+if ( var6 . var52 != var59 ) 
+var6 . var52 -= func17 ( var81 , var51 , var5 -> var53 -> var54 ) ; 
+} 
+} else { 
+if ( var81 < - 1LL * dts_error_threshold * AV_TIME_BASE || 
+var81 > 1LL * dts_error_threshold * AV_TIME_BASE ) { 
+func12 ( var23 , AV_LOG_WARNING , str PRId64 str PRId64 str , var6 . var55 , var5 -> var47 , var6 . var37 ) ; 
+var6 . var55 = var59 ; 
+} 
+if ( var6 . var52 != var59 ) { 
+int64_t var48 = func17 ( var6 . var52 , var5 -> var53 -> var54 , var51 ) ; 
+var81 = var48 - var5 -> var47 ; 
+if ( var81 < - 1LL * dts_error_threshold * AV_TIME_BASE || 
+var81 > 1LL * dts_error_threshold * AV_TIME_BASE ) { 
+func12 ( var23 , AV_LOG_WARNING , str PRId64 str PRId64 str , var6 . var52 , var5 -> var47 , var6 . var37 ) ; 
+var6 . var52 = var59 ; 
+} 
+} 
+} 
+} 
+if ( var6 . var55 != var59 ) 
+var2 -> var80 = func17 ( var6 . var55 , var5 -> var53 -> var54 , var51 ) ; 
+if ( var46 ) { 
+func12 ( var23 , var34 , str , 
+var2 -> var21 + var6 . var37 , func13 ( var5 -> var49 -> var50 ) , 
+func14 ( var6 . var52 ) , func15 ( var6 . var52 , & var5 -> var53 -> var54 ) , 
+func14 ( var6 . var55 ) , func15 ( var6 . var55 , & var5 -> var53 -> var54 ) , 
+func14 ( var3 [ var5 -> var1 ] -> var56 ) , 
+func15 ( var3 [ var5 -> var1 ] -> var56 , & var51 ) ) ; 
+} 
+func22 ( var5 , var6 . var52 ) ; 
+func7 ( var5 , & var6 , number ) ; 
+var38 : 
+func23 ( & var6 ) ; 
+return number ; 
+} 

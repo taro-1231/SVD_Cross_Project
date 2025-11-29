@@ -1,0 +1,50 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+AResampleContext * var2 = var1 -> var3 ; 
+enum AVSampleFormat var4 ; 
+int64_t var5 , var6 ; 
+AVFilterLink * var7 = var1 -> var8 [ number ] ; 
+AVFilterLink * var9 = var1 -> var10 [ number ] ; 
+AVFilterFormats * var11 , * var12 ; 
+AVFilterFormats * var13 , * var14 ; 
+AVFilterChannelLayouts * var15 , * var16 ; 
+func2 ( var2 -> var17 , str , number , & var4 ) ; 
+func3 ( var2 -> var17 , str , number , & var5 ) ; 
+func3 ( var2 -> var17 , str , number , & var6 ) ; 
+var11 = func4 ( var18 ) ; 
+if ( ! var11 ) 
+return func5 ( var19 ) ; 
+func6 ( var11 , & var7 -> var12 ) ; 
+var13 = func7 ( ) ; 
+if ( ! var13 ) 
+return func5 ( var19 ) ; 
+func6 ( var13 , & var7 -> var14 ) ; 
+var15 = func8 ( ) ; 
+if ( ! var15 ) 
+return func5 ( var19 ) ; 
+func9 ( var15 , & var7 -> var20 ) ; 
+if ( var5 > number ) { 
+int var21 [ ] = { var5 , - number } ; 
+var14 = func10 ( var21 ) ; 
+} else { 
+var14 = func7 ( ) ; 
+} 
+if ( ! var14 ) { 
+func11 ( var1 , var22 , str ) ; 
+return func5 ( var19 ) ; 
+} 
+func6 ( var14 , & var9 -> var13 ) ; 
+if ( var4 != var23 ) { 
+int var24 [ ] = { var4 , - number } ; 
+var12 = func10 ( var24 ) ; 
+} else 
+var12 = func4 ( var18 ) ; 
+func6 ( var12 , & var9 -> var11 ) ; 
+if ( var6 ) { 
+int64_t var25 [ ] = { var6 , - number } ; 
+var16 = func12 ( var25 ) ; 
+} else 
+var16 = func8 ( ) ; 
+func9 ( var16 , & var9 -> var26 ) ; 
+return number ; 
+} 

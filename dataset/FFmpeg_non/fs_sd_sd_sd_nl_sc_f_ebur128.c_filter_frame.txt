@@ -1,0 +1,178 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+AVFilterContext * var6 = var1 -> var7 ; 
+EBUR128Context * var8 = var6 -> var9 ; 
+const int var10 = var8 -> var10 ; 
+const int var11 = var2 -> var11 ; 
+const double * var12 = ( double * ) var2 -> var13 [ number ] ; 
+AVFrame * var14 = var8 -> var15 ; 
+if ( var8 -> var16 & var17 ) { 
+const double * var18 = var8 -> var19 ; 
+int var20 = func2 ( var8 -> var21 , ( uint8_t ** ) & var8 -> var19 , number , 
+( const uint8_t ** ) var2 -> var13 , var11 ) ; 
+if ( var20 < number ) 
+return var20 ; 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) 
+var8 -> var22 [ var4 ] = number ; 
+for ( var5 = number ; var5 < var20 ; var5 ++ ) { 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) { 
+var8 -> var23 [ var4 ] = func3 ( var8 -> var23 [ var4 ] , func4 ( * var18 ) ) ; 
+var8 -> var22 [ var4 ] = func3 ( var8 -> var22 [ var4 ] , 
+func4 ( * var18 ) ) ; 
+var18 ++ ; 
+} 
+} 
+} 
+for ( var5 = number ; var5 < var11 ; var5 ++ ) { 
+const int var24 = var8 -> var25 . var26 ; 
+const int var27 = var8 -> var28 . var26 ; 
+} \ 
+} while ( number ) 
+func5 ( 400 ) ; 
+func5 ( number ) ; 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) { 
+double var32 ; 
+if ( var8 -> var16 & var33 ) 
+var8 -> var34 [ var4 ] = func3 ( var8 -> var34 [ var4 ] , func4 ( * var12 ) ) ; 
+var8 -> var35 [ var4 * number ] = * var12 ++ ; 
+if ( ! var8 -> var36 [ var4 ] ) 
+continue ; 
+double * var7 = var8 -> var37 + var4 * number ; \ 
+double * var40 = var8 -> var38 + var4 * number ; \ 
+var7 [ number ] = var7 [ number ] ; \ 
+var7 [ number ] = var7 [ number ] ; \ 
+} while ( number ) 
+func6 ( var42 , var35 , PRE ) ; 
+var8 -> var35 [ var4 * number + number ] = var8 -> var35 [ var4 * number + number ] ; 
+var8 -> var35 [ var4 * number + number ] = var8 -> var35 [ var4 * number ] ; 
+func6 ( var43 , var42 , var44 ) ; 
+var32 = var8 -> var43 [ var4 * number ] * var8 -> var43 [ var4 * number ] ; 
+var8 -> var25 . var45 [ var4 ] = var8 -> var25 . var45 [ var4 ] + var32 - var8 -> var25 . var46 [ var4 ] [ var24 ] ; 
+var8 -> var28 . var45 [ var4 ] = var8 -> var28 . var45 [ var4 ] + var32 - var8 -> var28 . var46 [ var4 ] [ var27 ] ; 
+var8 -> var25 . var46 [ var4 ] [ var24 ] = var32 ; 
+var8 -> var28 . var46 [ var4 ] [ var27 ] = var32 ; 
+} 
+if ( ++ var8 -> var47 == number ) { 
+double var48 , var49 ; 
+double var50 = number , var51 = number ; 
+AVFilterLink * var52 = var6 -> var53 [ number ] ; 
+const int64_t var54 = var2 -> var54 + 
+av_rescale_q ( var5 , ( AVRational ) { number , var1 -> sample_rate } , 
+var52 -> time_base ) ; 
+var8 -> var47 = number ; 
+\ 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) \ 
+} \ 
+} while ( number ) 
+func7 ( M , 400 ) ; 
+func7 ( var55 , number ) ; 
+if ( var48 >= var57 ) { 
+double var58 = number ; 
+int var59 = number ; 
+int var60 = func9 ( & var8 -> var25 , var50 , 
+var48 , var56 ) ; 
+for ( var3 = var60 ; var3 < var61 ; var3 ++ ) { 
+const int var62 = var8 -> var25 . var63 [ var3 ] . var64 ; 
+var59 += var62 ; 
+var58 += var62 * var8 -> var25 . var63 [ var3 ] . var65 ; 
+} 
+if ( var59 ) 
+var8 -> var66 = func8 ( var58 / var59 ) ; 
+} 
+if ( var49 >= var57 ) { 
+int var70 = number ; 
+int var60 = func9 ( & var8 -> var28 , var51 , 
+var49 , var67 ) ; 
+for ( var3 = var60 ; var3 < var61 ; var3 ++ ) 
+var70 += var8 -> var28 . var63 [ var3 ] . var64 ; 
+if ( var70 ) { 
+int var71 , var72 ; 
+var71 = number ; 
+var72 = var68 * var70 / number + number ; 
+for ( var3 = var60 ; var3 < var61 ; var3 ++ ) { 
+var71 += var8 -> var28 . var63 [ var3 ] . var64 ; 
+if ( var71 >= var72 ) { 
+var8 -> var73 = var8 -> var28 . var63 [ var3 ] . var74 ; 
+break ; 
+} 
+} 
+var71 = var70 ; 
+var72 = var69 * var70 / number + number ; 
+for ( var3 = var61 - number ; var3 >= number ; var3 -- ) { 
+var71 -= var8 -> var28 . var63 [ var3 ] . var64 ; 
+if ( var71 < var72 ) { 
+var8 -> var75 = var8 -> var28 . var63 [ var3 ] . var74 ; 
+break ; 
+} 
+} 
+var8 -> var77 = var8 -> var75 - var8 -> var73 ; 
+} 
+} 
+if ( var8 -> var78 ) { 
+int var35 , var42 , var20 ; 
+uint8_t * var79 ; 
+const int var80 = func10 ( var8 , var49 + number ) ; 
+const int var81 = func10 ( var8 , var48 + number ) ; 
+var79 = var14 -> var13 [ number ] + var8 -> var76 . var42 * var14 -> var82 [ number ] + var8 -> var76 . var35 * number ; 
+for ( var42 = number ; var42 < var8 -> var76 . var83 ; var42 ++ ) { 
+const uint8_t * var84 = func11 ( var8 , var80 , var42 ) ; 
+memmove ( var79 , var79 + number , ( var8 -> var76 . var85 - number ) * number ) ; 
+memcpy ( var79 + ( var8 -> var76 . var85 - number ) * number , var84 , number ) ; 
+var79 += var14 -> var82 [ number ] ; 
+} 
+var79 = var14 -> var13 [ number ] + var8 -> var86 . var42 * var14 -> var82 [ number ] + var8 -> var86 . var35 * number ; 
+for ( var42 = number ; var42 < var8 -> var86 . var83 ; var42 ++ ) { 
+const uint8_t * var84 = func11 ( var8 , var81 , var42 ) ; 
+for ( var35 = number ; var35 < var8 -> var86 . var85 ; var35 ++ ) 
+memcpy ( var79 + var35 * number , var84 , number ) ; 
+var79 += var14 -> var82 [ number ] ; 
+} 
+drawtext ( var14 , PAD , PAD - PAD / number , FONT16 , font_colors , 
+LOG_FMT str , 
+var48 , var49 , 
+var8 -> var66 , var8 -> var77 ) ; 
+var14 -> var54 = var54 ; 
+var20 = func12 ( var52 , func13 ( var14 ) ) ; 
+if ( var20 < number ) 
+return var20 ; 
+} 
+if ( var8 -> var87 ) { 
+char var88 [ number ] ; 
+snprintf ( var88 , sizeof ( var88 ) , str , var89 ) ; \ 
+func14 ( & var2 -> var87 , var39 , var88 , number ) ; \ 
+} while ( number ) 
+char var90 [ number ] ; \ 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) { \ 
+snprintf ( var90 , sizeof ( var90 ) , \ 
+META_PREFIX AV_STRINGIFY ( var39 ) str , var4 ) ; \ 
+} \ 
+} \ 
+} while ( number ) 
+SET_META ( META_PREFIX str , var48 ) ; 
+SET_META ( META_PREFIX str , var49 ) ; 
+SET_META ( META_PREFIX str , var8 -> var66 ) ; 
+SET_META ( META_PREFIX str , var8 -> var77 ) ; 
+SET_META ( META_PREFIX str , var8 -> var73 ) ; 
+SET_META ( META_PREFIX str , var8 -> var75 ) ; 
+func15 ( var91 , var92 ) ; 
+func15 ( var93 , var94 ) ; 
+} 
+func16 ( var6 , var8 -> var95 , str LOG_FMT , 
+av_ts2timestr ( var54 , & var52 -> time_base ) , 
+var48 , var49 , 
+var8 -> var66 , var8 -> var77 ) ; 
+func16 ( var6 , var8 -> var95 , str str str ) ; \ 
+for ( var4 = number ; var4 < var10 ; var4 ++ ) \ 
+func16 ( var6 , var8 -> var95 , str , func18 ( var96 [ var4 ] ) ) ; \ 
+func16 ( var6 , var8 -> var95 , str ) ; \ 
+} \ 
+} while ( number ) 
+func17 ( str , var8 -> var34 , var92 ) ; 
+func17 ( str , var8 -> var22 , var94 ) ; 
+func17 ( str , var8 -> var23 , var94 ) ; 
+func16 ( var6 , var8 -> var95 , str ) ; 
+} 
+} 
+return func12 ( var6 -> var53 [ var8 -> var78 ] , var2 ) ; 
+} 

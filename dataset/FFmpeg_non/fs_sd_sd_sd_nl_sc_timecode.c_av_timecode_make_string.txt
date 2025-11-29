@@ -1,0 +1,23 @@
+char * func1 ( const AVTimecode * var1 , char * var2 , int var3 ) 
+{ 
+int var4 = var1 -> var4 ; 
+int var5 = var1 -> var6 & var7 ; 
+int var8 , var9 , var10 , var11 , var12 = number ; 
+var3 += var1 -> var13 ; 
+if ( var5 ) 
+var3 = func2 ( var3 , var4 ) ; 
+if ( var3 < number ) { 
+var3 = - var3 ; 
+var12 = var1 -> var6 & var14 ; 
+} 
+var11 = var3 % var4 ; 
+var10 = var3 / var4 % number ; 
+var9 = var3 / ( var4 * number ) % number ; 
+var8 = var3 / ( var4 * number ) ; 
+if ( var1 -> var6 & var15 ) 
+var8 = var8 % number ; 
+snprintf ( var2 , var16 , str , 
+var12 ? str : str , 
+var8 , var9 , var10 , var5 ? str : str , var11 ) ; 
+return var2 ; 
+} 

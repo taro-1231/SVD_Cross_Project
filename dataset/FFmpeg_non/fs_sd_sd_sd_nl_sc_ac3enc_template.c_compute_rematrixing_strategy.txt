@@ -1,0 +1,40 @@
+static void func1 ( AC3EncodeContext * var1 ) 
+{ 
+int var2 ; 
+int var3 , var4 ; 
+AC3Block * var5 , * var6 = var7 ; 
+if ( var1 -> var8 != var9 ) 
+return ; 
+for ( var3 = number ; var3 < var1 -> var10 ; var3 ++ ) { 
+var5 = & var1 -> var11 [ var3 ] ; 
+var5 -> var12 = ! var3 ; 
+var5 -> var13 = number ; 
+if ( var5 -> var14 ) { 
+var5 -> var13 -= ( var1 -> var15 [ var16 ] <= number ) ; 
+var5 -> var13 -= ( var1 -> var15 [ var16 ] == number ) ; 
+if ( var3 && var5 -> var13 != var6 -> var13 ) 
+var5 -> var12 = number ; 
+} 
+var2 = func2 ( var5 -> var17 [ number ] , var5 -> var17 [ number ] ) ; 
+if ( ! var1 -> var18 ) { 
+var6 = var5 ; 
+continue ; 
+} 
+for ( var4 = number ; var4 < var5 -> var13 ; var4 ++ ) { 
+int var19 = var20 [ var4 ] ; 
+int var21 = func2 ( var2 , var20 [ var4 + number ] ) ; 
+CoefSumType var22 [ number ] ; 
+func3 ( var1 , var22 , var5 -> var23 [ number ] + var19 , 
+var5 -> var23 [ number ] + var19 , var21 - var19 ) ; 
+if ( func2 ( var22 [ number ] , var22 [ number ] ) < func2 ( var22 [ number ] , var22 [ number ] ) ) 
+var5 -> var24 [ var4 ] = number ; 
+else 
+var5 -> var24 [ var4 ] = number ; 
+if ( var3 && 
+var5 -> var24 [ var4 ] != var6 -> var24 [ var4 ] ) { 
+var5 -> var12 = number ; 
+} 
+} 
+var6 = var5 ; 
+} 
+} 

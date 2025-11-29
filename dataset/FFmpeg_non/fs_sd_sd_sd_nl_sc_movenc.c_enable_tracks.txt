@@ -1,0 +1,35 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MOVMuxContext * var2 = var1 -> var3 ; 
+int var4 ; 
+int var5 [ var6 ] ; 
+int var7 [ var6 ] ; 
+for ( var4 = number ; var4 < var6 ; var4 ++ ) { 
+var5 [ var4 ] = number ; 
+var7 [ var4 ] = - number ; 
+} 
+for ( var4 = number ; var4 < var1 -> var8 ; var4 ++ ) { 
+AVStream * var9 = var1 -> var10 [ var4 ] ; 
+if ( var9 -> var11 -> var12 <= var13 || 
+var9 -> var11 -> var12 >= var6 ) 
+continue ; 
+if ( var7 [ var9 -> var11 -> var12 ] < number ) 
+var7 [ var9 -> var11 -> var12 ] = var4 ; 
+if ( var9 -> var14 & var15 ) { 
+var2 -> var16 [ var4 ] . var17 |= var18 ; 
+var5 [ var9 -> var11 -> var12 ] ++ ; 
+} 
+} 
+for ( var4 = number ; var4 < var6 ; var4 ++ ) { 
+switch ( var4 ) { 
+case var19 : 
+case var20 : 
+case var21 : 
+if ( var5 [ var4 ] > number ) 
+var2 -> var22 = number ; 
+if ( ! var5 [ var4 ] && var7 [ var4 ] >= number ) 
+var2 -> var16 [ var7 [ var4 ] ] . var17 |= var18 ; 
+break ; 
+} 
+} 
+} 

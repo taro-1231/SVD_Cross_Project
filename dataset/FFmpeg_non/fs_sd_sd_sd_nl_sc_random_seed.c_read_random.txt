@@ -1,0 +1,11 @@
+static int func1 ( uint32_t * var1 , const char * var2 ) 
+{ 
+int var3 = func2 ( var2 , var4 ) ; 
+int var5 = - number ; 
+if ( var3 == - number ) 
+return - number ; 
+var5 = func3 ( var3 , var1 , sizeof ( * var1 ) ) ; 
+func4 ( var3 ) ; 
+return var5 ; 
+return - number ; 
+} 

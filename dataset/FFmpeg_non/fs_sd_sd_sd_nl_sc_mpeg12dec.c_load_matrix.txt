@@ -1,0 +1,21 @@
+static int func1 ( MpegEncContext * var1 , uint16_t var2 [ number ] , 
+uint16_t var3 [ number ] , int var4 ) 
+{ 
+int var5 ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+int var6 = var1 -> var7 . var8 [ var9 [ var5 ] ] ; 
+int var10 = func2 ( & var1 -> var11 , number ) ; 
+if ( var10 == number ) { 
+func3 ( var1 -> var12 , var13 , str ) ; 
+return var14 ; 
+} 
+if ( var4 && var5 == number && var10 != number ) { 
+func3 ( var1 -> var12 , var15 , str , var10 ) ; 
+var10 = number ; 
+} 
+var2 [ var6 ] = var10 ; 
+if ( var3 ) 
+var3 [ var6 ] = var10 ; 
+} 
+return number ; 
+} 

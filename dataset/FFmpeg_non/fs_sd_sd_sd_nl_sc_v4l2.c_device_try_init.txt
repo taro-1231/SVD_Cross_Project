@@ -1,0 +1,45 @@
+static int func1 ( AVFormatContext * var1 , 
+enum AVPixelFormat var2 , 
+int * var3 , 
+int * var4 , 
+uint32_t * var5 , 
+enum AVCodecID * var6 ) 
+{ 
+int var7 , var8 ; 
+* var5 = func2 ( var2 , var1 -> var9 ) ; 
+if ( * var5 ) { 
+var7 = func3 ( var1 , var3 , var4 , * var5 ) ; 
+if ( var7 < number ) { 
+* var5 = number ; 
+if ( var7 != func4 ( var10 ) ) 
+return var7 ; 
+} 
+} 
+if ( ! * var5 ) { 
+for ( var8 = number ; var11 [ var8 ] . var6 != var12 ; var8 ++ ) { 
+if ( var1 -> var9 == var12 || 
+var11 [ var8 ] . var6 == var1 -> var9 ) { 
+func5 ( var1 , var13 , str , 
+func6 ( var11 [ var8 ] . var6 ) , 
+( char * ) func7 ( func8 ( var11 [ var8 ] . var14 ) , str ) ) ; 
+* var5 = var11 [ var8 ] . var15 ; 
+var7 = func3 ( var1 , var3 , var4 , * var5 ) ; 
+if ( var7 >= number ) 
+break ; 
+else if ( var7 != func4 ( var10 ) ) 
+return var7 ; 
+* var5 = number ; 
+} 
+} 
+if ( * var5 == number ) { 
+func5 ( var1 , AV_LOG_ERROR , str 
+str , 
+func6 ( var1 -> var9 ) , var1 -> var9 , 
+( char * ) func7 ( func8 ( var2 ) , str ) , var2 ) ; 
+var7 = func4 ( var10 ) ; 
+} 
+} 
+* var6 = func9 ( * var5 ) ; 
+func10 ( * var6 != var12 ) ; 
+return var7 ; 
+} 

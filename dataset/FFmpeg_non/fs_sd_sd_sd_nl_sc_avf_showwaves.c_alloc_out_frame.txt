@@ -1,0 +1,20 @@
+static int func1 ( ShowWavesContext * var1 , const int16_t * var2 , 
+const AVFilterLink * var3 , AVFilterLink * var4 , 
+const AVFrame * var5 ) 
+{ 
+if ( ! var1 -> var6 ) { 
+int var7 ; 
+AVFrame * var8 = var1 -> var6 = 
+func2 ( var4 , var4 -> var9 , var4 -> var10 ) ; 
+if ( ! var8 ) 
+return func3 ( var11 ) ; 
+var8 -> var12 = var4 -> var9 ; 
+var8 -> var13 = var4 -> var10 ; 
+var8 -> var14 = var5 -> var14 + func4 ( ( var2 - ( int16_t * ) var5 -> var15 [ number ] ) / var3 -> var16 , 
+func5 ( number , var3 -> var17 ) , 
+var4 -> var18 ) ; 
+for ( var7 = number ; var7 < var4 -> var10 ; var7 ++ ) 
+memset ( var8 -> var15 [ number ] + var7 * var8 -> var19 [ number ] , number , var4 -> var9 ) ; 
+} 
+return number ; 
+} 

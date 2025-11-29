@@ -1,0 +1,290 @@
+static int func1 ( AVCodecContext * var1 , AVFrame * var2 , 
+int * var3 , const uint8_t * var4 , int var5 ) 
+{ 
+Mpeg1Context * var6 = var1 -> var7 ; 
+MpegEncContext * var8 = & var6 -> var9 ; 
+const uint8_t * var10 = var4 ; 
+const uint8_t * var11 = var4 + var5 ; 
+int var12 , var13 ; 
+int var14 = number , var15 = number ; 
+int var16 = number ; 
+for ( ; ; ) { 
+uint32_t var17 = - number ; 
+var10 = func2 ( var10 , var11 , & var17 ) ; 
+if ( var17 > number ) { 
+if ( ! var15 ) { 
+if ( var18 && 
+( var1 -> var19 & var20 ) && 
+! var1 -> var21 ) { 
+int var22 ; 
+func3 ( var1 -> var23 > number ) ; 
+var1 -> func4 ( var1 , var24 , 
+& var8 -> var25 [ number ] , var26 , 
+var6 -> var27 , sizeof ( void * ) ) ; 
+for ( var22 = number ; var22 < var6 -> var27 ; var22 ++ ) 
+var8 -> var28 . var29 += var8 -> var25 [ var22 ] -> var28 . var29 ; 
+} 
+if ( ( var30 || var31 ) 
+&& func5 ( var1 ) ) 
+func6 ( var8 , var4 , var5 , var6 -> var27 ) ; 
+var12 = func7 ( var1 , var2 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+else if ( var12 ) { 
+if ( var8 -> var32 || var8 -> var33 ) 
+* var3 = number ; 
+} 
+} 
+var8 -> var34 = number ; 
+if ( var1 -> var35 & var36 && var8 -> var28 . var29 ) 
+return var37 ; 
+return func8 ( number , var10 - var4 - var8 -> var38 . var39 ) ; 
+} 
+var13 = var11 - var10 ; 
+if ( var1 -> var40 & var41 ) 
+func9 ( var1 , AV_LOG_DEBUG , str PRIX32 str PTRDIFF_SPECIFIER str , 
+var17 , var10 - var4 , var13 ) ; 
+switch ( var17 ) { 
+case var42 : 
+if ( var14 == number ) { 
+func10 ( var1 , var10 , var13 ) ; 
+if ( var4 != var1 -> var43 ) 
+var6 -> var44 = number ; 
+} else { 
+func9 ( var1 , var45 , 
+str , var14 ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+} 
+break ; 
+case var46 : 
+if ( var16 && var8 -> var47 == var48 ) { 
+func9 ( var1 , var49 , str ) ; 
+break ; 
+} 
+var16 = number ; 
+if ( var8 -> var50 <= number || var8 -> var51 <= number ) { 
+func9 ( var1 , var45 , str , 
+var8 -> var50 , var8 -> var51 ) ; 
+return var37 ; 
+} 
+if ( var6 -> var52 ) { 
+var8 -> var53 = number ; 
+var8 -> var54 [ number ] = number ; 
+} 
+if ( var18 && ( var1 -> var19 & var20 ) && 
+! var1 -> var21 && var6 -> var27 ) { 
+int var22 ; 
+var1 -> func4 ( var1 , var24 , 
+var8 -> var25 , var26 , 
+var6 -> var27 , sizeof ( void * ) ) ; 
+for ( var22 = number ; var22 < var6 -> var27 ; var22 ++ ) 
+var8 -> var28 . var29 += var8 -> var25 [ var22 ] -> var28 . var29 ; 
+var6 -> var27 = number ; 
+} 
+if ( var14 == number || var14 == var55 ) { 
+var12 = func11 ( var1 ) ; 
+if ( var12 < number ) { 
+func9 ( var1 , var45 , 
+str ) ; 
+return var12 ; 
+} 
+if ( func12 ( var1 , var10 , var13 ) < number ) 
+var8 -> var34 = number ; 
+var6 -> var56 = number ; 
+var14 = var46 ; 
+} else { 
+func9 ( var1 , var45 , 
+str , var14 ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+} 
+break ; 
+case var57 : 
+func13 ( & var8 -> var58 , var10 , var13 * number ) ; 
+switch ( func14 ( & var8 -> var58 , number ) ) { 
+case 0x1 : 
+if ( var14 == number ) { 
+func15 ( var6 ) ; 
+} else { 
+func9 ( var1 , var45 , 
+str , var14 ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+} 
+break ; 
+case 0x2 : 
+func16 ( var6 ) ; 
+break ; 
+case 0x3 : 
+func17 ( var8 ) ; 
+break ; 
+case 0x7 : 
+func18 ( var6 ) ; 
+break ; 
+case 0x8 : 
+if ( var14 == var46 ) { 
+func19 ( var6 ) ; 
+} else { 
+func9 ( var1 , var45 , 
+str , var14 ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+} 
+break ; 
+} 
+break ; 
+case var59 : 
+func20 ( var1 , var10 , var13 ) ; 
+break ; 
+case var60 : 
+if ( var14 == number ) { 
+var8 -> var61 = number ; 
+func21 ( var1 , var10 , var13 ) ; 
+var6 -> var44 = number ; 
+} else { 
+func9 ( var1 , var45 , 
+str , var14 ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+} 
+break ; 
+var62 : 
+if ( var17 >= var55 && 
+var17 <= var63 && var14 == var46 ) { 
+if ( var8 -> var64 && ! var8 -> var65 ) { 
+var8 -> var65 = number ; 
+func9 ( var8 -> var1 , var45 , 
+str ) ; 
+} 
+if ( var8 -> var47 == number || 
+( var8 -> var65 && var8 -> var47 != var48 ) ) { 
+func9 ( var8 -> var1 , var45 , 
+str , 
+var8 -> var47 ) ; 
+var8 -> var47 = var48 ; 
+} 
+if ( var8 -> var64 && ! var8 -> var66 ) 
+func9 ( var8 -> var1 , var49 , str ) ; 
+if ( var8 -> var47 == var48 ) { 
+var8 -> var61 = number ; 
+var8 -> var67 = number * var8 -> var68 ; 
+} else { 
+var8 -> var61 ^= number ; 
+var8 -> var67 = number * var8 -> var68 ; 
+memset ( var8 -> var69 , number , var8 -> var70 * var8 -> var68 ) ; 
+} 
+} 
+if ( var17 >= var55 && 
+var17 <= var63 && var14 != number ) { 
+const int var71 = var8 -> var47 != var48 ; 
+int var72 = var17 - var55 ; 
+var14 = var55 ; 
+if ( var8 -> var73 != var74 && var8 -> var68 > number / number ) 
+var72 += ( * var10 & number ) << number ; 
+var72 <<= var71 ; 
+if ( var8 -> var47 == var75 ) 
+var72 ++ ; 
+if ( var11 - var10 < number ) { 
+func9 ( var8 -> var1 , var45 , str ) ; 
+return var37 ; 
+} 
+if ( var72 >= var8 -> var68 ) { 
+func9 ( var8 -> var1 , var45 , 
+str , var72 , var8 -> var68 ) ; 
+return var37 ; 
+} 
+if ( ! var8 -> var32 ) { 
+if ( var8 -> var34 == var76 ) { 
+if ( ! var8 -> var77 ) { 
+var15 = number ; 
+break ; 
+} 
+} 
+} 
+if ( var8 -> var34 == var78 || ( var8 -> var1 -> var79 & var80 ) ) 
+var6 -> var44 = number ; 
+if ( ! var8 -> var81 ) { 
+if ( var8 -> var34 == var82 && ! var6 -> var44 ) { 
+var15 = number ; 
+break ; 
+} 
+} 
+if ( ( var1 -> var15 >= var83 && 
+var8 -> var34 == var76 ) || 
+( var1 -> var15 >= var84 && 
+var8 -> var34 != var78 ) || 
+var1 -> var15 >= var85 ) { 
+var15 = number ; 
+break ; 
+} 
+if ( ! var6 -> var86 ) 
+break ; 
+if ( var8 -> var73 == var87 ) { 
+if ( var72 < var1 -> var88 || 
+var72 >= var8 -> var68 - var1 -> var89 ) 
+break ; 
+} 
+if ( ! var8 -> var34 ) { 
+func9 ( var1 , var45 , str ) ; 
+if ( var1 -> var35 & var36 ) 
+return var37 ; 
+break ; 
+} 
+if ( var6 -> var56 ) { 
+var15 = number ; 
+var6 -> var56 = number ; 
+if ( ( var12 = func22 ( var8 , var4 , var5 ) ) < number ) 
+return var12 ; 
+} 
+if ( ! var8 -> var90 ) { 
+func9 ( var1 , var45 , 
+str ) ; 
+return var37 ; 
+} 
+if ( func5 ( var1 ) ) { 
+var6 -> var27 ++ ; 
+break ; 
+} 
+if ( var18 && 
+( var1 -> var19 & var20 ) && 
+! var1 -> var21 ) { 
+int var91 = ( var8 -> var68 * var6 -> var27 + 
+var8 -> var92 / number ) / 
+var8 -> var92 ; 
+func3 ( var1 -> var23 > number ) ; 
+if ( var91 <= var72 ) { 
+MpegEncContext * var25 = var8 -> var25 [ var6 -> var27 ] ; 
+var25 -> var93 = var72 ; 
+var25 -> var94 = var8 -> var68 ; 
+if ( var6 -> var27 ) { 
+var8 -> var25 [ var6 -> var27 - number ] -> var94 = var72 ; 
+var12 = func23 ( var25 , var8 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+} 
+func13 ( & var25 -> var58 , var10 , var13 * number ) ; 
+var6 -> var27 ++ ; 
+} 
+var10 += number ; 
+} else { 
+var12 = func24 ( var8 , var72 , & var10 , var13 ) ; 
+func25 ( ) ; 
+if ( var12 < number ) { 
+if ( var1 -> var35 & var36 ) 
+return var12 ; 
+if ( var8 -> var95 >= number && var8 -> var96 >= number ) 
+func26 ( & var8 -> var28 , var8 -> var95 , 
+var8 -> var96 , var8 -> var97 , var8 -> var72 , 
+var98 | var99 | var100 ) ; 
+} else { 
+func26 ( & var8 -> var28 , var8 -> var95 , 
+var8 -> var96 , var8 -> var97 - number , var8 -> var72 , 
+var101 | var102 | var103 ) ; 
+} 
+} 
+} 
+break ; 
+} 
+} 
+} 

@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AssContext * var2 = var1 -> var3 -> var4 ; 
+func2 ( & var2 -> var5 , var1 -> var6 , number ) ; 
+func3 ( var2 -> var7 , var1 -> var8 , var1 -> var9 ) ; 
+if ( var2 -> var10 && var2 -> var11 ) 
+func4 ( var2 -> var7 , ( double ) var1 -> var8 / var1 -> var9 , 
+( double ) var2 -> var10 / var2 -> var11 ) ; 
+if ( var2 -> var12 != - number ) 
+func5 ( var2 -> var7 , var2 -> var12 ) ; 
+return number ; 
+} 

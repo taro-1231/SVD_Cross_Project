@@ -1,0 +1,39 @@
+int func1 ( AVCodecContext * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+Mpeg4DecContext * var4 = var1 -> var5 ; 
+MpegEncContext * var6 = & var4 -> var7 ; 
+if ( var6 -> var8 ) { 
+int var9 = var6 -> var10 . var11 == var6 -> var12 ? number : ( func2 ( & var6 -> var10 ) >> number ) ; 
+int var13 = number ; 
+if ( var3 - var9 > number ) { 
+int var14 ; 
+for ( var14 = var9 ; var14 < var3 - number ; var14 ++ ) 
+if ( var2 [ var14 ] == number && 
+var2 [ var14 + number ] == number && 
+var2 [ var14 + number ] == number && 
+var2 [ var14 + number ] == number ) { 
+var13 = ! ( var2 [ var14 + number ] & number ) ; 
+break ; 
+} 
+} 
+if ( var13 ) { 
+if ( ! var4 -> var15 ) { 
+av_log ( var6 -> var1 , AV_LOG_INFO , str 
+str 
+str ) ; 
+var4 -> var15 = number ; 
+} 
+func3 ( & var6 -> var12 , 
+& var6 -> var16 , 
+var3 - var9 ) ; 
+if ( ! var6 -> var12 ) { 
+var6 -> var17 = number ; 
+return func4 ( var18 ) ; 
+} 
+memcpy ( var6 -> var12 , var2 + var9 , 
+var3 - var9 ) ; 
+var6 -> var17 = var3 - var9 ; 
+} 
+} 
+return number ; 
+} 

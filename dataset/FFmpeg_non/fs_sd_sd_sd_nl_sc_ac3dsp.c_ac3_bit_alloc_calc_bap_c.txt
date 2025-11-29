@@ -1,0 +1,22 @@
+static void func1 ( int16_t * var1 , int16_t * var2 , 
+int var3 , int var4 , 
+int var5 , int var6 , 
+const uint8_t * var7 , uint8_t * var8 ) 
+{ 
+int var9 , var10 , var11 ; 
+if ( var5 == - number ) { 
+memset ( var8 , number , var12 ) ; 
+return ; 
+} 
+var9 = var3 ; 
+var10 = var13 [ var3 ] ; 
+do { 
+int var14 = ( func2 ( var1 [ var10 ] - var5 - var6 , number ) & number ) + var6 ; 
+var11 = var15 [ ++ var10 ] ; 
+var11 = func3 ( var11 , var4 ) ; 
+for ( ; var9 < var11 ; var9 ++ ) { 
+int var16 = func4 ( ( var2 [ var9 ] - var14 ) >> number , number ) ; 
+var8 [ var9 ] = var7 [ var16 ] ; 
+} 
+} while ( var4 > var11 ) ; 
+} 

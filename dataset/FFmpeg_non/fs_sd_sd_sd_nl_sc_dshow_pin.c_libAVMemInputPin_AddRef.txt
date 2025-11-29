@@ -1,0 +1,6 @@
+func1 ( libAVMemInputPin * var1 ) 
+{ 
+libAVPin * var2 = ( libAVPin * ) ( ( uint8_t * ) var1 - var3 ) ; 
+func2 ( str , var1 ) ; 
+return func3 ( var2 ) ; 
+} 

@@ -1,0 +1,31 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+AascContext * var2 = var1 -> var3 ; 
+uint8_t * var4 ; 
+int var5 ; 
+var2 -> var1 = var1 ; 
+switch ( var1 -> var6 ) { 
+case 8 : 
+var1 -> var7 = var8 ; 
+var4 = var1 -> var9 ; 
+var2 -> var10 = func2 ( var1 -> var11 , var12 ) ; 
+for ( var5 = number ; var5 < var2 -> var10 / number ; var5 ++ ) { 
+var2 -> var13 [ var5 ] = number << number | func3 ( var4 ) ; 
+var4 += number ; 
+} 
+break ; 
+case 16 : 
+var1 -> var7 = var14 ; 
+break ; 
+case number : 
+var1 -> var7 = var15 ; 
+break ; 
+var16 : 
+func4 ( var1 , var17 , str , var1 -> var6 ) ; 
+return - number ; 
+} 
+var2 -> var18 = func5 ( ) ; 
+if ( ! var2 -> var18 ) 
+return func6 ( var19 ) ; 
+return number ; 
+} 

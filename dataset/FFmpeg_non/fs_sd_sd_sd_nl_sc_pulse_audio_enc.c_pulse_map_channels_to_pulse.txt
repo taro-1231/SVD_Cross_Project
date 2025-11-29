@@ -1,0 +1,54 @@
+static void func1 ( int64_t var1 , pa_channel_map * var2 ) 
+{ 
+var2 -> var3 = number ; 
+if ( var1 & var4 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var6 ; 
+if ( var1 & var7 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var8 ; 
+if ( var1 & var9 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var10 ; 
+if ( var1 & var11 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var12 ; 
+if ( var1 & var13 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var14 ; 
+if ( var1 & var15 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var16 ; 
+if ( var1 & var17 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var18 ; 
+if ( var1 & var19 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var20 ; 
+if ( var1 & var21 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var22 ; 
+if ( var1 & var23 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var24 ; 
+if ( var1 & var25 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var26 ; 
+if ( var1 & var27 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var28 ; 
+if ( var1 & var29 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var30 ; 
+if ( var1 & var31 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var32 ; 
+if ( var1 & var33 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var34 ; 
+if ( var1 & var35 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var36 ; 
+if ( var1 & var37 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var38 ; 
+if ( var1 & var39 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var40 ; 
+if ( var1 & var41 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var6 ; 
+if ( var1 & var42 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var8 ; 
+if ( var1 & var43 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var44 ; 
+if ( var1 & var45 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var46 ; 
+if ( var1 & var47 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var48 ; 
+if ( var1 & var49 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var50 ; 
+if ( var1 & var51 ) 
+var2 -> var5 [ var2 -> var3 ++ ] = var12 ; 
+} 

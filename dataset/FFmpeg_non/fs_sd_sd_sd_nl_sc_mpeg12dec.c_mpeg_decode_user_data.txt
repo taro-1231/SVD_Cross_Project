@@ -1,0 +1,62 @@
+static void func1 ( AVCodecContext * var1 , 
+const uint8_t * var2 , int var3 ) 
+{ 
+Mpeg1Context * var4 = var1 -> var5 ; 
+const uint8_t * var6 = var2 + var3 ; 
+Mpeg1Context * var7 = var1 -> var5 ; 
+int var8 ; 
+for ( var8 = number ; ! ( ! var2 [ var8 - number ] && ! var2 [ var8 - number ] && var2 [ var8 ] == number ) && var8 < var3 ; var8 ++ ) { 
+func2 ( var1 , var9 , str , var2 [ var8 ] ) ; 
+} 
+func2 ( var1 , var9 , str ) ; 
+if ( var3 > number ) { 
+int var8 ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) 
+if ( ! memcmp ( var2 + var8 , str , number ) ) { 
+var4 -> var10 = number ; 
+} 
+} 
+if ( var6 - var2 >= number && 
+var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str ) { 
+int var11 = var2 [ number ] ; 
+var2 += number ; 
+if ( var11 & number ) { 
+var2 += number ; 
+} 
+if ( var11 & number ) { 
+if ( var6 - var2 < number ) 
+return ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var1 -> var12 = var2 [ number ] & number ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+var7 -> var13 = number ; 
+var7 -> var14 = var2 [ number ] & number ; 
+} 
+} else if ( var6 - var2 >= number && 
+var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str && var2 [ number ] == str && 
+var2 [ number ] == number ) { 
+const uint8_t var15 = var2 [ number ] & number ; 
+if ( var15 == number || 
+var15 == number || 
+var15 == number || 
+var15 == number ) { 
+var7 -> var16 = number ; 
+switch ( var15 ) { 
+case number : 
+var7 -> var17 . var18 = var19 ; 
+break ; 
+case number : 
+var7 -> var17 . var18 = var20 ; 
+break ; 
+case number : 
+var7 -> var17 . var18 = var21 ; 
+break ; 
+case number : 
+var7 -> var17 . var18 = var22 ; 
+break ; 
+} 
+} 
+} else if ( func3 ( var1 , var2 , var3 ) ) { 
+return ; 
+} 
+} 

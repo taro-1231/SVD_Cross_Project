@@ -1,0 +1,6 @@
+static int func1 ( AVExpr ** var1 , Parser * var2 , int * var3 ) 
+{ 
+* var3 = ( * var2 -> var4 == str ) - ( * var2 -> var4 == str ) ; 
+var2 -> var4 += * var3 & number ; 
+return func2 ( var1 , var2 ) ; 
+} 

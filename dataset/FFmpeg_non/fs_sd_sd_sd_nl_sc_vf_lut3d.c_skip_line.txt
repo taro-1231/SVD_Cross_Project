@@ -1,0 +1,6 @@
+static int func1 ( const char * var1 ) 
+{ 
+while ( * var1 && func2 ( * var1 ) ) 
+var1 ++ ; 
+return ! * var1 || * var1 == str ; 
+} 

@@ -1,0 +1,12 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+APadContext * var2 = var1 -> var3 ; 
+var2 -> var4 = var5 ; 
+if ( var2 -> var6 >= number && var2 -> var7 >= number ) { 
+func2 ( var1 , var8 , str ) ; 
+return func3 ( var9 ) ; 
+} 
+var2 -> var10 = var2 -> var7 ; 
+var2 -> var11 = var2 -> var6 ; 
+return number ; 
+} 

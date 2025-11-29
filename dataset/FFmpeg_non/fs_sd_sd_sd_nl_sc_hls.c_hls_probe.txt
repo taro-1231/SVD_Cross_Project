@@ -1,0 +1,10 @@
+static int func1 ( AVProbeData * var1 ) 
+{ 
+if ( strncmp ( var1 -> var2 , str , number ) ) 
+return number ; 
+if ( strstr ( var1 -> var2 , str ) || 
+strstr ( var1 -> var2 , str ) || 
+strstr ( var1 -> var2 , str ) ) 
+return var3 ; 
+return number ; 
+} 

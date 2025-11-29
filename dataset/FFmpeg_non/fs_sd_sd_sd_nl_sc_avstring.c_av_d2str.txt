@@ -1,0 +1,7 @@
+char * func1 ( double var1 ) 
+{ 
+char * var2 = func2 ( number ) ; 
+if ( var2 ) 
+snprintf ( var2 , number , var2 , var1 ) ; 
+return var2 ; 
+} 

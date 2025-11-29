@@ -1,0 +1,11 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+FifoContext * var2 = var1 -> var3 ; 
+Buf * var4 , * var5 ; 
+for ( var4 = var2 -> var6 . var7 ; var4 ; var4 = var5 ) { 
+var5 = var4 -> var7 ; 
+func2 ( & var4 -> var8 ) ; 
+func3 ( var4 ) ; 
+} 
+func2 ( & var2 -> var9 ) ; 
+} 

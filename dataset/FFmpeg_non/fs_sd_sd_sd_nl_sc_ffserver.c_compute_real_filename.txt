@@ -1,0 +1,21 @@
+static void func1 ( char * var1 , int var2 ) 
+{ 
+char var3 [ number ] ; 
+char var4 [ number ] ; 
+char * var5 ; 
+FFServerStream * var6 ; 
+func2 ( var3 , var1 , sizeof ( var3 ) ) ; 
+var5 = strrchr ( var3 , str ) ; 
+if ( var5 ) 
+* var5 = str ; 
+for ( var6 = var7 . var8 ; var6 ; var6 = var6 -> var9 ) { 
+func2 ( var4 , var6 -> var1 , sizeof ( var4 ) ) ; 
+var5 = strrchr ( var4 , str ) ; 
+if ( var5 ) 
+* var5 = str ; 
+if ( ! strcmp ( var3 , var4 ) ) { 
+func2 ( var1 , var6 -> var1 , var2 ) ; 
+break ; 
+} 
+} 
+} 

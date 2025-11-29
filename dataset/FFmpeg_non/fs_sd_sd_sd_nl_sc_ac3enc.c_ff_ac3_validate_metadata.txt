@@ -1,0 +1,141 @@
+int func1 ( AC3EncodeContext * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var2 ; 
+AC3EncOptions * var3 = & var1 -> var4 ; 
+var3 -> var5 = number ; 
+var3 -> var6 = number ; 
+var3 -> var7 = number ; 
+var3 -> var8 = number ; 
+var3 -> var9 = number ; 
+if ( var1 -> var10 > var11 && var3 -> var12 != var13 ) { 
+var3 -> var6 = number ; 
+var3 -> var8 = number ; 
+} 
+if ( var1 -> var14 && 
+( var3 -> var15 >= number || var3 -> var16 >= number ) ) { 
+var3 -> var6 = number ; 
+var3 -> var8 = number ; 
+} 
+if ( var1 -> var17 && 
+( var3 -> var18 >= number || var3 -> var19 >= number ) ) { 
+var3 -> var6 = number ; 
+var3 -> var8 = number ; 
+} 
+if ( var1 -> var20 ) { 
+if ( var2 -> var21 != var22 ) 
+var3 -> var9 = number ; 
+if ( var3 -> var23 != var13 || var3 -> var24 != var13 ) 
+var3 -> var9 = number ; 
+if ( var1 -> var10 == var11 && 
+( var3 -> var25 != var13 || var3 -> var26 != var13 ) ) 
+var3 -> var9 = number ; 
+if ( var1 -> var10 >= var27 && var3 -> var28 != var13 ) 
+var3 -> var9 = number ; 
+if ( var3 -> var29 != var13 || var3 -> var30 != var13 || 
+var3 -> var31 != var13 ) { 
+var3 -> var5 = number ; 
+var3 -> var9 = number ; 
+} 
+} else { 
+if ( var3 -> var29 != var13 || var3 -> var30 != var13 ) 
+var3 -> var5 = number ; 
+if ( var1 -> var10 >= var27 && var3 -> var28 != var13 ) 
+var3 -> var7 = number ; 
+if ( var1 -> var10 == var11 && var3 -> var25 != var13 ) 
+var3 -> var7 = number ; 
+if ( var3 -> var31 != var13 ) 
+var3 -> var7 = number ; 
+} 
+if ( ! var1 -> var20 ) { 
+if ( var1 -> var14 ) { 
+func2 ( var2 , str , & var3 -> var32 , 
+var33 , var34 , number , number , 
+& var1 -> var32 ) ; 
+} 
+if ( var1 -> var17 ) { 
+func2 ( var2 , str , & var3 -> var35 , 
+var36 , var37 , number , number , 
+& var1 -> var35 ) ; 
+} 
+} 
+if ( var3 -> var6 || var3 -> var8 ) { 
+if ( var3 -> var12 == var13 ) 
+var3 -> var12 = var38 ; 
+if ( ! var1 -> var20 || var1 -> var14 ) { 
+func2 ( var2 , str , 
+& var3 -> var15 , var39 , 
+var40 , number , number , 
+& var1 -> var15 ) ; 
+func2 ( var2 , str , 
+& var3 -> var16 , var39 , 
+var40 , number , number , 
+& var1 -> var16 ) ; 
+} 
+if ( ! var1 -> var20 || var1 -> var17 ) { 
+func2 ( var2 , str , 
+& var3 -> var18 , var39 , 
+var40 , number , number , 
+& var1 -> var18 ) ; 
+func2 ( var2 , str , 
+& var3 -> var19 , var39 , 
+var40 , number , number , 
+& var1 -> var19 ) ; 
+} 
+} 
+if ( ( var2 -> var21 == var41 && 
+var2 -> var42 == number ) || 
+( ( var2 -> var21 == var43 || 
+var2 -> var21 == var44 || 
+var2 -> var21 == var45 ) 
+&& var2 -> var42 > number ) ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str ) ; 
+return func3 ( var46 ) ; 
+} 
+if ( var3 -> var7 || var3 -> var9 ) { 
+if ( var3 -> var25 == var13 ) 
+var3 -> var25 = var38 ; 
+if ( var3 -> var28 == var13 ) 
+var3 -> var28 = var38 ; 
+if ( var3 -> var31 == var13 ) 
+var3 -> var31 = var47 ; 
+} 
+if ( ! var1 -> var20 || var3 -> var9 ) { 
+if ( var3 -> var23 == var13 ) 
+var3 -> var23 = var48 ; 
+if ( var3 -> var24 == var13 ) 
+var3 -> var24 = var49 ; 
+} 
+if ( ! var1 -> var20 || var3 -> var9 ) { 
+if ( var3 -> var26 == var13 ) 
+var3 -> var26 = var38 ; 
+} 
+if ( var3 -> var5 ) { 
+if ( var3 -> var29 == var13 ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str ) ; 
+return func3 ( var46 ) ; 
+} 
+if ( var3 -> var29 < number ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str ) ; 
+return func3 ( var46 ) ; 
+} 
+if ( var3 -> var30 == var13 ) 
+var3 -> var30 = var38 ; 
+} 
+if ( ! var1 -> var20 && ( var3 -> var6 || var3 -> var7 ) ) { 
+if ( var1 -> var50 > number && var1 -> var50 < number ) { 
+static int var51 = number ; 
+if ( var51 ) { 
+av_log ( var2 , AV_LOG_WARNING , str 
+str 
+str ) ; 
+var51 = number ; 
+} 
+} else { 
+var1 -> var50 = number ; 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,29 @@
+static int func1 ( HTTPContext * var1 , char * var2 ) 
+{ 
+int var3 ; 
+FFServerStream * var4 = var1 -> var5 ; 
+int var6 = number ; 
+if ( ! var4 -> var7 ) 
+return number ; 
+for ( var3 = number ; var3 < var4 -> var8 ; var3 ++ ) { 
+AVCodecParameters * var9 = var4 -> var10 [ var3 ] -> var11 ; 
+switch ( var2 [ var3 ] ) { 
+case number : 
+var1 -> var12 [ var3 ] = var4 -> var13 [ var3 ] ; 
+break ; 
+case number : 
+var1 -> var12 [ var3 ] = func2 ( var4 -> var7 , var9 , var9 -> var14 / number ) ; 
+break ; 
+case number : 
+var1 -> var12 [ var3 ] = func2 ( var4 -> var7 , var9 , var9 -> var14 / number ) ; 
+var1 -> var12 [ var3 ] = - number ; 
+var1 -> var13 [ var3 ] = - number ; 
+break ; 
+} 
+if ( var1 -> var12 [ var3 ] >= number && 
+var1 -> var12 [ var3 ] != var1 -> var13 [ var3 ] ) { 
+var6 = number ; 
+} 
+} 
+return var6 ; 
+} 

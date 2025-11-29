@@ -1,0 +1,24 @@
+static uint8_t * func1 ( const char * var1 ) 
+{ 
+AVIOContext * var2 = var3 ; 
+AVIOContext * var4 = var3 ; 
+int var5 = func2 ( & var2 , var1 , var6 ) ; 
+uint8_t var7 [ number ] , * var8 ; 
+if ( var5 < number ) { 
+func3 ( var3 , var9 , var8 , var1 ) ; 
+return var3 ; 
+} 
+var5 = func4 ( & var4 ) ; 
+if ( var5 < number ) { 
+func5 ( & var2 ) ; 
+return var3 ; 
+} 
+while ( ( var5 = func6 ( var2 , var7 , sizeof ( var7 ) ) ) > number ) 
+func7 ( var4 , var7 , var5 ) ; 
+func8 ( var4 , number ) ; 
+func5 ( & var2 ) ; 
+var5 = func9 ( var4 , & var8 ) ; 
+if ( var5 < number ) 
+return var3 ; 
+return var8 ; 
+} 

@@ -1,0 +1,56 @@
+static OutputStream * func1 ( OptionsContext * var1 , AVFormatContext * var2 , int var3 ) 
+{ 
+int var4 ; 
+AVStream * var5 ; 
+OutputStream * var6 ; 
+AVCodecContext * var7 ; 
+var6 = func2 ( var1 , var2 , var8 , var3 ) ; 
+var5 = var6 -> var5 ; 
+var7 = var6 -> var9 ; 
+var7 -> var10 = var8 ; 
+func3 ( var11 , var12 , var6 -> var13 , var2 , var5 ) ; 
+func3 ( var14 , var12 , var6 -> var14 , var2 , var5 ) ; 
+if ( ! var6 -> var15 ) { 
+char * var16 = var17 ; 
+func3 ( var18 , var19 , var7 -> var20 , var2 , var5 ) ; 
+func3 ( var21 , var12 , var16 , var2 , var5 ) ; 
+if ( var16 && 
+( var7 -> var16 = func4 ( var16 ) ) == var22 ) { 
+func5 ( var17 , var23 , var12 , var16 ) ; 
+func6 ( number ) ; 
+} 
+func3 ( var24 , var19 , var7 -> var25 , var2 , var5 ) ; 
+func3 ( var26 , var12 , var6 -> var26 , var2 , var5 ) ; 
+var6 -> var26 = func7 ( var6 -> var26 ) ; 
+var6 -> var27 = func8 ( var1 , var2 , var6 ) ; 
+if ( ! var6 -> var27 ) 
+func6 ( number ) ; 
+for ( var4 = number ; var4 < var1 -> var28 ; var4 ++ ) { 
+AudioChannelMap * var29 = & var1 -> var30 [ var4 ] ; 
+if ( ( var29 -> var31 == - number || var6 -> var32 == var29 -> var31 ) && 
+( var29 -> var33 == - number || var6 -> var5 -> var34 == var29 -> var33 ) ) { 
+InputStream * var35 ; 
+if ( var29 -> var36 == - number ) { 
+var35 = var17 ; 
+} else if ( var6 -> var3 < number ) { 
+func5 ( var17 , var23 , var12 , 
+var6 -> var32 , var6 -> var5 -> var34 ) ; 
+continue ; 
+} else { 
+var35 = var37 [ var6 -> var3 ] ; 
+} 
+if ( ! var35 || ( var35 -> var32 == var29 -> var38 && var35 -> var5 -> var34 == var29 -> var39 ) ) { 
+if ( func9 ( & var6 -> var40 , 
+var6 -> var41 + number , 
+sizeof ( * var6 -> var40 ) 
+) < number ) 
+func6 ( number ) ; 
+var6 -> var40 [ var6 -> var41 ++ ] = var29 -> var36 ; 
+} 
+} 
+} 
+} 
+if ( var6 -> var15 ) 
+func10 ( var1 , var2 , var6 , var8 ) ; 
+return var6 ; 
+} 

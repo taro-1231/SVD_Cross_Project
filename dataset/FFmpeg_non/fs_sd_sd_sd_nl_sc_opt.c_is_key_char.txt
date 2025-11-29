@@ -1,0 +1,6 @@
+static int func1 ( char var1 ) 
+{ 
+return ( unsigned ) ( ( var1 | number ) - str ) < number || 
+( unsigned ) ( var1 - str ) < number || 
+var1 == str || var1 == str || var1 == str || var1 == str ; 
+} 

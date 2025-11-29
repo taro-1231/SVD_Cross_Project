@@ -1,0 +1,140 @@
+static int func1 ( OutputStream * var1 , char * var2 , int var3 ) 
+{ 
+int var4 = number ; 
+if ( var1 -> var5 ) { 
+AVCodec * var6 = var1 -> var7 ; 
+AVCodecContext * var8 = var9 ; 
+InputStream * var10 ; 
+var4 = func2 ( var1 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+if ( ( var10 = func3 ( var1 ) ) ) 
+var8 = var10 -> var11 ; 
+if ( var8 && var8 -> var12 ) { 
+var1 -> var13 -> var12 = func4 ( var8 -> var14 + number ) ; 
+if ( ! var1 -> var13 -> var12 ) 
+return func5 ( var15 ) ; 
+memcpy ( var1 -> var13 -> var12 , var8 -> var12 , var8 -> var14 ) ; 
+var1 -> var13 -> var14 = var8 -> var14 ; 
+} 
+if ( ! func6 ( var1 -> var16 , str , var9 , number ) ) 
+func7 ( & var1 -> var16 , str , str , number ) ; 
+if ( var1 -> var7 -> var17 == var18 && 
+! var6 -> var19 && 
+! func6 ( var1 -> var16 , str , var9 , number ) && 
+! func6 ( var1 -> var16 , str , var9 , number ) ) 
+func7 ( & var1 -> var16 , str , str , number ) ; 
+if ( var1 -> var20 && func8 ( var1 -> var20 -> var20 ) && 
+( ( AVHWFramesContext * ) func8 ( var1 -> var20 -> var20 ) -> var21 ) -> var22 == 
+func9 ( var1 -> var20 -> var20 ) ) { 
+var1 -> var13 -> var23 = func10 ( func8 ( var1 -> var20 -> var20 ) ) ; 
+if ( ! var1 -> var13 -> var23 ) 
+return func5 ( var15 ) ; 
+} 
+if ( ( var4 = func11 ( var1 -> var13 , var6 , & var1 -> var16 ) ) < number ) { 
+if ( var4 == var24 ) 
+func12 ( var6 , number ) ; 
+snprintf ( var2 , var3 , 
+str 
+str , 
+var1 -> var26 , var1 -> index ) ; 
+return var4 ; 
+} 
+if ( var1 -> var7 -> var17 == var18 && 
+! ( var1 -> var7 -> var27 & var28 ) ) 
+func13 ( var1 -> var20 -> var20 , 
+var1 -> var13 -> var29 ) ; 
+func14 ( var1 -> var16 ) ; 
+if ( var1 -> var13 -> var25 && var1 -> var13 -> var25 < number ) 
+func15 ( var9 , AV_LOG_WARNING , str 
+str ) ; 
+var4 = func16 ( var1 -> var30 -> var31 , var1 -> var13 ) ; 
+if ( var4 < number ) { 
+func15 ( var9 , var32 , 
+str ) ; 
+func17 ( number ) ; 
+} 
+var4 = func18 ( var1 -> var30 -> var6 , var1 -> var13 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+if ( var1 -> var13 -> var33 ) { 
+int var34 ; 
+var1 -> var30 -> var35 = func19 ( var9 , var1 -> var13 -> var33 , 
+sizeof ( * var1 -> var30 -> var35 ) ) ; 
+if ( ! var1 -> var30 -> var35 ) 
+return func5 ( var15 ) ; 
+for ( var34 = number ; var34 < var1 -> var13 -> var33 ; var34 ++ ) { 
+const AVPacketSideData * var36 = & var1 -> var13 -> var37 [ var34 ] ; 
+AVPacketSideData * var38 = & var1 -> var30 -> var35 [ var34 ] ; 
+var38 -> var21 = func20 ( var36 -> var39 ) ; 
+if ( ! var38 -> var21 ) 
+return func5 ( var15 ) ; 
+memcpy ( var38 -> var21 , var36 -> var21 , var36 -> var39 ) ; 
+var38 -> var39 = var36 -> var39 ; 
+var38 -> var17 = var36 -> var17 ; 
+var1 -> var30 -> var40 ++ ; 
+} 
+} 
+if ( var10 ) { 
+int var34 ; 
+for ( var34 = number ; var34 < var10 -> var30 -> var40 ; var34 ++ ) { 
+AVPacketSideData * var41 = & var10 -> var30 -> var35 [ var34 ] ; 
+uint8_t * var42 = func21 ( var1 -> var30 , var41 -> var17 , var41 -> var39 ) ; 
+if ( ! var42 ) 
+return func5 ( var15 ) ; 
+memcpy ( var42 , var41 -> var21 , var41 -> var39 ) ; 
+if ( var10 -> var43 && var41 -> var17 == var44 ) 
+func22 ( ( uint32_t * ) var42 , number ) ; 
+} 
+} 
+if ( var1 -> var30 -> var45 . var46 <= number || var1 -> var30 -> var45 . var47 <= number ) 
+var1 -> var30 -> var45 = av_add_q ( var1 -> var13 -> var45 , ( AVRational ) { number , number } ) ; 
+if ( var1 -> var30 -> var48 <= number && var10 && var10 -> var30 -> var48 > number ) 
+var1 -> var30 -> var48 = func23 ( var10 -> var30 -> var48 , var10 -> var30 -> var45 , var1 -> var30 -> var45 ) ; 
+var1 -> var30 -> var6 -> var6 = var1 -> var13 -> var6 ; 
+} else if ( var1 -> var49 ) { 
+var4 = func24 ( var1 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+var4 = func25 ( var1 -> var50 , var1 -> var30 -> var31 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+if ( var1 -> var51 ) { 
+static const AVOption var52 [ ] = { 
+{ str , var9 , number , AV_OPT_TYPE_FLAGS , { . i64 = number } , INT64_MIN , INT64_MAX , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_DEFAULT } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_DUB } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_ORIGINAL } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_COMMENT } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_LYRICS } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_KARAOKE } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_FORCED } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_HEARING_IMPAIRED } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_VISUAL_IMPAIRED } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_CLEAN_EFFECTS } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_CAPTIONS } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_DESCRIPTIONS } , . unit = str } , 
+{ str , var9 , number , AV_OPT_TYPE_CONST , { . i64 = AV_DISPOSITION_METADATA } , . unit = str } , 
+{ var9 } , 
+} ; 
+static const AVClass class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = var52 , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+const AVClass * var53 = & class ; 
+var4 = func26 ( & var53 , & var52 [ number ] , var1 -> var51 , & var1 -> var30 -> var51 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+var4 = func27 ( var1 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+var1 -> var54 = number ; 
+var4 = func28 ( var55 [ var1 -> var26 ] , var1 -> var26 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+return var4 ; 
+} 

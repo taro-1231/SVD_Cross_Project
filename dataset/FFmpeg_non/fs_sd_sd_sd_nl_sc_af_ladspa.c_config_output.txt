@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( var2 -> var5 ) { 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+var1 -> var8 = var6 -> var8 ; 
+var1 -> var9 = var6 -> var9 ; 
+var4 = number ; 
+} else { 
+LADSPAContext * var10 = var2 -> var11 ; 
+var1 -> var9 = var10 -> var9 ; 
+var1 -> time_base = ( AVRational ) { 1 , var10 -> var9 } ; 
+var4 = func2 ( var2 , var1 ) ; 
+} 
+return var4 ; 
+} 

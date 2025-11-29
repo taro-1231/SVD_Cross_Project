@@ -1,0 +1,16 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 , const char * var3 ) 
+{ 
+uint64_t var4 = strlen ( var3 ) ; 
+int64_t var5 = func2 ( var1 ) ; 
+if ( var4 >= var6 ) { 
+av_log ( NULL , AV_LOG_ERROR , str PRIu64 str , var4 ) ; 
+func3 ( var1 , number ) ; 
+return func4 ( var7 ) ; 
+} 
+func5 ( var1 , number ) ; 
+func6 ( var1 , str ) ; 
+func3 ( var1 , var4 ) ; 
+func3 ( var1 , var2 -> var8 ) ; 
+func7 ( var1 , var3 , var4 ) ; 
+return func8 ( var1 , var5 ) ; 
+} 

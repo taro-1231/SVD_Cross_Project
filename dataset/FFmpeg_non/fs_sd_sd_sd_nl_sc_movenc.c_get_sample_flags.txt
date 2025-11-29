@@ -1,0 +1,5 @@
+static uint32_t func1 ( MOVTrack * var1 , MOVIentry * var2 ) 
+{ 
+return var2 -> var3 & var4 ? var5 : 
+( var6 | var7 ) ; 
+} 

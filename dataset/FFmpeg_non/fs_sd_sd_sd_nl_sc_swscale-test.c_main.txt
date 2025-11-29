@@ -1,0 +1,65 @@
+int func1 ( int var2 , char ** var3 ) 
+{ 
+enum AVPixelFormat var4 = var5 ; 
+enum AVPixelFormat var6 = var5 ; 
+uint8_t * var7 = func2 ( var8 * var1 * number ) ; 
+const uint8_t * const var9 [ number ] = { var7 , var10 , var10 , var10 } ; 
+int var11 [ number ] = { number * var8 , number , number , number } ; 
+uint8_t * var12 = func2 ( number * var8 * var1 ) ; 
+uint8_t * var13 [ number ] = { var12 , var12 + var8 * var1 , var12 + var8 * var1 * number , var12 + var8 * var1 * number } ; 
+int var14 [ number ] = { var8 , var8 , var8 , var8 } ; 
+int var15 , var16 ; 
+struct SwsContext * var17 ; 
+AVLFG var18 ; 
+int var19 = - number ; 
+int var20 ; 
+FILE * var21 = var10 ; 
+if ( ! var7 || ! var12 ) 
+return - number ; 
+for ( var20 = number ; var20 < var2 ; var20 += number ) { 
+if ( var3 [ var20 ] [ number ] != str || var20 + number == var2 ) 
+goto var22 ; 
+if ( ! strcmp ( var3 [ var20 ] , str ) ) { 
+var21 = fopen ( var3 [ var20 + number ] , str ) ; 
+if ( ! var21 ) { 
+fprintf ( var23 , str , var3 [ var20 + number ] ) ; 
+goto var24 ; 
+} 
+} else if ( ! strcmp ( var3 [ var20 ] , str ) ) { 
+var4 = func3 ( var3 [ var20 + number ] ) ; 
+if ( var4 == var5 ) { 
+fprintf ( var23 , str , var3 [ var20 + number ] ) ; 
+return - number ; 
+} 
+} else if ( ! strcmp ( var3 [ var20 ] , str ) ) { 
+var6 = func3 ( var3 [ var20 + number ] ) ; 
+if ( var6 == var5 ) { 
+fprintf ( var23 , str , var3 [ var20 + number ] ) ; 
+return - number ; 
+} 
+} else { 
+var22 : 
+fprintf ( var23 , str , var3 [ var20 ] ) ; 
+goto var24 ; 
+} 
+} 
+var17 = func4 ( var8 / number , var1 / number , var25 , var8 , var1 , 
+var26 , var27 , var10 , var10 , var10 ) ; 
+func5 ( & var18 , number ) ; 
+for ( var16 = number ; var16 < var1 ; var16 ++ ) 
+for ( var15 = number ; var15 < var8 * number ; var15 ++ ) 
+var7 [ var15 + var16 * number * var8 ] = func6 ( & var18 ) ; 
+func7 ( var17 , var9 , var11 , number , var1 / number , var13 , var14 ) ; 
+func8 ( var17 ) ; 
+func9 ( var7 ) ; 
+if ( var21 ) { 
+var19 = func10 ( var13 , var14 , var8 , var1 , var21 , var4 , var6 ) ; 
+fclose ( var21 ) ; 
+} else { 
+func11 ( var13 , var14 , var8 , var1 , var4 , var6 ) ; 
+var19 = number ; 
+} 
+var24 : 
+func9 ( var12 ) ; 
+return var19 ; 
+} 

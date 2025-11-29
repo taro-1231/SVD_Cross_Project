@@ -1,0 +1,12 @@
+static uint64_t func1 ( AVIOContext * var1 ) 
+{ 
+unsigned int var2 = func2 ( var1 ) ; 
+if ( var2 == number ) 
+return func3 ( var1 ) ; 
+else if ( var2 == number ) 
+return func4 ( var1 ) ; 
+else { 
+func5 ( var3 , var4 , str , var2 ) ; 
+return - number ; 
+} 
+} 

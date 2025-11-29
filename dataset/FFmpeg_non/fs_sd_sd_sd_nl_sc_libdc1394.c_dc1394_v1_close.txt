@@ -1,0 +1,9 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct dc1394_data * var2 = var1 -> var3 ; 
+func2 ( var2 -> var4 , var2 -> var5 . var6 ) ; 
+func3 ( var2 -> var4 , & var2 -> var5 ) ; 
+func4 ( var2 -> var4 , & var2 -> var5 ) ; 
+func5 ( var2 -> var4 ) ; 
+return number ; 
+} 

@@ -1,0 +1,46 @@
+static void func1 ( struct SwsContext * var1 , uint16_t * var2 , 
+const uint16_t * var3 , int var4 , int var5 ) 
+{ 
+int var6 , var7 ; 
+const AVPixFmtDescriptor * var8 = func2 ( var1 -> var9 ) ; 
+for ( var7 = number ; var7 < var5 ; var7 ++ ) { 
+for ( var6 = number ; var6 + number < var4 ; var6 += number ) { 
+int var10 , var11 , var12 , var13 , var14 , var15 ; 
+if ( var8 -> var16 & var17 ) { 
+var10 = func3 ( var3 + var6 + number ) ; 
+var11 = func3 ( var3 + var6 + number ) ; 
+var12 = func3 ( var3 + var6 + number ) ; 
+} else { 
+var10 = func4 ( var3 + var6 + number ) ; 
+var11 = func4 ( var3 + var6 + number ) ; 
+var12 = func4 ( var3 + var6 + number ) ; 
+} 
+var10 = var1 -> var18 [ var10 >> number ] ; 
+var11 = var1 -> var18 [ var11 >> number ] ; 
+var12 = var1 -> var18 [ var12 >> number ] ; 
+var13 = var1 -> var19 [ number ] [ number ] * var10 + 
+var1 -> var19 [ number ] [ number ] * var11 + 
+var1 -> var19 [ number ] [ number ] * var12 >> number ; 
+var14 = var1 -> var19 [ number ] [ number ] * var10 + 
+var1 -> var19 [ number ] [ number ] * var11 + 
+var1 -> var19 [ number ] [ number ] * var12 >> number ; 
+var15 = var1 -> var19 [ number ] [ number ] * var10 + 
+var1 -> var19 [ number ] [ number ] * var11 + 
+var1 -> var19 [ number ] [ number ] * var12 >> number ; 
+var13 = func5 ( var13 , number ) ; 
+var14 = func5 ( var14 , number ) ; 
+var15 = func5 ( var15 , number ) ; 
+if ( var8 -> var16 & var17 ) { 
+func6 ( var2 + var6 + number , var1 -> var20 [ var13 ] << number ) ; 
+func6 ( var2 + var6 + number , var1 -> var20 [ var14 ] << number ) ; 
+func6 ( var2 + var6 + number , var1 -> var20 [ var15 ] << number ) ; 
+} else { 
+func7 ( var2 + var6 + number , var1 -> var20 [ var13 ] << number ) ; 
+func7 ( var2 + var6 + number , var1 -> var20 [ var14 ] << number ) ; 
+func7 ( var2 + var6 + number , var1 -> var20 [ var15 ] << number ) ; 
+} 
+} 
+var3 += var4 ; 
+var2 += var4 ; 
+} 
+} 

@@ -1,0 +1,37 @@
+static void func1 ( AlacEncodeContext * var1 ) 
+{ 
+int32_t * var2 = var1 -> var3 [ number ] , * var4 = var1 -> var3 [ number ] ; 
+int var5 , var6 , var7 = var1 -> var8 ; 
+int32_t var9 ; 
+var6 = func2 ( var2 , var4 , var7 ) ; 
+switch ( var6 ) { 
+case var10 : 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+break ; 
+case var13 : 
+for ( var5 = number ; var5 < var7 ; var5 ++ ) 
+var4 [ var5 ] = var2 [ var5 ] - var4 [ var5 ] ; 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+break ; 
+case var14 : 
+for ( var5 = number ; var5 < var7 ; var5 ++ ) { 
+var9 = var4 [ var5 ] ; 
+var4 [ var5 ] = var2 [ var5 ] - var4 [ var5 ] ; 
+var2 [ var5 ] = var9 + ( var4 [ var5 ] >> number ) ; 
+} 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+break ; 
+var15 : 
+for ( var5 = number ; var5 < var7 ; var5 ++ ) { 
+var9 = var2 [ var5 ] ; 
+var2 [ var5 ] = ( var9 + var4 [ var5 ] ) >> number ; 
+var4 [ var5 ] = var9 - var4 [ var5 ] ; 
+} 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+break ; 
+} 
+} 

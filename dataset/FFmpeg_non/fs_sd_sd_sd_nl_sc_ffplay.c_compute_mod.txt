@@ -1,0 +1,4 @@
+static inline int func1 ( int var1 , int var2 ) 
+{ 
+return var1 < number ? var1 % var2 + var2 : var1 % var2 ; 
+} 

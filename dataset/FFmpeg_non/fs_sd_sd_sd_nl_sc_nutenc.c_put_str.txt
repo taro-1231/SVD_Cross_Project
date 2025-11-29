@@ -1,0 +1,6 @@
+static void func1 ( AVIOContext * var1 , const char * var2 ) 
+{ 
+size_t var3 = strlen ( var2 ) ; 
+func2 ( var1 , var3 ) ; 
+func3 ( var1 , var2 , var3 ) ; 
+} 

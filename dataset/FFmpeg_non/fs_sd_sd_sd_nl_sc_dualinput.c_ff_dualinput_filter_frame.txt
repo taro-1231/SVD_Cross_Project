@@ -1,0 +1,5 @@
+int func1 ( FFDualInputContext * var1 , 
+AVFilterLink * var2 , AVFrame * var3 ) 
+{ 
+return func2 ( & var1 -> var4 , var2 , var3 ) ; 
+} 

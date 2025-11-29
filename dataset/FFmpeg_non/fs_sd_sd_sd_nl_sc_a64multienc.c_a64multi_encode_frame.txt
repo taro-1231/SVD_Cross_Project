@@ -1,0 +1,90 @@
+static int func1 ( AVCodecContext * var1 , AVPacket * var2 , 
+const AVFrame * var3 , int * var4 ) 
+{ 
+A64Context * var5 = var1 -> var6 ; 
+int var7 ; 
+int var8 , var9 ; 
+int var10 ; 
+int var11 ; 
+int var12 , var13 ; 
+uint8_t * var14 = var15 ; 
+int * var16 = var5 -> var17 ; 
+uint8_t * var18 = var5 -> var19 ; 
+uint8_t * var20 = var5 -> var21 ; 
+int * var22 = var5 -> var23 ; 
+int * var24 = var5 -> var25 ; 
+int var26 = number * ( var27 + number ) ; 
+int var28 = number * var5 -> var29 ; 
+int var30 ; 
+if ( var31 ) { 
+var10 = func2 ( var1 -> var32 , var33 ) >> number ; 
+var11 = func2 ( var1 -> var34 , var35 ) >> number ; 
+var30 = var11 * var10 ; 
+} else { 
+var10 = var33 >> number ; 
+var11 = var35 >> number ; 
+var30 = number ; 
+} 
+if ( ! var3 ) { 
+if ( ! var5 -> var36 ) return number ; 
+if ( ! var5 -> var37 ) { 
+var5 -> var36 = number ; 
+} 
+else var5 -> var36 = var5 -> var37 ; 
+} else { 
+if ( var5 -> var37 < var5 -> var36 ) { 
+func3 ( var1 , var3 , var22 + number * var5 -> var37 ) ; 
+var5 -> var37 ++ ; 
+if ( var5 -> var38 == var39 ) 
+var5 -> var38 = var3 -> var40 ; 
+return number ; 
+} 
+} 
+if ( var5 -> var37 == var5 -> var36 ) { 
+var12 = number ; 
+if ( var5 -> var36 ) { 
+int var41 = var26 + var5 -> var36 * ( var30 + var28 ) ; 
+if ( ( var13 = func4 ( var1 , var2 , var41 , number ) ) < number ) 
+return var13 ; 
+var14 = var2 -> var42 ; 
+var13 = func5 ( var22 , number , number * var5 -> var36 , var24 , 
+var43 , number , var16 , & var5 -> var44 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+var13 = func6 ( var22 , number , number * var5 -> var36 , var24 , 
+var43 , number , var16 , & var5 -> var44 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+func7 ( var1 , var20 , var18 ) ; 
+memcpy ( var14 , var20 , var26 ) ; 
+var14 += var26 ; 
+var12 += var26 ; 
+} 
+for ( var7 = number ; var7 < var5 -> var36 ; var7 ++ ) { 
+for ( var9 = number ; var9 < var10 ; var9 ++ ) { 
+for ( var8 = number ; var8 < var11 ; var8 ++ ) { 
+var14 [ var9 * var11 + var8 ] = var16 [ var9 * var11 + var8 ] ; 
+} 
+} 
+var14 += var30 ; 
+var12 += var30 ; 
+if ( var5 -> var29 ) { 
+func8 ( var14 , var16 , var18 ) ; 
+var14 += var28 ; 
+var12 += var28 ; 
+} 
+var16 += number ; 
+} 
+func9 ( var1 -> var45 + number , var5 -> var37 ) ; 
+func9 ( var1 -> var45 + number , var26 ) ; 
+func9 ( var1 -> var45 + number , var30 + var28 ) ; 
+var5 -> var37 = number ; 
+var2 -> var40 = var2 -> var46 = var5 -> var38 ; 
+var5 -> var38 = var39 ; 
+func10 ( var2 -> var47 >= var12 ) ; 
+var2 -> var47 = var12 ; 
+var2 -> var48 |= var49 ; 
+* var4 = ! ! var12 ; 
+} 
+return number ; 
+} 

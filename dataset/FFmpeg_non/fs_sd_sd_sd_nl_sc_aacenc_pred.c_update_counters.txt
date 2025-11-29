@@ -1,0 +1,10 @@
+static inline int func1 ( IndividualChannelStream * var1 , int var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var1 -> var4 [ var3 ] += var2 ; 
+if ( var1 -> var4 [ var3 ] > var5 ) 
+return var3 ; 
+} 
+return number ; 
+} 

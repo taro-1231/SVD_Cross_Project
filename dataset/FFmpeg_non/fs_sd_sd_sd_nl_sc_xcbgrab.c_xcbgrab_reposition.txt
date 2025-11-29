@@ -1,0 +1,35 @@
+static int func1 ( AVFormatContext * var1 , 
+xcb_query_pointer_reply_t * var2 , 
+xcb_get_geometry_reply_t * var3 ) 
+{ 
+XCBGrabContext * var4 = var1 -> var5 ; 
+int var6 = var4 -> var6 , var7 = var4 -> var7 ; 
+int var8 = var4 -> var9 , var10 = var4 -> var11 , var12 = var4 -> var13 ; 
+int var14 , var15 ; 
+if ( ! var2 || ! var3 ) 
+return func2 ( var16 ) ; 
+var14 = var2 -> var17 ; 
+var15 = var2 -> var18 ; 
+if ( var12 == var19 ) { 
+var6 = var14 - var8 / number ; 
+var7 = var15 - var10 / number ; 
+} else { 
+int var20 = var6 + var12 ; 
+int var21 = var6 + var8 - var12 ; 
+int var22 = var7 + var12 ; 
+int var23 = var7 + var10 + var12 ; 
+if ( var14 > var21 ) { 
+var6 += var14 - var21 ; 
+} else if ( var14 < var20 ) { 
+var6 -= var20 - var14 ; 
+} 
+if ( var15 > var23 ) { 
+var7 += var15 - var23 ; 
+} else if ( var15 < var22 ) { 
+var7 -= var22 - var15 ; 
+} 
+} 
+var4 -> var6 = func3 ( func4 ( number , var6 ) , var3 -> var9 - var8 ) ; 
+var4 -> var7 = func3 ( func4 ( number , var7 ) , var3 -> var11 - var10 ) ; 
+return number ; 
+} 

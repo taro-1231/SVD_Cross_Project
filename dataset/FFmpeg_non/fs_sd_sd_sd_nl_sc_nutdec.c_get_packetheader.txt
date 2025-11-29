@@ -1,0 +1,15 @@
+static int func1 ( NUTContext * var1 , AVIOContext * var2 , 
+int var3 , uint64_t var4 ) 
+{ 
+int64_t var5 ; 
+var4 = func2 ( var4 ) ; 
+var4 = func3 ( number , ( uint8_t * ) & var4 , number ) ; 
+func4 ( var2 , func3 , var4 ) ; 
+var5 = func5 ( var2 ) ; 
+if ( var5 > number ) 
+func6 ( var2 ) ; 
+if ( func7 ( var2 ) && var5 > number ) 
+return - number ; 
+func4 ( var2 , var3 ? func3 : var6 , number ) ; 
+return var5 ; 
+} 

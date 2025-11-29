@@ -1,0 +1,16 @@
+static void func1 ( PullupField * var1 ) 
+{ 
+PullupField * var2 = var1 ; 
+do { 
+PullupField * var3 ; 
+if ( ! var2 ) 
+break ; 
+func2 ( var2 -> var4 ) ; 
+func2 ( var2 -> var5 ) ; 
+func2 ( var2 -> var6 ) ; 
+var3 = var2 -> var3 ; 
+memset ( var2 , number , sizeof ( * var2 ) ) ; 
+func2 ( var2 ) ; 
+var2 = var3 ; 
+} while ( var2 != var1 ) ; 
+} 

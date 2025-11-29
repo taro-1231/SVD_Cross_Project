@@ -1,0 +1,37 @@
+static void func1 ( AVFormatContext * var1 , AVStream * var2 , const UID var3 , unsigned var4 ) 
+{ 
+AVIOContext * var5 = var1 -> var5 ; 
+MXFContext * var6 = var1 -> var7 ; 
+int var8 = ! var6 -> var9 ; 
+int var10 = number ; 
+if ( var1 -> var11 == & var12 ) 
+var10 = number ; 
+func2 ( var1 , var2 , var3 , var4 + var10 + number + number + number + number ) ; 
+if ( var10 > number ) { 
+func3 ( var5 , number , number ) ; 
+func4 ( var5 , var6 -> var13 / var6 -> var14 ) ; 
+} 
+func3 ( var5 , number , number ) ; 
+func5 ( var5 , number ) ; 
+func3 ( var5 , number , number ) ; 
+func6 ( var5 , var2 -> var15 -> var16 ) ; 
+func6 ( var5 , number ) ; 
+func3 ( var5 , number , number ) ; 
+if ( var6 -> var17 == - number ) { 
+if ( var8 && ( var1 -> var11 == & var18 ) && ( var2 -> var15 -> var19 != number ) && ( var2 -> var15 -> var19 != number ) ) 
+func7 ( var1 , var20 , str ) ; 
+func6 ( var5 , var2 -> var15 -> var19 ) ; 
+} else if ( var1 -> var11 == & var18 ) { 
+if ( var8 && ( var6 -> var17 < var2 -> var15 -> var19 ) ) 
+func7 ( var1 , var20 , str ) ; 
+if ( var8 && ( var6 -> var17 != number ) && ( var6 -> var17 != number ) ) 
+func7 ( var1 , var20 , str ) ; 
+func6 ( var5 , var6 -> var17 ) ; 
+} else { 
+if ( var8 && var6 -> var17 != - number && var1 -> var11 != & var12 ) 
+func7 ( var1 , var21 , str ) ; 
+func6 ( var5 , var2 -> var15 -> var19 ) ; 
+} 
+func3 ( var5 , number , number ) ; 
+func6 ( var5 , func8 ( var2 -> var15 -> var22 ) ) ; 
+} 

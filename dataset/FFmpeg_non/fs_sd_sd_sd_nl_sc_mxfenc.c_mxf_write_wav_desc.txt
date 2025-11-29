@@ -1,0 +1,4 @@
+static void func1 ( AVFormatContext * var1 , AVStream * var2 ) 
+{ 
+func2 ( var1 , var2 , var3 , number ) ; 
+} 

@@ -1,0 +1,58 @@
+AVFilterBufferRef * func1 ( uint8_t ** var1 , 
+int var2 , int var3 , 
+int var4 , 
+enum AVSampleFormat var5 , 
+int var6 , 
+uint64_t var7 ) 
+{ 
+int var8 ; 
+AVFilterBuffer * var9 = func2 ( sizeof ( * var9 ) ) ; 
+AVFilterBufferRef * var10 = func2 ( sizeof ( * var10 ) ) ; 
+if ( ! var9 || ! var10 ) 
+goto var11 ; 
+func3 ( var6 ) ; 
+func3 ( var7 == number || 
+var6 == func4 ( var7 ) ) ; 
+var10 -> var12 = var9 ; 
+var10 -> var12 -> var13 = var14 ; 
+if ( ! ( var10 -> var15 = func2 ( sizeof ( * var10 -> var15 ) ) ) ) 
+goto var11 ; 
+var10 -> var15 -> var4 = var4 ; 
+var10 -> var15 -> var7 = var7 ; 
+var10 -> var15 -> var6 = var6 ; 
+var8 = func5 ( var5 ) ? var6 : number ; 
+var10 -> var3 = var3 | var16 ; 
+var9 -> var17 = number ; 
+var10 -> var18 = var19 ; 
+var10 -> var20 = var5 ; 
+memcpy ( var9 -> var1 , var1 , 
+func6 ( func7 ( var9 -> var1 ) , var8 ) * sizeof ( var9 -> var1 [ number ] ) ) ; 
+memcpy ( var10 -> var1 , var9 -> var1 , sizeof ( var9 -> var1 ) ) ; 
+var9 -> var2 [ number ] = var10 -> var2 [ number ] = var2 ; 
+if ( var8 > func7 ( var9 -> var1 ) ) { 
+var9 -> var21 = func8 ( sizeof ( * var9 -> var21 ) , 
+var8 ) ; 
+var10 -> var21 = func8 ( sizeof ( * var10 -> var21 ) , 
+var8 ) ; 
+if ( ! var9 -> var21 || ! var10 -> var21 ) 
+goto var11 ; 
+memcpy ( var9 -> var21 , var1 , sizeof ( * var1 ) * var8 ) ; 
+memcpy ( var10 -> var21 , var1 , sizeof ( * var1 ) * var8 ) ; 
+} else { 
+var9 -> var21 = var9 -> var1 ; 
+var10 -> var21 = var10 -> var1 ; 
+} 
+var10 -> var22 = var23 ; 
+return var10 ; 
+var11 : 
+if ( var9 && var9 -> var21 != var9 -> var1 ) 
+func9 ( & var9 -> var21 ) ; 
+if ( var10 ) { 
+func9 ( & var10 -> var15 ) ; 
+if ( var10 -> var21 != var10 -> var1 ) 
+func9 ( & var10 -> var21 ) ; 
+} 
+func9 ( & var10 ) ; 
+func9 ( & var9 ) ; 
+return var24 ; 
+} 

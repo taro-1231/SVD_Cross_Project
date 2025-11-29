@@ -1,0 +1,38 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+const AVPixFmtDescriptor * var2 = func2 ( var1 -> var3 ) ; 
+AVFilterContext * var4 = var1 -> var5 ; 
+SSIMContext * var6 = var4 -> var7 ; 
+int var8 = number , var9 ; 
+var6 -> var10 = var2 -> var10 ; 
+if ( var4 -> var11 [ number ] -> var12 != var4 -> var11 [ number ] -> var12 || 
+var4 -> var11 [ number ] -> var13 != var4 -> var11 [ number ] -> var13 ) { 
+func3 ( var4 , var14 , str ) ; 
+return func4 ( var15 ) ; 
+} 
+if ( var4 -> var11 [ number ] -> var3 != var4 -> var11 [ number ] -> var3 ) { 
+func3 ( var4 , var14 , str ) ; 
+return func4 ( var15 ) ; 
+} 
+var6 -> var16 = func5 ( var6 -> var17 , var1 -> var3 ) >= number ; 
+var6 -> var18 [ number ] = var6 -> var16 ? str : str ; 
+var6 -> var18 [ number ] = var6 -> var16 ? str : str ; 
+var6 -> var18 [ number ] = var6 -> var16 ? str : str ; 
+var6 -> var18 [ number ] = str ; 
+var6 -> var19 [ number ] = var6 -> var19 [ number ] = func6 ( var1 -> var13 , var2 -> var20 ) ; 
+var6 -> var19 [ number ] = var6 -> var19 [ number ] = var1 -> var13 ; 
+var6 -> var21 [ number ] = var6 -> var21 [ number ] = func6 ( var1 -> var12 , var2 -> var22 ) ; 
+var6 -> var21 [ number ] = var6 -> var21 [ number ] = var1 -> var12 ; 
+for ( var9 = number ; var9 < var6 -> var10 ; var9 ++ ) 
+var8 += var6 -> var19 [ var9 ] * var6 -> var21 [ var9 ] ; 
+for ( var9 = number ; var9 < var6 -> var10 ; var9 ++ ) 
+var6 -> var23 [ var9 ] = ( double ) var6 -> var19 [ var9 ] * var6 -> var21 [ var9 ] / var8 ; 
+var6 -> var24 = func7 ( ( number * var1 -> var12 + number ) * sizeof ( * var6 -> var24 ) ) ; 
+if ( ! var6 -> var24 ) 
+return func4 ( var25 ) ; 
+var6 -> var26 . var27 = var28 ; 
+var6 -> var26 . var29 = var30 ; 
+if ( var31 ) 
+func8 ( & var6 -> var26 ) ; 
+return number ; 
+} 

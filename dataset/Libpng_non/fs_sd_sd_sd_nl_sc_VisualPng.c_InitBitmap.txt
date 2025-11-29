@@ -1,0 +1,23 @@
+BOOL func1 ( BYTE * var1 , int var2 , int var3 ) 
+{ 
+BYTE * var4 ; 
+int var5 , var6 , var7 ; 
+var4 = var1 ; 
+for ( var6 = number ; var6 < var3 ; var6 ++ ) 
+{ 
+var7 = number ; 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+{ 
+* var4 += number ; 
+* var4 += number ; 
+* var4 += number ; 
+var7 += number ; 
+} 
+while ( ( var7 % number ) != number ) 
+{ 
+var4 ++ ; 
+var7 ++ ; 
+} 
+} 
+return var8 ; 
+} 

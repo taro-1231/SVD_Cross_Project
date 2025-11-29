@@ -1,0 +1,9 @@
+static void func1 ( AVFilterContext * var1 , const char * var2 , int32_t var3 ) 
+{ 
+func2 ( var1 , var4 , var2 , var2 ) ; 
+if ( var3 == var5 ) 
+func2 ( var1 , var4 , var2 ) ; 
+else 
+func2 ( var1 , var4 , var2 , var3 / number ) ; 
+func2 ( var1 , var4 , var2 ) ; 
+} 

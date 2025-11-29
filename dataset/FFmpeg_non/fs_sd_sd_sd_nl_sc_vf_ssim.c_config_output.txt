@@ -1,0 +1,15 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+SSIMContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+int var8 ; 
+var1 -> var9 = var6 -> var9 ; 
+var1 -> var10 = var6 -> var10 ; 
+var1 -> var11 = var6 -> var11 ; 
+var1 -> var12 = var6 -> var12 ; 
+var1 -> var13 = var6 -> var13 ; 
+if ( ( var8 = func2 ( var2 , & var4 -> var14 ) ) < number ) 
+return var8 ; 
+return number ; 
+} 

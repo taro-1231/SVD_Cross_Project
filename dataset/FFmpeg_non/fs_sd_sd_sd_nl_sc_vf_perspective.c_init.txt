@@ -1,0 +1,9 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+PerspectiveContext * var2 = var1 -> var3 ; 
+switch ( var2 -> var4 ) { 
+case var5 : var2 -> var6 = var7 ; break ; 
+case var8 : var2 -> var6 = var9 ; break ; 
+} 
+return number ; 
+} 

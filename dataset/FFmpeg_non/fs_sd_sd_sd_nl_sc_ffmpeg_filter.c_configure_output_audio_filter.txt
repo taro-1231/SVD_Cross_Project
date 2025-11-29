@@ -1,0 +1,108 @@
+static int func1 ( FilterGraph * var1 , OutputFilter * var2 , AVFilterInOut * var3 ) 
+{ 
+OutputStream * var4 = var2 -> var4 ; 
+OutputFile * var5 = var6 [ var4 -> var7 ] ; 
+AVCodecContext * var8 = var4 -> var9 ; 
+AVFilterContext * var10 = var3 -> var11 ; 
+int var12 = var3 -> var12 ; 
+char * var13 , * var14 , * var15 ; 
+char var16 [ number ] ; 
+int var17 ; 
+snprintf ( var16 , sizeof ( var16 ) , var30 , var4 -> var7 , var4 -> var18 ) ; 
+var17 = func2 ( & var2 -> var19 , 
+func3 ( var30 ) , 
+var16 , var20 , var20 , var1 -> var21 ) ; 
+if ( var17 < number ) 
+return var17 ; 
+if ( ( var17 = func4 ( var2 -> var19 , var30 , number , var22 ) ) < number ) 
+return var17 ; 
+AVFilterContext * var25 ; \ 
+\ 
+av_log ( var20 , AV_LOG_INFO , opt_name str \ 
+str var23 str , var24 ) ; \ 
+\ 
+var17 = func2 ( & var25 , \ 
+func3 ( var23 ) , \ 
+var23 , var24 , var20 , var1 -> var21 ) ; \ 
+if ( var17 < number ) \ 
+return var17 ; \ 
+\ 
+var17 = func6 ( var10 , var12 , var25 , number ) ; \ 
+if ( var17 < number ) \ 
+return var17 ; \ 
+\ 
+var10 = var25 ; \ 
+var12 = number ; \ 
+} while ( number ) 
+if ( var4 -> var26 ) { 
+int var27 ; 
+AVBPrint var28 ; 
+func7 ( & var28 , number , number ) ; 
+func8 ( & var28 , str PRIx64 , 
+func9 ( var4 -> var26 ) ) ; 
+for ( var27 = number ; var27 < var4 -> var26 ; var27 ++ ) 
+if ( var4 -> var29 [ var27 ] != - number ) 
+func8 ( & var28 , var30 , var27 , var4 -> var29 [ var27 ] ) ; 
+func5 ( var30 , var30 , var28 . var30 ) ; 
+func10 ( & var28 , var20 ) ; 
+} 
+if ( var8 -> var31 && ! var8 -> var32 ) 
+var8 -> var32 = func9 ( var8 -> var31 ) ; 
+var13 = func11 ( var2 ) ; 
+var14 = func12 ( var2 ) ; 
+var15 = func13 ( var2 ) ; 
+if ( var13 || var14 || var15 ) { 
+AVFilterContext * var33 ; 
+char var34 [ number ] ; 
+var34 [ number ] = number ; 
+if ( var13 ) 
+func14 ( var34 , sizeof ( var34 ) , var30 , 
+var13 ) ; 
+if ( var14 ) 
+func14 ( var34 , sizeof ( var34 ) , var30 , 
+var14 ) ; 
+if ( var15 ) 
+func14 ( var34 , sizeof ( var34 ) , var30 , 
+var15 ) ; 
+func15 ( & var13 ) ; 
+func15 ( & var14 ) ; 
+func15 ( & var15 ) ; 
+snprintf ( var16 , sizeof ( var16 ) , var30 , 
+var4 -> var7 , var4 -> var18 ) ; 
+var17 = func2 ( & var33 , 
+func3 ( var30 ) , 
+var16 , var34 , var20 , var1 -> var21 ) ; 
+if ( var17 < number ) 
+return var17 ; 
+var17 = func6 ( var10 , var12 , var33 , number ) ; 
+if ( var17 < number ) 
+return var17 ; 
+var10 = var33 ; 
+var12 = number ; 
+} 
+if ( var35 != number && number ) { 
+char var34 [ number ] ; 
+snprintf ( var34 , sizeof ( var34 ) , var30 , var35 / number ) ; 
+func5 ( var30 , var30 , var34 ) ; 
+} 
+if ( var4 -> var36 && var5 -> var37 ) { 
+char var34 [ number ] ; 
+int var27 ; 
+for ( var27 = number ; var27 < var5 -> var38 -> var39 ; var27 ++ ) 
+if ( var5 -> var38 -> var40 [ var27 ] -> var41 -> var42 == var43 ) 
+break ; 
+if ( var27 < var5 -> var38 -> var39 ) { 
+snprintf ( var34 , sizeof ( var34 ) , var30 , var4 -> var36 ) ; 
+func5 ( var30 , var30 , var34 ) ; 
+} 
+} 
+snprintf ( var16 , sizeof ( var16 ) , var30 , 
+var4 -> var7 , var4 -> var18 ) ; 
+var17 = func16 ( var5 -> var44 , var5 -> var45 , 
+& var10 , & var12 , var16 ) ; 
+if ( var17 < number ) 
+return var17 ; 
+if ( ( var17 = func6 ( var10 , var12 , var2 -> var19 , number ) ) < number ) 
+return var17 ; 
+return number ; 
+} 

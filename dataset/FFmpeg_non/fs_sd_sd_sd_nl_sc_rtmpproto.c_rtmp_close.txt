@@ -1,0 +1,23 @@
+static int func1 ( URLContext * var1 ) 
+{ 
+RTMPContext * var2 = var1 -> var3 ; 
+int var4 = number , var5 , var6 ; 
+if ( ! var2 -> var7 ) { 
+var2 -> var8 = var9 ; 
+if ( var2 -> var10 . var11 ) 
+func2 ( & var2 -> var10 ) ; 
+if ( var2 -> var12 > var13 ) 
+var4 = func3 ( var1 , var2 ) ; 
+} 
+if ( var2 -> var12 > var14 ) 
+var4 = func4 ( var1 , var2 ) ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+for ( var6 = number ; var6 < var2 -> var15 [ var5 ] ; var6 ++ ) 
+func2 ( & var2 -> var16 [ var5 ] [ var6 ] ) ; 
+func5 ( & var2 -> var16 [ var5 ] ) ; 
+} 
+func6 ( var2 ) ; 
+func5 ( & var2 -> var8 ) ; 
+func7 ( var2 -> var17 ) ; 
+return var4 ; 
+} 

@@ -1,0 +1,15 @@
+func1 ( png_modifier * var1 ) 
+{ 
+func2 ( & var1 -> var2 ) ; 
+var1 -> var3 = number ; 
+var1 -> var4 = var1 -> var5 = number ; 
+var1 -> var6 = var1 -> var7 = var1 -> var8 = number ; 
+var1 -> var9 = var10 ; 
+var1 -> var11 = var12 ; 
+func3 ( var1 ) ; 
+var1 -> var13 = number ; 
+var1 -> var14 = number ; 
+var1 -> var15 = number ; 
+var1 -> var16 = number ; 
+var1 -> var17 = var1 -> var18 = number ; 
+} 

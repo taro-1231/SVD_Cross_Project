@@ -1,0 +1,20 @@
+static void func1 ( int var1 ) 
+{ 
+char var2 [ number ] ; 
+int var3 = snprintf ( var2 , sizeof ( var2 ) , 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , 
+nb_connections , config . nb_max_connections ) ; 
+func2 ( var3 < sizeof ( var2 ) ) ; 
+if ( func3 ( var1 , var2 , var3 , number ) < var3 ) 
+func4 ( var4 , var5 , 
+str ) ; 
+} 

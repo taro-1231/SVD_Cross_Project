@@ -1,0 +1,47 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var3 -> var6 [ number ] ; 
+AVFrame * var7 = func2 ( var1 , var2 -> var8 ) ; 
+DCShiftContext * var9 = var3 -> var10 ; 
+int var11 , var12 ; 
+double var13 = var9 -> var13 ; 
+if ( ! var7 ) { 
+func3 ( & var2 ) ; 
+return func4 ( var14 ) ; 
+} 
+func5 ( var7 , var2 ) ; 
+if ( var9 -> var15 > number ) { 
+for ( var11 = number ; var11 < var1 -> var16 ; var11 ++ ) { 
+const int32_t * var17 = ( int32_t * ) var2 -> var18 [ var11 ] ; 
+int32_t * var4 = ( int32_t * ) var7 -> var18 [ var11 ] ; 
+for ( var12 = number ; var12 < var2 -> var8 ; var12 ++ ) { 
+double var19 ; 
+var19 = var17 [ var12 ] ; 
+if ( var19 > var9 -> var20 && var13 > number ) { 
+var19 = ( var19 - var9 -> var20 ) * var9 -> var15 / 
+( var21 - var9 -> var20 ) + 
+var9 -> var20 + var13 ; 
+} else if ( var19 < - var9 -> var20 && var13 < number ) { 
+var19 = ( var19 + var9 -> var20 ) * var9 -> var15 / 
+( var21 - var9 -> var20 ) - 
+var9 -> var20 + var13 ; 
+} else { 
+var19 = var13 * var21 + var19 ; 
+} 
+var4 [ var12 ] = func6 ( var19 ) ; 
+} 
+} 
+} else { 
+for ( var11 = number ; var11 < var1 -> var16 ; var11 ++ ) { 
+const int32_t * var17 = ( int32_t * ) var2 -> var18 [ var11 ] ; 
+int32_t * var4 = ( int32_t * ) var7 -> var18 [ var11 ] ; 
+for ( var12 = number ; var12 < var2 -> var8 ; var12 ++ ) { 
+double var19 = var13 * ( var21 + number ) + var17 [ var12 ] ; 
+var4 [ var12 ] = func6 ( var19 ) ; 
+} 
+} 
+} 
+func3 ( & var2 ) ; 
+return func7 ( var5 , var7 ) ; 
+} 

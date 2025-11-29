@@ -1,0 +1,62 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 = number , var4 = number ; 
+uint32_t var5 ; 
+AVFloatDSPContext var6 , var7 ; 
+AVLFG var8 ; 
+LOCAL_ALIGNED ( 32 , float , var9 , [ var10 ] ) ; 
+LOCAL_ALIGNED ( 32 , float , var11 , [ var10 ] ) ; 
+LOCAL_ALIGNED ( 32 , float , var12 , [ var10 ] ) ; 
+LOCAL_ALIGNED ( 32 , double , var13 , [ var10 ] ) ; 
+LOCAL_ALIGNED ( 32 , double , var14 , [ var10 ] ) ; 
+for ( ; ; ) { 
+int var15 = func2 ( var1 , var2 , str ) ; 
+if ( var15 == - number ) 
+break ; 
+switch ( var15 ) { 
+case str : 
+var5 = func3 ( var16 , var17 , number ) ; 
+var4 = number ; 
+break ; 
+case str : 
+{ 
+int var18 = func4 ( ) ; 
+if ( func5 ( & var18 , var16 ) < number ) 
+return number ; 
+func6 ( var18 ) ; 
+break ; 
+} 
+} 
+} 
+if ( ! var4 ) 
+var5 = func7 ( ) ; 
+func8 ( var17 , var19 , str , var4 ? str : str , var5 ) ; 
+func9 ( & var8 , var5 ) ; 
+func10 ( & var8 , var9 , var10 ) ; 
+func10 ( & var8 , var11 , var10 ) ; 
+func10 ( & var8 , var12 , var10 ) ; 
+func11 ( & var8 , var13 , var10 ) ; 
+func11 ( & var8 , var14 , var10 ) ; 
+func12 ( & var6 , number ) ; 
+func6 ( number ) ; 
+func12 ( & var7 , number ) ; 
+if ( func13 ( & var6 , & var7 , var9 , var11 ) ) 
+var3 -= number << number ; 
+if ( func14 ( & var6 , & var7 , var12 , var9 , var11 [ number ] ) ) 
+var3 -= number << number ; 
+if ( func15 ( & var6 , & var7 , var9 , var11 [ number ] ) ) 
+var3 -= number << number ; 
+if ( func16 ( & var6 , & var7 , var9 , var11 , var12 ) ) 
+var3 -= number << number ; 
+if ( func17 ( & var6 , & var7 , var9 , var11 , var12 ) ) 
+var3 -= number << number ; 
+if ( func18 ( & var6 , & var7 , var9 , var11 ) ) 
+var3 -= number << number ; 
+if ( func19 ( & var6 , & var7 , var9 , var11 ) ) 
+var3 -= number << number ; 
+if ( func20 ( & var6 , & var7 , var9 , var11 ) ) 
+var3 -= number << number ; 
+if ( func21 ( & var6 , & var7 , var13 , var14 [ number ] ) ) 
+var3 -= number << number ; 
+return var3 ; 
+} 

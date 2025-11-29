@@ -1,0 +1,60 @@
+void func1 ( void * var1 , int var2 , int var3 ) 
+{ 
+const AVOption * var4 = var5 ; 
+while ( ( var4 = func2 ( var1 , var4 ) ) ) { 
+void * var6 = ( ( uint8_t * ) var1 ) + var4 -> var7 ; 
+if ( ( var4 -> var3 & var2 ) != var3 ) 
+continue ; 
+if ( var4 -> var3 & var8 ) 
+continue ; 
+switch ( var4 -> var9 ) { 
+case var10 : 
+break ; 
+case var11 : 
+case var12 : 
+case var13 : 
+case var14 : 
+case var15 : 
+func3 ( var1 , var4 , var6 , number , number , var4 -> var16 . var17 ) ; 
+break ; 
+case var18 : 
+case var19 : { 
+double var20 ; 
+var20 = var4 -> var16 . var21 ; 
+func3 ( var1 , var4 , var6 , var20 , number , number ) ; 
+} 
+break ; 
+case var22 : { 
+AVRational var20 ; 
+var20 = func4 ( var4 -> var16 . var21 , var23 ) ; 
+func3 ( var1 , var4 , var6 , number , var20 . var24 , var20 . var25 ) ; 
+} 
+break ; 
+case var26 : 
+func5 ( var1 , var4 , var4 -> var16 . var27 , var6 ) ; 
+break ; 
+case var28 : 
+func6 ( var1 , var4 , var4 -> var16 . var27 , var6 ) ; 
+break ; 
+case var29 : 
+func7 ( var1 , var4 , var4 -> var16 . var27 , var6 ) ; 
+break ; 
+case var30 : 
+func8 ( var1 , var4 , var4 -> var16 . var27 , var6 ) ; 
+break ; 
+case var31 : 
+func3 ( var1 , var4 , var6 , number , number , var4 -> var16 . var17 ) ; 
+break ; 
+case var32 : 
+func3 ( var1 , var4 , var6 , number , number , var4 -> var16 . var17 ) ; 
+break ; 
+case var33 : 
+func9 ( var1 , var4 , var4 -> var16 . var27 , var6 ) ; 
+break ; 
+case var34 : 
+break ; 
+var35 : 
+func10 ( var1 , var36 , var27 , var4 -> var9 , var4 -> var37 ) ; 
+} 
+} 
+} 

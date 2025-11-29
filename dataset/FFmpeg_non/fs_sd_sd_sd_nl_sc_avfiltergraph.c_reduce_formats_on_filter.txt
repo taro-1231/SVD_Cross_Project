@@ -1,0 +1,38 @@
+static var1 func1 ( AVFilterContext * var2 ) 
+{ 
+var1 var3 , var4 , var5 , var6 = number ; 
+func2 ( var1 , var7 , var8 , var8 , 
+var9 , var10 ) ; 
+func2 ( var1 , var7 , var11 , var8 , 
+var9 , var10 ) ; 
+for ( var3 = number ; var3 < var2 -> var12 ; var3 ++ ) { 
+AVFilterLink * var13 = var2 -> var14 [ var3 ] ; 
+uint64_t var15 ; 
+if ( ! var13 -> var16 || 
+var13 -> var16 -> var17 != number ) 
+continue ; 
+var15 = var13 -> var16 -> var18 [ number ] ; 
+for ( var4 = number ; var4 < var2 -> var19 ; var4 ++ ) { 
+AVFilterLink * var20 = var2 -> var21 [ var4 ] ; 
+AVFilterChannelLayouts * var22 ; 
+var22 = var20 -> var23 ; 
+if ( var13 -> var24 != var20 -> var24 || var22 -> var17 == number ) 
+continue ; 
+if ( var22 -> var25 && 
+( ! func3 ( var15 ) || var22 -> var26 ) ) { 
+var22 -> var25 = var22 -> var26 = number ; 
+func4 ( & var20 -> var23 , var15 ) ; 
+break ; 
+} 
+for ( var5 = number ; var5 < var20 -> var23 -> var17 ; var5 ++ ) { 
+if ( var22 -> var18 [ var5 ] == var15 ) { 
+var22 -> var18 [ number ] = var15 ; 
+var22 -> var17 = number ; 
+var6 = number ; 
+break ; 
+} 
+} 
+} 
+} 
+return var6 ; 
+} 

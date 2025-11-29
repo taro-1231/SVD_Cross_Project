@@ -1,0 +1,5 @@
+func1 ( png_const_charp var1 , int var2 ) 
+{ 
+fprintf ( var3 , str , var1 , var2 ) ; 
+exit ( number ) ; 
+} 

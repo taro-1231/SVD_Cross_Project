@@ -1,0 +1,10 @@
+static void func1 ( uint8_t * var1 , int var2 , int var3 ) 
+{ 
+int var4 , var5 , var6 = var3 ; 
+for ( var5 = number ; var5 < number * number ; var5 += number ) { 
+for ( var4 = number ; var4 < number * number ; var4 += number ) { 
+func2 ( var1 + var4 + var5 * var2 , var2 , number * var6 , number , number * number ) ; 
+var6 ++ ; 
+} 
+} 
+} 

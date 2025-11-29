@@ -1,0 +1,96 @@
+int func1 ( int64_t * var1 , const char * var2 , int var3 ) 
+{ 
+const char * var4 , * var5 ; 
+int64_t var6 ; 
+time_t var7 ; 
+struct tm var8 = { number } , var9 ; 
+int var10 = number , var11 = number , var12 = number ; 
+int var13 ; 
+static const char * const var14 [ ] = { 
+str , 
+str , 
+} ; 
+static const char * const var15 [ ] = { 
+str , 
+str , 
+} ; 
+var4 = var2 ; 
+var5 = var16 ; 
+* var1 = var17 ; 
+if ( ! var3 ) { 
+var7 = time ( number ) ; 
+if ( ! func2 ( var2 , str ) ) { 
+* var1 = ( int64_t ) var7 * number ; 
+return number ; 
+} 
+for ( var13 = number ; var13 < func3 ( var14 ) ; var13 ++ ) { 
+var5 = func4 ( var4 , var14 [ var13 ] , & var8 ) ; 
+if ( var5 ) 
+break ; 
+} 
+if ( ! var5 ) { 
+var10 = number ; 
+var5 = var4 ; 
+} 
+var4 = var5 ; 
+if ( * var4 == str || * var4 == str || * var4 == str ) 
+var4 ++ ; 
+for ( var13 = number ; var13 < func3 ( var15 ) ; var13 ++ ) { 
+var5 = func4 ( var4 , var15 [ var13 ] , & var8 ) ; 
+if ( var5 ) 
+break ; 
+} 
+} else { 
+if ( var4 [ number ] == str ) { 
+var11 = number ; 
+++ var4 ; 
+} 
+var5 = func4 ( var4 , str , & var8 ) ; 
+if ( ! var5 ) { 
+var5 = func4 ( var4 , str , & var8 ) ; 
+var8 . var18 = number ; 
+} 
+if ( ! var5 ) { 
+char * var19 ; 
+var8 . var20 = func5 ( var4 , & var19 , number ) ; 
+if ( var19 == var4 ) 
+return func6 ( var21 ) ; 
+var8 . var22 = number ; 
+var8 . var18 = number ; 
+var5 = var19 ; 
+} 
+} 
+if ( ! var5 ) 
+return func6 ( var21 ) ; 
+if ( * var5 == str ) { 
+int var23 ; 
+var5 ++ ; 
+for ( var23 = number ; var23 >= number ; var23 /= number , var5 ++ ) { 
+if ( ! func7 ( * var5 ) ) 
+break ; 
+var12 += var23 * ( * var5 - str ) ; 
+} 
+while ( func7 ( * var5 ) ) 
+var5 ++ ; 
+} 
+if ( var3 ) { 
+var6 = var8 . var18 * number + var8 . var22 * number + var8 . var20 ; 
+} else { 
+int var24 = * var5 == str || * var5 == str ; 
+var5 += var24 ; 
+if ( var10 ) { 
+struct tm var25 = var24 ? * func8 ( & var7 , & var9 ) : * func9 ( & var7 , & var9 ) ; 
+var25 . var18 = var8 . var18 ; 
+var25 . var22 = var8 . var22 ; 
+var25 . var20 = var8 . var20 ; 
+var8 = var25 ; 
+} 
+var6 = var24 ? func10 ( & var8 ) : mktime ( & var8 ) ; 
+} 
+if ( * var5 ) 
+return func6 ( var21 ) ; 
+var6 *= number ; 
+var6 += var12 ; 
+* var1 = var11 ? - var6 : var6 ; 
+return number ; 
+} 

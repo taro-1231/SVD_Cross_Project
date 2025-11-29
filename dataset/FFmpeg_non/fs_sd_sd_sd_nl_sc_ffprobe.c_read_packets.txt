@@ -1,0 +1,17 @@
+static int func1 ( WriterContext * var1 , InputFile * var2 ) 
+{ 
+AVFormatContext * var3 = var2 -> var3 ; 
+int var4 , var5 = number ; 
+int64_t var6 = var3 -> var7 ; 
+if ( var8 == number ) { 
+ReadInterval var9 = ( ReadInterval ) { . has_start = number , . has_end = number } ; 
+var5 = func2 ( var1 , var2 , & var9 , & var6 ) ; 
+} else { 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+var5 = func2 ( var1 , var2 , & var10 [ var4 ] , & var6 ) ; 
+if ( var5 < number ) 
+break ; 
+} 
+} 
+return var5 ; 
+} 

@@ -1,0 +1,40 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+XCBGrabContext * var2 = var1 -> var3 ; 
+AVStream * var4 = func2 ( var1 , var5 ) ; 
+xcb_get_geometry_cookie_t var6 ; 
+xcb_get_geometry_reply_t * var7 ; 
+int var8 ; 
+if ( ! var4 ) 
+return func3 ( var9 ) ; 
+var8 = func4 ( & var2 -> var10 , & var2 -> var11 , var2 -> var12 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+var8 = func5 ( & var4 -> var13 , var2 -> var14 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+func6 ( var4 , number , number , number ) ; 
+var6 = func7 ( var2 -> var15 , var2 -> var16 -> var17 ) ; 
+var7 = func8 ( var2 -> var15 , var6 , var5 ) ; 
+if ( var2 -> var18 + var2 -> var10 > var7 -> var10 || 
+var2 -> var19 + var2 -> var11 > var7 -> var11 ) { 
+av_log ( var1 , AV_LOG_ERROR , 
+str 
+str , 
+var2 -> var10 , var2 -> var11 , 
+var2 -> var18 , var2 -> var19 , 
+var7 -> var10 , var7 -> var11 ) ; 
+return func3 ( var20 ) ; 
+} 
+var2 -> var21 = ( AVRational ) { var4 -> var13 . den , 
+var4 -> var13 . num } ; 
+var2 -> var22 = func9 ( ) ; 
+var4 -> var23 -> var24 = var25 ; 
+var4 -> var23 -> var26 = var27 ; 
+var4 -> var23 -> var10 = var2 -> var10 ; 
+var4 -> var23 -> var11 = var2 -> var11 ; 
+var4 -> var23 -> var21 = var2 -> var21 ; 
+var8 = func10 ( var1 , var7 -> var28 , & var4 -> var23 -> var29 ) ; 
+free ( var7 ) ; 
+return var8 ; 
+} 

@@ -1,0 +1,17 @@
+func1 ( standard_display * var1 ) 
+{ 
+store_palette_entry * var2 = func2 ( var1 -> var3 , & var1 -> var4 ) ; 
+if ( var1 -> var4 > number ) 
+{ 
+int var5 = var1 -> var4 ; 
+memcpy ( var1 -> var2 , var2 , var5 * sizeof * var2 ) ; 
+while ( -- var5 >= number ) 
+if ( var2 [ var5 ] . var6 < number ) 
+break ; 
+if ( var5 >= number ) 
+var1 -> var7 = number ; 
+else 
+var1 -> var7 = number ; 
+var1 -> var7 = ( var5 >= number ) ; 
+} 
+} 

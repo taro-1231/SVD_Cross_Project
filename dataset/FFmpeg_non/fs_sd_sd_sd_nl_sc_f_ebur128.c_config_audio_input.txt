@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+EBUR128Context * var4 = var2 -> var5 ; 
+if ( var4 -> var6 || ( var4 -> var7 & var8 ) ) 
+var1 -> var9 = 
+var1 -> var10 = 
+var1 -> var11 = var1 -> var12 / number ; 
+return number ; 
+} 

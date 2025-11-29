@@ -1,0 +1,26 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+AVFormatContext * var3 , int var4 ) 
+{ 
+AVDictionaryEntry * var5 = func2 ( var3 -> var6 , 
+var4 ? str : str , 
+var8 , number ) ; 
+int var9 = number , var7 = var5 ? atoi ( var5 -> var10 ) : number ; 
+if ( var7 ) { 
+int var11 = number ; 
+char * var12 = strchr ( var5 -> var10 , str ) ; 
+if ( var12 ) 
+var11 = atoi ( var12 + number ) ; 
+func3 ( var1 , number ) ; 
+func4 ( var1 , var4 ? str : str ) ; 
+func3 ( var1 , number ) ; 
+func4 ( var1 , str ) ; 
+func3 ( var1 , number ) ; 
+func3 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , var7 ) ; 
+func5 ( var1 , var11 ) ; 
+func5 ( var1 , number ) ; 
+var9 = number ; 
+} 
+return var9 ; 
+} 

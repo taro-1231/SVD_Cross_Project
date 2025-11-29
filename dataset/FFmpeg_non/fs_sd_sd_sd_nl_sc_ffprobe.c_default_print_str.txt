@@ -1,0 +1,7 @@
+static void func1 ( WriterContext * var1 , const char * var2 , const char * var3 ) 
+{ 
+DefaultContext * var4 = var1 -> var5 ; 
+if ( ! var4 -> var6 ) 
+printf ( var9 , var1 -> var7 [ var1 -> var8 ] . var9 , var2 ) ; 
+printf ( var9 , var3 ) ; 
+} 

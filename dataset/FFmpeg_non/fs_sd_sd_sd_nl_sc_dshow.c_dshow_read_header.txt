@@ -1,0 +1,144 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct dshow_ctx * var2 = var1 -> var3 ; 
+IGraphBuilder * var4 = var5 ; 
+ICreateDevEnum * var6 = var5 ; 
+IMediaControl * var7 = var5 ; 
+IMediaEvent * var8 = var5 ; 
+HANDLE var9 ; 
+HANDLE var10 ; 
+int var11 = func2 ( var12 ) ; 
+int var13 ; 
+func3 ( number ) ; 
+if ( ! var2 -> var14 && ! func4 ( var1 ) ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var2 -> var17 = var1 -> var17 ? var1 -> var17 
+: var18 ; 
+if ( var2 -> var19 != var20 ) { 
+if ( var2 -> var17 != var18 ) { 
+func5 ( var1 , var15 , str 
+str ) ; 
+var11 = func2 ( var21 ) ; 
+goto var16 ; 
+} 
+} 
+if ( var2 -> var22 ) { 
+var13 = func6 ( & var2 -> var23 , var2 -> var22 ) ; 
+if ( var13 < number ) { 
+func5 ( var1 , var15 , str , var2 -> var22 ) ; 
+goto var16 ; 
+} 
+} 
+var13 = func7 ( & var24 , var5 , var25 , 
+& var26 , ( void ** ) & var4 ) ; 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var2 -> var4 = var4 ; 
+var13 = func7 ( & var28 , var5 , var25 , 
+& var29 , ( void ** ) & var6 ) ; 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+if ( var2 -> var14 ) { 
+func5 ( var1 , var30 , str ) ; 
+func8 ( var1 , var6 , var31 , var32 , var5 ) ; 
+func5 ( var1 , var30 , str ) ; 
+func8 ( var1 , var6 , var33 , var34 , var5 ) ; 
+var11 = var35 ; 
+goto var16 ; 
+} 
+if ( var2 -> var36 ) { 
+if ( var2 -> var37 [ var31 ] ) 
+if ( ( var13 = func9 ( var1 , var6 , var31 , var32 ) ) ) { 
+var11 = var13 ; 
+goto var16 ; 
+} 
+if ( var2 -> var37 [ var33 ] ) { 
+if ( func9 ( var1 , var6 , var33 , var34 ) ) { 
+if ( ( var13 = func9 ( var1 , var6 , var33 , var32 ) ) ) { 
+var11 = var13 ; 
+goto var16 ; 
+} 
+} 
+} 
+} 
+if ( var2 -> var37 [ var31 ] ) { 
+if ( ( var13 = func10 ( var1 , var6 , var31 , var32 ) ) < number || 
+( var13 = func11 ( var1 , var31 ) ) < number ) { 
+var11 = var13 ; 
+goto var16 ; 
+} 
+} 
+if ( var2 -> var37 [ var33 ] ) { 
+if ( ( var13 = func10 ( var1 , var6 , var33 , var34 ) ) < number || 
+( var13 = func11 ( var1 , var33 ) ) < number ) { 
+func5 ( var1 , var30 , str , var2 -> var37 [ var33 ] ) ; 
+if ( ( var13 = func10 ( var1 , var6 , var33 , var32 ) ) < number || 
+( var13 = func11 ( var1 , var33 ) ) < number ) { 
+var11 = var13 ; 
+goto var16 ; 
+} 
+} 
+} 
+if ( var2 -> var36 ) { 
+var11 = var35 ; 
+goto var16 ; 
+} 
+var2 -> var38 [ number ] = number ; 
+var2 -> var38 [ number ] = number ; 
+var2 -> var39 = func12 ( var5 , number , var5 ) ; 
+if ( ! var2 -> var39 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var2 -> var40 [ number ] = func13 ( var5 , number , number , var5 ) ; 
+if ( ! var2 -> var40 [ number ] ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var13 = func14 ( var4 , & var41 , ( void ** ) & var7 ) ; 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var2 -> var7 = var7 ; 
+var13 = func14 ( var4 , & var42 , ( void ** ) & var8 ) ; 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var2 -> var8 = var8 ; 
+var13 = func15 ( var8 , ( void * ) & var9 ) ; 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var10 = func16 ( ) ; 
+var13 = func17 ( var10 , var9 , var10 , & var2 -> var40 [ number ] , 
+number , number , var43 ) ; 
+if ( ! var13 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var13 = func18 ( var7 ) ; 
+if ( var13 == var44 ) { 
+OAFilterState var45 ; 
+var13 = func19 ( var7 , number , & var45 ) ; 
+} 
+if ( var13 != var27 ) { 
+func5 ( var1 , var15 , str ) ; 
+goto var16 ; 
+} 
+var11 = number ; 
+var16 : 
+if ( var6 ) 
+func20 ( var6 ) ; 
+if ( var11 < number ) 
+func21 ( var1 ) ; 
+return var11 ; 
+} 

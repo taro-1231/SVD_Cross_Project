@@ -1,0 +1,45 @@
+static int func1 ( PullupContext * var1 ) 
+{ 
+PullupField * var2 = var1 -> var3 ; 
+PullupField * var4 = var2 -> var5 ; 
+PullupField * var6 = var4 -> var5 ; 
+PullupField * var7 ; 
+int var8 , var9 , var10 ; 
+if ( func2 ( var1 -> var3 , var1 -> var11 ) < number ) 
+return number ; 
+var7 = var1 -> var3 ; 
+var10 = func2 ( var7 , var1 -> var11 ) ; 
+for ( var8 = number ; var8 < var10 - number ; var8 ++ ) { 
+if ( var8 < var10 - number ) 
+func3 ( var1 , var7 ) ; 
+func4 ( var1 , var7 ) ; 
+var7 = var7 -> var5 ; 
+} 
+if ( var2 -> var12 == - number ) 
+return number ; 
+var9 = func5 ( var2 , number ) ; 
+if ( var9 == number && var1 -> var13 < number ) 
+var9 = number ; 
+switch ( var9 ) { 
+case number : 
+return number + ( var1 -> var13 < number && var2 -> var12 == number && var4 -> var12 == - number ) ; 
+case number : 
+if ( var1 -> var14 
+&& ( var2 -> var15 -> var16 & var17 ) && ( var6 -> var16 & var18 ) 
+&& ( var2 -> var12 != number || var4 -> var12 != - number ) ) 
+return number ; 
+return number + ( var4 -> var12 != number ) ; 
+case number : 
+return number + ( var6 -> var12 != number ) ; 
+var19 : 
+if ( var4 -> var12 == number ) 
+return number ; 
+else if ( var4 -> var12 == - number ) 
+return number ; 
+else if ( var6 -> var12 == - number ) { 
+return ( var2 -> var12 == number ) ? number : number ; 
+} else { 
+return number ; 
+} 
+} 
+} 

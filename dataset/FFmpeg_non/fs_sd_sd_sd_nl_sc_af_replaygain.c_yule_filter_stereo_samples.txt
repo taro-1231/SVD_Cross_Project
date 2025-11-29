@@ -1,0 +1,52 @@
+static void func1 ( ReplayGainContext * var1 , const float * var2 , 
+float * var3 , int var4 ) 
+{ 
+const double * var5 = var1 -> var6 ; 
+const double * var7 = var1 -> var8 ; 
+float * var9 = var1 -> var10 ; 
+float * var11 = var1 -> var12 ; 
+double var13 , var14 ; 
+int var15 , var16 ; 
+var15 = var1 -> var17 ; 
+for ( var16 = - number ; var16 < number ; ++ var16 ) 
+if ( fabs ( var9 [ var15 + var16 ] ) > number || fabs ( var11 [ var15 + var16 ] ) > number ) 
+break ; 
+if ( ! var16 ) { 
+memset ( var1 -> var10 , number , sizeof ( var1 -> var10 ) ) ; 
+memset ( var1 -> var12 , number , sizeof ( var1 -> var12 ) ) ; 
+} 
+while ( var4 -- ) { 
+var13 = ( var11 [ var15 ] = var2 [ number ] ) * var7 [ number ] ; 
+var14 = ( var11 [ var15 + number ] = var2 [ number ] ) * var7 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var13 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var14 += var11 [ var15 - number ] * var7 [ number ] - var9 [ var15 - number ] * var5 [ number ] ; 
+var3 [ number ] = var9 [ var15 ] = ( float ) var13 ; 
+var3 [ number ] = var9 [ var15 + number ] = ( float ) var14 ; 
+var2 += number ; 
+var3 += number ; 
+if ( ( var15 += number ) == number ) { 
+memcpy ( var9 , var9 + number , sizeof ( * var9 ) * number ) ; 
+memcpy ( var11 , var11 + number , sizeof ( * var11 ) * number ) ; 
+var15 = number ; 
+} 
+} 
+var1 -> var17 = var15 ; 
+} 

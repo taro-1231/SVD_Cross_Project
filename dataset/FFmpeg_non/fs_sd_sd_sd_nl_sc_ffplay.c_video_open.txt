@@ -1,0 +1,45 @@
+static int func1 ( VideoState * var1 ) 
+{ 
+int var2 , var3 ; 
+if ( var4 ) { 
+var2 = var4 ; 
+var3 = var5 ; 
+} else { 
+var2 = var6 ; 
+var3 = var7 ; 
+} 
+if ( ! var8 ) { 
+int var9 = var10 ; 
+if ( ! var11 ) 
+var11 = var12 ; 
+if ( var13 ) 
+var9 |= var14 ; 
+if ( var15 ) 
+var9 |= var16 ; 
+else 
+var9 |= var17 ; 
+var8 = func2 ( var11 , var18 , var18 , var2 , var3 , var9 ) ; 
+func3 ( var19 , str ) ; 
+if ( var8 ) { 
+SDL_RendererInfo var20 ; 
+var21 = func4 ( var8 , - number , var22 | var23 ) ; 
+if ( ! var21 ) { 
+func5 ( var24 , var25 , str , func6 ( ) ) ; 
+var21 = func4 ( var8 , - number , number ) ; 
+} 
+if ( var21 ) { 
+if ( ! func7 ( var21 , & var20 ) ) 
+func5 ( var24 , var26 , str , var20 . var27 ) ; 
+} 
+} 
+} else { 
+func8 ( var8 , var2 , var3 ) ; 
+} 
+if ( ! var8 || ! var21 ) { 
+func5 ( var24 , var28 , str ) ; 
+func9 ( var1 ) ; 
+} 
+var1 -> var29 = var2 ; 
+var1 -> var30 = var3 ; 
+return number ; 
+} 

@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+PulseData * var2 = var1 -> var3 ; 
+pa_operation * var4 ; 
+if ( ! ( var4 = func2 ( var2 -> var5 , var2 -> var6 , 
+var7 , var2 ) ) ) { 
+func3 ( var2 , var8 , str ) ; 
+return var9 ; 
+} 
+while ( func4 ( var4 ) == var10 ) 
+func5 ( var2 -> var11 ) ; 
+func6 ( var4 ) ; 
+return number ; 
+} 

@@ -1,0 +1,11 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+FPSContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+var2 -> var5 += func2 ( var2 -> var4 ) / sizeof ( AVFrame * ) ; 
+func3 ( var2 -> var4 ) ; 
+func4 ( & var2 -> var4 ) ; 
+} 
+av_log ( var1 , AV_LOG_VERBOSE , str 
+str , var2 -> frames_in , var2 -> frames_out , var2 -> var5 , var2 -> dup ) ; 
+} 

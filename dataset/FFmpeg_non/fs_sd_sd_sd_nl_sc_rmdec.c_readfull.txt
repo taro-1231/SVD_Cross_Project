@@ -1,0 +1,19 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , uint8_t * var3 , int var4 ) { 
+int var5 = func2 ( var2 , var3 , var4 ) ; 
+if ( var5 != var4 ) { 
+if ( var5 >= number ) memset ( var3 + var5 , number , var4 - var5 ) ; 
+else memset ( var3 , number , var4 ) ; 
+func3 ( var1 , var6 , str ) ; 
+} 
+return var5 ; 
+} 
+} 
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , uint8_t * var3 , int var4 ) { 
+int var5 = func2 ( var2 , var3 , var4 ) ; 
+if ( var5 != var4 ) { 
+if ( var5 >= number ) memset ( var3 + var5 , number , var4 - var5 ) ; 
+else memset ( var3 , number , var4 ) ; 
+func3 ( var1 , var6 , str ) ; 
+} 
+return var5 ; 
+} 

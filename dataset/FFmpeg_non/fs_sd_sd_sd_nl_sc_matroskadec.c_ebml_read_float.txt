@@ -1,0 +1,12 @@
+static int func1 ( AVIOContext * var1 , int var2 , double * var3 ) 
+{ 
+if ( var2 == number ) 
+* var3 = number ; 
+else if ( var2 == number ) 
+* var3 = func2 ( func3 ( var1 ) ) ; 
+else if ( var2 == number ) 
+* var3 = func4 ( func5 ( var1 ) ) ; 
+else 
+return var4 ; 
+return number ; 
+} 

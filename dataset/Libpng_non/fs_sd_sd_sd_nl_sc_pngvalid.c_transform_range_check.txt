@@ -1,0 +1,33 @@
+func1 ( png_const_structp var1 , unsigned int var2 , unsigned int var3 , 
+unsigned int var4 , unsigned int var5 , unsigned int var6 , double var7 , 
+unsigned int var8 , png_byte var9 , double var10 , double var11 , 
+PNG_CONST char * var12 , double var13 ) 
+{ 
+unsigned int var14 = ( number << var9 ) - number ; 
+double var15 = ceil ( ( var7 - var10 ) * var14 - var13 ) ; 
+double var16 = floor ( ( var7 + var10 ) * var14 + var13 ) ; 
+if ( var10 > var11 || ! ( var8 >= var15 && var8 <= var16 ) ) 
+{ 
+char var17 [ number ] ; 
+size_t var18 ; 
+var18 = func2 ( var17 , sizeof var17 , number , var12 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var2 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var3 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var4 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var5 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var8 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func3 ( var17 , sizeof var17 , var18 , var6 ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func4 ( var17 , sizeof var17 , var18 , ( var7 - var10 ) * var14 , number ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+var18 = func4 ( var17 , sizeof var17 , var18 , ( var7 + var10 ) * var14 , number ) ; 
+var18 = func2 ( var17 , sizeof var17 , var18 , str ) ; 
+func5 ( var1 , var17 ) ; 
+} 
+} 

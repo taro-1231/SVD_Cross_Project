@@ -1,0 +1,23 @@
+av_cold void func1 ( ResampleContext * var1 , 
+enum AVSampleFormat var2 ) 
+{ 
+int var3 = func2 ( ) ; 
+if ( func3 ( var3 ) ) { 
+if ( ! var1 -> var4 ) { 
+switch ( var2 ) { 
+case var5 : 
+var1 -> var6 = var7 ; 
+break ; 
+case var8 : 
+var1 -> var6 = var9 ; 
+break ; 
+case var10 : 
+var1 -> var6 = var11 ; 
+break ; 
+case var12 : 
+var1 -> var6 = var13 ; 
+break ; 
+} 
+} 
+} 
+} 

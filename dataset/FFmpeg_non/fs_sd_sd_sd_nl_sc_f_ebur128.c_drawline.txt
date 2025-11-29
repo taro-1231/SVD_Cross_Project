@@ -1,0 +1,9 @@
+static void func1 ( AVFrame * var1 , int var2 , int var3 , int var4 , int var5 ) 
+{ 
+int var6 ; 
+uint8_t * var7 = var1 -> var8 [ number ] + var3 * var1 -> var9 [ number ] + var2 * number ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) { 
+memcpy ( var7 , str , number ) ; 
+var7 += var5 ; 
+} 
+} 

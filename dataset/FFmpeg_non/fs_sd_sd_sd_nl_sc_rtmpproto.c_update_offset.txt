@@ -1,0 +1,13 @@
+static int func1 ( RTMPContext * var1 , int var2 ) 
+{ 
+int var3 ; 
+if ( var1 -> var4 < var1 -> var5 ) { 
+var3 = var1 -> var5 ; 
+var1 -> var5 += var2 ; 
+} else { 
+var3 = number ; 
+var1 -> var5 = var2 ; 
+var1 -> var4 = number ; 
+} 
+return var3 ; 
+} 

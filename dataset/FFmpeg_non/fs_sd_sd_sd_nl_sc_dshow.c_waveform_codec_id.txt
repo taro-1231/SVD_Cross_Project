@@ -1,0 +1,9 @@
+static enum AVCodecID func1 ( enum AVSampleFormat var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : return var3 ; 
+case var4 : return var5 ; 
+case var6 : return var7 ; 
+var8 : return var9 ; 
+} 
+} 

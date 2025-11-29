@@ -1,0 +1,129 @@
+static void func1 ( int var2 ) 
+{ 
+int var3 , var4 ; 
+if ( var5 ) { 
+int var6 = func2 ( ) / number ; 
+func3 ( var1 , var7 , str , var6 ) ; 
+} 
+for ( var3 = number ; var3 < var8 ; var3 ++ ) { 
+FilterGraph * var9 = var10 [ var3 ] ; 
+func4 ( & var9 -> var11 ) ; 
+for ( var4 = number ; var4 < var9 -> var12 ; var4 ++ ) { 
+while ( func5 ( var9 -> var13 [ var4 ] -> var14 ) ) { 
+AVFrame * var15 ; 
+func6 ( var9 -> var13 [ var4 ] -> var14 , & var15 , 
+sizeof ( var15 ) , var1 ) ; 
+func7 ( & var15 ) ; 
+} 
+func8 ( var9 -> var13 [ var4 ] -> var14 ) ; 
+if ( var9 -> var13 [ var4 ] -> var16 -> var17 . var18 ) { 
+while ( func5 ( var9 -> var13 [ var4 ] -> var16 -> var17 . var18 ) ) { 
+AVSubtitle var19 ; 
+func6 ( var9 -> var13 [ var4 ] -> var16 -> var17 . var18 , 
+& var19 , sizeof ( var19 ) , var1 ) ; 
+func9 ( & var19 ) ; 
+} 
+func8 ( var9 -> var13 [ var4 ] -> var16 -> var17 . var18 ) ; 
+} 
+func10 ( & var9 -> var13 [ var4 ] -> var20 ) ; 
+func11 ( & var9 -> var13 [ var4 ] -> var21 ) ; 
+func11 ( & var9 -> var13 [ var4 ] ) ; 
+} 
+func11 ( & var9 -> var13 ) ; 
+for ( var4 = number ; var4 < var9 -> var22 ; var4 ++ ) { 
+func11 ( & var9 -> var23 [ var4 ] -> var21 ) ; 
+func11 ( & var9 -> var23 [ var4 ] -> var24 ) ; 
+func11 ( & var9 -> var23 [ var4 ] -> var25 ) ; 
+func11 ( & var9 -> var23 [ var4 ] -> var26 ) ; 
+func11 ( & var9 -> var23 [ var4 ] ) ; 
+} 
+func11 ( & var9 -> var23 ) ; 
+func11 ( & var9 -> var27 ) ; 
+func11 ( & var10 [ var3 ] ) ; 
+} 
+func11 ( & var10 ) ; 
+func11 ( & var28 ) ; 
+for ( var3 = number ; var3 < var29 ; var3 ++ ) { 
+OutputFile * var30 = var31 [ var3 ] ; 
+AVFormatContext * var32 ; 
+if ( ! var30 ) 
+continue ; 
+var32 = var30 -> var33 ; 
+if ( var32 && var32 -> var34 && ! ( var32 -> var34 -> var35 & var36 ) ) 
+func12 ( & var32 -> var37 ) ; 
+func13 ( var32 ) ; 
+func14 ( & var30 -> var38 ) ; 
+func11 ( & var31 [ var3 ] ) ; 
+} 
+for ( var3 = number ; var3 < var39 ; var3 ++ ) { 
+OutputStream * var40 = var41 [ var3 ] ; 
+if ( ! var40 ) 
+continue ; 
+for ( var4 = number ; var4 < var40 -> var42 ; var4 ++ ) 
+func15 ( & var40 -> var43 [ var4 ] ) ; 
+func11 ( & var40 -> var43 ) ; 
+func11 ( & var40 -> var44 ) ; 
+func7 ( & var40 -> var45 ) ; 
+func7 ( & var40 -> var46 ) ; 
+func14 ( & var40 -> var47 ) ; 
+func16 ( var40 -> var48 ) ; 
+func17 ( & var40 -> var49 ) ; 
+func11 ( & var40 -> var50 ) ; 
+func18 ( var40 -> var51 ) ; 
+func11 ( & var40 -> var52 ) ; 
+func11 ( & var40 -> var53 ) ; 
+func11 ( & var40 -> var54 ) ; 
+var40 -> var55 = number ; 
+func14 ( & var40 -> var56 ) ; 
+func17 ( & var40 -> var57 ) ; 
+func19 ( & var40 -> var58 ) ; 
+if ( var40 -> var59 ) { 
+while ( func5 ( var40 -> var59 ) ) { 
+AVPacket var60 ; 
+func6 ( var40 -> var59 , & var60 , sizeof ( var60 ) , var1 ) ; 
+func20 ( & var60 ) ; 
+} 
+func21 ( & var40 -> var59 ) ; 
+} 
+func11 ( & var41 [ var3 ] ) ; 
+} 
+func22 ( ) ; 
+for ( var3 = number ; var3 < var61 ; var3 ++ ) { 
+func23 ( & var62 [ var3 ] -> var33 ) ; 
+func11 ( & var62 [ var3 ] ) ; 
+} 
+for ( var3 = number ; var3 < var63 ; var3 ++ ) { 
+InputStream * var16 = var64 [ var3 ] ; 
+func7 ( & var16 -> var65 ) ; 
+func7 ( & var16 -> var66 ) ; 
+func14 ( & var16 -> var67 ) ; 
+func9 ( & var16 -> var68 . var69 ) ; 
+func7 ( & var16 -> var17 . var15 ) ; 
+func11 ( & var16 -> var70 ) ; 
+func11 ( & var16 -> var71 ) ; 
+func11 ( & var16 -> var72 ) ; 
+func17 ( & var16 -> var73 ) ; 
+func11 ( & var64 [ var3 ] ) ; 
+} 
+if ( var74 ) { 
+if ( fclose ( var74 ) ) 
+func3 ( var1 , var75 , 
+str , 
+func24 ( func25 ( var76 ) ) ) ; 
+} 
+func11 ( & var77 ) ; 
+func11 ( & var64 ) ; 
+func11 ( & var62 ) ; 
+func11 ( & var41 ) ; 
+func11 ( & var31 ) ; 
+func26 ( ) ; 
+func27 ( ) ; 
+if ( var78 ) { 
+func3 ( var1 , var7 , str , 
+( int ) var78 ) ; 
+} else if ( var2 && func28 ( & var79 ) ) { 
+func3 ( var1 , var7 , str ) ; 
+} 
+func29 ( ) ; 
+var80 = number ; 
+} 

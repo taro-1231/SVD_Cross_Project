@@ -1,0 +1,84 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVStream * var3 , int var4 , int * var5 , int * var6 ) 
+{ 
+int var7 ; 
+int var8 = number ; 
+AVDictionaryEntry * var9 ; 
+MatroskaVideoStereoModeType var10 = var11 ; 
+* var5 = number ; 
+* var6 = number ; 
+if ( ( var9 = func2 ( var3 -> var12 , str , var15 , number ) ) || 
+( var9 = func2 ( var1 -> var12 , str , var15 , number ) ) ) { 
+int var14 = atoi ( var9 -> var16 ) ; 
+for ( var7 = number ; var7 < var11 ; var7 ++ ) 
+if ( ! strcmp ( var9 -> var16 , var17 [ var7 ] ) ) { 
+var14 = var7 ; 
+break ; 
+} 
+if ( var14 < var11 && 
+var14 != number && var14 != number ) { 
+int var8 = func3 ( var3 , var14 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+} 
+} 
+for ( var7 = number ; var7 < var3 -> var18 ; var7 ++ ) { 
+AVPacketSideData var19 = var3 -> var20 [ var7 ] ; 
+if ( var19 . var21 == var22 ) { 
+AVStereo3D * var23 = ( AVStereo3D * ) var19 . var13 ; 
+switch ( var23 -> var21 ) { 
+case var24 : 
+var10 = var25 ; 
+break ; 
+case var26 : 
+var10 = ( var23 -> var27 & var28 ) 
+? var29 
+: var30 ; 
+* var5 = number ; 
+break ; 
+case var31 : 
+var10 = var32 ; 
+if ( var23 -> var27 & var28 ) 
+var10 -- ; 
+* var6 = number ; 
+break ; 
+case var33 : 
+var10 = var34 ; 
+if ( var23 -> var27 & var28 ) 
+var10 -- ; 
+break ; 
+case var35 : 
+var10 = var36 ; 
+if ( var23 -> var27 & var28 ) 
+var10 -- ; 
+* var6 = number ; 
+break ; 
+case var37 : 
+var10 = var38 ; 
+if ( var23 -> var27 & var28 ) 
+var10 -- ; 
+* var5 = number ; 
+break ; 
+case var39 : 
+var10 = var40 ; 
+if ( var23 -> var27 & var28 ) 
+var10 ++ ; 
+break ; 
+} 
+break ; 
+} 
+} 
+if ( var10 == var11 ) 
+return var8 ; 
+if ( ( var4 == var41 && 
+var10 > var32 && 
+var10 != var29 ) 
+|| var10 >= var11 ) { 
+func4 ( var1 , var42 , 
+str ) ; 
+var10 = var11 ; 
+return func5 ( var43 ) ; 
+} 
+func6 ( var2 , var44 , var10 ) ; 
+return var8 ; 
+} 

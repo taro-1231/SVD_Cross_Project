@@ -1,0 +1,70 @@
+func1 ( Transform * func2 , png_const_voidp var1 , png_const_voidp var2 , 
+png_uint_32 var3 , png_uint_32 var4 
+{ 
+int var5 ; 
+png_const_charp var6 ; 
+Pixel var7 , var8 , var9 ; 
+func2 -> func3 ( & var7 , var1 ) ; 
+if ( func2 -> func4 == var10 ) 
+func2 -> func2 ( & var8 , & var7 , func2 -> var11 ) ; 
+else 
+{ 
+func2 -> func2 ( & var9 , & var7 , func2 -> var11 ) ; 
+func2 -> func4 ( & var8 , & var9 , var10 ) ; 
+} 
+func2 -> func5 ( & var9 , var2 ) ; 
+if ( var8 . var12 == var9 . var12 && var8 . var13 == var9 . var13 && 
+var8 . var14 == var9 . var14 && var8 . var15 == var9 . var15 ) 
+return number ; 
+if ( func2 -> var16 && var8 . var12 == number && var9 . var12 == number ) 
+return number ; 
+var6 = var10 ; 
+{ 
+int var17 = abs ( var8 . var12 - var9 . var12 ) ; 
+if ( var17 > func2 -> var18 [ number ] ) 
+{ 
+if ( func2 -> var19 ) 
+func2 -> var18 [ number ] = ( png_uint_16 ) var17 ; 
+else 
+var6 = str ; 
+} 
+} 
+if ( var6 == var10 && func2 -> var16 && 
+( var8 . var12 == number || var9 . var12 == number ) ) 
+return number ; 
+if ( var6 == var10 ) 
+{ 
+int var20 = abs ( var8 . var13 - var9 . var13 ) ; 
+int var21 = abs ( var8 . var14 - var9 . var14 ) ; 
+int var22 = abs ( var8 . var15 - var9 . var15 ) ; 
+int var23 ; 
+if ( ( var20 | var21 | var22 ) == number ) 
+return number ; 
+if ( var7 . var12 >= func2 -> var24 ) 
+{ 
+var6 = str ; 
+var23 = number ; 
+} 
+else if ( var7 . var12 > number ) 
+{ 
+var6 = str ; 
+var23 = number ; 
+} 
+else 
+{ 
+var6 = str ; 
+var23 = number ; 
+} 
+var5 = var20 ; 
+if ( var5 < var21 ) var5 = var21 ; 
+if ( var5 < var22 ) var5 = var22 ; 
+if ( var5 <= func2 -> var18 [ var23 ] ) 
+return number ; 
+if ( func2 -> var19 ) 
+{ 
+func2 -> var18 [ var23 ] = ( png_uint_16 ) var5 ; 
+return number ; 
+} 
+} 
+return func6 ( func2 , var3 , var4 , & var7 , & var8 , & var9 , var6 ) ; 
+} 

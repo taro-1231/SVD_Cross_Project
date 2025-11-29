@@ -1,0 +1,13 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+char var4 [ number ] ; 
+time_t var5 = time ( var6 ) ; 
+struct tm * var7 = localtime ( & var5 ) ; 
+if ( ! var7 ) { 
+func2 ( var6 , var8 , str , strerror ( var9 ) ) ; 
+func3 ( number ) ; 
+} 
+snprintf ( var4 , sizeof ( var4 ) , str , var7 -> var10 , var7 -> var11 , 
+var7 -> var12 ) ; 
+return func4 ( var6 , var2 , var4 ) ; 
+} 

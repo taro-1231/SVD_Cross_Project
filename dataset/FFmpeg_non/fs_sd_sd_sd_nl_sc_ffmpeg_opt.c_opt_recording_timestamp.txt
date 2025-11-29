@@ -1,0 +1,13 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+OptionsContext * var4 = var1 ; 
+char var5 [ number ] ; 
+int64_t var6 = func2 ( var2 , var3 , number ) / number ; 
+struct tm var7 = * gmtime ( ( time_t * ) & var6 ) ; 
+if ( ! strftime ( var5 , sizeof ( var5 ) , str , & var7 ) ) 
+return - number ; 
+func3 ( var4 , str , var5 , var8 ) ; 
+av_log ( NULL , AV_LOG_WARNING , str 
+str , var2 ) ; 
+return number ; 
+} 

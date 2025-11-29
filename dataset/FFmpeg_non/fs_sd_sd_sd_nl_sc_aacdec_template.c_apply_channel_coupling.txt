@@ -1,0 +1,26 @@
+static void func1 ( AACContext * var1 , ChannelElement * var2 , 
+enum RawDataBlockType var3 , int var4 , 
+enum CouplingPoint var5 , 
+void ( * func2 ) ( AACContext * var1 , SingleChannelElement * target , ChannelElement * var6 , int var7 ) ) 
+{ 
+int var8 , var9 ; 
+for ( var8 = number ; var8 < var10 ; var8 ++ ) { 
+ChannelElement * var6 = var1 -> var11 [ var12 ] [ var8 ] ; 
+int var7 = number ; 
+if ( var6 && var6 -> var13 . var5 == var5 ) { 
+ChannelCoupling * var13 = & var6 -> var13 ; 
+for ( var9 = number ; var9 <= var13 -> var14 ; var9 ++ ) { 
+if ( var13 -> var3 [ var9 ] == var3 && var13 -> var15 [ var9 ] == var4 ) { 
+if ( var13 -> var16 [ var9 ] != number ) { 
+func2 ( var1 , & var2 -> var17 [ number ] , var6 , var7 ) ; 
+if ( var13 -> var16 [ var9 ] != number ) 
+var7 ++ ; 
+} 
+if ( var13 -> var16 [ var9 ] != number ) 
+func2 ( var1 , & var2 -> var17 [ number ] , var6 , var7 ++ ) ; 
+} else 
+var7 += number + ( var13 -> var16 [ var9 ] == number ) ; 
+} 
+} 
+} 
+} 

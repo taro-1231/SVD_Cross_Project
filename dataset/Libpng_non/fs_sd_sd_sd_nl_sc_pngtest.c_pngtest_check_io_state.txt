@@ -1,0 +1,29 @@
+func1 ( png_structp var1 , png_size_t var2 , 
+png_uint_32 var3 ) 
+{ 
+png_uint_32 var4 = func2 ( var1 ) ; 
+int var5 = number ; 
+if ( ( var4 & var6 ) != var3 ) 
+func3 ( var1 , str ) ; 
+switch ( var4 & var7 ) 
+{ 
+case var8 : 
+if ( var2 > number ) 
+var5 = number ; 
+break ; 
+case var9 : 
+if ( var2 != number ) 
+var5 = number ; 
+break ; 
+case var10 : 
+break ; 
+case var11 : 
+if ( var2 != number ) 
+var5 = number ; 
+break ; 
+var12 : 
+var5 = number ; 
+} 
+if ( var5 ) 
+func3 ( var1 , str ) ; 
+} 

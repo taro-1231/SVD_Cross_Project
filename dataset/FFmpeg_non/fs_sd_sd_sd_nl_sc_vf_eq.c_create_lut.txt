@@ -1,0 +1,20 @@
+static void func1 ( EQParameters * var1 ) 
+{ 
+int var2 ; 
+double var3 = number / var1 -> var4 ; 
+double var5 = number - var1 -> var6 ; 
+for ( var2 = number ; var2 < number ; var2 ++ ) { 
+double var7 = var2 / number ; 
+var7 = var1 -> var8 * ( var7 - number ) + number + var1 -> var9 ; 
+if ( var7 <= number ) { 
+var1 -> var10 [ var2 ] = number ; 
+} else { 
+var7 = var7 * var5 + pow ( var7 , var3 ) * var1 -> var6 ; 
+if ( var7 >= number ) 
+var1 -> var10 [ var2 ] = number ; 
+else 
+var1 -> var10 [ var2 ] = number * var7 ; 
+} 
+} 
+var1 -> var11 = number ; 
+} 

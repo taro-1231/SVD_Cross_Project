@@ -1,0 +1,6 @@
+static av_cold void func1 ( FFPsyContext * var1 ) 
+{ 
+AacPsyContext * var2 = ( AacPsyContext * ) var1 -> var3 ; 
+func2 ( & var2 -> var4 ) ; 
+func2 ( & var1 -> var3 ) ; 
+} 

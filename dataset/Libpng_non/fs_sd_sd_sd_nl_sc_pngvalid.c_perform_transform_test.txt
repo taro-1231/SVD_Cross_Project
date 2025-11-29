@@ -1,0 +1,31 @@
+func1 ( png_modifier * var1 ) 
+{ 
+png_byte var2 = number ; 
+png_byte var3 = number ; 
+unsigned int var4 = number ; 
+while ( func2 ( & var2 , & var3 , & var4 , number ) ) 
+{ 
+png_uint_32 var5 = number ; 
+size_t var6 ; 
+char var7 [ number ] ; 
+var6 = func3 ( var7 , sizeof var7 , number , str ) ; 
+for ( ; ; ) 
+{ 
+size_t var8 = var6 ; 
+PNG_CONST image_transform * var9 = number ; 
+var5 = func4 ( & var9 , number var5 , 
+var7 , sizeof var7 , & var8 , var2 , var3 ) ; 
+if ( var5 == number ) 
+break ; 
+do 
+{ 
+var1 -> var10 = number ; 
+func5 ( var1 , func6 ( var2 , var3 , var4 , 
+var1 -> var11 , number , number , number ) , var9 , var7 ) ; 
+if ( func7 ( var1 ) ) 
+return ; 
+} 
+while ( var1 -> var10 ) ; 
+} 
+} 
+} 

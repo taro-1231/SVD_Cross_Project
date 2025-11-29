@@ -1,0 +1,4 @@
+int func1 ( uch * var1 , uch * var2 , uch * var3 ) 
+{ 
+return number ; 
+} 

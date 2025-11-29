@@ -1,0 +1,8 @@
+static int64_t func1 ( AVIOContext * var1 ) 
+{ 
+int64_t var2 = func2 ( var1 ) + number ; 
+if ( var2 & number ) 
+return - ( var2 >> number ) ; 
+else 
+return ( var2 >> number ) ; 
+} 

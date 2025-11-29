@@ -1,0 +1,22 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+ShowWavesContext * var6 = var2 -> var7 ; 
+int var8 = var4 -> var9 ; 
+if ( ! var6 -> var10 ) 
+var6 -> var10 = func2 ( number , ( ( double ) var4 -> var11 / ( var6 -> var12 * func3 ( var6 -> var13 ) ) ) + number ) ; 
+var6 -> var14 = number ; 
+if ( ! ( var6 -> var15 = func4 ( var8 , sizeof ( * var6 -> var15 ) ) ) ) { 
+func5 ( var2 , var16 , str ) ; 
+return func6 ( var17 ) ; 
+} 
+var1 -> var12 = var6 -> var12 ; 
+var1 -> var18 = var6 -> var18 ; 
+var1 -> sample_aspect_ratio = ( AVRational ) { number , number } ; 
+var1 -> var19 = av_div_q ( ( AVRational ) { var4 -> var11 , var6 -> var10 } , 
+( AVRational ) { var6 -> var12 , number } ) ; 
+func5 ( var2 , var20 , str , 
+var6 -> var12 , var6 -> var18 , func3 ( var1 -> var19 ) , var6 -> var10 ) ; 
+return number ; 
+} 

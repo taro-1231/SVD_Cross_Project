@@ -1,0 +1,8 @@
+func1 ( PNG_CONST png_modifier * var1 , color_encoding * var2 ) 
+{ 
+if ( var1 -> var3 != number ) 
+* var2 = * var1 -> var3 ; 
+else 
+memset ( var2 , number , sizeof * var2 ) ; 
+var2 -> var4 = var1 -> var5 ; 
+} 

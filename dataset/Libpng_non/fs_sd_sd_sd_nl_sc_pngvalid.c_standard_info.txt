@@ -1,0 +1,6 @@
+func1 ( png_structp var1 , png_infop var2 ) 
+{ 
+standard_display * var3 = voidcast ( standard_display * , 
+png_get_progressive_ptr ( var1 ) ) ; 
+func2 ( var3 , var1 , var2 , number ; 
+} 

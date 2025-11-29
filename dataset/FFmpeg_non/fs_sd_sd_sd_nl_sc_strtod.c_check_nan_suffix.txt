@@ -1,0 +1,10 @@
+static char * func1 ( char * var1 ) 
+{ 
+char * var2 = var1 ; 
+if ( * var1 ++ != str ) 
+return var2 ; 
+while ( ( * var1 >= str && * var1 <= str ) || ( * var1 >= str && * var1 <= str ) || 
+( * var1 >= str && * var1 <= str ) || * var1 == str ) 
+var1 ++ ; 
+return * var1 == str ? var1 + number : var2 ; 
+} 

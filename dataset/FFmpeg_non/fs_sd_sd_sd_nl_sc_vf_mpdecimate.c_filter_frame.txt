@@ -1,0 +1,23 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+DecimateContext * var3 = var1 -> var4 -> var5 ; 
+AVFilterLink * var6 = var1 -> var4 -> var7 [ number ] ; 
+int var8 ; 
+if ( var3 -> var9 && func2 ( var1 -> var4 , var2 , var3 -> var9 ) ) { 
+var3 -> var10 = func3 ( number , var3 -> var10 + number ) ; 
+} else { 
+func4 ( & var3 -> var9 ) ; 
+var3 -> var9 = var2 ; 
+var3 -> var10 = func5 ( - number , var3 -> var10 - number ) ; 
+if ( ( var8 = func6 ( var6 , func7 ( var2 ) ) ) < number ) 
+return var8 ; 
+} 
+func8 ( var1 -> var4 , var11 , 
+str , 
+var3 -> var10 > number ? str : str , 
+func9 ( var2 -> var12 ) , func10 ( var2 -> var12 , & var1 -> var13 ) , 
+var3 -> var10 ) ; 
+if ( var3 -> var10 > number ) 
+func4 ( & var2 ) ; 
+return number ; 
+} 

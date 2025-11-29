@@ -1,0 +1,11 @@
+double func1 ( const int32_t var1 [ 9 ] ) 
+{ 
+double var2 , var3 [ number ] ; 
+var3 [ number ] = hypot ( func2 ( var1 [ number ] ) , func2 ( var1 [ number ] ) ) ; 
+var3 [ number ] = hypot ( func2 ( var1 [ number ] ) , func2 ( var1 [ number ] ) ) ; 
+if ( var3 [ number ] == number || var3 [ number ] == number ) 
+return var4 ; 
+var2 = atan2 ( func2 ( var1 [ number ] ) / var3 [ number ] , 
+func2 ( var1 [ number ] ) / var3 [ number ] ) * number / var5 ; 
+return - var2 ; 
+} 

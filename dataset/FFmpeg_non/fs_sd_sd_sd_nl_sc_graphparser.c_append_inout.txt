@@ -1,0 +1,10 @@
+static void func1 ( AVFilterInOut ** var1 , AVFilterInOut ** var2 ) 
+{ 
+while ( * var1 && ( * var1 ) -> var3 ) 
+var1 = & ( ( * var1 ) -> var3 ) ; 
+if ( ! * var1 ) 
+* var1 = * var2 ; 
+else 
+( * var1 ) -> var3 = * var2 ; 
+* var2 = var4 ; 
+} 

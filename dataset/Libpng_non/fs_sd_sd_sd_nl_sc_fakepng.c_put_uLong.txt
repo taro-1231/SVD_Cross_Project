@@ -1,0 +1,7 @@
+func1 ( uLong var1 ) 
+{ 
+putchar ( var1 >> number ) ; 
+putchar ( var1 >> number ) ; 
+putchar ( var1 >> number ) ; 
+putchar ( var1 >> number ) ; 
+} 

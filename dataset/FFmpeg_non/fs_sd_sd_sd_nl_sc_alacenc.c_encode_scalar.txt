@@ -1,0 +1,23 @@
+static void func1 ( AlacEncodeContext * var1 , int var2 , 
+int var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 ; 
+var3 = func2 ( var3 , var1 -> var8 . var9 ) ; 
+var5 = ( number << var3 ) - number ; 
+var6 = var2 / var5 ; 
+var7 = var2 % var5 ; 
+if ( var6 > number ) { 
+func3 ( & var1 -> var10 , number , var11 ) ; 
+func3 ( & var1 -> var10 , var4 , var2 ) ; 
+} else { 
+if ( var6 ) 
+func3 ( & var1 -> var10 , var6 , ( number << var6 ) - number ) ; 
+func3 ( & var1 -> var10 , number , number ) ; 
+if ( var3 != number ) { 
+if ( var7 > number ) 
+func3 ( & var1 -> var10 , var3 , var7 + number ) ; 
+else 
+func3 ( & var1 -> var10 , var3 - number , number ) ; 
+} 
+} 
+} 

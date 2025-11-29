@@ -1,0 +1,56 @@
+int func1 ( void ) 
+{ 
+int var1 ; 
+char * var2 ; 
+static const char * const var3 [ ] = { 
+str str 
+str , 
+str , 
+str , 
+str , 
+str : str 
+str str , 
+str : str 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str 
+} ; 
+printf ( str ) ; 
+for ( var1 = number ; var1 < func3 ( var3 ) ; var1 ++ ) { 
+const char * var4 = var3 [ var1 ] ; 
+char * var5 ; 
+printf ( str , var4 ) ; 
+var5 = func2 ( & var4 , str ) ; 
+printf ( str , var5 ) ; 
+printf ( str , var4 ) ; 
+func4 ( var5 ) ; 
+} 
+printf ( str ) ; 
+var2 = func5 ( ( var6 ) , ( var7 ) ) ; \ 
+printf ( str , var2 ? var2 : str , var8 ) ; \ 
+func4 ( var2 ) ; 
+func6 ( var9 , var9 , str ) 
+func6 ( str , var9 , str ) ; 
+func6 ( var9 , str , str ) ; 
+func6 ( str , str , str ) ; 
+func6 ( str , str , str ) ; 
+func6 ( str , str , str ) ; 
+func6 ( str , str , str ) ; 
+func6 ( str , str , str ) ; 
+return number ; 
+} 

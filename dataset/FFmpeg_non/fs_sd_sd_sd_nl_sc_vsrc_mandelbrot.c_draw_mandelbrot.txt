@@ -1,0 +1,138 @@
+static void func1 ( AVFilterContext * var1 , uint32_t * var2 , int var3 , int64_t var4 ) 
+{ 
+MBContext * var5 = var1 -> var6 ; 
+int var7 , var8 , var9 , var10 = number , var11 = number , var12 ; 
+double var13 = var5 -> var14 * pow ( var5 -> var15 / var5 -> var14 , var4 / var5 -> var16 ) ; 
+int var17 = number ; 
+func2 ( var1 , var18 , & var10 , var18 , var5 -> var19 + var13 * ( - var5 -> var20 / number - number ) , var13 ) ; 
+var12 = var10 ; 
+memset ( var2 , number , sizeof ( * var2 ) * var5 -> var21 ) ; 
+for ( var8 = number ; var8 < var5 -> var20 ; var8 ++ ) { 
+int var22 = var8 + number ; 
+const double var23 = var5 -> var19 + var13 * ( var8 - var5 -> var20 / number ) ; 
+func2 ( var1 , var18 , & var10 , & var11 , var23 , var13 ) ; 
+if ( var22 < var5 -> var20 ) { 
+memset ( var2 + var3 * var22 , number , sizeof ( * var2 ) * var5 -> var21 ) ; 
+func2 ( var1 , var2 + var3 * var22 , & var12 , var18 , var23 + number * var13 / number , var13 ) ; 
+} 
+for ( var7 = number ; var7 < var5 -> var21 ; var7 ++ ) { 
+float var24 ( var25 ) ; 
+const double var26 = var5 -> var27 + var13 * ( var7 - var5 -> var21 / number ) ; 
+double var28 = var26 ; 
+double var29 = var23 ; 
+uint32_t var30 = number ; 
+double var31 = var5 -> var32 / ( double ) ( 1LL << 32 ) ; 
+var5 -> var32 = var5 -> var32 * number + number ; 
+if ( var2 [ var7 + var8 * var3 ] & number ) 
+continue ; 
+if ( ! var5 -> var33 ) { 
+if ( func3 ( var5 , var2 , var7 , var8 , var3 ) ) { 
+if ( var11 < var5 -> var34 ) { 
+var5 -> var35 [ var11 ] . var36 [ number ] = var26 ; 
+var5 -> var35 [ var11 ] . var36 [ number ] = var23 ; 
+var5 -> var35 [ var11 ++ ] . var37 = var2 [ var7 + var8 * var3 ] ; 
+} 
+continue ; 
+} 
+} else { 
+var28 += cos ( var4 * var5 -> var38 ) * var5 -> var33 ; 
+var29 += sin ( var4 * var5 -> var39 ) * var5 -> var33 ; 
+} 
+var17 = ( var7 == number || var5 -> var40 != var41 || var2 [ var7 - number + var8 * var3 ] == number ) ; 
+if ( var17 ) 
+var25 = var13 * number * sqrt ( func4 ( var7 - var5 -> var21 / number ) + func4 ( var8 - var5 -> var20 / number ) ) / var5 -> var21 ; 
+var42 = var44 * var44 - var45 * var45 + var26 ; \ 
+var43 = number * var44 * var45 + var23 ; 
+Z_Z2_C ( var42 , var43 , var44 , var45 ) \ 
+if ( var17 ) { \ 
+if ( var46 && fabs ( var5 -> var47 [ var9 >> number ] [ number ] - var42 ) + fabs ( var5 -> var47 [ var9 >> number ] [ number ] - var43 ) <= var25 ) \ 
+break ; \ 
+} \ 
+var5 -> var47 [ var9 ] [ number ] = var42 ; \ 
+var5 -> var47 [ var9 ] [ number ] = var43 ; \ 
+for ( var9 = number ; var9 < var5 -> var48 - number ; var9 ++ ) { 
+double var49 ; 
+Z_Z2_C_ZYKLUS ( var49 , var29 , var28 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var28 , var29 , var49 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var49 , var29 , var28 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var28 , var29 , var49 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var49 , var29 , var28 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var28 , var29 , var49 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var49 , var29 , var28 , var29 , number ) 
+var9 ++ ; 
+Z_Z2_C_ZYKLUS ( var28 , var29 , var49 , var29 , number ) 
+if ( var28 * var28 + var29 * var29 > var5 -> var50 ) { 
+var9 -= func5 ( number , var9 ) ; 
+for ( ; var9 < var5 -> var48 ; var9 ++ ) { 
+var28 = var5 -> var47 [ var9 ] [ number ] ; 
+var29 = var5 -> var47 [ var9 ] [ number ] ; 
+if ( var28 * var28 + var29 * var29 > var5 -> var50 ) { 
+switch ( var5 -> var51 ) { 
+case var52 : 
+var28 = var9 ; 
+var30 = func6 ( ( sin ( var28 ) + number ) * number ) + func6 ( ( sin ( var28 / number ) + number ) * number ) * number * number + func6 ( ( sin ( var28 / number ) + number ) * number ) * number ; 
+break ; 
+case var53 : 
+var28 = var9 + log2 ( log ( var5 -> var50 ) / log ( var28 * var28 + var29 * var29 ) ) ; 
+var30 = func6 ( ( sin ( var28 ) + number ) * number ) + func6 ( ( sin ( var28 / number ) + number ) * number ) * number * number + func6 ( ( sin ( var28 / number ) + number ) * number ) * number ; 
+break ; 
+case var54 : 
+var30 = number ; 
+break ; 
+case var55 : 
+var28 /= var5 -> var50 ; 
+var29 /= var5 -> var50 ; 
+var30 = ( ( ( int ) ( var28 * number + number ) ) & number ) * number + ( ( ( int ) ( var29 * number + number ) ) & number ) ; 
+} 
+break ; 
+} 
+} 
+break ; 
+} 
+} 
+if ( ! var30 ) { 
+if ( var5 -> var40 == var56 ) { 
+int var57 ; 
+for ( var57 = var9 - number ; var57 ; var57 -- ) 
+if ( func4 ( var5 -> var47 [ var57 ] [ number ] - var28 ) + func4 ( var5 -> var47 [ var57 ] [ number ] - var29 ) < var25 * var25 * number ) 
+break ; 
+if ( var57 ) { 
+var30 = var9 - var57 ; 
+var30 = ( ( var30 << number ) & number ) + ( ( var30 << number ) & number ) + ( ( var30 << number ) & number ) ; 
+} 
+} else if ( var5 -> var40 == var58 ) { 
+var30 = floor ( var9 * number / var5 -> var48 + var31 ) * number ; 
+} else if ( var5 -> var40 == var59 ) { 
+int var57 ; 
+double var60 = number ; 
+int var61 = number ; 
+for ( var57 = var9 - number ; var57 >= number ; var57 -- ) 
+if ( func4 ( var5 -> var47 [ var57 ] [ number ] ) + func4 ( var5 -> var47 [ var57 ] [ number ] ) < var60 ) { 
+var60 = func4 ( var5 -> var47 [ var57 ] [ number ] ) + func4 ( var5 -> var47 [ var57 ] [ number ] ) ; 
+var61 = var57 ; 
+} 
+var60 = sqrt ( var60 ) ; 
+var30 = func6 ( ( var5 -> var47 [ var61 ] [ number ] / var60 + number ) * number + var31 ) + func6 ( ( var5 -> var47 [ var61 ] [ number ] / var60 + number ) * number + var31 ) * number ; 
+} 
+} 
+var30 |= number ; 
+var2 [ var7 + var8 * var3 ] = var30 ; 
+if ( var11 < var5 -> var34 ) { 
+var5 -> var35 [ var11 ] . var36 [ number ] = var26 ; 
+var5 -> var35 [ var11 ] . var36 [ number ] = var23 ; 
+var5 -> var35 [ var11 ++ ] . var37 = var30 ; 
+} 
+} 
+func2 ( var1 , var18 , & var10 , & var11 , var23 + var13 / number , var13 ) ; 
+} 
+FFSWAP ( void * , var5 -> var35 , var5 -> point_cache ) ; 
+var5 -> var62 = var11 ; 
+if ( var5 -> var62 == var5 -> var34 ) 
+func7 ( var1 , var63 , str ) ; 
+} 

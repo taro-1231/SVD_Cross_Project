@@ -1,0 +1,14 @@
+static int func1 ( AVCodecContext * var1 , 
+const AVCodecContext * var2 ) 
+{ 
+Mpeg4DecContext * var3 = var1 -> var4 ; 
+const Mpeg4DecContext * var5 = var2 -> var4 ; 
+int var6 = var3 -> var7 . var8 ; 
+int var9 = func2 ( var1 , var2 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+memcpy ( ( ( uint8_t * ) var3 ) + sizeof ( MpegEncContext ) , ( ( uint8_t * ) var5 ) + sizeof ( MpegEncContext ) , sizeof ( Mpeg4DecContext ) - sizeof ( MpegEncContext ) ) ; 
+if ( var10 && ! var6 && var5 -> var11 >= number ) 
+func3 ( & var3 -> var7 . var12 , var1 ) ; 
+return number ; 
+} 

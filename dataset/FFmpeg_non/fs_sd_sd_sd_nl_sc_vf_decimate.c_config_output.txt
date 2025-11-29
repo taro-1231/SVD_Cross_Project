@@ -1,0 +1,24 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DecimateContext * var4 = var2 -> var5 ; 
+const AVFilterLink * var6 = 
+var2 -> var7 [ var4 -> var8 ? var9 : var10 ] ; 
+AVRational var11 = var6 -> var12 ; 
+if ( ! var11 . var13 || ! var11 . var14 ) { 
+func2 ( var2 , AV_LOG_ERROR , str 
+str , var11 . var13 , var11 . var14 ) ; 
+return func3 ( var15 ) ; 
+} 
+var11 = func4 ( var11 , ( AVRational ) { var4 -> cycle - 1 , var4 -> cycle } ) ; 
+func2 ( var2 , var16 , str , 
+var6 -> var12 . var13 , var6 -> var12 . var14 , var11 . var13 , var11 . var14 ) ; 
+var1 -> var17 |= var18 ; 
+var1 -> var19 = var6 -> var19 ; 
+var1 -> var12 = var11 ; 
+var1 -> var20 = var6 -> var20 ; 
+var1 -> var21 = var6 -> var21 ; 
+var1 -> var22 = var6 -> var22 ; 
+var4 -> var23 = func5 ( func6 ( func4 ( var11 , var1 -> var19 ) ) ) ; 
+return number ; 
+} 

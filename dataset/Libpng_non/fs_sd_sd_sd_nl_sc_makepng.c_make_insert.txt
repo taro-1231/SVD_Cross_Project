@@ -1,0 +1,21 @@
+func1 ( png_const_charp var2 , 
+void ( * var3 ) ( png_structp , png_infop , int , png_charpp ) , 
+int var4 , png_charpp var5 ) 
+{ 
+int var6 ; 
+var1 * var7 ; 
+var7 = malloc ( func2 ( var1 , var8 ) + 
+var4 * sizeof ( png_charp ) ) ; 
+if ( var7 == var9 ) 
+{ 
+fprintf ( var10 , str , 
+var2 , var4 ) ; 
+exit ( number ) ; 
+} 
+var7 -> var11 = var9 ; 
+var7 -> var3 = var3 ; 
+var7 -> var4 = var4 ; 
+for ( var6 = number ; var6 < var4 ; ++ var6 ) 
+var7 -> var8 [ var6 ] = var5 [ var6 ] ; 
+return var7 ; 
+} 

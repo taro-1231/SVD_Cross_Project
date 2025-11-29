@@ -1,0 +1,9 @@
+func1 ( struct buffer_list * var1 ) 
+{ 
+if ( var1 != var2 ) 
+{ 
+struct buffer_list * var3 = var1 -> var3 ; 
+func2 ( var1 ) ; 
+func1 ( var3 ) ; 
+} 
+} 

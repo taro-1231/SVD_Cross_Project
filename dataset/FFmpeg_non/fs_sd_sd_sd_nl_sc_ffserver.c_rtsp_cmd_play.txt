@@ -1,0 +1,19 @@
+static void func1 ( HTTPContext * var1 , const char * var2 , RTSPMessageHeader * var3 ) 
+{ 
+HTTPContext * var4 ; 
+var4 = func2 ( var2 , var3 -> var5 ) ; 
+if ( ! var4 ) { 
+func3 ( var1 , var6 ) ; 
+return ; 
+} 
+if ( var4 -> var7 != var8 && 
+var4 -> var7 != var9 && 
+var4 -> var7 != var10 ) { 
+func3 ( var1 , var11 ) ; 
+return ; 
+} 
+var4 -> var7 = var8 ; 
+func4 ( var1 , var12 ) ; 
+func5 ( var1 -> var13 , str , var4 -> var5 ) ; 
+func5 ( var1 -> var13 , str ) ; 
+} 

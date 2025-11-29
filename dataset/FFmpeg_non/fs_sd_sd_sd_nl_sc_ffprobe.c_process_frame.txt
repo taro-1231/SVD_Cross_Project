@@ -1,0 +1,41 @@
+static av_always_inline int func1 ( WriterContext * var1 , 
+InputFile * var2 , 
+AVFrame * var3 , AVPacket * var4 ) 
+{ 
+AVFormatContext * var5 = var2 -> var5 ; 
+AVCodecContext * var6 = var2 -> var7 [ var4 -> var8 ] . var6 ; 
+AVCodecParameters * var9 = var2 -> var7 [ var4 -> var8 ] . var10 -> var11 ; 
+AVSubtitle var12 ; 
+int var13 = number , var14 = number ; 
+func2 ( number ) ; 
+if ( var6 && var6 -> var15 ) { 
+switch ( var9 -> var16 ) { 
+case var17 : 
+var13 = func3 ( var6 , var3 , & var14 , var4 ) ; 
+break ; 
+case var18 : 
+var13 = func4 ( var6 , var3 , & var14 , var4 ) ; 
+break ; 
+case var19 : 
+var13 = func5 ( var6 , & var12 , & var14 , var4 ) ; 
+break ; 
+} 
+} 
+if ( var13 < number ) 
+return var13 ; 
+var13 = func6 ( var13 , var4 -> var20 ) ; 
+var4 -> var21 += var13 ; 
+var4 -> var20 -= var13 ; 
+if ( var14 ) { 
+int var22 = ( var9 -> var16 == var19 ) ; 
+var23 [ var4 -> var8 ] ++ ; 
+if ( var24 ) 
+if ( var22 ) 
+func7 ( var1 , & var12 , var2 -> var7 [ var4 -> var8 ] . var10 , var5 ) ; 
+else 
+func8 ( var1 , var3 , var2 -> var7 [ var4 -> var8 ] . var10 , var5 ) ; 
+if ( var22 ) 
+func9 ( & var12 ) ; 
+} 
+return var14 ; 
+} 

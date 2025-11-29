@@ -1,0 +1,16 @@
+static void func1 ( AVFloatDSPContext * var1 , FFTContext * var2 , 
+SBRDSPContext * var3 , const INTFLOAT * var4 , INTFLOAT * var5 , 
+INTFLOAT var6 , INTFLOAT var7 , int var8 ) 
+{ 
+int var9 ; 
+memcpy ( var5 , var5 + number , ( number - number ) * sizeof ( var5 [ number ] ) ) ; 
+memcpy ( var5 + number , var4 , number * sizeof ( var5 [ number ] ) ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+var1 -> func2 ( var6 , var10 , var5 , number ) ; 
+var3 -> func3 ( var6 ) ; 
+var3 -> func4 ( var6 ) ; 
+var2 -> func5 ( var2 , var6 , var6 + number ) ; 
+var3 -> func6 ( var7 [ var8 ] [ var9 ] , var6 ) ; 
+var5 += number ; 
+} 
+} 

@@ -1,0 +1,32 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , int var3 ) 
+{ 
+char var4 [ number ] ; 
+char var5 [ number ] ; 
+unsigned int var6 ; 
+AVStream * var7 ; 
+int var8 ; 
+int64_t var9 = func2 ( var2 ) ; 
+func3 ( var2 , var10 , var4 , sizeof ( var4 ) ) ; 
+if ( strcmp ( var4 , str ) ) 
+goto var11 ; 
+func4 ( var2 ) ; 
+func3 ( var2 , var10 , var5 , sizeof ( var5 ) ) ; 
+var6 = func5 ( var2 ) ; 
+if ( ! var6 ) 
+goto var11 ; 
+var7 = func6 ( var1 , var12 ) ; 
+if ( ! var7 ) 
+goto var11 ; 
+func7 ( & var7 -> var13 , str , var5 , number ) ; 
+var7 -> var14 -> var15 = var16 ; 
+var7 -> var14 -> var17 = var18 ; 
+var7 -> var19 = - number ; 
+var8 = func8 ( var2 , & var7 -> var20 , var6 ) ; 
+if ( var8 < number ) 
+goto var11 ; 
+var7 -> var20 . var21 = var7 -> var22 ; 
+var7 -> var20 . var23 |= var24 ; 
+var7 -> var25 |= var26 ; 
+var11 : 
+func9 ( var2 , var9 + var3 , var27 ) ; 
+} 

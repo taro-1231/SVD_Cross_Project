@@ -1,0 +1,18 @@
+func1 ( png_structp var1 , png_uint_32 var2 , int var3 ) 
+{ 
+if ( var1 == var4 || var2 > var5 ) 
+return ; 
+if ( var6 != var3 ) 
+{ 
+fprintf ( var7 , str , var3 ) ; 
+var6 = var3 ; 
+var8 = number ; 
+} 
+var8 -- ; 
+if ( var8 == number ) 
+{ 
+fprintf ( var7 , str ) ; 
+var8 = number ; 
+} 
+fprintf ( var7 , str ) ; 
+} 

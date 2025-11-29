@@ -1,0 +1,10 @@
+static int func1 ( struct Track * var1 , AVCodecContext * var2 ) 
+{ 
+var1 -> var3 = number ; 
+var1 -> var4 = func2 ( var2 -> var5 ) ; 
+if ( ! var1 -> var4 ) 
+return func3 ( var6 ) ; 
+var1 -> var3 = var2 -> var5 ; 
+memcpy ( var1 -> var4 , var2 -> var7 , var2 -> var5 ) ; 
+return number ; 
+} 

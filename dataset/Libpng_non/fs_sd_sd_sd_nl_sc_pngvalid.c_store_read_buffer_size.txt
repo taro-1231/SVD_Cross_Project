@@ -1,0 +1,6 @@
+func1 ( png_store * var1 ) 
+{ 
+if ( var1 -> var2 != & var1 -> var3 -> var4 ) 
+return var5 ; 
+return var1 -> var3 -> var6 ; 
+} 

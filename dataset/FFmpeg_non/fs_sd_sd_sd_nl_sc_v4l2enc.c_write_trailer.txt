@@ -1,0 +1,6 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+const V4L2Context * var2 = var1 -> var3 ; 
+func2 ( var2 -> var4 ) ; 
+return number ; 
+} 

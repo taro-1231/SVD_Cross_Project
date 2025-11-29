@@ -1,0 +1,27 @@
+func1 ( const char * var1 , format_list * var2 , png_uint_32 var3 , 
+int var4 , int var5 ) 
+{ 
+int var6 ; 
+Image var7 ; 
+func2 ( & var7 ) ; 
+func3 ( & var7 , var3 , var1 , var4 ) ; 
+var6 = func4 ( & var7 ) ; 
+if ( var6 ) 
+var6 = func5 ( & var7 , var3 , var2 ) ; 
+func6 ( & var7 ) ; 
+fflush ( var8 ) ; 
+if ( var5 ) 
+{ 
+if ( var6 ) 
+printf ( str ) ; 
+else 
+printf ( str ) ; 
+printf ( str ) ; 
+var9 ( var3 ) ; 
+printf ( str , var1 ) ; 
+fflush ( var10 ) ; 
+} 
+else if ( ! var6 ) 
+exit ( number ) ; 
+return var6 ; 
+} 

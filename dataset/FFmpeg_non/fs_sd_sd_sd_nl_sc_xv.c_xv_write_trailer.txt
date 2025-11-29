@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+XVContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+func2 ( var2 -> var4 , & var2 -> var5 ) ; 
+if ( var2 -> var6 ) 
+func3 ( var2 -> var6 -> var7 ) ; 
+func4 ( var2 -> var6 ) ; 
+if ( var2 -> var8 ) 
+func5 ( var2 -> var4 , var2 -> var8 ) ; 
+func6 ( var2 -> var4 ) ; 
+} 
+return number ; 
+} 

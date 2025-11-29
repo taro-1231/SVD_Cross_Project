@@ -1,0 +1,29 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+DCTdnoizContext * var2 = var1 -> var3 ; 
+var2 -> var4 = number << var2 -> var5 ; 
+if ( var2 -> var6 == - number ) 
+var2 -> var6 = var2 -> var4 - number ; 
+if ( var2 -> var6 > var2 -> var4 - number ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str , 
+var2 -> var4 - number , var2 -> var4 , var2 -> var4 ) ; 
+return func2 ( var7 ) ; 
+} 
+if ( var2 -> var8 ) { 
+switch ( var2 -> var5 ) { 
+case 3 : var2 -> var9 = var10 ; break ; 
+case 4 : var2 -> var9 = var11 ; break ; 
+var12 : func3 ( number ) ; 
+} 
+} else { 
+switch ( var2 -> var5 ) { 
+case 3 : var2 -> var9 = var13 ; break ; 
+case 4 : var2 -> var9 = var14 ; break ; 
+var12 : func3 ( number ) ; 
+} 
+} 
+var2 -> var15 = var2 -> var16 * number ; 
+var2 -> var17 = var2 -> var4 - var2 -> var6 ; 
+return number ; 
+} 

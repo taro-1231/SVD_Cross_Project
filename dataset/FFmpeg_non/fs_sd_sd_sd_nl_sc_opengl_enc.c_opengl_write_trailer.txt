@@ -1,0 +1,10 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+OpenGLContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 && 
+func2 ( var1 , var5 , var6 , number ) < number ) 
+func3 ( var2 , var7 , str ) ; 
+func4 ( var2 ) ; 
+func5 ( var1 ) ; 
+return number ; 
+} 

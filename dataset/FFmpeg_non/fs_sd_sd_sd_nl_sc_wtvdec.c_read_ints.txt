@@ -1,0 +1,9 @@
+static int func1 ( AVIOContext * var1 , uint32_t * var2 , int var3 ) 
+{ 
+int var4 , var5 = number ; 
+for ( var4 = number ; var4 < var3 ; var4 ++ ) { 
+if ( ( var2 [ var5 ] = func2 ( var1 ) ) ) 
+var5 ++ ; 
+} 
+return var5 ; 
+} 

@@ -1,0 +1,76 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+char var3 [ var4 ] ; 
+char var5 [ var4 ] ; 
+AVFormatContext * var6 = var7 ; 
+AVPacket var8 ; 
+int64_t var9 = number ; 
+int64_t var10 = number ; 
+int var11 = number ; 
+int var12 = number ; 
+int var13 ; 
+if ( ( var1 > number ) && ! strncmp ( var2 [ number ] , str , number ) ) { 
+if ( strchr ( var2 [ number ] , str ) ) 
+var11 = number ; 
+if ( strchr ( var2 [ number ] , str ) ) 
+var12 = number ; 
+var2 ++ ; 
+var1 -- ; 
+} 
+if ( var1 < number ) 
+return func2 ( number ) ; 
+if ( var1 > number ) 
+var10 = atoi ( var2 [ number ] ) ; 
+func3 ( var3 , var2 [ number ] , sizeof ( var3 ) ) ; 
+if ( strrchr ( var2 [ number ] , str ) ) 
+func3 ( var3 , strrchr ( var2 [ number ] , str ) + number , sizeof ( var3 ) ) ; 
+if ( strrchr ( var3 , str ) ) 
+* strrchr ( var3 , str ) = str ; 
+if ( strchr ( var3 , str ) ) { 
+fprintf ( var14 , str ) ; 
+return func2 ( number ) ; 
+} 
+if ( strlen ( var3 ) + sizeof ( var15 ) >= sizeof ( var3 ) - number ) { 
+fprintf ( var14 , str ) ; 
+return func2 ( number ) ; 
+} 
+strcat ( var3 , var15 ) ; 
+printf ( str , var3 ) ; 
+func4 ( ) ; 
+var13 = func5 ( & var6 , var2 [ number ] , var7 , var7 ) ; 
+if ( var13 < number ) { 
+fprintf ( var14 , str , var13 ) ; 
+return number ; 
+} 
+var13 = func7 ( var6 , var7 ) ; 
+if ( var13 < number ) { 
+fprintf ( var14 , str , var13 ) ; 
+return number ; 
+} 
+func8 ( & var8 ) ; 
+while ( ( var13 = func9 ( var6 , & var8 ) ) >= number ) { 
+int var16 ; 
+snprintf ( var5 , sizeof ( var5 ) , var3 , var9 , 
+var8 . var17 , var8 . var18 , var8 . var19 , 
+( var8 . var20 & var21 ) ? str : str ) ; 
+printf ( var15 str , var9 , var8 . var17 , var8 . var18 , var8 . var19 , 
+( var8 . var20 & var21 ) ? str : str ) ; 
+if ( ! var12 ) { 
+var16 = func6 ( var5 , var22 | var23 , number ) ; 
+var13 = func10 ( var16 , var8 . var24 , var8 . var19 ) ; 
+if ( var13 < number ) { 
+fprintf ( var14 , str , var13 ) ; 
+return number ; 
+} 
+func11 ( var16 ) ; 
+} 
+func12 ( & var8 ) ; 
+var9 ++ ; 
+if ( var10 && ( var9 >= var10 ) ) 
+break ; 
+} 
+func13 ( & var6 ) ; 
+while ( var11 ) 
+func14 ( number * number ) ; 
+return number ; 
+} 

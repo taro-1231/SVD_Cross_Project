@@ -1,0 +1,19 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+AVFilterLink * var6 = var2 -> var5 [ number ] ; 
+if ( var4 -> var7 != var6 -> var7 || var4 -> var8 != var6 -> var8 ) { 
+func2 ( var2 , var9 , 
+str , 
+var4 -> var7 , var4 -> var8 , 
+var6 -> var7 , var6 -> var8 ) ; 
+return func3 ( var10 ) ; 
+} 
+var1 -> var7 = var4 -> var7 ; 
+var1 -> var8 = var4 -> var8 ; 
+var1 -> var11 = var4 -> var11 ; 
+var1 -> var12 = var4 -> var12 ; 
+var1 -> var13 = var4 -> var13 ; 
+return number ; 
+} 

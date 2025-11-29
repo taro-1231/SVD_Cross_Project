@@ -1,0 +1,41 @@
+static int func1 ( AVAudioFifo * var1 , 
+AVFormatContext * var2 , 
+AVCodecContext * var3 , 
+AVCodecContext * var4 , 
+SwrContext * var5 , 
+int * var6 ) 
+{ 
+AVFrame * var7 = var8 ; 
+uint8_t ** var9 = var8 ; 
+int var10 ; 
+int var11 = var12 ; 
+if ( func2 ( & var7 ) ) 
+goto var13 ; 
+if ( func3 ( var7 , var2 , 
+var3 , & var10 , var6 ) ) 
+goto var13 ; 
+if ( * var6 && ! var10 ) { 
+var11 = number ; 
+goto var13 ; 
+} 
+if ( var10 ) { 
+if ( func4 ( & var9 , var4 , 
+var7 -> var14 ) ) 
+goto var13 ; 
+if ( func5 ( ( const uint8_t ** ) var7 -> var15 , var9 , 
+var7 -> var14 , var5 ) ) 
+goto var13 ; 
+if ( func6 ( var1 , var9 , 
+var7 -> var14 ) ) 
+goto var13 ; 
+var11 = number ; 
+} 
+var11 = number ; 
+var13 : 
+if ( var9 ) { 
+func7 ( & var9 [ number ] ) ; 
+free ( var9 ) ; 
+} 
+func8 ( & var7 ) ; 
+return var11 ; 
+} 

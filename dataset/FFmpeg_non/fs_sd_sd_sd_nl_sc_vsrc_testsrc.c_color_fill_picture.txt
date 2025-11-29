@@ -1,0 +1,7 @@
+static void func1 ( AVFilterContext * var2 , AVFrame * var3 ) 
+{ 
+TestSourceContext * var4 = var2 -> var5 ; 
+func2 ( & var4 -> var6 , & var4 -> var1 , 
+var3 -> var7 , var3 -> var8 , 
+number , number , var4 -> var9 , var4 -> var10 ) ; 
+} 

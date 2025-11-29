@@ -1,0 +1,17 @@
+int func1 ( AVOptionRanges ** var1 , void * var2 , const char * var3 , int var4 ) 
+{ 
+int var5 ; 
+const AVClass * var6 = * ( AVClass ** ) var2 ; 
+int ( * func2 ) ( AVOptionRanges ** , void * var2 , const char * var3 , int var4 ) = var7 ; 
+if ( var6 -> var8 > ( number << number | number << number ) ) 
+func2 = var6 -> var9 ; 
+if ( ! func2 ) 
+func2 = var10 ; 
+var5 = func2 ( var1 , var2 , var3 , var4 ) ; 
+if ( var5 >= number ) { 
+if ( ! ( var4 & var11 ) ) 
+var5 = number ; 
+( * var1 ) -> var12 = var5 ; 
+} 
+return var5 ; 
+} 

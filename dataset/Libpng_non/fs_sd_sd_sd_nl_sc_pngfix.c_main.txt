@@ -1,0 +1,19 @@
+func1 ( void ) 
+{ 
+fprintf ( var1 , 
+str , 
+var2 ) ; 
+return number ; 
+} 
+int 
+func1 ( void ) 
+{ 
+fprintf ( var1 , str ) ; 
+return number ; 
+} 
+int 
+func1 ( void ) 
+{ 
+fprintf ( var1 , str ) ; 
+return number ; 
+} 

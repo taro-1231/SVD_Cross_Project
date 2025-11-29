@@ -1,0 +1,14 @@
+void func1 ( ) 
+{ 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , str ) ; 
+fprintf ( var1 , 
+str ) ; 
+fprintf ( var1 , str ) ; 
+} 

@@ -1,0 +1,37 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 ) 
+{ 
+var1 += number * var2 ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_c str 
+str 
+str REG_a str 
+PAVGB ( % % mm1 , % % mm0 ) 
+str REG_a str 
+str 
+PAVGB ( % % mm0 , % % mm1 ) 
+str REG_a str 
+str REG_c str 
+PAVGB ( % % mm1 , % % mm0 ) 
+str REG_c str 
+str 
+PAVGB ( % % mm0 , % % mm1 ) 
+str REG_c str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) 
+: str REG_a , str REG_c 
+) ; 
+int a , b , x ; 
+var1 += number * var2 ; 
+for ( x = 0 ; x < 2 ; x ++ ) { 
+a = * ( uint32_t * ) & var1 [ var2 * 0 ] ; 
+b = * ( uint32_t * ) & var1 [ var2 * 2 ] ; 
+* ( uint32_t * ) & var1 [ var2 * 1 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+a = * ( uint32_t * ) & var1 [ var2 * number ] ; 
+* ( uint32_t * ) & var1 [ var2 * 3 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+b = * ( uint32_t * ) & var1 [ var2 * 6 ] ; 
+* ( uint32_t * ) & var1 [ var2 * 5 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+a = * ( uint32_t * ) & var1 [ var2 * 8 ] ; 
+* ( uint32_t * ) & var1 [ var2 * 7 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+var1 += number ; 
+} 
+} 

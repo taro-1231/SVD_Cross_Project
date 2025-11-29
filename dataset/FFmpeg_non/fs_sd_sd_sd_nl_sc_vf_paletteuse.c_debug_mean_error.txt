@@ -1,0 +1,26 @@
+static void func1 ( PaletteUseContext * var1 , const AVFrame * var2 , 
+const AVFrame * var3 , int var4 ) 
+{ 
+int var5 , var6 ; 
+const uint32_t * var7 = var1 -> var7 ; 
+uint32_t * var8 = ( uint32_t * ) var2 -> var9 [ number ] ; 
+uint8_t * var10 = var3 -> var9 [ number ] ; 
+const int var11 = var2 -> var12 [ number ] >> number ; 
+const int var13 = var3 -> var12 [ number ] ; 
+const float var14 = var2 -> var15 * var2 -> var16 * number ; 
+unsigned var17 = number ; 
+for ( var6 = number ; var6 < var2 -> var16 ; var6 ++ ) { 
+for ( var5 = number ; var5 < var2 -> var15 ; var5 ++ ) { 
+const uint32_t var18 = var8 [ var5 ] ; 
+const uint32_t var19 = var7 [ var10 [ var5 ] ] ; 
+const uint8_t var20 [ ] = { var18 >> number & number , var18 >> number & number , var18 & number } ; 
+const uint8_t var21 [ ] = { var19 >> number & number , var19 >> number & number , var19 & number } ; 
+var17 += func2 ( var20 , var21 ) ; 
+} 
+var8 += var11 ; 
+var10 += var13 ; 
+} 
+var1 -> var22 += var17 ; 
+func3 ( var23 , var24 , str , 
+var17 / var14 , var1 -> var22 / ( var14 * var4 ) ) ; 
+} 

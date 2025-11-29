@@ -1,0 +1,7 @@
+static int func1 ( const char * var1 ) 
+{ 
+return ! strncmp ( var1 , str , number ) || 
+! strncmp ( var1 , str , number ) || 
+! strncmp ( var1 , str , number ) || 
+! strncmp ( var1 , str , number ) ; 
+} 

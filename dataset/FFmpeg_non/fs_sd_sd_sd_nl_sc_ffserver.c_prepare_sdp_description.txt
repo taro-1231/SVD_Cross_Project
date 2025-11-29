@@ -1,0 +1,37 @@
+static int func1 ( FFServerStream * var1 , uint8_t ** var2 , 
+struct in_addr var3 ) 
+{ 
+AVFormatContext * var4 ; 
+AVOutputFormat * var5 = func2 ( str , var6 , var6 ) ; 
+AVDictionaryEntry * var7 = func3 ( var1 -> var8 , str , var6 , number ) ; 
+int var9 ; 
+* var2 = var6 ; 
+var4 = func4 ( ) ; 
+if ( ! var4 || ! var5 ) 
+return - number ; 
+var4 -> var10 = var5 ; 
+func5 ( & var4 -> var8 , str , 
+var7 ? var7 -> var11 : str , number ) ; 
+if ( var1 -> var12 ) { 
+snprintf ( var4 -> var13 , number , str 
+func6 ( var1 -> var14 ) , 
+var1 -> var15 , var1 -> var16 ) ; 
+} else 
+snprintf ( var4 -> var13 , number , str 
+for ( var9 = number ; var9 < var1 -> var17 ; var9 ++ ) { 
+AVStream * var18 = func7 ( var4 , var6 ) ; 
+if ( ! var18 ) 
+goto var19 ; 
+func8 ( var1 -> var20 [ var9 ] -> var21 , var1 -> var20 [ var9 ] -> var22 ) ; 
+func9 ( var18 , var1 -> var20 [ var9 ] ) ; 
+} 
+* var2 = func10 ( var23 ) ; 
+if ( ! * var2 ) 
+goto var19 ; 
+func11 ( & var4 , number , * var2 , var23 ) ; 
+var19 : 
+func12 ( & var4 -> var20 ) ; 
+func13 ( & var4 -> var8 ) ; 
+func14 ( var4 ) ; 
+return * var2 ? strlen ( * var2 ) : func15 ( var24 ) ; 
+} 

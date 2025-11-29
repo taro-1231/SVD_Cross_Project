@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+RemovelogoContext * var4 = var2 -> var5 ; 
+if ( var1 -> var6 != var4 -> var7 || var1 -> var8 != var4 -> var9 ) { 
+func2 ( var2 , var10 , 
+str , 
+var4 -> var7 , var4 -> var9 , var1 -> var6 , var1 -> var8 ) ; 
+return func3 ( var11 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,60 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 ) 
+{ 
+const int var8 = var1 -> var9 -> var10 [ var4 ] . var8 ; 
+const int var11 = var1 -> var11 ; 
+const int var12 = var2 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var15 = var2 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var16 = var3 -> var13 [ var8 ] ; 
+const int var17 = number - var5 ; 
+const int var18 = var2 -> var19 ; 
+const int var20 = var2 -> var21 ; 
+int var22 , var23 ; 
+if ( var7 ) { 
+const int var24 = var16 * ( var11 == number ? - number : number ) ; 
+for ( var22 = number ; var22 < var20 ; var22 ++ ) { 
+const uint8_t * var25 = var2 -> var26 [ ( var8 + number ) % var1 -> var14 ] ; 
+const uint8_t * var27 = var2 -> var26 [ ( var8 + number ) % var1 -> var14 ] ; 
+uint8_t * var28 = var3 -> var26 [ var8 ] + var6 * var16 ; 
+uint8_t * const var29 = var28 + var16 * ( var1 -> var30 - number ) ; 
+uint8_t * const var31 = ( var11 ? var29 : var28 ) ; 
+uint8_t * var32 = var31 ; 
+for ( var23 = number ; var23 < var18 ; var23 ++ ) { 
+const int var33 = func2 ( var25 [ var22 ] - number ) + func2 ( var27 [ var22 ] - number ) ; 
+uint8_t * var34 ; 
+int var35 ; 
+for ( var35 = number - var33 ; var35 < number + var33 ; var35 ++ ) { 
+var34 = var32 + var22 + var24 * var35 ; 
+func3 ( var34 , var17 , number ) ; 
+} 
+var25 += var12 ; 
+var27 += var15 ; 
+var28 += var16 ; 
+} 
+} 
+} else { 
+const uint8_t * var25 = var2 -> var26 [ ( var8 + number ) % var1 -> var14 ] ; 
+const uint8_t * var27 = var2 -> var26 [ ( var8 + number ) % var1 -> var14 ] ; 
+uint8_t * var28 = var3 -> var26 [ var8 ] + var6 ; 
+if ( var11 ) 
+var28 += var1 -> var30 - number ; 
+for ( var23 = number ; var23 < var18 ; var23 ++ ) { 
+for ( var22 = number ; var22 < var20 ; var22 ++ ) { 
+const int var33 = func2 ( var25 [ var22 ] - number ) + func2 ( var27 [ var22 ] - number ) ; 
+uint8_t * var34 ; 
+int var35 ; 
+for ( var35 = number - var33 ; var35 < number + var33 ; var35 ++ ) { 
+if ( var11 ) 
+var34 = var28 - var35 ; 
+else 
+var34 = var28 + var35 ; 
+func3 ( var34 , var17 , number ) ; 
+} 
+} 
+var25 += var12 ; 
+var27 += var15 ; 
+var28 += var16 ; 
+} 
+} 
+func4 ( var1 , var3 , var8 , ( var8 + number ) % var1 -> var14 ) ; 
+} 

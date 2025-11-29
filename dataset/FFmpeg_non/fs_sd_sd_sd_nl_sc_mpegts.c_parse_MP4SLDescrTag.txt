@@ -1,0 +1,37 @@
+static int func1 ( MP4DescrParseContext * var1 , int64_t var2 , int var3 ) 
+{ 
+Mp4Descr * var4 = var1 -> var5 ; 
+int var6 ; 
+if ( ! var4 ) 
+return var7 ; 
+var6 = func2 ( & var1 -> var8 ) ; 
+if ( ! var6 ) { 
+int var9 ; 
+int var10 = func2 ( & var1 -> var8 ) ; 
+var4 -> var11 . var12 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var13 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var14 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var15 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var16 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var17 = ! ! ( var10 & number ) ; 
+var4 -> var11 . var18 = func3 ( & var1 -> var8 ) ; 
+func3 ( & var1 -> var8 ) ; 
+var4 -> var11 . var19 = func2 ( & var1 -> var8 ) ; 
+if ( var4 -> var11 . var19 > number ) { 
+func4 ( var20 , str ) ; 
+var4 -> var11 . var19 = number ; 
+return var21 ; 
+} 
+var4 -> var11 . var22 = func2 ( & var1 -> var8 ) ; 
+var4 -> var11 . var23 = func2 ( & var1 -> var8 ) ; 
+var4 -> var11 . var24 = func2 ( & var1 -> var8 ) ; 
+var9 = func5 ( & var1 -> var8 ) ; 
+var4 -> var11 . var25 = var9 >> number ; 
+var4 -> var11 . var26 = ( var9 >> number ) & number ; 
+var4 -> var11 . var27 = ( var9 >> number ) & number ; 
+} else if ( ! var1 -> var28 ) { 
+func6 ( var1 -> var29 , str ) ; 
+var1 -> var28 = number ; 
+} 
+return number ; 
+} 

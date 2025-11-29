@@ -1,0 +1,8 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+CropContext * var2 = var1 -> var3 -> var4 ; 
+var1 -> var5 = var2 -> var5 ; 
+var1 -> var6 = var2 -> var6 ; 
+var1 -> var7 = var2 -> var8 ; 
+return number ; 
+} 

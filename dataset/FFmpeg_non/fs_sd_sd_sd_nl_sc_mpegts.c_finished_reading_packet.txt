@@ -1,0 +1,7 @@
+static void func1 ( AVFormatContext * var1 , int var2 ) 
+{ 
+AVIOContext * var3 = var1 -> var3 ; 
+int var4 = var2 - var5 ; 
+if ( var4 > number ) 
+func2 ( var3 , var4 ) ; 
+} 

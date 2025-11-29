@@ -1,0 +1,44 @@
+static int func1 ( const char * var1 ) 
+{ 
+AVIODirEntry * var2 = var3 ; 
+AVIODirContext * var4 = var3 ; 
+int var5 , var6 ; 
+char var7 [ number ] , var8 [ number ] ; 
+if ( ( var6 = func2 ( & var4 , var1 , var3 ) ) < number ) { 
+func3 ( var3 , var9 , str , func4 ( var6 ) ) ; 
+goto var10 ; 
+} 
+var5 = number ; 
+for ( ; ; ) { 
+if ( ( var6 = func5 ( var4 , & var2 ) ) < number ) { 
+func3 ( var3 , var9 , str , func4 ( var6 ) ) ; 
+goto var10 ; 
+} 
+if ( ! var2 ) 
+break ; 
+if ( var2 -> var7 == - number ) { 
+snprintf ( var7 , number , str ) ; 
+} else { 
+snprintf ( var7 , number , str PRIo64 , var2 -> var7 ) ; 
+} 
+snprintf ( var8 , number , str PRId64 str PRId64 str , var2 -> user_id , var2 -> group_id ) ; 
+if ( var5 == number ) 
+func3 ( var3 , var11 , str , 
+str , str , str , str , str , str , 
+str , str ) ; 
+func3 ( var3 , var11 , str PRId64 str PRId64 str PRId64 str PRId64 str , 
+type_string ( var2 -> type ) , 
+var2 -> size , 
+var2 -> name , 
+var8 , 
+var7 , 
+var2 -> modification_timestamp , 
+var2 -> access_timestamp , 
+var2 -> status_change_timestamp ) ; 
+func6 ( & var2 ) ; 
+var5 ++ ; 
+} ; 
+var10 : 
+func7 ( & var4 ) ; 
+return var6 ; 
+} 

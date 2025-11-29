@@ -1,0 +1,8 @@
+void func1 ( struct AVHashContext * var1 , uint8_t * var2 , int var3 ) 
+{ 
+uint8_t var4 [ var5 ] ; 
+unsigned var6 = func2 ( var1 ) , var7 ; 
+func3 ( var1 , var4 ) ; 
+for ( var7 = number ; var7 < func4 ( var6 , var3 / number ) ; var7 ++ ) 
+snprintf ( var2 + var7 * number , var3 - var7 * number , str , var4 [ var7 ] ) ; 
+} 

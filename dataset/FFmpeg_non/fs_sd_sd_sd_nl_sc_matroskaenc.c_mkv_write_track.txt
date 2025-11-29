@@ -1,0 +1,186 @@
+static int func1 ( AVFormatContext * var1 , MatroskaMuxContext * var2 , 
+int var3 , AVIOContext * var4 , int var5 ) 
+{ 
+AVStream * var6 = var1 -> var7 [ var3 ] ; 
+AVCodecContext * var8 = var6 -> var8 ; 
+ebml_master var9 , var10 ; 
+int var11 = number ; 
+int var12 = number ; 
+int var13 = func2 ( var8 -> var14 ) ; 
+int var15 = var8 -> var15 ; 
+int var16 = number ; 
+int var17 = number ; 
+int var18 = number ; 
+int var19 , var20 ; 
+AVDictionaryEntry * var21 ; 
+func3 ( var6 , number , number , number ) ; 
+if ( var8 -> var22 == var23 ) { 
+var2 -> var24 = number ; 
+return number ; 
+} 
+if ( ! var13 && var8 -> var14 != var25 ) 
+var13 = func4 ( var8 -> var26 ) << number ; 
+if ( ! var13 ) 
+var13 = var8 -> var27 ; 
+if ( var8 -> var14 == var28 ) { 
+var20 = func5 ( var1 , var8 , & var15 , & var16 ) ; 
+if ( var20 < number ) 
+return var20 ; 
+} 
+var10 = func6 ( var4 , var29 , number ) ; 
+func7 ( var4 , var30 , 
+var2 -> var31 ? var2 -> var32 : var3 + number ) ; 
+func7 ( var4 , var33 , 
+var2 -> var31 ? var2 -> var32 : var3 + number ) ; 
+func7 ( var4 , var34 , number ) ; 
+if ( ( var21 = func8 ( var6 -> var35 , var58 , var36 , number ) ) ) 
+func9 ( var4 , var37 , var21 -> var38 ) ; 
+var21 = func8 ( var6 -> var35 , var58 , var36 , number ) ; 
+if ( var2 -> var39 != var40 || var8 -> var14 != var41 ) { 
+func9 ( var4 , var42 , var21 && var21 -> var38 ? var21 -> var38 : var58 ) ; 
+} else if ( var21 && var21 -> var38 ) { 
+func9 ( var4 , var42 , var21 -> var38 ) ; 
+} 
+if ( var5 && ! ( var6 -> var44 & var45 ) ) 
+func7 ( var4 , var46 , ! ! ( var6 -> var44 & var45 ) ) ; 
+if ( var6 -> var44 & var47 ) 
+func7 ( var4 , var48 , number ) ; 
+if ( var2 -> var39 == var40 && var8 -> var14 == var41 ) { 
+const char * var14 ; 
+if ( var6 -> var44 & var49 ) { 
+var14 = var58 ; 
+var11 = var50 ; 
+} else if ( var6 -> var44 & var51 ) { 
+var14 = var58 ; 
+var11 = var52 ; 
+} else if ( var6 -> var44 & var53 ) { 
+var14 = var58 ; 
+var11 = var52 ; 
+} else { 
+var14 = var58 ; 
+var11 = var50 ; 
+} 
+func9 ( var4 , var54 , var14 ) ; 
+} else { 
+for ( var19 = number ; var55 [ var19 ] . var56 != var57 ; var19 ++ ) { 
+if ( var55 [ var19 ] . var56 == var8 -> var14 ) { 
+func9 ( var4 , var54 , var55 [ var19 ] . var58 ) ; 
+var11 = number ; 
+break ; 
+} 
+} 
+if ( var8 -> var14 == var59 && ! var8 -> var60 ) { 
+if ( var2 -> var61 ) { 
+var11 = number ; 
+} else { 
+func10 ( var1 , var62 , str 
+str ) ; 
+return func11 ( var63 ) ; 
+} 
+} 
+} 
+if ( var8 -> var22 == var64 && var8 -> var65 && var8 -> var14 == var66 ) { 
+func7 ( var4 , MATROSKA_ID_CODECDELAY , 
+av_rescale_q ( var8 -> var65 , 
+( AVRational ) { number , var8 -> var15 } , 
+( AVRational ) { number , 1000000000 } ) ) ; 
+} 
+if ( var8 -> var14 == var66 ) { 
+func7 ( var4 , var69 , var70 ) ; 
+} 
+if ( var2 -> var39 == var40 && ! ( var8 -> var14 == var71 || 
+var8 -> var14 == var72 || 
+var8 -> var14 == var66 || 
+var8 -> var14 == var73 || 
+var8 -> var14 == var41 ) ) { 
+func10 ( var1 , var62 , 
+var58 ) ; 
+return func11 ( var63 ) ; 
+} 
+switch ( var8 -> var22 ) { 
+case var74 : 
+func7 ( var4 , var75 , var76 ) ; 
+if ( var6 -> var77 . var78 > number && var6 -> var77 . var79 > number 
+&& func12 ( func13 ( var6 -> var77 ) , var8 -> var68 ) > number ) 
+func7 ( var4 , MATROSKA_ID_TRACKDEFAULTDURATION , 1000000000LL * var6 -> var77 . var79 / var6 -> var77 . var78 ) ; 
+else 
+func7 ( var4 , MATROSKA_ID_TRACKDEFAULTDURATION , 1000000000LL * var8 -> var68 . var78 / var8 -> var68 . var79 ) ; 
+if ( ! var11 && 
+func14 ( var80 , var8 -> var14 ) && 
+( ( ! func14 ( var81 , var8 -> var14 ) && var8 -> var14 != var59 ) || 
+var8 -> var14 == var82 || 
+var8 -> var14 == var83 || 
+var8 -> var14 == var84 ) ) 
+var12 = number ; 
+if ( var12 ) 
+func9 ( var4 , var54 , var58 ) ; 
+else if ( ! var11 ) { 
+func9 ( var4 , var54 , var58 ) ; 
+var2 -> var67 [ var3 ] . var85 = number ; 
+var1 -> var86 -> var87 = number ; 
+} 
+var9 = func6 ( var4 , var88 , number ) ; 
+func7 ( var4 , var89 , var8 -> var90 ) ; 
+func7 ( var4 , var91 , var8 -> var92 ) ; 
+var20 = func15 ( var1 , var4 , var6 , var2 -> var39 , 
+& var17 , 
+& var18 ) ; 
+if ( var20 < number ) 
+return var20 ; 
+if ( ( ( var21 = func8 ( var6 -> var35 , var58 , var36 , number ) ) && atoi ( var21 -> var38 ) ) || 
+( ( var21 = func8 ( var1 -> var35 , var58 , var36 , number ) ) && atoi ( var21 -> var38 ) ) || 
+( var8 -> var93 == var94 ) ) { 
+func7 ( var4 , var95 , number ) ; 
+} 
+if ( var6 -> var96 . var78 ) { 
+int64_t var97 = func16 ( var8 -> var90 , var6 -> var96 . var78 , var6 -> var96 . var79 ) ; 
+if ( var97 > var98 ) { 
+func10 ( var1 , var62 , var58 ) ; 
+return func11 ( var63 ) ; 
+} 
+func7 ( var4 , var99 , var97 / var17 ) ; 
+func7 ( var4 , var100 , var8 -> var92 / var18 ) ; 
+} else if ( var17 != number || var18 != number ) { 
+func7 ( var4 , var99 , var8 -> var90 / var17 ) ; 
+func7 ( var4 , var100 , var8 -> var92 / var18 ) ; 
+} 
+if ( var8 -> var14 == var59 ) { 
+uint32_t var101 = func17 ( var8 -> var60 ) ; 
+func18 ( var4 , var102 , & var101 , sizeof ( var101 ) ) ; 
+} 
+func19 ( var4 , var9 ) ; 
+break ; 
+case var64 : 
+func7 ( var4 , var75 , var103 ) ; 
+if ( ! var11 ) 
+func9 ( var4 , var54 , var58 ) ; 
+var9 = func6 ( var4 , var104 , number ) ; 
+func7 ( var4 , var105 , var8 -> var106 ) ; 
+func20 ( var4 , var107 , var15 ) ; 
+if ( var16 ) 
+func20 ( var4 , var108 , var16 ) ; 
+if ( var13 ) 
+func7 ( var4 , var109 , var13 ) ; 
+func19 ( var4 , var9 ) ; 
+break ; 
+case var110 : 
+if ( ! var11 ) { 
+func10 ( var1 , var62 , var58 , var8 -> var14 ) ; 
+return func11 ( var111 ) ; 
+} 
+if ( var2 -> var39 != var40 || var8 -> var14 != var41 ) 
+var11 = var50 ; 
+func7 ( var4 , var75 , var11 ) ; 
+break ; 
+var43 : 
+func10 ( var1 , var62 , var58 ) ; 
+return func11 ( var63 ) ; 
+} 
+if ( var2 -> var39 != var40 || var8 -> var14 != var41 ) { 
+var20 = func21 ( var1 , var4 , var8 , var11 , var12 ) ; 
+if ( var20 < number ) 
+return var20 ; 
+} 
+func19 ( var4 , var10 ) ; 
+return number ; 
+} 

@@ -1,0 +1,66 @@
+func1 ( Image * var1 , png_uint_32 var2 , png_const_colorp var3 ) 
+{ 
+memset ( & var1 -> var1 , number , sizeof var1 -> var1 ) ; 
+var1 -> var1 . var4 = var5 ; 
+if ( var1 -> var6 != var7 ) 
+{ 
+if ( ! func2 ( & var1 -> var1 , var1 -> var6 , 
+var1 -> var8 ) ) 
+return func3 ( var1 , str , var1 -> var9 , str ) ; 
+} 
+else if ( var1 -> var10 != var7 ) 
+{ 
+if ( ! func4 ( & var1 -> var1 , var1 -> var10 ) ) 
+return func3 ( var1 , str , var1 -> var9 , str ) ; 
+} 
+else 
+{ 
+if ( ! func5 ( & var1 -> var1 , var1 -> var9 ) ) 
+return func3 ( var1 , str , var1 -> var9 , str ) ; 
+} 
+else 
+{ 
+return func3 ( var1 , str , 
+var1 -> var9 , str ) ; 
+} 
+if ( var1 -> opts & sRGB_16BIT ) 
+var1 -> var1 . flags |= PNG_IMAGE_FLAG_16BIT_sRGB ; 
+{ 
+int result ; 
+png_uint_32 image_format ; 
+image_format = var1 -> var1 . var2 ; 
+if ( var1 -> opts & VERBOSE ) 
+{ 
+printf ( str , var1 -> var9 , 
+( unsigned long ) var1 -> var1 . width , 
+( unsigned long ) var1 -> var1 . height , 
+format_names [ image_format & FORMAT_MASK ] , 
+( var2 & FORMAT_NO_CHANGE ) != number || var1 -> var1 . var2 == var2 
+? str : format_names [ var2 & FORMAT_MASK ] ) ; 
+if ( var3 != var7 ) 
+printf ( str , var3 -> red , 
+var3 -> green , var3 -> blue ) ; 
+else 
+printf ( str ) ; 
+fflush ( stdout ) ; 
+} 
+if ( ( var2 & FORMAT_NO_CHANGE ) != number ) 
+{ 
+if ( ( var2 & PNG_FORMAT_FLAG_COLORMAP ) != number && 
+( image_format & PNG_FORMAT_FLAG_COLORMAP ) != number ) 
+var2 = ( image_format & ~ BASE_FORMATS ) | ( var2 & BASE_FORMATS ) ; 
+else 
+var2 = image_format ; 
+} 
+var1 -> var1 . var2 = var2 ; 
+var1 -> stride = PNG_IMAGE_ROW_STRIDE ( var1 -> var1 ) + var1 -> stride_extra ; 
+allocbuffer ( var1 ) ; 
+result = png_image_finish_read ( & var1 -> var1 , var3 , 
+var1 -> buffer + 16 , ( png_int_32 ) var1 -> stride , var1 -> colormap ) ; 
+checkbuffer ( var1 , var1 -> var9 ) ; 
+if ( result ) 
+return checkopaque ( var1 ) ; 
+else 
+return func3 ( var1 , var1 -> var9 , str , str ) ; 
+} 
+} 

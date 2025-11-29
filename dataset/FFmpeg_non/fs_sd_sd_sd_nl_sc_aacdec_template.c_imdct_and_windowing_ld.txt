@@ -1,0 +1,20 @@
+static void func1 ( AACContext * var1 , SingleChannelElement * var2 ) 
+{ 
+IndividualChannelStream * var3 = & var2 -> var3 ; 
+INTFLOAT * var4 = var2 -> var5 ; 
+INTFLOAT * var6 = var2 -> var7 ; 
+INTFLOAT * var8 = var2 -> var8 ; 
+INTFLOAT * var9 = var1 -> var10 ; 
+int var11 ; 
+var1 -> var12 . func2 ( & var1 -> var13 , var9 , var4 ) ; 
+for ( var11 = number ; var11 < number ; var11 ++ ) 
+var9 [ var11 ] = ( var9 [ var11 ] + number ) >> number ; 
+if ( var3 -> var14 [ number ] ) { 
+memcpy ( var6 , var8 , number * sizeof ( * var6 ) ) ; 
+var1 -> var15 -> func3 ( var6 + number , var8 + number , var9 , func4 ( var16 ) , number ) ; 
+memcpy ( var6 + number , var9 + number , number * sizeof ( * var6 ) ) ; 
+} else { 
+var1 -> var15 -> func3 ( var6 , var8 , var9 , func4 ( var17 ) , number ) ; 
+} 
+memcpy ( var8 , var9 + number , number * sizeof ( * var8 ) ) ; 
+} 

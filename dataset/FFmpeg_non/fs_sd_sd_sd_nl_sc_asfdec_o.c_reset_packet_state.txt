@@ -1,0 +1,30 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+ASFContext * var2 = var1 -> var3 ; 
+int var4 ; 
+var2 -> var5 = var6 ; 
+var2 -> var7 = number ; 
+var2 -> var8 = number ; 
+var2 -> var9 = number ; 
+var2 -> var10 = number ; 
+var2 -> var11 = var2 -> var12 ; 
+var2 -> var13 = number ; 
+var2 -> var14 = number ; 
+var2 -> var15 = number ; 
+var2 -> var16 = number ; 
+var2 -> var17 = number ; 
+var2 -> var18 = number ; 
+var2 -> var19 = number ; 
+var2 -> var20 = number ; 
+for ( var4 = number ; var4 < var2 -> var21 ; var4 ++ ) { 
+ASFPacket * var22 = & var2 -> var23 [ var4 ] -> var22 ; 
+var22 -> var24 = number ; 
+var22 -> var25 = number ; 
+var22 -> var26 = number ; 
+var22 -> var27 = number ; 
+var22 -> var28 = number ; 
+var22 -> var26 = number ; 
+func2 ( & var22 -> var29 ) ; 
+func3 ( & var22 -> var29 ) ; 
+} 
+} 

@@ -1,0 +1,171 @@
+func1 ( int var1 , char ** var2 ) 
+{ 
+FILE * var3 = var4 ; 
+const char * var5 = var6 ; 
+int var7 = number ; 
+int var8 = number ; 
+unsigned int var9 [ number ] ; 
+unsigned int var10 = var11 ; 
+png_fixed_point var12 = number ; 
+chunk_insert * var13 = var6 ; 
+chunk_insert ** var14 = & var13 ; 
+memset ( var9 , number , sizeof var9 ) ; 
+while ( -- var1 > number ) 
+{ 
+char * var15 = * ++ var2 ; 
+if ( strcmp ( var15 , str ) == number ) 
+{ 
+var12 = var16 ; 
+continue ; 
+} 
+if ( strcmp ( var15 , str ) == number ) 
+{ 
+var12 = var17 ; 
+continue ; 
+} 
+if ( strcmp ( var15 , str ) == number ) 
+{ 
+var12 = var18 ; 
+continue ; 
+} 
+if ( strcmp ( var15 , str ) == number ) 
+{ 
+var10 = var19 ; 
+continue ; 
+} 
+if ( strncmp ( var15 , str , number ) == number ) 
+{ 
+func2 ( var15 + number , var9 ) ; 
+continue ; 
+} 
+if ( var1 >= number && strcmp ( var15 , str ) == number ) 
+{ 
+png_const_charp var20 = * ++ var2 ; 
+png_charp var21 = * ++ var2 ; 
+chunk_insert * var22 ; 
+var1 -= number ; 
+var22 = func3 ( var20 , var21 ) ; 
+if ( var22 != var6 ) 
+{ 
+* var14 = var22 ; 
+var14 = & var22 -> var23 ; 
+} 
+continue ; 
+} 
+if ( var15 [ number ] == str ) 
+{ 
+fprintf ( var24 , str , var15 ) ; 
+exit ( number ) ; 
+} 
+if ( strcmp ( var15 , str ) == number ) 
+{ 
+var7 = var25 ; 
+continue ; 
+} 
+if ( strncmp ( var15 , str , number ) == number ) 
+{ 
+if ( var15 [ number ] == number ) 
+{ 
+var7 = var26 ; 
+continue ; 
+} 
+else if ( strcmp ( var15 + number , str ) == number || 
+strcmp ( var15 + number , str ) == number || 
+strcmp ( var15 + number , str ) == number ) 
+{ 
+var7 = var27 ; 
+continue ; 
+} 
+} 
+if ( strncmp ( var15 , str , number ) == number ) 
+{ 
+if ( var15 [ number ] == number ) 
+{ 
+var7 = var28 ; 
+continue ; 
+} 
+else if ( strcmp ( var15 + number , str ) == number || 
+strcmp ( var15 + number , str ) == number || 
+strcmp ( var15 + number , str ) == number ) 
+{ 
+var7 = var29 ; 
+continue ; 
+} 
+} 
+if ( var7 == number && isdigit ( var15 [ number ] ) ) 
+{ 
+var7 = atoi ( var15 ) ; 
+if ( var7 < number || var7 > number || var7 == number || 
+var7 == number ) 
+{ 
+fprintf ( var24 , str , var15 ) ; 
+exit ( number ) ; 
+} 
+continue ; 
+} 
+if ( var8 == number && isdigit ( var15 [ number ] ) ) 
+{ 
+var8 = atoi ( var15 ) ; 
+if ( var8 <= number || var8 > number || 
+( var8 & - var8 ) != var8 ) 
+{ 
+fprintf ( var24 , str , var15 ) ; 
+exit ( number ) ; 
+} 
+continue ; 
+} 
+if ( var1 == number ) 
+{ 
+var3 = fopen ( var15 , str ) ; 
+if ( var3 == var6 ) 
+{ 
+fprintf ( var24 , str , var15 , strerror ( var30 ) ) ; 
+exit ( number ) ; 
+} 
+var5 = var15 ; 
+continue ; 
+} 
+fprintf ( var24 , str , var15 ) ; 
+exit ( number ) ; 
+} 
+if ( var7 == number || var8 == number ) 
+{ 
+fprintf ( var24 , str 
+str 
+str ) ; 
+exit ( number ) ; 
+} 
+{ 
+const unsigned int var31 = ( var7 == var25 ? number : 
+( number << var8 ) - number ) ; 
+unsigned int var32 ; 
+for ( var32 = number ; var32 <= var9 [ number ] ; ++ var32 ) 
+if ( var9 [ var32 ] > var31 ) 
+{ 
+fprintf ( var24 , str , 
+var9 [ var32 ] , var31 ) ; 
+exit ( number ) ; 
+} 
+} 
+if ( var10 == var11 ) 
+{ 
+if ( ( var7 & var33 ) != number || var8 < number ) 
+var10 = var19 ; 
+else if ( var7 & var34 ) 
+{ 
+if ( var8 == number ) 
+var10 &= ~ ( var19 | var35 ) ; 
+else 
+var10 = var36 | var37 ; 
+} 
+else 
+var10 &= ~ var19 ; 
+} 
+{ 
+int var39 = func4 ( & var5 , var3 , var7 , var8 , var12 , 
+var13 , var10 , var9 ) ; 
+if ( var39 != number && var5 != var6 ) 
+remove ( var5 ) ; 
+return var39 ; 
+} 
+} 

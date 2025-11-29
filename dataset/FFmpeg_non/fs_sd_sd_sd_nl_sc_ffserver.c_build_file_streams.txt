@@ -1,0 +1,38 @@
+static void func1 ( void ) 
+{ 
+FFServerStream * var1 ; 
+AVFormatContext * var2 ; 
+int var3 , var4 ; 
+for ( var1 = var5 . var6 ; var1 ; var1 = var1 -> var7 ) { 
+var2 = var8 ; 
+if ( var1 -> var9 != var10 || var1 -> var11 ) 
+continue ; 
+if ( var1 -> var12 && ! strcmp ( var1 -> var12 -> var13 , str ) ) 
+func2 ( & var1 -> var14 , str , str , number ) ; 
+if ( ! var1 -> var15 [ number ] ) { 
+func3 ( str , 
+var1 -> var16 ) ; 
+goto var17 ; 
+} 
+func3 ( str , 
+var1 -> var15 , var1 -> var16 ) ; 
+var4 = func4 ( & var2 , var1 -> var15 , 
+var1 -> var18 , & var1 -> var14 ) ; 
+if ( var4 < number ) { 
+func3 ( str , var1 -> var15 , 
+func5 ( var4 ) ) ; 
+var17 : 
+func6 ( var1 ) ; 
+} else { 
+if ( func7 ( var2 , var8 ) < number ) { 
+func3 ( str , 
+var1 -> var15 ) ; 
+func8 ( & var2 ) ; 
+goto var17 ; 
+} 
+for ( var3 = number ; var3 < var2 -> var20 ; var3 ++ ) 
+func9 ( var1 , var2 -> var21 [ var3 ] -> var19 , number ) ; 
+func8 ( & var2 ) ; 
+} 
+} 
+} 

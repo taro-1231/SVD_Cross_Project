@@ -1,0 +1,110 @@
+func1 ( int var1 , const char ** var2 ) 
+{ 
+const char * var3 = * var2 ++ ; 
+int var4 = number , var5 = number , var6 = number ; 
+int var7 = number ; 
+double var8 [ number ] ; 
+fesetround ( var9 ) ; 
+var8 [ number ] = var8 [ number ] = var8 [ number ] = var8 [ number ] = number ; 
+while ( -- var1 > number && ** var2 == str ) 
+{ 
+const char * var10 = number + * var2 ++ ; 
+if ( strcmp ( var10 , str ) == number ) 
+var4 = number ; 
+else if ( strcmp ( var10 , str ) == number ) 
+var4 = number ; 
+else if ( strcmp ( var10 , str ) == number ) 
+var5 = number , var6 = number ; 
+else if ( strcmp ( var10 , str ) == number ) 
+var5 = number , var6 = number ; 
+else 
+func2 ( var3 ) ; 
+} 
+switch ( var1 ) 
+{ 
+var11 : 
+func2 ( var3 ) ; 
+break ; 
+case number : 
+var8 [ number ] = func3 ( var3 , var2 [ number ] , var4 ) ; 
+++ var7 ; 
+case number : 
+var8 [ number ] = func3 ( var3 , var2 [ number ] , var4 ) ; 
+++ var7 ; 
+case number : 
+var8 [ number ] = func3 ( var3 , var2 [ number ] , var4 ) ; 
+++ var7 ; 
+case number : 
+var8 [ number ] = func3 ( var3 , var2 [ number ] , var4 ) ; 
+++ var7 ; 
+break ; 
+} 
+if ( var4 ) 
+{ 
+int var12 ; 
+int var13 = var7 ; 
+if ( ( var13 & number ) == number ) 
+-- var13 ; 
+for ( var12 = number ; var12 < var13 ; ++ var12 ) var8 [ var12 ] = func4 ( var8 [ var12 ] / number ) ; 
+if ( var13 < var7 ) 
+var8 [ var13 ] = var8 [ var13 ] / number ; 
+} 
+else 
+{ 
+int var12 ; 
+for ( var12 = number ; var12 < number ; ++ var12 ) var8 [ var12 ] /= number ; 
+if ( ( var7 & number ) == number ) 
+{ 
+double var14 = var8 [ var7 - number ] ; 
+if ( var14 > number ) 
+for ( var12 = number ; var12 < var7 - number ; ++ var12 ) var8 [ var12 ] /= var14 ; 
+else 
+for ( var12 = number ; var12 < var7 - number ; ++ var12 ) var8 [ var12 ] = number ; 
+} 
+} 
+if ( var5 ) 
+{ 
+if ( var7 < number ) 
+{ 
+fprintf ( var15 , str , 
+var3 , var7 ) ; 
+func2 ( var3 ) ; 
+} 
+var8 [ number ] = func5 ( var8 [ number ] , var8 [ number ] , var8 [ number ] ) ; 
+var7 -= number ; 
+} 
+if ( var6 ) 
+{ 
+if ( var7 > number ) 
+{ 
+fprintf ( var15 , str , 
+var3 , var7 ) ; 
+func2 ( var3 ) ; 
+} 
+var8 [ number ] = var8 [ number ] ; 
+var8 [ number ] = var8 [ number ] = var8 [ number ] ; 
+} 
+if ( var4 ) 
+{ 
+int var12 ; 
+if ( ( var7 & number ) == number ) 
+{ 
+double var14 = var8 [ var7 - number ] ; 
+for ( var12 = number ; var12 < var7 - number ; ++ var12 ) var8 [ var12 ] *= var14 ; 
+} 
+for ( var12 = number ; var12 < var7 ; ++ var12 ) var8 [ var12 ] = nearbyint ( var8 [ var12 ] * number ) ; 
+} 
+else 
+{ 
+int var12 = ( var7 + number ) & ~ number ; 
+while ( -- var12 >= number ) 
+var8 [ var12 ] = func6 ( var8 [ var12 ] ) ; 
+for ( var12 = number ; var12 < var7 ; ++ var12 ) var8 [ var12 ] = nearbyint ( var8 [ var12 ] * number ) ; 
+} 
+{ 
+int var12 ; 
+for ( var12 = number ; var12 < var7 ; ++ var12 ) printf ( str , var8 [ var12 ] ) ; 
+} 
+printf ( str ) ; 
+return number ; 
+} 

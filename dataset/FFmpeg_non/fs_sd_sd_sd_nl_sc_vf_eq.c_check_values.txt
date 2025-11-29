@@ -1,0 +1,9 @@
+static void func1 ( EQParameters * var1 , EQContext * var2 ) 
+{ 
+if ( var1 -> var3 == number && var1 -> var4 == number && var1 -> var5 == number ) 
+var1 -> var6 = var7 ; 
+else if ( var1 -> var5 == number && fabs ( var1 -> var3 ) < number ) 
+var1 -> var6 = var2 -> var8 ; 
+else 
+var1 -> var6 = var9 ; 
+} 

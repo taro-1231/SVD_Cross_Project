@@ -1,0 +1,33 @@
+static int func1 ( AVFilterLink * var2 , AVFrame * var3 ) 
+{ 
+AVFilterContext * var4 = var2 -> var5 ; 
+BBoxContext * var6 = var4 -> var7 ; 
+FFBoundingBox var8 ; 
+int var9 , var10 , var11 ; 
+var9 = 
+func2 ( & var8 , 
+var3 -> var12 [ number ] , var3 -> var13 [ number ] , 
+var2 -> var10 , var2 -> var11 , var6 -> var14 ) ; 
+var10 = var8 . var15 - var8 . var16 + number ; 
+var11 = var8 . var17 - var8 . var18 + number ; 
+func3 ( var4 , var19 , 
+str PRId64 str , var2 -> frame_count , 
+av_ts2str ( var3 -> pts ) , av_ts2timestr ( var3 -> pts , & var2 -> time_base ) ) ; 
+if ( var9 ) { 
+AVDictionary ** var1 = func4 ( var3 ) ; 
+SET_META ( str , var8 . var16 ) 
+SET_META ( str , var8 . var15 ) 
+SET_META ( str , var8 . var18 ) 
+SET_META ( str , var8 . var17 ) 
+SET_META ( str , var10 ) 
+SET_META ( str , var11 ) 
+func3 ( var4 , var19 , 
+str 
+str , 
+var8 . var16 , var8 . var15 , var8 . var18 , var8 . var17 , var10 , var11 , 
+var10 , var11 , var8 . var16 , var8 . var18 , 
+var8 . var16 , var8 . var18 , var10 , var11 ) ; 
+} 
+func3 ( var4 , var19 , str ) ; 
+return func5 ( var2 -> var5 -> var20 [ number ] , var3 ) ; 
+} 

@@ -1,0 +1,45 @@
+static void func1 ( FFTContext * var1 , 
+SBRDSPContext * var2 , AVFixedDSPContext * var3 , 
+INTFLOAT * var4 , INTFLOAT var5 , 
+INTFLOAT var6 , 
+INTFLOAT * var7 , int * var8 , const unsigned int var9 ) 
+{ 
+int var10 , var11 ; 
+const INTFLOAT * var12 = var9 ? var13 : var14 ; 
+const int var15 = number >> var9 ; 
+INTFLOAT * var16 ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+if ( * var8 < var15 ) { 
+int var17 = ( number - number ) >> var9 ; 
+memcpy ( & var7 [ var18 - var17 ] , var7 , var17 * sizeof ( INTFLOAT ) ) ; 
+* var8 = var18 - var17 - var15 ; 
+} else { 
+* var8 -= var15 ; 
+} 
+var16 = var7 + * var8 ; 
+if ( var9 ) { 
+for ( var11 = number ; var11 < number ; var11 ++ ) { 
+var5 [ number ] [ var10 ] [ var11 ] = - var5 [ number ] [ var10 ] [ var11 ] ; 
+var5 [ number ] [ var10 ] [ number + var11 ] = var5 [ number ] [ var10 ] [ number - var11 ] ; 
+} 
+var1 -> func2 ( var1 , var6 [ number ] , var5 [ number ] [ var10 ] ) ; 
+var2 -> func3 ( var16 , var6 [ number ] ) ; 
+} else { 
+var2 -> func4 ( var5 [ number ] [ var10 ] ) ; 
+var1 -> func2 ( var1 , var6 [ number ] , var5 [ number ] [ var10 ] ) ; 
+var1 -> func2 ( var1 , var6 [ number ] , var5 [ number ] [ var10 ] ) ; 
+var2 -> func5 ( var16 , var6 [ number ] , var6 [ number ] ) ; 
+} 
+var3 -> func6 ( var4 , var16 , var12 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var3 -> func7 ( var4 , var16 + ( number >> var9 ) , var12 + ( number >> var9 ) , var4 , number >> var9 ) ; 
+var4 += number >> var9 ; 
+} 
+} 

@@ -1,0 +1,11 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+W3FDIFContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 ) ; 
+func2 ( & var2 -> var6 ) ; 
+func2 ( & var2 -> var7 ) ; 
+for ( var4 = number ; var4 < var2 -> var8 ; var4 ++ ) 
+func3 ( & var2 -> var9 [ var4 ] ) ; 
+func3 ( & var2 -> var9 ) ; 
+} 

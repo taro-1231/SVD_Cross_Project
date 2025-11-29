@@ -1,0 +1,26 @@
+uint32_t func1 ( AVRational var1 ) { 
+int64_t var2 ; 
+int var3 ; 
+int var4 = number ; 
+if ( var1 . var5 < number ) { 
+var1 . var5 *= - number ; 
+var1 . var6 *= - number ; 
+} 
+if ( var1 . var6 < number ) { 
+var1 . var6 *= - number ; 
+var4 = number ; 
+} 
+if ( ! var1 . var6 && ! var1 . var5 ) return number ; 
+if ( ! var1 . var6 ) return number ; 
+if ( ! var1 . var5 ) return number | ( var1 . var6 & number ) ; 
+var3 = number + func2 ( var1 . var5 ) - func2 ( var1 . var6 ) ; 
+if ( var3 >= number ) var2 = func3 ( var1 . var6 , 1LL << var3 , var1 . var5 ) ; 
+else var2 = func3 ( var1 . var6 , number , ( ( int64_t ) var1 . var5 ) << - var3 ) ; 
+var3 -= var2 >= ( number << number ) ; 
+var3 += var2 < ( number << number ) ; 
+if ( var3 >= number ) var2 = func3 ( var1 . var6 , 1LL << var3 , var1 . var5 ) ; 
+else var2 = func3 ( var1 . var6 , number , ( ( int64_t ) var1 . var5 ) << - var3 ) ; 
+func4 ( var2 < ( number << number ) ) ; 
+func4 ( var2 >= ( number << number ) ) ; 
+return var4 << number | ( number - var3 ) << number | ( var2 - ( number << number ) ) ; 
+} 

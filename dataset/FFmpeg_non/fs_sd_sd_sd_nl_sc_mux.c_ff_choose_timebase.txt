@@ -1,0 +1,12 @@
+AVRational func1 ( AVFormatContext * var1 , AVStream * var2 , int var3 ) 
+{ 
+AVRational var4 ; 
+int var5 ; 
+var4 = var2 -> var6 ; 
+for ( var5 = number ; var5 < number ; var5 += number + ( var5 > number ) ) 
+while ( var4 . var7 / var4 . var8 < var3 && var4 . var8 % var5 == number ) 
+var4 . var8 /= var5 ; 
+while ( var4 . var7 / var4 . var8 < var3 && var4 . var7 < ( number << number ) ) 
+var4 . var7 <<= number ; 
+return var4 ; 
+} 

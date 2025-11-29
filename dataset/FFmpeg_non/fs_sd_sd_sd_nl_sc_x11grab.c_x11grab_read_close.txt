@@ -1,0 +1,17 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+X11GrabContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+func2 ( var2 -> var5 , & var2 -> var6 ) ; 
+func3 ( var2 -> var6 . var7 ) ; 
+func4 ( var2 -> var6 . var8 , var9 , var10 ) ; 
+} 
+if ( var2 -> var11 ) { 
+func5 ( var2 -> var11 ) ; 
+var2 -> var11 = var10 ; 
+} 
+if ( var2 -> var12 ) 
+func6 ( var2 -> var5 , var2 -> var12 ) ; 
+func7 ( var2 -> var5 ) ; 
+return number ; 
+} 

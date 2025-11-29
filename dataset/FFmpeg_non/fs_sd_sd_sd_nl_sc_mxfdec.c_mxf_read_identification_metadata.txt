@@ -1,0 +1,36 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFContext * var7 = var1 ; 
+AVFormatContext * var8 = var7 -> var9 ; 
+int var10 ; 
+UID var11 = { number } ; 
+char * var12 = var13 ; 
+uint64_t var14 ; 
+switch ( var3 ) { 
+case 0x3C01 : 
+func2 ( var2 , var12 , var12 ) ; 
+break ; 
+case 0x3C02 : 
+func2 ( var2 , var12 , var12 ) ; 
+break ; 
+case 0x3C04 : 
+func2 ( var2 , var12 , var12 ) ; 
+break ; 
+case 0x3C05 : 
+func3 ( var2 , var12 , var11 , var12 ) ; 
+break ; 
+case 0x3C06 : 
+func4 ( var2 , var12 , var14 , var12 ) ; 
+break ; 
+case 0x3C08 : 
+func2 ( var2 , var12 , var12 ) ; 
+break ; 
+case 0x3C09 : 
+func3 ( var2 , var12 , var11 , var12 ) ; 
+break ; 
+case 0x3C0A : 
+func3 ( var2 , var12 , var11 , var12 ) ; 
+break ; 
+} 
+return number ; 
+} 

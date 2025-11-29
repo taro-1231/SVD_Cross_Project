@@ -1,0 +1,10 @@
+static void func1 ( int var1 ) 
+{ 
+fprintf ( var1 ? var2 : stdout , 
+str 
+str 
+str 
+str 
+) ; 
+exit ( var1 ) ; 
+} 

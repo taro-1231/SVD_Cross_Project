@@ -1,0 +1,37 @@
+static inline int func1 ( MpegEncContext * var1 , int var2 , int * var3 ) 
+{ 
+int var4 , var5 ; 
+if ( var2 < number ) 
+var5 = func2 ( & var1 -> var6 , var7 . var8 , var9 , number ) ; 
+else 
+var5 = func2 ( & var1 -> var6 , var10 . var8 , var9 , number ) ; 
+if ( var5 < number || var5 > number { 
+func3 ( var1 -> var11 , var12 , str ) ; 
+return - number ; 
+} 
+if ( var5 == number ) { 
+var4 = number ; 
+} else { 
+if ( var13 ) { 
+if ( var5 == number ) 
+var4 = number * func4 ( & var1 -> var6 ) - number ; 
+else { 
+if ( func4 ( & var1 -> var6 ) ) 
+var4 = func5 ( & var1 -> var6 , var5 - number ) + ( number << ( var5 - number ) ) ; 
+else 
+var4 = - func5 ( & var1 -> var6 , var5 - number ) - ( number << ( var5 - number ) ) ; 
+} 
+} else { 
+var4 = func6 ( & var1 -> var6 , var5 ) ; 
+} 
+if ( var5 > number ) { 
+if ( func4 ( & var1 -> var6 ) == number ) { 
+if ( var1 -> var11 -> var14 & ( var15 | var16 ) ) { 
+func3 ( var1 -> var11 , var12 , str ) ; 
+return - number ; 
+} 
+} 
+} 
+} 
+return func7 ( var1 , var2 , var4 , var3 , number ) ; 
+} 

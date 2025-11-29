@@ -1,0 +1,19 @@
+static int func1 ( int var1 , int var2 , int var3 , int var4 , int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+REMOVE_GRAIN_SORT_AXIS 
+const int var10 = var11 - var12 ; 
+const int var13 = var14 - var15 ; 
+const int var16 = var17 - var18 ; 
+const int var19 = var20 - var21 ; 
+const int var22 = func2 ( var1 - var11 , var10 ) ; 
+const int var23 = func2 ( var1 - var14 , var13 ) ; 
+const int var24 = func2 ( var1 - var17 , var16 ) ; 
+const int var25 = func2 ( var1 - var20 , var19 ) ; 
+const int var26 = func3 ( func3 ( func3 ( var22 , var23 ) , func3 ( var24 , var25 ) ) , number ) ; 
+const int var27 = func2 ( var12 - var1 , var10 ) ; 
+const int var28 = func2 ( var15 - var1 , var13 ) ; 
+const int var29 = func2 ( var18 - var1 , var16 ) ; 
+const int var30 = func2 ( var21 - var1 , var19 ) ; 
+const int var31 = func3 ( func3 ( func3 ( var27 , var28 ) , func3 ( var29 , var30 ) ) , number ) ; 
+return var1 - var26 + var31 ; 
+} 

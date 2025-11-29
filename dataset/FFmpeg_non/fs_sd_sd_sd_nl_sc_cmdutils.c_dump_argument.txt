@@ -1,0 +1,22 @@
+static void func1 ( const char * var1 ) 
+{ 
+const unsigned char * var2 ; 
+for ( var2 = var1 ; * var2 ; var2 ++ ) 
+if ( ! ( ( * var2 >= str && * var2 <= str ) || ( * var2 >= str && * var2 <= str ) || 
+* var2 == str || ( * var2 >= str && * var2 <= str ) ) ) 
+break ; 
+if ( ! * var2 ) { 
+fputs ( var1 , var3 ) ; 
+return ; 
+} 
+fputc ( str str 
+for ( var2 = var1 ; * var2 ; var2 ++ ) { 
+if ( * var2 == str || * var2 == str str 
+fprintf ( var3 , str , * var2 ) ; 
+else if ( * var2 < str || * var2 > str ) 
+fprintf ( var3 , str , * var2 ) ; 
+else 
+fputc ( * var2 , var3 ) ; 
+} 
+fputc ( str str 
+} 

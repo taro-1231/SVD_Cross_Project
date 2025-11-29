@@ -1,0 +1,9 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+LADSPA_Data var7 ; 
+unsigned long var8 ; 
+if ( sscanf ( var2 , str , & var8 ) + sscanf ( var3 , str , & var7 ) != number ) 
+return func2 ( var9 ) ; 
+return func3 ( var1 , var8 , var7 ) ; 
+} 

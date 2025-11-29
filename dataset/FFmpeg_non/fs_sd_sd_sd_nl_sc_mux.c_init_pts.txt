@@ -1,0 +1,29 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+AVStream * var3 ; 
+for ( var2 = number ; var2 < var1 -> var4 ; var2 ++ ) { 
+int64_t var5 = var6 ; 
+var3 = var1 -> var7 [ var2 ] ; 
+switch ( var3 -> var8 -> var9 ) { 
+case var10 : 
+var5 = ( int64_t ) var3 -> var11 . var12 * var3 -> var8 -> var13 ; 
+break ; 
+case var14 : 
+var5 = ( int64_t ) var3 -> var11 . var12 * var3 -> var8 -> var11 . var5 ; 
+break ; 
+var15 : 
+break ; 
+} 
+if ( ! var3 -> var16 ) 
+var3 -> var16 = func2 ( sizeof ( * var3 -> var16 ) ) ; 
+if ( ! var3 -> var16 ) 
+return func3 ( var17 ) ; 
+if ( var5 != var6 ) { 
+if ( var5 <= number ) 
+return var18 ; 
+func4 ( var3 -> var16 , number , number , var5 ) ; 
+} 
+} 
+return number ; 
+} 

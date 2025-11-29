@@ -1,0 +1,22 @@
+static int func1 ( void ) 
+{ 
+int var1 , var2 ; 
+if ( var3 == number ) 
+return number ; 
+for ( var1 = number ; var1 < var3 ; var1 ++ ) { 
+InputFile * var4 = var5 [ var1 ] ; 
+if ( var4 -> var6 -> var7 ? ! var4 -> var6 -> var7 -> var8 : 
+strcmp ( var4 -> var6 -> var9 -> var10 , str ) ) 
+var4 -> var11 = number ; 
+var2 = func2 ( & var4 -> var12 , 
+var4 -> var13 , sizeof ( AVPacket ) ) ; 
+if ( var2 < number ) 
+return var2 ; 
+if ( ( var2 = func3 ( & var4 -> var14 , var15 , var16 , var4 ) ) ) { 
+func4 ( var15 , var17 , str , strerror ( var2 ) ) ; 
+func5 ( & var4 -> var12 ) ; 
+return func6 ( var2 ) ; 
+} 
+} 
+return number ; 
+} 

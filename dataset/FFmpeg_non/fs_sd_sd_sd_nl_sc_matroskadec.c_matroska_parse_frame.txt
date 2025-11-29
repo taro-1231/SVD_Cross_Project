@@ -1,0 +1,99 @@
+static int func1 ( MatroskaDemuxContext * var1 , 
+MatroskaTrack * var2 , AVStream * var3 , 
+uint8_t * var4 , int var5 , 
+uint64_t var6 , uint64_t var7 , 
+int64_t var8 , int var9 , 
+uint8_t * var10 , uint64_t var11 , int var12 , 
+int64_t var13 ) 
+{ 
+MatroskaTrackEncoding * var14 = var2 -> var14 . var15 ; 
+uint8_t * var16 = var4 ; 
+int var17 = number , var18 ; 
+AVPacket * var19 ; 
+if ( var14 && ! var14 -> var20 && var14 -> var21 & number ) { 
+var18 = func2 ( & var16 , & var5 , var2 ) ; 
+if ( var18 < number ) 
+return var18 ; 
+} 
+if ( var3 -> var22 -> var23 == var24 ) { 
+uint8_t * var25 ; 
+var18 = func3 ( var2 , var16 , & var25 , & var5 ) ; 
+if ( var18 < number ) { 
+func4 ( var1 -> var26 , var27 , 
+str ) ; 
+goto var28 ; 
+} 
+if ( var16 != var4 ) 
+func5 ( & var16 ) ; 
+var16 = var25 ; 
+} 
+if ( var3 -> var22 -> var23 == var29 && 
+func6 ( & var4 [ number ] ) != func7 ( str , str , str , str ) ) 
+var17 = number ; 
+var19 = func8 ( sizeof ( AVPacket ) ) ; 
+if ( ! var19 ) { 
+if ( var16 != var4 ) 
+func5 ( & var16 ) ; 
+return func9 ( var30 ) ; 
+} 
+if ( func10 ( var19 , var5 + var17 ) < number ) { 
+func11 ( var19 ) ; 
+var18 = func9 ( var30 ) ; 
+goto var28 ; 
+} 
+if ( var3 -> var22 -> var23 == var29 && var17 == number ) { 
+uint8_t * var31 = var19 -> var4 ; 
+func12 ( & var31 , var5 ) ; 
+func12 ( & var31 , func7 ( str , str , str , str ) ) ; 
+} 
+memcpy ( var19 -> var4 + var17 , var16 , var5 ) ; 
+if ( var16 != var4 ) 
+func5 ( & var16 ) ; 
+var19 -> var32 = var9 ; 
+var19 -> var33 = var3 -> var34 ; 
+if ( var12 > number ) { 
+uint8_t * var35 = func13 ( var19 , 
+var36 , 
+var12 + number ) ; 
+if ( ! var35 ) { 
+func14 ( var19 ) ; 
+func11 ( var19 ) ; 
+return func9 ( var30 ) ; 
+} 
+func15 ( var35 , var11 ) ; 
+memcpy ( var35 + number , var10 , var12 ) ; 
+} 
+if ( var13 ) { 
+uint8_t * var35 = func13 ( var19 , 
+var37 , 
+number ) ; 
+if ( ! var35 ) { 
+func14 ( var19 ) ; 
+func11 ( var19 ) ; 
+return func9 ( var30 ) ; 
+} 
+func16 ( var35 , number ) ; 
+func16 ( var35 + number , av_rescale_q ( var13 , 
+( AVRational ) { number , 1000000000 } , 
+( AVRational ) { number , var3 -> var22 -> sample_rate } ) ) ; 
+} 
+if ( var2 -> var38 ) 
+var19 -> var39 = var6 ; 
+else 
+var19 -> var40 = var6 ; 
+var19 -> var8 = var8 ; 
+if ( var3 -> var22 -> var23 == var41 ) { 
+var19 -> var42 = var7 ; 
+} 
+if ( var2 -> var20 != var43 || 
+var7 <= var44 ) { 
+var19 -> var45 = var7 ; 
+} 
+func17 ( & var1 -> var46 , & var1 -> var47 , var19 ) ; 
+var1 -> var48 = var19 ; 
+return number ; 
+var28 : 
+if ( var16 != var4 ) 
+func5 ( & var16 ) ; 
+return var18 ; 
+} 

@@ -1,0 +1,27 @@
+uint32_t func1 ( const AVTimecode * var1 , int var2 ) 
+{ 
+unsigned var3 = var1 -> var3 ; 
+int var4 = ! ! ( var1 -> var5 & var6 ) ; 
+int var7 , var8 , var9 , var10 ; 
+var2 += var1 -> var11 ; 
+if ( var4 ) 
+var2 = func2 ( var2 , var1 -> var3 ) ; 
+var10 = var2 % var3 ; 
+var9 = var2 / var3 % number ; 
+var8 = var2 / ( var3 * number ) % number ; 
+var7 = var2 / ( var3 * number ) % number ; 
+return number << number | 
+var4 << number | 
+( var10 / number ) << number | 
+( var10 % number ) << number | 
+number << number | 
+( var9 / number ) << number | 
+( var9 % number ) << number | 
+number << number | 
+( var8 / number ) << number | 
+( var8 % number ) << number | 
+number << number | 
+number << number | 
+( var7 / number ) << number | 
+( var7 % number ) ; 
+} 

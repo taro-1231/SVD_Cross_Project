@@ -1,0 +1,17 @@
+uint32_t func1 ( void ) 
+{ 
+uint32_t var1 ; 
+HCRYPTPROV var2 ; 
+if ( func2 ( & var2 , var3 , var3 , var4 , 
+var5 | var6 ) ) { 
+BOOL var7 = func3 ( var2 , sizeof ( var1 ) , ( PBYTE ) & var1 ) ; 
+func4 ( var2 , number ) ; 
+if ( var7 ) 
+return var1 ; 
+} 
+if ( func5 ( & var1 , str ) == sizeof ( var1 ) ) 
+return var1 ; 
+if ( func5 ( & var1 , str ) == sizeof ( var1 ) ) 
+return var1 ; 
+return func6 ( ) ; 
+} 

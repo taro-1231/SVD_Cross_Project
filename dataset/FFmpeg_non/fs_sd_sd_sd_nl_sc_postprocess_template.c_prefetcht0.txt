@@ -1,0 +1,16 @@
+static inline void RENAME ( func1 ) ( const void * var1 ) 
+{ 
+__asm__ volatile ( str 
+:: str ( var1 ) 
+) ; 
+} 
+} 
+static inline void RENAME ( func1 ) ( const void * var1 ) 
+{ 
+__builtin_prefetch ( var1 , 0 , 1 ) ; 
+} 
+} 
+static inline void RENAME ( func1 ) ( const void * var1 ) 
+{ 
+return ; 
+} 

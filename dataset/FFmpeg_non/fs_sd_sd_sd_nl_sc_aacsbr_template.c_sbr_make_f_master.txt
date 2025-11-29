@@ -1,0 +1,180 @@
+static int func1 ( AACContext * var1 , SpectralBandReplication * var2 , 
+SpectrumParameters * var3 ) 
+{ 
+unsigned int var4 , var5 = number ; 
+unsigned int var6 , var7 ; 
+int var8 ; 
+const int8_t * var9 ; 
+int16_t var10 [ number ] ; 
+if ( var2 -> var11 < number ) { 
+var4 = number ; 
+} else if ( var2 -> var11 < number ) { 
+var4 = number ; 
+} else 
+var4 = number ; 
+switch ( var2 -> var11 ) { 
+case 16000 : 
+var9 = var12 [ number ] ; 
+break ; 
+case 22050 : 
+var9 = var12 [ number ] ; 
+break ; 
+case 24000 : 
+var9 = var12 [ number ] ; 
+break ; 
+case number : 
+var9 = var12 [ number ] ; 
+break ; 
+case number : case number : case number : 
+var9 = var12 [ number ] ; 
+break ; 
+case 88200 : case 96000 : case 128000 : case 176400 : case 192000 : 
+var9 = var12 [ number ] ; 
+break ; 
+var13 : 
+func2 ( var1 -> var14 , var15 , 
+str , var2 -> var11 ) ; 
+return - number ; 
+} 
+var6 = ( ( var4 << number ) + ( var2 -> var11 >> number ) ) / var2 -> var11 ; 
+var7 = ( ( var4 << number ) + ( var2 -> var11 >> number ) ) / var2 -> var11 ; 
+var2 -> var8 [ number ] = var6 + var9 [ var3 -> var16 ] ; 
+if ( var3 -> var17 < number ) { 
+var2 -> var8 [ number ] = var7 ; 
+func3 ( var10 , var7 , number , number ) ; 
+qsort ( var10 , number , sizeof ( var10 [ number ] ) , var18 ) ; 
+for ( var8 = number ; var8 < var3 -> var17 ; var8 ++ ) 
+var2 -> var8 [ number ] += var10 [ var8 ] ; 
+} else if ( var3 -> var17 == number ) { 
+var2 -> var8 [ number ] = number * var2 -> var8 [ number ] ; 
+} else if ( var3 -> var17 == number ) { 
+var2 -> var8 [ number ] = number * var2 -> var8 [ number ] ; 
+} else { 
+func2 ( var1 -> var14 , var15 , 
+str , var3 -> var17 ) ; 
+return - number ; 
+} 
+var2 -> var8 [ number ] = func4 ( number , var2 -> var8 [ number ] ) ; 
+if ( var2 -> var11 <= number ) { 
+var5 = number ; 
+} else if ( var2 -> var11 == number ) { 
+var5 = number ; 
+} else if ( var2 -> var11 >= number ) 
+var5 = number ; 
+else 
+func5 ( number ) ; 
+if ( var2 -> var8 [ number ] - var2 -> var8 [ number ] > var5 ) { 
+func2 ( var1 -> var14 , var15 , 
+str , var2 -> var8 [ number ] - var2 -> var8 [ number ] ) ; 
+return - number ; 
+} 
+if ( ! var3 -> var19 ) { 
+int var20 , var21 ; 
+var20 = var3 -> var22 + number ; 
+var2 -> var23 = ( ( var2 -> var8 [ number ] - var2 -> var8 [ number ] + ( var20 & number ) ) >> var20 ) << number ; 
+if ( func6 ( var1 -> var14 , var2 -> var23 , var2 -> var24 . var25 ) ) 
+return - number ; 
+for ( var8 = number ; var8 <= var2 -> var23 ; var8 ++ ) 
+var2 -> var26 [ var8 ] = var20 ; 
+var21 = var2 -> var8 [ number ] - var2 -> var8 [ number ] - var2 -> var23 * var20 ; 
+if ( var21 < number ) { 
+var2 -> var26 [ number ] -- ; 
+var2 -> var26 [ number ] -= ( var21 < - number ) ; 
+} else if ( var21 ) { 
+var2 -> var26 [ var2 -> var23 ] ++ ; 
+} 
+var2 -> var26 [ number ] = var2 -> var8 [ number ] ; 
+for ( var8 = number ; var8 <= var2 -> var23 ; var8 ++ ) 
+var2 -> var26 [ var8 ] += var2 -> var26 [ var8 - number ] ; 
+} else { 
+int var27 = number - var3 -> var19 ; 
+int var28 , var29 ; 
+int var30 , var31 ; 
+int16_t var32 [ number ] ; 
+int var33 , var34 = number ; 
+if ( number * var2 -> var8 [ number ] > number * var2 -> var8 [ number ] ) { 
+var28 = number ; 
+var2 -> var8 [ number ] = number * var2 -> var8 [ number ] ; 
+} else { 
+var28 = number ; 
+var2 -> var8 [ number ] = var2 -> var8 [ number ] ; 
+} 
+var33 = ( var2 -> var8 [ number ] << number ) / var2 -> var8 [ number ] ; 
+while ( var33 < number ) { 
+var33 <<= number ; 
+var34 ++ ; 
+} 
+var33 = func7 ( var33 - number ) ; 
+var33 = ( int ) ( ( ( int64_t ) var33 * var35 + number ) >> number ) ; 
+var33 = ( ( ( var33 + number ) >> number ) + ( ( number - var34 ) << number ) ) * var27 ; 
+var29 = ( ( var33 + number ) >> number ) * number ; 
+var29 = lrintf ( var27 * log2f ( var2 -> var8 [ number ] / ( float ) var2 -> var8 [ number ] ) ) * number ; 
+if ( var29 <= number ) { 
+func2 ( var1 -> var14 , var15 , str , var29 ) ; 
+return - number ; 
+} 
+var32 [ number ] = number ; 
+func3 ( var32 + number , var2 -> var8 [ number ] , var2 -> var8 [ number ] , var29 ) ; 
+qsort ( var32 + number , var29 , sizeof ( var32 [ number ] ) , var18 ) ; 
+var30 = var32 [ var29 ] ; 
+var32 [ number ] = var2 -> var8 [ number ] ; 
+for ( var8 = number ; var8 <= var29 ; var8 ++ ) { 
+if ( var32 [ var8 ] <= number ) { 
+func2 ( var1 -> var14 , var15 , str , var8 , var32 [ var8 ] ) ; 
+return - number ; 
+} 
+var32 [ var8 ] += var32 [ var8 - number ] ; 
+} 
+if ( var28 ) { 
+int16_t var36 [ number ] ; 
+int var37 ; 
+var33 = ( var2 -> var8 [ number ] << number ) / var2 -> var8 [ number ] ; 
+var34 = number ; 
+while ( var33 < number ) { 
+var33 <<= number ; 
+var34 ++ ; 
+} 
+var33 = func7 ( var33 - number ) ; 
+var33 = ( int ) ( ( ( int64_t ) var33 * var35 + number ) >> number ) ; 
+var33 = ( ( ( var33 + number ) >> number ) + ( ( number - var34 ) << number ) ) * var27 ; 
+if ( var3 -> var22 ) 
+var33 = ( int ) ( ( ( int64_t ) var33 * var38 + number ) >> number ) ; 
+var37 = ( ( var33 + number ) >> number ) * number ; 
+float invwarp = var3 -> var22 ? number . 76923076923076923077f 
+: number . 0f ; 
+int var37 = lrintf ( var27 * invwarp * 
+log2f ( var2 -> var8 [ number ] / ( float ) var2 -> var8 [ number ] ) ) * number ; 
+func3 ( var36 + number , var2 -> var8 [ number ] , var2 -> var8 [ number ] , var37 ) ; 
+var31 = func8 ( var36 + number , var37 ) ; 
+if ( var31 < var30 ) { 
+int var39 ; 
+qsort ( var36 + number , var37 , sizeof ( var36 [ number ] ) , var18 ) ; 
+var39 = func4 ( var30 - var36 [ number ] , ( var36 [ var37 ] - var36 [ number ] ) >> number ) ; 
+var36 [ number ] += var39 ; 
+var36 [ var37 ] -= var39 ; 
+} 
+qsort ( var36 + number , var37 , sizeof ( var36 [ number ] ) , var18 ) ; 
+var36 [ number ] = var2 -> var8 [ number ] ; 
+for ( var8 = number ; var8 <= var37 ; var8 ++ ) { 
+if ( var36 [ var8 ] <= number ) { 
+func2 ( var1 -> var14 , var15 , str , var8 , var36 [ var8 ] ) ; 
+return - number ; 
+} 
+var36 [ var8 ] += var36 [ var8 - number ] ; 
+} 
+var2 -> var23 = var29 + var37 ; 
+if ( func6 ( var1 -> var14 , var2 -> var23 , var2 -> var24 . var25 ) ) 
+return - number ; 
+memcpy ( & var2 -> var26 [ number ] , var32 , 
+( var29 + number ) * sizeof ( var2 -> var26 [ number ] ) ) ; 
+memcpy ( & var2 -> var26 [ var29 + number ] , var36 + number , 
+var37 * sizeof ( var2 -> var26 [ number ] ) ) ; 
+} else { 
+var2 -> var23 = var29 ; 
+if ( func6 ( var1 -> var14 , var2 -> var23 , var2 -> var24 . var25 ) ) 
+return - number ; 
+memcpy ( var2 -> var26 , var32 , ( var29 + number ) * sizeof ( var2 -> var26 [ number ] ) ) ; 
+} 
+} 
+return number ; 
+} 

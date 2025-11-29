@@ -1,0 +1,57 @@
+static void func1 ( const char * var1 , const char * var2 ) 
+{ 
+AVCodec * var3 ; 
+AVCodecContext * var4 = var5 ; 
+int var6 ; 
+FILE * var7 ; 
+AVFrame * var8 ; 
+uint8_t var9 [ var10 + var11 ] ; 
+AVPacket var12 ; 
+func2 ( & var12 ) ; 
+memset ( var9 + var10 , number , var11 ) ; 
+printf ( str , var2 , var1 ) ; 
+var3 = func3 ( var13 ) ; 
+if ( ! var3 ) { 
+fprintf ( var14 , str ) ; 
+exit ( number ) ; 
+} 
+var4 = func4 ( var3 ) ; 
+if ( ! var4 ) { 
+fprintf ( var14 , str ) ; 
+exit ( number ) ; 
+} 
+if ( var3 -> var15 & var16 ) 
+var4 -> var17 |= var18 ; 
+if ( func5 ( var4 , var3 , var5 ) < number ) { 
+fprintf ( var14 , str ) ; 
+exit ( number ) ; 
+} 
+var7 = fopen ( var2 , str ) ; 
+if ( ! var7 ) { 
+fprintf ( var14 , str , var2 ) ; 
+exit ( number ) ; 
+} 
+var8 = func6 ( ) ; 
+if ( ! var8 ) { 
+fprintf ( var14 , str ) ; 
+exit ( number ) ; 
+} 
+var6 = number ; 
+for ( ; ; ) { 
+var12 . var19 = fread ( var9 , number , var10 , var7 ) ; 
+if ( var12 . var19 == number ) 
+break ; 
+var12 . var20 = var9 ; 
+while ( var12 . var19 > number ) 
+if ( func7 ( var1 , var4 , var8 , & var6 , & var12 , number ) < number ) 
+exit ( number ) ; 
+} 
+var12 . var20 = var5 ; 
+var12 . var19 = number ; 
+func7 ( var1 , var4 , var8 , & var6 , & var12 , number ) ; 
+fclose ( var7 ) ; 
+func8 ( var4 ) ; 
+func9 ( var4 ) ; 
+func10 ( & var8 ) ; 
+printf ( str ) ; 
+} 

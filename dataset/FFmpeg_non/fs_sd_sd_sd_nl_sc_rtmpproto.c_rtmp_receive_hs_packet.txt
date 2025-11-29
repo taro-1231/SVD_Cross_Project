@@ -1,0 +1,18 @@
+static int func1 ( RTMPContext * var1 , uint32_t * var2 , 
+uint32_t * var3 , char * var4 , 
+int var5 ) 
+{ 
+int var6 ; 
+var6 = func2 ( var1 -> var7 , var4 , 
+var8 ) ; 
+if ( var6 <= number ) 
+return func3 ( var9 ) ; 
+if ( var6 != var8 ) { 
+av_log ( var1 , AV_LOG_ERROR , str 
+str , ( int ) var6 ) ; 
+return func3 ( var10 ) ; 
+} 
+* var2 = func4 ( var4 ) ; 
+* var3 = func4 ( var4 + number ) ; 
+return number ; 
+} 

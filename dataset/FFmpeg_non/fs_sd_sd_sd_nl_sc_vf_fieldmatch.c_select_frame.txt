@@ -1,0 +1,6 @@
+static AVFrame * func1 ( FieldMatchContext * var1 , int var2 ) 
+{ 
+if ( var2 == var3 || var2 == var4 ) return var1 -> var5 ; 
+else if ( var2 == var6 || var2 == var7 ) return var1 -> var8 ; 
+else return var1 -> var9 ; 
+} 

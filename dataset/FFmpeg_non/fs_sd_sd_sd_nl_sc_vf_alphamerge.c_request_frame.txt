@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AlphaMergeContext * var4 = var2 -> var5 ; 
+int var6 , var7 ; 
+var4 -> var8 = number ; 
+while ( var4 -> var8 ) { 
+var6 = func2 ( & var4 -> var9 , number ) ? number : number ; 
+var7 = func3 ( var2 -> var10 [ var6 ] ) ; 
+if ( var7 < number ) 
+return var7 ; 
+} 
+return number ; 
+} 

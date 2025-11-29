@@ -1,0 +1,11 @@
+static inline void func1 ( PredictorState * var8 ) 
+{ 
+var8 -> var2 = number ; 
+var8 -> var3 = number ; 
+var8 -> var4 = number ; 
+var8 -> var5 = number ; 
+var8 -> var6 = number ; 
+var8 -> var7 = number ; 
+var8 -> var8 = number ; 
+var8 -> var9 = number ; 
+} 

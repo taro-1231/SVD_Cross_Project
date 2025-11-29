@@ -1,0 +1,12 @@
+static void func1 ( DataRateData * var1 , int64_t var2 ) 
+{ 
+if ( ! var1 -> var3 && ! var1 -> var4 ) { 
+var1 -> var3 = var1 -> var5 = var6 ; 
+var1 -> var4 = var1 -> var7 = var2 ; 
+} else if ( var6 - var1 -> var5 > number ) { 
+var1 -> var3 = var1 -> var5 ; 
+var1 -> var4 = var1 -> var7 ; 
+var1 -> var5 = var6 ; 
+var1 -> var7 = var2 ; 
+} 
+} 

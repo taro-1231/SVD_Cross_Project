@@ -1,0 +1,5 @@
+static int func1 ( png_modifier * var1 ) 
+{ 
+return ! var1 -> var2 && ! var1 -> var3 . var4 && ( var1 -> var3 . var5 > number || 
+( var1 -> var3 . var6 && var1 -> var3 . var7 > number ) ) ; 
+} 

@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+LutContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( var1 , var5 , str , var2 -> var6 ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var2 -> var7 [ var4 ] = func3 ( ( var4 == number && ! var2 -> var6 ) ? 
+str : str ) ; 
+if ( ! var2 -> var7 [ var4 ] ) { 
+func4 ( var1 ) ; 
+return func5 ( var8 ) ; 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,15 @@
+func1 ( libAVFilter * var1 , const wchar_t * var2 , IPin ** var3 ) 
+{ 
+libAVPin * var4 = var5 ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 || ! var3 ) 
+return var6 ; 
+if ( ! wcscmp ( var2 , L str ) ) { 
+var4 = var1 -> var3 ; 
+func3 ( var4 ) ; 
+} 
+* var3 = ( IPin * ) var4 ; 
+if ( ! var4 ) 
+return var7 ; 
+return var8 ; 
+} 

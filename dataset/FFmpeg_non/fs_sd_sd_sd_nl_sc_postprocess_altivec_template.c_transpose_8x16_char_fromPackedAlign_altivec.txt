@@ -1,0 +1,75 @@
+static inline void func1 ( unsigned char * var1 , unsigned char * var2 , int var3 ) { 
+const vector unsigned char var4 = func2 ( number ) ; 
+const vector signed char var5 = func3 ( - number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+func4 ( number , number ) ; 
+vector unsigned char var8 = func6 ( var9 , var10 ) ; 
+vector unsigned char var11 ; 
+vector unsigned char var12 = func6 ( var13 , var14 ) ; 
+vector unsigned char var15 ; 
+vector unsigned char var16 = func6 ( var17 , var18 ) ; 
+vector unsigned char var19 = func6 ( var20 , var21 ) ; 
+vector unsigned char var22 = func6 ( var23 , var24 ) ; 
+vector unsigned char var25 ; 
+vector unsigned char var26 = func6 ( var27 , var28 ) ; 
+vector unsigned char var29 ; 
+vector unsigned char var30 = func6 ( var31 , var32 ) ; 
+vector unsigned char var33 = func6 ( var34 , var35 ) ; 
+vector unsigned char var36 = func6 ( var8 , var22 ) ; 
+vector unsigned char var37 = func7 ( var8 , var22 ) ; 
+vector unsigned char var38 ; 
+vector unsigned char var39 ; 
+vector unsigned char var40 = func6 ( var12 , var26 ) ; 
+vector unsigned char var41 = func7 ( var12 , var26 ) ; 
+vector unsigned char var42 ; 
+vector unsigned char var43 ; 
+vector unsigned char var44 = func6 ( var16 , var30 ) ; 
+vector unsigned char var45 = func7 ( var16 , var30 ) ; 
+vector unsigned char var46 = func6 ( var19 , var33 ) ; 
+vector unsigned char var47 = func7 ( var19 , var33 ) ; 
+var8 = func6 ( var36 , var44 ) ; 
+var11 = func7 ( var36 , var44 ) ; 
+var12 = func6 ( var37 , var45 ) ; 
+var15 = func7 ( var37 , var45 ) ; 
+var22 = func6 ( var40 , var46 ) ; 
+var25 = func7 ( var40 , var46 ) ; 
+var26 = func6 ( var41 , var47 ) ; 
+var29 = func7 ( var41 , var47 ) ; 
+var36 = func6 ( var8 , var22 ) ; 
+var37 = func7 ( var8 , var22 ) ; 
+var38 = func6 ( var11 , var25 ) ; 
+var39 = func7 ( var11 , var25 ) ; 
+var40 = func6 ( var12 , var26 ) ; 
+var41 = func7 ( var12 , var26 ) ; 
+var42 = func6 ( var15 , var29 ) ; 
+var43 = func7 ( var15 , var29 ) ; 
+vector unsigned char var48 = func5 ( var6 * var3 , var1 ) ; \ 
+vector unsigned char var49 = func5 ( var6 * var3 + number , var1 ) ; \ 
+vector unsigned char var50 = func5 ( var7 * var3 , var1 ) ; \ 
+vector unsigned char var51 = func5 ( var7 * var3 + number , var1 ) ; \ 
+vector unsigned char var52 = func9 ( var6 * var3 , var1 ) ; \ 
+vector unsigned char var53 = func9 ( var7 * var3 , var1 ) ; \ 
+vector unsigned char var54 = \ 
+vec_perm ( var4 , ( vector unsigned char ) var5 , var52 ) ; \ 
+vector unsigned char var55 = \ 
+vec_perm ( var4 , ( vector unsigned char ) var5 , var53 ) ; \ 
+vector unsigned char var58 = func10 ( var48 , var56 , var54 ) ; \ 
+vector unsigned char var59 = func10 ( var56 , var49 , var54 ) ; \ 
+vector unsigned char var60 = func10 ( var50 , var57 , var55 ) ; \ 
+vector unsigned char var61 = func10 ( var57 , var51 , var55 ) ; \ 
+func11 ( var58 , var6 * var3 , var1 ) ; \ 
+func11 ( var59 , var6 * var3 + number , var1 ) ; \ 
+func11 ( var60 , var7 * var3 , var1 ) ; \ 
+func11 ( var61 , var7 * var3 + number , var1 ) ; \ 
+} while ( number ) 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+} 

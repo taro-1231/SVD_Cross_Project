@@ -1,0 +1,53 @@
+static int func1 ( AACContext * var1 , GetBitContext * var2 ) 
+{ 
+int var3 ; 
+AACADTSHeaderInfo var4 ; 
+uint8_t var5 [ var6 * number ] [ number ] ; 
+int var7 , var8 ; 
+var3 = func2 ( var2 , & var4 ) ; 
+if ( var3 > number ) { 
+if ( ! var1 -> var9 && var4 . var10 != number ) { 
+func3 ( var1 -> var11 , 
+str ) ; 
+var1 -> var9 = number ; 
+} 
+func4 ( var1 ) ; 
+if ( var4 . var12 ) { 
+var1 -> var13 [ number ] . var14 . var12 = var4 . var12 ; 
+if ( ( var8 = func5 ( var1 -> var11 , 
+var5 , 
+& var7 , 
+var4 . var12 ) ) < number ) 
+return var8 ; 
+if ( ( var8 = func6 ( var1 , var5 , var7 , 
+func7 ( var1 -> var13 [ number ] . var15 , 
+var16 ) , number ) ) < number ) 
+return var8 ; 
+} else { 
+var1 -> var13 [ number ] . var14 . var12 = number ; 
+if ( var1 -> var17 && var1 -> var13 [ number ] . var15 == var18 ) { 
+var7 = number ; 
+var5 [ number ] [ number ] = var5 [ number ] [ number ] = var19 ; 
+var5 [ number ] [ number ] = var5 [ number ] [ number ] = var20 ; 
+var5 [ number ] [ number ] = number ; 
+var5 [ number ] [ number ] = number ; 
+if ( func6 ( var1 , var5 , var7 , 
+var16 , number ) ) 
+return - number ; 
+} 
+} 
+var1 -> var13 [ number ] . var14 . var21 = var4 . var21 ; 
+var1 -> var13 [ number ] . var14 . var22 = var4 . var22 ; 
+var1 -> var13 [ number ] . var14 . var23 = var4 . var23 ; 
+var1 -> var13 [ number ] . var14 . var24 = number ; 
+if ( var1 -> var13 [ number ] . var15 != var25 || 
+var1 -> var13 [ number ] . var14 . var12 != var4 . var12 || 
+var1 -> var13 [ number ] . var14 . var21 != var4 . var21 ) { 
+var1 -> var13 [ number ] . var14 . var26 = - number ; 
+var1 -> var13 [ number ] . var14 . var27 = - number ; 
+} 
+if ( ! var4 . var28 ) 
+func8 ( var2 , number ) ; 
+} 
+return var3 ; 
+} 

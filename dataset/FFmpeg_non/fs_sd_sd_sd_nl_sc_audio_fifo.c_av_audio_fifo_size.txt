@@ -1,0 +1,4 @@
+int func1 ( AVAudioFifo * var1 ) 
+{ 
+return var1 -> var2 ; 
+} 

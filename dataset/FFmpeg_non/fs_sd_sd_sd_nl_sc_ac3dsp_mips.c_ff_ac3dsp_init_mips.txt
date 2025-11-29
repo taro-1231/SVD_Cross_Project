@@ -1,0 +1,6 @@
+void func1 ( AC3DSPContext * var1 , int var2 ) { 
+var1 -> var3 = var4 ; 
+var1 -> var5 = var6 ; 
+var1 -> var7 = var8 ; 
+var1 -> var9 = var10 ; 
+} 

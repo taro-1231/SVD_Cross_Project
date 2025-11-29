@@ -1,0 +1,18 @@
+static void func1 ( MpegEncContext * var1 ) 
+{ 
+int var2 , var3 ; 
+for ( var2 = number ; var2 < number ; var2 ++ ) { 
+if ( var1 -> var4 [ var2 ] > ( number << number ) ) { 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var1 -> var5 [ var2 ] [ var3 ] >>= number ; 
+} 
+var1 -> var4 [ var2 ] >>= number ; 
+} 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var1 -> var6 [ var2 ] [ var3 ] = ( var1 -> var7 -> var8 * 
+var1 -> var4 [ var2 ] + 
+var1 -> var5 [ var2 ] [ var3 ] / number ) / 
+( var1 -> var5 [ var2 ] [ var3 ] + number ) ; 
+} 
+} 
+} 

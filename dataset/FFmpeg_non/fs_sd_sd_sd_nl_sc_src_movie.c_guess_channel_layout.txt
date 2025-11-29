@@ -1,0 +1,20 @@
+static int func1 ( MovieStream * var1 , int var2 , void * var3 ) 
+{ 
+AVCodecContext * var4 = var1 -> var1 -> var5 ; 
+char var6 [ number ] ; 
+int64_t var7 = func2 ( var4 -> var8 ) ; 
+if ( ! var7 ) { 
+av_log ( var3 , AV_LOG_ERROR , 
+str 
+str , 
+var2 , var4 -> var8 ) ; 
+return func3 ( var9 ) ; 
+} 
+func4 ( var6 , sizeof ( var6 ) , var4 -> var8 , var7 ) ; 
+av_log ( var3 , AV_LOG_WARNING , 
+str 
+str , 
+var2 , var6 ) ; 
+var4 -> var10 = var7 ; 
+return number ; 
+} 

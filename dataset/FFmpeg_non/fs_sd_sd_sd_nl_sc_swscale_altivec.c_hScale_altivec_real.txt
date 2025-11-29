@@ -1,0 +1,137 @@
+static void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , const int16_t * var5 , 
+const int32_t * var6 , int var7 ) 
+{ 
+register int var8 ; 
+LOCAL_ALIGNED ( number , int , var9 , [ number ] ) ; 
+if ( var7 % number ) { 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var10 ; 
+register int var11 = var6 [ var8 ] ; 
+register int var12 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) 
+var12 += ( ( int ) var4 [ var11 + var10 ] ) * var5 [ var7 * var8 + var10 ] ; 
+var2 [ var8 ] = func2 ( var12 >> number , ( number << number ) - number ) ; 
+} 
+} else 
+switch ( var7 ) { 
+case number : 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var11 = var6 [ var8 ] ; 
+vector unsigned char var13 = func3 ( var11 , var4 ) ; 
+vector signed short var14 , var15 ; 
+vector signed int var16 , var17 ; 
+var14 = 
+( vector signed short ) ( VEC_MERGEH ( ( vector unsigned char ) var18 , var13 ) ) ; 
+var14 = vec_mergeh ( var14 , ( vector signed short ) var18 ) ; 
+func4 ( var8 , var15 , var5 ) ; 
+var16 = func5 ( var14 , var15 ) ; 
+var17 = func6 ( var16 , var18 ) ; 
+func7 ( var17 , number , var9 ) ; 
+var2 [ var8 ] = func2 ( var9 [ number ] >> number , ( number << number ) - number ) ; 
+} 
+break ; 
+case 8 : 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var11 = var6 [ var8 ] ; 
+vector unsigned char var13 , var19 , var20 ; 
+vector unsigned char var21 ; 
+vector signed short var14 , var15 ; 
+vector signed int var22 , var17 ; 
+func8 ( var19 , var11 , var4 , var21 ) ; 
+func9 ( var11 , number , var4 , var21 , var19 , var20 , var13 ) ; 
+var14 = 
+( vector signed short ) ( VEC_MERGEH ( ( vector unsigned char ) var18 , var13 ) ) ; 
+var15 = func10 ( var8 << number , var5 ) ; 
+var22 = func11 ( var14 , var15 , ( vector signed int ) var18 ) ; 
+var17 = func6 ( var22 , var18 ) ; 
+func7 ( var17 , number , var9 ) ; 
+var2 [ var8 ] = func2 ( var9 [ number ] >> number , ( number << number ) - number ) ; 
+} 
+break ; 
+case number : 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var11 = var6 [ var8 ] ; 
+vector unsigned char var13 = func3 ( var11 , var4 ) ; 
+vector signed short var23 = 
+( vector signed short ) ( VEC_MERGEH ( ( vector unsigned char ) var18 , var13 ) ) ; 
+vector signed short var24 = 
+( vector signed short ) ( VEC_MERGEL ( ( vector unsigned char ) var18 , var13 ) ) ; 
+vector signed short var25 = func10 ( var8 << number , var5 ) ; 
+vector signed short var26 = func10 ( ( var8 << number ) + number , var5 ) ; 
+vector signed int var27 = func11 ( var23 , var25 , ( vector signed int ) var18 ) ; 
+vector signed int var22 = func11 ( var24 , var26 , var27 ) ; 
+vector signed int var17 = func6 ( var22 , var18 ) ; 
+func12 ( var17 , number , var9 ) ; 
+var2 [ var8 ] = func2 ( var9 [ number ] >> number , ( number << number ) - number ) ; 
+} 
+break ; 
+var28 : 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var10 , var29 = var8 * number * var7 ; 
+register int var11 = var6 [ var8 ] ; 
+vector signed int var17 , var22 = ( vector signed int ) var18 ; 
+vector signed short var30 ; 
+vector unsigned char var31 , var19 , var21 ; 
+func8 ( var30 , var29 , var5 , var31 ) ; 
+func8 ( var19 , var11 , var4 , var21 ) ; 
+for ( var10 = number ; var10 < var7 - number ; var10 += number ) { 
+vector unsigned char var20 , var13 ; 
+vector signed short var32 , var33 , var25 , var26 ; 
+func13 ( var11 , var10 , var4 , var21 , var19 , var20 , var13 ) ; 
+vector signed short var23 = 
+( vector signed short ) ( VEC_MERGEH ( ( vector unsigned char ) var18 , var13 ) ) ; 
+vector signed short var24 = 
+( vector signed short ) ( VEC_MERGEL ( ( vector unsigned char ) var18 , var13 ) ) ; 
+func14 ( var8 , var10 , var5 , var30 , var32 , var31 , var25 , number ) ; 
+func14 ( var8 , var10 , var5 , var32 , var33 , var31 , var26 , number ) ; 
+vector signed int var27 = func11 ( var23 , var25 , var22 ) ; 
+var22 = func11 ( var24 , var26 , var27 ) ; 
+func15 ( var33 , var30 , var20 , var19 ) ; 
+} 
+if ( var10 < var7 - number ) { 
+vector unsigned char var20 , var13 ; 
+vector signed short var14 , var32 , var15 ; 
+func9 ( var11 , var10 , var4 , var21 , var19 , var20 , var13 ) ; 
+var14 = 
+( vector signed short ) ( VEC_MERGEH ( ( vector unsigned char ) var18 , var13 ) ) ; 
+func14 ( var8 , var10 , var5 , var30 , var32 , var31 , var15 , number ) ; 
+var22 = func11 ( var14 , var15 , var22 ) ; 
+} 
+var17 = func6 ( var22 , var18 ) ; 
+func12 ( var17 , number , var9 ) ; 
+var2 [ var8 ] = func2 ( var9 [ number ] >> number , ( number << number ) - number ) ; 
+} 
+} 
+} 
+static void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , const int16_t * var5 , 
+const int32_t * var6 , int var7 ) 
+{ 
+register int var8 ; 
+LOCAL_ALIGNED ( number , int , var9 , [ number ] ) ; 
+if ( var7 % number ) { 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var10 ; 
+register int var11 = var6 [ var8 ] ; 
+register int var12 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) 
+var12 += ( ( int ) var4 [ var11 + var10 ] ) * var5 [ var7 * var8 + var10 ] ; 
+var2 [ var8 ] = func2 ( var12 >> number , ( number << number ) - number ) ; 
+} 
+} else 
+static void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , const int16_t * var5 , 
+const int32_t * var6 , int var7 ) 
+{ 
+register int var8 ; 
+LOCAL_ALIGNED ( number , int , var9 , [ number ] ) ; 
+if ( var7 % number ) { 
+for ( var8 = number ; var8 < var3 ; var8 ++ ) { 
+register int var10 ; 
+register int var11 = var6 [ var8 ] ; 
+register int var12 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) 
+var12 += ( ( int ) var4 [ var11 + var10 ] ) * var5 [ var7 * var8 + var10 ] ; 
+var2 [ var8 ] = func2 ( var12 >> number , ( number << number ) - number ) ; 
+} 

@@ -1,0 +1,92 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+LavfiContext * var3 = var1 -> var4 ; 
+double var5 = var6 ; 
+int var7 , var8 = number ; 
+AVFrame * var9 = var3 -> var10 ; 
+AVPicture var11 ; 
+AVDictionary * var12 ; 
+int var13 , var14 ; 
+int var15 = number ; 
+if ( var3 -> var16 . var15 ) { 
+* var2 = var3 -> var16 ; 
+func2 ( & var3 -> var16 ) ; 
+var3 -> var16 . var15 = number ; 
+var3 -> var16 . var17 = var18 ; 
+return var2 -> var15 ; 
+} 
+for ( var14 = number ; var14 < var3 -> var19 ; var14 ++ ) { 
+AVRational var20 = var3 -> var21 [ var14 ] -> var22 [ number ] -> var23 ; 
+double var24 ; 
+int var13 ; 
+if ( var3 -> var25 [ var14 ] ) 
+continue ; 
+var13 = func3 ( var3 -> var21 [ var14 ] , var9 , 
+var26 ) ; 
+if ( var13 == var27 ) { 
+func4 ( var1 , var48 , var14 ) ; 
+var3 -> var25 [ var14 ] = number ; 
+continue ; 
+} else if ( var13 < number ) 
+return var13 ; 
+var24 = func5 ( var9 -> var28 , var20 , var29 , var30 | var31 ) ; 
+func4 ( var1 , var48 , var14 , var24 ) ; 
+func6 ( var9 ) ; 
+if ( var24 < var5 ) { 
+var5 = var24 ; 
+var8 = var14 ; 
+} 
+} 
+if ( var5 == var6 ) 
+return var27 ; 
+func4 ( var1 , var48 , var8 ) ; 
+func3 ( var3 -> var21 [ var8 ] , var9 , number ) ; 
+var7 = var3 -> var32 [ var8 ] ; 
+if ( var9 -> var33 { 
+var15 = func7 ( var9 -> var34 , var9 -> var33 , var9 -> var35 ) ; 
+if ( ( var13 = func8 ( var2 , var15 ) ) < number ) 
+return var13 ; 
+memcpy ( var11 . var17 , var9 -> var17 , number * sizeof ( var9 -> var17 [ number ] ) ) ; 
+memcpy ( var11 . var36 , var9 -> var36 , number * sizeof ( var9 -> var36 [ number ] ) ) ; 
+func9 ( & var11 , var9 -> var34 , var9 -> var33 , var9 -> var35 , 
+var2 -> var17 , var15 ) ; 
+} else if ( func10 ( var9 ) { 
+var15 = var9 -> var37 * func11 ( var9 -> var34 ) * 
+func10 ( var9 ) ; 
+if ( ( var13 = func8 ( var2 , var15 ) ) < number ) 
+return var13 ; 
+memcpy ( var2 -> var17 , var9 -> var17 [ number ] , var15 ) ; 
+} 
+var12 = func12 ( var9 ) ; 
+if ( var12 ) { 
+uint8_t * var38 ; 
+AVDictionaryEntry * var39 = var18 ; 
+AVBPrint var40 ; 
+func13 ( & var40 , number , var41 ) ; 
+while ( ( var39 = func14 ( var12 , var48 , var39 , var42 ) ) ) { 
+func15 ( & var40 , var48 , var39 -> var43 ) ; 
+func16 ( & var40 , var48 , number ) ; 
+func15 ( & var40 , var48 , var39 -> var44 ) ; 
+func16 ( & var40 , var48 , number ) ; 
+} 
+if ( ! func17 ( & var40 ) || 
+! ( var38 = func18 ( var2 , var45 , 
+var40 . var46 ) ) ) { 
+func19 ( & var40 , var18 ) ; 
+return func20 ( var47 ) ; 
+} 
+memcpy ( var38 , var40 . var48 , var40 . var46 ) ; 
+func19 ( & var40 , var18 ) ; 
+} 
+if ( ( var13 = func21 ( var1 , var9 , var8 ) ) < number ) { 
+func6 ( var9 ) ; 
+func22 ( var2 ) ; 
+return var13 ; 
+} 
+var2 -> var49 = var7 ; 
+var2 -> var28 = var9 -> var28 ; 
+var2 -> var50 = func23 ( var9 ) ; 
+var2 -> var15 = var15 ; 
+func6 ( var9 ) ; 
+return var15 ; 
+} 

@@ -1,0 +1,51 @@
+static int func1 ( MatroskaDemuxContext * var1 ) 
+{ 
+EbmlList * var2 ; 
+MatroskaBlock * var3 ; 
+int var4 , var5 ; 
+var5 = func2 ( var1 , 
+var6 , 
+& var1 -> var7 ) ; 
+if ( var5 == number ) { 
+if ( var1 -> var8 ) 
+func3 ( var1 ) ; 
+func4 ( var9 , & var1 -> var7 ) ; 
+memset ( & var1 -> var7 , number , sizeof ( MatroskaCluster ) ) ; 
+var1 -> var10 = number ; 
+var1 -> var8 = func5 ( var1 -> var11 -> var12 ) ; 
+var1 -> var13 = var14 ; 
+if ( var1 -> var15 ) 
+var1 -> var8 -= number ; 
+var5 = func2 ( var1 , 
+var16 , 
+& var1 -> var7 ) ; 
+if ( var5 == number ) 
+var5 = func2 ( var1 , 
+var6 , 
+& var1 -> var7 ) ; 
+} 
+if ( ! var5 && 
+var1 -> var10 < 
+var1 -> var7 . var3 . var17 ) { 
+var2 = & var1 -> var7 . var3 ; 
+var3 = var2 -> var18 ; 
+var1 -> var10 = var2 -> var17 ; 
+var4 = var2 -> var17 - number ; 
+if ( var3 [ var4 ] . var19 . var20 > number && var3 [ var4 ] . var19 . var21 ) { 
+int var22 = var3 [ var4 ] . var23 ? ! var3 [ var4 ] . var24 : - number ; 
+uint8_t * var25 = var3 [ var4 ] . var25 . var20 > number ? 
+var3 [ var4 ] . var25 . var21 : var14 ; 
+if ( ! var3 [ var4 ] . var23 ) 
+var3 [ var4 ] . var26 = number ; 
+var5 = func6 ( var1 , var3 [ var4 ] . var19 . var21 , 
+var3 [ var4 ] . var19 . var20 , var3 [ var4 ] . var19 . var27 , 
+var1 -> var7 . var28 , 
+var3 [ var4 ] . var26 , var22 , 
+var25 , var3 [ var4 ] . var29 , 
+var3 [ var4 ] . var25 . var20 , 
+var1 -> var8 , 
+var3 [ var4 ] . var30 ) ; 
+} 
+} 
+return var5 ; 
+} 

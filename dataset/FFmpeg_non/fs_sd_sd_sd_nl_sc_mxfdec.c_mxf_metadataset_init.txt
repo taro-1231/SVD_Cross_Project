@@ -1,0 +1,13 @@
+static int func1 ( MXFMetadataSet * var1 , enum MXFMetadataSetType var2 ) 
+{ 
+switch ( var2 ) { 
+case var3 : 
+case var4 : 
+( ( MXFDescriptor * ) var1 ) -> var5 = var6 ; 
+( ( MXFDescriptor * ) var1 ) -> var7 = var8 ; 
+break ; 
+var9 : 
+break ; 
+} 
+return number ; 
+} 

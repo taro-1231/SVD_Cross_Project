@@ -1,0 +1,173 @@
+int func1 ( MpegEncContext * var1 , 
+int16_t * var2 , int var3 , 
+int var4 , int * var5 ) 
+{ 
+int var6 , var7 , var8 , var9 , var10 , var11 ; 
+const int * var12 ; 
+const uint8_t * var13 = var1 -> var14 . var13 ; 
+int var15 ; 
+int var16 = number ; 
+unsigned int var17 , var18 ; 
+var1 -> var19 . func2 ( var2 ) ; 
+if ( var1 -> var20 ) 
+var1 -> func3 ( var1 , var2 ) ; 
+if ( var1 -> var21 ) { 
+if ( ! var1 -> var22 ) { 
+if ( var3 < number ) 
+var10 = var1 -> var23 ; 
+else 
+var10 = var1 -> var24 ; 
+var10 = var10 << number ; 
+} else 
+var10 = number << number ; 
+var2 [ number ] = ( var2 [ number ] + ( var10 >> number ) ) / var10 ; 
+var11 = number ; 
+var9 = number ; 
+var12 = var3 < number ? var1 -> var25 [ var4 ] : var1 -> var26 [ var4 ] ; 
+var15 = var1 -> var27 * ( number << ( var28 - var29 ) ) ; 
+} else { 
+var11 = number ; 
+var9 = - number ; 
+var12 = var1 -> var30 [ var4 ] ; 
+var15 = var1 -> var31 * ( number << ( var28 - var29 ) ) ; 
+} 
+var17 = ( number << var28 ) - var15 - number ; 
+var18 = ( var17 << number ) ; 
+for ( var6 = number ; var6 >= var11 ; var6 -- ) { 
+var7 = var13 [ var6 ] ; 
+var8 = var2 [ var7 ] * var12 [ var7 ] ; 
+if ( ( ( unsigned ) ( var8 + var17 ) ) > var18 ) { 
+var9 = var6 ; 
+break ; 
+} else { 
+var2 [ var7 ] = number ; 
+} 
+} 
+for ( var6 = var11 ; var6 <= var9 ; var6 ++ ) { 
+var7 = var13 [ var6 ] ; 
+var8 = var2 [ var7 ] * var12 [ var7 ] ; 
+if ( ( ( unsigned ) ( var8 + var17 ) ) > var18 ) { 
+if ( var8 > number ) { 
+var8 = ( var15 + var8 ) >> var28 ; 
+var2 [ var7 ] = var8 ; 
+} else { 
+var8 = ( var15 - var8 ) >> var28 ; 
+var2 [ var7 ] = - var8 ; 
+} 
+var16 |= var8 ; 
+} else { 
+var2 [ var7 ] = number ; 
+} 
+} 
+* var5 = var1 -> var32 < var16 ; 
+if ( var1 -> var33 . var34 != var35 ) 
+func4 ( var2 , var1 -> var33 . var36 , 
+var13 , var9 ) ; 
+return var9 ; 
+} 
+static const AVOption h263_options [ ] = { 
+{ str , str , OFFSET ( obmc ) , AV_OPT_TYPE_INT , { . i64 = number } , number , number , VE } , 
+{ str , str 
+{ str , str , OFFSET ( mb_info ) , AV_OPT_TYPE_INT , { . i64 = number } , number , INT_MAX , VE } , 
+FF_MPV_COMMON_OPTS 
+{ NULL } , 
+} ; 
+static const AVClass h263_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = h263_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVCodec ff_h263_encoder = { 
+. name = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. type = AVMEDIA_TYPE_VIDEO , 
+. id = AV_CODEC_ID_H263 , 
+. priv_data_size = sizeof ( MpegEncContext ) , 
+. init = ff_mpv_encode_init , 
+. encode2 = ff_mpv_encode_picture , 
+. close = ff_mpv_encode_end , 
+. pix_fmts = ( const enum AVPixelFormat [ ] ) { AV_PIX_FMT_YUV420P , AV_PIX_FMT_NONE } , 
+. priv_class = & h263_class , 
+} ; 
+static const AVOption h263p_options [ ] = { 
+{ str , str , OFFSET ( umvplus ) , AV_OPT_TYPE_INT , { . i64 = number } , number , number , VE } , 
+{ str , str , OFFSET ( alt_inter_vlc ) , AV_OPT_TYPE_INT , { . i64 = number } , number , number , VE } , 
+{ str , str , OFFSET ( obmc ) , AV_OPT_TYPE_INT , { . i64 = number } , number , number , VE } , 
+{ str , str , OFFSET ( h263_slice_structured ) , AV_OPT_TYPE_INT , { . i64 = number } , number , number , VE } , 
+FF_MPV_COMMON_OPTS 
+{ NULL } , 
+} ; 
+static const AVClass h263p_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = h263p_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVCodec ff_h263p_encoder = { 
+. name = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. type = AVMEDIA_TYPE_VIDEO , 
+. id = AV_CODEC_ID_H263P , 
+. priv_data_size = sizeof ( MpegEncContext ) , 
+. init = ff_mpv_encode_init , 
+. encode2 = ff_mpv_encode_picture , 
+. close = ff_mpv_encode_end , 
+. capabilities = AV_CODEC_CAP_SLICE_THREADS , 
+. pix_fmts = ( const enum AVPixelFormat [ ] ) { AV_PIX_FMT_YUV420P , AV_PIX_FMT_NONE } , 
+. priv_class = & h263p_class , 
+} ; 
+static const AVClass msmpeg4v2_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = ff_mpv_generic_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVCodec ff_msmpeg4v2_encoder = { 
+. name = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. type = AVMEDIA_TYPE_VIDEO , 
+. id = AV_CODEC_ID_MSMPEG4V2 , 
+. priv_data_size = sizeof ( MpegEncContext ) , 
+. init = ff_mpv_encode_init , 
+. encode2 = ff_mpv_encode_picture , 
+. close = ff_mpv_encode_end , 
+. pix_fmts = ( const enum AVPixelFormat [ ] ) { AV_PIX_FMT_YUV420P , AV_PIX_FMT_NONE } , 
+. priv_class = & msmpeg4v2_class , 
+} ; 
+static const AVClass msmpeg4v3_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = ff_mpv_generic_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVCodec ff_msmpeg4v3_encoder = { 
+. name = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. type = AVMEDIA_TYPE_VIDEO , 
+. id = AV_CODEC_ID_MSMPEG4V3 , 
+. priv_data_size = sizeof ( MpegEncContext ) , 
+. init = ff_mpv_encode_init , 
+. encode2 = ff_mpv_encode_picture , 
+. close = ff_mpv_encode_end , 
+. pix_fmts = ( const enum AVPixelFormat [ ] ) { AV_PIX_FMT_YUV420P , AV_PIX_FMT_NONE } , 
+. priv_class = & msmpeg4v3_class , 
+} ; 
+static const AVClass wmv1_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = ff_mpv_generic_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVCodec ff_wmv1_encoder = { 
+. name = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. type = AVMEDIA_TYPE_VIDEO , 
+. id = AV_CODEC_ID_WMV1 , 
+. priv_data_size = sizeof ( MpegEncContext ) , 
+. init = ff_mpv_encode_init , 
+. encode2 = ff_mpv_encode_picture , 
+. close = ff_mpv_encode_end , 
+. pix_fmts = ( const enum AVPixelFormat [ ] ) { AV_PIX_FMT_YUV420P , AV_PIX_FMT_NONE } , 
+. priv_class = & wmv1_class , 
+} ; 

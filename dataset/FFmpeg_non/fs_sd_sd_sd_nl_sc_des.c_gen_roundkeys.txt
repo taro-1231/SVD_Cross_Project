@@ -1,0 +1,10 @@
+static void func1 ( uint64_t var1 [ number ] , uint64_t var2 ) { 
+int var3 ; 
+uint64_t var4 = func2 ( var2 , var5 , sizeof ( var5 ) ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var4 = func3 ( var4 ) ; 
+if ( var3 > number && var3 != number && var3 != number ) 
+var4 = func3 ( var4 ) ; 
+var1 [ var3 ] = func2 ( var4 , var6 , sizeof ( var6 ) ) ; 
+} 
+} 

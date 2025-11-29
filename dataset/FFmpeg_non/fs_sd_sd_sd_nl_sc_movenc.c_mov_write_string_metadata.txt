@@ -1,0 +1,21 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+const char * var3 , const char * var4 , 
+int var5 ) 
+{ 
+int var6 , var7 = number , var8 , var9 ; 
+AVDictionaryEntry * var10 , * var11 = var12 ; 
+char var13 [ number ] ; 
+if ( ! ( var10 = func2 ( var1 -> var14 , var4 , var12 , number ) ) ) 
+return number ; 
+var8 = strlen ( var10 -> var15 ) ; 
+snprintf ( var13 , sizeof ( var13 ) , str , var4 ) ; 
+while ( ( var11 = func2 ( var1 -> var14 , var13 , var11 , var16 ) ) ) { 
+var9 = strlen ( var11 -> var15 ) ; 
+if ( var9 == var8 + number && ! strcmp ( var10 -> var17 , var11 -> var17 ) 
+&& ( var6 = func3 ( & var11 -> var15 [ var9 - number ] , number ) ) >= number ) { 
+var7 = var6 ; 
+break ; 
+} 
+} 
+return func4 ( var2 , var3 , var10 -> var17 , var7 , var5 ) ; 
+} 

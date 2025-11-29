@@ -1,0 +1,19 @@
+static int func1 ( struct LATMContext * var1 , GetBitContext * var2 ) 
+{ 
+uint8_t var3 ; 
+if ( var1 -> var4 == number ) { 
+int var5 = number ; 
+do { 
+var3 = func2 ( var2 , number ) ; 
+var5 += var3 ; 
+} while ( var3 == number ) ; 
+return var5 ; 
+} else if ( var1 -> var4 == number ) { 
+return var1 -> var6 ; 
+} else if ( var1 -> var4 == number || 
+var1 -> var4 == number || 
+var1 -> var4 == number ) { 
+func3 ( var2 , number ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,48 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+LifeContext * var2 = var1 -> var3 ; 
+char * var4 ; 
+int var5 , var6 , var7 , var8 , var9 = number , var10 , var11 = number ; 
+if ( ( var5 = func2 ( var2 -> var12 , & var2 -> var13 , & var2 -> var14 , 
+number , var1 ) ) < number ) 
+return var5 ; 
+func3 ( & var2 -> var12 ) ; 
+var10 = number ; 
+for ( var6 = number ; var6 < var2 -> var14 ; var6 ++ ) { 
+if ( var2 -> var13 [ var6 ] == str ) { 
+var9 ++ ; var11 = func4 ( var10 , var11 ) ; var10 = number ; 
+} else { 
+var10 ++ ; 
+} 
+} 
+func5 ( var1 , var15 , str , var9 , var11 ) ; 
+if ( var2 -> var10 ) { 
+if ( var11 > var2 -> var10 || var9 > var2 -> var9 ) { 
+func5 ( var1 , var16 , 
+str , 
+var2 -> var10 , var2 -> var9 , var11 , var9 ) ; 
+return func6 ( var17 ) ; 
+} 
+} else { 
+var2 -> var10 = var11 ; 
+var2 -> var9 = var9 ; 
+} 
+if ( ! ( var2 -> var18 [ number ] = func7 ( var2 -> var9 * var2 -> var10 , sizeof ( * var2 -> var18 [ number ] ) ) ) || 
+! ( var2 -> var18 [ number ] = func7 ( var2 -> var9 * var2 -> var10 , sizeof ( * var2 -> var18 [ number ] ) ) ) ) { 
+func3 ( & var2 -> var18 [ number ] ) ; 
+func3 ( & var2 -> var18 [ number ] ) ; 
+return func6 ( var19 ) ; 
+} 
+var4 = var2 -> var13 ; 
+for ( var7 = number , var6 = ( var2 -> var9 - var9 ) / number ; var7 < var9 ; var7 ++ , var6 ++ ) { 
+for ( var8 = ( var2 -> var10 - var11 ) / number ; ; var8 ++ ) { 
+func5 ( var1 , var15 , str , var6 , var8 , * var4 == str ? str : * var4 ) ; 
+if ( * var4 == str ) { 
+var4 ++ ; break ; 
+} else 
+var2 -> var18 [ number ] [ var6 * var2 -> var10 + var8 ] = func8 ( * ( var4 ++ ) ) ? var20 : number ; 
+} 
+} 
+var2 -> var21 = number ; 
+return number ; 
+} 

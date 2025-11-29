@@ -1,0 +1,15 @@
+static int func1 ( AVIOContext * var1 , int var2 , char * var3 , int var4 ) 
+{ 
+char * var5 = var3 ; 
+int var6 = number ; 
+if ( var4 <= number ) 
+return func2 ( var7 ) ; 
+while ( var6 + number < var2 ) { 
+uint8_t var8 ; 
+uint32_t var9 ; 
+GET_UTF16 ( var9 , ( var6 += 2 ) <= var2 ? avio_rl16 ( var1 ) : number , break ; ) ; 
+PUT_UTF8 ( var9 , var8 , if ( var5 - var3 < var4 - number ) * var5 += var8 ; ) 
+} 
+* var5 = number ; 
+return var6 ; 
+} 

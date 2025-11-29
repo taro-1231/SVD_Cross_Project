@@ -1,0 +1,191 @@
+static void func1 ( ulg var1 , ulg var2 , 
+ulg var3 , ulg var4 ) 
+{ 
+uch var5 = var6 . var5 ; 
+uch var7 = var6 . var7 ; 
+uch var8 = var6 . var8 ; 
+uch * var9 , * var10 = var11 ; 
+char * var12 ; 
+uch var13 , var14 , var15 , var16 ; 
+ulg var17 , var18 , var19 = number ; 
+ulg var20 ; 
+int var21 = var22 -> var23 ; 
+Trace ( ( stderr , str , 
+var6 . var25 ) ) 
+Trace ( ( stderr , str , 
+var6 . var3 , var6 . var26 , var21 ) ) 
+Trace ( ( stderr , str , var22 -> var28 ) ) 
+Trace ( ( stderr , str , var22 -> byte_order == MSBFirst ? 
+str : ( var22 -> byte_order == LSBFirst ? str : str ) ) ) 
+if ( var29 == number || var29 == number ) { 
+ulg var30 , var31 , var32 ; 
+int var27 = var22 -> var28 ; 
+for ( var19 = var18 = var2 ; var18 < var2 + var4 ; ++ var18 ) { 
+var9 = var6 . var33 + var18 * var6 . var26 ; 
+if ( var34 ) 
+var10 = var35 + var18 * var36 ; 
+var12 = var22 -> var37 + var18 * var21 ; 
+if ( var6 . var25 == number ) { 
+for ( var17 = var6 . var3 ; var17 > number ; -- var17 ) { 
+var30 = * var9 ++ ; 
+var31 = * var9 ++ ; 
+var32 = * var9 ++ ; 
+var20 = ( var30 << var38 ) | 
+( var31 << var39 ) | 
+( var32 << var40 ) ; 
+if ( var27 == number ) { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} else { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+var30 = ( var38 < number ) ? var30 << ( - var38 ) : var30 >> var38 ; 
+var31 = ( var39 < number ) ? var31 << ( - var39 ) : var31 >> var39 ; 
+var32 = ( var40 < number ) ? var32 << ( - var40 ) : var32 >> var40 ; 
+var20 = ( var30 & var41 ) | ( var31 & var42 ) | ( var32 & var43 ) ; 
+if ( var27 == number ) { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} else { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+} 
+} else { 
+for ( var17 = var6 . var3 ; var17 > number ; -- var17 ) { 
+var13 = * var9 ++ ; 
+var14 = * var9 ++ ; 
+var15 = * var9 ++ ; 
+var16 = * var9 ++ ; 
+if ( var34 ) { 
+var5 = * var10 ++ ; 
+var7 = * var10 ++ ; 
+var8 = * var10 ++ ; 
+} 
+if ( var16 == number ) { 
+var30 = var13 ; 
+var31 = var14 ; 
+var32 = var15 ; 
+} else if ( var16 == number ) { 
+var30 = var5 ; 
+var31 = var7 ; 
+var32 = var8 ; 
+} else { 
+func2 ( var30 , var13 , var16 , var5 ) ; 
+func2 ( var31 , var14 , var16 , var7 ) ; 
+func2 ( var32 , var15 , var16 , var8 ) ; 
+} 
+var20 = ( var30 << var38 ) | 
+( var31 << var39 ) | 
+( var32 << var40 ) ; 
+if ( var27 == number ) { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} else { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+var30 = ( var38 < number ) ? var30 << ( - var38 ) : var30 >> var38 ; 
+var31 = ( var39 < number ) ? var31 << ( - var39 ) : var31 >> var39 ; 
+var32 = ( var40 < number ) ? var32 << ( - var40 ) : var32 >> var40 ; 
+var20 = ( var30 & var41 ) | ( var31 & var42 ) | ( var32 & var43 ) ; 
+if ( var27 == number ) { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} else { 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+} 
+} 
+if ( ( ( var18 + number ) & number ) == number ) { 
+func3 ( var24 , var44 , var45 , var22 , number , ( int ) var19 , number , 
+( int ) var19 , var6 . var3 , number ) ; 
+func4 ( var24 ) ; 
+var19 = var18 + number ; 
+} 
+} 
+} else if ( var29 == number ) { 
+ush var30 , var31 , var32 ; 
+for ( var19 = var18 = var2 ; var18 < var2 + var4 ; ++ var18 ) { 
+var9 = var6 . var46 [ var18 ] ; 
+if ( var34 ) 
+var10 = var35 + var18 * var36 ; 
+var12 = var22 -> var37 + var18 * var21 ; 
+if ( var6 . var25 == number ) { 
+for ( var17 = var6 . var3 ; var17 > number ; -- var17 ) { 
+var30 = ( ( ush ) ( * var9 ) << number ) ; 
+++ var9 ; 
+var31 = ( ( ush ) ( * var9 ) << number ) ; 
+++ var9 ; 
+var32 = ( ( ush ) ( * var9 ) << number ) ; 
+++ var9 ; 
+var20 = ( ( var30 >> var38 ) & var41 ) | 
+( ( var31 >> var39 ) & var42 ) | 
+( ( var32 >> var40 ) & var43 ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+} else { 
+for ( var17 = var6 . var3 ; var17 > number ; -- var17 ) { 
+var13 = * var9 ++ ; 
+var14 = * var9 ++ ; 
+var15 = * var9 ++ ; 
+var16 = * var9 ++ ; 
+if ( var34 ) { 
+var5 = * var10 ++ ; 
+var7 = * var10 ++ ; 
+var8 = * var10 ++ ; 
+} 
+if ( var16 == number ) { 
+var30 = ( ( ush ) var13 << number ) ; 
+var31 = ( ( ush ) var14 << number ) ; 
+var32 = ( ( ush ) var15 << number ) ; 
+} else if ( var16 == number ) { 
+var30 = ( ( ush ) var5 << number ) ; 
+var31 = ( ( ush ) var7 << number ) ; 
+var32 = ( ( ush ) var8 << number ) ; 
+} else { 
+func2 ( var13 , var13 , var16 , var5 ) ; 
+func2 ( var14 , var14 , var16 , var7 ) ; 
+func2 ( var15 , var15 , var16 , var8 ) ; 
+var30 = ( ( ush ) var13 << number ) ; 
+var31 = ( ( ush ) var14 << number ) ; 
+var32 = ( ( ush ) var15 << number ) ; 
+} 
+var20 = ( ( var30 >> var38 ) & var41 ) | 
+( ( var31 >> var39 ) & var42 ) | 
+( ( var32 >> var40 ) & var43 ) ; 
+* var12 += ( char ) ( ( var20 >> number ) & number ) ; 
+* var12 += ( char ) ( var20 & number ) ; 
+} 
+} 
+if ( ( ( var18 + number ) & number ) == number ) { 
+func3 ( var24 , var44 , var45 , var22 , number , ( int ) var19 , number , 
+( int ) var19 , var6 . var3 , number ) ; 
+func4 ( var24 ) ; 
+var19 = var18 + number ; 
+} 
+} 
+} else { 
+} 
+Trace ( ( stderr , str ) ) 
+if ( var19 < var2 + var4 ) { 
+func3 ( var24 , var44 , var45 , var22 , number , ( int ) var19 , number , 
+( int ) var19 , var6 . var3 , var6 . var4 - var19 ) ; 
+func4 ( var24 ) ; 
+} 
+} 

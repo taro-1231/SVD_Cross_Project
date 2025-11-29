@@ -1,0 +1,8 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 , var3 ; 
+OWDenoiseContext * var4 = var1 -> var5 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) 
+for ( var2 = number ; var2 <= var4 -> var6 ; var2 ++ ) 
+func2 ( & var4 -> var7 [ var2 ] [ var3 ] ) ; 
+} 

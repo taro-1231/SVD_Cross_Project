@@ -1,0 +1,58 @@
+static int func1 ( AVFormatContext * var1 , MOVTrack * var2 ) 
+{ 
+int var3 = var2 -> var4 -> var5 ; 
+int var6 = var2 -> var4 -> var7 > var8 ; 
+AVStream * var9 = var2 -> var9 ; 
+int var10 = func2 ( func3 ( var1 , var9 ) ) ; 
+if ( ! var3 ) 
+var3 = func4 ( str , str , str , str ) ; 
+if ( var2 -> var4 -> var11 == var12 ) { 
+if ( var2 -> var4 -> var13 == number && var2 -> var4 -> var14 == number ) { 
+if ( ! var6 ) { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} 
+} else if ( var2 -> var4 -> var13 == number && var2 -> var4 -> var14 == number ) { 
+if ( ! var6 ) { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} else { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} 
+} else if ( var2 -> var4 -> var13 == number && var2 -> var4 -> var14 == number ) { 
+if ( ! var6 ) { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} else { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} 
+} 
+} else if ( var2 -> var4 -> var11 == var15 ) { 
+if ( var2 -> var4 -> var13 == number && var2 -> var4 -> var14 == number ) { 
+if ( ! var6 ) { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} 
+} else if ( var2 -> var4 -> var13 == number && var2 -> var4 -> var14 == number ) { 
+if ( ! var6 ) { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} else { 
+if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+else if ( var10 == number ) var3 = func4 ( str , str , str , str ) ; 
+} 
+} 
+} 
+return var3 ; 
+} 

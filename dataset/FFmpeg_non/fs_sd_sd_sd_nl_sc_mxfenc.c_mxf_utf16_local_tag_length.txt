@@ -1,0 +1,12 @@
+static int func1 ( const char * var1 ) 
+{ 
+uint64_t var2 ; 
+if ( ! var1 ) 
+return number ; 
+var2 = func2 ( var1 ) ; 
+if ( var2 >= var3 / number ) { 
+av_log ( NULL , AV_LOG_ERROR , str PRIx64 str , var2 ) ; 
+return number ; 
+} 
+return number + var2 * number ; 
+} 

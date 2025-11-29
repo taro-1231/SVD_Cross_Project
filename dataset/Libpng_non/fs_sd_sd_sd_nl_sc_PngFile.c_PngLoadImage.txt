@@ -1,0 +1,118 @@
+BOOL func1 ( PTSTR var1 , png_byte ** var2 , 
+int * var3 , int * var4 , int * var5 , png_color * var6 ) 
+{ 
+static FILE * var7 ; 
+png_byte var8 [ number ] ; 
+int var9 ; 
+int var10 ; 
+double var11 ; 
+png_color_16 * var12 ; 
+png_uint_32 var13 ; 
+png_uint_32 var14 ; 
+png_byte * var15 = * var2 ; 
+static png_byte ** var16 = var17 ; 
+int var18 ; 
+if ( ! var1 ) 
+{ 
+* var2 = var15 = var17 ; 
+return var19 ; 
+} 
+if ( ! ( var7 = fopen ( var1 , str ) ) ) 
+{ 
+* var2 = var15 = var17 ; 
+return var19 ; 
+} 
+fread ( var8 , number , number , var7 ) ; 
+if ( func2 ( var8 , number , number ) ) 
+{ 
+* var2 = var15 = var17 ; 
+return var19 ; 
+} 
+var20 = func3 ( func4 ( var17 ) , var17 , 
+( png_error_ptr ) var21 , ( png_error_ptr ) var17 ) ; 
+if ( ! var20 ) 
+{ 
+* var2 = var15 = var17 ; 
+return var19 ; 
+} 
+var22 = func5 ( var20 ) ; 
+if ( ! var22 ) 
+{ 
+func6 ( & var20 , var17 , var17 ) ; 
+* var2 = var15 = var17 ; 
+return var19 ; 
+} 
+Try 
+{ 
+func7 ( var20 , var7 ) ; 
+png_set_read_fn ( var20 , ( png_voidp ) var7 , png_read_data ) ; 
+func8 ( var20 , number ) ; 
+func9 ( var20 , var22 ) ; 
+func10 ( var20 , var22 , var3 , var4 , & var9 , 
+& var10 , var17 , var17 , var17 ) ; 
+if ( var9 == number ) 
+var23 ( var20 ) ; 
+func11 ( var20 ) ; 
+if ( var10 == var24 ) 
+func12 ( var20 ) ; 
+if ( var9 < number ) 
+func12 ( var20 ) ; 
+if ( func13 ( var20 , var22 , var25 ) ) 
+func12 ( var20 ) ; 
+if ( var10 == var26 || 
+var10 == var27 ) 
+func14 ( var20 ) ; 
+if ( func15 ( var20 , var22 , & var12 ) ) 
+{ 
+func16 ( var20 , var12 , var28 , number , number ) ; 
+var6 -> var29 = ( byte ) var12 -> var29 ; 
+var6 -> var30 = ( byte ) var12 -> var30 ; 
+var6 -> var31 = ( byte ) var12 -> var31 ; 
+} 
+else 
+{ 
+var6 = var17 ; 
+} 
+if ( func17 ( var20 , var22 , & var11 ) ) 
+func18 ( var20 , ( double ) number , var11 ) ; 
+func19 ( var20 , var22 ) ; 
+func10 ( var20 , var22 , var3 , var4 , & var9 , 
+& var10 , var17 , var17 , var17 ) ; 
+var14 = func20 ( var20 , var22 ) ; 
+var13 = func21 ( var20 , var22 ) ; 
+* var5 = var13 ; 
+if ( var15 ) 
+{ 
+free ( var15 ) ; 
+var15 = var17 ; 
+} 
+if ( ( var15 = ( png_byte * ) malloc ( var14 * ( * var4 ) 
+* sizeof ( png_byte ) ) ) == var17 ) 
+{ 
+func22 ( var20 , str ) ; 
+} 
+* var2 = var15 ; 
+if ( ( var16 = ( png_bytepp ) malloc ( ( * var4 ) 
+* sizeof ( png_bytep ) ) ) == var17 ) 
+{ 
+func22 ( var20 , str ) ; 
+} 
+for ( var18 = number ; var18 < ( * var4 ) ; var18 ++ ) 
+var16 [ var18 ] = var15 + var18 * var14 ; 
+func23 ( var20 , var16 ) ; 
+func24 ( var20 , var17 ) ; 
+free ( var16 ) ; 
+var16 = var17 ; 
+} 
+Catch ( msg ) 
+{ 
+func6 ( & var20 , & var22 , var17 ) ; 
+* var2 = var15 = var17 ; 
+if ( var16 ) 
+free ( var16 ) ; 
+fclose ( var7 ) ; 
+return var19 ; 
+} 
+fclose ( var7 ) ; 
+return var32 ; 
+} 

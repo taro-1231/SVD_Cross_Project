@@ -1,0 +1,75 @@
+static int64_t func1 ( AVOpenCLExternalEnv * var2 ) 
+{ 
+int var3 , var4 = number , var5 = number , var6 = number ; 
+int64_t var7 , var8 = number ; 
+cl_int var9 ; 
+size_t var10 ; 
+char * var11 ; 
+int * var12 ; 
+int var13 = var5 * var6 * sizeof ( char ) ; 
+int var14 = sizeof ( uint32_t ) * number ; 
+cl_mem var15 , var16 , var17 ; 
+cl_kernel var18 = var19 ; 
+cl_program var20 = var19 ; 
+size_t var21 [ number ] = { number , number } ; 
+size_t var22 [ number ] = { ( size_t ) var5 , ( size_t ) var6 } ; 
+if ( ! ( var11 = func2 ( var13 ) ) || ! ( var12 = func2 ( var14 ) ) ) { 
+func3 ( var19 , var23 , str ) ; 
+var8 = func4 ( var24 ) ; 
+goto var25 ; 
+} 
+func5 ( ( int * ) var11 , var13 / number ) ; 
+func5 ( var12 , var14 / number ) ; 
+func6 ( var15 , var26 , var14 ) ; 
+func6 ( var16 , var26 , var13 ) ; 
+func6 ( var17 , var27 , var13 ) ; 
+var10 = strlen ( var28 ) ; 
+var20 = func7 ( var2 -> var29 , number , & var28 , 
+& var10 , & var9 ) ; 
+if ( var9 != var30 || ! var20 ) { 
+func3 ( var19 , var23 , str ) ; 
+var8 = var31 ; 
+goto var25 ; 
+} 
+var9 = func8 ( var20 , number , & ( var2 -> var32 ) , var19 , var19 , var19 ) ; 
+if ( var9 != var30 ) { 
+func3 ( var19 , var23 , str ) ; 
+var8 = var31 ; 
+goto var25 ; 
+} 
+var18 = func9 ( var20 , str , & var9 ) ; 
+if ( var9 != var30 ) { 
+func3 ( var19 , var23 , str ) ; 
+var8 = var31 ; 
+goto var25 ; 
+} 
+func10 ( var33 , var2 -> var34 , var16 , var35 , number , 
+var13 , var11 , number , var19 , var19 ) ; 
+func10 ( var33 , var2 -> var34 , var15 , var35 , number , 
+var14 , var12 , number , var19 , var19 ) ; 
+func10 ( var36 , var18 , var4 ++ , sizeof ( cl_mem ) , & var16 ) ; 
+func10 ( var36 , var18 , var4 ++ , sizeof ( cl_mem ) , & var17 ) ; 
+func10 ( var36 , var18 , var4 ++ , sizeof ( cl_mem ) , & var15 ) ; 
+func10 ( var36 , var18 , var4 ++ , sizeof ( cl_int ) , & var5 ) ; 
+func10 ( var36 , var18 , var4 ++ , sizeof ( cl_int ) , & var6 ) ; 
+var7 = func11 ( ) ; 
+for ( var3 = number ; var3 < var1 ; var3 ++ ) 
+func10 ( var37 , var2 -> var34 , var18 , number , var19 , 
+var22 , var21 , number , var19 , var19 ) ; 
+func12 ( var2 -> var34 ) ; 
+var8 = ( func11 ( ) - var7 ) / var1 ; 
+var25 : 
+if ( var18 ) 
+func13 ( var18 ) ; 
+if ( var20 ) 
+func14 ( var20 ) ; 
+if ( var16 ) 
+func15 ( var16 ) ; 
+if ( var17 ) 
+func15 ( var17 ) ; 
+if ( var15 ) 
+func15 ( var15 ) ; 
+func16 ( var11 ) ; 
+func16 ( var12 ) ; 
+return var8 ; 
+} 

@@ -1,0 +1,5 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+return func2 ( var2 , var1 ) ; 
+} 

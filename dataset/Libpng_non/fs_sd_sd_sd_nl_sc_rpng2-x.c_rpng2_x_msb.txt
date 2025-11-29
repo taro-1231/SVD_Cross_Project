@@ -1,0 +1,10 @@
+static int func1 ( ulg var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 >= number ; -- var2 ) { 
+if ( var1 & number ) 
+break ; 
+var1 <<= number ; 
+} 
+return var2 ; 
+} 

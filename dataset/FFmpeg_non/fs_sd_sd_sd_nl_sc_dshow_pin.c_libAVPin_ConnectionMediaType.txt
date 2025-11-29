@@ -1,0 +1,9 @@
+func1 ( libAVPin * var1 , AM_MEDIA_TYPE * var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+if ( ! var1 -> var4 ) 
+return var5 ; 
+return func3 ( var2 , & var1 -> var2 ) ; 
+} 

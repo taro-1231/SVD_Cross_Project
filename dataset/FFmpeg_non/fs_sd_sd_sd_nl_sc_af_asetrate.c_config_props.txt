@@ -1,0 +1,18 @@
+static av_cold int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ASetRateContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+AVRational var8 = var2 -> var7 [ number ] -> var9 ; 
+int var10 = var6 -> var11 ; 
+if ( var8 . var12 == number && var8 . var13 == var10 ) { 
+var1 -> var9 . var12 = number ; 
+var1 -> var9 . var13 = var1 -> var11 ; 
+} else { 
+var1 -> var9 = var8 ; 
+var4 -> var14 = number ; 
+if ( func2 ( var8 ) > number / func3 ( var10 , var1 -> var11 ) ) 
+func4 ( var2 , var15 , str ) ; 
+} 
+return number ; 
+} 

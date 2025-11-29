@@ -1,0 +1,647 @@
+static int func1 ( struct sbg_parser * var1 ) 
+{ 
+char * var2 = var1 -> var3 ; 
+struct sbg_string var4 ; 
+struct sbg_script_definition * var5 ; 
+if ( ! func2 ( var1 , & var4 ) || ! func3 ( var1 , str ) || ! func4 ( var1 ) ) { 
+var1 -> var3 = var2 ; 
+return number ; 
+} 
+if ( var4 . var6 - var4 . var7 == number && ! memcmp ( var4 . var7 , str , number ) && 
+var4 . var7 [ number ] >= str && var4 . var7 [ number ] <= str && 
+var4 . var7 [ number ] >= str && var4 . var7 [ number ] <= str ) { 
+int var8 = ( var4 . var7 [ number ] - str ) * number + ( var4 . var7 [ number ] - str ) ; 
+return func5 ( var1 , var8 ) ; 
+} 
+var5 = func6 ( ( void ** ) & var1 -> var9 . var5 , sizeof ( * var5 ) , 
+& var1 -> var9 . var10 , & var1 -> var11 ) ; 
+if ( ! var5 ) 
+return func7 ( var12 ) ; 
+var5 -> var4 = var4 . var7 ; 
+var5 -> var13 = var4 . var6 - var4 . var7 ; 
+if ( func3 ( var1 , str ) ) 
+return func8 ( var1 , var5 ) ; 
+return func9 ( var1 , var5 ) ; 
+} 
+static void free_script ( struct sbg_script * var7 ) 
+{ 
+av_freep ( & var7 -> var5 ) ; 
+av_freep ( & var7 -> synth ) ; 
+av_freep ( & var7 -> tseq ) ; 
+av_freep ( & var7 -> block_tseq ) ; 
+av_freep ( & var7 -> events ) ; 
+av_freep ( & var7 -> opt_mix ) ; 
+} 
+static int parse_script ( void * log , char * script , int script_len , 
+struct sbg_script * rscript ) 
+{ 
+struct sbg_parser sp = { 
+. log = log , 
+. script = script , 
+. end = script + script_len , 
+. var3 = script , 
+. line_no = 1 , 
+. err_msg = str , 
+. var9 = { 
+. start_ts = AV_NOPTS_VALUE , 
+. sample_rate = 44100 , 
+. opt_fade_time = 60 * AV_TIME_BASE , 
+} , 
+} ; 
+int r ; 
+func4 ( & sp ) ; 
+while ( sp . var3 < sp . end ) { 
+r = parse_options ( & sp ) ; 
+if ( r < number ) 
+goto fail ; 
+if ( ! r && ! lex_line_end ( & sp ) ) 
+break ; 
+} 
+while ( sp . var3 < sp . end ) { 
+r = func1 ( & sp ) ; 
+if ( ! r ) 
+r = parse_time_sequence ( & sp , number ) ; 
+if ( ! r ) 
+r = lex_line_end ( & sp ) ? 1 : AVERROR_INVALIDDATA ; 
+if ( r < number ) 
+goto fail ; 
+} 
+* rscript = sp . var9 ; 
+return 1 ; 
+fail : 
+free_script ( & sp . var9 ) ; 
+if ( ! * sp . err_msg ) 
+if ( r == AVERROR_INVALIDDATA ) 
+snprintf ( sp . err_msg , sizeof ( sp . err_msg ) , str ) ; 
+if ( log && * sp . err_msg ) { 
+const char * ctx = sp . var3 ; 
+const char * ectx = av_x_if_null ( memchr ( ctx , str , sp . end - sp . var3 ) , 
+sp . end ) ; 
+int lctx = ectx - ctx ; 
+const char * quote = str str 
+if ( lctx > number && ctx [ lctx - 1 ] == str ) 
+lctx -- ; 
+if ( lctx == number ) { 
+ctx = str ; 
+lctx = strlen ( ctx ) ; 
+quote = str ; 
+} 
+av_log ( log , AV_LOG_ERROR , str , 
+sp . line_no , sp . err_msg , quote , lctx , ctx , quote ) ; 
+} 
+return r ; 
+} 
+static int read_whole_file ( AVIOContext * io , int max_size , char ** rbuf ) 
+{ 
+char * buf = NULL ; 
+int size = number , bufsize = number , r ; 
+while ( 1 ) { 
+if ( bufsize - size < 1024 ) { 
+bufsize = FFMIN ( FFMAX ( 2 * bufsize , 8192 ) , max_size ) ; 
+if ( bufsize - size < 2 ) { 
+size = func7 ( EFBIG ) ; 
+goto fail ; 
+} 
+buf = av_realloc_f ( buf , bufsize , 1 ) ; 
+if ( ! buf ) { 
+size = func7 ( var12 ) ; 
+goto fail ; 
+} 
+} 
+r = avio_read ( io , buf , bufsize - size - 1 ) ; 
+if ( r == AVERROR_EOF ) 
+break ; 
+if ( r < number ) 
+goto fail ; 
+size += r ; 
+} 
+buf [ size ] = number ; 
+* rbuf = buf ; 
+return size ; 
+fail : 
+av_free ( buf ) ; 
+return size ; 
+} 
+static void expand_timestamps ( void * log , struct sbg_script * var7 ) 
+{ 
+int i , nb_rel = number ; 
+int64_t now , cur_ts , delta = number ; 
+for ( i = number ; i < var7 -> nb_tseq ; i ++ ) 
+nb_rel += var7 -> tseq [ i ] . ts . type == str ; 
+if ( nb_rel == var7 -> nb_tseq ) { 
+now = number ; 
+if ( var7 -> start_ts != AV_NOPTS_VALUE ) 
+av_log ( log , AV_LOG_WARNING , 
+str ) ; 
+} else if ( nb_rel == number && var7 -> start_ts != AV_NOPTS_VALUE || 
+var7 -> opt_start_at_first ) { 
+if ( var7 -> start_ts == AV_NOPTS_VALUE ) 
+var7 -> start_ts = var7 -> tseq [ number ] . ts . t ; 
+now = var7 -> start_ts ; 
+} else { 
+time_t now0 ; 
+struct tm * tm , tmpbuf ; 
+av_log ( log , AV_LOG_WARNING , 
+str 
+str ) ; 
+time ( & now0 ) ; 
+tm = localtime_r ( & now0 , & tmpbuf ) ; 
+now = tm ? tm -> tm_hour * 3600 + tm -> tm_min * 60 + tm -> tm_sec : 
+now0 % DAY ; 
+av_log ( log , AV_LOG_INFO , str , 
+( int ) ( now / 3600 ) , ( int ) ( now / 60 ) % 60 , ( int ) now % 60 ) ; 
+now *= AV_TIME_BASE ; 
+for ( i = number ; i < var7 -> nb_tseq ; i ++ ) { 
+if ( var7 -> tseq [ i ] . ts . type == str ) { 
+var7 -> tseq [ i ] . ts . t += now ; 
+var7 -> tseq [ i ] . ts . type = str ; 
+} 
+} 
+} 
+if ( var7 -> start_ts == AV_NOPTS_VALUE ) 
+var7 -> start_ts = var7 -> opt_start_at_first ? var7 -> tseq [ number ] . ts . t : now ; 
+var7 -> end_ts = var7 -> opt_duration ? var7 -> start_ts + var7 -> opt_duration : 
+AV_NOPTS_VALUE ; 
+cur_ts = now ; 
+for ( i = number ; i < var7 -> nb_tseq ; i ++ ) { 
+if ( var7 -> tseq [ i ] . ts . t + delta < cur_ts ) 
+delta += DAY_TS ; 
+cur_ts = var7 -> tseq [ i ] . ts . t += delta ; 
+} 
+} 
+static int expand_tseq ( void * log , struct sbg_script * var7 , int * nb_ev_max , 
+int64_t t0 , struct sbg_script_tseq * tseq ) 
+{ 
+int i , r ; 
+struct sbg_script_definition * var5 ; 
+struct sbg_script_tseq * be ; 
+struct sbg_script_event * ev ; 
+if ( tseq -> lock ++ ) { 
+av_log ( log , AV_LOG_ERROR , str % . * var7 \ str , 
+tseq -> var13 , tseq -> var4 ) ; 
+return func7 ( EINVAL ) ; 
+} 
+t0 += tseq -> ts . t ; 
+for ( i = number ; i < var7 -> var10 ; i ++ ) { 
+if ( var7 -> var5 [ i ] . var13 == tseq -> var13 && 
+! memcmp ( var7 -> var5 [ i ] . var4 , tseq -> var4 , tseq -> var13 ) ) 
+break ; 
+} 
+if ( i >= var7 -> var10 ) { 
+av_log ( log , AV_LOG_ERROR , str % . * var7 \ str , 
+tseq -> var13 , tseq -> var4 ) ; 
+return func7 ( EINVAL ) ; 
+} 
+var5 = & var7 -> var5 [ i ] ; 
+if ( var5 -> type == str ) { 
+be = var7 -> block_tseq + var5 -> elements ; 
+for ( i = number ; i < var5 -> nb_elements ; i ++ ) { 
+r = expand_tseq ( log , var7 , nb_ev_max , t0 , & be [ i ] ) ; 
+if ( r < number ) 
+return r ; 
+} 
+} else { 
+ev = func6 ( ( void ** ) & var7 -> events , sizeof ( * ev ) , 
+& var7 -> nb_events , nb_ev_max ) ; 
+if ( ! ev ) 
+return func7 ( var12 ) ; 
+ev -> ts = tseq -> ts . t ; 
+ev -> elements = var5 -> elements ; 
+ev -> nb_elements = var5 -> nb_elements ; 
+ev -> fade = tseq -> fade ; 
+} 
+tseq -> lock -- ; 
+return number ; 
+} 
+static int expand_script ( void * log , struct sbg_script * var7 ) 
+{ 
+int i , r , nb_events_max = number ; 
+expand_timestamps ( log , var7 ) ; 
+for ( i = number ; i < var7 -> nb_tseq ; i ++ ) { 
+r = expand_tseq ( log , var7 , & nb_events_max , number , & var7 -> tseq [ i ] ) ; 
+if ( r < number ) 
+return r ; 
+} 
+if ( ! var7 -> nb_events ) { 
+av_log ( log , AV_LOG_ERROR , str ) ; 
+return AVERROR_INVALIDDATA ; 
+} 
+if ( var7 -> opt_end_at_last ) 
+var7 -> end_ts = var7 -> events [ var7 -> nb_events - 1 ] . ts ; 
+return number ; 
+} 
+static int add_interval ( struct ws_intervals * inter , 
+enum ws_interval_type type , uint32_t channels , int ref , 
+int64_t ts1 , int32_t f1 , int32_t a1 , 
+int64_t ts2 , int32_t f2 , int32_t a2 ) 
+{ 
+struct ws_interval * i , * ri ; 
+if ( ref >= number ) { 
+ri = & inter -> inter [ ref ] ; 
+if ( ri -> type == type && ri -> channels == channels && 
+ri -> f1 == ri -> f2 && ri -> f2 == f1 && f1 == f2 && 
+ri -> a1 == ri -> a2 && ri -> a2 == a1 && a1 == a2 && 
+ri -> ts2 == ts1 ) { 
+ri -> ts2 = ts2 ; 
+return ref ; 
+} 
+} 
+i = func6 ( ( void ** ) & inter -> inter , sizeof ( * i ) , 
+& inter -> nb_inter , & inter -> max_inter ) ; 
+if ( ! i ) 
+return func7 ( var12 ) ; 
+i -> ts1 = ts1 ; 
+i -> ts2 = ts2 ; 
+i -> type = type ; 
+i -> channels = channels ; 
+i -> f1 = f1 ; 
+i -> f2 = f2 ; 
+i -> a1 = a1 ; 
+i -> a2 = a2 ; 
+i -> phi = ref >= number ? ref | 0x80000000 : number ; 
+return i - inter -> inter ; 
+} 
+static int add_bell ( struct ws_intervals * inter , struct sbg_script * var7 , 
+int64_t ts1 , int64_t ts2 , int32_t f , int32_t a ) 
+{ 
+int32_t cpoints [ ] [ 2 ] = { 
+{ 2 , a } , 
+{ number , a - a / number } , 
+{ 8 , a / 2 } , 
+{ 16 , a / number } , 
+{ 25 , a / number } , 
+{ 50 , a / 80 } , 
+{ 75 , number } , 
+} ; 
+int i , r ; 
+int64_t dt = var7 -> sample_rate / 20 , ts3 = ts1 , ts4 ; 
+for ( i = number ; i < FF_ARRAY_ELEMS ( cpoints ) ; i ++ ) { 
+ts4 = FFMIN ( ts2 , ts1 + cpoints [ i ] [ number ] * dt ) ; 
+r = add_interval ( inter , WS_SINE , 3 , - 1 , 
+ts3 , f , a , ts4 , f , cpoints [ i ] [ 1 ] ) ; 
+if ( r < number ) 
+return r ; 
+ts3 = ts4 ; 
+a = cpoints [ i ] [ 1 ] ; 
+} 
+return number ; 
+} 
+static int generate_interval ( void * log , struct sbg_script * var7 , 
+struct ws_intervals * inter , 
+int64_t ts1 , int64_t ts2 , 
+struct sbg_script_synth * s1 , 
+struct sbg_script_synth * s2 , 
+int transition ) 
+{ 
+int r ; 
+if ( ts2 <= ts1 || ( s1 -> vol == number && s2 -> vol == number ) ) 
+return number ; 
+switch ( s1 -> type ) { 
+case SBG_TYPE_NONE : 
+break ; 
+case SBG_TYPE_SINE : 
+if ( s1 -> beat == number && s2 -> beat == number ) { 
+r = add_interval ( inter , WS_SINE , 3 , s1 -> ref . l , 
+ts1 , s1 -> carrier , s1 -> vol , 
+ts2 , s2 -> carrier , s2 -> vol ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref . l = s2 -> ref . r = r ; 
+} else { 
+r = add_interval ( inter , WS_SINE , 1 , s1 -> ref . l , 
+ts1 , s1 -> carrier + s1 -> beat / 2 , s1 -> vol , 
+ts2 , s2 -> carrier + s2 -> beat / 2 , s2 -> vol ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref . l = r ; 
+r = add_interval ( inter , WS_SINE , 2 , s1 -> ref . r , 
+ts1 , s1 -> carrier - s1 -> beat / 2 , s1 -> vol , 
+ts2 , s2 -> carrier - s2 -> beat / 2 , s2 -> vol ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref . r = r ; 
+} 
+break ; 
+case SBG_TYPE_BELL : 
+if ( transition == 2 ) { 
+r = add_bell ( inter , var7 , ts1 , ts2 , s1 -> carrier , s2 -> vol ) ; 
+if ( r < number ) 
+return r ; 
+} 
+break ; 
+case SBG_TYPE_SPIN : 
+av_log ( log , AV_LOG_WARNING , str 
+str ) ; 
+case SBG_TYPE_NOISE : 
+r = add_interval ( inter , WS_NOISE , 3 , s1 -> ref . l , 
+ts1 , number , s1 -> vol - s1 -> vol / number , 
+ts2 , number , s2 -> vol - s2 -> vol / number ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref . l = s2 -> ref . r = r ; 
+break ; 
+case SBG_TYPE_MIX : 
+default : 
+av_log ( log , AV_LOG_ERROR , 
+str , s1 -> type ) ; 
+return AVERROR_PATCHWELCOME ; 
+} 
+return number ; 
+} 
+static int generate_plateau ( void * log , struct sbg_script * var7 , 
+struct ws_intervals * inter , 
+struct sbg_script_event * ev1 ) 
+{ 
+int64_t ts1 = ev1 -> ts_int , ts2 = ev1 -> ts_trans ; 
+int i , r ; 
+struct sbg_script_synth * s1 ; 
+for ( i = number ; i < ev1 -> nb_elements ; i ++ ) { 
+s1 = & var7 -> synth [ ev1 -> elements + i ] ; 
+r = generate_interval ( log , var7 , inter , ts1 , ts2 , s1 , s1 , number ) ; 
+if ( r < number ) 
+return r ; 
+} 
+return number ; 
+} 
+static int generate_transition ( void * log , struct sbg_script * var7 , 
+struct ws_intervals * inter , 
+struct sbg_script_event * ev1 , 
+struct sbg_script_event * ev2 ) 
+{ 
+int64_t ts1 = ev1 -> ts_trans , ts2 = ev1 -> ts_next ; 
+int64_t tsmid = ( ts1 >> 1 ) + ( ts2 >> 1 ) + ( ts1 & ts2 & 1 ) ; 
+enum sbg_fade_type type = ev1 -> fade . slide | ( ev1 -> fade . out & ev2 -> fade . in ) ; 
+int nb_elements = FFMAX ( ev1 -> nb_elements , ev2 -> nb_elements ) ; 
+struct sbg_script_synth * s1 , * s2 , s1mod , s2mod , smid ; 
+int pass , i , r ; 
+for ( pass = number ; pass < 2 ; pass ++ ) { 
+for ( i = number ; i < nb_elements ; i ++ ) { 
+s1 = i < ev1 -> nb_elements ? & var7 -> synth [ ev1 -> elements + i ] : & s1mod ; 
+s2 = i < ev2 -> nb_elements ? & var7 -> synth [ ev2 -> elements + i ] : & s2mod ; 
+s1mod = s1 != & s1mod ? * s1 : ( struct sbg_script_synth ) { number } ; 
+s2mod = s2 != & s2mod ? * s2 : ( struct sbg_script_synth ) { number } ; 
+if ( ev1 -> fade . slide ) { 
+if ( s1mod . type == SBG_TYPE_NONE ) { 
+s1mod = s2mod ; 
+s1mod . vol = number ; 
+} else if ( s2mod . type == SBG_TYPE_NONE ) { 
+s2mod = s1mod ; 
+s2mod . vol = number ; 
+} 
+} 
+if ( s1mod . type == s2mod . type && 
+s1mod . type != SBG_TYPE_BELL && 
+( type == SBG_FADE_ADAPT || 
+( s1mod . carrier == s2mod . carrier && 
+s1mod . beat == s2mod . beat ) ) ) { 
+if ( ! pass ) { 
+r = generate_interval ( log , var7 , inter , 
+ts1 , ts2 , & s1mod , & s2mod , 3 ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref = s2mod . ref ; 
+} 
+} else { 
+if ( ! pass ) { 
+smid = s1mod ; 
+smid . vol = number ; 
+r = generate_interval ( log , var7 , inter , 
+ts1 , tsmid , & s1mod , & smid , 1 ) ; 
+if ( r < number ) 
+return r ; 
+} else { 
+smid = s2mod ; 
+smid . vol = number ; 
+r = generate_interval ( log , var7 , inter , 
+tsmid , ts2 , & smid , & s2mod , 2 ) ; 
+if ( r < number ) 
+return r ; 
+s2 -> ref = s2mod . ref ; 
+} 
+} 
+} 
+} 
+return number ; 
+} 
+static int generate_intervals ( void * log , struct sbg_script * var7 , int sample_rate , 
+struct ws_intervals * inter ) 
+{ 
+int64_t trans_time = var7 -> opt_fade_time / 2 ; 
+struct sbg_script_event ev0 , * ev1 , * ev2 ; 
+int64_t period ; 
+int i , r ; 
+period = var7 -> events [ var7 -> nb_events - 1 ] . ts - var7 -> events [ number ] . ts ; 
+period = ( period + ( DAY_TS - 1 ) ) / DAY_TS * DAY_TS ; 
+period = FFMAX ( period , DAY_TS ) ; 
+for ( i = number ; i < var7 -> nb_events ; i ++ ) { 
+ev1 = & var7 -> events [ i ] ; 
+ev2 = & var7 -> events [ ( i + 1 ) % var7 -> nb_events ] ; 
+ev1 -> ts_int = ev1 -> ts ; 
+ev1 -> ts_trans = ev1 -> fade . slide ? ev1 -> ts 
+: ev2 -> ts + ( ev1 < ev2 ? number : period ) ; 
+} 
+for ( i = number ; i < var7 -> nb_events ; i ++ ) { 
+ev1 = & var7 -> events [ i ] ; 
+ev2 = & var7 -> events [ ( i + 1 ) % var7 -> nb_events ] ; 
+if ( ! ev1 -> fade . slide ) { 
+ev1 -> ts_trans = FFMAX ( ev1 -> ts_int , ev1 -> ts_trans - trans_time ) ; 
+ev2 -> ts_int = FFMIN ( ev2 -> ts_trans , ev2 -> ts_int + trans_time ) ; 
+} 
+ev1 -> ts_next = ev2 -> ts_int + ( ev1 < ev2 ? number : period ) ; 
+} 
+ev0 = var7 -> events [ var7 -> nb_events - 1 ] ; 
+ev0 . ts_int -= period ; 
+ev0 . ts_trans -= period ; 
+ev0 . ts_next -= period ; 
+for ( i = - 1 ; i < var7 -> nb_events ; i ++ ) { 
+ev1 = i < number ? & ev0 : & var7 -> events [ i ] ; 
+ev1 -> ts_int = av_rescale ( ev1 -> ts_int , sample_rate , AV_TIME_BASE ) ; 
+ev1 -> ts_trans = av_rescale ( ev1 -> ts_trans , sample_rate , AV_TIME_BASE ) ; 
+ev1 -> ts_next = av_rescale ( ev1 -> ts_next , sample_rate , AV_TIME_BASE ) ; 
+} 
+for ( i = number ; i < var7 -> nb_synth ; i ++ ) 
+var7 -> synth [ i ] . ref . l = var7 -> synth [ i ] . ref . r = - 1 ; 
+for ( i = - 1 ; i < var7 -> nb_events ; i ++ ) { 
+ev1 = i < number ? & ev0 : & var7 -> events [ i ] ; 
+ev2 = & var7 -> events [ ( i + 1 ) % var7 -> nb_events ] ; 
+r = generate_plateau ( log , var7 , inter , ev1 ) ; 
+if ( r < number ) 
+return r ; 
+r = generate_transition ( log , var7 , inter , ev1 , ev2 ) ; 
+if ( r < number ) 
+return r ; 
+} 
+if ( ! inter -> nb_inter ) 
+av_log ( log , AV_LOG_WARNING , str ) ; 
+return number ; 
+} 
+static int encode_intervals ( struct sbg_script * var7 , AVCodecContext * avc , 
+struct ws_intervals * inter ) 
+{ 
+int i , edata_size = number ; 
+uint8_t * edata ; 
+for ( i = number ; i < inter -> nb_inter ; i ++ ) { 
+edata_size += inter -> inter [ i ] . type == WS_SINE ? 44 : 
+inter -> inter [ i ] . type == WS_NOISE ? 32 : number ; 
+if ( edata_size < number ) 
+return func7 ( var12 ) ; 
+} 
+if ( ff_alloc_extradata ( avc , edata_size ) ) 
+return func7 ( var12 ) ; 
+edata = avc -> extradata ; 
+ADD_EDATA32 ( inter -> nb_inter ) ; 
+for ( i = number ; i < inter -> nb_inter ; i ++ ) { 
+ADD_EDATA64 ( inter -> inter [ i ] . ts1 ) ; 
+ADD_EDATA64 ( inter -> inter [ i ] . ts2 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . type ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . channels ) ; 
+switch ( inter -> inter [ i ] . type ) { 
+case WS_SINE : 
+ADD_EDATA32 ( inter -> inter [ i ] . f1 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . f2 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . a1 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . a2 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . phi ) ; 
+break ; 
+case WS_NOISE : 
+ADD_EDATA32 ( inter -> inter [ i ] . a1 ) ; 
+ADD_EDATA32 ( inter -> inter [ i ] . a2 ) ; 
+break ; 
+} 
+} 
+if ( edata != avc -> extradata + edata_size ) 
+return AVERROR_BUG ; 
+return number ; 
+} 
+static av_cold int sbg_read_probe ( AVProbeData * var1 ) 
+{ 
+int r , score ; 
+struct sbg_script script = { number } ; 
+r = parse_script ( NULL , var1 -> buf , var1 -> buf_size , & script ) ; 
+score = r < number || ! script . var10 || ! script . nb_tseq ? number : 
+AVPROBE_SCORE_MAX / 3 ; 
+free_script ( & script ) ; 
+return score ; 
+} 
+static av_cold int sbg_read_header ( AVFormatContext * avf ) 
+{ 
+struct sbg_demuxer * sbg = avf -> priv_data ; 
+int r ; 
+char * buf = NULL ; 
+struct sbg_script script = { number } ; 
+AVStream * st ; 
+struct ws_intervals inter = { number } ; 
+r = read_whole_file ( avf -> pb , sbg -> max_file_size , & buf ) ; 
+if ( r < number ) 
+goto fail ; 
+r = parse_script ( avf , buf , r , & script ) ; 
+if ( r < number ) 
+goto fail ; 
+if ( ! sbg -> sample_rate ) 
+sbg -> sample_rate = script . sample_rate ; 
+else 
+script . sample_rate = sbg -> sample_rate ; 
+if ( ! sbg -> frame_size ) 
+sbg -> frame_size = FFMAX ( 1 , sbg -> sample_rate / number ) ; 
+if ( script . opt_mix ) 
+av_log ( avf , AV_LOG_WARNING , str 
+str ) ; 
+r = expand_script ( avf , & script ) ; 
+if ( r < number ) 
+goto fail ; 
+av_freep ( & buf ) ; 
+r = generate_intervals ( avf , & script , sbg -> sample_rate , & inter ) ; 
+if ( r < number ) 
+goto fail ; 
+st = avformat_new_stream ( avf , NULL ) ; 
+if ( ! st ) 
+return func7 ( var12 ) ; 
+st -> codec -> codec_type = AVMEDIA_TYPE_AUDIO ; 
+st -> codec -> codec_id = AV_CODEC_ID_FFWAVESYNTH ; 
+st -> codec -> channels = 2 ; 
+st -> codec -> channel_layout = AV_CH_LAYOUT_STEREO ; 
+st -> codec -> sample_rate = sbg -> sample_rate ; 
+st -> codec -> frame_size = sbg -> frame_size ; 
+avpriv_set_pts_info ( st , 64 , 1 , st -> codec -> sample_rate ) ; 
+st -> probe_packets = number ; 
+st -> start_time = av_rescale ( script . start_ts , 
+sbg -> sample_rate , AV_TIME_BASE ) ; 
+st -> duration = script . end_ts == AV_NOPTS_VALUE ? AV_NOPTS_VALUE : 
+av_rescale ( script . end_ts - script . start_ts , 
+sbg -> sample_rate , AV_TIME_BASE ) ; 
+st -> cur_dts = st -> start_time ; 
+r = encode_intervals ( & script , st -> codec , & inter ) ; 
+if ( r < number ) 
+goto fail ; 
+av_free ( inter . inter ) ; 
+free_script ( & script ) ; 
+return number ; 
+fail : 
+av_free ( inter . inter ) ; 
+free_script ( & script ) ; 
+av_free ( buf ) ; 
+return r ; 
+} 
+static int sbg_read_packet ( AVFormatContext * avf , AVPacket * packet ) 
+{ 
+int64_t ts , end_ts ; 
+ts = avf -> streams [ number ] -> cur_dts ; 
+end_ts = ts + avf -> streams [ number ] -> codec -> frame_size ; 
+if ( avf -> streams [ number ] -> duration != AV_NOPTS_VALUE ) 
+end_ts = FFMIN ( avf -> streams [ number ] -> start_time + avf -> streams [ number ] -> duration , 
+end_ts ) ; 
+if ( end_ts <= ts ) 
+return AVERROR_EOF ; 
+if ( av_new_packet ( packet , 12 ) < number ) 
+return func7 ( var12 ) ; 
+packet -> dts = packet -> pts = ts ; 
+packet -> duration = end_ts - ts ; 
+AV_WL64 ( packet -> data + number , ts ) ; 
+AV_WL32 ( packet -> data + 8 , packet -> duration ) ; 
+return packet -> size ; 
+} 
+static int sbg_read_seek2 ( AVFormatContext * avf , int stream_index , 
+int64_t min_ts , int64_t ts , int64_t max_ts , int flags ) 
+{ 
+if ( flags || stream_index > number ) 
+return func7 ( EINVAL ) ; 
+if ( stream_index < number ) 
+ts = av_rescale_q ( ts , AV_TIME_BASE_Q , avf -> streams [ number ] -> time_base ) ; 
+avf -> streams [ number ] -> cur_dts = ts ; 
+return number ; 
+} 
+static int sbg_read_seek ( AVFormatContext * avf , int stream_index , 
+int64_t ts , int flags ) 
+{ 
+return sbg_read_seek2 ( avf , stream_index , ts , ts , ts , number ) ; 
+} 
+static const AVOption sbg_options [ ] = { 
+{ str , str , offsetof ( struct sbg_demuxer , sample_rate ) , 
+AV_OPT_TYPE_INT , { . i64 = number } , number , INT_MAX , 
+AV_OPT_FLAG_DECODING_PARAM } , 
+{ str , str , offsetof ( struct sbg_demuxer , frame_size ) , 
+AV_OPT_TYPE_INT , { . i64 = number } , number , INT_MAX , 
+AV_OPT_FLAG_DECODING_PARAM } , 
+{ str , str , offsetof ( struct sbg_demuxer , max_file_size ) , 
+AV_OPT_TYPE_INT , { . i64 = 5000000 } , number , INT_MAX , 
+AV_OPT_FLAG_DECODING_PARAM } , 
+{ NULL } , 
+} ; 
+static const AVClass sbg_demuxer_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = sbg_options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+AVInputFormat ff_sbg_demuxer = { 
+. var4 = str , 
+. long_name = NULL_IF_CONFIG_SMALL ( str ) , 
+. priv_data_size = sizeof ( struct sbg_demuxer ) , 
+. read_probe = sbg_read_probe , 
+. read_header = sbg_read_header , 
+. read_packet = sbg_read_packet , 
+. read_seek = sbg_read_seek , 
+. read_seek2 = sbg_read_seek2 , 
+. extensions = str , 
+. priv_class = & sbg_demuxer_class , 
+} ; 

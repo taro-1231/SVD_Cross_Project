@@ -1,0 +1,254 @@
+BOOL func1 ( FILE * var1 , FILE * var2 , FILE * var3 , BOOL var4 , 
+BOOL var5 ) 
+{ 
+png_struct * var6 = var7 ; 
+png_info * var8 = var7 ; 
+png_byte * var9 = var7 ; 
+png_byte ** var10 = var7 ; 
+png_byte * var11 = var7 ; 
+volatile png_uint_32 var12 ; 
+char var13 [ number ] ; 
+char var14 [ number ] ; 
+char var15 [ number ] ; 
+char var16 [ number ] ; 
+volatile int var17 ; 
+unsigned long var18 = number , var19 = number ; 
+unsigned long var20 = number , var21 = number ; 
+unsigned long var22 = number ; 
+volatile png_uint_32 var23 , var24 ; 
+volatile png_uint_32 var25 , var26 ; 
+png_uint_32 var27 ; 
+volatile int var28 = number ; 
+int var29 ; 
+int var30 = number ; 
+int var31 ; 
+int var32 , var33 ; 
+BOOL var34 , var35 = var36 ; 
+BOOL var37 = var36 ; 
+png_uint_32 var38 ; 
+int var39 ; 
+func2 ( var1 , var13 ) ; 
+if ( var13 [ number ] != str ) 
+{ 
+return var36 ; 
+} 
+else if ( ( var13 [ number ] == str ) || ( var13 [ number ] == str ) ) 
+{ 
+var34 = ( var13 [ number ] == str ) ; 
+var17 = var40 ; 
+func2 ( var1 , var14 ) ; 
+sscanf ( var14 , str , & var18 ) ; 
+var23 = ( png_uint_32 ) var18 ; 
+func2 ( var1 , var15 ) ; 
+sscanf ( var15 , str , & var20 ) ; 
+var24 = ( png_uint_32 ) var20 ; 
+var28 = number ; 
+var37 = var41 ; 
+fprintf ( stderr , str ) ; 
+fprintf ( stderr , str ) ; 
+} 
+else if ( ( var13 [ number ] == str ) || ( var13 [ number ] == str ) ) 
+{ 
+var34 = ( var13 [ number ] == str ) ; 
+var17 = var40 ; 
+func2 ( var1 , var14 ) ; 
+sscanf ( var14 , str , & var18 ) ; 
+var23 = ( png_uint_32 ) var18 ; 
+func2 ( var1 , var15 ) ; 
+sscanf ( var15 , str , & var20 ) ; 
+var24 = ( png_uint_32 ) var20 ; 
+func2 ( var1 , var16 ) ; 
+sscanf ( var16 , str , & var22 ) ; 
+var27 = ( png_uint_32 ) var22 ; 
+if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else 
+var28 = number ; 
+} 
+else if ( ( var13 [ number ] == str ) || ( var13 [ number ] == str ) ) 
+{ 
+var34 = ( var13 [ number ] == str ) ; 
+var17 = var42 ; 
+func2 ( var1 , var14 ) ; 
+sscanf ( var14 , str , & var18 ) ; 
+var23 = ( png_uint_32 ) var18 ; 
+func2 ( var1 , var15 ) ; 
+sscanf ( var15 , str , & var20 ) ; 
+var24 = ( png_uint_32 ) var20 ; 
+func2 ( var1 , var16 ) ; 
+sscanf ( var16 , str , & var22 ) ; 
+var27 = ( png_uint_32 ) var22 ; 
+if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else if ( var27 <= number ) 
+var28 = number ; 
+else 
+var28 = number ; 
+} 
+else 
+{ 
+return var36 ; 
+} 
+if ( var5 ) 
+{ 
+if ( var17 == var40 ) 
+var17 = var43 ; 
+if ( var17 == var42 ) 
+var17 = var44 ; 
+func2 ( var3 , var13 ) ; 
+if ( var13 [ number ] != str ) 
+{ 
+return var36 ; 
+} 
+else if ( ( var13 [ number ] == str ) || ( var13 [ number ] == str ) ) 
+{ 
+var35 = ( var13 [ number ] == str ) ; 
+func2 ( var3 , var14 ) ; 
+sscanf ( var14 , str , & var19 ) ; 
+var25 = ( png_uint_32 ) var19 ; 
+if ( var25 != var23 ) 
+return var36 ; 
+func2 ( var3 , var15 ) ; 
+sscanf ( var15 , str , & var21 ) ; 
+var26 = ( png_uint_32 ) var21 ; 
+if ( var26 != var24 ) 
+return var36 ; 
+func2 ( var3 , var16 ) ; 
+sscanf ( var16 , str , & var22 ) ; 
+var27 = ( png_uint_32 ) var22 ; 
+if ( var27 <= number ) 
+var30 = number ; 
+else if ( var27 <= number ) 
+var30 = number ; 
+else if ( var27 <= number ) 
+var30 = number ; 
+else if ( var27 <= number ) 
+var30 = number ; 
+else 
+var30 = number ; 
+if ( var30 != var28 ) 
+return var36 ; 
+} 
+else 
+{ 
+return var36 ; 
+} 
+} 
+if ( var17 == var40 ) 
+var29 = number ; 
+else if ( var17 == var43 ) 
+var29 = number ; 
+else if ( var17 == var42 ) 
+var29 = number ; 
+else if ( var17 == var44 ) 
+var29 = number ; 
+else 
+var29 = number ; 
+var31 = ( var29 - number ) % number ; 
+if ( var37 ) 
+var12 = ( var23 * var29 * var28 + number ) / number ; 
+else 
+var12 = var23 * var29 * ( ( var28 <= number ) ? number : number ) ; 
+if ( ( var9 = ( png_byte * ) 
+malloc ( var12 * var24 * sizeof ( png_byte ) ) ) == var7 ) 
+return var36 ; 
+var11 = var9 ; 
+for ( var32 = number ; var32 < ( int ) var24 ; var32 ++ ) 
+{ 
+if ( var37 ) { 
+for ( var39 = number ; var39 < ( int ) var12 ; var39 ++ ) 
+* var11 += func3 ( var1 , number ) ; 
+} else 
+{ 
+for ( var33 = number ; var33 < ( int ) var23 ; var33 ++ ) 
+{ 
+for ( var39 = number ; var39 < ( var29 - var31 ) ; var39 ++ ) 
+{ 
+if ( var34 ) 
+* var11 += func3 ( var1 , var28 ) ; 
+else 
+if ( var28 <= number ) 
+* var11 += func4 ( var1 , var28 ) ; 
+else 
+{ 
+var38 = func4 ( var1 , var28 ) ; 
+* var11 = ( png_byte ) ( ( var38 >> number ) & number ) ; 
+var11 ++ ; 
+* var11 = ( png_byte ) ( var38 & number ) ; 
+var11 ++ ; 
+} 
+} 
+if ( var5 ) 
+{ 
+if ( var35 ) 
+* var11 += func3 ( var3 , var30 ) ; 
+else 
+if ( var30 <= number ) 
+* var11 += func4 ( var3 , var28 ) ; 
+else 
+{ 
+var38 = func4 ( var3 , var28 ) ; 
+* var11 += ( png_byte ) ( ( var38 >> number ) & number ) ; 
+* var11 += ( png_byte ) ( var38 & number ) ; 
+} 
+} 
+} 
+} 
+} 
+var6 = func5 ( func6 ( var7 ) , var7 , var7 , 
+var7 ) ; 
+if ( ! var6 ) 
+{ 
+return var36 ; 
+} 
+var8 = func7 ( var6 ) ; 
+if ( ! var8 ) 
+{ 
+func8 ( & var6 , ( png_infopp ) var7 ) ; 
+return var36 ; 
+} 
+if ( var37 == var41 ) 
+{ 
+func9 ( var6 ) ; 
+func10 ( var6 ) ; 
+} 
+if ( func11 ( func12 ( var6 ) ) ) 
+{ 
+func8 ( & var6 , ( png_infopp ) var7 ) ; 
+return var36 ; 
+} 
+func13 ( var6 , var2 ) ; 
+func14 ( var6 , var8 , var23 , var24 , var28 , var17 , 
+( ! var4 ) ? var45 : var46 , 
+var47 , var48 ) ; 
+func15 ( var6 , var8 ) ; 
+if ( var10 == ( unsigned char ** ) var7 ) 
+{ 
+if ( ( var10 = ( png_byte ** ) 
+malloc ( var24 * sizeof ( png_bytep ) ) ) == var7 ) 
+{ 
+func8 ( & var6 , ( png_infopp ) var7 ) ; 
+return var36 ; 
+} 
+} 
+for ( var39 = number ; var39 < ( int ) var24 ; var39 ++ ) 
+var10 [ var39 ] = var9 + var39 * var12 ; 
+func16 ( var6 , var10 ) ; 
+func17 ( var6 , var8 ) ; 
+func8 ( & var6 , ( png_infopp ) var7 ) ; 
+if ( var10 != ( unsigned char ** ) var7 ) 
+free ( var10 ) ; 
+if ( var9 != ( unsigned char * ) var7 ) 
+free ( var9 ) ; 
+return var41 ; 
+} 

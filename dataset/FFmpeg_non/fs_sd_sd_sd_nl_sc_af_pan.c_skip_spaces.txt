@@ -1,0 +1,6 @@
+static void func1 ( char ** var1 ) 
+{ 
+int var2 = number ; 
+sscanf ( * var1 , str , & var2 ) ; 
+* var1 += var2 ; 
+} 

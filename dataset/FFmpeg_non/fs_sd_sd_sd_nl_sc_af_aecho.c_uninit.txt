@@ -1,0 +1,10 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+AudioEchoContext * var2 = var1 -> var3 ; 
+func2 ( & var2 -> var4 ) ; 
+func2 ( & var2 -> var5 ) ; 
+func2 ( & var2 -> var6 ) ; 
+if ( var2 -> var7 ) 
+func2 ( & var2 -> var7 [ number ] ) ; 
+func2 ( & var2 -> var7 ) ; 
+} 

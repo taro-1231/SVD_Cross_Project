@@ -1,0 +1,69 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+AVFrame * var5 = var2 ; 
+const uint8_t * var6 = var4 -> var2 ; 
+int var7 = var4 -> var8 ; 
+EightBpsContext * const var9 = var1 -> var10 ; 
+const unsigned char * var11 = var6 ; 
+unsigned char * var12 , * var13 ; 
+unsigned int var14 = var1 -> var14 ; 
+unsigned int var15 , var16 , var17 ; 
+const unsigned char * var18 , * var19 , * var20 ; 
+unsigned char var21 ; 
+unsigned int var22 = var9 -> var22 ; 
+unsigned char * var23 = var9 -> var23 ; 
+int var24 ; 
+if ( ( var24 = func2 ( var1 , var5 , number ) ) < number ) 
+return var24 ; 
+var20 = var11 + var7 ; 
+var19 = var11 + var22 * ( var14 << number ) ; 
+for ( var16 = number ; var16 < var22 ; var16 ++ ) { 
+var18 = var11 + var16 * ( var14 << number ) ; 
+for ( var17 = number ; var17 < var14 ; var17 ++ ) { 
+var12 = var5 -> var2 [ number ] + var17 * var5 -> var25 [ number ] + var23 [ var16 ] ; 
+var13 = var12 + var5 -> var25 [ number ] ; 
+if ( var20 - var18 < var17 * number + number ) 
+return var26 ; 
+var15 = func3 ( * ( const unsigned short * ) ( var18 + var17 * number ) ) ; 
+while ( var15 > number ) { 
+if ( var20 - var19 <= number ) 
+return var26 ; 
+if ( ( var21 = * var19 ++ ) <= number ) { 
+var21 ++ ; 
+var15 -= var21 + number ; 
+if ( var13 - var12 < var21 * var22 ) 
+break ; 
+if ( var20 - var19 < var21 ) 
+return var26 ; 
+while ( var21 -- ) { 
+* var12 = * var19 ++ ; 
+var12 += var22 ; 
+} 
+} else { 
+var21 = number - var21 ; 
+if ( var13 - var12 < var21 * var22 ) 
+break ; 
+while ( var21 -- ) { 
+* var12 = * var19 ; 
+var12 += var22 ; 
+} 
+var19 ++ ; 
+var15 -= number ; 
+} 
+} 
+} 
+} 
+if ( var1 -> var27 <= number ) { 
+const uint8_t * var28 = func4 ( var4 , 
+var29 , 
+var30 ) ; 
+if ( var28 ) { 
+var5 -> var31 = number ; 
+memcpy ( var9 -> var28 , var28 , var32 ) ; 
+} 
+memcpy ( var5 -> var2 [ number ] , var9 -> var28 , var32 ) ; 
+} 
+* var3 = number ; 
+return var7 ; 
+} 

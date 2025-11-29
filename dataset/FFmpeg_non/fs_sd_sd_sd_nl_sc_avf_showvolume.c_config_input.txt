@@ -1,0 +1,11 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ShowVolumeContext * var4 = var2 -> var5 ; 
+int var6 ; 
+var6 = func2 ( number , ( ( double ) var1 -> var7 / func3 ( var4 -> var8 ) ) + number ) ; 
+var1 -> var9 = 
+var1 -> var10 = 
+var1 -> var11 = var6 ; 
+return number ; 
+} 

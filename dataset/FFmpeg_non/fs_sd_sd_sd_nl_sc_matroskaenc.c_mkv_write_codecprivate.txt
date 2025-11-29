@@ -1,0 +1,62 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVCodecContext * var3 , int var4 , 
+int var5 ) 
+{ 
+AVIOContext * var6 ; 
+uint8_t * var7 ; 
+int var8 , var9 ; 
+var8 = func2 ( & var6 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+if ( var4 ) { 
+var8 = func3 ( var1 , var3 , var6 ) ; 
+} else if ( var3 -> var10 == var11 ) { 
+if ( var5 ) { 
+if ( ! var3 -> var12 ) 
+var3 -> var12 = func4 ( var13 , 
+var3 -> var14 ) ; 
+if ( var3 -> var15 ) { 
+if ( func5 ( var13 , var3 -> var12 ) == var3 -> var14 
+&& func5 ( var13 , func6 ( var3 -> var16 + number ) ) != var3 -> var14 
+) { 
+int var17 ; 
+func7 ( var6 , number + var3 -> var15 ) ; 
+func8 ( var6 , var3 -> var12 ) ; 
+for ( var17 = number ; var17 < number - number ; var17 ++ ) 
+func9 ( var6 , number ) ; 
+} 
+func10 ( var6 , var3 -> var16 , var3 -> var15 ) ; 
+} 
+} else { 
+if ( ! func4 ( var18 , var3 -> var14 ) ) 
+func11 ( var1 , var19 , str , 
+func12 ( var3 -> var14 ) ) ; 
+if ( ! var3 -> var12 ) 
+var3 -> var12 = func4 ( var18 , 
+var3 -> var14 ) ; 
+if ( ! var3 -> var12 && var3 -> var14 != var20 ) { 
+func11 ( var1 , var21 , str , 
+func12 ( var3 -> var14 ) ) ; 
+var8 = func13 ( var23 ) ; 
+} 
+func14 ( var6 , var3 , var18 , number , number ) ; 
+} 
+} else if ( var3 -> var10 == var24 ) { 
+unsigned int var22 ; 
+var22 = func4 ( var25 , var3 -> var14 ) ; 
+if ( ! var22 ) { 
+func11 ( var1 , var21 , str , 
+func12 ( var3 -> var14 ) ) ; 
+var8 = func13 ( var23 ) ; 
+} 
+if ( ! var3 -> var12 ) 
+var3 -> var12 = var22 ; 
+func15 ( var6 , var3 , var26 ) ; 
+} 
+var9 = func16 ( var6 , & var7 ) ; 
+if ( var9 ) 
+func17 ( var2 , var27 , var7 , 
+var9 ) ; 
+func18 ( var7 ) ; 
+return var8 ; 
+} 

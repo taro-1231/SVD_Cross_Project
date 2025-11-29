@@ -1,0 +1,483 @@
+func1 ( PNG_CONST char * var1 , PNG_CONST char * var2 ) 
+{ 
+static png_FILE_p var3 ; 
+static png_FILE_p var4 ; 
+png_structp var5 ; 
+png_infop var6 , var7 ; 
+png_structp var8 ; 
+png_infop var9 ; 
+png_infop var10 ; 
+png_structp var8 = var11 ; 
+png_infop var9 = var11 ; 
+png_infop var10 = var11 ; 
+png_bytep var12 ; 
+png_uint_32 var13 ; 
+png_uint_32 var14 , var15 ; 
+int var16 , var17 ; 
+int var18 , var19 ; 
+var20 func2 ; 
+char var21 [ number ] , var22 [ number ] ; 
+var12 = var11 ; 
+if ( ( var3 = fopen ( var1 , str ) ) == var11 ) 
+{ 
+fprintf ( var23 , str , var1 ) ; 
+return ( number ) ; 
+} 
+if ( ( var4 = fopen ( var2 , str ) ) == var11 ) 
+{ 
+fprintf ( var23 , str , var2 ) ; 
+func3 ( var3 ) ; 
+return ( number ) ; 
+} 
+func4 ( str ) ; 
+var5 = 
+func5 ( var24 , var11 , 
+var11 , var11 , var11 , var25 , var26 ) ; 
+var5 = 
+png_create_read_struct ( var24 , var11 , var11 , var11 ) ; 
+func6 ( var5 , ( png_voidp ) var1 , var27 , 
+var28 ) ; 
+var29 [ number ] = number ; 
+var29 [ number ] = number ; 
+var29 [ number ] = number ; 
+var29 [ number ] = number ; 
+func7 ( var5 , var29 , 
+var30 ) ; 
+var8 = 
+func8 ( var24 , var11 , 
+var11 , var11 , var11 , var25 , var26 ) ; 
+var8 = 
+png_create_write_struct ( var24 , var11 , var11 , var11 ) ; 
+func6 ( var8 , ( png_voidp ) var1 , var27 , 
+var28 ) ; 
+func4 ( str ) ; 
+var6 = func9 ( var5 ) ; 
+var7 = func9 ( var5 ) ; 
+var9 = func9 ( var8 ) ; 
+var10 = func9 ( var8 ) ; 
+func4 ( str ) ; 
+if ( func10 ( func2 ) ) 
+if ( func10 ( func2 ( var5 ) ) ) 
+{ 
+fprintf ( var23 , str , var1 , var2 ) ; 
+func11 ( var5 , var12 ) ; 
+var12 = var11 ; 
+func12 ( & var5 , & var6 , & var7 ) ; 
+func13 ( var8 , & var10 ) ; 
+func14 ( & var8 , & var9 ) ; 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return ( number ) ; 
+} 
+func15 ( func2 ( var5 ) , func2 , func16 ( var20 ) ) ; 
+func4 ( str ) ; 
+if ( func10 ( func2 ) ) 
+if ( func10 ( func2 ( var8 ) ) ) 
+{ 
+fprintf ( var23 , str , var1 , var2 ) ; 
+func12 ( & var5 , & var6 , & var7 ) ; 
+func13 ( var8 , & var10 ) ; 
+func14 ( & var8 , & var9 ) ; 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return ( number ) ; 
+} 
+func15 ( func2 ( var8 ) , func2 , func16 ( var20 ) ) ; 
+func4 ( str ) ; 
+func17 ( var5 , var3 ) ; 
+func17 ( var8 , var4 ) ; 
+png_set_read_fn ( var5 , ( png_voidp ) var3 , pngtest_read_data ) ; 
+png_set_write_fn ( var8 , ( png_voidp ) var4 , pngtest_write_data , 
+pngtest_flush ) ; 
+var11 ) ; 
+if ( var31 == number ) 
+{ 
+func18 ( var8 , var32 ) ; 
+func19 ( var5 , var33 ) ; 
+} 
+else 
+{ 
+func18 ( var8 , var11 ) ; 
+func19 ( var5 , var11 ) ; 
+} 
+{ 
+int var34 ; 
+for ( var34 = number ; var34 < number ; var34 ++ ) 
+var35 [ var34 ] = number ; 
+func20 ( var5 , var36 ) ; 
+} 
+var37 = number ; 
+func21 ( var8 , var38 ) ; 
+var40 ( var5 , var39 , 
+var11 , number ) ; 
+var40 ( var8 , var41 , 
+var11 , number ) ; 
+func4 ( str ) ; 
+func22 ( var5 , var6 ) ; 
+func4 ( str ) ; 
+{ 
+int var42 , var43 , var44 ; 
+if ( func23 ( var5 , var6 , & var14 , & var15 , & var18 , 
+& var19 , & var42 , & var43 , & var44 ) ) 
+{ 
+png_set_IHDR ( var8 , var9 , var14 , var15 , var18 , 
+var19 , var42 , var43 , var44 ) ; 
+var19 , PNG_INTERLACE_NONE , var43 , var44 ) ; 
+} 
+} 
+{ 
+png_fixed_point var45 , var46 , var47 , var48 , var49 , var50 , var51 , 
+var52 ; 
+if ( func24 ( var5 , var6 , & var45 , & var46 , 
+& var47 , & var48 , & var49 , & var50 , & var51 , & var52 ) ) 
+{ 
+func25 ( var8 , var9 , var45 , var46 , var47 , 
+var48 , var49 , var50 , var51 , var52 ) ; 
+} 
+} 
+{ 
+png_fixed_point var53 ; 
+if ( func26 ( var5 , var6 , & var53 ) ) 
+func27 ( var8 , var9 , var53 ) ; 
+} 
+{ 
+double var45 , var46 , var47 , var48 , var49 , var50 , var51 , 
+var52 ; 
+if ( png_get_cHRM ( var5 , var6 , & var45 , & var46 , & var47 , 
+& var48 , & var49 , & var50 , & var51 , & var52 ) ) 
+{ 
+png_set_cHRM ( var8 , var9 , var45 , var46 , var47 , 
+var48 , var49 , var50 , var51 , var52 ) ; 
+} 
+} 
+{ 
+double var53 ; 
+if ( png_get_gAMA ( var5 , var6 , & var53 ) ) 
+png_set_gAMA ( var8 , var9 , var53 ) ; 
+} 
+{ 
+png_charp var54 ; 
+png_bytep var55 ; 
+png_uint_32 var56 ; 
+int var43 ; 
+if ( func28 ( var5 , var6 , & var54 , & var43 , 
+& var55 , & var56 ) ) 
+{ 
+func29 ( var8 , var9 , var54 , var43 , 
+var55 , var56 ) ; 
+} 
+} 
+{ 
+int var57 ; 
+if ( func30 ( var5 , var6 , & var57 ) ) 
+func31 ( var8 , var9 , var57 ) ; 
+} 
+{ 
+png_colorp var58 ; 
+int var59 ; 
+if ( func32 ( var5 , var6 , & var58 , & var59 ) ) 
+func33 ( var8 , var9 , var58 , var59 ) ; 
+} 
+{ 
+png_color_16p var60 ; 
+if ( func34 ( var5 , var6 , & var60 ) ) 
+{ 
+func35 ( var8 , var9 , var60 ) ; 
+} 
+} 
+{ 
+png_uint_16p var61 ; 
+if ( func36 ( var5 , var6 , & var61 ) ) 
+func37 ( var8 , var9 , var61 ) ; 
+} 
+{ 
+png_int_32 var62 , var63 ; 
+int var64 ; 
+if ( func38 ( var5 , var6 , & var62 , & var63 , 
+& var64 ) ) 
+{ 
+func39 ( var8 , var9 , var62 , var63 , var64 ) ; 
+} 
+} 
+{ 
+png_charp var65 , var66 ; 
+png_charpp var67 ; 
+png_int_32 var68 , var69 ; 
+int var70 , var71 ; 
+if ( func40 ( var5 , var6 , & var65 , & var68 , & var69 , & var70 , 
+& var71 , & var66 , & var67 ) ) 
+{ 
+func41 ( var8 , var9 , var65 , var68 , var69 , var70 , 
+var71 , var66 , var67 ) ; 
+} 
+} 
+{ 
+png_uint_32 var72 , var73 ; 
+int var64 ; 
+if ( func42 ( var5 , var6 , & var72 , & var73 , & var64 ) ) 
+func43 ( var8 , var9 , var72 , var73 , var64 ) ; 
+} 
+{ 
+png_color_8p var74 ; 
+if ( func44 ( var5 , var6 , & var74 ) ) 
+func45 ( var8 , var9 , var74 ) ; 
+} 
+{ 
+int var75 ; 
+double var76 , var77 ; 
+if ( func46 ( var5 , var6 , & var75 , & var76 , 
+& var77 ) ) 
+{ 
+func47 ( var8 , var9 , var75 , var76 , var77 ) ; 
+} 
+} 
+{ 
+int var75 ; 
+png_charp var76 , var77 ; 
+if ( png_get_sCAL_s ( var5 , var6 , & var75 , & var76 , 
+& var77 ) ) 
+{ 
+png_set_sCAL_s ( var8 , var9 , var75 , var76 , 
+var77 ) ; 
+} 
+} 
+{ 
+png_textp var78 ; 
+int var79 ; 
+if ( func48 ( var5 , var6 , & var78 , & var79 ) > number ) 
+{ 
+func49 ( str , var79 ) ; 
+func50 ( var8 , var9 , var78 , var79 ) ; 
+} 
+} 
+{ 
+png_timep var80 ; 
+if ( func51 ( var5 , var6 , & var80 ) ) 
+{ 
+func52 ( var8 , var9 , var80 ) ; 
+func15 ( var81 , 
+func53 ( var5 , var80 ) , 
+func16 ( var81 ) ) ; 
+var81 [ func16 ( var81 ) - number ] = str ; 
+var82 ++ ; 
+} 
+} 
+{ 
+png_bytep var83 ; 
+int var84 ; 
+png_color_16p var85 ; 
+if ( func54 ( var5 , var6 , & var83 , & var84 , 
+& var85 ) ) 
+{ 
+int var86 = ( number << var18 ) ; 
+if ( ! ( ( var19 == var87 && 
+( int ) var85 -> var88 > var86 ) || 
+( var19 == var89 && 
+( ( int ) var85 -> var90 > var86 || 
+( int ) var85 -> var91 > var86 || 
+( int ) var85 -> var92 > var86 ) ) ) ) 
+func55 ( var8 , var9 , var83 , var84 , 
+var85 ) ; 
+} 
+} 
+{ 
+png_unknown_chunkp var93 ; 
+int var94 = func56 ( var5 , var6 , 
+& var93 ) ; 
+if ( var94 ) 
+{ 
+int var34 ; 
+func57 ( var8 , var9 , var93 , 
+var94 ) ; 
+for ( var34 = number ; var34 < var94 ; var34 ++ ) 
+func58 ( var8 , var9 , var34 , 
+var93 [ var34 ] . var95 ) ; 
+} 
+} 
+func4 ( str ) ; 
+func59 ( var8 , var9 ) ; 
+if ( var29 [ number ] != number ) 
+{ 
+png_byte var96 [ number ] = { number , number , number , number , str } ; 
+unsigned char 
+var97 [ number ] ; 
+if ( var98 ) 
+fprintf ( var23 , str , 
+( unsigned long ) ( var29 [ number ] - number ) ) ; 
+var97 [ number ] = ( unsigned char ) ( var29 [ number ] - number ) ; 
+func60 ( var8 , var96 , var97 , number ) ; 
+} 
+if ( var29 [ number ] != number || var29 [ number ] != number ) 
+{ 
+png_byte var99 [ number ] = { number , number , number , number , str } ; 
+unsigned char 
+var100 [ number ] ; 
+if ( var98 ) 
+fprintf ( var23 , str , 
+( unsigned long ) var29 [ number ] , 
+( unsigned long ) var29 [ number ] , 
+( unsigned long ) var29 [ number ] ) ; 
+func61 ( var100 , var29 [ number ] ) ; 
+func61 ( var100 + number , var29 [ number ] ) ; 
+var100 [ number ] = ( unsigned char ) ( var29 [ number ] & number ) ; 
+func60 ( var8 , var99 , var100 , number ) ; 
+} 
+func4 ( str ) ; 
+var12 = ( png_bytep ) func62 ( var5 , 
+func63 ( var5 , var6 ) ) ; 
+func49 ( str , ( unsigned long ) var12 ) ; 
+func4 ( str ) ; 
+defined ( PNG_WRITE_INTERLACING_SUPPORTED ) 
+var16 = func64 ( var5 ) ; 
+func64 ( var8 ) ; 
+var16 = number ; 
+var101 = ( float ) clock ( ) ; 
+var102 += ( var101 - var103 ) ; 
+var103 = var101 ; 
+for ( var17 = number ; var17 < var16 ; var17 ++ ) 
+{ 
+func49 ( str , var17 ) ; 
+for ( var13 = number ; var13 < var15 ; var13 ++ ) 
+{ 
+func65 ( str , var17 , var13 ) ; 
+var12 = ( png_bytep ) func62 ( var5 , 
+func63 ( var5 , var6 ) ) ; 
+func65 ( str , ( unsigned long ) var12 , 
+func63 ( var5 , var6 ) ) ; 
+func66 ( var5 , ( png_bytepp ) & var12 , var11 , number ) ; 
+var101 = ( float ) clock ( ) ; 
+var104 += ( var101 - var103 ) ; 
+var103 = var101 ; 
+func67 ( var8 , ( png_bytepp ) & var12 , number ) ; 
+var101 = ( float ) clock ( ) ; 
+var105 += ( var101 - var103 ) ; 
+var103 = var101 ; 
+func65 ( str , var17 , var13 ) ; 
+func11 ( var5 , var12 ) ; 
+var12 = var11 ; 
+} 
+} 
+func68 ( var5 , var6 , var106 , - number ) ; 
+func68 ( var8 , var9 , var106 , - number ) ; 
+func4 ( str ) ; 
+func69 ( var5 , var7 ) ; 
+{ 
+png_textp var78 ; 
+int var79 ; 
+if ( func48 ( var5 , var7 , & var78 , & var79 ) > number ) 
+{ 
+func49 ( str , var79 ) ; 
+func50 ( var8 , var10 , var78 , var79 ) ; 
+} 
+} 
+{ 
+png_timep var80 ; 
+if ( func51 ( var5 , var7 , & var80 ) ) 
+{ 
+func52 ( var8 , var10 , var80 ) ; 
+func15 ( var81 , 
+func53 ( var5 , var80 ) , 
+func16 ( var81 ) ) ; 
+var81 [ func16 ( var81 ) - number ] = str ; 
+var82 ++ ; 
+} 
+} 
+{ 
+png_unknown_chunkp var93 ; 
+int var94 = func56 ( var5 , var7 , 
+& var93 ) ; 
+if ( var94 ) 
+{ 
+int var34 ; 
+func57 ( var8 , var10 , var93 , 
+var94 ) ; 
+for ( var34 = number ; var34 < var94 ; var34 ++ ) 
+func58 ( var8 , var10 , var34 , 
+var93 [ var34 ] . var95 ) ; 
+} 
+} 
+func70 ( var8 , var10 ) ; 
+if ( var98 ) 
+{ 
+png_uint_32 var107 , var108 ; 
+var107 = func71 ( var8 , var9 ) ; 
+var108 = func72 ( var8 , var9 ) ; 
+fprintf ( var23 , str , 
+( unsigned long ) var107 , ( unsigned long ) var108 ) ; 
+} 
+func4 ( str ) ; 
+func4 ( str ) ; 
+func11 ( var5 , var12 ) ; 
+var12 = var11 ; 
+func4 ( str ) ; 
+func12 ( & var5 , & var6 , & var7 ) ; 
+func4 ( str ) ; 
+func13 ( var8 , & var10 ) ; 
+func4 ( str ) ; 
+func14 ( & var8 , & var9 ) ; 
+func4 ( str ) ; 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+func4 ( str ) ; 
+if ( ( var3 = fopen ( var1 , str ) ) == var11 ) 
+{ 
+fprintf ( var23 , str , var1 ) ; 
+return ( number ) ; 
+} 
+if ( ( var4 = fopen ( var2 , str ) ) == var11 ) 
+{ 
+fprintf ( var23 , str , var2 ) ; 
+func3 ( var3 ) ; 
+return ( number ) ; 
+} 
+for ( ; ; ) 
+{ 
+png_size_t var109 , var110 ; 
+var109 = fread ( var21 , number , number , var3 ) ; 
+var110 = fread ( var22 , number , number , var4 ) ; 
+if ( var109 != var110 ) 
+{ 
+fprintf ( var23 , str , 
+var1 , var2 ) ; 
+if ( var111 == number ) 
+{ 
+fprintf ( var23 , 
+str , 
+var1 , var112 ) ; 
+fprintf ( var23 , 
+str ) ; 
+fprintf ( var23 , 
+str , 
+var113 ) ; 
+var111 = number ; 
+} 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return ( number ) ; 
+} 
+if ( ! var109 ) 
+break ; 
+if ( func73 ( var21 , var22 , var109 ) ) 
+{ 
+fprintf ( var23 , str , var1 , var2 ) ; 
+if ( var111 == number ) 
+{ 
+fprintf ( var23 , 
+str , 
+var1 , var112 ) ; 
+fprintf ( var23 , 
+str ) ; 
+fprintf ( var23 , 
+str , 
+var113 ) ; 
+var111 = number ; 
+} 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return ( number ) ; 
+} 
+} 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return ( number ) ; 
+} 

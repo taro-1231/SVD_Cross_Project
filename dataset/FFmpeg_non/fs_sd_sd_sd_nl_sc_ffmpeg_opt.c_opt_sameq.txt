@@ -1,0 +1,8 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+av_log ( NULL , AV_LOG_ERROR , str 
+str 
+str , 
+var2 , var2 ) ; 
+return func2 ( var4 ) ; 
+} 

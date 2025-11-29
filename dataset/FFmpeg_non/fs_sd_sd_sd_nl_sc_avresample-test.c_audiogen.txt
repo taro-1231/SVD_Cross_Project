@@ -1,0 +1,61 @@
+static void func1 ( AVLFG * var1 , void ** var2 , enum AVSampleFormat var3 , 
+int var4 , int var5 , int var6 ) 
+{ 
+int var7 , var8 , var9 ; 
+double var10 , var11 , var12 , var13 ; 
+double var14 [ var15 ] ; 
+double var16 [ var15 ] ; 
+double var17 [ var15 ] ; 
+var9 = number ; 
+var12 = number ; 
+for ( var7 = number ; var7 < number * var5 && var9 < var6 ; var7 ++ , var9 ++ ) { 
+var10 = sin ( var12 ) * number ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+PUT_SAMPLE 
+var12 += var19 * number * number / var5 ; 
+} 
+var12 = number ; 
+for ( var7 = number ; var7 < number * var5 && var9 < var6 ; var7 ++ , var9 ++ ) { 
+var10 = sin ( var12 ) * number ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+PUT_SAMPLE 
+var11 = number + ( ( ( number - number ) * var7 ) / var5 ) ; 
+var12 += var19 * var11 * number / var5 ; 
+} 
+for ( var7 = number ; var7 < var5 / number && var9 < var6 ; var7 ++ , var9 ++ ) { 
+var10 = func2 ( var1 ) * number ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+PUT_SAMPLE 
+} 
+for ( var7 = number ; var7 < var5 / number && var9 < var6 ; var7 ++ , var9 ++ ) { 
+var10 = func2 ( var1 ) ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+PUT_SAMPLE 
+} 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+var17 [ var8 ] = number ; 
+var14 [ var8 ] = number + func3 ( var1 ) % number ; 
+var16 [ var8 ] = number + func3 ( var1 ) % number ; 
+} 
+for ( var7 = number ; var7 < number * var5 && var9 < var6 ; var7 ++ , var9 ++ ) { 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+var10 = sin ( var17 [ var8 ] ) * number ; 
+PUT_SAMPLE 
+var11 = var14 [ var8 ] + ( ( ( var16 [ var8 ] - var14 [ var8 ] ) * var7 ) / var5 ) ; 
+var17 [ var8 ] += var19 * var11 * number / var5 ; 
+} 
+} 
+var12 = number ; 
+var13 = number ; 
+for ( var7 = number ; var7 < number * var5 && var9 < var6 ; var7 ++ , var9 ++ ) { 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+double var20 = ( number + sin ( var13 ) ) * number ; 
+if ( var8 & number ) 
+var20 = number - var20 ; 
+var10 = sin ( var12 ) * var20 ; 
+PUT_SAMPLE 
+var12 += var19 * number * number / var5 ; 
+var13 += var19 * number / var5 ; 
+} 
+} 
+} 

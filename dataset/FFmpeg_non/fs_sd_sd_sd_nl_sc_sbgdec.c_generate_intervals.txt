@@ -1,0 +1,52 @@
+static int func1 ( void * var1 , struct sbg_script * var2 , int var3 , 
+struct ws_intervals * var4 ) 
+{ 
+int64_t var5 = var2 -> var6 / number ; 
+struct sbg_script_event var7 , * var8 , * var9 ; 
+int64_t var10 ; 
+int var11 , var12 ; 
+var10 = var2 -> var13 [ var2 -> var14 - number ] . var15 - var2 -> var13 [ number ] . var15 ; 
+var10 = ( var10 + ( var16 - number ) ) / var16 * var16 ; 
+var10 = func2 ( var10 , var16 ) ; 
+for ( var11 = number ; var11 < var2 -> var14 ; var11 ++ ) { 
+var8 = & var2 -> var13 [ var11 ] ; 
+var9 = & var2 -> var13 [ ( var11 + number ) % var2 -> var14 ] ; 
+var8 -> var17 = var8 -> var15 ; 
+var8 -> var18 = var8 -> var19 . var20 ? var8 -> var15 
+: var9 -> var15 + ( var8 < var9 ? number : var10 ) ; 
+} 
+for ( var11 = number ; var11 < var2 -> var14 ; var11 ++ ) { 
+var8 = & var2 -> var13 [ var11 ] ; 
+var9 = & var2 -> var13 [ ( var11 + number ) % var2 -> var14 ] ; 
+if ( ! var8 -> var19 . var20 ) { 
+var8 -> var18 = func2 ( var8 -> var17 , var8 -> var18 - var5 ) ; 
+var9 -> var17 = func3 ( var9 -> var18 , var9 -> var17 + var5 ) ; 
+} 
+var8 -> var21 = var9 -> var17 + ( var8 < var9 ? number : var10 ) ; 
+} 
+var7 = var2 -> var13 [ var2 -> var14 - number ] ; 
+var7 . var17 -= var10 ; 
+var7 . var18 -= var10 ; 
+var7 . var21 -= var10 ; 
+for ( var11 = - number ; var11 < var2 -> var14 ; var11 ++ ) { 
+var8 = var11 < number ? & var7 : & var2 -> var13 [ var11 ] ; 
+var8 -> var17 = func4 ( var8 -> var17 , var3 , var22 ) ; 
+var8 -> var18 = func4 ( var8 -> var18 , var3 , var22 ) ; 
+var8 -> var21 = func4 ( var8 -> var21 , var3 , var22 ) ; 
+} 
+for ( var11 = number ; var11 < var2 -> var23 ; var11 ++ ) 
+var2 -> var24 [ var11 ] . var25 . var26 = var2 -> var24 [ var11 ] . var25 . var12 = - number ; 
+for ( var11 = - number ; var11 < var2 -> var14 ; var11 ++ ) { 
+var8 = var11 < number ? & var7 : & var2 -> var13 [ var11 ] ; 
+var9 = & var2 -> var13 [ ( var11 + number ) % var2 -> var14 ] ; 
+var12 = func5 ( var1 , var2 , var4 , var8 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+var12 = func6 ( var1 , var2 , var4 , var8 , var9 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+} 
+if ( ! var4 -> var27 ) 
+func7 ( var1 , var28 , str ) ; 
+return number ; 
+} 

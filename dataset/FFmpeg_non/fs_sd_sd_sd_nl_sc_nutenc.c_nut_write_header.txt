@@ -1,0 +1,74 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+NUTContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var5 ; 
+int var6 , var7 , var8 ; 
+var2 -> var9 = var1 ; 
+var2 -> var10 = func2 ( var11 , number + ! ! var2 -> var12 ) ; 
+if ( var2 -> var10 > number && var1 -> var13 > var14 ) { 
+av_log ( var1 , AV_LOG_ERROR , 
+str 
+str 
+str , 
+var2 -> var10 ) ; 
+return var15 ; 
+} 
+var2 -> var16 = func3 ( var1 -> var17 , sizeof ( * var2 -> var16 ) ) ; 
+var2 -> var18 = func3 ( var1 -> var19 , sizeof ( * var2 -> var18 ) ) ; 
+var2 -> var20 = func3 ( var1 -> var17 + 
+var1 -> var19 , sizeof ( * var2 -> var20 ) ) ; 
+if ( ! var2 -> var16 || ! var2 -> var18 || ! var2 -> var20 ) { 
+func4 ( & var2 -> var16 ) ; 
+func4 ( & var2 -> var18 ) ; 
+func4 ( & var2 -> var20 ) ; 
+return func5 ( var21 ) ; 
+} 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) { 
+AVStream * var22 = var1 -> var23 [ var6 ] ; 
+int var24 ; 
+AVRational var20 ; 
+func6 ( var22 , & var20 . var25 , & var24 , & var20 . var26 ) ; 
+if ( var22 -> var27 -> var28 == var29 && var22 -> var27 -> var30 ) { 
+var20 = ( AVRational ) { number , var22 -> var27 -> var30 } ; 
+} else { 
+var20 = func7 ( var1 , var22 , number ) ; 
+} 
+func8 ( var22 , number , var20 . var26 , var20 . var25 ) ; 
+for ( var7 = number ; var7 < var2 -> var31 ; var7 ++ ) 
+if ( ! memcmp ( & var20 , & var2 -> var20 [ var7 ] , sizeof ( AVRational ) ) ) { 
+break ; 
+} 
+var2 -> var20 [ var7 ] = var20 ; 
+var2 -> var16 [ var6 ] . var20 = & var2 -> var20 [ var7 ] ; 
+if ( var7 == var2 -> var31 ) 
+var2 -> var31 ++ ; 
+if ( func9 ( number ) * var20 . var26 >= var20 . var25 ) 
+var2 -> var16 [ var6 ] . var32 = number ; 
+else 
+var2 -> var16 [ var6 ] . var32 = number ; 
+var2 -> var16 [ var6 ] . var33 = 
+func2 ( var20 . var25 , var20 . var26 ) / var20 . var26 ; 
+} 
+for ( var6 = number ; var6 < var1 -> var19 ; var6 ++ ) { 
+AVChapter * var34 = var1 -> var35 [ var6 ] ; 
+for ( var7 = number ; var7 < var2 -> var31 ; var7 ++ ) 
+if ( ! memcmp ( & var34 -> var20 , & var2 -> var20 [ var7 ] , sizeof ( AVRational ) ) ) 
+break ; 
+var2 -> var20 [ var7 ] = var34 -> var20 ; 
+var2 -> var18 [ var6 ] . var20 = & var2 -> var20 [ var7 ] ; 
+if ( var7 == var2 -> var31 ) 
+var2 -> var31 ++ ; 
+} 
+var2 -> var36 = var37 ; 
+func10 ( var1 ) ; 
+func11 ( var1 ) ; 
+func12 ( var2 -> var38 [ str ] . var12 == var39 ) ; 
+func13 ( var4 , var40 , strlen ( var40 ) ) ; 
+func14 ( var4 , number ) ; 
+if ( ( var8 = func15 ( var1 , var4 ) ) < number ) 
+return var8 ; 
+if ( var1 -> var41 < number ) 
+var1 -> var41 = number ; 
+func16 ( var4 ) ; 
+return number ; 
+} 

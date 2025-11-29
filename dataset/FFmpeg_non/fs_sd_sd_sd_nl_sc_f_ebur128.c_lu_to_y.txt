@@ -1,0 +1,7 @@
+static inline int func1 ( const EBUR128Context * var1 , double var2 ) 
+{ 
+var2 += number * var1 -> var3 ; 
+var2 = func2 ( var2 , number , var1 -> var4 ) ; 
+var2 = var1 -> var4 - var2 ; 
+return var2 * var1 -> var5 . var6 / var1 -> var4 ; 
+} 

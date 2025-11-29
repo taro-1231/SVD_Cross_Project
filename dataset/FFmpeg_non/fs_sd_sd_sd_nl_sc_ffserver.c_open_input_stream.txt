@@ -1,0 +1,70 @@
+static int func1 ( HTTPContext * var1 , const char * var2 ) 
+{ 
+char var3 [ number ] ; 
+char var4 [ number ] ; 
+AVFormatContext * var5 = var6 ; 
+int var7 , var8 , var9 ; 
+int64_t var10 ; 
+if ( var1 -> var11 -> var12 ) { 
+strcpy ( var4 , var1 -> var11 -> var12 -> var13 ) ; 
+var7 = var14 ; 
+if ( func2 ( var3 , sizeof ( var3 ) , str , var2 ) ) { 
+if ( ( var9 = func3 ( & var10 , var3 , number ) ) < number ) { 
+func4 ( str , var3 ) ; 
+return var9 ; 
+} 
+} else if ( func2 ( var3 , sizeof ( var3 ) , str , var2 ) ) { 
+int var15 = func5 ( var3 , number , number ) ; 
+var10 = func6 ( ) - var15 * ( int64_t ) number ; 
+} else 
+var10 = func6 ( ) - var1 -> var11 -> var15 * ( int64_t ) number ; 
+} else { 
+strcpy ( var4 , var1 -> var11 -> var13 ) ; 
+var7 = number ; 
+if ( func2 ( var3 , sizeof ( var3 ) , str , var2 ) ) { 
+if ( ( var9 = func3 ( & var10 , var3 , number ) ) < number ) { 
+func4 ( str , var3 ) ; 
+return var9 ; 
+} 
+} else 
+var10 = number ; 
+} 
+if ( ! var4 [ number ] ) { 
+func4 ( str ) ; 
+return func7 ( var16 ) ; 
+} 
+var9 = func8 ( & var5 , var4 , var1 -> var11 -> var17 , 
+& var1 -> var11 -> var18 ) ; 
+if ( var9 < number ) { 
+func4 ( str , 
+var4 , func9 ( var9 ) ) ; 
+return var9 ; 
+} 
+if ( var7 > number ) { 
+var9 = func10 ( var5 -> var19 , var7 ) ; 
+if ( var9 < number ) { 
+func4 ( str ) ; 
+return var9 ; 
+} 
+} 
+var5 -> var20 |= var21 ; 
+var1 -> var22 = var5 ; 
+if ( strcmp ( var5 -> var23 -> var24 , str ) && 
+( var9 = func11 ( var1 -> var22 , var6 ) ) < number ) { 
+func4 ( str , var4 ) ; 
+func12 ( & var5 ) ; 
+return var9 ; 
+} 
+var1 -> var25 = number ; 
+for ( var8 = number ; var8 < var1 -> var11 -> var26 ; var8 ++ ) { 
+if ( var1 -> var25 == number && 
+var1 -> var11 -> var27 [ var8 ] -> var28 -> var29 == var30 ) { 
+var1 -> var25 = var8 ; 
+} 
+} 
+if ( var1 -> var22 -> var23 -> var31 ) 
+func13 ( var1 -> var22 , - number , var10 , number ) ; 
+var1 -> var32 = var33 ; 
+var1 -> var34 = var35 ; 
+return number ; 
+} 

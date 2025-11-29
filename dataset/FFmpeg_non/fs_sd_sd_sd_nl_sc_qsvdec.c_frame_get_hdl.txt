@@ -1,0 +1,5 @@
+static mfxStatus func1 ( mfxHDL var1 , mfxMemId var2 , mfxHDL * var3 ) 
+{ 
+* var3 = var2 ; 
+return var4 ; 
+} 

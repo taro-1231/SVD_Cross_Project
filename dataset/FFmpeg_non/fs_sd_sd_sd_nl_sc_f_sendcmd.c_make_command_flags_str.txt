@@ -1,0 +1,15 @@
+static inline char * func1 ( AVBPrint * var1 , int var2 ) 
+{ 
+static const char * const var3 [ ] = { str , str } ; 
+int var4 , var5 = number ; 
+func2 ( var1 , number , var6 ) ; 
+for ( var4 = number ; var4 < func3 ( var3 ) ; var4 ++ ) { 
+if ( var2 & number << var4 ) { 
+if ( ! var5 ) 
+func4 ( var1 , var7 , number ) ; 
+func5 ( var1 , var7 , var3 [ var4 ] ) ; 
+var5 = number ; 
+} 
+} 
+return var1 -> var7 ; 
+} 

@@ -1,0 +1,12 @@
+static inline uint8_t func1 ( ADPCMChannelStatus * var1 , 
+int16_t var2 ) 
+{ 
+int var3 = var2 - var1 -> var4 ; 
+int var5 = func2 ( number , abs ( var3 ) * number / 
+var6 [ var1 -> var7 ] ) + ( var3 < number ) * number ; 
+var1 -> var4 += ( ( var6 [ var1 -> var7 ] * 
+var8 [ var5 ] ) / number ) ; 
+var1 -> var4 = func3 ( var1 -> var4 ) ; 
+var1 -> var7 = func4 ( var1 -> var7 + var9 [ var5 ] , number , number ) ; 
+return var5 ; 
+} 

@@ -1,0 +1,18 @@
+func1 ( png_store * var1 ) 
+{ 
+if ( var1 -> var2 != var3 && var1 -> var4 != var3 ) 
+{ 
+png_store_buffer * var4 = & var1 -> var2 -> var5 ; 
+size_t var6 = var1 -> var2 -> var7 ; 
+while ( var4 != var1 -> var4 && var4 != var3 ) 
+{ 
+var4 = var4 -> var8 ; 
+var6 += var9 ; 
+} 
+if ( var4 != var1 -> var4 ) 
+func2 ( var1 -> var10 , str ) ; 
+if ( var6 > var1 -> var11 ) 
+return var6 - var1 -> var11 ; 
+} 
+return number ; 
+} 

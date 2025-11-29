@@ -1,0 +1,10 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+FrameRateContext * var2 = var1 -> var3 ; 
+int var4 ; 
+for ( var4 = var2 -> var5 + number ; var4 > var2 -> var6 ; var4 ++ ) { 
+if ( var2 -> var7 [ var4 ] && ( var2 -> var7 [ var4 ] != var2 -> var7 [ var4 + number ] ) ) 
+func2 ( & var2 -> var7 [ var4 ] ) ; 
+} 
+func2 ( & var2 -> var7 [ var2 -> var6 ] ) ; 
+} 
