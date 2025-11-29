@@ -1,0 +1,28 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct video_data * var2 = var1 -> var3 ; 
+enum v4l2_buf_type var4 ; 
+int var5 , var6 ; 
+for ( var5 = number ; var5 < var2 -> var7 ; var5 ++ ) { 
+struct v4l2_buffer var8 = { 
+. var4 = var9 , 
+. index = var5 , 
+. memory = V4L2_MEMORY_MMAP 
+} ; 
+if ( func2 ( var2 -> var10 , var11 , & var8 ) < number ) { 
+var6 = func3 ( var12 ) ; 
+func4 ( var1 , var13 , str , 
+func5 ( var6 ) ) ; 
+return var6 ; 
+} 
+} 
+var2 -> var14 = var2 -> var7 ; 
+var4 = var9 ; 
+if ( func2 ( var2 -> var10 , var15 , & var4 ) < number ) { 
+var6 = func3 ( var12 ) ; 
+func4 ( var1 , var13 , str , 
+func5 ( var6 ) ) ; 
+return var6 ; 
+} 
+return number ; 
+} 

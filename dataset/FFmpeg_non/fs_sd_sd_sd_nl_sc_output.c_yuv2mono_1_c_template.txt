@@ -1,0 +1,41 @@
+func1 ( SwsContext * var1 , const int16_t * var2 , 
+const int16_t * var3 [ number ] , const int16_t * var4 [ number ] , 
+const int16_t * var5 , uint8_t * var6 , int var7 , 
+int var8 , int var9 , enum AVPixelFormat var10 ) 
+{ 
+const uint8_t * const var11 = var12 [ var9 & number ] ; 
+int var13 ; 
+if ( var1 -> var14 == var15 ) { 
+int var16 = number ; 
+int var17 = number ; 
+for ( var13 = number ; var13 < var7 ; var13 += number ) { 
+int var18 ; 
+var18 = ( ( var2 [ var13 + number ] + number ) >> number ) ; 
+var18 += ( number * var16 + number * var1 -> var19 [ number ] [ var13 ] + number * var1 -> var19 [ number ] [ var13 + number ] + number * var1 -> var19 [ number ] [ var13 + number ] + number - number ) >> number ; 
+var1 -> var19 [ number ] [ var13 ] = var16 ; 
+var17 = number * var17 + ( var18 >= number ) ; 
+var18 -= number * ( var17 & number ) ; 
+var16 = ( ( var2 [ var13 + number ] + number ) >> number ) ; 
+var16 += ( number * var18 + number * var1 -> var19 [ number ] [ var13 + number ] + number * var1 -> var19 [ number ] [ var13 + number ] + number * var1 -> var19 [ number ] [ var13 + number ] + number - number ) >> number ; 
+var1 -> var19 [ number ] [ var13 + number ] = var18 ; 
+var17 = number * var17 + ( var16 >= number ) ; 
+var16 -= number * ( var17 & number ) ; 
+if ( ( var13 & number ) == number ) 
+func2 ( * var6 ++ , var17 ) ; 
+} 
+var1 -> var19 [ number ] [ var13 ] = var16 ; 
+} else { 
+for ( var13 = number ; var13 < var7 ; var13 += number ) { 
+int var17 = number ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func3 ( var17 , ( ( var2 [ var13 + number ] + number ) >> number ) + var11 [ number ] ) ; 
+func2 ( * var6 ++ , var17 ) ; 
+} 
+} 
+} 

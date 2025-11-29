@@ -1,0 +1,141 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+ebml_master var5 , var6 ; 
+AVDictionaryEntry * var7 ; 
+int var8 , var9 , var10 = number ; 
+if ( ! strcmp ( var1 -> var11 -> var12 , str ) ) 
+var2 -> var13 = var14 ; 
+else 
+var2 -> var13 = var15 ; 
+if ( var1 -> var16 < number ) { 
+var1 -> var16 = number ; 
+var1 -> var17 -> var18 = number ; 
+} 
+if ( var2 -> var13 != var14 || 
+func2 ( var1 -> var19 , str , var20 , number ) || 
+func2 ( var1 -> var19 , str , var20 , number ) ) 
+var10 = number ; 
+for ( var9 = number ; var9 < var1 -> var21 ; var9 ++ ) { 
+if ( var1 -> var22 [ var9 ] -> var23 -> var24 == var25 || 
+var1 -> var22 [ var9 ] -> var23 -> var24 == var26 || 
+var1 -> var22 [ var9 ] -> var23 -> var24 == var27 || 
+var1 -> var22 [ var9 ] -> var23 -> var24 == var28 || 
+var1 -> var22 [ var9 ] -> var23 -> var24 == var29 || 
+var1 -> var22 [ var9 ] -> var23 -> var24 == var30 ) { 
+func3 ( var1 , var31 , 
+str , 
+func4 ( var1 -> var22 [ var9 ] -> var23 -> var24 ) ) ; 
+return var32 ; 
+} 
+if ( var1 -> var22 [ var9 ] -> var23 -> var24 == var33 || 
+func2 ( var1 -> var22 [ var9 ] -> var19 , str , var20 , number ) || 
+func2 ( var1 -> var22 [ var9 ] -> var19 , str , var20 , number ) ) 
+var10 = number ; 
+} 
+var2 -> var34 = func5 ( var1 -> var21 , sizeof ( * var2 -> var34 ) ) ; 
+if ( ! var2 -> var34 ) { 
+var8 = func6 ( var35 ) ; 
+goto var36 ; 
+} 
+var5 = func7 ( var4 , var37 , number ) ; 
+func8 ( var4 , var38 , number ) ; 
+func8 ( var4 , var39 , number ) ; 
+func8 ( var4 , var40 , number ) ; 
+func8 ( var4 , var41 , number ) ; 
+func9 ( var4 , var42 , var1 -> var11 -> var12 ) ; 
+func8 ( var4 , var43 , var10 ) ; 
+func8 ( var4 , var44 , number ) ; 
+func10 ( var4 , var5 ) ; 
+var2 -> var45 = func7 ( var4 , var46 , number ) ; 
+var2 -> var47 = func11 ( var4 ) ; 
+var2 -> var48 = func12 ( var4 , var2 -> var47 , number ) ; 
+if ( ! var2 -> var48 ) { 
+var8 = func6 ( var35 ) ; 
+goto var36 ; 
+} 
+var8 = func13 ( var2 -> var48 , var49 , func11 ( var4 ) ) ; 
+if ( var8 < number ) goto var36 ; 
+var6 = func7 ( var4 , var49 , number ) ; 
+func8 ( var4 , var50 , number ) ; 
+if ( ( var7 = func2 ( var1 -> var19 , str , var20 , number ) ) ) 
+func9 ( var4 , var51 , var7 -> var52 ) ; 
+if ( ! ( var1 -> var53 & var54 ) ) { 
+uint32_t var55 [ number ] ; 
+AVLFG var56 ; 
+func14 ( & var56 , func15 ( ) ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) 
+var55 [ var9 ] = func16 ( & var56 ) ; 
+func9 ( var4 , var57 , var58 ) ; 
+if ( ( var7 = func2 ( var1 -> var19 , str , var20 , number ) ) ) 
+func9 ( var4 , var59 , var7 -> var52 ) ; 
+else 
+func9 ( var4 , var59 , var58 ) ; 
+func17 ( var4 , var60 , var55 , number ) ; 
+} else { 
+const char * var61 = str ; 
+func9 ( var4 , var57 , var61 ) ; 
+func9 ( var4 , var59 , var61 ) ; 
+} 
+if ( var7 = func2 ( var1 -> var19 , str , var20 , number ) ) { 
+int64_t var62 = ( func18 ( var7 -> var52 ) - number ) * number ; 
+uint8_t var63 [ number ] ; 
+func19 ( var63 , var62 ) ; 
+func17 ( var4 , var64 , var63 , number ) ; 
+} 
+var2 -> var65 = number ; 
+var2 -> var66 = func11 ( var4 ) ; 
+if ( ! var2 -> var67 ) { 
+func20 ( var4 , number ) ; 
+} 
+func10 ( var4 , var6 ) ; 
+var2 -> var68 = func21 ( var1 -> var21 * sizeof ( int64_t ) ) ; 
+var2 -> var69 = func21 ( var1 -> var21 * sizeof ( int64_t ) ) ; 
+var8 = func22 ( var1 ) ; 
+if ( var8 < number ) 
+goto var36 ; 
+for ( var9 = number ; var9 < var1 -> var70 ; var9 ++ ) 
+var2 -> chapter_id_offset = FFMAX ( var2 -> chapter_id_offset , 1LL - var1 -> chapters [ var9 ] -> id ) ; 
+if ( var2 -> var13 != var14 ) { 
+var8 = func23 ( var1 ) ; 
+if ( var8 < number ) 
+goto var36 ; 
+var8 = func24 ( var1 ) ; 
+if ( var8 < number ) 
+goto var36 ; 
+var8 = func25 ( var1 ) ; 
+if ( var8 < number ) 
+goto var36 ; 
+} 
+if ( ! var1 -> var4 -> var71 && ! var2 -> var67 ) 
+func26 ( var4 , var2 ) ; 
+var2 -> var72 = func27 ( var2 -> var47 ) ; 
+if ( ! var2 -> var72 ) { 
+var8 = func6 ( var35 ) ; 
+goto var36 ; 
+} 
+if ( var4 -> var71 && var2 -> var73 ) { 
+var2 -> var74 = func11 ( var4 ) ; 
+func20 ( var4 , var2 -> var73 ) ; 
+} 
+func28 ( & var2 -> var75 ) ; 
+var2 -> var75 . var76 = number ; 
+var2 -> var77 = - number ; 
+func29 ( var4 ) ; 
+if ( var4 -> var71 ) { 
+if ( var2 -> var78 < number ) 
+var2 -> var78 = number ; 
+if ( var2 -> var79 < number ) 
+var2 -> var79 = number * number * number ; 
+} else { 
+if ( var2 -> var78 < number ) 
+var2 -> var78 = number ; 
+if ( var2 -> var79 < number ) 
+var2 -> var79 = number * number ; 
+} 
+return number ; 
+var36 : 
+func30 ( var2 ) ; 
+return var8 ; 
+} 

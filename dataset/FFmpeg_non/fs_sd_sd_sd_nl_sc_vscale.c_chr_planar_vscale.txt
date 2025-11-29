@@ -1,0 +1,31 @@
+static int func1 ( SwsContext * var1 , SwsFilterDescriptor * var2 , int var3 , int var4 ) 
+{ 
+const int var5 = ( number << var2 -> var6 -> var7 ) - number ; 
+if ( var3 & var5 ) 
+return number ; 
+else { 
+VScalerContext * func2 = var2 -> var8 ; 
+int var9 = func3 ( var2 -> var6 -> var10 , var2 -> var6 -> var11 ) ; 
+int var12 = var3 >> var2 -> var6 -> var7 ; 
+int var13 = func4 ( number - func2 -> var14 , func2 -> var15 [ var12 ] ) ; 
+int var16 = var13 - var2 -> var17 -> var18 [ number ] . var3 ; 
+int var19 = var13 - var2 -> var17 -> var18 [ number ] . var3 ; 
+int var20 = var12 - var2 -> var6 -> var18 [ number ] . var3 ; 
+int var21 = var12 - var2 -> var6 -> var18 [ number ] . var3 ; 
+uint8_t ** var22 = var2 -> var17 -> var18 [ number ] . var23 + var16 ; 
+uint8_t ** var24 = var2 -> var17 -> var18 [ number ] . var23 + var19 ; 
+uint8_t ** var25 = var2 -> var6 -> var18 [ number ] . var23 + var20 ; 
+uint8_t ** var26 = var2 -> var6 -> var18 [ number ] . var23 + var21 ; 
+uint16_t * var27 = func2 -> var27 [ number ] + ( func2 -> var28 ? number : var12 * func2 -> var14 ) ; 
+if ( var1 -> var29 ) { 
+( ( yuv2interleavedX_fn ) func2 -> func5 ) ( var1 , var27 , func2 -> var14 , ( const int16_t ** ) var22 , ( const int16_t ** ) var24 , var25 [ number ] , var9 ) ; 
+} else if ( func2 -> var14 == number ) { 
+( ( yuv2planar1_fn ) func2 -> func5 ) ( ( const int16_t * ) var22 [ number ] , var25 [ number ] , var9 , var1 -> var30 , number ) ; 
+( ( yuv2planar1_fn ) func2 -> func5 ) ( ( const int16_t * ) var24 [ number ] , var26 [ number ] , var9 , var1 -> var30 , number ) ; 
+} else { 
+( ( yuv2planarX_fn ) func2 -> func5 ) ( var27 , func2 -> var14 , ( const int16_t ** ) var22 , var25 [ number ] , var9 , var1 -> var30 , number ) ; 
+( ( yuv2planarX_fn ) func2 -> func5 ) ( var27 , func2 -> var14 , ( const int16_t ** ) var24 , var26 [ number ] , var9 , var1 -> var30 , func2 -> var28 ? ( var1 -> var31 >> number ) : number ) ; 
+} 
+} 
+return number ; 
+} 

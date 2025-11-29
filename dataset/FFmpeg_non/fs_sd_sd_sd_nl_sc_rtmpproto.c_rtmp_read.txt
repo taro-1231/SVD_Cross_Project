@@ -1,0 +1,24 @@
+static int func1 ( URLContext * var1 , uint8_t * var2 , int var3 ) 
+{ 
+RTMPContext * var4 = var1 -> var5 ; 
+int var6 = var3 ; 
+int var7 ; 
+while ( var3 > number ) { 
+int var8 = var4 -> var9 - var4 -> var10 ; 
+if ( var8 >= var3 ) { 
+memcpy ( var2 , var4 -> var11 + var4 -> var10 , var3 ) ; 
+var4 -> var10 += var3 ; 
+return var6 ; 
+} 
+if ( var8 > number ) { 
+memcpy ( var2 , var4 -> var11 + var4 -> var10 , var8 ) ; 
+var2 += var8 ; 
+var3 -= var8 ; 
+var4 -> var10 = var4 -> var9 ; 
+return var8 ; 
+} 
+if ( ( var7 = func2 ( var1 , number ) ) < number ) 
+return var7 ; 
+} 
+return var6 ; 
+} 

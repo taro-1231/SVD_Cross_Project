@@ -1,0 +1,34 @@
+static int func1 ( PacketQueue * var1 , AVPacket * var2 , int var3 , int * var4 ) 
+{ 
+MyAVPacketList * var5 ; 
+int var6 ; 
+func2 ( var1 -> var7 ) ; 
+for ( ; ; ) { 
+if ( var1 -> var8 ) { 
+var6 = - number ; 
+break ; 
+} 
+var5 = var1 -> var9 ; 
+if ( var5 ) { 
+var1 -> var9 = var5 -> var10 ; 
+if ( ! var1 -> var9 ) 
+var1 -> var11 = var12 ; 
+var1 -> var13 -- ; 
+var1 -> var14 -= var5 -> var2 . var14 + sizeof ( * var5 ) ; 
+var1 -> var15 -= var5 -> var2 . var15 ; 
+* var2 = var5 -> var2 ; 
+if ( var4 ) 
+* var4 = var5 -> var4 ; 
+func3 ( var5 ) ; 
+var6 = number ; 
+break ; 
+} else if ( ! var3 ) { 
+var6 = number ; 
+break ; 
+} else { 
+func4 ( var1 -> var16 , var1 -> var7 ) ; 
+} 
+} 
+func5 ( var1 -> var7 ) ; 
+return var6 ; 
+} 

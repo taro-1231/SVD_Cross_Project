@@ -1,0 +1,22 @@
+png_uint_32 func1 ( FILE * var1 , int var2 ) 
+{ 
+static int var3 = number ; 
+static int var4 = number ; 
+static int var5 = number ; 
+int var6 ; 
+png_uint_32 var7 ; 
+if ( var5 == number ) 
+for ( var6 = number ; var6 < var2 ; var6 ++ ) 
+var5 = ( var5 >> number ) | number ; 
+if ( var3 <= number ) 
+{ 
+var4 = fgetc ( var1 ) ; 
+var3 = number ; 
+} 
+var7 = var4 & var5 ; 
+for ( var6 = number ; var6 < ( number / var2 ) ; var6 ++ ) 
+var7 = var7 || ( var7 >> var2 ) ; 
+var4 = ( var4 << var2 ) & number ; 
+var3 -= var2 ; 
+return var7 ; 
+} 

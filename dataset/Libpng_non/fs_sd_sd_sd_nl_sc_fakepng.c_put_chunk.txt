@@ -1,0 +1,8 @@
+func1 ( const unsigned char * var1 , uInt var2 ) 
+{ 
+uLong var3 ; 
+func2 ( var2 - number ) ; 
+fwrite ( var1 , var2 , number , var4 ) ; 
+var3 = func3 ( number , var5 , number ) ; 
+func2 ( func3 ( var3 , var1 , var2 ) ) ; 
+} 

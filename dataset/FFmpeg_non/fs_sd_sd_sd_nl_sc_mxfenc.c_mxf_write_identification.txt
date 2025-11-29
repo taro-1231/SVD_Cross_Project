@@ -1,0 +1,29 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+const char * var5 = str ; 
+const char * var6 = var1 -> var7 != & var8 ? str : str ; 
+const char * var9 ; 
+int var10 ; 
+func2 ( var4 , number ) ; 
+func3 ( var1 , str , var4 -> var11 - number ) ; 
+var9 = var1 -> var12 & var13 ? 
+str : func4 ( var14 ) ; 
+var10 = number + func5 ( var5 ) + 
+func5 ( var6 ) + 
+func5 ( var9 ) ; 
+func6 ( var4 , var10 ) ; 
+func7 ( var4 , number , number ) ; 
+func8 ( var4 , var15 , number ) ; 
+func3 ( var1 , str , var4 -> var11 - number ) ; 
+func7 ( var4 , number , number ) ; 
+func8 ( var4 , var15 , number ) ; 
+func9 ( var4 , number , var5 ) ; 
+func9 ( var4 , number , var6 ) ; 
+func9 ( var4 , number , var9 ) ; 
+func7 ( var4 , number , number ) ; 
+func8 ( var4 , var15 , number ) ; 
+func7 ( var4 , number , number ) ; 
+func10 ( var4 , var2 -> var16 ) ; 
+} 

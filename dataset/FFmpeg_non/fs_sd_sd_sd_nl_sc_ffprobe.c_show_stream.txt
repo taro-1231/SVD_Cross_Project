@@ -1,0 +1,204 @@
+static int func1 ( WriterContext * var1 , AVFormatContext * var2 , int var3 , InputStream * var4 , int var5 ) 
+{ 
+AVStream * var6 = var4 -> var7 ; 
+AVCodecParameters * var8 ; 
+AVCodecContext * var9 ; 
+char var10 [ number ] ; 
+const char * var11 ; 
+AVRational var12 , var13 ; 
+AVBPrint var14 ; 
+const AVCodecDescriptor * var15 ; 
+int var16 = number ; 
+const char * var17 = var18 ; 
+func2 ( & var14 , number , var19 ) ; 
+func3 ( var1 , var5 ? var20 : var21 ) ; 
+func4 ( var67 , var6 -> var22 ) ; 
+var8 = var6 -> var23 ; 
+var9 = var4 -> var9 ; 
+if ( var15 = func5 ( var8 -> var24 ) ) { 
+func6 ( var67 , var15 -> var25 ) ; 
+if ( ! var26 ) { 
+func6 ( var67 , 
+var15 -> var27 ? var15 -> var27 : var67 ) ; 
+} 
+} else { 
+func7 ( var67 , var67 ) ; 
+if ( ! var26 ) { 
+func7 ( var67 , var67 ) ; 
+} 
+} 
+if ( ! var26 && ( var17 = func8 ( var8 -> var24 , var8 -> var17 ) ) ) 
+func6 ( var67 , var17 ) ; 
+else { 
+if ( var8 -> var17 != var28 ) { 
+char var29 [ number ] ; 
+snprintf ( var29 , sizeof ( var29 ) , var67 , var8 -> var17 ) ; 
+func6 ( var67 , var29 ) ; 
+} else 
+func7 ( var67 , var67 ) ; 
+} 
+var11 = func9 ( var8 -> var30 ) ; 
+if ( var11 ) func6 ( var67 , var11 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var9 ) 
+func10 ( var67 , var9 -> var31 , var67 ) ; 
+func6 ( var67 , func11 ( var8 -> var32 ) ) ; 
+func12 ( str , str PRIx32 , var8 -> var32 ) ; 
+switch ( var8 -> var30 ) { 
+case var33 : 
+func4 ( var67 , var8 -> var34 ) ; 
+func4 ( var67 , var8 -> var35 ) ; 
+if ( var9 ) { 
+func4 ( var67 , var9 -> var36 ) ; 
+func4 ( var67 , var9 -> var37 ) ; 
+} 
+func4 ( var67 , var8 -> var38 ) ; 
+var12 = func13 ( var2 , var6 , var18 ) ; 
+if ( var12 . var39 ) { 
+func10 ( var67 , var12 , var67 ) ; 
+func14 ( & var13 . var40 , & var13 . var39 , 
+var8 -> var34 * var12 . var40 , 
+var8 -> var35 * var12 . var39 , 
+number * number ) ; 
+func10 ( var67 , var13 , var67 ) ; 
+} else { 
+func7 ( var67 , var67 ) ; 
+func7 ( var67 , var67 ) ; 
+} 
+var11 = func15 ( var8 -> var41 ) ; 
+if ( var11 ) func6 ( var67 , var11 ) ; 
+else func7 ( var67 , var67 ) ; 
+func4 ( var67 , var8 -> var42 ) ; 
+if ( var8 -> var43 != var44 ) 
+func6 ( var67 , func16 ( var8 -> var43 ) ) ; 
+else 
+func7 ( var67 , var67 ) ; 
+var11 = func17 ( var8 -> var45 ) ; 
+if ( var11 ) func6 ( var67 , var11 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var8 -> var46 != var47 ) 
+func6 ( var67 , func18 ( var8 -> var46 ) ) ; 
+else 
+func7 ( var67 , func18 ( var8 -> var46 ) ) ; 
+if ( var8 -> var48 != var49 ) 
+func6 ( var67 , func19 ( var8 -> var48 ) ) ; 
+else 
+func7 ( var67 , func19 ( var8 -> var48 ) ) ; 
+if ( var8 -> var50 != var51 ) 
+func6 ( var67 , func20 ( var8 -> var50 ) ) ; 
+else 
+func7 ( var67 , func20 ( var8 -> var50 ) ) ; 
+if ( var8 -> var52 == var53 ) 
+func6 ( var67 , var67 ) ; 
+else if ( var8 -> var52 == var54 ) 
+func6 ( var67 , var67 ) ; 
+else if ( var8 -> var52 == var55 ) 
+func6 ( var67 , var67 ) ; 
+else if ( var8 -> var52 == var56 ) 
+func6 ( var67 , var67 ) ; 
+else if ( var8 -> var52 == var57 ) 
+func6 ( var67 , var67 ) ; 
+else 
+func7 ( var67 , var67 ) ; 
+if ( var9 && var9 -> var58 >= number ) { 
+char var59 [ var60 ] ; 
+func21 ( var59 , var9 -> var58 ) ; 
+func6 ( var67 , var59 ) ; 
+} else { 
+func7 ( var67 , var67 ) ; 
+} 
+if ( var9 ) 
+func4 ( var67 , var9 -> var61 ) ; 
+break ; 
+case var62 : 
+var11 = func22 ( var8 -> var41 ) ; 
+if ( var11 ) func6 ( var67 , var11 ) ; 
+else func7 ( var67 , var67 ) ; 
+func23 ( var67 , var8 -> var63 , var64 ) ; 
+func4 ( var67 , var8 -> var65 ) ; 
+if ( var8 -> var66 ) { 
+func24 ( & var14 ) ; 
+func25 ( & var14 , var8 -> var65 , var8 -> var66 ) ; 
+func6 ( var67 , var14 . var67 ) ; 
+} else { 
+func7 ( var67 , var67 ) ; 
+} 
+func4 ( var67 , func26 ( var8 -> var24 ) ) ; 
+break ; 
+case var68 : 
+if ( var8 -> var34 ) 
+func4 ( var67 , var8 -> var34 ) ; 
+else 
+func7 ( var67 , var67 ) ; 
+if ( var8 -> var35 ) 
+func4 ( var67 , var8 -> var35 ) ; 
+else 
+func7 ( var67 , var67 ) ; 
+break ; 
+} 
+if ( var9 && var9 -> var69 && var9 -> var69 -> var70 && var71 ) { 
+const AVOption * var72 = var18 ; 
+while ( var72 = func27 ( var9 -> var73 , var72 ) ) { 
+uint8_t * var67 ; 
+if ( var72 -> var74 ) continue ; 
+if ( func28 ( var9 -> var73 , var72 -> var25 , number , & var67 ) >= number ) { 
+func6 ( var72 -> var25 , var67 ) ; 
+func29 ( var67 ) ; 
+} 
+} 
+} 
+if ( var2 -> var75 -> var74 & var76 ) func12 ( var67 , var67 , var6 -> var77 ) ; 
+else func7 ( var67 , var67 ) ; 
+func10 ( var67 , var6 -> var78 , var67 ) ; 
+func10 ( var67 , var6 -> var79 , var67 ) ; 
+func10 ( var67 , var6 -> var31 , var67 ) ; 
+func30 ( var67 , var6 -> var80 ) ; 
+func31 ( var67 , var6 -> var80 , & var6 -> var31 ) ; 
+func30 ( var67 , var6 -> var81 ) ; 
+func31 ( var67 , var6 -> var81 , & var6 -> var31 ) ; 
+if ( var8 -> var82 > number ) func23 ( var67 , var8 -> var82 , var83 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var6 -> var69 -> var84 > number ) func23 ( var67 , var6 -> var69 -> var84 , var83 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var9 && var9 -> var85 > number ) func12 ( var67 , var67 , var9 -> var85 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var6 -> var86 ) func12 ( var67 , str PRId64 , var6 -> var86 ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var87 [ var3 ] ) func12 ( var67 , str PRIu64 , var87 [ var3 ] ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var88 [ var3 ] ) func12 ( var67 , str PRIu64 , var88 [ var3 ] ) ; 
+else func7 ( var67 , var67 ) ; 
+if ( var89 ) 
+func32 ( var1 , var67 , var8 -> var90 , 
+var8 -> var91 ) ; 
+func33 ( var1 , var67 , var8 -> var90 , 
+var8 -> var91 ) ; 
+} while ( number ) 
+if ( var92 ) { 
+func3 ( var1 , var5 ? var93 : var94 ) ; 
+func34 ( var95 , var67 ) ; 
+func34 ( var96 , var67 ) ; 
+func34 ( var97 , var67 ) ; 
+func34 ( var98 , var67 ) ; 
+func34 ( var99 , var67 ) ; 
+func34 ( var100 , var67 ) ; 
+func34 ( var101 , var67 ) ; 
+func34 ( var102 , var67 ) ; 
+func34 ( var103 , var67 ) ; 
+func34 ( var104 , var67 ) ; 
+func34 ( var105 , var67 ) ; 
+func34 ( var106 , var67 ) ; 
+func35 ( var1 ) ; 
+} 
+if ( var107 ) 
+var16 = func36 ( var1 , var6 -> var108 , var5 ? var109 : var110 ) ; 
+if ( var6 -> var111 ) { 
+func37 ( var1 , var6 -> var23 , var6 -> var112 , var6 -> var111 , 
+var113 , 
+var114 ) ; 
+} 
+func35 ( var1 ) ; 
+func38 ( & var14 , var18 ) ; 
+fflush ( var115 ) ; 
+return var16 ; 
+} 

@@ -1,0 +1,8 @@
+func1 ( libAVPin * var1 , wchar_t ** var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+* var2 = wcsdup ( L str ) ; 
+return var4 ; 
+} 

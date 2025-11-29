@@ -1,0 +1,50 @@
+static void func1 ( AACContext * var1 , SingleChannelElement * var2 ) 
+{ 
+IndividualChannelStream * var3 = & var2 -> var3 ; 
+INTFLOAT * var4 = var2 -> var5 ; 
+INTFLOAT * var6 = var2 -> var7 ; 
+INTFLOAT * var8 = var2 -> var8 ; 
+const INTFLOAT * var9 = var3 -> var10 [ number ] ? func2 ( var11 ) : func2 ( var12 ) ; 
+const INTFLOAT * var13 = var3 -> var10 [ number ] ? func2 ( var14 ) : func2 ( var15 ) ; 
+const INTFLOAT * var16 = var3 -> var10 [ number ] ? func2 ( var11 ) : func2 ( var12 ) ; 
+INTFLOAT * var17 = var1 -> var18 ; 
+INTFLOAT * var19 = var1 -> var19 ; 
+int var20 ; 
+if ( var3 -> var21 [ number ] == var22 ) { 
+for ( var20 = number ; var20 < number ; var20 += number ) 
+var1 -> var23 . func3 ( & var1 -> var23 , var17 + var20 , var4 + var20 ) ; 
+} else { 
+var1 -> var24 . func3 ( & var1 -> var24 , var17 , var4 ) ; 
+for ( var20 = number ; var20 < number ; var20 ++ ) 
+var17 [ var20 ] = ( var17 [ var20 ] + number ) >> number ; 
+} 
+if ( ( var3 -> var21 [ number ] == var25 || var3 -> var21 [ number ] == var26 ) && 
+( var3 -> var21 [ number ] == var25 || var3 -> var21 [ number ] == var27 ) ) { 
+var1 -> var28 -> func4 ( var6 , var8 , var17 , var13 , number ) ; 
+} else { 
+memcpy ( var6 , var8 , number * sizeof ( * var6 ) ) ; 
+if ( var3 -> var21 [ number ] == var22 ) { 
+var1 -> var28 -> func4 ( var6 + number + number * number , var8 + number , var17 + number * number , var16 , number ) ; 
+var1 -> var28 -> func4 ( var6 + number + number * number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+var1 -> var28 -> func4 ( var6 + number + number * number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+var1 -> var28 -> func4 ( var6 + number + number * number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+var1 -> var28 -> func4 ( var19 , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+memcpy ( var6 + number + number * number , var19 , number * sizeof ( * var6 ) ) ; 
+} else { 
+var1 -> var28 -> func4 ( var6 + number , var8 + number , var17 , var16 , number ) ; 
+memcpy ( var6 + number , var17 + number , number * sizeof ( * var6 ) ) ; 
+} 
+} 
+if ( var3 -> var21 [ number ] == var22 ) { 
+memcpy ( var8 , var19 + number , number * sizeof ( * var8 ) ) ; 
+var1 -> var28 -> func4 ( var8 + number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+var1 -> var28 -> func4 ( var8 + number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+var1 -> var28 -> func4 ( var8 + number , var17 + number * number + number , var17 + number * number , var9 , number ) ; 
+memcpy ( var8 + number , var17 + number * number + number , number * sizeof ( * var8 ) ) ; 
+} else if ( var3 -> var21 [ number ] == var27 ) { 
+memcpy ( var8 , var17 + number , number * sizeof ( * var8 ) ) ; 
+memcpy ( var8 + number , var17 + number * number + number , number * sizeof ( * var8 ) ) ; 
+} else { 
+memcpy ( var8 , var17 + number , number * sizeof ( * var8 ) ) ; 
+} 
+} 

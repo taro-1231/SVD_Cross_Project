@@ -1,0 +1,88 @@
+int func1 ( const char * var1 , FFServerConfig * var2 ) 
+{ 
+FILE * var3 ; 
+char var4 [ number ] ; 
+char var5 [ number ] ; 
+const char * var6 ; 
+FFServerStream ** var7 , * var8 = var9 , * var10 = var9 ; 
+FFServerStream ** var11 , * var12 = var9 ; 
+int var13 = number ; 
+func2 ( var2 ) ; 
+var3 = fopen ( var1 , str ) ; 
+if ( ! var3 ) { 
+var13 = func3 ( var14 ) ; 
+func4 ( var9 , var15 , 
+str , var1 ) ; 
+return var13 ; 
+} 
+var2 -> var16 = var9 ; 
+var2 -> var17 = var9 ; 
+var2 -> var18 = var2 -> var19 = number ; 
+var7 = & var2 -> var16 ; 
+var11 = & var2 -> var17 ; 
+var2 -> var20 = number ; 
+while ( fgets ( var4 , sizeof ( var4 ) , var3 ) != var9 ) { 
+var2 -> var20 ++ ; 
+var6 = var4 ; 
+while ( func5 ( * var6 ) ) 
+var6 ++ ; 
+if ( * var6 == str || * var6 == str ) 
+continue ; 
+func6 ( var5 , sizeof ( var5 ) , & var6 ) ; 
+if ( var12 || ! func7 ( var5 , str ) ) { 
+int var21 = ! func7 ( var5 , str ) ; 
+if ( var21 && ( var8 || var12 || var10 ) ) { 
+func8 ( str ) ; 
+} else { 
+var13 = func9 ( var2 , var5 , & var6 , & var12 ) ; 
+if ( var13 < number ) 
+break ; 
+if ( var21 ) { 
+* var7 = var12 ; 
+* var11 = var12 ; 
+var7 = & var12 -> var22 ; 
+var11 = & var12 -> var23 ; 
+} 
+} 
+} else if ( var8 || ! func7 ( var5 , str ) ) { 
+int var21 = ! func7 ( var5 , str ) ; 
+if ( var21 && ( var8 || var12 || var10 ) ) { 
+func8 ( str ) ; 
+} else { 
+var13 = func10 ( var2 , var5 , & var6 , & var8 ) ; 
+if ( var13 < number ) 
+break ; 
+if ( var21 ) { 
+* var7 = var8 ; 
+var7 = & var8 -> var22 ; 
+} 
+} 
+} else if ( var10 || ! func7 ( var5 , str ) ) { 
+int var21 = ! func7 ( var5 , str ) ; 
+if ( var21 && ( var8 || var12 || var10 ) ) 
+func8 ( str ) ; 
+else { 
+var13 = func11 ( var2 , var5 , & var6 , 
+& var10 ) ; 
+if ( var13 < number ) 
+break ; 
+if ( var21 ) { 
+* var7 = var10 ; 
+var7 = & var10 -> var22 ; 
+} 
+} 
+} else { 
+func12 ( var2 , var5 , & var6 ) ; 
+} 
+} 
+if ( var8 || var12 || var10 ) 
+func8 ( str , 
+var8 ? str : ( var12 ? str : str ) ) ; 
+fclose ( var3 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+if ( var2 -> var18 ) 
+return func3 ( var24 ) ; 
+else 
+return number ; 
+} 

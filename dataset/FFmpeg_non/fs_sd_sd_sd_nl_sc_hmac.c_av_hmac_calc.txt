@@ -1,0 +1,8 @@
+int func1 ( AVHMAC * var1 , const uint8_t * var2 , unsigned int var3 , 
+const uint8_t * var4 , unsigned int var5 , 
+uint8_t * var6 , unsigned int var7 ) 
+{ 
+func2 ( var1 , var4 , var5 ) ; 
+func3 ( var1 , var2 , var3 ) ; 
+return func4 ( var1 , var6 , var7 ) ; 
+} 

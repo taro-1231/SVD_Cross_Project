@@ -1,0 +1,9 @@
+func1 ( png_const_structp var1 , png_byte var2 [ STANDARD_ROWMAX ] , 
+png_uint_32 var3 , png_uint_32 var4 ) 
+{ 
+if ( func2 ( var3 ) == number ) 
+func3 ( var1 , var2 , func4 ( var3 ) , func5 ( var3 ) , var4 ) ; 
+else 
+func6 ( var2 , func2 ( var3 ) * func7 ( var1 , func4 ( var3 ) , 
+func5 ( var3 ) ) , var4 ) ; 
+} 

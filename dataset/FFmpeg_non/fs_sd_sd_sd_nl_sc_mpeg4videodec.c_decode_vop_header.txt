@@ -1,0 +1,228 @@
+static int func1 ( Mpeg4DecContext * var1 , GetBitContext * var2 ) 
+{ 
+MpegEncContext * var3 = & var1 -> var4 ; 
+int var5 , var6 ; 
+int64_t var7 ; 
+var3 -> var8 = func2 ( var2 , number ) + var9 ; 
+if ( var3 -> var8 == var10 && var3 -> var11 && 
+var1 -> var12 == number && ! ( var3 -> var13 -> var14 & var15 ) ) { 
+func3 ( var3 -> var13 , var16 , str ) ; 
+var3 -> var11 = number ; 
+} 
+var3 -> var17 = var3 -> var18 && var3 -> var8 != var10 ; 
+if ( var3 -> var17 ) 
+var3 -> var19 = var20 ; 
+else 
+var3 -> var19 = var21 ; 
+var5 = number ; 
+while ( func4 ( var2 ) != number ) 
+var5 ++ ; 
+func5 ( var2 , str ) ; 
+if ( var1 -> var22 == number || 
+! ( func6 ( var2 , var1 -> var22 + number ) & number ) ) { 
+func3 ( var3 -> var13 , var23 , 
+str , var1 -> var22 ) ; 
+for ( var1 -> var22 = number ; 
+var1 -> var22 < number ; 
+var1 -> var22 ++ ) { 
+if ( var3 -> var8 == var24 || 
+( var3 -> var8 == var25 && 
+var1 -> var26 == var27 ) ) { 
+if ( ( func6 ( var2 , var1 -> var22 + number ) & number ) == number ) 
+break ; 
+} else if ( ( func6 ( var2 , var1 -> var22 + number ) & number ) == number ) 
+break ; 
+} 
+func3 ( var3 -> var13 , var23 , 
+str , var1 -> var22 ) ; 
+if ( var3 -> var13 -> var28 . var29 && number * var3 -> var13 -> var28 . var29 < number << var1 -> var22 ) { 
+var3 -> var13 -> var28 . var29 = number << var1 -> var22 ; 
+var3 -> var13 -> var30 = av_inv_q ( av_mul_q ( var3 -> var13 -> var28 , ( AVRational ) { var3 -> var13 -> ticks_per_frame , number } ) ) ; 
+} 
+} 
+if ( var31 ) 
+var6 = func4 ( var2 ) ; 
+else 
+var6 = func2 ( var2 , var1 -> var22 ) ; 
+if ( var3 -> var8 != var10 ) { 
+var3 -> var32 = var3 -> var30 ; 
+var3 -> var30 += var5 ; 
+var3 -> var33 = var3 -> var30 * var3 -> var13 -> var28 . var29 + var6 ; 
+if ( var3 -> var34 & var35 ) { 
+if ( var3 -> var33 < var3 -> var36 ) { 
+var3 -> var30 ++ ; 
+var3 -> var33 += var3 -> var13 -> var28 . var29 ; 
+} 
+} 
+var3 -> var37 = var3 -> var33 - var3 -> var36 ; 
+var3 -> var36 = var3 -> var33 ; 
+} else { 
+var3 -> var33 = ( var3 -> var32 + var5 ) * var3 -> var13 -> var28 . var29 + var6 ; 
+var3 -> var38 = var3 -> var37 - ( var3 -> var36 - var3 -> var33 ) ; 
+if ( var3 -> var37 <= var3 -> var38 || 
+var3 -> var37 <= var3 -> var37 - var3 -> var38 || 
+var3 -> var37 <= number ) { 
+return var39 ; 
+} 
+func7 ( var3 ) ; 
+if ( var1 -> var40 == number ) 
+var1 -> var40 = var3 -> var38 ; 
+if ( var1 -> var40 == number ) 
+var1 -> var40 = number ; 
+var3 -> var41 = ( func8 ( var3 -> var36 , var1 -> var40 ) - 
+func8 ( var3 -> var36 - var3 -> var37 , var1 -> var40 ) ) * number ; 
+var3 -> var42 = ( func8 ( var3 -> var33 , var1 -> var40 ) - 
+func8 ( var3 -> var36 - var3 -> var37 , var1 -> var40 ) ) * number ; 
+if ( var3 -> var41 <= var3 -> var42 || var3 -> var42 <= number ) { 
+var3 -> var42 = number ; 
+var3 -> var41 = number ; 
+if ( ! var3 -> var43 ) 
+return var39 ; 
+} 
+} 
+if ( var3 -> var13 -> var28 . var44 ) 
+var7 = func8 ( var3 -> var33 , var3 -> var13 -> var28 . var44 ) ; 
+else 
+var7 = var45 ; 
+ff_dlog ( var3 -> var13 , str PRId64 str , var7 ) ; 
+func5 ( var2 , str ) ; 
+if ( func4 ( var2 ) != number ) { 
+if ( var3 -> var13 -> var46 & var47 ) 
+func3 ( var3 -> var13 , var16 , str ) ; 
+return var39 ; 
+} 
+if ( var1 -> var48 ) 
+func9 ( var1 , var2 ) ; 
+if ( var1 -> var49 != var50 && 
+( var3 -> var8 == var24 || 
+( var3 -> var8 == var25 && 
+var1 -> var26 == var27 ) ) ) { 
+var3 -> var51 = func4 ( var2 ) ; 
+} else { 
+var3 -> var51 = number ; 
+} 
+if ( var1 -> var49 != var52 ) { 
+if ( var1 -> var26 != number || var3 -> var8 != var9 ) { 
+func10 ( var2 , number ) ; 
+func5 ( var2 , str ) ; 
+func10 ( var2 , number ) ; 
+func5 ( var2 , str ) ; 
+func10 ( var2 , number ) ; 
+func5 ( var2 , str ) ; 
+func10 ( var2 , number ) ; 
+} 
+func11 ( var2 ) ; 
+if ( func4 ( var2 ) != number ) 
+func10 ( var2 , number ) ; 
+} 
+if ( var1 -> var49 != var50 ) { 
+func12 ( var2 , var1 -> var55 ) ; 
+if ( var3 -> var8 != var9 ) 
+func12 ( var2 , var1 -> var56 ) ; 
+if ( var3 -> var8 == var10 ) 
+func12 ( var2 , var1 -> var57 ) ; 
+if ( func13 ( var2 ) < number ) { 
+func3 ( var3 -> var13 , var16 , str ) ; 
+return var58 ; 
+} 
+var1 -> var59 = var60 [ func2 ( var2 , number ) ] ; 
+if ( ! var3 -> var43 ) { 
+var3 -> var61 = func4 ( var2 ) ; 
+var3 -> var62 = func4 ( var2 ) ; 
+} else 
+var3 -> var62 = number ; 
+} 
+if ( var3 -> var62 ) { 
+func14 ( var3 -> var63 . var64 , & var3 -> var65 , var66 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var67 , var66 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var68 , var66 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var69 , var66 ) ; 
+} else { 
+func14 ( var3 -> var63 . var64 , & var3 -> var65 , var70 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var67 , var70 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var68 , var71 ) ; 
+func14 ( var3 -> var63 . var64 , & var3 -> var69 , var66 ) ; 
+} 
+if ( var3 -> var8 == var25 && 
+( var1 -> var26 == var72 || 
+var1 -> var26 == var27 ) ) { 
+if ( func15 ( var1 , var2 ) < number ) 
+return var58 ; 
+if ( var1 -> var73 ) 
+func3 ( var3 -> var13 , var16 , 
+str ) ; 
+if ( var1 -> var26 == var72 ) 
+func3 ( var3 -> var13 , var16 , str ) ; 
+} 
+if ( var1 -> var49 != var50 ) { 
+var3 -> var74 = var3 -> var75 = func2 ( var2 , var3 -> var76 ) ; 
+if ( var3 -> var75 == number ) { 
+func3 ( var3 -> var13 , var16 , 
+str ) ; 
+return var58 ; 
+} 
+if ( var3 -> var8 != var9 ) { 
+var3 -> var77 = func2 ( var2 , number ) ; 
+if ( var3 -> var77 == number ) { 
+func3 ( var3 -> var13 , var16 , 
+str ) ; 
+var3 -> var77 = number ; 
+return var58 ; 
+} 
+} else 
+var3 -> var77 = number ; 
+if ( var3 -> var8 == var10 ) { 
+var3 -> var78 = func2 ( var2 , number ) ; 
+if ( var3 -> var78 == number ) { 
+func3 ( var3 -> var13 , var16 , 
+str ) ; 
+var3 -> var78 = number ; 
+return var58 ; 
+} 
+} else 
+var3 -> var78 = number ; 
+if ( var3 -> var13 -> var46 & var47 ) { 
+func3 ( var3 -> var13 , AV_LOG_DEBUG , 
+str PRId64 str , 
+var3 -> var75 , var3 -> var77 , var3 -> var78 , 
+var3 -> var8 == var9 ? str : ( var3 -> var8 == var24 ? str : ( var3 -> var8 == var10 ? str : str ) ) , 
+var2 -> size_in_bits , var3 -> var43 , var3 -> var62 , 
+var3 -> var61 , var3 -> quarter_sample ? str : str , 
+var3 -> var18 , var1 -> resync_marker , 
+var1 -> num_sprite_warping_points , var3 -> sprite_warping_accuracy , 
+number - var3 -> var51 , var3 -> var79 , 
+var1 -> var12 ? str : str , var1 -> var59 , 
+var1 -> var55 , var1 -> var56 , 
+var1 -> var57 , 
+var3 -> var33 , 
+var6 
+) ; 
+} 
+if ( ! var1 -> var80 ) { 
+if ( var1 -> var49 != var52 && var3 -> var8 != var9 ) 
+func11 ( var2 ) ; 
+} else { 
+if ( var1 -> var81 ) { 
+int var82 = func4 ( var2 ) ; 
+if ( var82 ) 
+func3 ( var3 -> var13 , var16 , 
+str ) ; 
+} 
+func10 ( var2 , number ) ; 
+} 
+} 
+if ( var3 -> var79 == number && var1 -> var12 == number && 
+var1 -> var83 == - number && var3 -> var84 == number ) { 
+func3 ( var3 -> var13 , var23 , 
+str ) ; 
+var3 -> var11 = number ; 
+} 
+var3 -> var84 ++ ; 
+var3 -> var85 = var86 ; 
+var3 -> var87 = var88 ; 
+if ( var3 -> var34 & var89 ) { 
+var3 -> var90 = var3 -> var53 ; 
+var3 -> var91 = var3 -> var54 ; 
+} 
+return number ; 
+} 

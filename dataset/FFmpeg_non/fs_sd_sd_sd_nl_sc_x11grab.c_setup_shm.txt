@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 , Display * var2 , XImage ** var3 ) 
+{ 
+X11GrabContext * var4 = var1 -> var5 ; 
+int var6 = func2 ( var2 ) ; 
+XImage * var7 = func3 ( var2 , func4 ( var2 , var6 ) , 
+func5 ( var2 , var6 ) , var8 , var9 , 
+& var4 -> var10 , var4 -> var11 , var4 -> var12 ) ; 
+var4 -> var10 . var13 = func6 ( var14 , var7 -> var15 * var7 -> var12 , 
+var16 | number ) ; 
+if ( var4 -> var10 . var13 == - number ) { 
+func7 ( var1 , var17 , str ) ; 
+return func8 ( var18 ) ; 
+} 
+var4 -> var10 . var19 = var7 -> var20 = func9 ( var4 -> var10 . var13 , number , number ) ; 
+var4 -> var10 . var21 = var22 ; 
+if ( ! func10 ( var2 , & var4 -> var10 ) ) { 
+func7 ( var1 , var17 , str ) ; 
+return func8 ( var23 ) ; 
+} 
+* var3 = var7 ; 
+return number ; 
+} 

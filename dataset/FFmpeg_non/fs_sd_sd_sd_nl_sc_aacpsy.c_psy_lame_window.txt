@@ -1,0 +1,123 @@
+static FFPsyWindowInfo func1 ( FFPsyContext * var1 , const float * var2 , 
+const float * var3 , int var4 , int var5 ) 
+{ 
+AacPsyContext * var6 = ( AacPsyContext * ) var1 -> var7 ; 
+AacPsyChannel * var8 = & var6 -> var9 [ var4 ] ; 
+int var10 = number ; 
+int var11 = number ; 
+int var12 [ var13 + number ] = { number } ; 
+float var14 [ var13 ] ; 
+int var15 ; 
+FFPsyWindowInfo var16 = { { number } } ; 
+if ( var3 ) { 
+float var17 [ var18 ] ; 
+float const * var19 = var17 ; 
+float var20 [ ( var13 + number ) * var21 ] ; 
+float var22 [ ( var13 + number ) * var21 ] ; 
+float var23 [ var13 + number ] = { number } ; 
+const float * var24 = var3 + ( var25 / number - var26 ) ; 
+int var27 = number ; 
+func2 ( var24 , var17 , var28 ) ; 
+for ( var15 = number ; var15 < var21 ; var15 ++ ) { 
+var22 [ var15 ] = var8 -> var29 [ var15 + ( ( var13 - number ) * var21 ) ] ; 
+assert ( var8 -> var29 [ var15 + ( ( var13 - number ) * var21 + number ) ] > number ) ; 
+var20 [ var15 ] = var22 [ var15 ] / var8 -> var29 [ var15 + ( ( var13 - number ) * var21 + number ) ] ; 
+var23 [ number ] += var22 [ var15 ] ; 
+} 
+for ( var15 = number ; var15 < var13 * var21 ; var15 ++ ) { 
+float const * const var30 = var19 + var18 / ( var13 * var21 ) ; 
+float var31 = number ; 
+for ( ; var19 < var30 ; var19 ++ ) 
+var31 = func3 ( var31 , func4 ( * var19 ) ) ; 
+var8 -> var29 [ var15 ] = var22 [ var15 + var21 ] = var31 ; 
+var23 [ number + var15 / var21 ] += var31 ; 
+if ( var31 > var22 [ var15 + number ] ) 
+var31 = var31 / var22 [ var15 + number ] ; 
+else if ( var22 [ var15 + number ] > var31 * number ) 
+var31 = var22 [ var15 + number ] / ( var31 * number ) ; 
+else 
+var31 = number ; 
+var20 [ var15 + var21 ] = var31 ; 
+} 
+for ( var15 = number ; var15 < ( var13 + number ) * var21 ; var15 ++ ) 
+if ( ! var12 [ var15 / var21 ] ) 
+if ( var20 [ var15 ] > var8 -> var32 ) 
+var12 [ var15 / var21 ] = ( var15 % var21 ) + number ; 
+for ( var15 = number ; var15 < var13 + number ; var15 ++ ) { 
+float const var33 = var23 [ var15 - number ] ; 
+float const var34 = var23 [ var15 ] ; 
+float const var35 = func3 ( var33 , var34 ) ; 
+if ( var35 < number ) { 
+if ( var33 < number * var34 && var34 < number * var33 ) { 
+if ( var15 == number && var12 [ number ] < var12 [ var15 ] ) 
+var12 [ number ] = number ; 
+var12 [ var15 ] = number ; 
+} 
+} 
+var27 += var12 [ var15 ] ; 
+} 
+if ( var12 [ number ] <= var8 -> var36 ) 
+var12 [ number ] = number ; 
+var27 += var12 [ number ] ; 
+if ( var8 -> var36 == number || var27 ) { 
+var11 = number ; 
+for ( var15 = number ; var15 < var13 + number ; var15 ++ ) 
+if ( var12 [ var15 ] && var12 [ var15 - number ] ) 
+var12 [ var15 ] = number ; 
+} 
+} else { 
+var11 = ! ( var5 == var37 ) ; 
+} 
+func5 ( var8 , & var16 , var11 ) ; 
+if ( var2 ) { 
+for ( var15 = number ; var15 < var13 ; var15 ++ ) { 
+const float * var38 = var2 + var15 * var25 ; 
+float var39 = number ; 
+int var40 ; 
+for ( var40 = number ; var40 < var25 ; var40 ++ ) 
+var39 = func3 ( var39 , func4 ( var38 [ var40 ] ) ) ; 
+var14 [ var15 ] = var39 ; 
+} 
+} else { 
+for ( var15 = number ; var15 < number ; var15 ++ ) 
+var14 [ var15 ] = number ; 
+} 
+var16 . var41 [ number ] = var5 ; 
+if ( var16 . var41 [ number ] != var37 ) { 
+float var42 = number ; 
+var16 . var43 = number ; 
+var16 . var10 [ number ] = number ; 
+if ( var16 . var41 [ number ] == var44 ) 
+var16 . var45 = number ; 
+else 
+var16 . var45 = number ; 
+for ( var15 = number ; var15 < number ; var15 ++ ) 
+var42 = func3 ( var42 , var14 [ var15 ] ) ; 
+var16 . var42 [ number ] = var42 ; 
+} else { 
+int var46 = number ; 
+var16 . var43 = number ; 
+var16 . var45 = number ; 
+for ( var15 = number ; var15 < number ; var15 ++ ) { 
+if ( ! ( ( var8 -> var47 >> var15 ) & number ) ) 
+var46 = var15 ; 
+var16 . var10 [ var46 ] ++ ; 
+} 
+for ( var15 = number ; var15 < number ; var15 += var16 . var10 [ var15 ] ) { 
+int var48 ; 
+float var42 = number ; 
+for ( var48 = number ; var48 < var16 . var10 [ var15 ] && ! var42 ; var48 ++ ) 
+var42 = func3 ( var42 , var14 [ var15 + var48 ] ) ; 
+var16 . var42 [ var15 ] = var42 ; 
+} 
+} 
+for ( var15 = number ; var15 < number ; var15 ++ ) { 
+if ( var12 [ var15 ] ) { 
+var10 = var15 ; 
+break ; 
+} 
+} 
+var8 -> var47 = var49 [ var10 ] ; 
+var8 -> var36 = var12 [ number ] ; 
+return var16 ; 
+} 

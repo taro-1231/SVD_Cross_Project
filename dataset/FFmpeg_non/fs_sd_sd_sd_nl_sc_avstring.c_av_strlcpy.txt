@@ -1,0 +1,9 @@
+size_t func1 ( char * var1 , const char * var2 , size_t var3 ) 
+{ 
+size_t var4 = number ; 
+while ( ++ var4 < var3 && * var2 ) 
+* var1 += * var2 ++ ; 
+if ( var4 <= var3 ) 
+* var1 = number ; 
+return var4 + strlen ( var2 ) - number ; 
+} 

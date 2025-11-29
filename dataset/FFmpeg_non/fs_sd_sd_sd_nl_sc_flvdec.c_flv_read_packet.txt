@@ -1,0 +1,253 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+FLVContext * var3 = var1 -> var4 ; 
+int var5 , var6 , var7 , var8 ; 
+enum FlvTagType var9 ; 
+int var10 = - number ; 
+int64_t var11 , var12 , var13 ; 
+int64_t var14 , var15 = var16 ; 
+int var17 ( var18 ) ; 
+int var17 ( var19 ) ; 
+AVStream * var20 = var21 ; 
+for ( ; ; func2 ( var1 -> var22 , number ) ) { 
+var12 = func3 ( var1 -> var22 ) ; 
+var9 = ( func4 ( var1 -> var22 ) & number ) ; 
+var7 = func5 ( var1 -> var22 ) ; 
+var14 = func5 ( var1 -> var22 ) ; 
+var14 |= func4 ( var1 -> var22 ) << number ; 
+func6 ( var1 , var23 , str PRId64 str PRId64 str , var9 , var7 , var14 , func3 ( var1 -> var22 ) ) ; 
+if ( func7 ( var1 -> var22 ) ) 
+return var24 ; 
+func2 ( var1 -> var22 , number ) ; 
+var8 = number ; 
+if ( var3 -> var25 < var3 -> var26 ) { 
+int64_t var27 = var3 -> var28 [ var3 -> var25 ] . var12 ; 
+if ( var12 == var27 ) { 
+if ( func8 ( var14 - var3 -> var28 [ var3 -> var25 ] . var14 ) <= 
+var29 ) { 
+var3 -> var25 ++ ; 
+} else { 
+func9 ( var1 , var27 ) ; 
+var3 -> var26 = number ; 
+} 
+} else if ( var12 > var27 ) { 
+func9 ( var1 , var27 ) ; 
+var3 -> var26 = number ; 
+} 
+} 
+if ( var7 == number ) 
+continue ; 
+var11 = var7 + func3 ( var1 -> var22 ) ; 
+if ( var9 == var30 ) { 
+var10 = var31 ; 
+var8 = func4 ( var1 -> var22 ) ; 
+var7 -- ; 
+} else if ( var9 == var32 ) { 
+var10 = var33 ; 
+var8 = func4 ( var1 -> var22 ) ; 
+var7 -- ; 
+if ( ( var8 & var34 ) == var35 ) 
+goto var36 ; 
+} else if ( var9 == var37 ) { 
+var10 = var38 ; 
+if ( var7 > number + number + number ) { 
+int var9 ; 
+var13 = func3 ( var1 -> var22 ) ; 
+var9 = func10 ( var1 , var11 ) ; 
+if ( var9 == number && var14 == number || var9 < number || var9 == var39 ) { 
+goto var36 ; 
+} else if ( var9 == var40 ) { 
+func11 ( var1 , str ) ; 
+return func12 ( var1 , var2 , var14 , var11 ) ; 
+} else if ( var9 == var41 ) { 
+return func12 ( var1 , var2 , var14 , var11 ) ; 
+} 
+func13 ( var1 -> var22 , var13 , var42 ) ; 
+} 
+} else { 
+func6 ( var1 , var43 , 
+str , 
+var9 , var7 , var8 ) ; 
+var36 : 
+func13 ( var1 -> var22 , var11 , var42 ) ; 
+continue ; 
+} 
+if ( ! var7 ) 
+continue ; 
+for ( var6 = number ; var6 < var1 -> var44 ; var6 ++ ) { 
+var20 = var1 -> var45 [ var6 ] ; 
+if ( var10 == var31 ) { 
+if ( var20 -> var46 -> var47 == var48 && 
+( var1 -> var49 || func14 ( var20 -> var46 , var8 ) ) ) 
+break ; 
+} else if ( var10 == var33 ) { 
+if ( var20 -> var46 -> var47 == var50 && 
+( var1 -> var51 || func15 ( var20 -> var46 , var8 ) ) ) 
+break ; 
+} else if ( var10 == var38 ) { 
+if ( var20 -> var46 -> var47 == var52 ) 
+break ; 
+} 
+} 
+if ( var6 == var1 -> var44 ) { 
+static const enum AVMediaType var53 [ ] = { var50 , var48 , var52 } ; 
+func6 ( var1 , var54 , str ) ; 
+var20 = func16 ( var1 , var53 [ var10 ] ) ; 
+if ( ! var20 ) 
+return func17 ( var55 ) ; 
+} 
+func6 ( var1 , var23 , str , var10 , var8 , var20 -> var56 ) ; 
+if ( var1 -> var22 -> var57 && 
+( ( var8 & var34 ) == var58 || 
+var10 == var31 ) ) 
+func18 ( var20 , var12 , var14 , var7 , number , var59 ) ; 
+if ( ( var20 -> var56 >= var60 && ! ( ( var8 & var34 ) == var58 || ( var10 == var31 ) ) ) 
+|| ( var20 -> var56 >= var61 && ( ( var8 & var34 ) == var62 && ( var10 == var33 ) ) ) 
+|| var20 -> var56 >= var63 
+) { 
+func13 ( var1 -> var22 , var11 , var42 ) ; 
+continue ; 
+} 
+break ; 
+} 
+if ( var1 -> var22 -> var57 && ( ! var1 -> var64 || var1 -> var64 == var16 ) && ! var3 -> var66 ) { 
+int var7 ; 
+const int64_t var12 = func3 ( var1 -> var22 ) ; 
+int64_t var67 = func19 ( var1 -> var22 ) ; 
+var68 : 
+func13 ( var1 -> var22 , var67 - number , var42 ) ; 
+var7 = func20 ( var1 -> var22 ) ; 
+func13 ( var1 -> var22 , var67 - number - var7 , var42 ) ; 
+if ( var7 == func5 ( var1 -> var22 ) + number ) { 
+uint32_t var69 = func5 ( var1 -> var22 ) ; 
+var69 |= func4 ( var1 -> var22 ) << number ; 
+if ( var69 ) 
+var1 -> var64 = var69 * ( int64_t ) var70 / number ; 
+else if ( var67 >= number && var67 - number >= var7 ) { 
+var67 -= var7 + number ; 
+goto var68 ; 
+} 
+} 
+func13 ( var1 -> var22 , var12 , var42 ) ; 
+var3 -> var66 = number ; 
+} 
+if ( var10 == var31 ) { 
+int var71 ; 
+var18 = ( var8 & var72 ) == var73 ? number : number ; 
+var19 = number << ( ( var8 & var74 ) >> 
+var75 ) >> number ; 
+var71 = ( var8 & var76 ) ? number : number ; 
+if ( ! var20 -> var46 -> var18 || ! var20 -> var46 -> var19 || 
+! var20 -> var46 -> var71 ) { 
+var20 -> var46 -> var18 = var18 ; 
+var20 -> var46 -> var77 = var18 == number 
+? var78 
+: var79 ; 
+var20 -> var46 -> var19 = var19 ; 
+var20 -> var46 -> var71 = var71 ; 
+} 
+if ( ! var20 -> var46 -> var80 ) { 
+func21 ( var1 , var20 , var20 -> var46 , 
+var8 & var81 ) ; 
+var3 -> var82 = 
+var19 = var20 -> var46 -> var19 ; 
+var3 -> var83 = 
+var18 = var20 -> var46 -> var18 ; 
+} else { 
+AVCodecContext var84 = { number } ; 
+var84 . var19 = var19 ; 
+var84 . var71 = var71 ; 
+func21 ( var1 , var20 , & var84 , var8 & var81 ) ; 
+var19 = var84 . var19 ; 
+} 
+} else if ( var10 == var33 ) { 
+var7 -= func22 ( var1 , var20 , var8 & var85 , number ) ; 
+} else if ( var10 == var38 ) { 
+var20 -> var46 -> var80 = var86 ; 
+} 
+if ( var20 -> var46 -> var80 == var87 || 
+var20 -> var46 -> var80 == var88 || 
+var20 -> var46 -> var80 == var89 ) { 
+int var9 = func4 ( var1 -> var22 ) ; 
+var7 -- ; 
+if ( var20 -> var46 -> var80 == var88 || var20 -> var46 -> var80 == var89 ) { 
+int32_t var90 = ( func5 ( var1 -> var22 ) + number ) ^ number ; 
+var15 = var14 + var90 ; 
+if ( var90 < number ) { 
+if ( ! var3 -> var91 ) 
+func6 ( var1 , var54 , 
+str ) ; 
+var3 -> var91 = number ; 
+} else if ( func8 ( var14 - var15 ) > number * number * number ) { 
+func6 ( var1 , var54 , 
+str PRId64 str PRId64 str , var14 , var15 ) ; 
+var14 = var15 = var16 ; 
+} 
+} 
+if ( var9 == number && ( ! var20 -> var46 -> var92 || var20 -> var46 -> var80 == var87 || 
+var20 -> var46 -> var80 == var88 ) ) { 
+AVDictionaryEntry * var93 ; 
+if ( var20 -> var46 -> var92 ) { 
+if ( ( var5 = func23 ( var3 , var1 -> var22 , var10 , var7 ) ) < number ) 
+return var5 ; 
+var5 = func17 ( var94 ) ; 
+goto var95 ; 
+} 
+if ( ( var5 = func24 ( var1 , var20 , var7 ) ) < number ) 
+return var5 ; 
+var93 = func25 ( var1 -> var65 , str , var21 , number ) ; 
+if ( var20 -> var46 -> var80 == var87 && var93 && ! strcmp ( var93 -> var96 , str ) ) 
+var20 -> var46 -> var97 = number ; 
+if ( var20 -> var46 -> var80 == var87 && number ) { 
+MPEG4AudioConfig var98 ; 
+if ( func26 ( & var98 , var20 -> var46 -> var92 , 
+var20 -> var46 -> var97 * number , number ) >= number ) { 
+var20 -> var46 -> var18 = var98 . var18 ; 
+var20 -> var46 -> var77 = number ; 
+if ( var98 . var99 ) 
+var20 -> var46 -> var19 = var98 . var99 ; 
+else 
+var20 -> var46 -> var19 = var98 . var19 ; 
+func6 ( var1 , var23 , str , 
+var20 -> var46 -> var18 , var20 -> var46 -> var19 ) ; 
+} 
+} 
+var5 = func17 ( var94 ) ; 
+goto var95 ; 
+} 
+} 
+if ( ! var7 ) { 
+var5 = func17 ( var94 ) ; 
+goto var95 ; 
+} 
+var5 = func27 ( var1 -> var22 , var2 , var7 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+var2 -> var14 = var14 ; 
+var2 -> var15 = var15 == var16 ? var14 : var15 ; 
+var2 -> var100 = var20 -> var101 ; 
+if ( var3 -> var102 [ var10 ] ) { 
+uint8_t * var103 = func28 ( var2 , var104 , 
+var3 -> var105 [ var10 ] ) ; 
+if ( var103 ) { 
+memcpy ( var103 , var3 -> var102 [ var10 ] , 
+var3 -> var105 [ var10 ] ) ; 
+func29 ( & var3 -> var102 [ var10 ] ) ; 
+var3 -> var105 [ var10 ] = number ; 
+} 
+} 
+if ( var10 == var31 && 
+( var19 != var3 -> var82 || 
+var18 != var3 -> var83 ) ) { 
+var3 -> var82 = var19 ; 
+var3 -> var83 = var18 ; 
+func30 ( var2 , var18 , number , var19 , number , number ) ; 
+} 
+if ( var10 == var31 || 
+( ( var8 & var34 ) == var58 ) || 
+var10 == var38 ) 
+var2 -> var8 |= var106 ; 
+var95 : 
+func2 ( var1 -> var22 , number ) ; 
+return var5 ; 
+} 

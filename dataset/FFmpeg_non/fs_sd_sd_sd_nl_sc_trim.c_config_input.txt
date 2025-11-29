@@ -1,0 +1,26 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+TrimContext * var4 = var2 -> var5 ; 
+AVRational var6 = ( var1 -> type == AVMEDIA_TYPE_VIDEO ) ? 
+var1 -> var7 : ( AVRational ) { 1 , var1 -> sample_rate } ; 
+if ( var4 -> var8 != var9 ) 
+var4 -> var10 = var4 -> var8 * number ; 
+if ( var4 -> var11 != var9 ) 
+var4 -> var12 = var4 -> var11 * number ; 
+if ( var4 -> var13 != number ) 
+var4 -> var14 = var4 -> var13 * number ; 
+if ( var4 -> var10 != var15 ) { 
+int64_t var16 = func2 ( var4 -> var10 , var17 , var6 ) ; 
+if ( var4 -> var16 == var18 || var16 < var4 -> var16 ) 
+var4 -> var16 = var16 ; 
+} 
+if ( var4 -> var12 != var15 ) { 
+int64_t var19 = func2 ( var4 -> var12 , var17 , var6 ) ; 
+if ( var4 -> var19 == var18 || var19 > var4 -> var19 ) 
+var4 -> var19 = var19 ; 
+} 
+if ( var4 -> var14 ) 
+var4 -> var20 = func2 ( var4 -> var14 , var17 , var6 ) ; 
+return number ; 
+} 

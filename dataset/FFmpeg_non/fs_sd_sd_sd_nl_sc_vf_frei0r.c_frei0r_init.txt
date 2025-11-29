@@ -1,0 +1,90 @@
+static av_cold int func1 ( AVFilterContext * var1 , 
+const char * var2 , int var3 ) 
+{ 
+Frei0rContext * var4 = var1 -> var5 ; 
+f0r_init_f func2 ; 
+f0r_get_plugin_info_f func3 ; 
+f0r_plugin_info_t * var6 ; 
+char * var7 ; 
+int var8 = number ; 
+int var9 ; 
+static const char * const var10 [ ] = { 
+str , 
+str , 
+str , 
+str 
+} ; 
+if ( ! var2 ) { 
+func4 ( var1 , var11 , str ) ; 
+return func5 ( var12 ) ; 
+} 
+char * var13 = func6 ( str , var14 ) ; 
+if ( ! var13 ) { 
+var8 = func5 ( var15 ) ; 
+goto var16 ; 
+} 
+var8 = func7 ( var1 , & var4 -> var17 , var13 , var2 ) ; 
+func8 ( var13 ) ; 
+if ( var8 < number ) 
+goto var16 ; 
+if ( var4 -> var17 ) 
+break ; 
+} 
+var16 : 
+func8 ( var7 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+} 
+if ( ! var4 -> var17 && ( var7 = getenv ( str ) ) ) { 
+char * var18 = func6 ( str , var7 ) ; 
+if ( ! var18 ) 
+return func5 ( var15 ) ; 
+var8 = func7 ( var1 , & var4 -> var17 , var18 , var2 ) ; 
+func8 ( var18 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+} 
+for ( var9 = number ; ! var4 -> var17 && var9 < func9 ( var10 ) ; var9 ++ ) { 
+var8 = func7 ( var1 , & var4 -> var17 , var10 [ var9 ] , var2 ) ; 
+if ( var8 < number ) 
+return var8 ; 
+} 
+if ( ! var4 -> var17 ) { 
+func4 ( var1 , var11 , str , var2 ) ; 
+return func5 ( var12 ) ; 
+} 
+if ( ! ( func2 = func10 ( var1 , str ) ) || 
+! ( func3 = func10 ( var1 , str ) ) || 
+! ( var4 -> var19 = func10 ( var1 , str ) ) || 
+! ( var4 -> var20 = func10 ( var1 , str ) ) || 
+! ( var4 -> var21 = func10 ( var1 , str ) ) || 
+! ( var4 -> var22 = func10 ( var1 , str ) ) || 
+! ( var4 -> var23 = func10 ( var1 , str ) ) || 
+! ( var4 -> var24 = func10 ( var1 , str ) ) || 
+! ( var4 -> var25 = func10 ( var1 , str ) ) ) 
+return func5 ( var12 ) ; 
+if ( func2 ( ) < number ) { 
+func4 ( var1 , var11 , str ) ; 
+return func5 ( var12 ) ; 
+} 
+func3 ( & var4 -> var26 ) ; 
+var6 = & var4 -> var26 ; 
+if ( var6 -> var27 != var3 ) { 
+func4 ( var1 , var11 , 
+str , 
+var6 -> var27 == var28 ? str : 
+var6 -> var27 == var29 ? str : 
+var6 -> var27 == var30 ? str : 
+var6 -> var27 == var31 ? str : str ) ; 
+return func5 ( var12 ) ; 
+} 
+func4 ( var1 , AV_LOG_VERBOSE , 
+str 
+str , 
+var6 -> name , var6 -> author , var6 -> explanation , 
+var6 -> color_model == F0R_COLOR_MODEL_BGRA8888 ? str : 
+var6 -> color_model == F0R_COLOR_MODEL_RGBA8888 ? str : 
+var6 -> color_model == F0R_COLOR_MODEL_PACKED32 ? str : str , 
+var6 -> frei0r_version , var6 -> major_version , var6 -> minor_version , var6 -> num_params ) ; 
+return number ; 
+} 

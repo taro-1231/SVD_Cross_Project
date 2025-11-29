@@ -1,0 +1,29 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+int var4 = number ; 
+const char * var5 ; 
+if ( var1 == number ) { 
+func2 ( ) ; 
+return number ; 
+} 
+var5 = var2 [ number ] ; 
+var6 = func3 ( var5 , str , & var5 ) ; 
+if ( ( var4 = func4 ( & var7 , var5 ) ) < number ) { 
+switch ( var4 ) { 
+case AVERROR ( EINVAL ) : 
+printf ( str , var5 ) ; 
+break ; 
+case AVERROR ( ENOMEM ) : 
+printf ( str , strerror ( var8 ) ) ; 
+break ; 
+} 
+return number ; 
+} 
+for ( var3 = number ; var3 < var1 ; var3 ++ ) 
+var4 |= func5 ( var2 [ var3 ] ) ; 
+if ( var1 < number ) 
+var4 |= func5 ( var9 ) ; 
+func6 ( & var7 ) ; 
+return var4 ; 
+} 

@@ -1,0 +1,35 @@
+int func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+AVHWFramesContext * var4 ; 
+int var5 ; 
+func2 ( var1 , var6 , str ) ; 
+if ( ! var7 ) { 
+var5 = func3 ( & var7 , var8 , 
+var2 -> var9 , var10 , number ) ; 
+if ( var5 < number ) { 
+func2 ( var1 , var11 , str ) ; 
+return var5 ; 
+} 
+} 
+func4 ( & var2 -> var12 ) ; 
+var2 -> var12 = func5 ( var7 ) ; 
+if ( ! var2 -> var12 ) { 
+func2 ( var1 , var11 , str ) ; 
+return func6 ( var13 ) ; 
+} 
+var4 = ( AVHWFramesContext * ) var2 -> var12 -> var14 ; 
+var4 -> var15 = var16 ; 
+var4 -> var17 = var1 -> var18 ; 
+var4 -> var19 = var1 -> var19 ; 
+var4 -> var20 = var1 -> var20 ; 
+func2 ( var1 , var21 , str , 
+func7 ( var4 -> var17 ) , var4 -> var19 , var4 -> var20 ) ; 
+var5 = func8 ( var2 -> var12 ) ; 
+if ( var5 < number ) { 
+func2 ( var1 , var11 , str ) ; 
+return var5 ; 
+} 
+var2 -> var22 = var23 ; 
+return number ; 
+} 

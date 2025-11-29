@@ -1,0 +1,74 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MpegTSContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+uint8_t var5 [ number * number ] = { number } ; 
+int var6 ; 
+int64_t var7 , var8 = 
+var1 -> var8 ? var1 -> var8 : var1 -> var9 ; 
+var1 -> var8 ; 
+if ( func2 ( var4 , var8 ) < number ) 
+func3 ( var1 , var10 , str ) ; 
+var7 = func4 ( var4 ) ; 
+var6 = func5 ( var4 , var5 , sizeof ( var5 ) ) ; 
+var2 -> var11 = func6 ( var5 , var6 ) ; 
+if ( var2 -> var11 <= number ) { 
+func3 ( var1 , var10 , str ) ; 
+var2 -> var11 = var13 ; 
+} 
+var2 -> var14 = var1 ; 
+var2 -> var15 = number ; 
+if ( var1 -> var16 == & var17 ) { 
+func7 ( var1 , var4 , var7 ) ; 
+func8 ( var2 , var18 , var19 , var2 , number ) ; 
+func8 ( var2 , var20 , var21 , var2 , number ) ; 
+func9 ( var2 , var8 / var2 -> var11 ) ; 
+var2 -> var15 = number ; 
+func3 ( var2 -> var14 , var22 , str ) ; 
+var1 -> var23 |= var24 ; 
+} else { 
+AVStream * var25 ; 
+int var26 , var27 , var28 , var29 , var30 , var31 ; 
+int64_t var32 [ number ] , var33 ; 
+int var34 [ number ] ; 
+uint8_t var12 [ var13 ] ; 
+const uint8_t * var35 ; 
+var25 = func10 ( var1 , var36 ) ; 
+if ( ! var25 ) 
+return func11 ( var37 ) ; 
+func12 ( var25 , number , number , number ) ; 
+var25 -> var38 -> var39 = var40 ; 
+var25 -> var38 -> var41 = var42 ; 
+var26 = - number ; 
+var29 = number ; 
+var28 = number ; 
+for ( ; ; ) { 
+var30 = func13 ( var1 , var12 , var2 -> var11 , & var35 ) ; 
+if ( var30 < number ) 
+return var30 ; 
+var27 = func14 ( var35 + number ) & number ; 
+if ( ( var26 == - number || var26 == var27 ) && 
+func15 ( & var33 , & var31 , var35 ) == number ) { 
+func16 ( var1 , var2 -> var11 ) ; 
+var26 = var27 ; 
+var34 [ var29 ] = var28 ; 
+var32 [ var29 ] = var33 * number + var31 ; 
+var29 ++ ; 
+if ( var29 >= number ) 
+break ; 
+} else { 
+func16 ( var1 , var2 -> var11 ) ; 
+} 
+var28 ++ ; 
+} 
+var2 -> var43 = ( var32 [ number ] - var32 [ number ] ) / ( var34 [ number ] - var34 [ number ] ) ; 
+var2 -> var44 = var32 [ number ] - var2 -> var43 * var34 [ number ] ; 
+var1 -> var45 = var13 * number * 27000000LL / var2 -> var43 ; 
+var25 -> var38 -> var45 = var1 -> var45 ; 
+var25 -> var46 = var2 -> var44 ; 
+func3 ( var2 -> var14 , var22 , str , 
+var25 -> var46 / number , var32 [ number ] / number , var2 -> var43 ) ; 
+} 
+func7 ( var1 , var4 , var7 ) ; 
+return number ; 
+} 

@@ -1,0 +1,26 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+BufferSourceContext * var2 = var1 -> var3 ; 
+AVFilterChannelLayouts * var4 = var5 ; 
+AVFilterFormats * var6 = var5 ; 
+AVFilterFormats * var7 = var5 ; 
+switch ( var1 -> var8 [ number ] -> var9 ) { 
+case var10 : 
+func2 ( & var6 , var2 -> var11 ) ; 
+func3 ( var1 , var6 ) ; 
+break ; 
+case var12 : 
+func2 ( & var6 , var2 -> var13 ) ; 
+func3 ( var1 , var6 ) ; 
+func2 ( & var7 , var2 -> var14 ) ; 
+func4 ( var1 , var7 ) ; 
+func5 ( & var4 , 
+var2 -> var15 ? var2 -> var15 : 
+func6 ( var2 -> var16 ) ) ; 
+func7 ( var1 , var4 ) ; 
+break ; 
+var17 : 
+return func8 ( var18 ) ; 
+} 
+return number ; 
+} 

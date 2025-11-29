@@ -1,0 +1,19 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+const EdgeDetectContext * var2 = var1 -> var3 ; 
+static const enum AVPixelFormat var4 [ ] = { var5 , var6 } ; 
+static const enum AVPixelFormat var7 [ ] = { var8 , var5 , var6 } ; 
+AVFilterFormats * var9 ; 
+const enum AVPixelFormat * var10 = var11 ; 
+if ( var2 -> var12 == var13 ) { 
+var10 = var4 ; 
+} else if ( var2 -> var12 == var14 ) { 
+var10 = var7 ; 
+} else { 
+func2 ( number ) ; 
+} 
+var9 = func3 ( var10 ) ; 
+if ( ! var9 ) 
+return func4 ( var15 ) ; 
+return func5 ( var1 , var9 ) ; 
+} 

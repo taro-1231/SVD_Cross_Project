@@ -1,0 +1,28 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ExtractPlanesContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+int var8 , var9 , var10 ; 
+uint8_t var11 [ number ] ; 
+var8 = ( ( var6 -> var12 & var13 ) ? var14 | var15 | var16 : 
+var17 | 
+( ( var6 -> var18 > number ) ? var19 | var20 : number ) ) | 
+( ( var6 -> var12 & var21 ) ? var22 : number ) ; 
+if ( var4 -> var23 & ~ var8 ) { 
+func3 ( var2 , var25 , str ) ; 
+return func4 ( var26 ) ; 
+} 
+if ( ( var9 = func5 ( var4 -> var27 , var1 -> var7 , var1 -> var28 ) ) < number ) 
+return var9 ; 
+var4 -> var29 = ( var6 -> var30 [ number ] . var31 + number ) >> number ; 
+var4 -> var32 = func6 ( var6 ) >> number ; 
+var4 -> var33 = ! ( var6 -> var12 & var34 ) && 
+( var6 -> var18 > number ) ; 
+if ( var6 -> var12 & var13 ) { 
+func7 ( var11 , var1 -> var7 ) ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) 
+var4 -> var35 [ var10 ] = var11 [ var4 -> var35 [ var10 ] ] ; 
+} 
+return number ; 
+} 

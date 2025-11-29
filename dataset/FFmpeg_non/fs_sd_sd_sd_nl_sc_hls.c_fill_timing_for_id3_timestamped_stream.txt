@@ -1,0 +1,20 @@
+static void func1 ( struct playlist * var1 ) 
+{ 
+if ( var1 -> var2 >= number ) { 
+var1 -> var3 . var4 = var1 -> var5 + 
+func2 ( var1 -> var2 , 
+var1 -> var6 -> var7 [ var1 -> var3 . var8 ] -> var9 , 
+var10 ) ; 
+if ( var1 -> var3 . var11 ) 
+var1 -> var2 += var1 -> var3 . var11 ; 
+else 
+var1 -> var2 = - number ; 
+} else { 
+var1 -> var3 . var4 = var12 ; 
+} 
+if ( var1 -> var3 . var11 ) 
+var1 -> var3 . var11 = func2 ( var1 -> var3 . var11 , 
+var1 -> var6 -> var7 [ var1 -> var3 . var8 ] -> var9 , 
+var10 ) ; 
+var1 -> var3 . var13 = var12 ; 
+} 

@@ -1,0 +1,34 @@
+* reference function if the function should be tested , otherwise var1 * / 
+void * func1 ( void * var2 , const char * var3 , ... ) 
+{ 
+char var4 [ number ] ; 
+void * var5 = var2 ; 
+CheckasmFuncVersion * var6 ; 
+int var7 ; 
+va_list var8 ; 
+func2 ( var8 , var3 ) ; 
+var7 = vsnprintf ( var4 , sizeof ( var4 ) , var3 , var8 ) ; 
+func3 ( var8 ) ; 
+if ( ! var2 || var7 <= number || var7 >= sizeof ( var4 ) ) 
+return var1 ; 
+var9 . var10 = func4 ( var4 , var7 ) ; 
+var6 = & var9 . var10 -> var11 ; 
+if ( var6 -> var2 ) { 
+CheckasmFuncVersion * var12 ; 
+do { 
+if ( var6 -> var2 == var2 ) 
+return var1 ; 
+if ( var6 -> var13 ) 
+var5 = var6 -> var2 ; 
+var12 = var6 ; 
+} while ( ( var6 = var6 -> var14 ) ) ; 
+var6 = var12 -> var14 = func5 ( sizeof ( CheckasmFuncVersion ) ) ; 
+} 
+var6 -> var2 = var2 ; 
+var6 -> var13 = number ; 
+var6 -> var15 = var9 . var16 ; 
+var9 . var17 = var6 ; 
+if ( var9 . var16 ) 
+var9 . var18 ++ ; 
+return var5 ; 
+} 

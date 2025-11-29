@@ -1,0 +1,14 @@
+static void func1 ( pa_context * var1 , void * var2 ) 
+{ 
+PulseData * var3 = var2 ; 
+if ( var3 -> var1 != var1 ) 
+return ; 
+switch ( func2 ( var1 ) ) { 
+case var4 : 
+case var5 : 
+case var6 : 
+func3 ( var3 -> var7 , number ) ; 
+var8 : 
+break ; 
+} 
+} 

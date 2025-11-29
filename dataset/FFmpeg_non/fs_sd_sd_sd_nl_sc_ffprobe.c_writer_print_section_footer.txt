@@ -1,0 +1,15 @@
+static inline void func1 ( WriterContext * var1 ) 
+{ 
+int var2 = var1 -> var3 [ var1 -> var4 ] -> var5 ; 
+int var6 = var1 -> var4 ? 
+var1 -> var3 [ var1 -> var4 - number ] -> var5 : var7 ; 
+if ( var6 != var7 ) 
+var1 -> var8 [ var1 -> var4 - number ] ++ ; 
+if ( var6 == var9 ) { 
+if ( var2 == var10 ) var1 -> var11 ++ ; 
+else var1 -> var12 ++ ; 
+} 
+if ( var1 -> var13 -> func2 ) 
+var1 -> var13 -> func2 ( var1 ) ; 
+var1 -> var4 -- ; 
+} 

@@ -1,0 +1,16 @@
+static void func1 ( const AVDictionary * var1 , const char var2 , const char var3 ) 
+{ 
+AVDictionary * var4 = var5 ; 
+char var6 [ ] = { var2 , str } ; 
+char var7 [ ] = { var3 , str } ; 
+char * var8 = var5 ; 
+func2 ( & var4 , var1 , number ) ; 
+func3 ( var4 ) ; 
+func4 ( var4 , & var8 , var3 , var2 ) ; 
+printf ( str , var8 ) ; 
+func5 ( & var4 ) ; 
+func6 ( & var4 , var8 , var7 , var6 , number ) ; 
+func7 ( & var8 ) ; 
+func3 ( var4 ) ; 
+func5 ( & var4 ) ; 
+} 

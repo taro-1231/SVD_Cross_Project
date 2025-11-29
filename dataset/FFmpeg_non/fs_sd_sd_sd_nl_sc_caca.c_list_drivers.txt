@@ -1,0 +1,8 @@
+static void func1 ( CACAContext * var1 ) 
+{ 
+const char * const * var2 = func2 ( ) ; 
+int var3 ; 
+func3 ( var1 -> var4 , var5 , str ) ; 
+for ( var3 = number ; var2 [ var3 ] ; var3 += number ) 
+func3 ( var1 -> var4 , var5 , str , var2 [ var3 ] , var2 [ var3 + number ] ) ; 
+} 

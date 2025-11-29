@@ -1,0 +1,104 @@
+static void func1 ( png_modifier * var1 , 
+PNG_CONST png_byte var2 , PNG_CONST png_byte var3 , 
+PNG_CONST int var4 , 
+PNG_CONST int var5 , PNG_CONST double var6 , 
+PNG_CONST double var7 , 
+PNG_CONST int var8 , PNG_CONST int var9 , 
+PNG_CONST int var10 ) 
+{ 
+size_t var11 = number ; 
+png_const_charp var12 ; 
+double var13 ; 
+char var14 [ number ] ; 
+png_color_16 var15 ; 
+switch ( var9 ) 
+{ 
+var16 : 
+var12 = str ; 
+var13 = number ; 
+break ; 
+case var17 : 
+var12 = str ; 
+var13 = number / var7 ; 
+break ; 
+case var18 : 
+var12 = str ; 
+var13 = var6 ; 
+break ; 
+case var19 : 
+var12 = str ; 
+var13 = ( var6 + var7 ) / number ; 
+break ; 
+case var20 + var21 : 
+var12 = str ; 
+var13 = number ; 
+break ; 
+case var20 + var22 : 
+var12 = str ; 
+var13 = number ; 
+break ; 
+case var20 + var23 : 
+var12 = str ; 
+var13 = number ; 
+break ; 
+case var20 + var24 : 
+var12 = str ; 
+var13 = number ; 
+break ; 
+} 
+if ( var10 || var3 == number ) 
+{ 
+png_uint_32 var25 = func2 ( ) ; 
+var15 . var26 = ( png_uint_16 ) var25 ; 
+var15 . var27 = ( png_uint_16 ) ( var25 >> number ) ; 
+var25 = func2 ( ) ; 
+var15 . var28 = ( png_uint_16 ) var25 ; 
+var15 . var29 = ( png_uint_16 ) ( var25 >> number ) ; 
+if ( var10 && ( var9 == var19 || 
+var9 == var18 ) && 
+fabs ( var13 * var7 - number ) > var30 ) 
+{ 
+var15 . var26 = ( png_uint_16 ) ( ( var15 . var26 >> number ) * number ) ; 
+var15 . var27 = ( png_uint_16 ) ( ( var15 . var27 >> number ) * number ) ; 
+var15 . var28 = ( png_uint_16 ) ( ( var15 . var28 >> number ) * number ) ; 
+var15 . var29 = ( png_uint_16 ) ( ( var15 . var29 >> number ) * number ) ; 
+} 
+} 
+else 
+{ 
+png_uint_32 var25 = func2 ( ) ; 
+var15 . var26 = ( png_byte ) var25 ; 
+var15 . var27 = ( png_byte ) ( var25 >> number ) ; 
+var15 . var28 = ( png_byte ) ( var25 >> number ) ; 
+var15 . var29 = ( png_byte ) ( var25 >> number ) ; 
+} 
+var15 . var31 = number ; 
+if ( ! ( var2 & var32 ) ) 
+{ 
+var15 . var26 = var15 . var27 = var15 . var28 = var15 . var29 ; 
+} 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+var11 = func4 ( var14 , sizeof var14 , var11 , var6 , number ) ; 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+var11 = func4 ( var14 , sizeof var14 , var11 , var7 , number ) ; 
+var11 = func3 ( var14 , sizeof var14 , var11 , var12 ) ; 
+if ( var9 < var20 ) 
+{ 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+if ( var2 & var32 ) 
+{ 
+var11 = func5 ( var14 , sizeof var14 , var11 , var15 . var26 ) ; 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+var11 = func5 ( var14 , sizeof var14 , var11 , var15 . var27 ) ; 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+var11 = func5 ( var14 , sizeof var14 , var11 , var15 . var28 ) ; 
+} 
+else 
+var11 = func5 ( var14 , sizeof var14 , var11 , var15 . var29 ) ; 
+var11 = func3 ( var14 , sizeof var14 , var11 , str ) ; 
+var11 = func4 ( var14 , sizeof var14 , var11 , var13 , number ) ; 
+} 
+func6 ( var1 , var2 , var3 , var4 , var5 , 
+var6 , var7 , number number , var14 , var8 , 
+number var10 , var9 , & var15 , var13 ) ; 
+} 

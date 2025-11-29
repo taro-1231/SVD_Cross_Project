@@ -1,0 +1,7 @@
+static int func1 ( int var1 , int var2 , int var3 , int var4 , int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+REMOVE_GRAIN_SORT_AXIS 
+const int var10 = func2 ( func2 ( var11 , var12 ) , func2 ( var13 , var14 ) ) ; 
+const int var15 = func3 ( func3 ( var16 , var17 ) , func3 ( var18 , var19 ) ) ; 
+return func4 ( var1 , func3 ( var10 , var15 ) , func2 ( var10 , var15 ) ) ; 
+} 

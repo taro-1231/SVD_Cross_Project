@@ -1,0 +1,6 @@
+static int func1 ( AVCodecContext * var1 , AVFrame * var2 , int var3 ) 
+{ 
+InputStream * var4 = var1 -> var5 ; 
+DXVA2Context * var6 = var4 -> var7 ; 
+return func2 ( var6 -> var8 , var2 , number ) ; 
+} 

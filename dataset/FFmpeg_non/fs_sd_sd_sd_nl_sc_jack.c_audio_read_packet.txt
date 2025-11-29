@@ -1,0 +1,45 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+JackData * var3 = var1 -> var4 ; 
+struct timespec var5 = { number , number } ; 
+int var6 ; 
+if ( ! var3 -> var7 ) { 
+if ( ! func2 ( var3 -> var8 ) ) { 
+var3 -> var7 = number ; 
+func3 ( var1 , var9 , 
+str , 
+var3 -> var11 , var3 -> var10 ) ; 
+} else { 
+func3 ( var1 , var12 , str ) ; 
+return func4 ( var13 ) ; 
+} 
+} 
+var5 . var14 = func5 ( ) / number + number ; 
+if ( func6 ( & var3 -> var15 , & var5 ) ) { 
+if ( var16 == var17 ) { 
+func3 ( var1 , var12 , 
+str ) ; 
+} else { 
+char var18 [ number ] ; 
+int var19 = func4 ( var16 ) ; 
+func7 ( var19 , var18 , sizeof ( var18 ) ) ; 
+func3 ( var1 , var12 , str , 
+var18 ) ; 
+} 
+if ( ! var3 -> var8 ) 
+func3 ( var1 , var12 , str ) ; 
+return func4 ( var13 ) ; 
+} 
+if ( var3 -> var20 ) { 
+func3 ( var1 , var21 , str ) ; 
+var3 -> var20 = number ; 
+} 
+if ( var3 -> var22 ) { 
+func3 ( var1 , var21 , str ) ; 
+var3 -> var22 = number ; 
+} 
+func8 ( var3 -> var23 , var2 , sizeof ( * var2 ) , var24 ) ; 
+if ( ( var6 = func9 ( var3 , var1 ) ) ) 
+return var6 ; 
+return number ; 
+} 

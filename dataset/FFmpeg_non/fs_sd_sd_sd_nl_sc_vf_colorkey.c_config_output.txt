@@ -1,0 +1,13 @@
+static av_cold int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ColorkeyContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+int var8 ; 
+var1 -> var9 = var2 -> var10 [ number ] -> var9 ; 
+var1 -> var11 = var2 -> var10 [ number ] -> var11 ; 
+var1 -> var12 = var2 -> var10 [ number ] -> var12 ; 
+for ( var8 = number ; var8 < number ; ++ var8 ) 
+var4 -> var13 [ var8 ] = var6 -> var14 [ var8 ] . var15 - number ; 
+return number ; 
+} 

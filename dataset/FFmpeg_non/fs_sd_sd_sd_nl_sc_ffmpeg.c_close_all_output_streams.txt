@@ -1,0 +1,8 @@
+static void func1 ( OutputStream * var1 , OSTFinished var2 , OSTFinished var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) { 
+OutputStream * var6 = var7 [ var4 ] ; 
+var6 -> var8 |= var1 == var6 ? var2 : var3 ; 
+} 
+} 

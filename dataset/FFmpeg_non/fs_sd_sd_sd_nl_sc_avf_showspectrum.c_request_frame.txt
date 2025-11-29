@@ -1,0 +1,23 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ShowSpectrumContext * var2 = var1 -> var3 -> var4 ; 
+AVFilterLink * var5 = var1 -> var3 -> var6 [ number ] ; 
+unsigned var7 ; 
+int var8 ; 
+var2 -> var9 = number ; 
+do { 
+var8 = func2 ( var5 ) ; 
+if ( var8 == var10 && var2 -> var11 == var12 && var2 -> var13 > number && 
+var2 -> var14 ) { 
+for ( var7 = number ; var7 < var1 -> var15 ; var7 ++ ) { 
+memset ( var2 -> var14 -> var16 [ number ] + var7 * var2 -> var14 -> var17 [ number ] + var2 -> var13 , number , var1 -> var18 - var2 -> var13 ) ; 
+memset ( var2 -> var14 -> var16 [ number ] + var7 * var2 -> var14 -> var17 [ number ] + var2 -> var13 , number , var1 -> var18 - var2 -> var13 ) ; 
+memset ( var2 -> var14 -> var16 [ number ] + var7 * var2 -> var14 -> var17 [ number ] + var2 -> var13 , number , var1 -> var18 - var2 -> var13 ) ; 
+} 
+var8 = func3 ( var1 , var2 -> var14 ) ; 
+var2 -> var14 = var19 ; 
+var2 -> var9 = number ; 
+} 
+} while ( ! var2 -> var9 && var8 >= number ) ; 
+return var8 ; 
+} 

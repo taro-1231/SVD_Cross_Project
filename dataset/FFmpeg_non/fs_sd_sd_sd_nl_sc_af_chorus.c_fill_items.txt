@@ -1,0 +1,12 @@
+static void func1 ( char * var1 , int * var2 , float * var3 ) 
+{ 
+char * var4 , * var5 = var6 ; 
+int var7 , var8 = number ; 
+var4 = var1 ; 
+for ( var7 = number ; var7 < * var2 ; var7 ++ ) { 
+char * var9 = func2 ( var4 , str , & var5 ) ; 
+var4 = var6 ; 
+var8 += sscanf ( var9 , str , & var3 [ var7 ] ) == number ; 
+} 
+* var2 = var8 ; 
+} 

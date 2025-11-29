@@ -1,0 +1,10 @@
+static int func1 ( Decoder * var1 , int ( * var2 ) ( void * ) , void * var3 ) 
+{ 
+func2 ( var1 -> var4 ) ; 
+var1 -> var5 = func3 ( var2 , str , var3 ) ; 
+if ( ! var1 -> var5 ) { 
+func4 ( var6 , var7 , str , func5 ( ) ) ; 
+return func6 ( var8 ) ; 
+} 
+return number ; 
+} 

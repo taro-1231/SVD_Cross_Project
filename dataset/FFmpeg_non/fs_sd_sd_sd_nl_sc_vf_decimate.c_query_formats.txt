@@ -1,0 +1,13 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+static const enum AVPixelFormat var2 [ ] = { 
+PF ( P ) , PF ( P9 ) , PF ( P10 ) , PF_NOALPHA ( P12 ) , PF_NOALPHA ( P14 ) , PF ( P16 ) , 
+AV_PIX_FMT_YUV440P , AV_PIX_FMT_YUV411P , AV_PIX_FMT_YUV410P , 
+AV_PIX_FMT_GRAY8 , AV_PIX_FMT_GRAY16 , 
+AV_PIX_FMT_NONE 
+} ; 
+AVFilterFormats * var3 = func2 ( var2 ) ; 
+if ( ! var3 ) 
+return func3 ( var4 ) ; 
+return func4 ( var1 , var3 ) ; 
+} 

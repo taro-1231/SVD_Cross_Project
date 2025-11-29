@@ -1,0 +1,85 @@
+func1 ( png_const_structp var1 , png_byte var2 [ TRANSFORM_ROWMAX ] , 
+png_byte var3 , png_byte var4 , png_uint_32 var5 ) 
+{ 
+png_uint_32 var6 = var5 << number ; 
+png_uint_32 var7 = number ; 
+switch ( func2 ( var1 , var3 , var4 ) ) 
+{ 
+case number : 
+while ( var7 < number / number ) var2 [ var7 ] = ( png_byte ) ( var6 & number ) , var6 += number , ++ var7 ; 
+return ; 
+case number : 
+while ( var7 < number / number ) var2 [ var7 ] = ( png_byte ) ( var6 & number ) , var6 += number , ++ var7 ; 
+return ; 
+case number : 
+while ( var7 < number / number ) var2 [ var7 ] = ( png_byte ) ( var6 & number ) , var6 += number , ++ var7 ; 
+return ; 
+case number : 
+while ( var7 < number ) var2 [ var7 ] = ( png_byte ) ( var6 & number ) , ++ var6 , ++ var7 ; 
+return ; 
+case 16 : 
+while ( var7 < number ) 
+{ 
+var2 [ number * var7 ] = ( png_byte ) ( ( var6 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var6 & number ) ; 
+++ var6 ; 
+++ var7 ; 
+} 
+return ; 
+case 24 : 
+while ( var7 < number ) 
+{ 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var6 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var6 & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( ( var6 >> number ) ^ var6 ) & number ) ; 
+++ var6 ; 
+++ var7 ; 
+} 
+return ; 
+case 32 : 
+while ( var7 < number ) 
+{ 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var6 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var6 & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var6 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var6 & number ) ; 
+++ var6 ; 
+++ var7 ; 
+} 
+return ; 
+case 48 : 
+while ( var7 < number ) 
+{ 
+png_uint_32 var8 = var6 ++ ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+var8 *= number ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+var8 *= number ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+++ var7 ; 
+} 
+return ; 
+case 64 : 
+while ( var7 < number ) 
+{ 
+png_uint_32 var8 = var6 ++ ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+var8 *= number ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( ( var8 >> number ) & number ) ; 
+var2 [ number * var7 + number ] = ( png_byte ) ( var8 & number ) ; 
+++ var7 ; 
+} 
+return ; 
+var9 : 
+break ; 
+} 
+func3 ( var1 , str ) ; 
+} 

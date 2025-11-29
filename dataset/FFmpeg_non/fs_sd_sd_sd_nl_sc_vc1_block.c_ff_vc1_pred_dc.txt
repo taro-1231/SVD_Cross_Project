@@ -1,0 +1,51 @@
+static inline int func1 ( MpegEncContext * var1 , int var2 , int var3 , int var4 , 
+int var5 , int var6 , 
+int16_t ** var7 , int * var8 ) 
+{ 
+int var9 , var10 , var11 , var12 , var13 ; 
+int16_t * var14 ; 
+int var15 = var1 -> var16 + var1 -> var17 * var1 -> var18 ; 
+int var19 , var20 = number ; 
+int var21 ; 
+var19 = var1 -> var22 . var23 [ var15 ] ; 
+var21 = var1 -> var24 [ var19 ] - number ; 
+if ( var21 < number ) 
+return number ; 
+var12 = var1 -> var25 [ var4 ] ; 
+var14 = var1 -> var14 [ number ] + var1 -> var26 [ var4 ] ; 
+var11 = var14 [ - number ] ; 
+var10 = var14 [ - number - var12 ] ; 
+var9 = var14 [ - var12 ] ; 
+if ( var6 && ( var4 != number && var4 != number ) ) { 
+var20 = var1 -> var22 . var23 [ var15 - number ] ; 
+if ( var20 && var20 != var19 ) 
+var11 = ( var11 * var1 -> var24 [ var20 ] * var27 [ var21 ] + number ) >> number ; 
+} 
+if ( var5 && ( var4 != number && var4 != number ) ) { 
+var20 = var1 -> var22 . var23 [ var15 - var1 -> var18 ] ; 
+if ( var20 && var20 != var19 ) 
+var9 = ( var9 * var1 -> var24 [ var20 ] * var27 [ var21 ] + number ) >> number ; 
+} 
+if ( var5 && var6 && ( var4 != number ) ) { 
+int var28 = var15 ; 
+if ( var4 != number ) 
+var28 -- ; 
+if ( var4 != number ) 
+var28 -= var1 -> var18 ; 
+var20 = var1 -> var22 . var23 [ var28 ] ; 
+if ( var20 && var20 != var19 ) 
+var10 = ( var10 * var1 -> var24 [ var20 ] * var27 [ var21 ] + number ) >> number ; 
+} 
+if ( var6 && ( ! var5 || abs ( var9 - var10 ) <= abs ( var10 - var11 ) ) ) { 
+var13 = var11 ; 
+* var8 = number ; 
+} else if ( var5 ) { 
+var13 = var9 ; 
+* var8 = number ; 
+} else { 
+var13 = number ; 
+* var8 = number ; 
+} 
+* var7 = & var14 [ number ] ; 
+return var13 ; 
+} 

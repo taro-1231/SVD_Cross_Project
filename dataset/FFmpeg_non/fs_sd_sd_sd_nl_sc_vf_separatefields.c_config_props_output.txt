@@ -1,0 +1,18 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+SeparateFieldsContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+var4 -> var8 = func2 ( var6 -> var9 ) ; 
+if ( var6 -> var10 & number ) { 
+func3 ( var2 , var11 , str ) ; 
+return var12 ; 
+} 
+var1 -> var13 . var14 = var6 -> var13 . var14 ; 
+var1 -> var13 . var15 = var6 -> var13 . var15 * number ; 
+var1 -> var16 . var14 = var6 -> var16 . var14 * number ; 
+var1 -> var16 . var15 = var6 -> var16 . var15 ; 
+var1 -> var17 = var6 -> var17 ; 
+var1 -> var10 = var6 -> var10 / number ; 
+return number ; 
+} 

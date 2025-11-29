@@ -1,0 +1,24 @@
+static int func1 ( const char * var1 , AVCodecContext * var2 , 
+AVFrame * var3 , int * var4 , AVPacket * var5 , int var6 ) 
+{ 
+int var7 , var8 ; 
+char var9 [ number ] ; 
+var7 = func2 ( var2 , var3 , & var8 , var5 ) ; 
+if ( var7 < number ) { 
+fprintf ( var10 , str , * var4 ) ; 
+return var7 ; 
+} 
+if ( var8 ) { 
+printf ( str , var6 ? str : str , * var4 ) ; 
+fflush ( var11 ) ; 
+snprintf ( var9 , sizeof ( var9 ) , var1 , * var4 ) ; 
+func3 ( var3 -> var12 [ number ] , var3 -> var13 [ number ] , 
+var3 -> var14 , var3 -> var15 , var9 ) ; 
+( * var4 ) ++ ; 
+} 
+if ( var5 -> var12 ) { 
+var5 -> var16 -= var7 ; 
+var5 -> var12 += var7 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,61 @@
+static void func1 ( MpegTSFilter * var1 , const uint8_t * var2 , 
+int var3 ) 
+{ 
+MpegTSContext * var4 = var1 -> var5 . var6 . var7 ; 
+MpegTSSectionFilter * var8 = & var1 -> var5 . var6 ; 
+SectionHeader var9 ; 
+const uint8_t * var10 , * var11 ; 
+AVIOContext var12 ; 
+int var13 = number ; 
+Mp4Descr var14 [ var15 ] = { { number } } ; 
+int var16 , var17 ; 
+AVFormatContext * var18 = var4 -> var19 ; 
+var11 = var2 + var3 - number ; 
+var10 = var2 ; 
+if ( func2 ( & var9 , & var10 , var11 ) < number ) 
+return ; 
+if ( var9 . var20 != var21 ) 
+return ; 
+if ( func3 ( & var9 , var8 ) ) 
+return ; 
+func4 ( var18 , var10 , ( unsigned ) ( var11 - var10 ) , var14 , & var13 , 
+var15 ) ; 
+for ( var17 = number ; var17 < var22 ; var17 ++ ) { 
+if ( ! var4 -> var23 [ var17 ] ) 
+continue ; 
+for ( var16 = number ; var16 < var13 ; var16 ++ ) { 
+PESContext * var24 ; 
+AVStream * var25 ; 
+if ( var4 -> var23 [ var17 ] -> var26 != var14 [ var16 ] . var26 ) 
+continue ; 
+if ( var4 -> var23 [ var17 ] -> var27 != var28 ) { 
+func5 ( var18 , var29 , str , var17 ) ; 
+continue ; 
+} 
+var24 = var4 -> var23 [ var17 ] -> var5 . var30 . var7 ; 
+var25 = var24 -> var25 ; 
+if ( ! var25 ) 
+continue ; 
+var24 -> var31 = var14 [ var16 ] . var31 ; 
+func6 ( & var12 , var14 [ var16 ] . var32 , 
+var14 [ var16 ] . var33 , number , 
+var34 , var34 , var34 , var34 ) ; 
+func7 ( var18 , var25 , & var12 ) ; 
+if ( var25 -> var35 -> var36 == var37 && 
+var25 -> var35 -> var38 > number ) 
+var25 -> var39 = number ; 
+if ( var25 -> var35 -> var36 == var40 && 
+var25 -> var35 -> var38 > number ) 
+var25 -> var39 = number ; 
+if ( var25 -> var35 -> var36 <= var41 ) { 
+} else if ( var25 -> var35 -> var36 < var42 ) 
+var25 -> var35 -> var43 = var44 ; 
+else if ( var25 -> var35 -> var36 < var45 ) 
+var25 -> var35 -> var43 = var46 ; 
+else if ( var25 -> var35 -> var36 < var47 ) 
+var25 -> var35 -> var43 = var48 ; 
+} 
+} 
+for ( var16 = number ; var16 < var13 ; var16 ++ ) 
+func8 ( var14 [ var16 ] . var32 ) ; 
+} 

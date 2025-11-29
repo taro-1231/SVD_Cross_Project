@@ -1,0 +1,134 @@
+static int func1 ( AVOpenCLDeviceList * var1 ) 
+{ 
+cl_int var2 ; 
+int var3 , var4 , var5 , var6 , var7 , var8 = number ; 
+int * var9 ; 
+cl_platform_id * var10 = var11 ; 
+cl_device_id * var12 = var11 ; 
+AVOpenCLDeviceNode * var13 = var11 ; 
+size_t var14 = number ; 
+size_t var15 = number ; 
+var2 = func2 ( number , var11 , & var1 -> var16 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var19 , 
+str , func4 ( var2 ) ) ; 
+return var20 ; 
+} 
+var10 = func5 ( var1 -> var16 , sizeof ( cl_platform_id ) ) ; 
+if ( ! var10 ) 
+return func6 ( var21 ) ; 
+var2 = func2 ( var1 -> var16 , var10 , var11 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var19 , 
+str , func4 ( var2 ) ) ; 
+var8 = var20 ; 
+goto var22 ; 
+} 
+var1 -> var23 = func5 ( var1 -> var16 , sizeof ( AVOpenCLPlatformNode * ) ) ; 
+if ( ! var1 -> var23 ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+var9 = func7 ( sizeof ( int ) * func8 ( var24 ) ) ; 
+if ( ! var9 ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+for ( var3 = number ; var3 < var1 -> var16 ; var3 ++ ) { 
+var1 -> var23 [ var3 ] = func7 ( sizeof ( AVOpenCLPlatformNode ) ) ; 
+if ( ! var1 -> var23 [ var3 ] ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+var1 -> var23 [ var3 ] -> var25 = var10 [ var3 ] ; 
+var2 = func9 ( var10 [ var3 ] , var26 , 
+number , var11 , & var14 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+} else { 
+var1 -> var23 [ var3 ] -> var28 = func10 ( var14 * sizeof ( char ) ) ; 
+if ( ! var1 -> var23 [ var3 ] -> var28 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+} else { 
+var2 = func9 ( var10 [ var3 ] , var26 , 
+var14 * sizeof ( char ) , 
+var1 -> var23 [ var3 ] -> var28 , var11 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+} 
+} 
+} 
+var7 = number ; 
+for ( var4 = number ; var4 < func8 ( var24 ) ; var4 ++ ) { 
+var2 = func11 ( var1 -> var23 [ var3 ] -> var25 , 
+var24 [ var4 ] , number , var11 , & var9 [ var4 ] ) ; 
+var7 += var9 [ var4 ] ; 
+} 
+var1 -> var23 [ var3 ] -> var13 = func5 ( var7 , sizeof ( AVOpenCLDeviceNode * ) ) ; 
+if ( ! var1 -> var23 [ var3 ] -> var13 ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+for ( var4 = number ; var4 < func8 ( var24 ) ; var4 ++ ) { 
+if ( var9 [ var4 ] ) { 
+var12 = func5 ( var9 [ var4 ] , sizeof ( cl_device_id ) ) ; 
+if ( ! var12 ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+var2 = func11 ( var1 -> var23 [ var3 ] -> var25 , var24 [ var4 ] , 
+var9 [ var4 ] , var12 , var11 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+func12 ( & var12 ) ; 
+continue ; 
+} 
+for ( var5 = number ; var5 < var9 [ var4 ] ; var5 ++ ) { 
+var6 = var1 -> var23 [ var3 ] -> var6 ; 
+var1 -> var23 [ var3 ] -> var13 [ var6 ] = func7 ( sizeof ( AVOpenCLDeviceNode ) ) ; 
+if ( ! var1 -> var23 [ var3 ] -> var13 [ var6 ] ) { 
+var8 = func6 ( var21 ) ; 
+goto var22 ; 
+} 
+var13 = var1 -> var23 [ var3 ] -> var13 [ var6 ] ; 
+var13 -> var29 = var12 [ var5 ] ; 
+var13 -> var24 = var24 [ var4 ] ; 
+var2 = func13 ( var13 -> var29 , var30 , 
+number , var11 , & var15 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+continue ; 
+} 
+var13 -> var31 = func10 ( var15 * sizeof ( char ) ) ; 
+if ( ! var13 -> var31 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+continue ; 
+} 
+var2 = func13 ( var13 -> var29 , var30 , 
+var15 * sizeof ( char ) , 
+var13 -> var31 , var11 ) ; 
+if ( var2 != var17 ) { 
+func3 ( & var18 , var27 , 
+str , func4 ( var2 ) ) ; 
+continue ; 
+} 
+var1 -> var23 [ var3 ] -> var6 ++ ; 
+} 
+func12 ( & var12 ) ; 
+} 
+} 
+} 
+var22 : 
+func12 ( & var10 ) ; 
+func12 ( & var9 ) ; 
+func12 ( & var12 ) ; 
+if ( var8 < number ) 
+func14 ( var1 ) ; 
+return var8 ; 
+} 

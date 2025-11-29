@@ -1,0 +1,5 @@
+static void func1 ( void ) 
+{ 
+if ( var1 ) 
+func2 ( number , var2 , & var3 ) ; 
+} 

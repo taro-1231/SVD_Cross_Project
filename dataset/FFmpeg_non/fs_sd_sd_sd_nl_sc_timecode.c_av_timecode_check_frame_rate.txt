@@ -1,0 +1,4 @@
+int func1 ( AVRational var1 ) 
+{ 
+return func2 ( func3 ( var1 ) ) ; 
+} 

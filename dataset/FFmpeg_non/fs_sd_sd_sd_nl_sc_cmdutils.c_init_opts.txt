@@ -1,0 +1,4 @@
+void func1 ( void ) 
+{ 
+func2 ( & var1 , str , str , number ) ; 
+} 

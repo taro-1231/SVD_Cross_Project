@@ -1,0 +1,72 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+unsigned var3 , var4 , var5 = number ; 
+AVFilterContext * var6 = var1 -> var7 ; 
+VignetteContext * var8 = var6 -> var9 ; 
+AVFilterLink * var10 = var6 -> var11 [ number ] ; 
+AVFrame * var12 ; 
+if ( func2 ( var2 ) ) { 
+var5 = number ; 
+var12 = var2 ; 
+} else { 
+var12 = func3 ( var10 , var10 -> var13 , var10 -> var14 ) ; 
+if ( ! var12 ) { 
+func4 ( & var2 ) ; 
+return func5 ( var15 ) ; 
+} 
+func6 ( var12 , var2 ) ; 
+} 
+if ( var8 -> var16 == var17 ) 
+func7 ( var8 , var1 , var2 ) ; 
+if ( var8 -> var18 -> var19 & var20 ) { 
+uint8_t * var7 = var12 -> var21 [ number ] ; 
+const uint8_t * var22 = var2 -> var21 [ number ] ; 
+const float * var23 = var8 -> var23 ; 
+const int var24 = var12 -> var25 [ number ] ; 
+const int var26 = var2 -> var25 [ number ] ; 
+const int var27 = var8 -> var27 ; 
+for ( var4 = number ; var4 < var1 -> var14 ; var4 ++ ) { 
+uint8_t * var28 = var7 ; 
+const uint8_t * var29 = var22 ; 
+for ( var3 = number ; var3 < var1 -> var13 ; var3 ++ , var28 += number , var29 += number ) { 
+const float var30 = var23 [ var3 ] ; 
+var28 [ number ] = func8 ( var29 [ number ] * var30 + func9 ( var8 ) ) ; 
+var28 [ number ] = func8 ( var29 [ number ] * var30 + func9 ( var8 ) ) ; 
+var28 [ number ] = func8 ( var29 [ number ] * var30 + func9 ( var8 ) ) ; 
+} 
+var7 += var24 ; 
+var22 += var26 ; 
+var23 += var27 ; 
+} 
+} else { 
+int var31 ; 
+for ( var31 = number ; var31 < number && var2 -> var21 [ var31 ] && var2 -> var25 [ var31 ] ; var31 ++ ) { 
+uint8_t * var7 = var12 -> var21 [ var31 ] ; 
+const uint8_t * var22 = var2 -> var21 [ var31 ] ; 
+const float * var23 = var8 -> var23 ; 
+const int var24 = var12 -> var25 [ var31 ] ; 
+const int var26 = var2 -> var25 [ var31 ] ; 
+const int var27 = var8 -> var27 ; 
+const int var32 = var31 == number || var31 == number ; 
+const int var33 = var32 ? var8 -> var18 -> var34 : number ; 
+const int var35 = var32 ? var8 -> var18 -> var36 : number ; 
+const int var13 = func10 ( var1 -> var13 , var33 ) ; 
+const int var14 = func10 ( var1 -> var14 , var35 ) ; 
+for ( var4 = number ; var4 < var14 ; var4 ++ ) { 
+uint8_t * var28 = var7 ; 
+const uint8_t * var29 = var22 ; 
+for ( var3 = number ; var3 < var13 ; var3 ++ ) { 
+const double var37 = func9 ( var8 ) ; 
+if ( var32 ) * var28 += func8 ( var23 [ var3 << var33 ] * ( * var29 ++ - number ) + number + var37 ) ; 
+else * var28 += func8 ( var23 [ var3 ] ** var29 ++ var37 ) ; 
+} 
+var7 += var24 ; 
+var22 += var26 ; 
+var23 += var27 << var35 ; 
+} 
+} 
+} 
+if ( ! var5 ) 
+func4 ( & var2 ) ; 
+return func11 ( var10 , var12 ) ; 
+} 

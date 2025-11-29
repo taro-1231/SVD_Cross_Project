@@ -1,0 +1,6 @@
+static void func1 ( int16_t * var1 , int16_t * var2 , int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var2 [ var4 ] = var3 * var1 [ var4 ] ; 
+} 

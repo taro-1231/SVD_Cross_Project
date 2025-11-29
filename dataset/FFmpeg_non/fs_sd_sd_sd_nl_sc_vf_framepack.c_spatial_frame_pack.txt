@@ -1,0 +1,17 @@
+static av_always_inline void func1 ( FramepackContext * var1 , AVFrame * var2 ) 
+{ 
+switch ( var1 -> var3 ) { 
+case var4 : 
+func2 ( var1 , var2 , number ) ; 
+break ; 
+case var5 : 
+func2 ( var1 , var2 , number ) ; 
+break ; 
+case var6 : 
+func3 ( var1 , var2 , number ) ; 
+break ; 
+case var7 : 
+func3 ( var1 , var2 , number ) ; 
+break ; 
+} 
+} 

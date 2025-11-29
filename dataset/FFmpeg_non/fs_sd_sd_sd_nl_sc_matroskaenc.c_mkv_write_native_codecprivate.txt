@@ -1,0 +1,38 @@
+static int func1 ( AVFormatContext * var1 , 
+AVCodecContext * var2 , 
+AVIOContext * var3 ) 
+{ 
+switch ( var2 -> var4 ) { 
+case var5 : 
+case var6 : 
+return func2 ( var1 , var3 , var2 ) ; 
+case var7 : 
+return func3 ( var1 , var3 , var2 ) ; 
+case var8 : 
+return func4 ( var3 , var2 ) ; 
+case var9 : 
+return func5 ( var3 , var2 -> var10 , 
+var2 -> var11 ) ; 
+case var12 : 
+func6 ( var3 , var2 -> var10 , 
+var2 -> var11 , number ) ; 
+return number ; 
+case var13 : 
+if ( var2 -> var11 < number ) { 
+av_log ( var1 , AV_LOG_ERROR , 
+str 
+str ) ; 
+return var14 ; 
+} else 
+func7 ( var3 , var2 -> var10 + number , 
+var2 -> var11 - number ) ; 
+break ; 
+var15 : 
+if ( var2 -> var4 == var16 && 
+func8 ( var17 , var2 -> var18 ) == var16 ) { 
+func9 ( var3 , var2 -> var18 ) ; 
+} else if ( var2 -> var11 && var2 -> var4 != var19 ) 
+func7 ( var3 , var2 -> var10 , var2 -> var11 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,7 @@
+void func1 ( uint8_t * var1 , const uint8_t * var2 , const int var3 ) 
+{ 
+AVMD5 var4 ; 
+func2 ( & var4 ) ; 
+func3 ( & var4 , var2 , var3 ) ; 
+func4 ( & var4 , var1 ) ; 
+} 

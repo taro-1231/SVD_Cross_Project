@@ -1,0 +1,4 @@
+func1 ( double var1 
+{ 
+return func2 ( number * func3 ( var1 ) ) ; 
+} 

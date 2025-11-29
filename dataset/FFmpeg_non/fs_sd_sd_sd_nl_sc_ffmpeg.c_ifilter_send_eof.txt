@@ -1,0 +1,20 @@
+static int func1 ( InputFilter * var1 ) 
+{ 
+int var2 , var3 , var4 ; 
+var1 -> var5 = number ; 
+if ( var1 -> var6 ) { 
+var4 = func2 ( var1 -> var6 , var7 , var8 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} else { 
+FilterGraph * var9 = var1 -> var10 ; 
+for ( var2 = number ; var2 < var9 -> var11 ; var2 ++ ) 
+if ( ! var9 -> var12 [ var2 ] -> var5 ) 
+break ; 
+if ( var2 == var9 -> var11 ) { 
+for ( var3 = number ; var3 < var9 -> var13 ; var3 ++ ) 
+func3 ( var9 -> var14 [ var3 ] -> var15 ) ; 
+} 
+} 
+return number ; 
+} 

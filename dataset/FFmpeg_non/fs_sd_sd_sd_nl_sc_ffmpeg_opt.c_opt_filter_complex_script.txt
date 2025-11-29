@@ -1,0 +1,13 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+uint8_t * var4 = func2 ( var3 ) ; 
+if ( ! var4 ) 
+return func3 ( var5 ) ; 
+func4 ( var6 , var7 ) ; 
+if ( ! ( var6 [ var7 - number ] = func5 ( sizeof ( * var6 [ number ] ) ) ) ) 
+return func3 ( var8 ) ; 
+var6 [ var7 - number ] -> var9 = var7 - number ; 
+var6 [ var7 - number ] -> var4 = var4 ; 
+var10 = number ; 
+return number ; 
+} 

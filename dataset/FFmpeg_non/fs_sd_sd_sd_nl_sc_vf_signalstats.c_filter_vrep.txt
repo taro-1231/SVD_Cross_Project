@@ -1,0 +1,29 @@
+static int func1 ( AVFilterContext * var2 , void * var3 , int var4 , int var5 ) 
+{ 
+ThreadData * var6 = var3 ; 
+const SignalstatsContext * var7 = var2 -> var8 ; 
+const AVFrame * var9 = var6 -> var9 ; 
+AVFrame * var10 = var6 -> var10 ; 
+const int var11 = var9 -> var12 ; 
+const int var13 = var9 -> var14 ; 
+const int var15 = ( var13 * var4 ) / var5 ; 
+const int var16 = ( var13 * ( var4 + number ) ) / var5 ; 
+const uint8_t * var17 = var9 -> var18 [ number ] ; 
+const int var19 = var9 -> var20 [ number ] ; 
+int var21 , var22 , var23 = number ; 
+for ( var22 = var15 ; var22 < var16 ; var22 ++ ) { 
+const int var24 = ( var22 - var1 ) * var19 ; 
+const int var25 = var22 * var19 ; 
+int var26 , var27 = number ; 
+if ( var22 < var1 ) 
+continue ; 
+for ( var21 = number ; var21 < var11 ; var21 ++ ) 
+var27 += abs ( var17 [ var24 + var21 ] - var17 [ var25 + var21 ] ) ; 
+var26 = var27 < var11 ; 
+var23 += var26 ; 
+if ( var26 && var10 ) 
+for ( var21 = number ; var21 < var11 ; var21 ++ ) 
+func2 ( var7 , var10 , var21 , var22 ) ; 
+} 
+return var23 * var11 ; 
+} 

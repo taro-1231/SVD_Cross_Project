@@ -1,0 +1,5 @@
+void func1 ( MpegTSContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+func3 ( var1 ) ; 
+} 

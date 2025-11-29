@@ -1,0 +1,23 @@
+static av_cold int func1 ( AVFilterContext * var1 , AVDictionary ** var2 ) 
+{ 
+AResampleContext * var3 = var1 -> var4 ; 
+int var5 = number ; 
+var3 -> var6 = var7 ; 
+var3 -> var8 = func2 ( ) ; 
+if ( ! var3 -> var8 ) { 
+var5 = func3 ( var9 ) ; 
+goto var10 ; 
+} 
+if ( var2 ) { 
+AVDictionaryEntry * var11 = var12 ; 
+while ( ( var11 = func4 ( * var2 , str , var11 , var13 ) ) ) { 
+if ( ( var5 = func5 ( var3 -> var8 , var11 -> var14 , var11 -> var15 , number ) ) < number ) 
+goto var10 ; 
+} 
+func6 ( var2 ) ; 
+} 
+if ( var3 -> var16 > number ) 
+func7 ( var3 -> var8 , str , var3 -> var16 , number ) ; 
+var10 : 
+return var5 ; 
+} 

@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 , AVBPrint * var2 , 
+char * var3 , unsigned var4 , char ** var5 , int var6 ) 
+{ 
+DrawTextContext * var7 = var1 -> var8 ; 
+double var9 ; 
+int var10 ; 
+var10 = func2 ( & var9 , var5 [ number ] , var11 , var7 -> var12 , 
+var13 , var13 , var14 , var15 , 
+& var7 -> var16 , number , var1 ) ; 
+if ( var10 < number ) 
+func3 ( var1 , var17 , 
+str , 
+var5 [ number ] ) ; 
+else 
+func4 ( var2 , str , var9 ) ; 
+return var10 ; 
+} 

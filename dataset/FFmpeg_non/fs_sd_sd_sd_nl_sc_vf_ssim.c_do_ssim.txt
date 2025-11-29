@@ -1,0 +1,32 @@
+static AVFrame * func1 ( AVFilterContext * var1 , AVFrame * var2 , 
+const AVFrame * var3 ) 
+{ 
+AVDictionary ** var4 = func2 ( var2 ) ; 
+SSIMContext * var5 = var1 -> var6 ; 
+float var7 [ number ] , var8 = number ; 
+int var9 ; 
+var5 -> var10 ++ ; 
+for ( var9 = number ; var9 < var5 -> var11 ; var9 ++ ) { 
+var7 [ var9 ] = func3 ( & var5 -> var12 , var2 -> var13 [ var9 ] , var2 -> var14 [ var9 ] , 
+var3 -> var13 [ var9 ] , var3 -> var14 [ var9 ] , 
+var5 -> var15 [ var9 ] , var5 -> var16 [ var9 ] , var5 -> var17 ) ; 
+var8 += var5 -> var18 [ var9 ] * var7 [ var9 ] ; 
+var5 -> var19 [ var9 ] += var7 [ var9 ] ; 
+} 
+for ( var9 = number ; var9 < var5 -> var11 ; var9 ++ ) { 
+int var20 = var5 -> var21 ? var5 -> var22 [ var9 ] : var9 ; 
+func4 ( var4 , str , var5 -> var23 [ var9 ] , var7 [ var20 ] ) ; 
+} 
+var5 -> var24 += var8 ; 
+func4 ( var4 , str , number , var8 ) ; 
+func4 ( var4 , str , number , func5 ( var8 , number ) ) ; 
+if ( var5 -> var25 ) { 
+fprintf ( var5 -> var25 , str PRId64 str 
+for ( var9 = number ; var9 < var5 -> var11 ; var9 ++ ) { 
+int var20 = var5 -> var21 ? var5 -> var22 [ var9 ] : var9 ; 
+fprintf ( var5 -> var25 , str , var5 -> var23 [ var9 ] , var7 [ var20 ] ) ; 
+} 
+fprintf ( var5 -> var25 , str , var8 , func5 ( var8 , number ) ) ; 
+} 
+return var2 ; 
+} 

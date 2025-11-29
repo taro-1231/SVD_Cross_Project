@@ -1,0 +1,20 @@
+static int func1 ( AVIOContext * var1 , int var2 , uint64_t * var3 ) 
+{ 
+switch ( var2 ) { 
+case var4 : 
+* var3 = func2 ( var1 ) ; 
+break ; 
+case var5 : 
+* var3 = func3 ( var1 ) ; 
+break ; 
+case var6 : 
+* var3 = func4 ( var1 ) ; 
+break ; 
+case var7 : 
+* var3 = func2 ( var1 ) ; 
+break ; 
+var8 : 
+return var9 ; 
+} 
+return number ; 
+} 

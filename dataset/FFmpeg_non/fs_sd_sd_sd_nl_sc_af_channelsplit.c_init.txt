@@ -1,0 +1,22 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ChannelSplitContext * var2 = var1 -> var3 ; 
+int var4 ; 
+int var5 = number , var6 ; 
+if ( ! ( var2 -> var7 = func2 ( var2 -> var8 ) ) ) { 
+func3 ( var1 , var9 , str , 
+var2 -> var8 ) ; 
+var5 = func4 ( var11 ) ; 
+goto var12 ; 
+} 
+var4 = func5 ( var2 -> var7 ) ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) { 
+uint64_t var10 = func6 ( var2 -> var7 , var6 ) ; 
+AVFilterPad var13 = { number } ; 
+var13 . var14 = var15 ; 
+var13 . var16 = func7 ( var10 ) ; 
+func8 ( var1 , var6 , & var13 ) ; 
+} 
+var12 : 
+return var5 ; 
+} 

@@ -1,0 +1,19 @@
+int func1 ( int var2 , char ** var3 ) 
+{ 
+int var4 ; 
+uint8_t var5 [ var6 ] ; 
+func2 ( var7 ) ; 
+for ( var4 = number ; var4 < var6 ; var4 ++ ) 
+var5 [ var4 ] = ( ( var4 * var4 ) >> number ) + number * var4 ; 
+if ( var2 > number && ! strcmp ( var3 [ number ] , str ) ) { 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var8 ; 
+var1 = func3 ( number , var5 , var6 ) ; 
+func4 ( str ) ; 
+} 
+} else { 
+var1 = func3 ( number , var5 , var6 ) ; 
+} 
+func5 ( var9 , var7 , str , var1 ) ; 
+return var1 == number ? number : number ; 
+} 

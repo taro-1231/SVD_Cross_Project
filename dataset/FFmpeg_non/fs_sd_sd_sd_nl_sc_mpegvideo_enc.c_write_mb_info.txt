@@ -1,0 +1,18 @@
+static void func1 ( MpegEncContext * var1 ) 
+{ 
+uint8_t * var2 = var1 -> var3 + var1 -> var4 - number ; 
+int var5 = func2 ( & var1 -> var6 ) ; 
+int var7 = var1 -> var8 + var1 -> var9 * ( var1 -> var10 % var1 -> var11 ) ; 
+int var12 = var1 -> var10 / var1 -> var11 ; 
+int var13 , var14 ; 
+if ( var15 ) 
+func3 ( var1 , number , number , & var13 , & var14 ) ; 
+func4 ( & var2 , var5 ) ; 
+func5 ( & var2 , var1 -> var16 ) ; 
+func5 ( & var2 , var12 ) ; 
+func6 ( & var2 , var7 ) ; 
+func5 ( & var2 , var13 ) ; 
+func5 ( & var2 , var14 ) ; 
+func5 ( & var2 , number ) ; 
+func5 ( & var2 , number ) ; 
+} 

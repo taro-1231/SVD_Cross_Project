@@ -1,0 +1,29 @@
+static AVFrame * func1 ( OutputStream * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var3 -> var4 ; 
+if ( av_compare_ts ( var1 -> var5 , var1 -> var3 -> var4 -> time_base , 
+STREAM_DURATION , ( AVRational ) { number , number } ) >= 0 ) 
+return var6 ; 
+if ( var2 -> var7 != var8 ) { 
+if ( ! var1 -> var9 ) { 
+var1 -> var9 = func2 ( var2 -> var10 , var2 -> var11 , 
+var8 , 
+var2 -> var10 , var2 -> var11 , 
+var2 -> var7 , 
+var12 , var6 , var6 , var6 ) ; 
+if ( ! var1 -> var9 ) { 
+fprintf ( var13 , 
+str ) ; 
+exit ( number ) ; 
+} 
+} 
+func3 ( var1 -> var14 , var1 -> var5 , var2 -> var10 , var2 -> var11 ) ; 
+sws_scale ( var1 -> var9 , 
+( const uint8_t * const * ) var1 -> var14 -> data , var1 -> var14 -> linesize , 
+0 , var2 -> var11 , var1 -> var15 -> data , var1 -> var15 -> linesize ) ; 
+} else { 
+func3 ( var1 -> var15 , var1 -> var5 , var2 -> var10 , var2 -> var11 ) ; 
+} 
+var1 -> var15 -> var16 = var1 -> var5 ++ ; 
+return var1 -> var15 ; 
+} 

@@ -1,0 +1,5 @@
+static inline int func1 ( int var2 , int var3 ) 
+{ 
+const int func1 = round ( ( double ) var2 * ( var3 / number ) ) ; 
+return func1 + ( func1 % number ) ; 
+} 

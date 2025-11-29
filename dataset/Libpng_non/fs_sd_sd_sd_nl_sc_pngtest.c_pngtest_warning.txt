@@ -1,0 +1,10 @@
+func1 ( png_structp var1 , png_const_charp var2 ) 
+{ 
+PNG_CONST char * var3 = str ; 
+char * var4 ; 
+var4 = func2 ( var1 ) ; 
+if ( var4 == var5 ) 
+fprintf ( var6 , str , var3 , var2 ) ; 
+else 
+fprintf ( var6 , str , var4 , var2 ) ; 
+} 

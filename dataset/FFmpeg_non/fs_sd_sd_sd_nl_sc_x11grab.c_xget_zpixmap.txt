@@ -1,0 +1,27 @@
+static int func1 ( Display * var1 , Drawable var2 , XImage * var3 , int var4 , int var5 ) 
+{ 
+xGetImageReply var6 ; 
+xGetImageReq * var7 ; 
+long var8 ; 
+if ( ! var3 ) 
+return number ; 
+func2 ( var1 ) ; 
+func3 ( var9 , var7 ) ; 
+var7 -> var10 = var2 ; 
+var7 -> var4 = var4 ; 
+var7 -> var5 = var5 ; 
+var7 -> var11 = var3 -> var11 ; 
+var7 -> var12 = var3 -> var12 ; 
+var7 -> var13 = ( unsigned int ) var14 ; 
+var7 -> var15 = var16 ; 
+if ( ! func4 ( var1 , ( xReply * ) & var6 , number , var17 ) || ! var6 . var18 ) { 
+func5 ( var1 ) ; 
+func6 ( ) ; 
+return number ; 
+} 
+var8 = ( long ) var6 . var18 << number ; 
+func7 ( var1 , var3 -> var19 , var8 ) ; 
+func5 ( var1 ) ; 
+func6 ( ) ; 
+return number ; 
+} 

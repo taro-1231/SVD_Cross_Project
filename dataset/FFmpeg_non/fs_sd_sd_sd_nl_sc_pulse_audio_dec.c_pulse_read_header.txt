@@ -1,0 +1,94 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+PulseData * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+char * var5 = var6 ; 
+int var7 ; 
+enum AVCodecID var8 = 
+var1 -> var9 == var10 ? var11 : var1 -> var9 ; 
+const pa_sample_spec var12 = { func2 ( var8 ) , 
+var2 -> var13 , 
+var2 -> var14 } ; 
+pa_buffer_attr var15 = { - number } ; 
+var4 = func3 ( var1 , var6 ) ; 
+if ( ! var4 ) { 
+func4 ( var1 , var16 , str ) ; 
+return func5 ( var18 ) ; 
+} 
+var15 . var19 = var2 -> var20 ; 
+if ( var1 -> var21 [ number ] != str && strcmp ( var1 -> var21 , str ) ) 
+var5 = var1 -> var21 ; 
+if ( ! ( var2 -> var22 = func6 ( ) ) ) { 
+func7 ( var1 ) ; 
+return var23 ; 
+} 
+if ( ! ( var2 -> var24 = func8 ( func9 ( var2 -> var22 ) , var2 -> var25 ) ) ) { 
+func7 ( var1 ) ; 
+return var23 ; 
+} 
+func10 ( var2 -> var24 , var26 , var2 ) ; 
+if ( func11 ( var2 -> var24 , var2 -> var27 , number , var6 ) < number ) { 
+func7 ( var1 ) ; 
+return func5 ( func12 ( var2 -> var24 ) ) ; 
+} 
+func13 ( var2 -> var22 ) ; 
+if ( func14 ( var2 -> var22 ) < number ) { 
+var7 = - number ; 
+goto var28 ; 
+} 
+for ( ; ; ) { 
+pa_context_state_t var29 ; 
+var29 = func15 ( var2 -> var24 ) ; 
+if ( var29 == var30 ) 
+break ; 
+if ( ! func16 ( var29 ) ) { 
+var7 = func5 ( func12 ( var2 -> var24 ) ) ; 
+goto var28 ; 
+} 
+func17 ( var2 -> var22 ) ; 
+} 
+if ( ! ( var2 -> var17 = func18 ( var2 -> var24 , var2 -> var31 , & var12 , var6 ) ) ) { 
+var7 = func5 ( func12 ( var2 -> var24 ) ) ; 
+goto var28 ; 
+} 
+func19 ( var2 -> var17 , var32 , var2 ) ; 
+func20 ( var2 -> var17 , var33 , var2 ) ; 
+func21 ( var2 -> var17 , var33 , var2 ) ; 
+func22 ( var2 -> var17 , var34 , var2 ) ; 
+var7 = func23 ( var2 -> var17 , var5 , & var15 , 
+var35 
+| var36 
+| var37 ) ; 
+if ( var7 < number ) { 
+var7 = func5 ( func12 ( var2 -> var24 ) ) ; 
+goto var28 ; 
+} 
+for ( ; ; ) { 
+pa_stream_state_t var29 ; 
+var29 = func24 ( var2 -> var17 ) ; 
+if ( var29 == var38 ) 
+break ; 
+if ( ! func25 ( var29 ) ) { 
+var7 = func5 ( func12 ( var2 -> var24 ) ) ; 
+goto var28 ; 
+} 
+func17 ( var2 -> var22 ) ; 
+} 
+func26 ( var2 -> var22 ) ; 
+var4 -> var39 -> var40 = var41 ; 
+var4 -> var39 -> var8 = var8 ; 
+var4 -> var39 -> var13 = var2 -> var13 ; 
+var4 -> var39 -> var14 = var2 -> var14 ; 
+func27 ( var4 , number , number , number ) ; 
+var2 -> var42 = func28 ( number / var2 -> var13 , 
+number , number ) ; 
+if ( ! var2 -> var42 ) { 
+func7 ( var1 ) ; 
+return func5 ( var18 ) ; 
+} 
+return number ; 
+var28 : 
+func26 ( var2 -> var22 ) ; 
+func7 ( var1 ) ; 
+return var7 ; 
+} 

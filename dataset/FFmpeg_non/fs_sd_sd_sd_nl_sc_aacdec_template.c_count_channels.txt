@@ -1,0 +1,11 @@
+static int func1 ( uint8_t ( * var1 ) [ 3 ] , int var2 ) 
+{ 
+int var3 , var4 = number ; 
+for ( var3 = number ; var3 < var2 ; var3 ++ ) { 
+int var5 = var1 [ var3 ] [ number ] ; 
+int var6 = var1 [ var3 ] [ number ] ; 
+var4 += ( number + ( var5 == var7 ) ) * 
+( var6 != var8 && var6 != var9 ) ; 
+} 
+return var4 ; 
+} 

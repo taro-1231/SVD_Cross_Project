@@ -1,0 +1,6 @@
+func1 ( unsigned int var1 ) 
+{ 
+unsigned int var2 ; 
+func2 ( var2 ) ; 
+return var2 % var1 ; 
+} 

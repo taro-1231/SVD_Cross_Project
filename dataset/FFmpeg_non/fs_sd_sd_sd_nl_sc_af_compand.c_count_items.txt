@@ -1,0 +1,9 @@
+static void func1 ( char * var1 , int * var2 ) 
+{ 
+char * var3 ; 
+* var2 = number ; 
+for ( var3 = var1 ; * var3 ; var3 ++ ) { 
+if ( * var3 == str || * var3 == str ) 
+( * var2 ) ++ ; 
+} 
+} 

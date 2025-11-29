@@ -1,0 +1,27 @@
+av_cold void func1 ( SwsContext * var1 , 
+const int var2 [ number ] , 
+int var3 , 
+int var4 , 
+int var5 ) 
+{ 
+union { 
+DECLARE_ALIGNED ( number , signed short , var6 ) [ 8 ] ; 
+vector signed short vec ; 
+} var7 ; 
+if ( ! ( func2 ( ) & var8 ) ) 
+return ; 
+var7 . var6 [ number ] = ( ( 0xffffLL ) * var4 >> 8 ) >> number ; 
+var7 . var6 [ number ] = - number * var3 ; 
+var7 . var6 [ number ] = ( var2 [ number ] >> number ) * ( var4 >> number ) * ( var5 >> number ) ; 
+var7 . var6 [ number ] = ( var2 [ number ] >> number ) * ( var4 >> number ) * ( var5 >> number ) ; 
+var7 . var6 [ number ] = - ( ( var2 [ number ] >> number ) * ( var4 >> number ) * ( var5 >> number ) ) ; 
+var7 . var6 [ number ] = - ( ( var2 [ number ] >> number ) * ( var4 >> number ) * ( var5 >> number ) ) ; 
+var1 -> CSHIFT = ( vector unsigned short ) func3 ( number ) ; 
+var1 -> CY = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+var1 -> OY = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+var1 -> CRV = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+var1 -> CBU = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+var1 -> CGU = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+var1 -> CGV = vec_splat ( ( vector signed short ) var7 . vec , number ) ; 
+return ; 
+} 

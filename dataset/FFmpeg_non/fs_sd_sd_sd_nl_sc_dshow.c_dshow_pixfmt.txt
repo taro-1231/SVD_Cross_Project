@@ -1,0 +1,22 @@
+static enum AVPixelFormat func1 ( DWORD var1 , WORD var2 ) 
+{ 
+switch ( var1 ) { 
+case var3 : 
+case var4 : 
+switch ( var2 ) { 
+case 1 : 
+return var5 ; 
+case 4 : 
+return var6 ; 
+case 8 : 
+return var7 ; 
+case 16 : 
+return var8 ; 
+case 24 : 
+return var9 ; 
+case 32 : 
+return var10 ; 
+} 
+} 
+return func2 ( func3 ( ) , var1 ) ; 
+} 

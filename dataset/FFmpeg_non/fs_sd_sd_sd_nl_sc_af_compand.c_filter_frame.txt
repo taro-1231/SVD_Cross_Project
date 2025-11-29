@@ -1,0 +1,6 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+CompandContext * var5 = var3 -> var6 ; 
+return var5 -> func2 ( var3 , var2 ) ; 
+} 

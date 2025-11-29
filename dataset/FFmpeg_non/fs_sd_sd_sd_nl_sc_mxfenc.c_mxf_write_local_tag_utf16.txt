@@ -1,0 +1,10 @@
+static void func1 ( AVIOContext * var1 , int var2 , const char * var3 ) 
+{ 
+uint64_t var4 = func2 ( var3 ) ; 
+if ( var4 >= var5 / number ) { 
+av_log ( NULL , AV_LOG_ERROR , str PRIx64 str , var4 ) ; 
+return ; 
+} 
+func3 ( var1 , var4 * number , var2 ) ; 
+func4 ( var1 , var3 ) ; 
+} 

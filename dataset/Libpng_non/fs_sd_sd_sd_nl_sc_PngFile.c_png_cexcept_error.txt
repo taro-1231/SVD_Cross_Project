@@ -1,0 +1,9 @@
+func1 ( png_structp var1 , png_const_charp var2 ) 
+{ 
+if ( var1 ) 
+; 
+fprintf ( var3 , str , var2 ) ; 
+{ 
+Throw var2 ; 
+} 
+} 

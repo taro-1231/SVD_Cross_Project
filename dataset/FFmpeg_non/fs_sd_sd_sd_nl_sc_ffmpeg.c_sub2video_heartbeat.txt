@@ -1,0 +1,20 @@
+static void func1 ( InputStream * var1 , int64_t var2 ) 
+{ 
+InputFile * var3 = var4 [ var1 -> var5 ] ; 
+int var6 , var7 , var8 ; 
+int64_t var9 ; 
+for ( var6 = number ; var6 < var3 -> var10 ; var6 ++ ) { 
+InputStream * var11 = var12 [ var3 -> var13 + var6 ] ; 
+if ( ! var11 -> var14 . var15 ) 
+continue ; 
+var9 = func2 ( var2 , var1 -> var16 -> var17 , var11 -> var16 -> var17 ) - number ; 
+if ( var9 <= var11 -> var14 . var18 ) 
+continue ; 
+if ( var9 >= var11 -> var14 . var19 || ! var11 -> var14 . var15 -> var20 [ number ] ) 
+func3 ( var11 , var21 ) ; 
+for ( var7 = number , var8 = number ; var7 < var11 -> var22 ; var7 ++ ) 
+var8 += func4 ( var11 -> var23 [ var7 ] -> var24 ) ; 
+if ( var8 ) 
+func5 ( var11 , var9 ) ; 
+} 
+} 

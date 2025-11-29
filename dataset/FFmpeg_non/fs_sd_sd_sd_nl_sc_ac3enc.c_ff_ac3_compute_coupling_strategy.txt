@@ -1,0 +1,54 @@
+void func1 ( AC3EncodeContext * var1 ) 
+{ 
+int var2 , var3 ; 
+int var4 ; 
+int var5 ; 
+for ( var2 = number ; var2 < var1 -> var6 ; var2 ++ ) { 
+AC3Block * var7 = & var1 -> var8 [ var2 ] ; 
+for ( var3 = number ; var3 <= var1 -> var9 ; var3 ++ ) 
+var7 -> var10 [ var3 ] = var1 -> var11 ; 
+} 
+var4 = number ; 
+var5 = number ; 
+for ( var2 = number ; var2 < var1 -> var6 ; var2 ++ ) { 
+AC3Block * var7 = & var1 -> var8 [ var2 ] ; 
+var7 -> var12 = number ; 
+for ( var3 = number ; var3 <= var1 -> var9 ; var3 ++ ) 
+var7 -> var12 += var7 -> var10 [ var3 ] ; 
+var7 -> var13 = var7 -> var12 > number ; 
+var5 += var7 -> var13 ; 
+if ( ! var7 -> var13 ) { 
+var7 -> var12 = number ; 
+for ( var3 = number ; var3 <= var1 -> var9 ; var3 ++ ) 
+var7 -> var10 [ var3 ] = number ; 
+} 
+var7 -> var14 = ! var2 ; 
+if ( var2 ) { 
+for ( var3 = number ; var3 <= var1 -> var9 ; var3 ++ ) { 
+if ( var7 -> var10 [ var3 ] != var1 -> var8 [ var2 - number ] . var10 [ var3 ] ) { 
+var7 -> var14 = number ; 
+break ; 
+} 
+} 
+} 
+var7 -> var15 = var7 -> var14 ; 
+if ( ! var2 || ( var7 -> var13 && ! var4 ) ) { 
+var7 -> var16 = number ; 
+if ( var7 -> var13 ) 
+var4 = number ; 
+} else { 
+var7 -> var16 = number ; 
+} 
+} 
+if ( ! var5 ) 
+var1 -> var11 = number ; 
+for ( var2 = number ; var2 < var1 -> var6 ; var2 ++ ) { 
+AC3Block * var7 = & var1 -> var8 [ var2 ] ; 
+for ( var3 = number ; var3 <= var1 -> var9 ; var3 ++ ) { 
+if ( var7 -> var10 [ var3 ] ) 
+var7 -> var17 [ var3 ] = var1 -> var18 [ var19 ] ; 
+else 
+var7 -> var17 [ var3 ] = var1 -> var20 * number + number ; 
+} 
+} 
+} 

@@ -1,0 +1,5 @@
+static inline struct rgbvec func1 ( const LUT3DContext * var1 , 
+const struct rgbvec * var2 ) 
+{ 
+return var1 -> var3 [ func2 ( var2 -> var4 ) ] [ func2 ( var2 -> var5 ) ] [ func2 ( var2 -> var6 ) ] ; 
+} 

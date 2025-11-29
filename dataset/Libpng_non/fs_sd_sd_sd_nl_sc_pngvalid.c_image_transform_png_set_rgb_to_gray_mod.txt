@@ -1,0 +1,178 @@
+func1 ( PNG_CONST image_transform * var1 , 
+image_pixel * var2 , png_const_structp var3 , 
+PNG_CONST transform_display * var4 ) 
+{ 
+if ( ( var2 -> var5 & var6 ) != number ) 
+{ 
+double var7 , var8 ; 
+if ( var2 -> var5 == var9 ) 
+func2 ( var2 ) ; 
+{ 
+PNG_CONST png_modifier * var10 = var4 -> var10 ; 
+const unsigned int var11 = var2 -> var11 ; 
+const unsigned int var12 = ( var10 -> var13 ? number : 
+var11 ) ; 
+const unsigned int var14 = ( var11 == number ? number : 
+( var10 -> var13 ? var15 : var11 ) ) ; 
+int var16 ; 
+double var17 , var18 , var19 ; 
+double var20 , var21 , var22 , var23 , var24 , var25 , var26 , var27 ; 
+var17 = var20 = var21 = var2 -> var28 ; 
+var20 -= var2 -> var29 ; 
+var20 = func3 ( var20 , var12 , number ; 
+var21 += var2 -> var29 ; 
+var21 = func3 ( var21 , var12 , number ; 
+var18 = var22 = var23 = var2 -> var30 ; 
+var22 -= var2 -> var31 ; 
+var22 = func3 ( var22 , var12 , number ; 
+var23 += var2 -> var31 ; 
+var23 = func3 ( var23 , var12 , number ; 
+var19 = var24 = var25 = var2 -> var32 ; 
+var24 -= var2 -> var33 ; 
+var24 = func3 ( var24 , var12 , number ; 
+var25 += var2 -> var31 ; 
+var25 = func3 ( var25 , var12 , number ; 
+var16 = var17 == var18 && var18 == var19 ; 
+if ( var34 . var35 != number ) 
+{ 
+PNG_CONST double var36 = number / var34 . var35 ; 
+PNG_CONST double var37 = var12 == number ? number / number : number / number ; 
+var17 = pow ( var17 , var36 ) ; 
+var20 = func3 ( pow ( var20 , var36 ) - var37 , var12 , number ) ; 
+var21 = func3 ( pow ( var21 , var36 ) + var37 , var12 , number ) ; 
+var18 = pow ( var18 , var36 ) ; 
+var22 = func3 ( pow ( var22 , var36 ) - var37 , var12 , number ) ; 
+var23 = func3 ( pow ( var23 , var36 ) + var37 , var12 , number ) ; 
+var19 = pow ( var19 , var36 ) ; 
+var24 = func3 ( pow ( var24 , var36 ) - var37 , var12 , number ) ; 
+var25 = func3 ( pow ( var25 , var36 ) + var37 , var12 , number ) ; 
+} 
+var7 = var17 * var34 . var38 + var18 * var34 . var39 + 
+var19 * var34 . var40 ; 
+{ 
+PNG_CONST int var41 = var34 . var35 != number || var12 == number ; 
+PNG_CONST double var42 = number / number ; 
+var26 = func3 ( var20 * ( var34 . var38 - var42 ) + 
+var22 * ( var34 . var39 - var42 ) + 
+var24 * ( var34 . var40 - var42 ) , var14 , var41 ) ; 
+if ( var26 <= number ) 
+var26 = number ; 
+var27 = func3 ( var21 * ( var34 . var38 + var42 ) + 
+var23 * ( var34 . var39 + var42 ) + 
+var25 * ( var34 . var40 + var42 ) , var14 , var41 ) ; 
+if ( var27 >= number ) 
+var27 = number ; 
+} 
+if ( var34 . var35 != number ) 
+{ 
+PNG_CONST double var36 = var34 . var35 ; 
+var7 = pow ( var7 , var36 ) ; 
+var26 = func3 ( pow ( var26 , var36 ) , var11 , number ) ; 
+var27 = func3 ( pow ( var27 , var36 ) , var11 , number ) ; 
+} 
+if ( var16 ) 
+var8 = ( var2 -> var29 + var2 -> var31 + var2 -> var33 ) / number ; 
+else 
+{ 
+var8 = fabs ( var27 - var7 ) ; 
+if ( fabs ( var7 - var26 ) > var8 ) 
+var8 = fabs ( var26 - var7 ) ; 
+if ( var8 > var10 -> var43 ) 
+{ 
+size_t var44 = number ; 
+char var45 [ number ] ; 
+var44 = func4 ( var45 , sizeof var45 , var44 , str ) ; 
+var44 = func5 ( var45 , sizeof var45 , var44 , var8 , number ) ; 
+var44 = func4 ( var45 , sizeof var45 , var44 , str ) ; 
+var44 = func5 ( var45 , sizeof var45 , var44 , var10 -> var43 , number ) ; 
+func6 ( var3 , var45 ) ; 
+} 
+} 
+} 
+{ 
+double var17 = var2 -> var28 ; 
+double var46 = var2 -> var29 ; 
+double var18 = var2 -> var30 ; 
+double var47 = var2 -> var31 ; 
+double var19 = var2 -> var32 ; 
+double var48 = var2 -> var33 ; 
+if ( var17 == var18 && var17 == var19 ) 
+{ 
+var7 = var17 ; 
+var8 = var46 ; 
+if ( var8 < var47 ) var8 = var47 ; 
+if ( var8 < var48 ) var8 = var48 ; 
+} 
+else if ( var34 . var35 == number ) 
+{ 
+var7 = var17 * var34 . var38 + var18 * var34 . var39 + 
+var19 * var34 . var40 ; 
+var8 = var46 * var34 . var38 + var47 * var34 . var39 + 
+var48 * var34 . var40 + number / number + var7 * number * var49 ; 
+} 
+else 
+{ 
+PNG_CONST png_modifier * var10 = var4 -> var10 ; 
+double var50 = ( var2 -> var11 > number ? number / number : number / number ) ; 
+double var51 = ( var2 -> var11 > number ? number / number : 
+( var10 -> var13 ? number / ( number << var15 ) : 
+number / number ) ) ; 
+double var21 , var23 , var25 , var27 ; 
+double var52 = number / var34 . var35 ; 
+var21 = var17 + var46 + var50 ; if ( var21 > number ) var21 = number ; 
+var17 -= var46 + var50 ; if ( var17 < number ) var17 = number ; 
+var23 = var18 + var47 + var50 ; if ( var23 > number ) var23 = number ; 
+var18 -= var47 + var50 ; if ( var18 < number ) var18 = number ; 
+var25 = var19 + var48 + var50 ; if ( var25 > number ) var25 = number ; 
+var19 -= var48 + var50 ; if ( var19 < number ) var19 = number ; 
+var17 = pow ( var17 , var52 ) * ( number - var49 ) ; var21 = pow ( var21 , var52 ) * ( number + var49 ) ; 
+var18 = pow ( var18 , var52 ) * ( number - var49 ) ; var23 = pow ( var23 , var52 ) * ( number + var49 ) ; 
+var19 = pow ( var19 , var52 ) * ( number - var49 ) ; var25 = pow ( var25 , var52 ) * ( number + var49 ) ; 
+var7 = var17 * var34 . var38 + var18 * var34 . var39 + 
+var19 * var34 . var40 - number / number - var51 ; 
+if ( var7 <= number ) 
+var7 = number ; 
+else 
+{ 
+var7 *= ( number - number * var49 ) ; 
+var7 = pow ( var7 , var34 . var35 ) * ( number - var49 ) ; 
+} 
+var27 = var21 * var34 . var38 + var23 * var34 . var39 + 
+var25 * var34 . var40 + number / number + var51 ; 
+var27 *= ( number + number * var49 ) ; 
+if ( var27 >= number ) 
+var27 = number ; 
+else 
+var27 = pow ( var27 , var34 . var35 ) * ( number + var49 ) ; 
+var8 = ( var27 - var7 ) / number ; 
+var7 = ( var27 + var7 ) / number ; 
+if ( var8 <= var50 ) 
+var8 = var7 * var49 ; 
+else 
+var8 -= var50 ; 
+if ( var8 > var10 -> var43 ) 
+{ 
+size_t var44 = number ; 
+char var45 [ number ] ; 
+var44 = func4 ( var45 , sizeof var45 , var44 , str ) ; 
+var44 = func5 ( var45 , sizeof var45 , var44 , var8 , number ) ; 
+var44 = func4 ( var45 , sizeof var45 , var44 , str ) ; 
+var44 = func5 ( var45 , sizeof var45 , var44 , var10 -> var43 , number ) ; 
+func6 ( var3 , var45 ) ; 
+} 
+} 
+} 
+var2 -> var32 = var2 -> var30 = var2 -> var28 = var7 ; 
+var2 -> var33 = var2 -> var31 = var2 -> var29 = var8 ; 
+if ( var2 -> var53 > var2 -> var54 ) 
+var2 -> var53 = var2 -> var54 ; 
+if ( var2 -> var53 > var2 -> var55 ) 
+var2 -> var53 = var2 -> var55 ; 
+var2 -> var55 = var2 -> var54 = var2 -> var53 ; 
+if ( var2 -> var5 == var56 ) 
+var2 -> var5 = var57 ; 
+else if ( var2 -> var5 == var58 ) 
+var2 -> var5 = var59 ; 
+} 
+var1 -> var60 -> func7 ( var1 -> var60 , var2 , var3 , var4 ) ; 
+} 

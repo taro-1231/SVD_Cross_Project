@@ -1,0 +1,26 @@
+static int func1 ( void ) 
+{ 
+const char * var1 ; 
+unsigned int var2 ; 
+int var3 ; 
+var4 = func2 ( var5 -> var6 , sizeof ( * var4 ) ) ; 
+if ( ! var4 ) 
+return func3 ( var7 ) ; 
+for ( var2 = number ; var2 < var5 -> var6 ; var2 ++ ) { 
+var4 [ var2 ] . var8 = var9 ; 
+var4 [ var2 ] . var10 = var9 ; 
+var4 [ var2 ] . var11 = var9 ; 
+if ( ! ( var5 -> var12 [ var2 ] -> var13 -> var14 == var15 
+|| var5 -> var12 [ var2 ] -> var13 -> var14 == var16 ) ) 
+continue ; 
+if ( var5 -> var12 [ var2 ] -> var13 -> var14 == var16 ) 
+var1 = str ; 
+else 
+var1 = str ; 
+var3 = func4 ( & var4 [ var2 ] , var5 -> var12 [ var2 ] -> var13 , 
+var17 -> var12 [ var2 ] -> var13 , var1 ) ; 
+if ( var3 ) 
+return var3 ; 
+} 
+return number ; 
+} 

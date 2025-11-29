@@ -1,0 +1,103 @@
+static void func1 ( AVXTEA * var1 , uint8_t * var2 , const uint8_t * var3 , 
+int var4 , uint8_t * var5 ) 
+{ 
+uint32_t var6 , var7 ; 
+uint32_t var8 = var1 -> var9 [ number ] ; 
+uint32_t var10 = var1 -> var9 [ number ] ; 
+uint32_t var11 = var1 -> var9 [ number ] ; 
+uint32_t var12 = var1 -> var9 [ number ] ; 
+var6 = func2 ( var3 ) ; 
+var7 = func2 ( var3 + number ) ; 
+if ( var4 ) { 
+int var13 ; 
+uint32_t var14 = number , var15 = var14 * number ; 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+var7 -= ( ( ( var6 << number ) ^ ( var6 >> number ) ) + var6 ) ^ ( var15 + var1 -> var9 [ ( var15 >> number ) & number ] ) ; 
+var15 -= var14 ; 
+var6 -= ( ( ( var7 << number ) ^ ( var7 >> number ) ) + var7 ) ^ ( var15 + var1 -> var9 [ var15 & number ] ) ; 
+} 
+var7 -= ( ( ( var6 << number ) ^ ( var6 >> number ) ) + var6 ) ^ ( SUM + K0 ) ; \ 
+var6 -= ( ( ( var7 << number ) ^ ( var7 >> number ) ) + var7 ) ^ ( SUM - number + K1 ) 
+DSTEP ( 0xC6EF3720U , var11 , var12 ) ; 
+DSTEP ( 0x28B7BD67U , var12 , var11 ) ; 
+DSTEP ( 0x8A8043AEU , var8 , var10 ) ; 
+DSTEP ( 0xEC48C9F5U , var10 , var8 ) ; 
+DSTEP ( 0x4E11503CU , var11 , var12 ) ; 
+DSTEP ( 0xAFD9D683U , var11 , var11 ) ; 
+DSTEP ( 0x11A25CCAU , var12 , var10 ) ; 
+DSTEP ( 0x736AE311U , var8 , var8 ) ; 
+DSTEP ( 0xD5336958U , var10 , var12 ) ; 
+DSTEP ( 0x36FBEF9FU , var10 , var11 ) ; 
+DSTEP ( 0x98C475E6U , var11 , var10 ) ; 
+DSTEP ( 0xFA8CFC2DU , var12 , var8 ) ; 
+DSTEP ( 0x5C558274U , var8 , var12 ) ; 
+DSTEP ( 0xBE1E08BBU , var10 , var11 ) ; 
+DSTEP ( 0x1FE68F02U , var10 , var10 ) ; 
+DSTEP ( 0x81AF1549U , var11 , var8 ) ; 
+DSTEP ( 0xE3779B90U , var12 , var12 ) ; 
+DSTEP ( 0x454021D7U , var8 , var11 ) ; 
+DSTEP ( 0xA708A81EU , var10 , var10 ) ; 
+DSTEP ( 0x08D12E65U , var10 , var8 ) ; 
+DSTEP ( 0x6A99B4ACU , var11 , var12 ) ; 
+DSTEP ( 0xCC623AF3U , var12 , var11 ) ; 
+DSTEP ( 0x2E2AC13AU , var8 , var10 ) ; 
+DSTEP ( 0x8FF34781U , var8 , var8 ) ; 
+DSTEP ( 0xF1BBCDC8U , var10 , var12 ) ; 
+DSTEP ( 0x5384540FU , var11 , var11 ) ; 
+DSTEP ( 0xB54CDA56U , var12 , var10 ) ; 
+DSTEP ( 0x1715609DU , var8 , var8 ) ; 
+DSTEP ( 0x78DDE6E4U , var8 , var12 ) ; 
+DSTEP ( 0xDAA66D2BU , var10 , var11 ) ; 
+DSTEP ( 0x3C6EF372U , var11 , var10 ) ; 
+DSTEP ( number , var12 , var8 ) ; 
+if ( var5 ) { 
+var6 ^= func2 ( var5 ) ; 
+var7 ^= func2 ( var5 + number ) ; 
+memcpy ( var5 , var3 , number ) ; 
+} 
+} else { 
+int var13 ; 
+uint32_t var15 = number , var14 = number ; 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+var6 += ( ( ( var7 << number ) ^ ( var7 >> number ) ) + var7 ) ^ ( var15 + var1 -> var9 [ var15 & number ] ) ; 
+var15 += var14 ; 
+var7 += ( ( ( var6 << number ) ^ ( var6 >> number ) ) + var6 ) ^ ( var15 + var1 -> var9 [ ( var15 >> number ) & number ] ) ; 
+} 
+var6 += ( ( ( var7 << number ) ^ ( var7 >> number ) ) + var7 ) ^ ( SUM + K0 ) ; \ 
+var7 += ( ( ( var6 << number ) ^ ( var6 >> number ) ) + var6 ) ^ ( SUM + number + K1 ) 
+ESTEP ( 0x00000000U , var8 , var12 ) ; 
+ESTEP ( number , var10 , var11 ) ; 
+ESTEP ( 0x3C6EF372U , var11 , var10 ) ; 
+ESTEP ( 0xDAA66D2BU , var12 , var8 ) ; 
+ESTEP ( 0x78DDE6E4U , var8 , var8 ) ; 
+ESTEP ( 0x1715609DU , var10 , var12 ) ; 
+ESTEP ( 0xB54CDA56U , var11 , var11 ) ; 
+ESTEP ( 0x5384540FU , var12 , var10 ) ; 
+ESTEP ( 0xF1BBCDC8U , var8 , var8 ) ; 
+ESTEP ( 0x8FF34781U , var10 , var8 ) ; 
+ESTEP ( 0x2E2AC13AU , var11 , var12 ) ; 
+ESTEP ( 0xCC623AF3U , var12 , var11 ) ; 
+ESTEP ( 0x6A99B4ACU , var8 , var10 ) ; 
+ESTEP ( 0x08D12E65U , var10 , var10 ) ; 
+ESTEP ( 0xA708A81EU , var11 , var8 ) ; 
+ESTEP ( 0x454021D7U , var12 , var12 ) ; 
+ESTEP ( 0xE3779B90U , var8 , var11 ) ; 
+ESTEP ( 0x81AF1549U , var10 , var10 ) ; 
+ESTEP ( 0x1FE68F02U , var11 , var10 ) ; 
+ESTEP ( 0xBE1E08BBU , var12 , var8 ) ; 
+ESTEP ( 0x5C558274U , var8 , var12 ) ; 
+ESTEP ( 0xFA8CFC2DU , var10 , var11 ) ; 
+ESTEP ( 0x98C475E6U , var11 , var10 ) ; 
+ESTEP ( 0x36FBEF9FU , var12 , var10 ) ; 
+ESTEP ( 0xD5336958U , var8 , var8 ) ; 
+ESTEP ( 0x736AE311U , var10 , var12 ) ; 
+ESTEP ( 0x11A25CCAU , var11 , var11 ) ; 
+ESTEP ( 0xAFD9D683U , var12 , var11 ) ; 
+ESTEP ( 0x4E11503CU , var8 , var10 ) ; 
+ESTEP ( 0xEC48C9F5U , var10 , var8 ) ; 
+ESTEP ( 0x8A8043AEU , var11 , var12 ) ; 
+ESTEP ( 0x28B7BD67U , var12 , var11 ) ; 
+} 
+func3 ( var2 , var6 ) ; 
+func3 ( var2 + number , var7 ) ; 
+} 

@@ -1,0 +1,26 @@
+static void func1 ( AVFormatContext * var1 , AVCodec * var2 , OutputStream * var3 , AVDictionary * var4 ) 
+{ 
+int var5 ; 
+AVCodecContext * var6 = var3 -> var7 -> var2 ; 
+AVDictionary * var8 = var9 ; 
+func2 ( & var8 , var4 , number ) ; 
+var5 = func3 ( var6 , var2 , & var8 ) ; 
+func4 ( & var8 ) ; 
+if ( var5 < number ) { 
+fprintf ( var10 , str , func5 ( var5 ) ) ; 
+exit ( number ) ; 
+} 
+var3 -> var11 = func6 ( var6 -> var12 , var6 -> var13 , var6 -> var14 ) ; 
+if ( ! var3 -> var11 ) { 
+fprintf ( var10 , str ) ; 
+exit ( number ) ; 
+} 
+var3 -> var15 = var9 ; 
+if ( var6 -> var12 != var16 ) { 
+var3 -> var15 = func6 ( var16 , var6 -> var13 , var6 -> var14 ) ; 
+if ( ! var3 -> var15 ) { 
+fprintf ( var10 , str ) ; 
+exit ( number ) ; 
+} 
+} 
+} 

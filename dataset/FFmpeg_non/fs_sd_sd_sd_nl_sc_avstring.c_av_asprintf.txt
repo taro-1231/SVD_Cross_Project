@@ -1,0 +1,21 @@
+char * func1 ( const char * var1 , ... ) 
+{ 
+char * var2 = var3 ; 
+va_list var4 ; 
+int var5 ; 
+func2 ( var4 , var1 ) ; 
+var5 = vsnprintf ( var3 , number , var1 , var4 ) ; 
+func3 ( var4 ) ; 
+if ( var5 < number ) 
+goto var6 ; 
+var2 = func4 ( var5 + number ) ; 
+if ( ! var2 ) 
+goto var6 ; 
+func2 ( var4 , var1 ) ; 
+var5 = vsnprintf ( var2 , var5 + number , var1 , var4 ) ; 
+func3 ( var4 ) ; 
+if ( var5 < number ) 
+func5 ( & var2 ) ; 
+var6 : 
+return var2 ; 
+} 

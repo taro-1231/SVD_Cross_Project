@@ -1,0 +1,32 @@
+int func1 ( void ) 
+{ 
+enum AVPixelFormat var1 ; 
+const AVPixFmtDescriptor * var2 ; 
+FFDrawContext var3 ; 
+FFDrawColor var4 ; 
+int var5 , var6 ; 
+for ( var1 = number ; func2 ( var1 ) ; var1 ++ ) { 
+var2 = func2 ( var1 ) ; 
+if ( ! var2 -> var7 ) 
+continue ; 
+printf ( str , var2 -> var7 , 
+( int ) ( number - strlen ( var2 -> var7 ) ) , str ) ; 
+var5 = func3 ( & var3 , var1 , number ) ; 
+if ( var5 < number ) { 
+char var8 [ number ] ; 
+func4 ( var5 , var8 , sizeof ( var8 ) ) ; 
+printf ( str , var8 ) ; 
+continue ; 
+} 
+ff_draw_color ( & var3 , & var4 , ( uint8_t [ ] ) { 1 , number , number , 1 } ) ; 
+for ( var6 = number ; var6 < sizeof ( var4 ) ; var6 ++ ) 
+if ( ( ( uint8_t * ) & var4 ) [ var6 ] != number ) 
+break ; 
+if ( var6 == sizeof ( var4 ) ) { 
+printf ( str ) ; 
+continue ; 
+} 
+printf ( str ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,4 @@
+static int64_t func1 ( HTTPContext * var1 ) 
+{ 
+return ( var2 - var1 -> var3 ) * number ; 
+} 

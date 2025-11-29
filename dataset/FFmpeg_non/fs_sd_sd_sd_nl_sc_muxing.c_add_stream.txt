@@ -1,0 +1,66 @@
+static void func1 ( OutputStream * var1 , AVFormatContext * var2 , 
+AVCodec ** var3 , 
+enum AVCodecID var4 ) 
+{ 
+AVCodecContext * var5 ; 
+int var6 ; 
+* var3 = func2 ( var4 ) ; 
+if ( ! ( * var3 ) ) { 
+fprintf ( var7 , str , 
+func3 ( var4 ) ) ; 
+exit ( number ) ; 
+} 
+var1 -> var8 = func4 ( var2 , * var3 ) ; 
+if ( ! var1 -> var8 ) { 
+fprintf ( var7 , str ) ; 
+exit ( number ) ; 
+} 
+var1 -> var8 -> var9 = var2 -> var10 - number ; 
+var5 = var1 -> var8 -> var3 ; 
+switch ( ( * var3 ) -> var11 ) { 
+case var12 : 
+var5 -> var13 = ( * var3 ) -> var14 ? 
+( * var3 ) -> var14 [ number ] : var15 ; 
+var5 -> var16 = number ; 
+var5 -> var17 = number ; 
+if ( ( * var3 ) -> var18 ) { 
+var5 -> var17 = ( * var3 ) -> var18 [ number ] ; 
+for ( var6 = number ; ( * var3 ) -> var18 [ var6 ] ; var6 ++ ) { 
+if ( ( * var3 ) -> var18 [ var6 ] == number ) 
+var5 -> var17 = number ; 
+} 
+} 
+var5 -> var19 = func5 ( var5 -> var20 ) ; 
+var5 -> var20 = var21 ; 
+if ( ( * var3 ) -> var22 ) { 
+var5 -> var20 = ( * var3 ) -> var22 [ number ] ; 
+for ( var6 = number ; ( * var3 ) -> var22 [ var6 ] ; var6 ++ ) { 
+if ( ( * var3 ) -> var22 [ var6 ] == var21 ) 
+var5 -> var20 = var21 ; 
+} 
+} 
+var5 -> var19 = func5 ( var5 -> var20 ) ; 
+var1 -> var8 -> var23 = ( AVRational ) { number , var5 -> var17 } ; 
+break ; 
+case var24 : 
+var5 -> var4 = var4 ; 
+var5 -> var16 = number ; 
+var5 -> var25 = number ; 
+var5 -> var26 = number ; 
+var1 -> var8 -> var23 = ( AVRational ) { number , STREAM_FRAME_RATE } ; 
+var5 -> var23 = var1 -> var8 -> var23 ; 
+var5 -> var27 = number ; 
+var5 -> var28 = var29 ; 
+if ( var5 -> var4 == var30 ) { 
+var5 -> var31 = number ; 
+} 
+if ( var5 -> var4 == var32 ) { 
+var5 -> var33 = number ; 
+} 
+break ; 
+var34 : 
+break ; 
+} 
+if ( var2 -> var35 -> var36 & var37 ) 
+var5 -> var36 |= var38 ; 
+} 

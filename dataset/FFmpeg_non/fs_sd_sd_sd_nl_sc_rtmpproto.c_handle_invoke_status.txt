@@ -1,0 +1,32 @@
+static int func1 ( URLContext * var1 , RTMPPacket * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+const uint8_t * var5 = var2 -> var6 + var2 -> var7 ; 
+const uint8_t * var8 = var2 -> var6 + var9 ; 
+uint8_t var10 [ number ] ; 
+int var11 , var12 ; 
+for ( var11 = number ; var11 < number ; var11 ++ ) { 
+var12 = func2 ( var8 , var5 ) ; 
+if ( var12 < number ) 
+return number ; 
+var8 += var12 ; 
+} 
+var12 = func3 ( var8 , var5 , str , var10 , sizeof ( var10 ) ) ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) { 
+var12 = func3 ( var8 , var5 , 
+str , var10 , sizeof ( var10 ) ) ; 
+if ( var12 || ! var10 [ number ] ) 
+var12 = func3 ( var8 , var5 , str , 
+var10 , sizeof ( var10 ) ) ; 
+if ( ! var12 ) 
+func4 ( var1 , var13 , str , var10 ) ; 
+return - number ; 
+} 
+var12 = func3 ( var8 , var5 , str , var10 , sizeof ( var10 ) ) ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) var3 -> var14 = var15 ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) var3 -> var14 = var16 ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) var3 -> var14 = var16 ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) var3 -> var14 = var17 ; 
+if ( ! var12 && ! strcmp ( var10 , str ) ) var3 -> var14 = var15 ; 
+return number ; 
+} 

@@ -1,0 +1,71 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+ADPCMDecodeContext * var2 = var1 -> var3 ; 
+unsigned int var4 = number ; 
+unsigned int var5 = number ; 
+switch ( var1 -> var6 -> var7 ) { 
+case var8 : 
+case var9 : 
+var4 = number ; 
+break ; 
+case var10 : 
+case var11 : 
+case var12 : 
+case var13 : 
+case var14 : 
+var5 = number ; 
+break ; 
+case var15 : 
+case var16 : 
+var5 = number ; 
+break ; 
+} 
+if ( var1 -> var17 < var4 || var1 -> var17 > var5 ) { 
+func2 ( var1 , var18 , str ) ; 
+return func3 ( var19 ) ; 
+} 
+switch ( var1 -> var6 -> var7 ) { 
+case var20 : 
+var2 -> var21 [ number ] . var22 = var2 -> var21 [ number ] . var22 = number ; 
+break ; 
+case var23 : 
+if ( var1 -> var24 < number || var1 -> var24 > number ) 
+return var25 ; 
+break ; 
+case var26 : 
+if ( var1 -> var27 && var1 -> var28 >= number ) { 
+var2 -> var21 [ number ] . var29 = func4 ( var1 -> var27 ) ; 
+var2 -> var21 [ number ] . var29 = func4 ( var1 -> var27 + number ) ; 
+} 
+break ; 
+case var30 : 
+if ( var1 -> var27 && var1 -> var28 >= number ) 
+var2 -> var31 = func5 ( var1 -> var27 ) ; 
+break ; 
+var32 : 
+break ; 
+} 
+switch ( var1 -> var6 -> var7 ) { 
+case var33 : 
+case var23 : 
+case var34 : 
+case var35 : 
+case var11 : 
+case var12 : 
+case var13 : 
+case var14 : 
+case var15 : 
+case var16 : 
+case var10 : 
+case var8 : 
+var1 -> var36 = var37 ; 
+break ; 
+case var30 : 
+var1 -> var36 = var2 -> var31 == number ? var37 : 
+var38 ; 
+break ; 
+var32 : 
+var1 -> var36 = var38 ; 
+} 
+return number ; 
+} 

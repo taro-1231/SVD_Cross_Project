@@ -1,0 +1,155 @@
+func1 ( png_bytep var1 , size_t var2 , unsigned int var3 , int var4 , 
+int var5 , png_const_bytep var6 , double var7 , 
+unsigned int * var8 ) 
+{ 
+png_uint_32 var9 = func2 ( var4 , var5 , var8 ) - number ; 
+png_uint_32 var10 = ( number << var5 ) - number ; 
+if ( var8 [ number ] == number ) switch ( func3 ( var4 ) ) 
+{ 
+case number : 
+{ 
+png_uint_32 var11 ; 
+png_uint_32 var12 = number * var9 - abs ( number * var3 - var9 ) ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+png_uint_32 var13 = var12 - abs ( number * var11 - var9 ) ; 
+var13 = ( var13 * var10 + var9 ) / ( number * var9 ) ; 
+func4 ( var1 , var2 , var11 , var5 , var13 , var6 , var7 ) ; 
+} 
+} 
+break ; 
+case number : 
+{ 
+png_uint_32 var14 = ( var10 * var3 * number + var9 ) / ( number * var9 ) ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 , var5 , 
+( var10 * var11 * number + var9 ) / ( number * var9 ) , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var14 , var6 , 
+var7 ) ; 
+} 
+} 
+break ; 
+case number : 
+{ 
+png_uint_32 var15 = ( var10 * var3 * number + var9 ) / ( number * var9 ) ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 + number , var5 , var15 , 
+var6 , var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+( var10 * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+( var15 * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+} 
+} 
+break ; 
+case number : 
+{ 
+png_uint_32 var15 = ( var10 * var3 * number + var9 ) / ( number * var9 ) ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+( ( var10 - var15 ) * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+( var15 * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+var15 - ( var15 * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , 
+var15 + ( ( var10 - var15 ) * var11 * number + var9 ) / ( number * var9 ) , 
+var6 , var7 ) ; 
+} 
+} 
+break ; 
+var16 : 
+fprintf ( var17 , str ) ; 
+exit ( number ) ; 
+} 
+else if ( var4 & var18 ) 
+{ 
+memset ( var1 , number , var2 ) ; 
+} 
+else if ( var8 [ number ] == func3 ( var4 ) ) 
+switch ( func3 ( var4 ) ) 
+{ 
+case number : 
+{ 
+const png_uint_32 var13 = var8 [ number ] ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+func4 ( var1 , var2 , var11 , var5 , var13 , var6 , 
+var7 ) ; 
+} 
+break ; 
+case number : 
+{ 
+const png_uint_32 var13 = var8 [ number ] ; 
+const png_uint_32 var14 = var8 [ number ] ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 < var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 , var5 , var13 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var14 , var6 , 
+var7 ) ; 
+} 
+} 
+break ; 
+case number : 
+{ 
+const png_uint_32 var19 = var8 [ number ] ; 
+const png_uint_32 var20 = var8 [ number ] ; 
+const png_uint_32 var21 = var8 [ number ] ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 + number , var5 , var19 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var20 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var21 , var6 , 
+var7 ) ; 
+} 
+} 
+break ; 
+case number : 
+{ 
+const png_uint_32 var19 = var8 [ number ] ; 
+const png_uint_32 var20 = var8 [ number ] ; 
+const png_uint_32 var21 = var8 [ number ] ; 
+const png_uint_32 var14 = var8 [ number ] ; 
+png_uint_32 var11 ; 
+for ( var11 = number ; var11 <= var9 ; ++ var11 ) 
+{ 
+func4 ( var1 , var2 , number * var11 + number , var5 , var19 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var20 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var21 , var6 , 
+var7 ) ; 
+func4 ( var1 , var2 , number * var11 + number , var5 , var14 , var6 , 
+var7 ) ; 
+} 
+} 
+break ; 
+var16 : 
+fprintf ( var17 , str ) ; 
+exit ( number ) ; 
+} 
+else 
+{ 
+fprintf ( var17 , 
+str , 
+var8 [ number ] , func3 ( var4 ) ) ; 
+exit ( number ) ; 
+} 
+} 

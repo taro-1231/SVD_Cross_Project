@@ -1,0 +1,22 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+OCVContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( ! var2 -> var5 ) { 
+func2 ( var1 , var6 , str ) ; 
+return func3 ( var7 ) ; 
+} 
+for ( var4 = number ; var4 < func4 ( var8 ) ; var4 ++ ) { 
+const OCVFilterEntry * var9 = & var8 [ var4 ] ; 
+if ( ! strcmp ( var2 -> var5 , var9 -> var5 ) ) { 
+var2 -> func1 = var9 -> func1 ; 
+var2 -> var10 = var9 -> var10 ; 
+var2 -> var11 = var9 -> var11 ; 
+if ( ! ( var2 -> var3 = func5 ( var9 -> var12 ) ) ) 
+return func3 ( var13 ) ; 
+return var2 -> func1 ( var1 , var2 -> var14 ) ; 
+} 
+} 
+func2 ( var1 , var6 , str , var2 -> var5 ) ; 
+return func3 ( var7 ) ; 
+} 

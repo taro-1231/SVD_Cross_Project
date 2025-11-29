@@ -1,0 +1,24 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ChorusContext * var4 = var2 -> var5 ; 
+int var6 ; 
+var6 = func2 ( var2 -> var7 [ number ] ) ; 
+if ( var6 == var8 && ! var2 -> var9 && var4 -> var10 ) { 
+int var11 = func3 ( var4 -> var10 , number ) ; 
+AVFrame * var12 ; 
+var12 = func4 ( var1 , var11 ) ; 
+if ( ! var12 ) 
+return func5 ( var13 ) ; 
+var4 -> var10 -= var11 ; 
+func6 ( var12 -> var14 , number , 
+var12 -> var11 , 
+var1 -> var15 , 
+var12 -> var16 ) ; 
+var12 -> var17 = var4 -> var18 ; 
+if ( var4 -> var18 != var19 ) 
+var4 -> var18 += av_rescale_q ( var11 , ( AVRational ) { 1 , var1 -> sample_rate } , var1 -> time_base ) ; 
+var6 = func7 ( var2 -> var7 [ number ] , var12 ) ; 
+} 
+return var6 ; 
+} 

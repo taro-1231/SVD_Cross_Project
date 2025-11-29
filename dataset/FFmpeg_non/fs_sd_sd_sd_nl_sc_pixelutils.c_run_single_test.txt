@@ -1,0 +1,21 @@
+static int func1 ( const char * var1 , 
+const uint8_t * var2 , ptrdiff_t var3 , 
+const uint8_t * var4 , ptrdiff_t var5 , 
+int var6 , int var7 ) 
+{ 
+int var8 , var9 ; 
+av_pixelutils_sad_fn func2 = var10 [ var7 - number ] ; 
+av_pixelutils_sad_fn func3 = func4 ( var7 , var7 , var6 , var11 ) ; 
+switch ( var6 ) { 
+case 0 : var2 ++ ; var4 ++ ; break ; 
+case number : var4 ++ ; break ; 
+case number : break ; 
+} 
+var8 = func3 ( var2 , var3 , var4 , var5 ) ; 
+var9 = func2 ( var2 , var3 , var4 , var5 ) ; 
+printf ( str , 
+var8 == var9 ? str : str , 
+var6 ? str : str , var6 == number ? str : str , 
+var1 , number << var7 , number << var7 , var8 , var9 ) ; 
+return var8 != var9 ; 
+} 

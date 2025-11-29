@@ -1,0 +1,12 @@
+static int func1 ( ShowFreqsContext * var1 , int var2 ) 
+{ 
+switch ( var1 -> var3 ) { 
+case var4 : 
+return ( var1 -> var5 / ( float ) var1 -> var6 ) * var2 ; 
+case var7 : 
+return var1 -> var5 - pow ( var1 -> var5 , ( var1 -> var6 - var2 - number ) / ( var1 -> var6 - number ) ) ; 
+case var8 : 
+return pow ( var1 -> var5 , var2 / ( var1 -> var6 - number ) ) ; 
+} 
+return number ; 
+} 

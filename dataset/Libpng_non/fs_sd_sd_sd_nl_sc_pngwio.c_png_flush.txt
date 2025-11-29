@@ -1,0 +1,5 @@
+func1 ( png_structp func2 ) 
+{ 
+if ( func2 -> func3 != var1 ) 
+( * ( func2 -> func3 ) ) ( func2 ) ; 
+} 

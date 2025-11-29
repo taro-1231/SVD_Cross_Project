@@ -1,0 +1,70 @@
+static int func1 ( WriterContext ** var1 , const Writer * var2 , const char * var3 , 
+const struct section * var4 , int var5 ) 
+{ 
+int var6 , var7 = number ; 
+if ( ! ( * var1 = func2 ( sizeof ( WriterContext ) ) ) ) { 
+var7 = func3 ( var8 ) ; 
+goto var9 ; 
+} 
+if ( ! ( ( * var1 ) -> var10 = func2 ( var2 -> var11 ) ) ) { 
+var7 = func3 ( var8 ) ; 
+goto var9 ; 
+} 
+( * var1 ) -> class = & var12 ; 
+( * var1 ) -> var2 = var2 ; 
+( * var1 ) -> var13 = - number ; 
+( * var1 ) -> var4 = var4 ; 
+( * var1 ) -> var5 = var5 ; 
+func4 ( * var1 ) ; 
+if ( var2 -> var14 ) { 
+void * var15 = ( * var1 ) -> var10 ; 
+* ( ( const AVClass ** ) var15 ) = var2 -> var14 ; 
+func4 ( var15 ) ; 
+} 
+if ( var3 ) { 
+AVDictionary * var16 = var17 ; 
+AVDictionaryEntry * var18 = var17 ; 
+if ( ( var7 = func5 ( & var16 , var3 , var32 , var32 , number ) ) < number ) { 
+func6 ( * var1 , var19 , var32 , var3 ) ; 
+func7 ( & var16 ) ; 
+goto var9 ; 
+} 
+while ( ( var18 = func8 ( var16 , var32 , var18 , var20 ) ) ) { 
+if ( ( var7 = func9 ( * var1 , var18 -> var21 , var18 -> var22 , var23 ) ) < number ) { 
+func6 ( * var1 , var19 , var32 , 
+var18 -> var21 , var18 -> var22 ) ; 
+func7 ( & var16 ) ; 
+goto var9 ; 
+} 
+} 
+func7 ( & var16 ) ; 
+} 
+{ 
+const uint8_t * var24 = ( * var1 ) -> var25 ; 
+const uint8_t * var26 = var24 + strlen ( var24 ) ; 
+while ( * var24 ) { 
+const uint8_t * var27 = var24 ; 
+int32_t var28 ; 
+var7 = func10 ( & var28 , & var24 , var26 , ( * var1 ) -> var29 ) ; 
+if ( var7 < number ) { 
+AVBPrint var30 ; 
+func11 ( & var30 , number , var31 ) ; 
+func12 ( & var30 , var27 , var24 - var27 ) , 
+func6 ( var1 , var19 , 
+var32 , 
+var30 . var32 , ( * var1 ) -> var25 ) ; 
+return var7 ; 
+} 
+} 
+} 
+for ( var6 = number ; var6 < var33 ; var6 ++ ) 
+func11 ( & ( * var1 ) -> var34 [ var6 ] , number , var35 ) ; 
+if ( ( * var1 ) -> var2 -> func13 ) 
+var7 = ( * var1 ) -> var2 -> func13 ( * var1 ) ; 
+if ( var7 < number ) 
+goto var9 ; 
+return number ; 
+var9 : 
+func14 ( var1 ) ; 
+return var7 ; 
+} 

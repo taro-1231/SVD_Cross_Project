@@ -1,0 +1,11 @@
+func1 ( png_store * var1 ) 
+{ 
+store_freebuffer ( & var1 -> new ) ; 
+var1 -> var2 = number ; 
+if ( var1 -> var3 != var4 ) 
+{ 
+free ( var1 -> var3 ) ; 
+var1 -> var3 = var4 ; 
+var1 -> var5 = number ; 
+} 
+} 

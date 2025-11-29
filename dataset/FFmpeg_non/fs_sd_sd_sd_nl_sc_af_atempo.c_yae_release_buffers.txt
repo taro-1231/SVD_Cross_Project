@@ -1,0 +1,15 @@
+static void func1 ( ATempoContext * var1 ) 
+{ 
+func2 ( var1 ) ; 
+func3 ( & var1 -> var2 [ number ] . var3 ) ; 
+func3 ( & var1 -> var2 [ number ] . var3 ) ; 
+func3 ( & var1 -> var2 [ number ] . var4 ) ; 
+func3 ( & var1 -> var2 [ number ] . var4 ) ; 
+func3 ( & var1 -> var5 ) ; 
+func3 ( & var1 -> var6 ) ; 
+func3 ( & var1 -> var7 ) ; 
+func4 ( var1 -> var8 ) ; 
+var1 -> var8 = var9 ; 
+func4 ( var1 -> var10 ) ; 
+var1 -> var10 = var9 ; 
+} 

@@ -1,0 +1,6 @@
+const AVClass * func1 ( const AVClass * var1 , const AVClass * var2 ) 
+{ 
+if ( var1 -> func2 ) 
+return var1 -> func2 ( var2 ) ; 
+return var3 ; 
+} 

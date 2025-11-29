@@ -1,0 +1,22 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFPackage * var7 = var1 ; 
+switch ( var3 ) { 
+case 0x4403 : 
+return func2 ( var2 , & var7 -> var8 , 
+& var7 -> var9 ) ; 
+case 0x4401 : 
+func3 ( var2 , var7 -> var10 , number ) ; 
+func3 ( var2 , var7 -> var11 , number ) ; 
+break ; 
+case 0x4701 : 
+func3 ( var2 , var7 -> var12 , number ) ; 
+break ; 
+case 0x4402 : 
+return func4 ( var2 , var4 , & var7 -> var13 ) ; 
+case 0x4406 : 
+return func2 ( var2 , & var7 -> var14 , 
+& var7 -> var15 ) ; 
+} 
+return number ; 
+} 

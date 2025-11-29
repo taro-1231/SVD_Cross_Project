@@ -1,0 +1,10 @@
+static void func1 ( char * var1 , int var2 , const char * var3 , 
+int var4 , struct RTSPSource ** var5 ) 
+{ 
+int var6 ; 
+if ( ! var4 ) 
+return ; 
+func2 ( var1 , var2 , str , var3 , var5 [ number ] -> var7 ) ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) 
+func2 ( var1 , var2 , str , var5 [ var6 ] -> var7 ) ; 
+} 

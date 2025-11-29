@@ -1,0 +1,22 @@
+static int func1 ( int var1 , int var2 ) { 
+AVDES var3 ; 
+int var4 = var1 && ! var2 ? number : number ; 
+uint64_t var5 ; 
+AV_WB64 ( var6 [ number ] , 0x4e6f772069732074ULL ) ; 
+AV_WB64 ( var6 [ number ] , 0x1234567890abcdefULL ) ; 
+AV_WB64 ( var7 , 0x1234567890abcdefULL ) ; 
+func2 ( & var3 , var8 , number , var2 ) ; 
+func3 ( & var3 , var6 [ var4 ] , var6 [ number ] , number , var1 ? var7 : var9 , var2 ) ; 
+var5 = func4 ( var6 [ number + var4 ] ) ; 
+if ( var1 ) { 
+if ( var2 ) 
+return var5 == 0xc5cecf63ecec514cULL ; 
+else 
+return var5 == 0xcb191f85d1ed8439ULL ; 
+} else { 
+if ( var2 ) 
+return var5 == 0x8325397644091a0aULL ; 
+else 
+return var5 == 0xdd17e8b8b437d232ULL ; 
+} 
+} 

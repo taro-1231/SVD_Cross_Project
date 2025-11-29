@@ -1,0 +1,66 @@
+static int func1 ( URLContext * var1 , RTMPContext * var2 ) 
+{ 
+RTMPPacket var3 ; 
+uint8_t * var4 ; 
+int var5 ; 
+if ( ( var5 = func2 ( & var3 , var6 , var7 , 
+number , number + var8 ) ) < number ) 
+return var5 ; 
+var4 = var3 . var9 ; 
+func3 ( & var4 , str ) ; 
+func4 ( & var4 , ++ var2 -> var10 ) ; 
+func5 ( & var4 ) ; 
+func6 ( & var4 , str ) ; 
+func7 ( & var4 , var2 -> var11 , var2 -> var12 ) ; 
+if ( ! var2 -> var13 ) { 
+func6 ( & var4 , str ) ; 
+func3 ( & var4 , str ) ; 
+} 
+func6 ( & var4 , str ) ; 
+func3 ( & var4 , var2 -> var14 ) ; 
+if ( var2 -> var15 ) { 
+func6 ( & var4 , str ) ; 
+func3 ( & var4 , var2 -> var15 ) ; 
+} 
+func6 ( & var4 , str ) ; 
+func7 ( & var4 , var2 -> var16 , var2 -> var12 ) ; 
+if ( var2 -> var13 ) { 
+func6 ( & var4 , str ) ; 
+func8 ( & var4 , number ) ; 
+func6 ( & var4 , str ) ; 
+func4 ( & var4 , number ) ; 
+func6 ( & var4 , str ) ; 
+func4 ( & var4 , number ) ; 
+func6 ( & var4 , str ) ; 
+func4 ( & var4 , number ) ; 
+func6 ( & var4 , str ) ; 
+func4 ( & var4 , number ) ; 
+if ( var2 -> var17 ) { 
+func6 ( & var4 , str ) ; 
+func3 ( & var4 , var2 -> var17 ) ; 
+} 
+} 
+func9 ( & var4 ) ; 
+if ( var2 -> var18 ) { 
+char * var19 = var2 -> var18 ; 
+while ( var19 ) { 
+char * var20 ; 
+var19 += strspn ( var19 , str ) ; 
+if ( ! * var19 ) 
+break ; 
+var20 = strchr ( var19 , str ) ; 
+if ( var20 ) 
+* var20 = str ; 
+if ( ( var5 = func10 ( var1 , var19 , & var4 ) ) < number ) { 
+func11 ( & var3 ) ; 
+return var5 ; 
+} 
+if ( var20 ) 
+var19 = var20 + number ; 
+else 
+break ; 
+} 
+} 
+var3 . var21 = var4 - var3 . var9 ; 
+return func12 ( var2 , & var3 , number ) ; 
+} 

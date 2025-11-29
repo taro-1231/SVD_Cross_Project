@@ -1,0 +1,38 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+MergePlanesContext * var2 = var1 -> var3 ; 
+int64_t var4 = var2 -> var5 ; 
+int var6 , var7 ; 
+var2 -> var8 = func2 ( var2 -> var9 ) ; 
+if ( ! ( var2 -> var8 -> var10 & var11 ) || 
+var2 -> var8 -> var12 < number ) { 
+func3 ( var1 , var13 , str ) ; 
+return func4 ( var14 ) ; 
+} 
+var2 -> var15 = func5 ( var2 -> var9 ) ; 
+for ( var6 = var2 -> var15 - number ; var6 >= number ; var6 -- ) { 
+var2 -> var16 [ var6 ] [ number ] = var4 & number ; 
+var4 >>= number ; 
+var2 -> var16 [ var6 ] [ number ] = var4 & number ; 
+var4 >>= number ; 
+if ( var2 -> var16 [ var6 ] [ number ] > number || var2 -> var16 [ var6 ] [ number ] > number ) { 
+func3 ( var1 , var13 , str ) ; 
+return func4 ( var14 ) ; 
+} 
+var2 -> var17 = func6 ( var2 -> var17 , var2 -> var16 [ var6 ] [ number ] + number ) ; 
+} 
+func7 ( var2 -> var17 && var2 -> var17 <= number ) ; 
+for ( var6 = number ; var6 < var2 -> var17 ; var6 ++ ) { 
+AVFilterPad var18 = { number } ; 
+var18 . var19 = var20 ; 
+var18 . var21 = func8 ( str , var6 ) ; 
+if ( ! var18 . var21 ) 
+return func4 ( var22 ) ; 
+var18 . var23 = var23 ; 
+if ( ( var7 = func9 ( var1 , var6 , & var18 ) ) < number ) { 
+func10 ( & var18 . var21 ) ; 
+return var7 ; 
+} 
+} 
+return number ; 
+} 

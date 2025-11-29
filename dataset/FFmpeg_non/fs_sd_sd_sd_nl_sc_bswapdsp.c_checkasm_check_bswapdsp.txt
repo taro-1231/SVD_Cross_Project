@@ -1,0 +1,14 @@
+void func1 ( void ) 
+{ 
+LOCAL_ALIGNED_16 ( uint8_t , src0 , [ BUF_SIZE ] ) ; 
+LOCAL_ALIGNED_16 ( uint8_t , src1 , [ BUF_SIZE ] ) ; 
+LOCAL_ALIGNED_16 ( uint8_t , dst0 , [ BUF_SIZE ] ) ; 
+LOCAL_ALIGNED_16 ( uint8_t , dst1 , [ BUF_SIZE ] ) ; 
+BswapDSPContext var1 ; 
+func2 ( & var1 ) ; 
+if ( func3 ( var1 . var2 , str ) ) 
+func4 ( var3 ) ; 
+if ( func3 ( var1 . var4 , str ) ) 
+func4 ( var5 ) ; 
+func5 ( str ) ; 
+} 

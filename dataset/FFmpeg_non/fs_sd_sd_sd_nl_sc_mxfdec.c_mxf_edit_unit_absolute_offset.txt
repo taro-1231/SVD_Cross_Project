@@ -1,0 +1,36 @@
+static int func1 ( MXFContext * var1 , MXFIndexTable * var2 , int64_t var3 , int64_t * var4 , int64_t * var5 , int var6 ) 
+{ 
+int var7 ; 
+int64_t var8 = number ; 
+for ( var7 = number ; var7 < var2 -> var9 ; var7 ++ ) { 
+MXFIndexTableSegment * var10 = var2 -> var11 [ var7 ] ; 
+var3 = func2 ( var3 , var10 -> var12 ) ; 
+if ( var3 < var10 -> var12 + var10 -> var13 ) { 
+int64_t var14 = var3 - var10 -> var12 ; 
+if ( var10 -> var15 ) 
+var8 += var10 -> var15 * var14 ; 
+else if ( var10 -> var16 ) { 
+if ( var10 -> var16 == number * var10 -> var13 + number ) 
+var14 *= number ; 
+if ( var14 < number || var14 >= var10 -> var16 ) { 
+av_log ( var1 -> fc , AV_LOG_ERROR , str PRId64 str , 
+var2 -> index_sid , var10 -> var12 ) ; 
+return var17 ; 
+} 
+var8 = var10 -> var18 [ var14 ] ; 
+} else { 
+av_log ( var1 -> fc , AV_LOG_ERROR , str PRId64 str , 
+var2 -> index_sid , var10 -> var12 ) ; 
+return var17 ; 
+} 
+if ( var4 ) 
+* var4 = var3 ; 
+return func3 ( var1 , var2 -> var19 , var8 , var5 ) ; 
+} else { 
+var8 += var10 -> var15 * var10 -> var13 ; 
+} 
+} 
+if ( var6 ) 
+av_log ( var1 -> fc , AV_LOG_ERROR , str PRId64 str , var3 , var2 -> index_sid ) ; 
+return var17 ; 
+} 

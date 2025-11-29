@@ -1,0 +1,28 @@
+static void func2 ( AVFormatContext * var2 , CAPTUREPARMS * var3 ) 
+{ 
+func1 ( var2 , var1 , str ) ; 
+func3 ( var2 , var3 , var4 , str ) ; 
+func3 ( var2 , var3 , var5 , str ) ; 
+func3 ( var2 , var3 , var6 , str ) ; 
+func3 ( var2 , var3 , var7 , str ) ; 
+func3 ( var2 , var3 , var8 , str ) ; 
+func3 ( var2 , var3 , var9 , str ) ; 
+func3 ( var2 , var3 , var10 , str ) ; 
+func3 ( var2 , var3 , var11 , str ) ; 
+func3 ( var2 , var3 , var12 , str ) ; 
+func3 ( var2 , var3 , var13 , str ) ; 
+func3 ( var2 , var3 , var14 , str ) ; 
+func3 ( var2 , var3 , var15 , str ) ; 
+func3 ( var2 , var3 , var16 , str ) ; 
+func3 ( var2 , var3 , var17 , str ) ; 
+func3 ( var2 , var3 , var18 , str ) ; 
+func3 ( var2 , var3 , var19 , str ) ; 
+func3 ( var2 , var3 , var20 , str ) ; 
+func3 ( var2 , var3 , var21 , str ) ; 
+func3 ( var2 , var3 , var22 , str ) ; 
+func3 ( var2 , var3 , var23 , str ) ; 
+func3 ( var2 , var3 , var24 , str ) ; 
+func3 ( var2 , var3 , var25 , str ) ; 
+func3 ( var2 , var3 , var26 , str ) ; 
+func3 ( var2 , var3 , var27 , str ) ; 
+} 

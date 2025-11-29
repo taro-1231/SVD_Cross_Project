@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+SabContext * var2 = var1 -> var3 -> var4 ; 
+const AVPixFmtDescriptor * var5 = func2 ( var1 -> var6 ) ; 
+int var7 ; 
+var2 -> var8 = var5 -> var9 ; 
+var2 -> var10 = var5 -> var11 ; 
+func3 ( & var2 -> var12 ) ; 
+var7 = func4 ( & var2 -> var12 , var1 -> var13 , var1 -> var14 , var2 -> var15 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+func3 ( & var2 -> var16 ) ; 
+var7 = func4 ( & var2 -> var16 , 
+func5 ( var1 -> var13 , var2 -> var8 ) , 
+func5 ( var1 -> var14 , var2 -> var10 ) , var2 -> var15 ) ; 
+return var7 ; 
+} 

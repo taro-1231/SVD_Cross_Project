@@ -1,0 +1,11 @@
+static int func1 ( uch * var1 , int var2 ) 
+{ 
+int var3 , var4 = - number ; 
+for ( var3 = number ; var3 < var2 ; ++ var3 ) { 
+if ( var1 [ var3 ] == number || ( var1 [ var3 ] > number && var1 [ var3 ] < number ) || var1 [ var3 ] > number ) 
+continue ; 
+if ( var4 < number || ( var1 [ var4 ] != number && var1 [ var3 ] == number ) ) 
+var4 = var3 ; 
+} 
+return var4 ; 
+} 

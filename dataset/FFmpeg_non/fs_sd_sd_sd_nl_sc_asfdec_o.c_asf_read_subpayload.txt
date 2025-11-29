@@ -1,0 +1,51 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , int var3 ) 
+{ 
+ASFContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+uint8_t var7 ; 
+int var8 , var9 ; 
+if ( var3 ) { 
+var4 -> var10 = func2 ( var6 ) ; 
+if ( var4 -> var11 ) { 
+var4 -> var12 = func3 ( var6 ) ; 
+} 
+var4 -> var13 = func4 ( var6 ) ; 
+var4 -> var14 = number ; 
+var4 -> var15 = number ; 
+} 
+var7 = func2 ( var6 ) ; 
+if ( ( var8 = func5 ( var6 , var2 , var7 ) ) < number ) 
+return var8 ; 
+for ( var9 = number ; var9 < var4 -> var16 ; var9 ++ ) { 
+if ( var4 -> var17 == var4 -> var18 [ var9 ] -> var17 ) { 
+var2 -> var17 = var4 -> var18 [ var9 ] -> var19 ; 
+break ; 
+} 
+} 
+var4 -> var20 = number ; 
+if ( ! var7 ) 
+var4 -> var20 = number ; 
+if ( var7 ) 
+var4 -> var14 ++ ; 
+var2 -> var21 = var4 -> var22 + ( var4 -> var14 - number ) * var4 -> var10 - var4 -> var23 ; 
+if ( var4 -> var11 && ( func4 ( var6 ) >= 
+( var4 -> var13 + var4 -> var12 ) ) ) { 
+var4 -> var15 = number ; 
+var4 -> var11 -- ; 
+} 
+if ( func4 ( var6 ) >= var4 -> var24 + var4 -> var25 - var4 -> var26 ) { 
+var4 -> var15 = number ; 
+if ( ! var4 -> var11 ) { 
+func6 ( var6 , var4 -> var26 ) ; 
+if ( func4 ( var6 ) != var4 -> var24 + var4 -> var25 ) { 
+if ( ! var4 -> var25 ) 
+return var27 ; 
+av_log ( var1 , AV_LOG_WARNING , 
+str PRId64 str PRId64 str , 
+func4 ( var6 ) , var4 -> var24 + var4 -> var25 ) ; 
+func7 ( var6 , var4 -> var24 + var4 -> var25 , var28 ) ; 
+} 
+} 
+} 
+return number ; 
+} 

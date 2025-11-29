@@ -1,0 +1,8 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+CurvesContext * var2 = var1 -> var3 -> var4 ; 
+const AVPixFmtDescriptor * var5 = func2 ( var1 -> var6 ) ; 
+func3 ( var2 -> var7 , var1 -> var6 ) ; 
+var2 -> var8 = func4 ( var5 ) >> number ; 
+return number ; 
+} 

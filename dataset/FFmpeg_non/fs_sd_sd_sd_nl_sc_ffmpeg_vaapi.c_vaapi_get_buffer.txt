@@ -1,0 +1,14 @@
+static int func1 ( AVCodecContext * var1 , AVFrame * var2 , int var3 ) 
+{ 
+InputStream * var4 = var1 -> var5 ; 
+VAAPIDecoderContext * var6 = var4 -> var7 ; 
+int var8 ; 
+var8 = func2 ( var6 -> var9 , var2 , number ) ; 
+if ( var8 < number ) { 
+func3 ( var6 , var10 , str ) ; 
+} else { 
+func3 ( var6 , var11 , str , 
+( unsigned int ) ( uintptr_t ) var2 -> var12 [ number ] ) ; 
+} 
+return var8 ; 
+} 

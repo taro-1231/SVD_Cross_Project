@@ -1,0 +1,8 @@
+func1 ( png_structp var1 ) 
+{ 
+png_FILE_p var2 ; 
+if ( var1 == var3 ) 
+return ; 
+var2 = ( png_FILE_p ) func2 ( ( var1 -> var2 ) ) ; 
+fflush ( var2 ) ; 
+} 

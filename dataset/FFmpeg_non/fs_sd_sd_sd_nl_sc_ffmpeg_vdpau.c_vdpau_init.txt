@@ -1,0 +1,12 @@
+int func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+if ( ! var2 -> var4 ) { 
+int var5 = func2 ( var1 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+} 
+var2 -> var6 = var7 ; 
+var2 -> var8 = var9 ; 
+return number ; 
+} 

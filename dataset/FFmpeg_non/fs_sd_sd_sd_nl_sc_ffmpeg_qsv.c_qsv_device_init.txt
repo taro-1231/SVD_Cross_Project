@@ -1,0 +1,20 @@
+static int func1 ( InputStream * var1 ) 
+{ 
+int var2 ; 
+AVDictionary * var3 = var4 ; 
+if ( var5 ) { 
+var2 = func2 ( & var3 , str , var5 , number ) ; 
+if ( var2 < number ) 
+return var2 ; 
+} 
+var2 = func3 ( & var6 , var7 , 
+var1 -> var8 , var3 , number ) ; 
+if ( var2 < number ) { 
+func4 ( var4 , var9 , str ) ; 
+goto var10 ; 
+} 
+var10 : 
+if ( var3 ) 
+func5 ( & var3 ) ; 
+return var2 ; 
+} 

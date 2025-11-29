@@ -1,0 +1,5 @@
+func1 ( png_structp var1 , png_infop var2 ) 
+{ 
+transform_info_imp ( voidcast ( transform_display * , png_get_progressive_ptr ( var1 ) ) , 
+var1 , var2 ) ; 
+} 

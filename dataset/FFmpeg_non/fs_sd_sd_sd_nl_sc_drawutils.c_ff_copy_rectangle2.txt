@@ -1,0 +1,20 @@
+void func1 ( FFDrawContext * var1 , 
+uint8_t * var2 [ ] , int var3 [ ] , 
+uint8_t * var4 [ ] , int var5 [ ] , 
+int var6 , int var7 , int var8 , int var9 , 
+int var10 , int var11 ) 
+{ 
+int var12 , var13 , var14 , var15 ; 
+uint8_t * var16 , * var17 ; 
+for ( var12 = number ; var12 < var1 -> var18 ; var12 ++ ) { 
+var16 = func2 ( var1 , var4 , var5 , var12 , var8 , var9 ) ; 
+var17 = func2 ( var1 , var2 , var3 , var12 , var6 , var7 ) ; 
+var14 = func3 ( var10 , var1 -> var19 [ var12 ] ) * var1 -> var20 [ var12 ] ; 
+var15 = func3 ( var11 , var1 -> var21 [ var12 ] ) ; 
+for ( var13 = number ; var13 < var15 ; var13 ++ ) { 
+memcpy ( var17 , var16 , var14 ) ; 
+var16 += var5 [ var12 ] ; 
+var17 += var3 [ var12 ] ; 
+} 
+} 
+} 

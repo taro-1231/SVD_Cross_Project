@@ -1,0 +1,8 @@
+int func1 ( enum AVSampleFormat var1 , int64_t var2 , 
+enum AVSampleFormat var3 , int64_t var4 ) 
+{ 
+if ( var2 == number && var4 == number ) 
+return func2 ( var1 ) != func2 ( var3 ) ; 
+else 
+return var2 != var4 || var1 != var3 ; 
+} 

@@ -1,0 +1,5 @@
+static int func1 ( format_list * var1 , png_uint_32 var2 ) 
+{ 
+return var2 < var3 && 
+( var1 -> var4 [ var2 >> number ] & ( ( ( png_uint_32 ) number ) << ( var2 & number ) ) ) != number ; 
+} 

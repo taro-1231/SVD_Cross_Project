@@ -1,0 +1,30 @@
+static int func1 ( AVFilterLink * var3 , AVFrame * var4 ) 
+{ 
+AVFilterContext * var5 = var3 -> var6 ; 
+BlackFrameContext * var7 = var5 -> var8 ; 
+int var9 , var10 ; 
+int var11 = number ; 
+uint8_t * var12 = var4 -> var13 [ number ] ; 
+AVDictionary ** var1 ; 
+char var2 [ number ] ; 
+for ( var10 = number ; var10 < var4 -> var14 ; var10 ++ ) { 
+for ( var9 = number ; var9 < var3 -> var15 ; var9 ++ ) 
+var7 -> var16 += var12 [ var9 ] < var7 -> var17 ; 
+var12 += var4 -> var18 [ number ] ; 
+} 
+if ( var4 -> var19 ) 
+var7 -> var20 = var7 -> var4 ; 
+var11 = var7 -> var16 * number / ( var3 -> var15 * var3 -> var21 ) ; 
+if ( var11 >= var7 -> var22 ) { 
+var1 = func2 ( var4 ) ; 
+av_log ( var5 , AV_LOG_INFO , str PRId64 str 
+str , 
+var7 -> var4 , var11 , var4 -> pts , 
+var4 -> pts == AV_NOPTS_VALUE ? - 1 : var4 -> pts * av_q2d ( var3 -> time_base ) , 
+av_get_picture_type_char ( var4 -> pict_type ) , var7 -> var20 ) ; 
+func3 ( str , str , var11 ) ; 
+} 
+var7 -> var4 ++ ; 
+var7 -> var16 = number ; 
+return func4 ( var3 -> var6 -> var23 [ number ] , var4 ) ; 
+} 

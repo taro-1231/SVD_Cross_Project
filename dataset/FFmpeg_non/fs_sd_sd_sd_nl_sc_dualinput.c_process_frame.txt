@@ -1,0 +1,19 @@
+static int func1 ( FFFrameSync * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FFDualInputContext * var4 = var1 -> var5 ; 
+AVFrame * var6 = var7 , * var8 = var7 ; 
+int var9 = number ; 
+if ( ( var9 = func2 ( & var4 -> var1 , number , & var6 , number ) ) < number || 
+( var9 = func2 ( & var4 -> var1 , number , & var8 , number ) ) < number ) { 
+func3 ( & var6 ) ; 
+return var9 ; 
+} 
+func4 ( var6 ) ; 
+var6 -> var10 = func5 ( var6 -> var10 , var4 -> var1 . var11 , var2 -> var12 [ number ] -> var11 ) ; 
+if ( var8 && ! var2 -> var13 ) 
+var6 = var4 -> func6 ( var2 , var6 , var8 ) ; 
+var9 = func7 ( var2 -> var12 [ number ] , var6 ) ; 
+func8 ( var9 != func9 ( var14 ) ) ; 
+return var9 ; 
+} 

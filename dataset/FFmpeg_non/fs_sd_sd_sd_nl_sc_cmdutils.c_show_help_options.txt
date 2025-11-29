@@ -1,0 +1,25 @@
+void func1 ( const OptionDef * var1 , const char * var2 , int var3 , 
+int var4 , int var5 ) 
+{ 
+const OptionDef * var6 ; 
+int var7 ; 
+var7 = number ; 
+for ( var6 = var1 ; var6 -> var8 ; var6 ++ ) { 
+char var9 [ number ] ; 
+if ( ( ( var6 -> var10 & var3 ) != var3 ) || 
+( var5 && ! ( var6 -> var10 & var5 ) ) || 
+( var6 -> var10 & var4 ) ) 
+continue ; 
+if ( var7 ) { 
+printf ( str , var2 ) ; 
+var7 = number ; 
+} 
+func2 ( var9 , var6 -> var8 , sizeof ( var9 ) ) ; 
+if ( var6 -> var11 ) { 
+func3 ( var9 , str , sizeof ( var9 ) ) ; 
+func3 ( var9 , var6 -> var11 , sizeof ( var9 ) ) ; 
+} 
+printf ( str , var9 , var6 -> var12 ) ; 
+} 
+printf ( str ) ; 
+} 

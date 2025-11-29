@@ -1,0 +1,120 @@
+static int func1 ( FILE * var1 [ number ] , int var2 , int var3 , int var4 ) 
+{ 
+int var5 , var6 ; 
+uint64_t var7 = number ; 
+double var8 = number ; 
+uint8_t var9 [ number ] [ var10 ] ; 
+int64_t max = ( 1LL << ( number * var2 ) ) - number ; 
+int var11 = number ; 
+int var12 = number ; 
+uint64_t var13 = number ; 
+double var14 = number ; 
+int var15 ; 
+var15 = fseek ( var1 [ number ] , number , var16 ) || 
+fseek ( var1 [ number ] , number , var16 ) ; 
+if ( ! var15 ) { 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+uint8_t * var17 = var9 [ var5 ] ; 
+if ( fread ( var17 , number , number , var1 [ var5 ] ) != number ) 
+return - number ; 
+if ( ! memcmp ( var17 , str , number ) && 
+! memcmp ( var17 + number , str , number ) ) { 
+if ( fread ( var17 , number , number , var1 [ var5 ] ) != number ) 
+return - number ; 
+while ( memcmp ( var17 , str , number ) ) { 
+int var18 = var17 [ number ] | var17 [ number ] << number | var17 [ number ] << number | var17 [ number ] << number ; 
+fseek ( var1 [ var5 ] , var18 , var19 ) ; 
+if ( fread ( var17 , number , number , var1 [ var5 ] ) != number ) 
+return - number ; 
+} 
+} else { 
+fseek ( var1 [ var5 ] , - number , var19 ) ; 
+} 
+} 
+fseek ( var1 [ var3 < number ] , abs ( var3 ) , var19 ) ; 
+fseek ( var1 [ number ] , var4 , var19 ) ; 
+fseek ( var1 [ number ] , var4 , var19 ) ; 
+} 
+for ( ; ; ) { 
+int var20 = fread ( var9 [ number ] , number , var10 , var1 [ number ] ) ; 
+int var21 = fread ( var9 [ number ] , number , var10 , var1 [ number ] ) ; 
+for ( var6 = number ; var6 < func2 ( var20 , var21 ) ; var6 += var2 ) { 
+switch ( var2 ) { 
+case number : 
+case number : { 
+int64_t var22 , var23 ; 
+int var24 ; 
+if ( var2 == number ) { 
+var22 = func3 ( var9 [ number ] + var6 ) ; 
+var23 = func3 ( var9 [ number ] + var6 ) ; 
+} else { 
+var22 = var9 [ number ] [ var6 ] ; 
+var23 = var9 [ number ] [ var6 ] ; 
+} 
+var7 += ( var22 - var23 ) * ( var22 - var23 ) ; 
+var24 = abs ( var22 - var23 ) ; 
+if ( var24 > var13 ) 
+var13 = var24 ; 
+break ; 
+} 
+case number : 
+case number : { 
+double var24 , var22 , var23 ; 
+if ( var2 == number ) { 
+var22 = func4 ( var9 [ number ] + var6 ) ; 
+var23 = func4 ( var9 [ number ] + var6 ) ; 
+} else { 
+var22 = func5 ( var9 [ number ] + var6 ) ; 
+var23 = func5 ( var9 [ number ] + var6 ) ; 
+} 
+var24 = fabs ( var22 - var23 ) ; 
+var8 += ( var22 - var23 ) * ( var22 - var23 ) ; 
+if ( var24 > var14 ) 
+var14 = var24 ; 
+break ; 
+} 
+} 
+} 
+var11 += var20 ; 
+var12 += var21 ; 
+if ( var20 + var21 <= number ) 
+break ; 
+} 
+var5 = func2 ( var11 , var12 ) / var2 ; 
+if ( ! var5 ) 
+var5 = number ; 
+switch ( var2 ) { 
+case number : 
+case number : { 
+uint64_t var25 ; 
+uint64_t var26 = func6 ( ( ( var7 / var5 ) * var27 * var27 ) + ( ( ( var7 % var5 ) * var27 * var27 ) + var5 / number ) / var5 ) ; 
+if ( var7 ) 
+var25 = ( ( number * log16 ( max << number ) + log16 ( var5 ) - log16 ( var7 ) ) * 
+284619LL * var27 + ( 1LL << 31 ) ) / ( 1LL << 32 ) ; 
+else 
+var25 = number * var27 - number ; 
+printf ( str PRIu64 str , 
+( int ) ( var26 / var27 ) , ( int ) ( var26 % var27 ) , 
+( int ) ( var25 / var27 ) , ( int ) ( var25 % var27 ) , 
+var13 , var11 , var12 ) ; 
+return var25 ; 
+} 
+case number : 
+case number : { 
+char var28 [ number ] ; 
+double var25 = var29 ; 
+double var26 = sqrt ( var8 / var5 ) ; 
+uint64_t var30 = ( var2 == number ) ? ( 1ULL << number ) : ( 1ULL << 32 ) ; 
+if ( var8 ) { 
+var25 = number * log ( var31 ) - log ( var5 / var8 ) ; 
+snprintf ( var28 , sizeof ( var28 ) , str , var25 ) ; 
+} else 
+snprintf ( var28 , sizeof ( var28 ) , str ) ; 
+var13 = var14 * var30 ; 
+printf ( str PRIu64 str , 
+var26 * var30 , var28 , var13 , var11 , var12 ) ; 
+return var25 ; 
+} 
+} 
+return - number ; 
+} 

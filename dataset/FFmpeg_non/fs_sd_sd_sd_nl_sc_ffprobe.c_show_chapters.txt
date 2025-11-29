@@ -1,0 +1,21 @@
+static int func1 ( WriterContext * var1 , InputFile * var2 ) 
+{ 
+AVFormatContext * var3 = var2 -> var3 ; 
+int var4 , var5 = number ; 
+func2 ( var1 , var6 ) ; 
+for ( var4 = number ; var4 < var3 -> var7 ; var4 ++ ) { 
+AVChapter * var8 = var3 -> var9 [ var4 ] ; 
+func2 ( var1 , var10 ) ; 
+func3 ( str , var8 -> var11 ) ; 
+func4 ( str , var8 -> var12 , str ) ; 
+func3 ( str , var8 -> var13 ) ; 
+func5 ( str , var8 -> var13 , & var8 -> var12 ) ; 
+func3 ( str , var8 -> var14 ) ; 
+func5 ( str , var8 -> var14 , & var8 -> var12 ) ; 
+if ( var15 ) 
+var5 = func6 ( var1 , var8 -> var16 , var17 ) ; 
+func7 ( var1 ) ; 
+} 
+func7 ( var1 ) ; 
+return var5 ; 
+} 

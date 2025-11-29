@@ -1,0 +1,123 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+const Writer * var3 ; 
+WriterContext * var4 ; 
+char * var5 ; 
+char * var6 = var7 , * var8 = var7 ; 
+int var9 , var10 ; 
+func2 ( ) ; 
+var9 = func3 ( & var11 , var7 ) ; 
+if ( var9 != number ) { 
+goto var12 ; 
+} 
+func4 ( var13 ) ; 
+func5 ( var14 ) ; 
+var15 = var16 ; 
+func6 ( var1 , var2 , var15 ) ; 
+func7 ( ) ; 
+func8 ( ) ; 
+func9 ( ) ; 
+func10 ( ) ; 
+func11 ( var1 , var2 , var15 ) ; 
+func12 ( var7 , var1 , var2 , var15 , var17 ) ; 
+if ( var18 ) 
+func13 ( var19 ) ; 
+func14 ( var20 , var21 ) ; 
+func14 ( var22 , var23 ) ; 
+func14 ( var24 , var25 ) ; 
+func14 ( var26 , var27 ) ; 
+func14 ( var28 , var29 ) ; 
+func14 ( var30 , var31 ) ; 
+func14 ( var32 , var33 ) ; 
+func14 ( var34 , var35 ) ; 
+func14 ( var36 , var37 ) ; 
+func14 ( var38 , var39 ) ; 
+func14 ( var40 , var41 ) ; 
+func14 ( var42 , var43 ) ; 
+func14 ( var44 , var45 ) ; 
+func14 ( var46 , var45 ) ; 
+func14 ( var47 , var48 ) ; 
+func14 ( var49 , var50 ) ; 
+func14 ( var51 , var52 ) ; 
+func14 ( var53 , var54 ) ; 
+func14 ( var55 , var56 ) ; 
+func14 ( var57 , var56 ) ; 
+func14 ( var58 , var59 ) ; 
+if ( var60 && ( var61 || var62 ) ) { 
+func15 ( var7 , var63 , 
+str 
+str ) ; 
+var9 = func16 ( var65 ) ; 
+goto var12 ; 
+} 
+func17 ( ) ; 
+if ( ! var66 ) 
+var66 = func18 ( str ) ; 
+if ( ! var66 ) { 
+var9 = func16 ( var67 ) ; 
+goto var12 ; 
+} 
+var6 = func19 ( var66 , str , & var5 ) ; 
+if ( ! var6 ) { 
+func15 ( var7 , var63 , 
+str ) ; 
+var9 = func16 ( var65 ) ; 
+goto var12 ; 
+} 
+var8 = var5 ; 
+if ( var68 ) { 
+if ( ( var9 = func20 ( & var69 , var68 ) ) < number ) { 
+if ( var9 == func16 ( var65 ) ) { 
+const char * var64 ; 
+func15 ( var7 , var63 , 
+str , 
+var68 ) ; 
+for ( var10 = number ; ( var64 = func21 ( var10 ) ) ; var10 ++ ) 
+func15 ( var7 , var63 , str , var64 ) ; 
+func15 ( var7 , var63 , str ) ; 
+} 
+goto var12 ; 
+} 
+} 
+var3 = func22 ( var6 ) ; 
+if ( ! var3 ) { 
+func15 ( var7 , var63 , str , var6 ) ; 
+var9 = func16 ( var65 ) ; 
+goto var12 ; 
+} 
+if ( ( var9 = func23 ( & var4 , var3 , var8 , 
+var70 , func24 ( var70 ) ) ) >= number ) { 
+if ( var3 == & var71 ) 
+var4 -> var72 |= var73 ; 
+func25 ( var4 , var74 ) ; 
+if ( var61 ) 
+func26 ( var4 ) ; 
+if ( var62 ) 
+func27 ( var4 ) ; 
+if ( var75 ) 
+func28 ( var4 ) ; 
+if ( ! var76 && 
+( ( var77 || var78 || var79 || var80 || var81 || var82 ) || 
+( ! var61 && ! var62 && ! var75 ) ) ) { 
+func29 ( ) ; 
+func15 ( var7 , var63 , str ) ; 
+func15 ( var7 , var63 , str , var83 ) ; 
+var9 = func16 ( var65 ) ; 
+} else if ( var76 ) { 
+var9 = func30 ( var4 , var76 ) ; 
+if ( var9 < number && var82 ) 
+func31 ( var4 , var9 ) ; 
+} 
+func32 ( var4 ) ; 
+func33 ( & var4 ) ; 
+} 
+var12 : 
+func34 ( & var66 ) ; 
+func34 ( & var84 ) ; 
+func35 ( & var69 ) ; 
+func36 ( ) ; 
+for ( var10 = number ; var10 < func24 ( var70 ) ; var10 ++ ) 
+func37 ( & ( var70 [ var10 ] . var85 ) ) ; 
+func38 ( ) ; 
+return var9 < number ; 
+} 

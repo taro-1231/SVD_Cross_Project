@@ -1,0 +1,28 @@
+static void func1 ( const char * var1 ) 
+{ 
+const AVCodecDescriptor * var2 ; 
+const AVOutputFormat * var3 = func2 ( var1 , var4 , var4 ) ; 
+if ( ! var3 ) { 
+func3 ( var4 , var5 , str , var1 ) ; 
+return ; 
+} 
+printf ( str , var3 -> var1 , var3 -> var6 ) ; 
+if ( var3 -> var7 ) 
+printf ( str , var3 -> var7 ) ; 
+if ( var3 -> var8 ) 
+printf ( str , var3 -> var8 ) ; 
+if ( var3 -> var9 != var10 && 
+( var2 = func4 ( var3 -> var9 ) ) ) { 
+printf ( str , var2 -> var1 ) ; 
+} 
+if ( var3 -> var11 != var10 && 
+( var2 = func4 ( var3 -> var11 ) ) ) { 
+printf ( str , var2 -> var1 ) ; 
+} 
+if ( var3 -> var12 != var10 && 
+( var2 = func4 ( var3 -> var12 ) ) ) { 
+printf ( str , var2 -> var1 ) ; 
+} 
+if ( var3 -> var13 ) 
+func5 ( var3 -> var13 , var14 ) ; 
+} 

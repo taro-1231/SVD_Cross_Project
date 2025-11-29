@@ -1,0 +1,138 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MOVMuxContext * var2 = var1 -> var3 ; 
+int var4 , var5 = - number ; 
+int64_t var6 = number ; 
+int var7 ; 
+if ( ! ( var2 -> var8 & var9 ) ) 
+return number ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+MOVTrack * var11 = & var2 -> var12 [ var4 ] ; 
+if ( var11 -> var13 <= number ) 
+continue ; 
+if ( func2 ( var11 , var11 -> var13 - number ) != number ) 
+continue ; 
+var11 -> var16 += func2 ( var11 , var11 -> var13 - number ) ; 
+var11 -> var17 += func2 ( var11 , var11 -> var13 - number ) ; 
+if ( ! var2 -> var18 ) { 
+av_log ( var1 , AV_LOG_WARNING , 
+str 
+str 
+str ) ; 
+var2 -> var18 = number ; 
+} 
+} 
+if ( ! var2 -> var19 ) { 
+int64_t var20 = func3 ( var1 -> var21 ) ; 
+uint8_t * var22 ; 
+int var23 , var24 ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) 
+if ( ! var2 -> var12 [ var4 ] . var13 ) 
+break ; 
+if ( var4 < var2 -> var10 ) 
+return number ; 
+var24 = func4 ( var1 ) ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) 
+var2 -> var12 [ var4 ] . var25 = var20 + var24 + number ; 
+if ( var2 -> var8 & var26 ) 
+func5 ( var1 -> var21 , var1 ) ; 
+if ( ( var7 = func6 ( var1 -> var21 , var2 , var1 ) ) < number ) 
+return var7 ; 
+if ( var2 -> var8 & var26 ) { 
+if ( var2 -> var8 & var27 ) 
+var2 -> var28 = func3 ( var1 -> var21 ) ; 
+func7 ( var1 -> var21 ) ; 
+var2 -> var19 = number ; 
+return number ; 
+} 
+var23 = func8 ( var2 -> var29 , & var22 ) ; 
+var2 -> var29 = var30 ; 
+func9 ( var1 -> var21 , var23 + number ) ; 
+func10 ( var1 -> var21 , str ) ; 
+func11 ( var1 -> var21 , var22 , var23 ) ; 
+func12 ( var22 ) ; 
+if ( var2 -> var8 & var27 ) 
+var2 -> var28 = func3 ( var1 -> var21 ) ; 
+var2 -> var19 = number ; 
+var2 -> var6 = number ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+if ( var2 -> var12 [ var4 ] . var13 ) 
+var2 -> var12 [ var4 ] . var31 += var2 -> var12 [ var4 ] . var32 + 
+var2 -> var12 [ var4 ] . var16 - 
+var2 -> var12 [ var4 ] . var33 [ number ] . var14 ; 
+var2 -> var12 [ var4 ] . var13 = number ; 
+} 
+func7 ( var1 -> var21 ) ; 
+return number ; 
+} 
+if ( var2 -> var34 ) { 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+MOVTrack * var11 = & var2 -> var12 [ var4 ] ; 
+int var7 ; 
+if ( ( var7 = func13 ( var1 , var11 ) ) < number ) 
+return var7 ; 
+} 
+if ( ! var2 -> var29 ) 
+return number ; 
+var6 = func3 ( var2 -> var29 ) ; 
+} 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+MOVTrack * var11 = & var2 -> var12 [ var4 ] ; 
+if ( var2 -> var8 & var35 || var2 -> var34 ) 
+var11 -> var25 = number ; 
+else 
+var11 -> var25 = var6 ; 
+if ( ! var11 -> var13 ) 
+continue ; 
+if ( var11 -> var29 ) 
+var6 += func3 ( var11 -> var29 ) ; 
+if ( var5 < number ) 
+var5 = var4 ; 
+} 
+if ( ! var6 ) 
+return number ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+MOVTrack * var11 = & var2 -> var12 [ var4 ] ; 
+int var23 , var36 = number , var37 = - number ; 
+uint8_t * var22 ; 
+int64_t var15 = number ; 
+if ( var11 -> var13 ) 
+var15 = var11 -> var32 + var11 -> var16 - 
+var11 -> var33 [ number ] . var14 ; 
+if ( var2 -> var8 & var35 ) { 
+if ( ! var11 -> var29 ) 
+continue ; 
+var6 = func3 ( var11 -> var29 ) ; 
+var37 = var4 ; 
+} else { 
+var36 = var4 == var5 ; 
+} 
+if ( var36 ) { 
+func7 ( var1 -> var21 ) ; 
+func14 ( var1 -> var21 , var2 , var37 , var6 ) ; 
+var2 -> var38 ++ ; 
+func9 ( var1 -> var21 , var6 + number ) ; 
+func10 ( var1 -> var21 , str ) ; 
+} 
+if ( var11 -> var13 ) 
+var11 -> var31 += var15 ; 
+var11 -> var13 = number ; 
+var11 -> var39 = number ; 
+if ( ! var2 -> var34 ) { 
+if ( ! var11 -> var29 ) 
+continue ; 
+var23 = func8 ( var11 -> var29 , & var22 ) ; 
+var11 -> var29 = var30 ; 
+} else { 
+if ( ! var2 -> var29 ) 
+continue ; 
+var23 = func8 ( var2 -> var29 , & var22 ) ; 
+var2 -> var29 = var30 ; 
+} 
+func11 ( var1 -> var21 , var22 , var23 ) ; 
+func12 ( var22 ) ; 
+} 
+var2 -> var6 = number ; 
+func7 ( var1 -> var21 ) ; 
+return number ; 
+} 

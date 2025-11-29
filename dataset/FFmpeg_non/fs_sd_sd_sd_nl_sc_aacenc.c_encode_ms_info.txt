@@ -1,0 +1,9 @@
+static void func1 ( PutBitContext * var1 , ChannelElement * var2 ) 
+{ 
+int var3 , var4 ; 
+func2 ( var1 , number , var2 -> var5 ) ; 
+if ( var2 -> var5 == number ) 
+for ( var4 = number ; var4 < var2 -> var6 [ number ] . var7 . var8 ; var4 += var2 -> var6 [ number ] . var7 . var9 [ var4 ] ) 
+for ( var3 = number ; var3 < var2 -> var6 [ number ] . var7 . var10 ; var3 ++ ) 
+func2 ( var1 , number , var2 -> var11 [ var4 * number + var3 ] ) ; 
+} 

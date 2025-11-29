@@ -1,0 +1,19 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+AVFrame * var5 = var2 ; 
+const int var6 = ( var5 -> var7 * var3 ) / var4 ; 
+const int var8 = ( var5 -> var7 * ( var3 + number ) ) / var4 ; 
+ColorkeyContext * var9 = var1 -> var10 ; 
+int var11 , var12 , var13 ; 
+for ( var13 = var6 ; var13 < var8 ; ++ var13 ) { 
+for ( var12 = number ; var12 < var5 -> var14 ; ++ var12 ) { 
+var11 = var5 -> var15 [ number ] * var13 + var12 * number ; 
+var5 -> var16 [ number ] [ var11 + var9 -> var17 [ number ] ] = 
+func2 ( var9 , 
+var5 -> var16 [ number ] [ var11 + var9 -> var17 [ number ] ] , 
+var5 -> var16 [ number ] [ var11 + var9 -> var17 [ number ] ] , 
+var5 -> var16 [ number ] [ var11 + var9 -> var17 [ number ] ] ) ; 
+} 
+} 
+return number ; 
+} 

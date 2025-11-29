@@ -1,0 +1,77 @@
+static int func1 ( FilterGraph * var1 , OutputFilter * var2 , AVFilterInOut * var3 ) 
+{ 
+char * var4 ; 
+OutputStream * var5 = var2 -> var5 ; 
+OutputFile * var6 = var7 [ var5 -> var8 ] ; 
+AVFilterContext * var9 = var3 -> var10 ; 
+int var11 = var3 -> var11 ; 
+int var12 ; 
+char var13 [ number ] ; 
+snprintf ( var13 , sizeof ( var13 ) , str , var5 -> var8 , var5 -> var14 ) ; 
+var12 = func2 ( & var2 -> var15 , 
+func3 ( str ) , 
+var13 , var16 , var16 , var1 -> var17 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+if ( var2 -> var18 || var2 -> var19 ) { 
+char var20 [ number ] ; 
+AVFilterContext * var15 ; 
+AVDictionaryEntry * var21 = var16 ; 
+snprintf ( var20 , sizeof ( var20 ) , str , 
+var2 -> var18 , var2 -> var19 ) ; 
+while ( ( var21 = func4 ( var5 -> var22 , str , var21 , 
+var23 ) ) ) { 
+func5 ( var20 , sizeof ( var20 ) , str , var21 -> var24 , var21 -> var25 ) ; 
+} 
+snprintf ( var13 , sizeof ( var13 ) , str , 
+var5 -> var8 , var5 -> var14 ) ; 
+if ( ( var12 = func2 ( & var15 , func3 ( str ) , 
+var13 , var20 , var16 , var1 -> var17 ) ) < number ) 
+return var12 ; 
+if ( ( var12 = func6 ( var9 , var11 , var15 , number ) ) < number ) 
+return var12 ; 
+var9 = var15 ; 
+var11 = number ; 
+} 
+if ( ( var4 = func7 ( var2 ) ) ) { 
+AVFilterContext * var15 ; 
+snprintf ( var13 , sizeof ( var13 ) , str , 
+var5 -> var8 , var5 -> var14 ) ; 
+var12 = func2 ( & var15 , 
+func3 ( str ) , 
+str , var4 , var16 , var1 -> var17 ) ; 
+func8 ( & var4 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+if ( ( var12 = func6 ( var9 , var11 , var15 , number ) ) < number ) 
+return var12 ; 
+var9 = var15 ; 
+var11 = number ; 
+} 
+if ( var5 -> var26 . var27 && number ) { 
+AVFilterContext * var28 ; 
+char var20 [ number ] ; 
+snprintf ( var20 , sizeof ( var20 ) , str , var5 -> var26 . var27 , 
+var5 -> var26 . var29 ) ; 
+snprintf ( var13 , sizeof ( var13 ) , str , 
+var5 -> var8 , var5 -> var14 ) ; 
+var12 = func2 ( & var28 , func3 ( str ) , 
+var13 , var20 , var16 , var1 -> var17 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+var12 = func6 ( var9 , var11 , var28 , number ) ; 
+if ( var12 < number ) 
+return var12 ; 
+var9 = var28 ; 
+var11 = number ; 
+} 
+snprintf ( var13 , sizeof ( var13 ) , str , 
+var5 -> var8 , var5 -> var14 ) ; 
+var12 = func9 ( var6 -> var30 , var6 -> var31 , 
+& var9 , & var11 , var13 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+if ( ( var12 = func6 ( var9 , var11 , var2 -> var15 , number ) ) < number ) 
+return var12 ; 
+return number ; 
+} 

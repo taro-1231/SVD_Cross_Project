@@ -1,0 +1,28 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AMergeContext * var4 = var2 -> var5 ; 
+AVBPrint var6 ; 
+int var7 ; 
+for ( var7 = number ; var7 < var4 -> var8 ; var7 ++ ) { 
+if ( var2 -> var9 [ var7 ] -> var10 != var2 -> var9 [ number ] -> var10 ) { 
+func2 ( var2 , AV_LOG_ERROR , 
+str 
+str , 
+var2 -> var9 [ var7 ] -> var10 , var7 , var2 -> var9 [ number ] -> var10 ) ; 
+return func3 ( var11 ) ; 
+} 
+} 
+var4 -> var12 = func4 ( var2 -> var13 [ number ] -> var14 ) ; 
+var1 -> var10 = var2 -> var9 [ number ] -> var10 ; 
+var1 -> var15 = var2 -> var9 [ number ] -> var15 ; 
+func5 ( & var6 , number , number ) ; 
+for ( var7 = number ; var7 < var4 -> var8 ; var7 ++ ) { 
+func6 ( & var6 , var18 , var7 ? var18 : var18 , var7 ) ; 
+func7 ( & var6 , - number , var2 -> var9 [ var7 ] -> var16 ) ; 
+} 
+func6 ( & var6 , var18 ) ; 
+func7 ( & var6 , - number , var2 -> var13 [ number ] -> var16 ) ; 
+func2 ( var2 , var17 , var18 , var6 . var18 ) ; 
+return number ; 
+} 

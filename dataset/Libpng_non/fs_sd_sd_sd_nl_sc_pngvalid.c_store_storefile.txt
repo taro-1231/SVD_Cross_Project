@@ -1,0 +1,18 @@
+func1 ( png_store * var1 , png_uint_32 var2 ) 
+{ 
+png_store_file * var3 = voidcast ( png_store_file * , malloc ( sizeof * var3 ) ) ; 
+if ( var3 == var4 ) 
+func2 ( var1 -> var5 , str ) ; 
+func3 ( var3 -> var6 , sizeof var3 -> var6 , number , var1 -> var7 ) ; 
+var3 -> var2 = var2 ; 
+var3 -> data = var1 -> new ; 
+var3 -> var8 = var1 -> var9 ; 
+var1 -> new . var10 = var4 ; 
+var1 -> var9 = number ; 
+var3 -> var11 = var1 -> var11 ; 
+var3 -> var12 = var1 -> var12 ; 
+var1 -> var11 = number ; 
+var1 -> var12 = number ; 
+var3 -> var13 = var1 -> var14 ; 
+var1 -> var14 = var3 ; 
+} 

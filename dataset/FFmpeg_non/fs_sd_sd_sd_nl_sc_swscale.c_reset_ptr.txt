@@ -1,0 +1,10 @@
+static void func1 ( const uint8_t * var1 [ ] , enum AVPixelFormat var2 ) 
+{ 
+if ( ! func2 ( var2 ) ) 
+var1 [ number ] = var3 ; 
+if ( ! func3 ( var2 ) ) { 
+var1 [ number ] = var1 [ number ] = var3 ; 
+if ( ! func4 ( var2 ) ) 
+var1 [ number ] = var3 ; 
+} 
+} 

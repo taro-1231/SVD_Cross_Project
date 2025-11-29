@@ -1,0 +1,13 @@
+av_cold void func1 ( SwsContext * var1 ) 
+{ 
+if ( ! ( func2 ( ) & var2 ) ) 
+return ; 
+if ( ! ( var1 -> var3 & number ) && ! ( var1 -> var4 & var5 ) && 
+var1 -> var6 == var7 ) { 
+enum AVPixelFormat var8 = var1 -> var8 ; 
+if ( var8 == var9 ) 
+var1 -> var10 = var11 ; 
+else if ( var8 == var12 ) 
+var1 -> var10 = var13 ; 
+} 
+} 

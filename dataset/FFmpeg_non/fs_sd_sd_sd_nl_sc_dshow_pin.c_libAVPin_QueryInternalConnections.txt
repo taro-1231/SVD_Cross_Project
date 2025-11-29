@@ -1,0 +1,6 @@
+func1 ( libAVPin * var1 , IPin ** var2 , 
+unsigned long * var3 ) 
+{ 
+func2 ( str , var1 ) ; 
+return var4 ; 
+} 

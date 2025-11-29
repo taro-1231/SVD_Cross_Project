@@ -1,0 +1,10 @@
+static void * func1 ( const char * var1 , const char * var2 ) 
+{ 
+char * var3 = func2 ( str , var1 , var2 ) ; 
+void * var4 = var5 ; 
+if ( var3 ) { 
+var4 = func3 ( var3 , var6 | var7 ) ; 
+func4 ( var3 ) ; 
+} 
+return var4 ; 
+} 

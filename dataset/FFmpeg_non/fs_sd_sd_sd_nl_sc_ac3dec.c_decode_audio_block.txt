@@ -1,0 +1,467 @@
+static int func1 ( AC3DecodeContext * func2 , int var1 ) 
+{ 
+int var2 = func2 -> var2 ; 
+int var3 = func2 -> var3 ; 
+int var4 , var5 , var6 , var7 ; 
+int var8 ; 
+int var9 ; 
+int var10 ; 
+GetBitContext * var11 = & func2 -> var11 ; 
+uint8_t var12 [ var13 ] = { number } ; 
+var8 = number ; 
+if ( func2 -> var14 ) { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var15 [ var7 ] = func3 ( var11 ) ; 
+if ( var7 > number && func2 -> var15 [ var7 ] != func2 -> var15 [ number ] ) 
+var8 = number ; 
+} 
+} 
+if ( func2 -> var16 ) { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var17 [ var7 ] = func3 ( var11 ) ; 
+} 
+} 
+var4 = ! func2 -> var3 ; 
+do { 
+if ( func3 ( var11 ) ) { 
+int var18 = func4 ( var11 , number ) ; 
+INTFLOAT var19 = func5 ( var18 ) ; 
+if ( var18 <= number || func2 -> var20 <= number ) 
+func2 -> var21 [ var4 ] = func6 ( var19 ) ; 
+else 
+func2 -> var21 [ var4 ] = var19 ; 
+} else if ( var1 == number ) { 
+func2 -> var21 [ var4 ] = var22 ; 
+} 
+} while ( var4 -- ) ; 
+if ( func2 -> var23 && ( ! var1 || func3 ( var11 ) ) ) { 
+func2 -> var24 = func3 ( var11 ) ; 
+if ( func2 -> var24 ) { 
+int var25 , var26 , var27 , 
+var28 , var29 ; 
+if ( func2 -> var3 == var30 ) { 
+func2 -> var31 [ number ] = number ; 
+} else { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) 
+func2 -> var31 [ var7 ] = func3 ( var11 ) ; 
+} 
+var25 = func4 ( var11 , number ) ; 
+var28 = func4 ( var11 , number ) + number ; 
+if ( var28 > number ) 
+var28 += var28 - number ; 
+var29 = func4 ( var11 , number ) + number ; 
+func2 -> var33 = var34 [ var29 - number ] ; 
+if ( var29 > number ) 
+var29 += var29 - number ; 
+var25 = var25 * number + number ; 
+var27 = var28 * number + number ; 
+var26 = var29 * number + number ; 
+if ( var28 >= var29 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str , var28 , var29 ) ; 
+return var37 ; 
+} 
+if ( var25 >= var27 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str , var25 , var27 ) ; 
+return var37 ; 
+} 
+func2 -> var39 = var25 ; 
+func2 -> var40 = var27 ; 
+if ( ! var32 ) 
+func2 -> var33 = var26 ; 
+func8 ( var11 , var1 , func2 -> var23 , number , 
+var28 , var29 , 
+var41 , 
+& func2 -> var42 , 
+func2 -> var43 ) ; 
+} else { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var31 [ var7 ] = number ; 
+func2 -> var44 [ var7 ] = number ; 
+} 
+} 
+} 
+if ( func2 -> var24 ) { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+if ( func2 -> var31 [ var7 ] ) { 
+if ( func2 -> var44 [ var7 ] || func3 ( var11 ) ) { 
+INTFLOAT var45 ; 
+int var38 , var46 ; 
+func2 -> var44 [ var7 ] = number ; 
+var45 = func9 ( func4 ( var11 , number ) ) ; 
+var46 = func4 ( var11 , number ) * number ; 
+var38 = func2 -> var40 ; 
+for ( var5 = number ; var5 < func2 -> var42 ; var5 ++ ) { 
+int var47 = func2 -> var43 [ var5 ] ; 
+int var48 , var49 ; 
+INTFLOAT var50 , var51 , var52 ; 
+int64_t var53 = ( ( var38 << number ) + ( var47 << number ) ) 
+* ( int64_t ) func2 -> var33 ; 
+var50 = ( int ) ( var53 >> number ) ; 
+var50 -= var45 << number ; 
+if ( var50 < number ) { 
+var52 = number ; 
+var51 = number ; 
+} else if ( var50 > number ) { 
+var52 = number ; 
+var51 = number ; 
+} else { 
+var52 = func10 ( var50 , number ) ; 
+var53 = ( int64_t ) var52 * number ; 
+var52 = ( int ) ( ( var53 + ( number << number ) ) >> number ) ; 
+var51 = func10 ( number - var50 , number ) ; 
+} 
+float spx_coord ; 
+var50 = ( ( float ) ( ( var38 + ( var47 >> number ) ) ) / func2 -> var33 ) - var45 ; 
+var50 = av_clipf ( var50 , number . 0f , number . 0f ) ; 
+var52 = sqrtf ( number . 0f * var50 ) ; 
+var51 = sqrtf ( number . 0f - var50 ) ; 
+var38 += var47 ; 
+var48 = func4 ( var11 , number ) ; 
+var49 = func4 ( var11 , number ) ; 
+if ( var48 == number ) var49 <<= number ; 
+else var49 += number ; 
+var49 <<= ( number - var48 - var46 ) ; 
+var53 = ( int64_t ) var52 * var49 ; 
+func2 -> var54 [ var7 ] [ var5 ] = ( int ) ( ( var53 + ( number << number ) ) >> number ) ; 
+var53 = ( int64_t ) var51 * var49 ; 
+func2 -> var55 [ var7 ] [ var5 ] = ( int ) ( ( var53 + ( number << number ) ) >> number ) ; 
+spx_coord = var49 * ( number . 0f / ( number << number ) ) ; 
+func2 -> var54 [ var7 ] [ var5 ] = var52 * spx_coord ; 
+func2 -> var55 [ var7 ] [ var5 ] = var51 * spx_coord ; 
+} 
+} 
+} else { 
+func2 -> var44 [ var7 ] = number ; 
+} 
+} 
+} 
+if ( func2 -> var23 ? func2 -> var56 [ var1 ] : func3 ( var11 ) ) { 
+memset ( var12 , number , var13 ) ; 
+if ( ! func2 -> var23 ) 
+func2 -> var10 [ var1 ] = func3 ( var11 ) ; 
+if ( func2 -> var10 [ var1 ] ) { 
+int var57 , var58 ; 
+if ( var3 < var59 ) { 
+func7 ( func2 -> var35 , var36 , str ) ; 
+return var37 ; 
+} 
+if ( func2 -> var23 && func3 ( var11 ) ) { 
+func11 ( func2 -> var35 , str ) ; 
+return var60 ; 
+} 
+if ( func2 -> var23 && func2 -> var3 == var59 ) { 
+func2 -> var61 [ number ] = number ; 
+func2 -> var61 [ number ] = number ; 
+} else { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) 
+func2 -> var61 [ var7 ] = func3 ( var11 ) ; 
+} 
+if ( var3 == var59 ) 
+func2 -> var62 = func3 ( var11 ) ; 
+var57 = func4 ( var11 , number ) ; 
+var58 = func2 -> var24 ? ( func2 -> var40 - number ) / number : 
+func4 ( var11 , number ) + number ; 
+if ( var57 >= var58 ) { 
+func7 ( func2 -> var35 , var36 , str , 
+var57 , var58 ) ; 
+return var37 ; 
+} 
+func2 -> var63 [ var64 ] = var57 * number + number ; 
+func2 -> var65 [ var64 ] = var58 * number + number ; 
+func8 ( var11 , var1 , func2 -> var23 , number , var57 , 
+var58 , 
+var66 , 
+& func2 -> var67 , func2 -> var68 ) ; 
+} else { 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var61 [ var7 ] = number ; 
+func2 -> var69 [ var7 ] = number ; 
+} 
+func2 -> var70 = func2 -> var23 ; 
+func2 -> var62 = number ; 
+} 
+} else if ( ! func2 -> var23 ) { 
+if ( ! var1 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str ) ; 
+return var37 ; 
+} else { 
+func2 -> var10 [ var1 ] = func2 -> var10 [ var1 - number ] ; 
+} 
+} 
+var10 = func2 -> var10 [ var1 ] ; 
+if ( var10 ) { 
+int var71 = number ; 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+if ( func2 -> var61 [ var7 ] ) { 
+if ( ( func2 -> var23 && func2 -> var69 [ var7 ] ) || func3 ( var11 ) ) { 
+int var72 , var73 , var74 ; 
+func2 -> var69 [ var7 ] = number ; 
+var71 = number ; 
+var72 = number * func4 ( var11 , number ) ; 
+for ( var5 = number ; var5 < func2 -> var67 ; var5 ++ ) { 
+var73 = func4 ( var11 , number ) ; 
+var74 = func4 ( var11 , number ) ; 
+if ( var73 == number ) 
+func2 -> var75 [ var7 ] [ var5 ] = var74 << number ; 
+else 
+func2 -> var75 [ var7 ] [ var5 ] = ( var74 + number ) << number ; 
+func2 -> var75 [ var7 ] [ var5 ] >>= ( var73 + var72 ) ; 
+} 
+} else if ( ! var1 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str ) ; 
+return var37 ; 
+} 
+} else { 
+func2 -> var69 [ var7 ] = number ; 
+} 
+} 
+if ( var3 == var59 && var71 ) { 
+for ( var5 = number ; var5 < func2 -> var67 ; var5 ++ ) { 
+func2 -> var76 [ var5 ] = func2 -> var62 ? func3 ( var11 ) : number ; 
+} 
+} 
+} 
+if ( var3 == var59 ) { 
+if ( ( func2 -> var23 && ! var1 ) || func3 ( var11 ) ) { 
+func2 -> var77 = number ; 
+if ( var10 && func2 -> var63 [ var64 ] <= number ) { 
+func2 -> var77 -= number + ( func2 -> var63 [ var64 ] == number ) ; 
+} else if ( func2 -> var24 && func2 -> var40 <= number ) { 
+func2 -> var77 -- ; 
+} 
+for ( var5 = number ; var5 < func2 -> var77 ; var5 ++ ) 
+func2 -> var78 [ var5 ] = func3 ( var11 ) ; 
+} else if ( ! var1 ) { 
+func7 ( func2 -> var35 , AV_LOG_WARNING , str 
+str ) ; 
+func2 -> var77 = number ; 
+} 
+} 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) { 
+if ( ! func2 -> var23 ) 
+func2 -> var80 [ var1 ] [ var7 ] = func4 ( var11 , number - ( var7 == func2 -> var81 ) ) ; 
+if ( func2 -> var80 [ var1 ] [ var7 ] != var82 ) 
+var12 [ var7 ] = number ; 
+} 
+for ( var7 = number ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var63 [ var7 ] = number ; 
+if ( func2 -> var80 [ var1 ] [ var7 ] != var82 ) { 
+int var83 ; 
+int var84 = func2 -> var65 [ var7 ] ; 
+if ( func2 -> var61 [ var7 ] ) 
+func2 -> var65 [ var7 ] = func2 -> var63 [ var64 ] ; 
+else if ( func2 -> var31 [ var7 ] ) 
+func2 -> var65 [ var7 ] = func2 -> var40 ; 
+else { 
+int var85 = func4 ( var11 , number ) ; 
+if ( var85 > number ) { 
+func7 ( func2 -> var35 , var36 , str , var85 ) ; 
+return var37 ; 
+} 
+func2 -> var65 [ var7 ] = var85 * number + number ; 
+} 
+var83 = number << ( func2 -> var80 [ var1 ] [ var7 ] - number ) ; 
+func2 -> var86 [ var7 ] = ( func2 -> var65 [ var7 ] + var83 - number ) / var83 ; 
+if ( var1 > number && func2 -> var65 [ var7 ] != var84 ) 
+memset ( var12 , number , var13 ) ; 
+} 
+} 
+if ( var10 && func2 -> var80 [ var1 ] [ var64 ] != var82 ) { 
+func2 -> var86 [ var64 ] = ( func2 -> var65 [ var64 ] - func2 -> var63 [ var64 ] ) / 
+( number << ( func2 -> var80 [ var1 ] [ var64 ] - number ) ) ; 
+} 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) { 
+if ( func2 -> var80 [ var1 ] [ var7 ] != var82 ) { 
+func2 -> var87 [ var7 ] [ number ] = func4 ( var11 , number ) << ! var7 ; 
+if ( func12 ( var11 , func2 -> var80 [ var1 ] [ var7 ] , 
+func2 -> var86 [ var7 ] , func2 -> var87 [ var7 ] [ number ] , 
+& func2 -> var87 [ var7 ] [ func2 -> var63 [ var7 ] + ! ! var7 ] ) ) { 
+func7 ( func2 -> var35 , var36 , str ) ; 
+return var37 ; 
+} 
+if ( var7 != var64 && var7 != func2 -> var81 ) 
+func13 ( var11 , number ) ; 
+} 
+} 
+if ( func2 -> var88 ) { 
+if ( func3 ( var11 ) ) { 
+func2 -> var89 . var90 = var91 [ func4 ( var11 , number ) ] >> func2 -> var89 . var92 ; 
+func2 -> var89 . var93 = var94 [ func4 ( var11 , number ) ] >> func2 -> var89 . var92 ; 
+func2 -> var89 . var95 = var96 [ func4 ( var11 , number ) ] ; 
+func2 -> var89 . var97 = var98 [ func4 ( var11 , number ) ] ; 
+func2 -> var89 . var99 = var100 [ func4 ( var11 , number ) ] ; 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} else if ( ! var1 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str ) ; 
+return var37 ; 
+} 
+} 
+if ( ! func2 -> var23 || ! var1 ) { 
+if ( func2 -> var101 && func3 ( var11 ) ) { 
+int var102 = number ; 
+int var103 ; 
+var103 = ( func4 ( var11 , number ) - number ) << number ; 
+for ( var4 = var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) { 
+if ( var7 == var4 || func2 -> var101 == number ) 
+var102 = ( var103 + func4 ( var11 , number ) ) << number ; 
+if ( var1 && func2 -> var104 [ var7 ] != var102 ) { 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} 
+func2 -> var104 [ var7 ] = var102 ; 
+if ( ! func2 -> var23 ) { 
+int var84 = func2 -> var105 [ var7 ] ; 
+func2 -> var105 [ var7 ] = var106 [ func4 ( var11 , number ) ] ; 
+if ( var1 && var84 != func2 -> var105 [ var7 ] ) 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} 
+} 
+} else if ( ! func2 -> var23 && ! var1 ) { 
+func7 ( func2 -> var35 , var36 , str ) ; 
+return var37 ; 
+} 
+} 
+if ( func2 -> var107 && func3 ( var11 ) ) { 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) { 
+int var84 = func2 -> var105 [ var7 ] ; 
+func2 -> var105 [ var7 ] = var106 [ func4 ( var11 , number ) ] ; 
+if ( var1 && var84 != func2 -> var105 [ var7 ] ) 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} 
+} else if ( func2 -> var23 && ! var1 ) { 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) 
+func2 -> var105 [ var7 ] = var106 [ number ] ; 
+} 
+if ( func2 -> var108 == var109 && func3 ( var11 ) ) { 
+func13 ( var11 , number ) ; 
+} 
+if ( var10 ) { 
+if ( func2 -> var70 || func3 ( var11 ) ) { 
+int var110 = func4 ( var11 , number ) ; 
+int var111 = func4 ( var11 , number ) ; 
+if ( var1 && ( var110 != func2 -> var89 . var112 || 
+var111 != func2 -> var89 . var113 ) ) { 
+var12 [ var64 ] = func14 ( var12 [ var64 ] , number ) ; 
+} 
+func2 -> var89 . var112 = var110 ; 
+func2 -> var89 . var113 = var111 ; 
+} else if ( ! func2 -> var23 && ! var1 ) { 
+func7 ( func2 -> var35 , var36 , str 
+str ) ; 
+return var37 ; 
+} 
+func2 -> var70 = number ; 
+} 
+if ( func2 -> var114 && func3 ( var11 ) ) { 
+for ( var7 = ! var10 ; var7 <= var2 ; var7 ++ ) { 
+func2 -> var115 [ var7 ] = func4 ( var11 , number ) ; 
+if ( func2 -> var115 [ var7 ] == var116 ) { 
+func7 ( func2 -> var35 , var36 , str ) ; 
+return var37 ; 
+} 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} 
+for ( var7 = ! var10 ; var7 <= var2 ; var7 ++ ) { 
+if ( func2 -> var115 [ var7 ] == var117 ) { 
+func2 -> var118 [ var7 ] = func4 ( var11 , number ) + number ; 
+for ( var6 = number ; var6 < func2 -> var118 [ var7 ] ; var6 ++ ) { 
+func2 -> var119 [ var7 ] [ var6 ] = func4 ( var11 , number ) ; 
+func2 -> var120 [ var7 ] [ var6 ] = func4 ( var11 , number ) ; 
+func2 -> var121 [ var7 ] [ var6 ] = func4 ( var11 , number ) ; 
+} 
+var12 [ var7 ] = func14 ( var12 [ var7 ] , number ) ; 
+} 
+} 
+} else if ( var1 == number ) { 
+for ( var7 = number ; var7 <= func2 -> var79 ; var7 ++ ) { 
+func2 -> var115 [ var7 ] = var122 ; 
+} 
+} 
+for ( var7 = ! var10 ; var7 <= func2 -> var79 ; var7 ++ ) { 
+if ( var12 [ var7 ] > number ) { 
+func15 ( func2 -> var87 [ var7 ] , 
+func2 -> var63 [ var7 ] , func2 -> var65 [ var7 ] , 
+func2 -> var123 [ var7 ] , func2 -> var124 [ var7 ] ) ; 
+} 
+if ( var12 [ var7 ] > number ) { 
+if ( func16 ( & func2 -> var89 , func2 -> var124 [ var7 ] , 
+func2 -> var63 [ var7 ] , func2 -> var65 [ var7 ] , 
+func2 -> var105 [ var7 ] , ( var7 == func2 -> var81 ) , 
+func2 -> var115 [ var7 ] , func2 -> var118 [ var7 ] , 
+func2 -> var119 [ var7 ] , func2 -> var120 [ var7 ] , 
+func2 -> var121 [ var7 ] , func2 -> var125 [ var7 ] ) ) { 
+func7 ( func2 -> var35 , var36 , str ) ; 
+return var37 ; 
+} 
+} 
+if ( var12 [ var7 ] > number ) { 
+const uint8_t * var126 = func2 -> var127 [ var7 ] ? 
+var128 : var129 ; 
+func2 -> func17 . func18 ( func2 -> var125 [ var7 ] , func2 -> var123 [ var7 ] , 
+func2 -> var63 [ var7 ] , func2 -> var65 [ var7 ] , 
+func2 -> var104 [ var7 ] , 
+func2 -> var89 . var99 , 
+var126 , func2 -> var130 [ var7 ] ) ; 
+} 
+} 
+if ( func2 -> var131 && func3 ( var11 ) ) { 
+int var132 = func4 ( var11 , number ) ; 
+while ( var132 -- ) 
+func13 ( var11 , number ) ; 
+} 
+func19 ( func2 , var1 ) ; 
+if ( func2 -> var3 == var59 ) 
+func20 ( func2 ) ; 
+for ( var7 = number ; var7 <= func2 -> var79 ; var7 ++ ) { 
+int var133 = number ; 
+INTFLOAT var134 ; 
+if ( func2 -> var3 == var135 ) 
+var133 = number - var7 ; 
+if ( func2 -> var136 && func2 -> var137 [ var133 ] ) 
+var134 = func2 -> var138 [ var133 ] ; 
+else 
+var134 = func2 -> var21 [ var133 ] ; 
+func21 ( func2 -> var139 [ var7 ] , func2 -> var140 [ var7 ] , var134 , number ) ; 
+if ( func2 -> target_level != number ) 
+var134 = var134 * func2 -> level_gain [ var133 ] ; 
+var134 *= number / 4194304 . 0f ; 
+func2 -> fmt_conv . int32_to_float_fmul_scalar ( func2 -> var139 [ var7 ] , 
+func2 -> var140 [ var7 ] , var134 , number ) ; 
+} 
+if ( var141 && func2 -> var24 ) { 
+func22 ( func2 ) ; 
+} 
+var9 = func2 -> var79 != func2 -> var142 && 
+! ( ( func2 -> var143 & var144 ) && 
+func2 -> var2 == func2 -> var142 ) ; 
+if ( var8 ) { 
+if ( func2 -> var145 ) { 
+func2 -> var145 = number ; 
+func23 ( func2 ) ; 
+} 
+func24 ( func2 , func2 -> var79 ) ; 
+if ( var9 ) { 
+func25 ( func2 -> var146 , func2 -> var147 , 
+func2 -> var142 , func2 -> var2 , number ) ; 
+func2 -> func17 . func26 ( func2 -> var146 , func2 -> var147 , 
+func2 -> var142 , func2 -> var2 , number ) ; 
+} 
+} else { 
+if ( var9 ) { 
+func2 -> func17 . func27 ( func26 ) ( func2 -> var148 + number , func2 -> var147 , 
+func2 -> var142 , func2 -> var2 , number ) ; 
+} 
+if ( var9 && ! func2 -> var145 ) { 
+func2 -> var145 = number ; 
+func2 -> func17 . func27 ( func26 ) ( func2 -> var149 , func2 -> var147 , 
+func2 -> var142 , func2 -> var2 , number ) ; 
+} 
+func24 ( func2 , func2 -> var142 ) ; 
+} 
+return number ; 
+} 

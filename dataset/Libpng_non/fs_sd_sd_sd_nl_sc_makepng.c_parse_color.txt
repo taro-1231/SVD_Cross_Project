@@ -1,0 +1,28 @@
+func1 ( char * var1 , unsigned int * var2 ) 
+{ 
+unsigned int var3 = number ; 
+while ( * var1 && var3 < number ) 
+{ 
+char * var4 = var1 ; 
+unsigned long var5 = func2 ( var1 , & var4 , number ) ; 
+if ( var5 > number ) 
+{ 
+fprintf ( var6 , str , var1 ) ; 
+exit ( number ) ; 
+} 
+if ( var4 == var1 ) 
+{ 
+fprintf ( var6 , str , var1 ) ; 
+exit ( number ) ; 
+} 
+if ( * var4 ) ++ var4 ; 
+var1 = var4 ; 
+var2 [ ++ var3 ] = ( unsigned int ) var5 ; 
+} 
+if ( * var1 ) 
+{ 
+fprintf ( var6 , str , var1 ) ; 
+exit ( number ) ; 
+} 
+* var2 = var3 ; 
+} 

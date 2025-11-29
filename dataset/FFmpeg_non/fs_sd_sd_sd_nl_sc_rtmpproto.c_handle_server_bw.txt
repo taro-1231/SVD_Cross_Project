@@ -1,0 +1,18 @@
+static int func1 ( URLContext * var1 , RTMPPacket * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+if ( var2 -> var5 < number ) { 
+func2 ( var1 , var6 , 
+str , 
+var2 -> var5 ) ; 
+return var7 ; 
+} 
+var3 -> var8 = func3 ( var2 -> var9 ) ; 
+if ( var3 -> var8 <= number ) { 
+func2 ( var1 , var6 , str , 
+var3 -> var8 ) ; 
+return var7 ; 
+} 
+func2 ( var1 , var10 , str , var3 -> var8 ) ; 
+return number ; 
+} 

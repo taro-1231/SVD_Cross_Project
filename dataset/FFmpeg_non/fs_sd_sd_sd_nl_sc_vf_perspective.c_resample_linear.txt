@@ -1,0 +1,69 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , 
+int var3 , int var4 ) 
+{ 
+PerspectiveContext * var5 = var1 -> var6 ; 
+ThreadData * var7 = var2 ; 
+uint8_t * var8 = var7 -> var8 ; 
+int var9 = var7 -> var9 ; 
+uint8_t * var10 = var7 -> var10 ; 
+int var11 = var7 -> var11 ; 
+int var12 = var7 -> var12 ; 
+int var13 = var7 -> var13 ; 
+int var14 = var7 -> var14 ; 
+int var15 = var7 -> var15 ; 
+int var16 = ( var13 * var3 ) / var4 ; 
+int var17 = ( var13 * ( var3 + number ) ) / var4 ; 
+const int var18 = var5 -> var18 [ number ] ; 
+int var19 , var20 ; 
+for ( var20 = var16 ; var20 < var17 ; var20 ++ ) { 
+int var21 = var20 << var15 ; 
+for ( var19 = number ; var19 < var12 ; var19 ++ ) { 
+int var22 , var23 , var24 , var25 , var26 , var27 , var28 , var29 , var30 ; 
+var27 = var19 << var14 ; 
+var22 = var5 -> var31 [ var27 + var21 * var18 ] [ number ] >> var14 ; 
+var23 = var5 -> var31 [ var27 + var21 * var18 ] [ number ] >> var15 ; 
+var24 = var22 & ( var32 - number ) ; 
+var25 = var23 & ( var32 - number ) ; 
+var22 >>= var33 ; 
+var23 >>= var33 ; 
+var28 = var22 + var23 * var11 ; 
+var29 = var32 - var24 ; 
+var30 = var32 - var25 ; 
+if ( ( unsigned ) var22 < ( unsigned ) ( var12 - number ) ) { 
+if ( ( unsigned ) var23 < ( unsigned ) ( var13 - number ) ) { 
+var26 = var30 * ( var29 * var10 [ var28 ] + var24 * var10 [ var28 + number ] ) + 
+var25 * ( var29 * var10 [ var28 + var11 ] + var24 * var10 [ var28 + var11 + number ] ) ; 
+var26 = ( var26 + ( number << ( var33 * number - number ) ) ) >> ( var33 * number ) ; 
+} else { 
+if ( var23 < number ) 
+var23 = number ; 
+else 
+var23 = var13 - number ; 
+var28 = var22 + var23 * var11 ; 
+var26 = var29 * var10 [ var28 ] + var24 * var10 [ var28 + number ] ; 
+var26 = ( var26 + ( number << ( var33 - number ) ) ) >> var33 ; 
+} 
+} else { 
+if ( var22 < number ) 
+var22 = number ; 
+else 
+var22 = var12 - number ; 
+if ( ( unsigned ) var23 < ( unsigned ) ( var13 - number ) ) { 
+var28 = var22 + var23 * var11 ; 
+var26 = var30 * var10 [ var28 ] + var25 * var10 [ var28 + var11 ] ; 
+var26 = ( var26 + ( number << ( var33 - number ) ) ) >> var33 ; 
+} else { 
+if ( var23 < number ) 
+var23 = number ; 
+else 
+var23 = var13 - number ; 
+var28 = var22 + var23 * var11 ; 
+var26 = var10 [ var28 ] ; 
+} 
+} 
+var26 = func2 ( var26 ) ; 
+var8 [ var19 + var20 * var9 ] = var26 ; 
+} 
+} 
+return number ; 
+} 

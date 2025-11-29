@@ -1,0 +1,49 @@
+static int func1 ( AACContext * var1 , GetBitContext * var2 , int var3 , 
+ChannelElement * var4 , enum RawDataBlockType var5 ) 
+{ 
+int var6 = number ; 
+int var7 = var3 ; 
+int var8 = func2 ( var2 , number ) ; 
+if ( var1 -> var9 -> var10 & var11 ) 
+func3 ( var1 -> var9 , var12 , str , var8 , var3 ) ; 
+switch ( var8 ) { 
+case var13 : 
+var6 ++ ; 
+case var14 : 
+if ( ! var4 ) { 
+func3 ( var1 -> var9 , var15 , str ) ; 
+return var7 ; 
+} else if ( ! var1 -> var16 [ number ] . var17 . var18 ) { 
+func3 ( var1 -> var9 , var15 , str ) ; 
+func4 ( var2 , number * var3 - number ) ; 
+return var7 ; 
+} else if ( var1 -> var16 [ number ] . var17 . var18 == - number && var1 -> var16 [ number ] . var19 == var20 ) { 
+func3 ( var1 -> var9 , var15 , str ) ; 
+func4 ( var2 , number * var3 - number ) ; 
+return var7 ; 
+} else if ( var1 -> var16 [ number ] . var17 . var21 == - number && var1 -> var16 [ number ] . var19 < var20 && var1 -> var9 -> var22 == number ) { 
+var1 -> var16 [ number ] . var17 . var18 = number ; 
+var1 -> var16 [ number ] . var17 . var21 = number ; 
+var1 -> var9 -> var23 = var24 ; 
+func5 ( var1 , var1 -> var16 [ number ] . var25 , var1 -> var16 [ number ] . var26 , 
+var1 -> var16 [ number ] . var19 , number ) ; 
+} else { 
+var1 -> var16 [ number ] . var17 . var18 = number ; 
+var1 -> var9 -> var23 = var27 ; 
+} 
+var7 = func6 ( func7 ) ( var1 , & var4 -> var18 , var2 , var6 , var3 , var5 ) ; 
+break ; 
+case var28 : 
+var7 = func8 ( & var1 -> var29 , var2 ) ; 
+break ; 
+case var30 : 
+func9 ( var1 , var2 , number * var3 - number ) ; 
+break ; 
+case var31 : 
+case var32 : 
+var33 : 
+func4 ( var2 , number * var3 - number ) ; 
+break ; 
+} ; 
+return var7 ; 
+} 

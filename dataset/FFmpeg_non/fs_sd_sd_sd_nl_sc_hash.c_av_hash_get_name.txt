@@ -1,0 +1,4 @@
+const char * func1 ( const AVHashContext * var1 ) 
+{ 
+return var2 [ var1 -> var3 ] . var4 ; 
+} 

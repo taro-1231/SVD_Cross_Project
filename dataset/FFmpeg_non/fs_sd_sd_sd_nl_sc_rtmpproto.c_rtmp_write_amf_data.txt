@@ -1,0 +1,47 @@
+static int func1 ( URLContext * var1 , char * var2 , uint8_t ** var3 ) 
+{ 
+char * var4 , * var5 ; 
+char var6 ; 
+if ( var2 [ number ] && var2 [ number ] == str ) { 
+var6 = var2 [ number ] ; 
+var5 = var2 + number ; 
+} else if ( var2 [ number ] == str && var2 [ number ] && var2 [ number ] == str ) { 
+var6 = var2 [ number ] ; 
+var4 = var2 + number ; 
+var5 = strchr ( var4 , str ) ; 
+if ( ! var5 ) 
+goto var7 ; 
+* var5 = str ; 
+var5 ++ ; 
+func2 ( var3 , var4 ) ; 
+} else { 
+goto var7 ; 
+} 
+switch ( var6 ) { 
+case str : 
+func3 ( var3 , var5 [ number ] != str ) ; 
+break ; 
+case str : 
+func4 ( var3 , var5 ) ; 
+break ; 
+case str : 
+func5 ( var3 , strtod ( var5 , var8 ) ) ; 
+break ; 
+case str : 
+func6 ( var3 ) ; 
+break ; 
+case str : 
+if ( var5 [ number ] != str ) 
+func7 ( var3 ) ; 
+else 
+func8 ( var3 ) ; 
+break ; 
+var9 : 
+goto var7 ; 
+break ; 
+} 
+return number ; 
+var7 : 
+func9 ( var1 , var10 , str , var2 ) ; 
+return func10 ( var11 ) ; 
+} 

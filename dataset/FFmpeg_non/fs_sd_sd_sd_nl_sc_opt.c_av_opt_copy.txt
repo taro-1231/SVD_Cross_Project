@@ -1,0 +1,47 @@
+int func1 ( void * var1 , FF_CONST_AVUTIL55 void * var2 ) 
+{ 
+const AVOption * var3 = var4 ; 
+const AVClass * var5 ; 
+int var6 = number ; 
+if ( ! var2 ) 
+return number ; 
+var5 = * ( AVClass ** ) var2 ; 
+if ( * ( AVClass ** ) var1 && var5 != * ( AVClass ** ) var1 ) 
+return func2 ( var7 ) ; 
+while ( ( var3 = func3 ( var2 , var3 ) ) ) { 
+void * var8 = ( ( uint8_t * ) var1 ) + var3 -> var9 ; 
+void * var10 = ( ( uint8_t * ) var2 ) + var3 -> var9 ; 
+uint8_t ** var11 = ( uint8_t ** ) var8 ; 
+uint8_t ** var12 = ( uint8_t ** ) var10 ; 
+if ( var3 -> var13 == var14 ) { 
+if ( * var11 != * var12 ) 
+func4 ( var11 ) ; 
+* var11 = func5 ( * var12 ) ; 
+if ( * var12 && ! * var11 ) 
+var6 = func2 ( var15 ) ; 
+} else if ( var3 -> var13 == var16 ) { 
+int var17 = * ( int * ) ( var12 + number ) ; 
+if ( * var11 != * var12 ) 
+func4 ( var11 ) ; 
+* var11 = func6 ( * var12 , var17 ) ; 
+if ( var17 && ! * var11 ) { 
+var6 = func2 ( var15 ) ; 
+var17 = number ; 
+} 
+* ( int * ) ( var11 + number ) = var17 ; 
+} else if ( var3 -> var13 == var18 ) { 
+} else if ( var3 -> var13 == var19 ) { 
+AVDictionary ** var20 = ( AVDictionary ** ) var10 ; 
+AVDictionary ** var21 = ( AVDictionary ** ) var8 ; 
+if ( * var20 != * var21 ) 
+func7 ( var21 ) ; 
+* var21 = var4 ; 
+func8 ( var21 , * var20 , number ) ; 
+if ( func9 ( * var20 ) != func9 ( * var21 ) ) 
+var6 = func2 ( var15 ) ; 
+} else { 
+memcpy ( var8 , var10 , func10 ( var3 -> var13 ) ) ; 
+} 
+} 
+return var6 ; 
+} 

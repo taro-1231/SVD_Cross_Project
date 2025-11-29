@@ -1,0 +1,44 @@
+int func1 ( uint8_t * var1 [ number ] , int var2 [ number ] , int var3 , uint8_t var4 [ number ] , 
+enum AVPixelFormat var5 , uint8_t var6 [ number ] , 
+int * var7 , uint8_t var8 [ number ] ) 
+{ 
+uint8_t var9 [ number ] = { number } ; 
+int var10 ; 
+const AVPixFmtDescriptor * var11 = func2 ( var5 ) ; 
+int var12 ; 
+func3 ( var11 ) ; 
+var12 = var11 -> var13 ; 
+* var7 = func4 ( var9 , var5 ) >= number ; 
+if ( * var7 ) { 
+var2 [ number ] = ( func5 ( var11 ) ) >> number ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) 
+var4 [ var9 [ var10 ] ] = var6 [ var10 ] ; 
+var1 [ number ] = func6 ( var3 , var2 [ number ] ) ; 
+if ( ! var1 [ number ] ) 
+return func7 ( var14 ) ; 
+for ( var10 = number ; var10 < var3 ; var10 ++ ) 
+memcpy ( var1 [ number ] + var10 * var2 [ number ] , var4 , var2 [ number ] ) ; 
+if ( var8 ) 
+memcpy ( var8 , var9 , sizeof ( var9 [ number ] ) * number ) ; 
+} else { 
+int var15 ; 
+var4 [ number ] = func8 ( var6 [ number ] , var6 [ number ] , var6 [ number ] ) ; 
+var4 [ number ] = func9 ( var6 [ number ] , var6 [ number ] , var6 [ number ] , number ) ; 
+var4 [ number ] = func10 ( var6 [ number ] , var6 [ number ] , var6 [ number ] , number ) ; 
+var4 [ number ] = var6 [ number ] ; 
+for ( var15 = number ; var15 < number ; var15 ++ ) { 
+int var16 ; 
+int var17 = ( var15 == number || var15 == number ) ? var12 : number ; 
+var2 [ var15 ] = number ; 
+var16 = func11 ( var3 , var17 ) * var2 [ var15 ] ; 
+var1 [ var15 ] = func12 ( var16 ) ; 
+if ( ! var1 [ var15 ] ) { 
+while ( var15 && var1 [ var15 - number ] ) 
+func13 ( & var1 [ -- var15 ] ) ; 
+return func7 ( var14 ) ; 
+} 
+memset ( var1 [ var15 ] , var4 [ var15 ] , var16 ) ; 
+} 
+} 
+return number ; 
+} 

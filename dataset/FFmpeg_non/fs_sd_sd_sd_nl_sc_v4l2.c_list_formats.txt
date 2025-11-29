@@ -1,0 +1,29 @@
+static void func1 ( AVFormatContext * var1 , int var2 ) 
+{ 
+const struct video_data * var3 = var1 -> var4 ; 
+struct v4l2_fmtdesc var5 = { . var2 = V4L2_BUF_TYPE_VIDEO_CAPTURE } ; 
+while ( ! func2 ( var3 -> var6 , var7 , & var5 ) ) { 
+enum AVCodecID var8 = func3 ( var5 . var9 ) ; 
+enum AVPixelFormat var10 = func4 ( var5 . var9 , var8 ) ; 
+var5 . var11 ++ ; 
+if ( ! ( var5 . var12 & var13 ) && 
+var2 & var14 ) { 
+const char * var15 = func5 ( var10 ) ; 
+func6 ( var1 , var16 , str , 
+var15 ? var15 : str , 
+var5 . var17 ) ; 
+} else if ( var5 . var12 & var13 && 
+var2 & var18 ) { 
+const AVCodecDescriptor * var19 = func7 ( var8 ) ; 
+func6 ( var1 , var16 , str , 
+var19 ? var19 -> var20 : str , 
+var5 . var17 ) ; 
+} else { 
+continue ; 
+} 
+if ( var5 . var12 & var21 ) 
+func6 ( var1 , var16 , str ) ; 
+func8 ( var1 , var5 . var9 ) ; 
+func6 ( var1 , var16 , str ) ; 
+} 
+} 

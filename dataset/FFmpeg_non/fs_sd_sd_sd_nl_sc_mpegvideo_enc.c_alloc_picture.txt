@@ -1,0 +1,7 @@
+static int func1 ( MpegEncContext * var1 , Picture * var2 , int var3 ) 
+{ 
+return func2 ( var1 -> var4 , var2 , & var1 -> var5 , & var1 -> var6 , var3 , number , 
+var1 -> var7 , var1 -> var8 , var1 -> var9 , 
+var1 -> var10 , var1 -> var11 , var1 -> var12 , var1 -> var13 , 
+& var1 -> var14 , & var1 -> var15 ) ; 
+} 

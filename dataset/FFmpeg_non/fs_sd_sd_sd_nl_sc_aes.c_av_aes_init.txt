@@ -1,0 +1,63 @@
+int func1 ( AVAES * var1 , const uint8_t * var2 , int var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 , var8 = number ; 
+uint8_t var9 [ number ] [ number ] ; 
+int var10 = var3 >> number ; 
+int var11 = var10 + number ; 
+uint8_t var12 [ number ] ; 
+uint8_t var13 [ number ] ; 
+if ( ! var14 [ func2 ( var14 ) - number ] [ func2 ( var14 [ number ] ) - number ] ) { 
+var6 = number ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+var13 [ var5 ] = var13 [ var5 + number ] = var6 ; 
+var12 [ var6 ] = var5 ; 
+var6 ^= var6 + var6 ; 
+if ( var6 > number ) 
+var6 ^= number ; 
+} 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+var6 = var5 ? var13 [ number - var12 [ var5 ] ] : number ; 
+var6 ^= ( var6 << number ) ^ ( var6 << number ) ^ ( var6 << number ) ^ ( var6 << number ) ; 
+var6 = ( var6 ^ ( var6 >> number ) ^ number ) & number ; 
+var15 [ var6 ] = var5 ; 
+var16 [ var5 ] = var6 ; 
+} 
+init_multbl2 ( var17 , ( const int [ number ] ) { 0xe , 0x9 , 0xd , 0xb } , 
+var12 , var13 , var15 ) ; 
+init_multbl2 ( var14 , ( const int [ number ] ) { 0x2 , 0x1 , 0x1 , 0x3 } , 
+var12 , var13 , var16 ) ; 
+} 
+if ( var3 != number && var3 != number && var3 != number ) 
+return - number ; 
+var1 -> var11 = var11 ; 
+memcpy ( var9 , var2 , var10 * number ) ; 
+memcpy ( var1 -> var18 [ number ] . var19 , var2 , var10 * number ) ; 
+for ( var7 = var10 * number ; var7 < ( var11 + number ) * number ; var7 += var10 * number ) { 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var9 [ number ] [ var5 ] ^= var16 [ var9 [ var10 - number ] [ ( var5 + number ) & number ] ] ; 
+var9 [ number ] [ number ] ^= var20 [ var8 ++ ] ; 
+for ( var6 = number ; var6 < var10 ; var6 ++ ) { 
+if ( var10 != number || var6 != var10 >> number ) 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var9 [ var6 ] [ var5 ] ^= var9 [ var6 - number ] [ var5 ] ; 
+else 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var9 [ var6 ] [ var5 ] ^= var16 [ var9 [ var6 - number ] [ var5 ] ] ; 
+} 
+memcpy ( var1 -> var18 [ number ] . var19 + var7 , var9 , var10 * number ) ; 
+} 
+if ( var4 ) { 
+for ( var5 = number ; var5 < var11 ; var5 ++ ) { 
+var21 var22 [ number ] ; 
+var22 [ number ] = var1 -> var18 [ var5 ] ; 
+func3 ( & var22 [ number ] , number , var16 ) ; 
+func4 ( var22 , var17 , number , number ) ; 
+var1 -> var18 [ var5 ] = var22 [ number ] ; 
+} 
+} else { 
+for ( var5 = number ; var5 < ( var11 + number ) >> number ; var5 ++ ) { 
+func5 ( var21 , var1 -> var18 [ var5 ] , var1 -> var18 [ var11 - var5 ] ) ; 
+} 
+} 
+return number ; 
+} 

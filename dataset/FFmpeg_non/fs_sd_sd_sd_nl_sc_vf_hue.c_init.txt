@@ -1,0 +1,24 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+HueContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( var2 -> var5 && var2 -> var6 ) { 
+var7 ( var1 , AV_LOG_ERROR , 
+str 
+str ) ; 
+return func2 ( var8 ) ; 
+} 
+if ( var4 < number ) \ 
+return var4 ; \ 
+} while ( number ) 
+func3 ( brightness , str ) ; 
+func3 ( var9 , str ) ; 
+func3 ( var10 , str ) ; 
+func3 ( var2 , str ) ; 
+var7 ( var1 , var11 , 
+str , 
+var2 -> var5 , var2 -> var6 , var2 -> var12 , var2 -> var13 ) ; 
+func4 ( var2 ) ; 
+var2 -> var14 = number ; 
+return number ; 
+} 

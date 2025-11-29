@@ -1,0 +1,13 @@
+func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+int var4 = number ; 
+for ( var3 = number ; var3 < var1 ; ++ var3 ) 
+{ 
+if ( strcmp ( var2 [ var3 ] , str ) == number ) 
+var5 = number ; 
+else if ( func2 ( var2 [ var3 ] ) ) 
+var4 = number ; 
+} 
+return var4 == number ; 
+} 

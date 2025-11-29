@@ -1,0 +1,30 @@
+func1 ( png_store * var1 , png_const_structp var2 , char * var3 , size_t var4 , 
+size_t var5 , PNG_CONST char * var6 ) 
+{ 
+if ( var2 != var7 && var2 == var1 -> var8 ) 
+{ 
+var5 = func2 ( var3 , var4 , var5 , str ) ; 
+if ( var1 -> var9 != var7 ) 
+{ 
+var5 = func2 ( var3 , var4 , var5 , var1 -> var9 -> var10 ) ; 
+var5 = func2 ( var3 , var4 , var5 , var11 ) ; 
+} 
+} 
+else if ( var2 != var7 && var2 == var1 -> var12 ) 
+{ 
+var5 = func2 ( var3 , var4 , var5 , str ) ; 
+var5 = func2 ( var3 , var4 , var5 , var1 -> var13 ) ; 
+var5 = func2 ( var3 , var4 , var5 , var11 ) ; 
+} 
+else 
+{ 
+var5 = func2 ( var3 , var4 , var5 , str ) ; 
+} 
+if ( var1 -> var14 [ number ] != number ) 
+{ 
+var5 = func2 ( var3 , var4 , var5 , var1 -> var14 ) ; 
+var5 = func2 ( var3 , var4 , var5 , var11 ) ; 
+} 
+var5 = func2 ( var3 , var4 , var5 , var6 ) ; 
+return var5 ; 
+} 

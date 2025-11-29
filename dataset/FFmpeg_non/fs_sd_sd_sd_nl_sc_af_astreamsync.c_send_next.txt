@@ -1,0 +1,15 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+AStreamSyncContext * var2 = var1 -> var3 ; 
+int var4 ; 
+while ( number ) { 
+if ( ! var2 -> var5 [ var2 -> var6 ] . var7 ) 
+break ; 
+func2 ( var1 , var2 -> var6 ) ; 
+if ( ! var2 -> var8 ) 
+var2 -> var6 = func3 ( var2 -> var9 , var2 -> var10 , var11 ) >= number ; 
+} 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+if ( var2 -> var5 [ var4 ] . var7 == var12 ) 
+func2 ( var1 , var4 ) ; 
+} 

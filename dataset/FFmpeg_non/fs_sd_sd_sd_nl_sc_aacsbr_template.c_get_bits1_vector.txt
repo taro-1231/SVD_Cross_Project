@@ -1,0 +1,8 @@
+static av_always_inline void func1 ( GetBitContext * var1 , uint8_t * var2 , 
+int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < var3 ; var4 ++ ) { 
+var2 [ var4 ] = func2 ( var1 ) ; 
+} 
+} 

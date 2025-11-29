@@ -1,0 +1,20 @@
+func1 ( png_structp var1 , png_voidp var2 ) 
+{ 
+png_const_structp var3 = var1 ; 
+store_pool * var4 = voidcast ( store_pool * , png_get_mem_ptr ( var3 ) ) ; 
+store_memory * var5 = voidcast ( store_memory * , var2 ) , ** var6 ; 
+if ( var3 != var4 -> var7 -> var8 && var3 != var4 -> var7 -> var9 ) 
+var3 = var10 ; 
+-- var5 ; 
+for ( var6 = & var4 -> var11 ; * var6 != var5 ; var6 = & ( * var6 ) -> var12 ) 
+{ 
+if ( * var6 == var10 ) 
+{ 
+func2 ( var4 -> var7 , var3 , str ) ; 
+return ; 
+} 
+} 
+* var6 = var5 -> var12 ; 
+var5 -> var12 = var10 ; 
+func3 ( var3 , var4 , var5 ) ; 
+} 

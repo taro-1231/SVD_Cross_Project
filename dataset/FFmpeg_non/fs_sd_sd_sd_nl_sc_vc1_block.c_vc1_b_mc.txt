@@ -1,0 +1,15 @@
+static inline void func1 ( VC1Context * var1 , int var2 [ 2 ] , int var3 [ 2 ] , 
+int var4 , int var5 ) 
+{ 
+if ( var4 ) { 
+func2 ( var1 , number ) ; 
+func3 ( var1 ) ; 
+return ; 
+} 
+if ( var5 == var6 ) { 
+func2 ( var1 , number ) ; 
+func3 ( var1 ) ; 
+return ; 
+} 
+func2 ( var1 , ( var5 == var7 ) ) ; 
+} 

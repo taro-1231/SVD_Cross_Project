@@ -1,0 +1,20 @@
+void func1 ( AVHashContext * var1 ) 
+{ 
+switch ( var1 -> var2 ) { 
+case var3 : func2 ( var1 -> var1 ) ; break ; 
+case var4 : func3 ( var1 -> var1 ) ; break ; 
+case var5 : func4 ( var1 -> var1 , number ) ; break ; 
+case var6 : func4 ( var1 -> var1 , number ) ; break ; 
+case var7 : func4 ( var1 -> var1 , number ) ; break ; 
+case var8 : func4 ( var1 -> var1 , number ) ; break ; 
+case var9 : func5 ( var1 -> var1 , number ) ; break ; 
+case var10 : func5 ( var1 -> var1 , number ) ; break ; 
+case var11 : func5 ( var1 -> var1 , number ) ; break ; 
+case var12 : func6 ( var1 -> var1 , number ) ; break ; 
+case var13 : func6 ( var1 -> var1 , number ) ; break ; 
+case var14 : func6 ( var1 -> var1 , number ) ; break ; 
+case var15 : func6 ( var1 -> var1 , number ) ; break ; 
+case var16 : var1 -> var17 = var18 ; break ; 
+case var19 : var1 -> var17 = number ; break ; 
+} 
+} 

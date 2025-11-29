@@ -1,0 +1,6 @@
+static av_always_inline void func1 ( MpegEncContext * var1 , int var2 , int var3 ) 
+{ 
+if ( var1 -> var4 == var5 ) func2 ( var1 , var2 , var3 , number , number , number ) ; 
+else if ( var1 -> var4 == var6 ) func2 ( var1 , var2 , var3 , number , number , number ) ; 
+else func2 ( var1 , var2 , var3 , number , number , number ) ; 
+} 

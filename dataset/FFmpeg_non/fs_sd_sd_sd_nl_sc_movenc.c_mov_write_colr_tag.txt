@@ -1,0 +1,66 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+if ( var2 -> var3 -> var4 == var5 && 
+var2 -> var3 -> var6 == var7 && 
+var2 -> var3 -> var8 == var9 ) { 
+if ( ( var2 -> var3 -> var10 >= number && var2 -> var3 -> var11 >= number ) 
+|| ( var2 -> var3 -> var10 == number && var2 -> var3 -> var11 == number ) ) { 
+func2 ( var12 , var13 , str ) ; 
+var2 -> var3 -> var4 = var14 ; 
+} else if ( var2 -> var3 -> var10 == number && var2 -> var11 == number ) { 
+func2 ( var12 , var13 , str ) ; 
+var2 -> var3 -> var4 = var15 ; 
+} else if ( var2 -> var3 -> var10 == number && 
+( var2 -> var11 == number || var2 -> var11 == number ) ) { 
+func2 ( var12 , var13 , str ) ; 
+var2 -> var3 -> var4 = var16 ; 
+} else { 
+func2 ( var12 , var13 , str ) ; 
+} 
+switch ( var2 -> var3 -> var4 ) { 
+case var14 : 
+var2 -> var3 -> var6 = var17 ; 
+var2 -> var3 -> var8 = var18 ; 
+break ; 
+case var16 : 
+case var15 : 
+var2 -> var3 -> var6 = var17 ; 
+var2 -> var3 -> var8 = var19 ; 
+break ; 
+} 
+} 
+func3 ( var2 -> var20 == var21 || var2 -> var20 == var22 ) ; 
+func4 ( var1 , number + ( var2 -> var20 == var22 ) ) ; 
+func5 ( var1 , str ) ; 
+if ( var2 -> var20 == var22 ) 
+func5 ( var1 , str ) ; 
+else 
+func5 ( var1 , str ) ; 
+switch ( var2 -> var3 -> var4 ) { 
+case var14 : func6 ( var1 , number ) ; break ; 
+case var16 : 
+case var23 : func6 ( var1 , number ) ; break ; 
+case var15 : func6 ( var1 , number ) ; break ; 
+var24 : func6 ( var1 , number ) ; 
+} 
+switch ( var2 -> var3 -> var6 ) { 
+case var17 : func6 ( var1 , number ) ; break ; 
+case var25 : func6 ( var1 , number ) ; break ; 
+case var26 : func6 ( var1 , number ) ; break ; 
+var24 : func6 ( var1 , number ) ; 
+} 
+switch ( var2 -> var3 -> var8 ) { 
+case var18 : func6 ( var1 , number ) ; break ; 
+case var27 : 
+case var19 : func6 ( var1 , number ) ; break ; 
+case var28 : func6 ( var1 , number ) ; break ; 
+var24 : func6 ( var1 , number ) ; 
+} 
+if ( var2 -> var20 == var22 ) { 
+int var29 = var2 -> var3 -> var30 == var31 ; 
+func7 ( var1 , var29 << number ) ; 
+return number ; 
+} else { 
+return number ; 
+} 
+} 

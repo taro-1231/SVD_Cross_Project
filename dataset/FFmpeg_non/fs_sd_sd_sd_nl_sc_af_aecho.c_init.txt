@@ -1,0 +1,42 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+AudioEchoContext * var2 = var1 -> var3 ; 
+int var4 , var5 , var6 ; 
+if ( ! var2 -> var7 || ! var2 -> var8 ) { 
+func2 ( var1 , var9 , str ) ; 
+return func3 ( var10 ) ; 
+} 
+func4 ( var2 -> var7 , & var4 ) ; 
+func4 ( var2 -> var8 , & var5 ) ; 
+var2 -> var11 = func5 ( var2 -> var11 , var4 , sizeof ( * var2 -> var11 ) ) ; 
+var2 -> var12 = func5 ( var2 -> var12 , var5 , sizeof ( * var2 -> var12 ) ) ; 
+if ( ! var2 -> var11 || ! var2 -> var12 ) 
+return func3 ( var13 ) ; 
+func6 ( var2 -> var7 , & var4 , var2 -> var11 ) ; 
+func6 ( var2 -> var8 , & var5 , var2 -> var12 ) ; 
+if ( var4 != var5 ) { 
+func2 ( var1 , var9 , str , var4 , var5 ) ; 
+return func3 ( var10 ) ; 
+} 
+var2 -> var14 = var4 ; 
+if ( ! var2 -> var14 ) { 
+func2 ( var1 , var9 , str ) ; 
+return func3 ( var10 ) ; 
+} 
+var2 -> var15 = func5 ( var2 -> var15 , var4 , sizeof ( * var2 -> var15 ) ) ; 
+if ( ! var2 -> var15 ) 
+return func3 ( var13 ) ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) { 
+if ( var2 -> var11 [ var6 ] <= number || var2 -> var11 [ var6 ] > number ) { 
+func2 ( var1 , var9 , str , var6 , var2 -> var11 [ var6 ] ) ; 
+return func3 ( var10 ) ; 
+} 
+if ( var2 -> var12 [ var6 ] <= number || var2 -> var12 [ var6 ] > number ) { 
+func2 ( var1 , var9 , str , var6 , var2 -> var12 [ var6 ] ) ; 
+return func3 ( var10 ) ; 
+} 
+} 
+var2 -> var16 = var17 ; 
+func2 ( var1 , var18 , str , var2 -> var14 ) ; 
+return number ; 
+} 

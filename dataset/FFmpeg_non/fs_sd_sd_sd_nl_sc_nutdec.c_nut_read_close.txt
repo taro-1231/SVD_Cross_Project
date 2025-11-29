@@ -1,0 +1,11 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+NUTContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 ) ; 
+func2 ( & var2 -> var6 ) ; 
+func3 ( var2 ) ; 
+for ( var4 = number ; var4 < var2 -> var7 ; var4 ++ ) 
+func2 ( & var2 -> var8 [ var4 ] ) ; 
+return number ; 
+} 

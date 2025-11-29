@@ -1,0 +1,56 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+int var2 ; 
+AVFilterContext * var3 = var1 -> var4 ; 
+EBUR128Context * var5 = var3 -> var6 ; 
+const int var7 = func2 ( var1 -> var8 ) ; 
+AV_CH_TOP_BACK_LEFT | AV_CH_TOP_BACK_CENTER | AV_CH_TOP_BACK_RIGHT | \ 
+AV_CH_SIDE_LEFT | AV_CH_SIDE_RIGHT | \ 
+AV_CH_SURROUND_DIRECT_LEFT | AV_CH_SURROUND_DIRECT_RIGHT ) 
+var5 -> var7 = var7 ; 
+var5 -> var10 = func3 ( var7 , sizeof ( * var5 -> var10 ) ) ; 
+if ( ! var5 -> var10 ) 
+return func4 ( var11 ) ; 
+for ( var2 = number ; var2 < var7 ; var2 ++ ) { 
+const uint16_t var12 = func5 ( var1 -> var8 , var2 ) ; 
+if ( var12 & ( var13 | var14 ) ) { 
+var5 -> var10 [ var2 ] = number ; 
+} else if ( var12 & var9 ) { 
+var5 -> var10 [ var2 ] = number ; 
+} else { 
+var5 -> var10 [ var2 ] = number ; 
+} 
+if ( ! var5 -> var10 [ var2 ] ) 
+continue ; 
+var5 -> var15 . var16 [ var2 ] = func3 ( var17 , sizeof ( * var5 -> var15 . var16 [ number ] ) ) ; 
+var5 -> var18 . var16 [ var2 ] = func3 ( var19 , sizeof ( * var5 -> var18 . var16 [ number ] ) ) ; 
+if ( ! var5 -> var15 . var16 [ var2 ] || ! var5 -> var18 . var16 [ var2 ] ) 
+return func4 ( var11 ) ; 
+} 
+var1 -> var20 |= var21 ; 
+if ( var5 -> var22 & var23 ) { 
+int var24 ; 
+var5 -> var25 = func6 ( var7 , number * sizeof ( double ) ) ; 
+var5 -> var26 = func3 ( var7 , sizeof ( * var5 -> var26 ) ) ; 
+var5 -> var27 = func3 ( var7 , sizeof ( * var5 -> var27 ) ) ; 
+var5 -> var28 = func7 ( ) ; 
+if ( ! var5 -> var25 || ! var5 -> var26 || 
+! var5 -> var27 || ! var5 -> var28 ) 
+return func4 ( var11 ) ; 
+func8 ( var5 -> var28 , str , var1 -> var8 , number ) ; 
+func8 ( var5 -> var28 , str , var1 -> var29 , number ) ; 
+func9 ( var5 -> var28 , str , var1 -> var30 , number ) ; 
+func8 ( var5 -> var28 , str , var1 -> var8 , number ) ; 
+func8 ( var5 -> var28 , str , number , number ) ; 
+func9 ( var5 -> var28 , str , var1 -> var30 , number ) ; 
+var24 = func10 ( var5 -> var28 ) ; 
+if ( var24 < number ) 
+return var24 ; 
+} 
+if ( var5 -> var22 & var31 ) { 
+var5 -> var32 = func3 ( var7 , sizeof ( * var5 -> var32 ) ) ; 
+if ( ! var5 -> var32 ) 
+return func4 ( var11 ) ; 
+} 
+return number ; 
+} 

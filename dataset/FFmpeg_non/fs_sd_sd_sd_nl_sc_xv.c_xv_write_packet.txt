@@ -1,0 +1,7 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+AVPicture var3 ; 
+AVCodecContext * var4 = var1 -> var5 [ number ] -> var6 ; 
+func2 ( & var3 , var2 -> var7 , var4 -> var8 , var4 -> var9 , var4 -> var10 ) ; 
+return func3 ( var1 , & var3 ) ; 
+} 

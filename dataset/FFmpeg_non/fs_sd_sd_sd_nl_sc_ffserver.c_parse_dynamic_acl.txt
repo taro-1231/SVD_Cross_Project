@@ -1,0 +1,34 @@
+static FFServerIPAddressACL * func1 ( FFServerStream * var1 , 
+HTTPContext * var2 ) 
+{ 
+FILE * var3 ; 
+char var4 [ number ] ; 
+char var5 [ number ] ; 
+FFServerIPAddressACL * var6 = var7 ; 
+int var8 = number ; 
+const char * var9 ; 
+var3 = fopen ( var1 -> var10 , str ) ; 
+if ( ! var3 ) { 
+perror ( var1 -> var10 ) ; 
+return var7 ; 
+} 
+var6 = func2 ( sizeof ( FFServerIPAddressACL ) ) ; 
+if ( ! var6 ) { 
+fclose ( var3 ) ; 
+return var7 ; 
+} 
+while ( fgets ( var4 , sizeof ( var4 ) , var3 ) ) { 
+var8 ++ ; 
+var9 = var4 ; 
+while ( func3 ( * var9 ) ) 
+var9 ++ ; 
+if ( * var9 == str || * var9 == str ) 
+continue ; 
+func4 ( var5 , sizeof ( var5 ) , & var9 ) ; 
+if ( ! func5 ( var5 , str ) ) 
+func6 ( var7 , var7 , var6 , var9 , var1 -> var10 , 
+var8 ) ; 
+} 
+fclose ( var3 ) ; 
+return var6 ; 
+} 

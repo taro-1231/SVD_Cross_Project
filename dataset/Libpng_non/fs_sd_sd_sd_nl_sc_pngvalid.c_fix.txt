@@ -1,0 +1,5 @@
+func1 ( double var1 ) 
+{ 
+var1 = floor ( var1 * var2 + number ) ; 
+return ( png_fixed_point ) var1 ; 
+} 

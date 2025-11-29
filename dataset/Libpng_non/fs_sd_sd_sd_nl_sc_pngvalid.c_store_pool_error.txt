@@ -1,0 +1,6 @@
+func1 ( png_store * var1 , png_const_structp var2 , PNG_CONST char * var3 ) 
+{ 
+if ( var2 != var4 ) 
+func2 ( var2 , var3 ) ; 
+func3 ( var1 , var2 , var3 , number ; 
+} 

@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FOCContext * var4 = var2 -> var5 ; 
+if ( var4 -> var6 <= number ) 
+var4 -> var6 = var1 -> var7 - var4 -> var8 -> var9 ; 
+if ( var4 -> var10 <= number ) 
+var4 -> var10 = var1 -> var11 - var4 -> var8 -> var12 ; 
+return number ; 
+} 

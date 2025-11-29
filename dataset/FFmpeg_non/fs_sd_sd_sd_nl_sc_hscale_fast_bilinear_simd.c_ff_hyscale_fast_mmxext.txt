@@ -1,0 +1,55 @@
+void func1 ( SwsContext * var1 , int16_t * var2 , 
+int var3 , const uint8_t * var4 , 
+int var5 , int var6 ) 
+{ 
+int32_t * var7 = var1 -> var8 ; 
+int16_t * var9 = var1 -> var10 ; 
+void * var11 = var1 -> var12 ; 
+int var13 ; 
+uint64_t var14 ; 
+uint64_t ebxsave ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str 
+str REG_b str 
+str 
+str REG_c str 
+str REG_D str 
+str REG_d str 
+str REG_b str 
+str REG_a str REG_a str 
+PREFETCH str REG_c str 
+PREFETCH str REG_c str 
+PREFETCH str REG_c str 
+str REG_b str \ 
+str \ 
+str REG_b str REG_a str \ 
+str REG_S str REG_c str \ 
+str REG_a str REG_D str \ 
+str REG_a str REG_a str \ 
+str REG_b str \ 
+str \ 
+str REG_b str REG_a str REG_c str \ 
+str REG_a str REG_D str \ 
+str REG_a str REG_a str \ 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+CALL_MMXEXT_FILTER_CODE 
+str REG_a str 
+str REG_a str 
+str REG_b str 
+:: str ( var4 ) , str ( var2 ) , str ( var9 ) , str ( var7 ) , 
+str ( var11 ) 
+, str ( var14 ) 
+, str ( ebxsave ) 
+: str REG_a , str REG_c , str REG_d , str REG_S , str REG_D 
+, str REG_b 
+) ; 
+for ( var13 = var3 - number ; ( var13 * var6 ) >> number >= var5 - number ; var13 -- ) 
+var2 [ var13 ] = var4 [ var5 - number ] * number ; 
+} 

@@ -1,0 +1,9 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+PixdescTestContext * var2 = var1 -> var3 -> var2 ; 
+var2 -> var4 = func2 ( var1 -> var5 ) ; 
+func3 ( & var2 -> var6 ) ; 
+if ( ! ( var2 -> var6 = func4 ( sizeof ( * var2 -> var6 ) , var1 -> var7 ) ) ) 
+return func5 ( var8 ) ; 
+return number ; 
+} 

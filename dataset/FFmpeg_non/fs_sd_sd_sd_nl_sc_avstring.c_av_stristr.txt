@@ -1,0 +1,10 @@
+char * func1 ( const char * var1 , const char * var2 ) 
+{ 
+if ( ! * var2 ) 
+return ( char * ) ( intptr_t ) var1 ; 
+do 
+if ( func2 ( var1 , var2 , var3 ) ) 
+return ( char * ) ( intptr_t ) var1 ; 
+while ( * var1 ++ ) ; 
+return var3 ; 
+} 

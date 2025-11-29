@@ -1,0 +1,12 @@
+static av_cold var1 func1 ( AVFilterContext * var2 ) 
+{ 
+AFormatContext * var3 = var2 -> var4 ; 
+func2 ( var3 -> formats_str , enum AVSampleFormat , var3 -> formats , 
+var5 , av_get_sample_fmt , AV_SAMPLE_FMT_NONE , str ) ; 
+func2 ( var3 -> var6 , var1 , var3 -> var7 , var5 , 
+var8 , number , str ) ; 
+func2 ( var3 -> var9 , var10 , var3 -> var11 , 
+var12 , var13 , number , 
+str ) ; 
+return number ; 
+} 

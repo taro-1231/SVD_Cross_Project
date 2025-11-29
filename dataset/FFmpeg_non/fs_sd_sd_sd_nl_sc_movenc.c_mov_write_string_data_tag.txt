@@ -1,0 +1,19 @@
+static int func1 ( AVIOContext * var1 , const char * var2 , int var3 , int var4 ) 
+{ 
+if ( var4 ) { 
+int var5 = number + strlen ( var2 ) ; 
+func2 ( var1 , var5 ) ; 
+func3 ( var1 , str ) ; 
+func2 ( var1 , number ) ; 
+func2 ( var1 , number ) ; 
+func4 ( var1 , var2 , strlen ( var2 ) ) ; 
+return var5 ; 
+} else { 
+if ( ! var3 ) 
+var3 = func5 ( str , number ) ; 
+func6 ( var1 , strlen ( var2 ) ) ; 
+func6 ( var1 , var3 ) ; 
+func4 ( var1 , var2 , strlen ( var2 ) ) ; 
+return strlen ( var2 ) + number ; 
+} 
+} 

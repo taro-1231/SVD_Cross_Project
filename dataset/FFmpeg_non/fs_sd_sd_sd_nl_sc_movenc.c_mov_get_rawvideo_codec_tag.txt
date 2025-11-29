@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 , MOVTrack * var2 ) 
+{ 
+int var3 = var2 -> var4 -> var5 ; 
+int var6 ; 
+enum AVPixelFormat var7 ; 
+for ( var6 = number ; var6 < func2 ( var8 ) ; var6 ++ ) { 
+if ( var2 -> var4 -> var7 == var8 [ var6 ] . var7 ) { 
+var3 = var8 [ var6 ] . var3 ; 
+var2 -> var4 -> var9 = var8 [ var6 ] . var10 ; 
+if ( var2 -> var4 -> var5 == var8 [ var6 ] . var3 ) 
+break ; 
+} 
+} 
+var7 = func3 ( var11 , 
+var2 -> var4 -> var9 ) ; 
+if ( var3 == func4 ( str , str , str , str ) && 
+var2 -> var4 -> var7 != var7 && 
+var2 -> var4 -> var7 != var12 ) 
+func5 ( var1 , var13 , str , 
+func6 ( var2 -> var4 -> var7 ) ) ; 
+return var3 ; 
+} 

@@ -1,0 +1,4 @@
+static double func1 ( void * var1 , double var2 , double var3 ) 
+{ 
+return var2 + ( var3 - var2 ) / var4 * func2 ( var1 ) ; 
+} 

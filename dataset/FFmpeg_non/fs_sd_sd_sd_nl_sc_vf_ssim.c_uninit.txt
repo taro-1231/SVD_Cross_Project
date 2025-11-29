@@ -1,0 +1,19 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+SSIMContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 > number ) { 
+char var5 [ number ] ; 
+int var6 ; 
+var5 [ number ] = number ; 
+for ( var6 = number ; var6 < var2 -> var7 ; var6 ++ ) { 
+int var8 = var2 -> var9 ? var2 -> var10 [ var6 ] : var6 ; 
+func2 ( var5 , sizeof ( var5 ) , str , var2 -> var11 [ var6 ] , var2 -> var12 [ var8 ] / var2 -> var4 ) ; 
+} 
+func3 ( var1 , var13 , str , var5 , 
+var2 -> var14 / var2 -> var4 , func4 ( var2 -> var14 , var2 -> var4 ) ) ; 
+} 
+func5 ( & var2 -> var15 ) ; 
+if ( var2 -> var16 ) 
+fclose ( var2 -> var16 ) ; 
+func6 ( & var2 -> var17 ) ; 
+} 

@@ -1,0 +1,41 @@
+static int func1 ( SwsContext * var1 , const unsigned char ** var2 , 
+int * var3 , int var4 , int var5 , 
+unsigned char ** var6 , int * var7 ) 
+{ 
+int var8 = var1 -> var9 ; 
+int var10 = var5 ; 
+int var11 , var12 ; 
+vector unsigned char var13 ; 
+vector signed short var14 , var15 , var16 ; 
+vector signed short var17 , var18 , var19 , var20 , var21 , var22 ; 
+vector unsigned char var23 , var24 , var25 ; 
+vector unsigned char * var26 ; 
+const ubyte * var27 ; 
+var27 = var2 [ number ] ; 
+var26 = ( vector unsigned char * ) ( var6 [ number ] + var4 * var7 [ number ] ) ; 
+for ( var11 = number ; var11 < var10 ; var11 ++ ) 
+for ( var12 = number ; var12 < var8 / number ; var12 ++ ) { 
+var13 = func2 ( number , var27 ) ; 
+var15 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_u ) ; 
+var16 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_v ) ; 
+var14 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_y ) ; 
+func3 ( var1 , var14 , var15 , var16 , & var17 , & var18 , & var19 ) ; 
+var13 = func2 ( number , var27 ) ; 
+var15 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_u ) ; 
+var16 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_v ) ; 
+var14 = ( vector signed short ) 
+vec_perm ( var13 , ( vector unsigned char ) { number } , demux_y ) ; 
+func3 ( var1 , var14 , var15 , var16 , & var20 , & var21 , & var22 ) ; 
+var23 = func4 ( var17 , var20 ) ; 
+var24 = func4 ( var18 , var21 ) ; 
+var25 = func4 ( var19 , var22 ) ; 
+func5 ( var23 , var24 , var25 , var26 ) ; 
+var27 += number ; 
+} 
+return var5 ; 
+} 

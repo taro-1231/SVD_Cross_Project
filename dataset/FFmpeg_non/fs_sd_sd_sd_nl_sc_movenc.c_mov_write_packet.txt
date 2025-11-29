@@ -1,0 +1,23 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+if ( ! var2 ) { 
+func2 ( var1 ) ; 
+return number ; 
+} else { 
+int var3 ; 
+MOVMuxContext * var4 = var1 -> var5 ; 
+if ( ! var2 -> var6 ) return number ; 
+for ( var3 = number ; var3 < var4 -> var7 ; var3 ++ ) { 
+MOVTrack * var8 = & var4 -> var9 [ var3 ] ; 
+int var10 ; 
+if ( var8 -> var11 -> var12 == var13 && 
+var8 -> var14 < var2 -> var15 && 
+( var8 -> var16 == number || ! var8 -> var17 ) ) { 
+var10 = func3 ( var1 , var3 , var8 -> var14 ) ; 
+if ( var10 < number ) return var10 ; 
+var8 -> var17 = number ; 
+} 
+} 
+return func4 ( var1 , var2 ) ; 
+} 
+} 

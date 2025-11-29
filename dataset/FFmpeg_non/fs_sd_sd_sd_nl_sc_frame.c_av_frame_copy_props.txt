@@ -1,0 +1,4 @@
+int func1 ( AVFrame * var1 , const AVFrame * var2 ) 
+{ 
+return func2 ( var1 , var2 , number ) ; 
+} 

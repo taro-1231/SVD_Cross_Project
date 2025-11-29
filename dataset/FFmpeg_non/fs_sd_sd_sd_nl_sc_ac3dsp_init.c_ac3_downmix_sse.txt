@@ -1,0 +1,43 @@
+static void func1 ( float ** var1 , float ( * var2 ) [ number ] , 
+int var3 , int var4 , int var5 ) 
+{ 
+int ( * var6 ) [ number ] = ( int ( * ) [ number ] ) var2 ; 
+intptr_t var7 , var8 , var9 , var10 ; 
+var7 = - var5 * sizeof ( float ) ; 
+if ( var4 == number && var3 == number && 
+! ( var6 [ number ] [ number ] | var6 [ number ] [ number ] | 
+var6 [ number ] [ number ] | var6 [ number ] [ number ] | 
+( var6 [ number ] [ number ] ^ var6 [ number ] [ number ] ) | 
+( var6 [ number ] [ number ] ^ var6 [ number ] [ number ] ) ) ) { 
+func2 ( var11 , var12 ) ; 
+} else if ( var4 == number && var3 == number && 
+var6 [ number ] [ number ] == var6 [ number ] [ number ] && 
+var6 [ number ] [ number ] == var6 [ number ] [ number ] ) { 
+func2 ( var12 , var11 ) ; 
+} else { 
+LOCAL_ALIGNED ( 16 , float , matrix_simd , [ var13 ] , [ number ] [ number ] ) ; 
+float * var14 [ var13 ] ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) 
+var14 [ var8 ] = var1 [ var8 ] + var5 ; 
+var8 = number * var4 * sizeof ( float ) ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var8 ) 
+: str ( matrix_simd ) , str ( var2 ) 
+: str 
+) ; 
+if ( var3 == number ) { 
+func3 ( var12 ) ; 
+} else { 
+func3 ( var11 ) ; 
+} 
+} 
+} 

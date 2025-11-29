@@ -1,0 +1,14 @@
+static int func1 ( AVCodecContext * var1 , int var2 , int var3 ) 
+{ 
+if ( var2 <= number ) { 
+func2 ( var1 , var4 , str , var2 ) ; 
+return - number ; 
+} 
+if ( var3 >= var2 ) { 
+func2 ( var1 , var4 , 
+str , 
+var3 ) ; 
+return - number ; 
+} 
+return number ; 
+} 

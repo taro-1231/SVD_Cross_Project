@@ -1,0 +1,10 @@
+int func1 ( FFFrameSync * var1 , void * var2 , unsigned var3 ) 
+{ 
+var1 -> class = & var4 ; 
+var1 -> var2 = var2 ; 
+var1 -> var3 = var3 ; 
+var1 -> var5 = func2 ( var3 , sizeof ( * var1 -> var5 ) ) ; 
+if ( ! var1 -> var5 ) 
+return func3 ( var6 ) ; 
+return number ; 
+} 

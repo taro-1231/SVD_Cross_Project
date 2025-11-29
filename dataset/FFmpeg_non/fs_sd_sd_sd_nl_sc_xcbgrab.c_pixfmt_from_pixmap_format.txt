@@ -1,0 +1,45 @@
+static int func1 ( AVFormatContext * var1 , int var2 , 
+int * var3 ) 
+{ 
+XCBGrabContext * var4 = var1 -> var5 ; 
+const xcb_setup_t * var6 = func2 ( var4 -> var7 ) ; 
+const xcb_format_t * var8 = func3 ( var6 ) ; 
+int var9 = func4 ( var6 ) ; 
+* var3 = number ; 
+while ( var9 -- ) { 
+if ( var8 -> var2 == var2 ) { 
+switch ( var2 ) { 
+case number : 
+if ( var8 -> var10 == number ) 
+* var3 = var11 ; 
+break ; 
+case number : 
+if ( var8 -> var10 == number ) 
+* var3 = var12 ; 
+else if ( var8 -> var10 == number ) 
+* var3 = var13 ; 
+break ; 
+case number : 
+if ( var8 -> var10 == number ) 
+* var3 = var14 ; 
+break ; 
+case 15 : 
+if ( var8 -> var10 == number ) 
+* var3 = var15 ; 
+break ; 
+case number : 
+if ( var8 -> var10 == number ) 
+* var3 = var16 ; 
+break ; 
+} 
+} 
+if ( * var3 ) { 
+var4 -> var17 = var8 -> var10 ; 
+var4 -> var18 = var4 -> var19 * var4 -> var20 * var8 -> var10 / number ; 
+return number ; 
+} 
+var8 ++ ; 
+} 
+func5 ( var1 , var21 , str ) ; 
+return var22 ; 
+} 

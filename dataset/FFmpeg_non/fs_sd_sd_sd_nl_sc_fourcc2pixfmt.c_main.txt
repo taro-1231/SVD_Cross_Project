@@ -1,0 +1,56 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 , var4 = number , var5 = number ; 
+const PixelFormatTag * var6 = func2 ( ) ; 
+const char * var7 = var8 ; 
+char var9 ; 
+if ( var1 == number ) { 
+func3 ( ) ; 
+return number ; 
+} 
+while ( ( var9 = func4 ( var1 , var2 , str ) ) != - number ) { 
+switch ( var9 ) { 
+case str : 
+func3 ( ) ; 
+return number ; 
+case str : 
+var4 = number ; 
+break ; 
+case str : 
+var5 = number ; 
+break ; 
+case str : 
+var7 = var10 ; 
+break ; 
+case str : 
+func3 ( ) ; 
+return number ; 
+} 
+} 
+if ( var4 ) { 
+for ( var3 = number ; var6 [ var3 ] . var11 != var12 ; var3 ++ ) { 
+char var13 [ number ] ; 
+func5 ( var13 , sizeof ( var13 ) , var6 [ var3 ] . var14 ) ; 
+printf ( str , var13 , func6 ( var6 [ var3 ] . var11 ) ) ; 
+} 
+} 
+if ( var5 ) { 
+for ( var3 = number ; func7 ( var3 ) ; var3 ++ ) { 
+const AVPixFmtDescriptor * var15 = func7 ( var3 ) ; 
+if ( ! var15 -> var16 || var15 -> var17 & var18 ) 
+continue ; 
+printf ( str , var15 -> var16 ) ; 
+func8 ( var3 , var6 , str ) ; 
+printf ( str ) ; 
+} 
+} 
+if ( var7 ) { 
+enum AVPixelFormat var11 = func9 ( var7 ) ; 
+if ( var11 == var12 ) { 
+fprintf ( var19 , str , var7 ) ; 
+return number ; 
+} 
+func8 ( var11 , var6 , str ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,19 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+SSIMContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+var2 -> var5 = fopen ( var2 -> var4 , str ) ; 
+if ( ! var2 -> var5 ) { 
+int var6 = func2 ( var7 ) ; 
+char var8 [ number ] ; 
+func3 ( var6 , var8 , sizeof ( var8 ) ) ; 
+func4 ( var1 , var9 , str , 
+var2 -> var4 , var8 ) ; 
+return var6 ; 
+} 
+} 
+var2 -> var10 . var11 = var12 ; 
+var2 -> var10 . var13 = number ; 
+var2 -> var10 . var14 = number ; 
+return number ; 
+} 

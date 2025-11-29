@@ -1,0 +1,29 @@
+static void func1 ( int * var1 , int var2 , int var3 , int var4 ) 
+{ 
+int var5 = var2 < number ? - number : number ; 
+int var6 = func2 ( var2 ) ; 
+unsigned int var7 ; 
+int var8 , var9 , var10 = var11 [ var6 & number ] ; 
+int var12 = number ; 
+while ( var3 > number ) { 
+var3 >>= number ; 
+var12 ++ ; 
+} 
+var10 /= var3 ; 
+var6 = number + var12 - ( var6 >> number ) ; 
+if ( var6 > number ) { 
+var7 = number << ( var6 - number ) ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+var9 = ( int ) ( ( ( int64_t ) var1 [ var8 ] * var10 ) >> number ) ; 
+var1 [ var8 ] = ( ( int ) ( var9 + var7 ) >> var6 ) * var5 ; 
+} 
+} 
+else { 
+var6 = var6 + number ; 
+var7 = number << ( var6 - number ) ; 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+var9 = ( int ) ( ( int64_t ) ( ( int64_t ) var1 [ var8 ] * var10 + var7 ) >> var6 ) ; 
+var1 [ var8 ] = var9 * var5 ; 
+} 
+} 
+} 

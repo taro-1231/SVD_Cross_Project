@@ -1,0 +1,25 @@
+static av_always_inline void func1 ( PredictorState * var16 , float * var2 , 
+int var3 ) 
+{ 
+const float var4 = number ; 
+const float var5 = number ; 
+float var6 , var7 ; 
+float var8 ; 
+float var9 , var10 ; 
+float var11 = var16 -> var11 , var12 = var16 -> var12 ; 
+float var13 = var16 -> var13 , var14 = var16 -> var14 ; 
+float var15 = var16 -> var15 , var16 = var16 -> var16 ; 
+var9 = var15 > number ? var13 * func2 ( var4 / var15 ) : number ; 
+var10 = var16 > number ? var14 * func2 ( var4 / var16 ) : number ; 
+var8 = func3 ( var9 * var11 + var10 * var12 ) ; 
+if ( var3 ) 
+* var2 += var8 ; 
+var6 = * var2 ; 
+var7 = var6 - var9 * var11 ; 
+var16 -> var14 = func4 ( var5 * var14 + var12 * var7 ) ; 
+var16 -> var16 = func4 ( var5 * var16 + number * ( var12 * var12 + var7 * var7 ) ) ; 
+var16 -> var13 = func4 ( var5 * var13 + var11 * var6 ) ; 
+var16 -> var15 = func4 ( var5 * var15 + number * ( var11 * var11 + var6 * var6 ) ) ; 
+var16 -> var12 = func4 ( var4 * ( var11 - var9 * var6 ) ) ; 
+var16 -> var11 = func4 ( var4 * var6 ) ; 
+} 

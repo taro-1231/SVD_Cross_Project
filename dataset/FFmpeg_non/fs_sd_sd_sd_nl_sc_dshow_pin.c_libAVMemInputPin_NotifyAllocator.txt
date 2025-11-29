@@ -1,0 +1,6 @@
+func1 ( libAVMemInputPin * var1 , IMemAllocator * var2 , 
+BOOL var3 ) 
+{ 
+func2 ( str , var1 ) ; 
+return var4 ; 
+} 

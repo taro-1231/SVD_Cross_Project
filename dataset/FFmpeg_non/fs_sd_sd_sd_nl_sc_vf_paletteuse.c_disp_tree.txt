@@ -1,0 +1,20 @@
+static int func1 ( const struct color_node * var1 , const char * var2 ) 
+{ 
+AVBPrint var3 ; 
+FILE * var4 = func2 ( var2 , var10 ) ; 
+if ( ! var4 ) { 
+int var5 = func3 ( var6 ) ; 
+func4 ( var7 , var8 , var10 , 
+var2 , func5 ( var5 ) ) ; 
+return var5 ; 
+} 
+func6 ( & var3 , number , var9 ) ; 
+func7 ( & var3 , var10 ) ; 
+func7 ( & var3 , var10 ) ; 
+func8 ( & var3 , var1 , - number , number , number ) ; 
+func7 ( & var3 , var10 ) ; 
+fwrite ( var3 . var10 , number , var3 . var11 , var4 ) ; 
+fclose ( var4 ) ; 
+func9 ( & var3 , var7 ) ; 
+return number ; 
+} 

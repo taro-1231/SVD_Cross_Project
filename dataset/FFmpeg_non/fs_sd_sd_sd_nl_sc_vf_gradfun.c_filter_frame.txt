@@ -1,0 +1,36 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+GradFunContext * var3 = var1 -> var4 -> var5 ; 
+AVFilterLink * var6 = var1 -> var4 -> var7 [ number ] ; 
+AVFrame * var8 ; 
+int var9 , var10 ; 
+if ( func2 ( var2 ) ) { 
+var10 = number ; 
+var8 = var2 ; 
+} else { 
+var10 = number ; 
+var8 = func3 ( var6 , var6 -> var11 , var6 -> var12 ) ; 
+if ( ! var8 ) { 
+func4 ( & var2 ) ; 
+return func5 ( var13 ) ; 
+} 
+func6 ( var8 , var2 ) ; 
+} 
+for ( var9 = number ; var9 < number && var2 -> var14 [ var9 ] && var2 -> var15 [ var9 ] ; var9 ++ ) { 
+int var11 = var1 -> var11 ; 
+int var12 = var1 -> var12 ; 
+int var16 = var3 -> var17 ; 
+if ( var9 ) { 
+var11 = var3 -> var18 ; 
+var12 = var3 -> var19 ; 
+var16 = var3 -> var20 ; 
+} 
+if ( func7 ( var11 , var12 ) > number * var16 ) 
+func8 ( var3 , var8 -> var14 [ var9 ] , var2 -> var14 [ var9 ] , var11 , var12 , var8 -> var15 [ var9 ] , var2 -> var15 [ var9 ] , var16 ) ; 
+else if ( var8 -> var14 [ var9 ] != var2 -> var14 [ var9 ] ) 
+func9 ( var8 -> var14 [ var9 ] , var8 -> var15 [ var9 ] , var2 -> var14 [ var9 ] , var2 -> var15 [ var9 ] , var11 , var12 ) ; 
+} 
+if ( ! var10 ) 
+func4 ( & var2 ) ; 
+return func10 ( var6 , var8 ) ; 
+} 

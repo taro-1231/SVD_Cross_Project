@@ -1,0 +1,18 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+SndioData * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+int var5 ; 
+var4 = func2 ( var1 , var6 ) ; 
+if ( ! var4 ) 
+return func3 ( var7 ) ; 
+var5 = func4 ( var1 , number , var1 -> var8 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+var4 -> var9 -> var10 = var11 ; 
+var4 -> var9 -> var12 = var2 -> var12 ; 
+var4 -> var9 -> var13 = var2 -> var13 ; 
+var4 -> var9 -> var14 = var2 -> var14 ; 
+func5 ( var4 , number , number , number ) ; 
+return number ; 
+} 

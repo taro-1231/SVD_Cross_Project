@@ -1,0 +1,398 @@
+func1 ( var1 , AV_LOG_DEBUG , __VA_ARGS__ ) 
+static int func2 ( SwsContext * var1 , const uint8_t * var2 [ ] , 
+int var3 [ ] , int var4 , 
+int var5 , uint8_t * var6 [ ] , int var7 [ ] ) 
+{ 
+const int var8 = var1 -> var8 ; 
+const int var9 = var1 -> var9 ; 
+const int var10 = var1 -> var10 ; 
+const int var11 = var1 -> var11 ; 
+const int var12 = var1 -> var12 ; 
+const int var13 = var1 -> var13 ; 
+const int var14 = var1 -> var14 ; 
+const enum AVPixelFormat var15 = var1 -> var15 ; 
+const int var16 = var1 -> var16 ; 
+int32_t * var17 = var1 -> var17 ; 
+int32_t * var18 = var1 -> var18 ; 
+int32_t * var19 = var1 -> var19 ; 
+int32_t * var20 = var1 -> var20 ; 
+int16_t * var21 = var1 -> var21 ; 
+int16_t * var22 = var1 -> var22 ; 
+int32_t * var23 = var1 -> var23 ; 
+int32_t * var24 = var1 -> var24 ; 
+const int var25 = var1 -> var25 ; 
+const int var26 = var1 -> var26 ; 
+const int var27 = var1 -> var27 ; 
+const int var28 = var1 -> var28 ; 
+int16_t ** var29 = var1 -> var29 ; 
+int16_t ** var30 = var1 -> var30 ; 
+int16_t ** var31 = var1 -> var31 ; 
+int16_t ** var32 = var1 -> var32 ; 
+const int var33 = var1 -> var33 ; 
+const int var34 = var1 -> var34 ; 
+uint8_t * var35 = var1 -> var35 ; 
+uint32_t * var36 = var1 -> var37 ; 
+yuv2planar1_fn var38 = var1 -> var38 ; 
+yuv2planarX_fn var39 = var1 -> var39 ; 
+yuv2interleavedX_fn var40 = var1 -> var40 ; 
+yuv2packed1_fn var41 = var1 -> var41 ; 
+yuv2packed2_fn var42 = var1 -> var42 ; 
+yuv2packedX_fn var43 = var1 -> var43 ; 
+yuv2anyX_fn var44 = var1 -> var44 ; 
+const int var45 = var4 >> var1 -> var46 ; 
+const int var47 = func3 ( var5 , var1 -> var46 ) ; 
+int var48 = func4 ( var1 -> var49 ) || 
+func5 ( var1 -> var49 ) ; 
+int var50 ; 
+int var51 = var1 -> var51 ; 
+int var52 = var1 -> var52 ; 
+int var53 = var1 -> var53 ; 
+int var54 = var1 -> var54 ; 
+int var55 = var1 -> var55 ; 
+int var56 = var1 -> var57 ; 
+int var58 = number ; 
+int var59 = var1 -> var60 [ number ] ; 
+int var61 = var59 ; 
+int var62 = var1 -> var60 [ number ] ; 
+int var63 = var62 ; 
+int var64 = var1 -> var65 ; 
+SwsSlice * var66 = & var1 -> var67 [ var58 ] ; 
+SwsSlice * var68 = & var1 -> var67 [ var1 -> var69 - number ] ; 
+SwsSlice * var70 = & var1 -> var67 [ var1 -> var69 - number ] ; 
+SwsFilterDescriptor * var71 = var1 -> var71 ; 
+int var72 = number ; 
+int var73 = number ; 
+if ( ! func6 ( var1 -> var49 ) ) { 
+var36 = var1 -> var74 ; 
+} 
+if ( func7 ( var1 -> var49 ) ) { 
+var2 [ number ] = 
+var2 [ number ] = 
+var2 [ number ] = 
+var2 [ number ] = var2 [ number ] ; 
+var3 [ number ] = 
+var3 [ number ] = 
+var3 [ number ] = 
+var3 [ number ] = var3 [ number ] ; 
+} 
+var3 [ number ] <<= var1 -> var75 ; 
+var3 [ number ] <<= var1 -> var75 ; 
+func8 ( str , 
+var2 [ number ] , var3 [ number ] , var2 [ number ] , var3 [ number ] , 
+var2 [ number ] , var3 [ number ] , var2 [ number ] , var3 [ number ] , 
+var6 [ number ] , var7 [ number ] , var6 [ number ] , var7 [ number ] , 
+var6 [ number ] , var7 [ number ] , var6 [ number ] , var7 [ number ] ) ; 
+func8 ( str , 
+var4 , var5 , var51 , var10 ) ; 
+func8 ( str , 
+var25 , var33 , var26 , var34 ) ; 
+if ( var7 [ number ] & number || var7 [ number ] & number || 
+var7 [ number ] & number || var7 [ number ] & number ) { 
+static int var76 = number ; 
+if ( var16 & var77 && ! var76 ) { 
+func1 ( var1 , var78 , 
+str 
+str ) ; 
+var76 = number ; 
+} 
+} 
+if ( ( uintptr_t ) var6 [ number ] & number || ( uintptr_t ) var6 [ number ] & number || ( uintptr_t ) var6 [ number ] & number 
+|| ( uintptr_t ) var2 [ number ] & number || ( uintptr_t ) var2 [ number ] & number || ( uintptr_t ) var2 [ number ] & number 
+|| var7 [ number ] & number || var7 [ number ] & number || var7 [ number ] & number || var7 [ number ] & number 
+|| var3 [ number ] & number || var3 [ number ] & number || var3 [ number ] & number || var3 [ number ] & number 
+) { 
+static int var76 = number ; 
+int var79 = func9 ( ) ; 
+if ( var80 && ( var79 & var81 ) && ! var76 ) { 
+func1 ( var1 , var78 , str ) ; 
+var76 = number ; 
+} 
+} 
+if ( var4 == number ) { 
+var52 = - number ; 
+var53 = - number ; 
+var51 = number ; 
+var54 = - number ; 
+var55 = - number ; 
+} 
+if ( ! var48 ) { 
+var1 -> var82 = var1 -> var83 = var84 ; 
+} 
+var50 = var51 ; 
+func10 ( var1 , var38 , var39 , var40 , 
+var41 , var42 , var43 , var44 , var1 -> var85 ) ; 
+func11 ( var66 , ( uint8_t ** ) var2 , var3 , var1 -> var8 , 
+var4 , var5 , var45 , var47 ) ; 
+func11 ( var70 , ( uint8_t ** ) var6 , var7 , var1 -> var9 , 
+var51 , var10 , var51 >> var1 -> var86 , 
+func3 ( var10 , var1 -> var86 ) ) ; 
+var68 -> var87 [ number ] . var88 = var54 + number ; 
+var68 -> var87 [ number ] . var88 = var55 + number ; 
+var68 -> var87 [ number ] . var88 = var55 + number ; 
+var68 -> var87 [ number ] . var88 = var54 + number ; 
+var68 -> var87 [ number ] . var89 = 
+var68 -> var87 [ number ] . var89 = 
+var68 -> var87 [ number ] . var89 = 
+var68 -> var87 [ number ] . var89 = number ; 
+var68 -> var90 = var9 ; 
+for ( ; var51 < var10 ; var51 ++ ) { 
+const int var91 = var51 >> var1 -> var86 ; 
+uint8_t * dest [ 4 ] = { 
+var6 [ number ] + var7 [ number ] * var51 , 
+var6 [ number ] + var7 [ number ] * var91 , 
+var6 [ number ] + var7 [ number ] * var91 , 
+( CONFIG_SWSCALE_ALPHA && var32 ) ? var6 [ number ] + var7 [ number ] * var51 : NULL , 
+} ; 
+int var85 = var1 -> var85 ; 
+const int var92 = func12 ( number - var25 , var17 [ var51 ] ) ; 
+const int var93 = func12 ( number - var25 , var17 [ func13 ( var51 | ( ( number << var1 -> var86 ) - number ) , var10 - number ) ] ) ; 
+const int var94 = func12 ( number - var26 , var18 [ var91 ] ) ; 
+int var95 = func13 ( var1 -> var96 , var92 + var25 ) - number ; 
+int var97 = func13 ( var1 -> var96 , var93 + var25 ) - number ; 
+int var98 = func13 ( var1 -> var99 , var94 + var26 ) - number ; 
+int var100 ; 
+int var101 ; 
+int var102 , var103 , var104 , var105 , var106 , var107 ; 
+if ( var92 > var54 ) { 
+var72 = var54 != var92 - number ; 
+if ( var72 ) { 
+var68 -> var87 [ number ] . var88 = var54 + number ; 
+var68 -> var87 [ number ] . var88 = var54 + number ; 
+var68 -> var87 [ number ] . var89 = 
+var68 -> var87 [ number ] . var89 = number ; 
+} 
+var54 = var92 - number ; 
+} 
+if ( var94 > var55 ) { 
+var73 = var55 != var94 - number ; 
+if ( var73 ) { 
+var68 -> var87 [ number ] . var88 = var55 + number ; 
+var68 -> var87 [ number ] . var88 = var55 + number ; 
+var68 -> var87 [ number ] . var89 = 
+var68 -> var87 [ number ] . var89 = number ; 
+} 
+var55 = var94 - number ; 
+} 
+func14 ( var92 >= var54 - var33 + number ) ; 
+func14 ( var94 >= var55 - var34 + number ) ; 
+func8 ( str , var51 ) ; 
+func8 ( str , 
+var92 , var95 , var54 ) ; 
+func8 ( str , 
+var94 , var98 , var55 ) ; 
+var100 = var97 < var4 + var5 && 
+var98 < func3 ( var4 + var5 , var1 -> var46 ) ; 
+if ( ! var100 ) { 
+var95 = var4 + var5 - number ; 
+var98 = var45 + var47 - number ; 
+func8 ( str , 
+var95 , var98 ) ; 
+} 
+var102 = var68 -> var87 [ number ] . var88 + var68 -> var87 [ number ] . var89 ; 
+if ( var102 <= var95 && ! var72 ) { 
+var104 = func12 ( var92 , var102 ) ; 
+var105 = func13 ( var95 + var108 , var4 + var5 - number ) ; 
+} else { 
+var104 = var54 + number ; 
+var105 = var95 ; 
+} 
+var103 = var68 -> var87 [ number ] . var88 + var68 -> var87 [ number ] . var89 ; 
+if ( var103 <= var98 && ! var73 ) { 
+var106 = func12 ( var94 , var103 ) ; 
+var107 = func13 ( var98 + var108 , func3 ( var4 + var5 , var1 -> var46 ) - number ) ; 
+} else { 
+var106 = var55 + number ; 
+var107 = var98 ; 
+} 
+func15 ( var68 , var105 , var107 ) ; 
+if ( var102 < var95 + number ) { 
+for ( var101 = var58 ; var101 < var59 ; ++ var101 ) 
+var71 [ var101 ] . func16 ( var1 , & var71 [ var101 ] , var104 , var105 - var104 + number ) ; 
+} 
+var52 += var95 - var54 ; 
+var54 = var95 ; 
+if ( var103 < var98 + number ) { 
+for ( var101 = var61 ; var101 < var62 ; ++ var101 ) 
+var71 [ var101 ] . func16 ( var1 , & var71 [ var101 ] , var106 , var107 - var106 + number ) ; 
+} 
+var53 += var98 - var55 ; 
+var55 = var98 ; 
+while ( var54 < var95 ) { 
+const uint8_t * src1 [ 4 ] = { 
+var2 [ number ] + ( var54 + number - var4 ) * var3 [ number ] , 
+var2 [ number ] + ( var54 + number - var4 ) * var3 [ number ] , 
+var2 [ number ] + ( var54 + number - var4 ) * var3 [ number ] , 
+var2 [ number ] + ( var54 + number - var4 ) * var3 [ number ] , 
+} ; 
+var52 ++ ; 
+func14 ( var52 < number * var33 ) ; 
+func14 ( var54 + number - var4 < var5 ) ; 
+func14 ( var54 + number - var4 >= number ) ; 
+if ( var56 ) 
+gamma_convert ( ( uint8_t ** ) src1 , var8 , var1 -> inv_gamma ) ; 
+hyscale ( var1 , var29 [ var52 ] , var9 , src1 , var8 , var13 , 
+var21 , var19 , var27 , 
+var35 , var36 , number ) ; 
+if ( CONFIG_SWSCALE_ALPHA && var32 ) 
+hyscale ( var1 , var32 [ var52 ] , var9 , src1 , var8 , 
+var13 , var21 , var19 , var27 , 
+var35 , var36 , number ) ; 
+var54 ++ ; 
+func8 ( str , 
+var52 , var54 ) ; 
+} 
+while ( var55 < var98 ) { 
+const uint8_t * src1 [ 4 ] = { 
+var2 [ number ] + ( var55 + number - var45 ) * var3 [ number ] , 
+var2 [ number ] + ( var55 + number - var45 ) * var3 [ number ] , 
+var2 [ number ] + ( var55 + number - var45 ) * var3 [ number ] , 
+var2 [ number ] + ( var55 + number - var45 ) * var3 [ number ] , 
+} ; 
+var53 ++ ; 
+func14 ( var53 < number * var34 ) ; 
+func14 ( var55 + number - var45 < ( var47 ) ) ; 
+func14 ( var55 + number - var45 >= number ) ; 
+if ( var1 -> needs_hcscale ) 
+hcscale ( var1 , var30 [ var53 ] , var31 [ var53 ] , 
+var11 , src1 , var12 , var14 , 
+var22 , var20 , var28 , 
+var35 , var36 ) ; 
+var55 ++ ; 
+func8 ( str , 
+var53 , var55 ) ; 
+} 
+if ( var52 >= var33 ) 
+var52 -= var33 ; 
+if ( var53 >= var34 ) 
+var53 -= var34 ; 
+if ( ! var100 ) 
+break ; 
+func17 ( var1 , var51 , var52 , var53 , 
+var54 , var55 ) ; 
+if ( var48 ) { 
+var1 -> var82 = var109 [ var91 & number ] ; 
+var1 -> var83 = var109 [ var51 & number ] ; 
+} 
+if ( var51 >= var10 - number ) { 
+func18 ( var1 , & var38 , & var39 , & var40 , 
+& var41 , & var42 , & var43 , & var44 ) ; 
+var85 = number ; 
+func10 ( var1 , var38 , var39 , var40 , 
+var41 , var42 , var43 , var44 , var85 ) ; 
+} 
+{ 
+for ( var101 = var63 ; var101 < var64 ; ++ var101 ) 
+var71 [ var101 ] . func16 ( var1 , & var71 [ var101 ] , var51 , number ) ; 
+const int16_t ** lumSrcPtr = ( const int16_t ** ) ( void * ) var29 + var52 + var92 - var54 + var33 ; 
+const int16_t ** chrUSrcPtr = ( const int16_t ** ) ( void * ) var30 + var53 + var94 - var55 + var34 ; 
+const int16_t ** chrVSrcPtr = ( const int16_t ** ) ( void * ) var31 + var53 + var94 - var55 + var34 ; 
+const int16_t ** alpSrcPtr = ( CONFIG_SWSCALE_ALPHA && var32 ) ? 
+( const int16_t ** ) ( void * ) var32 + var52 + var92 - var54 + var33 : NULL ; 
+int16_t * vLumFilter = var1 -> vLumFilter ; 
+int16_t * vChrFilter = var1 -> vChrFilter ; 
+if ( isPlanarYUV ( var15 ) || 
+( isGray ( var15 ) && ! func19 ( var15 ) ) ) { 
+const int chrSkipMask = ( number << var1 -> var86 ) - number ; 
+vLumFilter += var51 * var25 ; 
+vChrFilter += var91 * var26 ; 
+if ( var85 ) { 
+vLumFilter = ( int16_t * ) var1 -> var23 ; 
+vChrFilter = ( int16_t * ) var1 -> var24 ; 
+} 
+if ( var25 == number ) { 
+var38 ( lumSrcPtr [ number ] , dest [ number ] , var9 , var1 -> var83 , number ) ; 
+} else { 
+var39 ( vLumFilter , var25 , 
+lumSrcPtr , dest [ number ] , 
+var9 , var1 -> var83 , number ) ; 
+} 
+if ( ! ( ( var51 & chrSkipMask ) || isGray ( var15 ) ) ) { 
+if ( var40 ) { 
+var40 ( var1 , vChrFilter , 
+var26 , chrUSrcPtr , chrVSrcPtr , 
+dest [ number ] , var11 ) ; 
+} else if ( var26 == number ) { 
+var38 ( chrUSrcPtr [ number ] , dest [ number ] , var11 , var1 -> var82 , number ) ; 
+var38 ( chrVSrcPtr [ number ] , dest [ number ] , var11 , var1 -> var82 , number ) ; 
+} else { 
+var39 ( vChrFilter , 
+var26 , chrUSrcPtr , dest [ number ] , 
+var11 , var1 -> var82 , number ) ; 
+var39 ( vChrFilter , 
+var26 , chrVSrcPtr , dest [ number ] , 
+var11 , var1 -> var82 , var85 ? ( var1 -> uv_offx2 >> number ) : number ) ; 
+} 
+} 
+if ( CONFIG_SWSCALE_ALPHA && var32 ) { 
+if ( var85 ) { 
+vLumFilter = ( int16_t * ) var1 -> alpMmxFilter ; 
+} 
+if ( var25 == number ) { 
+var38 ( alpSrcPtr [ number ] , dest [ number ] , var9 , 
+var1 -> var83 , number ) ; 
+} else { 
+var39 ( vLumFilter , 
+var25 , alpSrcPtr , dest [ number ] , 
+var9 , var1 -> var83 , number ) ; 
+} 
+} 
+} else if ( var43 ) { 
+av_assert1 ( lumSrcPtr + var25 - number < ( const int16_t ** ) var29 + var33 * number ) ; 
+av_assert1 ( chrUSrcPtr + var26 - number < ( const int16_t ** ) var30 + var34 * number ) ; 
+if ( var1 -> var41 && var25 == number && 
+var26 <= number ) { 
+int chrAlpha = var26 == number ? number : vChrFilter [ number * var51 + number ] ; 
+var41 ( var1 , * lumSrcPtr , chrUSrcPtr , chrVSrcPtr , 
+var32 ? * alpSrcPtr : NULL , 
+dest [ number ] , var9 , chrAlpha , var51 ) ; 
+} else if ( var1 -> var42 && var25 == number && 
+var26 == number ) { 
+int lumAlpha = vLumFilter [ number * var51 + number ] ; 
+int chrAlpha = vChrFilter [ number * var51 + number ] ; 
+var23 [ number ] = 
+var23 [ number ] = vLumFilter [ number * var51 ] * 0x10001 ; 
+var24 [ number ] = 
+var24 [ number ] = vChrFilter [ number * var91 ] * 0x10001 ; 
+var42 ( var1 , lumSrcPtr , chrUSrcPtr , chrVSrcPtr , 
+var32 ? alpSrcPtr : NULL , 
+dest [ number ] , var9 , lumAlpha , chrAlpha , var51 ) ; 
+} else { 
+var43 ( var1 , vLumFilter + var51 * var25 , 
+lumSrcPtr , var25 , 
+vChrFilter + var51 * var26 , 
+chrUSrcPtr , chrVSrcPtr , var26 , 
+alpSrcPtr , dest [ number ] , var9 , var51 ) ; 
+} 
+} else { 
+av_assert1 ( ! var41 && ! var42 ) ; 
+var44 ( var1 , vLumFilter + var51 * var25 , 
+lumSrcPtr , var25 , 
+vChrFilter + var51 * var26 , 
+chrUSrcPtr , chrVSrcPtr , var26 , 
+alpSrcPtr , dest , var9 , var51 ) ; 
+} 
+if ( var56 ) 
+gamma_convert ( dest , var9 , var1 -> gamma ) ; 
+} 
+} 
+if ( func20 ( var15 ) && func19 ( var15 ) && ! var32 ) { 
+int var110 = var9 ; 
+int var111 = var51 - var50 ; 
+if ( func5 ( var15 ) || func21 ( var15 ) ) { 
+const AVPixFmtDescriptor * var71 = func22 ( var15 ) ; 
+func23 ( var6 [ number ] , var7 [ number ] , var110 , var111 , var50 , 
+number , var71 -> var112 [ number ] . var113 , 
+func24 ( var15 ) ) ; 
+} else 
+func25 ( var6 [ number ] , var7 [ number ] , var110 , var111 , var50 , number ) ; 
+} 
+if ( func9 ( ) & var114 ) 
+__asm__ volatile ( str :: : str ) ; 
+func26 ( ) ; 
+var1 -> var51 = var51 ; 
+var1 -> var52 = var52 ; 
+var1 -> var53 = var53 ; 
+var1 -> var54 = var54 ; 
+var1 -> var55 = var55 ; 
+return var51 - var50 ; 
+} 

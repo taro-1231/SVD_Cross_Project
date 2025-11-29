@@ -1,0 +1,133 @@
+static void func1 ( void * var1 , double * var2 ) 
+{ 
+VideoState * var3 = var1 ; 
+double var4 ; 
+Frame * var5 , * var6 ; 
+if ( ! var3 -> var7 && func2 ( var3 ) == var8 && var3 -> var9 ) 
+func3 ( var3 ) ; 
+if ( ! var10 && var3 -> var11 != var12 && var3 -> var13 ) { 
+var4 = func4 ( ) / number ; 
+if ( var3 -> var14 || var3 -> var15 + var16 < var4 ) { 
+func5 ( var3 ) ; 
+var3 -> var15 = var4 ; 
+} 
+* var2 = func6 ( * var2 , var3 -> var15 + var16 - var4 ) ; 
+} 
+if ( var3 -> var17 ) { 
+var18 : 
+if ( func7 ( & var3 -> var19 ) == number ) { 
+} else { 
+double var21 , var22 , var23 ; 
+Frame * var24 , * var25 ; 
+var25 = func8 ( & var3 -> var19 ) ; 
+var24 = func9 ( & var3 -> var19 ) ; 
+if ( var24 -> var26 != var3 -> var27 . var26 ) { 
+func10 ( & var3 -> var19 ) ; 
+goto var18 ; 
+} 
+if ( var25 -> var26 != var24 -> var26 ) 
+var3 -> var28 = func4 ( ) / number ; 
+if ( var3 -> var7 ) 
+goto var20 ; 
+var21 = func11 ( var3 , var25 , var24 ) ; 
+var23 = func12 ( var21 , var3 ) ; 
+var4 = func4 ( ) / number ; 
+if ( var4 < var3 -> var28 + var23 ) { 
+* var2 = func6 ( var3 -> var28 + var23 - var4 , * var2 ) ; 
+goto var20 ; 
+} 
+var3 -> var28 += var23 ; 
+if ( var23 > number && var4 - var3 -> var28 > var29 ) 
+var3 -> var28 = var4 ; 
+func13 ( var3 -> var19 . var30 ) ; 
+if ( ! isnan ( var24 -> var31 ) ) 
+func14 ( var3 , var24 -> var31 , var24 -> var32 , var24 -> var26 ) ; 
+func15 ( var3 -> var19 . var30 ) ; 
+if ( func7 ( & var3 -> var19 ) > number ) { 
+Frame * var33 = func16 ( & var3 -> var19 ) ; 
+var22 = func11 ( var3 , var24 , var33 ) ; 
+if ( ! var3 -> var34 && ( var35 > number || ( var35 && func2 ( var3 ) != var36 ) ) && var4 > var3 -> var28 + var22 ) { 
+var3 -> var37 ++ ; 
+func10 ( & var3 -> var19 ) ; 
+goto var18 ; 
+} 
+} 
+if ( var3 -> var38 ) { 
+while ( func7 ( & var3 -> var39 ) > number ) { 
+var5 = func9 ( & var3 -> var39 ) ; 
+if ( func7 ( & var3 -> var39 ) > number ) 
+var6 = func16 ( & var3 -> var39 ) ; 
+else 
+var6 = var40 ; 
+if ( var5 -> var26 != var3 -> var41 . var26 
+|| ( var3 -> var42 . var31 > ( var5 -> var31 + ( ( float ) var5 -> var43 . var44 / number ) ) ) 
+|| ( var6 && var3 -> var42 . var31 > ( var6 -> var31 + ( ( float ) var6 -> var43 . var45 / number ) ) ) ) 
+{ 
+if ( var5 -> var46 ) { 
+int var47 ; 
+for ( var47 = number ; var47 < var5 -> var43 . var48 ; var47 ++ ) { 
+AVSubtitleRect * var49 = var5 -> var43 . var50 [ var47 ] ; 
+uint8_t * var51 ; 
+int var52 , var53 ; 
+if ( ! func17 ( var3 -> var54 , ( SDL_Rect * ) var49 , ( void ** ) & var51 , & var52 ) ) { 
+for ( var53 = number ; var53 < var49 -> var55 ; var53 ++ , var51 += var52 ) 
+memset ( var51 , number , var49 -> var56 << number ) ; 
+func18 ( var3 -> var54 ) ; 
+} 
+} 
+} 
+func10 ( & var3 -> var39 ) ; 
+} else { 
+break ; 
+} 
+} 
+} 
+func10 ( & var3 -> var19 ) ; 
+var3 -> var14 = number ; 
+if ( var3 -> var34 && ! var3 -> var7 ) 
+func19 ( var3 ) ; 
+} 
+var20 : 
+if ( ! var10 && var3 -> var14 && var3 -> var11 == var12 && var3 -> var19 . var57 ) 
+func5 ( var3 ) ; 
+} 
+var3 -> var14 = number ; 
+if ( var58 ) { 
+static int64_t var59 ; 
+int64_t var60 ; 
+int var61 , var62 , var63 ; 
+double var64 ; 
+var60 = func4 ( ) ; 
+if ( ! var59 || ( var60 - var59 ) >= number ) { 
+var61 = number ; 
+var62 = number ; 
+var63 = number ; 
+if ( var3 -> var13 ) 
+var61 = var3 -> var65 . var66 ; 
+if ( var3 -> var17 ) 
+var62 = var3 -> var27 . var66 ; 
+if ( var3 -> var38 ) 
+var63 = var3 -> var41 . var66 ; 
+var64 = number ; 
+if ( var3 -> var13 && var3 -> var17 ) 
+var64 = func20 ( & var3 -> var67 ) - func20 ( & var3 -> var42 ) ; 
+else if ( var3 -> var17 ) 
+var64 = func21 ( var3 ) - func20 ( & var3 -> var42 ) ; 
+else if ( var3 -> var13 ) 
+var64 = func21 ( var3 ) - func20 ( & var3 -> var67 ) ; 
+av_log ( var40 , AV_LOG_INFO , 
+str PRId64 str PRId64 str , 
+func21 ( var3 ) , 
+( var3 -> var13 && var3 -> var17 ) ? str : ( var3 -> var17 ? str : ( var3 -> var13 ? str : str ) ) , 
+var64 , 
+var3 -> frame_drops_early + var3 -> var37 , 
+var61 / 1024 , 
+var62 / 1024 , 
+var63 , 
+var3 -> var17 ? var3 -> viddec . avctx -> var68 : number , 
+var3 -> var17 ? var3 -> viddec . avctx -> var69 : number ) ; 
+fflush ( var70 ) ; 
+var59 = var60 ; 
+} 
+} 
+} 

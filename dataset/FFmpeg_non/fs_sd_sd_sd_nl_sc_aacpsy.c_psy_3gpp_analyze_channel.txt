@@ -1,0 +1,135 @@
+static void func1 ( FFPsyContext * var1 , int var2 , 
+const float * var3 , const FFPsyWindowInfo * var4 ) 
+{ 
+AacPsyContext * var5 = ( AacPsyContext * ) var1 -> var6 ; 
+AacPsyChannel * var7 = & var5 -> var8 [ var2 ] ; 
+int var9 , var10 , var11 ; 
+float var12 , var13 , var14 , var15 = var16 , var17 [ number ] = { number } ; 
+float var18 = number , var19 = number , var20 = number ; 
+float var21 = var5 -> var22 > number ? number : func2 ( number , number - var5 -> var22 * number / number ) ; 
+const int var23 = var1 -> var23 [ var4 -> var24 == number ] ; 
+const uint8_t * var25 = var1 -> var26 [ var4 -> var24 == number ] ; 
+AacPsyCoeffs * var27 = var5 -> var28 [ var4 -> var24 == number ] ; 
+const float var29 = var4 -> var24 == number ? var30 : var31 ; 
+func3 ( var4 , var23 , var7 , var25 , var3 ) ; 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+AacPsyBand * var26 = & var7 -> var34 [ var10 ] ; 
+var17 [ number ] = var26 [ number ] . var35 ; 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+var26 [ var11 ] . var36 = func2 ( var26 [ var11 ] . var36 , var26 [ var11 - number ] . var36 * var27 [ var11 ] . var37 [ number ] ) ; 
+var17 [ var10 + var11 ] = func2 ( var26 [ var11 ] . var35 , var17 [ var10 + var11 - number ] * var27 [ var11 ] . var37 [ number ] ) ; 
+} 
+for ( var11 = var23 - number ; var11 >= number ; var11 -- ) { 
+var26 [ var11 ] . var36 = func2 ( var26 [ var11 ] . var36 , var26 [ var11 + number ] . var36 * var27 [ var11 ] . var38 [ number ] ) ; 
+var17 [ var10 + var11 ] = func2 ( var17 [ var10 + var11 ] , var17 [ var10 + var11 + number ] * var27 [ var11 ] . var38 [ number ] ) ; 
+} 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var26 [ var11 ] ; 
+var34 -> var39 = var34 -> var36 = func2 ( var34 -> var36 , var27 [ var11 ] . var40 ) ; 
+if ( ! ( var4 -> var41 [ number ] == var42 || ( var4 -> var41 [ number ] == var43 && ! var10 ) ) ) 
+var34 -> var36 = func2 ( var44 * var34 -> var36 , func4 ( var34 -> var36 , 
+var45 * var7 -> var46 [ var10 + var11 ] . var39 ) ) ; 
+var21 += func5 ( var34 ) ; 
+var18 += var34 -> var47 ; 
+var19 += var34 -> var19 ; 
+if ( var17 [ var10 + var11 ] * var29 > var34 -> var35 || var27 [ var11 ] . var48 > number ) 
+var34 -> var49 = var50 ; 
+else 
+var34 -> var49 = var51 ; 
+} 
+} 
+var1 -> var8 [ var2 ] . var52 = var21 ; 
+var12 = func6 ( var5 , var21 , var1 -> var53 . var54 , var1 -> var53 . var55 , var4 -> var24 == number ) ; 
+var13 = func7 ( var12 ) ; 
+if ( var1 -> var53 . var54 > number ) 
+var13 *= func8 ( var5 -> var21 . var56 / func7 ( var1 -> var53 . var54 ) , 
+number , number ) ; 
+var5 -> var21 . var56 = func7 ( var12 ) ; 
+if ( var13 < var21 ) { 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+var15 = func9 ( var18 , var13 , var21 , var19 ) ; 
+var21 = number ; 
+var18 = number ; 
+var19 = number ; 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+var34 -> var36 = func10 ( var34 , var27 [ var11 ] . var48 , var15 ) ; 
+var21 += func5 ( var34 ) ; 
+var18 += var34 -> var47 ; 
+var19 += var34 -> var19 ; 
+} 
+} 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+float var57 = number , var58 ; 
+var19 = var18 = number ; 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+if ( var34 -> var49 != var59 ) { 
+var57 += var34 -> var21 ; 
+var18 += var34 -> var47 ; 
+var19 += var34 -> var19 ; 
+} 
+} 
+} 
+var58 = func2 ( var13 - ( var21 - var57 ) , number ) ; 
+if ( var19 > number ) 
+var15 = func9 ( var18 , var58 , var57 , var19 ) ; 
+var21 = number ; 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+if ( var19 > number ) 
+var34 -> var36 = func10 ( var34 , var27 [ var11 ] . var48 , var15 ) ; 
+var21 += func5 ( var34 ) ; 
+if ( var34 -> var36 > number ) 
+var34 -> var20 = var34 -> var19 / var34 -> var36 ; 
+else 
+var34 -> var20 = number ; 
+var20 += var34 -> var20 ; 
+} 
+} 
+var14 = var13 - var21 ; 
+if ( fabs ( var14 ) > number * var13 ) 
+break ; 
+} 
+if ( var21 < number * var13 ) { 
+var20 = number / var20 ; 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+if ( var34 -> var19 > number ) { 
+float var60 = var34 -> var20 * var20 * var14 ; 
+float var36 = var34 -> var36 ; 
+var36 *= func11 ( var60 / var34 -> var19 ) ; 
+if ( var36 > var27 [ var11 ] . var48 * var34 -> var35 && var34 -> var49 == var51 ) 
+var36 = func2 ( var34 -> var36 , var27 [ var11 ] . var48 * var34 -> var35 ) ; 
+var34 -> var36 = var36 ; 
+} 
+} 
+} 
+} else { 
+var11 = var23 ; 
+while ( var21 > var13 && var11 -- ) { 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+if ( var34 -> var49 != var50 && var27 [ var11 ] . var48 < var61 ) { 
+var27 [ var11 ] . var48 = var61 ; 
+var34 -> var36 = var34 -> var35 * var61 ; 
+var21 += var34 -> var19 * number - var34 -> var21 ; 
+} 
+} 
+} 
+} 
+} 
+for ( var10 = number ; var10 < var4 -> var24 * number ; var10 += number ) { 
+for ( var11 = number ; var11 < var23 ; var11 ++ ) { 
+AacPsyBand * var34 = & var7 -> var34 [ var10 + var11 ] ; 
+FFPsyBand * var62 = & var1 -> var8 [ var2 ] . var63 [ var10 + var11 ] ; 
+var62 -> var33 = var34 -> var36 ; 
+var62 -> var35 = var34 -> var35 ; 
+var62 -> var32 = var34 -> var19 * number / var25 [ var11 ] ; 
+} 
+} 
+memcpy ( var7 -> var46 , var7 -> var34 , sizeof ( var7 -> var34 ) ) ; 
+} 

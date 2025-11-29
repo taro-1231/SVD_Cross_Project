@@ -1,0 +1,52 @@
+func1 ( png_colorp var1 , png_bytep var2 , int var3 , 
+png_const_bytep var4 , unsigned int * var5 ) 
+{ 
+switch ( var5 [ number ] ) 
+{ 
+var6 : 
+fprintf ( var7 , str , 
+var5 [ number ] ) ; 
+exit ( number ) ; 
+case number : 
+func2 ( var1 + number , var2 + number , var5 [ number ] , var5 [ number ] , var5 [ number ] , number , 
+var4 ) ; 
+return number ; 
+case number : 
+func2 ( var1 + number , var2 + number , var5 [ number ] , var5 [ number ] , var5 [ number ] , 
+var5 [ number ] , var4 ) ; 
+return number ; 
+case number : 
+func2 ( var1 + number , var2 + number , var5 [ number ] , var5 [ number ] , var5 [ number ] , number , 
+var4 ) ; 
+return number ; 
+case number : 
+func2 ( var1 + number , var2 + number , var5 [ number ] , var5 [ number ] , var5 [ number ] , 
+var5 [ number ] , var4 ) ; 
+return number ; 
+case number : 
+if ( var3 == number ) 
+{ 
+func2 ( var1 + number , var2 + number , number , number , number , number , var4 ) ; 
+func2 ( var1 + number , var2 + number , number , number , number , number , var4 ) ; 
+return number ; 
+} 
+else 
+{ 
+unsigned int var8 = number << ( var3 / number ) ; 
+unsigned int var9 , var10 , var11 ; 
+for ( var9 = number ; var9 < var8 ; ++ var9 ) for ( var10 = number ; var10 < var8 ; ++ var10 ) 
+{ 
+var11 = var9 + ( var8 * var10 ) ; 
+( interp ( var9 , c1 , c2 ) * var10 + ( var8 - var10 ) * interp ( var9 , c3 , c4 ) ) ) / \ 
+( var8 * var8 ) ) 
+func2 ( var1 + var11 , var2 + var11 , 
+func3 ( var9 , var10 , number , number , number , number ) , 
+func3 ( var9 , var10 , number , number , number , number ) , 
+func3 ( var9 , var10 , number , number , number , number ) , 
+func3 ( var9 , var10 , number , number , number , number ) , 
+var4 ) ; 
+} 
+return var11 + number ; 
+} 
+} 
+} 

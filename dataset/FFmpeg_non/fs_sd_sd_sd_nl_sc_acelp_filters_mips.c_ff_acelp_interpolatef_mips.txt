@@ -1,0 +1,38 @@
+static void func1 ( float * var1 , const float * var2 , 
+const float * var3 , int var4 , 
+int var5 , int var6 , int var7 ) 
+{ 
+int var8 , var9 ; 
+int var10 = var4 * number ; 
+int var11 = var4 - var5 ; 
+float var12 , var13 , var14 , var15 ; 
+for ( var8 = number ; var8 < var7 ; var8 ++ ) { 
+const float * var16 = & var2 [ var8 ] ; 
+const float * var17 = & var2 [ var8 - number ] ; 
+const float * var18 = & var3 [ var5 ] ; 
+const float * var19 = var3 + var11 ; 
+float var20 = number ; 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) { 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+PTR_ADDIU str 
+PTR_ADDU str 
+PTR_ADDU str 
+str 
+: [ var20 ] str ( var20 ) , [ var16 ] str ( var16 ) , [ var17 ] str ( var17 ) , 
+[ var18 ] str ( var18 ) , 
+[ var12 ] str ( var12 ) , [ var13 ] str ( var13 ) , 
+[ var14 ] str ( var14 ) , [ var15 ] str ( var15 ) , 
+[ var19 ] str ( var19 ) 
+: [ var10 ] str ( var10 ) 
+: str 
+) ; 
+} 
+var1 [ var8 ] = var20 ; 
+} 
+} 

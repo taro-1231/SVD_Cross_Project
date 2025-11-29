@@ -1,0 +1,10 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct video_data * var2 = var1 -> var3 ; 
+if ( func2 ( & var2 -> var4 ) != var2 -> var5 ) 
+av_log ( var1 , AV_LOG_WARNING , str 
+str ) ; 
+func3 ( var2 ) ; 
+func4 ( var2 -> var6 ) ; 
+return number ; 
+} 

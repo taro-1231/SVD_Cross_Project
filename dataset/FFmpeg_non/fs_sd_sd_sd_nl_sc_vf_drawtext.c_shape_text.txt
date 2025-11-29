@@ -1,0 +1,71 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+DrawTextContext * var2 = var1 -> var3 ; 
+uint8_t * var4 ; 
+int var5 = func2 ( var6 ) ; 
+static const FriBidiFlags var7 = var8 | 
+var9 ; 
+FriBidiChar * var10 = var11 ; 
+FriBidiStrIndex var12 ; 
+FriBidiParType var13 = var14 ; 
+FriBidiStrIndex var15 = number ; 
+FriBidiStrIndex var16 = number ; 
+FriBidiLevel * var17 = var11 ; 
+FriBidiArabicProp * var18 = var11 ; 
+FriBidiCharType * var19 = var11 ; 
+FriBidiStrIndex var20 , var21 ; 
+var12 = strlen ( var2 -> var22 ) ; 
+if ( ! ( var10 = func3 ( var12 , sizeof ( * var10 ) ) ) ) { 
+goto var23 ; 
+} 
+var12 = func4 ( var24 , 
+var2 -> var22 , var12 , var10 ) ; 
+var19 = func3 ( var12 , sizeof ( * var19 ) ) ; 
+if ( ! var19 ) { 
+goto var23 ; 
+} 
+func5 ( var10 , var12 , var19 ) ; 
+var17 = func3 ( var12 , sizeof ( * var17 ) ) ; 
+if ( ! var17 ) { 
+goto var23 ; 
+} 
+if ( ! func6 ( var19 , var12 , & var13 , 
+var17 ) ) { 
+goto var23 ; 
+} 
+var18 = func3 ( var12 , sizeof ( * var18 ) ) ; 
+if ( ! var18 ) { 
+goto var23 ; 
+} 
+func7 ( var10 , var12 , var18 ) ; 
+func8 ( var19 , var12 , var17 , var18 ) ; 
+func9 ( var7 , var17 , var12 , var18 , var10 ) ; 
+for ( var16 = number , var15 = number ; var16 < var12 ; var16 ++ ) { 
+if ( func10 ( var10 [ var16 ] ) || var16 == var12 - number ) { 
+if ( ! func11 ( var7 , var19 , 
+var16 - var15 + number , var15 , 
+var13 , var17 , var10 , 
+var11 ) ) { 
+goto var23 ; 
+} 
+var15 = var16 + number ; 
+} 
+} 
+for ( var20 = number , var21 = number ; var20 < var12 ; var20 ++ ) 
+if ( var10 [ var20 ] != var25 ) 
+var10 [ var21 ++ ] = var10 [ var20 ] ; 
+var12 = var21 ; 
+if ( ! ( var4 = func12 ( var2 -> var22 , ( var12 * number + number ) * sizeof ( * var2 -> var22 ) ) ) ) { 
+goto var23 ; 
+} 
+var2 -> var22 = var4 ; 
+var12 = func13 ( var24 , 
+var10 , var12 , var2 -> var22 ) ; 
+var5 = number ; 
+var23 : 
+func14 ( var10 ) ; 
+func14 ( var17 ) ; 
+func14 ( var18 ) ; 
+func14 ( var19 ) ; 
+return var5 ; 
+} 

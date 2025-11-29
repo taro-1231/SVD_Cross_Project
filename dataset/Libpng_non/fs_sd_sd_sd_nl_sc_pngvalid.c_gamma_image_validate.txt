@@ -1,0 +1,105 @@
+func1 ( gamma_display * var1 , png_const_structp var2 , 
+png_infop var3 ) 
+{ 
+PNG_CONST png_store * PNG_CONST var4 = var1 -> var5 . var4 ; 
+PNG_CONST png_byte var6 = var1 -> var5 . var7 ; 
+PNG_CONST png_byte var8 = var1 -> var5 . var9 ; 
+PNG_CONST png_uint_32 var10 = var1 -> var5 . var10 ; 
+PNG_CONST png_uint_32 var11 = var1 -> var5 . var11 ; 
+PNG_CONST size_t var12 = var1 -> var5 . var12 ; 
+PNG_CONST png_byte var13 = func2 ( var2 , var3 ) ; 
+PNG_CONST png_byte var14 = func3 ( var2 , var3 ) ; 
+PNG_CONST unsigned int var15 = ( var13 & number ) ? number : number ; 
+int var16 ; 
+png_uint_32 var17 ; 
+PNG_CONST store_palette_entry * var18 = var1 -> var5 . var19 ; 
+PNG_CONST int var20 = var1 -> var5 . var21 ; 
+int var22 = - number ; 
+int var23 = number ; 
+store_palette var24 ; 
+validate_info var25 ; 
+func4 ( var1 -> var5 . var4 , var2 , number ) ; 
+func5 ( & var25 , var1 , var2 , var6 == number ? number : var8 , var13 == number ? number : var14 ) ; 
+var16 = ( var25 . var26 > number && ! var1 -> var27 ) 
+|| var8 != var14 || var6 != var13 || var25 . var28 ; 
+if ( var6 == number && var13 == number ) 
+var16 = number ; 
+if ( var16 && var13 == number ) 
+var23 = func6 ( var24 , & var22 , var2 , var3 ) ; 
+for ( var17 = number ; var17 < var11 ; ++ var17 ) 
+{ 
+png_const_bytep var29 = func7 ( var4 , var2 , number , var17 ) ; 
+png_byte var30 [ var31 ] ; 
+func8 ( var2 , var30 , var6 , var8 , var17 ) ; 
+if ( var16 ) 
+{ 
+unsigned int var32 ; 
+for ( var32 = number ; var32 < var10 ; ++ var32 ) 
+{ 
+double var33 = number ; 
+PNG_CONST unsigned int var34 = 
+var6 == number ? func9 ( var30 , number , var8 , var32 , number ) : number ; 
+PNG_CONST unsigned int var35 = 
+var13 == number ? func9 ( var30 , number , var14 , var32 , number ) : number ; 
+if ( ( var6 & var36 ) != number || ( var6 == number && 
+var20 ) ) 
+{ 
+PNG_CONST unsigned int var37 = var6 == number ? 
+var1 -> var5 . var19 [ var34 ] . var33 : 
+func9 ( var30 , var6 , var8 , var32 , var15 ) ; 
+unsigned int var38 = number 
+if ( var13 == number ) 
+{ 
+if ( var23 ) 
+var38 = var24 [ var35 ] . var33 ; 
+} 
+else if ( ( var13 & var36 ) != number ) 
+var38 = func9 ( var29 , var13 , var14 , var32 , 
+var15 ) ; 
+if ( var38 != number ) 
+var33 = func10 ( str , & var25 , var37 , 
+var38 , - number number ; 
+else 
+{ 
+var33 = var37 >> var25 . var39 ; 
+var33 /= var25 . var40 ; 
+} 
+} 
+if ( ( var6 & var41 ) == number ) 
+( void ) func10 ( str , & var25 , 
+func9 ( var30 , var6 , var8 , var32 , number ) , 
+func9 ( var29 , var13 , var14 , var32 , number ) , var33 
+var25 . var42 ) ; 
+else 
+{ 
+( void ) func10 ( str , & var25 , 
+var6 == number ? var18 [ var34 ] . var43 : 
+func9 ( var30 , var6 , var8 , var32 , number ) , 
+var13 == number ? var24 [ var35 ] . var43 : 
+func9 ( var29 , var13 , var14 , var32 , number ) , 
+var33 var25 . var42 ) ; 
+( void ) func10 ( str , & var25 , 
+var6 == number ? var18 [ var34 ] . var44 : 
+func9 ( var30 , var6 , var8 , var32 , number ) , 
+var13 == number ? var24 [ var35 ] . var44 : 
+func9 ( var29 , var13 , var14 , var32 , number ) , 
+var33 var25 . var45 ) ; 
+( void ) func10 ( str , & var25 , 
+var6 == number ? var18 [ var34 ] . var46 : 
+func9 ( var30 , var6 , var8 , var32 , number ) , 
+var13 == number ? var24 [ var35 ] . var46 : 
+func9 ( var29 , var13 , var14 , var32 , number ) , 
+var33 var25 . var47 ) ; 
+} 
+} 
+} 
+else if ( memcmp ( var30 , var29 , var12 ) != number ) 
+{ 
+char var48 [ number ] ; 
+sprintf ( var48 , str , 
+( unsigned long ) var17 ) ; 
+func11 ( var2 , var48 ) ; 
+} 
+} 
+var1 -> var5 . var4 -> var49 = number ; 
+} 

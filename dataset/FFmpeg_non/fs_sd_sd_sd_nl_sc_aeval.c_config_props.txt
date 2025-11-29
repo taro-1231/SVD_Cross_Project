@@ -1,0 +1,15 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+EvalContext * var2 = var1 -> var3 -> var4 ; 
+char var5 [ number ] ; 
+var1 -> time_base = ( AVRational ) { 1 , var2 -> var6 } ; 
+var1 -> var6 = var2 -> var6 ; 
+var2 -> var7 [ var8 ] = var2 -> var6 ; 
+var2 -> var7 [ var9 ] = var10 ; 
+var2 -> var7 [ var11 ] = var1 -> var12 ; 
+func2 ( var5 , sizeof ( var5 ) , number , var2 -> var13 ) ; 
+av_log ( var1 -> var3 , AV_LOG_VERBOSE , 
+str PRId64 str , 
+var2 -> var6 , var5 , var2 -> duration ) ; 
+return number ; 
+} 

@@ -1,0 +1,11 @@
+static void func1 ( HEVCDecoderConfigurationRecord * var1 ) 
+{ 
+uint8_t var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) { 
+var1 -> var4 [ var2 ] . var5 = number ; 
+func2 ( & var1 -> var4 [ var2 ] . var6 ) ; 
+func2 ( & var1 -> var4 [ var2 ] . var7 ) ; 
+} 
+var1 -> var3 = number ; 
+func2 ( & var1 -> var4 ) ; 
+} 

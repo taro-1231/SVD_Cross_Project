@@ -1,0 +1,82 @@
+int func1 ( OptionParseContext * var1 , int var2 , char * var3 [ ] , 
+const OptionDef * var4 , 
+const OptionGroupDef * var5 , int var6 ) 
+{ 
+int var7 = number ; 
+int var8 = - number ; 
+func2 ( & var2 , & var3 ) ; 
+func3 ( var1 , var5 , var6 ) ; 
+func4 ( var9 , var10 , str ) ; 
+while ( var7 < var2 ) { 
+const char * var11 = var3 [ var7 ++ ] , * var12 ; 
+const OptionDef * var13 ; 
+int var14 ; 
+func4 ( var9 , var10 , str , var11 ) ; 
+if ( var11 [ number ] == str && var11 [ number ] == str && ! var11 [ number ] ) { 
+var8 = var7 ; 
+continue ; 
+} 
+if ( var11 [ number ] != str || ! var11 [ number ] || var8 + number == var7 ) { 
+func5 ( var1 , number , var11 ) ; 
+func4 ( var9 , var10 , str , var5 [ number ] . var15 ) ; 
+continue ; 
+} 
+var11 ++ ; 
+do { \ 
+var12 = var3 [ var7 ++ ] ; \ 
+if ( ! var12 ) { \ 
+func4 ( var9 , var16 , str , var11 ) ; \ 
+return func7 ( var17 ) ; \ 
+} \ 
+} while ( number ) 
+if ( ( var14 = func8 ( var5 , var6 , var11 ) ) >= number ) { 
+func6 ( var12 ) ; 
+func5 ( var1 , var14 , var12 ) ; 
+func4 ( var9 , var10 , str , 
+var5 [ var14 ] . var15 , var12 ) ; 
+continue ; 
+} 
+var13 = func9 ( var4 , var11 ) ; 
+if ( var13 -> var15 ) { 
+if ( var13 -> var18 & var19 ) { 
+var12 = var3 [ var7 ++ ] ; 
+} else if ( var13 -> var18 & var20 ) { 
+func6 ( var12 ) ; 
+} else { 
+var12 = str ; 
+} 
+func10 ( var1 , var13 , var11 , var12 ) ; 
+func4 ( var9 , var10 , str 
+str , var13 -> var15 , var13 -> help , var12 ) ; 
+continue ; 
+} 
+if ( var3 [ var7 ] ) { 
+var14 = func11 ( var9 , var11 , var3 [ var7 ] ) ; 
+if ( var14 >= number ) { 
+func4 ( var9 , var10 , str 
+str , var11 , var3 [ var7 ] ) ; 
+var7 ++ ; 
+continue ; 
+} else if ( var14 != var21 ) { 
+func4 ( var9 , var16 , str 
+str , var11 , var3 [ var7 ] ) ; 
+return var14 ; 
+} 
+} 
+if ( var11 [ number ] == str && var11 [ number ] == str && 
+( var13 = func9 ( var4 , var11 + number ) ) && 
+var13 -> var15 && var13 -> var18 & var22 ) { 
+func10 ( var1 , var13 , var11 , str ) ; 
+func4 ( var9 , var10 , str 
+str , var13 -> var15 , var13 -> help ) ; 
+continue ; 
+} 
+func4 ( var9 , var16 , str , var11 ) ; 
+return var21 ; 
+} 
+if ( var1 -> var23 . var24 || var25 || var26 || var27 ) 
+func4 ( var9 , AV_LOG_WARNING , str 
+str ) ; 
+func4 ( var9 , var10 , str ) ; 
+return number ; 
+} 

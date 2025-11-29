@@ -1,0 +1,30 @@
+static void func1 ( void * var1 , const char * var2 , 
+float * var3 , const float * var4 , 
+int var5 , int var6 , int var7 , 
+int * var8 ) 
+{ 
+int var9 = func2 ( * var3 , var4 , var5 ) ; 
+if ( var9 < var7 ) { 
+var9 = var6 ; 
+if ( * var3 >= number ) { 
+av_log ( var1 , AV_LOG_WARNING , str 
+str , var2 , var4 [ var9 ] ) ; 
+} 
+} 
+* var3 = var4 [ var9 ] ; 
+* var8 = var9 ; 
+} 
+} 
+static void func1 ( void * var1 , const char * var2 , 
+float * var3 , const float * var4 , 
+int var5 , int var6 , int var7 , 
+int * var8 ) 
+{ 
+int var9 = func2 ( * var3 , var4 , var5 ) ; 
+if ( var9 < var7 ) { 
+var9 = var6 ; 
+if ( * var3 >= number ) { 
+av_log ( var1 , AV_LOG_WARNING , str 
+str , var2 , var4 [ var9 ] ) ; 
+} 
+} 

@@ -1,0 +1,9 @@
+static enum AVSampleFormat func1 ( int var1 ) 
+{ 
+switch ( var1 ) { 
+case 8 : return var2 ; 
+case 16 : return var3 ; 
+case 32 : return var4 ; 
+var5 : return var6 ; 
+} 
+} 

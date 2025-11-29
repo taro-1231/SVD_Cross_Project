@@ -1,0 +1,8 @@
+static void func1 ( InputStream * var1 ) 
+{ 
+int var2 ; 
+if ( var1 -> var3 . var4 < var5 ) 
+func2 ( var1 , var6 ) ; 
+for ( var2 = number ; var2 < var1 -> var7 ; var2 ++ ) 
+func3 ( var1 -> var8 [ var2 ] -> var9 , var6 ) ; 
+} 

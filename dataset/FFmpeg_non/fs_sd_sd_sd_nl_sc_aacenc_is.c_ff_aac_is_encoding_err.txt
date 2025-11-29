@@ -1,0 +1,55 @@
+struct AACISError func1 ( AACEncContext * var1 , ChannelElement * var2 , 
+int var3 , int var4 , int var5 , float var6 , 
+float var7 , float var8 , 
+int var9 , int var10 ) 
+{ 
+int var11 , var12 ; 
+SingleChannelElement * var13 = & var2 -> var14 [ number ] ; 
+SingleChannelElement * var15 = & var2 -> var14 [ number ] ; 
+float * var16 = var9 ? var13 -> var17 : var13 -> var18 ; 
+float * var19 = var9 ? var15 -> var17 : var15 -> var18 ; 
+float * var20 = & var1 -> var21 [ number * number ] , * var22 = & var1 -> var21 [ number * number ] ; 
+float * var23 = & var1 -> var21 [ number * number ] , * var24 = & var1 -> var21 [ number * number ] ; 
+float var25 = number , var26 = number ; 
+struct AACISError var27 = { number } ; 
+for ( var12 = number ; var12 < var13 -> var28 . var29 [ var4 ] ; var12 ++ ) { 
+FFPsyBand * var30 = & var1 -> var31 . var14 [ var1 -> var32 + number ] . var33 [ ( var4 + var12 ) * number + var5 ] ; 
+FFPsyBand * var34 = & var1 -> var31 . var14 [ var1 -> var32 + number ] . var33 [ ( var4 + var12 ) * number + var5 ] ; 
+int var35 , var36 = func2 ( number , var13 -> var37 [ ( var4 + var12 ) * number + var5 ] - number ) ; 
+float var38 = var10 * pow ( var7 / var6 , number / number ) ; 
+float var39 , var40 = number ; 
+float var41 = func3 ( var30 -> var42 , var34 -> var42 ) ; 
+for ( var11 = number ; var11 < var13 -> var28 . var43 [ var5 ] ; var11 ++ ) 
+var23 [ var11 ] = ( var16 [ var3 + ( var4 + var12 ) * number + var11 ] + var10 * var19 [ var3 + ( var4 + var12 ) * number + var11 ] ) * sqrt ( var6 / var8 ) ; 
+func4 ( var20 , & var16 [ var3 + ( var4 + var12 ) * number ] , var13 -> var28 . var43 [ var5 ] ) ; 
+func4 ( var22 , & var19 [ var3 + ( var4 + var12 ) * number ] , var13 -> var28 . var43 [ var5 ] ) ; 
+func4 ( var24 , var23 , var13 -> var28 . var43 [ var5 ] ) ; 
+var39 = func5 ( number , var13 -> var28 . var43 [ var5 ] , var24 ) ; 
+var35 = func6 ( var39 , var36 ) ; 
+var25 += func7 ( var1 , & var16 [ var3 + ( var4 + var12 ) * number ] , var20 , 
+var13 -> var28 . var43 [ var5 ] , 
+var13 -> var37 [ ( var4 + var12 ) * number + var5 ] , 
+var13 -> var44 [ ( var4 + var12 ) * number + var5 ] , 
+var1 -> var45 / var30 -> var42 , var46 , var47 , number ) ; 
+var25 += func7 ( var1 , & var19 [ var3 + ( var4 + var12 ) * number ] , var22 , 
+var15 -> var28 . var43 [ var5 ] , 
+var15 -> var37 [ ( var4 + var12 ) * number + var5 ] , 
+var15 -> var44 [ ( var4 + var12 ) * number + var5 ] , 
+var1 -> var45 / var34 -> var42 , var46 , var47 , number ) ; 
+var26 += func7 ( var1 , var23 , var24 , var13 -> var28 . var43 [ var5 ] , 
+var36 , var35 , 
+var1 -> var45 / var41 , var46 , var47 , number ) ; 
+for ( var11 = number ; var11 < var13 -> var28 . var43 [ var5 ] ; var11 ++ ) { 
+var40 += ( var20 [ var11 ] - var24 [ var11 ] ) * ( var20 [ var11 ] - var24 [ var11 ] ) ; 
+var40 += ( var22 [ var11 ] - var24 [ var11 ] * var38 ) * ( var22 [ var11 ] - var24 [ var11 ] * var38 ) ; 
+} 
+var40 *= var1 -> var45 / var41 ; 
+var26 += var40 ; 
+} 
+var27 . var48 = var26 <= var25 ; 
+var27 . var10 = var10 ; 
+var27 . var49 = func8 ( var25 - var26 ) ; 
+var27 . var25 = var25 ; 
+var27 . var26 = var26 ; 
+return var27 ; 
+} 

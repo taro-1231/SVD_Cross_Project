@@ -1,0 +1,14 @@
+av_cold void func1 ( func2 ) ( AACContext * var1 , SpectralBandReplication * var2 ) 
+{ 
+if ( var2 -> var3 . var4 ) 
+return ; 
+var2 -> var5 [ number ] = var2 -> var5 [ number ] ; 
+func3 ( var2 ) ; 
+var2 -> var6 [ number ] . var7 = var8 - ( number - number ) ; 
+var2 -> var6 [ number ] . var7 = var8 - ( number - number ) ; 
+func4 ( func5 ) ( & var2 -> var3 , number , number , number / ( number * number ) ) ; 
+func4 ( func5 ) ( & var2 -> var9 , number , number , - number * number ) ; 
+func1 ( func6 ) ( & var2 -> var10 ) ; 
+func1 ( func7 ) ( & var2 -> var11 ) ; 
+func8 ( & var2 -> var12 ) ; 
+} 

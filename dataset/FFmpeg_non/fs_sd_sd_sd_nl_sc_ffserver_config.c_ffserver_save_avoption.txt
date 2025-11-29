@@ -1,0 +1,81 @@
+static int func1 ( const char * var1 , const char * var2 , int var3 , 
+FFServerConfig * var4 ) 
+{ 
+static int var5 = number ; 
+int var6 = number ; 
+AVDictionaryEntry * var7 ; 
+const AVOption * var8 = var9 ; 
+const char * var10 = var9 ; 
+const char * var11 = var9 ; 
+char var12 [ number ] ; 
+AVCodecContext * var13 ; 
+AVDictionary ** var14 ; 
+enum AVCodecID var15 ; 
+switch ( var3 ) { 
+case var16 : 
+var13 = var4 -> var17 ; 
+var14 = & var4 -> var18 ; 
+var15 = var4 -> var19 != var20 ? 
+var4 -> var19 : var21 ; 
+break ; 
+case var22 : 
+var13 = var4 -> var23 ; 
+var14 = & var4 -> var24 ; 
+var15 = var4 -> var25 != var20 ? 
+var4 -> var25 : var26 ; 
+break ; 
+var27 : 
+func2 ( number ) ; 
+} 
+if ( strchr ( var1 , str ) ) { 
+snprintf ( var12 , sizeof ( var12 ) , str , var1 ) ; 
+var11 = var12 ; 
+if ( ! ( var10 = strchr ( var12 , str ) ) ) { 
+func3 ( var4 -> var28 , var4 -> var29 , 
+var30 , & var4 -> var31 , 
+str ) ; 
+return - number ; 
+} 
+var12 [ var10 - var12 ] = str ; 
+var10 ++ ; 
+if ( ( var6 = func4 ( var13 , var11 , var4 ) ) < number ) 
+return var6 ; 
+if ( ! var13 -> var32 || ! var13 -> var33 ) 
+return - number ; 
+} else { 
+var10 = var1 ; 
+} 
+var8 = func5 ( var13 , var10 , var9 , var3 | var34 , 
+var35 ) ; 
+if ( ! var8 && 
+( ! strcmp ( var10 , str ) || ! strcmp ( var10 , str ) || 
+! strcmp ( var10 , str ) || ! strcmp ( var10 , str ) ) ) 
+var8 = func5 ( var13 , var10 , var9 , number , number ) ; 
+if ( ! var8 ) { 
+func3 ( var4 -> var28 , var4 -> var29 , var30 , 
+& var4 -> var31 , str , var1 ) ; 
+if ( ! var5 && var13 -> var36 == var20 ) { 
+var5 = number ; 
+func3 ( var4 -> var28 , var4 -> var29 , 
+var30 , var9 , str 
+str 
+str , 
+var1 , avcodec_get_name ( var15 ) , var1 , 
+var2 ) ; 
+} 
+} else if ( ( var6 = func6 ( var13 , var10 , var2 , var35 ) ) < number ) { 
+func3 ( var4 -> var28 , var4 -> var29 , var30 , 
+& var4 -> var31 , str , var1 , 
+var2 , func7 ( var6 ) ) ; 
+} else if ( ( var7 = func8 ( * var14 , var10 , var9 , number ) ) ) { 
+if ( ( var8 -> var3 == var37 ) && var2 && 
+( var2 [ number ] == str || var2 [ number ] == str ) ) 
+return func9 ( var14 , var10 , var2 , var38 ) ; 
+func3 ( var4 -> var28 , var4 -> var29 , var30 , 
+& var4 -> var31 , str 
+str , var1 , var7 -> value ) ; 
+} else if ( func9 ( var14 , var10 , var2 , number ) < number ) { 
+return func10 ( var39 ) ; 
+} 
+return number ; 
+} 

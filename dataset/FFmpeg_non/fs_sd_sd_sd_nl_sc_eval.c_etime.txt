@@ -1,0 +1,4 @@
+static double func1 ( double var1 ) 
+{ 
+return func2 ( ) * number ; 
+} 

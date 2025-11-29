@@ -1,0 +1,21 @@
+static void func1 ( AVFilterGraph * var1 , 
+AVFilterLink * var2 , int var3 ) 
+{ 
+AVFilterLink ** var4 = var1 -> var5 ; 
+func2 ( var3 >= number ) ; 
+while ( number ) { 
+int var6 = number * var3 + number ; 
+if ( var6 >= var1 -> var7 ) 
+break ; 
+if ( var6 + number < var1 -> var7 && 
+var4 [ var6 + number ] -> var8 < var4 [ var6 ] -> var8 ) 
+var6 ++ ; 
+if ( var2 -> var8 < var4 [ var6 ] -> var8 ) 
+break ; 
+var4 [ var3 ] = var4 [ var6 ] ; 
+var4 [ var3 ] -> var9 = var3 ; 
+var3 = var6 ; 
+} 
+var4 [ var3 ] = var2 ; 
+var2 -> var9 = var3 ; 
+} 

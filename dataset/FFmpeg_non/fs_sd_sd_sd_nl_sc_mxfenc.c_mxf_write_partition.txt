@@ -1,0 +1,74 @@
+static int func1 ( AVFormatContext * var1 , int var2 , 
+int var3 , 
+const uint8_t * var4 , int var5 ) 
+{ 
+MXFContext * var6 = var1 -> var7 ; 
+AVIOContext * var8 = var1 -> var8 ; 
+int64_t var9 ; 
+unsigned var10 = number ; 
+uint64_t var11 = func2 ( var8 ) ; 
+int var12 ; 
+if ( ! var6 -> var13 && var6 -> var14 ) 
+var10 = number + number + ( var1 -> var15 + number ) * number + 
+number + var6 -> var14 * ( number + var6 -> var16 * number ) ; 
+else if ( var6 -> var13 && var3 ) 
+var10 = number ; 
+if ( var10 ) { 
+var10 += number + func3 ( var10 ) ; 
+var10 += func4 ( var10 ) ; 
+} 
+if ( var4 && ! memcmp ( var4 , var17 , number ) ) { 
+if ( ( var12 = func5 ( & var6 -> var18 , var6 -> var19 + number , 
+sizeof ( * var6 -> var18 ) ) ) < number ) { 
+var6 -> var19 = number ; 
+return var12 ; 
+} 
+var6 -> var18 [ var6 -> var19 ++ ] = var11 ; 
+} 
+if ( var4 ) 
+func6 ( var8 , var4 , number ) ; 
+else 
+func6 ( var8 , var17 , number ) ; 
+klv_encode_ber_length ( var8 , 88 + 16LL * DESCRIPTOR_COUNT ( var6 -> essence_container_count ) ) ; 
+func7 ( var8 , number ) ; 
+func7 ( var8 , number ) ; 
+func8 ( var8 , var20 ) ; 
+func9 ( var8 , var11 ) ; 
+if ( var4 && ! memcmp ( var4 , var17 , number ) && var6 -> var19 > number ) 
+func9 ( var8 , var6 -> var18 [ var6 -> var19 - number ] ) ; 
+else if ( var4 && ! memcmp ( var4 , var21 , number ) && var6 -> var19 ) 
+func9 ( var8 , var6 -> var18 [ var6 -> var19 - number ] ) ; 
+else 
+func9 ( var8 , number ) ; 
+func9 ( var8 , var6 -> var22 ) ; 
+var9 = func2 ( var8 ) ; 
+func9 ( var8 , number ) ; 
+func9 ( var8 , var10 ) ; 
+func8 ( var8 , var10 ? var3 : number ) ; 
+if ( var2 && var6 -> var14 && var6 -> var19 && var1 -> var23 != & var24 ) 
+func9 ( var8 , var6 -> var25 ) ; 
+else 
+func9 ( var8 , number ) ; 
+func8 ( var8 , var2 ) ; 
+if ( var1 -> var23 == & var24 ) 
+func6 ( var8 , var26 , number ) ; 
+else 
+func6 ( var8 , var27 , number ) ; 
+func10 ( var1 ) ; 
+if ( var5 ) { 
+int64_t var29 , var28 ; 
+unsigned var30 ; 
+func11 ( var1 ) ; 
+var28 = func2 ( var1 -> var8 ) ; 
+func12 ( var1 ) ; 
+func13 ( var1 ) ; 
+var29 = func2 ( var1 -> var8 ) ; 
+var30 = var29 - var28 + func4 ( var29 ) ; 
+func14 ( var8 , var9 , var31 ) ; 
+func9 ( var8 , var30 ) ; 
+func14 ( var8 , var29 , var31 ) ; 
+} 
+if ( var4 ) 
+func15 ( var8 ) ; 
+return number ; 
+} 

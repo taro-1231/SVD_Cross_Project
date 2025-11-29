@@ -1,0 +1,37 @@
+static av_cold int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ShufflePlanesContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 ; 
+int var7 [ number ] = { number } ; 
+int var8 ; 
+var4 -> var9 = number ; 
+var4 -> var10 = func2 ( var1 -> var11 ) ; 
+var6 = func3 ( var1 -> var11 ) ; 
+for ( var8 = number ; var8 < var4 -> var10 ; var8 ++ ) { 
+if ( var4 -> var12 [ var8 ] >= var4 -> var10 ) { 
+func4 ( var2 , var13 , 
+str , 
+var4 -> var12 [ var8 ] , var8 ) ; 
+return func5 ( var14 ) ; 
+} 
+if ( ( var6 -> var15 || var6 -> var16 ) && 
+( var8 == number || var8 == number ) != ( var4 -> var12 [ var8 ] == number || var4 -> var12 [ var8 ] == number ) ) { 
+func4 ( var2 , var13 , 
+str 
+str ) ; 
+return func5 ( var14 ) ; 
+} 
+if ( ( var6 -> var17 & var18 || 
+var6 -> var17 & var19 ) && 
+( var8 == number ) != ( var4 -> var12 [ var8 ] == number ) ) { 
+func4 ( var2 , var13 , 
+str ) ; 
+return func5 ( var14 ) ; 
+} 
+if ( var7 [ var4 -> var12 [ var8 ] ] ) 
+var4 -> var9 = number ; 
+var7 [ var4 -> var12 [ var8 ] ] ++ ; 
+} 
+return number ; 
+} 

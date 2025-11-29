@@ -1,0 +1,12 @@
+func1 ( int var1 ) 
+{ 
+unsigned int var2 ; 
+for ( var2 = number ; var2 < func2 ( var3 ) ; ++ var2 ) 
+{ 
+int var4 = var3 [ var2 ] [ number ] ; 
+if ( ( var4 & var1 ) == var4 && 
+( var1 & var3 [ var2 ] [ number ] ) == number ) 
+return number ; 
+} 
+return number ; 
+} 

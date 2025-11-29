@@ -1,0 +1,35 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AudioStatsContext * var3 = var1 -> var4 -> var5 ; 
+AVDictionary ** var6 = func2 ( var2 ) ; 
+const int var7 = var3 -> var8 ; 
+const double * var9 ; 
+int var10 , var11 ; 
+switch ( var1 -> var12 ) { 
+case var13 : 
+for ( var11 = number ; var11 < var7 ; var11 ++ ) { 
+ChannelStats * var14 = & var3 -> var15 [ var11 ] ; 
+var9 = ( const double * ) var2 -> var16 [ var11 ] ; 
+for ( var10 = number ; var10 < var2 -> var17 ; var10 ++ , var9 ++ ) 
+func3 ( var3 , var14 , * var9 ) ; 
+} 
+break ; 
+case var18 : 
+var9 = ( const double * ) var2 -> var16 [ number ] ; 
+for ( var10 = number ; var10 < var2 -> var17 ; var10 ++ ) { 
+for ( var11 = number ; var11 < var7 ; var11 ++ , var9 ++ ) 
+func3 ( var3 , & var3 -> var15 [ var11 ] , * var9 ) ; 
+} 
+break ; 
+} 
+if ( var3 -> var6 ) 
+func4 ( var3 , var6 ) ; 
+if ( var3 -> var19 > number ) { 
+var3 -> var20 ++ ; 
+if ( var3 -> var20 >= var3 -> var19 ) { 
+func5 ( var3 ) ; 
+var3 -> var20 = number ; 
+} 
+} 
+return func6 ( var1 -> var4 -> var21 [ number ] , var2 ) ; 
+} 

@@ -1,0 +1,133 @@
+static void func1 ( FFServerStream * var1 , AVCodecContext * var2 , 
+FFServerConfig * var3 ) 
+{ 
+LayeredAVStream * var4 ; 
+AVDictionary ** var5 , * var6 = var7 ; 
+char * var8 ; 
+if ( var1 -> var9 >= func2 ( var1 -> var10 ) ) 
+return ; 
+var5 = var2 -> var11 == var12 ? 
+& var3 -> var13 : & var3 -> var14 ; 
+func3 ( & var6 , * var5 , number ) ; 
+func4 ( var2 -> var15 , var5 , var16 ) ; 
+func4 ( var2 , var5 , var16 ) ; 
+if ( func5 ( * var5 ) ) 
+func6 ( var7 , var17 , 
+str , 
+func5 ( * var5 ) ) ; 
+if ( ! var3 -> var18 ) { 
+switch ( var2 -> var11 ) { 
+case var12 : 
+if ( var2 -> var19 == number ) 
+func7 ( var3 -> var20 , var3 -> var21 , 
+var22 , & var3 -> var23 , 
+str ) ; 
+if ( var2 -> var24 == number ) 
+func7 ( var3 -> var20 , var3 -> var21 , 
+var22 , & var3 -> var23 , 
+str ) ; 
+break ; 
+case var25 : 
+if ( var2 -> var26 == number || var2 -> var27 == number ) 
+func7 ( var3 -> var20 , var3 -> var21 , 
+var22 , & var3 -> var23 , 
+str ) ; 
+break ; 
+var28 : 
+func8 ( number ) ; 
+} 
+goto var29 ; 
+} 
+switch ( var2 -> var11 ) { 
+case var12 : 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var19 = number ; 
+func10 ( & var6 , str , var2 -> var19 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var19 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var24 = number ; 
+func10 ( & var6 , str , var2 -> var24 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var24 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var30 = number ; 
+func10 ( & var6 , str , var2 -> var30 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var30 ) ; 
+} 
+break ; 
+case var25 : 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var19 = number ; 
+func10 ( & var6 , str , var2 -> var19 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var19 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var31 . var32 = number ; 
+var2 -> var31 . var33 = number ; 
+func11 ( & var6 , str , str , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var31 . var32 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var26 = number ; 
+var2 -> var27 = number ; 
+func11 ( & var6 , str , str , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var26 , var2 -> var27 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var34 = func12 ( var2 -> var19 / number , 
+( int64_t ) var2 -> var19 * var2 -> var31 . var33 / var2 -> var31 . var32 ) ; 
+func10 ( & var6 , str , var2 -> var34 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var34 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var35 = func13 ( str ) ; 
+func11 ( & var6 , str , str , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var35 ) ; 
+} 
+if ( ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var36 = var2 -> var19 * number ; 
+func10 ( & var6 , str , var2 -> var36 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var36 ) ; 
+} 
+if ( var2 -> var36 && ! func9 ( var6 , str , var7 , number ) ) { 
+var2 -> var37 = var2 -> var36 ; 
+func10 ( & var6 , str , var2 -> var37 , number ) ; 
+WARNING ( str 
+str , 
+var2 -> var37 ) ; 
+} 
+break ; 
+var28 : 
+abort ( ) ; 
+} 
+var29 : 
+var4 = func14 ( sizeof ( * var4 ) ) ; 
+if ( ! var4 ) 
+return ; 
+func15 ( var6 , & var8 , str , str ) ; 
+func16 ( & var6 ) ; 
+var4 -> var38 = var8 ; 
+var4 -> var39 = var2 ; 
+var4 -> var40 = func17 ( ) ; 
+func18 ( var4 -> var40 , var2 ) ; 
+var1 -> var10 [ var1 -> var9 ++ ] = var4 ; 
+} 

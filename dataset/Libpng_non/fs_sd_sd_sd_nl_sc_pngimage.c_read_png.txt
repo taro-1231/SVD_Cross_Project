@@ -1,0 +1,33 @@
+func1 ( struct display * var1 , struct buffer * var2 , const char * var3 , 
+int var4 ) 
+{ 
+png_structp var5 ; 
+png_infop var6 ; 
+func2 ( var1 ) ; 
+if ( var3 != var7 ) 
+{ 
+var1 -> var3 = var3 ; 
+var1 -> var4 = var4 ; 
+} 
+var1 -> var8 = var5 = func3 ( var9 , var1 , 
+var10 , var11 ) ; 
+if ( var5 == var7 ) 
+func4 ( var1 , var12 , str ) ; 
+var1 -> var13 = var6 = func5 ( var5 ) ; 
+if ( var6 == var7 ) 
+func4 ( var1 , var12 , str ) ; 
+var14 ( var5 , number , number ) ; 
+var15 ( var2 ) ; 
+func6 ( var5 , var2 , var16 ) ; 
+func7 ( var5 , var6 , var4 , var7 ; 
+{ 
+png_bytep var17 = func8 ( var5 , var6 ) [ number ] ; 
+size_t var18 = func9 ( var5 , var6 ) ; 
+size_t var19 ; 
+char var20 = str ; 
+fprintf ( var21 , str , var4 , func10 ( var5 , var6 ) , ( unsigned long ) var18 ) ; 
+for ( var19 = number ; var19 < var18 ; ++ var19 ) 
+fputc ( var20 , var21 ) , fprintf ( var21 , str , var17 [ var19 ] ) , var20 = str ; 
+fputc ( str , var21 ) ; 
+} 
+} 

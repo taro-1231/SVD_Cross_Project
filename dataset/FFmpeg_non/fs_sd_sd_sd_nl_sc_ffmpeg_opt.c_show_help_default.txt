@@ -1,0 +1,56 @@
+void func1 ( const char * var1 , const char * var2 ) 
+{ 
+const int var3 = var4 | var5 | var6 ; 
+int var7 = number , var8 = number ; 
+if ( var1 && * var1 ) { 
+if ( ! strcmp ( var1 , str ) ) 
+var7 = number ; 
+else if ( ! strcmp ( var1 , str ) ) 
+var7 = var8 = number ; 
+else 
+func2 ( var9 , var10 , str , var1 ) ; 
+} 
+func3 ( ) ; 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str , program_name ) ; 
+func4 ( var11 , str , 
+var12 , number , number ) ; 
+func4 ( var11 , str 
+str , 
+number , var3 | var12 | var13 , number ) ; 
+if ( var7 ) 
+func4 ( var11 , str , var13 , 
+var3 | var12 , number ) ; 
+func4 ( var11 , str , number , 
+var13 | var14 | var15 | var16 | 
+var12 , var3 ) ; 
+if ( var7 ) 
+func4 ( var11 , str , 
+var13 , var14 | var15 | var16 , var3 ) ; 
+func4 ( var11 , str , 
+var15 , var13 | var14 , number ) ; 
+if ( var7 ) 
+func4 ( var11 , str , 
+var13 | var15 , var14 , number ) ; 
+func4 ( var11 , str , 
+var14 , var13 | var15 , number ) ; 
+if ( var7 ) 
+func4 ( var11 , str , 
+var13 | var14 , var15 , number ) ; 
+func4 ( var11 , str , 
+var16 , number , number ) ; 
+printf ( str ) ; 
+if ( var8 ) { 
+int var17 = var18 | var19 ; 
+func5 ( func6 ( ) , var17 ) ; 
+func5 ( func7 ( ) , var17 ) ; 
+func5 ( func8 ( ) , var17 ) ; 
+func5 ( func9 ( ) , var20 ) ; 
+func5 ( func10 ( ) , var21 | var20 | var22 ) ; 
+} 
+} 

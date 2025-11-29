@@ -1,0 +1,6 @@
+av_cold void func1 ( void ) 
+{ 
+func2 ( ) ; 
+if ( var1 ) 
+func3 ( ) ; 
+} 

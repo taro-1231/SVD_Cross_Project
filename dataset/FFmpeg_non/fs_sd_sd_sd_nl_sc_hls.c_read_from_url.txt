@@ -1,0 +1,15 @@
+static int func1 ( struct playlist * var1 , uint8_t * var2 , int var3 , 
+enum ReadFromURLMode var4 ) 
+{ 
+int var5 ; 
+struct segment * var6 = var1 -> var7 [ var1 -> var8 - var1 -> var9 ] ; 
+if ( var6 -> var10 >= number ) 
+var3 = func2 ( var3 , var6 -> var10 - var1 -> var11 ) ; 
+if ( var4 == var12 ) 
+var5 = func3 ( var1 -> var13 , var2 , var3 ) ; 
+else 
+var5 = func4 ( var1 -> var13 , var2 , var3 ) ; 
+if ( var5 > number ) 
+var1 -> var11 += var5 ; 
+return var5 ; 
+} 

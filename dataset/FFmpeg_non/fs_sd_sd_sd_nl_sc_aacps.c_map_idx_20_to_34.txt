@@ -1,0 +1,39 @@
+static void func1 ( int8_t * var1 , const int8_t * var2 , int var3 ) 
+{ 
+if ( var3 ) { 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+} 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = ( var2 [ number ] + var2 [ number ] ) / number ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = var2 [ number ] ; 
+var1 [ number ] = ( var2 [ number ] + var2 [ number ] ) / number ; 
+var1 [ number ] = var2 [ number ] ; 
+} 

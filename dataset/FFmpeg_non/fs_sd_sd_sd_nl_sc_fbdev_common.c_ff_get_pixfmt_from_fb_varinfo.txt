@@ -1,0 +1,13 @@
+enum AVPixelFormat func1 ( struct fb_var_screeninfo * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < func2 ( var3 ) ; var2 ++ ) { 
+const struct rgb_pixfmt_map_entry * var4 = & var3 [ var2 ] ; 
+if ( var4 -> var5 == var1 -> var5 && 
+var4 -> var6 == var1 -> var7 . var8 && 
+var4 -> var9 == var1 -> var10 . var8 && 
+var4 -> var11 == var1 -> var12 . var8 ) 
+return var4 -> var13 ; 
+} 
+return var14 ; 
+} 

@@ -1,0 +1,13 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+VideoData * var2 = var1 -> var3 ; 
+int var4 ; 
+var4 = var5 ; 
+func2 ( var2 -> var6 , var7 , & var4 ) ; 
+func3 ( var2 -> var6 ) ; 
+var4 = var8 ; 
+func2 ( var2 -> var9 , var10 , & var4 ) ; 
+func3 ( var2 -> var9 ) ; 
+func4 ( ( caddr_t ) var11 , var12 ) ; 
+return number ; 
+} 

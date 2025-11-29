@@ -1,0 +1,13 @@
+static AVStream * func1 ( AVFormatContext * var1 , uint16_t var2 ) 
+{ 
+AVStream * var3 = var4 ; 
+ASFContext * var5 = var1 -> var6 ; 
+int var7 ; 
+for ( var7 = number ; var7 < var5 -> var8 ; var7 ++ ) { 
+if ( var5 -> var9 [ var7 ] -> var10 == var2 ) { 
+var3 = var1 -> var11 [ var5 -> var9 [ var7 ] -> var12 ] ; 
+break ; 
+} 
+} 
+return var3 ; 
+} 

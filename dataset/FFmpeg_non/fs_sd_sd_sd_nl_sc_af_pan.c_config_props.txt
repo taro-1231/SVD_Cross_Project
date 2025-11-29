@@ -1,0 +1,95 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+PanContext * var4 = var2 -> var5 ; 
+char var6 [ number ] , * var7 ; 
+int var8 , var9 , var10 , var11 ; 
+double var12 ; 
+if ( var4 -> var13 ) { 
+for ( var8 = var9 = number ; var8 < var15 ; var8 ++ ) { 
+if ( ( var1 -> var16 >> var8 ) & number ) { 
+for ( var10 = number ; var10 < var4 -> var17 ; var10 ++ ) 
+var4 -> var18 [ var10 ] [ var9 ] = var4 -> var18 [ var10 ] [ var8 ] ; 
+var9 ++ ; 
+} 
+} 
+} 
+if ( var1 -> var14 > var15 || 
+var4 -> var17 > var15 ) { 
+func2 ( var2 , AV_LOG_ERROR , 
+str 
+str , var15 ) ; 
+return var19 ; 
+} 
+var4 -> var20 = func3 ( var4 -> var20 , 
+var4 -> var21 , var1 -> var22 , var1 -> var23 , 
+var1 -> var16 , var1 -> var22 , var1 -> var23 , 
+number , var2 ) ; 
+if ( ! var4 -> var20 ) 
+return func4 ( var24 ) ; 
+if ( ! var1 -> var16 ) { 
+if ( func5 ( var4 -> var20 , str , var1 -> var14 , number ) < number ) 
+return func4 ( var25 ) ; 
+} 
+if ( ! var4 -> var21 ) { 
+if ( func5 ( var4 -> var20 , str , var4 -> var17 , number ) < number ) 
+return func4 ( var25 ) ; 
+} 
+if ( var4 -> var26 ) { 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) { 
+int var27 = - number ; 
+for ( var9 = number ; var9 < var1 -> var14 ; var9 ++ ) { 
+if ( var4 -> var18 [ var8 ] [ var9 ] ) { 
+var27 = var9 ; 
+break ; 
+} 
+} 
+var4 -> var28 [ var8 ] = var27 ; 
+} 
+func5 ( var4 -> var20 , str , var4 -> var21 , number ) ; 
+func5 ( var4 -> var20 , str , var4 -> var17 , number ) ; 
+func6 ( var4 -> var20 , var4 -> var28 ) ; 
+} else { 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) { 
+if ( ! ( ( var4 -> var29 >> var8 ) & number ) ) 
+continue ; 
+var12 = number ; 
+for ( var9 = number ; var9 < var1 -> var14 ; var9 ++ ) 
+var12 += var4 -> var18 [ var8 ] [ var9 ] ; 
+if ( var12 > - number && var12 < number ) { 
+if ( var12 ) 
+func2 ( var2 , var30 , 
+str ) ; 
+continue ; 
+} 
+for ( var9 = number ; var9 < var1 -> var14 ; var9 ++ ) 
+var4 -> var18 [ var8 ] [ var9 ] /= var12 ; 
+} 
+func5 ( var4 -> var20 , str , var1 -> var16 , number ) ; 
+func5 ( var4 -> var20 , str , var4 -> var21 , number ) ; 
+func7 ( var4 -> var20 , var4 -> var18 [ number ] , var4 -> var18 [ number ] - var4 -> var18 [ number ] ) ; 
+} 
+var11 = func8 ( var4 -> var20 ) ; 
+if ( var11 < number ) 
+return var11 ; 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) { 
+var7 = var6 ; 
+for ( var9 = number ; var9 < var1 -> var14 ; var9 ++ ) { 
+var11 = snprintf ( var7 , var6 + sizeof ( var6 ) - var7 , str , 
+var9 ? str : str , var4 -> var18 [ var8 ] [ var9 ] , var9 ) ; 
+var7 += func9 ( var6 + sizeof ( var6 ) - var7 , var11 ) ; 
+} 
+func2 ( var2 , var31 , str , var8 , var6 ) ; 
+} 
+if ( var4 -> var26 ) { 
+func2 ( var2 , var32 , str ) ; 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) 
+if ( var4 -> var28 [ var8 ] < number ) 
+func2 ( var2 , var32 , str ) ; 
+else 
+func2 ( var2 , var32 , str , var4 -> var28 [ var8 ] ) ; 
+func2 ( var2 , var32 , str ) ; 
+return number ; 
+} 
+return number ; 
+} 

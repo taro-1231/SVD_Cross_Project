@@ -1,0 +1,12 @@
+static void func1 ( const char ** var2 ) 
+{ 
+while ( ** var2 ) { 
+* var2 += strspn ( * var2 , var1 ) ; 
+if ( ** var2 != str ) 
+break ; 
+( * var2 ) ++ ; 
+* var2 += strcspn ( * var2 , str ) ; 
+if ( ** var2 ) 
+( * var2 ) ++ ; 
+} 
+} 

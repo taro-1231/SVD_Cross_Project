@@ -1,0 +1,6 @@
+func1 ( image_transform * var1 , 
+PNG_CONST image_transform ** var2 , png_byte var3 , png_byte var4 ) 
+{ 
+return func2 ( var1 , var2 , var3 , 
+var4 ) ; 
+} 

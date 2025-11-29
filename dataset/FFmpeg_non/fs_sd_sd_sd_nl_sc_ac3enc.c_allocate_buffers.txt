@@ -1,0 +1,92 @@
+static av_cold int func1 ( AC3EncodeContext * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var2 ; 
+int var3 , var4 ; 
+int var5 = var1 -> var5 + number ; 
+int var6 = var5 * var1 -> var7 ; 
+int var8 = var9 * var6 ; 
+if ( var1 -> func2 ( var1 ) ) 
+goto var10 ; 
+func3 ( var2 , var1 -> var11 , var8 , 
+sizeof ( * var1 -> var11 ) , var10 ) ; 
+func3 ( var2 , var1 -> var12 , var8 , 
+sizeof ( * var1 -> var12 ) , var10 ) ; 
+func4 ( var2 , var1 -> var13 , var8 , 
+sizeof ( * var1 -> var13 ) , var10 ) ; 
+func3 ( var2 , var1 -> var14 , var8 , 
+sizeof ( * var1 -> var14 ) , var10 ) ; 
+func3 ( var2 , var1 -> var15 , var6 , number * 
+sizeof ( * var1 -> var15 ) , var10 ) ; 
+func3 ( var2 , var1 -> var16 , var8 , 
+sizeof ( * var1 -> var16 ) , var10 ) ; 
+func3 ( var2 , var1 -> var17 , var6 , number * 
+sizeof ( * var1 -> var17 ) , var10 ) ; 
+func3 ( var2 , var1 -> var18 , var6 , number * 
+sizeof ( * var1 -> var18 ) , var10 ) ; 
+func3 ( var2 , var1 -> var19 , var8 , 
+sizeof ( * var1 -> var19 ) , var10 ) ; 
+if ( var1 -> var20 ) { 
+func3 ( var2 , var1 -> var21 , var6 , number * 
+sizeof ( * var1 -> var21 ) , var10 ) ; 
+func3 ( var2 , var1 -> var22 , var6 , number * 
+sizeof ( * var1 -> var22 ) , var10 ) ; 
+} 
+for ( var3 = number ; var3 < var1 -> var7 ; var3 ++ ) { 
+AC3Block * var23 = & var1 -> var24 [ var3 ] ; 
+func4 ( var2 , var23 -> var25 , var5 , sizeof ( * var23 -> var25 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var26 , var5 , sizeof ( * var23 -> var26 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var27 , var5 , sizeof ( * var23 -> var27 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var28 , var5 , sizeof ( * var23 -> var28 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var29 , var5 , sizeof ( * var23 -> var29 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var30 , var5 , sizeof ( * var23 -> var30 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var31 , var5 , sizeof ( * var23 -> var31 ) , 
+var10 ) ; 
+if ( var1 -> var20 ) { 
+func4 ( var2 , var23 -> var32 , var5 , sizeof ( * var23 -> var32 ) , 
+var10 ) ; 
+func4 ( var2 , var23 -> var33 , var5 , sizeof ( * var23 -> var33 ) , 
+var10 ) ; 
+} 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) { 
+var23 -> var27 [ var4 ] = & var1 -> var15 [ number * ( var3 * var5 + var4 ) ] ; 
+var23 -> var28 [ var4 ] = & var1 -> var16 [ var9 * ( var3 * var5 + var4 ) ] ; 
+var23 -> var29 [ var4 ] = & var1 -> var17 [ number * ( var3 * var5 + var4 ) ] ; 
+var23 -> var30 [ var4 ] = & var1 -> var18 [ number * ( var3 * var5 + var4 ) ] ; 
+var23 -> var31 [ var4 ] = & var1 -> var19 [ var9 * ( var3 * var5 + var4 ) ] ; 
+if ( var1 -> var20 ) { 
+var23 -> var32 [ var4 ] = & var1 -> var21 [ number * ( var3 * var5 + var4 ) ] ; 
+var23 -> var33 [ var4 ] = & var1 -> var22 [ number * ( var3 * var5 + var4 ) ] ; 
+} 
+var23 -> var26 [ var4 ] = & var1 -> var14 [ var9 * ( var1 -> var7 * var4 + var3 ) ] ; 
+var23 -> var25 [ var4 ] = & var1 -> var13 [ var9 * ( var1 -> var7 * var4 + var3 ) ] ; 
+} 
+} 
+if ( ! var1 -> var34 ) { 
+func4 ( var2 , var1 -> var35 , var8 , 
+sizeof ( * var1 -> var35 ) , var10 ) ; 
+for ( var3 = number ; var3 < var1 -> var7 ; var3 ++ ) { 
+AC3Block * var23 = & var1 -> var24 [ var3 ] ; 
+func4 ( var2 , var23 -> var36 , var5 , 
+sizeof ( * var23 -> var36 ) , var10 ) ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) 
+var23 -> var36 [ var4 ] = & var1 -> var35 [ var9 * ( var1 -> var7 * var4 + var3 ) ] ; 
+} 
+} else { 
+for ( var3 = number ; var3 < var1 -> var7 ; var3 ++ ) { 
+AC3Block * var23 = & var1 -> var24 [ var3 ] ; 
+func4 ( var2 , var23 -> var36 , var5 , 
+sizeof ( * var23 -> var36 ) , var10 ) ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) 
+var23 -> var36 [ var4 ] = ( int32_t * ) var23 -> var25 [ var4 ] ; 
+} 
+} 
+return number ; 
+var10 : 
+return func5 ( var37 ) ; 
+} 

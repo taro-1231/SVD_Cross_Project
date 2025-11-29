@@ -1,0 +1,37 @@
+static enum AVPixelFormat func1 ( AVCodecContext * var1 , const enum AVPixelFormat * var2 ) 
+{ 
+InputStream * var3 = var1 -> var4 ; 
+const enum AVPixelFormat * var5 ; 
+int var6 ; 
+for ( var5 = var2 ; * var5 != - number ; var5 ++ ) { 
+const AVPixFmtDescriptor * var7 = func2 ( * var5 ) ; 
+const HWAccel * var8 ; 
+if ( ! ( var7 -> var9 & var10 ) ) 
+break ; 
+var8 = func3 ( * var5 ) ; 
+if ( ! var8 || 
+( var3 -> var11 && var3 -> var11 != var8 -> var12 ) || 
+( var3 -> var13 != var14 && var3 -> var13 != var8 -> var12 ) ) 
+continue ; 
+var6 = var8 -> func4 ( var1 ) ; 
+if ( var6 < number ) { 
+if ( var3 -> var13 == var8 -> var12 ) { 
+av_log ( NULL , AV_LOG_FATAL , 
+str 
+str , var8 -> name , 
+var3 -> file_index , var3 -> st -> index ) ; 
+return var15 ; 
+} 
+continue ; 
+} 
+if ( var3 -> var16 ) { 
+var1 -> var16 = func5 ( var3 -> var16 ) ; 
+if ( ! var1 -> var16 ) 
+return var15 ; 
+} 
+var3 -> var11 = var8 -> var12 ; 
+var3 -> var17 = * var5 ; 
+break ; 
+} 
+return * var5 ; 
+} 

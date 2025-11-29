@@ -1,0 +1,8 @@
+func1 ( png_const_bytep var1 , int var2 ) 
+{ 
+int var3 = number ; 
+do 
+if ( * var1 != var2 ) return number ; 
+while ( -- var3 ) ; 
+return number ; 
+} 

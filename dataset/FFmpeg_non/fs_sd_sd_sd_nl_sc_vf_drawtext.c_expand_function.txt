@@ -1,0 +1,24 @@
+static int func1 ( AVFilterContext * var1 , AVBPrint * var2 , char ** var3 ) 
+{ 
+const char * var4 = * var3 ; 
+char * var5 [ number ] = { var6 } ; 
+unsigned var7 = number , var8 ; 
+int var9 ; 
+if ( * var4 != str ) { 
+func2 ( var1 , var10 , str , var4 ) ; 
+return func3 ( var11 ) ; 
+} 
+var4 ++ ; 
+while ( 1 ) { 
+if ( ! ( var5 [ var7 ++ ] = av_get_token ( & var4 , str ) ) ) { 
+var9 = func3 ( ENOMEM ) ; 
+goto end ; 
+} 
+if ( ! * var4 ) { 
+func2 ( var1 , var10 , str , * var3 ) ; 
+var9 = func3 ( var11 ) ; 
+goto end ; 
+} 
+if ( var7 == FF_ARRAY_ELEMS ( var5 ) ) 
+av_freep ( & var5 [ -- var7 ] ) ; 
+if ( * var4 == str ) 

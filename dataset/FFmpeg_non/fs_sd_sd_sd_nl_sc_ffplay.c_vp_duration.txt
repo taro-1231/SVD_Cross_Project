@@ -1,0 +1,23 @@
+static double func1 ( VideoState * var1 , Frame * var2 , Frame * var3 ) { 
+if ( var2 -> var4 == var3 -> var4 ) { 
+double var5 = var3 -> var6 - var2 -> var6 ; 
+if ( isnan ( var5 ) || var5 <= number || var5 > var1 -> var7 ) 
+return var2 -> var5 ; 
+else 
+return var5 ; 
+} else { 
+return number ; 
+} 
+} 
+} 
+static double func1 ( VideoState * var1 , Frame * var2 , Frame * var3 ) { 
+if ( var2 -> var4 == var3 -> var4 ) { 
+double var5 = var3 -> var6 - var2 -> var6 ; 
+if ( isnan ( var5 ) || var5 <= number || var5 > var1 -> var7 ) 
+return var2 -> var5 ; 
+else 
+return var5 ; 
+} else { 
+return number ; 
+} 
+} 

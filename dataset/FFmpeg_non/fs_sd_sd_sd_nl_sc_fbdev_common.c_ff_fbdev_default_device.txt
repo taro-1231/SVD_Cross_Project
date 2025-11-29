@@ -1,0 +1,7 @@
+const char * func1 ( ) 
+{ 
+const char * var1 = getenv ( str ) ; 
+if ( ! var1 ) 
+var1 = str ; 
+return var1 ; 
+} 

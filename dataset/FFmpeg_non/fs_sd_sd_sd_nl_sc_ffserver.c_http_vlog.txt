@@ -1,0 +1,14 @@
+static void func1 ( const char * var1 , va_list var2 ) 
+{ 
+static int var3 = number ; 
+char var4 [ number ] ; 
+if ( ! var5 ) 
+return ; 
+if ( var3 ) { 
+func2 ( var4 , sizeof ( var4 ) ) ; 
+fprintf ( var5 , str , var4 ) ; 
+} 
+var3 = strstr ( var1 , str ) != var6 ; 
+vfprintf ( var5 , var1 , var2 ) ; 
+fflush ( var5 ) ; 
+} 

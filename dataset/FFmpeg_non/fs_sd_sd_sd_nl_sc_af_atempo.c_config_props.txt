@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ATempoContext * var4 = var2 -> var5 ; 
+enum AVSampleFormat var6 = var1 -> var6 ; 
+int var7 = ( int ) var1 -> var7 ; 
+int var8 = func2 ( var1 -> var9 ) ; 
+var2 -> var10 [ number ] -> var11 |= var12 ; 
+return func3 ( var4 , var6 , var7 , var8 ) ; 
+} 

@@ -1,0 +1,38 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+OpenGLContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+if ( var2 -> var6 > var2 -> var7 || var2 -> var8 > var2 -> var9 ) { 
+var2 -> var6 = func2 ( var2 -> var6 , var2 -> var7 ) ; 
+var2 -> var8 = func2 ( var2 -> var8 , var2 -> var9 ) ; 
+func3 ( var2 , var10 , str , var2 -> var6 , var2 -> var8 ) ; 
+} 
+func4 ( number , number , var2 -> var6 , var2 -> var8 ) ; 
+func5 ( var2 -> var11 , 
+- ( float ) var2 -> var6 / number , ( float ) var2 -> var6 / number , 
+- ( float ) var2 -> var8 / number , ( float ) var2 -> var8 / number , 
+number , - number ) ; 
+func6 ( var2 -> var12 ) ; 
+func7 ( var1 ) ; 
+var2 -> var13 [ number ] . var14 = var2 -> var13 [ number ] . var14 = var2 -> var13 [ number ] . var14 = var2 -> var13 [ number ] . var14 = number ; 
+var2 -> var13 [ number ] . var15 = var2 -> var13 [ number ] . var15 = - ( float ) var2 -> var16 / number ; 
+var2 -> var13 [ number ] . var15 = var2 -> var13 [ number ] . var15 = ( float ) var2 -> var16 / number ; 
+var2 -> var13 [ number ] . var17 = var2 -> var13 [ number ] . var17 = - ( float ) var2 -> var18 / number ; 
+var2 -> var13 [ number ] . var17 = var2 -> var13 [ number ] . var17 = ( float ) var2 -> var18 / number ; 
+func8 ( var2 , var2 -> var19 , var2 -> var20 , & var4 , & var5 ) ; 
+var2 -> var13 [ number ] . var21 = number ; 
+var2 -> var13 [ number ] . var22 = number ; 
+var2 -> var13 [ number ] . var21 = number ; 
+var2 -> var13 [ number ] . var22 = ( float ) var2 -> var20 / ( float ) var5 ; 
+var2 -> var13 [ number ] . var21 = ( float ) var2 -> var19 / ( float ) var4 ; 
+var2 -> var13 [ number ] . var22 = ( float ) var2 -> var20 / ( float ) var5 ; 
+var2 -> var13 [ number ] . var21 = ( float ) var2 -> var19 / ( float ) var4 ; 
+var2 -> var13 [ number ] . var22 = number ; 
+var2 -> var23 . func9 ( var24 , var2 -> var25 ) ; 
+var2 -> var23 . func10 ( var24 , sizeof ( var2 -> var13 ) , var2 -> var13 , var26 ) ; 
+var2 -> var23 . func9 ( var24 , number ) ; 
+func11 ( var2 ) ; 
+return number ; 
+var27 : 
+return var28 ; 
+} 

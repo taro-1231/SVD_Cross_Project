@@ -1,0 +1,11 @@
+static void func1 ( WriterContext * var1 , int var2 ) 
+{ 
+char var3 [ number ] ; 
+const char * var4 = var3 ; 
+if ( func2 ( var2 , var3 , sizeof ( var3 ) ) < number ) 
+var4 = strerror ( func3 ( var2 ) ) ; 
+func4 ( var1 , var5 ) ; 
+func5 ( str , var2 ) ; 
+func6 ( str , var4 ) ; 
+func7 ( var1 ) ; 
+} 

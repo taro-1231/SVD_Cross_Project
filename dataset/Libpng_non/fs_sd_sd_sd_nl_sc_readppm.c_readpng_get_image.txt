@@ -1,0 +1,12 @@
+uch * func1 ( double var1 , int * var2 , ulg * var3 ) 
+{ 
+ulg var4 ; 
+* var3 = var4 = var5 * var6 ; 
+* var2 = var5 ; 
+if ( ( var7 = ( uch * ) malloc ( var4 * var8 ) ) == var9 ) { 
+return var9 ; 
+} 
+func2 ( ( var10 , str , var4 , var8 ) ) ; 
+fread ( var7 , number , var4 * var8 , var11 ) ; 
+return var7 ; 
+} 

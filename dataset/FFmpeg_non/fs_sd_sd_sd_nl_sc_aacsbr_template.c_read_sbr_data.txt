@@ -1,0 +1,38 @@
+static unsigned int func1 ( AACContext * var1 , SpectralBandReplication * var2 , 
+GetBitContext * var3 , int var4 ) 
+{ 
+unsigned int var5 = func2 ( var3 ) ; 
+var2 -> var4 = var4 ; 
+if ( var4 == var6 || var4 == var7 ) { 
+if ( func3 ( var1 , var2 , var3 ) ) { 
+func4 ( var2 ) ; 
+return func2 ( var3 ) - var5 ; 
+} 
+} else if ( var4 == var8 ) { 
+if ( func5 ( var1 , var2 , var3 ) ) { 
+func4 ( var2 ) ; 
+return func2 ( var3 ) - var5 ; 
+} 
+} else { 
+func6 ( var1 -> var9 , var10 , 
+str , var4 ) ; 
+func4 ( var2 ) ; 
+return func2 ( var3 ) - var5 ; 
+} 
+if ( func7 ( var3 ) ) { 
+int var11 = func8 ( var3 , number ) ; 
+if ( var11 == number ) 
+var11 += func8 ( var3 , number ) ; 
+var11 <<= number ; 
+while ( var11 > number ) { 
+var11 -= number ; 
+func9 ( var1 , var2 , var3 , func8 ( var3 , number ) , & var11 ) ; 
+} 
+if ( var11 < number ) { 
+func6 ( var1 -> var9 , var10 , str ) ; 
+} 
+if ( var11 > number ) 
+func10 ( var3 , var11 ) ; 
+} 
+return func2 ( var3 ) - var5 ; 
+} 

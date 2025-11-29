@@ -1,0 +1,20 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+JackData * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+int var5 ; 
+if ( ( var5 = func2 ( var1 ) ) ) 
+return var5 ; 
+var4 = func3 ( var1 , var6 ) ; 
+if ( ! var4 ) { 
+func4 ( var2 ) ; 
+return func5 ( var7 ) ; 
+} 
+var4 -> var8 -> var9 = var10 ; 
+var4 -> var8 -> var11 = var12 ; 
+var4 -> var8 -> var11 = AV_CODEC_ID_PCM_F32LE ; 
+var4 -> var8 -> var13 = var2 -> var13 ; 
+var4 -> var8 -> var14 = var2 -> var15 ; 
+func6 ( var4 , number , number , number ) ; 
+return number ; 
+} 

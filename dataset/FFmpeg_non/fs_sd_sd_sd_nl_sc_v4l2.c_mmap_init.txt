@@ -1,0 +1,59 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 , var3 ; 
+struct video_data * var4 = var1 -> var5 ; 
+struct v4l2_requestbuffers var6 = { 
+. type = V4L2_BUF_TYPE_VIDEO_CAPTURE , 
+. var7 = desired_video_buffers , 
+. memory = V4L2_MEMORY_MMAP 
+} ; 
+if ( func2 ( var4 -> var8 , var9 , & var6 ) < number ) { 
+var3 = func3 ( var10 ) ; 
+func4 ( var1 , var11 , str , func5 ( var3 ) ) ; 
+return var3 ; 
+} 
+if ( var6 . var7 < number ) { 
+func4 ( var1 , var11 , str ) ; 
+return func3 ( var12 ) ; 
+} 
+var4 -> var13 = var6 . var7 ; 
+var4 -> var14 = func6 ( var4 -> var13 , sizeof ( void * ) ) ; 
+if ( ! var4 -> var14 ) { 
+func4 ( var1 , var11 , str ) ; 
+return func3 ( var12 ) ; 
+} 
+var4 -> var15 = func6 ( var4 -> var13 , sizeof ( unsigned int ) ) ; 
+if ( ! var4 -> var15 ) { 
+func4 ( var1 , var11 , str ) ; 
+func7 ( & var4 -> var14 ) ; 
+return func3 ( var12 ) ; 
+} 
+for ( var2 = number ; var2 < var6 . var7 ; var2 ++ ) { 
+struct v4l2_buffer var16 = { 
+. type = V4L2_BUF_TYPE_VIDEO_CAPTURE , 
+. index = var2 , 
+. memory = V4L2_MEMORY_MMAP 
+} ; 
+if ( func2 ( var4 -> var8 , var17 , & var16 ) < number ) { 
+var3 = func3 ( var10 ) ; 
+func4 ( var1 , var11 , str , func5 ( var3 ) ) ; 
+return var3 ; 
+} 
+var4 -> var15 [ var2 ] = var16 . var18 ; 
+if ( var4 -> var19 > number && var4 -> var15 [ var2 ] < var4 -> var19 ) { 
+func4 ( var1 , var11 , 
+str , 
+var2 , var4 -> var15 [ var2 ] , var4 -> var19 ) ; 
+return func3 ( var12 ) ; 
+} 
+var4 -> var14 [ var2 ] = func8 ( var20 , var16 . var18 , 
+var21 | var22 , var23 , 
+var4 -> var8 , var16 . var24 . var25 ) ; 
+if ( var4 -> var14 [ var2 ] == var26 ) { 
+var3 = func3 ( var10 ) ; 
+func4 ( var1 , var11 , str , func5 ( var3 ) ) ; 
+return var3 ; 
+} 
+} 
+return number ; 
+} 

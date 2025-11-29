@@ -1,0 +1,38 @@
+static inline void func1 ( AVIOContext * var1 , FFServerStream * var2 ) 
+{ 
+int var3 , var4 ; 
+const char * var5 = str ; 
+char var6 [ number ] ; 
+LayeredAVStream * var7 ; 
+AVCodec * var8 ; 
+var4 = var2 -> var9 ; 
+func2 ( var1 , str 
+str 
+str ) ; 
+for ( var3 = number ; var3 < var4 ; var3 ++ ) { 
+var7 = var2 -> var10 [ var3 ] ; 
+var8 = func3 ( var7 -> var11 -> var12 ) ; 
+var6 [ number ] = number ; 
+switch ( var7 -> var11 -> var13 ) { 
+case var14 : 
+var5 = str ; 
+snprintf ( var6 , sizeof ( var6 ) , str , 
+var7 -> var11 -> var15 , var7 -> var11 -> var16 ) ; 
+break ; 
+case var17 : 
+var5 = str ; 
+snprintf ( var6 , sizeof ( var6 ) , 
+str , var7 -> var11 -> var18 , 
+var7 -> var11 -> var19 , var7 -> var8 -> var20 , var7 -> var8 -> var21 , 
+var7 -> var22 . var23 / var7 -> var22 . var24 ) ; 
+break ; 
+var25 : 
+abort ( ) ; 
+} 
+func2 ( var1 , str PRId64 
+str , 
+var3 , var5 , ( int64_t ) var7 -> var11 -> bit_rate / 1000 , 
+var8 ? var8 -> var26 : str , var6 ) ; 
+} 
+func2 ( var1 , str ) ; 
+} 

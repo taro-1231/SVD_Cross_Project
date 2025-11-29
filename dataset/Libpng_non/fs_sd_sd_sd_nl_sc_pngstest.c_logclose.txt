@@ -1,0 +1,6 @@
+func1 ( Image * var1 , FILE * var2 , const char * var3 , const char * var4 ) 
+{ 
+int var5 = var6 ; 
+fclose ( var2 ) ; 
+return func2 ( var1 , var3 , var4 , strerror ( var5 ) ) ; 
+} 

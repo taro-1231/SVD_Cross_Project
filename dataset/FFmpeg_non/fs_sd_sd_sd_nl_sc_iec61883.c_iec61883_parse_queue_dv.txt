@@ -1,0 +1,22 @@
+static int func1 ( struct iec61883_data * var1 , AVPacket * var2 ) 
+{ 
+DVPacket * var3 ; 
+int var4 ; 
+var4 = func2 ( var1 -> var5 , var2 ) ; 
+if ( var4 > number ) 
+return var4 ; 
+var3 = var1 -> var6 ; 
+if ( ! var3 ) 
+return - number ; 
+var4 = func3 ( var1 -> var5 , var2 , 
+var3 -> var7 , var3 -> var8 , - number ) ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var2 -> var9 = var10 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+var1 -> var6 = var3 -> var11 ; 
+func4 ( var3 ) ; 
+var1 -> var12 -- ; 
+if ( var4 > number ) 
+return var4 ; 
+return - number ; 
+} 

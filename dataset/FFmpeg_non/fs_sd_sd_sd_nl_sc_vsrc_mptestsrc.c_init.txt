@@ -1,0 +1,12 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+MPTestContext * var2 = var1 -> var3 ; 
+var2 -> var4 = var2 -> var5 >= number ? 
+func2 ( var2 -> var5 , var6 , func3 ( var2 -> var7 ) ) : - number ; 
+var2 -> var8 = number ; 
+func4 ( var1 , var9 , str , 
+var2 -> var7 . var10 , var2 -> var7 . var11 , 
+var2 -> var5 < number ? - number : var2 -> var4 * func5 ( func3 ( var2 -> var7 ) ) ) ; 
+func6 ( ) ; 
+return number ; 
+} 

@@ -1,0 +1,4 @@
+const char * func1 ( void ) 
+{ 
+return LICENSE_PREFIX var1 + sizeof ( LICENSE_PREFIX ) - number ; 
+} 

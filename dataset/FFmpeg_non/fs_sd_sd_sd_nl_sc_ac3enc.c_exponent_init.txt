@@ -1,0 +1,14 @@
+static av_cold void func1 ( AC3EncodeContext * var1 ) 
+{ 
+int var2 , var3 , var4 ; 
+for ( var2 = var5 - number ; var2 <= var6 - number ; var2 ++ ) { 
+var4 = number << var2 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var7 [ number ] [ var2 ] [ var3 ] = ( var3 + var4 - number ) / var4 ; 
+var7 [ number ] [ var2 ] [ var3 ] = ( var3 ) / var4 ; 
+} 
+} 
+var7 [ number ] [ number ] [ number ] = number ; 
+if ( var8 && var1 -> var9 ) 
+func2 ( ) ; 
+} 

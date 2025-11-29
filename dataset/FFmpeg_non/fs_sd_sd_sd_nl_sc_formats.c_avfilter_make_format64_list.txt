@@ -1,0 +1,9 @@
+var1 * func1 ( const int64_t * var2 ) 
+{ 
+func2 ( var1 , 
+var3 , var4 ) ; 
+if ( var5 ) 
+memcpy ( var6 -> var3 , var2 , 
+sizeof ( * var6 -> var3 ) * var5 ) ; 
+return var6 ; 
+} 

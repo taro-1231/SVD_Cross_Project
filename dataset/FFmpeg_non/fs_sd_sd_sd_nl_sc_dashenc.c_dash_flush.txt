@@ -1,0 +1,79 @@
+static int func1 ( AVFormatContext * var1 , int var2 , int var3 ) 
+{ 
+DASHContext * var4 = var1 -> var5 ; 
+int var6 , var7 = number ; 
+int var8 = number ; 
+if ( var3 >= number ) 
+var8 = var4 -> var9 [ var3 ] . var10 ; 
+for ( var6 = number ; var6 < var1 -> var11 ; var6 ++ ) { 
+OutputStream * var12 = & var4 -> var9 [ var6 ] ; 
+char var13 [ number ] = str , var14 [ number ] , var15 [ number ] ; 
+int64_t var16 ; 
+int var17 , var18 = number ; 
+if ( ! var12 -> var19 ) 
+continue ; 
+if ( var3 >= number && var6 != var3 ) { 
+if ( var1 -> var9 [ var6 ] -> var20 -> var21 != var22 ) 
+continue ; 
+if ( var4 -> var23 && var12 -> var10 > var8 ) 
+continue ; 
+} 
+if ( ! var12 -> var24 ) { 
+func2 ( var12 -> var25 , var26 ) ; 
+var12 -> var24 = func3 ( var12 -> var25 -> var27 ) ; 
+if ( ! var4 -> var28 ) { 
+func4 ( var12 -> var29 ) ; 
+var12 -> var29 = var26 ; 
+} 
+} 
+var16 = func3 ( var12 -> var25 -> var27 ) ; 
+if ( ! var4 -> var28 ) { 
+func5 ( var13 , sizeof ( var13 ) , var4 -> var30 , var6 , var12 -> var10 , var12 -> var31 , var12 -> var32 ) ; 
+snprintf ( var14 , sizeof ( var14 ) , str , var4 -> var33 , var13 ) ; 
+snprintf ( var15 , sizeof ( var15 ) , str , var14 ) ; 
+var7 = func6 ( & var12 -> var29 , var15 , var34 , & var1 -> var35 , var26 ) ; 
+if ( var7 < number ) 
+break ; 
+func7 ( var12 -> var25 -> var27 ) ; 
+} else { 
+snprintf ( var14 , sizeof ( var14 ) , str , var4 -> var33 , var12 -> var36 ) ; 
+} 
+func2 ( var12 -> var25 , var26 ) ; 
+func8 ( var12 -> var25 -> var27 ) ; 
+var12 -> var19 = number ; 
+var17 = func3 ( var12 -> var25 -> var27 ) - var16 ; 
+if ( var4 -> var28 ) { 
+func9 ( var1 , var14 , var16 , & var18 ) ; 
+} else { 
+func4 ( var12 -> var29 ) ; 
+var12 -> var29 = var26 ; 
+var7 = func10 ( var15 , var14 , var1 ) ; 
+if ( var7 < number ) 
+break ; 
+} 
+func11 ( var12 , var13 , var12 -> var32 , var12 -> var37 - var12 -> var32 , var16 , var17 , var18 ) ; 
+func12 ( var1 , var38 , str , var6 , var12 -> var10 , var14 ) ; 
+} 
+if ( var4 -> var39 || ( var2 && var4 -> var40 ) ) { 
+for ( var6 = number ; var6 < var1 -> var11 ; var6 ++ ) { 
+OutputStream * var12 = & var4 -> var9 [ var6 ] ; 
+int var41 ; 
+int var42 = var12 -> var43 - var4 -> var39 - var4 -> var44 ; 
+if ( var2 && var4 -> var40 ) 
+var42 = var12 -> var43 ; 
+if ( var42 > number ) { 
+for ( var41 = number ; var41 < var42 ; var41 ++ ) { 
+char var13 [ number ] ; 
+snprintf ( var13 , sizeof ( var13 ) , str , var4 -> var33 , var12 -> var45 [ var41 ] -> var46 ) ; 
+func13 ( var13 ) ; 
+func14 ( var12 -> var45 [ var41 ] ) ; 
+} 
+var12 -> var43 -= var42 ; 
+memmove ( var12 -> var45 , var12 -> var45 + var42 , var12 -> var43 * sizeof ( * var12 -> var45 ) ) ; 
+} 
+} 
+} 
+if ( var7 >= number ) 
+var7 = func15 ( var1 , var2 ) ; 
+return var7 ; 
+} 

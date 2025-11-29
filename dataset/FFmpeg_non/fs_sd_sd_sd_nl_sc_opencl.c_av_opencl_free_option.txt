@@ -1,0 +1,6 @@
+void func1 ( void ) 
+{ 
+var1 ; 
+func2 ( & var2 ) ; 
+var3 ; 
+} 

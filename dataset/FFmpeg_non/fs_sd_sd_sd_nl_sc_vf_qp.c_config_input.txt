@@ -1,0 +1,31 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+QPContext * var4 = var2 -> var5 ; 
+int var6 ; 
+int var7 ; 
+AVExpr * var8 = var9 ; 
+static const char * var10 [ ] = { str , str , str , str , str , str , var9 } ; 
+if ( ! var4 -> var13 ) 
+return number ; 
+var7 = func2 ( & var8 , var4 -> var13 , var10 , var9 , var9 , var9 , var9 , number , var2 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+var4 -> var12 = ( var1 -> var12 + number ) >> number ; 
+var4 -> var14 = ( var1 -> var11 + number ) >> number ; 
+for ( var6 = - number ; var6 < number ; var6 ++ ) { 
+double var15 [ ] = { var6 != - number , var6 , var16 , var16 , var4 -> var14 , var4 -> var12 , number } ; 
+double var17 = func3 ( var8 , var15 , var9 ) ; 
+if ( isnan ( var17 ) ) { 
+if ( strchr ( var4 -> var13 , str ) || strchr ( var4 -> var13 , str ) ) 
+var4 -> var18 = number ; 
+else { 
+func4 ( var8 ) ; 
+return func5 ( var19 ) ; 
+} 
+} 
+var4 -> var20 [ var6 + number ] = func6 ( var17 ) ; 
+} 
+func4 ( var8 ) ; 
+return number ; 
+} 

@@ -1,0 +1,94 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+ASyncContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+int var9 = func2 ( var2 -> var10 ) ; 
+int64_t var11 = ( var2 -> var11 == var12 ) ? var2 -> var11 : 
+func3 ( var2 -> var11 , var1 -> var13 , var7 -> var13 ) ; 
+int var14 , var15 ; 
+int64_t var16 ; 
+int64_t var17 ; 
+if ( var5 -> var11 == var12 || var11 == var12 ) { 
+if ( var11 != var12 ) { 
+var5 -> var11 = var11 - func4 ( var5 ) ; 
+} 
+return func5 ( var5 , var2 ) ; 
+} 
+if ( var5 -> var18 != var12 ) { 
+func6 ( var3 ) ; 
+if ( ! func7 ( var5 -> var19 ) ) 
+return func5 ( var5 , var2 ) ; 
+} 
+var16 = var11 - var5 -> var11 - func4 ( var5 ) ; 
+var14 = func7 ( var5 -> var19 ) ; 
+if ( func8 ( var16 ) > var5 -> var20 || 
+( var5 -> var21 && var16 && var5 -> var18 != var12 ) ) { 
+func9 ( var3 , var22 , str PRId64 str , var16 ) ; 
+var14 = func10 ( ( int64_t ) var14 + var16 ) ; 
+} else { 
+if ( var5 -> var23 ) { 
+int var24 = func4 ( var5 ) ; 
+int var25 = var5 -> var25 + func11 ( var16 * var1 -> var26 / var24 , 
+- var5 -> var27 , var5 -> var27 ) ; 
+if ( var25 != var5 -> var25 ) { 
+func9 ( var3 , var22 , str , var25 ) ; 
+if ( func12 ( var5 -> var19 , var25 , var1 -> var26 ) == number ) { 
+var5 -> var25 = var25 ; 
+} 
+} 
+} 
+var11 -= var16 ; 
+var16 = number ; 
+} 
+if ( var14 > number ) { 
+AVFrame * var28 = func13 ( var7 , var14 ) ; 
+if ( ! var28 ) { 
+var15 = func14 ( var29 ) ; 
+goto var30 ; 
+} 
+if ( var5 -> var21 && var16 > number ) { 
+int var31 = func15 ( var28 -> var32 ) ; 
+int var33 = var31 ? var9 : number ; 
+int var34 = func16 ( var28 -> var32 ) * 
+( var31 ? number : var9 ) ; 
+int var35 ; 
+func17 ( var28 -> var36 , number , var16 , 
+var9 , var2 -> var32 ) ; 
+for ( var35 = number ; var35 < var33 ; var35 ++ ) 
+var28 -> var36 [ var35 ] += var16 * var34 ; 
+func18 ( var5 -> var19 , var28 -> var36 , var14 ) ; 
+for ( var35 = number ; var35 < var33 ; var35 ++ ) 
+var28 -> var36 [ var35 ] -= var16 * var34 ; 
+} else { 
+func18 ( var5 -> var19 , var28 -> var36 , var14 ) ; 
+if ( var16 > number ) { 
+func17 ( var28 -> var36 , var14 - var16 , 
+var16 , var9 , var2 -> var32 ) ; 
+} 
+} 
+var28 -> var11 = var5 -> var11 ; 
+var15 = func19 ( var7 , var28 ) ; 
+if ( var15 < number ) 
+goto var30 ; 
+var5 -> var37 = number ; 
+} else if ( func7 ( var5 -> var19 ) ) { 
+func9 ( var3 , AV_LOG_WARNING , str 
+str ) ; 
+} 
+func18 ( var5 -> var19 , var38 , func7 ( var5 -> var19 ) ) ; 
+var17 = var11 - func20 ( var5 -> var19 ) ; 
+if ( var17 > var5 -> var11 ) { 
+var5 -> var11 = var17 ; 
+var15 = func21 ( var5 -> var19 , var38 , number , number , var2 -> var36 , 
+var2 -> var39 [ number ] , var2 -> var40 ) ; 
+} else { 
+func9 ( var3 , AV_LOG_WARNING , str 
+str ) ; 
+var15 = number ; 
+} 
+var5 -> var21 = number ; 
+var30 : 
+func22 ( & var2 ) ; 
+return var15 ; 
+} 

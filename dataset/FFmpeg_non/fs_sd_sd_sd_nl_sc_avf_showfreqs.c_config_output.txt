@@ -1,0 +1,61 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+ShowFreqsContext * var6 = var2 -> var7 ; 
+float var8 ; 
+int var9 ; 
+var6 -> var10 = number << ( var6 -> var11 - number ) ; 
+var6 -> var12 = var6 -> var10 << number ; 
+func2 ( var6 -> var13 ) ; 
+func3 ( var6 -> var14 ) ; 
+var6 -> var14 = func4 ( var6 -> var11 , number ) ; 
+if ( ! var6 -> var14 ) { 
+func5 ( var2 , var15 , str 
+str ) ; 
+return func6 ( var16 ) ; 
+} 
+for ( var9 = number ; var9 < var6 -> var17 ; var9 ++ ) { 
+func7 ( & var6 -> var18 [ var9 ] ) ; 
+func7 ( & var6 -> var19 [ var9 ] ) ; 
+} 
+func7 ( & var6 -> var18 ) ; 
+func7 ( & var6 -> var19 ) ; 
+var6 -> var17 = var4 -> var20 ; 
+var6 -> var18 = func8 ( var6 -> var17 , sizeof ( * var6 -> var18 ) ) ; 
+if ( ! var6 -> var18 ) 
+return func6 ( var16 ) ; 
+var6 -> var19 = func8 ( var6 -> var17 , sizeof ( * var6 -> var19 ) ) ; 
+if ( ! var6 -> var18 ) 
+return func6 ( var16 ) ; 
+for ( var9 = number ; var9 < var6 -> var17 ; var9 ++ ) { 
+var6 -> var18 [ var9 ] = func8 ( var6 -> var12 , sizeof ( ** var6 -> var18 ) ) ; 
+var6 -> var19 [ var9 ] = func8 ( var6 -> var10 , sizeof ( ** var6 -> var19 ) ) ; 
+if ( ! var6 -> var18 [ var9 ] || ! var6 -> var19 [ var9 ] ) 
+return func6 ( var16 ) ; 
+} 
+var6 -> var21 = func9 ( var6 -> var21 , var6 -> var12 , 
+sizeof ( * var6 -> var21 ) ) ; 
+if ( ! var6 -> var21 ) 
+return func6 ( var16 ) ; 
+func10 ( var6 -> var21 , var6 -> var12 , var6 -> var22 , & var8 ) ; 
+if ( var6 -> var8 == number ) 
+var6 -> var8 = var8 ; 
+var6 -> var23 = ( number - var6 -> var8 ) * var6 -> var12 ; 
+if ( var6 -> var23 < number ) { 
+func5 ( var2 , var15 , str , var6 -> var8 ) ; 
+return func6 ( var24 ) ; 
+} 
+for ( var6 -> var25 = number , var9 = number ; var9 < var6 -> var12 ; var9 ++ ) { 
+var6 -> var25 += var6 -> var21 [ var9 ] * var6 -> var21 [ var9 ] ; 
+} 
+var1 -> var26 |= var27 ; 
+var1 -> var28 = func11 ( var4 -> var29 , var6 -> var12 * ( number - var6 -> var8 ) ) ; 
+var1 -> sample_aspect_ratio = ( AVRational ) { number , number } ; 
+var1 -> var30 = var6 -> var30 ; 
+var1 -> var31 = var6 -> var31 ; 
+var6 -> var13 = func12 ( var4 -> var32 , var4 -> var20 , var6 -> var12 ) ; 
+if ( ! var6 -> var13 ) 
+return func6 ( var16 ) ; 
+return number ; 
+} 

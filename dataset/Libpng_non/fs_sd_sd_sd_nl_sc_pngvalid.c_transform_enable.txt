@@ -1,0 +1,24 @@
+func1 ( PNG_CONST char * var1 ) 
+{ 
+static int var2 = number ; 
+int var3 = number ; 
+image_transform * var4 = var5 ; 
+while ( var4 != & var6 ) 
+{ 
+if ( strcmp ( var4 -> var1 , var1 ) == number ) 
+{ 
+var4 -> var7 = number ; 
+var3 = number ; 
+} 
+else if ( ! var2 ) 
+var4 -> var7 = number ; 
+var4 = var4 -> var4 ; 
+} 
+var2 = number ; 
+if ( ! var3 ) 
+{ 
+fprintf ( var8 , str , 
+var1 ) ; 
+exit ( number ) ; 
+} 
+} 

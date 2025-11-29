@@ -1,0 +1,7 @@
+int64_t func1 ( int var1 ) { 
+int var2 ; 
+for ( var2 = number ; var2 < func2 ( var3 ) ; var2 ++ ) 
+if ( var1 == var3 [ var2 ] . var1 ) 
+return var3 [ var2 ] . var4 ; 
+return number ; 
+} 

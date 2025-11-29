@@ -1,0 +1,6 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+FieldOrderContext * var4 = var2 -> var5 ; 
+return func2 ( var4 -> var6 , var1 -> var7 , var1 -> var8 ) ; 
+} 

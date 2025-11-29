@@ -1,0 +1,52 @@
+static void RENAME ( func1 ) ( const int16_t * var1 , int var2 , 
+const int16_t ** var3 , uint8_t * var4 , int var5 , 
+const uint8_t * var6 , int var7 ) 
+{ 
+func2 ( var6 , var7 ) ; 
+var2 -- ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+:: str ( var2 ) 
+) ; 
+__asm__ volatile ( \ 
+str 
+str 
+str 
+str REG_d str \ 
+str REG_d str REG_S str \ 
+str 
+str \ 
+str REG_d str 
+str REG_S str REG_c str 
+str REG_S str REG_c str 
+str REG_d str \ 
+str REG_d str REG_S str \ 
+str REG_S str REG_S str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+MOVNTQ2 str REG_c str 
+str REG_c str \ 
+str REG_c str \ 
+str 
+str 
+str REG_d str \ 
+str REG_d str REG_S str \ 
+str \ 
+:: str ( var1 ) , 
+str ( var4 - var7 ) , str ( ( x86_reg ) ( var5 + var7 ) ) , str ( var7 ) 
+: str REG_d , str REG_S , str REG_c 
+) ; 
+} 

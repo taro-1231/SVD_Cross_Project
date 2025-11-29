@@ -1,0 +1,45 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+const AVPixFmtDescriptor * var2 = var3 ; 
+int var4 , var5 ; 
+func2 ( var1 , var6 ) ; 
+while ( var2 = func3 ( var2 ) ) { 
+func2 ( var1 , var7 ) ; 
+func4 ( str , var2 -> var8 ) ; 
+func5 ( str , var2 -> var9 ) ; 
+if ( ( var2 -> var9 >= number ) && ! ( var2 -> var10 & var11 ) ) { 
+func5 ( str , var2 -> var12 ) ; 
+func5 ( str , var2 -> var13 ) ; 
+} else { 
+func6 ( str , str ) ; 
+func6 ( str , str ) ; 
+} 
+var5 = func7 ( var2 ) ; 
+if ( var5 ) func5 ( str , var5 ) ; 
+else func6 ( str , str ) ; 
+if ( var14 ) { 
+func2 ( var1 , var15 ) ; 
+func8 ( var16 , str ) ; 
+func8 ( var17 , str ) ; 
+func8 ( var18 , str ) ; 
+func8 ( var19 , str ) ; 
+func8 ( var20 , str ) ; 
+func8 ( var21 , str ) ; 
+func8 ( var22 , str ) ; 
+func8 ( var23 , str ) ; 
+func9 ( var1 ) ; 
+} 
+if ( var24 && ( var2 -> var9 > number ) ) { 
+func2 ( var1 , var25 ) ; 
+for ( var4 = number ; var4 < var2 -> var9 ; var4 ++ ) { 
+func2 ( var1 , var26 ) ; 
+func5 ( str , var4 + number ) ; 
+func5 ( str , var2 -> var27 [ var4 ] . var28 ) ; 
+func9 ( var1 ) ; 
+} 
+func9 ( var1 ) ; 
+} 
+func9 ( var1 ) ; 
+} 
+func9 ( var1 ) ; 
+} 

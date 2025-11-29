@@ -1,0 +1,40 @@
+int func1 ( AudioData * var1 , int var2 ) 
+{ 
+int var3 , var4 , var5 , var6 ; 
+if ( var1 -> var7 >= var2 ) 
+return number ; 
+if ( var1 -> var8 || ! var1 -> var9 ) 
+return func2 ( var10 ) ; 
+var4 = func3 ( & var5 , 
+var1 -> var11 , var2 , 
+var1 -> var12 , number ) ; 
+if ( var4 < number ) 
+return var4 ; 
+if ( var1 -> var2 > number && var1 -> var13 ) { 
+uint8_t * var14 [ var15 ] = { var16 } ; 
+var3 = func4 ( var14 , & var5 , var1 -> var11 , 
+var2 , var1 -> var12 , number ) ; 
+if ( var3 < number ) 
+return var3 ; 
+for ( var6 = number ; var6 < var1 -> var17 ; var6 ++ ) 
+memcpy ( var14 [ var6 ] , var1 -> var18 [ var6 ] , var1 -> var2 * var1 -> var19 ) ; 
+func5 ( & var1 -> var20 ) ; 
+memcpy ( var1 -> var18 , var14 , sizeof ( var14 ) ) ; 
+var1 -> var20 = var1 -> var18 [ number ] ; 
+} else { 
+func5 ( & var1 -> var20 ) ; 
+var1 -> var20 = func6 ( var4 ) ; 
+if ( ! var1 -> var20 ) 
+return func2 ( var21 ) ; 
+var3 = func7 ( var1 -> var18 , & var5 , var1 -> var20 , 
+var1 -> var11 , var2 , 
+var1 -> var12 , number ) ; 
+if ( var3 < number ) 
+return var3 ; 
+} 
+var1 -> var22 = var4 ; 
+var1 -> var7 = var2 ; 
+func8 ( var1 ) ; 
+var1 -> var23 = var5 / var1 -> var19 ; 
+return number ; 
+} 

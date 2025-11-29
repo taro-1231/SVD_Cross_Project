@@ -1,0 +1,130 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 ; 
+double var4 ; 
+const char * const * var5 ; 
+static const char * const var6 [ ] = { 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+var7 
+} ; 
+for ( var5 = var6 ; * var5 ; var5 ++ ) { 
+printf ( str , * var5 ) ; 
+func2 ( & var4 , * var5 , 
+var8 , var9 , 
+var7 , var7 , var7 , var7 , var7 , number , var7 ) ; 
+if ( isnan ( var4 ) ) 
+printf ( str , * var5 ) ; 
+else 
+printf ( str , * var5 , var4 ) ; 
+} 
+func2 ( & var4 , str , 
+var8 , var9 , 
+var7 , var7 , var7 , var7 , var7 , number , var7 ) ; 
+printf ( str , var4 ) ; 
+func2 ( & var4 , str , 
+var8 , var9 , 
+var7 , var7 , var7 , var7 , var7 , number , var7 ) ; 
+printf ( str , var4 ) ; 
+if ( var1 > number && ! strcmp ( var2 [ number ] , str ) ) { 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+var10 ; 
+func2 ( & var4 , str , 
+var8 , var9 , 
+var7 , var7 , var7 , var7 , var7 , number , var7 ) ; 
+func3 ( str ) ; 
+} 
+} 
+return number ; 
+} 

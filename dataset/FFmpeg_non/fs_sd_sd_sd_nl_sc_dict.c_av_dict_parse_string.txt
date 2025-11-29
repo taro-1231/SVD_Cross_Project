@@ -1,0 +1,16 @@
+int func1 ( AVDictionary ** var1 , const char * var2 , 
+const char * var3 , const char * var4 , 
+int var5 ) 
+{ 
+int var6 ; 
+if ( ! var2 ) 
+return number ; 
+var5 &= ~ ( var7 | var8 ) ; 
+while ( * var2 ) { 
+if ( ( var6 = func2 ( var1 , & var2 , var3 , var4 , var5 ) ) < number ) 
+return var6 ; 
+if ( * var2 ) 
+var2 ++ ; 
+} 
+return number ; 
+} 

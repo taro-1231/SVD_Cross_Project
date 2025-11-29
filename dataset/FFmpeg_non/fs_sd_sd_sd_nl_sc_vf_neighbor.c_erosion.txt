@@ -1,0 +1,16 @@
+static void func1 ( uint8_t * var1 , const uint8_t * var2 , int var3 , 
+int var4 , const uint8_t * var5 [ ] , int var6 ) 
+{ 
+int var7 , var8 ; 
+for ( var7 = number ; var7 < var3 ; var7 ++ ) { 
+int var9 = var2 [ var7 ] ; 
+int var10 = func2 ( var9 - var4 , number ) ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+if ( var6 & ( number << var8 ) ) { 
+var9 = func3 ( var9 , * ( var5 [ var8 ] + var7 ) ) ; 
+} 
+var9 = func2 ( var9 , var10 ) ; 
+} 
+var1 [ var7 ] = var9 ; 
+} 
+} 

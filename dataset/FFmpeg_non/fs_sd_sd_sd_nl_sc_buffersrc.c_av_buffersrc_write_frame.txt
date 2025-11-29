@@ -1,0 +1,5 @@
+int attribute_align_arg func1 ( AVFilterContext * var1 , const AVFrame * var2 ) 
+{ 
+return func2 ( var1 , ( AVFrame * ) var2 , 
+var3 ) ; 
+} 

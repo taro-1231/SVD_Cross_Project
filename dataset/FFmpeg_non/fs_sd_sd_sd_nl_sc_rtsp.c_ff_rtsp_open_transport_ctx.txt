@@ -1,0 +1,49 @@
+int func1 ( AVFormatContext * var1 , RTSPStream * var2 ) 
+{ 
+RTSPState * var3 = var1 -> var4 ; 
+AVStream * var5 = var6 ; 
+int var7 = var3 -> var7 ; 
+if ( var7 < number ) { 
+if ( var3 -> var8 == var9 || ! var1 -> var10 ) 
+var7 = number ; 
+else 
+var7 = var11 ; 
+} 
+if ( var2 -> var12 >= number ) 
+var5 = var1 -> var13 [ var2 -> var12 ] ; 
+if ( ! var5 ) 
+var1 -> var14 |= var15 ; 
+if ( var16 && var1 -> var17 && var5 ) { 
+int var18 = func2 ( ( AVFormatContext ** ) & var2 -> var19 , 
+var1 , var5 , var2 -> var20 , 
+var21 , 
+var2 -> var12 ) ; 
+var2 -> var20 = var6 ; 
+if ( var18 < number ) 
+return var18 ; 
+var5 -> var22 = ( ( AVFormatContext * ) var2 -> var19 ) -> var13 [ number ] -> var22 ; 
+} else if ( var3 -> var23 == var24 ) { 
+return number ; 
+} else if ( var25 && var3 -> var23 == var26 && var5 ) 
+var2 -> var19 = func3 ( var1 , var5 -> var27 , 
+var2 -> var28 , 
+var2 -> var29 ) ; 
+else if ( var25 ) 
+var2 -> var19 = func4 ( var1 , var5 , 
+var2 -> var30 , 
+var7 ) ; 
+if ( ! var2 -> var19 ) { 
+return func5 ( var31 ) ; 
+} else if ( var25 && var3 -> var23 == var32 ) { 
+if ( var2 -> var29 ) { 
+func6 ( var2 -> var19 , 
+var2 -> var28 , 
+var2 -> var29 ) ; 
+} 
+if ( var2 -> var33 [ number ] ) 
+func7 ( var2 -> var19 , 
+var2 -> var33 , 
+var2 -> var34 ) ; 
+} 
+return number ; 
+} 

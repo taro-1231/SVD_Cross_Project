@@ -1,0 +1,47 @@
+BOOL func1 ( HWND var1 , BYTE ** var2 , 
+BYTE ** var3 , int var4 , int var5 , 
+BYTE * var6 , int var7 , int var8 , int var9 , 
+BOOL var10 ) 
+{ 
+BYTE * var11 = * var2 ; 
+BYTE * var12 = * var3 ; 
+BITMAPINFOHEADER * var13 ; 
+WORD var14 ; 
+png_color var15 = { number , number , number } ; 
+png_color var16 = { number , number , number } ; 
+png_color var17 = { number , number , number } ; 
+var14 = ( WORD ) ( ( number * var4 + number ) >> number ) << number ; 
+if ( var11 ) 
+{ 
+free ( var11 ) ; 
+var11 = var18 ; 
+} 
+if ( ! ( var11 = ( BYTE * ) malloc ( sizeof ( BITMAPINFOHEADER ) + 
+var14 * var5 ) ) ) 
+{ 
+func2 ( var1 , func3 ( str ) , 
+var19 , var20 | var21 ) ; 
+* var2 = var11 = var18 ; 
+return var22 ; 
+} 
+* var2 = var11 ; 
+memset ( var11 , number , sizeof ( BITMAPINFOHEADER ) ) ; 
+var13 = ( BITMAPINFOHEADER * ) var11 ; 
+var13 -> var23 = sizeof ( BITMAPINFOHEADER ) ; 
+var13 -> var24 = var4 ; 
+var13 -> var25 = - ( ( long ) var5 ) ; 
+var13 -> var26 = number ; 
+var13 -> var27 = number ; 
+var13 -> var28 = number ; 
+var12 = var11 + sizeof ( BITMAPINFOHEADER ) ; 
+* var3 = var12 ; 
+func4 ( var12 , var4 , var5 ) ; 
+if ( var6 ) 
+{ 
+func5 ( 
+var12 , var4 , var5 , 
+var6 , var7 , var8 , var9 , 
+var10 ) ; 
+} 
+return var29 ; 
+} 

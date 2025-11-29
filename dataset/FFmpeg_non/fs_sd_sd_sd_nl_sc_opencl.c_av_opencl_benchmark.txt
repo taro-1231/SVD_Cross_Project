@@ -1,0 +1,39 @@
+int64_t func1 ( AVOpenCLDeviceNode * var1 , cl_platform_id var2 , 
+int64_t ( * func2 ) ( AVOpenCLExternalEnv * var3 ) ) 
+{ 
+int64_t var4 = number ; 
+cl_int var5 ; 
+cl_context_properties var6 [ number ] ; 
+AVOpenCLExternalEnv * var3 = var7 ; 
+var3 = func3 ( ) ; 
+var3 -> var8 = var1 -> var8 ; 
+var3 -> var9 = var1 -> var9 ; 
+func4 ( & var10 , var11 , str , 
+var1 -> var12 ) ; 
+var6 [ number ] = var13 ; 
+var6 [ number ] = ( cl_context_properties ) var2 ; 
+var6 [ number ] = number ; 
+var3 -> var14 = func5 ( var6 , var3 -> var9 , 
+var7 , var7 , & var5 ) ; 
+if ( var5 != var15 || ! var3 -> var14 ) { 
+var4 = var16 ; 
+goto var17 ; 
+} 
+var3 -> var18 = func6 ( var3 -> var14 , 
+var3 -> var8 , number , & var5 ) ; 
+if ( var5 != var15 || ! var3 -> var18 ) { 
+var4 = var16 ; 
+goto var17 ; 
+} 
+var4 = func2 ( var3 ) ; 
+if ( var4 < number ) 
+func4 ( & var10 , var19 , str , 
+var1 -> var12 ) ; 
+var17 : 
+if ( var3 -> var18 ) 
+func7 ( var3 -> var18 ) ; 
+if ( var3 -> var14 ) 
+func8 ( var3 -> var14 ) ; 
+func9 ( & var3 ) ; 
+return var4 ; 
+} 

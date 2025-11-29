@@ -1,0 +1,78 @@
+static int func1 ( MpegEncContext * var1 , int var2 ) 
+{ 
+int var3 = number ; 
+static const int8_t var4 [ number ] = { - number , - number , number , number } ; 
+var1 -> var5 = var1 -> var6 ; 
+var1 -> var7 = number ; 
+for ( var1 -> var8 = var1 -> var9 ; var3 < var2 ; var1 -> var8 ++ ) { 
+func2 ( var1 ) ; 
+for ( ; var3 < var2 && var1 -> var5 < var1 -> var10 ; var1 -> var5 ++ ) { 
+const int var11 = var1 -> var5 + var1 -> var8 * var1 -> var12 ; 
+var3 ++ ; 
+func3 ( var1 ) ; 
+if ( var1 -> var5 == var1 -> var6 && var1 -> var8 == var1 -> var9 + number ) 
+var1 -> var7 = number ; 
+if ( var1 -> var13 == var14 ) { 
+int var15 = func4 ( & var1 -> var16 ) ; 
+int var17 = func5 ( & var1 -> var16 , var18 . var19 , var20 , number ) ; 
+if ( var17 < number ) { 
+func6 ( var1 -> var21 , var22 , 
+str , var1 -> var5 , var1 -> var8 ) ; 
+return - number ; 
+} 
+var1 -> var23 [ var11 ] |= var17 << number ; 
+var1 -> var24 . var25 [ var11 ] |= var15 * var26 ; 
+} else { 
+if ( func7 ( var1 -> var24 . var25 [ var11 ] ) ) { 
+int var27 ; 
+int var28 = number ; 
+int var15 = func4 ( & var1 -> var16 ) ; 
+int var17 = func5 ( & var1 -> var16 , var18 . var19 , var20 , number ) ; 
+if ( var17 < number ) { 
+func6 ( var1 -> var21 , var22 , 
+str , var1 -> var5 , var1 -> var8 ) ; 
+return - number ; 
+} 
+if ( var1 -> var23 [ var11 ] & number ) 
+func8 ( var1 , var1 -> var29 + var4 [ func9 ( & var1 -> var16 , number ) ] ) ; 
+var1 -> var24 . var30 [ var11 ] = var1 -> var29 ; 
+for ( var27 = number ; var27 < number ; var27 ++ ) { 
+int var31 ; 
+int var32 = func10 ( var1 , var27 , & var31 ) ; 
+if ( var32 < number ) { 
+func6 ( var1 -> var21 , var22 , 
+str , var1 -> var5 , var1 -> var8 ) ; 
+return - number ; 
+} 
+var28 <<= number ; 
+if ( var31 ) 
+var28 |= number ; 
+} 
+var1 -> var23 [ var11 ] &= number ; 
+var1 -> var23 [ var11 ] |= var17 << number ; 
+var1 -> var24 . var25 [ var11 ] |= var15 * var26 ; 
+var1 -> var33 [ var11 ] = var28 ; 
+} else if ( func11 ( var1 -> var24 . var25 [ var11 ] ) ) { 
+var1 -> var24 . var30 [ var11 ] = var1 -> var29 ; 
+var1 -> var23 [ var11 ] = number ; 
+} else { 
+int var17 = func5 ( & var1 -> var16 , var18 . var19 , var20 , number ) ; 
+if ( var17 < number ) { 
+func6 ( var1 -> var21 , var22 , 
+str , var1 -> var5 , var1 -> var8 ) ; 
+return - number ; 
+} 
+if ( var1 -> var23 [ var11 ] & number ) 
+func8 ( var1 , var1 -> var29 + var4 [ func9 ( & var1 -> var16 , number ) ] ) ; 
+var1 -> var24 . var30 [ var11 ] = var1 -> var29 ; 
+var1 -> var23 [ var11 ] &= number ; 
+var1 -> var23 [ var11 ] |= ( var17 ^ number ) << number ; 
+} 
+} 
+} 
+if ( var3 >= var2 ) 
+return number ; 
+var1 -> var5 = number ; 
+} 
+return number ; 
+} 

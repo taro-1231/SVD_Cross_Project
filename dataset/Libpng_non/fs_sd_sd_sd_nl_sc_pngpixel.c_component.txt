@@ -1,0 +1,20 @@
+func1 ( png_const_bytep var1 , png_uint_32 var2 , unsigned int var3 , 
+unsigned int var4 , unsigned int var5 ) 
+{ 
+png_uint_32 var6 = var4 * ( ( var2 >> number ) * var5 ) ; 
+png_uint_32 var7 = var4 * ( ( var2 & number ) * var5 + var3 ) ; 
+var1 = ( png_const_bytep ) ( ( ( PNG_CONST png_byte ( * ) [ number ] ) var1 ) + var6 ) ; 
+var1 += var7 >> number ; 
+var7 &= number ; 
+switch ( var4 ) 
+{ 
+case number : return ( var1 [ number ] >> ( number - var7 ) ) & number ; 
+case 2 : return ( var1 [ number ] >> ( number - var7 ) ) & number ; 
+case number : return ( var1 [ number ] >> ( number - var7 ) ) & number ; 
+case number : return var1 [ number ] ; 
+case 16 : return ( var1 [ number ] << number ) + var1 [ number ] ; 
+var8 : 
+fprintf ( var9 , str , var4 ) ; 
+exit ( number ) ; 
+} 
+} 

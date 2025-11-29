@@ -1,0 +1,20 @@
+static void func1 ( void * var2 , void * var3 , void * var4 , void * var5 , 
+int var6 , int var7 , int var8 , int var9 , int var10 ) 
+{ 
+uint8_t * var11 = var2 ; 
+uint8_t * var12 = var3 ; 
+uint8_t * var13 = var4 ; 
+uint8_t * var14 = var5 ; 
+int var15 ; 
+uint8_t * var16 = var9 ? var12 : var13 ; 
+uint8_t * var17 = var9 ? var13 : var14 ; 
+FILTER ( 0 , 3 , 0 ) 
+var11 = ( uint8_t * ) var2 + var6 - ( var1 - number ) ; 
+var12 = ( uint8_t * ) var3 + var6 - ( var1 - number ) ; 
+var13 = ( uint8_t * ) var4 + var6 - ( var1 - number ) ; 
+var14 = ( uint8_t * ) var5 + var6 - ( var1 - number ) ; 
+var16 = ( uint8_t * ) ( var9 ? var12 : var13 ) ; 
+var17 = ( uint8_t * ) ( var9 ? var13 : var14 ) ; 
+FILTER ( var6 - ( var1 - number ) , var6 - 3 , number ) 
+FILTER ( var6 - 3 , var6 , 0 ) 
+} 

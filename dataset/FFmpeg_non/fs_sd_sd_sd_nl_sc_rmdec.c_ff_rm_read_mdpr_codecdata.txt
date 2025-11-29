@@ -1,0 +1,93 @@
+int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+AVStream * var3 , RMStream * var4 , 
+unsigned int var5 , const uint8_t * var6 ) 
+{ 
+unsigned int var7 ; 
+int var8 ; 
+int64_t var9 ; 
+int var10 ; 
+if ( var5 > var11 ) 
+return var12 ; 
+if ( var5 == number ) 
+return number ; 
+func2 ( var3 , number , number , number ) ; 
+var9 = func3 ( var2 ) ; 
+var7 = func4 ( var2 ) ; 
+if ( var7 == func5 ( number , str , str , str ) ) { 
+if ( func6 ( var1 , var2 , var3 , var4 , number ) ) 
+return - number ; 
+} else if ( var7 == func7 ( str , str , str , str ) ) { 
+func8 ( var2 , - number , var13 ) ; 
+if ( ( var10 = func9 ( var2 , var3 -> var14 , var5 ) ) < number ) 
+return var10 ; 
+var3 -> var14 -> var15 = var16 ; 
+var3 -> var14 -> var17 = func10 ( var3 -> var14 -> var18 ) ; 
+var3 -> var14 -> var19 = func11 ( var20 , 
+var3 -> var14 -> var17 ) ; 
+} else if ( var6 && ! strcmp ( var6 , str ) ) { 
+int var21 , var22 , var23 , var24 ; 
+func12 ( var1 , var3 ) ; 
+if ( func13 ( var2 ) != number ) { 
+func14 ( var1 , var25 , str ) ; 
+goto var26 ; 
+} 
+var21 = func13 ( var2 ) ; 
+func15 ( var2 , number * var21 ) ; 
+var22 = func13 ( var2 ) ; 
+func15 ( var2 , number * var22 ) ; 
+var23 = func13 ( var2 ) ; 
+for ( var24 = number ; var24 < var23 ; var24 ++ ) { 
+uint8_t var27 [ number ] , var28 [ number ] ; 
+func4 ( var2 ) ; 
+if ( func13 ( var2 ) != number ) { 
+func14 ( var1 , var25 , str ) ; 
+goto var26 ; 
+} 
+func16 ( var2 , var27 , sizeof ( var27 ) ) ; 
+switch ( func4 ( var2 ) ) { 
+case number : func17 ( var2 , var28 , sizeof ( var28 ) , func13 ( var2 ) ) ; 
+func18 ( & var1 -> var29 , var27 , var28 , number ) ; 
+break ; 
+var30 : func15 ( var2 , func13 ( var2 ) ) ; 
+} 
+} 
+} else { 
+int var31 ; 
+if ( func19 ( var2 ) != func5 ( str , str , str , str ) ) { 
+var32 : 
+func14 ( var1 , var25 , str , var7 ) ; 
+goto var26 ; 
+} 
+var3 -> var14 -> var17 = func19 ( var2 ) ; 
+var3 -> var14 -> var19 = func11 ( var20 , 
+var3 -> var14 -> var17 ) ; 
+func14 ( var1 , var33 , str , var3 -> var14 -> var17 , func5 ( str , str , str , str ) ) ; 
+if ( var3 -> var14 -> var19 == var34 ) 
+goto var32 ; 
+var3 -> var14 -> var35 = func13 ( var2 ) ; 
+var3 -> var14 -> var36 = func13 ( var2 ) ; 
+func15 ( var2 , number ) ; 
+func15 ( var2 , number ) ; 
+var3 -> var14 -> var15 = var37 ; 
+var3 -> var38 = var39 ; 
+var31 = func4 ( var2 ) ; 
+if ( ( var10 = func9 ( var2 , var3 -> var14 , var5 - ( func3 ( var2 ) - var9 ) ) ) < number ) 
+return var10 ; 
+if ( var31 > number ) { 
+func20 ( & var3 -> var40 . var41 , & var3 -> var40 . var42 , 
+number , var31 , ( number << number ) - number ) ; 
+var3 -> var43 = var3 -> var40 ; 
+} else if ( var1 -> var44 & var45 ) { 
+func14 ( var1 , var46 , str ) ; 
+return var12 ; 
+} 
+} 
+var26 : 
+var8 = func3 ( var2 ) - var9 ; 
+if ( var5 >= var8 ) { 
+func15 ( var2 , var5 - var8 ) ; 
+} else { 
+func14 ( var1 , var25 , str , var5 , var8 ) ; 
+} 
+return number ; 
+} 

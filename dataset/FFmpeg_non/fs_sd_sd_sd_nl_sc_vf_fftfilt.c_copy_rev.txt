@@ -1,0 +1,8 @@
+static void func1 ( FFTSample * var1 , int var2 , int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = var2 ; var4 < var2 + ( var3 - var2 ) / number ; var4 ++ ) 
+var1 [ var4 ] = var1 [ number * var2 - var4 - number ] ; 
+for ( ; var4 < var3 ; var4 ++ ) 
+var1 [ var4 ] = var1 [ var3 - var4 ] ; 
+} 

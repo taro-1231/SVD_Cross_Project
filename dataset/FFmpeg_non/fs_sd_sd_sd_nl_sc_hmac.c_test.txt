@@ -1,0 +1,14 @@
+static void func1 ( AVHMAC * var1 , const uint8_t * var2 , int var3 , 
+const uint8_t * var4 , int var5 ) 
+{ 
+uint8_t var6 [ var7 ] ; 
+int var8 , var9 ; 
+if ( ! var2 [ var3 - number ] ) 
+var3 -- ; 
+if ( ! var4 [ var5 - number ] ) 
+var5 -- ; 
+var8 = func2 ( var1 , var4 , var5 , var2 , var3 , var6 , sizeof ( var6 ) ) ; 
+for ( var9 = number ; var9 < var8 ; var9 ++ ) 
+printf ( str , var6 [ var9 ] ) ; 
+printf ( str ) ; 
+} 

@@ -1,0 +1,47 @@
+static int func1 ( AVFormatContext * var1 , 
+const char * var2 , const char * var3 , 
+const char * var4 , 
+const unsigned char * var5 , 
+int var6 ) 
+{ 
+RTSPState * var7 = var1 -> var8 ; 
+char var9 [ number ] , * var10 ; 
+char var11 [ func2 ( sizeof ( var9 ) ) ] ; 
+var10 = var9 ; 
+var7 -> var12 ++ ; 
+snprintf ( var9 , sizeof ( var9 ) , var16 , var2 , var3 ) ; 
+if ( var4 ) 
+func3 ( var9 , var4 , sizeof ( var9 ) ) ; 
+func4 ( var9 , sizeof ( var9 ) , var16 , var7 -> var12 ) ; 
+func4 ( var9 , sizeof ( var9 ) , var16 , var7 -> var13 ) ; 
+if ( var7 -> var14 [ number ] != var16 && ( ! var4 || 
+! strstr ( var4 , var16 ) ) ) { 
+func4 ( var9 , sizeof ( var9 ) , var16 , var7 -> var14 ) ; 
+} 
+if ( var7 -> var15 [ number ] ) { 
+char * var16 = func5 ( & var7 -> var17 , 
+var7 -> var15 , var3 , var2 ) ; 
+if ( var16 ) 
+func3 ( var9 , var16 , sizeof ( var9 ) ) ; 
+func6 ( var16 ) ; 
+} 
+if ( var6 > number && var5 ) 
+func4 ( var9 , sizeof ( var9 ) , var16 , var6 ) ; 
+func3 ( var9 , var16 , sizeof ( var9 ) ) ; 
+if ( var7 -> var18 == var19 ) { 
+func7 ( var11 , sizeof ( var11 ) , var9 , strlen ( var9 ) ) ; 
+var10 = var11 ; 
+} 
+func8 ( var1 , var20 , var16 , var9 ) ; 
+func9 ( var7 -> var21 , var10 , strlen ( var10 ) ) ; 
+if ( var6 > number && var5 ) { 
+if ( var7 -> var18 == var19 ) { 
+func8 ( var1 , AV_LOG_ERROR , str 
+str ) ; 
+return var22 ; 
+} 
+func9 ( var7 -> var21 , var5 , var6 ) ; 
+} 
+var7 -> var23 = func10 ( ) ; 
+return number ; 
+} 

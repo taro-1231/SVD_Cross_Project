@@ -1,0 +1,6 @@
+static png_uint_32 func1 ( unsigned var1 ) 
+{ 
+if ( var1 > number ) 
+return ( png_uint_32 ) floor ( number - log ( var1 / number ) * var2 ) ; 
+return number ; 
+} 

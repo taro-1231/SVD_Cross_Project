@@ -1,0 +1,7 @@
+static int func1 ( uint64_t var1 ) 
+{ 
+int var2 = number ; 
+while ( ( var1 + number ) >> var2 * number ) 
+var2 ++ ; 
+return var2 ; 
+} 

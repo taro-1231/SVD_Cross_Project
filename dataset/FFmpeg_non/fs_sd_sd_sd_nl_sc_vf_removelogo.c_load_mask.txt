@@ -1,0 +1,22 @@
+static int func1 ( uint8_t ** var1 , int * var2 , int * var3 , 
+const char * var4 , void * var5 ) 
+{ 
+int var6 ; 
+enum AVPixelFormat var7 ; 
+uint8_t * var8 [ number ] , * var9 [ number ] ; 
+int var10 [ number ] , var11 [ number ] ; 
+if ( ( var6 = func2 ( var8 , var10 , var2 , var3 , & var7 , var4 , var5 ) ) < number ) 
+return var6 ; 
+if ( ( var6 = func3 ( var9 , var11 , * var2 , * var3 , var12 , 
+var8 , var10 , * var2 , * var3 , var7 , 
+var5 ) ) < number ) 
+goto var13 ; 
+* var1 = func4 ( * var2 ** var3 ) ; 
+if ( ! * var1 ) 
+var6 = func5 ( var14 ) ; 
+func6 ( * var1 , * var2 , var9 [ number ] , var11 [ number ] , * var2 , * var3 ) ; 
+var13 : 
+func7 ( & var8 [ number ] ) ; 
+func7 ( & var9 [ number ] ) ; 
+return var6 ; 
+} 

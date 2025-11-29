@@ -1,0 +1,8 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+BufferSourceContext * var2 = var1 -> var3 -> var4 ; 
+int var5 = func2 ( var2 -> var6 ) ; 
+if ( ! var5 && var2 -> var7 ) 
+return var8 ; 
+return var5 / sizeof ( AVFrame * ) ; 
+} 

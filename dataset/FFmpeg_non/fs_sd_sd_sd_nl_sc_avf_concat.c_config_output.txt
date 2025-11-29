@@ -1,0 +1,36 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ConcatContext * var4 = var2 -> var5 ; 
+unsigned var6 = func2 ( var1 ) ; 
+unsigned var7 = var6 , var8 ; 
+AVFilterLink * var9 = var2 -> var10 [ var7 ] ; 
+var1 -> var11 = var12 ; 
+var1 -> var13 = var9 -> var13 ; 
+var1 -> var14 = var9 -> var14 ; 
+var1 -> var15 = var9 -> var15 ; 
+var1 -> var16 = var9 -> var16 ; 
+for ( var8 = number ; var8 < var4 -> var17 ; var8 ++ ) { 
+var9 = var2 -> var10 [ var7 += var2 -> var18 ] ; 
+if ( ! var1 -> var15 . var19 ) 
+var1 -> var15 = var9 -> var15 ; 
+if ( var1 -> var13 != var9 -> var13 || 
+var1 -> var14 != var9 -> var14 || 
+var1 -> var15 . var19 != var9 -> var15 . var19 && 
+var9 -> var15 . var19 || 
+var1 -> var15 . var20 != var9 -> var15 . var20 ) { 
+av_log ( var2 , AV_LOG_ERROR , str 
+str 
+str , 
+var2 -> input_pads [ var7 ] . name , var9 -> var13 , var9 -> var14 , 
+var9 -> var15 . var19 , 
+var9 -> var15 . var20 , 
+var2 -> input_pads [ var6 ] . name , var1 -> var13 , var1 -> var14 , 
+var1 -> var15 . var19 , 
+var1 -> var15 . var20 ) ; 
+if ( ! var4 -> var21 ) 
+return func3 ( var22 ) ; 
+} 
+} 
+return number ; 
+} 

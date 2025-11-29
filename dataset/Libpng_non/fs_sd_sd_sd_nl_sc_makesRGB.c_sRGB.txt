@@ -1,0 +1,20 @@
+func1 ( unsigned int var1 ) 
+{ 
+return func2 ( var1 ) ; 
+} 
+double 
+finvsRGB ( unsigned int var1 ) 
+{ 
+return 65535 * linear_from_sRGB ( var1 / 255 . ) ; 
+} 
+png_uint_16 
+invsRGB ( unsigned int var1 ) 
+{ 
+unsigned int x = nearbyint ( finvsRGB ( var1 ) ) ; 
+if ( x > 65535 ) 
+{ 
+fprintf ( stderr , str , var1 , x ) ; 
+exit ( 1 ) ; 
+} 
+return ( png_uint_16 ) x ; 
+} 

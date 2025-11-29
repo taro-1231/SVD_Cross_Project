@@ -1,0 +1,12 @@
+static int func1 ( AVExpr ** var1 , Parser * var2 , int * var3 ) 
+{ 
+if ( * var2 -> var4 == str ) { 
+char * var5 ; 
+double av_unused var6 = strtod ( var2 -> var4 , & var5 ) ; 
+if ( var5 != var2 -> var4 && var5 [ number ] == str && var5 [ number ] == str ) { 
+* var3 = number ; 
+return func2 ( var1 , var2 ) ; 
+} 
+} 
+return func3 ( var1 , var2 , var3 ) ; 
+} 

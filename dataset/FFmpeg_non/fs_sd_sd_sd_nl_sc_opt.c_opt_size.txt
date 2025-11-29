@@ -1,0 +1,21 @@
+static var1 func1 ( enum AVOptionType var2 ) 
+{ 
+switch ( var2 ) { 
+case var3 : 
+case var4 : return sizeof ( var1 ) ; 
+case var5 : 
+case var6 : 
+case var7 : return sizeof ( int64_t ) ; 
+case var8 : return sizeof ( double ) ; 
+case var9 : return sizeof ( float ) ; 
+case var10 : return sizeof ( uint8_t * ) ; 
+case var11 : 
+case var12 : return sizeof ( AVRational ) ; 
+case var13 : return sizeof ( uint8_t * ) + sizeof ( var1 ) ; 
+case var14 : return sizeof ( var1 [ number ] ) ; 
+case var15 : return sizeof ( enum AVPixelFormat ) ; 
+case var16 : return sizeof ( enum AVSampleFormat ) ; 
+case var17 : return number ; 
+} 
+return number ; 
+} 

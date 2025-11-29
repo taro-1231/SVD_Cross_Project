@@ -1,0 +1,10 @@
+int attribute_align_arg func1 ( AVFilterContext * var1 ) 
+{ 
+BufferSinkContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var1 -> var5 [ number ] ; 
+func2 ( ! strcmp ( var1 -> var6 -> var7 , str ) 
+|| ! strcmp ( var1 -> var6 -> var7 , str ) 
+|| ! strcmp ( var1 -> var6 -> var7 , str ) 
+|| ! strcmp ( var1 -> var6 -> var7 , str ) ) ; 
+return func3 ( var2 -> var8 ) / var9 + func4 ( var4 ) ; 
+} 

@@ -1,0 +1,22 @@
+static void func1 ( AVFilterContext * var1 , AVFrameSideData * var2 ) 
+{ 
+enum AVAudioServiceType * var3 ; 
+func2 ( var1 , var4 , str ) ; 
+if ( var2 -> var5 < sizeof ( * var3 ) ) { 
+func2 ( var1 , var4 , str ) ; 
+return ; 
+} 
+var3 = ( enum AVAudioServiceType * ) var2 -> var6 ; 
+switch ( * var3 ) { 
+case var7 : func2 ( var1 , var4 , str ) ; break ; 
+case var8 : func2 ( var1 , var4 , str ) ; break ; 
+case var9 : func2 ( var1 , var4 , str ) ; break ; 
+case var10 : func2 ( var1 , var4 , str ) ; break ; 
+case var11 : func2 ( var1 , var4 , str ) ; break ; 
+case var12 : func2 ( var1 , var4 , str ) ; break ; 
+case var13 : func2 ( var1 , var4 , str ) ; break ; 
+case var14 : func2 ( var1 , var4 , str ) ; break ; 
+case var15 : func2 ( var1 , var4 , str ) ; break ; 
+var16 : func2 ( var1 , var4 , str ) ; break ; 
+} 
+} 

@@ -1,0 +1,11 @@
+static int func1 ( char * var1 , int var2 , int64_t var3 ) 
+{ 
+time_t var4 = ( var3 / 10000000LL ) - 719162LL * 86400LL ; 
+struct var5 var6 ; 
+struct var5 * var5 = func2 ( & var4 , & var6 ) ; 
+if ( ! var5 ) 
+return - number ; 
+if ( ! strftime ( var1 , var2 , str , var5 ) ) 
+return - number ; 
+return number ; 
+} 

@@ -1,0 +1,41 @@
+static void func1 ( int var1 , int var2 ) 
+{ 
+struct sockaddr_in var3 ; 
+socklen_t var4 ; 
+int var5 ; 
+HTTPContext * var6 = var7 ; 
+var4 = sizeof ( var3 ) ; 
+var5 = func2 ( var1 , ( struct sockaddr * ) & var3 , 
+& var4 ) ; 
+if ( var5 < number ) { 
+func3 ( str , strerror ( var8 ) ) ; 
+return ; 
+} 
+if ( func4 ( var5 , number ) < number ) 
+func5 ( var7 , var9 , str ) ; 
+if ( var10 >= var11 . var12 ) { 
+func6 ( var5 ) ; 
+goto var13 ; 
+} 
+var6 = func7 ( sizeof ( HTTPContext ) ) ; 
+if ( ! var6 ) 
+goto var13 ; 
+var6 -> var5 = var5 ; 
+var6 -> var14 = var7 ; 
+var6 -> var3 = var3 ; 
+var6 -> var15 = var16 ; 
+var6 -> var17 = func8 ( var6 -> var15 ) ; 
+if ( ! var6 -> var17 ) 
+goto var13 ; 
+var6 -> var18 = var19 ; 
+var19 = var6 ; 
+var10 ++ ; 
+func9 ( var6 , var2 ) ; 
+return ; 
+var13 : 
+if ( var6 ) { 
+func10 ( & var6 -> var17 ) ; 
+func11 ( var6 ) ; 
+} 
+func12 ( var5 ) ; 
+} 

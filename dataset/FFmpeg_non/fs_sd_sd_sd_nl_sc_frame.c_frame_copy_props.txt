@@ -1,0 +1,78 @@
+static int func1 ( AVFrame * var1 , const AVFrame * var2 , int var3 ) 
+{ 
+int var4 ; 
+var1 -> var5 = var2 -> var5 ; 
+var1 -> var6 = var2 -> var6 ; 
+var1 -> var7 = var2 -> var7 ; 
+var1 -> var8 = var2 -> var8 ; 
+var1 -> var9 = var2 -> var9 ; 
+var1 -> var10 = var2 -> var10 ; 
+var1 -> var11 = var2 -> var11 ; 
+var1 -> var12 = var2 -> var12 ; 
+var1 -> var13 = var2 -> var13 ; 
+var1 -> var14 = var2 -> var14 ; 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var1 -> var15 = var2 -> var15 ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+var1 -> var16 = var2 -> var16 ; 
+var1 -> var17 = var2 -> var17 ; 
+var1 -> var18 = var2 -> var18 ; 
+var1 -> var19 = var2 -> var19 ; 
+var1 -> var20 = var2 -> var20 ; 
+var1 -> var21 = var2 -> var21 ; 
+var1 -> var22 = var2 -> var22 ; 
+var1 -> var23 = var2 -> var23 ; 
+var1 -> var24 = var2 -> var24 ; 
+var1 -> var25 = var2 -> var25 ; 
+var1 -> var26 = var2 -> var26 ; 
+var1 -> var27 = var2 -> var27 ; 
+var1 -> var28 = var2 -> var28 ; 
+var1 -> var29 = var2 -> var29 ; 
+var1 -> var30 = var2 -> var30 ; 
+var1 -> var31 = var2 -> var31 ; 
+var1 -> var32 = var2 -> var32 ; 
+func2 ( & var1 -> var33 , var2 -> var33 , number ) ; 
+memcpy ( var1 -> var34 , var2 -> var34 , sizeof ( var1 -> var34 ) ) ; 
+for ( var4 = number ; var4 < var2 -> var35 ; var4 ++ ) { 
+const AVFrameSideData * var36 = var2 -> var37 [ var4 ] ; 
+AVFrameSideData * var38 ; 
+if ( var36 -> var15 == var39 
+&& ( var2 -> var40 != var1 -> var40 || var2 -> var41 != var1 -> var41 ) ) 
+continue ; 
+if ( var3 ) { 
+var38 = func3 ( var1 , var36 -> var15 , 
+var36 -> var42 ) ; 
+if ( ! var38 ) { 
+func4 ( var1 ) ; 
+return func5 ( var43 ) ; 
+} 
+memcpy ( var38 -> var44 , var36 -> var44 , var36 -> var42 ) ; 
+} else { 
+var38 = func3 ( var1 , var36 -> var15 , number ) ; 
+if ( ! var38 ) { 
+func4 ( var1 ) ; 
+return func5 ( var43 ) ; 
+} 
+var38 -> var45 = func6 ( var36 -> var45 ) ; 
+if ( ! var38 -> var45 ) { 
+func4 ( var1 ) ; 
+return func5 ( var43 ) ; 
+} 
+var38 -> var44 = var38 -> var45 -> var44 ; 
+var38 -> var42 = var38 -> var45 -> var42 ; 
+} 
+func2 ( & var38 -> var33 , var36 -> var33 , number ) ; 
+} 
+var1 -> var46 = var47 ; 
+var1 -> var48 = number ; 
+var1 -> var49 = number ; 
+if ( var2 -> var50 ) { 
+var1 -> var50 = func6 ( var2 -> var50 ) ; 
+if ( var1 -> var50 ) { 
+var1 -> var46 = var1 -> var50 -> var44 ; 
+var1 -> var48 = var2 -> var48 ; 
+var1 -> var49 = var2 -> var49 ; 
+} 
+} 
+return number ; 
+} 

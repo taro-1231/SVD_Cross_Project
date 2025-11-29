@@ -1,0 +1,63 @@
+static av_always_inline void func1 ( const ThreadData * var1 , int var2 , int var3 , int var4 ) 
+{ 
+int var5 , var6 ; 
+AVFrame * var7 = var1 -> var7 , * var8 = var1 -> var8 ; 
+const uint32_t * var9 = var1 -> var10 ; 
+const int var11 = var7 -> var11 ; 
+const int var12 = var7 -> var12 ; 
+const int var13 = ( var11 * var2 ) / var3 ; 
+const int var14 = ( var11 * ( var2 + number ) ) / var3 ; 
+const int var15 = var8 -> var16 [ number ] ; 
+const int var17 = var7 -> var16 [ number ] ; 
+uint8_t * var18 = var8 -> var19 [ number ] + var13 * var15 * var4 ; 
+const uint8_t * var20 = var7 -> var19 [ number ] + var13 * var17 ; 
+const int var21 = var15 >> number ; 
+const int var22 = var17 >> number ; 
+for ( var6 = var13 ; var6 < var14 ; var6 ++ ) { 
+const uint32_t * var23 = ( const uint32_t * ) var20 ; 
+uint32_t * var24 = ( uint32_t * ) var18 ; 
+const int var25 = var6 > number ? - var22 : number ; 
+const int var26 = var6 < var11 - number ? var22 : number ; 
+for ( var5 = number ; var5 < var12 ; var5 ++ ) { 
+const int var27 = var5 > number ? - number : number ; 
+const int var28 = var5 < var12 - number ? number : number ; 
+const uint32_t var29 [ number * number ] = { 
+var23 [ var27 + var25 ] , var23 [ var25 ] , var23 [ var25 + var28 ] , 
+var23 [ var27 ] , var23 [ number ] , var23 [ var28 ] , 
+var23 [ var27 + var26 ] , var23 [ var26 ] , var23 [ var26 + var28 ] 
+} ; 
+const uint32_t var30 = func2 ( var9 , var29 [ number ] ) ; 
+const int var31 = ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number 
+| ( var29 [ number ] != var29 [ number ] ? ( func3 ( var30 , func2 ( var9 , var29 [ number ] ) ) ) : number ) << number ; 
+if ( var4 == number ) { 
+var24 [ var21 * number + number ] = func4 ( var9 , var31 , var29 , number , number , number , number , number , number , number , number , number ) ; 
+var24 [ var21 * number + number ] = func4 ( var9 , var31 , var29 , number , number , number , number , number , number , number , number , number ) ; 
+var24 [ var21 * number + number ] = func4 ( var9 , var31 , var29 , number , number , number , number , number , number , number , number , number ) ; 
+var24 [ var21 * number + number ] = func4 ( var9 , var31 , var29 , number , number , number , number , number , number , number , number , number ) ; 
+} else if ( var4 == number ) { 
+func5 ( var24 , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func5 ( var24 + number , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func5 ( var24 + number * var21 , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func5 ( var24 + number * var21 + number , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+var24 [ var21 + number ] = var29 [ number ] ; 
+} else if ( var4 == number ) { 
+func6 ( var24 , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func6 ( var24 + number , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func6 ( var24 + number * var21 , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+func6 ( var24 + number * var21 + number , var21 , var9 , var31 , var29 , number , number , number , number , number , number , number , number , number , number , number , number , number ) ; 
+} else { 
+func7 ( number ) ; 
+} 
+var23 += number ; 
+var24 += var4 ; 
+} 
+var20 += var17 ; 
+var18 += var15 * var4 ; 
+} 
+} 

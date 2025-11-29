@@ -1,0 +1,7 @@
+static void func1 ( const char * var1 , int var2 , int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < var2 ; var4 ++ ) 
+printf ( str , ( uint8_t ) var1 [ var4 ] ) ; 
+printf ( str , var3 - var2 * number , str ) ; 
+} 

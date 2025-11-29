@@ -1,0 +1,16 @@
+static void func1 ( VideoState * var1 , short * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+var4 = var3 / sizeof ( short ) ; 
+while ( var4 > number ) { 
+var5 = var6 - var1 -> var7 ; 
+if ( var5 > var4 ) 
+var5 = var4 ; 
+memcpy ( var1 -> var8 + var1 -> var7 , var2 , var5 * sizeof ( short ) ) ; 
+var2 += var5 ; 
+var1 -> var7 += var5 ; 
+if ( var1 -> var7 >= var6 ) 
+var1 -> var7 = number ; 
+var4 -= var5 ; 
+} 
+} 

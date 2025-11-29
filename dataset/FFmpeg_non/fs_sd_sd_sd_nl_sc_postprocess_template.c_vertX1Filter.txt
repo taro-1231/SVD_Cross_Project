@@ -1,0 +1,102 @@
+static inline void RENAME ( func1 ) ( uint8_t * var1 , int var2 , PPContext * var3 ) 
+{ 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str REG_a str 
+str REG_a str REG_c str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str REG_c str 
+str REG_c str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm3 , % % mm0 ) 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( b01 ) str 
+str 
+PAVGB ( % % mm7 , % % mm3 ) 
+str 
+PAVGB ( % % mm7 , % % mm3 ) 
+PAVGB ( % % mm1 , % % mm3 ) 
+str 
+str 
+str 
+str 
+str 
+str REG_c str 
+str 
+str 
+str 
+str REG_c str 
+PAVGB ( % % mm7 , % % mm1 ) 
+str REG_a str 
+str 
+str 
+str 
+str REG_a str 
+str REG_c str 
+str 
+str 
+str 
+str REG_c str 
+PAVGB ( % % mm7 , % % mm1 ) 
+str REG_a str 
+str 
+str 
+str 
+str REG_a str 
+str REG_c str 
+str 
+str 
+str 
+str REG_c str 
+: 
+: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) 
+NAMED_CONSTRAINTS_ADD ( b01 ) 
+: str REG_a , str REG_c 
+) ; 
+const int l1 = var2 ; 
+const int l2 = var2 + l1 ; 
+const int l3 = var2 + l2 ; 
+const int l4 = var2 + l3 ; 
+const int l5 = var2 + l4 ; 
+const int l6 = var2 + l5 ; 
+const int l7 = var2 + l6 ; 
+int x ; 
+var1 += var2 * number ; 
+for ( x = 0 ; x < BLOCK_SIZE ; x ++ ) { 
+int a = var1 [ l3 ] - var1 [ l4 ] ; 
+int b = var1 [ l4 ] - var1 [ l5 ] ; 
+int c = var1 [ l5 ] - var1 [ l6 ] ; 
+int d = FFABS ( b ) - ( ( FFABS ( a ) + FFABS ( c ) ) >> 1 ) ; 
+d = FFMAX ( d , 0 ) ; 
+if ( d < var3 -> QP * 2 ) { 
+int v = d * FFSIGN ( - b ) ; 
+var1 [ l2 ] += v >> number ; 
+var1 [ l3 ] += v >> 2 ; 
+var1 [ l4 ] += ( number * v ) >> number ; 
+var1 [ l5 ] -= ( number * v ) >> number ; 
+var1 [ l6 ] -= v >> 2 ; 
+var1 [ l7 ] -= v >> number ; 
+} 
+var1 ++ ; 
+} 
+} 

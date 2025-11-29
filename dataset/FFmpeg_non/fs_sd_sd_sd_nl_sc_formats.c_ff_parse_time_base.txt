@@ -1,0 +1,10 @@
+int func1 ( AVRational * var1 , const char * var2 , void * var3 ) 
+{ 
+AVRational var4 ; 
+if ( func2 ( & var4 , var2 , var5 , number , var3 ) < number || var4 . var6 <= number || var4 . var7 <= number ) { 
+func3 ( var3 , var8 , str , var2 ) ; 
+return func4 ( var9 ) ; 
+} 
+* var1 = var4 ; 
+return number ; 
+} 

@@ -1,0 +1,10 @@
+static void func1 ( pa_stream * var1 , size_t var2 , void * var3 ) 
+{ 
+AVFormatContext * var4 = var3 ; 
+PulseData * var5 = var4 -> var6 ; 
+int64_t var7 = var2 ; 
+if ( var1 != var5 -> var1 ) 
+return ; 
+func2 ( var4 , var8 , & var7 , sizeof ( var7 ) ) ; 
+func3 ( var5 -> var9 , number ) ; 
+} 

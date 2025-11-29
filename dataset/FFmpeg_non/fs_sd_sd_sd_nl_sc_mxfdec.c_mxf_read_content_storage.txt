@@ -1,0 +1,12 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFContext * var7 = var1 ; 
+switch ( var3 ) { 
+case 0x1901 : 
+if ( var7 -> var8 ) 
+func2 ( var7 -> var9 , var10 , str ) ; 
+func3 ( var7 -> var8 ) ; 
+return func4 ( var2 , & var7 -> var8 , & var7 -> var11 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+int func1 ( FFFrameSync * var1 , unsigned var2 , AVFrame * var3 ) 
+{ 
+func2 ( var2 < var1 -> var4 ) ; 
+if ( ! var1 -> var2 [ var2 ] . var5 ) 
+func3 ( var1 , var2 , var3 ) ; 
+else 
+func4 ( var1 , & var1 -> var2 [ var2 ] . var6 , var3 ) ; 
+return number ; 
+} 

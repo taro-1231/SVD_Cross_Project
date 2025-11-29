@@ -1,0 +1,106 @@
+static av_cold int func1 ( AC3EncodeContext * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var2 ; 
+int var3 , var4 , var5 ; 
+if ( ! var2 -> var6 ) { 
+func2 ( var2 , AV_LOG_WARNING , str 
+str 
+str ) ; 
+} 
+var4 = func3 ( var1 , var2 -> var7 , & var2 -> var6 ) ; 
+if ( var4 ) { 
+func2 ( var2 , var8 , str ) ; 
+return var4 ; 
+} 
+var5 = var1 -> var9 ? number : number ; 
+for ( var3 = number ; var3 <= var5 ; var3 ++ ) { 
+if ( ( var10 [ var3 % number ] >> ( var3 / number ) ) == var2 -> var11 ) 
+break ; 
+} 
+if ( var3 > var5 ) { 
+func2 ( var2 , var8 , str ) ; 
+return func4 ( var12 ) ; 
+} 
+var1 -> var11 = var2 -> var11 ; 
+var1 -> var13 . var14 = var3 / number ; 
+var1 -> var13 . var15 = var3 % number ; 
+var1 -> var16 = var1 -> var9 ? number : number + var1 -> var13 . var14 ; 
+if ( ! var2 -> var17 ) { 
+switch ( var1 -> var18 ) { 
+case number : var2 -> var17 = number ; break ; 
+case number : var2 -> var17 = number ; break ; 
+case number : var2 -> var17 = number ; break ; 
+case 4 : var2 -> var17 = number ; break ; 
+case 5 : var2 -> var17 = number ; break ; 
+} 
+} 
+if ( var1 -> var9 ) { 
+int var19 , var20 , var21 , var22 , var23 ; 
+int var24 , var25 , var26 ; 
+for ( var24 = number ; var24 >= number ; var24 -- ) { 
+var25 = ( ( int [ ] ) { number , number , number , number } ) [ var24 ] ; 
+var26 = var27 * var25 ; 
+var19 = number * var1 -> var11 / var26 * number ; 
+var20 = ( ( var1 -> var11 + ( var26 - number ) ) / var26 ) * number ; 
+if ( var2 -> var17 <= var19 ) 
+break ; 
+} 
+if ( var2 -> var17 < var20 || var2 -> var17 > var19 ) { 
+func2 ( var2 , var8 , str 
+str , var20 , var19 ) ; 
+return func4 ( var12 ) ; 
+} 
+var1 -> var24 = var24 ; 
+var1 -> var25 = var25 ; 
+var21 = ( var2 -> var17 / number ) * var26 / var1 -> var11 ; 
+func5 ( var21 > number && var21 <= number ) ; 
+var23 = - number ; 
+var22 = var28 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+int var29 = abs ( var30 [ var3 ] * number - var2 -> var17 ) ; 
+if ( var29 < var22 ) { 
+var22 = var29 ; 
+var23 = var3 ; 
+} 
+} 
+var1 -> var31 = var23 << number ; 
+while ( var21 > number && var21 * var1 -> var11 / var32 * number > var2 -> var17 ) 
+var21 -- ; 
+var1 -> var33 = number * var21 ; 
+} else { 
+int var34 = number , var35 = number , var36 = var28 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+int var37 = ( var30 [ var3 ] >> var1 -> var13 . var14 ) * number ; 
+int var38 = abs ( var37 - var2 -> var17 ) ; 
+if ( var38 < var36 ) { 
+var34 = var37 ; 
+var35 = var3 ; 
+var36 = var38 ; 
+} 
+if ( ! var36 ) 
+break ; 
+} 
+var2 -> var17 = var34 ; 
+var1 -> var31 = var35 << number ; 
+var1 -> var33 = number * var39 [ var1 -> var31 ] [ var1 -> var13 . var15 ] ; 
+var1 -> var24 = number ; 
+var1 -> var25 = number ; 
+} 
+var1 -> var17 = var2 -> var17 ; 
+var1 -> var40 = var1 -> var33 ; 
+if ( var2 -> var41 < number ) { 
+func2 ( var2 , var8 , str ) ; 
+return func4 ( var12 ) ; 
+} 
+var1 -> var41 = var2 -> var41 ; 
+if ( var1 -> var41 > ( var1 -> var11 >> number ) ) 
+var1 -> var41 = var1 -> var11 >> number ; 
+var4 = func6 ( var1 ) ; 
+if ( var4 ) 
+return var4 ; 
+var1 -> var42 = var1 -> var43 . var44 && 
+( var1 -> var45 == var46 ) ; 
+var1 -> var47 = var1 -> var43 . var48 && 
+var1 -> var45 >= var46 ; 
+return number ; 
+} 

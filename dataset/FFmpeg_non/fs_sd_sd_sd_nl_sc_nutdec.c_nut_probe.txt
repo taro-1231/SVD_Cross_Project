@@ -1,0 +1,11 @@
+static int func1 ( AVProbeData * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 - number ; var2 ++ ) { 
+if ( func2 ( var1 -> var4 + var2 ) != var5 >> number ) 
+continue ; 
+if ( func2 ( var1 -> var4 + var2 + number ) == ( var5 & number ) ) 
+return var6 ; 
+} 
+return number ; 
+} 

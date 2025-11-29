@@ -1,0 +1,21 @@
+static int func1 ( SDL_Texture ** var1 , Uint32 var2 , int var3 , int var4 , SDL_BlendMode var5 , int var6 ) 
+{ 
+Uint32 var7 ; 
+int var8 , var9 , var10 ; 
+if ( func2 ( * var1 , & var7 , & var8 , & var9 , & var10 ) < number || var3 != var9 || var4 != var10 || var2 != var7 ) { 
+void * var11 ; 
+int var12 ; 
+func3 ( * var1 ) ; 
+if ( ! ( * var1 = func4 ( var13 , var2 , var14 , var3 , var4 ) ) ) 
+return - number ; 
+if ( func5 ( * var1 , var5 ) < number ) 
+return - number ; 
+if ( var6 ) { 
+if ( func6 ( * var1 , var15 , & var11 , & var12 ) < number ) 
+return - number ; 
+memset ( var11 , number , var12 * var4 ) ; 
+func7 ( * var1 ) ; 
+} 
+} 
+return number ; 
+} 

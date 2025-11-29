@@ -1,0 +1,35 @@
+static void func1 ( OutputStream * var1 , int var2 ) 
+{ 
+AVCodecContext * var3 ; 
+int var4 ; 
+double var5 , var6 , var7 ; 
+if ( ! var8 ) { 
+var8 = fopen ( var9 , str ) ; 
+if ( ! var8 ) { 
+perror ( str ) ; 
+func2 ( number ) ; 
+} 
+} 
+var3 = var1 -> var10 ; 
+if ( var3 -> var11 == var12 ) { 
+var4 = var1 -> var13 -> var14 ; 
+if ( var15 <= number ) { 
+fprintf ( var8 , str , var4 , 
+var1 -> var16 / ( float ) var17 ) ; 
+} else { 
+fprintf ( var8 , str , var1 -> var18 , var1 -> var19 , var4 , 
+var1 -> var16 / ( float ) var17 ) ; 
+} 
+if ( var1 -> var20 [ number ] >= number && ( var3 -> var21 & var22 ) ) 
+fprintf ( var8 , str , func3 ( var1 -> var20 [ number ] / ( var3 -> var23 * var3 -> var24 * number * number ) ) ) ; 
+fprintf ( var8 , str , var2 ) ; 
+var5 = func4 ( var1 -> var13 ) * func5 ( var1 -> var13 -> var25 ) ; 
+if ( var5 < number ) 
+var5 = number ; 
+var6 = ( var2 * number ) / func5 ( var3 -> var25 ) / number ; 
+var7 = ( double ) ( var1 -> var26 * number ) / var5 / number ; 
+fprintf ( var8 , str , 
+( double ) var1 -> var26 / number , var5 , var6 , var7 ) ; 
+fprintf ( var8 , str , func6 ( var1 -> var27 ) ) ; 
+} 
+} 

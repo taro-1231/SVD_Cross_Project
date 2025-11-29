@@ -1,0 +1,25 @@
+av_cold void func1 ( DitherDSPContext * var2 , 
+enum AVResampleDitherMethod var3 ) 
+{ 
+int var4 = func2 ( ) ; 
+if ( func3 ( var4 ) ) { 
+var2 -> var5 = var6 ; 
+var2 -> var7 = number ; 
+var2 -> var8 = number ; 
+} 
+if ( var3 == var9 ) { 
+if ( func3 ( var4 ) ) { 
+var2 -> var10 = var11 ; 
+} 
+if ( func4 ( var4 ) ) { 
+var2 -> var10 = var12 ; 
+} 
+} else { 
+if ( func3 ( var4 ) ) { 
+var2 -> var10 = var13 ; 
+} 
+if ( func4 ( var4 ) ) { 
+var2 -> var10 = var1 ; 
+} 
+} 
+} 

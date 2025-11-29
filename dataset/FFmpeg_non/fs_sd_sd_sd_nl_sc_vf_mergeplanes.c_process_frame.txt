@@ -1,0 +1,25 @@
+static int func1 ( FFFrameSync * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+MergePlanesContext * var6 = var1 -> var7 ; 
+AVFrame * var8 [ number ] = { var9 } ; 
+AVFrame * var10 ; 
+int var11 , var12 ; 
+for ( var11 = number ; var11 < var6 -> var13 ; var11 ++ ) { 
+if ( ( var12 = func2 ( & var6 -> var1 , var11 , & var8 [ var11 ] , number ) ) < number ) 
+return var12 ; 
+} 
+var10 = func3 ( var4 , var4 -> var14 , var4 -> var15 ) ; 
+if ( ! var10 ) 
+return func4 ( var16 ) ; 
+var10 -> var17 = func5 ( var6 -> var1 . var17 , var6 -> var1 . var18 , var4 -> var18 ) ; 
+for ( var11 = number ; var11 < var6 -> var19 ; var11 ++ ) { 
+const int var20 = var6 -> var21 [ var11 ] [ number ] ; 
+const int var22 = var6 -> var21 [ var11 ] [ number ] ; 
+func6 ( var10 -> var23 [ var11 ] , var10 -> var24 [ var11 ] , 
+var8 [ var20 ] -> var23 [ var22 ] , var8 [ var20 ] -> var24 [ var22 ] , 
+var6 -> var25 [ var11 ] , var6 -> var26 [ var11 ] ) ; 
+} 
+return func7 ( var4 , var10 ) ; 
+} 

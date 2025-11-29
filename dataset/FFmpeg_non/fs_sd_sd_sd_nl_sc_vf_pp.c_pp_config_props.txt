@@ -1,0 +1,23 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+int var2 = var3 ; 
+PPFilterContext * var4 = var1 -> var5 -> var6 ; 
+switch ( var1 -> var7 ) { 
+case var8 : 
+case var9 : 
+case var10 : var2 |= var11 ; break ; 
+case var12 : 
+case var13 : var2 |= var14 ; break ; 
+case var15 : var2 |= var16 ; break ; 
+case var17 : 
+case var18 : 
+case var19 : var2 |= var20 ; break ; 
+case var21 : 
+case var22 : var2 |= var23 ; break ; 
+var24 : func2 ( number ) ; 
+} 
+var4 -> var25 = func3 ( var1 -> var26 , var1 -> var27 , var2 ) ; 
+if ( ! var4 -> var25 ) 
+return func4 ( var28 ) ; 
+return number ; 
+} 

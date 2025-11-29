@@ -1,0 +1,12 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+MatroskaDemuxContext * var3 = var1 -> var4 ; 
+while ( func2 ( var3 , var2 ) ) { 
+int64_t var5 = func3 ( var3 -> var6 -> var7 ) ; 
+if ( var3 -> var8 ) 
+return var9 ; 
+if ( func4 ( var3 ) < number ) 
+func5 ( var3 , var5 ) ; 
+} 
+return number ; 
+} 

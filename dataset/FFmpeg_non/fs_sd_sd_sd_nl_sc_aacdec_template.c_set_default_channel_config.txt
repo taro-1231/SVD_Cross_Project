@@ -1,0 +1,36 @@
+static int func1 ( AVCodecContext * var1 , 
+uint8_t ( * var2 ) [ 3 ] , 
+int * var3 , 
+int var4 ) 
+{ 
+if ( var4 < number || ( var4 > number && var4 < number ) || 
+var4 > number ) { 
+func2 ( var1 , var5 , 
+str , 
+var4 ) ; 
+return var6 ; 
+} 
+* var3 = var7 [ var4 ] ; 
+memcpy ( var2 , var8 [ var4 - number ] , 
+* var3 * sizeof ( * var2 ) ) ; 
+if ( var4 == number && var1 -> var9 < var10 ) { 
+func2 ( var1 , AV_LOG_INFO , str 
+str 
+str , var10 ) ; 
+var2 [ number ] [ number ] = var11 ; 
+} 
+return number ; 
+} 
+* / 
+static int func1 ( AVCodecContext * var1 , 
+uint8_t ( * var2 ) [ 3 ] , 
+int * var3 , 
+int var4 ) 
+{ 
+if ( var4 < number || ( var4 > number && var4 < number ) || 
+var4 > number ) { 
+func2 ( var1 , var5 , 
+str , 
+var4 ) ; 
+return var6 ; 
+} 

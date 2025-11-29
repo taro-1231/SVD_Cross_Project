@@ -1,0 +1,115 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , AVPacket * var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 ; 
+unsigned var8 ; 
+AVIOContext * var9 ; 
+int var10 = number ; 
+uint8_t var11 [ number ] ; 
+uint8_t * var12 ; 
+var5 = func2 ( & var9 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+for ( var6 = number ; var6 < var3 -> var13 ; var6 ++ ) { 
+const uint8_t * var14 = var3 -> var15 [ var6 ] . var14 ; 
+int var16 = var3 -> var15 [ var6 ] . var16 ; 
+const uint8_t * var17 = var14 + var16 ; 
+if ( var4 ) { 
+if ( var3 -> var15 [ var6 ] . var18 == var19 
+|| var3 -> var15 [ var6 ] . var18 == var20 ) { 
+if ( ! var16 || var14 [ var16 - number ] ) { 
+var5 = func3 ( var21 ) ; 
+goto var22 ; 
+} 
+while ( var14 < var17 ) { 
+const uint8_t * var23 = var14 ; 
+const uint8_t * var24 = var14 + strlen ( var23 ) + number ; 
+if ( var24 >= var17 ) { 
+var5 = func3 ( var21 ) ; 
+goto var22 ; 
+} 
+func4 ( var9 , var23 ) ; 
+func5 ( var9 , - number ) ; 
+func4 ( var9 , var24 ) ; 
+var14 = var24 + strlen ( var24 ) + number ; 
+var10 ++ ; 
+} 
+} 
+} else { 
+switch ( var3 -> var15 [ var6 ] . var18 ) { 
+case var25 : 
+case var26 : 
+case var27 : 
+var28 : 
+if ( var3 -> var15 [ var6 ] . var18 == var25 ) { 
+func4 ( var9 , str ) ; 
+} else if ( var3 -> var15 [ var6 ] . var18 == var26 ) { 
+func4 ( var9 , str ) ; 
+} else if ( var3 -> var15 [ var6 ] . var18 == var27 ) { 
+snprintf ( var11 , sizeof ( var11 ) , str PRId64 str , AV_RB64 ( var14 ) ) ; 
+func4 ( var9 , var11 ) ; 
+} else { 
+snprintf ( var11 , sizeof ( var11 ) , str , 
+( var1 -> var8 & var29 ) ? str : var30 , 
+var3 -> var15 [ var6 ] . var18 ) ; 
+func4 ( var9 , var11 ) ; 
+} 
+func5 ( var9 , - number ) ; 
+func4 ( var9 , str ) ; 
+func6 ( var9 , var3 -> var15 [ var6 ] . var16 ) ; 
+func7 ( var9 , var14 , var3 -> var15 [ var6 ] . var16 ) ; 
+var10 ++ ; 
+break ; 
+case var31 : 
+var8 = func8 ( & var14 ) ; 
+if ( var8 & var32 ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , func8 ( & var14 ) ) ; 
+var10 ++ ; 
+} 
+if ( var8 & var33 ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , - number ) ; 
+func4 ( var9 , str ) ; 
+func6 ( var2 , number ) ; 
+func7 ( var9 , var14 , number ) ; var14 += number ; 
+var10 ++ ; 
+} 
+if ( var8 & var34 ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , func8 ( & var14 ) ) ; 
+var10 ++ ; 
+} 
+if ( var8 & var35 ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , func8 ( & var14 ) ) ; 
+func4 ( var9 , str ) ; 
+func5 ( var9 , func8 ( & var14 ) ) ; 
+var10 += number ; 
+} 
+break ; 
+case var36 : 
+if ( func9 ( var14 ) ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , ( unsigned ) func9 ( var14 ) ) ; 
+var10 ++ ; 
+} 
+if ( func9 ( var14 + number ) ) { 
+func4 ( var9 , str ) ; 
+func5 ( var9 , ( unsigned ) func9 ( var14 + number ) ) ; 
+var10 ++ ; 
+} 
+break ; 
+case var19 : 
+case var20 : 
+case var37 : 
+break ; 
+} 
+} 
+} 
+var22 : 
+func6 ( var2 , var10 ) ; 
+var7 = func10 ( var9 , & var12 ) ; 
+func7 ( var2 , var12 , var7 ) ; 
+func11 ( & var12 ) ; 
+return var5 ; 
+} 

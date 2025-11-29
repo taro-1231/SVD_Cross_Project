@@ -1,0 +1,15 @@
+static int func1 ( AVFrame * var1 ) 
+{ 
+int var2 = func2 ( var1 -> var3 ) ? 
+func3 ( var1 -> var4 ) : number ; 
+int var5 = number ; 
+int var6 ; 
+for ( var6 = number ; var6 < var2 ; var6 ++ ) { 
+int var7 = number ; 
+while ( ( intptr_t ) var1 -> var8 [ var6 ] % var7 ) 
+var7 >>= number ; 
+if ( var7 < var5 ) 
+var5 = var7 ; 
+} 
+return var5 ; 
+} 

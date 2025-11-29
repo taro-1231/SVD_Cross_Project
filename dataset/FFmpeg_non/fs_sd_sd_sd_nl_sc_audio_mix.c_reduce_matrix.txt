@@ -1,0 +1,101 @@
+static void func1 ( AudioMix * var1 , const double * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+memset ( var1 -> var6 , number , sizeof ( var1 -> var6 ) ) ; 
+memset ( var1 -> var7 , number , sizeof ( var1 -> var7 ) ) ; 
+memset ( var1 -> var8 , number , sizeof ( var1 -> var8 ) ) ; 
+for ( var5 = number ; var5 < var1 -> var9 ; var5 ++ ) { 
+int var10 = number ; 
+for ( var4 = number ; var4 < var1 -> var11 ; var4 ++ ) { 
+if ( var2 [ var5 * var3 + var4 ] != number ) { 
+var10 = number ; 
+break ; 
+} 
+} 
+if ( var5 < var1 -> var11 ) { 
+for ( var4 = number ; var4 < var1 -> var9 ; var4 ++ ) { 
+if ( var2 [ var4 * var3 + var5 ] != number ) { 
+var10 = number ; 
+break ; 
+} 
+} 
+} 
+if ( var10 ) { 
+var1 -> var6 [ var5 ] = number ; 
+var1 -> var12 -- ; 
+if ( var5 < var1 -> var11 ) 
+var1 -> var13 -- ; 
+} 
+} 
+if ( var1 -> var12 == number || var1 -> var13 == number ) { 
+var1 -> var12 = number ; 
+var1 -> var13 = number ; 
+return ; 
+} 
+for ( var4 = number ; var4 < func2 ( var1 -> var11 , var1 -> var9 ) ; var4 ++ ) { 
+int var14 = number ; 
+for ( var5 = number ; var5 < var1 -> var9 ; var5 ++ ) { 
+int var15 ; 
+if ( ( var5 != var4 && var2 [ var5 * var3 + var4 ] != number ) || 
+( var5 == var4 && var2 [ var5 * var3 + var4 ] != number ) ) { 
+var14 = number ; 
+break ; 
+} 
+if ( var5 == var4 ) { 
+for ( var15 = number ; var15 < var1 -> var11 ; var15 ++ ) { 
+if ( var15 != var4 && var2 [ var5 * var3 + var15 ] != number ) { 
+var14 = number ; 
+break ; 
+} 
+} 
+} 
+} 
+if ( var14 ) { 
+var1 -> var7 [ var4 ] = number ; 
+var1 -> var13 -- ; 
+} 
+} 
+for ( ; var4 < var1 -> var11 ; var4 ++ ) { 
+int var16 = number ; 
+for ( var5 = number ; var5 < var1 -> var9 ; var5 ++ ) { 
+if ( var2 [ var5 * var3 + var4 ] != number ) { 
+var16 = number ; 
+break ; 
+} 
+} 
+if ( ! var16 ) { 
+var1 -> var7 [ var4 ] = number ; 
+var1 -> var13 -- ; 
+} 
+} 
+if ( var1 -> var13 == number ) { 
+var1 -> var12 = number ; 
+return ; 
+} 
+for ( var5 = number ; var5 < func2 ( var1 -> var11 , var1 -> var9 ) ; var5 ++ ) { 
+int var14 = number ; 
+int var17 ; 
+for ( var4 = number ; var4 < var1 -> var11 ; var4 ++ ) { 
+if ( ( var5 != var4 && var2 [ var5 * var3 + var4 ] != number ) || 
+( var5 == var4 && var2 [ var5 * var3 + var4 ] != number ) ) { 
+var14 = number ; 
+break ; 
+} 
+} 
+var4 = var5 ; 
+for ( var17 = number ; var17 < var1 -> var9 ; var17 ++ ) { 
+if ( var17 != var4 && var2 [ var17 * var3 + var4 ] != number ) { 
+var14 = number ; 
+break ; 
+} 
+} 
+if ( var14 ) { 
+var1 -> var8 [ var5 ] = number ; 
+var1 -> var12 -- ; 
+} 
+} 
+if ( var1 -> var12 == number ) { 
+var1 -> var13 = number ; 
+return ; 
+} 
+} 

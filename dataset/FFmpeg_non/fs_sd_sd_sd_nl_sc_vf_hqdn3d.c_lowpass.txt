@@ -1,0 +1,5 @@
+static uint32_t func1 ( int var1 , int var2 , int16_t * var3 , int var4 ) 
+{ 
+int var5 = ( var1 - var2 ) >> ( number - var6 ) ; 
+return var2 + var3 [ var5 ] ; 
+} 

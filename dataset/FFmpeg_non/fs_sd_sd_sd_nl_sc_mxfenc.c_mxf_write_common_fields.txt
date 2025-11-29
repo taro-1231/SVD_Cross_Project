@@ -1,0 +1,18 @@
+static void func1 ( AVFormatContext * var2 , AVStream * var3 ) 
+{ 
+MXFContext * var4 = var2 -> var5 ; 
+AVIOContext * var6 = var2 -> var6 ; 
+func2 ( var6 , number , number ) ; 
+if ( var3 == var4 -> var7 ) 
+func3 ( var6 , var1 , number ) ; 
+else { 
+const MXFCodecUL * var8 = func4 ( var3 -> var9 -> var10 ) ; 
+func3 ( var6 , var8 -> var11 , number ) ; 
+} 
+func2 ( var6 , number , number ) ; 
+if ( var3 != var4 -> var7 && var2 -> var12 == & var13 && var3 -> var9 -> var10 == var14 ) { 
+func5 ( var6 , var4 -> var15 / var4 -> var16 ) ; 
+} else { 
+func5 ( var6 , var4 -> var17 ) ; 
+} 
+} 

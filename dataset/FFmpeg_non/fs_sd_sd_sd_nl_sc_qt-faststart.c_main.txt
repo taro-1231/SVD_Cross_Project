@@ -1,0 +1,239 @@
+int func1 ( int var2 , char * var3 [ ] ) 
+{ 
+FILE * var4 = var5 ; 
+FILE * var6 = var5 ; 
+unsigned char var7 [ var8 ] ; 
+uint32_t var9 = number ; 
+uint64_t var10 = number ; 
+uint64_t var11 = number ; 
+int64_t var12 ; 
+unsigned char * var13 = var5 ; 
+unsigned char * var14 = var5 ; 
+uint64_t var15 ; 
+uint64_t var16 = number ; 
+uint64_t var17 , var18 ; 
+uint32_t var19 ; 
+uint64_t var20 ; 
+int64_t var21 = number ; 
+unsigned char * var22 = var5 ; 
+int var23 ; 
+if ( var2 != number ) { 
+printf ( str 
+str ) ; 
+return number ; 
+} 
+if ( ! strcmp ( var3 [ number ] , var3 [ number ] ) ) { 
+fprintf ( var24 , str ) ; 
+return number ; 
+} 
+var4 = fopen ( var3 [ number ] , str ) ; 
+if ( ! var4 ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+while ( ! feof ( var4 ) ) { 
+if ( fread ( var7 , var8 , number , var4 ) != number ) { 
+break ; 
+} 
+var10 = func2 ( & var7 [ number ] ) ; 
+var9 = func2 ( & var7 [ number ] ) ; 
+if ( var9 == var26 ) { 
+var16 = var10 ; 
+free ( var14 ) ; 
+var14 = malloc ( var16 ) ; 
+if ( ! var14 ) { 
+printf ( str PRIu64 str , 
+var10 ) ; 
+goto var25 ; 
+} 
+if ( func3 ( var4 , - var8 , var27 ) || 
+fread ( var14 , var10 , number , var4 ) != number || 
+( var21 = func4 ( var4 ) ) < number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+} else { 
+int var28 ; 
+if ( var10 == number ) { 
+if ( fread ( var7 , var8 , number , var4 ) != number ) { 
+break ; 
+} 
+var10 = func5 ( & var7 [ number ] ) ; 
+var28 = func3 ( var4 , var10 - var8 * number , var27 ) ; 
+} else { 
+var28 = func3 ( var4 , var10 - var8 , var27 ) ; 
+} 
+if ( var28 ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+} 
+printf ( str PRIu64 str PRIu64 str , 
+( var9 >> number ) & 255 , 
+( var9 >> number ) & 255 , 
+( var9 >> number ) & 255 , 
+( var9 >> number ) & 255 , 
+var11 , 
+var10 ) ; 
+if ( ( var9 != var29 ) && 
+( var9 != var30 ) && 
+( var9 != var31 ) && 
+( var9 != var32 ) && 
+( var9 != var33 ) && 
+( var9 != var34 ) && 
+( var9 != var35 ) && 
+( var9 != var36 ) && 
+( var9 != var37 ) && 
+( var9 != var26 ) ) { 
+printf ( str ) ; 
+break ; 
+} 
+var11 += var10 ; 
+if ( var10 < number ) 
+break ; 
+} 
+if ( var9 != var32 ) { 
+printf ( str ) ; 
+free ( var14 ) ; 
+fclose ( var4 ) ; 
+return number ; 
+} 
+if ( func3 ( var4 , - var10 , var38 ) ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+var12 = func4 ( var4 ) ; 
+if ( var12 < number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+var15 = var10 ; 
+var13 = malloc ( var15 ) ; 
+if ( ! var13 ) { 
+printf ( str PRIu64 str , var10 ) ; 
+goto var25 ; 
+} 
+if ( fread ( var13 , var10 , number , var4 ) != number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+if ( func2 ( & var13 [ number ] ) == var39 ) { 
+printf ( str ) ; 
+goto var25 ; 
+} 
+fclose ( var4 ) ; 
+var4 = var5 ; 
+for ( var17 = number ; var17 < var15 - number ; var17 ++ ) { 
+var9 = func2 ( & var13 [ var17 ] ) ; 
+if ( var9 == var40 ) { 
+printf ( str ) ; 
+var10 = func2 ( & var13 [ var17 - number ] ) ; 
+if ( var17 + var10 - number > var15 ) { 
+printf ( str ) ; 
+goto var25 ; 
+} 
+var19 = func2 ( & var13 [ var17 + number ] ) ; 
+if ( var17 + number + var19 * func6 ( number ) > var15 ) { 
+printf ( str ) ; 
+goto var25 ; 
+} 
+for ( var18 = number ; var18 < var19 ; var18 ++ ) { 
+var20 = func2 ( & var13 [ var17 + number + var18 * number ] ) ; 
+var20 += var15 ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+} 
+var17 += var10 - number ; 
+} else if ( var9 == var41 ) { 
+printf ( str ) ; 
+var10 = func2 ( & var13 [ var17 - number ] ) ; 
+if ( var17 + var10 - number > var15 ) { 
+printf ( str ) ; 
+goto var25 ; 
+} 
+var19 = func2 ( & var13 [ var17 + number ] ) ; 
+if ( var17 + number + var19 * func6 ( number ) > var15 ) { 
+printf ( str ) ; 
+goto var25 ; 
+} 
+for ( var18 = number ; var18 < var19 ; var18 ++ ) { 
+var20 = func5 ( & var13 [ var17 + number + var18 * number ] ) ; 
+var20 += var15 ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+var13 [ var17 + number + var18 * number + number ] = ( var20 >> number ) & number ; 
+} 
+var17 += var10 - number ; 
+} 
+} 
+var4 = fopen ( var3 [ number ] , str ) ; 
+if ( ! var4 ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+if ( var21 > number ) { 
+if ( func3 ( var4 , var21 , var42 ) ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+var12 -= var21 ; 
+} 
+var6 = fopen ( var3 [ number ] , str ) ; 
+if ( ! var6 ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+if ( var16 > number ) { 
+printf ( str ) ; 
+if ( fwrite ( var14 , var16 , number , var6 ) != number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+} 
+printf ( str ) ; 
+if ( fwrite ( var13 , var15 , number , var6 ) != number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+var23 = func7 ( var1 , var12 ) ; 
+var22 = malloc ( var23 ) ; 
+if ( ! var22 ) { 
+printf ( str , var23 ) ; 
+goto var25 ; 
+} 
+printf ( str ) ; 
+while ( var12 ) { 
+var23 = func7 ( var23 , var12 ) ; 
+if ( fread ( var22 , var23 , number , var4 ) != number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+if ( fwrite ( var22 , var23 , number , var6 ) != number ) { 
+perror ( var3 [ number ] ) ; 
+goto var25 ; 
+} 
+var12 -= var23 ; 
+} 
+fclose ( var4 ) ; 
+fclose ( var6 ) ; 
+free ( var13 ) ; 
+free ( var14 ) ; 
+free ( var22 ) ; 
+return number ; 
+var25 : 
+if ( var4 ) 
+fclose ( var4 ) ; 
+if ( var6 ) 
+fclose ( var6 ) ; 
+free ( var13 ) ; 
+free ( var14 ) ; 
+free ( var22 ) ; 
+return number ; 
+} 

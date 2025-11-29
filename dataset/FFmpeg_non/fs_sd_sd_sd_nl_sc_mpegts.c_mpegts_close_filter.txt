@@ -1,0 +1,16 @@
+static void func1 ( MpegTSContext * var1 , MpegTSFilter * var2 ) 
+{ 
+int var3 ; 
+var3 = var2 -> var3 ; 
+if ( var2 -> var4 == var5 ) 
+func2 ( & var2 -> var6 . var7 . var8 ) ; 
+else if ( var2 -> var4 == var9 ) { 
+PESContext * var10 = var2 -> var6 . var11 . var12 ; 
+func3 ( & var10 -> var13 ) ; 
+if ( ! ( ( PESContext * ) var2 -> var6 . var11 . var12 ) -> var14 ) { 
+func2 ( & var2 -> var6 . var11 . var12 ) ; 
+} 
+} 
+func4 ( var2 ) ; 
+var1 -> var15 [ var3 ] = var16 ; 
+} 

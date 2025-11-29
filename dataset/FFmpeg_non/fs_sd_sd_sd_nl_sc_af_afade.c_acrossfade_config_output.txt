@@ -1,0 +1,33 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AudioFadeContext * var4 = var2 -> var5 ; 
+if ( var2 -> var6 [ number ] -> var7 != var2 -> var6 [ number ] -> var7 ) { 
+av_log ( var2 , AV_LOG_ERROR , 
+str 
+str , 
+var2 -> var6 [ number ] -> var7 , var2 -> var6 [ number ] -> var7 ) ; 
+return func2 ( var8 ) ; 
+} 
+var1 -> var7 = var2 -> var6 [ number ] -> var7 ; 
+var1 -> var9 = var2 -> var6 [ number ] -> var9 ; 
+var1 -> var10 = var2 -> var6 [ number ] -> var10 ; 
+var1 -> var11 = var2 -> var6 [ number ] -> var11 ; 
+var1 -> var12 |= var13 ; 
+switch ( var1 -> var14 ) { 
+case var15 : var4 -> var16 = var17 ; break ; 
+case var18 : var4 -> var16 = var19 ; break ; 
+case var20 : var4 -> var16 = var21 ; break ; 
+case var22 : var4 -> var16 = var23 ; break ; 
+case var24 : var4 -> var16 = var25 ; break ; 
+case var26 : var4 -> var16 = var27 ; break ; 
+case var28 : var4 -> var16 = var29 ; break ; 
+case var30 : var4 -> var16 = var31 ; break ; 
+} 
+func3 ( var1 ) ; 
+var4 -> var32 [ number ] = func4 ( var1 -> var14 , var1 -> var11 , var4 -> var33 ) ; 
+var4 -> var32 [ number ] = func4 ( var1 -> var14 , var1 -> var11 , var4 -> var33 ) ; 
+if ( ! var4 -> var32 [ number ] || ! var4 -> var32 [ number ] ) 
+return func2 ( var34 ) ; 
+return number ; 
+} 

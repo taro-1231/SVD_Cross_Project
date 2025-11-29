@@ -1,0 +1,15 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+static const enum AVPixelFormat var2 [ ] = { 
+var3 , var4 , var5 , 
+var6 , var7 , var8 , var9 , 
+var10 
+} ; 
+static const enum AVPixelFormat var11 [ ] = { var12 , var10 } ; 
+AVFilterFormats * var13 = func2 ( var2 ) ; 
+AVFilterFormats * var14 = func2 ( var11 ) ; 
+func3 ( var13 , & var1 -> var15 [ number ] -> var16 ) ; 
+func3 ( var14 , & var1 -> var15 [ number ] -> var16 ) ; 
+func3 ( var13 , & var1 -> var17 [ number ] -> var18 ) ; 
+return number ; 
+} 

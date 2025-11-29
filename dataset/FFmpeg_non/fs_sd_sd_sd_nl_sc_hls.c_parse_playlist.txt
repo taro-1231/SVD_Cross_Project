@@ -1,0 +1,176 @@
+static int func1 ( HLSContext * var1 , const char * var2 , 
+struct playlist * var3 , AVIOContext * var4 ) 
+{ 
+int var5 = number , var6 = number , var7 = number ; 
+int64_t var8 = number ; 
+enum KeyType var9 = var10 ; 
+uint8_t var11 [ number ] = str ; 
+int var12 = number ; 
+char var13 [ var14 ] = str ; 
+char var15 [ var14 ] ; 
+const char * var16 ; 
+int var17 = number ; 
+int64_t var18 = number ; 
+int64_t var19 = - number ; 
+uint8_t * var20 = var21 ; 
+struct var22 var22 ; 
+char var23 [ var14 ] ; 
+if ( ! var4 ) { 
+AVDictionary * var24 = var21 ; 
+var17 = number ; 
+func2 ( & var24 , str , str , number ) ; 
+func2 ( & var24 , str , var1 -> var25 , number ) ; 
+func2 ( & var24 , str , var1 -> var26 , number ) ; 
+func2 ( & var24 , str , var1 -> var27 , number ) ; 
+var5 = func3 ( & var4 , var2 , var28 , 
+var1 -> var29 , & var24 ) ; 
+func4 ( & var24 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+var5 = open_in ( var1 , & var4 , var2 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+var17 = number ; 
+} 
+if ( func5 ( var4 , str , var30 , & var20 ) >= number ) 
+var2 = var20 ; 
+func6 ( var4 , var15 , sizeof ( var15 ) ) ; 
+if ( strcmp ( var15 , str ) ) { 
+var5 = var31 ; 
+goto var32 ; 
+} 
+if ( var3 ) { 
+func7 ( var3 ) ; 
+var3 -> var33 = number ; 
+var3 -> var34 = var35 ; 
+} 
+while ( ! func8 ( var4 ) ) { 
+func6 ( var4 , var15 , sizeof ( var15 ) ) ; 
+if ( func9 ( var15 , str , & var16 ) ) { 
+var7 = number ; 
+memset ( & var22 , number , sizeof ( var22 ) ) ; 
+func10 ( var16 , ( ff_parse_key_val_cb ) var36 , 
+& var22 ) ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+struct key_info var37 = { { number } } ; 
+func10 ( var16 , ( ff_parse_key_val_cb ) var38 , 
+& var37 ) ; 
+var9 = var10 ; 
+var12 = number ; 
+if ( ! strcmp ( var37 . var39 , str ) ) 
+var9 = var40 ; 
+if ( ! strcmp ( var37 . var39 , str ) ) 
+var9 = var41 ; 
+if ( ! strncmp ( var37 . var11 , str , number ) || ! strncmp ( var37 . var11 , str , number ) ) { 
+func11 ( var11 , var37 . var11 + number ) ; 
+var12 = number ; 
+} 
+func12 ( var13 , var37 . var42 , sizeof ( var13 ) ) ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+struct rendition_info var37 = { { number } } ; 
+func10 ( var16 , ( ff_parse_key_val_cb ) var43 , 
+& var37 ) ; 
+func13 ( var1 , & var37 , var2 ) ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+var5 = func14 ( var1 , & var3 , var2 ) ; 
+if ( var5 < number ) 
+goto var32 ; 
+var3 -> var44 = atoi ( var16 ) * var45 ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+var5 = func14 ( var1 , & var3 , var2 ) ; 
+if ( var5 < number ) 
+goto var32 ; 
+var3 -> var46 = atoi ( var16 ) ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+var5 = func14 ( var1 , & var3 , var2 ) ; 
+if ( var5 < number ) 
+goto var32 ; 
+if ( ! strcmp ( var16 , str ) ) 
+var3 -> var34 = var47 ; 
+else if ( ! strcmp ( var16 , str ) ) 
+var3 -> var34 = var48 ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+if ( var3 ) 
+var3 -> var33 = number ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+var6 = number ; 
+var8 = atof ( var16 ) * var45 ; 
+} else if ( func9 ( var15 , str , & var16 ) ) { 
+var19 = atoi ( var16 ) ; 
+var16 = strchr ( var16 , str ) ; 
+if ( var16 ) 
+var18 = atoi ( var16 + number ) ; 
+} else if ( func9 ( var15 , str , var21 ) ) { 
+continue ; 
+} else if ( var15 [ number ] ) { 
+if ( var7 ) { 
+if ( ! func15 ( var1 , & var22 , var15 , var2 ) ) { 
+var5 = func16 ( var49 ) ; 
+goto var32 ; 
+} 
+var7 = number ; 
+} 
+if ( var6 ) { 
+struct segment * var50 ; 
+if ( ! var3 ) { 
+if ( ! func15 ( var1 , number , var2 , var21 ) ) { 
+var5 = func16 ( var49 ) ; 
+goto var32 ; 
+} 
+var3 = var1 -> var51 [ var1 -> var52 - number ] ; 
+} 
+var50 = func17 ( sizeof ( struct segment ) ) ; 
+if ( ! var50 ) { 
+var5 = func16 ( var49 ) ; 
+goto var32 ; 
+} 
+var50 -> var8 = var8 ; 
+var50 -> var9 = var9 ; 
+if ( var12 ) { 
+memcpy ( var50 -> var11 , var11 , sizeof ( var11 ) ) ; 
+} else { 
+int var53 = var3 -> var46 + var3 -> var54 ; 
+memset ( var50 -> var11 , number , sizeof ( var50 -> var11 ) ) ; 
+func18 ( var50 -> var11 + number , var53 ) ; 
+} 
+if ( var9 != var10 ) { 
+func19 ( var23 , sizeof ( var23 ) , var2 , var13 ) ; 
+var50 -> var13 = func20 ( var23 ) ; 
+if ( ! var50 -> var13 ) { 
+func21 ( var50 ) ; 
+var5 = func16 ( var49 ) ; 
+goto var32 ; 
+} 
+} else { 
+var50 -> var13 = var21 ; 
+} 
+func19 ( var23 , sizeof ( var23 ) , var2 , var15 ) ; 
+var50 -> var2 = func20 ( var23 ) ; 
+if ( ! var50 -> var2 ) { 
+func21 ( var50 -> var13 ) ; 
+func21 ( var50 ) ; 
+var5 = func16 ( var49 ) ; 
+goto var32 ; 
+} 
+func22 ( & var3 -> var55 , & var3 -> var54 , var50 ) ; 
+var6 = number ; 
+var50 -> var56 = var19 ; 
+if ( var19 >= number ) { 
+var50 -> var57 = var18 ; 
+var18 += var19 ; 
+var19 = - number ; 
+} else { 
+var50 -> var57 = number ; 
+var18 = number ; 
+} 
+} 
+} 
+} 
+if ( var3 ) 
+var3 -> var58 = func23 ( ) ; 
+var32 : 
+func21 ( var20 ) ; 
+if ( var17 ) 
+func24 ( var4 ) ; 
+return var5 ; 
+} 

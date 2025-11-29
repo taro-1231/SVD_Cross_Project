@@ -1,0 +1,20 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+RotContext * var7 = var1 -> var8 ; 
+int var9 ; 
+if ( ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) ) { 
+AVExpr * var10 = var7 -> var11 ; 
+var9 = func2 ( & var7 -> var11 , var3 , var12 , 
+var13 , var13 , var13 , var13 , number , var1 ) ; 
+if ( var9 < number ) { 
+func3 ( var1 , var14 , 
+str , var3 ) ; 
+var7 -> var11 = var10 ; 
+return var9 ; 
+} 
+func4 ( var10 ) ; 
+} else 
+var9 = func5 ( var15 ) ; 
+return var9 ; 
+} 

@@ -1,0 +1,7 @@
+static void func1 ( AVIOContext * var1 , int64_t var2 ) 
+{ 
+static const char var3 [ ] = str ; 
+const char * var4 ; 
+for ( var4 = var3 ; var2 >= number && var4 [ number ] ; var2 /= number , var4 ++ ) ; 
+avio_printf ( var1 , str PRId64 str , var2 , * var4 ) ; 
+} 

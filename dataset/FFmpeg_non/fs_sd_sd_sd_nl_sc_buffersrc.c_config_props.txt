@@ -1,0 +1,20 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+BufferSourceContext * var2 = var1 -> var3 -> var4 ; 
+switch ( var1 -> var5 ) { 
+case var6 : 
+var1 -> var7 = var2 -> var7 ; 
+var1 -> var8 = var2 -> var8 ; 
+var1 -> var9 = var2 -> var10 ; 
+break ; 
+case var11 : 
+if ( ! var2 -> var12 ) 
+var2 -> var12 = var1 -> var12 ; 
+break ; 
+var13 : 
+return func2 ( var14 ) ; 
+} 
+var1 -> var15 = var2 -> var15 ; 
+var1 -> var16 = var2 -> var16 ; 
+return number ; 
+} 

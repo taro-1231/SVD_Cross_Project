@@ -1,0 +1,46 @@
+static int func1 ( AVFilterContext * var1 , FILE * var2 ) 
+{ 
+LUT3DContext * var3 = var1 -> var4 ; 
+char var5 [ var6 ] ; 
+float var7 [ number ] = { number , number , number } ; 
+float var8 [ number ] = { number , number , number } ; 
+while ( fgets ( var5 , sizeof ( var5 ) , var2 ) ) { 
+if ( ! strncmp ( var5 , str , number ) ) { 
+int var9 , var10 , var11 ; 
+const int var12 = func2 ( var5 + number , var13 , number ) ; 
+if ( var12 < number || var12 > var14 ) { 
+func3 ( var1 , var15 , str ) ; 
+return func4 ( var16 ) ; 
+} 
+var3 -> var17 = var12 ; 
+for ( var11 = number ; var11 < var12 ; var11 ++ ) { 
+for ( var10 = number ; var10 < var12 ; var10 ++ ) { 
+for ( var9 = number ; var9 < var12 ; var9 ++ ) { 
+struct rgbvec * var18 = & var3 -> var19 [ var9 ] [ var10 ] [ var11 ] ; 
+do { 
+func5 ( number ) ; 
+if ( ! strncmp ( var5 , str , number ) ) { 
+float * var20 = var13 ; 
+if ( ! strncmp ( var5 + number , str , number ) ) var20 = var7 ; 
+else if ( ! strncmp ( var5 + number , str , number ) ) var20 = var8 ; 
+if ( ! var20 ) 
+return var21 ; 
+sscanf ( var5 + number , str , var20 , var20 + number , var20 + number ) ; 
+func3 ( var1 , var22 , str , 
+var7 [ number ] , var7 [ number ] , var7 [ number ] , var8 [ number ] , var8 [ number ] , var8 [ number ] ) ; 
+continue ; 
+} 
+} while ( func6 ( var5 ) ) ; 
+if ( sscanf ( var5 , str , & var18 -> var23 , & var18 -> var24 , & var18 -> var25 ) != number ) 
+return var21 ; 
+var18 -> var23 *= var8 [ number ] - var7 [ number ] ; 
+var18 -> var24 *= var8 [ number ] - var7 [ number ] ; 
+var18 -> var25 *= var8 [ number ] - var7 [ number ] ; 
+} 
+} 
+} 
+break ; 
+} 
+} 
+return number ; 
+} 

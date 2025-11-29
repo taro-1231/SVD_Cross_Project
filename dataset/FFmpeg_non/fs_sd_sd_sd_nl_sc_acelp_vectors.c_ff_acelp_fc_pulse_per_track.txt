@@ -1,0 +1,20 @@
+void func1 ( 
+int16_t * var1 , 
+const uint8_t * var2 , 
+const uint8_t * var3 , 
+int var4 , 
+int var5 , 
+int var6 , 
+int var7 ) 
+{ 
+int var8 = ( number << var7 ) - number ; 
+int var9 ; 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) 
+{ 
+var1 [ var9 + var2 [ var4 & var8 ] ] += 
+( var5 & number ) ? number : - number ; 
+var4 >>= var7 ; 
+var5 >>= number ; 
+} 
+var1 [ var3 [ var4 ] ] += ( var5 & number ) ? number : - number ; 
+} 

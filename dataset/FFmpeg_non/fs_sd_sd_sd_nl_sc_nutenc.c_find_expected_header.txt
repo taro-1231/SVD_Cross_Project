@@ -1,0 +1,54 @@
+static int func1 ( AVCodecContext * var1 , int var2 , int var3 , 
+uint8_t var4 [ 64 ] ) 
+{ 
+int var5 = var1 -> var5 ; 
+if ( var2 > number ) 
+return number ; 
+func2 ( var4 , number ) ; 
+if ( var1 -> var6 == var7 ) { 
+if ( var3 ) { 
+return number ; 
+} else { 
+var4 [ number ] = number ; 
+return number ; 
+} 
+} else if ( var1 -> var6 == var8 || 
+var1 -> var6 == var9 ) { 
+return number ; 
+} else if ( var1 -> var6 == var10 ) { 
+return number ; 
+} else if ( var1 -> var6 == var11 || 
+var1 -> var6 == var12 ) { 
+int var13 , var14 , var15 , var16 , var17 ; 
+int var18 = var1 -> var6 == var11 ? number : number ; 
+unsigned int var19 = number ; 
+var13 = var5 < ( number + number ) / number ; 
+var14 = var5 < ( number + number ) / number ; 
+var5 <<= var13 + var14 ; 
+if ( var5 < ( number + number ) / number ) var15 = number ; 
+else if ( var5 < ( number + number ) / number ) var15 = number ; 
+else var15 = number ; 
+var5 = var20 [ var15 ] >> ( var13 + var14 ) ; 
+for ( var16 = number ; var16 < number ; var16 ++ ) { 
+var17 = 
+var21 [ var13 ] [ var18 - number ] [ var16 >> number ] ; 
+var17 = ( var17 * number ) / ( var5 << var13 ) + 
+( var16 & number ) ; 
+if ( var17 == var2 ) 
+break ; 
+} 
+var19 |= ( ! var13 ) << number ; 
+var19 |= ( number - var18 ) << number ; 
+var19 |= number << number ; 
+func3 ( var4 , var19 ) ; 
+if ( var2 <= number ) 
+return number ; 
+if ( var16 == number ) 
+return - number ; 
+var19 |= ( var16 >> number ) << number ; 
+var19 |= var15 << number ; 
+var19 |= ( var16 & number ) << number ; 
+return number ; 
+} 
+return number ; 
+} 

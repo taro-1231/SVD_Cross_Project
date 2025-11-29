@@ -1,0 +1,27 @@
+void func1 ( const VIDEO_STREAM_CONFIG_CAPS * var1 ) 
+{ 
+func2 ( str ) ; 
+func2 ( str ) ; 
+func3 ( & var1 -> var2 ) ; 
+func2 ( str ) ; 
+func2 ( str , var1 -> var3 ) ; 
+func2 ( str , var1 -> var4 . var5 , var1 -> var4 . var6 ) ; 
+func2 ( str , var1 -> var7 . var5 , var1 -> var7 . var6 ) ; 
+func2 ( str , var1 -> var8 . var5 , var1 -> var8 . var6 ) ; 
+func2 ( str , var1 -> var9 ) ; 
+func2 ( str , var1 -> var10 ) ; 
+func2 ( str , var1 -> var11 ) ; 
+func2 ( str , var1 -> var12 ) ; 
+func2 ( str , var1 -> var13 . var5 , var1 -> var13 . var6 ) ; 
+func2 ( str , var1 -> var14 . var5 , var1 -> var14 . var6 ) ; 
+func2 ( str , var1 -> var15 ) ; 
+func2 ( str , var1 -> var16 ) ; 
+func2 ( str , var1 -> var17 ) ; 
+func2 ( str , var1 -> var18 ) ; 
+func2 ( str , var1 -> var19 ) ; 
+func2 ( str , var1 -> var20 ) ; 
+func2 ( str PRId64 str , var1 -> MinFrameInterval ) ; 
+func2 ( str PRId64 str , var1 -> MaxFrameInterval ) ; 
+func2 ( str , var1 -> var21 ) ; 
+func2 ( str , var1 -> var22 ) ; 
+} 

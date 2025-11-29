@@ -1,0 +1,21 @@
+static void func1 ( int16_t * var1 , int16_t * var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+int var4 = var2 [ number * number ] + var2 [ number * number ] ; 
+int var5 = var2 [ number * number ] + var2 [ number * number ] ; 
+int var6 = var2 [ number * number ] + var2 [ number * number ] ; 
+int var7 = var2 [ number * number ] ; 
+int var8 = var7 + var7 ; 
+var7 = var8 - var4 ; 
+var4 = var8 + var4 ; 
+var8 = var6 + var5 ; 
+var6 = var6 - var5 ; 
+var1 [ number * number ] = var4 + var8 ; 
+var1 [ number * number ] = var4 - var8 ; 
+var1 [ number * number ] = number * var7 + var6 ; 
+var1 [ number * number ] = var7 - number * var6 ; 
+var2 ++ ; 
+var1 ++ ; 
+} 
+} 

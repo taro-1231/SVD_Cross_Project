@@ -1,0 +1,34 @@
+static int func1 ( int * var1 , 
+AVFormatContext * var2 , enum AVMediaType var3 ) 
+{ 
+int var4 , var5 ; 
+AVStream * var6 ; 
+AVCodecContext * var7 = var8 ; 
+AVCodec * var9 = var8 ; 
+AVDictionary * var10 = var8 ; 
+var4 = func2 ( var2 , var3 , - number , - number , var8 , number ) ; 
+if ( var4 < number ) { 
+fprintf ( var11 , str , 
+func3 ( var3 ) , var12 ) ; 
+return var4 ; 
+} else { 
+var5 = var4 ; 
+var6 = var2 -> var13 [ var5 ] ; 
+var7 = var6 -> var14 ; 
+var9 = func4 ( var7 -> var15 ) ; 
+if ( ! var9 ) { 
+fprintf ( var11 , str , 
+func3 ( var3 ) ) ; 
+return func5 ( var16 ) ; 
+} 
+if ( var17 == var18 ) 
+func6 ( & var10 , str , str , number ) ; 
+if ( ( var4 = func7 ( var7 , var9 , & var10 ) ) < number ) { 
+fprintf ( var11 , str , 
+func3 ( var3 ) ) ; 
+return var4 ; 
+} 
+* var1 = var5 ; 
+} 
+return number ; 
+} 

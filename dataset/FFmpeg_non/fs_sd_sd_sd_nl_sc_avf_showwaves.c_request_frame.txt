@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ShowWavesContext * var2 = var1 -> var3 -> var4 ; 
+AVFilterLink * var5 = var1 -> var3 -> var6 [ number ] ; 
+int var7 ; 
+var2 -> var8 = number ; 
+do { 
+var7 = func2 ( var5 ) ; 
+} while ( ! var2 -> var8 && var7 >= number ) ; 
+if ( var7 == var9 && var2 -> var10 ) { 
+if ( var2 -> var11 ) 
+func3 ( var1 ) ; 
+else 
+func4 ( var1 ) ; 
+} 
+return var7 ; 
+} 

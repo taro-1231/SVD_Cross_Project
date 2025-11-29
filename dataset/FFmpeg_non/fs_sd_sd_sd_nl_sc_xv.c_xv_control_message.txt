@@ -1,0 +1,10 @@
+static int func1 ( AVFormatContext * var1 , int var2 , void * var3 , size_t var4 ) 
+{ 
+switch ( var2 ) { 
+case var5 : 
+return func2 ( var1 ) ; 
+var6 : 
+break ; 
+} 
+return func3 ( var7 ) ; 
+} 

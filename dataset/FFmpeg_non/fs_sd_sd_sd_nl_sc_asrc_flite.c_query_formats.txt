@@ -1,0 +1,15 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+FliteContext * var2 = var1 -> var3 ; 
+AVFilterChannelLayouts * var4 = var5 ; 
+int64_t var6 = func2 ( var2 -> var7 -> var8 ) ; 
+AVFilterFormats * var9 = var5 ; 
+AVFilterFormats * var10 = var5 ; 
+func3 ( & var4 , var6 ) ; 
+func4 ( var1 , var4 ) ; 
+func5 ( & var9 , var11 ) ; 
+func6 ( var1 , var9 ) ; 
+func5 ( & var10 , var2 -> var7 -> var12 ) ; 
+func7 ( var1 , var10 ) ; 
+return number ; 
+} 

@@ -1,0 +1,14 @@
+static int func1 ( AVFormatContext * var1 , int64_t var2 ) 
+{ 
+MpegMuxContext * var3 = var1 -> var4 ; 
+int var5 = number ; 
+if ( var3 -> var6 > number && var2 != var7 ) { 
+int64_t var8 ; 
+var8 = 
+av_rescale ( var3 -> var6 , var2 , 90000LL * 8 * VCD_PADDING_BITRATE_DEN ) ; 
+var5 = ( int ) ( var8 - var3 -> var9 ) ; 
+if ( var5 < number ) 
+var5 = number ; 
+} 
+return var5 ; 
+} 

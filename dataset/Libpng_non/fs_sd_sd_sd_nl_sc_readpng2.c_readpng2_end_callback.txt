@@ -1,0 +1,7 @@
+static void func1 ( png_structp var1 , png_infop var2 ) 
+{ 
+mainprog_info * func2 ; 
+func2 = func3 ( var1 ) ; 
+( * func2 -> func4 ) ( ) ; 
+return ; 
+} 

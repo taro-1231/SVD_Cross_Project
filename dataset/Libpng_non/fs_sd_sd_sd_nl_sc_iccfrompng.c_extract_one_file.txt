@@ -1,0 +1,58 @@
+func1 ( const char * var1 ) 
+{ 
+int var2 = number ; 
+FILE * var3 = fopen ( var1 , str ) ; 
+if ( var3 != var4 ) 
+{ 
+png_uint_32 var5 = number ; 
+png_bytep var6 = func2 ( var3 , & var5 ) ; 
+if ( var6 != var4 && var6 != var7 ) 
+{ 
+size_t var8 ; 
+char * var9 ; 
+{ 
+const char * var10 = strrchr ( var1 , str ) ; 
+if ( var10 != var4 ) 
+var8 = var10 - var1 ; 
+else 
+var8 = strlen ( var1 ) ; 
+} 
+var9 = malloc ( var8 + number ) ; 
+if ( var9 != var4 ) 
+{ 
+FILE * var11 ; 
+memcpy ( var9 , var1 , var8 ) ; 
+strcpy ( var9 + var8 , str ) ; 
+var11 = fopen ( var9 , str ) ; 
+if ( var11 != var4 ) 
+{ 
+if ( fwrite ( var6 , var5 , number , var11 ) == number && 
+fflush ( var11 ) == number && 
+fclose ( var11 ) == number ) 
+{ 
+if ( var12 ) 
+printf ( str , var1 , var9 ) ; 
+var2 = number ; 
+} 
+else 
+{ 
+fprintf ( var13 , str , var9 ) ; 
+if ( remove ( var9 ) ) 
+fprintf ( var13 , str , var9 ) ; 
+} 
+} 
+else 
+fprintf ( var13 , str , var9 ) ; 
+free ( var9 ) ; 
+} 
+else 
+fprintf ( var13 , str , var1 ) ; 
+free ( var6 ) ; 
+} 
+else if ( var12 && var6 == var7 ) 
+printf ( str , var1 ) ; 
+} 
+else 
+fprintf ( var13 , str , var1 ) ; 
+return var2 ; 
+} 

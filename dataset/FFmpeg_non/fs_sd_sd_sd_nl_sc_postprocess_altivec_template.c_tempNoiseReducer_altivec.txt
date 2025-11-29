@@ -1,0 +1,133 @@
+static inline void func1 ( uint8_t * var1 , int var2 , 
+uint8_t * var3 , uint32_t * var4 , int * var5 ) 
+{ 
+const vector signed char var6 = func2 ( - number ) ; 
+const vector unsigned char permHH = ( const vector unsigned char ) { 0x00 , 0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 
+0x18 , 0x19 , 0x1A , 0x1B , 0x1C , 0x1D , 0x1E , 0x1F } ; 
+const vector signed int var7 = func3 ( number ) ; 
+const vector signed short var8 = func4 ( number ) ; 
+vector signed int var9 = var7 ; 
+vector signed int var10 = var7 ; 
+int var11 , var12 , var13 ; 
+( vector signed short ) vec_mergeh ( ( vector signed char ) var7 , \ 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var1 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+func5 ( var3 , number ) ; 
+var9 = func8 ( var14 , var14 , var9 ) ; \ 
+var10 = func8 ( var14 , var8 , var10 ) ; \ 
+} while ( number ) 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+func7 ( number ) ; 
+var4 [ number ] = var5 [ number ] ; 
+var4 [ number ] = var5 [ number ] ; 
+var4 [ number ] = var5 [ number ] ; 
+var9 = func9 ( var9 , var7 ) ; 
+var10 = func9 ( var10 , var7 ) ; 
+var9 = func10 ( var9 , number ) ; 
+var10 = func10 ( var10 , number ) ; 
+func11 ( var9 , number , & var11 ) ; 
+func11 ( var10 , number , & var12 ) ; 
+var13 = var11 ; 
+var11 = ( number * var11 
++ ( * ( var4 - number ) ) 
++ ( * ( var4 - number ) ) + ( * ( var4 + number ) ) 
++ ( * ( var4 + number ) ) 
++ number ) >> number ; 
+* var4 = var13 ; 
+if ( var11 > var5 [ number ] ) { 
+if ( var11 < var5 [ number ] ) { 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+} else { 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+} 
+} else { 
+if ( var11 < var5 [ number ] ) { 
+const vector signed short var15 = func4 ( number ) ; 
+const vector signed short var16 = func4 ( number ) ; 
+const vector unsigned short var17 = func13 ( number ) ; 
+const vector signed short var18 = \ 
+const vector signed short var19 = func14 ( var18 , var16 ) ; \ 
+} while ( number ) 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+} else { 
+const vector signed short var20 = func4 ( number ) ; 
+const vector signed short var21 = func4 ( number ) ; 
+const vector signed short var18 = \ 
+const vector signed short var19 = func14 ( var18 , var21 ) ; \ 
+func15 ( var19 , ( vector unsigned short ) var21 ) ; \ 
+} while ( number ) 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+func12 ( number ) ; 
+} 
+} 
+const vector unsigned char var22 = func17 ( var13 * var2 , var1 ) ; \ 
+const vector unsigned char vf = \ 
+const vector unsigned char mask = \ 
+func6 ( ( vector unsigned char ) var7 , ( vector unsigned char ) var6 , var22 ) ; \ 
+const vector unsigned char var24 = func6 ( var23 , var23 , var22 ) ; \ 
+func18 ( var25 , var13 * var2 , var1 ) ; \ 
+func18 ( var26 , var13 * var2 + number , var1 ) ; \ 
+} while ( number ) 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var1 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+func16 ( var3 , number ) ; 
+} 

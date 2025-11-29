@@ -1,0 +1,13 @@
+static void func1 ( FrameList * var1 ) 
+{ 
+if ( var1 ) { 
+while ( var1 -> var2 ) { 
+FrameInfo * var3 = var1 -> var2 ; 
+var1 -> var2 = var3 -> var4 ; 
+func2 ( var3 ) ; 
+} 
+var1 -> var5 = number ; 
+var1 -> var6 = number ; 
+var1 -> var7 = var8 ; 
+} 
+} 

@@ -1,0 +1,119 @@
+static void func1 ( AC3EncodeContext * var1 ) 
+{ 
+AC3EncOptions * var2 = & var1 -> var3 ; 
+int var4 , var5 ; 
+int var6 = number ; 
+if ( var1 -> var7 ) { 
+if ( var2 -> var8 ) { 
+if ( var1 -> var9 > var10 ) 
+var6 += number ; 
+if ( var1 -> var11 ) 
+var6 += number ; 
+if ( var1 -> var12 ) 
+var6 += number ; 
+var6 += var1 -> var13 ; 
+var6 += number + number + number ; 
+if ( var1 -> var9 < var10 ) 
+var6 ++ ; 
+var6 ++ ; 
+} 
+if ( var2 -> var14 ) { 
+var6 += number + number + number ; 
+if ( var1 -> var9 == var10 ) 
+var6 += number + number ; 
+if ( var1 -> var9 >= var15 ) 
+var6 += number ; 
+var6 ++ ; 
+if ( var2 -> var16 ) 
+var6 += number + number + number ; 
+var6 ++ ; 
+} 
+if ( var1 -> var9 > var17 ) { 
+var6 ++ ; 
+for ( var4 = number ; var4 < var1 -> var18 ; var4 ++ ) { 
+AC3Block * var19 = & var1 -> var20 [ var4 ] ; 
+var6 ++ ; 
+if ( var19 -> var21 ) 
+var6 ++ ; 
+} 
+} 
+if ( var1 -> var22 ) { 
+if ( var1 -> var23 ) { 
+var6 += number * var1 -> var22 ; 
+} else { 
+for ( var4 = number ; var4 < var1 -> var18 ; var4 ++ ) 
+var6 += number * var1 -> var20 [ var4 ] . var24 ; 
+} 
+} 
+} else { 
+if ( var2 -> var16 ) 
+var6 += number ; 
+if ( var1 -> var25 == number ) { 
+if ( var2 -> var26 ) 
+var6 += number ; 
+if ( var2 -> var27 ) 
+var6 += number ; 
+} 
+} 
+for ( var4 = number ; var4 < var1 -> var18 ; var4 ++ ) { 
+AC3Block * var19 = & var1 -> var20 [ var4 ] ; 
+if ( ! var1 -> var7 ) 
+var6 ++ ; 
+if ( var19 -> var21 ) { 
+if ( ! var1 -> var7 ) 
+var6 ++ ; 
+if ( var19 -> var24 ) { 
+if ( var1 -> var7 ) 
+var6 ++ ; 
+if ( ! var1 -> var7 || var1 -> var9 != var10 ) 
+var6 += var1 -> var28 ; 
+if ( var1 -> var9 == var10 ) 
+var6 ++ ; 
+var6 += number + number ; 
+if ( var1 -> var7 ) 
+var6 ++ ; 
+else 
+var6 += var1 -> var29 - number ; 
+} 
+} 
+if ( var19 -> var24 ) { 
+for ( var5 = number ; var5 <= var1 -> var28 ; var5 ++ ) { 
+if ( var19 -> var30 [ var5 ] ) { 
+if ( ! var1 -> var7 || var19 -> var31 [ var5 ] != number ) 
+var6 ++ ; 
+if ( var19 -> var31 [ var5 ] ) { 
+var6 += number ; 
+var6 += ( number + number ) * var1 -> var32 ; 
+} 
+} 
+} 
+} 
+if ( var1 -> var9 == var10 ) { 
+if ( ! var1 -> var7 || var4 > number ) 
+var6 ++ ; 
+if ( var1 -> var20 [ var4 ] . var33 ) 
+var6 += var19 -> var34 ; 
+} 
+for ( var5 = number ; var5 <= var1 -> var28 ; var5 ++ ) { 
+if ( var1 -> var35 [ var5 ] [ var4 ] != var36 ) { 
+if ( ! var19 -> var30 [ var5 ] ) 
+var6 += number ; 
+var6 += number ; 
+} 
+} 
+if ( ! var1 -> var7 && var19 -> var24 ) 
+var6 += number ; 
+if ( ! var1 -> var7 ) { 
+var6 ++ ; 
+if ( var19 -> var37 ) 
+var6 += number + ( var1 -> var38 + var19 -> var24 ) * ( number + number ) ; 
+} 
+if ( var19 -> var24 ) { 
+if ( ! var1 -> var7 || var19 -> var39 != number ) 
+var6 ++ ; 
+if ( var19 -> var39 ) 
+var6 += number + number ; 
+} 
+} 
+var1 -> var6 = var1 -> var40 + var6 ; 
+} 

@@ -1,0 +1,64 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , const char * var3 , int var4 , int var5 ) 
+{ 
+int var6 ; 
+char * var7 ; 
+if ( ! strcmp ( var3 , str ) ) { 
+func2 ( var2 , var5 ) ; 
+return ; 
+} 
+var6 = func3 ( number * var5 , var8 ) + number ; 
+var7 = func4 ( var6 ) ; 
+if ( ! var7 ) 
+return ; 
+if ( var4 == number && var5 == number ) { 
+snprintf ( var7 , var6 , str , func5 ( var2 ) ) ; 
+} else if ( var4 == number ) { 
+func6 ( var2 , var5 , var7 , var6 ) ; 
+if ( ! strlen ( var7 ) ) { 
+func7 ( var7 ) ; 
+return ; 
+} 
+} else if ( var4 == number && var5 == number ) { 
+strcpy ( var7 , func5 ( var2 ) ? str : str ) ; 
+} else if ( var4 == number && var5 == number ) { 
+int64_t var9 = func8 ( var2 ) ; 
+if ( ! strcmp ( var3 , str ) || 
+! strcmp ( var3 , str ) ) { 
+if ( func9 ( var7 , var6 , var9 ) < number ) { 
+func7 ( var7 ) ; 
+return ; 
+} 
+} else if ( ! strcmp ( var3 , str ) || 
+! strcmp ( var3 , str ) ) { 
+if ( func10 ( var7 , var6 , var9 ) < number ) { 
+func7 ( var7 ) ; 
+return ; 
+} 
+} else if ( ! strcmp ( var3 , str ) ) { 
+if ( func11 ( var7 , var6 , var9 ) < number ) { 
+func7 ( var7 ) ; 
+return ; 
+} 
+} else if ( ! strcmp ( var3 , str ) ) 
+snprintf ( var7 , var6 , str , func12 ( var9 ) ) ; 
+else 
+snprintf ( var7 , var6 , str PRIi64 , var9 ) ; 
+} else if ( var4 == number && var5 == number ) { 
+snprintf ( var7 , var6 , str , func13 ( var2 ) ) ; 
+} else if ( var4 == number && var5 == number ) { 
+ff_asf_guid var10 ; 
+func14 ( var2 , var10 , number ) ; 
+snprintf ( var7 , var6 , var11 , func15 ( var10 ) ) ; 
+} else if ( var4 == number && ! strcmp ( var3 , str ) ) { 
+func16 ( var1 , var2 , var5 ) ; 
+func17 ( & var7 ) ; 
+return ; 
+} else { 
+func17 ( & var7 ) ; 
+func18 ( var1 , var12 , str , var3 , var4 , var5 ) ; 
+func2 ( var2 , var5 ) ; 
+return ; 
+} 
+func19 ( & var1 -> var13 , var3 , var7 , number ) ; 
+func17 ( & var7 ) ; 
+} 

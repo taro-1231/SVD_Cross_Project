@@ -1,0 +1,117 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , AVPacket * var3 , int var4 , int64_t var5 ) 
+{ 
+int var6 = func2 ( var2 ) ; 
+int var7 = number ; 
+int var8 = number ; 
+int var9 = number ; 
+int64_t var10 = number ; 
+int var11 = number ; 
+int var12 = number ; 
+int var13 = number ; 
+int var14 , var15 ; 
+for ( var14 = number ; var14 < var6 ; var14 ++ ) { 
+uint8_t var16 [ number ] , var17 [ number ] , var18 [ number ] ; 
+int var19 ; 
+if ( func3 ( var2 ) >= var5 ) 
+return var20 ; 
+var15 = func4 ( var2 , var16 , sizeof ( var16 ) ) ; 
+if ( var15 < number ) { 
+func5 ( var1 , var21 , str ) ; 
+return var15 ; 
+} 
+var19 = func6 ( var2 ) ; 
+if ( var19 == - number ) { 
+var15 = func4 ( var2 , var17 , sizeof ( var17 ) ) ; 
+if ( var15 < number ) { 
+func5 ( var1 , var21 , str ) ; 
+return var15 ; 
+} 
+func5 ( var1 , var22 , str , var16 , var17 ) ; 
+} else if ( var19 == - number ) { 
+uint8_t * var23 = var24 ; 
+int64_t var25 , var26 ; 
+var15 = func4 ( var2 , var18 , sizeof ( var18 ) ) ; 
+if ( var15 < number ) { 
+func5 ( var1 , var21 , str ) ; 
+return var15 ; 
+} 
+var26 = func2 ( var2 ) ; 
+if ( func3 ( var2 ) + var26 >= var5 ) 
+return var20 ; 
+if ( ! strcmp ( var16 , str ) ) { 
+var23 = func7 ( var3 , var27 , var26 ) ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var23 = func7 ( var3 , var28 , var26 ) ; 
+} else if ( sscanf ( var16 , str SCNd64 str , & var25 ) == number ) { 
+var23 = func7 ( var3 , var29 , var26 + number ) ; 
+if ( ! var23 ) 
+return func8 ( var30 ) ; 
+func9 ( var23 , var25 ) ; 
+var23 += number ; 
+} else if ( ! strcmp ( var16 , str ) && var26 == number ) { 
+var10 = func10 ( var2 ) ; 
+continue ; 
+} else { 
+func5 ( var1 , var22 , str , var16 , var18 ) ; 
+func11 ( var2 , var26 ) ; 
+continue ; 
+} 
+if ( ! var23 ) 
+return func8 ( var30 ) ; 
+func12 ( var2 , var23 , var26 ) ; 
+} else if ( var19 == - number ) { 
+var19 = func6 ( var2 ) ; 
+} else if ( var19 == - number ) { 
+var19 = func2 ( var2 ) ; 
+} else if ( var19 < - number ) { 
+func6 ( var2 ) ; 
+} else { 
+if ( ! strcmp ( var16 , str ) ) { 
+var7 = var19 ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var8 = var19 ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var9 = var19 ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var11 = var19 ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var12 = var19 ; 
+} else if ( ! strcmp ( var16 , str ) ) { 
+var13 = var19 ; 
+} else { 
+func5 ( var1 , var22 , str , var16 ) ; 
+} 
+} 
+} 
+if ( var9 || var10 || var11 || var12 || var13 ) { 
+uint8_t * var23 = func7 ( var3 , var31 , number ) ; 
+if ( ! var23 ) 
+return func8 ( var30 ) ; 
+func13 ( & var23 , 
+var32 * ( ! ! var9 ) + 
+var33 * ( ! ! var10 ) + 
+var34 * ( ! ! var11 ) + 
+var35 * ( ! ! ( var12 | var13 ) ) 
+) ; 
+if ( var9 ) 
+func13 ( & var23 , var9 ) ; 
+if ( var10 ) 
+func14 ( & var23 , var10 ) ; 
+if ( var11 ) 
+func13 ( & var23 , var11 ) ; 
+if ( var12 || var13 ) { 
+func13 ( & var23 , var12 ) ; 
+func13 ( & var23 , var13 ) ; 
+} 
+} 
+if ( var7 || var8 ) { 
+uint8_t * var23 = func7 ( var3 , var36 , number ) ; 
+if ( ! var23 ) 
+return func8 ( var30 ) ; 
+func15 ( var23 , var7 ) ; 
+func15 ( var23 + number , var8 ) ; 
+} 
+if ( func3 ( var2 ) >= var5 ) 
+return var20 ; 
+return number ; 
+} 

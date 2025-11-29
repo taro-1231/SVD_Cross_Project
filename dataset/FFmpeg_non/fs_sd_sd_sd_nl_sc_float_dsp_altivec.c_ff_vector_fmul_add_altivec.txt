@@ -1,0 +1,20 @@
+void func1 ( float * var1 , const float * var2 , 
+const float * var3 , const float * var4 , 
+int var5 ) 
+{ 
+int var6 ; 
+vec_f var7 , var8 , var9 , var10 , var11 , var12 , var13 ; 
+for ( var6 = number ; var6 < var5 - number ; var6 += number ) { 
+var11 = func2 ( number , var1 + var6 ) ; 
+var12 = func2 ( number , var1 + var6 ) ; 
+var8 = func2 ( number , var2 + var6 ) ; 
+var9 = func2 ( number , var3 + var6 ) ; 
+var10 = func2 ( number , var4 + var6 ) ; 
+var13 = func3 ( var12 , var11 , func4 ( number , number , number , number ) ) ; 
+var7 = func5 ( var8 , var9 , var10 ) ; 
+var12 = func3 ( var7 , var13 , func4 ( var14 , var15 , var16 , var17 ) ) ; 
+var11 = func3 ( var13 , var7 , func4 ( var14 , var15 , var16 , var17 ) ) ; 
+func6 ( var12 , number , var1 + var6 ) ; 
+func6 ( var11 , number , var1 + var6 ) ; 
+} 
+} 

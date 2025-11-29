@@ -1,0 +1,45 @@
+static int func1 ( InputFile * var1 , AVFormatContext * var2 ) 
+{ 
+InputStream * var3 ; 
+AVCodecContext * var4 ; 
+int var5 , var6 , var7 = number ; 
+int64_t var8 = number ; 
+var6 = func2 ( var2 , - number , var2 -> var9 , number ) ; 
+if ( var6 < number ) 
+return var6 ; 
+for ( var5 = number ; var5 < var1 -> var10 ; var5 ++ ) { 
+var3 = var11 [ var1 -> var12 + var5 ] ; 
+var4 = var3 -> var13 ; 
+if ( var3 -> var14 ) { 
+func3 ( var3 , var15 , number ) ; 
+func4 ( var4 ) ; 
+} 
+if ( var4 -> var16 == var17 && var3 -> var18 ) 
+var7 = number ; 
+} 
+for ( var5 = number ; var5 < var1 -> var10 ; var5 ++ ) { 
+var3 = var11 [ var1 -> var12 + var5 ] ; 
+var4 = var3 -> var13 ; 
+if ( var7 ) { 
+if ( var4 -> var16 == var17 && var3 -> var18 ) { 
+AVRational var19 = { number , var4 -> var19 } ; 
+var8 = func5 ( var3 -> var18 , var19 , var3 -> var20 -> var21 ) ; 
+} else 
+continue ; 
+} else { 
+if ( var3 -> var22 . var23 ) { 
+var8 = func5 ( number , var3 -> var22 , var3 -> var20 -> var21 ) ; 
+} else if ( var3 -> var20 -> var24 . var23 ) { 
+var8 = func5 ( number , var3 -> var20 -> var24 , var3 -> var20 -> var21 ) ; 
+} else var8 = number ; 
+} 
+if ( ! var1 -> var8 ) 
+var1 -> var21 = var3 -> var20 -> var21 ; 
+var8 += var3 -> var25 - var3 -> var26 ; 
+var1 -> var21 = func6 ( var8 , & var1 -> var8 , var3 -> var20 -> var21 , 
+var1 -> var21 ) ; 
+} 
+if ( var1 -> var27 > number ) 
+var1 -> var27 -- ; 
+return var6 ; 
+} 

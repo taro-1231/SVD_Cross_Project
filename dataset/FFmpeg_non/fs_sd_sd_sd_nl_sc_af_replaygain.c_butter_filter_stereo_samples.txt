@@ -1,0 +1,35 @@
+static void func1 ( ReplayGainContext * var1 , 
+float * var2 , int var3 ) 
+{ 
+const double * var4 = var1 -> var5 ; 
+const double * var6 = var1 -> var7 ; 
+float * var8 = var1 -> var9 ; 
+float * var10 = var1 -> var11 ; 
+double var12 , var13 ; 
+int var14 , var15 ; 
+var14 = var1 -> var16 ; 
+for ( var15 = - number ; var15 < number ; ++ var15 ) 
+if ( fabs ( var8 [ var14 + var15 ] ) > number || fabs ( var10 [ var14 + var15 ] ) > number ) 
+break ; 
+if ( ! var15 ) { 
+memset ( var1 -> var9 , number , sizeof ( var1 -> var9 ) ) ; 
+memset ( var1 -> var11 , number , sizeof ( var1 -> var11 ) ) ; 
+} 
+while ( var3 -- ) { 
+var12 = ( var10 [ var14 ] = var2 [ number ] ) * var6 [ number ] ; 
+var13 = ( var10 [ var14 + number ] = var2 [ number ] ) * var6 [ number ] ; 
+var12 += var10 [ var14 - number ] * var6 [ number ] - var8 [ var14 - number ] * var4 [ number ] ; 
+var13 += var10 [ var14 - number ] * var6 [ number ] - var8 [ var14 - number ] * var4 [ number ] ; 
+var12 += var10 [ var14 - number ] * var6 [ number ] - var8 [ var14 - number ] * var4 [ number ] ; 
+var13 += var10 [ var14 - number ] * var6 [ number ] - var8 [ var14 - number ] * var4 [ number ] ; 
+var2 [ number ] = var8 [ var14 ] = ( float ) var12 ; 
+var2 [ number ] = var8 [ var14 + number ] = ( float ) var13 ; 
+var2 += number ; 
+if ( ( var14 += number ) == number ) { 
+memcpy ( var8 , var8 + number , sizeof ( * var8 ) * number ) ; 
+memcpy ( var10 , var10 + number , sizeof ( * var10 ) * number ) ; 
+var14 = number ; 
+} 
+} 
+var1 -> var16 = var14 ; 
+} 

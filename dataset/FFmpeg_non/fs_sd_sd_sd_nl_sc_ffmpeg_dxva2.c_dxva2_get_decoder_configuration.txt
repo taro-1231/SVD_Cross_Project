@@ -1,0 +1,41 @@
+static int func1 ( AVCodecContext * var1 , const GUID * var2 , 
+const DXVA2_VideoDesc * var3 , 
+DXVA2_ConfigPictureDecode * var4 ) 
+{ 
+InputStream * var5 = var1 -> var6 ; 
+int var7 = ( var5 -> var8 == var9 ) ? var10 : var11 ; 
+DXVA2Context * var12 = var5 -> var13 ; 
+unsigned var14 = number , var15 = number ; 
+DXVA2_ConfigPictureDecode * var16 = var17 ; 
+DXVA2_ConfigPictureDecode var18 = { { number } } ; 
+HRESULT var19 ; 
+int var20 ; 
+var19 = func2 ( var12 -> var21 , var2 , var3 , var17 , & var14 , & var16 ) ; 
+if ( func3 ( var19 ) ) { 
+func4 ( var17 , var7 , str ) ; 
+return func5 ( var22 ) ; 
+} 
+for ( var20 = number ; var20 < var14 ; var20 ++ ) { 
+DXVA2_ConfigPictureDecode * var23 = & var16 [ var20 ] ; 
+unsigned var24 ; 
+if ( var23 -> var25 == number ) 
+var24 = number ; 
+else if ( var1 -> var26 == var27 && var23 -> var25 == number ) 
+var24 = number ; 
+else 
+continue ; 
+if ( func6 ( & var23 -> var28 , & var29 ) ) 
+var24 += number ; 
+if ( var24 > var15 ) { 
+var15 = var24 ; 
+var18 = * var23 ; 
+} 
+} 
+func7 ( var16 ) ; 
+if ( ! var15 ) { 
+func4 ( var17 , var7 , str ) ; 
+return func5 ( var22 ) ; 
+} 
+* var4 = var18 ; 
+return number ; 
+} 

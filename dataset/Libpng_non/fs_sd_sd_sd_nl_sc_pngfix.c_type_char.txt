@@ -1,0 +1,7 @@
+func1 ( png_uint_32 var1 ) 
+{ 
+if ( var1 & number ) 
+return str [ ( var1 - number ) & number ] ; 
+else 
+return str [ ( var1 - number ) & number ] ; 
+} 

@@ -1,0 +1,65 @@
+static inline void RENAME ( func1 ) ( uint8_t * var1 , int var2 , const uint8_t * var3 ) 
+{ 
+__asm__ ( 
+str REG_a str 
+str REG_a str REG_d str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+str REG_d str 
+str REG_d str 
+str 
+str REG_d str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+str REG_d str 
+str REG_d str 
+str 
+str REG_d str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 ) 
+: str REG_a , str REG_d 
+) ; 
+} 

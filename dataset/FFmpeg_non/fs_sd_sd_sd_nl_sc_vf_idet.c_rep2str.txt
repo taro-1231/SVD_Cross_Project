@@ -1,0 +1,9 @@
+static const char * func1 ( RepeatedField var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : return str ; 
+case var3 : return str ; 
+case var4 : return str ; 
+} 
+return var5 ; 
+} 

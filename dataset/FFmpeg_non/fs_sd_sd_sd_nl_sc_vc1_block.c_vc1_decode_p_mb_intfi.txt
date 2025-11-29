@@ -1,0 +1,112 @@
+static int func1 ( VC1Context * var1 ) 
+{ 
+MpegEncContext * var2 = & var1 -> var2 ; 
+GetBitContext * var3 = & var2 -> var3 ; 
+int var4 ; 
+int var5 = var2 -> var6 + var2 -> var7 * var2 -> var8 ; 
+int var9 = number ; 
+int var10 , var11 ; 
+int var12 = var1 -> var13 ; 
+int var14 = number ; 
+int var15 , var16 ; 
+int var17 ; 
+int var18 = number ; 
+int var19 , var20 ; 
+int var21 = number ; 
+int var22 = number , var23 , var24 = number ; 
+int var25 = number ; 
+var11 = var1 -> var26 ; 
+var25 = func2 ( var3 , var1 -> var27 -> var28 , var29 , number ) ; 
+if ( var25 <= number ) { 
+var1 -> var30 [ var2 -> var6 ] = number ; 
+var2 -> var31 = number ; 
+var2 -> var32 . var33 [ number ] [ var2 -> var34 [ number ] + var1 -> var35 ] [ number ] = number ; 
+var2 -> var32 . var33 [ number ] [ var2 -> var34 [ number ] + var1 -> var35 ] [ number ] = number ; 
+var2 -> var32 . var36 [ var5 + var1 -> var37 ] = var38 ; 
+func3 ( ) ; 
+var2 -> var32 . var39 [ var5 ] = var11 ; 
+var2 -> var40 = var2 -> var41 [ var11 ] ; 
+var2 -> var42 = var2 -> var43 [ var11 ] ; 
+var1 -> var2 . var44 = var1 -> var45 [ var5 ] = func4 ( var3 ) ; 
+var14 = var25 & number ; 
+if ( var14 ) 
+var9 = number + func2 ( & var1 -> var2 . var3 , var1 -> var46 -> var28 , var47 , number ) ; 
+var19 = number ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var1 -> var48 = var1 -> var49 = number ; 
+var1 -> var36 [ number ] [ var2 -> var34 [ var4 ] ] = number ; 
+var2 -> var50 [ number ] [ var2 -> var34 [ var4 ] ] = number ; 
+var19 += var4 >> number ; 
+var17 = ( ( var9 >> ( number - var4 ) ) & number ) ; 
+if ( var4 == number || var4 == number || ! var2 -> var51 ) 
+var1 -> var48 = var1 -> var36 [ number ] [ var2 -> var34 [ var4 ] - var2 -> var52 [ var4 ] ] ; 
+if ( var4 == number || var4 == number || var2 -> var6 ) 
+var1 -> var49 = var1 -> var36 [ number ] [ var2 -> var34 [ var4 ] - number ] ; 
+func5 ( var1 , var2 -> var53 [ var4 ] , var4 , var17 , var11 , 
+( var4 & number ) ? var1 -> var54 : var1 -> var55 ) ; 
+if ( var56 && ( var4 > number ) && ( var2 -> var57 -> var58 & var59 ) ) 
+continue ; 
+var1 -> var60 . func6 ( var2 -> var53 [ var4 ] ) ; 
+var20 = ( var4 & number ) ? number : ( ( var4 & number ) * number + ( var4 & number ) * number * var2 -> var61 ) ; 
+var2 -> var62 . func7 ( var2 -> var53 [ var4 ] , 
+var2 -> var63 [ var19 ] + var20 , 
+( var4 & number ) ? var2 -> var64 
+: var2 -> var61 ) ; 
+} 
+} else { 
+var2 -> var31 = var1 -> var30 [ var2 -> var6 ] = number ; 
+var2 -> var32 . var36 [ var5 + var1 -> var37 ] = var65 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var1 -> var36 [ number ] [ var2 -> var34 [ var4 ] ] = number ; 
+if ( var25 <= number ) { 
+var15 = var16 = var21 = number ; 
+if ( var25 & number ) { 
+func8 ( var1 , & var15 , & var16 , & var21 ) ; 
+} 
+func9 ( var1 , number , var15 , var16 , number , var1 -> var66 , var1 -> var67 , var1 -> var36 [ number ] , var21 , number ) ; 
+func10 ( var1 , number ) ; 
+var14 = ! ( var25 & number ) ; 
+} else { 
+var1 -> var68 = func2 ( var3 , var1 -> var69 -> var28 , var70 , number ) ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var15 = var16 = var21 = number ; 
+if ( var1 -> var68 & ( number >> var4 ) ) 
+func8 ( var1 , & var15 , & var16 , & var21 ) ; 
+func9 ( var1 , var4 , var15 , var16 , number , var1 -> var66 , var1 -> var67 , var1 -> var36 [ number ] , var21 , number ) ; 
+func11 ( var1 , var4 , number , number ) ; 
+} 
+func12 ( var1 , number ) ; 
+var14 = var25 & number ; 
+} 
+if ( var14 ) 
+var9 = number + func2 ( & var1 -> var2 . var3 , var1 -> var46 -> var28 , var71 , number ) ; 
+if ( var9 ) { 
+func3 ( ) ; 
+} 
+var2 -> var32 . var39 [ var5 ] = var11 ; 
+if ( ! var1 -> var72 && var9 ) { 
+var12 = func2 ( var3 , var73 [ var1 -> var74 ] . var28 , var75 , number ) ; 
+} 
+var19 = number ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var2 -> var50 [ number ] [ var2 -> var34 [ var4 ] ] = number ; 
+var19 += var4 >> number ; 
+var17 = ( ( var9 >> ( number - var4 ) ) & number ) ; 
+var20 = ( var4 & number ) ? number : ( var4 & number ) * number + ( var4 & number ) * number * var2 -> var61 ; 
+if ( var17 ) { 
+var23 = func13 ( var1 , var2 -> var53 [ var4 ] , var4 , var11 , var12 , 
+var18 , var2 -> var63 [ var19 ] + var20 , 
+( var4 & number ) ? var2 -> var64 : var2 -> var61 , 
+var56 && ( var4 & number ) && ( var2 -> var57 -> var58 & var59 ) , 
+& var24 ) ; 
+var22 |= var23 << ( var4 << number ) ; 
+if ( ! var1 -> var72 && var12 < number ) 
+var12 = - number ; 
+var18 = number ; 
+} 
+} 
+} 
+if ( var2 -> var6 == var2 -> var76 - number ) 
+memmove ( var1 -> var77 , var1 -> var30 , sizeof ( var1 -> var77 [ number ] ) * var2 -> var8 ) ; 
+return number ; 
+} 

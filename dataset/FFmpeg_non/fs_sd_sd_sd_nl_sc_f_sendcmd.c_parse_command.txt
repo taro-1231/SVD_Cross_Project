@@ -1,0 +1,70 @@
+static int func1 ( Command * var2 , int var3 , int var4 , 
+const char ** var5 , void * var6 ) 
+{ 
+int var7 ; 
+memset ( var2 , number , sizeof ( Command ) ) ; 
+var2 -> var8 = var3 ; 
+* var5 += strspn ( * var5 , var9 ) ; 
+if ( ** var5 == str ) { 
+( * var5 ) ++ ; 
+while ( ** var5 ) { 
+int var10 = strcspn ( * var5 , str ) ; 
+if ( ! strncmp ( * var5 , str , strlen ( str ) ) ) var2 -> var11 |= var12 ; 
+else if ( ! strncmp ( * var5 , str , strlen ( str ) ) ) var2 -> var11 |= var13 ; 
+else { 
+char var14 [ number ] ; 
+func2 ( var14 , * var5 , sizeof ( var14 ) ) ; 
+func3 ( var6 , var15 , 
+str , 
+var14 , var4 , var3 ) ; 
+return func4 ( var17 ) ; 
+} 
+* var5 += var10 ; 
+if ( ** var5 == str ) 
+break ; 
+if ( ! strspn ( * var5 , str ) ) { 
+func3 ( var6 , var15 , 
+str , 
+** var5 , var4 , var3 ) ; 
+return func4 ( var17 ) ; 
+} 
+if ( ** var5 ) 
+( * var5 ) ++ ; 
+} 
+if ( ** var5 != str ) { 
+func3 ( var6 , var15 , 
+str 
+str , var4 , var3 ) ; 
+return func4 ( var17 ) ; 
+} 
+( * var5 ) ++ ; 
+} else { 
+var2 -> var11 = var12 ; 
+} 
+* var5 += strspn ( * var5 , var9 ) ; 
+var2 -> var18 = func5 ( var5 , var1 ) ; 
+if ( ! var2 -> var18 || ! var2 -> var18 [ number ] ) { 
+func3 ( var6 , var15 , 
+str , 
+var4 , var3 ) ; 
+var7 = func4 ( var17 ) ; 
+goto var19 ; 
+} 
+* var5 += strspn ( * var5 , var9 ) ; 
+var2 -> var16 = func5 ( var5 , var1 ) ; 
+if ( ! var2 -> var16 || ! var2 -> var16 [ number ] ) { 
+func3 ( var6 , var15 , 
+str , 
+var4 , var3 ) ; 
+var7 = func4 ( var17 ) ; 
+goto var19 ; 
+} 
+* var5 += strspn ( * var5 , var9 ) ; 
+var2 -> var20 = func5 ( var5 , var1 ) ; 
+return number ; 
+var19 : 
+func6 ( & var2 -> var18 ) ; 
+func6 ( & var2 -> var16 ) ; 
+func6 ( & var2 -> var20 ) ; 
+return var7 ; 
+} 

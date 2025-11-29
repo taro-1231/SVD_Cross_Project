@@ -1,0 +1,6 @@
+void func1 ( const float * var1 , const float * var2 , float * var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+var3 [ var4 ] = var1 [ var4 ] - var2 [ var4 ] ; 
+} 

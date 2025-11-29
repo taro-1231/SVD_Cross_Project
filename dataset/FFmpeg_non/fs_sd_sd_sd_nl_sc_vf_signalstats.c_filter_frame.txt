@@ -1,0 +1,172 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+SignalstatsContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+AVFrame * var9 = var2 ; 
+int var10 , var11 ; 
+int var12 = number , var13 = number , 
+var14 = number , var15 = number ; 
+int var16 ; 
+char var17 [ number ] ; 
+unsigned int var18 [ var19 ] = { number } , 
+var20 [ var19 ] = { number } , 
+var21 [ var19 ] = { number } , 
+var22 [ number ] = { number } , 
+var23 [ var19 ] = { number } ; 
+int var24 = - number , var25 = - number , var26 = - number ; 
+int var27 = - number , var28 = - number , var29 = - number ; 
+int var30 = - number , var31 = - number , var32 = - number ; 
+int var33 = - number , var34 = - number , var35 = - number ; 
+int var36 = - number , var37 = - number , var38 = - number , var39 = - number ; 
+int var40 , var41 , var42 , var43 ; 
+int var44 , var45 , var46 ; 
+int var47 , var48 = number ; 
+int var49 , var50 ; 
+int var51 = number , var52 = number , var53 = number , var54 = number ; 
+int var55 = number ; 
+int var56 = number , var57 = number , var58 = number ; 
+int var59 [ var60 ] = { number } ; 
+AVFrame * var61 ; 
+AVFrame * var62 = var5 -> var63 ; 
+AVFrame * var64 = var5 -> var65 ; 
+const uint8_t * var66 = var62 -> var67 [ number ] ; 
+const uint8_t * var68 = var64 -> var67 [ number ] ; 
+const int var69 = var62 -> var70 [ number ] ; 
+const int var71 = var64 -> var70 [ number ] ; 
+ThreadDataHueSatMetrics var72 = { 
+. src = var2 , 
+. dst_sat = var62 , 
+. dst_hue = var64 , 
+} ; 
+if ( ! var5 -> var73 ) 
+var5 -> var73 = func2 ( var2 ) ; 
+var61 = var5 -> var73 ; 
+if ( var5 -> var74 != var75 ) { 
+var9 = func2 ( var2 ) ; 
+func3 ( var9 ) ; 
+} 
+var3 -> var76 -> func4 ( var3 , var77 , & var72 , 
+var78 , func5 ( var5 -> var79 , var3 -> var80 -> var81 ) ) ; 
+for ( var11 = number ; var11 < var1 -> var82 ; var11 ++ ) { 
+for ( var10 = number ; var10 < var1 -> var12 ; var10 ++ ) { 
+const int var83 = var2 -> var67 [ number ] [ var12 + var10 ] ; 
+var18 [ var83 ] ++ ; 
+var56 += abs ( var83 - var61 -> var67 [ number ] [ var14 + var10 ] ) ; 
+} 
+var12 += var2 -> var70 [ number ] ; 
+var14 += var61 -> var70 [ number ] ; 
+} 
+for ( var11 = number ; var11 < var5 -> var79 ; var11 ++ ) { 
+for ( var10 = number ; var10 < var5 -> var84 ; var10 ++ ) { 
+const int var85 = var2 -> var67 [ number ] [ var13 + var10 ] ; 
+const int var86 = var2 -> var67 [ number ] [ var13 + var10 ] ; 
+var20 [ var85 ] ++ ; 
+var57 += abs ( var85 - var61 -> var67 [ number ] [ var15 + var10 ] ) ; 
+var21 [ var86 ] ++ ; 
+var58 += abs ( var86 - var61 -> var67 [ number ] [ var15 + var10 ] ) ; 
+var23 [ var66 [ var10 ] ] ++ ; 
+var22 [ ( ( int16_t * ) var68 ) [ var10 ] ] ++ ; 
+} 
+var13 += var2 -> var70 [ number ] ; 
+var15 += var61 -> var70 [ number ] ; 
+var66 += var69 ; 
+var68 += var71 ; 
+} 
+for ( var16 = number ; var16 < var60 ; var16 ++ ) { 
+if ( var5 -> var87 & number << var16 ) { 
+ThreadData var88 = { 
+. var2 = var2 , 
+. var9 = var9 != var2 && var5 -> var74 == var16 ? var9 : var78 , 
+} ; 
+memset ( var5 -> var89 , number , var5 -> var90 * sizeof ( * var5 -> var89 ) ) ; 
+var3 -> var76 -> func4 ( var3 , var91 [ var16 ] . var92 , 
+& var88 , var5 -> var89 , var5 -> var90 ) ; 
+for ( var10 = number ; var10 < var5 -> var90 ; var10 ++ ) 
+var59 [ var16 ] += var5 -> var89 [ var10 ] ; 
+} 
+} 
+var40 = lrint ( var5 -> var93 * number / number ) ; 
+var41 = lrint ( var5 -> var93 * number / number ) ; 
+var42 = lrint ( var5 -> var94 * number / number ) ; 
+var43 = lrint ( var5 -> var94 * number / number ) ; 
+var44 = var45 = var46 = var47 = number ; 
+for ( var16 = number ; var16 < var19 ; var16 ++ ) { 
+if ( var24 < number && var18 [ var16 ] ) var24 = var16 ; 
+if ( var25 < number && var20 [ var16 ] ) var25 = var16 ; 
+if ( var26 < number && var21 [ var16 ] ) var26 = var16 ; 
+if ( var36 < number && var23 [ var16 ] ) var36 = var16 ; 
+if ( var18 [ var16 ] ) var27 = var16 ; 
+if ( var20 [ var16 ] ) var28 = var16 ; 
+if ( var21 [ var16 ] ) var29 = var16 ; 
+if ( var23 [ var16 ] ) var37 = var16 ; 
+var51 += var18 [ var16 ] * var16 ; 
+var52 += var20 [ var16 ] * var16 ; 
+var53 += var21 [ var16 ] * var16 ; 
+var54 += var23 [ var16 ] * var16 ; 
+var44 += var18 [ var16 ] ; 
+var45 += var20 [ var16 ] ; 
+var46 += var21 [ var16 ] ; 
+var47 += var23 [ var16 ] ; 
+if ( var30 == - number && var44 >= var40 ) var30 = var16 ; 
+if ( var31 == - number && var45 >= var42 ) var31 = var16 ; 
+if ( var32 == - number && var46 >= var42 ) var32 = var16 ; 
+if ( var38 == - number && var47 >= var42 ) var38 = var16 ; 
+if ( var33 == - number && var44 >= var41 ) var33 = var16 ; 
+if ( var34 == - number && var45 >= var43 ) var34 = var16 ; 
+if ( var35 == - number && var46 >= var43 ) var35 = var16 ; 
+if ( var39 == - number && var47 >= var43 ) var39 = var16 ; 
+} 
+var50 = var22 [ number ] ; 
+var49 = - number ; 
+for ( var16 = number ; var16 < number ; var16 ++ ) { 
+var55 += var22 [ var16 ] * var16 ; 
+var48 += var22 [ var16 ] ; 
+if ( var49 == - number && var48 > var5 -> var94 / number ) 
+var49 = var16 ; 
+if ( var22 [ var16 ] > var50 ) { 
+var50 = var22 [ var16 ] ; 
+} 
+} 
+func6 ( & var5 -> var73 ) ; 
+var5 -> var73 = func2 ( var2 ) ; 
+snprintf ( var17 , sizeof ( var17 ) , var95 , var96 ) ; \ 
+func8 ( & var9 -> var97 , str key , var17 , number ) ; \ 
+} while ( number ) 
+func7 ( str , str , var24 ) ; 
+func7 ( str , str , var30 ) ; 
+func7 ( str , str , number * var51 / var5 -> var93 ) ; 
+func7 ( str , str , var33 ) ; 
+func7 ( str , str , var27 ) ; 
+func7 ( str , str , var25 ) ; 
+func7 ( str , str , var31 ) ; 
+func7 ( str , str , number * var52 / var5 -> var94 ) ; 
+func7 ( str , str , var34 ) ; 
+func7 ( str , str , var28 ) ; 
+func7 ( str , str , var26 ) ; 
+func7 ( str , str , var32 ) ; 
+func7 ( str , str , number * var53 / var5 -> var94 ) ; 
+func7 ( str , str , var35 ) ; 
+func7 ( str , str , var29 ) ; 
+func7 ( str , str , var36 ) ; 
+func7 ( str , str , var38 ) ; 
+func7 ( str , str , number * var54 / var5 -> var94 ) ; 
+func7 ( str , str , var39 ) ; 
+func7 ( str , str , var37 ) ; 
+func7 ( str , str , var49 ) ; 
+func7 ( str , str , number * var55 / var5 -> var94 ) ; 
+func7 ( str , str , number * var56 / var5 -> var93 ) ; 
+func7 ( str , str , number * var57 / var5 -> var94 ) ; 
+func7 ( str , str , number * var58 / var5 -> var94 ) ; 
+for ( var16 = number ; var16 < var60 ; var16 ++ ) { 
+if ( var5 -> var87 & number << var16 ) { 
+char var98 [ number ] ; 
+snprintf ( var17 , sizeof ( var17 ) , str , number * var59 [ var16 ] / var5 -> var93 ) ; 
+snprintf ( var98 , sizeof ( var98 ) , str , var91 [ var16 ] . var99 ) ; 
+func8 ( & var9 -> var97 , var98 , var17 , number ) ; 
+} 
+} 
+if ( var2 != var9 ) 
+func6 ( & var2 ) ; 
+return func9 ( var7 , var9 ) ; 
+} 

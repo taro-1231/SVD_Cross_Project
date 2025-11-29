@@ -1,0 +1,4 @@
+double func1 ( TimeFilter * var1 , double var2 ) 
+{ 
+return var1 -> var3 + var1 -> var4 * var2 ; 
+} 

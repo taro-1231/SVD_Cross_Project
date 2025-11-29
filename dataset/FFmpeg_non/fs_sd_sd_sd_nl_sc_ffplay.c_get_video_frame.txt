@@ -1,0 +1,26 @@
+static int func1 ( VideoState * var1 , AVFrame * var2 ) 
+{ 
+int var3 ; 
+if ( ( var3 = func2 ( & var1 -> var4 , var2 , var5 ) ) < number ) 
+return - number ; 
+if ( var3 ) { 
+double var6 = var7 ; 
+if ( var2 -> var8 != var9 ) 
+var6 = func3 ( var1 -> var10 -> var11 ) * var2 -> var8 ; 
+var2 -> var12 = func4 ( var1 -> var13 , var1 -> var10 , var2 ) ; 
+if ( var14 > number || ( var14 && func5 ( var1 ) != var15 ) ) { 
+if ( var2 -> var8 != var9 ) { 
+double var16 = var6 - func6 ( var1 ) ; 
+if ( ! isnan ( var16 ) && fabs ( var16 ) < var17 && 
+var16 - var1 -> var18 < number && 
+var1 -> var4 . var19 == var1 -> var20 . var21 && 
+var1 -> var22 . var23 ) { 
+var1 -> var24 ++ ; 
+func7 ( var2 ) ; 
+var3 = number ; 
+} 
+} 
+} 
+} 
+return var3 ; 
+} 

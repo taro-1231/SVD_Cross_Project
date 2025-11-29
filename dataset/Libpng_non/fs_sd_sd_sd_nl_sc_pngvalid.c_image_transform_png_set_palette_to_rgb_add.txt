@@ -1,0 +1,8 @@
+func1 ( image_transform * var1 , 
+PNG_CONST image_transform ** var2 , png_byte var3 , png_byte var4 ) 
+{ 
+UNUSED ( var4 ) 
+var1 -> var5 = * var2 ; 
+* var2 = var1 ; 
+return var3 == var6 ; 
+} 

@@ -1,0 +1,43 @@
+static int func1 ( AVFormatContext * var1 , 
+MatroskaTrack * var2 , 
+int * var3 ) 
+{ 
+AVStream * var4 = var2 -> var5 ; 
+uint8_t * var6 = var2 -> var7 . var8 ; 
+int var9 = var2 -> var7 . var9 ; 
+if ( var9 < number + var10 || var6 [ number ] & number ) { 
+func2 ( var1 , var11 , str ) ; 
+var2 -> var7 . var9 = number ; 
+return number ; 
+} 
+* var3 = number ; 
+var2 -> var7 . var9 = number + var10 ; 
+var6 += var2 -> var7 . var9 ; 
+var9 -= var2 -> var7 . var9 ; 
+while ( var9 >= number ) { 
+int var12 , var13 , var14 ; 
+func3 ( var6 , & var12 , & var13 , & var14 ) ; 
+var6 += number ; 
+var9 -= number ; 
+if ( var14 > var9 ) 
+return number ; 
+if ( var13 == var15 ) { 
+AVDictionary * var16 = var17 ; 
+AVDictionaryEntry * var18 ; 
+func4 ( var1 , & var16 , var6 , var14 , number ) ; 
+var18 = func5 ( var16 , str , var17 , number ) ; 
+if ( var18 ) { 
+uint64_t var19 = func6 ( var18 -> var20 , var17 , number ) ; 
+if ( ! var19 || var19 & var21 ) { 
+func2 ( var1 , var11 , 
+str ) ; 
+} else 
+var4 -> var22 -> var23 = var19 ; 
+} 
+func7 ( & var16 ) ; 
+} 
+var6 += var14 ; 
+var9 -= var14 ; 
+} 
+return number ; 
+} 

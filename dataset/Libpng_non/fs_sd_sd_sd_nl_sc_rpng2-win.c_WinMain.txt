@@ -1,0 +1,232 @@
+int WINAPI func1 ( HINSTANCE var2 , HINSTANCE var3 , PSTR var4 , int var5 ) 
+{ 
+char * var6 [ number ] ; 
+char ** var7 = var6 ; 
+char * var8 , * var9 , * var10 = var11 ; 
+int var12 = number ; 
+int var13 , var14 , var15 ; 
+int var16 = number ; 
+int var17 = var18 ; 
+int var19 = var18 ; 
+double var20 ; 
+double var21 = number ; 
+double var22 ; 
+MSG var23 ; 
+var24 = var2 ; 
+var1 = var5 ; 
+var25 = ( char * ) var11 ; 
+memset ( & var26 , number , sizeof ( mainprog_info ) ) ; 
+func2 ( ) ; 
+freopen ( str , str , var27 ) ; 
+freopen ( str , str , var28 ) ; 
+var20 = number / number ; 
+var20 = number / number . number ; 
+var29 = fopen ( str , str ) ; 
+if ( var29 ) { 
+double sgi_gamma ; 
+fgets ( tmpline , 80 , var29 ) ; 
+fclose ( var29 ) ; 
+sgi_gamma = atof ( tmpline ) ; 
+if ( sgi_gamma > number ) 
+var20 = number / sgi_gamma ; 
+} 
+var20 = number . number / number . 61 ; 
+var20 = number ; 
+var22 = var20 * var21 ; 
+if ( ( var8 = getenv ( str ) ) != var11 ) 
+var26 . var31 = atof ( var8 ) ; 
+else 
+var26 . var31 = var22 ; 
+var7 [ var12 ++ ] = var32 ; 
+var8 = var4 ; 
+for ( ; ; ) { 
+if ( * var8 == str ) 
+while ( * ++ var8 == str ) 
+; 
+if ( * var8 == str ) 
+break ; 
+var7 [ var12 ++ ] = var9 = var8 ; 
+while ( * var9 && * var9 != str ) 
+++ var9 ; 
+if ( * var9 == str ) 
+break ; 
+* var9 = str ; 
+var8 = var9 + number ; 
+} 
+var7 [ var12 ] = var11 ; 
+while ( * ++ var7 && ! var16 ) { 
+if ( ! strncmp ( * var7 , str , number ) ) { 
+if ( ! * ++ var7 ) 
+++ var16 ; 
+else { 
+var26 . var31 = atof ( * var7 ) ; 
+if ( var26 . var31 <= number ) 
+++ var16 ; 
+} 
+} else if ( ! strncmp ( * var7 , str , number ) ) { 
+if ( ! * ++ var7 ) 
+++ var16 ; 
+else { 
+var10 = * var7 ; 
+if ( strlen ( var10 ) != number || var10 [ number ] != str ) 
+++ var16 ; 
+else { 
+var19 = var33 ; 
+var34 = var18 ; 
+} 
+} 
+} else if ( ! strncmp ( * var7 , str , number ) ) { 
+if ( ! * ++ var7 ) 
+++ var16 ; 
+else { 
+var35 = atoi ( * var7 ) - number ; 
+if ( var35 < number || var35 >= var36 ) 
+++ var16 ; 
+else { 
+var34 = var33 ; 
+var19 = var18 ; 
+} 
+} 
+} else if ( ! strncmp ( * var7 , str , number ) ) { 
+var17 = var33 ; 
+} else { 
+if ( ** var7 != str ) { 
+var25 = * var7 ; 
+if ( var7 [ number ] ) 
+++ var16 ; 
+} else 
+++ var16 ; 
+} 
+} 
+if ( ! var25 ) 
+++ var16 ; 
+if ( var16 ) { 
+int var37 ; 
+fprintf ( var27 , str , var32 , var38 , var39 ) ; 
+func3 ( ) ; 
+fprintf ( var27 , str 
+str 
+str 
+str gamma str 
+str % . 1f str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , 
+, 
+var32 , 
+! ( defined ( __CYGWIN__ ) || defined ( __MINGW32__ ) ) 
+( int ) strlen ( var32 ) , str , 
+( int ) strlen ( var32 ) , str , var22 , var36 ) ; 
+fflush ( var27 ) ; 
+do 
+var37 = func4 ( ) ; 
+while ( var37 != str && var37 != str && var37 != number ) ; 
+exit ( number ) ; 
+} 
+if ( ! ( var29 = fopen ( var25 , str ) ) ) { 
+fprintf ( var27 , var32 str , var25 ) ; 
+++ var16 ; 
+} else { 
+var41 = fread ( var42 , number , var43 , var29 ) ; 
+if ( var41 < number || ! func5 ( var42 , number ) ) { 
+fprintf ( var27 , var32 
+str , 
+var25 ) ; 
+++ var16 ; 
+} else if ( ( var13 = func6 ( & var26 ) ) != number ) { 
+switch ( var13 ) { 
+case number : 
+fprintf ( var27 , var32 
+str , var25 ) ; 
+break ; 
+case number : 
+fprintf ( var27 , var32 str ) ; 
+break ; 
+var44 : 
+fprintf ( var27 , var32 
+str ) ; 
+break ; 
+} 
+++ var16 ; 
+} 
+if ( var16 ) 
+fclose ( var29 ) ; 
+} 
+if ( var16 ) { 
+int var37 ; 
+fprintf ( var27 , var32 str ) ; 
+do 
+var37 = func4 ( ) ; 
+while ( var37 != str && var37 != str && var37 != number ) ; 
+exit ( number ) ; 
+} else { 
+fprintf ( var27 , str , var32 , var38 , var39 ) ; 
+fprintf ( var27 , 
+str , 
+var32 ) ; 
+fflush ( var27 ) ; 
+} 
+var14 = strlen ( var39 ) ; 
+var15 = strlen ( var25 ) ; 
+if ( var14 + var15 + number > number ) 
+sprintf ( var45 , str , var39 , var25 + ( var14 + var15 + number - number ) ) ; 
+else 
+sprintf ( var45 , str , var39 , var25 ) ; 
+if ( var19 ) { 
+unsigned var30 , var40 , var46 ; 
+sscanf ( var10 + number , str , & var30 , & var40 , & var46 ) ; 
+var26 . var47 = ( uch ) var30 ; 
+var26 . var48 = ( uch ) var40 ; 
+var26 . var49 = ( uch ) var46 ; 
+} else 
+var26 . var50 = var33 ; 
+var26 . var51 = var52 ; 
+var26 . var53 = var54 ; 
+var26 . var55 = var56 ; 
+var26 . var57 = var58 ; 
+for ( ; ; ) { 
+Trace ( ( var27 , str ) ) 
+if ( func7 ( & var26 , var42 , var41 ) ) 
+++ var16 ; 
+Trace ( ( var27 , str ) ) 
+if ( var16 || var41 != var43 || var26 . var51 == var59 ) { 
+if ( var26 . var51 == var59 ) { 
+Trace ( ( var27 , str ) ) 
+} else if ( ferror ( var29 ) ) { 
+fprintf ( var27 , var32 
+str ) ; 
+exit ( number ) ; 
+} else if ( feof ( var29 ) ) { 
+fprintf ( var27 , var32 str 
+str ) ; 
+exit ( number ) ; 
+} else { 
+} 
+break ; 
+} 
+if ( var17 ) 
+func8 ( number ) ; 
+var41 = fread ( var42 , number , var43 , var29 ) ; 
+} 
+fclose ( var29 ) ; 
+Trace ( ( var27 , str ) ) 
+func9 ( & var26 ) ; 
+if ( var16 ) { 
+fprintf ( var27 , var32 str ) ; 
+exit ( number ) ; 
+} 
+while ( func10 ( & var23 , var11 , number , number ) ) { 
+func11 ( & var23 ) ; 
+func12 ( & var23 ) ; 
+} 
+Trace ( ( var27 , str ) ) 
+func13 ( ) ; 
+return var23 . var60 ; 
+} 

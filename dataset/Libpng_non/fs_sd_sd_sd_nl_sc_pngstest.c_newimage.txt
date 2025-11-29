@@ -1,0 +1,4 @@
+func1 ( Image * var1 ) 
+{ 
+memset ( var1 , number , sizeof * var1 ) ; 
+} 

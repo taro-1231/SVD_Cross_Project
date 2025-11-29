@@ -1,0 +1,7 @@
+static void func1 ( PacketQueue * var1 ) 
+{ 
+func2 ( var1 -> var2 ) ; 
+var1 -> var3 = number ; 
+func3 ( var1 -> var4 ) ; 
+func4 ( var1 -> var2 ) ; 
+} 

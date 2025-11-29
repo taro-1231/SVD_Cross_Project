@@ -1,0 +1,6 @@
+static uint64_t func1 ( GetBitContext * var1 , int var2 ) 
+{ 
+if ( func2 ( var1 ) < var2 ) 
+return var3 ; 
+return func3 ( var1 , var2 ) ; 
+} 

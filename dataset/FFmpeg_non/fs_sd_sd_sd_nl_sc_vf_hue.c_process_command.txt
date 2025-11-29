@@ -1,0 +1,24 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+HueContext * var7 = var1 -> var8 ; 
+int var9 ; 
+do { \ 
+var3 , option , var1 ) ; \ 
+if ( var9 < number ) \ 
+return var9 ; \ 
+} while ( number ) 
+if ( ! strcmp ( var2 , str ) ) { 
+func2 ( var10 , str ) ; 
+func3 ( & var7 -> var11 ) ; 
+} else if ( ! strcmp ( var2 , str ) ) { 
+func2 ( var7 , str ) ; 
+func3 ( & var7 -> var12 ) ; 
+} else if ( ! strcmp ( var2 , str ) ) { 
+func2 ( var13 , str ) ; 
+} else if ( ! strcmp ( var2 , str ) ) { 
+func2 ( var14 , str ) ; 
+} else 
+return func4 ( var15 ) ; 
+return number ; 
+} 

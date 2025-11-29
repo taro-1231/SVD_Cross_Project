@@ -1,0 +1,66 @@
+char * func1 ( const char * var1 , const char * var2 , struct tm * var3 ) 
+{ 
+int var4 , var5 ; 
+while ( ( var4 = * var2 ++ ) ) { 
+if ( var4 != str ) { 
+if ( func2 ( var4 ) ) 
+for ( ; * var1 && func2 ( * var1 ) ; var1 ++ ) ; 
+else if ( * var1 != var4 ) 
+return var6 ; 
+else var1 ++ ; 
+continue ; 
+} 
+var4 = * var2 ++ ; 
+switch ( var4 ) { 
+case str : 
+case str : 
+var5 = func3 ( & var1 , number , var4 == str ? number : var7 , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var8 = var5 ; 
+break ; 
+case str : 
+var5 = func3 ( & var1 , number , number , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var9 = var5 ; 
+break ; 
+case str : 
+var5 = func3 ( & var1 , number , number , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var10 = var5 ; 
+break ; 
+case str : 
+var5 = func3 ( & var1 , number , number , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var11 = var5 - number ; 
+break ; 
+case str : 
+var5 = func3 ( & var1 , number , number , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var12 = var5 - number ; 
+break ; 
+case str : 
+var5 = func3 ( & var1 , number , number , number ) ; 
+if ( var5 == - number ) 
+return var6 ; 
+var3 -> var13 = var5 ; 
+break ; 
+case str : 
+var1 = func1 ( var1 , str , var3 ) ; 
+if ( ! var1 ) 
+return var6 ; 
+break ; 
+case str : 
+if ( * var1 ++ != str ) 
+return var6 ; 
+break ; 
+var14 : 
+return var6 ; 
+} 
+} 
+return ( char * ) var1 ; 
+} 

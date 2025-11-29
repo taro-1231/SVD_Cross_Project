@@ -1,0 +1,9 @@
+static inline void func1 ( void * var1 ) 
+{ 
+const char * var2 ; 
+if ( ! ( var2 = func2 ( var3 , var4 ) ) ) 
+return ; 
+func3 ( var1 , var5 , str ) ; 
+for ( ; * var2 != str ; var2 += strlen ( var2 ) + number ) 
+func3 ( var1 , var5 , str , var2 ) ; 
+} 

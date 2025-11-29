@@ -1,0 +1,69 @@
+int func1 ( AVDictionary ** var1 , const char * var2 , const char * var3 , 
+int var4 ) 
+{ 
+AVDictionary * var5 = * var1 ; 
+AVDictionaryEntry * var6 = func2 ( var5 , var2 , var7 , var4 ) ; 
+char * var8 = var7 , * var9 = var7 , * var10 = var7 ; 
+if ( var4 & var11 ) 
+var9 = ( void * ) var2 ; 
+else 
+var9 = func3 ( var2 ) ; 
+if ( var4 & var12 ) 
+var10 = ( void * ) var3 ; 
+else if ( var9 ) 
+var10 = func3 ( var3 ) ; 
+if ( ! var5 ) 
+var5 = * var1 = func4 ( sizeof ( * var5 ) ) ; 
+if ( ! var5 || ( var2 && ! var9 ) || ( var3 && ! var10 ) ) 
+goto var13 ; 
+if ( var6 ) { 
+if ( var4 & var14 ) { 
+func5 ( var9 ) ; 
+func5 ( var10 ) ; 
+return number ; 
+} 
+if ( var4 & var15 ) 
+var8 = var6 -> var3 ; 
+else 
+func5 ( var6 -> var3 ) ; 
+func5 ( var6 -> var2 ) ; 
+* var6 = var5 -> var16 [ -- var5 -> var17 ] ; 
+} else { 
+AVDictionaryEntry * var18 = func6 ( var5 -> var16 , 
+( var5 -> var17 + number ) * sizeof ( * var5 -> var16 ) ) ; 
+if ( ! var18 ) 
+goto var13 ; 
+var5 -> var16 = var18 ; 
+} 
+if ( var10 ) { 
+var5 -> var16 [ var5 -> var17 ] . var2 = var9 ; 
+var5 -> var16 [ var5 -> var17 ] . var3 = var10 ; 
+if ( var8 && var4 & var15 ) { 
+size_t var19 = strlen ( var8 ) + strlen ( var10 ) + number ; 
+char * var20 = func4 ( var19 ) ; 
+if ( ! var20 ) 
+goto var13 ; 
+func7 ( var20 , var8 , var19 ) ; 
+func8 ( & var8 ) ; 
+func7 ( var20 , var10 , var19 ) ; 
+var5 -> var16 [ var5 -> var17 ] . var3 = var20 ; 
+func8 ( & var10 ) ; 
+} 
+var5 -> var17 ++ ; 
+} else { 
+func8 ( & var9 ) ; 
+} 
+if ( ! var5 -> var17 ) { 
+func8 ( & var5 -> var16 ) ; 
+func8 ( var1 ) ; 
+} 
+return number ; 
+var13 : 
+if ( var5 && ! var5 -> var17 ) { 
+func8 ( & var5 -> var16 ) ; 
+func8 ( var1 ) ; 
+} 
+func5 ( var9 ) ; 
+func5 ( var10 ) ; 
+return func9 ( var21 ) ; 
+} 

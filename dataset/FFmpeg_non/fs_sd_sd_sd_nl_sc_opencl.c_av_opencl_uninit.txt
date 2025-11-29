@@ -1,0 +1,35 @@
+void func1 ( void ) 
+{ 
+int var1 ; 
+cl_int var2 ; 
+var3 ; 
+var4 . var5 -- ; 
+if ( var4 . var6 ) 
+goto var7 ; 
+if ( var4 . var5 > number ) 
+goto var7 ; 
+if ( var4 . var8 ) { 
+var2 = func2 ( var4 . var8 ) ; 
+if ( var2 != var9 ) { 
+func3 ( & var4 , var10 , 
+str , func4 ( var2 ) ) ; 
+} 
+var4 . var8 = var11 ; 
+} 
+if ( var4 . var12 ) { 
+var2 = func5 ( var4 . var12 ) ; 
+if ( var2 != var9 ) { 
+func3 ( & var4 , var10 , 
+str , func4 ( var2 ) ) ; 
+} 
+var4 . var12 = var11 ; 
+} 
+for ( var1 = number ; var1 < var4 . var13 ; var1 ++ ) { 
+var4 . var14 [ var1 ] . var15 = number ; 
+} 
+func6 ( & var4 . var16 ) ; 
+var7 : 
+if ( var4 . var5 <= number ) 
+func7 ( & var4 ) ; 
+var17 ; 
+} 

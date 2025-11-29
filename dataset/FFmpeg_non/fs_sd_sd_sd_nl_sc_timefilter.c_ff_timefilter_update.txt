@@ -1,0 +1,14 @@
+double func1 ( TimeFilter * var1 , double var2 , double var3 ) 
+{ 
+var1 -> var4 ++ ; 
+if ( var1 -> var4 == number ) { 
+var1 -> var5 = var2 ; 
+} else { 
+double var6 ; 
+var1 -> var5 += var1 -> var7 * var3 ; 
+var6 = var2 - var1 -> var5 ; 
+var1 -> var5 += func2 ( var1 -> var8 , number / var1 -> var4 ) * var6 ; 
+var1 -> var7 += var1 -> var9 * var6 ; 
+} 
+return var1 -> var5 ; 
+} 

@@ -1,0 +1,39 @@
+int func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 , var3 ; 
+for ( ; ; ) { 
+AVPacket var4 ; 
+var2 = func2 ( var1 , & var4 , var5 , number ) ; 
+if ( var2 < number ) 
+goto var6 ; 
+if ( ! var2 ) 
+break ; 
+var2 = func3 ( var1 , & var4 ) ; 
+if ( var2 >= number ) 
+var1 -> var7 [ var4 . var8 ] -> var9 ++ ; 
+func4 ( & var4 ) ; 
+if ( var2 < number ) 
+goto var6 ; 
+if ( var1 -> var10 && var1 -> var10 -> var11 ) 
+goto var6 ; 
+} 
+var6 : 
+if ( var1 -> var12 -> func5 ) 
+if ( var2 >= number ) { 
+var2 = var1 -> var12 -> func5 ( var1 ) ; 
+} else { 
+var1 -> var12 -> func5 ( var1 ) ; 
+} 
+if ( var1 -> var10 ) 
+func6 ( var1 -> var10 ) ; 
+if ( var2 == number ) 
+var2 = var1 -> var10 ? var1 -> var10 -> var11 : number ; 
+for ( var3 = number ; var3 < var1 -> var13 ; var3 ++ ) { 
+func7 ( & var1 -> var7 [ var3 ] -> var14 ) ; 
+func7 ( & var1 -> var7 [ var3 ] -> var15 ) ; 
+} 
+if ( var1 -> var12 -> var16 ) 
+func8 ( var1 -> var14 ) ; 
+func7 ( & var1 -> var14 ) ; 
+return var2 ; 
+} 

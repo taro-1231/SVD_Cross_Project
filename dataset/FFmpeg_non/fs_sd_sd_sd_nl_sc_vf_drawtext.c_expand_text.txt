@@ -1,0 +1,21 @@
+static int func1 ( AVFilterContext * var1 , char * var2 , AVBPrint * var3 ) 
+{ 
+int var4 ; 
+func2 ( var3 ) ; 
+while ( * var2 ) { 
+if ( * var2 == str && var2 [ number ] ) { 
+func3 ( var3 , var2 [ number ] , number ) ; 
+var2 += number ; 
+} else if ( * var2 == str ) { 
+var2 ++ ; 
+if ( ( var4 = func4 ( var1 , var3 , & var2 ) ) < number ) 
+return var4 ; 
+} else { 
+func3 ( var3 , * var2 , number ) ; 
+var2 ++ ; 
+} 
+} 
+if ( ! func5 ( var3 ) ) 
+return func6 ( var5 ) ; 
+return number ; 
+} 

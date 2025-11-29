@@ -1,0 +1,33 @@
+static int func1 ( DrawTextContext * var1 , AVFrame * var2 , 
+int var3 , int var4 , 
+FFDrawColor * var5 , 
+int var6 , int var7 , int var8 ) 
+{ 
+char * var9 = var1 -> var10 . var11 ; 
+uint32_t var12 = number ; 
+int var13 , var14 , var15 ; 
+uint8_t * var16 ; 
+Glyph * var17 = var18 ; 
+for ( var13 = number , var16 = var9 ; * var16 ; var13 ++ ) { 
+FT_Bitmap var19 ; 
+Glyph var20 = { number } ; 
+GET_UTF8 ( var12 , * var16 ++ , continue ; ) ; 
+if ( var12 == var11 || var12 == var11 || var12 == var11 ) 
+continue ; 
+var20 . var12 = var12 ; 
+var17 = func2 ( var1 -> var21 , & var20 , ( void * ) var22 , var18 ) ; 
+var19 = var8 ? var17 -> var23 : var17 -> var19 ; 
+if ( var17 -> var19 . var24 != var25 && 
+var17 -> var19 . var24 != var26 ) 
+return func3 ( var27 ) ; 
+var14 = var1 -> var28 [ var13 ] . var6 + var1 -> var6 + var6 - var8 ; 
+var15 = var1 -> var28 [ var13 ] . var7 + var1 -> var7 + var7 - var8 ; 
+func4 ( & var1 -> var29 , var5 , 
+var2 -> var30 , var2 -> var31 , var3 , var4 , 
+var19 . var32 , var19 . var33 , 
+var19 . var3 , var19 . var34 , 
+var19 . var24 == var25 ? number : number , 
+number , var14 , var15 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,13 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AVFilterLink * var4 = var2 -> var5 [ number ] ; 
+ExtractPlanesContext * var6 = var2 -> var7 ; 
+const AVPixFmtDescriptor * var8 = func2 ( var4 -> var9 ) ; 
+const int var10 = var1 -> var11 - var2 -> var12 ; 
+if ( var6 -> var13 [ var10 ] == number || var6 -> var13 [ var10 ] == number ) { 
+var1 -> var14 = func3 ( var4 -> var14 , var8 -> var15 ) ; 
+var1 -> var16 = func3 ( var4 -> var16 , var8 -> var17 ) ; 
+} 
+return number ; 
+} 

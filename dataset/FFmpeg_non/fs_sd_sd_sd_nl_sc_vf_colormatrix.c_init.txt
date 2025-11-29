@@ -1,0 +1,14 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ColorMatrixContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 == var5 ) { 
+func2 ( var1 , var6 , str ) ; 
+return func3 ( var7 ) ; 
+} 
+if ( var2 -> var8 == var2 -> var4 ) { 
+func2 ( var1 , var6 , str ) ; 
+return func3 ( var7 ) ; 
+} 
+func4 ( var1 ) ; 
+return number ; 
+} 

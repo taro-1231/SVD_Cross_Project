@@ -1,0 +1,17 @@
+static int func1 ( AVExpr ** var1 , const char * var2 , const char * var3 , void * var4 ) 
+{ 
+int var5 ; 
+AVExpr * var6 = var7 ; 
+if ( * var1 ) 
+var6 = * var1 ; 
+var5 = func2 ( var1 , var2 , var8 , var7 , var7 , var7 , var7 , number , var4 ) ; 
+if ( var5 < number ) { 
+func3 ( var4 , var9 , 
+str , 
+var2 , var3 ) ; 
+* var1 = var6 ; 
+return var5 ; 
+} 
+func4 ( var6 ) ; 
+return number ; 
+} 

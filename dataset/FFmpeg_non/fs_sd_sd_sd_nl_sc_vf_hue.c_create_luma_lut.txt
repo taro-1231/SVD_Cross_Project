@@ -1,0 +1,8 @@
+static inline void func1 ( HueContext * var1 ) 
+{ 
+const float var2 = var1 -> var3 ; 
+int var4 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+var1 -> var5 [ var4 ] = func2 ( var4 + var2 * number ) ; 
+} 
+} 

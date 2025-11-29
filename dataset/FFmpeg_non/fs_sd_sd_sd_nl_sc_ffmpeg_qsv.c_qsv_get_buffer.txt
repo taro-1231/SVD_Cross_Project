@@ -1,0 +1,5 @@
+static int func1 ( AVCodecContext * var1 , AVFrame * var2 , int var3 ) 
+{ 
+InputStream * var4 = var1 -> var5 ; 
+return func2 ( var4 -> var6 , var2 , number ) ; 
+} 

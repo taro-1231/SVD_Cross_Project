@@ -1,0 +1,4 @@
+static void func1 ( AVIOContext * var1 , char * var2 , int var3 ) 
+{ 
+func2 ( var1 , var2 , var3 , func3 ( var1 ) ) ; 
+} 

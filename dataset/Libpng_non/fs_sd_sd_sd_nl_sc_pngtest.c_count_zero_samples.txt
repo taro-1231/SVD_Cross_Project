@@ -1,0 +1,81 @@
+func1 ( png_structp var1 , png_row_infop var2 , png_bytep var3 ) 
+{ 
+png_bytep var4 = var3 ; 
+if ( var1 == var5 ) 
+return ; 
+if ( var2 -> var6 == number || var2 -> var6 == number ) 
+{ 
+int var7 = number ; 
+png_uint_32 var8 , var9 ; 
+for ( var8 = number , var9 = var2 -> var10 ; var8 < var9 ; var8 ++ ) 
+{ 
+if ( var2 -> var11 == number ) 
+{ 
+if ( ( ( * var4 << var7 ++ ) & number ) == number ) 
+var12 ++ ; 
+if ( var7 == number ) 
+{ 
+var7 = number ; 
+var4 ++ ; 
+} 
+} 
+if ( var2 -> var11 == number ) 
+{ 
+if ( ( ( * var4 << ( var7 += number ) ) & number ) == number ) 
+var12 ++ ; 
+if ( var7 == number ) 
+{ 
+var7 = number ; 
+var4 ++ ; 
+} 
+} 
+if ( var2 -> var11 == number ) 
+{ 
+if ( ( ( * var4 << ( var7 += number ) ) & number ) == number ) 
+var12 ++ ; 
+if ( var7 == number ) 
+{ 
+var7 = number ; 
+var4 ++ ; 
+} 
+} 
+if ( var2 -> var11 == number ) 
+if ( * var4 += number ) 
+var12 ++ ; 
+if ( var2 -> var11 == number ) 
+{ 
+if ( ( * var4 | * ( var4 + number ) ) == number ) 
+var12 ++ ; 
+var4 += number ; 
+} 
+} 
+} 
+else 
+{ 
+png_uint_32 var8 , var9 ; 
+int var13 ; 
+int var14 = var2 -> var15 ; 
+if ( var2 -> var6 > number ) var14 -- ; 
+for ( var8 = number , var9 = var2 -> var10 ; var8 < var9 ; var8 ++ ) 
+{ 
+for ( var13 = number ; var13 < var14 ; var13 ++ ) 
+{ 
+if ( var2 -> var11 == number ) 
+if ( * var4 += number ) 
+var12 ++ ; 
+if ( var2 -> var11 == number ) 
+{ 
+if ( ( * var4 | * ( var4 + number ) ) == number ) 
+var12 ++ ; 
+var4 += number ; 
+} 
+} 
+if ( var2 -> var6 > number ) 
+{ 
+var4 ++ ; 
+if ( var2 -> var11 == number ) 
+var4 ++ ; 
+} 
+} 
+} 
+} 

@@ -1,0 +1,38 @@
+static void func1 ( void * var1 , Uint8 * var2 , int var3 ) 
+{ 
+VideoState * var4 = var1 ; 
+int var5 , var6 ; 
+var7 = func2 ( ) ; 
+while ( var3 > number ) { 
+if ( var4 -> var8 >= var4 -> var9 ) { 
+var5 = func3 ( var4 ) ; 
+if ( var5 < number ) { 
+var4 -> var10 = var11 ; 
+var4 -> var9 = var12 / var4 -> var13 . var14 * var4 -> var13 . var14 ; 
+} else { 
+if ( var4 -> var15 != var16 ) 
+func4 ( var4 , ( int16_t * ) var4 -> var10 , var5 ) ; 
+var4 -> var9 = var5 ; 
+} 
+var4 -> var8 = number ; 
+} 
+var6 = var4 -> var9 - var4 -> var8 ; 
+if ( var6 > var3 ) 
+var6 = var3 ; 
+if ( ! var4 -> var17 && var4 -> var10 && var4 -> var18 == var19 ) 
+memcpy ( var2 , ( uint8_t * ) var4 -> var10 + var4 -> var8 , var6 ) ; 
+else { 
+memset ( var2 , number , var6 ) ; 
+if ( ! var4 -> var17 && var4 -> var10 ) 
+func5 ( var2 , ( uint8_t * ) var4 -> var10 + var4 -> var8 , var6 , var4 -> var18 ) ; 
+} 
+var3 -= var6 ; 
+var2 += var6 ; 
+var4 -> var8 += var6 ; 
+} 
+var4 -> var20 = var4 -> var9 - var4 -> var8 ; 
+if ( ! isnan ( var4 -> var21 ) ) { 
+func6 ( & var4 -> var22 , var4 -> var21 - ( double ) ( number * var4 -> var23 + var4 -> var20 ) / var4 -> var13 . var24 , var4 -> var25 , var7 / number ) ; 
+func7 ( & var4 -> var26 , & var4 -> var22 ) ; 
+} 
+} 

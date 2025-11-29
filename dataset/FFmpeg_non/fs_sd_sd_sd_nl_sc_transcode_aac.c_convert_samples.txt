@@ -1,0 +1,14 @@
+static int func1 ( const uint8_t ** var1 , 
+uint8_t ** var2 , const int var3 , 
+SwrContext * var4 ) 
+{ 
+int var5 ; 
+if ( ( var5 = func2 ( var4 , 
+var2 , var3 , 
+var1 , var3 ) ) < number ) { 
+fprintf ( var6 , str , 
+func3 ( var5 ) ) ; 
+return var5 ; 
+} 
+return number ; 
+} 

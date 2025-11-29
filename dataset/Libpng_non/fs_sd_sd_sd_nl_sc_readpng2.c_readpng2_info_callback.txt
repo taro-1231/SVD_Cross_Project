@@ -1,0 +1,72 @@
+static void func1 ( png_structp var1 , png_infop var2 ) 
+{ 
+mainprog_info * func2 ; 
+int var3 , var4 ; 
+png_uint_32 var5 , var6 ; 
+double var7 ; 
+png_fixed_point var7 ; 
+func2 = func3 ( var1 ) ; 
+if ( func2 == var8 ) { 
+fprintf ( var9 , 
+str ) ; 
+fflush ( var9 ) ; 
+return ; 
+} 
+func4 ( var1 , var2 , & var5 , & var6 , & var4 , & var3 , 
+var8 , var8 , var8 ) ; 
+func2 -> var5 = ( ulg ) var5 ; 
+func2 -> var6 = ( ulg ) var6 ; 
+if ( func2 -> var10 && 
+func5 ( var1 , var2 , var11 ) ) 
+{ 
+png_color_16p var12 ; 
+func6 ( var1 , var2 , & var12 ) ; 
+if ( var4 == number ) { 
+func2 -> var13 = var12 -> var14 >> number ; 
+func2 -> var15 = var12 -> var16 >> number ; 
+func2 -> var17 = var12 -> var18 >> number ; 
+} else if ( var3 == var19 && var4 < number ) { 
+if ( var4 == number ) 
+func2 -> var13 = func2 -> var15 = 
+func2 -> var17 = var12 -> var20 ? number : number ; 
+else if ( var4 == number ) 
+func2 -> var13 = func2 -> var15 = 
+func2 -> var17 = ( number / number ) * var12 -> var20 ; 
+else 
+func2 -> var13 = func2 -> var15 = 
+func2 -> var17 = ( number / number ) * var12 -> var20 ; 
+} else { 
+func2 -> var13 = ( uch ) var12 -> var14 ; 
+func2 -> var15 = ( uch ) var12 -> var16 ; 
+func2 -> var17 = ( uch ) var12 -> var18 ; 
+} 
+} 
+if ( var3 == var21 ) 
+func7 ( var1 ) ; 
+if ( var3 == var19 && var4 < number ) 
+func7 ( var1 ) ; 
+if ( func5 ( var1 , var2 , var22 ) ) 
+func7 ( var1 ) ; 
+if ( var4 == number ) 
+var23 ( var1 ) ; 
+func8 ( var1 ) ; 
+if ( var3 == var19 || 
+var3 == var24 ) 
+func9 ( var1 ) ; 
+if ( func10 ( var1 , var2 , & var7 ) ) 
+func11 ( var1 , func2 -> var25 , var7 ) ; 
+else 
+func11 ( var1 , func2 -> var25 , number ) ; 
+if ( png_get_gAMA_fixed ( var1 , var2 , & var7 ) ) 
+png_set_gamma_fixed ( var1 , 
+( png_fixed_point ) ( 100000 * func2 -> var25 + . 5 ) , var7 ) ; 
+else 
+png_set_gamma_fixed ( var1 , 
+( png_fixed_point ) ( 100000 * func2 -> var25 + . 5 ) , 45455 ) ; 
+func2 -> var26 = func12 ( var1 ) ; 
+func13 ( var1 , var2 ) ; 
+func2 -> var27 = ( int ) func14 ( var1 , var2 ) ; 
+func2 -> var28 = func15 ( var1 , var2 ) ; 
+( * func2 -> func16 ) ( ) ; 
+return ; 
+} 

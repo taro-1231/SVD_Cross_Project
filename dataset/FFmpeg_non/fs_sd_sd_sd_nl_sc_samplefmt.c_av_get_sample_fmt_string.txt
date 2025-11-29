@@ -1,0 +1,10 @@
+char * func1 ( char * var1 , int var2 , enum AVSampleFormat var3 ) 
+{ 
+if ( var3 < number ) 
+snprintf ( var1 , var2 , str str ) ; 
+else if ( var3 < var4 ) { 
+SampleFmtInfo var5 = var6 [ var3 ] ; 
+snprintf ( var1 , var2 , str str , var5 . name , var5 . bits ) ; 
+} 
+return var1 ; 
+} 

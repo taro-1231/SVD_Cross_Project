@@ -1,0 +1,69 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DCTdnoizContext * var4 = var2 -> var5 ; 
+int var6 , var7 , var8 , var9 , var10 , var11 , * var12 , var13 , var14 ; 
+const int var15 = number << var4 -> var16 ; 
+switch ( var1 -> var17 ) { 
+case var18 : 
+var4 -> var19 = var20 ; 
+var4 -> var21 = var22 ; 
+break ; 
+case var23 : 
+var4 -> var19 = var24 ; 
+var4 -> var21 = var25 ; 
+break ; 
+var26 : 
+func2 ( number ) ; 
+} 
+var4 -> var27 = var1 -> var28 - ( var1 -> var28 - var15 ) % var4 -> var29 ; 
+var4 -> var30 = var1 -> var31 - ( var1 -> var31 - var15 ) % var4 -> var29 ; 
+if ( var4 -> var27 != var1 -> var28 ) 
+func3 ( var2 , var32 , str , 
+var1 -> var28 - var4 -> var27 ) ; 
+if ( var4 -> var30 != var1 -> var31 ) 
+func3 ( var2 , var32 , str , 
+var1 -> var31 - var4 -> var30 ) ; 
+var13 = var4 -> var30 / ( ( var4 -> var15 - number ) * number ) ; 
+var4 -> var33 = func4 ( var34 , var2 -> var35 -> var33 , var13 ) ; 
+func3 ( var2 , var36 , str , 
+var34 , var13 , var2 -> var35 -> var33 , var4 -> var33 ) ; 
+var4 -> var37 = var11 = func5 ( var4 -> var27 , number ) ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+var4 -> var38 [ var6 ] [ number ] = func6 ( var11 * var4 -> var30 , sizeof ( * var4 -> var38 [ var6 ] [ number ] ) ) ; 
+var4 -> var38 [ var6 ] [ number ] = func6 ( var11 * var4 -> var30 , sizeof ( * var4 -> var38 [ var6 ] [ number ] ) ) ; 
+var4 -> var38 [ var6 ] [ number ] = func6 ( var11 * var4 -> var30 , sizeof ( * var4 -> var38 [ var6 ] [ number ] ) ) ; 
+if ( ! var4 -> var38 [ var6 ] [ number ] || ! var4 -> var38 [ var6 ] [ number ] || ! var4 -> var38 [ var6 ] [ number ] ) 
+return func7 ( var39 ) ; 
+} 
+if ( var4 -> var40 ) { 
+for ( var6 = number ; var6 < var4 -> var33 ; var6 ++ ) { 
+int var41 = func8 ( & var4 -> var42 [ var6 ] , var4 -> var40 , var43 , 
+var44 , var44 , var44 , var44 , number , var2 ) ; 
+if ( var41 < number ) 
+return var41 ; 
+} 
+} 
+var14 = ( int ) func9 ( var4 -> var30 / ( float ) var4 -> var33 ) + ( var4 -> var15 - number ) * number ; 
+for ( var6 = number ; var6 < var4 -> var33 ; var6 ++ ) { 
+var4 -> var45 [ var6 ] = func6 ( var11 , var14 * sizeof ( * var4 -> var45 [ var6 ] ) ) ; 
+if ( ! var4 -> var45 [ var6 ] ) 
+return func7 ( var39 ) ; 
+} 
+var4 -> var46 = func10 ( var4 -> var30 * var11 * sizeof ( * var4 -> var46 ) ) ; 
+if ( ! var4 -> var46 ) 
+return func7 ( var39 ) ; 
+var12 = func11 ( var4 -> var30 , var11 * sizeof ( * var12 ) ) ; 
+if ( ! var12 ) 
+return func7 ( var39 ) ; 
+for ( var8 = number ; var8 < var4 -> var30 - var15 + number ; var8 += var4 -> var29 ) 
+for ( var7 = number ; var7 < var4 -> var27 - var15 + number ; var7 += var4 -> var29 ) 
+for ( var10 = number ; var10 < var15 ; var10 ++ ) 
+for ( var9 = number ; var9 < var15 ; var9 ++ ) 
+var12 [ ( var8 + var10 ) * var11 + var7 + var9 ] ++ ; 
+for ( var8 = number ; var8 < var4 -> var30 ; var8 ++ ) 
+for ( var7 = number ; var7 < var4 -> var27 ; var7 ++ ) 
+var4 -> var46 [ var8 * var11 + var7 ] = number / var12 [ var8 * var11 + var7 ] ; 
+func12 ( var12 ) ; 
+return number ; 
+} 

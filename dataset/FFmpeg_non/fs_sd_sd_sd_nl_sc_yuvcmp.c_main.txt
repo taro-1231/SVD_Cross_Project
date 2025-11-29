@@ -1,0 +1,131 @@
+func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 [ number ] ; 
+int var4 = number ; 
+int var5 = number ; 
+int var6 ; 
+int var7 ; 
+int var8 = number ; 
+if ( var1 < number ) { 
+fprintf ( var9 , str , var2 [ number ] ) ; 
+return number ; 
+} 
+var6 = atoi ( var2 [ number ] ) ; 
+var7 = atoi ( var2 [ number ] ) ; 
+if ( var1 > number ) 
+var8 = atoi ( var2 [ number ] ) ; 
+var10 * var11 [ number ] , * var12 [ number ] [ number ] ; 
+int var13 , var14 , var15 , var16 ; 
+int var17 = var6 * var7 ; 
+int var18 = var6 * var7 / number ; 
+int var19 , var20 ; 
+int var21 = var6 / number ; 
+int var22 = var8 ; 
+int var23 ; 
+char * var24 ; 
+int var25 , var26 ; 
+var10 * var27 ; 
+var10 * var28 ; 
+int var29 = number ; 
+var4 = strstr ( var2 [ number ] , str ) ? number : number ; 
+var5 = strstr ( var2 [ number ] , str ) ? number : number ; 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+var11 [ var13 ] = malloc ( var17 ) ; 
+var12 [ number ] [ var13 ] = malloc ( var18 ) ; 
+var12 [ number ] [ var13 ] = malloc ( var18 ) ; 
+var3 [ var13 ] = func2 ( var2 [ number + var13 ] , var30 ) ; 
+if ( var3 [ var13 ] == - number ) { 
+perror ( str ) ; 
+exit ( number ) ; 
+} 
+func3 ( var3 [ var13 ] , var31 , number ) ; 
+if ( var8 ) 
+func4 ( var3 [ var13 ] , var8 * ( var17 + number * var18 ) , var32 ) ; 
+} 
+var25 = var6 / number ; 
+var26 = var7 / number ; 
+var24 = malloc ( var25 * var26 ) ; 
+while ( ! var29 ) { 
+memset ( var24 , number , var25 * var26 ) ; 
+printf ( str , ++ var22 ) ; 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+var14 = func5 ( var3 [ var13 ] , var11 [ var13 ] , var17 ) ; 
+if ( var14 != var17 ) { 
+fprintf ( var9 , str , var13 + number ) ; 
+return number ; 
+} 
+} 
+for ( var15 = number ; var15 < var17 ; var15 ++ ) { 
+if ( var11 [ number ] [ var15 ] != var11 [ number ] [ var15 ] ) { 
+var19 = var15 % var6 ; 
+var20 = var15 / var6 ; 
+var23 = var19 / number + ( var20 / number ) * var25 ; 
+if ( var4 ) 
+printf ( str , 
+var11 [ number ] [ var15 ] , 
+var11 [ number ] [ var15 ] , 
+var19 , var20 , 
+var19 / number , 
+var20 / number , 
+var23 ) ; 
+var24 [ var23 ] |= number ; 
+} 
+} 
+for ( var16 = number ; var16 < number ; var16 ++ ) { 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+var14 = func5 ( var3 [ var13 ] , var12 [ var16 ] [ var13 ] , var18 ) ; 
+if ( var14 != var18 ) { 
+fprintf ( var9 , str , 
+str [ var16 ] , var13 + number ) ; 
+return number ; 
+} 
+} 
+for ( var15 = number ; var15 < var18 ; var15 ++ ) { 
+if ( var12 [ var16 ] [ number ] [ var15 ] != var12 [ var16 ] [ number ] [ var15 ] ) { 
+var19 = var15 % var21 ; 
+var20 = var15 / var21 ; 
+var23 = var19 / number + ( var20 / number ) * var25 ; 
+var24 [ var23 ] |= number << var16 ; 
+if ( var4 ) 
+printf ( str 
+str , 
+var16 ? str : str , 
+var12 [ var16 ] [ number ] [ var15 ] , 
+var12 [ var16 ] [ number ] [ var15 ] , 
+var19 , var20 , 
+var19 / number , 
+var20 / number , 
+var19 / number + var20 / number * var21 / number ) ; 
+} 
+} 
+} 
+for ( var13 = number ; var13 < var25 * var26 ; var13 ++ ) { 
+var19 = var13 % var25 ; 
+var20 = var13 / var25 ; 
+if ( var24 [ var13 ] ) { 
+var29 = number ; 
+printf ( str , 
+var19 , var20 , var13 , var24 [ var13 ] , 
+var24 [ var13 ] & number ? str : str , 
+var24 [ var13 ] & number ? str : str , 
+var24 [ var13 ] & number ? str : str ) ; 
+if ( var5 ) { 
+var27 = var11 [ number ] + var19 * number + var20 * number * var6 ; 
+var28 = var11 [ number ] + var19 * number + var20 * number * var6 ; 
+for ( var20 = number ; var20 < number ; var20 ++ ) { 
+printf ( str , str [ var20 & number ] ) ; 
+for ( var19 = number ; var19 < number ; var19 ++ ) 
+printf ( str , var27 [ var19 + var20 * var6 ] , 
+var27 [ var19 + var20 * var6 ] != var28 [ var19 + var20 * var6 ] ? str : str ) ; 
+printf ( str ) ; 
+for ( var19 = number ; var19 < number ; var19 ++ ) 
+printf ( str , var28 [ var19 + var20 * var6 ] , 
+var27 [ var19 + var20 * var6 ] != var28 [ var19 + var20 * var6 ] ? str : str ) ; 
+printf ( str ) ; 
+} 
+} 
+} 
+} 
+} 
+return number ; 
+} 

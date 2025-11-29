@@ -1,0 +1,43 @@
+static void func1 ( AC3DecodeContext * var1 ) 
+{ 
+int var2 ; 
+float var3 = var4 [ var1 -> var5 ] ; 
+float var6 = var4 [ var1 -> var7 ] ; 
+float var8 , var9 ; 
+float var10 [ var11 ] [ number ] ; 
+for ( var2 = number ; var2 < var1 -> var12 ; var2 ++ ) { 
+var10 [ var2 ] [ number ] = var4 [ var13 [ var1 -> var14 ] [ var2 ] [ number ] ] ; 
+var10 [ var2 ] [ number ] = var4 [ var13 [ var1 -> var14 ] [ var2 ] [ number ] ] ; 
+} 
+if ( var1 -> var14 > number && var1 -> var14 & number ) { 
+var10 [ number ] [ number ] = var10 [ number ] [ number ] = var3 ; 
+} 
+if ( var1 -> var14 == var15 || var1 -> var14 == var16 ) { 
+int var17 = var1 -> var14 - number ; 
+var10 [ var17 ] [ number ] = var10 [ var17 ] [ number ] = var6 * var18 ; 
+} 
+if ( var1 -> var14 == var19 || var1 -> var14 == var20 ) { 
+int var17 = var1 -> var14 - number ; 
+var10 [ var17 ] [ number ] = var10 [ var17 + number ] [ number ] = var6 ; 
+} 
+var8 = var9 = number ; 
+for ( var2 = number ; var2 < var1 -> var12 ; var2 ++ ) { 
+var8 += var10 [ var2 ] [ number ] ; 
+var9 += var10 [ var2 ] [ number ] ; 
+} 
+var8 = number / var8 ; 
+var9 = number / var9 ; 
+for ( var2 = number ; var2 < var1 -> var12 ; var2 ++ ) { 
+var10 [ var2 ] [ number ] *= var8 ; 
+var10 [ var2 ] [ number ] *= var9 ; 
+} 
+if ( var1 -> var21 == var22 ) { 
+for ( var2 = number ; var2 < var1 -> var12 ; var2 ++ ) 
+var10 [ var2 ] [ number ] = ( var10 [ var2 ] [ number ] + 
+var10 [ var2 ] [ number ] ) * var18 ; 
+} 
+for ( var2 = number ; var2 < var1 -> var12 ; var2 ++ ) { 
+var1 -> var10 [ var2 ] [ number ] = func2 ( var10 [ var2 ] [ number ] ) ; 
+var1 -> var10 [ var2 ] [ number ] = func2 ( var10 [ var2 ] [ number ] ) ; 
+} 
+} 

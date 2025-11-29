@@ -1,0 +1,10 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+DecimateContext * var2 = var1 -> var3 ; 
+var2 -> var4 = func2 ( number , number , number , var1 ) ; 
+if ( ! var2 -> var4 ) 
+return func3 ( var5 ) ; 
+func4 ( var1 , var6 , str , 
+var2 -> var7 , var2 -> var8 , var2 -> var9 , var2 -> var10 ) ; 
+return number ; 
+} 

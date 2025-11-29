@@ -1,0 +1,15 @@
+static mkv_seekhead * func1 ( AVIOContext * var1 , int64_t var2 , 
+int var3 ) 
+{ 
+mkv_seekhead * var4 = func2 ( sizeof ( mkv_seekhead ) ) ; 
+if ( ! var4 ) 
+return var5 ; 
+var4 -> var2 = var2 ; 
+if ( var3 > number ) { 
+var4 -> var6 = func3 ( var1 ) ; 
+var4 -> var7 = var3 * var8 + number ; 
+var4 -> var9 = var3 ; 
+func4 ( var1 , var4 -> var7 ) ; 
+} 
+return var4 ; 
+} 

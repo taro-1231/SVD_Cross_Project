@@ -1,0 +1,19 @@
+static int func1 ( uint16_t * var1 , uint16_t * var2 , 
+const char * var3 , void * var4 ) 
+{ 
+char * var5 ; 
+const char * var6 = var3 ; 
+* var1 = number ; 
+* var2 = number ; 
+if ( strchr ( str , * var6 ) ) { 
+long int var7 = func2 ( var3 , & var5 , number ) ; 
+if ( * var5 ) 
+goto var8 ; 
+* var1 = ( ( number << number ) - number ) & var7 ; 
+* var2 = var7 >> number ; 
+} 
+return number ; 
+var8 : 
+func3 ( var4 , var9 , str , var3 ) ; 
+return func4 ( var10 ) ; 
+} 

@@ -1,0 +1,62 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+AVFrame * var5 = var2 ; 
+int var6 = var4 -> var7 ; 
+ADXContext * var8 = var1 -> var9 ; 
+int16_t ** var10 ; 
+int var11 ; 
+const uint8_t * var12 = var4 -> var2 ; 
+const uint8_t * var13 = var12 + var4 -> var7 ; 
+int var14 , var15 , var16 ; 
+if ( var8 -> var17 ) { 
+* var3 = number ; 
+return var6 ; 
+} 
+if ( ! var8 -> var18 && var6 >= number && func2 ( var12 ) == number ) { 
+int var19 ; 
+if ( ( var16 = func3 ( var1 , var12 , var6 , & var19 , 
+var8 -> var20 ) ) < number ) { 
+func4 ( var1 , var21 , str ) ; 
+return var22 ; 
+} 
+var8 -> var23 = var1 -> var23 ; 
+var8 -> var18 = number ; 
+if ( var6 < var19 ) 
+return var22 ; 
+var12 += var19 ; 
+var6 -= var19 ; 
+} 
+if ( ! var8 -> var18 ) 
+return var22 ; 
+var14 = var6 / ( var24 * var8 -> var23 ) ; 
+if ( ! var14 || var6 % ( var24 * var1 -> var23 ) ) { 
+if ( var6 >= number && ( func2 ( var12 ) & number ) ) { 
+var8 -> var17 = number ; 
+* var3 = number ; 
+return var4 -> var7 ; 
+} 
+return var22 ; 
+} 
+var5 -> var25 = var14 * var26 ; 
+if ( ( var16 = func5 ( var1 , var5 , number ) ) < number ) 
+return var16 ; 
+var10 = ( int16_t ** ) var5 -> var27 ; 
+var11 = number ; 
+while ( var14 -- ) { 
+for ( var15 = number ; var15 < var8 -> var23 ; var15 ++ ) { 
+if ( var13 - var12 < var24 || func6 ( var8 , var10 [ var15 ] , var11 , var12 , var15 ) ) { 
+var8 -> var17 = number ; 
+var12 = var4 -> var2 + var4 -> var7 ; 
+break ; 
+} 
+var6 -= var24 ; 
+var12 += var24 ; 
+} 
+if ( ! var8 -> var17 ) 
+var11 += var26 ; 
+} 
+var5 -> var25 = var11 ; 
+* var3 = number ; 
+return var12 - var4 -> var2 ; 
+} 

@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+HQXContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+var1 -> var8 = var6 -> var8 * var4 -> var9 ; 
+var1 -> var10 = var6 -> var10 * var4 -> var9 ; 
+func2 ( var6 -> var11 , var12 , str , 
+func3 ( var6 -> var13 ) , 
+var6 -> var8 , var6 -> var10 , var1 -> var8 , var1 -> var10 ) ; 
+return number ; 
+} 

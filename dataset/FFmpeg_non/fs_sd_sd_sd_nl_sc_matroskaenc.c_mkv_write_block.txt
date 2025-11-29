@@ -1,0 +1,84 @@
+static void func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+unsigned int var3 , AVPacket * var4 , int var5 ) 
+{ 
+MatroskaMuxContext * var6 = var1 -> var7 ; 
+AVCodecContext * var8 = var1 -> var9 [ var4 -> var10 ] -> var8 ; 
+uint8_t * var11 = var12 , * var13 = var12 ; 
+int var14 = number , var15 = var4 -> var15 , var16 = number ; 
+int64_t var17 = var6 -> var18 [ var4 -> var10 ] . var19 ? var4 -> var20 : var4 -> var21 ; 
+uint64_t var22 = number ; 
+int64_t var23 = number ; 
+uint8_t var24 = ( var6 -> var25 ? var6 -> var26 : ( var4 -> var10 + number ) ) ; 
+ebml_master var27 , var28 , var29 ; 
+func2 ( var1 , AV_LOG_DEBUG , str PRIu64 str 
+str PRId64 str PRId64 str , 
+avio_tell ( var2 ) , var4 -> var15 , var4 -> var21 , var4 -> var20 , var4 -> duration , 
+var5 != number ) ; 
+if ( var8 -> var30 == var31 && var8 -> var32 > number && 
+( func3 ( var8 -> var33 ) == number || func4 ( var8 -> var33 ) == number ) ) 
+func5 ( var4 -> var11 , & var11 , & var15 ) ; 
+else if ( var8 -> var30 == var34 && var8 -> var32 > number && 
+( func3 ( var8 -> var33 ) == number || func4 ( var8 -> var33 ) == number ) ) 
+func6 ( var4 -> var11 , & var11 , & var15 , number , var12 ) ; 
+else if ( var8 -> var30 == var35 ) { 
+int var36 = func7 ( var4 -> var11 , & var11 , & var15 ) ; 
+if ( var36 < number ) { 
+func2 ( var1 , var37 , str ) ; 
+return ; 
+} 
+} else 
+var11 = var4 -> var11 ; 
+if ( var8 -> var30 == var38 && var15 >= number ) { 
+var15 -= number ; 
+var14 = number ; 
+} 
+var13 = func8 ( var4 , 
+var39 , 
+& var16 ) ; 
+if ( var13 && var16 >= number ) { 
+var23 = av_rescale_q ( AV_RL32 ( var13 + number ) , 
+( AVRational ) { number , var8 -> sample_rate } , 
+( AVRational ) { number , 1000000000 } ) ; 
+} 
+var13 = func8 ( var4 , 
+var40 , 
+& var16 ) ; 
+if ( var13 ) { 
+var22 = func9 ( var13 ) ; 
+var13 += number ; 
+var16 -= number ; 
+} 
+if ( ( var16 && var22 == number ) || var23 ) { 
+var27 = func10 ( var2 , var41 , number ) ; 
+var3 = var42 ; 
+} 
+func11 ( var2 , var3 ) ; 
+func12 ( var2 , var15 + number , number ) ; 
+func13 ( var2 , number | var24 ) ; 
+func14 ( var2 , var17 - var6 -> var43 ) ; 
+func13 ( var2 , ( var3 == var44 && var5 ) ? ( number << number ) : number ) ; 
+func15 ( var2 , var11 + var14 , var15 ) ; 
+if ( var11 != var4 -> var11 ) 
+func16 ( var11 ) ; 
+if ( var3 == var42 && ! var5 ) { 
+func17 ( var2 , var45 , 
+var6 -> var46 [ var24 - number ] ) ; 
+} 
+var6 -> var46 [ var24 - number ] = var17 - var6 -> var43 ; 
+if ( var23 ) { 
+func17 ( var2 , var47 , var23 ) ; 
+} 
+if ( var16 && var22 == number ) { 
+var28 = func10 ( var2 , var48 , number ) ; 
+var29 = func10 ( var2 , var49 , number ) ; 
+func18 ( var2 , var50 , number ) ; 
+func11 ( var2 , var51 ) ; 
+func12 ( var2 , var16 , number ) ; 
+func15 ( var2 , var13 , var16 ) ; 
+func19 ( var2 , var29 ) ; 
+func19 ( var2 , var28 ) ; 
+} 
+if ( ( var16 && var22 == number ) || var23 ) { 
+func19 ( var2 , var27 ) ; 
+} 
+} 

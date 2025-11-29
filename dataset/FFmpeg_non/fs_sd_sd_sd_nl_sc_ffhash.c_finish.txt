@@ -1,0 +1,12 @@
+static void func1 ( void ) 
+{ 
+char var1 [ number * var2 + number ] ; 
+printf ( str , func2 ( var3 ) ) ; 
+if ( var4 ) { 
+func3 ( var3 , var1 , sizeof ( var1 ) ) ; 
+printf ( str , var1 ) ; 
+} else { 
+func4 ( var3 , var1 , sizeof ( var1 ) ) ; 
+printf ( str , var1 ) ; 
+} 
+} 

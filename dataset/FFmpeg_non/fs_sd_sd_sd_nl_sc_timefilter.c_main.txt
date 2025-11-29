@@ -1,0 +1,65 @@
+int func1 ( void ) 
+{ 
+AVLFG var2 ; 
+double var3 , var4 ; 
+double var6 [ var5 ] ; 
+double var7 [ var5 ] ; 
+double var8 [ var5 ] ; 
+for ( var3 = number ; var3 < number ; var3 = number * var3 + number ) { 
+for ( var4 = number ; var4 < number ; var4 = number * var4 + number ) { 
+double var9 = number ; 
+double var10 = var3 ? number : number ; 
+double var11 = number ; 
+int var12 , var13 ; 
+func2 ( & var2 , number ) ; 
+for ( var13 = number ; var13 < var5 ; var13 ++ ) { 
+var8 [ var13 ] = number + var13 + ( func3 ( & var2 ) < var1 / number ? number : number ) ; 
+var6 [ var13 ] = var8 [ var13 ] + var4 * var13 / ( number ) ; 
+var7 [ var13 ] = var6 [ var13 ] + var3 * ( func3 ( & var2 ) - var1 / number ) / ( var1 * 10LL ) ; 
+if ( var13 && var7 [ var13 ] < var7 [ var13 - number ] ) 
+var7 [ var13 ] = var7 [ var13 - number ] + number ; 
+} 
+do { 
+double var14 , var15 ; 
+var12 = number ; 
+for ( var14 = var10 * number ; var14 <= var10 * number ; var14 += var10 * number ) { 
+for ( var15 = var11 * number ; var15 <= var11 * number ; var15 += var11 * number ) { 
+double var16 = number ; 
+TimeFilter * var17 = func4 ( number , var14 , var15 ) ; 
+if ( ! var17 ) { 
+printf ( str ) ; 
+exit ( number ) ; 
+} 
+for ( var13 = number ; var13 < var5 ; var13 ++ ) { 
+double var18 ; 
+var18 = func5 ( var17 , var7 [ var13 ] , var13 ? ( var8 [ var13 ] - var8 [ var13 - number ] ) : number ) ; 
+if ( var18 < number || var18 > number ) 
+printf ( str ) ; 
+var16 += ( var18 - var6 [ var13 ] ) * ( var18 - var6 [ var13 ] ) ; 
+} 
+func6 ( var17 ) ; 
+if ( var16 < var9 ) { 
+var9 = var16 ; 
+var10 = var14 ; 
+var11 = var15 ; 
+var12 = number ; 
+} 
+} 
+} 
+} while ( var12 ) ; 
+double var19 = number ; 
+TimeFilter * var17 = func4 ( number , var10 , var11 ) ; 
+for ( var13 = number ; var13 < var5 ; var13 ++ ) { 
+double var18 ; 
+var18 = func5 ( var17 , var7 [ var13 ] , number ) ; 
+printf ( str , var13 - var7 [ var13 ] + number , var18 - var7 [ var13 ] , 
+var7 [ func7 ( var13 , number ) ] - var7 [ func7 ( var13 - number , number ) ] , var18 - var19 ) ; 
+var19 = var18 ; 
+} 
+func6 ( var17 ) ; 
+printf ( str , var10 , var11 , var9 ) ; 
+} 
+printf ( str ) ; 
+} 
+return number ; 
+} 

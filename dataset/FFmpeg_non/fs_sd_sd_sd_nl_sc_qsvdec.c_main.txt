@@ -1,0 +1,139 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+AVFormatContext * var3 = var4 ; 
+AVStream * var5 = var4 ; 
+AVCodecContext * var6 = var4 ; 
+const AVCodec * var7 ; 
+AVPacket var8 = { number } ; 
+AVFrame * var9 = var4 ; 
+DecodeContext var10 = { var4 } ; 
+Display * var11 = var4 ; 
+int var12 , var13 ; 
+mfxIMPL var14 = var15 ; 
+mfxVersion var16 = { { number , number } } ; 
+mfxFrameAllocator var17 = { 
+. pthis = & var10 , 
+. Alloc = frame_alloc , 
+. Lock = frame_lock , 
+. Unlock = frame_unlock , 
+. GetHDL = frame_get_hdl , 
+. Free = frame_free , 
+} ; 
+AVIOContext * var18 = var4 ; 
+int var19 , var20 , var21 ; 
+func2 ( ) ; 
+if ( var1 < number ) { 
+fprintf ( var22 , str , var2 [ number ] ) ; 
+return number ; 
+} 
+var19 = func3 ( & var3 , var2 [ number ] , var4 , var4 ) ; 
+if ( var19 < number ) { 
+fprintf ( var22 , str , var2 [ number ] ) ; 
+goto var23 ; 
+} 
+for ( var20 = number ; var20 < var3 -> var24 ; var20 ++ ) { 
+AVStream * var25 = var3 -> var26 [ var20 ] ; 
+if ( var25 -> var27 -> var28 == var29 && ! var5 ) 
+var5 = var25 ; 
+else 
+var25 -> var30 = var31 ; 
+} 
+if ( ! var5 ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var11 = func4 ( var4 ) ; 
+if ( ! var11 ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var10 . var32 = func5 ( var11 ) ; 
+if ( ! var10 . var32 ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var21 = func6 ( var10 . var32 , & var12 , & var13 ) ; 
+if ( var21 != var33 ) { 
+fprintf ( var22 , str , func7 ( var21 ) ) ; 
+goto var23 ; 
+} 
+fprintf ( var22 , str , var12 , var13 ) ; 
+var21 = func8 ( var14 , & var16 , & var10 . var34 ) ; 
+if ( var21 != var35 ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+func9 ( var10 . var34 , var36 , var10 . var32 ) ; 
+func10 ( var10 . var34 , & var17 ) ; 
+var7 = func11 ( str ) ; 
+if ( ! var7 ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var6 = func12 ( var7 ) ; 
+if ( ! var6 ) { 
+var19 = func13 ( var37 ) ; 
+goto var23 ; 
+} 
+var6 -> var28 = var29 ; 
+if ( var5 -> var27 -> var38 ) { 
+var6 -> var39 = func14 ( var5 -> var27 -> var38 + 
+var40 ) ; 
+if ( ! var6 -> var39 ) { 
+var19 = func13 ( var37 ) ; 
+goto var23 ; 
+} 
+memcpy ( var6 -> var39 , var5 -> var27 -> var39 , 
+var5 -> var27 -> var38 ) ; 
+var6 -> var38 = var5 -> var27 -> var38 ; 
+} 
+var6 -> var41 = number ; 
+var6 -> var42 = & var10 ; 
+var6 -> var43 = var44 ; 
+var6 -> var45 = var45 ; 
+var19 = func15 ( var6 , var4 , var4 ) ; 
+if ( var19 < number ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var19 = func16 ( & var18 , var2 [ number ] , var46 ) ; 
+if ( var19 < number ) { 
+fprintf ( var22 , str ) ; 
+goto var23 ; 
+} 
+var9 = func17 ( ) ; 
+if ( ! var9 ) { 
+var19 = func13 ( var37 ) ; 
+goto var23 ; 
+} 
+while ( var19 >= number ) { 
+var19 = func18 ( var3 , & var8 ) ; 
+if ( var19 < number ) 
+break ; 
+if ( var8 . var47 == var5 -> var48 ) 
+var19 = func19 ( & var10 , var6 , var9 , & var8 , var18 ) ; 
+func20 ( & var8 ) ; 
+} 
+var8 . var49 = var4 ; 
+var8 . var50 = number ; 
+var19 = func19 ( & var10 , var6 , var9 , & var8 , var18 ) ; 
+var23 : 
+if ( var19 < number ) { 
+char var51 [ number ] ; 
+func21 ( var19 , var51 , sizeof ( var51 ) ) ; 
+fprintf ( var22 , str , var51 ) ; 
+} 
+func22 ( & var3 ) ; 
+func23 ( & var9 ) ; 
+if ( var10 . var34 ) 
+func24 ( var10 . var34 ) ; 
+if ( var10 . var32 ) 
+func25 ( var10 . var32 ) ; 
+if ( var11 ) 
+func26 ( var11 ) ; 
+if ( var6 ) 
+func27 ( & var6 -> var52 ) ; 
+func28 ( & var6 ) ; 
+func29 ( var18 ) ; 
+return var19 ; 
+} 

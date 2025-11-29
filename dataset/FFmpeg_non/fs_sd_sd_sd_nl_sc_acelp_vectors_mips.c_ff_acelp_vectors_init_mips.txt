@@ -1,0 +1,4 @@
+void func1 ( ACELPVContext * var1 ) 
+{ 
+var1 -> var2 = var3 ; 
+} 

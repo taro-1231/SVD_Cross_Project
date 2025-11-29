@@ -1,0 +1,108 @@
+func1 ( PNG_CONST image_transform ** var1 , unsigned int var2 , 
+png_uint_32 var3 , char * var4 , size_t var5 , size_t * var6 , 
+png_byte var7 , png_byte var8 ) 
+{ 
+for ( ; ; ) 
+{ 
+png_uint_32 var9 ; 
+image_transform * var10 ; 
+if ( var3 == number ) 
+{ 
+func2 ( ) ; 
+if ( var2 <= number ) 
+var3 = number ; 
+else 
+var3 = func3 ( ) ; 
+} 
+else 
+{ 
+switch ( var2 ) 
+{ 
+case number : ++ var3 ; break ; 
+case number : var3 <<= number ; break ; 
+var11 : var3 = func3 ( ) ; break ; 
+} 
+} 
+* var1 = & var12 ; 
+var10 = var13 ; 
+var9 = number ; 
+while ( var10 != & var12 ) 
+{ 
+if ( ( var3 & var9 ) != number && var10 -> var14 && 
+( var2 == number || var10 -> var15 < var2 ) ) 
+{ 
+if ( var10 -> func4 ( var10 , var1 , var7 , var8 ) || var2 == number ) 
+{ 
+* var6 = func5 ( var4 , var5 , * var6 , str ) ; 
+* var6 = func5 ( var4 , var5 , * var6 , var10 -> var4 ) ; 
+} 
+else 
+{ 
+* var1 = var10 -> var16 ; 
+var10 -> var16 = number ; 
+var10 -> var15 = var2 ; 
+} 
+} 
+var9 <<= number ; 
+var10 = var10 -> var10 ; 
+} 
+if ( * var1 != & var12 ) 
+return var3 ; 
+if ( ! func6 ( var3 , var2 ) ) 
+return number ; 
+} 
+} 
+static png_uint_32 
+func1 ( PNG_CONST image_transform ** var1 , unsigned int var2 , 
+png_uint_32 var3 , char * var4 , size_t var5 , size_t * var6 , 
+png_byte var7 , png_byte var8 ) 
+{ 
+for ( ; ; ) 
+{ 
+png_uint_32 var9 ; 
+image_transform * var10 ; 
+if ( var3 == number ) 
+{ 
+func2 ( ) ; 
+if ( var2 <= number ) 
+var3 = number ; 
+else 
+var3 = func3 ( ) ; 
+} 
+else 
+{ 
+switch ( var2 ) 
+{ 
+case number : ++ var3 ; break ; 
+case number : var3 <<= number ; break ; 
+var11 : var3 = func3 ( ) ; break ; 
+} 
+} 
+* var1 = & var12 ; 
+var10 = var13 ; 
+var9 = number ; 
+while ( var10 != & var12 ) 
+{ 
+if ( ( var3 & var9 ) != number && var10 -> var14 && 
+( var2 == number || var10 -> var15 < var2 ) ) 
+{ 
+if ( var10 -> func4 ( var10 , var1 , var7 , var8 ) || var2 == number ) 
+{ 
+* var6 = func5 ( var4 , var5 , * var6 , str ) ; 
+* var6 = func5 ( var4 , var5 , * var6 , var10 -> var4 ) ; 
+} 
+else 
+{ 
+* var1 = var10 -> var16 ; 
+var10 -> var16 = number ; 
+var10 -> var15 = var2 ; 
+} 
+} 
+var9 <<= number ; 
+var10 = var10 -> var10 ; 
+} 
+if ( * var1 != & var12 ) 
+return var3 ; 
+if ( ! func6 ( var3 , var2 ) ) 
+return number ; 
+} 

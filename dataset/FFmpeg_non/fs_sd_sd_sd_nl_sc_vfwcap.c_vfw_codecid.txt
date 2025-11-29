@@ -1,0 +1,11 @@
+static enum AVCodecID func1 ( DWORD var1 ) 
+{ 
+switch ( var1 ) { 
+case MKTAG ( str , str , str , str ) : 
+return var2 ; 
+case MKTAG ( str , str , str , str ) : 
+case MKTAG ( str , str , str , str ) : 
+return var3 ; 
+} 
+return var4 ; 
+} 

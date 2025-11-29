@@ -1,0 +1,17 @@
+static int func1 ( int var1 , const char * var2 , const char * var3 , ... ) 
+{ 
+va_list var4 ; 
+VS2AVLogCtx var5 ; 
+AVClass class = { 
+. class_name = var2 , 
+. item_name = av_default_item_name , 
+. option = 0 , 
+. version = LIBAVUTIL_VERSION_INT , 
+. category = AV_CLASS_CATEGORY_FILTER , 
+} ; 
+var5 . class = & class ; 
+func2 ( var4 , var3 ) ; 
+func3 ( & var5 , var1 , var3 , var4 ) ; 
+func4 ( var4 ) ; 
+return var6 ; 
+} 

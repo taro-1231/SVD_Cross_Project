@@ -1,0 +1,21 @@
+func1 ( HWND var1 , UINT var2 , WPARAM var3 , LPARAM var4 ) 
+{ 
+PAINTSTRUCT var5 ; 
+HDC var6 ; 
+RECT var7 ; 
+switch ( var2 ) { 
+case var8 : 
+var6 = func2 ( var1 , & var5 ) ; 
+func3 ( var1 , & var7 ) ; 
+func4 ( var6 , & var7 , func5 ( var9 ) ) ; 
+var7 . var10 ++ ; var7 . var11 ++ ; var7 . var12 -- ; var7 . var13 -- ; 
+func4 ( var6 , & var7 , func5 ( var14 ) ) ; 
+var7 . var10 ++ ; var7 . var11 ++ ; var7 . var12 -- ; var7 . var13 -- ; 
+func4 ( var6 , & var7 , func5 ( var9 ) ) ; 
+func6 ( var1 , & var5 ) ; 
+break ; 
+var15 : 
+return func7 ( var1 , var2 , var3 , var4 ) ; 
+} 
+return number ; 
+} 

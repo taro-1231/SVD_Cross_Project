@@ -1,0 +1,15 @@
+static inline int func1 ( LZOContext * var1 , int var2 , int var3 ) 
+{ 
+int var4 = var2 & var3 ; 
+if ( ! var4 ) { 
+while ( ! ( var2 = func2 ( var1 ) ) ) { 
+if ( var4 >= var5 - number ) { 
+var1 -> var6 |= var7 ; 
+break ; 
+} 
+var4 += number ; 
+} 
+var4 += var3 + var2 ; 
+} 
+return var4 ; 
+} 

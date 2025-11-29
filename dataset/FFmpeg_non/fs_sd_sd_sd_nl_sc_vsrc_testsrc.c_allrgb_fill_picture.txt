@@ -1,0 +1,15 @@
+static void func1 ( AVFilterContext * var1 , AVFrame * var2 ) 
+{ 
+unsigned var3 , var4 ; 
+const int var5 = var2 -> var5 [ number ] ; 
+uint8_t * var6 = var2 -> var7 [ number ] ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+uint8_t * var8 = var6 ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+* var8 += var3 ; 
+* var8 += var4 ; 
+* var8 += ( var3 >> number ) | ( ( var4 >> number ) << number ) ; 
+} 
+var6 += var5 ; 
+} 
+} 

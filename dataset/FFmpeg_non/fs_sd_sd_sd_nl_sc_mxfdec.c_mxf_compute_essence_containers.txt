@@ -1,0 +1,20 @@
+static void func1 ( MXFContext * var1 ) 
+{ 
+int var2 ; 
+if ( var1 -> var3 == var4 ) 
+return ; 
+for ( var2 = number ; var2 < var1 -> var5 ; var2 ++ ) { 
+MXFPartition * var6 = & var1 -> var7 [ var2 ] ; 
+if ( ! var6 -> var8 ) 
+continue ; 
+if ( var2 >= var1 -> var5 - number ) 
+break ; 
+var6 -> var9 = var1 -> var7 [ var2 + number ] . var10 - var6 -> var11 ; 
+if ( var6 -> var9 < number ) { 
+var6 -> var9 = number ; 
+av_log ( var1 -> fc , AV_LOG_ERROR , 
+str PRIX64 str , 
+var2 + number , var1 -> var7 [ var2 + number ] . var10 ) ; 
+} 
+} 
+} 

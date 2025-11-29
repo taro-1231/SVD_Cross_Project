@@ -1,0 +1,49 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct video_data * var2 = var1 -> var3 ; 
+struct v4l2_capability var4 ; 
+int var5 ; 
+int var6 ; 
+int var7 = var8 ; 
+} while ( number ) 
+if ( var2 -> var16 ) { 
+func2 ( var17 ) ; 
+func3 ( var1 , var18 , str ) ; 
+return func4 ( EINVAL ) ; 
+} else { 
+func2 ( ) ; 
+} 
+if ( var1 -> var7 & var19 ) { 
+var7 |= var20 ; 
+} 
+var5 = func5 ( var1 -> var21 , var7 , number ) ; 
+if ( var5 < number ) { 
+var6 = func4 ( var22 ) ; 
+func3 ( var1 , var18 , str , 
+var1 -> var21 , func8 ( var6 ) ) ; 
+return var6 ; 
+} 
+if ( func7 ( var5 , var23 , & var4 ) < number ) { 
+var6 = func4 ( var22 ) ; 
+func3 ( var1 , var18 , str , 
+func8 ( var6 ) ) ; 
+goto var24 ; 
+} 
+func3 ( var1 , var25 , str , 
+var5 , var4 . var26 ) ; 
+if ( ! ( var4 . var26 & var27 ) ) { 
+func3 ( var1 , var18 , str ) ; 
+var6 = func4 ( var28 ) ; 
+goto var24 ; 
+} 
+if ( ! ( var4 . var26 & var29 ) ) { 
+func3 ( var1 , var18 , 
+str ) ; 
+var6 = func4 ( var30 ) ; 
+goto var24 ; 
+} 
+return var5 ; 
+var24 : 
+func6 ( var5 ) ; 
+return var6 ; 
+} 

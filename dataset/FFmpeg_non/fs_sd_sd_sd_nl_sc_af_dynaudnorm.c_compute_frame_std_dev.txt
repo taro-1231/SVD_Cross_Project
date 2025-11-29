@@ -1,0 +1,22 @@
+static double func1 ( DynamicAudioNormalizerContext * var1 , 
+AVFrame * var2 , int var3 ) 
+{ 
+double var4 = number ; 
+int var5 , var6 ; 
+if ( var3 == - number ) { 
+for ( var6 = number ; var6 < var1 -> var7 ; var6 ++ ) { 
+const double * var8 = ( double * ) var2 -> var9 [ var6 ] ; 
+for ( var5 = number ; var5 < var2 -> var10 ; var5 ++ ) { 
+var4 += func2 ( var8 [ var5 ] ) ; 
+} 
+} 
+var4 /= ( var1 -> var7 * var2 -> var10 ) - number ; 
+} else { 
+const double * var8 = ( double * ) var2 -> var9 [ var3 ] ; 
+for ( var5 = number ; var5 < var2 -> var10 ; var5 ++ ) { 
+var4 += func2 ( var8 [ var5 ] ) ; 
+} 
+var4 /= var2 -> var10 - number ; 
+} 
+return func3 ( sqrt ( var4 ) , var11 ) ; 
+} 

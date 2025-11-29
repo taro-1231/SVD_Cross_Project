@@ -1,0 +1,107 @@
+static void func1 ( AC3EncodeContext * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var2 ; 
+AC3EncOptions * var3 = & var1 -> var4 ; 
+char var5 [ number ] ; 
+switch ( var1 -> var6 ) { 
+case number : func2 ( var5 , str , number ) ; break ; 
+case 8 : func2 ( var5 , str , number ) ; break ; 
+case 9 : func2 ( var5 , str , number ) ; break ; 
+case 10 : func2 ( var5 , str , number ) ; break ; 
+case 16 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str ) ; 
+} 
+func3 ( var2 , str , var5 , var1 -> var6 ) ; 
+func3 ( var2 , str , func4 ( var2 -> var8 ) ) ; 
+func5 ( var5 , number , var1 -> var9 , var2 -> var10 ) ; 
+func3 ( var2 , str , var5 ) ; 
+func3 ( var2 , str , var1 -> var11 ) ; 
+func3 ( var2 , str , var1 -> var12 ) ; 
+func3 ( var2 , str , var1 -> var13 , var1 -> var14 ) ; 
+if ( var1 -> var15 ) 
+func3 ( var2 , str , var1 -> var15 ) ; 
+func3 ( var2 , str , 
+var3 -> var16 ? str : str ) ; 
+if ( var1 -> var17 ) 
+func3 ( var2 , str , var3 -> var18 , 
+var1 -> var18 ) ; 
+else 
+func3 ( var2 , str ) ; 
+if ( var1 -> var19 ) 
+func3 ( var2 , str , var3 -> var20 , 
+var1 -> var20 ) ; 
+else 
+func3 ( var2 , str ) ; 
+if ( var3 -> var21 ) { 
+func3 ( var2 , str , var3 -> var22 ) ; 
+switch ( var3 -> var23 ) { 
+case var24 : func2 ( var5 , str , number ) ; break ; 
+case var25 : func2 ( var5 , str , number ) ; break ; 
+case var26 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var23 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+} else { 
+func3 ( var2 , str ) ; 
+func3 ( var2 , str ) ; 
+} 
+func3 ( var2 , str , var3 -> var27 ? str : str ) ; 
+func3 ( var2 , str , var3 -> var28 ) ; 
+if ( var1 -> var29 == var30 ) { 
+switch ( var3 -> var31 ) { 
+case var24 : func2 ( var5 , str , number ) ; break ; 
+case var32 : func2 ( var5 , str , number ) ; break ; 
+case var33 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var31 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+} else { 
+func3 ( var2 , str ) ; 
+} 
+func3 ( var2 , str , var3 -> var34 ? str : str ) ; 
+if ( var1 -> var6 == number ) { 
+if ( var3 -> var35 ) { 
+switch ( var3 -> var36 ) { 
+case var24 : func2 ( var5 , str , number ) ; break ; 
+case var37 : func2 ( var5 , str , number ) ; break ; 
+case var38 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var36 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+func3 ( var2 , str , 
+var3 -> var39 , var1 -> var39 ) ; 
+func3 ( var2 , str , 
+var3 -> var40 , var1 -> var40 ) ; 
+func3 ( var2 , str , 
+var3 -> var41 , var1 -> var41 ) ; 
+func3 ( var2 , str , 
+var3 -> var42 , var1 -> var42 ) ; 
+} else { 
+func3 ( var2 , str ) ; 
+} 
+if ( var3 -> var43 ) { 
+switch ( var3 -> var44 ) { 
+case var24 : func2 ( var5 , str , number ) ; break ; 
+case var32 : func2 ( var5 , str , number ) ; break ; 
+case var33 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var44 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+switch ( var3 -> var45 ) { 
+case var24 : func2 ( var5 , str , number ) ; break ; 
+case var32 : func2 ( var5 , str , number ) ; break ; 
+case var33 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var45 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+switch ( var3 -> var46 ) { 
+case var47 : func2 ( var5 , str , number ) ; break ; 
+case var48 : func2 ( var5 , str , number ) ; break ; 
+var7 : snprintf ( var5 , number , str , var3 -> var46 ) ; 
+} 
+func3 ( var2 , str , var5 ) ; 
+} else { 
+func3 ( var2 , str ) ; 
+} 
+} 
+} 

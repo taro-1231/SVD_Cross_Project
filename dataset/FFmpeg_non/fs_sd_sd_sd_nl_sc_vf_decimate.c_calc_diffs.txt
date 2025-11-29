@@ -1,0 +1,53 @@
+static void func1 ( const DecimateContext * var1 , struct qitem * var2 , 
+const AVFrame * var3 , const AVFrame * var4 ) 
+{ 
+int64_t var5 = - number ; 
+int64_t * var6 = var1 -> var6 ; 
+int var7 , var8 , var9 ; 
+memset ( var6 , number , var1 -> var10 * sizeof ( * var6 ) ) ; 
+for ( var7 = number ; var7 < ( var1 -> var11 && var3 -> var12 [ number ] ? number : number ) ; var7 ++ ) { 
+int var13 , var14 , var15 ; 
+const int var16 = var3 -> var17 [ var7 ] ; 
+const int var18 = var4 -> var17 [ var7 ] ; 
+const uint8_t * var19 = var3 -> var12 [ var7 ] ; 
+const uint8_t * var20 = var4 -> var12 [ var7 ] ; 
+int var21 = var7 ? func2 ( var3 -> var21 , var1 -> var22 ) : var3 -> var21 ; 
+int var23 = var7 ? func2 ( var3 -> var23 , var1 -> var24 ) : var3 -> var23 ; 
+int var25 = var1 -> var26 / number ; 
+int var27 = var1 -> var28 / number ; 
+if ( var7 ) { 
+var25 >>= var1 -> var22 ; 
+var27 >>= var1 -> var24 ; 
+} 
+for ( var14 = number ; var14 < var23 ; var14 ++ ) { 
+int var29 = var14 / var27 ; 
+int var30 = number ; 
+for ( var13 = number ; var13 < var21 ; var13 += var25 ) { \ 
+int64_t var31 = number ; \ 
+int var32 = func4 ( var21 , var13 + var25 ) ; \ 
+for ( var15 = var13 ; var15 < var32 ; var15 ++ ) \ 
+var6 [ var29 * var1 -> var33 + var30 ] += var31 ; \ 
+var30 ++ ; \ 
+} \ 
+} while ( number ) 
+if ( var1 -> var34 == number ) func3 ( number ) ; 
+else func3 ( number ) ; 
+var19 += var16 ; 
+var20 += var18 ; 
+} 
+} 
+for ( var8 = number ; var8 < var1 -> var35 - number ; var8 ++ ) { 
+for ( var9 = number ; var9 < var1 -> var33 - number ; var9 ++ ) { 
+int64_t var36 = var6 [ var8 * var1 -> var33 + var9 ] 
++ var6 [ var8 * var1 -> var33 + var9 + number ] 
++ var6 [ ( var8 + number ) * var1 -> var33 + var9 ] 
++ var6 [ ( var8 + number ) * var1 -> var33 + var9 + number ] ; 
+if ( var36 > var5 ) 
+var5 = var36 ; 
+} 
+} 
+var2 -> var37 = number ; 
+for ( var8 = number ; var8 < var1 -> var10 ; var8 ++ ) 
+var2 -> var37 += var6 [ var8 ] ; 
+var2 -> var38 = var5 ; 
+} 

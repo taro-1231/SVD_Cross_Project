@@ -1,0 +1,87 @@
+func1 ( png_structp var1 ) 
+{ 
+FILE * var2 = fopen ( str , str ) ; 
+if ( var2 != var3 ) 
+{ 
+static const char var4 [ ] = { number , number , number , number , number , number , number , number } ; 
+static const char var5 [ ] = { number , number , number , number } ; 
+enum 
+{ 
+var6 , var7 , var8 , var9 , var10 , var11 , var12 , var13 
+} var14 ; 
+int var15 ; 
+for ( var14 = var6 , var15 = number ; ; ) 
+{ 
+int var16 = fgetc ( var2 ) ; 
+if ( var16 == var17 ) 
+{ 
+fclose ( var2 ) ; 
+return number ; 
+} 
+switch ( var14 ) 
+{ 
+case var6 : 
+if ( var16 <= number ) 
+break ; 
+var15 = number ; 
+var14 = var7 ; 
+case var7 : 
+if ( ( var16 & var18 ) == var4 [ var15 ] ) 
+{ 
+if ( ++ var15 == ( sizeof var4 ) ) 
+var14 = var8 ; 
+break ; 
+} 
+var14 = var13 ; 
+case var13 : 
+var19 : 
+if ( var16 != number && var16 != number ) 
+break ; 
+var14 = var6 ; 
+break ; 
+case var8 : 
+if ( var16 == number || var16 == number ) 
+break ; 
+if ( var16 == number ) 
+{ 
+var14 = var9 ; 
+break ; 
+} 
+var14 = var13 ; 
+goto var19 ; 
+case var9 : 
+if ( var16 == number || var16 == number ) 
+break ; 
+var14 = var10 ; 
+var15 = number ; 
+case var10 : 
+if ( ( var16 & var18 ) == var5 [ var15 ] ) 
+{ 
+if ( ++ var15 == ( sizeof var5 ) ) 
+var14 = var11 ; 
+break ; 
+} 
+var14 = var12 ; 
+case var12 : 
+if ( var16 == number || var16 == number ) 
+var14 = var6 ; 
+else if ( var16 == number || var16 == number ) 
+var14 = var9 ; 
+break ; 
+case var11 : 
+if ( var16 == number || var16 == number || var16 == number || var16 == number ) 
+{ 
+fclose ( var2 ) ; 
+return number ; 
+} 
+var14 = var12 ; 
+break ; 
+var20 : 
+func2 ( var1 , str ) ; 
+} 
+} 
+} 
+else 
+func3 ( var1 , str ) ; 
+return number ; 
+} 

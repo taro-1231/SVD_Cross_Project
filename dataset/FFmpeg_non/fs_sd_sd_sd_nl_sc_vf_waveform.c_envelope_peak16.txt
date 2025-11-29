@@ -1,0 +1,67 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , int var3 , int var4 ) 
+{ 
+const int var5 = var2 -> var6 [ var4 ] / number ; 
+const int var7 = var1 -> var8 [ var4 ] * ( var1 -> var9 / number ) ; 
+const int var10 = var1 -> var9 - number ; 
+const int var11 = ( var4 == number || var4 == number ) ; 
+const int var12 = ( var11 ? var1 -> var13 -> var14 : number ) ; 
+const int var15 = ( var11 ? var1 -> var13 -> var16 : number ) ; 
+const int var17 = func2 ( var2 -> var18 , var15 ) ; 
+const int var19 = func2 ( var2 -> var20 , var12 ) ; 
+const int var21 = var1 -> var22 [ var3 ] ; 
+const int var23 = var1 -> var24 [ var3 ] ; 
+int * var25 = var1 -> var25 [ var3 ] [ var4 ] ; 
+int * var26 = var1 -> var26 [ var3 ] [ var4 ] ; 
+uint16_t * var27 ; 
+int var28 , var29 ; 
+if ( var1 -> var30 ) { 
+for ( var28 = number ; var28 < var19 ; var28 ++ ) { 
+for ( var29 = var21 ; var29 < var23 && var29 < var26 [ var28 ] ; var29 ++ ) { 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var29 * var5 + var28 ; 
+if ( var27 [ number ] != var7 ) { 
+var26 [ var28 ] = var29 ; 
+break ; 
+} 
+} 
+for ( var29 = var23 - number ; var29 >= var21 && var29 >= var25 [ var28 ] ; var29 -- ) { 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var29 * var5 + var28 ; 
+if ( var27 [ number ] != var7 ) { 
+var25 [ var28 ] = var29 ; 
+break ; 
+} 
+} 
+} 
+if ( var1 -> var32 == number ) 
+func3 ( var1 , var2 , var3 , var4 ) ; 
+for ( var28 = number ; var28 < var19 ; var28 ++ ) { 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var26 [ var28 ] * var5 + var28 ; 
+var27 [ number ] = var10 ; 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var25 [ var28 ] * var5 + var28 ; 
+var27 [ number ] = var10 ; 
+} 
+} else { 
+for ( var29 = number ; var29 < var17 ; var29 ++ ) { 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var29 * var5 ; 
+for ( var28 = var21 ; var28 < var23 && var28 < var26 [ var29 ] ; var28 ++ ) { 
+if ( var27 [ var28 ] != var7 ) { 
+var26 [ var29 ] = var28 ; 
+break ; 
+} 
+} 
+for ( var28 = var23 - number ; var28 >= var21 && var28 >= var25 [ var29 ] ; var28 -- ) { 
+if ( var27 [ var28 ] != var7 ) { 
+var25 [ var29 ] = var28 ; 
+break ; 
+} 
+} 
+} 
+if ( var1 -> var32 == number ) 
+func3 ( var1 , var2 , var3 , var4 ) ; 
+for ( var29 = number ; var29 < var17 ; var29 ++ ) { 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var29 * var5 + var26 [ var29 ] ; 
+var27 [ number ] = var10 ; 
+var27 = ( uint16_t * ) var2 -> var31 [ var4 ] + var29 * var5 + var25 [ var29 ] ; 
+var27 [ number ] = var10 ; 
+} 
+} 
+} 

@@ -1,0 +1,104 @@
+int func1 ( Mpeg4DecContext * var1 , GetBitContext * var2 ) 
+{ 
+MpegEncContext * var3 = & var1 -> var4 ; 
+unsigned var5 , var6 ; 
+int var7 ; 
+func2 ( var2 ) ; 
+if ( var3 -> var8 == func3 ( str ) && func4 ( var2 , number ) == number ) { 
+func5 ( var2 , number ) ; 
+if ( func6 ( var2 , number ) == number ) 
+goto var9 ; 
+} 
+var5 = number ; 
+for ( ; ; ) { 
+if ( func7 ( var2 ) >= var2 -> var10 ) { 
+if ( var2 -> var10 == number && 
+( var1 -> var11 >= number || var1 -> var12 >= number ) || var3 -> var8 == func3 ( str ) ) { 
+func8 ( var3 -> var13 , var14 , str , var2 -> var10 ) ; 
+return var15 ; 
+} else 
+return - number ; 
+} 
+var6 = func6 ( var2 , number ) ; 
+var5 = ( ( var5 << number ) | var6 ) & number ; 
+if ( ( var5 & number ) != number ) 
+continue ; 
+if ( var3 -> var13 -> var16 & var17 ) { 
+func8 ( var3 -> var13 , var18 , str , var5 ) ; 
+if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 == number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+else if ( var5 <= number ) 
+func8 ( var3 -> var13 , var18 , str ) ; 
+func8 ( var3 -> var13 , var18 , str , func7 ( var2 ) ) ; 
+} 
+if ( var5 >= number && var5 <= number ) { 
+if ( ( var7 = func9 ( var1 , var2 ) ) < number ) 
+return var7 ; 
+} else if ( var5 == var19 ) { 
+func10 ( var1 , var2 ) ; 
+} else if ( var5 == var20 ) { 
+func11 ( var3 , var2 ) ; 
+} else if ( var5 == var21 ) { 
+func12 ( var3 , var2 ) ; 
+} else if ( var5 == var22 ) { 
+break ; 
+} 
+func2 ( var2 ) ; 
+var5 = number ; 
+} 
+var9 : 
+if ( var3 -> var13 -> var23 & var24 ) 
+var3 -> var25 = number ; 
+var3 -> var13 -> var26 = ! var3 -> var25 ; 
+return func13 ( var1 , var2 ) ; 
+} 

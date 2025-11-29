@@ -1,0 +1,104 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+W3FDIFContext * var5 = var1 -> var6 ; 
+ThreadData * var7 = var2 ; 
+AVFrame * var8 = var7 -> var8 ; 
+AVFrame * var9 = var7 -> var9 ; 
+AVFrame * var10 = var7 -> var10 ; 
+const int var11 = var7 -> var11 ; 
+const int var12 = var5 -> var12 ; 
+uint8_t * var13 , * var14 [ number ] , * var15 [ number ] ; 
+uint8_t * var16 , * var17 ; 
+int32_t * var18 , * var19 ; 
+uint8_t * var20 = var9 -> var21 [ var11 ] ; 
+uint8_t * var22 = var10 -> var21 [ var11 ] ; 
+uint8_t * var23 = var8 -> var21 [ var11 ] ; 
+const int var24 = var5 -> var24 [ var11 ] ; 
+const int var25 = var5 -> var26 [ var11 ] ; 
+const int var27 = var9 -> var24 [ var11 ] ; 
+const int var28 = var10 -> var24 [ var11 ] ; 
+const int var29 = var8 -> var24 [ var11 ] ; 
+const int var30 = ( var25 * var3 ) / var4 ; 
+const int var31 = ( var25 * ( var3 + number ) ) / var4 ; 
+int var32 , var33 , var34 , var35 ; 
+var35 = var30 + ( var5 -> var36 == var9 -> var37 ) - ( var30 & number ) ; 
+var13 = var20 + ( var35 * var27 ) ; 
+var16 = var23 + ( var35 * var29 ) ; 
+while ( var35 < var31 ) { 
+memcpy ( var16 , var13 , var24 ) ; 
+var35 += number ; 
+var13 += var27 * number ; 
+var16 += var29 * number ; 
+} 
+var35 = var30 + ( var5 -> var36 != var9 -> var37 ) - ( var30 & number ) ; 
+var16 = var23 + ( var35 * var29 ) ; 
+while ( var35 < var31 ) { 
+memset ( var5 -> var18 [ var3 ] , number , sizeof ( * var5 -> var18 [ var3 ] ) * var24 ) ; 
+for ( var33 = number ; var33 < var38 [ var12 ] ; var33 ++ ) { 
+var34 = ( var35 + number ) + ( var33 * number ) - var38 [ var12 ] ; 
+while ( var34 < number ) 
+var34 += number ; 
+while ( var34 >= var25 ) 
+var34 -= number ; 
+var14 [ var33 ] = var20 + ( var34 * var27 ) ; 
+} 
+var18 = var5 -> var18 [ var3 ] ; 
+switch ( var38 [ var12 ] ) { 
+case number : 
+for ( var32 = number ; var32 < var24 ; var32 ++ ) { 
+* var18 += * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+* var18 ++ = * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+} 
+break ; 
+case number : 
+for ( var32 = number ; var32 < var24 ; var32 ++ ) { 
+* var18 += * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+* var18 ++ = * var14 [ number ] ++ * var39 [ var12 ] [ number ] ; 
+} 
+} 
+for ( var33 = number ; var33 < var40 [ var12 ] ; var33 ++ ) { 
+var34 = ( var35 + number ) + ( var33 * number ) - var40 [ var12 ] ; 
+while ( var34 < number ) 
+var34 += number ; 
+while ( var34 >= var25 ) 
+var34 -= number ; 
+var14 [ var33 ] = var20 + ( var34 * var27 ) ; 
+var15 [ var33 ] = var22 + ( var34 * var28 ) ; 
+} 
+var18 = var5 -> var18 [ var3 ] ; 
+switch ( var40 [ var12 ] ) { 
+case number : 
+for ( var32 = number ; var32 < var24 ; var32 ++ ) { 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 ++ = * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+} 
+break ; 
+case number : 
+for ( var32 = number ; var32 < var24 ; var32 ++ ) { 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 += * var14 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+* var18 ++ = * var15 [ number ] ++ * var41 [ var12 ] [ number ] ; 
+} 
+} 
+var19 = var5 -> var18 [ var3 ] ; 
+var17 = var16 ; 
+for ( var33 = number ; var33 < var24 ; var33 ++ , var17 ++ , var19 ++ ) 
+* var17 = func2 ( * var19 , number , number * number * number ) >> number ; 
+var35 += number ; 
+var16 += var29 * number ; 
+} 
+return number ; 
+} 

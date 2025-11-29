@@ -1,0 +1,82 @@
+static int func1 ( struct Tracks * var1 , int var2 , AVIOContext * var3 ) 
+{ 
+int var4 = var5 , var6 ; 
+int var7 , var8 , var9 , var10 ; 
+int64_t var11 = func2 ( var3 ) ; 
+uint32_t var12 = func3 ( var3 ) ; 
+struct Track * var13 = var14 ; 
+if ( func3 ( var3 ) != func4 ( str , str , str , str ) ) 
+goto var15 ; 
+var7 = func5 ( var3 ) ; 
+func6 ( var3 ) ; 
+var6 = func3 ( var3 ) ; 
+for ( var9 = var2 ; var9 < var1 -> var16 && ! var13 ; var9 ++ ) 
+if ( var1 -> var1 [ var9 ] -> var6 == var6 ) 
+var13 = var1 -> var1 [ var9 ] ; 
+if ( ! var13 ) { 
+var4 = number ; 
+goto var15 ; 
+} 
+var8 = func3 ( var3 ) ; 
+var13 -> var17 = func3 ( var3 ) ; 
+var13 -> var18 = func7 ( var13 -> var17 , sizeof ( * var13 -> var18 ) ) ; 
+if ( ! var13 -> var18 ) { 
+var13 -> var17 = number ; 
+var4 = func8 ( var19 ) ; 
+goto var15 ; 
+} 
+for ( var9 = number ; var9 < var13 -> var17 ; var9 ++ ) { 
+if ( var7 == number ) { 
+var13 -> var18 [ var9 ] . var21 = func9 ( var3 ) ; 
+var13 -> var18 [ var9 ] . var22 = func9 ( var3 ) ; 
+} else { 
+var13 -> var18 [ var9 ] . var21 = func3 ( var3 ) ; 
+var13 -> var18 [ var9 ] . var22 = func3 ( var3 ) ; 
+} 
+for ( var10 = number ; var10 < ( ( var8 >> number ) & number ) + number ; var10 ++ ) 
+func5 ( var3 ) ; 
+for ( var10 = number ; var10 < ( ( var8 >> number ) & number ) + number ; var10 ++ ) 
+func5 ( var3 ) ; 
+for ( var10 = number ; var10 < ( ( var8 >> number ) & number ) + number ; var10 ++ ) 
+func5 ( var3 ) ; 
+if ( var9 > number ) 
+var13 -> var18 [ var9 - number ] . var20 = var13 -> var18 [ var9 ] . var21 - 
+var13 -> var18 [ var9 - number ] . var21 ; 
+} 
+if ( var13 -> var17 > number ) { 
+var13 -> var18 [ var13 -> var17 - number ] . var20 = var13 -> var18 [ number ] . var21 + 
+var13 -> var20 - 
+var13 -> var18 [ var13 -> var17 - number ] . var21 ; 
+} 
+for ( var9 = number ; var9 < var13 -> var17 ; var9 ++ ) { 
+int64_t var20 = func10 ( var3 , var13 -> var18 [ var9 ] . var22 ) ; 
+if ( var20 > number && abs ( var20 - var13 -> var18 [ var9 ] . var20 ) > number ) { 
+var13 -> var18 [ var9 ] . var20 = var20 ; 
+} 
+} 
+if ( var13 -> var17 > number ) { 
+if ( var13 -> var18 [ var13 -> var17 - number ] . var20 <= number ) { 
+fprintf ( stderr , str 
+str PRId64 str 
+str , var13 -> var6 , 
+var13 -> var18 [ var13 -> var17 - number ] . var20 ) ; 
+if ( var13 -> var17 > number ) { 
+var13 -> var18 [ var13 -> var17 - number ] . var20 = 
+var13 -> var18 [ var13 -> var17 - number ] . var20 ; 
+} else { 
+var13 -> var18 [ var13 -> var17 - number ] . var20 = number ; 
+} 
+fprintf ( stderr , str PRId64 str , 
+var13 -> var18 [ var13 -> var17 - number ] . var20 ) ; 
+var13 -> var20 = var13 -> var18 [ var13 -> var17 - number ] . var21 + 
+var13 -> var18 [ var13 -> var17 - number ] . var20 - 
+var13 -> var18 [ number ] . var21 ; 
+fprintf ( stderr , str PRId64 str , 
+var13 -> var20 ) ; 
+} 
+} 
+var4 = number ; 
+var15 : 
+func11 ( var3 , var11 + var12 , var23 ) ; 
+return var4 ; 
+} 

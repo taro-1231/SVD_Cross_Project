@@ -1,0 +1,4 @@
+func1 ( const display * var1 , int var2 ) 
+{ 
+return var1 -> var3 + ( var2 ? var1 -> var4 : number ) ; 
+} 

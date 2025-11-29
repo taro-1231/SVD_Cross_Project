@@ -1,0 +1,68 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , 
+int var3 , int var4 ) 
+{ 
+PerspectiveContext * var5 = var1 -> var6 ; 
+ThreadData * var7 = var2 ; 
+uint8_t * var8 = var7 -> var8 ; 
+int var9 = var7 -> var9 ; 
+uint8_t * var10 = var7 -> var10 ; 
+int var11 = var7 -> var11 ; 
+int var12 = var7 -> var12 ; 
+int var13 = var7 -> var13 ; 
+int var14 = var7 -> var14 ; 
+int var15 = var7 -> var15 ; 
+int var16 = ( var13 * var3 ) / var4 ; 
+int var17 = ( var13 * ( var3 + number ) ) / var4 ; 
+const int var18 = var5 -> var18 [ number ] ; 
+int var19 , var20 ; 
+for ( var20 = var16 ; var20 < var17 ; var20 ++ ) { 
+int var21 = var20 << var15 ; 
+for ( var19 = number ; var19 < var12 ; var19 ++ ) { 
+int var22 , var23 , var24 , var25 , var26 , var27 ; 
+var27 = var19 << var14 ; 
+var22 = var5 -> var28 [ var27 + var21 * var18 ] [ number ] >> var14 ; 
+var23 = var5 -> var28 [ var27 + var21 * var18 ] [ number ] >> var15 ; 
+var24 = var22 & ( var29 - number ) ; 
+var25 = var23 & ( var29 - number ) ; 
+var22 >>= var30 ; 
+var23 >>= var30 ; 
+if ( var22 > number && var23 > number && var22 < var12 - number && var23 < var13 - number ) { 
+const int var31 = var22 + var23 * var11 ; 
+const int var32 = var5 -> var33 [ var24 ] [ number ] ; 
+const int var34 = var5 -> var33 [ var24 ] [ number ] ; 
+const int var35 = var5 -> var33 [ var24 ] [ number ] ; 
+const int var36 = var5 -> var33 [ var24 ] [ number ] ; 
+var26 = var5 -> var33 [ var25 ] [ number ] * ( var32 * var10 [ var31 - number - var11 ] + var34 * var10 [ var31 - number - var11 ] + 
+var35 * var10 [ var31 + number - var11 ] + var36 * var10 [ var31 + number - var11 ] ) + 
+var5 -> var33 [ var25 ] [ number ] * ( var32 * var10 [ var31 - number ] + var34 * var10 [ var31 - number ] + 
+var35 * var10 [ var31 + number ] + var36 * var10 [ var31 + number ] ) + 
+var5 -> var33 [ var25 ] [ number ] * ( var32 * var10 [ var31 - number + var11 ] + var34 * var10 [ var31 - number + var11 ] + 
+var35 * var10 [ var31 + number + var11 ] + var36 * var10 [ var31 + number + var11 ] ) + 
+var5 -> var33 [ var25 ] [ number ] * ( var32 * var10 [ var31 - number + number * var11 ] + var34 * var10 [ var31 - number + number * var11 ] + 
+var35 * var10 [ var31 + number + number * var11 ] + var36 * var10 [ var31 + number + number * var11 ] ) ; 
+} else { 
+int var37 , var38 ; 
+var26 = number ; 
+for ( var38 = number ; var38 < number ; var38 ++ ) { 
+int var39 = var23 + var38 - number ; 
+if ( var39 < number ) 
+var39 = number ; 
+else if ( var39 >= var13 ) 
+var39 = var13 - number ; 
+for ( var37 = number ; var37 < number ; var37 ++ ) { 
+int var40 = var22 + var37 - number ; 
+if ( var40 < number ) 
+var40 = number ; 
+else if ( var40 >= var12 ) 
+var40 = var12 - number ; 
+var26 += var5 -> var33 [ var24 ] [ var37 ] * var5 -> var33 [ var25 ] [ var38 ] * var10 [ var40 + var39 * var11 ] ; 
+} 
+} 
+} 
+var26 = ( var26 + ( number << ( var41 * number - number ) ) ) >> ( var41 * number ) ; 
+var26 = func2 ( var26 ) ; 
+var8 [ var19 + var20 * var9 ] = var26 ; 
+} 
+} 
+return number ; 
+} 

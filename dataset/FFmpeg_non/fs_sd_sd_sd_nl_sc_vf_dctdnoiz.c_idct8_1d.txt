@@ -1,0 +1,41 @@
+static void av_always_inline func1 ( float * var1 , const float * var2 , 
+int var3 , int var4 , 
+int var5 , int var6 , 
+int var7 ) 
+{ 
+int var8 ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+const float var9 = number * var2 [ number * var5 ] ; 
+const float var10 = number * var2 [ number * var5 ] + number * var2 [ number * var5 ] ; 
+const float var11 = number * var2 [ number * var5 ] + number * var2 [ number * var5 ] ; 
+const float var12 = number * var2 [ number * var5 ] + number * var2 [ number * var5 ] ; 
+const float var13 = number * var2 [ number * var5 ] ; 
+const float var14 = - number * var2 [ number * var5 ] + number * var2 [ number * var5 ] ; 
+const float var15 = number * var2 [ number * var5 ] - number * var2 [ number * var5 ] ; 
+const float var16 = - number * var2 [ number * var5 ] + number * var2 [ number * var5 ] ; 
+const float var17 = var9 + var13 ; 
+const float var18 = var10 + var12 ; 
+const float var19 = number * var11 ; 
+const float var20 = var9 - var13 ; 
+const float var21 = var10 - var12 ; 
+const float var22 = number * ( var17 - var19 ) ; 
+const float var23 = number * ( var20 + var21 ) ; 
+const float var24 = number * ( var20 - var21 ) ; 
+const float var25 = number * var15 ; 
+const float var26 = var14 + var16 ; 
+const float var27 = var14 - var16 ; 
+const float var28 = number * ( var25 + var26 ) ; 
+const float var29 = number * ( var25 - var26 ) ; 
+const float var30 = number * var27 ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var17 + var19 ) + number * var18 ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var23 + var29 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var23 - var29 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var22 + var30 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var22 - var30 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var24 - var28 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var24 + var28 ) ; 
+var1 [ number * var3 ] = ( var7 ? var1 [ number * var3 ] : number ) + number * ( var17 + var19 ) - number * var18 ; 
+var1 += var4 ; 
+var2 += var6 ; 
+} 
+} 

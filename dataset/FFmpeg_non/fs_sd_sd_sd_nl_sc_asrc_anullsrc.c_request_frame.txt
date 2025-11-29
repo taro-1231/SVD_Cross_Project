@@ -1,0 +1,18 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+int var2 ; 
+ANullContext * var3 = var1 -> var4 -> var5 ; 
+AVFrame * var6 ; 
+var6 = func2 ( var1 , var3 -> var7 ) ; 
+if ( ! var6 ) 
+return func3 ( var8 ) ; 
+var6 -> var9 = var3 -> var9 ; 
+var6 -> var10 = var3 -> var10 ; 
+var6 -> var11 = var1 -> var11 ; 
+var2 = func4 ( var1 , func5 ( var6 ) ) ; 
+func6 ( & var6 ) ; 
+if ( var2 < number ) 
+return var2 ; 
+var3 -> var9 += var3 -> var7 ; 
+return var2 ; 
+} 

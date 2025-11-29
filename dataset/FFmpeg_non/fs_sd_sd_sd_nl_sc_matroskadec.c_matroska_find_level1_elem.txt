@@ -1,0 +1,23 @@
+static MatroskaLevel1Element * func1 ( MatroskaDemuxContext * var1 , 
+uint32_t var2 ) 
+{ 
+int var3 ; 
+MatroskaLevel1Element * var4 ; 
+if ( ! func2 ( var2 ) ) 
+return var5 ; 
+if ( var2 == var6 ) 
+return var5 ; 
+if ( var2 != var7 ) { 
+for ( var3 = number ; var3 < var1 -> var8 ; var3 ++ ) { 
+if ( var1 -> var9 [ var3 ] . var2 == var2 ) 
+return & var1 -> var9 [ var3 ] ; 
+} 
+} 
+if ( var1 -> var8 >= func3 ( var1 -> var9 ) ) { 
+func4 ( var1 -> var10 , var11 , str ) ; 
+return var5 ; 
+} 
+var4 = & var1 -> var9 [ var1 -> var8 ++ ] ; 
+* var4 = ( MatroskaLevel1Element ) { . var2 = var2 } ; 
+return var4 ; 
+} 

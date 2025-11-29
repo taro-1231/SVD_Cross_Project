@@ -1,0 +1,27 @@
+static int func1 ( struct LATMContext * var1 , 
+GetBitContext * var2 ) 
+{ 
+int var3 ; 
+uint8_t var4 = func2 ( var2 , number ) ; 
+if ( ! var4 ) { 
+if ( ( var3 = func3 ( var1 , var2 ) ) < number ) 
+return var3 ; 
+} else if ( ! var1 -> var5 . var6 -> var7 ) { 
+func4 ( var1 -> var5 . var6 , var8 , 
+str ) ; 
+return func5 ( var9 ) ; 
+} 
+if ( var1 -> var10 == number ) { 
+int var11 = func6 ( var1 , var2 ) ; 
+if ( var11 * number > func7 ( var2 ) ) { 
+func4 ( var1 -> var5 . var6 , var12 , str ) ; 
+return var13 ; 
+} else if ( var11 * number + number < func7 ( var2 ) ) { 
+func4 ( var1 -> var5 . var6 , var12 , 
+str , 
+var11 * number , func7 ( var2 ) ) ; 
+return var13 ; 
+} 
+} 
+return number ; 
+} 

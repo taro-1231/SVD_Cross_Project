@@ -1,0 +1,4 @@
+static int64_t func1 ( void ) 
+{ 
+return func2 ( ) ; 
+} 

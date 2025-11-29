@@ -1,0 +1,62 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+DCTdnoizContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var1 -> var4 -> var8 [ number ] ; 
+int var9 , var10 ; 
+AVFrame * var11 ; 
+if ( func2 ( var2 ) ) { 
+var9 = number ; 
+var11 = var2 ; 
+} else { 
+var9 = number ; 
+var11 = func3 ( var7 , var7 -> var12 , var7 -> var13 ) ; 
+if ( ! var11 ) { 
+func4 ( & var2 ) ; 
+return func5 ( var14 ) ; 
+} 
+func6 ( var11 , var2 ) ; 
+} 
+var5 -> func7 ( var5 -> var15 [ number ] , var5 -> var16 , 
+var2 -> var17 [ number ] , var2 -> var18 [ number ] , 
+var5 -> var19 , var5 -> var20 ) ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+ThreadData var21 = { 
+. var22 = var5 -> var15 [ number ] [ var10 ] , 
+. var4 = var5 -> var15 [ number ] [ var10 ] , 
+} ; 
+var3 -> var23 -> func8 ( var3 , var24 , & var21 , var25 , var5 -> var26 ) ; 
+} 
+var5 -> func9 ( var11 -> var17 [ number ] , var11 -> var18 [ number ] , 
+var5 -> var15 [ number ] , var5 -> var16 , 
+var5 -> var19 , var5 -> var20 ) ; 
+if ( ! var9 ) { 
+int var27 ; 
+uint8_t * var4 = var11 -> var17 [ number ] ; 
+const uint8_t * var22 = var2 -> var17 [ number ] ; 
+const int var28 = var11 -> var18 [ number ] ; 
+const int var29 = var2 -> var18 [ number ] ; 
+const int var30 = ( var1 -> var12 - var5 -> var19 ) * number ; 
+const int var31 = ( var1 -> var13 - var5 -> var20 ) ; 
+if ( var30 ) { 
+uint8_t * var32 = var4 + var5 -> var19 * number ; 
+const uint8_t * var33 = var22 + var5 -> var19 * number ; 
+for ( var27 = number ; var27 < var5 -> var20 ; var27 ++ ) { 
+memcpy ( var32 , var33 , var30 ) ; 
+var32 += var28 ; 
+var33 += var29 ; 
+} 
+} 
+if ( var31 ) { 
+uint8_t * var32 = var4 + var5 -> var20 * var28 ; 
+const uint8_t * var33 = var22 + var5 -> var20 * var29 ; 
+for ( var27 = number ; var27 < var31 ; var27 ++ ) { 
+memcpy ( var32 , var33 , var1 -> var12 * number ) ; 
+var32 += var28 ; 
+var33 += var29 ; 
+} 
+} 
+func4 ( & var2 ) ; 
+} 
+return func10 ( var7 , var11 ) ; 
+} 

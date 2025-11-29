@@ -1,0 +1,33 @@
+void func4 ( void ) 
+{ 
+static int var1 ; 
+if ( var1 ) 
+return ; 
+var1 = number ; 
+func1 ( var2 , var3 ) ; 
+func3 ( var4 , var5 ) ; 
+func3 ( var6 , var7 ) ; 
+func2 ( var8 , var9 ) ; 
+func1 ( var10 , var11 ) ; 
+func3 ( var12 , var13 ) ; 
+func3 ( var14 , var15 ) ; 
+func1 ( var16 , var17 ) ; 
+func3 ( var18 , var19 ) ; 
+func3 ( var20 , var21 ) ; 
+func3 ( var22 , var23 ) ; 
+func3 ( var24 , var25 ) ; 
+func3 ( var26 , var27 ) ; 
+func2 ( var28 , var29 ) ; 
+func1 ( var30 , var31 ) ; 
+func1 ( var32 , var33 ) ; 
+func3 ( var34 , var35 ) ; 
+func2 ( var36 , var37 ) ; 
+func1 ( var38 , var39 ) ; 
+func1 ( var40 , var41 ) ; 
+func3 ( var42 , var43 ) ; 
+func3 ( var44 , var45 ) ; 
+func3 ( var46 , var47 ) ; 
+func2 ( var48 , var49 ) ; 
+func3 ( var50 , var51 ) ; 
+func3 ( var52 , var53 ) ; 
+} 

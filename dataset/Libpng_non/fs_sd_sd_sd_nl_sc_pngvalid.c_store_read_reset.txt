@@ -1,0 +1,19 @@
+func1 ( png_store * var1 ) 
+{ 
+if ( var1 -> var2 != var3 ) 
+{ 
+func2 ( var1 ) ; 
+Try 
+var4 ( & var1 -> var2 , & var1 -> var5 , var3 ) ; 
+Catch_anonymous 
+{ 
+} 
+var1 -> var2 = var3 ; 
+var1 -> var5 = var3 ; 
+} 
+var6 ( var1 , & var1 -> var7 ) ; 
+var1 -> var8 = var3 ; 
+var1 -> var9 = var3 ; 
+var1 -> var10 = number ; 
+var1 -> var11 = number ; 
+} 

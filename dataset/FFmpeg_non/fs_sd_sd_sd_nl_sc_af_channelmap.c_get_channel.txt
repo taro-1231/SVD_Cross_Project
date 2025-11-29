@@ -1,0 +1,11 @@
+static int func1 ( char ** var1 , uint64_t * var2 , char var3 ) 
+{ 
+char * var4 = func2 ( * var1 , var3 ) ; 
+if ( ! var4 && var3 == str ) 
+return func3 ( var5 ) ; 
+* var2 = func4 ( * var1 ) ; 
+if ( func5 ( * var2 ) != number ) 
+return func3 ( var5 ) ; 
+* var1 = var4 ; 
+return number ; 
+} 

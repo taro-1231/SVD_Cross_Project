@@ -1,0 +1,55 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+OpenGLContext * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+int var5 ; 
+if ( var1 -> var6 != number || 
+var1 -> var7 [ number ] -> var8 -> var9 != var10 || 
+var1 -> var7 [ number ] -> var8 -> var11 != var12 ) { 
+func2 ( var2 , var13 , str ) ; 
+return func3 ( var14 ) ; 
+} 
+var4 = var1 -> var7 [ number ] ; 
+var2 -> var15 = var4 -> var8 -> var15 ; 
+var2 -> var16 = var4 -> var8 -> var16 ; 
+var2 -> var17 = var4 -> var8 -> var17 ; 
+if ( ! var2 -> var18 ) 
+var2 -> var18 = var2 -> var15 ; 
+if ( ! var2 -> var19 ) 
+var2 -> var19 = var2 -> var16 ; 
+if ( ! var2 -> var20 && ! var2 -> var21 ) 
+var2 -> var20 = func4 ( var1 -> var22 ) ; 
+if ( ( var5 = func5 ( var1 ) ) ) 
+goto var23 ; 
+if ( ( var5 = func6 ( var2 ) ) < number ) 
+goto var23 ; 
+if ( var2 -> var15 > var2 -> var24 || var2 -> var16 > var2 -> var24 ) { 
+func2 ( var2 , var13 , str , 
+var2 -> var15 , var2 -> var16 , var2 -> var24 , var2 -> var24 ) ; 
+var5 = func3 ( var14 ) ; 
+goto var23 ; 
+} 
+if ( ( var5 = func7 ( var2 ) ) < number ) 
+goto var23 ; 
+func8 ( var2 ) ; 
+func9 ( var2 ) ; 
+if ( ( var5 = func10 ( var2 ) ) < number ) 
+goto var23 ; 
+if ( ( var5 = func11 ( var1 ) ) < number ) 
+goto var23 ; 
+func12 ( var25 ) ; 
+if ( ! var2 -> var21 ) 
+func13 ( ) ; 
+if ( var2 -> var21 && 
+( var5 = func14 ( var1 , var26 , var27 , number ) ) < number ) { 
+func2 ( var2 , var13 , str ) ; 
+goto var23 ; 
+} 
+var5 = var28 ; 
+func15 ( var2 ) ; 
+var2 -> var29 = number ; 
+return number ; 
+var23 : 
+func16 ( var1 ) ; 
+return var5 ; 
+} 

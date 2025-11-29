@@ -1,0 +1,103 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+AVBPrint var3 ; 
+char var4 , * var5 , * var6 ; 
+int var7 , var8 ; 
+void * var9 , * var10 ; 
+const char * var11 = str 
+const char * var12 = var13 ; 
+FILE * var14 = var13 ; 
+zmq_msg_t var15 ; 
+while ( ( var4 = func2 ( var1 , var2 , str ) ) != - number ) { 
+switch ( var4 ) { 
+case str : 
+var11 = var16 ; 
+break ; 
+case str : 
+func3 ( ) ; 
+return number ; 
+case str : 
+var12 = var16 ; 
+break ; 
+case str : 
+return number ; 
+} 
+} 
+if ( ! var12 || ! strcmp ( var12 , str ) ) { 
+var12 = str ; 
+var14 = var17 ; 
+} else { 
+var14 = fopen ( var12 , str ) ; 
+} 
+if ( ! var14 ) { 
+func4 ( var13 , var18 , 
+str , var12 , strerror ( var19 ) ) ; 
+return number ; 
+} 
+var9 = func5 ( ) ; 
+if ( ! var9 ) { 
+func4 ( var13 , var18 , 
+str , func6 ( var19 ) ) ; 
+return number ; 
+} 
+var10 = func7 ( var9 , var20 ) ; 
+if ( ! var10 ) { 
+func4 ( var13 , var18 , 
+str , func6 ( var19 ) ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+if ( func8 ( var10 , var11 ) == - number ) { 
+func4 ( var13 , var18 , str , 
+var11 , func6 ( var19 ) ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+func9 ( & var3 , number , var22 ) ; 
+while ( ( var4 = fgetc ( var14 ) ) != var23 ) 
+func10 ( & var3 , var4 , number ) ; 
+func10 ( & var3 , number , number ) ; 
+if ( ! func11 ( & var3 ) ) { 
+func4 ( var13 , var18 , str ) ; 
+func12 ( & var3 , var13 ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+func12 ( & var3 , & var5 ) ; 
+if ( func13 ( var10 , var5 , strlen ( var5 ) , number ) == - number ) { 
+func4 ( var13 , var18 , str , func6 ( var19 ) ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+if ( func14 ( & var15 ) == - number ) { 
+func4 ( var13 , var18 , 
+str , func6 ( var19 ) ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+if ( func15 ( & var15 , var10 , number ) == - number ) { 
+func4 ( var13 , var18 , 
+str , func6 ( var19 ) ) ; 
+func16 ( & var15 ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+var7 = func17 ( & var15 ) + number ; 
+var6 = func18 ( var7 ) ; 
+if ( ! var6 ) { 
+func4 ( var13 , var18 , 
+str ) ; 
+func16 ( & var15 ) ; 
+var8 = number ; 
+goto var21 ; 
+} 
+memcpy ( var6 , func19 ( & var15 ) , var7 ) ; 
+var6 [ var7 - number ] = number ; 
+printf ( str , var6 ) ; 
+func16 ( & var15 ) ; 
+func20 ( var6 ) ; 
+var21 : 
+func21 ( var10 ) ; 
+func22 ( var9 ) ; 
+return var8 ; 
+} 

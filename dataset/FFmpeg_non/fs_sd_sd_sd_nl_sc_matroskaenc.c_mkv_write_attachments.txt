@@ -1,0 +1,72 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+ebml_master var5 ; 
+AVLFG var6 ; 
+int var7 , var8 ; 
+if ( ! var2 -> var9 ) 
+return number ; 
+func2 ( & var6 , func3 ( ) ) ; 
+var8 = func4 ( var2 -> var10 , var11 , func5 ( var4 ) ) ; 
+if ( var8 < number ) return var8 ; 
+var5 = func6 ( var4 , var11 , number ) ; 
+for ( var7 = number ; var7 < var1 -> var12 ; var7 ++ ) { 
+AVStream * var13 = var1 -> var14 [ var7 ] ; 
+ebml_master var15 ; 
+AVDictionaryEntry * var16 ; 
+const char * var17 = var18 ; 
+uint64_t var19 ; 
+if ( var13 -> var20 -> var21 != var22 ) 
+continue ; 
+var15 = func6 ( var4 , var23 , number ) ; 
+if ( var16 = func7 ( var13 -> var24 , var34 , var18 , number ) ) 
+func8 ( var4 , var25 , var16 -> var26 ) ; 
+if ( ! ( var16 = func7 ( var13 -> var24 , var34 , var18 , number ) ) ) { 
+func9 ( var1 , var27 , var34 , var7 ) ; 
+return func10 ( var28 ) ; 
+} 
+func8 ( var4 , var29 , var16 -> var26 ) ; 
+if ( var16 = func7 ( var13 -> var24 , var34 , var18 , number ) ) 
+var17 = var16 -> var26 ; 
+else if ( var13 -> var20 -> var30 != var31 ) { 
+int var7 ; 
+for ( var7 = number ; var32 [ var7 ] . var33 != var31 ; var7 ++ ) 
+if ( var32 [ var7 ] . var33 == var13 -> var20 -> var30 ) { 
+var17 = var32 [ var7 ] . var34 ; 
+break ; 
+} 
+for ( var7 = number ; var35 [ var7 ] . var33 != var31 ; var7 ++ ) 
+if ( var35 [ var7 ] . var33 == var13 -> var20 -> var30 ) { 
+var17 = var35 [ var7 ] . var34 ; 
+break ; 
+} 
+} 
+if ( ! var17 ) { 
+func9 ( var1 , var27 , str 
+str , var7 ) ; 
+return func10 ( var28 ) ; 
+} 
+if ( var1 -> var36 & var37 ) { 
+struct AVSHA * var38 = func11 ( ) ; 
+uint8_t var39 [ number ] ; 
+if ( ! var38 ) 
+return func10 ( var40 ) ; 
+func12 ( var38 , number ) ; 
+func13 ( var38 , var13 -> var20 -> var41 , var13 -> var20 -> var42 ) ; 
+func14 ( var38 , var39 ) ; 
+func15 ( var38 ) ; 
+var19 = func16 ( var39 ) ; 
+} else { 
+var19 = func17 ( & var6 ) ; 
+} 
+func9 ( var1 , AV_LOG_VERBOSE , str PRIx64 str , 
+var19 , var7 ) ; 
+func8 ( var4 , var43 , var17 ) ; 
+func18 ( var4 , var44 , var13 -> var20 -> var41 , var13 -> var20 -> var42 ) ; 
+func19 ( var4 , var45 , var19 ) ; 
+func20 ( var4 , var15 ) ; 
+} 
+func20 ( var4 , var5 ) ; 
+return number ; 
+} 

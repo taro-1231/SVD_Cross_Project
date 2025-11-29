@@ -1,0 +1,14 @@
+static int func1 ( AVCodecContext * var1 , void * var2 ) { 
+MpegEncContext * var3 = * ( void ** ) var2 ; 
+var3 -> var4 . var5 = number ; 
+var3 -> var4 . var6 = var3 -> var7 -> var8 ; 
+var3 -> var9 = number ; 
+for ( var3 -> var10 = var3 -> var11 - number ; var3 -> var10 >= var3 -> var12 ; var3 -> var10 -- ) { 
+for ( var3 -> var13 = var3 -> var14 - number ; var3 -> var13 >= number ; var3 -> var13 -- ) { 
+func2 ( var3 , var3 -> var13 , var3 -> var10 ) ; 
+} 
+var3 -> var9 = number ; 
+} 
+var3 -> var4 . var5 = number ; 
+return number ; 
+} 

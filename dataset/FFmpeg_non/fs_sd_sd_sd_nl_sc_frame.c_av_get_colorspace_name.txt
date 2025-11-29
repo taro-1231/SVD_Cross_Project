@@ -1,0 +1,15 @@
+const char * func1 ( enum AVColorSpace var1 ) 
+{ 
+static const char * const var2 [ ] = { 
+[ AVCOL_SPC_RGB ] = str , 
+[ AVCOL_SPC_BT709 ] = str , 
+[ AVCOL_SPC_FCC ] = str , 
+[ AVCOL_SPC_BT470BG ] = str , 
+[ AVCOL_SPC_SMPTE170M ] = str , 
+[ AVCOL_SPC_SMPTE240M ] = str , 
+[ AVCOL_SPC_YCOCG ] = str , 
+} ; 
+if ( ( unsigned ) var1 >= func2 ( var2 ) ) 
+return var3 ; 
+return var2 [ var1 ] ; 
+} 

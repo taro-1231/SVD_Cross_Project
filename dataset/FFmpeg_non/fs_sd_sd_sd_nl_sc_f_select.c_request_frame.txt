@@ -1,0 +1,13 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+SelectContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var1 -> var3 -> var7 [ number ] ; 
+int var8 = func2 ( var1 ) ; 
+do { 
+int var9 = func3 ( var6 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+} while ( var4 -> var10 != var8 ) ; 
+return number ; 
+} 

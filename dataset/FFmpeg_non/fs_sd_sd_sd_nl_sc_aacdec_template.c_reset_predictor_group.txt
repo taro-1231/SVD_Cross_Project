@@ -1,0 +1,6 @@
+static void func1 ( PredictorState * var1 , int var2 ) 
+{ 
+int var3 ; 
+for ( var3 = var2 - number ; var3 < var4 ; var3 += number ) 
+func2 ( & var1 [ var3 ] ) ; 
+} 

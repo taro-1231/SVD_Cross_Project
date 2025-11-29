@@ -1,0 +1,18 @@
+static int func1 ( AC3EncodeContext * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+var3 = ( var3 - number ) << number ; 
+func2 ( var2 ) ; 
+for ( var4 = number ; var4 < var2 -> var6 ; var4 ++ ) { 
+AC3Block * var7 = & var2 -> var8 [ var4 ] ; 
+for ( var5 = ! var7 -> var9 ; var5 <= var2 -> var10 ; var5 ++ ) { 
+if ( var2 -> var11 [ var5 ] [ var4 ] != var12 ) { 
+var2 -> var13 . func3 ( var7 -> var14 [ var5 ] , var7 -> var15 [ var5 ] , 
+var2 -> var16 [ var5 ] , var7 -> var17 [ var5 ] , 
+var3 , var2 -> func1 . var18 , 
+var19 , var2 -> var20 [ var5 ] [ var4 ] ) ; 
+} 
+} 
+} 
+return func4 ( var2 ) ; 
+} 

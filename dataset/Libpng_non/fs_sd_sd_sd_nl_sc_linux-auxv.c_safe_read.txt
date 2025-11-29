@@ -1,0 +1,37 @@
+func1 ( png_structp var1 , int var2 , void * var3 , size_t var4 ) 
+{ 
+size_t var5 = number ; 
+char * var6 = png_voidcast ( char * , var3 ) ; 
+while ( var4 > number ) 
+{ 
+unsigned int var7 ; 
+int var8 ; 
+if ( var4 > var9 ) 
+var7 = var9 ; 
+else 
+var7 = ( unsigned int ) bytes ; 
+var8 = func2 ( var2 , var6 , var7 ) ; 
+if ( var8 == - number ) 
+{ 
+if ( var10 != var11 ) 
+{ 
+func3 ( var1 , str ) ; 
+return number ; 
+} 
+} 
+else if ( var8 < number ) 
+{ 
+func3 ( var1 , str ) ; 
+return number ; 
+} 
+else if ( var8 > number ) 
+{ 
+var6 += var8 ; 
+var4 -= ( unsigned int ) func2 ; 
+var5 += ( unsigned int ) func2 ; 
+} 
+else 
+return var5 ; 
+} 
+return var5 ; 
+} 

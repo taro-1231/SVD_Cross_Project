@@ -1,0 +1,7 @@
+av_cold void func1 ( HQDN3DContext * var1 ) 
+{ 
+var1 -> var2 [ number ] = var3 ; 
+var1 -> var2 [ number ] = var4 ; 
+var1 -> var2 [ number ] = var5 ; 
+var1 -> var2 [ number ] = var6 ; 
+} 

@@ -1,0 +1,15 @@
+static int func1 ( AVProbeData * var1 ) 
+{ 
+const char * var2 = var1 -> var3 , * var4 = var1 -> var3 + var1 -> var5 ; 
+while ( var2 < var4 && * var2 != str ) { 
+if ( sizeof ( str ) - number < var4 - var2 && 
+func2 ( var2 , str , var6 ) ) 
+return var7 ; 
+while ( var2 < var4 - number && * var2 != str ) var2 ++ ; 
+if ( ++ var2 >= var4 ) 
+break ; 
+if ( * var2 == str ) 
+var2 ++ ; 
+} 
+return number ; 
+} 

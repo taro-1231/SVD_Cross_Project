@@ -1,0 +1,4 @@
+static void func1 ( WriterContext * var1 , const char * var2 , long long int var3 ) 
+{ 
+printf ( var6 , var1 -> var4 [ var1 -> var5 ] . var6 , var2 , var3 ) ; 
+} 

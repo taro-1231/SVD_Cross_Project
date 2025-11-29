@@ -1,0 +1,107 @@
+static int func1 ( const char * var1 ) 
+{ 
+AVCodec * var2 = var3 ; 
+AVCodecContext * var4 = var3 , * var5 = var3 ; 
+AVFrame * var6 = var3 ; 
+uint8_t * var7 = var3 ; 
+AVPacket var8 ; 
+AVFormatContext * var9 = var3 ; 
+int var10 ; 
+int var11 ; 
+int var12 = number ; 
+int var13 ; 
+int var14 = number ; 
+int var15 ; 
+int var16 = number ; 
+var15 = func2 ( & var9 , var1 , var3 , var3 ) ; 
+if ( var15 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var15 ; 
+} 
+var15 = func4 ( var9 , var3 ) ; 
+if ( var15 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var15 ; 
+} 
+var11 = func5 ( var9 , var18 , - number , - number , var3 , number ) ; 
+if ( var11 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+var4 = var9 -> var19 [ var11 ] -> var2 ; 
+var2 = func6 ( var4 -> var20 ) ; 
+if ( ! var2 ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+var5 = func7 ( var2 ) ; 
+if ( ! var5 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+var15 = func9 ( var5 , var4 ) ; 
+if ( var15 ) { 
+func3 ( var3 , var17 , str ) ; 
+return var15 ; 
+} 
+var15 = func10 ( var5 , var2 , var3 ) ; 
+if ( var15 < number ) { 
+func3 ( var5 , var17 , str ) ; 
+return var15 ; 
+} 
+var6 = func11 ( ) ; 
+if ( ! var6 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+var13 = func12 ( var5 -> var22 , var5 -> var23 , var5 -> var24 , number ) ; 
+var7 = func13 ( var13 ) ; 
+if ( ! var7 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+printf ( str , var11 , var9 -> var19 [ var11 ] -> var25 . var26 , var9 -> var19 [ var11 ] -> var25 . var27 ) ; 
+var14 = number ; 
+func14 ( & var8 ) ; 
+do { 
+if ( ! var16 ) 
+if ( func15 ( var9 , & var8 ) < number ) 
+var16 = number ; 
+if ( var16 ) { 
+var8 . var28 = var3 ; 
+var8 . var29 = number ; 
+} 
+if ( var8 . var30 == var11 || var16 ) { 
+var12 = number ; 
+if ( var8 . var31 == var32 ) 
+var8 . var31 = var8 . var33 = var14 ; 
+var15 = func16 ( var5 , var6 , & var12 , & var8 ) ; 
+if ( var15 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var15 ; 
+} 
+if ( var12 ) { 
+var10 = av_image_copy_to_buffer ( var7 , var13 , 
+( const uint8_t * const * ) var6 -> var28 , ( const int * ) var6 -> linesize , 
+var5 -> var22 , var5 -> var23 , var5 -> var24 , number ) ; 
+if ( var10 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var10 ; 
+} 
+printf ( str PRId64 str PRId64 str PRId64 str , var11 , 
+var6 -> pkt_pts , var6 -> pkt_dts , av_frame_get_pkt_duration ( var6 ) , 
+var10 , av_adler32_update ( number , ( const uint8_t * ) var7 , var10 ) ) ; 
+} 
+func17 ( & var8 ) ; 
+func14 ( & var8 ) ; 
+} 
+var14 ++ ; 
+} while ( ! var16 || var12 ) ; 
+func17 ( & var8 ) ; 
+func18 ( & var6 ) ; 
+func19 ( var5 ) ; 
+func20 ( & var9 ) ; 
+func21 ( & var5 ) ; 
+func22 ( & var7 ) ; 
+return number ; 
+} 

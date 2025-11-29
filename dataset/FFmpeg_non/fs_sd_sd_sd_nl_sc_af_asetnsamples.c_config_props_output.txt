@@ -1,0 +1,9 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ASNSContext * var2 = var1 -> var3 -> var4 ; 
+var2 -> var5 = func2 ( var1 -> var6 , var1 -> var7 , var2 -> var8 ) ; 
+if ( ! var2 -> var5 ) 
+return func3 ( var9 ) ; 
+var1 -> var10 |= var11 ; 
+return number ; 
+} 

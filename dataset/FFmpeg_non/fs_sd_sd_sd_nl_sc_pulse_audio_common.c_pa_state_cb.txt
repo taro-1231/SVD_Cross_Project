@@ -1,0 +1,15 @@
+static void func1 ( pa_context * var1 , void * var2 ) 
+{ 
+enum PulseAudioContextState * var3 = var2 ; 
+switch ( func2 ( var1 ) ) { 
+case var4 : 
+case var5 : 
+* var3 = var6 ; 
+break ; 
+case var7 : 
+* var3 = var8 ; 
+break ; 
+var9 : 
+break ; 
+} 
+} 

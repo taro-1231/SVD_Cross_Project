@@ -1,0 +1,14 @@
+AVFixedDSPContext * func1 ( int var1 ) 
+{ 
+AVFixedDSPContext * var2 = func2 ( sizeof ( AVFixedDSPContext ) ) ; 
+if ( ! var2 ) 
+return var3 ; 
+var2 -> var4 = var5 ; 
+var2 -> var6 = var7 ; 
+var2 -> var8 = var9 ; 
+var2 -> var10 = var11 ; 
+var2 -> var12 = var13 ; 
+var2 -> var14 = var15 ; 
+var2 -> var16 = var17 ; 
+return var2 ; 
+} 

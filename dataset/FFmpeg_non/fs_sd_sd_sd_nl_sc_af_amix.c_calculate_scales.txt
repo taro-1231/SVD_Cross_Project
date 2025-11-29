@@ -1,0 +1,14 @@
+static void func1 ( MixContext * var1 , int var2 ) 
+{ 
+int var3 ; 
+if ( var1 -> var4 > var1 -> var5 ) { 
+var1 -> var4 -= var2 / ( var1 -> var6 * var1 -> var7 ) ; 
+var1 -> var4 = func2 ( var1 -> var4 , var1 -> var5 ) ; 
+} 
+for ( var3 = number ; var3 < var1 -> var8 ; var3 ++ ) { 
+if ( var1 -> var9 [ var3 ] == var10 ) 
+var1 -> var11 [ var3 ] = number / var1 -> var4 ; 
+else 
+var1 -> var11 [ var3 ] = number ; 
+} 
+} 

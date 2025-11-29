@@ -1,0 +1,4 @@
+void func1 ( AVMurMur3 * var1 ) 
+{ 
+func2 ( var1 , number ) ; 
+} 

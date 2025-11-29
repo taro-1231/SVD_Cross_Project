@@ -1,0 +1,9 @@
+static int func1 ( struct sbg_parser * var1 , char var2 , struct sbg_string * var3 ) 
+{ 
+if ( ! func2 ( var1 , var3 ) ) { 
+snprintf ( var1 -> var4 , sizeof ( var1 -> var4 ) , 
+str , var2 ) ; 
+return var5 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,13 @@
+func1 ( libAVPin * var1 , IEnumMediaTypes ** var2 ) 
+{ 
+const AM_MEDIA_TYPE * var3 = var4 ; 
+libAVEnumMediaTypes * new ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var5 ; 
+new = func3 ( var3 ) ; 
+if ( ! new ) 
+return var6 ; 
+* var2 = ( IEnumMediaTypes * ) new ; 
+return var7 ; 
+} 

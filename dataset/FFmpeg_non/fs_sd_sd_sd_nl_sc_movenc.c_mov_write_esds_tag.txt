@@ -1,0 +1,36 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+int64_t var3 = func2 ( var1 ) ; 
+int var4 = var2 -> var5 ? number + var2 -> var5 : number ; 
+unsigned var6 ; 
+func3 ( var1 , number ) ; 
+func4 ( var1 , str ) ; 
+func3 ( var1 , number ) ; 
+func5 ( var1 , number , number + number + number + var4 + number + number ) ; 
+func6 ( var1 , var2 -> var7 ) ; 
+func7 ( var1 , number ) ; 
+func5 ( var1 , number , number + var4 ) ; 
+if ( ( var2 -> var8 -> var9 == var10 || 
+var2 -> var8 -> var9 == var11 ) && 
+var2 -> var8 -> var12 > number ) 
+func7 ( var1 , number ) ; 
+else 
+func7 ( var1 , func8 ( var13 , var2 -> var8 -> var9 ) ) ; 
+if ( var2 -> var8 -> var9 == var14 ) 
+func7 ( var1 , ( number << number ) | number ) ; 
+else if ( var2 -> var8 -> var15 == var16 ) 
+func7 ( var1 , number ) ; 
+else 
+func7 ( var1 , number ) ; 
+func9 ( var1 , var2 -> var8 -> var17 >> number ) ; 
+var6 = func10 ( var2 ) ; 
+func3 ( var1 , func11 ( var2 -> var8 -> var18 , var2 -> var8 -> var19 , var6 ) ) ; 
+func3 ( var1 , var6 ) ; 
+if ( var2 -> var5 ) { 
+func5 ( var1 , number , var2 -> var5 ) ; 
+func12 ( var1 , var2 -> var20 , var2 -> var5 ) ; 
+} 
+func5 ( var1 , number , number ) ; 
+func7 ( var1 , number ) ; 
+return func13 ( var1 , var3 ) ; 
+} 

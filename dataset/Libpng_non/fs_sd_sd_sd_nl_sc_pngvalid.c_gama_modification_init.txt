@@ -1,0 +1,12 @@
+func1 ( gama_modification * var1 , png_modifier * var2 , double var3 ) 
+{ 
+double var4 ; 
+func2 ( & var1 -> var5 ) ; 
+var1 -> var5 . var6 = var7 ; 
+var1 -> var5 . var8 = var9 ; 
+var1 -> var5 . var10 = var11 ; 
+var4 = func3 ( var3 ) ; 
+var1 -> var12 = ( png_fixed_point ) var4 ; 
+var1 -> var5 . var13 = var2 -> var14 ; 
+var2 -> var14 = & var1 -> var5 ; 
+} 

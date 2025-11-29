@@ -1,0 +1,10 @@
+static int func1 ( int var1 ) 
+{ 
+fprintf ( var2 , str ) ; 
+fprintf ( var2 , str ) ; 
+fprintf ( var2 , str ) ; 
+fprintf ( var2 , str ) ; 
+fprintf ( var2 , str ) ; 
+fprintf ( var2 , str ) ; 
+return var1 ; 
+} 

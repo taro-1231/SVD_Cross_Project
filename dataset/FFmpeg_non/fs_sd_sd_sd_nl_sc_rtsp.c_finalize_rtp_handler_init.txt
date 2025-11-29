@@ -1,0 +1,18 @@
+static void func1 ( AVFormatContext * var1 , RTSPStream * var2 , 
+AVStream * var3 ) 
+{ 
+if ( var2 -> var4 && var2 -> var4 -> func2 ) { 
+int var5 = var2 -> var4 -> func2 ( var1 , var3 ? var3 -> var6 : - number , 
+var2 -> var7 ) ; 
+if ( var5 < number ) { 
+if ( var2 -> var7 ) { 
+if ( var2 -> var4 -> func3 ) 
+var2 -> var4 -> func3 ( 
+var2 -> var7 ) ; 
+func4 ( var2 -> var7 ) ; 
+} 
+var2 -> var7 = var8 ; 
+var2 -> var4 = var8 ; 
+} 
+} 
+} 

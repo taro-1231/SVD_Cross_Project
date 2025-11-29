@@ -1,0 +1,19 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+ScaleContext * var7 = var1 -> var8 ; 
+int var9 ; 
+if ( ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) 
+|| ! strcmp ( var2 , str ) || ! strcmp ( var2 , str ) ) { 
+int var12 = var7 -> var10 ; 
+int var13 = var7 -> var11 ; 
+AVFilterLink * var14 = var1 -> var15 [ number ] ; 
+func2 ( var7 , var2 , var3 , number ) ; 
+if ( ( var9 = func3 ( var14 ) ) < number ) { 
+var7 -> var10 = var12 ; 
+var7 -> var11 = var13 ; 
+} 
+} else 
+var9 = func4 ( var16 ) ; 
+return var9 ; 
+} 

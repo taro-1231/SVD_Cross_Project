@@ -1,0 +1,17 @@
+static int func1 ( UID var1 , char ** var2 ) 
+{ 
+int var3 ; 
+char * var4 ; 
+var4 = * var2 = func2 ( sizeof ( UID ) * number + number + number ) ; 
+if ( ! var4 ) 
+return func3 ( var5 ) ; 
+for ( var3 = number ; var3 < sizeof ( UID ) ; var3 ++ ) { 
+snprintf ( var4 , number + number , var2 , var1 [ var3 ] ) ; 
+var4 += number ; 
+if ( var3 == number || var3 == number || var3 == number || var3 == number ) { 
+snprintf ( var4 , number + number , var2 ) ; 
+var4 ++ ; 
+} 
+} 
+return number ; 
+} 

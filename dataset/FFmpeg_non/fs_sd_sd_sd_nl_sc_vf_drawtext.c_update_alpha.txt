@@ -1,0 +1,12 @@
+static void func1 ( DrawTextContext * var1 ) 
+{ 
+double var2 = func2 ( var1 -> var3 , var1 -> var4 , & var1 -> var5 ) ; 
+if ( isnan ( var2 ) ) 
+return ; 
+if ( var2 >= number ) 
+var1 -> var2 = number ; 
+else if ( var2 <= number ) 
+var1 -> var2 = number ; 
+else 
+var1 -> var2 = number * var2 ; 
+} 

@@ -1,0 +1,30 @@
+static int func1 ( AVCodecContext * var1 , AVFrame * var2 , int var3 ) 
+{ 
+DecodeContext * var4 = var1 -> var5 ; 
+mfxFrameSurface1 * var6 ; 
+AVBufferRef * var7 ; 
+int var8 ; 
+for ( var8 = number ; var8 < var4 -> var9 ; var8 ++ ) { 
+if ( ! var4 -> var10 [ var8 ] ) 
+break ; 
+} 
+if ( var8 == var4 -> var9 ) { 
+fprintf ( var11 , str ) ; 
+return func2 ( var13 ) ; 
+} 
+var6 = func3 ( sizeof ( * var6 ) ) ; 
+if ( ! var6 ) 
+return func2 ( var13 ) ; 
+var7 = func4 ( ( uint8_t * ) var6 , sizeof ( * var6 ) , var14 , 
+& var4 -> var10 [ var8 ] , var15 ) ; 
+if ( ! var7 ) { 
+func5 ( & var6 ) ; 
+return func2 ( var13 ) ; 
+} 
+var6 -> var16 = var4 -> var17 ; 
+var6 -> var18 . var19 = & var4 -> var12 [ var8 ] ; 
+var2 -> var20 [ number ] = var7 ; 
+var2 -> var21 [ number ] = ( uint8_t * ) var6 ; 
+var4 -> var10 [ var8 ] = number ; 
+return number ; 
+} 

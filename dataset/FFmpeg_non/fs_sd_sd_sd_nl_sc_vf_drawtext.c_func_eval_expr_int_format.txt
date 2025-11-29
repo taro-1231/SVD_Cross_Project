@@ -1,0 +1,45 @@
+static int func1 ( AVFilterContext * var1 , AVBPrint * var2 , 
+char * var3 , unsigned var4 , char ** var5 , int var6 ) 
+{ 
+DrawTextContext * var7 = var1 -> var8 ; 
+double var9 ; 
+int var10 ; 
+int var11 ; 
+unsigned int var12 = number ; 
+char var13 [ number ] = str ; 
+var11 = func2 ( & var9 , var5 [ number ] , var14 , var7 -> var15 , 
+var16 , var16 , var17 , var18 , 
+& var7 -> var19 , number , var1 ) ; 
+if ( var11 < number ) { 
+func3 ( var1 , var20 , 
+str , 
+var5 [ number ] ) ; 
+return var11 ; 
+} 
+if ( ! strchr ( str , var5 [ number ] [ number ] ) ) { 
+func3 ( var1 , var20 , str 
+str , var5 [ number ] [ number ] ) ; 
+return func4 ( var21 ) ; 
+} 
+if ( var4 == number ) { 
+var11 = sscanf ( var5 [ number ] , str , & var12 ) ; 
+if ( var11 != number ) { 
+func3 ( var1 , var20 , str 
+str , var5 [ number ] ) ; 
+return func4 ( var21 ) ; 
+} 
+} 
+feclearexcept ( var22 ) ; 
+var10 = var9 ; 
+if ( ( var11 = fetestexcept ( var23 | var24 | var25 ) ) ) { 
+func3 ( var1 , var20 , str , var11 , var10 ) ; 
+return func4 ( var21 ) ; 
+} 
+if ( var4 == number ) 
+func5 ( var13 , sizeof ( var13 ) , str , var12 ) ; 
+func5 ( var13 , sizeof ( var13 ) , str , var5 [ number ] [ number ] ) ; 
+func3 ( var1 , var26 , str , 
+var9 , var5 [ number ] , var13 ) ; 
+func6 ( var2 , var13 , var10 ) ; 
+return number ; 
+} 

@@ -1,0 +1,24 @@
+static int func1 ( ATempoContext * var1 ) 
+{ 
+const AudioFragment * var2 = func2 ( var1 ) ; 
+AudioFragment * var3 = func3 ( var1 ) ; 
+const double var4 = 
+( double ) ( var2 -> var5 [ number ] - var1 -> var6 [ number ] + var1 -> var7 / number ) ; 
+const double var8 = 
+( double ) ( var2 -> var5 [ number ] - var1 -> var6 [ number ] + var1 -> var7 / number ) / 
+var1 -> var9 ; 
+const int var10 = ( int ) ( var4 - var8 ) ; 
+const int var11 = var1 -> var7 / number ; 
+const int var12 = func4 ( var3 , 
+var2 , 
+var1 -> var7 , 
+var11 , 
+var10 , 
+var1 -> var13 , 
+var1 -> var14 ) ; 
+if ( var12 ) { 
+var3 -> var5 [ number ] -= var12 ; 
+var3 -> var15 = number ; 
+} 
+return var12 ; 
+} 

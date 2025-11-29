@@ -1,0 +1,19 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+OverlayContext * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) { 
+func2 ( var1 , var5 , 
+str ) ; 
+var2 -> var6 = var7 ; 
+} 
+if ( ! var2 -> var8 . var9 || var2 -> var10 == var11 ) { 
+var2 -> var8 . var9 = number ; 
+var2 -> var10 = var11 ; 
+} 
+if ( var2 -> var8 . var12 || var2 -> var10 == var13 ) { 
+var2 -> var8 . var12 = number ; 
+var2 -> var10 = var13 ; 
+} 
+var2 -> var8 . var14 = var15 ; 
+return number ; 
+} 

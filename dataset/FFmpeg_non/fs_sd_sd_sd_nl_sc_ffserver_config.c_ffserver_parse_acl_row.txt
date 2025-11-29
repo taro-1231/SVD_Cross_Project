@@ -1,0 +1,61 @@
+void func1 ( FFServerStream * var1 , FFServerStream * var2 , 
+FFServerIPAddressACL * var3 , 
+const char * var4 , const char * var5 , int var6 ) 
+{ 
+char var7 [ number ] ; 
+FFServerIPAddressACL var8 ; 
+FFServerIPAddressACL * var9 ; 
+FFServerIPAddressACL ** var10 ; 
+func2 ( var7 , sizeof ( var7 ) , & var4 ) ; 
+if ( func3 ( var7 , str ) == number ) 
+var8 . var11 = var12 ; 
+else if ( func3 ( var7 , str ) == number ) 
+var8 . var11 = var13 ; 
+else { 
+fprintf ( var14 , str , 
+var5 , var6 , var7 ) ; 
+goto var15 ; 
+} 
+func2 ( var7 , sizeof ( var7 ) , & var4 ) ; 
+if ( func4 ( & var8 . var16 , var7 ) ) { 
+fprintf ( var14 , 
+str , 
+var5 , var6 , var7 ) ; 
+goto var15 ; 
+} 
+var8 . var17 = var8 . var16 ; 
+func2 ( var7 , sizeof ( var7 ) , & var4 ) ; 
+if ( var7 [ number ] ) { 
+if ( func4 ( & var8 . var17 , var7 ) ) { 
+fprintf ( var14 , 
+str , 
+var5 , var6 , var7 ) ; 
+goto var15 ; 
+} 
+} 
+var9 = func5 ( sizeof ( * var9 ) ) ; 
+if ( ! var9 ) { 
+fprintf ( var14 , str ) ; 
+goto var15 ; 
+} 
+var10 = number ; 
+var8 . var18 = number ; 
+* var9 = var8 ; 
+if ( var1 ) 
+var10 = & var1 -> var8 ; 
+else if ( var2 ) 
+var10 = & var2 -> var8 ; 
+else if ( var3 ) 
+var10 = & var3 ; 
+else 
+fprintf ( var14 , str , 
+var5 , var6 ) ; 
+if ( var10 ) { 
+while ( * var10 ) 
+var10 = & ( * var10 ) -> var18 ; 
+* var10 = var9 ; 
+} else 
+func6 ( var9 ) ; 
+var15 : 
+return ; 
+} 

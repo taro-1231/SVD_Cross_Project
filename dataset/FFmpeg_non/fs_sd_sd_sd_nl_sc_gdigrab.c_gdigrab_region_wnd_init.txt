@@ -1,0 +1,44 @@
+func1 ( AVFormatContext * var1 , struct var2 * var2 ) 
+{ 
+HWND var3 ; 
+RECT var4 = var2 -> var5 ; 
+HRGN var6 = var7 ; 
+HRGN var8 = var7 ; 
+DWORD var9 = var10 | var11 ; 
+DWORD var12 = var13 | var14 | var15 ; 
+var4 . var16 -= var17 ; var4 . var18 -= var17 ; 
+var4 . var19 += var17 ; var4 . var20 += var17 ; 
+func2 ( & var4 , var9 , var21 , var12 ) ; 
+var3 = func3 ( var12 , var22 , var7 , var9 , var4 . var16 , var4 . var18 , 
+var4 . var19 - var4 . var16 , var4 . var20 - var4 . var18 , 
+var7 , var7 , var7 , var7 ) ; 
+if ( ! var3 ) { 
+func4 ( str ) ; 
+goto var23 ; 
+} 
+func5 ( var3 , & var4 ) ; 
+var6 = func6 ( number , number , 
+var4 . var19 - var4 . var16 , var4 . var20 - var4 . var18 ) ; 
+var8 = func6 ( var17 , var17 , 
+var4 . var19 - var4 . var16 - var17 , 
+var4 . var20 - var4 . var18 - var17 ) ; 
+func7 ( var6 , var6 , var8 , var24 ) ; 
+if ( ! func8 ( var3 , var6 , var21 ) ) { 
+func4 ( str ) ; 
+goto var23 ; 
+} 
+var6 = var7 ; 
+func9 ( var8 ) ; 
+func10 ( var3 , var25 , ( LONG_PTR ) var26 ) ; 
+func11 ( var3 , var27 ) ; 
+var2 -> var28 = var3 ; 
+return number ; 
+var23 : 
+if ( var6 ) 
+func9 ( var6 ) ; 
+if ( var8 ) 
+func9 ( var8 ) ; 
+if ( var3 ) 
+func12 ( var3 ) ; 
+return number ; 
+} 

@@ -1,0 +1,34 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+EightBpsContext * const var2 = var1 -> var3 ; 
+var2 -> var1 = var1 ; 
+switch ( var1 -> var4 ) { 
+case 8 : 
+var1 -> var5 = var6 ; 
+var2 -> var7 = number ; 
+var2 -> var8 [ number ] = number ; 
+break ; 
+case 24 : 
+var1 -> var5 = func2 ( var1 , var9 ) ; 
+var2 -> var7 = number ; 
+var2 -> var8 [ number ] = number ; 
+var2 -> var8 [ number ] = number ; 
+var2 -> var8 [ number ] = number ; 
+break ; 
+case 32 : 
+var1 -> var5 = var10 ; 
+var2 -> var7 = number ; 
+break ; 
+var11 : 
+func3 ( var1 , var12 , str , 
+var1 -> var4 ) ; 
+return var13 ; 
+} 
+if ( var1 -> var5 == var10 ) { 
+var2 -> var8 [ number ] = var14 ? number : number ; 
+var2 -> var8 [ number ] = var14 ? number : number ; 
+var2 -> var8 [ number ] = var14 ? number : number ; 
+var2 -> var8 [ number ] = var14 ? number : number ; 
+} 
+return number ; 
+} 

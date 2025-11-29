@@ -1,0 +1,5 @@
+static int func1 ( const char * var1 , int var2 ) 
+{ 
+fprintf ( var3 , str , var1 ) ; 
+return var2 ; 
+} 

@@ -1,0 +1,48 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+StabData * var4 = var2 -> var5 ; 
+VSMotionDetect * var6 = & ( var4 -> var6 ) ; 
+VSFrameInfo var7 ; 
+const AVPixFmtDescriptor * var8 = func2 ( var1 -> var9 ) ; 
+func3 ( & var7 , var1 -> var10 , var1 -> var11 , 
+func4 ( var2 , var1 -> var9 ) ) ; 
+if ( var7 . var12 != func5 ( var8 ) / number ) { 
+func6 ( var2 , var13 , str ) ; 
+return func7 ( var14 ) ; 
+} 
+if ( var7 . var15 != var8 -> var16 ) { 
+func6 ( var2 , var13 , str ) ; 
+return func7 ( var14 ) ; 
+} 
+if ( var7 . var17 != var8 -> var18 ) { 
+func6 ( var2 , var13 , str ) ; 
+return func7 ( var14 ) ; 
+} 
+var4 -> var19 . var20 = number ; 
+var4 -> var19 . var21 = str ; 
+if ( func8 ( var6 , & var4 -> var19 , & var7 ) != var22 ) { 
+func6 ( var2 , var13 , str ) ; 
+return func7 ( var14 ) ; 
+} 
+func9 ( & var4 -> var19 , var6 ) ; 
+func6 ( var2 , var23 , str ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var24 ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var25 ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var26 ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var28 ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var29 ) ; 
+func6 ( var2 , var23 , str , var4 -> var19 . var30 ) ; 
+func6 ( var2 , var23 , str , var4 -> var31 ) ; 
+var4 -> var27 = fopen ( var4 -> var31 , str ) ; 
+if ( var4 -> var27 == var32 ) { 
+func6 ( var2 , var13 , str , var4 -> var31 ) ; 
+return func7 ( var14 ) ; 
+} else { 
+if ( func10 ( var6 , var4 -> var27 ) != var22 ) { 
+func6 ( var2 , var13 , str , var4 -> var31 ) ; 
+return func7 ( var14 ) ; 
+} 
+} 
+return number ; 
+} 

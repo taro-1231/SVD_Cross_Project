@@ -1,0 +1,8 @@
+int func1 ( void ) 
+{ 
+int var1 = getchar ( ) ; 
+int var2 = ( func2 ( var1 ) == str ) ; 
+while ( var1 != str && var1 != var3 ) 
+var1 = getchar ( ) ; 
+return var2 ; 
+} 

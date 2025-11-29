@@ -1,0 +1,46 @@
+static int func1 ( AVCodecContext * var1 ) 
+{ 
+Mpeg1Context * var2 = var1 -> var3 ; 
+MpegEncContext * var4 = & var2 -> var5 ; 
+int var6 , var7 , var8 ; 
+var4 -> var9 = var10 ; 
+if ( var2 -> var11 ) { 
+func2 ( var4 ) ; 
+var2 -> var11 = number ; 
+} 
+var4 -> var12 = var1 -> var13 ; 
+var4 -> var14 = var1 -> var15 ; 
+var1 -> var16 = number ; 
+var4 -> var17 = number ; 
+var1 -> var18 = func3 ( var1 ) ; 
+func4 ( var1 ) ; 
+func5 ( var4 ) ; 
+if ( ( var8 = func6 ( var4 ) ) < number ) 
+return var8 ; 
+var2 -> var11 = number ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+int var19 = var4 -> var20 . var21 [ var6 ] ; 
+var7 = var22 [ var6 ] ; 
+var4 -> var23 [ var19 ] = var7 ; 
+var4 -> var24 [ var19 ] = var7 ; 
+var7 = var25 [ var6 ] ; 
+var4 -> var26 [ var19 ] = var7 ; 
+var4 -> var27 [ var19 ] = var7 ; 
+} 
+var4 -> var28 = number ; 
+var4 -> var29 = number ; 
+var4 -> var30 = var31 ; 
+var4 -> var32 = number ; 
+var4 -> var33 = number ; 
+var4 -> var34 = number ; 
+if ( var4 -> var35 == func7 ( str ) ) { 
+var4 -> var36 = var4 -> var1 -> var36 = var37 ; 
+} else { 
+var4 -> var38 = number ; 
+var4 -> var36 = var4 -> var1 -> var36 = var39 ; 
+} 
+var2 -> var40 = var4 -> var12 ; 
+var2 -> var41 = var4 -> var14 ; 
+var2 -> var42 = var4 -> var28 ; 
+return number ; 
+} 

@@ -1,0 +1,8 @@
+static void func1 ( int var1 , const char * var2 , va_list var3 , void * var4 ) 
+{ 
+const int var5 = func2 ( var1 , number , 
+func3 ( var6 ) - number ) ; 
+const int var7 = var6 [ var5 ] ; 
+func4 ( var4 , var7 , var2 , var3 ) ; 
+func5 ( var4 , var7 , str ) ; 
+} 

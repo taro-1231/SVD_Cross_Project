@@ -1,0 +1,5 @@
+static void func1 ( float var1 [ number ] ) 
+{ 
+memset ( var1 , number , number * sizeof ( float ) ) ; 
+var1 [ number ] = var1 [ number ] = var1 [ number ] = var1 [ number ] = number ; 
+} 

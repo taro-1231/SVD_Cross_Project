@@ -1,0 +1,6 @@
+static inline int * func1 ( int * var1 , unsigned var2 ) 
+{ 
+var1 [ number ] = ( var2 & number ) - number ; 
+var1 [ number ] = ( var2 >> number & number ) - number ; 
+return var1 + number ; 
+} 

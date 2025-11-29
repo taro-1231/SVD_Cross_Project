@@ -1,0 +1,4 @@
+static inline int func1 ( uint32_t var1 ) 
+{ 
+return var1 == str || var1 == str || var1 == str || var1 == str ; 
+} 

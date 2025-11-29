@@ -1,0 +1,26 @@
+int func1 ( void ) 
+{ 
+static const char var1 [ ] = 
+str ; 
+unsigned var2 = number ; 
+int var3 = number ; 
+int var4 = number ; 
+int var5 ; 
+do { \ 
+putchar ( var1 [ ( var2 << number >> var3 ) & number ] ) ; \ 
+var4 ++ ; \ 
+var3 -= number ; \ 
+} while ( number ) 
+while ( ( var5 = getchar ( ) ) != var6 ) { 
+var2 = ( var2 << number ) + var5 ; 
+var3 += number ; 
+while ( var3 > number ) 
+func2 ( ) ; 
+} 
+while ( var3 > number ) 
+func2 ( ) ; 
+while ( var4 ++ & number ) 
+putchar ( str ) ; 
+putchar ( str ) ; 
+return number ; 
+} 

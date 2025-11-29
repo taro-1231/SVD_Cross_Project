@@ -1,0 +1,8 @@
+static void func1 ( AVFifoBuffer * var1 ) 
+{ 
+while ( func2 ( var1 ) ) { 
+AVFrame * var2 ; 
+func3 ( var1 , & var2 , sizeof ( var2 ) , var3 ) ; 
+func4 ( & var2 ) ; 
+} 
+} 

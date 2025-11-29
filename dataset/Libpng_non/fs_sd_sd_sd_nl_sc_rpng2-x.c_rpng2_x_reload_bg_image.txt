@@ -1,0 +1,156 @@
+static void func1 ( void ) 
+{ 
+char * var1 ; 
+uch var2 , var3 , var4 , var5 , var6 , var7 ; 
+uch var8 , var9 , var10 , var11 , var12 , var13 ; 
+int var14 , var15 , var16 ; 
+int var17 , var18 , var19 ; 
+int var20 , var21 , var22 ; 
+int var23 = ( var24 [ var25 ] . var26 & number ) ; 
+int var27 ; 
+ulg var28 , var29 ; 
+var30 = ( var25 == number ) ? number : var31 ; 
+var19 = var30 - number ; 
+if ( ( var24 [ var25 ] . var26 & number ) == number ) { 
+uch var32 = var33 [ var24 [ var25 ] . var34 ] . var35 ; 
+uch var36 = var33 [ var24 [ var25 ] . var34 ] . var37 ; 
+uch var38 = var33 [ var24 [ var25 ] . var34 ] . var39 ; 
+uch var40 = var33 [ var24 [ var25 ] . var41 ] . var35 ; 
+uch var42 = var33 [ var24 [ var25 ] . var41 ] . var37 ; 
+uch var43 = var33 [ var24 [ var25 ] . var41 ] . var39 ; 
+int var44 = var33 [ var24 [ var25 ] . var45 ] . var35 - var32 ; 
+int var46 = var33 [ var24 [ var25 ] . var45 ] . var37 - var36 ; 
+int var47 = var33 [ var24 [ var25 ] . var45 ] . var39 - var38 ; 
+int var48 = var33 [ var24 [ var25 ] . var49 ] . var35 - var40 ; 
+int var50 = var33 [ var24 [ var25 ] . var49 ] . var37 - var42 ; 
+int var51 = var33 [ var24 [ var25 ] . var49 ] . var39 - var43 ; 
+for ( var29 = number ; var29 < var52 . var53 ; ++ var29 ) { 
+var18 = ( int ) ( var29 % var30 ) ; 
+var20 = ( int ) ( ( var29 / var30 ) & number ) ; 
+var2 = var32 + ( var44 * var18 ) / var19 ; 
+var4 = var36 + ( var46 * var18 ) / var19 ; 
+var6 = var38 + ( var47 * var18 ) / var19 ; 
+var8 = var32 + ( var44 * ( var19 - var18 ) ) / var19 ; 
+var10 = var36 + ( var46 * ( var19 - var18 ) ) / var19 ; 
+var12 = var38 + ( var47 * ( var19 - var18 ) ) / var19 ; 
+var3 = var40 + ( var48 * var18 ) / var19 ; 
+var5 = var42 + ( var50 * var18 ) / var19 ; 
+var7 = var43 + ( var51 * var18 ) / var19 ; 
+var9 = var40 + ( var48 * ( var19 - var18 ) ) / var19 ; 
+var11 = var42 + ( var50 * ( var19 - var18 ) ) / var19 ; 
+var13 = var43 + ( var51 * ( var19 - var18 ) ) / var19 ; 
+var1 = ( char * ) var54 + var29 * var55 ; 
+for ( var28 = number ; var28 < var52 . var56 ; ++ var28 ) { 
+var21 = ( int ) ( ( var28 / var30 ) & number ) ; 
+var22 = var20 ^ var21 ; 
+var27 = 
+( var21 && ( var24 [ var25 ] . var26 & number ) ) ; 
+if ( var22 == number ) { 
+if ( var27 ) { 
+* var1 += var8 ; 
+* var1 += var10 ; 
+* var1 += var12 ; 
+} else { 
+* var1 += var2 ; 
+* var1 += var4 ; 
+* var1 += var6 ; 
+} 
+} else { 
+if ( ( var27 && var23 ) || 
+( ! var27 && ! var23 ) ) 
+{ 
+* var1 += var3 ; 
+* var1 += var5 ; 
+* var1 += var7 ; 
+} else { 
+* var1 += var9 ; 
+* var1 += var11 ; 
+* var1 += var13 ; 
+} 
+} 
+} 
+} 
+} else if ( ( var24 [ var25 ] . var26 & number ) == number ) { 
+var15 = ( var30 - number ) / number ; 
+var16 = number * var15 ; 
+var2 = var33 [ var24 [ var25 ] . var45 ] . var35 ; 
+var4 = var33 [ var24 [ var25 ] . var45 ] . var37 ; 
+var6 = var33 [ var24 [ var25 ] . var45 ] . var39 ; 
+var3 = var33 [ var24 [ var25 ] . var49 ] . var35 ; 
+var5 = var33 [ var24 [ var25 ] . var49 ] . var37 ; 
+var7 = var33 [ var24 [ var25 ] . var49 ] . var39 ; 
+for ( var29 = number ; var29 < var52 . var53 ; ++ var29 ) { 
+var18 = ( int ) ( var29 % var30 ) ; 
+if ( var18 > var15 ) 
+var18 = var30 - number - var18 ; 
+var1 = ( char * ) var54 + var29 * var55 ; 
+for ( var28 = number ; var28 < var52 . var56 ; ++ var28 ) { 
+var17 = ( int ) ( var28 % var30 ) ; 
+if ( var17 > var15 ) 
+var17 = var30 - number - var17 ; 
+var14 = var17 + var18 ; 
+* var1 += ( var14 * var2 + ( var16 - var14 ) * var3 ) / var16 ; 
+* var1 += ( var14 * var4 + ( var16 - var14 ) * var5 ) / var16 ; 
+* var1 += ( var14 * var6 + ( var16 - var14 ) * var7 ) / var16 ; 
+} 
+} 
+} else if ( ( var24 [ var25 ] . var26 & number ) == number ) { 
+uch var57 ; 
+int var58 , var59 , var60 , var61 , var62 , var63 ; 
+double var64 , var65 , var66 , var67 , var68 ; 
+double var69 = number , var70 = number , var71 , var72 ; 
+double var73 = number , var74 = number , var75 = number , var76 , var77 , var78 , var79 , var80 , var81 , var82 ; 
+var62 = ( int ) ( var52 . var53 / number ) ; 
+var61 = ( int ) ( var52 . var56 / number ) ; 
+var69 = func2 ( var69 , number , number ) ; 
+var63 = func2 ( var24 [ var25 ] . var83 , number , ( var62 + var61 ) ) ; 
+var64 = func3 ( ( double ) var24 [ var25 ] . var84 , number ) ; 
+var66 = ( double ) var24 [ var25 ] . var85 * number ; 
+var65 = ( double ) var24 [ var25 ] . var86 * number ; 
+var67 = number ; 
+var68 = number ; 
+var71 = ( double ) ( ( var61 * var61 ) + ( var62 * var62 ) ) ; 
+for ( var29 = number ; var29 < var52 . var53 ; ++ var29 ) { 
+var60 = ( int ) ( var29 - var62 ) ; 
+var1 = ( char * ) var54 + var29 * var55 ; 
+for ( var28 = number ; var28 < var52 . var56 ; ++ var28 ) { 
+var59 = ( int ) ( var28 - var61 ) ; 
+var69 = ( var59 == number ) ? var87 : atan ( ( double ) var60 / ( double ) var59 ) ; 
+var67 = ( double ) func3 ( func4 ( var60 ) , func4 ( var59 ) ) / var63 ; 
+var67 = func5 ( number , var67 ) ; 
+var72 = ( double ) ( ( var59 * var59 ) + ( var60 * var60 ) ) / var71 ; 
+var68 = cos ( ( var69 + ( var65 * var72 * var88 ) ) * var64 ) * 
+var67 * var66 ; 
+var68 = ( func3 ( func5 ( var68 , number ) , - number ) + number ) * number ; 
+var76 = ( var69 + var88 ) * var89 + var70 ; 
+var77 = var67 * ( ( double ) ( func4 ( var59 ) + func4 ( var60 ) ) / ( double ) ( var61 + var62 ) ) ; 
+var77 = func5 ( func3 ( var77 , number ) , number ) ; 
+var78 = func5 ( func3 ( var68 , number ) , number ) ; 
+if ( var77 == number ) { 
+var57 = ( uch ) ( var78 * number ) ; 
+* var1 += var57 ; 
+* var1 += var57 ; 
+* var1 += var57 ; 
+} else { 
+if ( ( var76 < number ) || ( var76 >= number ) ) 
+var76 -= ( ( ( int ) ( var76 / number ) ) * number ) ; 
+var76 /= number ; 
+var58 = ( int ) var76 ; 
+var79 = var76 - ( double ) var58 ; 
+var80 = ( number - var77 ) * var78 ; 
+var81 = ( number - ( var77 * var79 ) ) * var78 ; 
+var82 = ( number - ( var77 * ( number - var79 ) ) ) * var78 ; 
+if ( var58 == number ) { var73 = var78 ; var74 = var82 ; var75 = var80 ; } 
+else if ( var58 == number ) { var73 = var81 ; var74 = var78 ; var75 = var80 ; } 
+else if ( var58 == number ) { var73 = var80 ; var74 = var78 ; var75 = var82 ; } 
+else if ( var58 == number ) { var73 = var80 ; var74 = var81 ; var75 = var78 ; } 
+else if ( var58 == number ) { var73 = var82 ; var74 = var80 ; var75 = var78 ; } 
+else if ( var58 == number ) { var73 = var78 ; var74 = var80 ; var75 = var81 ; } 
+* var1 += ( uch ) ( var73 * number ) ; 
+* var1 += ( uch ) ( var74 * number ) ; 
+* var1 += ( uch ) ( var75 * number ) ; 
+} 
+} 
+} 
+} 
+} 

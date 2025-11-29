@@ -1,0 +1,9 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 ; 
+PaletteGenContext * var3 = var1 -> var4 ; 
+for ( var2 = number ; var2 < var5 ; var2 ++ ) 
+func2 ( & var3 -> var6 [ var2 ] . var7 ) ; 
+func2 ( & var3 -> var8 ) ; 
+func3 ( & var3 -> var9 ) ; 
+} 

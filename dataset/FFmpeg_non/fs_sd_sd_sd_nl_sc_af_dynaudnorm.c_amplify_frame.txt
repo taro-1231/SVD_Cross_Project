@@ -1,0 +1,18 @@
+static void func1 ( DynamicAudioNormalizerContext * var1 , AVFrame * var2 ) 
+{ 
+int var3 , var4 ; 
+for ( var3 = number ; var3 < var1 -> var5 ; var3 ++ ) { 
+double * var6 = ( double * ) var2 -> var7 [ var3 ] ; 
+double var8 ; 
+func2 ( var1 -> var9 [ var3 ] , & var8 ) ; 
+for ( var4 = number ; var4 < var2 -> var10 ; var4 ++ ) { 
+const double var11 = func3 ( var1 -> var12 [ var3 ] , 
+var8 , var4 , 
+var1 -> var13 ) ; 
+var6 [ var4 ] *= var11 ; 
+if ( fabs ( var6 [ var4 ] ) > var1 -> var14 ) 
+var6 [ var4 ] = copysign ( var1 -> var14 , var6 [ var4 ] ) ; 
+} 
+var1 -> var12 [ var3 ] = var8 ; 
+} 
+} 

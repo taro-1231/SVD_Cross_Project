@@ -1,0 +1,25 @@
+enum AVChromaLocation func1 ( AVFormatContext * var1 , AVStream * var2 ) 
+{ 
+AVCodecContext * var3 = var2 -> var4 ; 
+const AVPixFmtDescriptor * var5 = func2 ( var3 -> var6 ) ; 
+if ( var3 -> var7 != var8 ) 
+return var3 -> var7 ; 
+if ( var5 ) { 
+if ( var5 -> var9 == number ) { 
+return var10 ; 
+} else if ( var5 -> var11 == number && var5 -> var9 == number ) { 
+if ( var3 -> var12 == var13 || var3 -> var12 == var14 ) { 
+switch ( var3 -> var15 ) { 
+case var16 : 
+case var17 : return var18 ; 
+} 
+} 
+if ( var3 -> var12 == var13 || var3 -> var12 != var14 ) { 
+switch ( var3 -> var15 ) { 
+case var19 : return var20 ; 
+} 
+} 
+} 
+} 
+return var8 ; 
+} 

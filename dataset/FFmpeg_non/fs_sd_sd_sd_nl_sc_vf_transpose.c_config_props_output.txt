@@ -1,0 +1,39 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+TransContext * var4 = var2 -> var5 ; 
+AVFilterLink * var6 = var2 -> var7 [ number ] ; 
+const AVPixFmtDescriptor * var8 = func2 ( var1 -> var9 ) ; 
+const AVPixFmtDescriptor * var10 = func2 ( var6 -> var9 ) ; 
+if ( var4 -> var11 & number ) { 
+func3 ( var2 , var12 , 
+str ) ; 
+var4 -> var11 &= number ; 
+var4 -> var13 = var14 ; 
+} 
+if ( ( var6 -> var15 >= var6 -> var16 && var4 -> var13 == var14 ) || 
+( var6 -> var15 <= var6 -> var16 && var4 -> var13 == var17 ) ) { 
+func3 ( var2 , var18 , 
+str , 
+var6 -> var15 , var6 -> var16 , var6 -> var15 , var6 -> var16 ) ; 
+return number ; 
+} else { 
+var4 -> var13 = var19 ; 
+} 
+var4 -> var20 = var10 -> var21 ; 
+var4 -> var22 = var10 -> var23 ; 
+func4 ( var4 -> var24 , var25 , var8 ) ; 
+var1 -> var15 = var6 -> var16 ; 
+var1 -> var16 = var6 -> var15 ; 
+if ( var6 -> var26 . var27 ) 
+var1 -> var26 = av_div_q ( ( AVRational ) { number , number } , 
+var6 -> var26 ) ; 
+else 
+var1 -> var26 = var6 -> var26 ; 
+func3 ( var2 , var18 , 
+str , 
+var6 -> var15 , var6 -> var16 , var4 -> var11 , var1 -> var15 , var1 -> var16 , 
+var4 -> var11 == number || var4 -> var11 == number ? str : str , 
+var4 -> var11 == number || var4 -> var11 == number ) ; 
+return number ; 
+} 

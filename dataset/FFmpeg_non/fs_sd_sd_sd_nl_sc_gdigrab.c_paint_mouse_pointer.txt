@@ -1,0 +1,55 @@
+static void func1 ( AVFormatContext * var1 , struct var2 * var2 ) 
+{ 
+CURSORINFO var3 = { number } ; 
+if ( ! var2 -> var5 ) { \ 
+func3 ( var4 ) ; \ 
+var2 -> var5 = number ; \ 
+} 
+var3 . var6 = sizeof ( var3 ) ; 
+if ( func4 ( & var3 ) ) { 
+HCURSOR var7 = func5 ( var3 . var8 ) ; 
+ICONINFO var9 ; 
+POINT var10 ; 
+RECT var11 = var2 -> var11 ; 
+HWND var12 = var2 -> var12 ; 
+var9 . var13 = var14 ; 
+var9 . var15 = var14 ; 
+if ( var3 . var16 != var17 ) 
+return ; 
+if ( ! var7 ) { 
+var7 = func5 ( func6 ( var14 , var18 ) ) ; 
+} 
+if ( ! func7 ( var7 , & var9 ) ) { 
+func2 ( var4 ) ; 
+goto var19 ; 
+} 
+var10 . var20 = var3 . var21 . var20 - var11 . var22 - var9 . var23 ; 
+var10 . var24 = var3 . var21 . var24 - var11 . var25 - var9 . var26 ; 
+if ( var12 ) { 
+RECT var27 ; 
+if ( func8 ( var12 , & var27 ) ) { 
+var10 . var20 -= var27 . var22 ; 
+var10 . var24 -= var27 . var25 ; 
+} else { 
+func2 ( var4 ) ; 
+goto var19 ; 
+} 
+} 
+func9 ( var1 , var28 , var4 , 
+var3 . var21 . var20 , var3 . var21 . var24 , var10 . var20 , var10 . var24 ) ; 
+if ( var10 . var20 >= number && var10 . var20 <= var11 . var29 - var11 . var22 && 
+var10 . var24 >= number && var10 . var24 <= var11 . var30 - var11 . var25 ) { 
+if ( ! func10 ( var2 -> var31 , var10 . var20 , var10 . var24 , var7 ) ) 
+func2 ( var4 ) ; 
+} 
+var19 : 
+if ( var9 . var13 ) 
+func11 ( var9 . var13 ) ; 
+if ( var9 . var15 ) 
+func11 ( var9 . var15 ) ; 
+if ( var7 ) 
+func12 ( var7 ) ; 
+} else { 
+func2 ( var4 ) ; 
+} 
+} 

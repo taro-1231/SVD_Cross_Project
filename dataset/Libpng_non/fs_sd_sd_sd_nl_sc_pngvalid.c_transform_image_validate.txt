@@ -1,0 +1,99 @@
+func1 ( transform_display * var1 , png_const_structp var2 , 
+png_infop var3 ) 
+{ 
+PNG_CONST png_store * PNG_CONST var4 = var1 -> var5 . var4 ; 
+PNG_CONST png_byte var6 = var1 -> var5 . var7 ; 
+PNG_CONST png_byte var8 = var1 -> var5 . var9 ; 
+PNG_CONST png_uint_32 var10 = var1 -> var5 . var10 ; 
+PNG_CONST png_uint_32 var11 = var1 -> var5 . var11 ; 
+PNG_CONST png_byte var12 = var1 -> var13 ; 
+PNG_CONST png_byte var14 = var1 -> var15 ; 
+PNG_CONST png_byte var16 = ( png_byte ) ( var12 == 
+var17 ? number : var14 ) ; 
+PNG_CONST png_byte var18 = var1 -> var5 . var18 ; 
+PNG_CONST png_byte var19 = var1 -> var5 . var19 ; 
+PNG_CONST png_byte var20 = var1 -> var5 . var20 ; 
+PNG_CONST png_byte var21 = var1 -> var5 . var21 ; 
+PNG_CONST int var22 = var1 -> var5 . var23 ; 
+double var24 ; 
+store_palette var25 ; 
+png_uint_32 var26 ; 
+UNUSED ( var3 ) 
+func2 ( var1 -> var5 . var4 , var2 , number ) ; 
+if ( var12 == var17 ) 
+{ 
+int var27 = ( - number ) ; 
+( void ) func3 ( var25 , & var27 , var2 , var3 ) ; 
+if ( var27 != var1 -> var5 . var27 ) 
+func4 ( var2 , str ) ; 
+var24 = number ; 
+} 
+else 
+{ 
+png_byte var29 ; 
+memset ( var25 , number , sizeof var25 ) ; 
+if ( var6 == var17 || var8 < number ) 
+var29 = number ; 
+else 
+var29 = var8 ; 
+if ( var16 != number || var29 > number || 
+! var1 -> var30 -> var31 ) 
+var24 = number ; 
+else 
+var24 = number * number ; 
+} 
+for ( var26 = number ; var26 < var11 ; ++ var26 ) 
+{ 
+png_const_bytep PNG_CONST var32 = func5 ( var4 , var2 , number , var26 ) ; 
+png_uint_32 var33 ; 
+png_byte var34 [ var35 ] ; 
+func6 ( var2 , var34 , var6 , var8 , var26 ) ; 
+for ( var33 = number ; var33 < var10 ; ++ var33 ) 
+{ 
+image_pixel var36 , var37 ; 
+unsigned int var38 , var39 , var40 , var41 ; 
+func7 ( & var36 , var34 , var6 , var8 , var33 , var1 -> var5 . var28 ) ; 
+var36 . var18 = var18 ; 
+var36 . var19 = var19 ; 
+var36 . var20 = var20 ; 
+var36 . var21 = var21 ; 
+var36 . var22 = var22 ; 
+var38 = var36 . var42 ; 
+var39 = var36 . var43 ; 
+var40 = var36 . var44 ; 
+var41 = var36 . var45 ; 
+var1 -> var46 -> func8 ( var1 -> var46 , & var36 , var2 , var1 ) ; 
+func7 ( & var37 , var32 , var12 , var14 , var33 , var25 ) ; 
+if ( var6 == var17 && 
+var12 == var17 ) 
+{ 
+if ( var36 . var47 != var37 . var47 ) 
+func4 ( var2 , str ) ; 
+} 
+if ( var36 . var42 != var37 . var42 ) 
+func9 ( var2 , var38 , var39 , var40 , var41 , var36 . var42 , var36 . var48 , 
+var37 . var42 , var16 , var36 . var49 , 
+var1 -> var30 -> var50 + number / ( number * ( ( number << var36 . var18 ) - number ) ) , str , 
+var24 ) ; 
+if ( ( var12 & var51 ) != number && 
+var36 . var43 != var37 . var43 ) 
+func9 ( var2 , var38 , var39 , var40 , var41 , var36 . var43 , 
+var36 . var52 , var37 . var43 , var16 , var36 . var53 , 
+var1 -> var30 -> var50 + number / ( number * ( ( number << var36 . var19 ) - number ) ) , str , 
+var24 ) ; 
+if ( ( var12 & var51 ) != number && 
+var36 . var44 != var37 . var44 ) 
+func9 ( var2 , var38 , var39 , var40 , var41 , var36 . var44 , var36 . var54 , 
+var37 . var44 , var16 , var36 . var55 , 
+var1 -> var30 -> var50 + number / ( number * ( ( number << var36 . var20 ) - number ) ) , str , 
+var24 ) ; 
+if ( ( var12 & var56 ) != number && 
+var36 . var45 != var37 . var45 ) 
+func9 ( var2 , var38 , var39 , var40 , var41 , var36 . var45 , 
+var36 . var57 , var37 . var45 , var16 , var36 . var58 , 
+var1 -> var30 -> var50 + number / ( number * ( ( number << var36 . var21 ) - number ) ) , str , 
+var24 ) ; 
+} 
+} 
+var1 -> var5 . var4 -> var59 = number ; 
+} 

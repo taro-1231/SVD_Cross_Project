@@ -1,0 +1,111 @@
+static void func1 ( HTTPContext * var1 , const char * var2 , 
+RTSPMessageHeader * var3 ) 
+{ 
+FFServerStream * var4 ; 
+int var5 , var6 , var7 ; 
+char var8 [ number ] ; 
+char var9 [ number ] ; 
+const char * var10 ; 
+HTTPContext * var11 ; 
+RTSPTransportField * var12 ; 
+struct sockaddr_in var13 ; 
+RTSPActionServerSetup var14 ; 
+func2 ( var15 , number , var15 , number , var15 , number , var15 , var9 , sizeof ( var9 ) , var2 ) ; 
+var10 = var9 ; 
+if ( * var10 == str ) 
+var10 ++ ; 
+for ( var4 = var16 . var17 ; var4 ; var4 = var4 -> var18 ) { 
+if ( var4 -> var19 || ! var4 -> var20 || 
+strcmp ( var4 -> var20 -> var21 , str ) ) { 
+continue ; 
+} 
+if ( ! strcmp ( var10 , var4 -> var22 ) ) { 
+if ( var4 -> var23 != number ) { 
+func3 ( var1 , var24 ) ; 
+return ; 
+} 
+var5 = number ; 
+goto var25 ; 
+} 
+for ( var5 = number ; var5 < var4 -> var23 ; 
+var5 ++ ) { 
+snprintf ( var8 , sizeof ( var8 ) , str , 
+var4 -> var22 , var5 ) ; 
+if ( ! strcmp ( var10 , var8 ) ) 
+goto var25 ; 
+} 
+} 
+func3 ( var1 , var26 ) ; 
+return ; 
+var25 : 
+if ( var3 -> var27 [ number ] == str ) { 
+unsigned var28 = func4 ( & var29 ) ; 
+unsigned var30 = func4 ( & var29 ) ; 
+snprintf ( var3 -> var27 , sizeof ( var3 -> var27 ) , str , 
+var28 , var30 ) ; 
+} 
+var11 = func5 ( var3 -> var27 ) ; 
+if ( ! var11 ) { 
+var12 = func6 ( var3 , var31 ) ; 
+if ( ! var12 ) { 
+var12 = func6 ( var3 , var32 ) ; 
+if ( ! var12 ) { 
+func3 ( var1 , var33 ) ; 
+return ; 
+} 
+} 
+var11 = func7 ( & var1 -> var34 , var4 , var3 -> var27 , 
+var12 -> var35 ) ; 
+if ( ! var11 ) { 
+func3 ( var1 , var36 ) ; 
+return ; 
+} 
+if ( func8 ( var11 , str ) < number ) { 
+func3 ( var1 , var37 ) ; 
+return ; 
+} 
+} 
+if ( var11 -> var4 != var4 ) { 
+func3 ( var1 , var26 ) ; 
+return ; 
+} 
+if ( var11 -> var38 [ var5 ] ) { 
+func3 ( var1 , var39 ) ; 
+return ; 
+} 
+var12 = func6 ( var3 , var11 -> var40 ) ; 
+if ( ! var12 || ( var12 -> var35 == var31 && 
+var12 -> var41 <= number ) ) { 
+func3 ( var1 , var33 ) ; 
+return ; 
+} 
+var14 . var42 [ number ] = str ; 
+var13 = var11 -> var34 ; 
+var13 . var43 = func9 ( var12 -> var41 ) ; 
+if ( func10 ( var11 , var5 , & var13 , var1 ) < number ) { 
+func3 ( var1 , var33 ) ; 
+return ; 
+} 
+func11 ( var1 , var44 ) ; 
+func12 ( var1 -> var45 , str , var11 -> var27 ) ; 
+switch ( var11 -> var40 ) { 
+case var31 : 
+var6 = func13 ( var11 -> var46 [ var5 ] ) ; 
+var7 = func14 ( var11 -> var46 [ var5 ] ) ; 
+func12 ( var1 -> var45 , str 
+str , 
+var12 -> var41 , var12 -> client_port_max , 
+var6 , var7 ) ; 
+break ; 
+case var32 : 
+func12 ( var1 -> var45 , str , 
+var5 * number , var5 * number + number ) ; 
+break ; 
+var47 : 
+break ; 
+} 
+if ( var14 . var42 [ number ] != str ) 
+func12 ( var1 -> var45 , str , var14 . var42 ) ; 
+func12 ( var1 -> var45 , str ) ; 
+func12 ( var1 -> var45 , str ) ; 
+} 

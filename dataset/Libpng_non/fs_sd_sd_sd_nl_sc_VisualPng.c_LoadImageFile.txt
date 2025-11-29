@@ -1,0 +1,40 @@
+BOOL func1 ( HWND var1 , PTSTR var2 , 
+png_byte ** var3 , int * var4 , int * var5 , 
+int * var6 , png_color * var7 ) 
+{ 
+static TCHAR var8 [ var9 ] ; 
+if ( * var3 ) 
+{ 
+free ( * var3 ) ; 
+* var3 = var10 ; 
+} 
+func2 ( func3 ( var10 , var11 ) ) ; 
+func4 ( var12 ) ; 
+func5 ( var2 , var3 , var4 , var5 , var6 , 
+var7 ) ; 
+func4 ( var13 ) ; 
+func2 ( func3 ( var10 , var14 ) ) ; 
+if ( * var3 != var10 ) 
+{ 
+sprintf ( var8 , str , strrchr ( var2 , str ) + number ) ; 
+func6 ( var1 , var8 ) ; 
+} 
+else 
+{ 
+func7 ( var1 , func8 ( str ) , 
+var15 , var16 | var17 ) ; 
+return var13 ; 
+} 
+return var12 ; 
+} 
+* / 
+BOOL func1 ( HWND var1 , PTSTR var2 , 
+png_byte ** var3 , int * var4 , int * var5 , 
+int * var6 , png_color * var7 ) 
+{ 
+static TCHAR var8 [ var9 ] ; 
+if ( * var3 ) 
+{ 
+free ( * var3 ) ; 
+* var3 = var10 ; 
+} 

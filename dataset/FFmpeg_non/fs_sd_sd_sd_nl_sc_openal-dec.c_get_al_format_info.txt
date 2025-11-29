@@ -1,0 +1,10 @@
+static const inline al_format_info * func1 ( ALCenum var1 ) 
+{ 
+static const al_format_info var2 [ ] = { 
+[ AL_FORMAT_MONO8 - var3 ] = { AL_FORMAT_MONO8 , AV_CODEC_ID_PCM_U8 , 1 } , 
+[ AL_FORMAT_MONO16 - var3 ] = { AL_FORMAT_MONO16 , AV_NE ( AV_CODEC_ID_PCM_S16BE , AV_CODEC_ID_PCM_S16LE ) , 1 } , 
+[ AL_FORMAT_STEREO8 - var3 ] = { AL_FORMAT_STEREO8 , AV_CODEC_ID_PCM_U8 , 2 } , 
+[ AL_FORMAT_STEREO16 - var3 ] = { AL_FORMAT_STEREO16 , AV_NE ( AV_CODEC_ID_PCM_S16BE , AV_CODEC_ID_PCM_S16LE ) , 2 } , 
+} ; 
+return & var2 [ var1 - var3 ] ; 
+} 

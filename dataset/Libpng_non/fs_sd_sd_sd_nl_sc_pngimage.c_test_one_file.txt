@@ -1,0 +1,81 @@
+func1 ( struct display * var1 , const char * var2 ) 
+{ 
+var1 -> var3 = str ; 
+var1 -> var4 = number ; 
+func2 ( var1 , var2 ) ; 
+func3 ( var1 ) ; 
+if ( var1 -> var5 != number ) 
+{ 
+func4 ( var1 , & var1 -> var6 , str , 
+var1 -> var5 ) ; 
+if ( ! func5 ( var1 , number ) 
+return ; 
+} 
+var1 -> var3 = str ; 
+func6 ( var1 , var1 -> var7 , number ; 
+func4 ( var1 , & var1 -> var8 , var9 , number ; 
+if ( ! func5 ( var1 , number ) 
+return ; 
+{ 
+unsigned int var10 = var1 -> var11 ; 
+const int var12 = ( var1 -> var13 & var14 ) != number ; 
+unsigned int var15 = func7 ( var10 ) ; 
+unsigned int var16 = number ; 
+unsigned int var17 = var18 ; 
+unsigned int var19 = number ; 
+for ( ; ; ) 
+{ 
+func4 ( var1 , & var1 -> var6 , str , var15 ) ; 
+if ( ( var15 & var20 ) == var15 ) 
+{ 
+var1 -> var3 = str ; 
+func6 ( var1 , var1 -> var21 , var15 ) ; 
+func4 ( var1 , & var1 -> var8 , var9 , number ) ; 
+if ( ! func5 ( var1 , var15 ) 
+{ 
+if ( func8 ( var15 ) ) 
+{ 
+var17 &= var15 ; 
+var19 |= var15 ; 
+} 
+else 
+var16 |= var15 ; 
+} 
+} 
+if ( var12 ) 
+{ 
+unsigned int var22 = var15 ; 
+do 
+{ 
+if ( var22 == var23 ) 
+goto var24 ; 
+++ var22 ; 
+} 
+while ( ( var22 & var23 ) <= var15 
+|| ( var22 & var10 ) == number 
+|| ( var22 & var16 ) != number 
+|| func9 ( var1 , var22 ) ) ; 
+assert ( ( var22 & var23 ) == var22 ) ; 
+var15 = var22 ; 
+} 
+else 
+{ 
+var10 &= ~ var15 ; 
+if ( var10 == number ) 
+goto var24 ; 
+var15 = func7 ( var10 ) ; 
+} 
+} 
+var24 : 
+if ( var1 -> var13 & var26 ) 
+{ 
+if ( var17 != var18 ) 
+printf ( str , 
+var1 -> var2 , var10 , var17 , var19 , 
+var27 & ~ var19 ) ; 
+else 
+printf ( str , var1 -> var2 , 
+( var1 -> var13 & var29 ) ? str : str ) ; 
+} 
+} 
+} 

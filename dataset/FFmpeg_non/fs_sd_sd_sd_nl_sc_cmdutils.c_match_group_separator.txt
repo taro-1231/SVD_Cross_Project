@@ -1,0 +1,11 @@
+static int func1 ( const OptionGroupDef * var1 , int var2 , 
+const char * var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < var2 ; var4 ++ ) { 
+const OptionGroupDef * var5 = & var1 [ var4 ] ; 
+if ( var5 -> var6 && ! strcmp ( var5 -> var6 , var3 ) ) 
+return var4 ; 
+} 
+return - number ; 
+} 

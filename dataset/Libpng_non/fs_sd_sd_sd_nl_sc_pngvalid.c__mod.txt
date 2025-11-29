@@ -1,0 +1,6 @@
+image_transform_png_set_ @ func1 ( PNG_CONST image_transform * var1 , 
+image_pixel * var2 , png_const_structp var3 , 
+PNG_CONST transform_display * var4 ) 
+{ 
+var1 -> var5 -> func2 ( var1 -> var5 , var2 , var3 , var4 ) ; 
+} 

@@ -1,0 +1,7 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ASetRateContext * var2 = var1 -> var3 ; 
+int var4 [ ] = { var2 -> var5 , - number } ; 
+return func2 ( func3 ( var4 ) , 
+& var1 -> var6 [ number ] -> var7 ) ; 
+} 

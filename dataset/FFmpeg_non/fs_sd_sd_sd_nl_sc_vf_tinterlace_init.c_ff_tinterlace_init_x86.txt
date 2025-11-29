@@ -1,0 +1,8 @@
+av_cold void func1 ( TInterlaceContext * var1 ) 
+{ 
+int var2 = func2 ( ) ; 
+if ( func3 ( var2 ) ) 
+var1 -> var3 = var4 ; 
+if ( func4 ( var2 ) ) 
+var1 -> var3 = var5 ; 
+} 

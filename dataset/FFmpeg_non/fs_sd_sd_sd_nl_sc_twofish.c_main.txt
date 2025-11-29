@@ -1,0 +1,67 @@
+int func1 ( int var1 , char * var2 [ ] ) 
+{ 
+uint8_t var3 [ number ] = { number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number , number 
+} ; 
+const uint8_t var4 [ 6 ] [ number ] = { 
+{ 0x9f , 0x58 , 0x9f , 0x5c , 0xf6 , 0x12 , 0x2c , number , 0xb6 , 0xbf , 0xec , 0x2f , 0x2a , 0xe8 , 0xc3 , 0x5a } , 
+{ 0xcf , 0xd1 , 0xd2 , 0xe5 , 0xa9 , 0xbe , 0x9c , 0xdf , 0x50 , 0x1f , 0x13 , 0xb8 , 0x92 , 0xbd , number , 0x48 } , 
+{ 0x37 , 0x52 , 0x7b , 0xe0 , 0x05 , number , 0x34 , 0xb8 , 0x9f , 0x0c , 0xfc , 0xca , 0xe8 , 0x7c , 0xfa , 0x20 } , 
+{ 0x5d , 0x9d , 0x4e , number , 0xfa , 0x91 , 0x51 , 0x57 , number , 0x24 , 0xf1 , 0x15 , 0x81 , 0x5a , 0x12 , 0xe0 } , 
+{ 0xe7 , number , 0x49 , 0x21 , 0x2b , number , 0xf9 , 0xf4 , 0xa3 , 0x90 , 0xbd , 0x86 , 0x0a , 0x64 , 0x09 , 0x41 } , 
+{ 0x37 , number , 0x26 , number , 0x1c , 0xf6 , 0x61 , 0x75 , 0xf5 , number , 0xf4 , 0xc3 , 0x3b , 0x97 , 0xa2 , 0x05 } 
+} ; 
+uint8_t var5 [ number ] , var6 [ number ] , var7 [ number ] = { number } ; 
+const int var8 [ number ] = { number , number , number } ; 
+int var9 , var10 , var11 = number ; 
+AVTWOFISH * var12 ; 
+var12 = func2 ( ) ; 
+if ( ! var12 ) 
+return number ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+func3 ( var12 , var3 , var8 [ var10 ] ) ; 
+func4 ( var12 , var5 , var7 , number , var13 , number ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+if ( var4 [ var10 ] [ var9 ] != var5 [ var9 ] ) { 
+func5 ( var13 , var14 , str , var9 , var4 [ var10 ] [ var9 ] , var5 [ var9 ] ) ; 
+var11 = number ; 
+} 
+} 
+func4 ( var12 , var5 , var4 [ var10 ] , number , var13 , number ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+if ( var7 [ var9 ] != var5 [ var9 ] ) { 
+func5 ( var13 , var14 , str , var9 , var7 [ var9 ] , var5 [ var9 ] ) ; 
+var11 = number ; 
+} 
+} 
+} 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+memset ( var3 , number , sizeof ( var3 ) ) ; 
+memset ( var7 , number , sizeof ( var7 ) ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+func3 ( var12 , var3 , var8 [ var10 ] ) ; 
+func4 ( var12 , var5 , var7 , number , var13 , number ) ; 
+memcpy ( var3 + number , var3 , ( var8 [ var10 ] - number ) >> number ) ; 
+memcpy ( var3 , var7 , number ) ; 
+memcpy ( var7 , var5 , number ) ; 
+} 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+if ( var4 [ number + var10 ] [ var9 ] != var5 [ var9 ] ) { 
+func5 ( var13 , var14 , str , var9 , var4 [ number + var10 ] [ var9 ] , var5 [ var9 ] ) ; 
+var11 = number ; 
+} 
+} 
+} 
+memset ( var7 , number , sizeof ( var7 ) ) ; 
+memcpy ( var6 , str , number ) ; 
+func4 ( var12 , var5 , var7 , number , var6 , number ) ; 
+memcpy ( var6 , str , number ) ; 
+func4 ( var12 , var5 , var5 , number , var6 , number ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+if ( var7 [ var9 ] != var5 [ var9 ] ) { 
+func5 ( var13 , var14 , str , var9 , var7 [ var9 ] , var5 [ var9 ] ) ; 
+var11 = number ; 
+} 
+} 
+func6 ( var12 ) ; 
+return var11 ; 
+} 

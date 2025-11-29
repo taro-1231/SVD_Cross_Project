@@ -1,0 +1,27 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+SDLContext * var3 = var1 -> var4 ; 
+AVCodecContext * var5 = var1 -> var6 [ number ] -> var7 ; 
+AVPicture var8 ; 
+int var9 ; 
+if ( var3 -> var10 ) { 
+func2 ( var1 ) ; 
+return func3 ( var11 ) ; 
+} 
+func4 ( & var8 , var2 -> var12 , var5 -> var13 , var5 -> var14 , var5 -> var15 ) ; 
+func5 ( var3 -> var16 ) ; 
+func6 ( var3 -> var17 , & var3 -> var17 -> var18 , 
+func7 ( var3 -> var17 -> var19 , number , number , number ) ) ; 
+func8 ( var3 -> var20 ) ; 
+for ( var9 = number ; var9 < number ; var9 ++ ) { 
+var3 -> var20 -> var21 [ var9 ] = var8 . var12 [ var9 ] ; 
+var3 -> var20 -> var22 [ var9 ] = var8 . var23 [ var9 ] ; 
+} 
+func9 ( var3 -> var20 , & var3 -> var24 ) ; 
+func10 ( var3 -> var20 ) ; 
+func11 ( var3 -> var17 , 
+var3 -> var24 . var25 , var3 -> var24 . var26 , 
+var3 -> var24 . var27 , var3 -> var24 . var28 ) ; 
+func12 ( var3 -> var16 ) ; 
+return number ; 
+} 

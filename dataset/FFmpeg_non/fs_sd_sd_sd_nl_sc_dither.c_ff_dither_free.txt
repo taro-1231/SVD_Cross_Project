@@ -1,0 +1,15 @@
+void func1 ( DitherContext ** var1 ) 
+{ 
+DitherContext * var2 = * var1 ; 
+int var3 ; 
+if ( ! var2 ) 
+return ; 
+func2 ( & var2 -> var4 ) ; 
+func2 ( & var2 -> var5 ) ; 
+func3 ( & var2 -> var6 ) ; 
+func3 ( & var2 -> var7 ) ; 
+for ( var3 = number ; var3 < var2 -> var8 ; var3 ++ ) 
+func4 ( var2 -> var9 [ var3 ] . var10 ) ; 
+func4 ( var2 -> var9 ) ; 
+func5 ( var1 ) ; 
+} 

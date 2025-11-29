@@ -1,0 +1,16 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+KerndeintContext * var2 = var1 -> var3 -> var4 ; 
+const AVPixFmtDescriptor * var5 = func2 ( var1 -> var6 ) ; 
+int var7 ; 
+var2 -> var8 = func2 ( var1 -> var6 ) -> var9 & var10 ; 
+var2 -> var11 = var5 -> var12 ; 
+var7 = func3 ( var2 -> var13 , var2 -> var14 , 
+var1 -> var15 , var1 -> var16 , var1 -> var6 , number ) ; 
+if ( var7 < number ) 
+return var7 ; 
+memset ( var2 -> var13 [ number ] , number , var7 ) ; 
+if ( ( var7 = func4 ( var2 -> var17 , var1 -> var6 , var1 -> var15 ) ) < number ) 
+return var7 ; 
+return number ; 
+} 

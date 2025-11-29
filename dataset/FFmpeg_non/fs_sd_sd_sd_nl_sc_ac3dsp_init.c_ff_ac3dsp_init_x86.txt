@@ -1,0 +1,55 @@
+av_cold void func1 ( AC3DSPContext * var1 , int var2 ) 
+{ 
+int var3 = func2 ( ) ; 
+if ( func3 ( var3 ) ) { 
+var1 -> var4 = var5 ; 
+var1 -> var6 = var7 ; 
+var1 -> var8 = var9 ; 
+var1 -> var10 = var11 ; 
+} 
+if ( func4 ( var3 ) ) { 
+if ( ! var2 ) { 
+var1 -> var12 = var13 ; 
+} 
+} 
+if ( func5 ( var3 ) ) { 
+var1 -> var4 = var14 ; 
+var1 -> var6 = var15 ; 
+if ( var2 ) { 
+var1 -> var16 = var17 ; 
+} else { 
+var1 -> var16 = var18 ; 
+} 
+} 
+if ( func6 ( var3 ) ) { 
+var1 -> var12 = var19 ; 
+} 
+if ( func7 ( var3 ) ) { 
+var1 -> var4 = var20 ; 
+var1 -> var6 = var21 ; 
+var1 -> var12 = var22 ; 
+var1 -> var23 = var24 ; 
+var1 -> var25 = var26 ; 
+if ( ! ( var3 & var27 ) ) { 
+var1 -> var8 = var28 ; 
+var1 -> var10 = var29 ; 
+} 
+if ( var2 ) { 
+var1 -> var16 = var30 ; 
+} else if ( ! ( var3 & var27 ) ) { 
+var1 -> var16 = var31 ; 
+} 
+} 
+if ( func8 ( var3 ) ) { 
+var1 -> var6 = var32 ; 
+if ( var3 & var33 ) { 
+var1 -> var16 = var34 ; 
+} else { 
+var1 -> var25 = var35 ; 
+var1 -> var16 = var36 ; 
+} 
+} 
+if ( func9 ( var3 ) ) { 
+var1 -> var37 = var38 ; 
+} 
+} 

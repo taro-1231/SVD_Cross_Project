@@ -1,0 +1,17 @@
+pa_sample_format_t av_cold func1 ( enum AVCodecID var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : return var3 ; 
+case var4 : return var5 ; 
+case var6 : return var7 ; 
+case var8 : return var9 ; 
+case var10 : return var11 ; 
+case var12 : return var13 ; 
+case var14 : return var15 ; 
+case var16 : return var17 ; 
+case var18 : return var19 ; 
+case var20 : return var21 ; 
+case var22 : return var23 ; 
+var24 : return var25 ; 
+} 
+} 

@@ -1,0 +1,6 @@
+static const char * func1 ( int var1 ) 
+{ 
+if ( var1 < number || var1 >= func2 ( var2 ) ) 
+return var3 ; 
+return var2 [ var1 ] . var4 ; 
+} 

@@ -1,0 +1,24 @@
+static int func1 ( SwsSlice * var1 , enum AVPixelFormat var2 , int var3 , int var4 , int var5 , int var6 , int var7 ) 
+{ 
+int var8 ; 
+int var9 [ number ] = { var3 , 
+var4 , 
+var4 , 
+var3 } ; 
+var1 -> var10 = var5 ; 
+var1 -> var11 = var6 ; 
+var1 -> var2 = var2 ; 
+var1 -> var12 = var7 ; 
+var1 -> var13 = number ; 
+for ( var8 = number ; var8 < number ; ++ var8 ) { 
+int var14 = var9 [ var8 ] * ( var7 == number ? number : number ) ; 
+var1 -> var15 [ var8 ] . var16 = func2 ( sizeof ( uint8_t * ) , var14 ) ; 
+if ( ! var1 -> var15 [ var8 ] . var16 ) 
+return func3 ( var17 ) ; 
+var1 -> var15 [ var8 ] . var18 = var7 ? var1 -> var15 [ var8 ] . var16 + var9 [ var8 ] * number : var19 ; 
+var1 -> var15 [ var8 ] . var20 = var9 [ var8 ] ; 
+var1 -> var15 [ var8 ] . var21 = number ; 
+var1 -> var15 [ var8 ] . var22 = number ; 
+} 
+return number ; 
+} 

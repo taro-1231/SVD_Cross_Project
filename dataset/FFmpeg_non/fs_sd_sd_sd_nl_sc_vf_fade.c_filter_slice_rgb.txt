@@ -1,0 +1,13 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , 
+int var4 ) 
+{ 
+FadeContext * var5 = var1 -> var6 ; 
+AVFrame * var7 = var2 ; 
+int var8 = ( var7 -> var9 * var3 ) / var4 ; 
+int var10 = ( var7 -> var9 * ( var3 + number ) ) / var4 ; 
+if ( var5 -> var11 ) func2 ( var5 , var7 , var8 , var10 , number , number ) ; 
+else if ( var5 -> var12 == number ) func2 ( var5 , var7 , var8 , var10 , number , number ) ; 
+else if ( var5 -> var12 == number ) func2 ( var5 , var7 , var8 , var10 , number , number ) ; 
+else func3 ( number ) ; 
+return number ; 
+} 

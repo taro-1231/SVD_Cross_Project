@@ -1,0 +1,9 @@
+static int func1 ( HLSContext * var3 , struct playlist ** var1 , const char * var4 ) 
+{ 
+if ( * var1 ) 
+return number ; 
+if ( ! func2 ( var3 , var2 , var4 , var2 ) ) 
+return func3 ( var5 ) ; 
+* var1 = var3 -> var6 [ var3 -> var7 - number ] ; 
+return number ; 
+} 

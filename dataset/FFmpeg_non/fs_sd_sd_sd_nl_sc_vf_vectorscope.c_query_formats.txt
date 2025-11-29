@@ -1,0 +1,34 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+VectorscopeContext * var2 = var1 -> var3 ; 
+const enum AVPixelFormat * var4 ; 
+const AVPixFmtDescriptor * var5 ; 
+AVFilterFormats * var6 ; 
+int var7 , var8 ; 
+if ( ! var1 -> var9 [ number ] -> var10 || 
+! var1 -> var9 [ number ] -> var10 -> var11 ) { 
+return func2 ( var12 ) ; 
+} 
+if ( ! var1 -> var9 [ number ] -> var13 ) { 
+const enum AVPixelFormat * var14 ; 
+if ( ( var2 -> var15 == number && var2 -> var16 == number ) || ( var2 -> var15 == number && var2 -> var16 == number ) ) 
+var14 = var17 ; 
+else 
+var14 = var18 ; 
+func3 ( func4 ( var14 ) , & var1 -> var9 [ number ] -> var13 ) ; 
+} 
+var6 = var1 -> var9 [ number ] -> var10 ; 
+var5 = func5 ( var6 -> var19 [ number ] ) ; 
+var7 = var5 -> var20 & var21 ; 
+for ( var8 = number ; var8 < var6 -> var11 ; var8 ++ ) { 
+var5 = func5 ( var6 -> var19 [ var8 ] ) ; 
+if ( var7 != ( var5 -> var20 & var21 ) ) 
+return func2 ( var12 ) ; 
+} 
+if ( var7 ) 
+var4 = var22 ; 
+else 
+var4 = var23 ; 
+func3 ( func4 ( var4 ) , & var1 -> var24 [ number ] -> var10 ) ; 
+return number ; 
+} 

@@ -1,0 +1,7 @@
+static void func1 ( void * var1 , uint8_t * var2 ) 
+{ 
+AVFilterBufferRef * var3 = var1 ; 
+AV_NOWARN_DEPRECATED ( 
+func2 ( var3 ) ; 
+) 
+} 

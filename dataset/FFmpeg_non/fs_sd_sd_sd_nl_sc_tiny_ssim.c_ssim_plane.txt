@@ -1,0 +1,25 @@
+float func1 ( 
+pixel * var1 , intptr_t var2 , 
+pixel * var3 , intptr_t var4 , 
+int var5 , int var6 , void * var7 , int * var8 ) 
+{ 
+int var9 = number ; 
+int var10 , var11 ; 
+float var12 = number ; 
+int ( * var13 ) [ number ] = var7 ; 
+int ( * var14 ) [ number ] = var13 + ( var5 >> number ) + number ; 
+var5 >>= number ; 
+var6 >>= number ; 
+for ( var11 = number ; var11 < var6 ; var11 ++ ) 
+{ 
+for ( ; var9 <= var11 ; var9 ++ ) 
+{ 
+FFSWAP ( void * , var13 , var14 ) ; 
+for ( var10 = number ; var10 < var5 ; var10 += number ) 
+func2 ( & var1 [ number * ( var10 + var9 * var2 ) ] , var2 , & var3 [ number * ( var10 + var9 * var4 ) ] , var4 , & var13 [ var10 ] ) ; 
+} 
+for ( var10 = number ; var10 < var5 - number ; var10 += number ) 
+var12 += func3 ( var13 + var10 , var14 + var10 , func4 ( number , var5 - var10 - number ) ) ; 
+} 
+return var12 / ( ( var6 - number ) * ( var5 - number ) ) ; 
+} 

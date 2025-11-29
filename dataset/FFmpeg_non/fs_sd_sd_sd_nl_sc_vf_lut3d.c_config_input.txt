@@ -1,0 +1,24 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+int var2 = number ; 
+LUT3DContext * var3 = var1 -> var4 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+switch ( var1 -> var7 ) { 
+case var8 : 
+case var9 : 
+case var10 : 
+case var11 : 
+var2 = number ; 
+} 
+func3 ( var3 -> var12 , var1 -> var7 ) ; 
+var3 -> var13 = func4 ( var6 ) >> ( number + var2 ) ; 
+} while ( number ) 
+switch ( var3 -> interpolation ) { 
+case INTERPOLATE_NEAREST : SET_FUNC ( nearest ) ; break ; 
+case INTERPOLATE_TRILINEAR : SET_FUNC ( trilinear ) ; break ; 
+case INTERPOLATE_TETRAHEDRAL : SET_FUNC ( tetrahedral ) ; break ; 
+default : 
+av_assert0 ( number ) ; 
+} 
+return number ; 
+} 

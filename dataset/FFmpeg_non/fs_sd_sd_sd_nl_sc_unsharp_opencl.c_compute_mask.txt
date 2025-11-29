@@ -1,0 +1,47 @@
+static int func1 ( int var1 , uint32_t * var2 ) 
+{ 
+int var3 , var4 , var5 = number ; 
+int var6 = sizeof ( uint32_t ) * ( number * var1 + number ) ; 
+uint32_t * var7 , * var8 , ** var9 ; 
+var7 = func2 ( var6 ) ; 
+if ( ! var7 ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+var8 = func2 ( var6 ) ; 
+if ( ! var8 ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+var9 = func4 ( number * var1 + number , sizeof ( uint32_t * ) ) ; 
+if ( ! var9 ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+for ( var3 = number ; var3 < number * var1 + number ; var3 ++ ) { 
+var9 [ var3 ] = func2 ( var6 ) ; 
+if ( ! var9 [ var3 ] ) { 
+var5 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+} 
+for ( var3 = number ; var3 < number * var1 + number ; var3 ++ ) { 
+memset ( var7 , number , var6 ) ; 
+var7 [ var3 ] = number ; 
+for ( var4 = number ; var4 < var1 * number ; var4 += number ) { 
+func5 ( var8 , var9 [ var4 ] , var7 , var1 * number ) ; 
+memcpy ( var9 [ var4 ] , var7 , var6 ) ; 
+func5 ( var7 , var9 [ var4 + number ] , var8 , var1 * number ) ; 
+memcpy ( var9 [ var4 + number ] , var8 , var6 ) ; 
+} 
+} 
+memcpy ( var2 , var7 , var6 ) ; 
+var11 : 
+func6 ( & var7 ) ; 
+func6 ( & var8 ) ; 
+for ( var3 = number ; var3 < number * var1 + number ; var3 ++ ) { 
+func6 ( & var9 [ var3 ] ) ; 
+} 
+func6 ( & var9 ) ; 
+return var5 ; 
+} 

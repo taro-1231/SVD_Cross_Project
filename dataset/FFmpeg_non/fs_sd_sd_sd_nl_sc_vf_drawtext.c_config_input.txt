@@ -1,0 +1,32 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DrawTextContext * var4 = var2 -> var5 ; 
+int var6 ; 
+func2 ( & var4 -> var7 , var1 -> var8 , number ) ; 
+func3 ( & var4 -> var7 , & var4 -> var9 , var4 -> var9 . var10 ) ; 
+func3 ( & var4 -> var7 , & var4 -> var11 , var4 -> var11 . var10 ) ; 
+func3 ( & var4 -> var7 , & var4 -> var12 , var4 -> var12 . var10 ) ; 
+func3 ( & var4 -> var7 , & var4 -> var13 , var4 -> var13 . var10 ) ; 
+var4 -> var14 [ var15 ] = var4 -> var14 [ var16 ] = var4 -> var14 [ var17 ] = var1 -> var18 ; 
+var4 -> var14 [ var19 ] = var4 -> var14 [ var20 ] = var4 -> var14 [ var21 ] = var1 -> var22 ; 
+var4 -> var14 [ var23 ] = var1 -> var24 . var25 ? func4 ( var1 -> var24 ) : number ; 
+var4 -> var14 [ var26 ] = ( double ) var1 -> var18 / var1 -> var22 * var4 -> var14 [ var23 ] ; 
+var4 -> var14 [ var27 ] = number << var4 -> var7 . var28 ; 
+var4 -> var14 [ var29 ] = number << var4 -> var7 . var30 ; 
+var4 -> var14 [ var31 ] = var32 ; 
+var4 -> var14 [ var33 ] = var32 ; 
+var4 -> var14 [ var34 ] = var32 ; 
+func5 ( & var4 -> var35 , func6 ( ) ) ; 
+func7 ( var4 -> var36 ) ; 
+func7 ( var4 -> var37 ) ; 
+var4 -> var36 = var4 -> var37 = var38 ; 
+if ( ( var6 = func8 ( & var4 -> var36 , var4 -> var39 , var40 , 
+var38 , var38 , var41 , var42 , number , var2 ) ) < number || 
+( var6 = func8 ( & var4 -> var37 , var4 -> var43 , var40 , 
+var38 , var38 , var41 , var42 , number , var2 ) ) < number || 
+( var6 = func8 ( & var4 -> var44 , var4 -> var45 , var40 , 
+var38 , var38 , var41 , var42 , number , var2 ) ) < number ) 
+return func9 ( var46 ) ; 
+return number ; 
+} 

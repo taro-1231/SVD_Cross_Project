@@ -1,0 +1,14 @@
+void func1 ( void ) 
+{ 
+int var1 ; 
+for ( var1 = number ; var1 < var2 ; var1 ++ ) { 
+int var3 ; 
+for ( var3 = number ; var3 < var4 [ var1 ] -> var5 ; var3 ++ ) { 
+OutputFilter * var6 = var4 [ var1 ] -> var7 [ var3 ] ; 
+if ( ! var6 -> var8 ) { 
+func2 ( var9 , var10 , str , var6 -> var11 ) ; 
+func3 ( number ) ; 
+} 
+} 
+} 
+} 

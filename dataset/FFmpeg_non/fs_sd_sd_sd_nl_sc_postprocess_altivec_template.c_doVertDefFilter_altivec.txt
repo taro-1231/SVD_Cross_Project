@@ -1,0 +1,73 @@
+static inline void func1 ( uint8_t var1 [ ] , int var2 , PPContext * var3 ) { 
+uint8_t * var4 = var1 + var2 * number ; 
+const vector signed int var5 = func2 ( number ) ; 
+DECLARE_ALIGNED ( number , short , qp ) [ number ] = { number * var3 -> QP } ; 
+vector signed short vqp = vec_splat ( 
+( vector signed short ) func3 ( number , qp ) , number ) ; 
+func5 ( var6 * var2 , var4 ) ; \ 
+func3 ( var6 * var2 , var4 ) ; \ 
+func3 ( var6 * var2 + number , var4 ) ; \ 
+( vector signed short ) vec_mergeh ( ( vector unsigned char ) var5 , \ 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+func4 ( number ) ; 
+const vector signed short var7 = func6 ( number ) ; 
+const vector signed short var8 = func6 ( number ) ; 
+const vector signed short var9 = func6 ( number ) ; 
+const vector signed short var10 = vec_sl ( var7 , 
+( vector unsigned short ) var9 ) ; 
+const vector signed short var11 = func7 ( var12 , var13 ) ; 
+const vector signed short var14 = func7 ( var15 , var16 ) ; 
+const vector signed short var17 = func8 ( var8 , var11 , ( vector signed short ) var5 ) ; 
+const vector signed short var18 = func8 ( var9 , var14 , var17 ) ; 
+const vector signed short var19 = func9 ( var18 ) ; 
+const vector signed short var20 = func7 ( var21 , var16 ) ; 
+const vector signed short var22 = func7 ( var12 , var23 ) ; 
+const vector signed short var24 = func7 ( var15 , var25 ) ; 
+const vector signed short var26 = func7 ( var27 , var13 ) ; 
+const vector signed short var28 = func8 ( var8 , var20 , ( vector signed short ) var5 ) ; 
+const vector signed short var29 = func8 ( var8 , var24 , ( vector signed short ) var5 ) ; 
+const vector signed short var30 = func8 ( var9 , var22 , var28 ) ; 
+const vector signed short var31 = func8 ( var9 , var26 , var29 ) ; 
+const vector signed short var32 = func7 ( var19 , 
+func10 ( func9 ( var30 ) , 
+func9 ( var31 ) ) ) ; 
+const vector signed short var33 = func11 ( var32 , ( vector signed short ) var5 ) ; 
+const vector signed short var34 = func8 ( var9 , var33 , var10 ) ; 
+const vector signed short var35 = func12 ( var34 , func13 ( number ) ) ; 
+const vector signed short minusd = func7 ( ( vector signed short ) var5 , var35 ) ; 
+const vector signed short finald = vec_sel ( minusd , 
+var35 , 
+vec_cmpgt ( func7 ( ( vector signed short ) var5 , var18 ) , 
+( vector signed short ) var5 ) ) ; 
+const vector signed short var36 = func7 ( var16 , var15 ) ; 
+const vector signed short var37 = vec_sel ( ( vector signed short ) var5 , 
+var7 , 
+vec_cmplt ( var36 , ( vector signed short ) var5 ) ) ; 
+const vector signed short var38 = func12 ( func14 ( var36 , var37 ) , func13 ( number ) ) ; 
+const vector signed short var39 = func11 ( ( vector signed short ) var5 , finald ) ; 
+const vector signed short var40 = func10 ( var39 , var38 ) ; 
+const vector signed short var41 = func10 ( ( vector signed short ) var5 , finald ) ; 
+const vector signed short var42 = func11 ( var41 , var38 ) ; 
+const vector signed short dclampedfinal = vec_sel ( var42 , 
+var40 , 
+vec_cmpgt ( var38 , ( vector signed short ) var5 ) ) ; 
+const vector signed short var43 = vec_sel ( ( vector signed short ) var5 , 
+dclampedfinal , 
+vec_cmplt ( var19 , vqp ) ) ; 
+const vector signed short var44 = func7 ( var16 , var43 ) ; 
+const vector signed short var45 = func14 ( var15 , var43 ) ; 
+const vector unsigned char st4 = vec_packsu ( var44 , ( vector signed short ) var5 ) ; 
+const vector unsigned char st5 = vec_packsu ( var45 , ( vector signed short ) var5 ) ; 
+const vector signed char var46 = func15 ( - number ) ; 
+const vector unsigned char permHH = ( const vector unsigned char ) { 0x00 , 0x01 , 0x02 , 0x03 , 0x04 , 0x05 , 0x06 , 0x07 , 
+0x18 , 0x19 , 0x1A , 0x1B , 0x1C , 0x1D , 0x1E , 0x1F } ; 
+func16 ( var6 * var2 , var4 ) ; \ 
+STORE ( number ) 
+STORE ( number ) 
+} 

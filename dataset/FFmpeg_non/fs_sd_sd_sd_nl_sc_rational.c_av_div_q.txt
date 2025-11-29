@@ -1,0 +1,4 @@
+AVRational func1 ( AVRational var1 , AVRational var2 ) 
+{ 
+return av_mul_q ( var1 , ( AVRational ) { var2 . den , var2 . num } ) ; 
+} 

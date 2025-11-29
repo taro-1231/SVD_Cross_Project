@@ -1,0 +1,178 @@
+static int func1 ( AVCodecContext * var1 , GetByteContext * var2 , 
+int var3 , int * var4 , int * var5 ) 
+{ 
+ADPCMDecodeContext * var6 = var1 -> var7 ; 
+int var8 = number ; 
+int var9 = var1 -> var10 ; 
+int var11 = number ; 
+int var12 ; 
+* var4 = number ; 
+* var5 = number ; 
+if ( var9 <= number ) 
+return number ; 
+switch ( var1 -> var13 -> var14 ) { 
+case var15 : 
+if ( var3 < number * var9 ) 
+return number ; 
+var8 = number ; 
+break ; 
+case var16 : 
+if ( var3 < number * var9 ) 
+return number ; 
+var8 = number ; 
+break ; 
+case var17 : 
+case var18 : 
+case var19 : 
+case var20 : 
+case var21 : 
+case var22 : 
+var8 = var3 * number / var9 ; 
+break ; 
+} 
+if ( var8 ) 
+return var8 ; 
+var12 = number ; 
+switch ( var1 -> var13 -> var14 ) { 
+case var23 : 
+case var24 : var12 = number * var9 ; break ; 
+case var25 : var12 = number ; break ; 
+case var26 : var12 = number * var9 ; break ; 
+} 
+if ( var12 > number ) 
+return ( var3 - var12 ) * number / var9 ; 
+switch ( var1 -> var13 -> var14 ) { 
+case var27 : 
+var11 = number ; 
+* var4 = func2 ( var2 ) ; 
+* var4 -= * var4 % number ; 
+var8 = ( var3 - number ) / number * number ; 
+break ; 
+case var28 : 
+var11 = number ; 
+* var4 = func2 ( var2 ) ; 
+var8 = ( var3 - ( number + number * var9 ) ) * number / var9 ; 
+break ; 
+case var29 : 
+var8 = ( var3 - var9 ) / var9 * number ; 
+break ; 
+case var30 : 
+case var31 : 
+case var32 : 
+var11 = number ; 
+switch ( var1 -> var13 -> var14 ) { 
+case var30 : 
+var12 = number + number * var9 ; 
+* var4 = func2 ( var2 ) ; 
+break ; 
+case var31 : 
+var12 = number + number * var9 ; 
+* var4 = func2 ( var2 ) ; 
+break ; 
+case var32 : 
+var12 = number + number * var9 ; 
+* var4 = func3 ( var2 ) ; 
+break ; 
+} 
+* var4 -= * var4 % number ; 
+var8 = ( var3 - var12 ) * number / var9 ; 
+var8 -= var8 % number ; 
+* var5 = number ; 
+break ; 
+case var33 : 
+if ( var1 -> var34 > number ) 
+var3 = func4 ( var3 , var1 -> var34 ) ; 
+var8 = ( ( var3 - number ) * number / number * number ) / var9 ; 
+break ; 
+case var35 : 
+if ( var1 -> var34 > number ) 
+var3 = func4 ( var3 , var1 -> var34 ) ; 
+if ( var3 < number * var9 ) 
+return var36 ; 
+var8 = number + ( var3 - number * var9 ) * number / var9 ; 
+break ; 
+case var37 : 
+if ( var1 -> var34 > number ) 
+var3 = func4 ( var3 , var1 -> var34 ) ; 
+var8 = ( var3 - number * var9 ) * number / var9 ; 
+break ; 
+case var38 : 
+{ 
+int var39 = var40 [ var1 -> var41 - number ] ; 
+int var42 = var43 [ var1 -> var41 - number ] ; 
+if ( var1 -> var34 > number ) 
+var3 = func4 ( var3 , var1 -> var34 ) ; 
+if ( var3 < number * var9 ) 
+return var36 ; 
+var8 = number + ( var3 - number * var9 ) / ( var39 * var9 ) * var42 ; 
+break ; 
+} 
+case var44 : 
+if ( var1 -> var34 > number ) 
+var3 = func4 ( var3 , var1 -> var34 ) ; 
+var8 = ( var3 - number * var9 ) * number / var9 ; 
+break ; 
+case var45 : 
+case var46 : 
+case var47 : 
+{ 
+int var48 ; 
+switch ( var1 -> var13 -> var14 ) { 
+case var45 : var48 = number ; break ; 
+case var46 : var48 = number ; break ; 
+case var47 : var48 = number ; break ; 
+} 
+if ( ! var6 -> var49 [ number ] . var50 ) { 
+if ( var3 < var9 ) 
+return var36 ; 
+var8 ++ ; 
+var3 -= var9 ; 
+} 
+var8 += var3 * var48 / var9 ; 
+break ; 
+} 
+case var51 : 
+{ 
+int var52 = var3 * number - number ; 
+int var53 = ( func5 ( var2 ) >> number ) + number ; 
+int var54 = number * var9 ; 
+int var55 = var54 + var53 * var9 * number ; 
+int var56 = var52 / var55 ; 
+int var57 = var52 - var56 * var55 ; 
+var8 = var56 * number ; 
+if ( var57 >= var54 ) 
+var8 += number + ( var57 - var54 ) / ( var53 * var9 ) ; 
+break ; 
+} 
+case var58 : 
+case var59 : 
+if ( var1 -> var60 ) { 
+var8 = var3 * number / ( number * var9 ) ; 
+break ; 
+} 
+var11 = number ; 
+func6 ( var2 , number ) ; 
+* var4 = ( var1 -> var13 -> var14 == var59 ) ? 
+func2 ( var2 ) : 
+func3 ( var2 ) ; 
+var3 -= number + number * var9 ; 
+var3 /= var9 ; 
+var8 = var3 / number * number ; 
+if ( var3 % number > number ) 
+var8 += ( var3 % number - number ) * number ; 
+* var5 = number ; 
+break ; 
+case var61 : 
+var8 = var3 / ( number * var9 ) * number ; 
+break ; 
+case var62 : 
+var8 = ( var3 / number ) * number / var9 ; 
+break ; 
+case var63 : 
+var8 = var3 / ( number * var9 ) * number ; 
+break ; 
+} 
+if ( var11 && ( * var4 <= number || * var4 > var8 ) ) 
+return var36 ; 
+return var8 ; 
+} 

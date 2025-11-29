@@ -1,0 +1,79 @@
+func1 ( png_const_charp var1 , png_bytepp var2 ) 
+{ 
+FILE * var3 = tmpfile ( ) ; 
+if ( var3 != var4 ) 
+{ 
+FILE * var5 = fopen ( var1 , str ) ; 
+if ( var5 != var4 ) 
+{ 
+size_t var6 = number ; 
+int var7 ; 
+for ( ; ; ) 
+{ 
+var7 = getc ( var5 ) ; 
+if ( var7 == var8 ) break ; 
+putc ( var7 , var3 ) ; 
+++ var6 ; 
+} 
+if ( ferror ( var5 ) ) 
+{ 
+perror ( var1 ) ; 
+fprintf ( var9 , str , var1 ) ; 
+( void ) fclose ( var5 ) ; 
+} 
+else 
+{ 
+( void ) fclose ( var5 ) ; 
+if ( ferror ( var3 ) ) 
+{ 
+perror ( str ) ; 
+fprintf ( var9 , str ) ; 
+} 
+else 
+{ 
+rewind ( var3 ) ; 
+if ( var6 > number ) 
+{ 
+png_bytep var10 = malloc ( ( var6 + number ) & ~ number ) ; 
+if ( var10 != var4 ) 
+{ 
+size_t var12 = number ; 
+for ( ; ; ) 
+{ 
+var7 = getc ( var3 ) ; 
+if ( var7 == var8 ) break ; 
+var10 [ var12 ++ ] = ( png_byte ) var7 ; 
+} 
+if ( ferror ( var3 ) || var12 != var6 ) 
+{ 
+perror ( str ) ; 
+fprintf ( var9 , str ) ; 
+free ( var10 ) ; 
+} 
+else 
+{ 
+( void ) fclose ( var3 ) ; 
+* var2 = var10 ; 
+return var6 ; 
+} 
+} 
+else 
+fprintf ( var9 , str , var1 ) ; 
+} 
+else 
+fprintf ( var9 , str , var1 ) ; 
+} 
+} 
+} 
+else 
+{ 
+perror ( var1 ) ; 
+fprintf ( var9 , str , var1 ) ; 
+} 
+fclose ( var3 ) ; 
+} 
+else 
+fprintf ( var9 , str , var1 ) ; 
+exit ( number ) ; 
+return number ; 
+} 

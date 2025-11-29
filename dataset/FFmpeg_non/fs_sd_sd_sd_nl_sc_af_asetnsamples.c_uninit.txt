@@ -1,0 +1,5 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+ASNSContext * var2 = var1 -> var3 ; 
+func2 ( var2 -> var4 ) ; 
+} 

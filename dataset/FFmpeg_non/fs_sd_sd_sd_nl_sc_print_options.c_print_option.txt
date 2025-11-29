@@ -1,0 +1,39 @@
+static void func1 ( const AVOption * var1 , const AVOption * var2 , int var3 ) 
+{ 
+if ( ! ( var2 -> var4 & ( var5 | var6 ) ) ) 
+return ; 
+printf ( str , var2 -> var7 , var3 ? str : str ) ; 
+switch ( var2 -> var8 ) { 
+case var9 : printf ( str ) ; break ; 
+case var10 : printf ( str ) ; break ; 
+case var11 : 
+case var12 : printf ( str ) ; break ; 
+case var13 : 
+case var14 : printf ( str ) ; break ; 
+case var15 : printf ( str ) ; break ; 
+case var16 : printf ( str ) ; break ; 
+var17 : printf ( str ) ; break ; 
+} 
+printf ( str ) ; 
+if ( var2 -> var4 & var5 ) { 
+printf ( str ) ; 
+if ( var2 -> var4 & var6 ) 
+printf ( str ) ; 
+} 
+if ( var2 -> var4 & var6 ) printf ( str ) ; 
+if ( var2 -> var4 & var18 ) printf ( str ) ; 
+if ( var2 -> var4 & var19 ) printf ( str ) ; 
+if ( var2 -> var4 & var20 ) printf ( str ) ; 
+printf ( str ) ; 
+if ( var2 -> var21 ) 
+printf ( str , var2 -> var21 ) ; 
+if ( var2 -> var22 ) { 
+const AVOption * var23 ; 
+printf ( str ) ; 
+for ( var23 = var1 ; var23 -> var7 ; var23 ++ ) { 
+if ( var23 -> var8 == var24 && var23 -> var22 && ! strcmp ( var23 -> var22 , var2 -> var22 ) ) 
+printf ( str , var23 -> var7 , var23 -> var21 ? var23 -> var21 : str ) ; 
+} 
+printf ( str ) ; 
+} 
+} 

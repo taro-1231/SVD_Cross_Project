@@ -1,0 +1,42 @@
+static int func1 ( AVFormatContext * var2 , AVPacket * var3 ) 
+{ 
+MpegTSContext * var4 = var2 -> var5 ; 
+int var6 , var7 ; 
+int64_t var8 , var9 , var10 ; 
+int var11 , var12 ; 
+uint8_t var13 [ number ] ; 
+const uint8_t * var14 ; 
+if ( func2 ( var3 , var15 ) < number ) 
+return func3 ( var16 ) ; 
+var6 = func4 ( var2 , var3 -> var14 , var4 -> var17 , & var14 ) ; 
+var3 -> var10 = func5 ( var2 -> var18 ) ; 
+if ( var6 < number ) { 
+func6 ( var3 ) ; 
+return var6 ; 
+} 
+if ( var14 != var3 -> var14 ) 
+memcpy ( var3 -> var14 , var14 , var4 -> var17 ) ; 
+func7 ( var2 , var4 -> var17 ) ; 
+if ( var4 -> var19 ) { 
+if ( func8 ( & var8 , & var11 , var3 -> var14 ) == number ) { 
+var10 = func5 ( var2 -> var18 ) ; 
+for ( var7 = number ; var7 < var1 ; var7 ++ ) { 
+func9 ( var2 -> var18 , var10 + var7 * var4 -> var17 , var20 ) ; 
+func10 ( var2 -> var18 , var13 , number ) ; 
+if ( func8 ( & var9 , & var12 , var13 ) == number ) { 
+var4 -> var21 = 
+( ( var9 - var8 ) * number + ( var12 - var11 ) ) / 
+( var7 + number ) ; 
+break ; 
+} 
+} 
+func9 ( var2 -> var18 , var10 , var20 ) ; 
+var4 -> var22 = var8 * number + var11 ; 
+} 
+var3 -> var23 = var4 -> var22 ; 
+var3 -> var24 = var4 -> var21 ; 
+var4 -> var22 += var4 -> var21 ; 
+} 
+var3 -> var25 = number ; 
+return number ; 
+} 

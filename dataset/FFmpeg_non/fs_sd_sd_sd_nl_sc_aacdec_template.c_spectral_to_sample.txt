@@ -1,0 +1,64 @@
+static void func1 ( var1 * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+void ( * func2 ) ( var1 * var2 , var6 * var7 ) ; 
+switch ( var2 -> var8 [ number ] . var9 . var10 ) { 
+case var11 : 
+func2 = var12 ; 
+break ; 
+case var13 : 
+func2 = var14 ; 
+break ; 
+var15 : 
+func2 = var2 -> var16 ; 
+} 
+for ( var5 = number ; var5 >= number ; var5 -- ) { 
+for ( var4 = number ; var4 < var17 ; var4 ++ ) { 
+ChannelElement * var18 = var2 -> var18 [ var5 ] [ var4 ] ; 
+if ( var18 && var18 -> var19 ) { 
+if ( var5 <= var20 ) 
+func3 ( var2 , var18 , var5 , var4 , var21 , func4 ( var22 ) ) ; 
+if ( var2 -> var8 [ number ] . var9 . var10 == var23 ) { 
+if ( var18 -> var24 [ number ] . var25 . var26 ) { 
+if ( var18 -> var24 [ number ] . var25 . var27 . var19 ) 
+var2 -> func5 ( var2 , & var18 -> var24 [ number ] ) ; 
+if ( var18 -> var24 [ number ] . var25 . var27 . var19 && var5 == var20 ) 
+var2 -> func5 ( var2 , & var18 -> var24 [ number ] ) ; 
+} 
+} 
+if ( var18 -> var24 [ number ] . var28 . var19 ) 
+var2 -> func6 ( var18 -> var24 [ number ] . var29 , & var18 -> var24 [ number ] . var28 , & var18 -> var24 [ number ] . var25 , number ) ; 
+if ( var18 -> var24 [ number ] . var28 . var19 ) 
+var2 -> func6 ( var18 -> var24 [ number ] . var29 , & var18 -> var24 [ number ] . var28 , & var18 -> var24 [ number ] . var25 , number ) ; 
+if ( var5 <= var20 ) 
+func3 ( var2 , var18 , var5 , var4 , var30 , func4 ( var22 ) ) ; 
+if ( var5 != var31 || var18 -> var32 . var33 == var34 ) { 
+func2 ( var2 , & var18 -> var24 [ number ] ) ; 
+if ( var2 -> var8 [ number ] . var9 . var10 == var23 ) 
+var2 -> func7 ( var2 , & var18 -> var24 [ number ] ) ; 
+if ( var5 == var20 ) { 
+func2 ( var2 , & var18 -> var24 [ number ] ) ; 
+if ( var2 -> var8 [ number ] . var9 . var10 == var23 ) 
+var2 -> func7 ( var2 , & var18 -> var24 [ number ] ) ; 
+} 
+if ( var2 -> var8 [ number ] . var9 . var35 > number ) { 
+func4 ( func8 ) ( var2 , & var18 -> var35 , var5 , var18 -> var24 [ number ] . var36 , var18 -> var24 [ number ] . var36 ) ; 
+} 
+} 
+if ( var5 <= var31 ) 
+func3 ( var2 , var18 , var5 , var4 , var34 , func4 ( var37 ) ) ; 
+{ 
+int var38 ; 
+for ( var38 = number ; var38 < var3 ; var38 ++ ) { 
+var18 -> var24 [ number ] . var36 [ var38 ] = ( int32_t ) func9 ( ( int64_t ) var18 -> var24 [ number ] . var36 [ var38 ] << number ) + number ; 
+if ( var5 == var20 ) 
+var18 -> var24 [ number ] . var36 [ var38 ] = ( int32_t ) func9 ( ( int64_t ) var18 -> var24 [ number ] . var36 [ var38 ] << number ) + number ; 
+} 
+} 
+var18 -> var19 = number ; 
+} else if ( var18 ) { 
+func10 ( var2 -> var39 , var40 , str , var5 , var4 ) ; 
+} 
+} 
+} 
+} 

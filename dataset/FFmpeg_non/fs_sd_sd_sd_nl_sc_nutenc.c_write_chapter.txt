@@ -1,0 +1,22 @@
+static int func1 ( NUTContext * var1 , AVIOContext * var2 , int var3 ) 
+{ 
+AVIOContext * var4 ; 
+uint8_t * var5 = var6 ; 
+AVDictionaryEntry * var7 = var6 ; 
+AVChapter * var8 = var1 -> var9 -> var10 [ var3 ] ; 
+int var11 , var12 , var13 = number ; 
+var11 = func2 ( & var4 ) ; 
+if ( var11 < number ) 
+return var11 ; 
+func3 ( var2 , number ) ; 
+func4 ( var2 , var3 + number ) ; 
+func5 ( var1 , var1 -> var14 [ var3 ] . var15 , var2 , var8 -> var16 ) ; 
+func3 ( var2 , var8 -> var17 - var8 -> var16 ) ; 
+while ( ( var7 = func6 ( var8 -> var18 , str , var7 , var19 ) ) ) 
+var13 += func7 ( var4 , var7 -> var20 , var7 -> var21 ) ; 
+func3 ( var2 , var13 ) ; 
+var12 = func8 ( var4 , & var5 ) ; 
+func9 ( var2 , var5 , var12 ) ; 
+func10 ( & var5 ) ; 
+return number ; 
+} 

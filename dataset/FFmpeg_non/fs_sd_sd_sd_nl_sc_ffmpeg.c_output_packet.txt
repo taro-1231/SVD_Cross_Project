@@ -1,0 +1,47 @@
+static void func1 ( OutputFile * var1 , AVPacket * var2 , OutputStream * var3 ) 
+{ 
+int var4 = number ; 
+if ( var3 -> var5 ) { 
+int var6 ; 
+var4 = func2 ( var3 -> var7 [ number ] , var2 ) ; 
+if ( var4 < number ) 
+goto var8 ; 
+var6 = number ; 
+while ( var6 ) { 
+var4 = func3 ( var3 -> var7 [ var6 - number ] , var2 ) ; 
+if ( var4 == func4 ( var9 ) ) { 
+var4 = number ; 
+var6 -- ; 
+continue ; 
+} else if ( var4 < number ) 
+goto var8 ; 
+if ( ! ( var3 -> var10 [ var6 - number ] & number ) ) { 
+var4 = func5 ( var3 -> var11 -> var12 , var3 -> var7 [ var6 - number ] -> var13 ) ; 
+if ( var4 < number ) 
+goto var8 ; 
+var3 -> var10 [ var6 - number ] |= number ; 
+} 
+if ( var6 < var3 -> var5 ) { 
+if ( ! ( var3 -> var10 [ var6 ] & number ) ) { 
+var4 = func5 ( var3 -> var7 [ var6 ] -> var13 , var3 -> var7 [ var6 - number ] -> var13 ) ; 
+if ( var4 < number ) 
+goto var8 ; 
+var3 -> var10 [ var6 ] |= number ; 
+} 
+var4 = func2 ( var3 -> var7 [ var6 ] , var2 ) ; 
+if ( var4 < number ) 
+goto var8 ; 
+var6 ++ ; 
+} else 
+func6 ( var1 , var2 , var3 , number ) ; 
+} 
+} else 
+func6 ( var1 , var2 , var3 , number ) ; 
+var8 : 
+if ( var4 < number && var4 != var14 ) { 
+av_log ( NULL , AV_LOG_ERROR , str 
+str , var3 -> file_index , var3 -> index ) ; 
+if ( var15 ) 
+func7 ( number ) ; 
+} 
+} 

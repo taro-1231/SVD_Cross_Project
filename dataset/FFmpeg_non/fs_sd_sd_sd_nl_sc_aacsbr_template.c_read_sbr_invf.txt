@@ -1,0 +1,8 @@
+static void func1 ( SpectralBandReplication * var1 , GetBitContext * var2 , 
+SBRData * var3 ) 
+{ 
+int var4 ; 
+memcpy ( var3 -> var5 [ number ] , var3 -> var5 [ number ] , number * sizeof ( uint8_t ) ) ; 
+for ( var4 = number ; var4 < var1 -> var6 ; var4 ++ ) 
+var3 -> var5 [ number ] [ var4 ] = func2 ( var2 , number ) ; 
+} 

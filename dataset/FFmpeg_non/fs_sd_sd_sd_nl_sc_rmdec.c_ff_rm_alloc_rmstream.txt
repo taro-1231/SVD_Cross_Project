@@ -1,0 +1,8 @@
+RMStream * func1 ( void ) 
+{ 
+RMStream * var1 = func2 ( sizeof ( RMStream ) ) ; 
+if ( ! var1 ) 
+return var2 ; 
+var1 -> var3 = - number ; 
+return var1 ; 
+} 

@@ -1,0 +1,22 @@
+static int func1 ( RTMPContext * var1 , RTMPPacket * var2 , int var3 ) 
+{ 
+int var4 ; 
+if ( var2 -> var5 == var6 && var3 ) { 
+GetByteContext var7 ; 
+char var8 [ number ] ; 
+double var9 ; 
+int var10 ; 
+func2 ( & var7 , var2 -> var11 , var2 -> var12 ) ; 
+if ( ( var4 = func3 ( & var7 , var8 , sizeof ( var8 ) , & var10 ) ) < number ) 
+goto var13 ; 
+if ( ( var4 = func4 ( & var7 , & var9 ) ) < number ) 
+goto var13 ; 
+if ( ( var4 = func5 ( var1 , var8 , var9 ) ) < number ) 
+goto var13 ; 
+} 
+var4 = func6 ( var1 -> var14 , var2 , var1 -> var15 , 
+& var1 -> var16 [ number ] , & var1 -> var17 [ number ] ) ; 
+var13 : 
+func7 ( var2 ) ; 
+return var4 ; 
+} 

@@ -1,0 +1,16 @@
+static void func1 ( HLSContext * var1 , struct variant * var2 , 
+enum AVMediaType var3 , const char * var4 ) 
+{ 
+int var5 ; 
+for ( var5 = number ; var5 < var1 -> var6 ; var5 ++ ) { 
+struct rendition * var7 = var1 -> var8 [ var5 ] ; 
+if ( var7 -> var3 == var3 && ! strcmp ( var7 -> var4 , var4 ) ) { 
+if ( var7 -> var9 ) 
+func2 ( & var2 -> var10 , & var2 -> var11 , var7 -> var9 ) ; 
+else 
+func2 ( & var2 -> var10 [ number ] -> var8 , 
+& var2 -> var10 [ number ] -> var6 , 
+var7 ) ; 
+} 
+} 
+} 

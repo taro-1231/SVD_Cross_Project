@@ -1,0 +1,39 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+A64Context * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 , number ) ; 
+if ( var1 -> var6 < number ) { 
+var2 -> var7 = number ; 
+} else { 
+var2 -> var7 = var1 -> var6 /= var8 ; 
+} 
+func3 ( var1 , var9 , str , var2 -> var7 ) ; 
+var2 -> var10 = number ; 
+var2 -> var11 = var1 -> var12 -> var13 == var14 ; 
+var2 -> var15 = number + var2 -> var11 ; 
+for ( var4 = number ; var4 < var2 -> var15 ; var4 ++ ) { 
+var2 -> var16 [ var4 ] = var17 [ var18 [ var4 ] ] [ number ] * number + 
+var17 [ var18 [ var4 ] ] [ number ] * number + 
+var17 [ var18 [ var4 ] ] [ number ] * number ; 
+} 
+if ( ! ( var2 -> var19 = func4 ( var2 -> var7 , number * sizeof ( int ) ) ) || 
+! ( var2 -> var20 = func5 ( var21 * number * sizeof ( int ) ) ) || 
+! ( var2 -> var22 = func4 ( var2 -> var7 , number * sizeof ( int ) ) ) || 
+! ( var2 -> var23 = func6 ( var21 * sizeof ( uint8_t ) ) ) || 
+! ( var2 -> var24 = func5 ( number * ( var25 + number ) * sizeof ( uint8_t ) ) ) ) { 
+func3 ( var1 , var26 , str ) ; 
+return func7 ( var27 ) ; 
+} 
+if ( ! ( var1 -> var28 = func6 ( number * number + var29 ) ) ) { 
+func3 ( var1 , var26 , str ) ; 
+return func7 ( var27 ) ; 
+} 
+var1 -> var30 = number * number ; 
+func8 ( var1 -> var28 , var2 -> var7 ) ; 
+func8 ( var1 -> var28 + number , var25 ) ; 
+if ( ! var1 -> var31 ) 
+var1 -> var31 = func9 ( str ) ; 
+var2 -> var32 = var33 ; 
+return number ; 
+} 

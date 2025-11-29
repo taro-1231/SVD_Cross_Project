@@ -1,0 +1,28 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+CompactContext * var2 = var1 -> var3 ; 
+const struct var4 * var4 = var1 -> var4 [ var1 -> var5 ] ; 
+const struct var4 * var6 = var1 -> var5 ? 
+var1 -> var4 [ var1 -> var5 - number ] : var7 ; 
+var2 -> var8 [ var1 -> var5 ] = number ; 
+var2 -> var9 [ var1 -> var5 ] = number ; 
+func2 ( & var1 -> var10 [ var1 -> var5 ] ) ; 
+if ( ! ( var4 -> var11 & var12 ) && var6 && 
+! ( var6 -> var11 & ( var13 | var12 ) ) ) { 
+var2 -> var14 [ var1 -> var5 ] = number ; 
+var2 -> var9 [ var1 -> var5 - number ] = number ; 
+func3 ( & var1 -> var10 [ var1 -> var5 ] , var15 , 
+var1 -> var10 [ var1 -> var5 - number ] . var15 , 
+( char * ) func4 ( var4 -> var16 , var4 -> var17 ) ) ; 
+var1 -> var18 [ var1 -> var5 ] = var1 -> var18 [ var1 -> var5 - number ] ; 
+} else { 
+if ( var6 && var2 -> var9 [ var1 -> var5 - number ] && 
+( var4 -> var11 & var12 ) ) { 
+var2 -> var8 [ var1 -> var5 - number ] = number ; 
+printf ( var15 ) ; 
+} 
+if ( var2 -> var19 && 
+! ( var4 -> var11 & ( var13 | var12 ) ) ) 
+printf ( var15 , var4 -> var17 , var2 -> var20 ) ; 
+} 
+} 

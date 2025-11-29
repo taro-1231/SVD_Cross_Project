@@ -1,0 +1,10 @@
+const char * func1 ( const char * var1 ) 
+{ 
+char * var2 = strrchr ( var1 , str ) ; 
+char * var3 = strrchr ( var1 , str ) ; 
+char * var4 = strchr ( var1 , str ) ; 
+var2 = func2 ( var2 , var3 , var4 ) ; 
+if ( ! var2 ) 
+return var1 ; 
+return var2 + number ; 
+} 

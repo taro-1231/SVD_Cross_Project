@@ -1,0 +1,5 @@
+static void func1 ( VideoState * var1 ) 
+{ 
+func2 ( var1 ) ; 
+var1 -> var2 = number ; 
+} 

@@ -1,0 +1,45 @@
+func1 ( libAVMemInputPin * var1 , IMediaSample * var2 ) 
+{ 
+libAVPin * var3 = ( libAVPin * ) ( ( uint8_t * ) var1 - var4 ) ; 
+enum dshowDeviceType var5 = var3 -> var6 -> var7 ; 
+void * var8 ; 
+AVFormatContext * var9 ; 
+uint8_t * var10 ; 
+int var11 ; 
+int var12 ; 
+int64_t var13 ; 
+int64_t var14 ; 
+int64_t var15 ; 
+const char * var16 = ( var5 == var17 ) ? str : str ; 
+IReferenceClock * var18 = var3 -> var6 -> var18 ; 
+int64_t var19 ; 
+struct dshow_ctx * var20 ; 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var21 ; 
+func3 ( var2 , & var14 , & var19 ) ; 
+var14 += var3 -> var6 -> var22 ; 
+func4 ( var18 , & var15 ) ; 
+if ( var5 == var17 ) { 
+func4 ( var18 , & var13 ) ; 
+} else { 
+func3 ( var2 , & var13 , & var19 ) ; 
+if ( var13 > 400000000000000000LL ) { 
+av_log ( NULL , AV_LOG_DEBUG , 
+str PRId64 str , var13 ) ; 
+return var23 ; 
+} 
+var13 += var3 -> var6 -> var22 ; 
+} 
+var11 = func5 ( var2 ) ; 
+func6 ( var2 , & var10 ) ; 
+var8 = var3 -> var6 -> var8 ; 
+var9 = var8 ; 
+var20 = var9 -> var8 ; 
+var12 = var3 -> var6 -> var24 ; 
+av_log ( NULL , AV_LOG_VERBOSE , str 
+str PRId64 str PRId64 str PRId64 str PRId64 str , 
+var16 , var11 , var13 , var14 , var15 , var15 - var14 , var20 -> device_name [ var5 ] ) ; 
+var3 -> var6 -> func7 ( var8 , var12 , var10 , var11 , var13 , var5 ) ; 
+return var23 ; 
+} 

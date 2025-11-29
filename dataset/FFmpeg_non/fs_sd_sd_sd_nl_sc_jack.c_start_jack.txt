@@ -1,0 +1,49 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+JackData * var2 = var1 -> var3 ; 
+jack_status_t var4 ; 
+int var5 , var6 ; 
+var2 -> var7 = func2 ( var1 -> var8 , var9 , & var4 ) ; 
+if ( ! var2 -> var7 ) { 
+func3 ( var1 , var10 , var18 ) ; 
+return func4 ( var11 ) ; 
+} 
+func5 ( & var2 -> var12 , number , number ) ; 
+var2 -> var13 = func6 ( var2 -> var7 ) ; 
+var2 -> var14 = func7 ( var2 -> var15 , sizeof ( * var2 -> var14 ) ) ; 
+if ( ! var2 -> var14 ) 
+return func4 ( var16 ) ; 
+var2 -> var17 = func8 ( var2 -> var7 ) ; 
+for ( var5 = number ; var5 < var2 -> var15 ; var5 ++ ) { 
+char var18 [ number ] ; 
+snprintf ( var18 , sizeof ( var18 ) , var18 , var5 + number ) ; 
+var2 -> var14 [ var5 ] = func9 ( var2 -> var7 , var18 , 
+var19 , 
+var20 , number ) ; 
+if ( ! var2 -> var14 [ var5 ] ) { 
+func3 ( var1 , var10 , var18 , 
+var1 -> var8 , var18 ) ; 
+func10 ( var2 -> var7 ) ; 
+return func4 ( var11 ) ; 
+} 
+} 
+func11 ( var2 -> var7 , var21 , var2 ) ; 
+func12 ( var2 -> var7 , var22 , var2 ) ; 
+func13 ( var2 -> var7 , var23 , var2 ) ; 
+var2 -> var24 = func14 ( number / var2 -> var13 , var2 -> var17 , number ) ; 
+if ( ! var2 -> var24 ) { 
+func10 ( var2 -> var7 ) ; 
+return func4 ( var16 ) ; 
+} 
+var2 -> var25 = func15 ( var26 , sizeof ( AVPacket ) ) ; 
+var2 -> var27 = func15 ( ( var26 + number ) , sizeof ( AVPacket ) ) ; 
+if ( ! var2 -> var27 ) { 
+func10 ( var2 -> var7 ) ; 
+return func4 ( var16 ) ; 
+} 
+if ( ( var6 = func16 ( var2 , var1 ) ) ) { 
+func10 ( var2 -> var7 ) ; 
+return var6 ; 
+} 
+return number ; 
+} 

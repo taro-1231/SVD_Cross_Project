@@ -1,0 +1,16 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+static const AVOption var4 [ ] = { 
+{ str , NULL , number , AV_OPT_TYPE_FLAGS , { . i64 = number } , INT64_MIN , INT64_MAX , . unit = str } , 
+{ str , NULL , number , AV_OPT_TYPE_CONST , { . i64 = ABORT_ON_FLAG_EMPTY_OUTPUT } , . unit = str } , 
+{ NULL } , 
+} ; 
+static const AVClass class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = var4 , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+const AVClass * var5 = & class ; 
+return func2 ( & var5 , & var4 [ number ] , var3 , & var6 ) ; 
+} 

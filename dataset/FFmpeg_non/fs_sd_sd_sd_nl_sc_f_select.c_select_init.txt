@@ -1,0 +1,7 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 ; 
+if ( ( var2 = func2 ( var1 ) ) < number ) 
+return var2 ; 
+return number ; 
+} 

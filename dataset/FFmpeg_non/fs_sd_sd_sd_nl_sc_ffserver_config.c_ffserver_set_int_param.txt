@@ -1,0 +1,32 @@
+static int func1 ( int * var1 , const char * var2 , int var3 , 
+int var4 , int var5 , FFServerConfig * var6 , 
+const char * var7 , ... ) 
+{ 
+int var8 ; 
+char * var9 ; 
+if ( ! var2 || ! var2 [ number ] ) 
+goto var10 ; 
+var11 = number ; 
+var8 = func2 ( var2 , & var9 , number ) ; 
+if ( var8 < var4 || var8 > var5 ) 
+goto var10 ; 
+if ( var3 ) { 
+if ( var8 == var12 || func3 ( var8 ) > var13 / func3 ( var3 ) ) 
+goto var10 ; 
+var8 *= var3 ; 
+} 
+if ( var9 [ number ] || var11 ) 
+goto var10 ; 
+if ( var1 ) 
+* var1 = var8 ; 
+return number ; 
+var10 : 
+if ( var6 ) { 
+va_list var14 ; 
+func4 ( var14 , var7 ) ; 
+func5 ( var6 -> var15 , var6 -> var16 , var17 , 
+& var6 -> var18 , var7 , var14 ) ; 
+func6 ( var14 ) ; 
+} 
+return func7 ( var19 ) ; 
+} 

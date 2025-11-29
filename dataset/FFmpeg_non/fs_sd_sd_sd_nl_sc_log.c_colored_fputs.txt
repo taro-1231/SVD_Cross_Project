@@ -1,0 +1,35 @@
+static void func1 ( int var1 , int var2 , const char * var3 ) 
+{ 
+int var4 ; 
+if ( ! * var3 ) 
+return ; 
+if ( var5 < number ) 
+func2 ( ) ; 
+if ( var1 == var6 / number ) var4 = number ; 
+else var4 = var5 ; 
+if ( var4 ) 
+func3 ( var7 , var8 | var9 [ var1 ] ) ; 
+fputs ( var3 , var10 ) ; 
+if ( var4 ) 
+func3 ( var7 , var11 ) ; 
+if ( var4 == 1 ) { 
+fprintf ( var10 , 
+str , 
+( var9 [ var1 ] >> 4 ) & 15 , 
+var9 [ var1 ] & 15 , 
+var3 ) ; 
+} else if ( var2 && var5 == 256 ) { 
+fprintf ( var10 , 
+str , 
+( var9 [ var1 ] >> 16 ) & 0xff , 
+var2 , 
+var3 ) ; 
+} else if ( var4 == 256 ) { 
+fprintf ( var10 , 
+str , 
+( var9 [ var1 ] >> 16 ) & 0xff , 
+( var9 [ var1 ] >> number ) & 0xff , 
+var3 ) ; 
+} else 
+fputs ( var3 , var10 ) ; 
+} 

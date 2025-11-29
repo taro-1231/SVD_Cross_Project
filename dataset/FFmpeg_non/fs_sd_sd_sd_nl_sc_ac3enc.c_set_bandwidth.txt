@@ -1,0 +1,56 @@
+static av_cold void func1 ( AC3EncodeContext * var1 ) 
+{ 
+int var2 , var3 , var4 ( var5 ) ; 
+if ( var1 -> var6 ) { 
+int var7 ; 
+var7 = var1 -> var6 * number * var8 / var1 -> var9 ; 
+var1 -> var10 = func2 ( ( var7 - number ) / number , number , number ) ; 
+} else { 
+var1 -> var10 = var11 [ var1 -> var12 - number ] [ var1 -> var13 . var14 ] [ var1 -> var15 / number ] ; 
+} 
+for ( var3 = number ; var3 <= var1 -> var12 ; var3 ++ ) { 
+var1 -> var16 [ var3 ] = number ; 
+for ( var2 = number ; var2 < var1 -> var17 ; var2 ++ ) 
+var1 -> var18 [ var2 ] . var19 [ var3 ] = var1 -> var10 * number + number ; 
+} 
+if ( var1 -> var20 ) { 
+var1 -> var16 [ var1 -> var21 ] = number ; 
+for ( var2 = number ; var2 < var1 -> var17 ; var2 ++ ) 
+var1 -> var18 [ var2 ] . var19 [ var3 ] = number ; 
+} 
+if ( var1 -> var22 ) { 
+if ( var1 -> var23 . var5 != var24 ) { 
+var5 = var1 -> var23 . var5 ; 
+} else { 
+var5 = var25 [ var1 -> var26 - number ] [ var1 -> var13 . var14 ] [ var1 -> var15 / number ] ; 
+if ( var5 < number ) { 
+if ( var1 -> var23 . var27 == var24 ) 
+var1 -> var22 = number ; 
+else 
+var5 = number ; 
+} 
+} 
+} 
+if ( var1 -> var22 ) { 
+int var28 , var29 , var30 ; 
+uint8_t * var31 = var1 -> var31 ; 
+var30 = var1 -> var10 / number + number ; 
+var29 = func2 ( var5 , number , func3 ( var30 - number , number ) ) ; 
+var1 -> var32 = var30 - var29 ; 
+var1 -> var33 = number ; 
+* var31 = number ; 
+for ( var28 = var29 + number ; var28 < var30 ; var28 ++ ) { 
+if ( var34 [ var28 ] ) { 
+* var31 += number ; 
+} else { 
+var1 -> var33 ++ ; 
+var31 ++ ; 
+* var31 = number ; 
+} 
+} 
+var1 -> var16 [ var35 ] = var29 * number + number ; 
+var1 -> var36 = var30 * number + number ; 
+for ( var2 = number ; var2 < var1 -> var17 ; var2 ++ ) 
+var1 -> var18 [ var2 ] . var19 [ var35 ] = var1 -> var36 ; 
+} 
+} 

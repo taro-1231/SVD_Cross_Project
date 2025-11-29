@@ -1,0 +1,9 @@
+image_transform_png_set_ @ func1 ( image_transform * var1 , 
+PNG_CONST image_transform ** var2 , char * var3 , size_t var4 , 
+size_t * var5 , png_byte var6 , png_byte var7 ) 
+{ 
+var1 -> var8 = * var2 ; 
+* var2 = var1 ; 
+* var5 = func2 ( var3 , var4 , * var5 , str ) ; 
+return number ; 
+} 

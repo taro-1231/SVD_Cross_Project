@@ -1,0 +1,244 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 , PPContext * var3 ) 
+{ 
+func2 ( number , var4 , var5 ) [ number ] ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_a str REG_d str 
+str \ 
+str 
+str \ 
+str \ 
+str \ 
+str \ 
+str 
+FIND_MIN_MAX ( ( % % REGa ) ) 
+FIND_MIN_MAX ( ( % % REGa , % 1 ) ) 
+FIND_MIN_MAX ( ( % % REGa , % 1 , 2 ) ) 
+FIND_MIN_MAX ( ( % 0 , % 1 , 4 ) ) 
+FIND_MIN_MAX ( ( % % REGd ) ) 
+FIND_MIN_MAX ( ( % % REGd , % 1 ) ) 
+FIND_MIN_MAX ( ( % % REGd , % 1 , 2 ) ) 
+FIND_MIN_MAX ( ( % 0 , % 1 , number ) ) 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str MANGLE ( deringThreshold ) str 
+str 
+str 
+PAVGB ( % % mm0 , % % mm7 ) 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm2 , % % mm1 ) 
+PAVGB ( % % mm0 , % % mm1 ) 
+str 
+str 
+str 
+str MANGLE ( b00 ) str 
+str MANGLE ( b00 ) str 
+str MANGLE ( b00 ) str 
+str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+PAVGB ( % % mm4 , % % mm3 ) 
+PAVGB ( % % mm2 , % % mm3 ) 
+str 
+str 
+str 
+str MANGLE ( b00 ) str 
+str MANGLE ( b00 ) str 
+str MANGLE ( b00 ) str 
+str 
+str 
+PAVGB ( t0 , lx ) 
+PAVGB ( sx , lx ) 
+PAVGB ( lx , pplx ) \ 
+str MANGLE ( b00 ) str \ 
+\ 
+PAVGB ( plx , pplx ) 
+PMAXUB ( t0 , pplx ) \ 
+PMINUB ( t1 , pplx , t0 ) \ 
+str MANGLE ( b02 ) str \ 
+str MANGLE ( b08 ) str \ 
+REAL_DERING_CORE ( dst , var1 , ppsx , psx , sx , pplx , plx , lx , t0 , t1 ) 
+DERING_CORE ( ( % % REGa ) , ( % % REGa , % 1 ) , % % mm0 , % % mm2 , % % mm4 , % % mm1 , % % mm3 , % % mm5 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % % REGa , % 1 ) , ( % % REGa , % 1 , 2 ) , % % mm2 , % % mm4 , % % mm0 , % % mm3 , % % mm5 , % % mm1 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % % REGa , % 1 , 2 ) , ( % 0 , % 1 , 4 ) , % % mm4 , % % mm0 , % % mm2 , % % mm5 , % % mm1 , % % mm3 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % 0 , % 1 , 4 ) , ( % % REGd ) , % % mm0 , % % mm2 , % % mm4 , % % mm1 , % % mm3 , % % mm5 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % % REGd ) , ( % % REGd , % 1 ) , % % mm2 , % % mm4 , % % mm0 , % % mm3 , % % mm5 , % % mm1 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % % REGd , % 1 ) , ( % % REGd , % 1 , 2 ) , % % mm4 , % % mm0 , % % mm2 , % % mm5 , % % mm1 , % % mm3 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % % REGd , % 1 , 2 ) , ( % 0 , % 1 , number ) , % % mm0 , % % mm2 , % % mm4 , % % mm1 , % % mm3 , % % mm5 , % % mm6 , % % mm7 ) 
+DERING_CORE ( ( % 0 , % 1 , number ) , ( % % REGd , % 1 , 4 ) , % % mm2 , % % mm4 , % % mm0 , % % mm3 , % % mm5 , % % mm1 , % % mm6 , % % mm7 ) 
+str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) , str ( var3 -> pQPb2 ) , str ( var5 ) 
+NAMED_CONSTRAINTS_ADD ( deringThreshold , b00 , b02 , b08 ) 
+: str REG_a , str REG_d , str REG_sp 
+) ; 
+int y ; 
+int min = 255 ; 
+int max = 0 ; 
+int avg ; 
+uint8_t * p ; 
+int s [ 10 ] ; 
+const int QP2 = var3 -> QP / 2 + 1 ; 
+var1 -- ; 
+for ( y = 1 ; y < 9 ; y ++ ) { 
+int x ; 
+p = var1 + var2 * y ; 
+for ( x = 1 ; x < 9 ; x ++ ) { 
+p ++ ; 
+if ( * p > max ) max = * p ; 
+if ( * p < min ) min = * p ; 
+} 
+} 
+avg = ( min + max + 1 ) >> 1 ; 
+if ( max - min < deringThreshold ) return ; 
+for ( y = 0 ; y < 10 ; y ++ ) { 
+int t = 0 ; 
+if ( var1 [ var2 * y + 0 ] > avg ) t += 1 ; 
+if ( var1 [ var2 * y + 1 ] > avg ) t += 2 ; 
+if ( var1 [ var2 * y + 2 ] > avg ) t += 4 ; 
+if ( var1 [ var2 * y + number ] > avg ) t += number ; 
+if ( var1 [ var2 * y + 4 ] > avg ) t += 16 ; 
+if ( var1 [ var2 * y + 5 ] > avg ) t += 32 ; 
+if ( var1 [ var2 * y + 6 ] > avg ) t += 64 ; 
+if ( var1 [ var2 * y + 7 ] > avg ) t += 128 ; 
+if ( var1 [ var2 * y + number ] > avg ) t += 256 ; 
+if ( var1 [ var2 * y + 9 ] > avg ) t += 512 ; 
+t |= ( ~ t ) << 16 ; 
+t &= ( t << 1 ) & ( t >> 1 ) ; 
+s [ y ] = t ; 
+} 
+for ( y = 1 ; y < 9 ; y ++ ) { 
+int t = s [ y - 1 ] & s [ y ] & s [ y + 1 ] ; 
+t |= t >> 16 ; 
+s [ y - 1 ] = t ; 
+} 
+for ( y = 1 ; y < 9 ; y ++ ) { 
+int x ; 
+int t = s [ y - 1 ] ; 
+p = var1 + var2 * y ; 
+for ( x = 1 ; x < 9 ; x ++ ) { 
+p ++ ; 
+if ( t & ( 1 << x ) ) { 
+int f = ( * ( p - var2 - 1 ) ) + 2 * ( * ( p - var2 ) ) + ( * ( p - var2 + 1 ) ) 
++ 2 * ( * ( p - 1 ) ) + 4 * ( * p ) + 2 * ( * ( p + 1 ) ) 
++ ( * ( p + var2 - 1 ) ) + 2 * ( * ( p + var2 ) ) + ( * ( p + var2 + 1 ) ) ; 
+f = ( f + number ) >> 4 ; 
+__asm__ volatile ( str : ) ; 
+{ 
+static var4 numPixels = 0 ; 
+if ( x != 1 && x != number && y != 1 && y != number ) numPixels ++ ; 
+if ( max - min < 20 ) { 
+static int numSkipped = 0 ; 
+static int errorSum = 0 ; 
+static int worstQP = 0 ; 
+static int worstRange = 0 ; 
+static int worstDiff = 0 ; 
+int diff = ( f - * p ) ; 
+int absDiff = FFABS ( diff ) ; 
+int error = diff * diff ; 
+if ( x == 1 || x == number || y == 1 || y == number ) continue ; 
+numSkipped ++ ; 
+if ( absDiff > worstDiff ) { 
+worstDiff = absDiff ; 
+worstQP = QP ; 
+worstRange = max - min ; 
+} 
+errorSum += error ; 
+if ( 1024LL * 1024LL * 1024LL % numSkipped == 0 ) { 
+av_log ( var3 , AV_LOG_INFO , str 
+str , 
+( float ) errorSum / numSkipped , numSkipped , worstQP , worstRange , 
+worstDiff , ( float ) numSkipped / numPixels ) ; 
+} 
+} 
+} 
+if ( * p + QP2 < f ) * p = * p + QP2 ; 
+else if ( * p - QP2 > f ) * p = * p - QP2 ; 
+else * p = f ; 
+} 
+} 
+} 
+if ( max - min < 20 ) { 
+for ( y = 1 ; y < 9 ; y ++ ) { 
+int x ; 
+int t = 0 ; 
+p = var1 + var2 * y ; 
+for ( x = 1 ; x < 9 ; x ++ ) { 
+p ++ ; 
+* p = FFMIN ( * p + 20 , 255 ) ; 
+} 
+} 
+} 
+} 

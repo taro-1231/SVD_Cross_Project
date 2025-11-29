@@ -1,0 +1,7 @@
+func1 ( libAVEnumPins * var1 , unsigned long var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( var2 ) 
+return var3 ; 
+return var4 ; 
+} 

@@ -1,0 +1,179 @@
+int func1 ( uint64_t var1 , uint64_t var2 , 
+double var3 , double var4 , 
+double var5 , int var6 , 
+double * var7 , int var8 , 
+enum AVMatrixEncoding var9 ) 
+{ 
+int var10 , var11 , var12 , var13 ; 
+double var14 [ number ] [ number ] = { { number } } ; 
+int64_t var15 ; 
+double var16 = number ; 
+int var17 , var18 ; 
+if ( ( var2 & var19 ) == var19 ) { 
+var2 = var20 ; 
+} 
+var15 = var1 & ~ var2 ; 
+var17 = func2 ( var1 ) ; 
+var18 = func2 ( var2 ) ; 
+memset ( var7 , number , var18 * var8 * sizeof ( * var7 ) ) ; 
+if ( ! var1 || var17 > var22 ) 
+return func3 ( var23 ) ; 
+if ( ! var2 || var18 > var22 ) 
+return func3 ( var23 ) ; 
+if ( ! func4 ( var1 ) || ! func4 ( var2 ) ) 
+return var24 ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+if ( var1 & var2 & ( 1ULL << var10 ) ) 
+var14 [ var10 ] [ var10 ] = number ; 
+} 
+if ( var15 & var25 ) { 
+if ( ( var2 & var20 ) == var20 ) { 
+if ( ( var1 & var20 ) == var20 ) { 
+var14 [ var26 ] [ var27 ] += var3 ; 
+var14 [ var28 ] [ var27 ] += var3 ; 
+} else { 
+var14 [ var26 ] [ var27 ] += var29 ; 
+var14 [ var28 ] [ var27 ] += var29 ; 
+} 
+} else 
+return var24 ; 
+} 
+if ( var15 & var20 ) { 
+if ( var2 & var25 ) { 
+var14 [ var27 ] [ var26 ] += var29 ; 
+var14 [ var27 ] [ var28 ] += var29 ; 
+if ( var1 & var25 ) 
+var14 [ var27 ] [ var27 ] = var3 * var30 ; 
+} else 
+return var24 ; 
+} 
+if ( var15 & var31 ) { 
+if ( var2 & var32 ) { 
+var14 [ var33 ] [ var34 ] += var29 ; 
+var14 [ var35 ] [ var34 ] += var29 ; 
+} else if ( var2 & var36 ) { 
+var14 [ var37 ] [ var34 ] += var29 ; 
+var14 [ var38 ] [ var34 ] += var29 ; 
+} else if ( var2 & var39 ) { 
+if ( var9 == var40 || 
+var9 == var41 ) { 
+if ( var15 & ( var32 | var36 ) ) { 
+var14 [ var26 ] [ var34 ] -= var4 * var29 ; 
+var14 [ var28 ] [ var34 ] += var4 * var29 ; 
+} else { 
+var14 [ var26 ] [ var34 ] -= var4 ; 
+var14 [ var28 ] [ var34 ] += var4 ; 
+} 
+} else { 
+var14 [ var26 ] [ var34 ] += var4 * var29 ; 
+var14 [ var28 ] [ var34 ] += var4 * var29 ; 
+} 
+} else if ( var2 & var25 ) { 
+var14 [ var27 ] [ var34 ] += var4 * var29 ; 
+} else 
+return var24 ; 
+} 
+if ( var15 & var32 ) { 
+if ( var2 & var31 ) { 
+var14 [ var34 ] [ var33 ] += var29 ; 
+var14 [ var34 ] [ var35 ] += var29 ; 
+} else if ( var2 & var36 ) { 
+if ( var1 & var36 ) { 
+var14 [ var37 ] [ var33 ] += var29 ; 
+var14 [ var38 ] [ var35 ] += var29 ; 
+} else { 
+var14 [ var37 ] [ var33 ] += number ; 
+var14 [ var38 ] [ var35 ] += number ; 
+} 
+} else if ( var2 & var39 ) { 
+if ( var9 == var40 ) { 
+var14 [ var26 ] [ var33 ] -= var4 * var29 ; 
+var14 [ var26 ] [ var35 ] -= var4 * var29 ; 
+var14 [ var28 ] [ var33 ] += var4 * var29 ; 
+var14 [ var28 ] [ var35 ] += var4 * var29 ; 
+} else if ( var9 == var41 ) { 
+var14 [ var26 ] [ var33 ] -= var4 * var42 ; 
+var14 [ var26 ] [ var35 ] -= var4 * var29 ; 
+var14 [ var28 ] [ var33 ] += var4 * var29 ; 
+var14 [ var28 ] [ var35 ] += var4 * var42 ; 
+} else { 
+var14 [ var26 ] [ var33 ] += var4 ; 
+var14 [ var28 ] [ var35 ] += var4 ; 
+} 
+} else if ( var2 & var25 ) { 
+var14 [ var27 ] [ var33 ] += var4 * var29 ; 
+var14 [ var27 ] [ var35 ] += var4 * var29 ; 
+} else 
+return var24 ; 
+} 
+if ( var15 & var36 ) { 
+if ( var2 & var32 ) { 
+if ( var1 & var32 ) { 
+var14 [ var33 ] [ var37 ] += var29 ; 
+var14 [ var35 ] [ var38 ] += var29 ; 
+} else { 
+var14 [ var33 ] [ var37 ] += number ; 
+var14 [ var35 ] [ var38 ] += number ; 
+} 
+} else if ( var2 & var31 ) { 
+var14 [ var34 ] [ var37 ] += var29 ; 
+var14 [ var34 ] [ var38 ] += var29 ; 
+} else if ( var2 & var39 ) { 
+if ( var9 == var40 ) { 
+var14 [ var26 ] [ var37 ] -= var4 * var29 ; 
+var14 [ var26 ] [ var38 ] -= var4 * var29 ; 
+var14 [ var28 ] [ var37 ] += var4 * var29 ; 
+var14 [ var28 ] [ var38 ] += var4 * var29 ; 
+} else if ( var9 == var41 ) { 
+var14 [ var26 ] [ var37 ] -= var4 * var42 ; 
+var14 [ var26 ] [ var38 ] -= var4 * var29 ; 
+var14 [ var28 ] [ var37 ] += var4 * var29 ; 
+var14 [ var28 ] [ var38 ] += var4 * var42 ; 
+} else { 
+var14 [ var26 ] [ var37 ] += var4 ; 
+var14 [ var28 ] [ var38 ] += var4 ; 
+} 
+} else if ( var2 & var25 ) { 
+var14 [ var27 ] [ var37 ] += var4 * var29 ; 
+var14 [ var27 ] [ var38 ] += var4 * var29 ; 
+} else 
+return var24 ; 
+} 
+if ( var15 & var43 ) { 
+if ( var2 & var39 ) { 
+var14 [ var26 ] [ var44 ] += number ; 
+var14 [ var28 ] [ var45 ] += number ; 
+} else if ( var2 & var25 ) { 
+var14 [ var27 ] [ var44 ] += var29 ; 
+var14 [ var27 ] [ var45 ] += var29 ; 
+} else 
+return var24 ; 
+} 
+if ( var15 & var46 ) { 
+if ( var2 & var25 ) { 
+var14 [ var27 ] [ var47 ] += var5 ; 
+} else if ( var2 & var39 ) { 
+var14 [ var26 ] [ var47 ] += var5 * var29 ; 
+var14 [ var28 ] [ var47 ] += var5 * var29 ; 
+} else 
+return var24 ; 
+} 
+for ( var12 = var10 = number ; var12 < var18 && var10 < number ; var10 ++ ) { 
+double var48 = number ; 
+for ( var13 = var11 = number ; var13 < var17 && var11 < number ; var11 ++ ) { 
+var7 [ var12 * var8 + var13 ] = var14 [ var10 ] [ var11 ] ; 
+var48 += fabs ( var14 [ var10 ] [ var11 ] ) ; 
+if ( var1 & ( 1ULL << var11 ) ) 
+var13 ++ ; 
+} 
+var16 = func5 ( var16 , var48 ) ; 
+if ( var2 & ( 1ULL << var10 ) ) 
+var12 ++ ; 
+} 
+if ( var6 && var16 > number ) { 
+for ( var10 = number ; var10 < var18 ; var10 ++ ) 
+for ( var11 = number ; var11 < var17 ; var11 ++ ) 
+var7 [ var10 * var8 + var11 ] /= var16 ; 
+} 
+return number ; 
+} 

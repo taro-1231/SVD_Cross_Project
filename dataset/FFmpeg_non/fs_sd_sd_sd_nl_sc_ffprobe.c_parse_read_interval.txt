@@ -1,0 +1,69 @@
+static int func1 ( const char * var1 , 
+ReadInterval * var2 ) 
+{ 
+int var3 = number ; 
+char * var4 , * var5 , * var6 = func2 ( var1 ) ; 
+if ( ! var6 ) 
+return func3 ( var7 ) ; 
+if ( ! * var6 ) { 
+func4 ( var8 , var9 , str ) ; 
+var3 = func3 ( var10 ) ; 
+goto var11 ; 
+} 
+var5 = var6 ; 
+var4 = strchr ( var6 , str ) ; 
+if ( var4 ) 
+* var4 += number ; 
+if ( * var5 ) { 
+var2 -> var12 = number ; 
+if ( * var5 == str ) { 
+var2 -> var13 = number ; 
+var5 ++ ; 
+} else { 
+var2 -> var13 = number ; 
+} 
+var3 = func5 ( & var2 -> var14 , var5 , number ) ; 
+if ( var3 < number ) { 
+func4 ( var8 , var9 , str , var5 ) ; 
+goto var11 ; 
+} 
+} else { 
+var2 -> var12 = number ; 
+} 
+var5 = var4 ; 
+if ( var5 && * var5 ) { 
+int64_t var15 ; 
+var2 -> var16 = number ; 
+if ( * var5 == str ) { 
+var2 -> var17 = number ; 
+var5 ++ ; 
+} else { 
+var2 -> var17 = number ; 
+} 
+if ( var2 -> var17 && * var5 == str ) { 
+long long int var18 ; 
+char * var19 ; 
+var2 -> var20 = number ; 
+var5 ++ ; 
+var18 = func6 ( var5 , & var19 , number ) ; 
+if ( * var19 || var18 < number ) { 
+func4 ( var8 , var9 , 
+str , var5 ) ; 
+goto var11 ; 
+} 
+var2 -> var11 = var18 ; 
+} else { 
+var3 = func5 ( & var15 , var5 , number ) ; 
+if ( var3 < number ) { 
+func4 ( var8 , var9 , str , var5 ) ; 
+goto var11 ; 
+} 
+var2 -> var11 = var15 ; 
+} 
+} else { 
+var2 -> var16 = number ; 
+} 
+var11 : 
+func7 ( var6 ) ; 
+return var3 ; 
+} 

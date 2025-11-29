@@ -1,0 +1,6 @@
+func1 ( png_structp var1 ) 
+{ 
+PNG_UNUSED ( var1 ) 
+return func2 ( ) == var2 && 
+( func3 ( ) & var3 ) != number ; 
+} 

@@ -1,0 +1,32 @@
+func1 ( png_structp var1 , png_infop var2 , png_textp var3 , 
+png_charp var4 ) 
+{ 
+switch ( var4 [ number ] ) 
+{ 
+case str : 
+{ 
+png_bytep var5 = var6 ; 
+var3 -> var7 = func2 ( var4 + number , & var5 ) ; 
+var3 -> var3 = ( png_charp ) var5 ; 
+} 
+break ; 
+case str : case str : case str : case str : case str : 
+case str : case str : case str : case str : case str : 
+{ 
+png_bytep var8 = var6 ; 
+png_size_t var9 = func3 ( var4 , & var8 ) ; 
+if ( var9 > number ) 
+{ 
+var3 -> var7 = var9 ; 
+var3 -> var3 = ( png_charp ) var8 ; 
+break ; 
+} 
+} 
+var10 : 
+var3 -> var3 = var4 ; 
+break ; 
+} 
+func4 ( var1 , var2 , var3 , number ) ; 
+if ( var3 -> var3 != var4 ) 
+free ( var3 -> var3 ) ; 
+} 

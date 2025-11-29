@@ -1,0 +1,58 @@
+static void func1 ( DeshakeContext * var1 , uint8_t * var2 , uint8_t * var3 , 
+int var4 , int var5 , int var6 , Transform * var7 ) 
+{ 
+int var8 , var9 ; 
+IntMotionVector var10 = { number , number } ; 
+int var11 = number ; 
+int var12 ; 
+int var13 ; 
+int var14 = number , var15 = number ; 
+double var16 , var17 ; 
+func2 ( & var1 -> var18 , & var1 -> var19 , var4 * var5 / ( number * var1 -> var20 ) * sizeof ( * var1 -> var18 ) ) ; 
+for ( var8 = number ; var8 < var1 -> var22 * number + number ; var8 ++ ) { 
+for ( var9 = number ; var9 < var1 -> var23 * number + number ; var9 ++ ) { 
+var1 -> var21 [ var8 ] [ var9 ] = number ; 
+} 
+} 
+var13 = number ; 
+for ( var9 = var1 -> var23 ; var9 < var5 - var1 -> var23 - ( var1 -> var20 * number ) ; var9 += var1 -> var20 * number ) { 
+for ( var8 = var1 -> var22 ; var8 < var4 - var1 -> var22 - number ; var8 += number ) { 
+var12 = func3 ( var3 , var8 , var9 , var6 , var1 -> var20 ) ; 
+if ( var12 > var1 -> var12 ) { 
+func4 ( var1 , var2 , var3 , var8 , var9 , var6 , & var10 ) ; 
+if ( var10 . var8 != - number && var10 . var9 != - number ) { 
+var1 -> var21 [ var10 . var8 + var1 -> var22 ] [ var10 . var9 + var1 -> var23 ] += number ; 
+if ( var8 > var1 -> var22 && var9 > var1 -> var23 ) 
+var1 -> var18 [ var13 ++ ] = func5 ( var8 , var9 , number , number , & var10 ) ; 
+var14 += var10 . var8 ; 
+var15 += var10 . var9 ; 
+} 
+} 
+} 
+} 
+if ( var13 ) { 
+var14 /= var13 ; 
+var15 /= var13 ; 
+var7 -> var24 = func6 ( var1 -> var18 , var13 ) ; 
+if ( var7 -> var24 < number ) 
+var7 -> var24 = number ; 
+} else { 
+var7 -> var24 = number ; 
+} 
+for ( var9 = var1 -> var23 * number ; var9 >= number ; var9 -- ) { 
+for ( var8 = number ; var8 < var1 -> var22 * number + number ; var8 ++ ) { 
+if ( var1 -> var21 [ var8 ] [ var9 ] > var11 ) { 
+var7 -> var25 . var8 = var8 - var1 -> var22 ; 
+var7 -> var25 . var9 = var9 - var1 -> var23 ; 
+var11 = var1 -> var21 [ var8 ] [ var9 ] ; 
+} 
+} 
+} 
+var16 = ( var14 - var4 / number ) ; 
+var17 = ( var15 - var5 / number ) ; 
+var7 -> var25 . var8 += ( cos ( var7 -> var24 ) - number ) * var16 - sin ( var7 -> var24 ) * var17 ; 
+var7 -> var25 . var9 += sin ( var7 -> var24 ) * var16 + ( cos ( var7 -> var24 ) - number ) * var17 ; 
+var7 -> var25 . var8 = func7 ( var7 -> var25 . var8 , - var1 -> var22 * number , var1 -> var22 * number ) ; 
+var7 -> var25 . var9 = func7 ( var7 -> var25 . var9 , - var1 -> var23 * number , var1 -> var23 * number ) ; 
+var7 -> var24 = func7 ( var7 -> var24 , - number , number ) ; 
+} 

@@ -1,0 +1,13 @@
+static void func1 ( OptionsContext * var1 , AVFormatContext * var2 , 
+const OutputStream * var3 , enum AVMediaType var4 ) 
+{ 
+if ( var3 -> var5 || var3 -> var6 ) { 
+av_log ( NULL , AV_LOG_ERROR , 
+str 
+str , 
+var3 -> var6 ? str : str , 
+var3 -> var6 ? var3 -> var6 : var3 -> var5 , 
+av_get_media_type_string ( var4 ) , var3 -> file_index , var3 -> index ) ; 
+func2 ( number ) ; 
+} 
+} 

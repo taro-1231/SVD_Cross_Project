@@ -1,0 +1,71 @@
+static AVFrame * func1 ( AVFilterContext * var1 ) 
+{ 
+AVFrame * var2 ; 
+PaletteGenContext * var3 = var1 -> var4 ; 
+AVFilterLink * var5 = var1 -> var6 [ number ] ; 
+double var7 ; 
+int var8 = number ; 
+struct range_box * var9 ; 
+var3 -> var10 = func2 ( var3 -> var11 , var3 -> var12 ) ; 
+if ( ! var3 -> var10 ) { 
+func3 ( var1 , var13 , str , var3 -> var12 ) ; 
+return var14 ; 
+} 
+var2 = func4 ( var5 , var5 -> var15 , var5 -> var16 ) ; 
+if ( ! var2 ) 
+return var14 ; 
+var2 -> var17 = number ; 
+var9 = & var3 -> var18 [ var8 ] ; 
+var9 -> var19 = var3 -> var12 ; 
+var9 -> var20 = - number ; 
+var9 -> var21 = func5 ( var3 -> var10 , var9 ) ; 
+var9 -> var22 = - number ; 
+var3 -> var23 = number ; 
+while ( var9 && var9 -> var19 > number ) { 
+int var24 , var25 , var26 , var27 , var28 ; 
+uint64_t var29 , var30 = number ; 
+uint8_t var31 [ number ] = { number , number , number } ; 
+uint8_t var32 [ number ] = { number , number , number } ; 
+for ( var24 = var9 -> var33 ; var24 < var9 -> var33 + var9 -> var19 ; var24 ++ ) { 
+const struct color_ref * var34 = var3 -> var10 [ var24 ] ; 
+const uint32_t var35 = var34 -> var21 ; 
+const uint8_t var36 = var35 >> number & number , var37 = var35 >> number & number , var38 = var35 & number ; 
+var31 [ number ] = func6 ( var36 , var31 [ number ] ) , var32 [ number ] = func7 ( var36 , var32 [ number ] ) ; 
+var31 [ number ] = func6 ( var37 , var31 [ number ] ) , var32 [ number ] = func7 ( var37 , var32 [ number ] ) ; 
+var31 [ number ] = func6 ( var38 , var31 [ number ] ) , var32 [ number ] = func7 ( var38 , var32 [ number ] ) ; 
+var30 += var34 -> var39 ; 
+} 
+var25 = var32 [ number ] - var31 [ number ] ; 
+var26 = var32 [ number ] - var31 [ number ] ; 
+var27 = var32 [ number ] - var31 [ number ] ; 
+var28 = number ; 
+if ( var27 >= var25 && var27 >= var26 ) var28 = number ; 
+if ( var25 >= var26 && var25 >= var27 ) var28 = number ; 
+if ( var26 >= var25 && var26 >= var27 ) var28 = number ; 
+ff_dlog ( var1 , str PRIu64 str 
+var8 , var9 -> var33 , var9 -> var33 + var9 -> var19 - number , var9 -> var19 , var30 , 
+var25 , var26 , var27 , str [ var28 ] , var9 -> var20 == var28 ? str : str ) ; 
+if ( var9 -> var20 != var28 ) { 
+cmp_func var40 = var41 [ var28 ] ; 
+AV_QSORT ( & var3 -> var10 [ var9 -> var33 ] , var9 -> var19 , const struct color_ref * , var40 ) ; 
+var9 -> var20 = var28 ; 
+} 
+var29 = ( var30 + number ) >> number ; 
+var30 = number ; 
+for ( var24 = var9 -> var33 ; var24 < var9 -> var33 + var9 -> var19 - number ; var24 ++ ) { 
+var30 += var3 -> var10 [ var24 ] -> var39 ; 
+if ( var30 > var29 ) 
+break ; 
+} 
+ff_dlog ( var1 , str PRIu64 str PRIu64 str , var24 , var30 , var29 ) ; 
+func8 ( var3 , var9 , var24 ) ; 
+var8 = func9 ( var3 ) ; 
+var9 = var8 >= number ? & var3 -> var18 [ var8 ] : var14 ; 
+} 
+var7 = func10 ( var2 , var3 -> var23 , var3 -> var12 ) ; 
+func3 ( var1 , var42 , str , 
+var3 -> var23 , var3 -> var43 ? str : str , var3 -> var12 , var7 ) ; 
+qsort ( var3 -> var18 , var3 -> var23 , sizeof ( * var3 -> var18 ) , var44 ) ; 
+func11 ( var1 , var2 ) ; 
+return var2 ; 
+} 

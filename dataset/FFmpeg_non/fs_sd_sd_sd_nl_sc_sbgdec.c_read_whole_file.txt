@@ -1,0 +1,31 @@
+static int func1 ( AVIOContext * var1 , int var2 , char ** var3 ) 
+{ 
+char * var4 = var5 ; 
+int var6 = number , var7 = number , var8 ; 
+while ( number ) { 
+if ( var7 - var6 < number ) { 
+var7 = func2 ( func3 ( number * var7 , number ) , var2 ) ; 
+if ( var7 - var6 < number ) { 
+var6 = func4 ( var9 ) ; 
+goto var10 ; 
+} 
+var4 = func5 ( var4 , var7 , number ) ; 
+if ( ! var4 ) { 
+var6 = func4 ( var11 ) ; 
+goto var10 ; 
+} 
+} 
+var8 = func6 ( var1 , var4 , var7 - var6 - number ) ; 
+if ( var8 == var12 ) 
+break ; 
+if ( var8 < number ) 
+goto var10 ; 
+var6 += var8 ; 
+} 
+var4 [ var6 ] = number ; 
+* var3 = var4 ; 
+return var6 ; 
+var10 : 
+func7 ( var4 ) ; 
+return var6 ; 
+} 

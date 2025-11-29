@@ -1,0 +1,40 @@
+av_cold int func1 ( AVCAMELLIA * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+uint64_t var4 [ number ] , var5 [ number ] , var6 [ number ] , var7 [ number ] ; 
+uint64_t var8 , var9 ; 
+if ( var3 != number && var3 != number && var3 != number ) 
+return - number ; 
+memset ( var7 , number , sizeof ( var7 ) ) ; 
+memset ( var5 , number , sizeof ( var5 ) ) ; 
+var1 -> var3 = var3 ; 
+var4 [ number ] = func2 ( var2 ) ; 
+var4 [ number ] = func2 ( var2 + number ) ; 
+if ( var3 == number ) { 
+var5 [ number ] = func2 ( var2 + number ) ; 
+var5 [ number ] = ~ var5 [ number ] ; 
+} else if ( var3 == number ) { 
+var5 [ number ] = func2 ( var2 + number ) ; 
+var5 [ number ] = func2 ( var2 + number ) ; 
+} 
+func3 ( ) ; 
+var8 = var4 [ number ] ^ var5 [ number ] ; 
+var9 = var4 [ number ] ^ var5 [ number ] ; 
+var9 ^= func4 ( var8 , var11 ) ; 
+var8 ^= func4 ( var9 , var12 ) ; 
+var8 ^= var4 [ number ] ; 
+var9 ^= var4 [ number ] ; 
+var9 ^= func4 ( var8 , var13 ) ; 
+var8 ^= func4 ( var9 , var14 ) ; 
+var6 [ number ] = var8 ; 
+var6 [ number ] = var9 ; 
+if ( var3 != number ) { 
+var8 = var6 [ number ] ^ var5 [ number ] ; 
+var9 = var6 [ number ] ^ var5 [ number ] ; 
+var9 ^= func4 ( var8 , var15 ) ; 
+var8 ^= func4 ( var9 , var16 ) ; 
+var7 [ number ] = var8 ; 
+var7 [ number ] = var9 ; 
+} 
+func5 ( var1 , var4 , var5 , var6 , var7 ) ; 
+return number ; 
+} 

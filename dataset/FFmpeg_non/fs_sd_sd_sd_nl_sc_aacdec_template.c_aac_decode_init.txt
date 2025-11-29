@@ -1,0 +1,89 @@
+static void func1 ( AACContext * var1 ) ; 
+static av_cold int func2 ( AVCodecContext * var2 ) 
+{ 
+AACContext * var1 = var2 -> var3 ; 
+int var4 ; 
+var1 -> var2 = var2 ; 
+var1 -> var5 [ number ] . var6 . var7 = var2 -> var7 ; 
+func1 ( var1 ) ; 
+var2 -> var8 = var9 ; 
+var2 -> var8 = AV_SAMPLE_FMT_FLTP ; 
+if ( var2 -> var10 > number ) { 
+if ( ( var4 = decode_audio_specific_config ( var1 , var1 -> var2 , & var1 -> var5 [ number ] . var6 , 
+var2 -> extradata , 
+var2 -> var10 * 8LL , 
+number ) ) < number ) 
+return var4 ; 
+} else { 
+int var11 , var12 ; 
+uint8_t var13 [ var14 * number ] [ number ] ; 
+int var15 ; 
+var11 = func3 ( var2 -> var7 ) ; 
+var1 -> var5 [ number ] . var6 . var16 = var11 ; 
+var1 -> var5 [ number ] . var6 . var17 = var2 -> var17 ; 
+var1 -> var5 [ number ] . var6 . var18 = - number ; 
+var1 -> var5 [ number ] . var6 . var19 = - number ; 
+for ( var12 = number ; var12 < func4 ( var20 ) ; var12 ++ ) 
+if ( var20 [ var12 ] == var2 -> var17 ) 
+break ; 
+if ( var12 == func4 ( var20 ) ) { 
+var12 = number ; 
+} 
+var1 -> var5 [ number ] . var6 . var21 = var12 ; 
+if ( var1 -> var5 [ number ] . var6 . var21 ) { 
+int var4 = func5 ( var2 , var13 , 
+& var15 , var1 -> var5 [ number ] . var6 . var21 ) ; 
+if ( ! var4 ) 
+func6 ( var1 , var13 , var15 , 
+var22 , number ) ; 
+else if ( var2 -> var23 & var24 ) 
+return var25 ; 
+} 
+} 
+if ( var2 -> var17 > var26 ) { 
+func7 ( var2 , var27 , str ) ; 
+return var25 ; 
+} 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func8 ( number , number ) ; 
+func9 ( func10 ) ( ) ; 
+var1 -> var28 = func11 ( var2 -> var29 & var30 ) ; 
+var1 -> var28 = avpriv_float_dsp_alloc ( var2 -> var29 & var30 ) ; 
+if ( ! var1 -> var28 ) { 
+return func12 ( var31 ) ; 
+} 
+var1 -> var32 = number ; 
+func13 ( ) ; 
+func14 ( & var33 , number , 
+func4 ( var34 ) , 
+var35 , 
+sizeof ( var35 [ number ] ) , 
+sizeof ( var35 [ number ] ) , 
+var34 , 
+sizeof ( var34 [ number ] ) , 
+sizeof ( var34 [ number ] ) , 
+number ) ; 
+func15 ( func16 ) ( & var1 -> var36 , number , number , number / func17 ( number ) ) ; 
+func15 ( func16 ) ( & var1 -> var37 , number , number , number / func17 ( number ) ) ; 
+func15 ( func16 ) ( & var1 -> var38 , number , number , number / func17 ( number ) ) ; 
+func15 ( func16 ) ( & var1 -> var39 , number , number , func17 ( - number ) ) ; 
+var4 = func18 ( & var1 -> var40 , number ) ; 
+if ( var4 < number ) 
+return var4 ; 
+func9 ( func19 ) ( func9 ( var41 ) , number , number ) ; 
+func9 ( func19 ) ( func9 ( var42 ) , number , number ) ; 
+func9 ( func20 ) ( number ) ; 
+func9 ( func20 ) ( number ) ; 
+func9 ( func20 ) ( number ) ; 
+func9 ( func21 ) ( ) ; 
+return number ; 
+} 

@@ -1,0 +1,11 @@
+static void func1 ( HLSContext * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) { 
+struct variant * var4 = var1 -> var5 [ var2 ] ; 
+func2 ( & var4 -> var6 ) ; 
+func3 ( var4 ) ; 
+} 
+func2 ( & var1 -> var5 ) ; 
+var1 -> var3 = number ; 
+} 

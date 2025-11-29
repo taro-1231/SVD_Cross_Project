@@ -1,0 +1,93 @@
+static inline int RENAME ( func1 ) ( const uint8_t var1 [ ] , int var2 , PPContext * var3 ) { 
+int var4 = number , var5 ; 
+var1 += var2 * number ; 
+__asm__ volatile ( 
+str 
+str 
+:: str ( var3 -> mmxDcOffset [ var3 -> nonBQP ] ) , str ( var3 -> mmxDcThreshold [ var3 -> nonBQP ] ) 
+) ; 
+__asm__ volatile ( 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str REG_a str 
+str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm2 , % % mm4 ) 
+PMINUB ( % % mm2 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str REG_a str 
+PMAXUB ( % % mm1 , % % mm4 ) 
+PMINUB ( % % mm1 , % % mm3 , % % mm5 ) 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var4 ) , str ( var5 ) 
+: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 -> pQPb ) 
+: str REG_a 
+) ; 
+var4 = ( - var4 ) & number ; 
+if ( var4 > var3 -> var6 . var7 ) { 
+if ( var5 ) return number ; 
+else return number ; 
+} else { 
+return number ; 
+} 
+} 

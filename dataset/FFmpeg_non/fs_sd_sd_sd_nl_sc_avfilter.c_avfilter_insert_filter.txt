@@ -1,0 +1,27 @@
+int func1 ( AVFilterLink * var1 , AVFilterContext * var2 , 
+unsigned var3 , unsigned var4 ) 
+{ 
+int var5 ; 
+unsigned var6 = var1 -> var7 - var1 -> var8 -> var9 ; 
+av_log ( var1 -> var8 , AV_LOG_VERBOSE , str 
+str , 
+var2 -> name , var1 -> src -> name , var1 -> var8 -> name ) ; 
+var1 -> var8 -> var10 [ var6 ] = var11 ; 
+if ( ( var5 = func2 ( var2 , var4 , var1 -> var8 , var6 ) ) < number ) { 
+var1 -> var8 -> var10 [ var6 ] = var1 ; 
+return var5 ; 
+} 
+var1 -> var8 = var2 ; 
+var1 -> var7 = & var2 -> var9 [ var3 ] ; 
+var2 -> var10 [ var3 ] = var1 ; 
+if ( var1 -> var12 ) 
+func3 ( & var1 -> var12 , 
+& var2 -> var13 [ var4 ] -> var12 ) ; 
+if ( var1 -> var14 ) 
+func3 ( & var1 -> var14 , 
+& var2 -> var13 [ var4 ] -> var14 ) ; 
+if ( var1 -> var15 ) 
+func4 ( & var1 -> var15 , 
+& var2 -> var13 [ var4 ] -> var15 ) ; 
+return number ; 
+} 

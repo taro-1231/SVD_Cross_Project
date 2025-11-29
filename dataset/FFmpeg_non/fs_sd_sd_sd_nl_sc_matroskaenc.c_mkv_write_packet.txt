@@ -1,0 +1,61 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+MatroskaMuxContext * var3 = var1 -> var4 ; 
+int var5 = var1 -> var6 [ var2 -> var7 ] -> var8 -> var5 ; 
+int var9 = ! ! ( var2 -> var10 & var11 ) ; 
+int var12 ; 
+int64_t var13 ; 
+int var14 ; 
+int var15 ; 
+if ( var3 -> var16 [ var2 -> var7 ] . var17 ) 
+var13 = var2 -> var18 - var3 -> var19 ; 
+else 
+var13 = var2 -> var20 - var3 -> var19 ; 
+var13 += var3 -> var16 [ var2 -> var7 ] . var21 ; 
+if ( var1 -> var22 -> var23 ) { 
+var12 = func2 ( var1 -> var22 ) - var3 -> var24 ; 
+} else { 
+var12 = func2 ( var3 -> var25 ) ; 
+} 
+if ( var3 -> var26 && var5 == var27 ) { 
+var15 = var9 ; 
+} else if ( var3 -> var26 && var5 == var28 && 
+( var3 -> var24 == - number || 
+var13 > var3 -> var29 ) ) { 
+var15 = number ; 
+} else if ( ! var3 -> var26 && 
+( var12 > var3 -> var30 || 
+var13 > var3 -> var29 || 
+( var5 == var27 && var9 && 
+var12 > number * number ) ) ) { 
+var15 = number ; 
+} else { 
+var15 = number ; 
+} 
+if ( var3 -> var24 != - number && var15 ) { 
+func3 ( var1 , var2 ) ; 
+} 
+if ( var3 -> var31 . var32 > number ) { 
+var14 = func4 ( var1 , & var3 -> var31 , 
+var3 -> var26 ? var15 : number ) ; 
+func5 ( & var3 -> var31 ) ; 
+if ( var14 < number ) { 
+func6 ( var1 , var33 , 
+str , var14 ) ; 
+return var14 ; 
+} 
+} 
+if ( var5 == var28 ) { 
+var3 -> var31 = * var2 ; 
+if ( var2 -> var34 ) { 
+var3 -> var31 . var34 = func7 ( var2 -> var34 ) ; 
+var14 = var3 -> var31 . var34 ? number : func8 ( var35 ) ; 
+} else 
+var14 = func9 ( & var3 -> var31 ) ; 
+if ( var3 -> var31 . var36 > number ) { 
+var14 = func10 ( & var3 -> var31 , & var3 -> var31 ) ; 
+} 
+} else 
+var14 = func4 ( var1 , var2 , number ) ; 
+return var14 ; 
+} 

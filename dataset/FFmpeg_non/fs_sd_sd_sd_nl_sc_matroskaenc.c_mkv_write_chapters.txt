@@ -1,0 +1,46 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+ebml_master var5 , var6 ; 
+AVRational var7 = { number , number } ; 
+int var8 , var9 ; 
+if ( ! var1 -> var10 || var2 -> var11 ) 
+return number ; 
+var9 = func2 ( var2 -> var12 , var13 , func3 ( var4 ) ) ; 
+if ( var9 < number ) return var9 ; 
+var5 = func4 ( var4 , var13 , number ) ; 
+var6 = func4 ( var4 , var14 , number ) ; 
+func5 ( var4 , var15 , number ) ; 
+func5 ( var4 , var16 , number ) ; 
+for ( var8 = number ; var8 < var1 -> var10 ; var8 ++ ) { 
+ebml_master var17 , var18 ; 
+AVChapter * var19 = var1 -> var5 [ var8 ] ; 
+int64_t var20 = func6 ( var19 -> var21 , var19 -> var22 , var7 ) ; 
+int64_t var23 = func6 ( var19 -> var24 , var19 -> var22 , var7 ) ; 
+AVDictionaryEntry * var25 = var26 ; 
+if ( var20 < number || var20 > var23 || var23 < number ) { 
+av_log ( var1 , AV_LOG_ERROR , 
+str PRId64 str PRId64 str , 
+var20 , var23 ) ; 
+return var27 ; 
+} 
+var17 = func4 ( var4 , var28 , number ) ; 
+func5 ( var4 , var29 , var19 -> var30 + var2 -> var31 ) ; 
+func5 ( var4 , var32 , var20 ) ; 
+func5 ( var4 , var33 , var23 ) ; 
+func5 ( var4 , var34 , number ) ; 
+func5 ( var4 , var35 , number ) ; 
+if ( ( var25 = func7 ( var19 -> var36 , str , var26 , number ) ) ) { 
+var18 = func4 ( var4 , var37 , number ) ; 
+func8 ( var4 , var38 , var25 -> var39 ) ; 
+func8 ( var4 , var40 , str ) ; 
+func9 ( var4 , var18 ) ; 
+} 
+func9 ( var4 , var17 ) ; 
+} 
+func9 ( var4 , var6 ) ; 
+func9 ( var4 , var5 ) ; 
+var2 -> var11 = number ; 
+return number ; 
+} 

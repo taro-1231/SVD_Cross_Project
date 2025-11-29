@@ -1,0 +1,10 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+OptionsContext * var4 = var1 ; 
+char * var5 = func2 ( str , var3 ) ; 
+int var6 = func3 ( var4 , str , var5 , var8 ) ; 
+if ( var6 >= number ) 
+var6 = func4 ( & var4 -> var7 -> var9 , str , var3 , number ) ; 
+func5 ( var5 ) ; 
+return number ; 
+} 

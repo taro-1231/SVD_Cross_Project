@@ -1,0 +1,16 @@
+static int func1 ( PulseData * var1 , pa_operation * var2 , const char * var3 ) 
+{ 
+if ( ! var2 ) { 
+func2 ( var1 -> var4 ) ; 
+func3 ( var1 , var5 , str , var3 ) ; 
+return var6 ; 
+} 
+var1 -> var7 = number ; 
+while ( var1 -> var7 == number ) 
+func4 ( var1 -> var4 ) ; 
+func5 ( var2 ) ; 
+func2 ( var1 -> var4 ) ; 
+if ( var1 -> var7 != number ) 
+func3 ( var1 , var5 , str , var3 ) ; 
+return var1 -> var7 ; 
+} 

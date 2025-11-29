@@ -1,0 +1,12 @@
+static void func1 ( AVTreeNode * var1 , int var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < var2 * number ; var3 ++ ) 
+func2 ( var4 , var5 , str ) ; 
+if ( var1 ) { 
+func2 ( var4 , var5 , str , var1 , var1 -> var6 , var1 -> var7 ) ; 
+func1 ( var1 -> var8 [ number ] , var2 + number ) ; 
+func1 ( var1 -> var8 [ number ] , var2 + number ) ; 
+} else 
+func2 ( var4 , var5 , str ) ; 
+} 

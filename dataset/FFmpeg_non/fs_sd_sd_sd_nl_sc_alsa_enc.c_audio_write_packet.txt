@@ -1,0 +1,29 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+AlsaData * var3 = var1 -> var4 ; 
+int var5 ; 
+int var6 = var2 -> var6 ; 
+uint8_t * var7 = var2 -> var8 ; 
+var6 /= var3 -> var9 ; 
+if ( var2 -> var10 != var11 ) 
+var3 -> var12 = var2 -> var10 ; 
+var3 -> var12 += var2 -> var13 ? var2 -> var13 : var6 ; 
+if ( var3 -> func2 ) { 
+if ( var6 > var3 -> var14 ) 
+if ( func3 ( var3 , var6 ) ) 
+return func4 ( var15 ) ; 
+var3 -> func2 ( var7 , var3 -> var16 , var6 ) ; 
+var7 = var3 -> var16 ; 
+} 
+while ( ( var5 = func5 ( var3 -> var17 , var7 , var6 ) ) < number ) { 
+if ( var5 == - var18 ) { 
+return func4 ( var18 ) ; 
+} 
+if ( func6 ( var1 , var5 ) < number ) { 
+func7 ( var1 , var19 , str , 
+func8 ( var5 ) ) ; 
+return func4 ( var20 ) ; 
+} 
+} 
+return number ; 
+} 

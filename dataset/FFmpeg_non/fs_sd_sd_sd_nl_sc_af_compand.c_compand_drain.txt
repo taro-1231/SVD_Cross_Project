@@ -1,0 +1,30 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+CompandContext * var4 = var2 -> var5 ; 
+const int var6 = var1 -> var6 ; 
+AVFrame * var7 = var8 ; 
+int var9 , var10 , var11 ; 
+var7 = func2 ( var1 , func3 ( number , var4 -> var12 ) ) ; 
+if ( ! var7 ) 
+return func4 ( var13 ) ; 
+var7 -> var14 = var4 -> var14 ; 
+var4 -> var14 += av_rescale_q ( var7 -> var15 , 
+( AVRational ) { number , var1 -> sample_rate } , var1 -> time_base ) ; 
+func5 ( var6 > number ) ; 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) { 
+AVFrame * var16 = var4 -> var16 ; 
+double * var17 = ( double * ) var16 -> var18 [ var9 ] ; 
+double * var19 = ( double * ) var7 -> var18 [ var9 ] ; 
+ChanParam * var20 = & var4 -> var6 [ var9 ] ; 
+var11 = var4 -> var21 ; 
+for ( var10 = number ; var10 < var7 -> var15 ; var10 ++ ) { 
+var19 [ var10 ] = func6 ( var17 [ var11 ] * func7 ( var4 , var20 -> var22 ) , 
+- number , number ) ; 
+var11 = func8 ( var11 + number , var4 -> var23 ) ; 
+} 
+} 
+var4 -> var12 -= var7 -> var15 ; 
+var4 -> var21 = var11 ; 
+return func9 ( var1 , var7 ) ; 
+} 

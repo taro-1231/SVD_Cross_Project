@@ -1,0 +1,62 @@
+static int func1 ( AVFilterLink * var2 , AVFrame * var3 ) 
+{ 
+AVFilterContext * var4 = var2 -> var5 ; 
+CropDetectContext * var6 = var4 -> var7 ; 
+int var8 = var6 -> var9 [ number ] ; 
+int var10 , var11 , var12 , var13 , var14 ; 
+AVDictionary ** var1 ; 
+int var15 , var16 ; 
+int var17 = round ( var6 -> var17 ) ; 
+if ( ++ var6 -> var18 > number ) { 
+var1 = func2 ( var3 ) ; 
+if ( var6 -> var19 > number && var6 -> var18 > var6 -> var19 ) { 
+var6 -> var20 = var3 -> var21 - number ; 
+var6 -> var22 = var3 -> var23 - number ; 
+var6 -> var24 = number ; 
+var6 -> var25 = number ; 
+var6 -> var18 = number ; 
+} 
+var15 = number ; \ 
+for ( var16 = var13 = var27 ; var28 ; var13 = var13 var29 ) { \ 
+if ( func4 ( var4 , var3 -> var33 [ number ] + var30 * var13 , var31 , var32 , var8 ) > var17 ) { \ 
+if ( ++ var15 > var6 -> var34 ) { \ 
+var26 = var16 ; \ 
+break ; \ 
+} \ 
+} else \ 
+var16 = var13 var29 ; \ 
+} 
+func3 ( var6 -> var22 , number , var13 < var6 -> var22 , + number , var3 -> var35 [ number ] , var8 , var3 -> var21 ) ; 
+func3 ( var6 -> var25 , var3 -> var23 - number , var13 > func5 ( var6 -> var25 , var6 -> var22 ) , - number , var3 -> var35 [ number ] , var8 , var3 -> var21 ) ; 
+func3 ( var6 -> var20 , number , var13 < var6 -> var20 , + number , var8 , var3 -> var35 [ number ] , var3 -> var23 ) ; 
+func3 ( var6 -> var24 , var3 -> var21 - number , var13 > func5 ( var6 -> var24 , var6 -> var20 ) , - number , var8 , var3 -> var35 [ number ] , var3 -> var23 ) ; 
+var12 = ( var6 -> var20 + number ) & ~ number ; 
+var13 = ( var6 -> var22 + number ) & ~ number ; 
+var10 = var6 -> var24 - var12 + number ; 
+var11 = var6 -> var25 - var13 + number ; 
+if ( var6 -> round <= number ) 
+var6 -> round = number ; 
+if ( var6 -> round % number ) 
+var6 -> round *= number ; 
+var14 = var10 % var6 -> round ; 
+var10 -= var14 ; 
+var12 += ( var14 / number + number ) & ~ number ; 
+var14 = var11 % var6 -> round ; 
+var11 -= var14 ; 
+var13 += ( var14 / number + number ) & ~ number ; 
+func6 ( str , var6 -> var20 ) ; 
+func6 ( str , var6 -> var24 ) ; 
+func6 ( str , var6 -> var22 ) ; 
+func6 ( str , var6 -> var25 ) ; 
+func6 ( str , var10 ) ; 
+func6 ( str , var11 ) ; 
+func6 ( str , var12 ) ; 
+func6 ( str , var13 ) ; 
+av_log ( var4 , AV_LOG_INFO , 
+str PRId64 str , 
+var6 -> var20 , var6 -> var24 , var6 -> var22 , var6 -> var25 , var10 , var11 , var12 , var13 , var3 -> pts , 
+var3 -> pts == AV_NOPTS_VALUE ? - number : var3 -> pts * av_q2d ( var2 -> time_base ) , 
+var10 , var11 , var12 , var13 ) ; 
+} 
+return func7 ( var2 -> var5 -> var37 [ number ] , var3 ) ; 
+} 

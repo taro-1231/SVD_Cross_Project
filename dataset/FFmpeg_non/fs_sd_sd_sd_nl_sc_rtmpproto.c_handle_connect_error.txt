@@ -1,0 +1,79 @@
+static int func1 ( URLContext * var1 , const char * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+char var5 [ number ] , * var6 , var7 [ number ] ; 
+int var8 = number , var9 = number ; 
+const char * var10 = str , * var11 = str , * var12 = var13 , 
+* var14 = var13 , * var15 = var13 , * var16 = var13 ; 
+if ( ! ( var15 = strstr ( var2 , str ) ) && 
+! ( var15 = strstr ( var2 , str ) ) ) { 
+func2 ( var1 , var17 , 
+str ) ; 
+return var18 ; 
+} 
+var15 += strlen ( str ) ; 
+while ( * var15 && * var15 != str && var8 < sizeof ( var7 ) - number ) 
+var7 [ var8 ++ ] = * var15 ++ ; 
+var7 [ var8 ] = str ; 
+if ( ! var3 -> var19 [ number ] || ! var3 -> var20 [ number ] ) { 
+func2 ( var1 , var17 , str ) ; 
+return var18 ; 
+} 
+if ( strstr ( var2 , str ) ) { 
+func2 ( var1 , var17 , str ) ; 
+return var18 ; 
+} else if ( strstr ( var2 , str ) ) { 
+func2 ( var1 , var17 , str ) ; 
+return var18 ; 
+} 
+if ( var3 -> var21 ) { 
+func2 ( var1 , var17 , str ) ; 
+return var18 ; 
+} 
+var3 -> var22 [ number ] = str ; 
+if ( strstr ( var2 , str ) ) { 
+snprintf ( var3 -> var22 , sizeof ( var3 -> var22 ) , 
+str , var7 , var3 -> var19 ) ; 
+return number ; 
+} 
+if ( ! ( var15 = strstr ( var2 , str ) ) ) { 
+func2 ( var1 , var17 , str ) ; 
+return var18 ; 
+} 
+func3 ( var5 , var15 + number , sizeof ( var5 ) ) ; 
+var6 = var5 ; 
+while ( var6 ) { 
+char * var23 = strchr ( var6 , str ) ; 
+char * var24 = strchr ( var6 , str ) ; 
+if ( var23 ) 
+* var23 += str ; 
+if ( var24 ) { 
+* var24 += str ; 
+if ( ! strcmp ( var6 , str ) ) { 
+var10 = var24 ; 
+} else if ( ! strcmp ( var6 , str ) ) { 
+var11 = var24 ; 
+} else if ( ! strcmp ( var6 , str ) ) { 
+var12 = var24 ; 
+} else if ( ! strcmp ( var6 , str ) ) { 
+var14 = var24 ; 
+} else if ( ! strcmp ( var6 , str ) ) { 
+var16 = var24 ; 
+} else { 
+func2 ( var1 , var25 , str , var6 ) ; 
+} 
+} else { 
+func2 ( var1 , var26 , str , var6 ) ; 
+} 
+var6 = var23 ; 
+} 
+if ( ! strcmp ( var7 , str ) ) { 
+if ( ( var9 = func4 ( var3 , var10 , var11 , var12 , var14 ) ) < number ) 
+return var9 ; 
+} else { 
+if ( ( var9 = func5 ( var3 , var10 , var16 ) ) < number ) 
+return var9 ; 
+} 
+var3 -> var21 = number ; 
+return number ; 
+} 

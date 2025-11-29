@@ -1,0 +1,30 @@
+char * func1 ( const char ** var2 , const char * var3 ) 
+{ 
+char * var4 = func2 ( strlen ( * var2 ) + number ) ; 
+char * var5 = var4 , * var6 = var4 ; 
+const char * var7 = * var2 ; 
+if ( ! var4 ) 
+return var8 ; 
+var7 += strspn ( var7 , var1 ) ; 
+while ( * var7 && ! strspn ( var7 , var3 ) ) { 
+char var9 = * var7 ++ ; 
+if ( var9 == str && * var7 ) { 
+* var4 += * var7 ++ ; 
+var6 = var4 ; 
+} else if ( var9 == str ) { 
+while ( * var7 && * var7 != str ) 
+* var4 += * var7 ++ ; 
+if ( * var7 ) { 
+var7 ++ ; 
+var6 = var4 ; 
+} 
+} else { 
+* var4 += var9 ; 
+} 
+} 
+do 
+* var4 -= number ; 
+while ( var4 >= var6 && strspn ( var4 , var1 ) ) ; 
+* var2 = var7 ; 
+return var5 ; 
+} 

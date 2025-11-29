@@ -1,0 +1,59 @@
+static void func1 ( AVFormatContext * var1 , AVCodecContext * var2 , 
+char * var3 , int var4 ) 
+{ 
+const AVCodecTag * var5 [ number ] = { var6 , var6 } ; 
+uint32_t var7 ; 
+if ( var2 -> var8 == var9 ) 
+var5 [ number ] = var10 ; 
+else if ( var2 -> var8 == var11 ) 
+var5 [ number ] = var12 ; 
+else 
+return ; 
+var7 = func2 ( var5 , var2 -> var13 ) ; 
+if ( ! var7 ) 
+return ; 
+if ( var4 < number ) 
+return ; 
+func3 ( var3 , var7 ) ; 
+var3 [ number ] = var3 ; 
+if ( ! strcmp ( var3 , var3 ) || ! strcmp ( var3 , var3 ) ) { 
+uint32_t var14 ; 
+var5 [ number ] = var15 ; 
+var14 = func2 ( var5 , var2 -> var13 ) ; 
+if ( var14 ) 
+func4 ( var3 , var4 , var3 , var14 ) ; 
+else 
+return ; 
+if ( var7 == func5 ( var3 , var3 , var3 , var3 ) ) { 
+if ( var2 -> var16 >= number ) { 
+int var17 = var2 -> var18 [ number ] >> number ; 
+if ( var17 == number ) 
+var17 = ( ( func6 ( var2 -> var18 ) >> number ) & number ) + number ; 
+func4 ( var3 , var4 , var3 , var17 ) ; 
+} 
+} else if ( var7 == func5 ( var3 , var3 , var3 , var3 ) ) { 
+func7 ( var1 , var19 , var3 ) ; 
+} 
+} else if ( ! strcmp ( var3 , var3 ) ) { 
+uint8_t * var20 = var6 ; 
+uint8_t * var18 = var2 -> var18 ; 
+int var16 = var2 -> var16 ; 
+if ( ! var16 ) 
+return ; 
+if ( var18 [ number ] != number ) { 
+AVIOContext * var21 ; 
+if ( func8 ( & var21 ) < number ) 
+return ; 
+if ( func9 ( var21 , var18 , var16 ) < number ) { 
+func10 ( & var21 ) ; 
+return ; 
+} 
+var16 = func11 ( var21 , & var18 ) ; 
+var20 = var18 ; 
+} 
+if ( var16 >= number ) 
+func4 ( var3 , var4 , var3 , 
+var18 [ number ] , var18 [ number ] , var18 [ number ] ) ; 
+func12 ( var20 ) ; 
+} 
+} 

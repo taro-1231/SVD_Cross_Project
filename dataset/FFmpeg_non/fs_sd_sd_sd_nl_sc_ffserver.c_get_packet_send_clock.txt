@@ -1,0 +1,10 @@
+static int64_t func1 ( HTTPContext * var1 ) 
+{ 
+int var2 , var3 , var4 ; 
+var4 = var1 -> var5 ; 
+if ( var4 <= number ) 
+return var1 -> var6 ; 
+var2 = var1 -> var7 - var1 -> var8 ; 
+var3 = var4 - var2 ; 
+return var1 -> var6 + ( var1 -> var9 * var3 ) / var4 ; 
+} 

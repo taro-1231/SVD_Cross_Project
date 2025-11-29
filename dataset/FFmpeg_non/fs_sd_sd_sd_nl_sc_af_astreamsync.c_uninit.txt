@@ -1,0 +1,6 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+AStreamSyncContext * var2 = var1 -> var3 ; 
+func2 ( var2 -> var4 ) ; 
+var2 -> var4 = var5 ; 
+} 

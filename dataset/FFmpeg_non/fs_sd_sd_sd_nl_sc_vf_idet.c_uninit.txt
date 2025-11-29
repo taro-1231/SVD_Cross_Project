@@ -1,0 +1,25 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+IDETContext * var2 = var1 -> var3 ; 
+int var4 = strncmp ( var1 -> var5 , str , number ) ? var6 : var7 ; 
+av_log ( var1 , var4 , str PRId64 str PRId64 str PRId64 str , 
+var2 -> total_repeats [ REPEAT_NONE ] , 
+var2 -> total_repeats [ REPEAT_TOP ] , 
+var2 -> total_repeats [ REPEAT_BOTTOM ] 
+) ; 
+av_log ( var1 , var4 , str PRId64 str PRId64 str PRId64 str PRId64 str , 
+var2 -> total_prestat [ TFF ] , 
+var2 -> total_prestat [ BFF ] , 
+var2 -> total_prestat [ PROGRESSIVE ] , 
+var2 -> total_prestat [ UNDETERMINED ] 
+) ; 
+av_log ( var1 , var4 , str PRId64 str PRId64 str PRId64 str PRId64 str , 
+var2 -> total_poststat [ TFF ] , 
+var2 -> total_poststat [ BFF ] , 
+var2 -> total_poststat [ PROGRESSIVE ] , 
+var2 -> total_poststat [ UNDETERMINED ] 
+) ; 
+func2 ( & var2 -> var8 ) ; 
+func2 ( & var2 -> var9 ) ; 
+func2 ( & var2 -> var10 ) ; 
+} 

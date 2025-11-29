@@ -1,0 +1,17 @@
+void func1 ( const uint8_t * var1 , uint8_t * var2 , int var3 ) 
+{ 
+uint16_t var4 , var5 , var6 , var7 ; 
+uint16_t * var8 = ( uint16_t * ) var2 ; 
+const uint16_t * var9 = ( const uint16_t * ) var1 ; 
+const uint16_t * var10 = var9 + var3 / number ; 
+while ( var9 < var10 ) { 
+var4 = * var9 ++ ; 
+var5 = var4 & number ; 
+var6 = var4 & number ; 
+var7 = var4 & number ; 
+var5 = ( var5 << number ) | ( ( var5 & number ) >> number ) ; 
+var6 = ( var6 << number ) | ( ( var6 & number ) >> number ) ; 
+var7 = ( var7 << number ) | ( var7 >> number ) ; 
+* var8 += var5 | var6 | var7 ; 
+} 
+} 

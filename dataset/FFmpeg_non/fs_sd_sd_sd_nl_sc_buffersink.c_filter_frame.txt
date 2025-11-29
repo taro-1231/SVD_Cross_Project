@@ -1,0 +1,17 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+BufferSinkContext * var5 = var1 -> var4 -> var6 ; 
+int var7 ; 
+if ( ( var7 = func2 ( var3 , var2 ) ) < number ) 
+return var7 ; 
+if ( var5 -> var8 && 
+func3 ( var5 -> var9 ) / var10 >= var5 -> var8 ) { 
+func4 ( var3 , var11 , 
+str , 
+var5 -> var8 , 
+( char * ) func5 ( var3 -> var12 , var3 -> var13 -> var12 ) ) ; 
+var5 -> var8 *= number ; 
+} 
+return number ; 
+} 

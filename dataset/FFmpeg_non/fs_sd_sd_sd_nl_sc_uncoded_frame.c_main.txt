@@ -1,0 +1,219 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+char * var3 , ** var4 ; 
+int var5 = number , var6 = number ; 
+AVFilterGraph * var7 = var8 ; 
+Stream * var9 = var8 , * var10 ; 
+AVFrame * var11 = var8 ; 
+int var12 , var13 , var14 = number , var15 ; 
+if ( var1 < number ) { 
+func2 ( var8 , var16 , 
+str 
+str 
+str 
+str , 
+var2 [ number ] , var2 [ number ] , var2 [ number ] ) ; 
+exit ( number ) ; 
+} 
+var3 = var2 [ number ] ; 
+var4 = var2 + number ; 
+var5 = var1 - number ; 
+func3 ( ) ; 
+func4 ( ) ; 
+func5 ( ) ; 
+if ( ! ( var7 = func6 ( ) ) ) { 
+var15 = func7 ( var19 ) ; 
+func2 ( var8 , var16 , str , 
+func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+var15 = func9 ( var7 , var3 , var8 , var8 , var8 ) ; 
+if ( var15 < number ) { 
+func2 ( var8 , var16 , str , 
+func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+var6 = number ; 
+for ( var12 = number ; var12 < var7 -> var21 ; var12 ++ ) { 
+AVFilterContext * var22 = var7 -> var23 [ var12 ] ; 
+for ( var13 = number ; var13 < var22 -> var24 ; var13 ++ ) { 
+if ( ! var22 -> var25 [ var13 ] ) { 
+func2 ( var8 , var16 , str ) ; 
+var15 = func7 ( var26 ) ; 
+goto var20 ; 
+} 
+} 
+for ( var13 = number ; var13 < var22 -> var27 ; var13 ++ ) 
+if ( ! var22 -> var28 [ var13 ] ) 
+var6 ++ ; 
+} 
+if ( ! var6 ) { 
+func2 ( var8 , var16 , str ) ; 
+var15 = func7 ( var26 ) ; 
+goto var20 ; 
+} 
+if ( var5 != number && var5 != var6 ) { 
+func2 ( var8 , var16 , 
+str , 
+var6 , var5 ) ; 
+var15 = func7 ( var26 ) ; 
+goto var20 ; 
+} 
+if ( ! ( var9 = func10 ( var6 , sizeof ( * var9 ) ) ) ) { 
+var15 = func7 ( var19 ) ; 
+func2 ( var8 , var16 , str ) ; 
+} 
+var10 = var9 ; 
+for ( var12 = number ; var12 < var7 -> var21 ; var12 ++ ) { 
+AVFilterContext * var22 = var7 -> var23 [ var12 ] ; 
+for ( var13 = number ; var13 < var22 -> var27 ; var13 ++ ) { 
+if ( ! var22 -> var28 [ var13 ] ) { 
+if ( ( var15 = func11 ( var10 ++ , var7 , var22 , var13 ) ) < number ) 
+goto var20 ; 
+} 
+} 
+} 
+func12 ( var10 - var9 == var6 ) ; 
+if ( ( var15 = func13 ( var7 , var8 ) ) < number ) { 
+func2 ( var8 , var16 , str ) ; 
+goto var20 ; 
+} 
+for ( var12 = number ; var12 < var5 ; var12 ++ ) { 
+char * var30 = var8 , * var17 = var4 [ var12 ] ; 
+var10 = & var9 [ var12 ] ; 
+if ( ( var17 = strchr ( var17 , str ) ) ) { 
+* ( var17 ++ ) = number ; 
+var30 = var4 [ var12 ] ; 
+} 
+var15 = func14 ( & var10 -> var31 , var8 , var30 , var17 ) ; 
+if ( var15 < number ) { 
+func2 ( var8 , var16 , str , 
+func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+if ( ! ( var10 -> var31 -> var32 -> var33 & var34 ) ) { 
+var15 = func15 ( & var10 -> var31 -> var35 , var10 -> var31 -> var36 , var37 , 
+var8 , var8 ) ; 
+if ( var15 < number ) { 
+func2 ( var10 -> var31 , var16 , str , 
+func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+} 
+} 
+for ( ; var12 < var6 ; var12 ++ ) 
+var9 [ var12 ] . var31 = var9 [ number ] . var31 ; 
+for ( var12 = number ; var12 < var6 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+if ( ! ( var10 -> var29 = func16 ( var10 -> var31 , var8 ) ) ) { 
+var15 = func7 ( var19 ) ; 
+func2 ( var8 , var16 , str ) ; 
+goto var20 ; 
+} 
+var10 -> var29 -> var38 -> var39 = var10 -> var40 -> var41 ; 
+var10 -> var29 -> var42 = var10 -> var29 -> var38 -> var42 = 
+var10 -> var40 -> var42 ; 
+switch ( var10 -> var40 -> var41 ) { 
+case var43 : 
+var10 -> var29 -> var38 -> var44 = var45 ; 
+var10 -> var29 -> var46 = 
+var10 -> var29 -> var47 = func17 ( var10 -> var48 ) ; 
+var10 -> var29 -> var38 -> var49 = var10 -> var40 -> var50 ; 
+var10 -> var29 -> var38 -> var51 = var10 -> var40 -> var52 ; 
+var10 -> var29 -> var38 -> var53 = var10 -> var40 -> var53 ; 
+var10 -> var29 -> var38 -> var54 = var10 -> var40 -> var55 ; 
+break ; 
+case var56 : 
+var10 -> var29 -> var38 -> var57 = var10 -> var40 -> var57 ; 
+var10 -> var29 -> var38 -> var58 = func18 ( var10 -> var40 ) ; 
+var10 -> var29 -> var38 -> var59 = var10 -> var40 -> var59 ; 
+var10 -> var29 -> var38 -> var60 = var10 -> var40 -> var55 ; 
+var10 -> var29 -> var38 -> var44 = 
+func19 ( var10 -> var29 -> var38 -> var60 , - number ) ; 
+break ; 
+var18 : 
+func12 ( ! str ) ; 
+} 
+} 
+for ( var12 = number ; var12 < var5 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+if ( ( var15 = func20 ( var10 -> var31 , var8 ) ) < number ) { 
+func2 ( var10 -> var31 , var16 , str , 
+func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+} 
+for ( var12 = number ; var12 < var6 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+var15 = func21 ( var10 -> var31 , var10 -> var29 -> var61 ) ; 
+if ( var15 < number ) { 
+func2 ( var10 -> var31 , var16 , 
+str , 
+var12 , func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+} 
+while ( var14 ) { 
+var15 = func22 ( var7 ) ; 
+if ( var15 < number ) { 
+if ( var15 == var62 ) { 
+var14 = number ; 
+} else { 
+func2 ( var8 , var16 , str , 
+func8 ( var15 ) ) ; 
+break ; 
+} 
+} 
+for ( var12 = number ; var12 < var6 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+while ( number ) { 
+if ( ! var11 && ! ( var11 = func23 ( ) ) ) { 
+var15 = func7 ( var19 ) ; 
+func2 ( var8 , var16 , str ) ; 
+goto var20 ; 
+} 
+var15 = func24 ( var10 -> var48 , var11 , 
+var63 ) ; 
+if ( var15 < number ) { 
+if ( var15 != func7 ( var64 ) && var15 != var62 ) 
+func2 ( var8 , var65 , str , 
+func8 ( var15 ) ) ; 
+break ; 
+} 
+if ( var11 -> var66 != var67 ) 
+var11 -> var66 = func25 ( var11 -> var66 , 
+var10 -> var40 -> var42 , 
+var10 -> var29 -> var42 ) ; 
+var15 = func26 ( var10 -> var31 , 
+var10 -> var29 -> var61 , 
+var11 ) ; 
+var11 = var8 ; 
+if ( var15 < number ) { 
+func2 ( var10 -> var29 -> var38 , var16 , 
+str , func8 ( var15 ) ) ; 
+goto var20 ; 
+} 
+} 
+} 
+} 
+var15 = number ; 
+for ( var12 = number ; var12 < var5 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+func27 ( var10 -> var31 ) ; 
+} 
+var20 : 
+func28 ( & var11 ) ; 
+func29 ( & var7 ) ; 
+if ( var9 ) { 
+for ( var12 = number ; var12 < var5 ; var12 ++ ) { 
+var10 = & var9 [ var12 ] ; 
+if ( var10 -> var31 ) { 
+if ( var10 -> var31 -> var35 ) 
+func30 ( & var10 -> var31 -> var35 ) ; 
+func31 ( var10 -> var31 ) ; 
+} 
+} 
+} 
+func32 ( & var9 ) ; 
+return var15 < number ; 
+} 

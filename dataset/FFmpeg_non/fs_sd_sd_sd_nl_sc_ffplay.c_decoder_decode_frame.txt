@@ -1,0 +1,75 @@
+static int func1 ( Decoder * var1 , AVFrame * var2 , AVSubtitle * var3 ) { 
+int var4 = number ; 
+do { 
+int var5 = - number ; 
+if ( var1 -> var6 -> var7 ) 
+return - number ; 
+if ( ! var1 -> var8 || var1 -> var6 -> var9 != var1 -> var10 ) { 
+AVPacket var11 ; 
+do { 
+if ( var1 -> var6 -> var12 == number ) 
+func2 ( var1 -> var13 ) ; 
+if ( func3 ( var1 -> var6 , & var11 , number , & var1 -> var10 ) < number ) 
+return - number ; 
+if ( var11 . var14 == var15 . var14 ) { 
+func4 ( var1 -> var16 ) ; 
+var1 -> var17 = number ; 
+var1 -> var18 = var1 -> var19 ; 
+var1 -> var20 = var1 -> var21 ; 
+} 
+} while ( var11 . var14 == var15 . var14 || var1 -> var6 -> var9 != var1 -> var10 ) ; 
+func5 ( & var1 -> var11 ) ; 
+var1 -> var22 = var1 -> var11 = var11 ; 
+var1 -> var8 = number ; 
+} 
+switch ( var1 -> var16 -> var23 ) { 
+case var24 : 
+var5 = func6 ( var1 -> var16 , var2 , & var4 , & var1 -> var22 ) ; 
+if ( var4 ) { 
+if ( var25 == - number ) { 
+var2 -> var26 = func7 ( var2 ) ; 
+} else if ( ! var25 ) { 
+var2 -> var26 = var2 -> var27 ; 
+} 
+} 
+break ; 
+case var28 : 
+var5 = func8 ( var1 -> var16 , var2 , & var4 , & var1 -> var22 ) ; 
+if ( var4 ) { 
+AVRational var29 = ( AVRational ) { number , var2 -> sample_rate } ; 
+if ( var2 -> var26 != var30 ) 
+var2 -> var26 = func9 ( var2 -> var26 , func10 ( var1 -> var16 ) , var29 ) ; 
+else if ( var1 -> var18 != var30 ) 
+var2 -> var26 = func9 ( var1 -> var18 , var1 -> var20 , var29 ) ; 
+if ( var2 -> var26 != var30 ) { 
+var1 -> var18 = var2 -> var26 + var2 -> var31 ; 
+var1 -> var20 = var29 ; 
+} 
+} 
+break ; 
+case var32 : 
+var5 = func11 ( var1 -> var16 , var3 , & var4 , & var1 -> var22 ) ; 
+break ; 
+} 
+if ( var5 < number ) { 
+var1 -> var8 = number ; 
+} else { 
+var1 -> var22 . var33 = 
+var1 -> var22 . var26 = var30 ; 
+if ( var1 -> var22 . var14 ) { 
+if ( var1 -> var16 -> var23 != var28 ) 
+var5 = var1 -> var22 . var34 ; 
+var1 -> var22 . var14 += var5 ; 
+var1 -> var22 . var34 -= var5 ; 
+if ( var1 -> var22 . var34 <= number ) 
+var1 -> var8 = number ; 
+} else { 
+if ( ! var4 ) { 
+var1 -> var8 = number ; 
+var1 -> var17 = var1 -> var10 ; 
+} 
+} 
+} 
+} while ( ! var4 && ! var1 -> var17 ) ; 
+return var4 ; 
+} 

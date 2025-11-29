@@ -1,0 +1,13 @@
+static int func1 ( AVFilterContext * var1 , const char * var2 , const char * var3 , 
+char * var4 , int var5 , int var6 ) 
+{ 
+VolumeContext * var7 = var1 -> var8 ; 
+int var9 = func2 ( var10 ) ; 
+if ( ! strcmp ( var2 , str ) ) { 
+if ( ( var9 = func3 ( & var7 -> var11 , var3 , var1 ) ) < number ) 
+return var9 ; 
+if ( var7 -> var12 == var13 ) 
+func4 ( var1 ) ; 
+} 
+return var9 ; 
+} 

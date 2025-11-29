@@ -1,0 +1,11 @@
+static void func1 ( FrameQueue * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var1 -> var3 ; var2 ++ ) { 
+Frame * var4 = & var1 -> var5 [ var2 ] ; 
+func2 ( var4 ) ; 
+func3 ( & var4 -> var6 ) ; 
+} 
+func4 ( var1 -> var7 ) ; 
+func5 ( var1 -> var8 ) ; 
+} 

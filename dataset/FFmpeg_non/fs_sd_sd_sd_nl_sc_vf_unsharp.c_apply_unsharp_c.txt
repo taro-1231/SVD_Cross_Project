@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 , AVFrame * var2 , AVFrame * var3 ) 
+{ 
+AVFilterLink * var4 = var1 -> var5 [ number ] ; 
+UnsharpContext * var6 = var1 -> var7 ; 
+int var8 , var9 [ number ] , var10 [ number ] ; 
+UnsharpFilterParam * var11 [ number ] ; 
+var9 [ number ] = var4 -> var12 ; 
+var9 [ number ] = var9 [ number ] = func2 ( var4 -> var12 , var6 -> var13 ) ; 
+var10 [ number ] = var4 -> var14 ; 
+var10 [ number ] = var10 [ number ] = func2 ( var4 -> var14 , var6 -> var15 ) ; 
+var11 [ number ] = & var6 -> var16 ; 
+var11 [ number ] = var11 [ number ] = & var6 -> var17 ; 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+func3 ( var3 -> var18 [ var8 ] , var3 -> var19 [ var8 ] , var2 -> var18 [ var8 ] , var2 -> var19 [ var8 ] , var9 [ var8 ] , var10 [ var8 ] , var11 [ var8 ] ) ; 
+} 
+return number ; 
+} 

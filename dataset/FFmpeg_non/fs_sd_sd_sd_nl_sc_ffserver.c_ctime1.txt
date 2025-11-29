@@ -1,0 +1,16 @@
+static char * func1 ( char * var1 , size_t var2 ) 
+{ 
+time_t var3 ; 
+char * var4 ; 
+var3 = time ( var5 ) ; 
+var4 = ctime ( & var3 ) ; 
+if ( ! var4 || ! * var4 ) { 
+* var1 = str ; 
+return var1 ; 
+} 
+func2 ( var1 , var4 , var2 ) ; 
+var4 = var1 + strlen ( var1 ) - number ; 
+if ( * var4 == str ) 
+* var4 = str ; 
+return var1 ; 
+} 

@@ -1,0 +1,6 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+FifoContext * var2 = var1 -> var3 ; 
+var2 -> var4 = & var2 -> var5 ; 
+return number ; 
+} 

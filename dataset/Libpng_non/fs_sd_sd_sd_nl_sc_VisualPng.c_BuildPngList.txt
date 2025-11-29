@@ -1,0 +1,68 @@
+BOOL func1 ( PTSTR var1 , TCHAR ** var2 , int * var3 , 
+int * var4 ) 
+{ 
+static TCHAR var5 [ var6 ] ; 
+static TCHAR var7 [ var6 ] ; 
+static TCHAR var8 [ var6 ] ; 
+WIN32_FIND_DATA var9 ; 
+HANDLE var10 ; 
+static TCHAR var11 [ var6 ] ; 
+BOOL var12 ; 
+int var13 , var14 ; 
+int var15 , var16 ; 
+if ( * var2 != var17 ) 
+{ 
+free ( * var2 ) ; 
+* var2 = var17 ; 
+} 
+strcpy ( var5 , var1 ) ; 
+strcpy ( var7 , strrchr ( var1 , str ) + number ) ; 
+strcpy ( var8 , var5 ) ; 
+* ( strrchr ( var8 , str ) + number ) = str ; 
+strcat ( var8 , str ) ; 
+* var3 = number ; 
+var10 = func2 ( var8 , & var9 ) ; 
+var12 = ( var10 != ( HANDLE ) - number ) ; 
+while ( var12 ) 
+{ 
+* var3 += number ; 
+var12 = func3 ( var10 , & var9 ) ; 
+} 
+func4 ( var10 ) ; 
+* var2 = ( TCHAR * ) malloc ( * var3 * var6 ) ; 
+var10 = func2 ( var8 , & var9 ) ; 
+var12 = ( var10 != ( HANDLE ) - number ) ; 
+var13 = number ; 
+var14 = number ; 
+while ( var12 ) 
+{ 
+strcpy ( * var2 + var14 , var5 ) ; 
+strcpy ( strrchr ( * var2 + var14 , str ) + number , var9 . var18 ) ; 
+if ( strcmp ( var1 , * var2 + var14 ) == number ) 
+* var4 = var13 ; 
+var14 += var6 ; 
+var13 ++ ; 
+var12 = func3 ( var10 , & var9 ) ; 
+} 
+func4 ( var10 ) ; 
+for ( var13 = number ; var13 < * var3 - number ; var13 ++ ) 
+{ 
+var14 = var13 * var6 ; 
+for ( var15 = var13 + number ; var15 < * var3 ; var15 ++ ) 
+{ 
+var16 = var15 * var6 ; 
+if ( strcmp ( * var2 + var14 , * var2 + var16 ) > number ) 
+{ 
+strcpy ( var11 , * var2 + var16 ) ; 
+strcpy ( * var2 + var16 , * var2 + var14 ) ; 
+strcpy ( * var2 + var14 , var11 ) ; 
+if ( * var4 == var13 ) 
+* var4 = var15 ; 
+else 
+if ( * var4 == var15 ) 
+* var4 = var13 ; 
+} 
+} 
+} 
+return var19 ; 
+} 

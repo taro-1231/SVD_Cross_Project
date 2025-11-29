@@ -1,0 +1,37 @@
+static av_cold int func1 ( AudioMix * var1 ) 
+{ 
+var1 -> var2 = var1 -> var3 = str ; 
+var1 -> var4 = var1 -> var5 = var6 ; 
+if ( ! var1 -> var7 || ! var1 -> var8 ) 
+return number ; 
+func2 ( var1 , var9 , var10 , 
+number , number , number , number , str , func3 ( var11 , var12 ) ) ; 
+func2 ( var1 , var13 , var10 , 
+number , number , number , number , str , func3 ( var14 , var12 ) ) ; 
+func2 ( var1 , var13 , var15 , 
+number , number , number , number , str , func3 ( var14 , var16 ) ) ; 
+func2 ( var1 , var13 , var17 , 
+number , number , number , number , str , func3 ( var14 , var18 ) ) ; 
+func2 ( var1 , var9 , var10 , 
+number , number , number , number , str , var19 ) ; 
+func2 ( var1 , var13 , var10 , 
+number , number , number , number , str , var20 ) ; 
+func2 ( var1 , var13 , var17 , 
+number , number , number , number , str , var21 ) ; 
+func2 ( var1 , var9 , var10 , 
+number , number , number , number , str , var22 ) ; 
+func2 ( var1 , var9 , var10 , 
+number , number , number , number , str , var23 ) ; 
+func2 ( var1 , var9 , var10 , 
+number , number , number , number , str , var24 ) ; 
+if ( var25 ) 
+func4 ( var1 ) ; 
+if ( ! var1 -> var4 ) { 
+av_log ( var1 -> avr , AV_LOG_ERROR , str 
+str , av_get_sample_fmt_name ( var1 -> fmt ) , 
+coeff_type_names [ var1 -> coeff_type ] , var1 -> in_channels , 
+var1 -> out_channels ) ; 
+return var26 ; 
+} 
+return number ; 
+} 

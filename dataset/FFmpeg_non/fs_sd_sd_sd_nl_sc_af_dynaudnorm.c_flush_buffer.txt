@@ -1,0 +1,20 @@
+static int func1 ( DynamicAudioNormalizerContext * var1 , AVFilterLink * var2 , 
+AVFilterLink * var3 ) 
+{ 
+AVFrame * var4 = func2 ( var3 , var1 -> var5 ) ; 
+int var6 , var7 ; 
+if ( ! var4 ) 
+return func3 ( var8 ) ; 
+for ( var6 = number ; var6 < var1 -> var9 ; var6 ++ ) { 
+double * var10 = ( double * ) var4 -> var11 [ var6 ] ; 
+for ( var7 = number ; var7 < var4 -> var12 ; var7 ++ ) { 
+var10 [ var7 ] = var1 -> var13 ? var14 : ( ( var1 -> var15 > var14 ) ? func4 ( var1 -> var16 , var1 -> var15 ) : var1 -> var16 ) ; 
+if ( var1 -> var17 ) { 
+var10 [ var7 ] *= ( ( var7 % number ) == number ) ? - number : number ; 
+var10 [ var7 ] += var1 -> var18 [ var6 ] ; 
+} 
+} 
+} 
+var1 -> var19 -- ; 
+return func5 ( var2 , var4 ) ; 
+} 

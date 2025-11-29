@@ -1,0 +1,63 @@
+static int func1 ( AVIOContext * var1 , AVFormatContext * var2 ) 
+{ 
+MOVMuxContext * var3 = var2 -> var4 ; 
+int64_t var5 = func2 ( var1 ) ; 
+int var6 = number , var7 = number ; 
+int var8 = number ; 
+int var9 ; 
+for ( var9 = number ; var9 < var2 -> var10 ; var9 ++ ) { 
+AVStream * var11 = var2 -> var12 [ var9 ] ; 
+if ( var11 -> var13 -> var14 == var15 ) 
+var7 = number ; 
+if ( var11 -> var13 -> var16 == var17 ) 
+var6 = number ; 
+} 
+func3 ( var1 , number ) ; 
+func4 ( var1 , str ) ; 
+if ( var3 -> var18 && strlen ( var3 -> var18 ) >= number ) 
+func4 ( var1 , var3 -> var18 ) ; 
+else if ( var3 -> var19 == var20 ) { 
+func4 ( var1 , var6 ? str : str ) ; 
+var8 = var6 ? number : number ; 
+} else if ( var3 -> var19 & var21 ) { 
+func4 ( var1 , var6 ? str : str ) ; 
+var8 = var6 ? number : number ; 
+} else if ( var3 -> var19 == var22 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var23 && var3 -> var24 & var25 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var23 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var26 ) 
+func4 ( var1 , var7 ? str : str ) ; 
+else if ( var3 -> var19 == var27 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var28 ) 
+func4 ( var1 , str ) ; 
+else 
+func4 ( var1 , str ) ; 
+func3 ( var1 , var8 ) ; 
+if ( var3 -> var19 == var29 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var27 ) { 
+func4 ( var1 , str ) ; 
+} else if ( ! ( var3 -> var24 & var25 ) ) { 
+func4 ( var1 , str ) ; 
+func4 ( var1 , str ) ; 
+if ( var6 ) 
+func4 ( var1 , str ) ; 
+} 
+if ( var3 -> var24 & var30 && var3 -> var19 != var27 ) 
+func4 ( var1 , str ) ; 
+if ( var3 -> var19 == var20 ) 
+func4 ( var1 , var6 ? str : str ) ; 
+else if ( var3 -> var19 & var21 ) 
+func4 ( var1 , var6 ? str : str ) ; 
+else if ( var3 -> var19 == var22 ) 
+func4 ( var1 , str ) ; 
+else if ( var3 -> var19 == var23 ) 
+func4 ( var1 , str ) ; 
+if ( var3 -> var24 & var31 && var3 -> var24 & var32 ) 
+func4 ( var1 , str ) ; 
+return func5 ( var1 , var5 ) ; 
+} 

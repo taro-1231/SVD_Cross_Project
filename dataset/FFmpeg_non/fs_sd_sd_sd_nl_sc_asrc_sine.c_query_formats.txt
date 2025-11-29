@@ -1,0 +1,27 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+SineContext * var2 = var1 -> var3 ; 
+static const int64_t var4 [ ] = { var5 , - number } ; 
+int var6 [ ] = { var2 -> var7 , - number } ; 
+static const enum AVSampleFormat var8 [ ] = { var9 , 
+var10 } ; 
+AVFilterFormats * var11 ; 
+AVFilterChannelLayouts * var12 ; 
+int var13 ; 
+var11 = func2 ( var8 ) ; 
+if ( ! var11 ) 
+return func3 ( var14 ) ; 
+var13 = func4 ( var1 , var11 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+var12 = func5 ( var4 ) ; 
+if ( ! var12 ) 
+return func3 ( var14 ) ; 
+var13 = func6 ( var1 , var12 ) ; 
+if ( var13 < number ) 
+return var13 ; 
+var11 = func2 ( var6 ) ; 
+if ( ! var11 ) 
+return func3 ( var14 ) ; 
+return func7 ( var1 , var11 ) ; 
+} 

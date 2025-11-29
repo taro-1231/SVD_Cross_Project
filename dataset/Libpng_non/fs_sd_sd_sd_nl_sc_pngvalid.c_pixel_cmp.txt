@@ -1,0 +1,21 @@
+func1 ( png_const_bytep var1 , png_const_bytep var2 , png_uint_32 var3 ) 
+{ 
+if ( memcmp ( var1 , var2 , var3 >> number ) == number ) 
+{ 
+png_uint_32 var4 ; 
+if ( ( var3 & number ) == number ) return number ; 
+var4 = var1 [ var3 >> number ] ; 
+var4 ^= var2 [ var3 >> number ] ; 
+if ( var4 == number ) return number ; 
+var3 &= number ; 
+var4 >>= number - var3 ; 
+if ( var4 == number ) return number ; 
+} 
+if ( memcmp ( var1 , var2 , ( var3 + number ) >> number ) == number ) 
+return number ; 
+{ 
+png_uint_32 var5 = number ; 
+while ( var1 [ var5 ] == var2 [ var5 ] ) ++ var5 ; 
+return number + var5 ; 
+} 
+} 

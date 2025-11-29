@@ -1,0 +1,15 @@
+static void func1 ( MatroskaDemuxContext * var1 ) { 
+int var2 ; 
+if ( var1 -> var3 -> var4 & var5 ) 
+return ; 
+for ( var2 = number ; var2 < var1 -> var6 ; var2 ++ ) { 
+MatroskaLevel1Element * var7 = & var1 -> var8 [ var2 ] ; 
+if ( var7 -> var9 == var10 && ! var7 -> var11 ) { 
+if ( func2 ( var1 , var7 -> var12 ) < number ) 
+var1 -> var13 = - number ; 
+var7 -> var11 = number ; 
+break ; 
+} 
+} 
+func3 ( var1 ) ; 
+} 

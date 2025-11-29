@@ -1,0 +1,4 @@
+int func1 ( AVFilterContext * var1 , const char * var2 , void * var3 ) 
+{ 
+return func2 ( var1 , var2 ) ; 
+} 

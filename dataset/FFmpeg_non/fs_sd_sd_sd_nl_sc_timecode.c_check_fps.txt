@@ -1,0 +1,9 @@
+static int func1 ( int var1 ) 
+{ 
+int var2 ; 
+static const int var3 [ ] = { number , number , number , number , number , number } ; 
+for ( var2 = number ; var2 < func2 ( var3 ) ; var2 ++ ) 
+if ( var1 == var3 [ var2 ] ) 
+return number ; 
+return - number ; 
+} 

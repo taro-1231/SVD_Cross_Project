@@ -1,0 +1,89 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 ) 
+{ 
+var1 += number * var2 ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_d str 
+str 
+str REG_a str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str 
+str REG_a str 
+str 
+str 
+str 
+str 
+str 
+str REG_a str 
+str REG_d str 
+str REG_d str 
+str 
+str 
+str 
+str 
+str 
+str REG_d str 
+str REG_d str 
+str 
+str 
+str 
+str 
+str 
+str 
+str REG_d str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) 
+: str REG_a , str REG_d 
+) ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_d str 
+str 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+str \ 
+MEDIAN ( ( % 0 ) , ( % % REGa ) , ( % % REGa , % 1 ) ) 
+MEDIAN ( ( % % REGa , % 1 ) , ( % % REGa , % 1 , 2 ) , ( % 0 , % 1 , number ) ) 
+MEDIAN ( ( % 0 , % 1 , number ) , ( % % REGd ) , ( % % REGd , % 1 ) ) 
+MEDIAN ( ( % % REGd , % 1 ) , ( % % REGd , % 1 , 2 ) , ( % 0 , % 1 , 8 ) ) 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) 
+: str REG_a , str REG_d 
+) ; 
+int x , y ; 
+var1 += number * var2 ; 
+for ( x = 0 ; x < 8 ; x ++ ) { 
+uint8_t * colsrc = var1 ; 
+for ( y = 0 ; y < number ; y ++ ) { 
+int a , b , c , d , e , f ; 
+a = colsrc [ 0 ] ; 
+b = colsrc [ var2 ] ; 
+c = colsrc [ var2 * 2 ] ; 
+d = ( a - b ) >> 31 ; 
+e = ( b - c ) >> 31 ; 
+f = ( c - a ) >> 31 ; 
+colsrc [ var2 ] = ( a | ( d ^ f ) ) & ( b | ( d ^ e ) ) & ( c | ( e ^ f ) ) ; 
+colsrc += var2 * 2 ; 
+} 
+var1 ++ ; 
+} 
+} 

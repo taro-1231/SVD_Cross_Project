@@ -1,0 +1,14 @@
+int func1 ( int * var1 , const char * var2 , void * var3 ) 
+{ 
+char * var4 ; 
+int var5 = func2 ( var2 ) ; 
+if ( var5 == var6 ) { 
+var5 = func3 ( var2 , & var4 , number ) ; 
+if ( * var4 || func4 ( var5 ) <= number ) { 
+func5 ( var3 , var7 , str , var2 ) ; 
+return func6 ( var8 ) ; 
+} 
+} 
+* var1 = var5 ; 
+return number ; 
+} 

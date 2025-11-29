@@ -1,0 +1,35 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+AVFilterFormats * var2 ; 
+enum AVPixelFormat var3 ; 
+int var4 ; 
+if ( var1 -> var5 [ number ] ) { 
+const AVPixFmtDescriptor * var6 = var7 ; 
+var2 = var7 ; 
+while ( ( var6 = func2 ( var6 ) ) ) { 
+var3 = func3 ( var6 ) ; 
+if ( ( func4 ( var3 ) || 
+func5 ( var3 ) ) 
+&& ( var4 = func6 ( & var2 , var3 ) ) < number ) { 
+func7 ( & var2 ) ; 
+return var4 ; 
+} 
+} 
+func8 ( var2 , & var1 -> var5 [ number ] -> var8 ) ; 
+} 
+if ( var1 -> var9 [ number ] ) { 
+const AVPixFmtDescriptor * var6 = var7 ; 
+var2 = var7 ; 
+while ( ( var6 = func2 ( var6 ) ) ) { 
+var3 = func3 ( var6 ) ; 
+if ( ( func9 ( var3 ) || var3 == var10 || 
+func5 ( var3 ) ) 
+&& ( var4 = func6 ( & var2 , var3 ) ) < number ) { 
+func7 ( & var2 ) ; 
+return var4 ; 
+} 
+} 
+func8 ( var2 , & var1 -> var9 [ number ] -> var11 ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,43 @@
+static int func1 ( AACContext * var1 , SpectralBandReplication * var2 ) 
+{ 
+int var3 , var4 , var5 = - number , var6 = - number , var7 = number ; 
+int var8 = var2 -> var4 [ number ] ; 
+int var9 = var2 -> var10 [ number ] ; 
+int var11 = ( ( number << number ) + ( var2 -> var12 >> number ) ) / var2 -> var12 ; 
+var2 -> var13 = number ; 
+if ( var11 < var2 -> var10 [ number ] + var2 -> var14 [ number ] ) { 
+for ( var4 = number ; var2 -> var15 [ var4 ] < var11 ; var4 ++ ) ; 
+} else 
+var4 = var2 -> var16 ; 
+do { 
+int var17 = number ; 
+if ( var4 == var5 && var8 == var6 ) { 
+func2 ( var1 -> var18 , var19 , str ) ; 
+return var20 ; 
+} 
+var5 = var4 ; 
+var6 = var8 ; 
+for ( var3 = var4 ; var3 == var4 || var7 > ( var2 -> var4 [ number ] - number + var8 - var17 ) ; var3 -- ) { 
+var7 = var2 -> var15 [ var3 ] ; 
+var17 = ( var7 + var2 -> var4 [ number ] ) & number ; 
+} 
+if ( var2 -> var13 > number ) { 
+func2 ( var1 -> var18 , var19 , str , var2 -> var13 ) ; 
+return - number ; 
+} 
+var2 -> var21 [ var2 -> var13 ] = func3 ( var7 - var9 , number ) ; 
+var2 -> var22 [ var2 -> var13 ] = var2 -> var4 [ number ] - var17 - var2 -> var21 [ var2 -> var13 ] ; 
+if ( var2 -> var21 [ var2 -> var13 ] > number ) { 
+var9 = var7 ; 
+var8 = var7 ; 
+var2 -> var13 ++ ; 
+} else 
+var8 = var2 -> var10 [ number ] ; 
+if ( var2 -> var15 [ var4 ] - var7 < number ) 
+var4 = var2 -> var16 ; 
+} while ( var7 != var2 -> var10 [ number ] + var2 -> var14 [ number ] ) ; 
+if ( var2 -> var13 > number && 
+var2 -> var21 [ var2 -> var13 - number ] < number ) 
+var2 -> var13 -- ; 
+return number ; 
+} 

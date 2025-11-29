@@ -1,0 +1,14 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+if ( var1 < number ) 
+func2 ( ) ; 
+printf ( str 
+str ) ; 
+if ( ! strcmp ( var2 [ number ] , str ) ) 
+func3 ( ) ; 
+else if ( ! strcmp ( var2 [ number ] , str ) ) 
+func4 ( ) ; 
+else 
+func2 ( ) ; 
+return number ; 
+} 

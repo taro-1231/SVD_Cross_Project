@@ -1,0 +1,39 @@
+static int func1 ( AVIOContext * var1 , AMFDataType var2 ) 
+{ 
+int var3 = - number , var4 , var5 = number ; 
+switch ( var2 ) { 
+case var6 : 
+func2 ( var1 , number ) ; 
+break ; 
+case var7 : 
+func2 ( var1 , number ) ; 
+break ; 
+case var8 : 
+func2 ( var1 , func3 ( var1 ) ) ; 
+break ; 
+case var9 : 
+var5 = number ; 
+case var10 : 
+var3 = func4 ( var1 ) ; 
+case var11 : 
+while ( ! var1 -> var12 && ( var3 -> number || var2 != var9 ) ) { 
+if ( var5 ) { 
+int var13 = func3 ( var1 ) ; 
+if ( ! var13 ) { 
+func2 ( var1 , number ) ; 
+break ; 
+} 
+func2 ( var1 , var13 ) ; 
+} 
+if ( ( var4 = func1 ( var1 , func5 ( var1 ) ) ) < number ) 
+return var4 ; 
+} 
+break ; 
+case var14 : 
+case var15 : 
+break ; 
+var16 : 
+return var17 ; 
+} 
+return number ; 
+} 

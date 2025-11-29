@@ -1,0 +1,14 @@
+int func1 ( char ** var1 , const char * var2 , const char * var3 , 
+enum AVEscapeMode var4 , int var5 ) 
+{ 
+AVBPrint var6 ; 
+func2 ( & var6 , number , var7 ) ; 
+func3 ( & var6 , var2 , var3 , var4 , var5 ) ; 
+if ( ! func4 ( & var6 ) ) { 
+func5 ( & var6 , var8 ) ; 
+return func6 ( var9 ) ; 
+} else { 
+func5 ( & var6 , var1 ) ; 
+return var6 . var10 ; 
+} 
+} 

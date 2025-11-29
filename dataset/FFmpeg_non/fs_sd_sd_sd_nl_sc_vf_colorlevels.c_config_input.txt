@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+ColorLevelsContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+var4 -> var8 = var6 -> var9 ; 
+var4 -> var10 = ( var6 -> var11 [ number ] . var12 + number ) >> number ; 
+var4 -> var13 = ( func3 ( var6 ) >> number ) / var4 -> var10 ; 
+var4 -> var14 = var1 -> var15 * var4 -> var13 ; 
+func4 ( var4 -> var16 , var1 -> var7 ) ; 
+return number ; 
+} 

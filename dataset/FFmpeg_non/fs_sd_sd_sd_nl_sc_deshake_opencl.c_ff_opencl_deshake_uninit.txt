@@ -1,0 +1,11 @@
+void func1 ( AVFilterContext * var1 ) 
+{ 
+DeshakeContext * var2 = var1 -> var3 ; 
+func2 ( & var2 -> var4 . var5 ) ; 
+func2 ( & var2 -> var4 . var6 ) ; 
+func3 ( var2 -> var4 . var7 ) ; 
+func3 ( var2 -> var4 . var8 ) ; 
+func4 ( var2 -> var4 . var9 ) ; 
+var2 -> var4 . var10 = var11 ; 
+func5 ( ) ; 
+} 

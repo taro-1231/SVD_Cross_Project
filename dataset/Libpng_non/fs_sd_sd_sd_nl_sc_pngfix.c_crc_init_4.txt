@@ -1,0 +1,7 @@
+func1 ( png_uint_32 var1 ) 
+{ 
+png_uint_32 var2 = var3 [ ( ~ var1 >> number ) ] ^ number ; 
+var2 = var3 [ ( var2 ^ ( var1 >> number ) ) & number ] ^ ( var2 >> number ) ; 
+var2 = var3 [ ( var2 ^ ( var1 >> number ) ) & number ] ^ ( var2 >> number ) ; 
+return var3 [ ( var2 ^ var1 ) & number ] ^ ( var2 >> number ) ; 
+} 

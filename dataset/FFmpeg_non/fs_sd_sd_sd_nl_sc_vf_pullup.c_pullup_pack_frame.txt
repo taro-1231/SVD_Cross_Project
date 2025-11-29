@@ -1,0 +1,19 @@
+static void func1 ( PullupContext * var1 , PullupFrame * var2 ) 
+{ 
+int var3 ; 
+if ( var2 -> var4 ) 
+return ; 
+if ( var2 -> var5 < number ) 
+return ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+if ( var2 -> var6 [ var3 ] -> var7 [ var3 ^ number ] ) 
+continue ; 
+var2 -> var4 = var2 -> var6 [ var3 ] ; 
+func2 ( var2 -> var4 , number ) ; 
+func3 ( var1 , var2 -> var4 , var2 -> var6 [ var3 ^ number ] , var3 ^ number ) ; 
+return ; 
+} 
+var2 -> var4 = func4 ( var1 , number ) ; 
+func3 ( var1 , var2 -> var4 , var2 -> var6 [ number ] , number ) ; 
+func3 ( var1 , var2 -> var4 , var2 -> var6 [ number ] , number ) ; 
+} 

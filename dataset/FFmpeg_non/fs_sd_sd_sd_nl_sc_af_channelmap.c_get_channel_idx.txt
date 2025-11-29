@@ -1,0 +1,19 @@
+static int func1 ( char ** var1 , int * var2 , char var3 , int var4 ) 
+{ 
+char * var5 ; 
+int var6 ; 
+int var7 = number ; 
+if ( ! * var1 ) 
+return func2 ( var8 ) ; 
+var5 = func3 ( * var1 , var3 ) ; 
+if ( ! var5 && var3 == str ) 
+return func2 ( var8 ) ; 
+var6 = strlen ( * var1 ) ; 
+sscanf ( * var1 , str , var2 , & var7 ) ; 
+if ( var7 != var6 ) 
+return func2 ( var8 ) ; 
+if ( * var2 < number || * var2 > var4 ) 
+return func2 ( var8 ) ; 
+* var1 = var5 ; 
+return number ; 
+} 

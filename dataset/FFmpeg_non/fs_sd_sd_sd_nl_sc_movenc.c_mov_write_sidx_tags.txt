@@ -1,0 +1,27 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+int var3 , int var4 ) 
+{ 
+int var5 , var6 , var7 ; 
+AVIOContext * var8 ; 
+int var9 = number ; 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+if ( var6 == number ) { 
+if ( ( var7 = func2 ( & var8 ) ) < number ) 
+return var7 ; 
+} else { 
+var8 = var1 ; 
+} 
+for ( var5 = number ; var5 < var2 -> var11 ; var5 ++ ) { 
+MOVTrack * var10 = & var2 -> var3 [ var5 ] ; 
+if ( var3 >= number && var5 != var3 ) 
+continue ; 
+if ( ! var10 -> var12 && var4 > number ) 
+continue ; 
+var9 -= func3 ( var8 , var10 , var4 , 
+var9 ) ; 
+} 
+if ( var6 == number ) 
+var9 = func4 ( var8 ) ; 
+} 
+return number ; 
+} 

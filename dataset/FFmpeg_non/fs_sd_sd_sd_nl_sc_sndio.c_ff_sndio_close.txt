@@ -1,0 +1,7 @@
+int func1 ( SndioData * var1 ) 
+{ 
+func2 ( & var1 -> var2 ) ; 
+if ( var1 -> var3 ) 
+func3 ( var1 -> var3 ) ; 
+return number ; 
+} 

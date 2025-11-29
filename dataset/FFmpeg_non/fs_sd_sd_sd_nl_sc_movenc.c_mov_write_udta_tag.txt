@@ -1,0 +1,46 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+AVFormatContext * var3 ) 
+{ 
+AVIOContext * var4 ; 
+int var5 , var6 ; 
+uint8_t * var7 ; 
+var5 = func2 ( & var4 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+if ( var2 -> var8 & var9 ) { 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+func3 ( var4 , var3 , str , str ) ; 
+} else if ( var2 -> var8 == var10 ) { 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func4 ( var3 , var4 , str , str , number ) ; 
+func5 ( var3 , var4 , str , str ) ; 
+} else { 
+func6 ( var4 , var2 , var3 ) ; 
+} 
+if ( var3 -> var11 && ! ( var2 -> var12 & var13 ) ) 
+func7 ( var4 , var3 ) ; 
+if ( ( var6 = func8 ( var4 , & var7 ) ) > number ) { 
+func9 ( var1 , var6 + number ) ; 
+func10 ( var1 , str ) ; 
+func11 ( var1 , var7 , var6 ) ; 
+} 
+func12 ( var7 ) ; 
+return number ; 
+} 

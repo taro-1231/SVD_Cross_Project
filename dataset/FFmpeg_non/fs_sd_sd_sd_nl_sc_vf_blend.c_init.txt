@@ -1,0 +1,7 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+BlendContext * var2 = var1 -> var3 ; 
+var2 -> var4 = ! strcmp ( var1 -> var5 -> var6 , str ) ; 
+var2 -> var7 . var8 = var9 ; 
+return number ; 
+} 

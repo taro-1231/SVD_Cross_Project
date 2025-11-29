@@ -1,0 +1,24 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+AResampleContext * var4 = var2 -> var5 ; 
+int var6 ; 
+if ( var4 -> var7 ) { 
+AVFrame * var8 ; 
+if ( func2 ( var1 , number , & var8 ) >= number ) { 
+return func3 ( var1 , var8 ) ; 
+} 
+} 
+var4 -> var7 = number ; 
+var4 -> var9 = number ; 
+do { 
+var6 = func4 ( var2 -> var10 [ number ] ) ; 
+} while ( ! var4 -> var9 && var6 >= number ) ; 
+if ( var6 == var11 ) { 
+AVFrame * var8 ; 
+if ( ( var6 = func2 ( var1 , number , & var8 ) ) < number ) 
+return var6 ; 
+return func3 ( var1 , var8 ) ; 
+} 
+return var6 ; 
+} 

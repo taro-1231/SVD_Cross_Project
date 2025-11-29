@@ -1,0 +1,6 @@
+static int func1 ( AVProbeData * var1 ) 
+{ 
+if ( func2 ( var1 -> var2 , str , var3 ) ) 
+return var4 - number ; 
+return number ; 
+} 

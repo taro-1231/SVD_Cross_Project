@@ -1,0 +1,8 @@
+static const Writer * func1 ( const char * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var3 [ var2 ] ; var2 ++ ) 
+if ( ! strcmp ( var3 [ var2 ] -> var1 , var1 ) ) 
+return var3 [ var2 ] ; 
+return var4 ; 
+} 

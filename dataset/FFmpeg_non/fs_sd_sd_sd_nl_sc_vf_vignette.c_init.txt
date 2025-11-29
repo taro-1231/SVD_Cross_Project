@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+VignetteContext * var2 = var1 -> var3 ; 
+NULL , NULL , NULL , NULL , number , var1 ) ; \ 
+if ( var4 < number ) { \ 
+av_log ( var1 , AV_LOG_ERROR , str \ 
+AV_STRINGIFY ( name ) str ) ; \ 
+return var4 ; \ 
+} \ 
+} while ( number ) 
+func2 ( angle ) ; 
+func2 ( var5 ) ; 
+func2 ( var6 ) ; 
+return number ; 
+} 

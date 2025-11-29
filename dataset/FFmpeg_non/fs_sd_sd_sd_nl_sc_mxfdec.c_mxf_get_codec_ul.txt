@@ -1,0 +1,9 @@
+static const MXFCodecUL * func1 ( const MXFCodecUL * var1 , UID * var2 ) 
+{ 
+while ( var1 -> var2 [ number ] ) { 
+if ( func2 ( var1 -> var2 , * var2 , var1 -> var3 ) ) 
+break ; 
+var1 ++ ; 
+} 
+return var1 ; 
+} 

@@ -1,0 +1,19 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+BufferSinkContext * var2 = var1 -> var3 ; 
+AVFilterFormats * var4 = var5 ; 
+unsigned var6 ; 
+int var7 ; 
+CHECK_LIST_SIZE ( var8 ) 
+if ( var2 -> var9 ) { 
+for ( var6 = number ; var6 < func2 ( var2 -> var8 ) ; var6 ++ ) 
+if ( ( var7 = func3 ( & var4 , var2 -> var8 [ var6 ] ) ) < number ) { 
+func4 ( & var4 ) ; 
+return var7 ; 
+} 
+func5 ( var1 , var4 ) ; 
+} else { 
+func6 ( var1 ) ; 
+} 
+return number ; 
+} 

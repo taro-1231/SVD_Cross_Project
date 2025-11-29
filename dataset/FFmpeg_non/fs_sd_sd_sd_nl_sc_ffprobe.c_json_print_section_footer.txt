@@ -1,0 +1,18 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+JSONContext * var2 = var1 -> var3 ; 
+const struct var4 * var4 = var1 -> var4 [ var1 -> var5 ] ; 
+if ( var1 -> var5 == number ) { 
+var2 -> var6 -- ; 
+printf ( str ) ; 
+} else if ( var4 -> var7 & var8 ) { 
+printf ( str ) ; 
+var2 -> var6 -- ; 
+func2 ( ) ; 
+printf ( str ) ; 
+} else { 
+printf ( str , var2 -> item_start_end ) ; 
+var2 -> var6 -- ; 
+if ( ! var2 -> compact ) 
+func2 ( ) ; 
+printf ( str ) ; 

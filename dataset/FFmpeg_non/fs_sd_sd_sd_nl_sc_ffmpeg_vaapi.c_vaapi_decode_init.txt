@@ -1,0 +1,57 @@
+int func1 ( AVCodecContext * var1 ) 
+{ 
+InputStream * var2 = var1 -> var3 ; 
+VAAPIDecoderContext * var4 ; 
+int var5 ; 
+int var6 = ( var2 -> var7 != var8 ? var9 
+: var10 ) ; 
+if ( var2 -> var11 ) 
+func2 ( var1 ) ; 
+if ( ! var14 ) { 
+var5 = func3 ( var2 -> var13 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+} 
+var4 = func4 ( sizeof ( * var4 ) ) ; 
+if ( ! var4 ) 
+return func5 ( var15 ) ; 
+var4 -> class = & var16 ; 
+var2 -> var11 = var4 ; 
+var4 -> var17 = func6 ( var14 ) ; 
+var4 -> var12 = ( AVHWDeviceContext * ) var4 -> var17 -> var18 ; 
+var4 -> var19 = var2 -> var20 ; 
+var1 -> var21 = var4 -> var19 ; 
+var4 -> var22 = func7 ( var4 -> var17 ) ; 
+if ( ! var4 -> var22 ) { 
+func8 ( var4 , var6 , str ) ; 
+var5 = func5 ( var15 ) ; 
+goto var23 ; 
+} 
+var4 -> var24 = ( AVHWFramesContext * ) var4 -> var22 -> var18 ; 
+var4 -> var24 -> var25 = var26 ; 
+var4 -> var24 -> var27 = var1 -> var28 ; 
+var4 -> var24 -> var29 = var1 -> var30 ; 
+var4 -> var24 -> var31 = ( var1 -> var32 == var33 ? 
+var34 : var35 ) ; 
+var4 -> var24 -> var36 = var37 ; 
+if ( var1 -> var38 & var39 ) 
+var4 -> var24 -> var36 += var1 -> var40 ; 
+var5 = func9 ( var4 -> var22 ) ; 
+if ( var5 < number ) { 
+func8 ( var4 , var6 , str 
+str , var5 ) ; 
+goto var23 ; 
+} 
+var2 -> var41 = func6 ( var4 -> var22 ) ; 
+if ( ! var2 -> var41 ) { 
+var5 = func5 ( var15 ) ; 
+goto var23 ; 
+} 
+var2 -> var42 = & func2 ; 
+var2 -> var43 = & var44 ; 
+var2 -> var45 = & var46 ; 
+return number ; 
+var23 : 
+func2 ( var1 ) ; 
+return var5 ; 
+} 

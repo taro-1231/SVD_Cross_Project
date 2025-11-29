@@ -1,0 +1,9 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+FPSContext * var2 = var1 -> var3 ; 
+if ( ! ( var2 -> var4 = func2 ( number , sizeof ( AVFrame * ) ) ) ) 
+return func3 ( var5 ) ; 
+var2 -> var6 = var7 ; 
+func4 ( var1 , var8 , str , var2 -> var9 . var10 , var2 -> var9 . var11 ) ; 
+return number ; 
+} 

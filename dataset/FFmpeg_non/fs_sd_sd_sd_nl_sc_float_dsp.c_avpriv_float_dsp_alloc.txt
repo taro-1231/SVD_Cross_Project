@@ -1,0 +1,7 @@
+av_cold AVFloatDSPContext * func1 ( int var1 ) 
+{ 
+AVFloatDSPContext * var2 = func2 ( sizeof ( AVFloatDSPContext ) ) ; 
+if ( var2 ) 
+func3 ( var2 , var1 ) ; 
+return var2 ; 
+} 

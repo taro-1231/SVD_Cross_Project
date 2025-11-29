@@ -1,0 +1,12 @@
+static void func1 ( AVDictionary ** var1 , int var2 , const char * var3 , 
+const char * var4 , double var5 ) 
+{ 
+uint8_t var6 [ number ] ; 
+uint8_t var7 [ number ] ; 
+snprintf ( var6 , sizeof ( var6 ) , var4 , var5 ) ; 
+if ( var2 ) 
+snprintf ( var7 , sizeof ( var7 ) , str , var2 , var3 ) ; 
+else 
+snprintf ( var7 , sizeof ( var7 ) , str , var3 ) ; 
+func2 ( var1 , var7 , var6 , number ) ; 
+} 

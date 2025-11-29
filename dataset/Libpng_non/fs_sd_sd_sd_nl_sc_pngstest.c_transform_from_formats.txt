@@ -1,0 +1,125 @@
+func1 ( Transform * var1 , Image * var2 , 
+const Image * var3 , png_const_colorp var4 , int var5 ) 
+{ 
+png_uint_32 var6 , var7 ; 
+png_uint_32 var8 , var9 ; 
+memset ( var1 , number , sizeof * var1 ) ; 
+var1 -> var2 = var2 ; 
+var1 -> var3 = var3 ; 
+var6 = var2 -> var10 . var11 ; 
+var7 = var3 -> var10 . var11 ; 
+if ( var6 & var12 ) 
+var1 -> var13 = number ; 
+else 
+var1 -> var13 = number ; 
+var1 -> var14 = ( var7 & var12 ) == number ; 
+var1 -> var15 = number ; 
+var1 -> var16 = ( var2 -> var17 & var18 ) != number ; 
+var1 -> var19 = func2 ( var6 ) ; 
+var1 -> var20 = func2 ( var7 ) ; 
+var6 &= var21 | var22 ; 
+var8 = var6 & var21 ; 
+var7 &= var21 | var22 ; 
+var9 = var7 & var21 ; 
+if ( var5 ) 
+{ 
+if ( var7 & ( var12 | var22 ) ) 
+{ 
+fprintf ( var23 , str , 
+var6 , var7 ) ; 
+exit ( number ) ; 
+} 
+var1 -> var24 = var26 [ var8 ] [ var9 | var12 ] ; 
+var1 -> var27 = var26 [ var9 | var12 ] [ var9 ] ; 
+var1 -> var28 = var29 [ var6 ] [ var7 ] ; 
+} 
+else if ( ~ var6 & var7 & var22 ) 
+{ 
+var1 -> var24 = var26 [ var8 ] [ var9 ] ; 
+var1 -> var27 = var31 ; 
+var1 -> var28 = var32 [ var8 ] [ var9 ] ; 
+} 
+else 
+{ 
+if ( var6 & var7 & var22 ) 
+var1 -> var24 = var33 [ var8 ] [ var9 ] ; 
+else 
+var1 -> var24 = var26 [ var8 ] [ var9 ] ; 
+var1 -> var27 = var31 ; 
+var1 -> var28 = var34 [ var6 ] [ var7 ] ; 
+} 
+var1 -> var4 = var31 ; 
+if ( var6 & ~ var7 & var36 ) 
+{ 
+var1 -> var4 = & var1 -> var37 ; 
+if ( var7 & var12 || var5 ) 
+{ 
+if ( var7 & var22 ) 
+{ 
+var1 -> var37 . var38 = 
+var1 -> var37 . var39 = 
+var1 -> var37 . var40 = number ; 
+var1 -> var37 . var41 = 
+var1 -> var37 . var42 = 
+var1 -> var37 . var43 = number ; 
+} 
+else 
+{ 
+var1 -> var37 . var38 = 
+var1 -> var37 . var39 = 
+var1 -> var37 . var40 = var44 * number ; 
+var1 -> var37 . var41 = 
+var1 -> var37 . var42 = 
+var1 -> var37 . var43 = number ; 
+} 
+} 
+else 
+{ 
+if ( var4 != var31 ) 
+{ 
+if ( var7 & var45 ) 
+{ 
+var1 -> var37 . var38 = var4 -> var46 ; 
+var1 -> var37 . var39 = var4 -> var47 ; 
+var1 -> var37 . var40 = var4 -> var48 ; 
+var1 -> var37 . var41 = var49 [ var4 -> var46 ] ; 
+var1 -> var37 . var42 = var49 [ var4 -> var47 ] ; 
+var1 -> var37 . var43 = var49 [ var4 -> var48 ] ; 
+} 
+else 
+{ 
+var1 -> var37 . var38 = 
+var1 -> var37 . var39 = 
+var1 -> var37 . var40 = var4 -> var47 ; 
+var1 -> var37 . var41 = 
+var1 -> var37 . var42 = 
+var1 -> var37 . var43 = var49 [ var4 -> var47 ] ; 
+} 
+} 
+else if ( ( var7 & var22 ) == number ) 
+{ 
+var1 -> var37 . var38 = 
+var1 -> var37 . var39 = 
+var1 -> var37 . var40 = var44 ; 
+var1 -> var37 . var41 = 
+var1 -> var37 . var42 = 
+var1 -> var37 . var43 = var49 [ var44 ] ; 
+} 
+else 
+var1 -> var4 = var31 ; 
+} 
+} 
+if ( var1 -> var4 == var31 ) 
+{ 
+var1 -> var37 . var38 = 
+var1 -> var37 . var39 = 
+var1 -> var37 . var40 = - number ; 
+var1 -> var37 . var41 = 
+var1 -> var37 . var42 = 
+var1 -> var37 . var43 = number ; 
+} 
+var1 -> var25 [ number ] = var1 -> var28 [ number ] ; 
+var1 -> var25 [ number ] = var1 -> var28 [ number ] ; 
+var1 -> var25 [ number ] = var1 -> var28 [ number ] ; 
+var1 -> var25 [ number ] = var1 -> var28 [ number ] ; 
+} 

@@ -1,0 +1,4 @@
+AVMurMur3 * func1 ( void ) 
+{ 
+return func2 ( sizeof ( AVMurMur3 ) ) ; 
+} 

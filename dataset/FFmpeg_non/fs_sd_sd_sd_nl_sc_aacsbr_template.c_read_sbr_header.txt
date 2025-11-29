@@ -1,0 +1,42 @@
+static unsigned int func1 ( SpectralBandReplication * var1 , GetBitContext * var2 ) 
+{ 
+unsigned int var3 = func2 ( var2 ) ; 
+uint8_t var4 ; 
+uint8_t var5 ; 
+int var6 = var1 -> var7 ; 
+SpectrumParameters var8 ; 
+var1 -> var9 = number ; 
+memcpy ( & var8 , & var1 -> var10 , sizeof ( SpectrumParameters ) ) ; 
+var1 -> var11 = func3 ( var2 ) ; 
+var1 -> var10 . var12 = func4 ( var2 , number ) ; 
+var1 -> var10 . var13 = func4 ( var2 , number ) ; 
+var1 -> var10 . var14 = func4 ( var2 , number ) ; 
+func5 ( var2 , number ) ; 
+var4 = func3 ( var2 ) ; 
+var5 = func3 ( var2 ) ; 
+if ( var4 ) { 
+var1 -> var10 . var15 = func4 ( var2 , number ) ; 
+var1 -> var10 . var16 = func3 ( var2 ) ; 
+var1 -> var10 . var17 = func4 ( var2 , number ) ; 
+} else { 
+var1 -> var10 . var15 = number ; 
+var1 -> var10 . var16 = number ; 
+var1 -> var10 . var17 = number ; 
+} 
+if ( memcmp ( & var8 , & var1 -> var10 , sizeof ( SpectrumParameters ) ) ) 
+var1 -> var18 = number ; 
+if ( var5 ) { 
+var1 -> var7 = func4 ( var2 , number ) ; 
+var1 -> var19 = func4 ( var2 , number ) ; 
+var1 -> var20 = func3 ( var2 ) ; 
+var1 -> var21 = func3 ( var2 ) ; 
+} else { 
+var1 -> var7 = number ; 
+var1 -> var19 = number ; 
+var1 -> var20 = number ; 
+var1 -> var21 = number ; 
+} 
+if ( var1 -> var7 != var6 && ! var1 -> var18 ) 
+func6 ( var1 ) ; 
+return func2 ( var2 ) - var3 ; 
+} 

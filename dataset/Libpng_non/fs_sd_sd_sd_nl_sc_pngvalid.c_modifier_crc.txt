@@ -1,0 +1,6 @@
+func1 ( png_bytep var1 ) 
+{ 
+uInt var2 = func2 ( var1 ) ; 
+uLong var3 = func3 ( number , var1 + number , var2 + number ) ; 
+func4 ( var1 + var2 + number , ( png_uint_32 ) var3 ) ; 
+} 

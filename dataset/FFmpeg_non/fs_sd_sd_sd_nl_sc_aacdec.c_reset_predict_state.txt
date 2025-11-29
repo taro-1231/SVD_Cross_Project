@@ -1,0 +1,9 @@
+static av_always_inline void func1 ( PredictorState * var7 ) 
+{ 
+var7 -> var2 = number ; 
+var7 -> var3 = number ; 
+var7 -> var4 = number ; 
+var7 -> var5 = number ; 
+var7 -> var6 = number ; 
+var7 -> var7 = number ; 
+} 

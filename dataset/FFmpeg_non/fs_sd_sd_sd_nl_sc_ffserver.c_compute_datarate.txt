@@ -1,0 +1,6 @@
+static int func1 ( DataRateData * var1 , int64_t var2 ) 
+{ 
+if ( var3 == var1 -> var4 ) 
+return number ; 
+return ( ( var2 - var1 -> var5 ) * number ) / ( var3 - var1 -> var4 ) ; 
+} 

@@ -1,0 +1,15 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct gdigrab * var2 = var1 -> var3 ; 
+if ( var2 -> var4 ) 
+func2 ( var1 , var2 ) ; 
+if ( var2 -> var5 ) 
+func3 ( var2 -> var6 , var2 -> var5 ) ; 
+if ( var2 -> var7 ) 
+func4 ( var2 -> var7 ) ; 
+if ( var2 -> var8 ) 
+func5 ( var2 -> var8 ) ; 
+if ( var2 -> var5 ) 
+func4 ( var2 -> var5 ) ; 
+return number ; 
+} 

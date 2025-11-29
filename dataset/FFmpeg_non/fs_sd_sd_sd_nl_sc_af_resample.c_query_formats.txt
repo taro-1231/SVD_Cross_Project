@@ -1,0 +1,18 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+AVFilterLink * var2 = var1 -> var3 [ number ] ; 
+AVFilterLink * var4 = var1 -> var5 [ number ] ; 
+AVFilterFormats * var6 = func2 ( var7 ) ; 
+AVFilterFormats * var8 = func2 ( var7 ) ; 
+AVFilterFormats * var9 = func3 ( ) ; 
+AVFilterFormats * var10 = func3 ( ) ; 
+AVFilterChannelLayouts * var11 = func4 ( ) ; 
+AVFilterChannelLayouts * var12 = func4 ( ) ; 
+func5 ( var6 , & var2 -> var8 ) ; 
+func5 ( var8 , & var4 -> var6 ) ; 
+func5 ( var9 , & var2 -> var10 ) ; 
+func5 ( var10 , & var4 -> var9 ) ; 
+func6 ( var11 , & var2 -> var13 ) ; 
+func6 ( var12 , & var4 -> var14 ) ; 
+return number ; 
+} 

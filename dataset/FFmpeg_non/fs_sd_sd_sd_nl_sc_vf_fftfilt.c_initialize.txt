@@ -1,0 +1,29 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+FFTFILTContext * var2 = var1 -> var3 ; 
+int var4 = number , var5 ; 
+if ( ! var2 -> var6 [ var7 ] && ! var2 -> var6 [ var8 ] ) { 
+var2 -> var6 [ var7 ] = var2 -> var6 [ var9 ] ; 
+var2 -> var6 [ var8 ] = var2 -> var6 [ var9 ] ; 
+} else { 
+if ( ! var2 -> var6 [ var7 ] ) var2 -> var6 [ var7 ] = var2 -> var6 [ var8 ] ; 
+if ( ! var2 -> var6 [ var8 ] ) var2 -> var6 [ var8 ] = var2 -> var6 [ var7 ] ; 
+} 
+if ( ! var2 -> var10 [ var7 ] && ! var2 -> var10 [ var8 ] ) { 
+var2 -> var10 [ var7 ] = var13 ( var2 -> var10 [ var9 ] ) ; 
+var2 -> var10 [ var8 ] = var13 ( var2 -> var10 [ var9 ] ) ; 
+} else { 
+if ( ! var2 -> var10 [ var7 ] ) var2 -> var10 [ var7 ] = var13 ( var2 -> var10 [ var8 ] ) ; 
+if ( ! var2 -> var10 [ var8 ] ) var2 -> var10 [ var8 ] = var13 ( var2 -> var10 [ var7 ] ) ; 
+} 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+static double ( * p [ ] ) ( void * , double , double ) = { weight_Y , weight_U , weight_V } ; 
+const char * const var11 [ ] = { str , str , str , var12 } ; 
+double ( * var13 [ ] ) ( void * , double , double ) = { weight_Y , weight_U , weight_V , p [ var5 ] , var12 } ; 
+var4 = func3 ( & var2 -> var14 [ var5 ] , var2 -> var10 [ var5 ] , var15 , 
+var12 , var12 , var11 , var13 , number , var1 ) ; 
+if ( var4 < number ) 
+break ; 
+} 
+return var4 ; 
+} 

@@ -1,0 +1,12 @@
+av_cold static int func1 ( AVFormatContext * var1 ) 
+{ 
+LavfiContext * var2 = var1 -> var3 ; 
+func2 ( & var2 -> var4 ) ; 
+func2 ( & var2 -> var5 ) ; 
+func2 ( & var2 -> var6 ) ; 
+func2 ( & var2 -> var7 ) ; 
+func2 ( & var2 -> var8 ) ; 
+func3 ( & var2 -> var9 ) ; 
+func4 ( & var2 -> var10 ) ; 
+return number ; 
+} 

@@ -1,0 +1,4 @@
+static void func1 ( AVFilterContext * var1 , AVFrameSideData * var2 ) 
+{ 
+func2 ( var1 , var3 , str , var2 -> var4 , var2 -> var5 ) ; 
+} 

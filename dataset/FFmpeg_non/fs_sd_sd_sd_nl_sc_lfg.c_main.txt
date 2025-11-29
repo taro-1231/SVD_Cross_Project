@@ -1,0 +1,29 @@
+int func1 ( void ) 
+{ 
+int var1 = number ; 
+int var2 , var3 ; 
+AVLFG var4 ; 
+func2 ( & var4 , number ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+START_TIMER 
+for ( var2 = number ; var2 < number ; var2 ++ ) { 
+var1 += func4 ( & var4 ) ; 
+} 
+func5 ( str ) ; 
+} 
+func3 ( var5 , var6 , str , var1 ) ; 
+{ 
+double var7 = number ; 
+double var8 = number ; 
+func2 ( & var4 , number ) ; 
+for ( var2 = number ; var2 < number ; var2 += number ) { 
+double var9 [ number ] ; 
+func6 ( & var4 , var9 ) ; 
+func3 ( var5 , var10 , 
+str , 
+var9 [ number ] * var8 + var7 , 
+var9 [ number ] * var8 + var7 ) ; 
+} 
+} 
+return number ; 
+} 

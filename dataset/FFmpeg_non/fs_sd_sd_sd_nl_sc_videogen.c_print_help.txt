@@ -1,0 +1,7 @@
+void func1 ( const char * var1 ) 
+{ 
+printf ( str 
+str , 
+var1 , DEFAULT_WIDTH , DEFAULT_HEIGHT ) ; 
+exit ( number ) ; 
+} 

@@ -1,0 +1,78 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 , uint8_t * var3 ) 
+{ 
+var1 += number * var2 ; 
+__asm__ volatile ( 
+str REG_a str 
+str REG_a str REG_d str 
+str 
+str REG_a str 
+PAVGB ( % % mm1 , % % mm0 ) 
+str 
+PAVGB ( % % mm2 , % % mm0 ) 
+str 
+str REG_a str 
+PAVGB ( % % mm0 , % % mm2 ) 
+PAVGB ( % % mm1 , % % mm2 ) 
+str REG_a str 
+str REG_a str 
+PAVGB ( % % mm2 , % % mm1 ) 
+PAVGB ( % % mm0 , % % mm1 ) 
+str REG_a str 
+str 
+PAVGB ( % % mm1 , % % mm0 ) 
+PAVGB ( % % mm2 , % % mm0 ) 
+str REG_a str 
+str REG_d str 
+PAVGB ( % % mm0 , % % mm2 ) 
+PAVGB ( % % mm1 , % % mm2 ) 
+str 
+str REG_d str 
+PAVGB ( % % mm2 , % % mm1 ) 
+PAVGB ( % % mm0 , % % mm1 ) 
+str REG_d str 
+str REG_d str 
+PAVGB ( % % mm1 , % % mm0 ) 
+PAVGB ( % % mm2 , % % mm0 ) 
+str REG_d str 
+str 
+PAVGB ( % % mm0 , % % mm2 ) 
+PAVGB ( % % mm1 , % % mm2 ) 
+str REG_d str 
+str 
+:: str ( var1 ) , str ( ( x86_reg ) var2 ) , str ( var3 ) 
+: str REG_a , str REG_d 
+) ; 
+int a , b , c , x ; 
+var1 += number * var2 ; 
+for ( x = 0 ; x < 2 ; x ++ ) { 
+a = * ( uint32_t * ) & var3 [ var2 * 0 ] ; 
+b = * ( uint32_t * ) & var1 [ var2 * 0 ] ; 
+c = * ( uint32_t * ) & var1 [ var2 * 1 ] ; 
+a = ( a & c ) + ( ( ( a ^ c ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 0 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+a = * ( uint32_t * ) & var1 [ var2 * 2 ] ; 
+b = ( a & b ) + ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 1 ] = ( c | b ) - ( ( ( c ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+b = * ( uint32_t * ) & var1 [ var2 * 3 ] ; 
+c = ( b & c ) + ( ( ( b ^ c ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 2 ] = ( c | a ) - ( ( ( c ^ a ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+c = * ( uint32_t * ) & var1 [ var2 * number ] ; 
+a = ( a & c ) + ( ( ( a ^ c ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 3 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+a = * ( uint32_t * ) & var1 [ var2 * 5 ] ; 
+b = ( a & b ) + ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * number ] = ( c | b ) - ( ( ( c ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+b = * ( uint32_t * ) & var1 [ var2 * 6 ] ; 
+c = ( b & c ) + ( ( ( b ^ c ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 5 ] = ( c | a ) - ( ( ( c ^ a ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+c = * ( uint32_t * ) & var1 [ var2 * 7 ] ; 
+a = ( a & c ) + ( ( ( a ^ c ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 6 ] = ( a | b ) - ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+a = * ( uint32_t * ) & var1 [ var2 * 8 ] ; 
+b = ( a & b ) + ( ( ( a ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var1 [ var2 * 7 ] = ( c | b ) - ( ( ( c ^ b ) & 0xFEFEFEFEUL ) >> 1 ) ; 
+* ( uint32_t * ) & var3 [ var2 * 0 ] = c ; 
+var1 += number ; 
+var3 += number ; 
+} 
+} 

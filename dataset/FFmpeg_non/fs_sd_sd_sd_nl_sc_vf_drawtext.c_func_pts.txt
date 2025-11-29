@@ -1,0 +1,40 @@
+static int func1 ( AVFilterContext * var1 , AVBPrint * var2 , 
+char * var3 , unsigned var4 , char ** var5 , int var6 ) 
+{ 
+DrawTextContext * var7 = var1 -> var8 ; 
+const char * var9 ; 
+double var10 = var7 -> var11 [ var12 ] ; 
+int var13 ; 
+var9 = var4 >= number ? var5 [ number ] : str ; 
+if ( var4 >= number ) { 
+int64_t var14 ; 
+if ( ( var13 = func2 ( & var14 , var5 [ number ] , number ) ) < number ) { 
+func3 ( var1 , var15 , str , var5 [ number ] ) ; 
+return var13 ; 
+} 
+var10 += ( double ) var14 / var16 ; 
+} 
+if ( ! strcmp ( var9 , str ) ) { 
+func4 ( var2 , str , var7 -> var11 [ var12 ] ) ; 
+} else if ( ! strcmp ( var9 , str ) ) { 
+if ( isnan ( var10 ) ) { 
+func4 ( var2 , str ) ; 
+} else { 
+int64_t var17 = round ( var10 * number ) ; 
+char var18 = str ; 
+if ( var17 < number ) { 
+var18 = str ; 
+var17 = - var17 ; 
+} 
+func4 ( var2 , str , var18 , 
+( int ) ( var17 / ( number * number * number ) ) , 
+( int ) ( var17 / ( number * number ) ) % number , 
+( int ) ( var17 / number ) % number , 
+( int ) var17 % number ) ; 
+} 
+} else { 
+func3 ( var1 , var15 , str , var9 ) ; 
+return func5 ( var19 ) ; 
+} 
+return number ; 
+} 

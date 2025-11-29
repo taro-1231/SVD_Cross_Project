@@ -1,0 +1,14 @@
+void func1 ( SwsContext * var1 , int16_t * var2 , int var3 , 
+const uint8_t * var4 , int var5 , int var6 ) 
+{ 
+int var7 ; 
+unsigned int var8 = number ; 
+for ( var7 = number ; var7 < var3 ; var7 ++ ) { 
+register unsigned int var9 = var8 >> number ; 
+register unsigned int var10 = ( var8 & number ) >> number ; 
+var2 [ var7 ] = ( var4 [ var9 ] << number ) + ( var4 [ var9 + number ] - var4 [ var9 ] ) * var10 ; 
+var8 += var6 ; 
+} 
+for ( var7 = var3 - number ; ( var7 * var6 ) >> number >= var5 - number ; var7 -- ) 
+var2 [ var7 ] = var4 [ var5 - number ] * number ; 
+} 

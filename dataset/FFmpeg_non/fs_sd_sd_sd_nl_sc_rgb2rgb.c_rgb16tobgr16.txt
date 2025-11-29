@@ -1,0 +1,8 @@
+void func1 ( const uint8_t * var1 , uint8_t * var2 , int var3 ) 
+{ 
+int var4 , var5 = var3 >> number ; 
+for ( var4 = number ; var4 < var5 ; var4 ++ ) { 
+unsigned var6 = ( ( const uint16_t * ) var1 ) [ var4 ] ; 
+( ( uint16_t * ) var2 ) [ var4 ] = ( var6 >> number ) | ( var6 & number ) | ( var6 << number ) ; 
+} 
+} 

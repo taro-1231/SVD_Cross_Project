@@ -1,0 +1,124 @@
+static int func1 ( const char * var1 ) 
+{ 
+AVCodec * var2 = var3 ; 
+AVCodecContext * var4 = var3 , * var5 = var3 ; 
+uint8_t * var6 = var3 ; 
+AVFrame * var7 = var3 ; 
+AVPacket var8 ; 
+AVFormatContext * var9 = var3 ; 
+int var10 ; 
+int var11 ; 
+int var12 = number ; 
+int var13 ; 
+int var14 ; 
+int var15 = number ; 
+var16 = number ; 
+var14 = func2 ( & var9 , var1 , var3 , var3 ) ; 
+if ( var14 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var14 ; 
+} 
+var14 = func4 ( var9 , var3 ) ; 
+if ( var14 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var14 ; 
+} 
+var11 = func5 ( var9 , var18 , - number , - number , var3 , number ) ; 
+if ( var11 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+var4 = var9 -> var19 [ var11 ] -> var2 ; 
+var2 = func6 ( var4 -> var20 ) ; 
+if ( ! var2 ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+var5 = func7 ( var2 ) ; 
+if ( ! var5 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+var14 = func9 ( var5 , var4 ) ; 
+if ( var14 ) { 
+func3 ( var3 , var17 , str ) ; 
+return var14 ; 
+} 
+var5 -> var22 = var22 ; 
+var5 -> var23 = number ; 
+var14 = func10 ( var5 , var2 , var3 ) ; 
+if ( var14 < number ) { 
+func3 ( var5 , var17 , str ) ; 
+return var14 ; 
+} 
+var7 = func11 ( ) ; 
+if ( ! var7 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+if ( strcmp ( var2 -> var24 , str ) && strcmp ( var2 -> var24 , str ) && strcmp ( var2 -> var24 , str ) ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+var13 = func12 ( var5 -> var25 , var5 -> var26 , var5 -> var27 , number ) ; 
+var6 = func13 ( var13 ) ; 
+if ( ! var6 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+var28 = func13 ( var13 ) ; 
+if ( ! var28 ) { 
+func3 ( var3 , var17 , str ) ; 
+return func8 ( var21 ) ; 
+} 
+memset ( var28 , number , var13 ) ; 
+var29 = var13 ; 
+func14 ( & var8 ) ; 
+do { 
+if ( ! var15 ) { 
+if ( func15 ( var9 , & var8 ) < number ) { 
+var15 = number ; 
+} 
+} 
+if ( var15 ) { 
+var8 . var30 = var3 ; 
+var8 . var31 = number ; 
+} 
+if ( var8 . var32 == var11 || var15 ) { 
+var12 = number ; 
+var14 = func16 ( var5 , var7 , & var12 , & var8 ) ; 
+if ( var14 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var14 ; 
+} 
+if ( var12 ) { 
+var10 = av_image_copy_to_buffer ( var6 , var13 , 
+( const uint8_t * const * ) var7 -> var30 , ( const int * ) var7 -> linesize , 
+var5 -> var25 , var5 -> var26 , var5 -> var27 , number ) ; 
+if ( var10 < number ) { 
+func3 ( var3 , var17 , str ) ; 
+return var10 ; 
+} 
+if ( var16 == number ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+if ( func17 ( number , ( const uint8_t * ) var6 , var10 ) != 
+func17 ( number , ( const uint8_t * ) var28 , var10 ) ) { 
+func3 ( var3 , var17 , str ) ; 
+return - number ; 
+} 
+} 
+func18 ( & var8 ) ; 
+func14 ( & var8 ) ; 
+} 
+} while ( ! var15 || var12 ) ; 
+func18 ( & var8 ) ; 
+func19 ( & var7 ) ; 
+func20 ( var5 ) ; 
+func21 ( & var9 ) ; 
+func22 ( & var5 ) ; 
+func23 ( & var6 ) ; 
+func23 ( & var28 ) ; 
+return number ; 
+} 

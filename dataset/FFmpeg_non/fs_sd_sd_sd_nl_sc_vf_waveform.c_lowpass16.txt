@@ -1,0 +1,44 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 ) 
+{ 
+const int var8 = var1 -> var9 -> var10 [ var4 ] . var8 ; 
+const int var11 = var1 -> var11 ; 
+const int var12 = ( var4 == number || var4 == number ) ; 
+const int var13 = ( var12 ? var1 -> var9 -> var14 : number ) ; 
+const int var15 = ( var12 ? var1 -> var9 -> var16 : number ) ; 
+const int var17 = var2 -> var18 [ var8 ] / number ; 
+const int var19 = var3 -> var18 [ var8 ] / number ; 
+const int var20 = var19 * ( var11 == number ? - number : number ) ; 
+const int var21 = var1 -> var22 - number ; 
+const int var22 = var21 - var5 ; 
+const int var23 = func2 ( var2 -> var24 , var15 ) ; 
+const int var25 = func2 ( var2 -> var26 , var13 ) ; 
+const uint16_t * var27 = ( const uint16_t * ) var2 -> var28 [ var8 ] ; 
+uint16_t * var29 = ( uint16_t * ) var3 -> var28 [ var8 ] + ( var7 ? ( var6 >> var15 ) * var19 : var6 >> var13 ) ; 
+uint16_t * const var30 = var29 + var19 * ( ( var1 -> var31 >> var15 ) - number ) ; 
+uint16_t * const var32 = ( var11 ? var30 : var29 ) ; 
+const uint16_t * var33 ; 
+int var34 ; 
+if ( ! var7 && var11 ) 
+var29 += var1 -> var31 >> var13 ; 
+for ( var34 = number ; var34 < var23 ; var34 ++ ) { 
+const uint16_t * var35 = var27 + var25 ; 
+uint16_t * var36 = var32 ; 
+for ( var33 = var27 ; var33 < var35 ; var33 ++ ) { 
+uint16_t * var37 ; 
+int var38 = func3 ( * var33 , var21 ) ; 
+if ( var7 ) { 
+var37 = var36 ++ var20 * ( var38 >> var15 ) ; 
+} else { 
+if ( var11 ) 
+var37 = var29 - ( var38 >> var13 ) - number ; 
+else 
+var37 = var29 + ( var38 >> var13 ) ; 
+} 
+func4 ( var37 , var22 , var5 , var21 ) ; 
+} 
+var27 += var17 ; 
+var29 += var19 ; 
+} 
+func5 ( var1 , var3 , var8 , var8 ) ; 
+} 

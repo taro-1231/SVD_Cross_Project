@@ -1,0 +1,41 @@
+static int func1 ( AVCodecContext * var1 , const uint8_t * var2 , 
+int var3 ) 
+{ 
+Mpeg1Context * var4 = var1 -> var5 ; 
+MpegEncContext * var6 = & var4 -> var7 ; 
+int var8 , var9 , var10 ; 
+func2 ( & var6 -> var11 , var2 , var3 * number ) ; 
+var8 = func3 ( & var6 -> var11 , number ) ; 
+var6 -> var12 = func3 ( & var6 -> var11 , number ) ; 
+if ( var6 -> var12 == number || var6 -> var12 > number ) 
+return var13 ; 
+var10 = func3 ( & var6 -> var11 , number ) ; 
+var6 -> var10 = var10 ; 
+if ( var6 -> var12 == var14 || 
+var6 -> var12 == var15 ) { 
+var6 -> var16 [ number ] = func4 ( & var6 -> var11 ) ; 
+var9 = func3 ( & var6 -> var11 , number ) ; 
+if ( var9 == number && ( var1 -> var17 & ( var18 | var19 ) ) ) 
+return var13 ; 
+var9 += ! var9 ; 
+var6 -> var20 [ number ] [ number ] = var9 ; 
+var6 -> var20 [ number ] [ number ] = var9 ; 
+} 
+if ( var6 -> var12 == var15 ) { 
+var6 -> var16 [ number ] = func4 ( & var6 -> var11 ) ; 
+var9 = func3 ( & var6 -> var11 , number ) ; 
+if ( var9 == number && ( var1 -> var17 & ( var18 | var19 ) ) ) 
+return var13 ; 
+var9 += ! var9 ; 
+var6 -> var20 [ number ] [ number ] = var9 ; 
+var6 -> var20 [ number ] [ number ] = var9 ; 
+} 
+var6 -> var21 . var22 -> var12 = var6 -> var12 ; 
+var6 -> var21 . var22 -> var23 = var6 -> var12 == var24 ; 
+if ( var1 -> var25 & var26 ) 
+func5 ( var1 , var27 , 
+str , var10 , var8 , var6 -> var12 ) ; 
+var6 -> var28 = number ; 
+var6 -> var29 = number ; 
+return number ; 
+} 

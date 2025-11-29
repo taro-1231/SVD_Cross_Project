@@ -1,0 +1,107 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterContext * var3 = var1 -> var4 ; 
+ColorLevelsContext * var5 = var3 -> var6 ; 
+AVFilterLink * var7 = var3 -> var8 [ number ] ; 
+const int var9 = var5 -> var9 ; 
+AVFrame * var10 ; 
+int var11 , var12 , var13 ; 
+if ( func2 ( var2 ) ) { 
+var10 = var2 ; 
+} else { 
+var10 = func3 ( var7 , var7 -> var14 , var7 -> var15 ) ; 
+if ( ! var10 ) { 
+func4 ( & var2 ) ; 
+return func5 ( var16 ) ; 
+} 
+func6 ( var10 , var2 ) ; 
+} 
+switch ( var5 -> var17 ) { 
+case 1 : 
+for ( var13 = number ; var13 < var5 -> var18 ; var13 ++ ) { 
+Range * var19 = & var5 -> var20 [ var13 ] ; 
+const uint8_t var21 = var5 -> var22 [ var13 ] ; 
+const uint8_t * var23 = var2 -> var24 [ number ] ; 
+uint8_t * var25 = var10 -> var24 [ number ] ; 
+int var26 = round ( var19 -> var27 * var28 ) ; 
+int var29 = round ( var19 -> var30 * var28 ) ; 
+int var31 = round ( var19 -> var32 * var28 ) ; 
+int var33 = round ( var19 -> var34 * var28 ) ; 
+double var35 ; 
+if ( var26 < number ) { 
+var26 = var28 ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint8_t * var36 = var23 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var26 = func7 ( var26 , var36 [ var11 + var21 ] ) ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+if ( var29 < number ) { 
+var23 = var2 -> var24 [ number ] ; 
+var29 = number ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint8_t * var36 = var23 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var29 = func8 ( var29 , var36 [ var11 + var21 ] ) ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+var23 = var2 -> var24 [ number ] ; 
+var35 = ( var33 - var31 ) / ( double ) ( var29 - var26 ) ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint8_t * var36 = var23 ; 
+uint8_t * var4 = var25 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var4 [ var11 + var21 ] = func9 ( ( var36 [ var11 + var21 ] - var26 ) * var35 + var31 ) ; 
+var25 += var10 -> var37 [ number ] ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+break ; 
+case 2 : 
+for ( var13 = number ; var13 < var5 -> var18 ; var13 ++ ) { 
+Range * var19 = & var5 -> var20 [ var13 ] ; 
+const uint8_t var21 = var5 -> var22 [ var13 ] ; 
+const uint8_t * var23 = var2 -> var24 [ number ] ; 
+uint8_t * var25 = var10 -> var24 [ number ] ; 
+int var26 = round ( var19 -> var27 * var38 ) ; 
+int var29 = round ( var19 -> var30 * var38 ) ; 
+int var31 = round ( var19 -> var32 * var38 ) ; 
+int var33 = round ( var19 -> var34 * var38 ) ; 
+double var35 ; 
+if ( var26 < number ) { 
+var26 = var38 ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint16_t * var36 = ( const uint16_t * ) var23 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var26 = func7 ( var26 , var36 [ var11 + var21 ] ) ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+if ( var29 < number ) { 
+var23 = var2 -> var24 [ number ] ; 
+var29 = number ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint16_t * var36 = ( const uint16_t * ) var23 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var29 = func8 ( var29 , var36 [ var11 + var21 ] ) ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+var23 = var2 -> var24 [ number ] ; 
+var35 = ( var33 - var31 ) / ( double ) ( var29 - var26 ) ; 
+for ( var12 = number ; var12 < var1 -> var15 ; var12 ++ ) { 
+const uint16_t * var36 = ( const uint16_t * ) var23 ; 
+uint16_t * var4 = ( uint16_t * ) var25 ; 
+for ( var11 = number ; var11 < var5 -> var37 ; var11 += var9 ) 
+var4 [ var11 + var21 ] = func10 ( ( var36 [ var11 + var21 ] - var26 ) * var35 + var31 ) ; 
+var25 += var10 -> var37 [ number ] ; 
+var23 += var2 -> var37 [ number ] ; 
+} 
+} 
+} 
+if ( var2 != var10 ) 
+func4 ( & var2 ) ; 
+return func11 ( var7 , var10 ) ; 
+} 

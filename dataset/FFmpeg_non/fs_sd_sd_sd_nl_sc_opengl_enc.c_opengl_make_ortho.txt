@@ -1,0 +1,18 @@
+static void func1 ( float var1 [ number ] , float var2 , float var3 , 
+float var4 , float var5 , float var6 , float var7 ) 
+{ 
+float var8 = var3 + var2 ; 
+float var9 = var3 - var2 ; 
+float var10 = var5 + var4 ; 
+float var11 = var5 - var4 ; 
+float var12 = var7 + var6 ; 
+float var13 = var7 - var6 ; 
+memset ( var1 , number , number * sizeof ( float ) ) ; 
+var1 [ number ] = number / var9 ; 
+var1 [ number ] = number / var11 ; 
+var1 [ number ] = - number / var13 ; 
+var1 [ number ] = - var8 / var9 ; 
+var1 [ number ] = - var10 / var11 ; 
+var1 [ number ] = - var12 / var13 ; 
+var1 [ number ] = number ; 
+} 

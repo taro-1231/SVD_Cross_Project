@@ -1,0 +1,6 @@
+static void func1 ( AVCodecContext * var1 ) 
+{ 
+ADXContext * var2 = var1 -> var3 ; 
+memset ( var2 -> var4 , number , sizeof ( var2 -> var4 ) ) ; 
+var2 -> var5 = number ; 
+} 

@@ -1,0 +1,12 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ShowVolumeContext * var2 = var1 -> var3 ; 
+int var4 ; 
+if ( var2 -> var5 ) { 
+var4 = func2 ( & var2 -> var6 , var2 -> var5 , var7 , 
+var8 , var8 , var8 , var8 , number , var1 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,17 @@
+static void func1 ( uint8_t * var2 , uint8_t * var3 , 
+const uint8_t * var4 , const uint8_t * var5 , const uint8_t * var6 , 
+int var7 , uint32_t * var8 ) 
+{ 
+uint16_t * var9 = ( uint16_t * ) var2 ; 
+uint16_t * var10 = ( uint16_t * ) var3 ; 
+int32_t var11 = var8 [ var12 ] , var13 = var8 [ var14 ] , var15 = var8 [ var16 ] ; 
+int32_t var17 = var8 [ var18 ] , var19 = var8 [ var20 ] , var21 = var8 [ var22 ] ; 
+int var23 ; 
+for ( var23 = number ; var23 < var7 ; var23 ++ ) { 
+unsigned int var24 = var4 [ number * var23 ] + var4 [ number * var23 + number ] ; 
+unsigned int var25 = var5 [ number * var23 ] + var5 [ number * var23 + number ] ; 
+unsigned int var26 = var6 [ number * var23 ] + var6 [ number * var23 + number ] ; 
+var9 [ var23 ] = ( var11 * var26 + var13 * var24 + var15 * var25 + ( number << ( var1 - number ) ) ) >> ( var1 - number + number ) ; 
+var10 [ var23 ] = ( var17 * var26 + var19 * var24 + var21 * var25 + ( number << ( var1 - number ) ) ) >> ( var1 - number + number ) ; 
+} 
+} 

@@ -1,0 +1,10 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , int var3 , int var4 ) 
+{ 
+if ( var1 -> var5 == number ) { 
+return ; 
+} else if ( var1 -> var5 == number ) { 
+func2 ( var1 , var2 , var3 , var4 ) ; 
+} else { 
+func3 ( var1 , var2 , var3 , var4 ) ; 
+} 
+} 

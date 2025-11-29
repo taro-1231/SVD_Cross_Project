@@ -1,0 +1,53 @@
+static int func1 ( AACContext * var1 , SpectralBandReplication * var2 ) 
+{ 
+int var3 , var4 ; 
+int var5 = number ; 
+var2 -> var6 [ number ] = var2 -> var7 - var2 -> var8 . var9 ; 
+var2 -> var6 [ number ] = ( var2 -> var6 [ number ] + number ) >> number ; 
+memcpy ( var2 -> var10 , & var2 -> var11 [ var2 -> var8 . var9 ] , 
+( var2 -> var6 [ number ] + number ) * sizeof ( var2 -> var11 [ number ] ) ) ; 
+var2 -> var12 [ number ] = var2 -> var10 [ var2 -> var6 [ number ] ] - var2 -> var10 [ number ] ; 
+var2 -> var13 [ number ] = var2 -> var10 [ number ] ; 
+if ( var2 -> var13 [ number ] + var2 -> var12 [ number ] > number ) { 
+func2 ( var1 -> var14 , var15 , 
+str , var2 -> var13 [ number ] + var2 -> var12 [ number ] ) ; 
+return - number ; 
+} 
+if ( var2 -> var13 [ number ] > number ) { 
+func2 ( var1 -> var14 , var15 , str , var2 -> var13 [ number ] ) ; 
+return - number ; 
+} 
+var2 -> var16 [ number ] = var2 -> var10 [ number ] ; 
+var4 = var2 -> var6 [ number ] & number ; 
+for ( var3 = number ; var3 <= var2 -> var6 [ number ] ; var3 ++ ) 
+var2 -> var16 [ var3 ] = var2 -> var10 [ number * var3 - var4 ] ; 
+var4 = ( var2 -> var3 [ number ] << number ) / var2 -> var13 [ number ] ; 
+while ( var4 < number ) { 
+var4 <<= number ; 
+var5 ++ ; 
+} 
+var4 = func3 ( var4 - number ) ; 
+var4 = ( int ) ( ( ( int64_t ) var4 * var17 + number ) >> number ) ; 
+var4 = ( ( ( var4 + number ) >> number ) + ( ( number - var5 ) << number ) ) * var2 -> var8 . var18 ; 
+var2 -> var19 = ( var4 + number ) >> number ; 
+if ( var2 -> var19 < number ) 
+var2 -> var19 = number ; 
+var2 -> var19 = FFMAX ( number , lrintf ( var2 -> var8 . var18 * 
+log2f ( var2 -> var3 [ number ] / ( float ) var2 -> var13 [ number ] ) ) ) ; 
+if ( var2 -> var19 > number ) { 
+func2 ( var1 -> var14 , var15 , str , var2 -> var19 ) ; 
+return - number ; 
+} 
+var2 -> var20 [ number ] = var2 -> var16 [ number ] ; 
+var4 = number ; 
+for ( var3 = number ; var3 <= var2 -> var19 ; var3 ++ ) { 
+var4 += ( var2 -> var6 [ number ] - var4 ) / ( var2 -> var19 + number - var3 ) ; 
+var2 -> var20 [ var3 ] = var2 -> var16 [ var4 ] ; 
+} 
+if ( func4 ( var1 , var2 ) < number ) 
+return - number ; 
+func5 ( var2 ) ; 
+var2 -> var21 [ number ] . var22 = number ; 
+var2 -> var21 [ number ] . var22 = number ; 
+return number ; 
+} 

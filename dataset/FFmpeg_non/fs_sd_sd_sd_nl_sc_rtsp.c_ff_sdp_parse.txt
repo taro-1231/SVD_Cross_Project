@@ -1,0 +1,41 @@
+int func1 ( AVFormatContext * var1 , const char * var2 ) 
+{ 
+RTSPState * var3 = var1 -> var4 ; 
+const char * var5 ; 
+int var6 , var7 ; 
+char var8 [ number ] , * var9 ; 
+SDPParseState var10 = { { number } } , * var11 = & var10 ; 
+var5 = var2 ; 
+for ( ; ; ) { 
+var5 += strspn ( var5 , var12 ) ; 
+var6 = * var5 ; 
+if ( var6 == str ) 
+break ; 
+var5 ++ ; 
+if ( * var5 != str ) 
+goto var13 ; 
+var5 ++ ; 
+var9 = var8 ; 
+while ( * var5 != str && * var5 != str && * var5 != str ) { 
+if ( ( var9 - var8 ) < sizeof ( var8 ) - number ) 
+* var9 += * var5 ; 
+var5 ++ ; 
+} 
+* var9 = str ; 
+func2 ( var1 , var11 , var6 , var8 ) ; 
+var13 : 
+while ( * var5 != str && * var5 != str ) 
+var5 ++ ; 
+if ( * var5 == str ) 
+var5 ++ ; 
+} 
+for ( var7 = number ; var7 < var11 -> var14 ; var7 ++ ) 
+func3 ( & var11 -> var15 [ var7 ] ) ; 
+func3 ( & var11 -> var15 ) ; 
+for ( var7 = number ; var7 < var11 -> var16 ; var7 ++ ) 
+func3 ( & var11 -> var17 [ var7 ] ) ; 
+func3 ( & var11 -> var17 ) ; 
+var3 -> var5 = func4 ( var3 -> var18 + number , sizeof ( struct pollfd ) * number ) ; 
+if ( ! var3 -> var5 ) return func5 ( var19 ) ; 
+return number ; 
+} 

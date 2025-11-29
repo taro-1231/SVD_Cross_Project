@@ -1,0 +1,14 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+CropDetectContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+func3 ( var4 -> var8 , var9 , var6 ) ; 
+if ( var4 -> var10 < number ) 
+var4 -> var10 *= ( number << ( var6 -> var11 [ number ] . var12 + number ) ) - number ; 
+var4 -> var13 = var1 -> var14 - number ; 
+var4 -> var15 = var1 -> var16 - number ; 
+var4 -> var17 = number ; 
+var4 -> var18 = number ; 
+return number ; 
+} 

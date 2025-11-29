@@ -1,0 +1,988 @@
+static void func1 ( AACContext * var1 , ChannelElement * var2 ) 
+{ 
+const IndividualChannelStream * var3 = & var2 -> var4 [ number ] . var3 ; 
+INTFLOAT * var5 = var2 -> var4 [ number ] . var6 ; 
+INTFLOAT * var7 = var2 -> var4 [ number ] . var6 ; 
+int var8 , var9 , var10 , var11 = number ; 
+const uint16_t * var12 = var3 -> var13 ; 
+for ( var8 = number ; var8 < var3 -> var14 ; var8 ++ ) { 
+for ( var9 = number ; var9 < var3 -> var15 ; var9 ++ , var11 ++ ) { 
+if ( var2 -> var16 [ var11 ] && 
+var2 -> var4 [ number ] . var17 [ var11 ] < var18 && 
+var2 -> var4 [ number ] . var17 [ var11 ] < var18 ) { 
+for ( var10 = number ; var10 < var3 -> var19 [ var8 ] ; var10 ++ ) { 
+var1 -> var20 -> func2 ( var5 + var10 * number + var12 [ var9 ] , 
+var7 + var10 * number + var12 [ var9 ] , 
+var12 [ var9 + number ] - var12 [ var9 ] ) ; 
+for ( var10 = number ; var10 < var3 -> var19 [ var8 ] ; var10 ++ ) { 
+var1 -> var20 -> butterflies_float ( var5 + var10 * number + var12 [ var9 ] , 
+var7 + var10 * number + var12 [ var9 ] , 
+var12 [ var9 + number ] - var12 [ var9 ] ) ; 
+} 
+} 
+} 
+var5 += var3 -> var19 [ var8 ] * number ; 
+var7 += var3 -> var19 [ var8 ] * number ; 
+} 
+} 
+static void apply_intensity_stereo ( AACContext * var1 , 
+ChannelElement * var2 , int ms_present ) 
+{ 
+const IndividualChannelStream * var3 = & var2 -> var4 [ number ] . var3 ; 
+SingleChannelElement * sce1 = & var2 -> var4 [ number ] ; 
+INTFLOAT * coef0 = var2 -> var4 [ number ] . var6 , * coef1 = var2 -> var4 [ number ] . var6 ; 
+const uint16_t * var12 = var3 -> var13 ; 
+int var8 , var10 , var9 , var11 = number ; 
+int c ; 
+INTFLOAT scale ; 
+for ( var8 = number ; var8 < var3 -> var14 ; var8 ++ ) { 
+for ( var9 = number ; var9 < var3 -> var15 ; ) { 
+if ( sce1 -> var17 [ var11 ] == INTENSITY_BT || 
+sce1 -> var17 [ var11 ] == INTENSITY_BT2 ) { 
+const int bt_run_end = sce1 -> band_type_run_end [ var11 ] ; 
+for ( ; var9 < bt_run_end ; var9 ++ , var11 ++ ) { 
+c = - number + 2 * ( sce1 -> var17 [ var11 ] - 14 ) ; 
+if ( ms_present ) 
+c *= number - 2 * var2 -> var16 [ var11 ] ; 
+scale = c * sce1 -> sf [ var11 ] ; 
+for ( var10 = number ; var10 < var3 -> var19 [ var8 ] ; var10 ++ ) 
+var1 -> subband_scale ( coef1 + var10 * number + var12 [ var9 ] , 
+coef0 + var10 * number + var12 [ var9 ] , 
+scale , 
+23 , 
+var12 [ var9 + number ] - var12 [ var9 ] ) ; 
+var1 -> var20 -> vector_fmul_scalar ( coef1 + var10 * number + var12 [ var9 ] , 
+coef0 + var10 * number + var12 [ var9 ] , 
+scale , 
+var12 [ var9 + number ] - var12 [ var9 ] ) ; 
+} 
+} else { 
+int bt_run_end = sce1 -> band_type_run_end [ var11 ] ; 
+var11 += bt_run_end - var9 ; 
+var9 = bt_run_end ; 
+} 
+} 
+coef0 += var3 -> var19 [ var8 ] * number ; 
+coef1 += var3 -> var19 [ var8 ] * number ; 
+} 
+} 
+static int decode_cpe ( AACContext * var1 , GetBitContext * gb , ChannelElement * var2 ) 
+{ 
+int var9 , ret , common_window , ms_present = number ; 
+int eld_syntax = var1 -> oc [ number ] . m4ac . object_type == AOT_ER_AAC_ELD ; 
+common_window = eld_syntax || get_bits1 ( gb ) ; 
+if ( common_window ) { 
+if ( decode_ics_info ( var1 , & var2 -> var4 [ number ] . var3 , gb ) ) 
+return AVERROR_INVALIDDATA ; 
+var9 = var2 -> var4 [ number ] . var3 . use_kb_window [ number ] ; 
+var2 -> var4 [ number ] . var3 = var2 -> var4 [ number ] . var3 ; 
+var2 -> var4 [ number ] . var3 . use_kb_window [ number ] = var9 ; 
+if ( var2 -> var4 [ number ] . var3 . predictor_present && 
+( var1 -> oc [ number ] . m4ac . object_type != AOT_AAC_MAIN ) ) 
+if ( ( var2 -> var4 [ number ] . var3 . ltp . present = get_bits ( gb , number ) ) ) 
+decode_ltp ( & var2 -> var4 [ number ] . var3 . ltp , gb , var2 -> var4 [ number ] . var3 . var15 ) ; 
+ms_present = get_bits ( gb , 2 ) ; 
+if ( ms_present == 3 ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str ) ; 
+return AVERROR_INVALIDDATA ; 
+} else if ( ms_present ) 
+decode_mid_side_stereo ( var2 , gb , ms_present ) ; 
+} 
+if ( ( ret = decode_ics ( var1 , & var2 -> var4 [ number ] , gb , common_window , number ) ) ) 
+return ret ; 
+if ( ( ret = decode_ics ( var1 , & var2 -> var4 [ number ] , gb , common_window , number ) ) ) 
+return ret ; 
+if ( common_window ) { 
+if ( ms_present ) 
+func1 ( var1 , var2 ) ; 
+if ( var1 -> oc [ number ] . m4ac . object_type == AOT_AAC_MAIN ) { 
+apply_prediction ( var1 , & var2 -> var4 [ number ] ) ; 
+apply_prediction ( var1 , & var2 -> var4 [ number ] ) ; 
+} 
+} 
+apply_intensity_stereo ( var1 , var2 , ms_present ) ; 
+return number ; 
+} 
+static const float cce_scale [ ] = { 
+number . 09050773266525765921 , 
+number . 18920711500272106672 , 
+M_SQRT2 , 
+2 , 
+} ; 
+static int decode_cce ( AACContext * var1 , GetBitContext * gb , ChannelElement * che ) 
+{ 
+int num_gain = number ; 
+int c , var8 , sfb , ret ; 
+int sign ; 
+INTFLOAT scale ; 
+SingleChannelElement * sce = & che -> var4 [ number ] ; 
+ChannelCoupling * coup = & che -> coup ; 
+coup -> coupling_point = 2 * get_bits1 ( gb ) ; 
+coup -> num_coupled = get_bits ( gb , 3 ) ; 
+for ( c = number ; c <= coup -> num_coupled ; c ++ ) { 
+num_gain ++ ; 
+coup -> type [ c ] = get_bits1 ( gb ) ? TYPE_CPE : TYPE_SCE ; 
+coup -> id_select [ c ] = get_bits ( gb , 4 ) ; 
+if ( coup -> type [ c ] == TYPE_CPE ) { 
+coup -> ch_select [ c ] = get_bits ( gb , 2 ) ; 
+if ( coup -> ch_select [ c ] == 3 ) 
+num_gain ++ ; 
+} else 
+coup -> ch_select [ c ] = 2 ; 
+} 
+coup -> coupling_point += get_bits1 ( gb ) || ( coup -> coupling_point >> number ) ; 
+sign = get_bits ( gb , number ) ; 
+scale = AAC_RENAME ( cce_scale ) [ get_bits ( gb , 2 ) ] ; 
+if ( ( ret = decode_ics ( var1 , sce , gb , number , number ) ) ) 
+return ret ; 
+for ( c = number ; c < num_gain ; c ++ ) { 
+int var11 = number ; 
+int cge = number ; 
+int gain = number ; 
+INTFLOAT gain_cache = FIXR10 ( number . ) ; 
+if ( c ) { 
+cge = coup -> coupling_point == AFTER_IMDCT ? number : get_bits1 ( gb ) ; 
+gain = cge ? get_vlc2 ( gb , vlc_scalefactors . table , 7 , 3 ) - 60 : number ; 
+gain_cache = GET_GAIN ( scale , gain ) ; 
+} 
+if ( coup -> coupling_point == AFTER_IMDCT ) { 
+coup -> gain [ c ] [ number ] = gain_cache ; 
+} else { 
+for ( var8 = number ; var8 < sce -> var3 . var14 ; var8 ++ ) { 
+for ( sfb = number ; sfb < sce -> var3 . var15 ; sfb ++ , var11 ++ ) { 
+if ( sce -> var17 [ var11 ] != ZERO_BT ) { 
+if ( ! cge ) { 
+int t = get_vlc2 ( gb , vlc_scalefactors . table , 7 , 3 ) - 60 ; 
+if ( t ) { 
+int s = number ; 
+t = gain += t ; 
+if ( sign ) { 
+s -= 2 * ( t & 0x1 ) ; 
+t >>= number ; 
+} 
+gain_cache = GET_GAIN ( scale , t ) * s ; 
+} 
+} 
+coup -> gain [ c ] [ var11 ] = gain_cache ; 
+} 
+} 
+} 
+} 
+} 
+return number ; 
+} 
+static int decode_drc_channel_exclusions ( DynamicRangeControl * che_drc , 
+GetBitContext * gb ) 
+{ 
+int var9 ; 
+int num_excl_chan = number ; 
+do { 
+for ( var9 = number ; var9 < 7 ; var9 ++ ) 
+che_drc -> exclude_mask [ num_excl_chan ++ ] = get_bits1 ( gb ) ; 
+} while ( num_excl_chan < MAX_CHANNELS - 7 && get_bits1 ( gb ) ) ; 
+return num_excl_chan / 7 ; 
+} 
+static int decode_dynamic_range ( DynamicRangeControl * che_drc , 
+GetBitContext * gb ) 
+{ 
+int n = number ; 
+int drc_num_bands = number ; 
+int var9 ; 
+if ( get_bits1 ( gb ) ) { 
+che_drc -> pce_instance_tag = get_bits ( gb , 4 ) ; 
+skip_bits ( gb , 4 ) ; 
+n ++ ; 
+} 
+if ( get_bits1 ( gb ) ) { 
+n += decode_drc_channel_exclusions ( che_drc , gb ) ; 
+} 
+if ( get_bits1 ( gb ) ) { 
+che_drc -> band_incr = get_bits ( gb , 4 ) ; 
+che_drc -> interpolation_scheme = get_bits ( gb , 4 ) ; 
+n ++ ; 
+drc_num_bands += che_drc -> band_incr ; 
+for ( var9 = number ; var9 < drc_num_bands ; var9 ++ ) { 
+che_drc -> band_top [ var9 ] = get_bits ( gb , 8 ) ; 
+n ++ ; 
+} 
+} 
+if ( get_bits1 ( gb ) ) { 
+che_drc -> prog_ref_level = get_bits ( gb , 7 ) ; 
+skip_bits1 ( gb ) ; 
+n ++ ; 
+} 
+for ( var9 = number ; var9 < drc_num_bands ; var9 ++ ) { 
+che_drc -> dyn_rng_sgn [ var9 ] = get_bits1 ( gb ) ; 
+che_drc -> dyn_rng_ctl [ var9 ] = get_bits ( gb , 7 ) ; 
+n ++ ; 
+} 
+return n ; 
+} 
+static int decode_fill ( AACContext * var1 , GetBitContext * gb , int len ) { 
+uint8_t buf [ 256 ] ; 
+int var9 , major , minor ; 
+if ( len < 13 + 7 * 8 ) 
+goto unknown ; 
+get_bits ( gb , 13 ) ; len -= 13 ; 
+for ( var9 = number ; var9 + number < sizeof ( buf ) && len >= 8 ; var9 ++ , len -= 8 ) 
+buf [ var9 ] = get_bits ( gb , 8 ) ; 
+buf [ var9 ] = number ; 
+if ( var1 -> avctx -> debug & FF_DEBUG_PICT_INFO ) 
+av_log ( var1 -> avctx , AV_LOG_DEBUG , str , buf ) ; 
+if ( sscanf ( buf , str , & major , & minor ) == 2 ) { 
+var1 -> avctx -> internal -> skip_samples = 1024 ; 
+} 
+unknown : 
+skip_bits_long ( gb , len ) ; 
+return number ; 
+} 
+static int decode_extension_payload ( AACContext * var1 , GetBitContext * gb , int cnt , 
+ChannelElement * che , enum RawDataBlockType elem_type ) 
+{ 
+int crc_flag = number ; 
+int res = cnt ; 
+int type = get_bits ( gb , 4 ) ; 
+if ( var1 -> avctx -> debug & FF_DEBUG_STARTCODE ) 
+av_log ( var1 -> avctx , AV_LOG_DEBUG , str , type , cnt ) ; 
+switch ( type ) { 
+case EXT_SBR_DATA_CRC : 
+crc_flag ++ ; 
+case EXT_SBR_DATA : 
+if ( ! che ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str ) ; 
+return res ; 
+} else if ( ! var1 -> oc [ number ] . m4ac . sbr ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str ) ; 
+skip_bits_long ( gb , 8 * cnt - 4 ) ; 
+return res ; 
+} else if ( var1 -> oc [ number ] . m4ac . sbr == - number && var1 -> oc [ number ] . status == OC_LOCKED ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str ) ; 
+skip_bits_long ( gb , 8 * cnt - 4 ) ; 
+return res ; 
+} else if ( var1 -> oc [ number ] . m4ac . ps == - number && var1 -> oc [ number ] . status < OC_LOCKED && var1 -> avctx -> channels == number ) { 
+var1 -> oc [ number ] . m4ac . sbr = number ; 
+var1 -> oc [ number ] . m4ac . ps = number ; 
+var1 -> avctx -> profile = FF_PROFILE_AAC_HE_V2 ; 
+output_configure ( var1 , var1 -> oc [ number ] . layout_map , var1 -> oc [ number ] . layout_map_tags , 
+var1 -> oc [ number ] . status , number ) ; 
+} else { 
+var1 -> oc [ number ] . m4ac . sbr = number ; 
+var1 -> avctx -> profile = FF_PROFILE_AAC_HE ; 
+} 
+res = AAC_RENAME ( ff_decode_sbr_extension ) ( var1 , & che -> sbr , gb , crc_flag , cnt , elem_type ) ; 
+break ; 
+case EXT_DYNAMIC_RANGE : 
+res = decode_dynamic_range ( & var1 -> che_drc , gb ) ; 
+break ; 
+case EXT_FILL : 
+decode_fill ( var1 , gb , 8 * cnt - 4 ) ; 
+break ; 
+case EXT_FILL_DATA : 
+case EXT_DATA_ELEMENT : 
+default : 
+skip_bits_long ( gb , 8 * cnt - 4 ) ; 
+break ; 
+} ; 
+return res ; 
+} 
+static void apply_tns ( INTFLOAT coef [ 1024 ] , TemporalNoiseShaping * tns , 
+IndividualChannelStream * var3 , int decode ) 
+{ 
+const int mmm = FFMIN ( var3 -> tns_max_bands , var3 -> var15 ) ; 
+int w , filt , m , var9 ; 
+int bottom , top , order , start , end , size , inc ; 
+INTFLOAT lpc [ TNS_MAX_ORDER ] ; 
+INTFLOAT tmp [ TNS_MAX_ORDER + number ] ; 
+for ( w = number ; w < var3 -> num_windows ; w ++ ) { 
+bottom = var3 -> num_swb ; 
+for ( filt = number ; filt < tns -> n_filt [ w ] ; filt ++ ) { 
+top = bottom ; 
+bottom = FFMAX ( number , top - tns -> length [ w ] [ filt ] ) ; 
+order = tns -> order [ w ] [ filt ] ; 
+if ( order == number ) 
+continue ; 
+AAC_RENAME ( compute_lpc_coefs ) ( tns -> coef [ w ] [ filt ] , order , lpc , number , number , number ) ; 
+start = var3 -> var13 [ FFMIN ( bottom , mmm ) ] ; 
+end = var3 -> var13 [ FFMIN ( top , mmm ) ] ; 
+if ( ( size = end - start ) <= number ) 
+continue ; 
+if ( tns -> direction [ w ] [ filt ] ) { 
+inc = - number ; 
+start = end - number ; 
+} else { 
+inc = number ; 
+} 
+start += w * number ; 
+if ( decode ) { 
+for ( m = number ; m < size ; m ++ , start += inc ) 
+for ( var9 = number ; var9 <= FFMIN ( m , order ) ; var9 ++ ) 
+coef [ start ] -= AAC_MUL26 ( coef [ start - var9 * inc ] , lpc [ var9 - number ] ) ; 
+} else { 
+for ( m = number ; m < size ; m ++ , start += inc ) { 
+tmp [ number ] = coef [ start ] ; 
+for ( var9 = number ; var9 <= FFMIN ( m , order ) ; var9 ++ ) 
+coef [ start ] += AAC_MUL26 ( tmp [ var9 ] , lpc [ var9 - number ] ) ; 
+for ( var9 = order ; var9 > number ; var9 -- ) 
+tmp [ var9 ] = tmp [ var9 - number ] ; 
+} 
+} 
+} 
+} 
+} 
+static void windowing_and_mdct_ltp ( AACContext * var1 , INTFLOAT * out , 
+INTFLOAT * in , IndividualChannelStream * var3 ) 
+{ 
+const INTFLOAT * lwindow = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_long_1024 ) : AAC_RENAME ( ff_sine_1024 ) ; 
+const INTFLOAT * swindow = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_short_128 ) : AAC_RENAME ( ff_sine_128 ) ; 
+const INTFLOAT * lwindow_prev = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_long_1024 ) : AAC_RENAME ( ff_sine_1024 ) ; 
+const INTFLOAT * swindow_prev = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_short_128 ) : AAC_RENAME ( ff_sine_128 ) ; 
+if ( var3 -> window_sequence [ number ] != LONG_STOP_SEQUENCE ) { 
+var1 -> var20 -> vector_fmul ( in , in , lwindow_prev , 1024 ) ; 
+} else { 
+memset ( in , number , 448 * sizeof ( * in ) ) ; 
+var1 -> var20 -> vector_fmul ( in + 448 , in + 448 , swindow_prev , number ) ; 
+} 
+if ( var3 -> window_sequence [ number ] != LONG_START_SEQUENCE ) { 
+var1 -> var20 -> vector_fmul_reverse ( in + 1024 , in + 1024 , lwindow , 1024 ) ; 
+} else { 
+var1 -> var20 -> vector_fmul_reverse ( in + 1024 + 448 , in + 1024 + 448 , swindow , number ) ; 
+memset ( in + 1024 + 576 , number , 448 * sizeof ( * in ) ) ; 
+} 
+var1 -> mdct_ltp . mdct_calc ( & var1 -> mdct_ltp , out , in ) ; 
+} 
+static void apply_ltp ( AACContext * var1 , SingleChannelElement * sce ) 
+{ 
+const LongTermPrediction * ltp = & sce -> var3 . ltp ; 
+const uint16_t * var12 = sce -> var3 . var13 ; 
+int var9 , sfb ; 
+if ( sce -> var3 . window_sequence [ number ] != EIGHT_SHORT_SEQUENCE ) { 
+INTFLOAT * predTime = sce -> ret ; 
+INTFLOAT * predFreq = var1 -> buf_mdct ; 
+int16_t num_samples = 2048 ; 
+if ( ltp -> lag < 1024 ) 
+num_samples = ltp -> lag + 1024 ; 
+for ( var9 = number ; var9 < num_samples ; var9 ++ ) 
+predTime [ var9 ] = AAC_MUL30 ( sce -> ltp_state [ var9 + 2048 - ltp -> lag ] , ltp -> coef ) ; 
+memset ( & predTime [ var9 ] , number , ( 2048 - var9 ) * sizeof ( * predTime ) ) ; 
+var1 -> windowing_and_mdct_ltp ( var1 , predFreq , predTime , & sce -> var3 ) ; 
+if ( sce -> tns . present ) 
+var1 -> apply_tns ( predFreq , & sce -> tns , & sce -> var3 , number ) ; 
+for ( sfb = number ; sfb < FFMIN ( sce -> var3 . var15 , MAX_LTP_LONG_SFB ) ; sfb ++ ) 
+if ( ltp -> used [ sfb ] ) 
+for ( var9 = var12 [ sfb ] ; var9 < var12 [ sfb + number ] ; var9 ++ ) 
+sce -> var6 [ var9 ] += predFreq [ var9 ] ; 
+} 
+} 
+static void update_ltp ( AACContext * var1 , SingleChannelElement * sce ) 
+{ 
+IndividualChannelStream * var3 = & sce -> var3 ; 
+INTFLOAT * saved = sce -> saved ; 
+INTFLOAT * saved_ltp = sce -> var6 ; 
+const INTFLOAT * lwindow = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_long_1024 ) : AAC_RENAME ( ff_sine_1024 ) ; 
+const INTFLOAT * swindow = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_short_128 ) : AAC_RENAME ( ff_sine_128 ) ; 
+int var9 ; 
+if ( var3 -> window_sequence [ number ] == EIGHT_SHORT_SEQUENCE ) { 
+memcpy ( saved_ltp , saved , 512 * sizeof ( * saved_ltp ) ) ; 
+memset ( saved_ltp + 576 , number , 448 * sizeof ( * saved_ltp ) ) ; 
+var1 -> var20 -> vector_fmul_reverse ( saved_ltp + 448 , var1 -> buf_mdct + 960 , & swindow [ 64 ] , 64 ) ; 
+for ( var9 = number ; var9 < 64 ; var9 ++ ) 
+saved_ltp [ var9 + 512 ] = AAC_MUL31 ( var1 -> buf_mdct [ 1023 - var9 ] , swindow [ 63 - var9 ] ) ; 
+} else if ( var3 -> window_sequence [ number ] == LONG_START_SEQUENCE ) { 
+memcpy ( saved_ltp , var1 -> buf_mdct + 512 , 448 * sizeof ( * saved_ltp ) ) ; 
+memset ( saved_ltp + 576 , number , 448 * sizeof ( * saved_ltp ) ) ; 
+var1 -> var20 -> vector_fmul_reverse ( saved_ltp + 448 , var1 -> buf_mdct + 960 , & swindow [ 64 ] , 64 ) ; 
+for ( var9 = number ; var9 < 64 ; var9 ++ ) 
+saved_ltp [ var9 + 512 ] = AAC_MUL31 ( var1 -> buf_mdct [ 1023 - var9 ] , swindow [ 63 - var9 ] ) ; 
+} else { 
+var1 -> var20 -> vector_fmul_reverse ( saved_ltp , var1 -> buf_mdct + 512 , & lwindow [ 512 ] , 512 ) ; 
+for ( var9 = number ; var9 < 512 ; var9 ++ ) 
+saved_ltp [ var9 + 512 ] = AAC_MUL31 ( var1 -> buf_mdct [ 1023 - var9 ] , lwindow [ 511 - var9 ] ) ; 
+} 
+memcpy ( sce -> ltp_state , sce -> ltp_state + 1024 , 1024 * sizeof ( * sce -> ltp_state ) ) ; 
+memcpy ( sce -> ltp_state + 1024 , sce -> ret , 1024 * sizeof ( * sce -> ltp_state ) ) ; 
+memcpy ( sce -> ltp_state + 2048 , saved_ltp , 1024 * sizeof ( * sce -> ltp_state ) ) ; 
+} 
+static void imdct_and_windowing ( AACContext * var1 , SingleChannelElement * sce ) 
+{ 
+IndividualChannelStream * var3 = & sce -> var3 ; 
+INTFLOAT * in = sce -> var6 ; 
+INTFLOAT * out = sce -> ret ; 
+INTFLOAT * saved = sce -> saved ; 
+const INTFLOAT * swindow = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_short_128 ) : AAC_RENAME ( ff_sine_128 ) ; 
+const INTFLOAT * lwindow_prev = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_long_1024 ) : AAC_RENAME ( ff_sine_1024 ) ; 
+const INTFLOAT * swindow_prev = var3 -> use_kb_window [ number ] ? AAC_RENAME ( ff_aac_kbd_short_128 ) : AAC_RENAME ( ff_sine_128 ) ; 
+INTFLOAT * buf = var1 -> buf_mdct ; 
+INTFLOAT * temp = var1 -> temp ; 
+int var9 ; 
+if ( var3 -> window_sequence [ number ] == EIGHT_SHORT_SEQUENCE ) { 
+for ( var9 = number ; var9 < 1024 ; var9 += number ) 
+var1 -> mdct_small . imdct_half ( & var1 -> mdct_small , buf + var9 , in + var9 ) ; 
+} else { 
+var1 -> mdct . imdct_half ( & var1 -> mdct , buf , in ) ; 
+for ( var9 = number ; var9 < 1024 ; var9 ++ ) 
+buf [ var9 ] = ( buf [ var9 ] + 4 ) >> 3 ; 
+} 
+if ( ( var3 -> window_sequence [ number ] == ONLY_LONG_SEQUENCE || var3 -> window_sequence [ number ] == LONG_STOP_SEQUENCE ) && 
+( var3 -> window_sequence [ number ] == ONLY_LONG_SEQUENCE || var3 -> window_sequence [ number ] == LONG_START_SEQUENCE ) ) { 
+var1 -> var20 -> vector_fmul_window ( out , saved , buf , lwindow_prev , 512 ) ; 
+} else { 
+memcpy ( out , saved , 448 * sizeof ( * out ) ) ; 
+if ( var3 -> window_sequence [ number ] == EIGHT_SHORT_SEQUENCE ) { 
+var1 -> var20 -> vector_fmul_window ( out + 448 + number * number , saved + 448 , buf + number * number , swindow_prev , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( out + 448 + number * number , buf + number * number + 64 , buf + number * number , swindow , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( out + 448 + 2 * number , buf + number * number + 64 , buf + 2 * number , swindow , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( out + 448 + 3 * number , buf + 2 * number + 64 , buf + 3 * number , swindow , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( temp , buf + 3 * number + 64 , buf + 4 * number , swindow , 64 ) ; 
+memcpy ( out + 448 + 4 * number , temp , 64 * sizeof ( * out ) ) ; 
+} else { 
+var1 -> var20 -> vector_fmul_window ( out + 448 , saved + 448 , buf , swindow_prev , 64 ) ; 
+memcpy ( out + 576 , buf + 64 , 448 * sizeof ( * out ) ) ; 
+} 
+} 
+if ( var3 -> window_sequence [ number ] == EIGHT_SHORT_SEQUENCE ) { 
+memcpy ( saved , temp + 64 , 64 * sizeof ( * saved ) ) ; 
+var1 -> var20 -> vector_fmul_window ( saved + 64 , buf + 4 * number + 64 , buf + 5 * number , swindow , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( saved + 192 , buf + 5 * number + 64 , buf + 6 * number , swindow , 64 ) ; 
+var1 -> var20 -> vector_fmul_window ( saved + 320 , buf + 6 * number + 64 , buf + 7 * number , swindow , 64 ) ; 
+memcpy ( saved + 448 , buf + 7 * number + 64 , 64 * sizeof ( * saved ) ) ; 
+} else if ( var3 -> window_sequence [ number ] == LONG_START_SEQUENCE ) { 
+memcpy ( saved , buf + 512 , 448 * sizeof ( * saved ) ) ; 
+memcpy ( saved + 448 , buf + 7 * number + 64 , 64 * sizeof ( * saved ) ) ; 
+} else { 
+memcpy ( saved , buf + 512 , 512 * sizeof ( * saved ) ) ; 
+} 
+} 
+static void imdct_and_windowing_ld ( AACContext * var1 , SingleChannelElement * sce ) 
+{ 
+IndividualChannelStream * var3 = & sce -> var3 ; 
+INTFLOAT * in = sce -> var6 ; 
+INTFLOAT * out = sce -> ret ; 
+INTFLOAT * saved = sce -> saved ; 
+INTFLOAT * buf = var1 -> buf_mdct ; 
+int var9 ; 
+var1 -> mdct . imdct_half ( & var1 -> mdct_ld , buf , in ) ; 
+for ( var9 = number ; var9 < 1024 ; var9 ++ ) 
+buf [ var9 ] = ( buf [ var9 ] + 2 ) >> 2 ; 
+if ( var3 -> use_kb_window [ number ] ) { 
+memcpy ( out , saved , 192 * sizeof ( * out ) ) ; 
+var1 -> var20 -> vector_fmul_window ( out + 192 , saved + 192 , buf , AAC_RENAME ( ff_sine_128 ) , 64 ) ; 
+memcpy ( out + 320 , buf + 64 , 192 * sizeof ( * out ) ) ; 
+} else { 
+var1 -> var20 -> vector_fmul_window ( out , saved , buf , AAC_RENAME ( ff_sine_512 ) , 256 ) ; 
+} 
+memcpy ( saved , buf + 256 , 256 * sizeof ( * saved ) ) ; 
+} 
+static void imdct_and_windowing_eld ( AACContext * var1 , SingleChannelElement * sce ) 
+{ 
+INTFLOAT * in = sce -> var6 ; 
+INTFLOAT * out = sce -> ret ; 
+INTFLOAT * saved = sce -> saved ; 
+INTFLOAT * buf = var1 -> buf_mdct ; 
+int var9 ; 
+const int n = var1 -> oc [ number ] . m4ac . frame_length_short ? 480 : 512 ; 
+const int n2 = n >> number ; 
+const int n4 = n >> 2 ; 
+const INTFLOAT * const window = n == 480 ? AAC_RENAME ( ff_aac_eld_window_480 ) : 
+AAC_RENAME ( ff_aac_eld_window_512 ) ; 
+for ( var9 = number ; var9 < n2 ; var9 += 2 ) { 
+INTFLOAT temp ; 
+temp = in [ var9 ] ; in [ var9 ] = - in [ n - number - var9 ] ; in [ n - number - var9 ] = temp ; 
+temp = - in [ var9 + number ] ; in [ var9 + number ] = in [ n - 2 - var9 ] ; in [ n - 2 - var9 ] = temp ; 
+} 
+if ( n == 480 ) 
+var1 -> mdct480 -> imdct_half ( var1 -> mdct480 , buf , in , number , - number . f / ( 16 * 1024 * 960 ) ) ; 
+else 
+var1 -> mdct . imdct_half ( & var1 -> mdct_ld , buf , in ) ; 
+for ( var9 = number ; var9 < 1024 ; var9 ++ ) 
+buf [ var9 ] = ( buf [ var9 ] + number ) >> number ; 
+for ( var9 = number ; var9 < n ; var9 += 2 ) { 
+buf [ var9 ] = - buf [ var9 ] ; 
+} 
+for ( var9 = n4 ; var9 < n2 ; var9 ++ ) { 
+out [ var9 - n4 ] = AAC_MUL31 ( buf [ n2 - number - var9 ] , window [ var9 - n4 ] ) + 
+AAC_MUL31 ( saved [ var9 + n2 ] , window [ var9 + n - n4 ] ) + 
+AAC_MUL31 ( - saved [ n + n2 - number - var9 ] , window [ var9 + 2 * n - n4 ] ) + 
+AAC_MUL31 ( - saved [ 2 * n + n2 + var9 ] , window [ var9 + 3 * n - n4 ] ) ; 
+} 
+for ( var9 = number ; var9 < n2 ; var9 ++ ) { 
+out [ n4 + var9 ] = AAC_MUL31 ( buf [ var9 ] , window [ var9 + n2 - n4 ] ) + 
+AAC_MUL31 ( - saved [ n - number - var9 ] , window [ var9 + n2 + n - n4 ] ) + 
+AAC_MUL31 ( - saved [ n + var9 ] , window [ var9 + n2 + 2 * n - n4 ] ) + 
+AAC_MUL31 ( saved [ 2 * n + n - number - var9 ] , window [ var9 + n2 + 3 * n - n4 ] ) ; 
+} 
+for ( var9 = number ; var9 < n4 ; var9 ++ ) { 
+out [ n2 + n4 + var9 ] = AAC_MUL31 ( buf [ var9 + n2 ] , window [ var9 + n - n4 ] ) + 
+AAC_MUL31 ( - saved [ n2 - number - var9 ] , window [ var9 + 2 * n - n4 ] ) + 
+AAC_MUL31 ( - saved [ n + n2 + var9 ] , window [ var9 + 3 * n - n4 ] ) ; 
+} 
+memmove ( saved + n , saved , 2 * n * sizeof ( * saved ) ) ; 
+memcpy ( saved , buf , n * sizeof ( * saved ) ) ; 
+} 
+static void apply_channel_coupling ( AACContext * var1 , ChannelElement * cc , 
+enum RawDataBlockType type , int elem_id , 
+enum CouplingPoint coupling_point , 
+void ( * apply_coupling_method ) ( AACContext * var1 , SingleChannelElement * target , ChannelElement * cce , int index ) ) 
+{ 
+int var9 , c ; 
+for ( var9 = number ; var9 < MAX_ELEM_ID ; var9 ++ ) { 
+ChannelElement * cce = var1 -> che [ TYPE_CCE ] [ var9 ] ; 
+int index = number ; 
+if ( cce && cce -> coup . coupling_point == coupling_point ) { 
+ChannelCoupling * coup = & cce -> coup ; 
+for ( c = number ; c <= coup -> num_coupled ; c ++ ) { 
+if ( coup -> type [ c ] == type && coup -> id_select [ c ] == elem_id ) { 
+if ( coup -> ch_select [ c ] != number ) { 
+apply_coupling_method ( var1 , & cc -> var4 [ number ] , cce , index ) ; 
+if ( coup -> ch_select [ c ] != number ) 
+index ++ ; 
+} 
+if ( coup -> ch_select [ c ] != 2 ) 
+apply_coupling_method ( var1 , & cc -> var4 [ number ] , cce , index ++ ) ; 
+} else 
+index += number + ( coup -> ch_select [ c ] == 3 ) ; 
+} 
+} 
+} 
+} 
+static void spectral_to_sample ( AACContext * var1 , int samples ) 
+{ 
+int var9 , type ; 
+void ( * imdct_and_window ) ( AACContext * var1 , SingleChannelElement * sce ) ; 
+switch ( var1 -> oc [ number ] . m4ac . object_type ) { 
+case AOT_ER_AAC_LD : 
+imdct_and_window = imdct_and_windowing_ld ; 
+break ; 
+case AOT_ER_AAC_ELD : 
+imdct_and_window = imdct_and_windowing_eld ; 
+break ; 
+default : 
+imdct_and_window = var1 -> imdct_and_windowing ; 
+} 
+for ( type = 3 ; type >= number ; type -- ) { 
+for ( var9 = number ; var9 < MAX_ELEM_ID ; var9 ++ ) { 
+ChannelElement * che = var1 -> che [ type ] [ var9 ] ; 
+if ( che && che -> present ) { 
+if ( type <= TYPE_CPE ) 
+apply_channel_coupling ( var1 , che , type , var9 , BEFORE_TNS , AAC_RENAME ( apply_dependent_coupling ) ) ; 
+if ( var1 -> oc [ number ] . m4ac . object_type == AOT_AAC_LTP ) { 
+if ( che -> var4 [ number ] . var3 . predictor_present ) { 
+if ( che -> var4 [ number ] . var3 . ltp . present ) 
+var1 -> apply_ltp ( var1 , & che -> var4 [ number ] ) ; 
+if ( che -> var4 [ number ] . var3 . ltp . present && type == TYPE_CPE ) 
+var1 -> apply_ltp ( var1 , & che -> var4 [ number ] ) ; 
+} 
+} 
+if ( che -> var4 [ number ] . tns . present ) 
+var1 -> apply_tns ( che -> var4 [ number ] . var6 , & che -> var4 [ number ] . tns , & che -> var4 [ number ] . var3 , number ) ; 
+if ( che -> var4 [ number ] . tns . present ) 
+var1 -> apply_tns ( che -> var4 [ number ] . var6 , & che -> var4 [ number ] . tns , & che -> var4 [ number ] . var3 , number ) ; 
+if ( type <= TYPE_CPE ) 
+apply_channel_coupling ( var1 , che , type , var9 , BETWEEN_TNS_AND_IMDCT , AAC_RENAME ( apply_dependent_coupling ) ) ; 
+if ( type != TYPE_CCE || che -> coup . coupling_point == AFTER_IMDCT ) { 
+imdct_and_window ( var1 , & che -> var4 [ number ] ) ; 
+if ( var1 -> oc [ number ] . m4ac . object_type == AOT_AAC_LTP ) 
+var1 -> update_ltp ( var1 , & che -> var4 [ number ] ) ; 
+if ( type == TYPE_CPE ) { 
+imdct_and_window ( var1 , & che -> var4 [ number ] ) ; 
+if ( var1 -> oc [ number ] . m4ac . object_type == AOT_AAC_LTP ) 
+var1 -> update_ltp ( var1 , & che -> var4 [ number ] ) ; 
+} 
+if ( var1 -> oc [ number ] . m4ac . sbr > number ) { 
+AAC_RENAME ( ff_sbr_apply ) ( var1 , & che -> sbr , type , che -> var4 [ number ] . ret , che -> var4 [ number ] . ret ) ; 
+} 
+} 
+if ( type <= TYPE_CCE ) 
+apply_channel_coupling ( var1 , che , type , var9 , AFTER_IMDCT , AAC_RENAME ( apply_independent_coupling ) ) ; 
+{ 
+int j ; 
+for ( j = number ; j < samples ; j ++ ) { 
+che -> var4 [ number ] . ret [ j ] = ( int32_t ) av_clipl_int32 ( ( int64_t ) che -> var4 [ number ] . ret [ j ] << 7 ) + 0x8000 ; 
+if ( type == TYPE_CPE ) 
+che -> var4 [ number ] . ret [ j ] = ( int32_t ) av_clipl_int32 ( ( int64_t ) che -> var4 [ number ] . ret [ j ] << 7 ) + 0x8000 ; 
+} 
+} 
+che -> present = number ; 
+} else if ( che ) { 
+av_log ( var1 -> avctx , AV_LOG_VERBOSE , str , type , var9 ) ; 
+} 
+} 
+} 
+} 
+static int parse_adts_frame_header ( AACContext * var1 , GetBitContext * gb ) 
+{ 
+int size ; 
+AACADTSHeaderInfo hdr_info ; 
+uint8_t layout_map [ MAX_ELEM_ID * 4 ] [ 3 ] ; 
+int layout_map_tags , ret ; 
+size = avpriv_aac_parse_header ( gb , & hdr_info ) ; 
+if ( size > number ) { 
+if ( ! var1 -> warned_num_aac_frames && hdr_info . num_aac_frames != number ) { 
+avpriv_report_missing_feature ( var1 -> avctx , 
+str ) ; 
+var1 -> warned_num_aac_frames = number ; 
+} 
+push_output_configuration ( var1 ) ; 
+if ( hdr_info . chan_config ) { 
+var1 -> oc [ number ] . m4ac . chan_config = hdr_info . chan_config ; 
+if ( ( ret = set_default_channel_config ( var1 -> avctx , 
+layout_map , 
+& layout_map_tags , 
+hdr_info . chan_config ) ) < number ) 
+return ret ; 
+if ( ( ret = output_configure ( var1 , layout_map , layout_map_tags , 
+FFMAX ( var1 -> oc [ number ] . status , 
+OC_TRIAL_FRAME ) , number ) ) < number ) 
+return ret ; 
+} else { 
+var1 -> oc [ number ] . m4ac . chan_config = number ; 
+if ( var1 -> dmono_mode && var1 -> oc [ number ] . status == OC_NONE ) { 
+layout_map_tags = 2 ; 
+layout_map [ number ] [ number ] = layout_map [ number ] [ number ] = TYPE_SCE ; 
+layout_map [ number ] [ 2 ] = layout_map [ number ] [ 2 ] = AAC_CHANNEL_FRONT ; 
+layout_map [ number ] [ number ] = number ; 
+layout_map [ number ] [ number ] = number ; 
+if ( output_configure ( var1 , layout_map , layout_map_tags , 
+OC_TRIAL_FRAME , number ) ) 
+return - 7 ; 
+} 
+} 
+var1 -> oc [ number ] . m4ac . sample_rate = hdr_info . sample_rate ; 
+var1 -> oc [ number ] . m4ac . sampling_index = hdr_info . sampling_index ; 
+var1 -> oc [ number ] . m4ac . object_type = hdr_info . object_type ; 
+var1 -> oc [ number ] . m4ac . frame_length_short = number ; 
+if ( var1 -> oc [ number ] . status != OC_LOCKED || 
+var1 -> oc [ number ] . m4ac . chan_config != hdr_info . chan_config || 
+var1 -> oc [ number ] . m4ac . sample_rate != hdr_info . sample_rate ) { 
+var1 -> oc [ number ] . m4ac . sbr = - number ; 
+var1 -> oc [ number ] . m4ac . ps = - number ; 
+} 
+if ( ! hdr_info . crc_absent ) 
+skip_bits ( gb , 16 ) ; 
+} 
+return size ; 
+} 
+static int aac_decode_er_frame ( AVCodecContext * avctx , void * data , 
+int * got_frame_ptr , GetBitContext * gb ) 
+{ 
+AACContext * var1 = avctx -> priv_data ; 
+const MPEG4AudioConfig * const m4ac = & var1 -> oc [ number ] . m4ac ; 
+ChannelElement * che ; 
+int err , var9 ; 
+int samples = m4ac -> frame_length_short ? 960 : 1024 ; 
+int chan_config = m4ac -> chan_config ; 
+int aot = m4ac -> object_type ; 
+if ( aot == AOT_ER_AAC_LD || aot == AOT_ER_AAC_ELD ) 
+samples >>= number ; 
+var1 -> frame = data ; 
+if ( ( err = frame_configure_elements ( avctx ) ) < number ) 
+return err ; 
+var1 -> avctx -> profile = aot - number ; 
+var1 -> tags_mapped = number ; 
+if ( chan_config < number || ( chan_config >= 8 && chan_config < 11 ) || chan_config >= 13 ) { 
+avpriv_request_sample ( avctx , str , 
+chan_config ) ; 
+return AVERROR_INVALIDDATA ; 
+} 
+for ( var9 = number ; var9 < tags_per_config [ chan_config ] ; var9 ++ ) { 
+const int elem_type = aac_channel_layout_map [ chan_config - number ] [ var9 ] [ number ] ; 
+const int elem_id = aac_channel_layout_map [ chan_config - number ] [ var9 ] [ number ] ; 
+if ( ! ( che = get_che ( var1 , elem_type , elem_id ) ) ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , 
+str , 
+elem_type , elem_id ) ; 
+return AVERROR_INVALIDDATA ; 
+} 
+che -> present = number ; 
+if ( aot != AOT_ER_AAC_ELD ) 
+skip_bits ( gb , 4 ) ; 
+switch ( elem_type ) { 
+case TYPE_SCE : 
+err = decode_ics ( var1 , & che -> var4 [ number ] , gb , number , number ) ; 
+break ; 
+case TYPE_CPE : 
+err = decode_cpe ( var1 , gb , che ) ; 
+break ; 
+case TYPE_LFE : 
+err = decode_ics ( var1 , & che -> var4 [ number ] , gb , number , number ) ; 
+break ; 
+} 
+if ( err < number ) 
+return err ; 
+} 
+spectral_to_sample ( var1 , samples ) ; 
+var1 -> frame -> nb_samples = samples ; 
+var1 -> frame -> sample_rate = avctx -> sample_rate ; 
+* got_frame_ptr = number ; 
+skip_bits_long ( gb , get_bits_left ( gb ) ) ; 
+return number ; 
+} 
+static int aac_decode_frame_int ( AVCodecContext * avctx , void * data , 
+int * got_frame_ptr , GetBitContext * gb , AVPacket * avpkt ) 
+{ 
+AACContext * var1 = avctx -> priv_data ; 
+ChannelElement * che = NULL , * che_prev = NULL ; 
+enum RawDataBlockType elem_type , elem_type_prev = TYPE_END ; 
+int err , elem_id ; 
+int samples = number , multiplier , audio_found = number , pce_found = number ; 
+int is_dmono , sce_count = number ; 
+var1 -> frame = data ; 
+if ( show_bits ( gb , 12 ) == 0xfff ) { 
+if ( ( err = parse_adts_frame_header ( var1 , gb ) ) < number ) { 
+av_log ( avctx , AV_LOG_ERROR , str ) ; 
+goto fail ; 
+} 
+if ( var1 -> oc [ number ] . m4ac . sampling_index > 12 ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str , var1 -> oc [ number ] . m4ac . sampling_index ) ; 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+} 
+if ( ( err = frame_configure_elements ( avctx ) ) < number ) 
+goto fail ; 
+var1 -> avctx -> profile = var1 -> oc [ number ] . m4ac . object_type - number ; 
+var1 -> tags_mapped = number ; 
+while ( ( elem_type = get_bits ( gb , 3 ) ) != TYPE_END ) { 
+elem_id = get_bits ( gb , 4 ) ; 
+if ( avctx -> debug & FF_DEBUG_STARTCODE ) 
+av_log ( avctx , AV_LOG_DEBUG , str , elem_type , elem_id ) ; 
+if ( ! avctx -> channels && elem_type != TYPE_PCE ) { 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+if ( elem_type < TYPE_DSE ) { 
+if ( ! ( che = get_che ( var1 , elem_type , elem_id ) ) ) { 
+av_log ( var1 -> avctx , AV_LOG_ERROR , str , 
+elem_type , elem_id ) ; 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+samples = 1024 ; 
+che -> present = number ; 
+} 
+switch ( elem_type ) { 
+case TYPE_SCE : 
+err = decode_ics ( var1 , & che -> var4 [ number ] , gb , number , number ) ; 
+audio_found = number ; 
+sce_count ++ ; 
+break ; 
+case TYPE_CPE : 
+err = decode_cpe ( var1 , gb , che ) ; 
+audio_found = number ; 
+break ; 
+case TYPE_CCE : 
+err = decode_cce ( var1 , gb , che ) ; 
+break ; 
+case TYPE_LFE : 
+err = decode_ics ( var1 , & che -> var4 [ number ] , gb , number , number ) ; 
+audio_found = number ; 
+break ; 
+case TYPE_DSE : 
+err = skip_data_stream_element ( var1 , gb ) ; 
+break ; 
+case TYPE_PCE : { 
+uint8_t layout_map [ MAX_ELEM_ID * 4 ] [ 3 ] ; 
+int tags ; 
+push_output_configuration ( var1 ) ; 
+tags = decode_pce ( avctx , & var1 -> oc [ number ] . m4ac , layout_map , gb ) ; 
+if ( tags < number ) { 
+err = tags ; 
+break ; 
+} 
+if ( pce_found ) { 
+av_log ( avctx , AV_LOG_ERROR , 
+str ) ; 
+} else { 
+err = output_configure ( var1 , layout_map , tags , OC_TRIAL_PCE , number ) ; 
+if ( ! err ) 
+var1 -> oc [ number ] . m4ac . chan_config = number ; 
+pce_found = number ; 
+} 
+break ; 
+} 
+case TYPE_FIL : 
+if ( elem_id == 15 ) 
+elem_id += get_bits ( gb , 8 ) - number ; 
+if ( get_bits_left ( gb ) < 8 * elem_id ) { 
+av_log ( avctx , AV_LOG_ERROR , str overread_err ) ; 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+while ( elem_id > number ) 
+elem_id -= decode_extension_payload ( var1 , gb , elem_id , che_prev , elem_type_prev ) ; 
+err = number ; 
+break ; 
+default : 
+err = AVERROR_BUG ; 
+break ; 
+} 
+che_prev = che ; 
+elem_type_prev = elem_type ; 
+if ( err ) 
+goto fail ; 
+if ( get_bits_left ( gb ) < 3 ) { 
+av_log ( avctx , AV_LOG_ERROR , overread_err ) ; 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+} 
+if ( ! avctx -> channels ) { 
+* got_frame_ptr = number ; 
+return number ; 
+} 
+multiplier = ( var1 -> oc [ number ] . m4ac . sbr == number ) ? var1 -> oc [ number ] . m4ac . ext_sample_rate > var1 -> oc [ number ] . m4ac . sample_rate : number ; 
+samples <<= multiplier ; 
+spectral_to_sample ( var1 , samples ) ; 
+if ( var1 -> oc [ number ] . status && audio_found ) { 
+avctx -> sample_rate = var1 -> oc [ number ] . m4ac . sample_rate << multiplier ; 
+avctx -> frame_size = samples ; 
+var1 -> oc [ number ] . status = OC_LOCKED ; 
+} 
+if ( multiplier ) { 
+int side_size ; 
+const uint8_t * side = av_packet_get_side_data ( avpkt , AV_PKT_DATA_SKIP_SAMPLES , & side_size ) ; 
+if ( side && side_size >= 4 ) 
+AV_WL32 ( side , 2 * AV_RL32 ( side ) ) ; 
+} 
+if ( ! var1 -> frame -> data [ number ] && samples ) { 
+av_log ( avctx , AV_LOG_ERROR , str ) ; 
+err = AVERROR_INVALIDDATA ; 
+goto fail ; 
+} 
+if ( samples ) { 
+var1 -> frame -> nb_samples = samples ; 
+var1 -> frame -> sample_rate = avctx -> sample_rate ; 
+} else 
+av_frame_unref ( var1 -> frame ) ; 
+* got_frame_ptr = ! ! samples ; 
+is_dmono = var1 -> dmono_mode && sce_count == 2 && 
+var1 -> oc [ number ] . channel_layout == ( AV_CH_FRONT_LEFT | AV_CH_FRONT_RIGHT ) ; 
+if ( is_dmono ) { 
+if ( var1 -> dmono_mode == number ) 
+( ( AVFrame * ) data ) -> data [ number ] = ( ( AVFrame * ) data ) -> data [ number ] ; 
+else if ( var1 -> dmono_mode == 2 ) 
+( ( AVFrame * ) data ) -> data [ number ] = ( ( AVFrame * ) data ) -> data [ number ] ; 
+} 
+return number ; 
+fail : 
+pop_output_configuration ( var1 ) ; 
+return err ; 
+} 
+static int aac_decode_frame ( AVCodecContext * avctx , void * data , 
+int * got_frame_ptr , AVPacket * avpkt ) 
+{ 
+AACContext * var1 = avctx -> priv_data ; 
+const uint8_t * buf = avpkt -> data ; 
+int buf_size = avpkt -> size ; 
+GetBitContext gb ; 
+int buf_consumed ; 
+int buf_offset ; 
+int err ; 
+int new_extradata_size ; 
+const uint8_t * new_extradata = av_packet_get_side_data ( avpkt , 
+AV_PKT_DATA_NEW_EXTRADATA , 
+& new_extradata_size ) ; 
+int jp_dualmono_size ; 
+const uint8_t * jp_dualmono = av_packet_get_side_data ( avpkt , 
+AV_PKT_DATA_JP_DUALMONO , 
+& jp_dualmono_size ) ; 
+if ( new_extradata && number ) { 
+av_free ( avctx -> extradata ) ; 
+avctx -> extradata = av_mallocz ( new_extradata_size + 
+AV_INPUT_BUFFER_PADDING_SIZE ) ; 
+if ( ! avctx -> extradata ) 
+return AVERROR ( ENOMEM ) ; 
+avctx -> extradata_size = new_extradata_size ; 
+memcpy ( avctx -> extradata , new_extradata , new_extradata_size ) ; 
+push_output_configuration ( var1 ) ; 
+if ( decode_audio_specific_config ( var1 , var1 -> avctx , & var1 -> oc [ number ] . m4ac , 
+avctx -> extradata , 
+avctx -> extradata_size * 8LL , number ) < number ) { 
+pop_output_configuration ( var1 ) ; 
+return AVERROR_INVALIDDATA ; 
+} 
+} 
+var1 -> dmono_mode = number ; 
+if ( jp_dualmono && jp_dualmono_size > number ) 
+var1 -> dmono_mode = number + * jp_dualmono ; 
+if ( var1 -> force_dmono_mode >= number ) 
+var1 -> dmono_mode = var1 -> force_dmono_mode ; 
+if ( INT_MAX / 8 <= buf_size ) 
+return AVERROR_INVALIDDATA ; 
+if ( ( err = init_get_bits8 ( & gb , buf , buf_size ) ) < number ) 
+return err ; 
+switch ( var1 -> oc [ number ] . m4ac . object_type ) { 
+case AOT_ER_AAC_LC : 
+case AOT_ER_AAC_LTP : 
+case AOT_ER_AAC_LD : 
+case AOT_ER_AAC_ELD : 
+err = aac_decode_er_frame ( avctx , data , got_frame_ptr , & gb ) ; 
+break ; 
+default : 
+err = aac_decode_frame_int ( avctx , data , got_frame_ptr , & gb , avpkt ) ; 
+} 
+if ( err < number ) 
+return err ; 
+buf_consumed = ( get_bits_count ( & gb ) + 7 ) >> 3 ; 
+for ( buf_offset = buf_consumed ; buf_offset < buf_size ; buf_offset ++ ) 
+if ( buf [ buf_offset ] ) 
+break ; 
+return buf_size > buf_offset ? buf_consumed : buf_size ; 
+} 
+static av_cold int aac_decode_close ( AVCodecContext * avctx ) 
+{ 
+AACContext * var1 = avctx -> priv_data ; 
+int var9 , type ; 
+for ( var9 = number ; var9 < MAX_ELEM_ID ; var9 ++ ) { 
+for ( type = number ; type < 4 ; type ++ ) { 
+if ( var1 -> che [ type ] [ var9 ] ) 
+AAC_RENAME ( ff_aac_sbr_ctx_close ) ( & var1 -> che [ type ] [ var9 ] -> sbr ) ; 
+av_freep ( & var1 -> che [ type ] [ var9 ] ) ; 
+} 
+} 
+ff_mdct_end ( & var1 -> mdct ) ; 
+ff_mdct_end ( & var1 -> mdct_small ) ; 
+ff_mdct_end ( & var1 -> mdct_ld ) ; 
+ff_mdct_end ( & var1 -> mdct_ltp ) ; 
+ff_imdct15_uninit ( & var1 -> mdct480 ) ; 
+av_freep ( & var1 -> var20 ) ; 
+return number ; 
+} 
+static void aacdec_init ( AACContext * c ) 
+{ 
+c -> imdct_and_windowing = imdct_and_windowing ; 
+c -> apply_ltp = apply_ltp ; 
+c -> apply_tns = apply_tns ; 
+c -> windowing_and_mdct_ltp = windowing_and_mdct_ltp ; 
+c -> update_ltp = update_ltp ; 
+c -> vector_pow43 = vector_pow43 ; 
+c -> subband_scale = subband_scale ; 
+if ( ARCH_MIPS ) 
+ff_aacdec_init_mips ( c ) ; 
+} 
+static const AVOption options [ ] = { 
+{ str , str , 
+offsetof ( AACContext , force_dmono_mode ) , AV_OPT_TYPE_INT , { . i64 = - number } , - number , 2 , 
+AACDEC_FLAGS , str } , 
+{ str , str , number , AV_OPT_TYPE_CONST , { . i64 = - number } , INT_MIN , INT_MAX , AACDEC_FLAGS , str } , 
+{ str , str , number , AV_OPT_TYPE_CONST , { . i64 = number } , INT_MIN , INT_MAX , AACDEC_FLAGS , str } , 
+{ str , str , number , AV_OPT_TYPE_CONST , { . i64 = 2 } , INT_MIN , INT_MAX , AACDEC_FLAGS , str } , 
+{ str , str , number , AV_OPT_TYPE_CONST , { . i64 = number } , INT_MIN , INT_MAX , AACDEC_FLAGS , str } , 
+{ NULL } , 
+} ; 
+static const AVClass aac_decoder_class = { 
+. class_name = str , 
+. item_name = av_default_item_name , 
+. option = options , 
+. version = LIBAVUTIL_VERSION_INT , 
+} ; 
+static const AVProfile profiles [ ] = { 
+{ FF_PROFILE_AAC_MAIN , str } , 
+{ FF_PROFILE_AAC_LOW , str } , 
+{ FF_PROFILE_AAC_SSR , str } , 
+{ FF_PROFILE_AAC_LTP , str } , 
+{ FF_PROFILE_AAC_HE , str } , 
+{ FF_PROFILE_AAC_HE_V2 , str } , 
+{ FF_PROFILE_AAC_LD , str } , 
+{ FF_PROFILE_AAC_ELD , str } , 
+{ FF_PROFILE_UNKNOWN } , 
+} ; 

@@ -1,0 +1,4 @@
+struct AVMD5 * func1 ( void ) 
+{ 
+return func2 ( sizeof ( struct AVMD5 ) ) ; 
+} 

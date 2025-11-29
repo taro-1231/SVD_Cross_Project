@@ -1,0 +1,107 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 ) 
+{ 
+const int var8 = var1 -> var9 -> var10 [ var4 ] . var8 ; 
+const int var11 = var1 -> var11 ; 
+const int var12 = var2 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var15 = var2 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var16 = var3 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var17 = var3 -> var13 [ ( var8 + number ) % var1 -> var14 ] ; 
+const int var18 = number - var5 ; 
+const int var19 = var2 -> var20 ; 
+const int var21 = var2 -> var22 ; 
+int var23 , var24 ; 
+if ( var7 ) { 
+const int var25 = var16 * ( var11 == number ? - number : number ) ; 
+const int var26 = var17 * ( var11 == number ? - number : number ) ; 
+for ( var23 = number ; var23 < var21 ; var23 ++ ) { 
+const uint8_t * var27 = var2 -> var28 [ ( var8 + number ) % var1 -> var14 ] ; 
+const uint8_t * var29 = var2 -> var28 [ ( var8 + number ) % var1 -> var14 ] ; 
+uint8_t * var30 = var3 -> var28 [ ( var8 + number ) % var1 -> var14 ] + var6 * var16 ; 
+uint8_t * var31 = var3 -> var28 [ ( var8 + number ) % var1 -> var14 ] + var6 * var17 ; 
+uint8_t * const var32 = var30 + var16 * ( var1 -> var33 - number ) ; 
+uint8_t * const var34 = ( var11 ? var32 : var30 ) ; 
+uint8_t * const var35 = var31 + var17 * ( var1 -> var33 - number ) ; 
+uint8_t * const var36 = ( var11 ? var35 : var31 ) ; 
+for ( var24 = number ; var24 < var19 ; var24 ++ ) { 
+const int var37 = var27 [ var23 ] - number ; 
+const int var38 = var29 [ var23 ] - number ; 
+uint8_t * var39 ; 
+int var40 ; 
+for ( var40 = number + var37 ; var40 < number ; var40 ++ ) { 
+var39 = var34 + var23 + var25 * var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + var37 - number ; var40 > number ; var40 -- ) { 
+var39 = var34 + var23 + var25 * var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + var38 ; var40 < number ; var40 ++ ) { 
+var39 = var36 + var23 + var26 * var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + var38 - number ; var40 > number ; var40 -- ) { 
+var39 = var36 + var23 + var26 * var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+var27 += var12 ; 
+var29 += var15 ; 
+var30 += var16 ; 
+var31 += var17 ; 
+} 
+} 
+} else { 
+const uint8_t * var27 = var2 -> var28 [ ( var8 + number ) % var1 -> var14 ] ; 
+const uint8_t * var29 = var2 -> var28 [ ( var8 + number ) % var1 -> var14 ] ; 
+uint8_t * var41 = var3 -> var28 [ var8 ] + var6 ; 
+uint8_t * var30 = var3 -> var28 [ ( var8 + number ) % var1 -> var14 ] + var6 ; 
+uint8_t * var31 = var3 -> var28 [ ( var8 + number ) % var1 -> var14 ] + var6 ; 
+if ( var11 ) { 
+var41 += var1 -> var33 - number ; 
+var30 += var1 -> var33 - number ; 
+var31 += var1 -> var33 - number ; 
+} 
+for ( var24 = number ; var24 < var19 ; var24 ++ ) { 
+for ( var23 = number ; var23 < var21 ; var23 ++ ) { 
+const int var37 = var27 [ var23 ] - number ; 
+const int var38 = var29 [ var23 ] - number ; 
+uint8_t * var39 ; 
+int var40 ; 
+for ( var40 = number + var37 ; var40 < number ; var40 ++ ) { 
+if ( var11 ) 
+var39 = var30 - var40 ; 
+else 
+var39 = var30 + var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + number ; var40 < number + var37 ; var40 ++ ) { 
+if ( var11 ) 
+var39 = var30 - var40 ; 
+else 
+var39 = var30 + var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + var38 ; var40 < number ; var40 ++ ) { 
+if ( var11 ) 
+var39 = var31 - var40 ; 
+else 
+var39 = var31 + var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+for ( var40 = number + number ; var40 < number + var38 ; var40 ++ ) { 
+if ( var11 ) 
+var39 = var31 - var40 ; 
+else 
+var39 = var31 + var40 ; 
+func2 ( var39 , var18 , number ) ; 
+} 
+} 
+var27 += var12 ; 
+var29 += var15 ; 
+var30 += var16 ; 
+var31 += var17 ; 
+} 
+} 
+func3 ( var1 , var3 , var8 , ( var8 + number ) % var1 -> var14 ) ; 
+func3 ( var1 , var3 , var8 , ( var8 + number ) % var1 -> var14 ) ; 
+} 

@@ -1,0 +1,21 @@
+AVFilterBufferRef * func1 ( const AVFrame * var1 , 
+int var2 ) 
+{ 
+AVFilterBufferRef * var3 ; 
+int var4 = func2 ( var1 ) ; 
+int64_t var5 = func3 ( var1 ) ; 
+if ( var5 && func4 ( var5 ) != func2 ( var1 ) ) { 
+func5 ( var6 , var7 , str ) ; 
+return var6 ; 
+} 
+var3 = func6 ( 
+( uint8_t ** ) var1 -> var8 , var1 -> var9 [ number ] , var2 , 
+var1 -> var10 , var1 -> var11 , var4 , var5 ) ; 
+if ( ! var3 ) 
+return var6 ; 
+if ( func7 ( var3 , var1 ) < number ) { 
+var3 -> var12 -> var13 [ number ] = var6 ; 
+func8 ( & var3 ) ; 
+} 
+return var3 ; 
+} 

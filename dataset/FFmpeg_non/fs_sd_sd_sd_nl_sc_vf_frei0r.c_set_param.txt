@@ -1,0 +1,42 @@
+static int func1 ( AVFilterContext * var1 , f0r_param_info_t var2 , int var3 , char * var4 ) 
+{ 
+Frei0rContext * var5 = var1 -> var6 ; 
+union { 
+double var7 ; 
+f0r_param_color_t var8 ; 
+f0r_param_position_t var9 ; 
+} var10 ; 
+char * var11 ; 
+uint8_t var12 [ number ] ; 
+switch ( var2 . var13 ) { 
+case var14 : 
+if ( ! strcmp ( var4 , str ) ) var10 . var7 = number ; 
+else if ( ! strcmp ( var4 , str ) ) var10 . var7 = number ; 
+else goto var16 ; 
+break ; 
+case var17 : 
+var10 . var7 = strtod ( var4 , & var11 ) ; 
+if ( * var11 || var10 . var7 == var18 ) 
+goto var16 ; 
+break ; 
+case var19 : 
+if ( sscanf ( var4 , str , & var10 . var8 . var20 , & var10 . var8 . var21 , & var10 . var8 . var22 ) != number ) { 
+if ( func2 ( var12 , var4 , - number , var1 ) < number ) 
+goto var16 ; 
+var10 . var8 . var20 = var12 [ number ] / number ; 
+var10 . var8 . var21 = var12 [ number ] / number ; 
+var10 . var8 . var22 = var12 [ number ] / number ; 
+} 
+break ; 
+case var23 : 
+if ( sscanf ( var4 , str , & var10 . var9 . var24 , & var10 . var9 . var15 ) != number ) 
+goto var16 ; 
+break ; 
+} 
+var5 -> func3 ( var5 -> var25 , & var10 , var3 ) ; 
+return number ; 
+var16 : 
+func4 ( var1 , var26 , str , 
+var4 , var2 . var27 ) ; 
+return func5 ( var28 ) ; 
+} 

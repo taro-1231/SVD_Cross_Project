@@ -1,0 +1,17 @@
+int func1 ( InputStream * var1 ) 
+{ 
+AVCodecContext * var2 = var1 -> var3 ; 
+if ( ! var2 -> var4 ) { 
+char var5 [ number ] ; 
+if ( var2 -> var6 > var1 -> var7 ) 
+return number ; 
+var2 -> var4 = func2 ( var2 -> var6 ) ; 
+if ( ! var2 -> var4 ) 
+return number ; 
+func3 ( var5 , sizeof ( var5 ) , 
+var2 -> var6 , var2 -> var4 ) ; 
+av_log ( NULL , AV_LOG_WARNING , str 
+str , var1 -> file_index , var1 -> st -> index , var5 ) ; 
+} 
+return number ; 
+} 

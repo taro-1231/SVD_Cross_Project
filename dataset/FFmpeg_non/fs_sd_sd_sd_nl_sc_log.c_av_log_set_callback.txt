@@ -1,0 +1,4 @@
+void func1 ( void ( * var1 ) ( void * , int , const char * , va_list ) ) 
+{ 
+var2 = var1 ; 
+} 

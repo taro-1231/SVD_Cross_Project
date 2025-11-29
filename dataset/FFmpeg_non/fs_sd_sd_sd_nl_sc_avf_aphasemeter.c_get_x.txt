@@ -1,0 +1,4 @@
+static inline int func1 ( float var1 , int var2 ) 
+{ 
+return ( var1 + number ) / number * ( var2 - number ) ; 
+} 

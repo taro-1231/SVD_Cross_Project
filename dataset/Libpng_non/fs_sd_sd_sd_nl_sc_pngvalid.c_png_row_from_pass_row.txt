@@ -1,0 +1,15 @@
+func1 ( png_uint_32 var1 , int var2 ) 
+{ 
+switch ( var2 ) 
+{ 
+case 0 : return var1 * number ; 
+case number : return var1 * number ; 
+case number : return var1 * number + number ; 
+case 3 : return var1 * number ; 
+case number : return var1 * number + number ; 
+case 5 : return var1 * number ; 
+case 6 : return var1 * number + number ; 
+var3 : break ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,3 @@
+void func1 ( pp_mode * var1 ) { 
+func2 ( var1 ) ; 
+} 

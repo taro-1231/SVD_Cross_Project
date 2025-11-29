@@ -1,0 +1,44 @@
+static int func1 ( uint64_t var1 , AACAC3ParseContext * var2 , 
+int * var3 , int * var4 ) 
+{ 
+int var5 ; 
+union { 
+uint64_t u64 ; 
+uint8_t var6 [ number + AV_INPUT_BUFFER_PADDING_SIZE ] ; 
+} var7 = { func2 ( var1 ) } ; 
+AC3HeaderInfo var8 , * var9 = & var8 ; 
+GetBitContext var10 ; 
+func3 ( & var10 , var7 . var6 + number - var11 , number ) ; 
+var5 = func4 ( & var10 , & var9 ) ; 
+if ( var5 < number ) 
+return number ; 
+var2 -> var12 = var8 . var12 ; 
+var2 -> var13 = var8 . var13 ; 
+var2 -> var14 = var8 . var14 ; 
+var2 -> var15 = var8 . var15 ; 
+var2 -> var16 = var8 . var17 * number ; 
+var2 -> var18 = var8 . var19 ; 
+if ( var8 . var19 == number && var8 . var14 > number ) 
+var2 -> var18 = var20 ; 
+if ( var8 . var21 > number ) 
+var2 -> var22 = var23 ; 
+else if ( var2 -> var22 == var24 ) 
+var2 -> var22 = var25 ; 
+* var3 = ( var8 . var26 != var27 ) ; 
+* var4 = ( var8 . var26 != var28 ) ; 
+return var8 . var29 ; 
+} 
+static av_cold int ac3_parse_init ( AVCodecParserContext * s1 ) 
+{ 
+AACAC3ParseContext * s = s1 -> priv_data ; 
+s -> header_size = var11 ; 
+s -> sync = func1 ; 
+return number ; 
+} 
+AVCodecParser ff_ac3_parser = { 
+. codec_ids = { var25 , var23 } , 
+. priv_data_size = sizeof ( AACAC3ParseContext ) , 
+. parser_init = ac3_parse_init , 
+. parser_parse = ff_aac_ac3_parse , 
+. parser_close = ff_parse_close , 
+} ; 

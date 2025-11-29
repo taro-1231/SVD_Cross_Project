@@ -1,0 +1,24 @@
+static void func1 ( int32_t ** var1 , int16_t ( * var2 ) [ number ] , 
+int var3 , int var4 , int var5 ) 
+{ 
+int var6 , var7 ; 
+int64_t var8 , var9 ; 
+if ( var3 == number ) { 
+for ( var6 = number ; var6 < var5 ; var6 ++ ) { 
+var8 = var9 = number ; 
+for ( var7 = number ; var7 < var4 ; var7 ++ ) { 
+var8 += ( int64_t ) var1 [ var7 ] [ var6 ] * var2 [ var7 ] [ number ] ; 
+var9 += ( int64_t ) var1 [ var7 ] [ var6 ] * var2 [ var7 ] [ number ] ; 
+} 
+var1 [ number ] [ var6 ] = ( var8 + number ) >> number ; 
+var1 [ number ] [ var6 ] = ( var9 + number ) >> number ; 
+} 
+} else if ( var3 == number ) { 
+for ( var6 = number ; var6 < var5 ; var6 ++ ) { 
+var8 = number ; 
+for ( var7 = number ; var7 < var4 ; var7 ++ ) 
+var8 += ( int64_t ) var1 [ var7 ] [ var6 ] * var2 [ var7 ] [ number ] ; 
+var1 [ number ] [ var6 ] = ( var8 + number ) >> number ; 
+} 
+} 
+} 

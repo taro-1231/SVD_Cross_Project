@@ -1,0 +1,4 @@
+static unsigned func1 ( const uint8_t * var1 , unsigned var2 ) 
+{ 
+return func2 ( func3 ( var3 ) , number , var1 , var2 ) ; 
+} 

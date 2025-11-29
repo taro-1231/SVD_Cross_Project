@@ -1,0 +1,18 @@
+static int func1 ( AVFilterContext ** var1 , int * var2 , 
+const char * var3 , const char * var4 ) 
+{ 
+AVFilterGraph * var5 = ( * var1 ) -> var5 ; 
+AVFilterContext * var6 ; 
+int var7 ; 
+var7 = func2 ( & var6 , 
+func3 ( var3 ) , 
+var3 , var4 , var8 , var5 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+var7 = func4 ( * var1 , * var2 , var6 , number ) ; 
+if ( var7 < number ) 
+return var7 ; 
+* var1 = var6 ; 
+* var2 = number ; 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+func1 ( png_structp var1 , png_const_charp var2 ) 
+{ 
+png_const_structp var3 = var1 ; 
+png_store * var4 = voidcast ( png_store * , png_get_error_ptr ( var3 ) ) ; 
+if ( ! var4 -> var5 ) 
+func2 ( var4 , var3 , var2 , number ; 
+else 
+var4 -> var6 = number ; 
+} 

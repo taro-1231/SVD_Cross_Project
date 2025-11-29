@@ -1,0 +1,5 @@
+static void func1 ( void ) 
+{ 
+printf ( str ) ; 
+func2 ( var1 , number ) ; 
+} 

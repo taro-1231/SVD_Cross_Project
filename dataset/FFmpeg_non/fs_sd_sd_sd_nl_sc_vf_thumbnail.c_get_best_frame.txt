@@ -1,0 +1,30 @@
+static AVFrame * func1 ( AVFilterContext * var1 ) 
+{ 
+AVFrame * var2 ; 
+ThumbContext * var3 = var1 -> var4 ; 
+int var5 , var6 , var7 = number ; 
+int var8 = var3 -> var9 ; 
+double var10 [ var11 ] = { number } , var12 , var13 = - number ; 
+for ( var6 = number ; var6 < func2 ( var10 ) ; var6 ++ ) { 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) 
+var10 [ var6 ] += ( double ) var3 -> var15 [ var5 ] . var14 [ var6 ] ; 
+var10 [ var6 ] /= var8 ; 
+} 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) { 
+var12 = func3 ( var3 -> var15 [ var5 ] . var14 , var10 ) ; 
+if ( var5 == number || var12 < var13 ) 
+var7 = var5 , var13 = var12 ; 
+} 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) { 
+memset ( var3 -> var15 [ var5 ] . var14 , number , sizeof ( var3 -> var15 [ var5 ] . var14 ) ) ; 
+if ( var5 != var7 ) 
+func4 ( & var3 -> var15 [ var5 ] . var16 ) ; 
+} 
+var3 -> var9 = number ; 
+var2 = var3 -> var15 [ var7 ] . var16 ; 
+av_log ( var1 , AV_LOG_INFO , str 
+str , var7 , 
+var2 -> pts * av_q2d ( var3 -> tb ) , var8 ) ; 
+var3 -> var15 [ var7 ] . var16 = var17 ; 
+return var2 ; 
+} 

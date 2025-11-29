@@ -1,0 +1,4 @@
+const AVClass * func1 ( void ) 
+{ 
+return & var1 ; 
+} 

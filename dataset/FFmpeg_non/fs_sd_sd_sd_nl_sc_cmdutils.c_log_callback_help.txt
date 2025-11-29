@@ -1,0 +1,4 @@
+void func1 ( void * var1 , int var2 , const char * var3 , va_list var4 ) 
+{ 
+vfprintf ( var5 , var3 , var4 ) ; 
+} 

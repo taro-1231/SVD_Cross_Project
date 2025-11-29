@@ -1,0 +1,4 @@
+int func1 ( int var1 ) 
+{ 
+return var1 >= str && var1 <= str ; 
+} 

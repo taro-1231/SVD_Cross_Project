@@ -1,0 +1,23 @@
+static void func1 ( AVFormatContext * var1 , struct playlist * var2 , 
+enum AVMediaType var3 ) 
+{ 
+int var4 = number ; 
+int var5 ; 
+for ( var5 = number ; var5 < var2 -> var6 -> var7 ; var5 ++ ) { 
+AVStream * var8 = var1 -> var9 [ var2 -> var10 + var5 ] ; 
+if ( var8 -> var11 -> var12 != var3 ) 
+continue ; 
+for ( ; var4 < var2 -> var13 ; var4 ++ ) { 
+struct rendition * var14 = var2 -> var15 [ var4 ] ; 
+if ( var14 -> var3 != var3 ) 
+continue ; 
+if ( var14 -> var16 [ number ] ) 
+func2 ( & var8 -> var17 , str , var14 -> var16 , number ) ; 
+if ( var14 -> var18 [ number ] ) 
+func2 ( & var8 -> var17 , str , var14 -> var18 , number ) ; 
+var8 -> var19 |= var14 -> var19 ; 
+} 
+if ( var4 >= var2 -> var13 ) 
+break ; 
+} 
+} 

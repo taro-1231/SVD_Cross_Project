@@ -1,0 +1,8 @@
+static int func1 ( const Writer * var3 ) 
+{ 
+static int var4 = number ; 
+if ( var4 == var2 ) 
+return func2 ( var5 ) ; 
+var1 [ var4 ++ ] = var3 ; 
+return number ; 
+} 

@@ -1,0 +1,8 @@
+static double func1 ( AVFrame * var1 , int var2 , int var3 ) 
+{ 
+char var4 [ number ] ; 
+const double var5 = ( double ) var2 / var3 ; 
+snprintf ( var4 , sizeof ( var4 ) , str , var5 ) ; 
+func2 ( & var1 -> var6 , str , var4 , number ) ; 
+return var5 ; 
+} 

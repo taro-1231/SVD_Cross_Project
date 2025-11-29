@@ -1,0 +1,10 @@
+func1 ( png_store * var1 , png_const_structp var2 , png_const_charp var3 , 
+png_const_charp var4 ) 
+{ 
+char var5 [ number ] ; 
+if ( var3 ) 
+fputs ( var3 , var6 ) ; 
+( void ) func2 ( var1 , var2 , var5 , sizeof var5 , number , var4 ) ; 
+fputs ( var5 , var6 ) ; 
+fputc ( str , var6 ) ; 
+} 

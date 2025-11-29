@@ -1,0 +1,17 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+EightSvxContext * var2 = var1 -> var3 ; 
+if ( var1 -> var4 < number || var1 -> var4 > number ) { 
+func2 ( var1 , var5 , str ) ; 
+return var6 ; 
+} 
+switch ( var1 -> var7 -> var8 ) { 
+case var9 : var2 -> var10 = var11 ; break ; 
+case var12 : var2 -> var10 = var13 ; break ; 
+var14 : 
+func2 ( var1 , var5 , str , var1 -> var7 -> var8 ) ; 
+return var6 ; 
+} 
+var1 -> var15 = var16 ; 
+return number ; 
+} 

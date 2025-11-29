@@ -1,0 +1,159 @@
+LRESULT CALLBACK func1 ( HWND var1 , UINT var2 , WPARAM var3 , 
+LPARAM var4 ) 
+{ 
+static HINSTANCE var5 ; 
+static HDC var6 ; 
+static PAINTSTRUCT var7 ; 
+static HMENU var8 ; 
+static BITMAPFILEHEADER * var9 ; 
+static BITMAPINFOHEADER * var10 ; 
+static BYTE * var11 ; 
+static int var12 , var13 ; 
+static int var14 , var15 ; 
+static int var16 ; 
+static png_color var17 = { number , number , number } ; 
+static BOOL var18 = var19 ; 
+static BYTE * var20 = var21 ; 
+static BYTE * var22 = var21 ; 
+static TCHAR var23 [ var24 ] ; 
+static TCHAR var25 [ var24 ] ; 
+static TCHAR * var26 = var21 ; 
+static int var27 ; 
+static int var28 ; 
+BOOL var29 ; 
+switch ( var2 ) 
+{ 
+case var30 : 
+var5 = ( ( LPCREATESTRUCT ) var4 ) -> var5 ; 
+func2 ( var1 ) ; 
+strcpy ( var23 , str ) ; 
+if ( var31 [ number ] != str ) 
+{ 
+strcpy ( var23 , var31 ) ; 
+func3 ( var23 , & var26 , & var27 , 
+& var28 ) ; 
+if ( ! func4 ( var1 , var23 , 
+& var11 , & var14 , & var15 , & var16 , & var17 ) ) 
+return number ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+} 
+return number ; 
+case var32 : 
+var12 = func7 ( var4 ) ; 
+var13 = func8 ( var4 ) ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+return number ; 
+case var33 : 
+var8 = func9 ( var1 ) ; 
+if ( var11 ) 
+func10 ( var8 , var34 , var35 ) ; 
+else 
+func10 ( var8 , var34 , var36 ) ; 
+return number ; 
+case var37 : 
+var8 = func9 ( var1 ) ; 
+switch ( func7 ( var3 ) ) 
+{ 
+case var38 : 
+if ( ! func11 ( var1 , var23 , var25 ) ) 
+return number ; 
+func3 ( var23 , & var26 , & var27 , 
+& var28 ) ; 
+if ( ! func4 ( var1 , var23 , 
+& var11 , & var14 , & var15 , & var16 , & var17 ) ) 
+return number ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+return number ; 
+case var34 : 
+if ( ! func12 ( var1 , var23 , var25 ) ) 
+return number ; 
+func13 ( func14 ( var21 , var39 ) ) ; 
+func15 ( var19 ) ; 
+var29 = func16 ( var23 , var22 , var12 , var13 , 
+var17 ) ; 
+func15 ( var40 ) ; 
+func13 ( func14 ( var21 , var41 ) ) ; 
+if ( ! var29 ) 
+func17 ( var1 , func18 ( str ) , 
+var42 , var43 | var44 ) ; 
+return number ; 
+case var45 : 
+if ( func19 ( var26 , var27 , & var28 , 
+var21 , var23 ) ) 
+{ 
+if ( strcmp ( var23 , str ) == number ) 
+return number ; 
+if ( ! func4 ( var1 , var23 , & var11 , 
+& var14 , & var15 , & var16 , & var17 ) ) 
+return number ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+} 
+return number ; 
+case var46 : 
+if ( func19 ( var26 , var27 , & var28 , 
+var23 , var21 ) ) 
+{ 
+if ( strcmp ( var23 , str ) == number ) 
+return number ; 
+if ( ! func4 ( var1 , var23 , & var11 , & var14 , 
+& var15 , & var16 , & var17 ) ) 
+return number ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+} 
+return number ; 
+case var47 : 
+if ( var20 != var21 ) 
+{ 
+free ( var20 ) ; 
+var20 = var21 ; 
+} 
+if ( var26 != var21 ) 
+{ 
+free ( var26 ) ; 
+var26 = var21 ; 
+} 
+exit ( number ) ; 
+return number ; 
+case var48 : 
+var18 = ! var18 ; 
+if ( var18 ) 
+func20 ( var8 , var48 , var49 ) ; 
+else 
+func20 ( var8 , var48 , var50 ) ; 
+func5 ( var1 , var21 , var19 ) ; 
+func6 ( var1 , & var20 , & var22 , var12 , var13 , 
+var11 , var14 , var15 , var16 , var18 ) ; 
+return number ; 
+case var51 : 
+func21 ( var5 , func18 ( str ) , var1 , var52 ) ; 
+return number ; 
+} 
+break ; 
+case var53 : 
+var6 = func22 ( var1 , & var7 ) ; 
+if ( var20 ) 
+func23 ( var6 , number , number , var12 , var13 , number , number , 
+number , var13 , var22 , ( BITMAPINFO * ) var20 , var54 ) ; 
+func24 ( var1 , & var7 ) ; 
+return number ; 
+case var55 : 
+if ( var9 ) 
+{ 
+free ( var9 ) ; 
+var9 = var21 ; 
+} 
+func25 ( number ) ; 
+return number ; 
+} 
+return func26 ( var1 , var2 , var3 , var4 ) ; 
+} 

@@ -1,0 +1,90 @@
+int func1 ( AudioConvert * var1 , AudioData * var2 , AudioData * var3 ) 
+{ 
+int var4 = number ; 
+int var5 = var3 -> var6 ; 
+int var7 ; 
+if ( var1 -> var8 ) { 
+func2 ( var1 -> var9 , var10 , str , 
+var5 , func3 ( var1 -> var11 ) , 
+func3 ( var1 -> var12 ) ) ; 
+return func4 ( var1 -> var8 , var2 , var3 ) ; 
+} 
+if ( var1 -> var13 ) { 
+int var14 = func5 ( var3 -> var14 , var2 -> var14 ) ; 
+int var15 = func5 ( var3 -> var15 , var2 -> var15 ) ; 
+int var16 = func6 ( var5 , var1 -> var15 ) ; 
+if ( ! ( var14 % var1 -> var14 ) && var15 >= var16 ) { 
+var5 = var16 ; 
+var4 = number ; 
+} 
+} 
+func2 ( var1 -> var9 , var10 , str , var5 , 
+func3 ( var1 -> var11 ) , 
+func3 ( var1 -> var12 ) , 
+var4 ? var1 -> var17 : var1 -> var18 ) ; 
+if ( var1 -> var19 ) { 
+ChannelMapInfo * var20 = & var1 -> var9 -> var21 ; 
+if ( ! func7 ( var1 -> var12 , var1 -> var22 ) ) { 
+func2 ( var1 -> var9 , var23 , str ) ; 
+return func8 ( var24 ) ; 
+} 
+if ( var20 -> var25 ) { 
+if ( func7 ( var1 -> var11 , var1 -> var22 ) ) { 
+conv_func_flat * func9 = var4 ? var1 -> func10 : 
+var1 -> func11 ; 
+for ( var7 = number ; var7 < var1 -> var26 ; var7 ++ ) 
+if ( var20 -> var27 [ var7 ] >= number ) 
+func9 ( var2 -> var28 [ var7 ] , var3 -> var28 [ var20 -> var27 [ var7 ] ] , var5 ) ; 
+} else { 
+uint8_t * var28 [ var29 ] ; 
+conv_func_deinterleave * func9 = var4 ? 
+var1 -> func12 : 
+var1 -> func13 ; 
+for ( var7 = number ; var7 < var1 -> var22 ; var7 ++ ) 
+var28 [ var20 -> var30 [ var7 ] ] = var2 -> var28 [ var7 ] ; 
+func9 ( var28 , var3 -> var28 [ number ] , var5 , var1 -> var22 ) ; 
+} 
+} 
+if ( var20 -> var31 || var20 -> var32 ) { 
+for ( var7 = number ; var7 < var1 -> var26 ; var7 ++ ) { 
+if ( var20 -> var33 [ var7 ] ) 
+memcpy ( var2 -> var28 [ var7 ] , var2 -> var28 [ var20 -> var33 [ var7 ] ] , 
+var5 * var2 -> var34 ) ; 
+else if ( var20 -> var35 [ var7 ] ) 
+func14 ( & var2 -> var28 [ var7 ] , number , var5 , number , var1 -> var12 ) ; 
+} 
+} 
+} else { 
+switch ( var1 -> var36 ) { 
+case var37 : { 
+if ( ! var3 -> var38 ) 
+var5 *= var3 -> var22 ; 
+if ( var4 ) { 
+for ( var7 = number ; var7 < var1 -> var26 ; var7 ++ ) 
+var1 -> func10 ( var2 -> var28 [ var7 ] , var3 -> var28 [ var7 ] , var5 ) ; 
+} else { 
+for ( var7 = number ; var7 < var1 -> var26 ; var7 ++ ) 
+var1 -> func11 ( var2 -> var28 [ var7 ] , var3 -> var28 [ var7 ] , var5 ) ; 
+} 
+break ; 
+} 
+case var39 : 
+if ( var4 ) 
+var1 -> func15 ( var2 -> var28 [ number ] , var3 -> var28 , var5 , 
+var1 -> var22 ) ; 
+else 
+var1 -> func16 ( var2 -> var28 [ number ] , var3 -> var28 , var5 , var1 -> var22 ) ; 
+break ; 
+case var40 : 
+if ( var4 ) 
+var1 -> func12 ( var2 -> var28 , var3 -> var28 [ number ] , var5 , 
+var1 -> var22 ) ; 
+else 
+var1 -> func13 ( var2 -> var28 , var3 -> var28 [ number ] , var5 , 
+var1 -> var22 ) ; 
+break ; 
+} 
+} 
+var2 -> var6 = var3 -> var6 ; 
+return number ; 
+} 

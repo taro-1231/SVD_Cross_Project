@@ -1,0 +1,10 @@
+static void func1 ( OutputStream * var1 ) 
+{ 
+OutputFile * var2 = var3 [ var1 -> var4 ] ; 
+int var5 ; 
+var1 -> var6 = var7 | var8 ; 
+if ( var2 -> var9 ) { 
+for ( var5 = number ; var5 < var2 -> var10 -> var11 ; var5 ++ ) 
+var12 [ var2 -> var13 + var5 ] -> var6 = var7 | var8 ; 
+} 
+} 

@@ -1,0 +1,9 @@
+static void SET_TYPE ( func1 ) ( void * var1 , double * var2 , int var3 , 
+int var4 ) 
+{ 
+int var5 ; 
+FELEM * var6 = ( ( FELEM * ) var1 ) + var3 * var4 ; 
+for ( var5 = number ; var5 < var4 ; var5 ++ ) { 
+func2 ( var6 [ var5 ] , var2 [ var5 ] ) ; 
+} 
+} 

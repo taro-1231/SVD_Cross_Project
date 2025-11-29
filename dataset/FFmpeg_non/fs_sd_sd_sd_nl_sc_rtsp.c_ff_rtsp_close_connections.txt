@@ -1,0 +1,7 @@
+void func1 ( AVFormatContext * var1 ) 
+{ 
+RTSPState * var2 = var1 -> var3 ; 
+if ( var2 -> var4 != var2 -> var5 ) func2 ( var2 -> var4 ) ; 
+func2 ( var2 -> var5 ) ; 
+var2 -> var5 = var2 -> var4 = var6 ; 
+} 

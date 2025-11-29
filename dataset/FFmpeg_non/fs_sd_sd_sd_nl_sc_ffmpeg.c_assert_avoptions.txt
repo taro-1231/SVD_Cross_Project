@@ -1,0 +1,8 @@
+void func1 ( AVDictionary * var1 ) 
+{ 
+AVDictionaryEntry * var2 ; 
+if ( ( var2 = func2 ( var1 , str , var3 , var4 ) ) ) { 
+func3 ( var3 , var5 , str , var2 -> var6 ) ; 
+func4 ( number ) ; 
+} 
+} 

@@ -1,0 +1,9 @@
+static int func1 ( const struct keypoint * var1 ) 
+{ 
+int var2 = number ; 
+while ( var1 ) { 
+var2 ++ ; 
+var1 = var1 -> var3 ; 
+} 
+return var2 ; 
+} 

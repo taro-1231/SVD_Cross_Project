@@ -1,0 +1,11 @@
+static void func1 ( FFServerStream * var1 ) 
+{ 
+FFServerStream ** var2 ; 
+var2 = & var3 . var4 ; 
+while ( * var2 ) { 
+if ( * var2 == var1 ) 
+* var2 = ( * var2 ) -> var5 ; 
+else 
+var2 = & ( * var2 ) -> var5 ; 
+} 
+} 

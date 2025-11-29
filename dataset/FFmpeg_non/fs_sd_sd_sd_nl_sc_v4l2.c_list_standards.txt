@@ -1,0 +1,21 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+int var2 ; 
+struct video_data * var3 = var1 -> var4 ; 
+struct v4l2_standard var5 ; 
+if ( var3 -> var6 == number ) 
+return ; 
+for ( var5 . var7 = number ; ; var5 . var7 ++ ) { 
+if ( func2 ( var3 -> var8 , var9 , & var5 ) < number ) { 
+var2 = func3 ( var10 ) ; 
+if ( var2 == func3 ( var11 ) ) { 
+break ; 
+} else { 
+func4 ( var1 , var12 , str , func5 ( var2 ) ) ; 
+return ; 
+} 
+} 
+func4 ( var1 , AV_LOG_INFO , str PRIx64 str , 
+var5 . var7 , ( uint64_t ) var5 . id , var5 . name ) ; 
+} 
+} 

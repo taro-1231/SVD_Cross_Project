@@ -1,0 +1,97 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+KLVPacket var4 ; 
+int64_t var5 = number ; 
+int var6 ; 
+var2 -> var7 = var8 ; 
+var2 -> var9 = number ; 
+if ( ! func2 ( var1 -> var10 , var11 , number ) ) { 
+func3 ( var1 , var12 , str ) ; 
+return var14 ; 
+} 
+func4 ( var1 -> var10 , - number , var15 ) ; 
+var2 -> var16 = var1 ; 
+var2 -> var17 = func5 ( var1 -> var10 ) ; 
+func6 ( var1 ) ; 
+while ( ! func7 ( var1 -> var10 ) ) { 
+const MXFMetadataReadTableEntry * var18 ; 
+if ( func8 ( & var4 , var1 -> var10 ) < number ) { 
+if ( func9 ( var2 ) <= number ) 
+break ; 
+else 
+continue ; 
+} 
+func10 ( var1 , str , var4 . var13 ) ; 
+func3 ( var1 , AV_LOG_TRACE , str PRIu64 str PRIx64 str , var4 . var21 , var4 . var20 ) ; 
+if ( func11 ( var4 . var13 , var22 ) || 
+func11 ( var4 . var13 , var23 ) || 
+func11 ( var4 . var13 , var24 ) || 
+func11 ( var4 . var13 , var25 ) ) { 
+if ( ! var2 -> var26 ) { 
+func3 ( var2 -> var16 , var12 , str ) ; 
+return var14 ; 
+} 
+if ( ! var2 -> var26 -> var5 ) { 
+int64_t var27 = 
+func12 ( var2 -> var26 -> var28 + 
+var2 -> var26 -> var29 , var2 -> var26 -> var30 ) + 
+func12 ( var2 -> var26 -> var31 , var2 -> var26 -> var30 ) + 
+func12 ( var2 -> var26 -> var32 , var2 -> var26 -> var30 ) ; 
+if ( var2 -> var33 == var34 ) { 
+var2 -> var26 -> var5 = func5 ( var1 -> var10 ) ; 
+var2 -> var26 -> var35 = var4 . var21 ; 
+} else { 
+var2 -> var26 -> var5 = var27 ; 
+} 
+} 
+if ( ! var5 ) 
+var5 = var4 . var20 ; 
+if ( func13 ( var2 ) <= number ) 
+break ; 
+continue ; 
+} else if ( func14 ( var4 . var13 ) && var2 -> var26 ) { 
+if ( func9 ( var2 ) <= number ) 
+break ; 
+else if ( var2 -> var36 ) 
+continue ; 
+} 
+for ( var18 = var37 ; var18 -> var19 ; var18 ++ ) { 
+if ( func11 ( var4 . var13 , var18 -> var13 ) ) { 
+if ( ( var6 = func15 ( var2 , var4 , var18 -> var19 , var18 -> var38 , var18 -> var39 ) ) < number ) 
+goto var40 ; 
+break ; 
+} else { 
+func3 ( var1 , AV_LOG_VERBOSE , str PRIxUID str , 
+UID_ARG ( var4 . var13 ) ) ; 
+} 
+} 
+if ( ! var18 -> var19 ) 
+func16 ( var1 -> var10 , var4 . var21 ) ; 
+} 
+if ( ! var5 ) { 
+func3 ( var1 , var12 , str ) ; 
+var6 = var14 ; 
+goto var40 ; 
+} 
+func4 ( var1 -> var10 , var5 , var41 ) ; 
+func17 ( var2 ) ; 
+if ( ( var6 = func18 ( var2 ) ) < number ) 
+goto var40 ; 
+func19 ( var2 ) ; 
+if ( ( var6 = func20 ( var2 ) ) < number ) 
+goto var40 ; 
+if ( var2 -> var42 > number ) { 
+func3 ( var2 -> var16 , var43 , str , 
+var2 -> var42 , var2 -> var44 [ number ] . var45 ) ; 
+} else if ( var2 -> var42 == number && var2 -> var33 == var34 ) { 
+func3 ( var2 -> var16 , var12 , str ) ; 
+var6 = var14 ; 
+goto var40 ; 
+} 
+func21 ( var1 ) ; 
+return number ; 
+var40 : 
+func22 ( var1 ) ; 
+return var6 ; 
+} 

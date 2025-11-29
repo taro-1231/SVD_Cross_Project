@@ -1,0 +1,35 @@
+static void func1 ( Mpeg1Context * var1 ) 
+{ 
+MpegEncContext * var2 = & var1 -> var3 ; 
+int var4 , var5 ; 
+int var6 ; 
+func2 ( & var2 -> var7 , number ) ; 
+var2 -> var8 -> var9 = func3 ( & var2 -> var7 , number ) ; 
+var2 -> var8 -> var10 = func3 ( & var2 -> var7 , number ) ; 
+var2 -> var11 = func4 ( & var2 -> var7 ) ; 
+var2 -> var12 = func3 ( & var2 -> var7 , number ) ; 
+if ( ! var2 -> var12 ) { 
+var2 -> var12 = number ; 
+func5 ( var2 -> var8 , var13 , str ) ; 
+} 
+var4 = func3 ( & var2 -> var7 , number ) ; 
+var5 = func3 ( & var2 -> var7 , number ) ; 
+var2 -> var14 |= ( var4 << number ) ; 
+var2 -> var15 |= ( var5 << number ) ; 
+var6 = func3 ( & var2 -> var7 , number ) ; 
+var2 -> bit_rate += ( var6 << 18 ) * 400LL ; 
+func6 ( & var2 -> var7 , str ) ; 
+var2 -> var8 -> var16 += func3 ( & var2 -> var7 , number ) * number * number << number ; 
+var2 -> var17 = func4 ( & var2 -> var7 ) ; 
+if ( var2 -> var8 -> var18 & var19 ) 
+var2 -> var17 = number ; 
+var1 -> var20 . var21 = func3 ( & var2 -> var7 , number ) + number ; 
+var1 -> var20 . var22 = func3 ( & var2 -> var7 , number ) + number ; 
+func7 ( var2 -> var8 , str ) ; 
+var2 -> var23 = var2 -> var8 -> var23 = var24 ; 
+if ( var2 -> var8 -> var25 & var26 ) 
+func5 ( var2 -> var8 , AV_LOG_DEBUG , 
+str PRId64 str , 
+var2 -> var8 -> var9 , var2 -> var8 -> var10 , var2 -> var11 , var2 -> var12 , 
+var2 -> var8 -> var16 , var2 -> bit_rate ) ; 
+} 

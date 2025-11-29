@@ -1,0 +1,38 @@
+static av_cold int func1 ( AC3EncodeContext * var1 , int var2 , 
+uint64_t * var3 ) 
+{ 
+int var4 ; 
+if ( var2 < number || var2 > var5 ) 
+return func2 ( var6 ) ; 
+if ( * var3 > number ) 
+return func2 ( var6 ) ; 
+var4 = * var3 ; 
+if ( ! var4 ) 
+var4 = func3 ( var2 ) ; 
+var1 -> var7 = ! ! ( var4 & var8 ) ; 
+var1 -> var2 = var2 ; 
+var1 -> var9 = var2 - var1 -> var7 ; 
+var1 -> var10 = var1 -> var7 ? var1 -> var9 + number : - number ; 
+if ( var1 -> var7 ) 
+var4 -= var8 ; 
+switch ( var4 ) { 
+case var11 : var1 -> var12 = var13 ; break ; 
+case var14 : var1 -> var12 = var15 ; break ; 
+case var16 : var1 -> var12 = var17 ; break ; 
+case var18 : var1 -> var12 = var19 ; break ; 
+case var20 : var1 -> var12 = var21 ; break ; 
+case var22 : 
+case var23 : var1 -> var12 = var24 ; break ; 
+case var25 : 
+case var26 : var1 -> var12 = var27 ; break ; 
+var28 : 
+return func2 ( var6 ) ; 
+} 
+var1 -> var29 = ( var1 -> var12 & number ) && var1 -> var12 != var13 ; 
+var1 -> var30 = var1 -> var12 & number ; 
+var1 -> var31 = var32 [ var1 -> var12 ] [ var1 -> var7 ] ; 
+* var3 = var4 ; 
+if ( var1 -> var7 ) 
+* var3 |= var8 ; 
+return number ; 
+} 

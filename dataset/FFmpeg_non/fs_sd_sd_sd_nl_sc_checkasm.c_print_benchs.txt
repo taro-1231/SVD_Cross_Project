@@ -1,0 +1,16 @@
+static void func1 ( CheckasmFunc * var1 ) 
+{ 
+if ( var1 ) { 
+func1 ( var1 -> var2 [ number ] ) ; 
+if ( var1 -> var3 . var4 || var1 -> var3 . var5 ) { 
+CheckasmFuncVersion * var6 = & var1 -> var3 ; 
+do { 
+if ( var6 -> var7 ) { 
+int var8 = ( number * var6 -> var9 / var6 -> var7 - var10 . var11 ) / number ; 
+printf ( str , var1 -> var12 , func2 ( var6 -> var4 ) , var8 / number , var8 % number ) ; 
+} 
+} while ( ( var6 = var6 -> var5 ) ) ; 
+} 
+func1 ( var1 -> var2 [ number ] ) ; 
+} 
+} 

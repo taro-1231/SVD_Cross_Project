@@ -1,0 +1,65 @@
+static int func1 ( ResampleContext * var1 , void * var2 , const void * var3 , 
+int * var4 , int var5 , int var6 , int var7 , 
+int var8 ) 
+{ 
+int var9 ; 
+unsigned int var10 = var1 -> var10 ; 
+int var11 = var1 -> var11 ; 
+int var12 = var1 -> var13 % var1 -> var14 ; 
+int var13 = var1 -> var13 / var1 -> var14 ; 
+int var15 = var1 -> var15 ; 
+if ( ! var2 != ! var3 ) 
+return func2 ( var16 ) ; 
+if ( var8 ) { 
+uint64_t var17 = ( ( uint64_t ) var10 ) << number ; 
+int64_t var18 = ( 1LL << number ) * var1 -> var13 / var1 -> var14 ; 
+var6 = func3 ( var6 , 
+( var5 - number - var10 ) * ( int64_t ) var1 -> var14 / 
+var1 -> var13 ) ; 
+if ( var2 ) { 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) { 
+var1 -> func4 ( var2 , var9 , var3 , var17 >> number ) ; 
+var17 += var18 ; 
+} 
+} else { 
+var9 = var6 ; 
+} 
+var10 += var9 * var13 ; 
+var10 += ( var11 + var9 * ( int64_t ) var12 ) / var1 -> var14 ; 
+var11 = ( var11 + var9 * ( int64_t ) var12 ) % var1 -> var14 ; 
+} else { 
+for ( var9 = number ; var9 < var6 ; var9 ++ ) { 
+int var19 = var10 >> var1 -> var20 ; 
+if ( var19 + var1 -> var21 > var5 ) 
+break ; 
+if ( var2 ) 
+var1 -> func5 ( var1 , var2 , var9 , var3 , var10 , var11 ) ; 
+var11 += var12 ; 
+var10 += var13 ; 
+if ( var11 >= var1 -> var14 ) { 
+var11 -= var1 -> var14 ; 
+var10 ++ ; 
+} 
+if ( var9 + number == var15 ) { 
+var15 = number ; 
+var12 = var1 -> var22 % var1 -> var14 ; 
+var13 = var1 -> var22 / var1 -> var14 ; 
+} 
+} 
+} 
+if ( var4 ) 
+* var4 = var10 >> var1 -> var20 ; 
+if ( var7 ) { 
+var10 &= var1 -> var23 ; 
+if ( var15 ) { 
+var15 -= var9 ; 
+if ( var15 <= number ) 
+return var24 ; 
+} 
+var1 -> var11 = var11 ; 
+var1 -> var10 = var10 ; 
+var1 -> var13 = var12 + var1 -> var14 * var13 ; 
+var1 -> var15 = var15 ; 
+} 
+return var9 ; 
+} 

@@ -1,0 +1,24 @@
+av_cold void func1 ( VolumeContext * var1 ) 
+{ 
+int var2 = func2 ( ) ; 
+enum AVSampleFormat var3 = func3 ( var1 -> var3 ) ; 
+if ( var3 == var4 ) { 
+if ( func4 ( var2 ) && var1 -> var5 < number ) { 
+var1 -> var6 = var7 ; 
+var1 -> var8 = number ; 
+} 
+} else if ( var3 == var9 ) { 
+if ( func4 ( var2 ) ) { 
+var1 -> var6 = var10 ; 
+var1 -> var8 = number ; 
+} 
+if ( func5 ( var2 ) && var2 & var11 ) { 
+var1 -> var6 = var12 ; 
+var1 -> var8 = number ; 
+} 
+if ( func6 ( var2 ) ) { 
+var1 -> var6 = var13 ; 
+var1 -> var8 = number ; 
+} 
+} 
+} 

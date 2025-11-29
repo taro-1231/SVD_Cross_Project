@@ -1,0 +1,16 @@
+unsigned func1 ( unsigned var1 , 
+const void * var2 , var3 var4 ) 
+{ 
+unsigned var5 ; 
+if ( ! var2 ) 
+return number ; 
+{ type var6 = var4 , * var7 = ( type * ) var2 ; for ( var5 = number ; var7 [ var5 ] != var6 ; var5 ++ ) ; } 
+switch ( var1 ) { 
+case 1 : func2 ( var8 ) ; break ; 
+case 2 : func2 ( var9 ) ; break ; 
+case 4 : func2 ( var10 ) ; break ; 
+case 8 : func2 ( var3 ) ; break ; 
+var11 : func3 ( ! str ) ; 
+} 
+return var5 ; 
+} 

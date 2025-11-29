@@ -1,0 +1,40 @@
+static int func1 ( FourXContext * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+int var4 , var5 , var6 , var7 ; 
+const int var8 = var1 -> var9 -> var8 ; 
+const int var10 = var1 -> var9 -> var10 ; 
+const int var11 = ( func2 ( var8 , number ) >> number ) * ( func2 ( var10 , number ) >> number ) ; 
+uint16_t * var12 = var1 -> var13 ; 
+const uint8_t * var14 = var2 + var3 ; 
+GetByteContext var15 ; 
+if ( var3 < var11 * number ) { 
+func3 ( var1 -> var9 , var16 , str ) ; 
+return var17 ; 
+} 
+func4 ( & var15 , var2 , var3 ) ; 
+for ( var5 = number ; var5 < var10 ; var5 += number ) { 
+for ( var4 = number ; var4 < var8 ; var4 += number ) { 
+unsigned int var18 [ number ] = { number } , var19 ; 
+if ( var14 - var2 < number ) 
+return - number ; 
+var18 [ number ] = func5 ( & var15 ) ; 
+var18 [ number ] = func5 ( & var15 ) ; 
+if ( var18 [ number ] & number ) 
+func3 ( var1 -> var9 , var16 , str ) ; 
+if ( var18 [ number ] & number ) 
+func3 ( var1 -> var9 , var16 , str ) ; 
+var18 [ number ] = func6 ( var18 [ number ] , var18 [ number ] ) ; 
+var18 [ number ] = func6 ( var18 [ number ] , var18 [ number ] ) ; 
+var19 = func7 ( & var15 ) ; 
+for ( var7 = number ; var7 < number ; var7 ++ ) { 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+int var20 = number * ( var6 >> number ) + number * ( var7 >> number ) ; 
+var12 [ var7 * var8 + var6 ] = var18 [ ( var19 >> var20 ) & number ] ; 
+} 
+} 
+var12 += number ; 
+} 
+var12 += number * var8 - var4 ; 
+} 
+return number ; 
+} 

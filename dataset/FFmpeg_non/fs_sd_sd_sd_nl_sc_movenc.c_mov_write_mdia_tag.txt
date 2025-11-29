@@ -1,0 +1,13 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+MOVTrack * var3 ) 
+{ 
+int64_t var4 = func2 ( var1 ) ; 
+int var5 ; 
+func3 ( var1 , number ) ; 
+func4 ( var1 , str ) ; 
+func5 ( var1 , var2 , var3 ) ; 
+func6 ( var1 , var3 ) ; 
+if ( ( var5 = func7 ( var1 , var2 , var3 ) ) < number ) 
+return var5 ; 
+return func8 ( var1 , var4 ) ; 
+} 

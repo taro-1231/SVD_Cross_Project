@@ -1,0 +1,308 @@
+int func1 ( int var2 , char ** var3 ) 
+{ 
+char var4 [ number ] ; 
+char * var5 , * var6 = var7 ; 
+int var8 , var9 , var10 ; 
+int var11 = number ; 
+int var12 = var1 ; 
+int var13 = var1 ; 
+int var14 = var1 ; 
+long var15 = - number ; 
+double var16 ; 
+double var17 = number ; 
+double var18 ; 
+XEvent var19 ; 
+KeySym var20 ; 
+var21 = ( char * ) var7 ; 
+var22 = ( char * ) var7 ; 
+memset ( & var23 , number , sizeof ( mainprog_info ) ) ; 
+var16 = number / number ; 
+var16 = number / number . number ; 
+var24 = fopen ( str , str ) ; 
+if ( var24 ) { 
+double sgi_gamma ; 
+fgets ( var4 , number , var24 ) ; 
+fclose ( var24 ) ; 
+sgi_gamma = atof ( var4 ) ; 
+if ( sgi_gamma > number ) 
+var16 = number / sgi_gamma ; 
+} 
+var16 = number . number / number . 61 ; 
+var16 = number ; 
+var18 = var16 * var17 ; 
+if ( ( var5 = getenv ( str ) ) != var7 ) 
+var23 . var26 = atof ( var5 ) ; 
+else 
+var23 . var26 = var18 ; 
+while ( * ++ var3 && ! var11 ) { 
+if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var11 ; 
+else 
+var21 = * var3 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var11 ; 
+else { 
+var23 . var26 = atof ( * var3 ) ; 
+if ( var23 . var26 <= number ) 
+++ var11 ; 
+} 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var11 ; 
+else { 
+var6 = * var3 ; 
+if ( strlen ( var6 ) != number || var6 [ number ] != str ) 
+++ var11 ; 
+else { 
+var13 = var28 ; 
+var29 = var1 ; 
+} 
+} 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var11 ; 
+else { 
+var30 = atoi ( * var3 ) ; 
+if ( var30 >= number && var30 < var31 ) { 
+var29 = var28 ; 
+var13 = var1 ; 
+} else 
+++ var11 ; 
+} 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var11 ; 
+else { 
+var32 = ( ulg ) func3 ( * var3 ) ; 
+var33 = var28 ; 
+} 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+var34 = var28 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+var12 = var28 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+var14 = var28 ; 
+if ( ! var3 [ number ] || ! func4 ( var3 [ number ] ) ) 
+var15 = number ; 
+else { 
+++ var3 ; 
+var15 = func3 ( * var3 ) ; 
+if ( var15 < number ) 
+var15 = number ; 
+else if ( var15 > number ) 
+var15 = number ; 
+} 
+} else { 
+if ( ** var3 != str ) { 
+var22 = * var3 ; 
+if ( var3 [ number ] ) 
+++ var11 ; 
+} else 
+++ var11 ; 
+} 
+} 
+if ( ! var22 ) 
+++ var11 ; 
+if ( var11 ) { 
+fprintf ( var35 , str , var36 , var37 , var38 ) ; 
+func5 ( ) ; 
+fprintf ( var35 , str 
+str 
+str 
+str 
+str hostname : number str 
+str gamma str 
+str % . 1f str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str , var36 , 
+( int ) strlen ( var36 ) , str , var18 , var31 - number ) ; 
+exit ( number ) ; 
+} 
+if ( ! ( var24 = fopen ( var22 , str ) ) ) { 
+fprintf ( var35 , var36 str , var22 ) ; 
+++ var11 ; 
+} else { 
+var42 = fread ( var43 , number , var44 , var24 ) ; 
+if ( var42 < number || ! func6 ( var43 , number ) ) { 
+fprintf ( var35 , var36 
+str , 
+var22 ) ; 
+++ var11 ; 
+} else if ( ( var8 = func7 ( & var23 ) ) != number ) { 
+switch ( var8 ) { 
+case number : 
+fprintf ( var35 , var36 
+str , var22 ) ; 
+break ; 
+case number : 
+fprintf ( var35 , var36 str ) ; 
+break ; 
+var40 : 
+fprintf ( var35 , var36 
+str ) ; 
+break ; 
+} 
+++ var11 ; 
+} else { 
+Trace ( ( var35 , str ) ) 
+var27 = func8 ( var21 ) ; 
+if ( ! var27 ) { 
+func9 ( & var23 ) ; 
+fprintf ( var35 , var36 str , 
+var21 ? var21 : str ) ; 
+++ var11 ; 
+} 
+} 
+if ( var11 ) 
+fclose ( var24 ) ; 
+} 
+if ( var11 ) { 
+fprintf ( var35 , var36 str ) ; 
+exit ( number ) ; 
+} 
+var9 = strlen ( var38 ) ; 
+var10 = strlen ( var22 ) ; 
+if ( var9 + var10 + number > number ) 
+sprintf ( var45 , str , var38 , var22 + ( var9 + var10 + number - number ) ) ; 
+else 
+sprintf ( var45 , str , var38 , var22 ) ; 
+if ( var13 ) { 
+unsigned var25 , var39 , var46 ; 
+sscanf ( var6 + number , str , & var25 , & var39 , & var46 ) ; 
+var23 . var47 = ( uch ) var25 ; 
+var23 . var48 = ( uch ) var39 ; 
+var23 . var49 = ( uch ) var46 ; 
+} else 
+var23 . var50 = var28 ; 
+var23 . var51 = var52 ; 
+var23 . var53 = var54 ; 
+var23 . var55 = var56 ; 
+var23 . var57 = var58 ; 
+for ( ; ; ) { 
+Trace ( ( var35 , str ) ) 
+if ( func10 ( & var23 , var43 , var42 ) ) 
+++ var11 ; 
+Trace ( ( var35 , str ) ) 
+if ( var11 || var42 != var44 || var23 . var51 == var59 ) { 
+if ( var23 . var51 == var59 ) { 
+Trace ( ( var35 , str ) ) 
+} else if ( ferror ( var24 ) ) { 
+fprintf ( var35 , var36 
+str ) ; 
+exit ( number ) ; 
+} else if ( feof ( var24 ) ) { 
+fprintf ( var35 , var36 str 
+str ) ; 
+exit ( number ) ; 
+} else { 
+} 
+break ; 
+} 
+if ( var12 ) 
+func11 ( number ) ; 
+var42 = fread ( var43 , number , var44 , var24 ) ; 
+} 
+fclose ( var24 ) ; 
+Trace ( ( var35 , str ) ) 
+func9 ( & var23 ) ; 
+if ( var11 ) { 
+fprintf ( var35 , var36 str ) ; 
+exit ( number ) ; 
+} 
+if ( var14 && var29 ) { 
+Trace ( ( var35 , str ) ) 
+for ( ; ; ) { 
+int var60 , var61 ; 
+struct timeval var62 , var63 ; 
+if ( func12 ( & var63 , var7 ) == number ) { 
+var63 . var64 += var15 ; 
+var61 = var1 ; 
+} else 
+var61 = var28 ; 
+if ( func13 ( var27 , var65 | var66 , & var19 ) ) 
+if ( func14 ( var19 , var20 ) ) 
+break ; 
+if ( ++ var30 >= var31 ) 
+var30 = number ; 
+func15 ( ) ; 
+if ( var61 || func12 ( & var62 , var7 ) != number ) { 
+for ( var60 = var15 ; var60 > number ; -- var60 ) { 
+func11 ( number ) ; 
+if ( func13 ( var27 , var65 | var66 , 
+& var19 ) && func14 ( var19 , var20 ) ) 
+break ; 
+} 
+} else { 
+if ( var62 . var64 < var63 . var64 || 
+( var62 . var64 == var63 . var64 && var62 . var67 < var63 . var67 ) ) 
+{ 
+int var41 = var1 ; 
+long var68 = var63 . var64 - var62 . var64 ; 
+long var69 ; 
+while ( var68 -> number ) { 
+int var70 = number ; 
+for ( var60 = var68 ; var60 > number && ! var41 ; -- var60 ) { 
+func11 ( number ) ; 
+if ( func13 ( var27 , var65 | 
+var66 , & var19 ) && func14 ( var19 , var20 ) ) 
+var41 = var28 ; 
+if ( ++ var70 > number ) 
+break ; 
+} 
+if ( var41 ) 
+break ; 
+if ( func12 ( & var62 , var7 ) == number ) { 
+if ( var62 . var64 >= var63 . var64 ) 
+break ; 
+var68 = var63 . var64 - var62 . var64 ; 
+} else 
+++ var68 ; 
+} 
+if ( var41 ) 
+break ; 
+if ( func12 ( & var62 , var7 ) == number ) { 
+var69 = number * ( var63 . var64 - var62 . var64 ) + 
+var63 . var67 - var62 . var67 ; 
+if ( var69 > number ) 
+func2 ( ( ulg ) var69 ) ; 
+} 
+} 
+} 
+func16 ( number , number , var23 . var71 , var23 . var72 ) ; 
+} 
+} else 
+if ( var23 . var51 >= var73 ) { 
+Trace ( ( var35 , str ) ) 
+do { 
+func17 ( var27 , & var19 ) ; 
+if ( var19 . var74 == var75 ) { 
+XExposeEvent * var76 = ( XExposeEvent * ) & var19 ; 
+func16 ( var76 -> var77 , var76 -> var78 , var76 -> var71 , var76 -> var72 ) ; 
+} 
+} while ( ! func14 ( var19 , var20 ) ) ; 
+} else { 
+fprintf ( var35 , var36 str 
+str ) ; 
+exit ( number ) ; 
+} 
+Trace ( ( var35 , str ) ) 
+func18 ( ) ; 
+return number ; 
+} 

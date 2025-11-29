@@ -1,0 +1,16 @@
+static int func1 ( AVCodecContext * var2 , AVFrame * var3 , int * var4 , AVPacket * var1 ) 
+{ 
+int var5 ; 
+* var4 = number ; 
+if ( var1 ) { 
+var5 = func2 ( var2 , var1 ) ; 
+if ( var5 < number && var5 != var7 ) 
+return var5 ; 
+} 
+var5 = func4 ( var2 , var3 ) ; 
+if ( var5 < number && var5 != func3 ( var6 ) ) 
+return var5 ; 
+if ( var5 >= number ) 
+* var4 = number ; 
+return number ; 
+} 

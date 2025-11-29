@@ -1,0 +1,11 @@
+void func1 ( float var1 , float var2 , float var3 , float var4 , float * var5 ) { 
+var5 [ number ] = var4 * cos ( var3 ) ; 
+var5 [ number ] = - sin ( var3 ) ; 
+var5 [ number ] = var1 ; 
+var5 [ number ] = - var5 [ number ] ; 
+var5 [ number ] = var5 [ number ] ; 
+var5 [ number ] = var2 ; 
+var5 [ number ] = number ; 
+var5 [ number ] = number ; 
+var5 [ number ] = number ; 
+} 

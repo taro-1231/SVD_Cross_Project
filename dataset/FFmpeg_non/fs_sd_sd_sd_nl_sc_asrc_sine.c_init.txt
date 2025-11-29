@@ -1,0 +1,15 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+SineContext * var2 = var1 -> var3 ; 
+if ( ! ( var2 -> var4 = func2 ( sizeof ( * var2 -> var4 ) << var5 ) ) ) 
+return func3 ( var6 ) ; 
+var2 -> var7 = ldexp ( var2 -> var8 , number ) / var2 -> var9 + number ; 
+func4 ( var2 -> var4 ) ; 
+if ( var2 -> var10 ) { 
+var2 -> var11 = var2 -> var9 ; 
+var2 -> var12 = var2 -> var11 / number ; 
+var2 -> var13 = ldexp ( var2 -> var10 * var2 -> var8 , number ) / 
+var2 -> var9 + number ; 
+} 
+return number ; 
+} 

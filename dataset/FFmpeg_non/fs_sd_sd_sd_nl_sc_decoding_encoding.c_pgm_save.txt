@@ -1,0 +1,11 @@
+static void func1 ( unsigned char * var1 , int var2 , int var3 , int var4 , 
+char * var5 ) 
+{ 
+FILE * var6 ; 
+int var7 ; 
+var6 = fopen ( var5 , str ) ; 
+fprintf ( var6 , str , var3 , var4 , number ) ; 
+for ( var7 = number ; var7 < var4 ; var7 ++ ) 
+fwrite ( var1 + var7 * var2 , number , var3 , var6 ) ; 
+fclose ( var6 ) ; 
+} 

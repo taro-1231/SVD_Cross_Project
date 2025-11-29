@@ -1,0 +1,44 @@
+static void func1 ( void ) 
+{ 
+FFServerStream * var1 ; 
+char var2 [ number ] ; 
+HTTPContext * var3 ; 
+struct sockaddr_in var4 = { number } ; 
+int var5 , var6 ; 
+unsigned int var7 , var8 ; 
+var5 = number ; 
+for ( var1 = var9 . var10 ; var1 ; var1 = var1 -> var11 ) { 
+if ( ! var1 -> var12 ) 
+continue ; 
+var7 = func2 ( & var13 ) ; 
+var8 = func2 ( & var13 ) ; 
+snprintf ( var2 , sizeof ( var2 ) , str , var7 , var8 ) ; 
+if ( var1 -> var14 == number ) { 
+var1 -> var14 = var5 ; 
+var5 += number ; 
+} 
+var4 . var15 = var16 ; 
+var4 . var17 = var1 -> var18 ; 
+var4 . var19 = func3 ( var1 -> var14 ) ; 
+var3 = func4 ( & var4 , var1 , var2 , 
+var20 ) ; 
+if ( ! var3 ) 
+continue ; 
+if ( func5 ( var3 , str ) < number ) { 
+func6 ( str , 
+var1 -> var21 ) ; 
+continue ; 
+} 
+for ( var6 = number ; var6 < var1 -> var22 ; 
+var6 ++ ) { 
+var4 . var19 = func3 ( var1 -> var14 + 
+number * var6 ) ; 
+if ( func7 ( var3 , var6 , & var4 , var23 ) >= number ) 
+continue ; 
+func6 ( str , 
+var1 -> var21 , var6 ) ; 
+exit ( number ) ; 
+} 
+var3 -> var24 = var25 ; 
+} 
+} 

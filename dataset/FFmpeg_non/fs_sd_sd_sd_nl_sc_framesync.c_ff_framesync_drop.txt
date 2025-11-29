@@ -1,0 +1,4 @@
+void func1 ( FFFrameSync * var1 ) 
+{ 
+var1 -> var2 = number ; 
+} 

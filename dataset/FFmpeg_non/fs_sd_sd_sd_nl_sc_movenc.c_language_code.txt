@@ -1,0 +1,6 @@
+static uint16_t func1 ( const char * var1 ) 
+{ 
+return ( ( ( var1 [ number ] - number ) & number ) << number ) + 
+( ( ( var1 [ number ] - number ) & number ) << number ) + 
+( ( var1 [ number ] - number ) & number ) ; 
+} 

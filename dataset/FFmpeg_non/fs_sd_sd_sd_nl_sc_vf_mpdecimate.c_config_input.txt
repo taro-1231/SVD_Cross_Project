@@ -1,0 +1,9 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+DecimateContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+var4 -> var8 = var6 -> var9 ; 
+var4 -> var10 = var6 -> var11 ; 
+return number ; 
+} 

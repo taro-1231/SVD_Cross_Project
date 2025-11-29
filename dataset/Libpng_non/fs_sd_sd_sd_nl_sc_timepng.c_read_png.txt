@@ -1,0 +1,44 @@
+static int func1 ( FILE * var1 ) 
+{ 
+png_structp var2 = func2 ( var3 , number , number , number ) ; 
+png_infop var4 = var5 ; 
+png_bytep var6 = var5 , var7 = var5 ; 
+if ( var2 == var5 ) 
+return number ; 
+if ( func3 ( func4 ( var2 ) ) ) 
+{ 
+func5 ( & var2 , & var4 , var5 ) ; 
+if ( var6 != var5 ) free ( var6 ) ; 
+if ( var7 != var5 ) free ( var7 ) ; 
+return number ; 
+} 
+func6 ( var2 , var1 ) ; 
+var4 = func7 ( var2 ) ; 
+if ( var4 == var5 ) 
+func8 ( var2 , str ) ; 
+func9 ( var2 , var4 ) ; 
+{ 
+png_size_t var8 = func10 ( var2 , var4 ) ; 
+var6 = malloc ( var8 ) ; 
+var7 = malloc ( var8 ) ; 
+if ( var6 == var5 || var7 == var5 ) 
+func8 ( var2 , str ) ; 
+{ 
+png_uint_32 var9 = func11 ( var2 , var4 ) ; 
+int var10 = func12 ( var2 ) ; 
+int var11 ; 
+func13 ( var2 ) ; 
+for ( var11 = number ; var11 < var10 ; ++ var11 ) 
+{ 
+png_uint_32 var12 = var9 ; 
+while ( var12 -> number ) 
+func14 ( var2 , var6 , var7 ) ; 
+} 
+} 
+} 
+func15 ( var2 , var4 ) ; 
+func5 ( & var2 , & var4 , var5 ) ; 
+free ( var6 ) ; 
+free ( var7 ) ; 
+return number ; 
+} 

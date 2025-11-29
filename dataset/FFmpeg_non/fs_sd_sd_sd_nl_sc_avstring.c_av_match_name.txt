@@ -1,0 +1,15 @@
+int func1 ( const char * var1 , const char * var2 ) 
+{ 
+const char * var3 ; 
+int var4 , var5 ; 
+if ( ! var1 || ! var2 ) 
+return number ; 
+var5 = strlen ( var1 ) ; 
+while ( ( var3 = strchr ( var2 , str ) ) ) { 
+var4 = func2 ( var3 - var2 , var5 ) ; 
+if ( ! func3 ( var1 , var2 , var4 ) ) 
+return number ; 
+var2 = var3 + number ; 
+} 
+return ! func4 ( var1 , var2 ) ; 
+} 

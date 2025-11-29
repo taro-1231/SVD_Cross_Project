@@ -1,0 +1,43 @@
+FILE * func1 ( char * var1 , size_t var2 , 
+const char * var3 , int var4 , 
+const char * var5 ) 
+{ 
+FILE * var6 = var7 ; 
+int var8 ; 
+const char * var9 [ number ] = { getenv ( str ) , 
+getenv ( str ) , 
+FFMPEG_DATADIR , } ; 
+if ( var4 ) { 
+func2 ( var1 , var3 , var2 ) ; 
+var6 = fopen ( var1 , str ) ; 
+} else { 
+char var10 [ var11 ] , * var12 ; 
+var9 [ number ] = var7 ; 
+if ( func3 ( func4 ( var7 ) , var10 , sizeof ( var10 ) - number ) ) 
+{ 
+for ( var12 = var10 ; var12 < var10 + strlen ( var10 ) ; var12 ++ ) 
+if ( * var12 == str ) * var12 = str ; 
+if ( var12 = strrchr ( var10 , str ) ) 
+{ 
+* var12 = number ; 
+strncat ( var10 , str , sizeof ( var10 ) - number - strlen ( var10 ) ) ; 
+var9 [ number ] = var10 ; 
+} 
+} 
+for ( var8 = number ; var8 < number && ! var6 ; var8 ++ ) { 
+if ( ! var9 [ var8 ] ) 
+continue ; 
+snprintf ( var1 , var2 , str , var9 [ var8 ] , 
+var8 != number ? str : str , var3 ) ; 
+var6 = fopen ( var1 , str ) ; 
+if ( ! var6 && var5 ) { 
+snprintf ( var1 , var2 , 
+str , 
+var9 [ var8 ] , var8 != number ? str : str , var5 , 
+var3 ) ; 
+var6 = fopen ( var1 , str ) ; 
+} 
+} 
+} 
+return var6 ; 
+} 

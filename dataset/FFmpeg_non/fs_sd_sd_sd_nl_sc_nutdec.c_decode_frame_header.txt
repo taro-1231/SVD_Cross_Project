@@ -1,0 +1,74 @@
+static int func1 ( NUTContext * var1 , int64_t * var2 , int * var3 , 
+uint8_t * var4 , int var5 ) 
+{ 
+AVFormatContext * var6 = var1 -> var7 ; 
+AVIOContext * var8 = var6 -> var9 ; 
+StreamContext * var10 ; 
+int var11 , var12 , var13 , var14 , var15 , var16 , var17 ; 
+uint64_t var18 ; 
+if ( ! ( var1 -> var12 & var19 ) && 
+func2 ( var8 ) > var1 -> var20 + var1 -> var21 ) { 
+func3 ( var6 , var22 , 
+str PRId64 str PRId64 str , 
+func2 ( var8 ) , var1 -> var20 , var1 -> var21 ) ; 
+return var23 ; 
+} 
+var12 = var1 -> var5 [ var5 ] . var12 ; 
+var13 = var1 -> var5 [ var5 ] . var13 ; 
+var11 = var1 -> var5 [ var5 ] . var24 ; 
+* var3 = var1 -> var5 [ var5 ] . var3 ; 
+var14 = var1 -> var5 [ var5 ] . var14 ; 
+var16 = var1 -> var5 [ var5 ] . var16 ; 
+* var4 = var1 -> var5 [ var5 ] . var4 ; 
+if ( var12 & var25 ) 
+return var23 ; 
+if ( var12 & var26 ) 
+var12 ^= func4 ( var8 ) ; 
+if ( var12 & var27 ) { 
+func5 ( * var3 , var18 < var6 -> var28 ) ; 
+} 
+var10 = & var1 -> var29 [ * var3 ] ; 
+if ( var12 & var30 ) { 
+int var31 = func4 ( var8 ) ; 
+if ( var31 < ( number << var10 -> var33 ) ) { 
+* var2 = func6 ( var10 , var31 ) ; 
+} else 
+* var2 = var31 - ( 1LL << var10 -> var33 ) ; 
+} else 
+* var2 = var10 -> var32 + var14 ; 
+if ( var12 & var34 ) 
+var11 += var13 * func4 ( var8 ) ; 
+if ( var12 & var35 ) 
+func7 ( var8 ) ; 
+if ( var12 & var36 ) 
+* var4 = func4 ( var8 ) ; 
+if ( var12 & var37 ) 
+var16 = func4 ( var8 ) ; 
+for ( var15 = number ; var15 < var16 ; var15 ++ ) { 
+if ( var8 -> var38 ) { 
+func3 ( var6 , var22 , str ) ; 
+return var23 ; 
+} 
+func4 ( var8 ) ; 
+} 
+if ( * var4 >= ( unsigned ) var1 -> var39 ) { 
+func3 ( var6 , var22 , str ) ; 
+return var23 ; 
+} 
+if ( var11 > number ) 
+* var4 = number ; 
+var11 -= var1 -> var40 [ * var4 ] ; 
+if ( var12 & var41 ) { 
+func8 ( var8 ) ; 
+} else if ( ! ( var1 -> var12 & var19 ) && 
+var11 > number * var1 -> var21 || 
+func9 ( var10 -> var32 - * var2 ) > var10 -> var42 ) { 
+func3 ( var6 , var22 , str ) ; 
+return var23 ; 
+} 
+var10 -> var32 = * var2 ; 
+var10 -> var43 = var12 ; 
+return var11 ; 
+var44 : 
+return var17 ; 
+} 

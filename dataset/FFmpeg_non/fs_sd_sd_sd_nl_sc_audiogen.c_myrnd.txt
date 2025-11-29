@@ -1,0 +1,13 @@
+static unsigned int func1 ( unsigned int * var1 , int var2 ) 
+{ 
+unsigned int var3 , var4 ; 
+var3 = * var1 ; 
+var3 = ( var3 * number ) + number ; 
+if ( var2 == number ) { 
+var4 = var3 >> number ; 
+} else { 
+var4 = var3 % var2 ; 
+} 
+* var1 = var3 ; 
+return var4 ; 
+} 

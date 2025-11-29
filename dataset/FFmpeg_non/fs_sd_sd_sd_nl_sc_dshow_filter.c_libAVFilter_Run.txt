@@ -1,0 +1,7 @@
+func1 ( libAVFilter * var1 , REFERENCE_TIME var2 ) 
+{ 
+dshowdebug ( str PRId64 str , var1 , var2 ) ; 
+var1 -> var3 = var4 ; 
+var1 -> var5 = var2 ; 
+return var6 ; 
+} 

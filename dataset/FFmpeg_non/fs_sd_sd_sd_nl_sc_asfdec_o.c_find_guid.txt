@@ -1,0 +1,13 @@
+static const GUIDParseTable * func1 ( ff_asf_guid var1 ) 
+{ 
+int var2 , var3 ; 
+const GUIDParseTable * var4 ; 
+func2 ( var1 ) ; 
+var4 = var5 ; 
+for ( var2 = number ; var2 < func3 ( var5 ) ; var2 ++ ) { 
+if ( ! ( var3 = memcmp ( var1 , var4 -> var1 , sizeof ( var4 -> var1 ) ) ) ) 
+return var4 ; 
+var4 ++ ; 
+} 
+return var6 ; 
+} 

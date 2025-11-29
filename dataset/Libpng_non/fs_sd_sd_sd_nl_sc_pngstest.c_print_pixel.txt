@@ -1,0 +1,24 @@
+func1 ( char var1 [ 64 ] , const Pixel * var2 , png_uint_32 var3 ) 
+{ 
+switch ( var3 & ( var4 | var5 ) ) 
+{ 
+case 0 : 
+sprintf ( var1 , str , var6 [ var3 ] , var2 -> var7 ) ; 
+break ; 
+case var4 : 
+sprintf ( var1 , str , var6 [ var3 ] , var2 -> var7 , 
+var2 -> var8 ) ; 
+break ; 
+case var5 : 
+sprintf ( var1 , str , var6 [ var3 ] , 
+var2 -> var9 , var2 -> var7 , var2 -> var10 ) ; 
+break ; 
+case var5 | var4 : 
+sprintf ( var1 , str , var6 [ var3 ] , 
+var2 -> var9 , var2 -> var7 , var2 -> var10 , var2 -> var8 ) ; 
+break ; 
+var11 : 
+sprintf ( var1 , str ) ; 
+break ; 
+} 
+} 

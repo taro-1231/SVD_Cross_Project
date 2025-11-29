@@ -1,0 +1,407 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaDemuxContext * var2 = var1 -> var3 ; 
+MatroskaTrack * var4 = var2 -> var4 . var5 ; 
+AVStream * var6 ; 
+int var7 , var8 , var9 ; 
+int var10 ; 
+for ( var7 = number ; var7 < var2 -> var4 . var11 ; var7 ++ ) { 
+MatroskaTrack * var12 = & var4 [ var7 ] ; 
+enum AVCodecID var13 = var14 ; 
+EbmlList * var15 = & var12 -> var16 ; 
+MatroskaTrackEncoding * var16 = var15 -> var5 ; 
+uint8_t * var17 = var18 ; 
+int var19 = number ; 
+int var20 = number ; 
+uint32_t var21 = number ; 
+AVIOContext var22 ; 
+char * var23 = var18 ; 
+int var24 = - number ; 
+if ( var12 -> var25 != var26 && 
+var12 -> var25 != var27 && 
+var12 -> var25 != var28 && 
+var12 -> var25 != var29 ) { 
+func2 ( var2 -> var30 , var31 , 
+str PRIu64 str , 
+var12 -> var25 ) ; 
+continue ; 
+} 
+if ( ! var12 -> var13 ) 
+continue ; 
+if ( var12 -> var32 . var33 < number || var12 -> var32 . var33 > var34 || 
+isnan ( var12 -> var32 . var33 ) ) { 
+func2 ( var2 -> var30 , var35 , 
+var57 , 
+var12 -> var32 . var33 ) ; 
+var12 -> var32 . var33 = number ; 
+} 
+if ( var12 -> var25 == var26 ) { 
+if ( ! var12 -> var36 && var12 -> var37 . var38 > number ) 
+var12 -> var36 = number / var12 -> var37 . var38 ; 
+if ( var12 -> var37 . var39 == - number ) 
+var12 -> var37 . var39 = var12 -> var37 . var40 ; 
+if ( var12 -> var37 . var41 == - number ) 
+var12 -> var37 . var41 = var12 -> var37 . var42 ; 
+if ( var12 -> var37 . var43 . var44 == number ) 
+var21 = func3 ( var12 -> var37 . var43 . var45 ) ; 
+} else if ( var12 -> var25 == var27 ) { 
+if ( ! var12 -> var32 . var46 ) 
+var12 -> var32 . var46 = var12 -> var32 . var33 ; 
+} 
+if ( var15 -> var11 > number ) { 
+func2 ( var2 -> var30 , var47 , 
+var57 ) ; 
+} else if ( var15 -> var11 == number ) { 
+if ( var16 [ number ] . var25 ) { 
+if ( var16 [ number ] . var48 . var49 . var44 > number ) { 
+const int var50 = func4 ( var16 [ number ] . var48 . var49 . var44 ) ; 
+var23 = func5 ( var50 ) ; 
+if ( var23 == var18 ) 
+return func6 ( var51 ) ; 
+func7 ( var23 , var50 , 
+var16 [ number ] . var48 . var49 . var45 , 
+var16 [ number ] . var48 . var49 . var44 ) ; 
+} else { 
+var16 [ number ] . var52 = number ; 
+func2 ( var2 -> var30 , var47 , 
+var57 ) ; 
+} 
+} else if ( 
+var16 [ number ] . compression . algo != MATROSKA_TRACK_ENCODING_COMP_ZLIB && 
+var16 [ number ] . compression . algo != MATROSKA_TRACK_ENCODING_COMP_BZLIB && 
+var16 [ number ] . compression . algo != MATROSKA_TRACK_ENCODING_COMP_LZO && 
+var16 [ number ] . compression . algo != MATROSKA_TRACK_ENCODING_COMP_HEADERSTRIP ) { 
+var16 [ number ] . var52 = number ; 
+func2 ( var2 -> var30 , var47 , 
+var57 ) ; 
+} else if ( var12 -> var53 . var44 && var16 [ number ] . var52 & number ) { 
+uint8_t * var53 = var12 -> var53 . var45 ; 
+int var9 = func8 ( & var12 -> var53 . var45 , 
+& var12 -> var53 . var44 , 
+var12 ) ; 
+if ( var9 < number ) { 
+var12 -> var53 . var45 = var18 ; 
+var12 -> var53 . var44 = number ; 
+func2 ( var2 -> var30 , var47 , 
+var57 ) ; 
+} 
+if ( var53 != var12 -> var53 . var45 ) 
+func9 ( var53 ) ; 
+} 
+} 
+for ( var8 = number ; var55 [ var8 ] . var56 != var14 ; var8 ++ ) { 
+if ( ! strncmp ( var55 [ var8 ] . var57 , var12 -> var13 , 
+strlen ( var55 [ var8 ] . var57 ) ) ) { 
+var13 = var55 [ var8 ] . var56 ; 
+break ; 
+} 
+} 
+var6 = var12 -> var58 = func10 ( var1 , var18 ) ; 
+if ( ! var6 ) { 
+func9 ( var23 ) ; 
+return func6 ( var51 ) ; 
+} 
+if ( var23 ) { 
+func11 ( & var6 -> var59 , var57 , var23 , number ) ; 
+func12 ( & var23 ) ; 
+} 
+if ( ! strcmp ( var12 -> var13 , var57 ) && 
+var12 -> var53 . var44 >= number && 
+var12 -> var53 . var45 ) { 
+var12 -> var60 = number ; 
+var24 = func13 ( var12 -> var53 . var45 + number ) ; 
+var21 = func3 ( var12 -> var53 . var45 + number ) ; 
+var13 = func14 ( var61 , 
+var21 ) ; 
+if ( ! var13 ) 
+var13 = func14 ( var62 , 
+var21 ) ; 
+var20 = number ; 
+} else if ( ! strcmp ( var12 -> var13 , var57 ) && 
+var12 -> var53 . var44 >= number && 
+var12 -> var53 . var45 ) { 
+int var9 ; 
+func15 ( & var22 , var12 -> var53 . var45 , 
+var12 -> var53 . var44 , 
+number , var18 , var18 , var18 , var18 ) ; 
+var9 = func16 ( var1 , & var22 , var6 -> var54 , var12 -> var53 . var44 , number ) ; 
+if ( var9 < number ) 
+return var9 ; 
+var13 = var6 -> var54 -> var13 ; 
+var20 = func17 ( var12 -> var53 . var44 , number ) ; 
+} else if ( ! strcmp ( var12 -> var13 , var57 ) 
+&& ( var12 -> var53 . var44 >= number ) 
+&& ( var12 -> var53 . var45 ) ) { 
+var21 = func3 ( var12 -> var53 . var45 + number ) ; 
+var13 = func14 ( var63 , var21 ) ; 
+if ( func14 ( var63 , func3 ( var12 -> var53 . var45 ) ) ) { 
+var21 = func3 ( var12 -> var53 . var45 ) ; 
+var13 = func14 ( var63 , var21 ) ; 
+} 
+} else if ( ! strcmp ( var12 -> var13 , var57 ) && 
+( var12 -> var53 . var44 >= number ) && 
+( var12 -> var53 . var45 ) ) { 
+var21 = func3 ( var12 -> var53 . var45 + number ) ; 
+var13 = func14 ( var62 , var21 ) ; 
+if ( func14 ( var62 , func3 ( var12 -> var53 . var45 ) ) ) { 
+var21 = func3 ( var12 -> var53 . var45 ) ; 
+var13 = func14 ( var62 , var21 ) ; 
+} 
+if ( var13 == var14 && func3 ( var12 -> var53 . var45 + number ) == func3 ( var57 ) ) 
+var13 = var64 ; 
+if ( var13 == var14 ) { 
+char var65 [ number ] ; 
+func18 ( var65 , sizeof ( var65 ) , var21 ) ; 
+func2 ( var2 -> var30 , var47 , 
+var57 , var65 ) ; 
+} 
+} else if ( var13 == var66 ) { 
+switch ( var12 -> var32 . var67 ) { 
+case number : 
+var13 = var68 ; 
+break ; 
+case 24 : 
+var13 = var69 ; 
+break ; 
+case number : 
+var13 = var70 ; 
+break ; 
+} 
+} else if ( var13 == var71 ) { 
+switch ( var12 -> var32 . var67 ) { 
+case number : 
+var13 = var68 ; 
+break ; 
+case 24 : 
+var13 = var72 ; 
+break ; 
+case number : 
+var13 = var73 ; 
+break ; 
+} 
+} else if ( var13 == var74 && 
+var12 -> var32 . var67 == number ) { 
+var13 = var75 ; 
+} else if ( var13 == var76 && ! var12 -> var53 . var44 ) { 
+int var77 = func19 ( var12 -> var13 ) ; 
+int var78 = func20 ( var12 -> var32 . var33 ) ; 
+var17 = func21 ( number + var79 ) ; 
+if ( ! var17 ) 
+return func6 ( var51 ) ; 
+var17 [ number ] = ( var77 << number ) | ( ( var78 & number ) >> number ) ; 
+var17 [ number ] = ( ( var78 & number ) << number ) | ( var12 -> var32 . var80 << number ) ; 
+if ( strstr ( var12 -> var13 , var57 ) ) { 
+var78 = func20 ( var12 -> var32 . var46 ) ; 
+var17 [ number ] = number ; 
+var17 [ number ] = number ; 
+var17 [ number ] = number | ( var78 << number ) ; 
+var19 = number ; 
+} else 
+var19 = number ; 
+} else if ( var13 == var81 && var12 -> var53 . var44 && var12 -> var53 . var44 < var34 - number - var79 ) { 
+var19 = number + var12 -> var53 . var44 ; 
+var17 = func21 ( var19 + 
+var79 ) ; 
+if ( ! var17 ) 
+return func6 ( var51 ) ; 
+func22 ( var17 , var19 ) ; 
+memcpy ( & var17 [ number ] , var57 , number ) ; 
+func22 ( & var17 [ number ] , number ) ; 
+memcpy ( & var17 [ number ] , var12 -> var53 . var45 , 
+var12 -> var53 . var44 ) ; 
+} else if ( var13 == var82 ) { 
+var19 = number ; 
+var17 = func21 ( var19 + var79 ) ; 
+if ( ! var17 ) 
+return func6 ( var51 ) ; 
+func15 ( & var22 , var17 , var19 , number , 
+var18 , var18 , var18 , var18 ) ; 
+func23 ( & var22 , var57 , number ) ; 
+func24 ( & var22 , number ) ; 
+if ( var12 -> var32 . var80 > var83 || 
+var12 -> var32 . var67 > var83 ) { 
+func2 ( var2 -> var30 , var35 , 
+str PRIu64 
+str PRIu64 str , 
+var12 -> var32 . var80 , var12 -> var32 . var67 ) ; 
+func12 ( & var17 ) ; 
+if ( var2 -> var30 -> var84 & var85 ) 
+return var86 ; 
+else 
+continue ; 
+} 
+func24 ( & var22 , var12 -> var32 . var80 ) ; 
+func24 ( & var22 , var12 -> var32 . var67 ) ; 
+if ( var12 -> var32 . var46 < number || var12 -> var32 . var46 > var34 ) 
+return var86 ; 
+func25 ( & var22 , var12 -> var32 . var46 ) ; 
+func25 ( & var22 , func26 ( ( var2 -> var87 * var2 -> var88 ) , 
+var12 -> var32 . var46 , 
+var89 * number ) ) ; 
+} else if ( var13 == var90 || 
+var13 == var91 || 
+var13 == var92 || 
+var13 == var93 ) { 
+var20 = number ; 
+} else if ( var13 == var94 ) { 
+var12 -> var32 . var46 = number ; 
+var12 -> var32 . var80 = number ; 
+} else if ( ( var13 == var95 || 
+var13 == var96 || 
+var13 == var97 || 
+var13 == var98 ) 
+&& var12 -> var53 . var45 ) { 
+int var99 ; 
+func15 ( & var22 , var12 -> var53 . var45 , 
+var12 -> var53 . var44 , 
+number , var18 , var18 , var18 , var18 ) ; 
+func27 ( & var22 , number ) ; 
+var99 = func28 ( & var22 ) ; 
+var12 -> var32 . var100 = func29 ( & var22 ) ; 
+func27 ( & var22 , number ) ; 
+var12 -> var32 . var101 = func28 ( & var22 ) ; 
+var12 -> var32 . var102 = func28 ( & var22 ) ; 
+var12 -> var32 . var103 = func28 ( & var22 ) ; 
+if ( var99 < number || 
+var12 -> var32 . var100 <= number || 
+var12 -> var32 . var101 <= number || 
+var12 -> var32 . var102 <= number || 
+var12 -> var32 . var103 <= number ) 
+return var86 ; 
+var12 -> var32 . var65 = func30 ( var12 -> var32 . var101 , 
+var12 -> var32 . var102 ) ; 
+if ( ! var12 -> var32 . var65 ) 
+return func6 ( var51 ) ; 
+if ( var13 == var95 ) { 
+var6 -> var54 -> var104 = var12 -> var32 . var100 ; 
+var12 -> var53 . var44 = number ; 
+} else { 
+if ( var13 == var98 && var99 < number ) { 
+static const int var105 [ number ] = { number , number , number , number } ; 
+var12 -> var32 . var103 = var106 [ var99 ] ; 
+var6 -> var54 -> var107 = var105 [ var99 ] ; 
+} 
+var6 -> var54 -> var104 = var12 -> var32 . var103 ; 
+var20 = number ; 
+} 
+} else if ( var13 == var108 && var12 -> var53 . var44 ) { 
+var9 = func31 ( var1 , var12 , & var20 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+} else if ( var13 == var109 && var12 -> var53 . var44 == number ) { 
+var21 = func3 ( var12 -> var53 . var45 ) ; 
+} 
+var12 -> var53 . var44 -= var20 ; 
+if ( var13 == var14 ) 
+func2 ( var2 -> var30 , var31 , 
+var57 , var12 -> var13 ) ; 
+if ( var12 -> var88 < number ) 
+var12 -> var88 = number ; 
+func32 ( var6 , number , var2 -> var88 * var12 -> var88 , 
+number * number * number ) ; 
+var12 -> var110 = av_rescale_q ( var12 -> var110 , 
+( AVRational ) { number , number } , 
+var6 -> time_base ) ; 
+var6 -> var54 -> var13 = var13 ; 
+if ( strcmp ( var12 -> var111 , var57 ) ) 
+func11 ( & var6 -> var59 , var57 , var12 -> var111 , number ) ; 
+func11 ( & var6 -> var59 , var57 , var12 -> var112 , number ) ; 
+if ( var12 -> var113 ) 
+var6 -> var114 |= var115 ; 
+if ( var12 -> var116 ) 
+var6 -> var114 |= var117 ; 
+if ( ! var6 -> var54 -> var17 ) { 
+if ( var17 ) { 
+var6 -> var54 -> var17 = var17 ; 
+var6 -> var54 -> var19 = var19 ; 
+} else if ( var12 -> var53 . var45 && var12 -> var53 . var44 > number ) { 
+if ( func33 ( var6 -> var54 , var12 -> var53 . var44 ) ) 
+return func6 ( var51 ) ; 
+memcpy ( var6 -> var54 -> var17 , 
+var12 -> var53 . var45 + var20 , 
+var12 -> var53 . var44 ) ; 
+} 
+} 
+if ( var12 -> var25 == var26 ) { 
+MatroskaTrackPlane * var118 = var12 -> var119 . var120 . var5 ; 
+var6 -> var54 -> var121 = var122 ; 
+var6 -> var54 -> var123 = var21 ; 
+if ( var24 >= number ) 
+var6 -> var54 -> var124 = var24 ; 
+var6 -> var54 -> var125 = var12 -> var37 . var40 ; 
+var6 -> var54 -> var126 = var12 -> var37 . var42 ; 
+func34 ( & var6 -> var127 . var128 , 
+& var6 -> var127 . var129 , 
+var6 -> var54 -> var126 * var12 -> var37 . var39 , 
+var6 -> var54 -> var125 * var12 -> var37 . var41 , 
+number ) ; 
+if ( var6 -> var54 -> var13 != var130 ) 
+var6 -> var131 = var132 ; 
+if ( var12 -> var36 ) { 
+func34 ( & var6 -> var133 . var128 , & var6 -> var133 . var129 , 
+number , var12 -> var36 , number ) ; 
+if ( var6 -> var133 . var128 < var6 -> var133 . var129 * 1000LL 
+&& var6 -> var133 . var128 > var6 -> var133 . var129 * 5LL ) 
+var6 -> var134 = var6 -> var133 ; 
+} 
+if ( var12 -> var37 . var135 && var12 -> var37 . var135 < var136 ) 
+func11 ( & var6 -> var59 , var57 , var137 [ var12 -> var37 . var135 ] , number ) ; 
+if ( var12 -> var37 . var138 ) 
+func11 ( & var6 -> var59 , var57 , var57 , number ) ; 
+for ( var8 = number ; var8 < var12 -> var119 . var120 . var11 ; var8 ++ ) { 
+char var65 [ number ] ; 
+if ( var118 [ var8 ] . var25 >= var139 ) 
+continue ; 
+snprintf ( var65 , sizeof ( var65 ) , var57 , 
+var140 [ var118 [ var8 ] . var25 ] , var7 ) ; 
+for ( var10 = number ; var10 < var2 -> var4 . var11 ; var10 ++ ) 
+if ( var118 [ var8 ] . var141 == var4 [ var10 ] . var141 && var4 [ var10 ] . var58 ) { 
+func11 ( & var4 [ var10 ] . var58 -> var59 , 
+var57 , var65 , number ) ; 
+break ; 
+} 
+} 
+if ( var12 -> var37 . var135 < var136 && 
+var12 -> var37 . var135 != number && var12 -> var37 . var135 != number ) { 
+int var9 = func35 ( var6 , var12 -> var37 . var135 ) ; 
+if ( var9 < number ) 
+return var9 ; 
+} 
+} else if ( var12 -> var25 == var27 ) { 
+var6 -> var54 -> var121 = var142 ; 
+var6 -> var54 -> var143 = var12 -> var32 . var46 ; 
+var6 -> var54 -> var80 = var12 -> var32 . var80 ; 
+if ( ! var6 -> var54 -> var124 ) 
+var6 -> var54 -> var124 = var12 -> var32 . var67 ; 
+if ( var6 -> var54 -> var13 == var144 ) 
+var6 -> var131 = var145 ; 
+else if ( var6 -> var54 -> var13 != var76 ) 
+var6 -> var131 = var132 ; 
+if ( var12 -> var110 > number ) { 
+var6 -> var54 -> delay = av_rescale_q ( var12 -> var110 , 
+var6 -> time_base , 
+( AVRational ) { number , var6 -> var54 -> var143 } ) ; 
+} 
+if ( var12 -> var146 > number ) { 
+av_codec_set_seek_preroll ( var6 -> var54 , 
+av_rescale_q ( var12 -> var146 , 
+( AVRational ) { number , number } , 
+( AVRational ) { number , var6 -> var54 -> var143 } ) ) ; 
+} 
+} else if ( var13 == var147 ) { 
+var6 -> var54 -> var121 = var148 ; 
+if ( ! strcmp ( var12 -> var13 , var57 ) ) { 
+var6 -> var114 |= var149 ; 
+} else if ( ! strcmp ( var12 -> var13 , var57 ) ) { 
+var6 -> var114 |= var150 ; 
+} else if ( ! strcmp ( var12 -> var13 , var57 ) ) { 
+var6 -> var114 |= var151 ; 
+} 
+} else if ( var12 -> var25 == var28 ) { 
+var6 -> var54 -> var121 = var148 ; 
+if ( var6 -> var54 -> var13 == var152 ) 
+var2 -> var153 = number ; 
+} 
+} 
+return number ; 
+} 

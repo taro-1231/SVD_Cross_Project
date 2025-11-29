@@ -1,0 +1,12 @@
+func1 ( png_bytep var1 , png_const_bytep var2 , unsigned int var3 ) 
+{ 
+memcpy ( var1 , var2 , var3 >> number ) ; 
+if ( ( var3 & number ) != number ) 
+{ 
+unsigned int var4 ; 
+var1 += var3 >> number ; 
+var2 += var3 >> number ; 
+var4 = number >> ( var3 & number ) ; 
+* var1 = ( png_byte ) ( ( * var1 & var4 ) | ( * var2 & ~ var4 ) ) ; 
+} 
+} 

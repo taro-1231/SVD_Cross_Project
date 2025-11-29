@@ -1,0 +1,152 @@
+static int func1 ( VC1Context * var1 , int16_t var2 [ 64 ] , int var3 , 
+int var4 , int var5 , int var6 , 
+uint8_t * var7 , int var8 , int var9 , 
+int * var10 ) 
+{ 
+MpegEncContext * var11 = & var1 -> var11 ; 
+GetBitContext * var12 = & var11 -> var12 ; 
+int var13 , var14 ; 
+int var15 = number ; 
+int var16 , var17 , var18 , var19 , var20 , var21 ; 
+int var22 = var5 & number ; 
+int var23 = number ; 
+var11 -> var24 . func2 ( var2 ) ; 
+if ( var5 == - number ) { 
+var22 = var25 [ var1 -> var26 ] [ func3 ( var12 , var27 [ var1 -> var26 ] . var28 , var29 , number ) ] ; 
+} 
+if ( var22 == var30 ) { 
+var15 = ~ ( func3 ( var12 , var31 [ var1 -> var26 ] . var28 , var32 , number ) + number ) ; 
+} 
+if ( ( var22 != var33 && var22 != var30 ) 
+&& ( ( var1 -> var34 || ( var5 != - number && ( var5 & number ) && ! var6 ) ) 
+|| ( ! var1 -> var35 && ! var6 ) ) ) { 
+var15 = func4 ( var12 ) ; 
+if ( var15 ) 
+var15 ^= number ; 
+if ( var22 == var36 || var22 == var37 ) 
+var22 = var38 ; 
+if ( var22 == var39 || var22 == var40 ) 
+var22 = var41 ; 
+} 
+var16 = number * var4 + ( ( var1 -> var42 == var4 ) ? var1 -> var43 : number ) ; 
+if ( var22 == var36 || var22 == var37 ) { 
+var15 = number - ( var22 == var36 ) ; 
+var22 = var38 ; 
+} 
+if ( var22 == var39 || var22 == var40 ) { 
+var15 = number - ( var22 == var40 ) ; 
+var22 = var41 ; 
+} 
+switch ( var22 ) { 
+case var33 : 
+var23 = number ; 
+var13 = number ; 
+var19 = number ; 
+while ( ! var19 ) { 
+func5 ( var1 , & var19 , & var20 , & var21 , var1 -> var44 ) ; 
+var13 += var20 ; 
+if ( var13 > number ) 
+break ; 
+if ( ! var1 -> var45 ) 
+var18 = var1 -> var46 [ number ] [ var13 ++ ] ; 
+else 
+var18 = var1 -> var47 [ var13 ++ ] ; 
+var2 [ var18 ] = var21 * var16 ; 
+if ( ! var1 -> var48 ) 
+var2 [ var18 ] += ( var2 [ var18 ] < number ) ? - var4 : var4 ; 
+} 
+if ( ! var9 ) { 
+if ( var13 == number ) 
+var1 -> var49 . func6 ( var7 , var8 , var2 ) ; 
+else { 
+var1 -> var49 . func7 ( var2 ) ; 
+var11 -> var50 . func8 ( var2 , var7 , var8 ) ; 
+} 
+} 
+break ; 
+case var30 : 
+var23 = ~ var15 & number ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) { 
+var19 = var15 & ( number << ( number - var14 ) ) ; 
+var13 = number ; 
+var17 = ( var14 & number ) * number + ( var14 & number ) * number ; 
+while ( ! var19 ) { 
+func5 ( var1 , & var19 , & var20 , & var21 , var1 -> var44 ) ; 
+var13 += var20 ; 
+if ( var13 > number ) 
+break ; 
+if ( ! var1 -> var45 ) 
+var18 = var52 [ var13 ++ ] ; 
+else 
+var18 = var53 [ var13 ++ ] ; 
+var2 [ var18 + var17 ] = var21 * var16 ; 
+if ( ! var1 -> var48 ) 
+var2 [ var18 + var17 ] += ( var2 [ var18 + var17 ] < number ) ? - var4 : var4 ; 
+} 
+if ( ! ( var15 & ( number << ( number - var14 ) ) ) && ! var9 ) { 
+if ( var13 == number ) 
+var1 -> var49 . func9 ( var7 + ( var14 & number ) * number + ( var14 & number ) * number * var8 , var8 , var2 + var17 ) ; 
+else 
+var1 -> var49 . func10 ( var7 + ( var14 & number ) * number + ( var14 & number ) * number * var8 , var8 , var2 + var17 ) ; 
+} 
+} 
+break ; 
+case var38 : 
+var23 = ~ ( ( var15 & number ) * number + ( var15 & number ) * number ) & number ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) { 
+var19 = var15 & ( number << ( number - var14 ) ) ; 
+var13 = number ; 
+var17 = var14 * number ; 
+while ( ! var19 ) { 
+func5 ( var1 , & var19 , & var20 , & var21 , var1 -> var44 ) ; 
+var13 += var20 ; 
+if ( var13 > number ) 
+break ; 
+if ( ! var1 -> var45 ) 
+var18 = var1 -> var54 [ var13 ++ ] + var17 ; 
+else 
+var18 = var55 [ var13 ++ ] + var17 ; 
+var2 [ var18 ] = var21 * var16 ; 
+if ( ! var1 -> var48 ) 
+var2 [ var18 ] += ( var2 [ var18 ] < number ) ? - var4 : var4 ; 
+} 
+if ( ! ( var15 & ( number << ( number - var14 ) ) ) && ! var9 ) { 
+if ( var13 == number ) 
+var1 -> var49 . func11 ( var7 + var14 * number * var8 , var8 , var2 + var17 ) ; 
+else 
+var1 -> var49 . func12 ( var7 + var14 * number * var8 , var8 , var2 + var17 ) ; 
+} 
+} 
+break ; 
+case var41 : 
+var23 = ~ ( var15 * number ) & number ; 
+for ( var14 = number ; var14 < number ; var14 ++ ) { 
+var19 = var15 & ( number << ( number - var14 ) ) ; 
+var13 = number ; 
+var17 = var14 * number ; 
+while ( ! var19 ) { 
+func5 ( var1 , & var19 , & var20 , & var21 , var1 -> var44 ) ; 
+var13 += var20 ; 
+if ( var13 > number ) 
+break ; 
+if ( ! var1 -> var45 ) 
+var18 = var1 -> var56 [ var13 ++ ] + var17 ; 
+else 
+var18 = var57 [ var13 ++ ] + var17 ; 
+var2 [ var18 ] = var21 * var16 ; 
+if ( ! var1 -> var48 ) 
+var2 [ var18 ] += ( var2 [ var18 ] < number ) ? - var4 : var4 ; 
+} 
+if ( ! ( var15 & ( number << ( number - var14 ) ) ) && ! var9 ) { 
+if ( var13 == number ) 
+var1 -> var49 . func13 ( var7 + var14 * number , var8 , var2 + var17 ) ; 
+else 
+var1 -> var49 . func14 ( var7 + var14 * number , var8 , var2 + var17 ) ; 
+} 
+} 
+break ; 
+} 
+if ( var10 ) 
+* var10 |= var22 << ( var3 * number ) ; 
+return var23 ; 
+} 

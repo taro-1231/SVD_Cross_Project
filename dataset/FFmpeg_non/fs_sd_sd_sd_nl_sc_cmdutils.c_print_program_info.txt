@@ -1,0 +1,11 @@
+static void func1 ( int var1 , int var2 ) 
+{ 
+const char * var3 = var1 & var4 ? str : str ; 
+func2 ( var5 , var2 , str FFMPEG_VERSION , program_name ) ; 
+if ( var1 & var6 ) 
+func2 ( var5 , var2 , str , 
+var7 , var8 ) ; 
+func2 ( var5 , var2 , str ) ; 
+func2 ( var5 , var2 , str , var3 , var9 ) ; 
+func2 ( var5 , var2 , str FFMPEG_CONFIGURATION str , var3 ) ; 
+} 

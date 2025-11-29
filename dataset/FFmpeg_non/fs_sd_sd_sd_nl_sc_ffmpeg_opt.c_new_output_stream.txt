@@ -1,0 +1,177 @@
+static OutputStream * func1 ( OptionsContext * var1 , AVFormatContext * var2 , enum AVMediaType var3 , int var4 ) 
+{ 
+OutputStream * var5 ; 
+AVStream * var6 = func2 ( var2 , var7 ) ; 
+int var8 = var2 -> var9 - number , var10 = number ; 
+const char * var11 = var7 , * var12 = var7 ; 
+char * var13 , * var14 = var7 ; 
+double var15 = - number ; 
+int var16 ; 
+if ( ! var6 ) { 
+func3 ( var7 , var17 , var40 ) ; 
+func4 ( number ) ; 
+} 
+if ( var2 -> var9 - number < var1 -> var18 ) 
+var6 -> var19 = var1 -> var20 [ var2 -> var9 - number ] ; 
+func5 ( var21 , var22 ) ; 
+if ( ! ( var5 = func6 ( sizeof ( * var5 ) ) ) ) 
+func4 ( number ) ; 
+var21 [ var22 - number ] = var5 ; 
+var5 -> var23 = var24 - number ; 
+var5 -> var25 = var8 ; 
+var5 -> var6 = var6 ; 
+var6 -> var26 -> var27 = var3 ; 
+var10 = func7 ( var1 , var2 , var5 ) ; 
+if ( var10 < number ) { 
+func3 ( var7 , var17 , str 
+str , var5 -> var23 , var5 -> var25 ) ; 
+func4 ( number ) ; 
+} 
+var5 -> var28 = func8 ( var5 -> var29 ) ; 
+if ( ! var5 -> var28 ) { 
+func3 ( var7 , var30 , var40 ) ; 
+func4 ( number ) ; 
+} 
+var5 -> var28 -> var27 = var3 ; 
+var5 -> var31 = func9 ( ) ; 
+if ( ! var5 -> var31 ) { 
+func3 ( var7 , var30 , var40 ) ; 
+func4 ( number ) ; 
+} 
+if ( var5 -> var29 ) { 
+AVIOContext * var32 = var7 ; 
+char * var33 = var7 , * var34 = var7 , * var35 = var7 ; 
+var5 -> var36 = func10 ( var1 -> var37 -> var38 , var5 -> var29 -> var19 , var2 , var6 , var5 -> var29 ) ; 
+func11 ( var39 , var40 , var35 , var2 , var6 ) ; 
+if ( var35 && ( ! ( var10 = func12 ( var35 , var5 -> var29 -> var41 , & var32 ) ) ) ) { 
+do { 
+var33 = func13 ( var32 ) ; 
+if ( ! var33 [ number ] || var33 [ number ] == var40 ) { 
+func14 ( var33 ) ; 
+continue ; 
+} 
+if ( ! ( var34 = strchr ( var33 , var40 ) ) ) { 
+func3 ( var7 , var17 , var40 ) ; 
+func4 ( number ) ; 
+} 
+* var34 += number ; 
+func15 ( & var5 -> var36 , var33 , var34 , var42 ) ; 
+func14 ( var33 ) ; 
+} while ( ! var32 -> var43 ) ; 
+func16 ( & var32 ) ; 
+} 
+if ( var10 ) { 
+func3 ( var7 , var17 , 
+var40 , 
+var35 , var5 -> var23 , var5 -> var25 ) ; 
+func4 ( number ) ; 
+} 
+} else { 
+var5 -> var36 = func10 ( var1 -> var37 -> var38 , var44 , var2 , var6 , var7 ) ; 
+} 
+func11 ( var45 , var40 , var12 , var2 , var6 ) ; 
+if ( var12 ) { 
+AVRational var46 ; 
+if ( func17 ( & var46 , var12 , var47 , number , var7 ) < number || 
+var46 . var48 <= number || var46 . var49 <= number ) { 
+func3 ( var7 , var17 , var40 , var12 ) ; 
+func4 ( number ) ; 
+} 
+var6 -> var12 = var46 ; 
+} 
+var5 -> var50 = var51 ; 
+func11 ( var50 , var52 , var5 -> var50 , var2 , var6 ) ; 
+for ( var16 = number ; var16 < var1 -> var53 ; var16 ++ ) { 
+char * var54 = var1 -> var50 [ var16 ] . var55 ; 
+if ( ! * var54 && var3 != var56 ) { 
+func3 ( var7 , var57 , var40 ) ; 
+break ; 
+} 
+} 
+var5 -> var58 = - number ; 
+func11 ( var58 , var16 , var5 -> var58 , var2 , var6 ) ; 
+func11 ( var59 , var40 , var11 , var2 , var6 ) ; 
+while ( var11 && * var11 ) { 
+const AVBitStreamFilter * var60 ; 
+char * var61 , * var62 , * var63 ; 
+var61 = func18 ( & var11 , var40 ) ; 
+if ( ! var61 ) 
+func4 ( number ) ; 
+var63 = func19 ( var61 , var40 , & var62 ) ; 
+if ( ! var63 ) 
+func4 ( number ) ; 
+var60 = func20 ( var63 ) ; 
+if ( ! var60 ) { 
+func3 ( var7 , var17 , var40 , var63 ) ; 
+func4 ( number ) ; 
+} 
+var5 -> var64 = func21 ( var5 -> var64 , 
+var5 -> var65 + number , 
+sizeof ( * var5 -> var64 ) ) ; 
+if ( ! var5 -> var64 ) 
+func4 ( number ) ; 
+var10 = func22 ( var60 , & var5 -> var64 [ var5 -> var65 ] ) ; 
+if ( var10 < number ) { 
+func3 ( var7 , var30 , var40 ) ; 
+func4 ( number ) ; 
+} 
+var5 -> var65 ++ ; 
+if ( var62 && var60 -> var66 ) { 
+const AVOption * var67 = func23 ( var5 -> var64 [ var5 -> var65 - number ] -> var68 , var7 ) ; 
+const char * var69 [ number ] = { var7 } ; 
+if ( var67 ) 
+var69 [ number ] = var67 -> var41 ; 
+var10 = func24 ( var5 -> var64 [ var5 -> var65 - number ] -> var68 , var62 , var69 , var40 , var40 ) ; 
+if ( var10 < number ) { 
+func3 ( var7 , var30 , var40 , var63 ) ; 
+func4 ( number ) ; 
+} 
+} 
+func25 ( & var61 ) ; 
+if ( * var11 ) 
+var11 ++ ; 
+} 
+if ( var5 -> var65 ) { 
+var5 -> var70 = func26 ( var5 -> var65 , sizeof ( * var5 -> var70 ) ) ; 
+if ( ! var5 -> var70 ) { 
+func3 ( var7 , var17 , var40 ) ; 
+func4 ( number ) ; 
+} 
+} 
+func11 ( var71 , var40 , var14 , var2 , var6 ) ; 
+if ( var14 ) { 
+uint32_t var72 = func27 ( var14 , & var13 , number ) ; 
+if ( * var13 ) 
+var72 = func28 ( var14 ) ; 
+var5 -> var6 -> var26 -> var14 = 
+var5 -> var28 -> var14 = var72 ; 
+} 
+func11 ( var15 , var73 , var15 , var2 , var6 ) ; 
+if ( var15 >= number ) { 
+var5 -> var28 -> var74 |= var75 ; 
+var5 -> var28 -> var76 = var77 * var15 ; 
+} 
+func11 ( var78 , var40 , var5 -> var78 , var2 , var6 ) ; 
+var5 -> var78 = func29 ( var5 -> var78 ) ; 
+var5 -> var79 = number ; 
+func11 ( var79 , var16 , var5 -> var79 , var2 , var6 ) ; 
+var5 -> var79 *= sizeof ( AVPacket ) ; 
+if ( var2 -> var80 -> var74 & var81 ) 
+var5 -> var28 -> var74 |= var82 ; 
+func30 ( & var5 -> var83 , var1 -> var37 -> var83 , number ) ; 
+func30 ( & var5 -> var84 , var1 -> var37 -> var84 , number ) ; 
+if ( var5 -> var29 && func31 ( var5 -> var29 -> var19 ) == number ) 
+func15 ( & var5 -> var84 , var40 , var40 , number ) ; 
+func30 ( & var5 -> var85 , var1 -> var37 -> var85 , number ) ; 
+var5 -> var4 = var4 ; 
+if ( var4 >= number ) { 
+var5 -> var86 = var87 [ var4 ] ; 
+var87 [ var4 ] -> var88 = number ; 
+var87 [ var4 ] -> var6 -> var88 = var87 [ var4 ] -> var89 ; 
+} 
+var5 -> var90 = var91 ; 
+var5 -> var92 = func32 ( number * sizeof ( AVPacket ) ) ; 
+if ( ! var5 -> var92 ) 
+func4 ( number ) ; 
+return var5 ; 
+} 

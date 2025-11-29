@@ -1,0 +1,8 @@
+static int func1 ( const SectionHeader * var1 , MpegTSSectionFilter * var2 ) 
+{ 
+if ( var1 -> var3 == var2 -> var4 && var2 -> var5 == var2 -> var6 ) 
+return number ; 
+var2 -> var4 = var1 -> var3 ; 
+var2 -> var5 = var2 -> var6 ; 
+return number ; 
+} 

@@ -1,0 +1,9 @@
+static int func1 ( char * var1 ) 
+{ 
+while ( * var1 ) { 
+if ( ! isdigit ( * var1 ) ) 
+return var2 ; 
+++ var1 ; 
+} 
+return var3 ; 
+} 

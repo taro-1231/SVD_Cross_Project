@@ -1,0 +1,15 @@
+static inline int func1 ( const uint8_t var1 [ ] , int var2 , int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) { 
+if ( ( unsigned ) ( var1 [ number ] - var1 [ number ] + number * var3 ) > number * var3 ) return number ; 
+var1 += var2 ; 
+if ( ( unsigned ) ( var1 [ number ] - var1 [ number ] + number * var3 ) > number * var3 ) return number ; 
+var1 += var2 ; 
+if ( ( unsigned ) ( var1 [ number ] - var1 [ number ] + number * var3 ) > number * var3 ) return number ; 
+var1 += var2 ; 
+if ( ( unsigned ) ( var1 [ number ] - var1 [ number ] + number * var3 ) > number * var3 ) return number ; 
+var1 += var2 ; 
+} 
+return number ; 
+} 

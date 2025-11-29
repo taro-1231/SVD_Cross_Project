@@ -1,0 +1,256 @@
+static void func1 ( AVFormatContext * var1 , SDPParseState * var2 , 
+int var3 , const char * var4 ) 
+{ 
+RTSPState * var5 = var1 -> var6 ; 
+char var7 [ number ] , var8 [ number ] ; 
+const char * var9 ; 
+enum AVMediaType var10 ; 
+int var11 ; 
+AVStream * var12 ; 
+RTSPStream * var13 ; 
+RTSPSource * var14 ; 
+struct sockaddr_storage var15 ; 
+int var16 ; 
+func2 ( var1 , var17 , str , var3 , var4 ) ; 
+var9 = var4 ; 
+if ( var2 -> var18 && var3 != str ) 
+return ; 
+switch ( var3 ) { 
+case str : 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( strcmp ( var7 , str ) != number ) 
+return ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( strcmp ( var7 , str ) && strcmp ( var7 , str ) ) 
+return ; 
+func4 ( var7 , sizeof ( var7 ) , str , & var9 ) ; 
+if ( func5 ( var7 , & var15 ) ) 
+return ; 
+var16 = number ; 
+if ( * var9 == str ) { 
+var9 ++ ; 
+func4 ( var7 , sizeof ( var7 ) , str , & var9 ) ; 
+var16 = atoi ( var7 ) ; 
+} 
+if ( var1 -> var19 == number ) { 
+var2 -> var20 = var15 ; 
+var2 -> var21 = var16 ; 
+} else { 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+var13 -> var15 = var15 ; 
+var13 -> var24 = var16 ; 
+} 
+break ; 
+case str : 
+func6 ( & var1 -> var25 , str , var9 , number ) ; 
+break ; 
+case str : 
+if ( var1 -> var19 == number ) { 
+func6 ( & var1 -> var25 , str , var9 , number ) ; 
+break ; 
+} 
+break ; 
+case str : 
+var2 -> var18 = number ; 
+var2 -> var26 = number ; 
+var2 -> var27 = number ; 
+var10 = var28 ; 
+func3 ( var8 , sizeof ( var8 ) , & var9 ) ; 
+if ( ! strcmp ( var8 , str ) ) { 
+var10 = var29 ; 
+} else if ( ! strcmp ( var8 , str ) ) { 
+var10 = var30 ; 
+} else if ( ! strcmp ( var8 , str ) ) { 
+var10 = var31 ; 
+} else if ( ! strcmp ( var8 , str ) ) { 
+var10 = var32 ; 
+} 
+if ( var10 == var28 || ! ( var5 -> var33 & ( number << var10 ) ) ) { 
+var2 -> var18 = number ; 
+return ; 
+} 
+var13 = func7 ( sizeof ( RTSPStream ) ) ; 
+if ( ! var13 ) 
+return ; 
+var13 -> var34 = - number ; 
+func8 ( & var5 -> var22 , & var5 -> var23 , var13 ) ; 
+var13 -> var15 = var2 -> var20 ; 
+var13 -> var24 = var2 -> var21 ; 
+func9 ( var2 -> var35 , 
+var2 -> var36 , 
+& var13 -> var37 , 
+& var13 -> var38 ) ; 
+func9 ( var2 -> var39 , 
+var2 -> var40 , 
+& var13 -> var41 , 
+& var13 -> var42 ) ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+var13 -> var43 = atoi ( var7 ) ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( ! strcmp ( var7 , str ) ) 
+var5 -> var44 = var45 ; 
+else if ( strstr ( var7 , str ) || strstr ( var7 , str ) ) 
+var13 -> var46 = number ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+var13 -> var47 = atoi ( var7 ) ; 
+if ( ! strcmp ( func10 ( var13 -> var47 ) , str ) ) { 
+if ( var5 -> var44 == var45 ) { 
+if ( var48 && ! var5 -> var49 ) 
+var5 -> var49 = func11 ( var1 ) ; 
+} else { 
+RTPDynamicProtocolHandler * var50 ; 
+var50 = func12 ( 
+var13 -> var47 , var31 ) ; 
+func13 ( var50 , var13 , var51 ) ; 
+func14 ( var1 , var13 , var51 ) ; 
+} 
+} else if ( var5 -> var52 == var53 && 
+var10 == var31 ) { 
+} else { 
+var12 = func15 ( var1 , var51 ) ; 
+if ( ! var12 ) 
+return ; 
+var12 -> var54 = var5 -> var23 - number ; 
+var13 -> var34 = var12 -> var55 ; 
+var12 -> var56 -> var10 = var10 ; 
+if ( var13 -> var47 < var57 ) { 
+RTPDynamicProtocolHandler * var50 ; 
+func16 ( var12 -> var56 , var13 -> var47 ) ; 
+if ( var12 -> var56 -> var10 == var29 && 
+var12 -> var56 -> var58 > number ) 
+func17 ( var12 , number , number , var12 -> var56 -> var58 ) ; 
+var50 = func12 ( 
+var13 -> var47 , var12 -> var56 -> var10 ) ; 
+func13 ( var50 , var13 , var12 ) ; 
+func14 ( var1 , var13 , var12 ) ; 
+} 
+if ( var5 -> var59 [ number ] ) 
+func6 ( & var12 -> var25 , str , var5 -> var59 , number ) ; 
+} 
+func18 ( var13 -> var60 , var5 -> var61 , 
+sizeof ( var13 -> var60 ) ) ; 
+break ; 
+case str : 
+if ( func19 ( var9 , str , & var9 ) ) { 
+if ( var1 -> var19 == number ) { 
+if ( ! strncmp ( var9 , str 
+func18 ( var5 -> var61 , var9 , 
+sizeof ( var5 -> var61 ) ) ; 
+} else { 
+char var62 [ number ] ; 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+func20 ( var62 , sizeof ( var62 ) , var51 , number , var51 , number , 
+var51 , var51 , number , var9 ) ; 
+if ( var62 [ number ] == str ) { 
+if ( var13 -> var60 [ strlen ( var13 -> var60 ) - number ] != str ) 
+func21 ( var13 -> var60 , str , 
+sizeof ( var13 -> var60 ) ) ; 
+func21 ( var13 -> var60 , var9 , 
+sizeof ( var13 -> var60 ) ) ; 
+} else 
+func18 ( var13 -> var60 , var9 , 
+sizeof ( var13 -> var60 ) ) ; 
+} 
+} else if ( func19 ( var9 , str , & var9 ) && var1 -> var19 > number ) { 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+var11 = atoi ( var7 ) ; 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+if ( var13 -> var34 >= number ) { 
+var12 = var1 -> var63 [ var13 -> var34 ] ; 
+func22 ( var1 , var12 , var13 , var11 , var9 ) ; 
+} 
+var2 -> var27 = number ; 
+if ( var2 -> var26 ) { 
+func23 ( var1 , var5 , var11 , var2 -> var64 ) ; 
+} 
+} else if ( func19 ( var9 , str , & var9 ) || 
+func19 ( var9 , str , & var9 ) ) { 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+var11 = atoi ( var7 ) ; 
+if ( var2 -> var27 ) { 
+func23 ( var1 , var5 , var11 , var4 ) ; 
+} else { 
+var2 -> var26 = number ; 
+func18 ( var2 -> var64 , var4 , sizeof ( var2 -> var64 ) ) ; 
+} 
+} else if ( func19 ( var9 , str , & var9 ) ) { 
+int64_t var65 , var66 ; 
+func24 ( var9 , & var65 , & var66 ) ; 
+var1 -> var67 = var65 ; 
+var1 -> var68 = ( var66 == var69 ) ? 
+var69 : var66 - var65 ; 
+} else if ( func19 ( var9 , str , & var9 ) ) { 
+if ( var1 -> var19 > number ) { 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+if ( var13 -> var34 >= number ) { 
+var12 = var1 -> var63 [ var13 -> var34 ] ; 
+func6 ( & var12 -> var25 , str , var7 , number ) ; 
+} 
+} else 
+func3 ( var5 -> var59 , sizeof ( var5 -> var59 ) , & var9 ) ; 
+} else if ( func19 ( var9 , str , & var9 ) ) { 
+if ( atoi ( var9 ) == number ) 
+var5 -> var44 = var70 ; 
+} else if ( func19 ( var9 , str , & var9 ) && 
+var1 -> var19 > number ) { 
+var12 = var1 -> var63 [ var1 -> var19 - number ] ; 
+var12 -> var56 -> var58 = atoi ( var9 ) ; 
+} else if ( func19 ( var9 , str , & var9 ) && var1 -> var19 > number ) { 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+func3 ( var13 -> var71 , sizeof ( var13 -> var71 ) , & var9 ) ; 
+var9 += strspn ( var9 , var72 ) ; 
+if ( func19 ( var9 , str , & var9 ) ) 
+func3 ( var13 -> var73 , sizeof ( var13 -> var73 ) , & var9 ) ; 
+} else if ( func19 ( var9 , str , & var9 ) ) { 
+int var74 = number ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( strcmp ( var7 , str ) && strcmp ( var7 , str ) ) 
+return ; 
+var74 = ! strcmp ( var7 , str ) ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( strcmp ( var7 , str ) != number ) 
+return ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+if ( strcmp ( var7 , str ) && strcmp ( var7 , str ) && strcmp ( var7 , str ) ) 
+return ; 
+func3 ( var7 , sizeof ( var7 ) , & var9 ) ; 
+while ( * var9 != str ) { 
+var14 = func7 ( sizeof ( * var14 ) ) ; 
+if ( ! var14 ) 
+return ; 
+func3 ( var14 -> var75 , sizeof ( var14 -> var75 ) , & var9 ) ; 
+if ( var74 ) { 
+if ( var1 -> var19 == number ) { 
+func8 ( & var2 -> var39 , & var2 -> var40 , var14 ) ; 
+} else { 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+func8 ( & var13 -> var41 , & var13 -> var42 , var14 ) ; 
+} 
+} else { 
+if ( var1 -> var19 == number ) { 
+func8 ( & var2 -> var35 , & var2 -> var36 , var14 ) ; 
+} else { 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+func8 ( & var13 -> var37 , & var13 -> var38 , var14 ) ; 
+} 
+} 
+} 
+} else { 
+if ( var5 -> var52 == var53 ) 
+func25 ( var1 , var9 ) ; 
+if ( var1 -> var19 > number ) { 
+var13 = var5 -> var22 [ var5 -> var23 - number ] ; 
+if ( var5 -> var52 == var76 ) 
+func26 ( var1 , var13 -> var34 , var9 ) ; 
+if ( var13 -> var77 && 
+var13 -> var77 -> func27 ) 
+var13 -> var77 -> func27 ( var1 , 
+var13 -> var34 , 
+var13 -> var78 , var4 ) ; 
+} 
+} 
+break ; 
+} 
+} 

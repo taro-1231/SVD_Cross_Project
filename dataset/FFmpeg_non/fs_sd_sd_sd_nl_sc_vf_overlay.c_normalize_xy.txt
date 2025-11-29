@@ -1,0 +1,6 @@
+static inline int func1 ( double var1 , int var2 ) 
+{ 
+if ( isnan ( var1 ) ) 
+return var3 ; 
+return ( int ) var1 & ~ ( ( number << var2 ) - number ) ; 
+} 

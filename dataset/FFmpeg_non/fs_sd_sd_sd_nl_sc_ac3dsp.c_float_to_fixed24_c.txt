@@ -1,0 +1,15 @@
+static void func1 ( int32_t * var1 , const float * var2 , unsigned int var3 ) 
+{ 
+const float var4 = number << number ; 
+do { 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+* var1 += func2 ( * var2 ++ * var4 ) ; 
+var3 -= number ; 
+} while ( var3 > number ) ; 
+} 

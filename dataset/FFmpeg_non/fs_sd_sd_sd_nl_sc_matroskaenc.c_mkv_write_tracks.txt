@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+ebml_master var5 ; 
+int var6 , var7 , var8 = number ; 
+var7 = func2 ( var2 -> var9 , var10 , func3 ( var4 ) ) ; 
+if ( var7 < number ) 
+return var7 ; 
+var5 = func4 ( var4 , var10 , number ) ; 
+for ( var6 = number ; var6 < var1 -> var11 ; var6 ++ ) { 
+AVStream * var12 = var1 -> var13 [ var6 ] ; 
+var8 |= var12 -> var14 & var15 ; 
+} 
+for ( var6 = number ; var6 < var1 -> var11 ; var6 ++ ) { 
+var7 = func5 ( var1 , var2 , var6 , var4 , var8 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+} 
+func6 ( var4 , var5 ) ; 
+return number ; 
+} 

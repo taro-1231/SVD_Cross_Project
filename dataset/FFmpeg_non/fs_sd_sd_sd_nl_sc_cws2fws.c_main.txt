@@ -1,0 +1,98 @@
+int func1 ( int var1 , char * var2 [ ] ) 
+{ 
+int var3 , var4 , var5 , var6 , var7 , var8 ; 
+char var9 [ number ] , var10 [ number ] ; 
+z_stream var11 ; 
+struct stat var12 ; 
+int var13 = number ; 
+if ( var1 < number ) { 
+printf ( str , var2 [ number ] ) ; 
+return number ; 
+} 
+var3 = func2 ( var2 [ number ] , var14 ) ; 
+if ( var3 < number ) { 
+perror ( str ) ; 
+return number ; 
+} 
+var4 = func2 ( var2 [ number ] , var15 | var16 , number ) ; 
+if ( var4 < number ) { 
+perror ( str ) ; 
+func3 ( var3 ) ; 
+return number ; 
+} 
+if ( func4 ( var3 , & var9 , number ) != number ) { 
+printf ( str ) ; 
+goto var17 ; 
+} 
+if ( var9 [ number ] != str || var9 [ number ] != str || var9 [ number ] != str ) { 
+printf ( str ) ; 
+goto var17 ; 
+} 
+if ( func5 ( var3 , & var12 ) < number ) { 
+perror ( str ) ; 
+return number ; 
+} 
+var5 = var12 . var18 ; 
+var6 = var9 [ number ] | ( var9 [ number ] << number ) | ( var9 [ number ] << number ) | ( var9 [ number ] << number ) ; 
+printf ( str , 
+var5 - number , var6 - number ) ; 
+var9 [ number ] = str ; 
+if ( func6 ( var4 , & var9 , number ) < number ) { 
+perror ( str ) ; 
+goto var17 ; 
+} 
+var11 . var19 = var20 ; 
+var11 . var21 = var20 ; 
+var11 . var22 = var20 ; 
+if ( func7 ( & var11 ) != var23 ) { 
+fprintf ( var24 , str ) ; 
+return number ; 
+} 
+for ( var7 = number ; var7 < var5 - number ; ) { 
+int var13 , var25 = func4 ( var3 , & var9 , number ) ; 
+func8 ( str , var25 ) ; 
+var8 = var11 . var26 ; 
+var11 . var27 = & var9 [ number ] ; 
+var11 . var28 = var25 ; 
+var11 . var29 = & var10 [ number ] ; 
+var11 . var30 = number ; 
+var13 = func9 ( & var11 , var31 ) ; 
+if ( var13 != var32 && var13 != var23 ) { 
+printf ( str , var13 ) ; 
+func10 ( & var11 ) ; 
+goto var17 ; 
+} 
+func8 ( str , 
+var11 . var28 , var11 . var33 , var11 . var30 , 
+var11 . var26 , var11 . var26 - var8 ) ; 
+if ( func6 ( var4 , & var10 , var11 . var26 - var8 ) < 
+var11 . var26 - var8 ) { 
+perror ( str ) ; 
+func10 ( & var11 ) ; 
+goto var17 ; 
+} 
+var7 += var25 ; 
+if ( var13 == var32 || var13 == var34 ) 
+break ; 
+} 
+if ( var11 . var26 != var6 - number ) { 
+printf ( str , 
+var11 . var26 , var6 - number ) ; 
+var9 [ number ] = ( var11 . var26 + number ) & number ; 
+var9 [ number ] = ( ( var11 . var26 + number ) >> number ) & number ; 
+var9 [ number ] = ( ( var11 . var26 + number ) >> number ) & number ; 
+var9 [ number ] = ( ( var11 . var26 + number ) >> number ) & number ; 
+if ( func11 ( var4 , number , var35 ) < number 
+|| func6 ( var4 , & var9 , number ) < number ) { 
+perror ( str ) ; 
+func10 ( & var11 ) ; 
+goto var17 ; 
+} 
+} 
+var13 = number ; 
+func10 ( & var11 ) ; 
+var17 : 
+func3 ( var3 ) ; 
+func3 ( var4 ) ; 
+return var13 ; 
+} 

@@ -1,0 +1,23 @@
+static int func1 ( const uint8_t * var1 , int var2 , int var3 , int * var4 , 
+int var5 ) 
+{ 
+int var6 [ var7 ] ; 
+int var8 = number ; 
+int var9 ; 
+int var10 = number ; 
+memset ( var6 , number , var3 * sizeof ( * var6 ) ) ; 
+for ( var9 = number ; var9 < var2 - number ; var9 ++ ) { 
+if ( var1 [ var9 ] == number && 
+( ! var5 || ( ! ( var1 [ var9 + number ] & number ) && var1 [ var9 + number ] != number ) ) ) { 
+int var11 = var9 % var3 ; 
+var6 [ var11 ] ++ ; 
+var8 ++ ; 
+if ( var6 [ var11 ] > var10 ) { 
+var10 = var6 [ var11 ] ; 
+if ( var4 ) 
+* var4 = var11 ; 
+} 
+} 
+} 
+return var10 - func2 ( var8 - number * var10 , number ) / number ; 
+} 

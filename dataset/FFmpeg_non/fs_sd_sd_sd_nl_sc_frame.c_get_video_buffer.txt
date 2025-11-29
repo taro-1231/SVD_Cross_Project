@@ -1,0 +1,42 @@
+static int func1 ( AVFrame * var1 , int var2 ) 
+{ 
+const AVPixFmtDescriptor * var3 = func2 ( var1 -> var4 ) ; 
+int var5 , var6 ; 
+if ( ! var3 ) 
+return func3 ( var7 ) ; 
+if ( ( var5 = func4 ( var1 -> var8 , var1 -> var9 , number , var10 ) ) < number ) 
+return var5 ; 
+if ( ! var1 -> var11 [ number ] ) { 
+for ( var6 = number ; var6 <= var2 ; var6 += var6 ) { 
+var5 = func5 ( var1 -> var11 , var1 -> var4 , 
+func6 ( var1 -> var8 , var6 ) ) ; 
+if ( var5 < number ) 
+return var5 ; 
+if ( ! ( var1 -> var11 [ number ] & ( var2 - number ) ) ) 
+break ; 
+} 
+for ( var6 = number ; var6 < number && var1 -> var11 [ var6 ] ; var6 ++ ) 
+var1 -> var11 [ var6 ] = func6 ( var1 -> var11 [ var6 ] , var2 ) ; 
+} 
+for ( var6 = number ; var6 < number && var1 -> var11 [ var6 ] ; var6 ++ ) { 
+int var12 = func6 ( var1 -> var9 , number ) ; 
+if ( var6 == number || var6 == number ) 
+var12 = func7 ( var12 , var3 -> var13 ) ; 
+var1 -> var14 [ var6 ] = func8 ( var1 -> var11 [ var6 ] * var12 + number + number - number ) ; 
+if ( ! var1 -> var14 [ var6 ] ) 
+goto var15 ; 
+var1 -> var16 [ var6 ] = var1 -> var14 [ var6 ] -> var16 ; 
+} 
+if ( var3 -> var17 & var18 || var3 -> var17 & var19 ) { 
+func9 ( & var1 -> var14 [ number ] ) ; 
+var1 -> var14 [ number ] = func8 ( number ) ; 
+if ( ! var1 -> var14 [ number ] ) 
+goto var15 ; 
+var1 -> var16 [ number ] = var1 -> var14 [ number ] -> var16 ; 
+} 
+var1 -> var20 = var1 -> var16 ; 
+return number ; 
+var15 : 
+func10 ( var1 ) ; 
+return func3 ( var21 ) ; 
+} 

@@ -1,0 +1,19 @@
+static int func1 ( AVProbeData * var1 ) { 
+const uint8_t * var2 = var1 -> var3 ; 
+const uint8_t * var4 = var1 -> var3 + var1 -> var5 ; 
+if ( var1 -> var5 < sizeof ( var6 ) ) 
+return number ; 
+var4 -= sizeof ( var6 ) ; 
+for ( ; var2 < var4 ; ) { 
+if ( ! ( ( var2 [ number ] - number ) & number ) ) { 
+if ( func2 ( var2 ) == func2 ( var6 ) && 
+func2 ( var2 + number ) == func2 ( var6 + number ) && 
+func2 ( var2 + number ) == func2 ( var6 + number ) && 
+func3 ( var2 + number ) == func3 ( var6 + number ) ) 
+return var7 ; 
+var2 ++ ; 
+} else 
+var2 += number ; 
+} 
+return number ; 
+} 

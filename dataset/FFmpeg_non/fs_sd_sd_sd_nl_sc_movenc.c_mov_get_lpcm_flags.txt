@@ -1,0 +1,24 @@
+static int func1 ( enum AVCodecID var1 ) 
+{ 
+switch ( var1 ) { 
+case var2 : 
+case var3 : 
+return number ; 
+case var4 : 
+case var5 : 
+return number ; 
+case var6 : 
+return number ; 
+case var7 : 
+case var8 : 
+case var9 : 
+return number ; 
+case var10 : 
+case var11 : 
+case var12 : 
+case var13 : 
+return number ; 
+var14 : 
+return number ; 
+} 
+} 

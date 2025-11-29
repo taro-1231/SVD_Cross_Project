@@ -1,0 +1,20 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+OSSAudioData * var2 = var1 -> var3 ; 
+AVStream * var4 ; 
+int var5 ; 
+var4 = func2 ( var1 , var6 ) ; 
+if ( ! var4 ) { 
+return func3 ( var7 ) ; 
+} 
+var5 = func4 ( var1 , number , var1 -> var8 ) ; 
+if ( var5 < number ) { 
+return func3 ( var9 ) ; 
+} 
+var4 -> var10 -> var11 = var12 ; 
+var4 -> var10 -> var13 = var2 -> var13 ; 
+var4 -> var10 -> var14 = var2 -> var14 ; 
+var4 -> var10 -> var15 = var2 -> var15 ; 
+func5 ( var4 , number , number , number ) ; 
+return number ; 
+} 

@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+OverlayContext * var4 = var2 -> var5 ; 
+int var6 ; 
+if ( ( var6 = func2 ( var2 , & var4 -> var7 ) ) < number ) 
+return var6 ; 
+var1 -> var8 = var2 -> var9 [ var10 ] -> var8 ; 
+var1 -> var11 = var2 -> var9 [ var10 ] -> var11 ; 
+var1 -> var12 = var2 -> var9 [ var10 ] -> var12 ; 
+return number ; 
+} 

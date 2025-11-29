@@ -1,0 +1,45 @@
+static int func1 ( MOVTrack * var1 , 
+AVStream * var2 ) 
+{ 
+int var3 , var4 = number , var5 = number ; 
+int var6 = number , var7 = number ; 
+uint32_t var8 [ number ] ; 
+char * var9 = var2 -> var10 -> var11 ; 
+while ( var9 && * var9 ) { 
+if ( strncmp ( str , var9 , number ) == number ) { 
+int var3 , var12 ; 
+var12 = sscanf ( var9 + number , 
+str PRIx32 str PRIx32 str PRIx32 str PRIx32 str 
+str PRIx32 str PRIx32 str PRIx32 str PRIx32 str 
+str PRIx32 str PRIx32 str PRIx32 str PRIx32 str 
+str PRIx32 str PRIx32 str PRIx32 str PRIx32 str , 
+& var8 [ number ] , & var8 [ number ] , & var8 [ 2 ] , & var8 [ 3 ] , 
+& var8 [ number ] , & var8 [ number ] , & var8 [ 6 ] , & var8 [ 7 ] , 
+& var8 [ number ] , & var8 [ 9 ] , & var8 [ 10 ] , & var8 [ 11 ] , 
+& var8 [ 12 ] , & var8 [ 13 ] , & var8 [ 14 ] , & var8 [ 15 ] ) ; 
+for ( var3 = number ; var3 < var12 ; var3 ++ ) { 
+var8 [ var3 ] = func2 ( var8 [ var3 ] ) ; 
+} 
+var6 = number ; 
+} else if ( ! strncmp ( str , var9 , number ) ) { 
+sscanf ( var9 + number , str , & var4 , & var5 ) ; 
+var7 = number ; 
+} 
+if ( var6 && var7 ) 
+break ; 
+var9 += strcspn ( var9 , str ) ; 
+var9 += strspn ( var9 , str ) ; 
+} 
+if ( var6 ) { 
+var1 -> var13 = func3 ( number * number ) ; 
+if ( ! var1 -> var13 ) 
+return func4 ( var14 ) ; 
+for ( var3 = number ; var3 < number ; var3 ++ ) { 
+func5 ( var1 -> var13 + var3 * number , var8 [ var3 ] ) ; 
+} 
+var1 -> var15 = number * number ; 
+} 
+var2 -> var10 -> var4 = var4 ; 
+var2 -> var10 -> var5 = var1 -> var5 = var5 ; 
+return number ; 
+} 

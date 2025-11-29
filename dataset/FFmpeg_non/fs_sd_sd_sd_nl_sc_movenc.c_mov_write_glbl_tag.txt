@@ -1,0 +1,7 @@
+static int func1 ( AVIOContext * var1 , MOVTrack * var2 ) 
+{ 
+func2 ( var1 , var2 -> var3 + number ) ; 
+func3 ( var1 , str ) ; 
+func4 ( var1 , var2 -> var4 , var2 -> var3 ) ; 
+return number + var2 -> var3 ; 
+} 

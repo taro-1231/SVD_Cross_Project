@@ -1,0 +1,23 @@
+static av_cold int func1 ( WriterContext * var2 ) 
+{ 
+XMLContext * var1 = var2 -> var3 ; 
+if ( var1 -> var4 ) { 
+var1 -> var5 = number ; 
+if ( var6 ) { \ 
+av_log ( var2 , AV_LOG_ERROR , \ 
+str \ 
+str , opt_name , opt_name ) ; \ 
+return func3 ( var7 ) ; \ 
+} 
+func2 ( var8 , str ) ; 
+func2 ( var9 , str ) ; 
+func2 ( var10 , str ) ; 
+if ( var11 && var12 ) { 
+av_log ( var2 , AV_LOG_ERROR , 
+str 
+str ) ; 
+return func3 ( var7 ) ; 
+} 
+} 
+return number ; 
+} 

@@ -1,0 +1,40 @@
+av_cold void func1 ( AudioMix * var1 ) 
+{ 
+int var2 = func2 ( ) ; 
+if ( func3 ( var2 ) ) { 
+func4 ( var1 , var3 , var4 , 
+number , number , number , number , str , var5 ) ; 
+func4 ( var1 , var3 , var4 , 
+number , number , number , number , str , var6 ) ; 
+} 
+if ( func5 ( var2 ) ) { 
+func4 ( var1 , var7 , var4 , 
+number , number , number , number , str , var8 ) ; 
+func4 ( var1 , var7 , var9 , 
+number , number , number , number , str , var10 ) ; 
+func4 ( var1 , var7 , var4 , 
+number , number , number , number , str , var11 ) ; 
+} 
+if ( func6 ( var2 ) ) { 
+func4 ( var1 , var7 , var4 , 
+number , number , number , number , str , var12 ) ; 
+func4 ( var1 , var7 , var4 , 
+number , number , number , number , str , var13 ) ; 
+} 
+if ( func7 ( var2 ) ) { 
+func4 ( var1 , var3 , var4 , 
+number , number , number , number , str , var14 ) ; 
+func4 ( var1 , var3 , var4 , 
+number , number , number , number , str , var15 ) ; 
+} 
+if ( func8 ( var2 ) ) { 
+func4 ( var1 , var7 , var4 , 
+number , number , number , number , str , var16 ) ; 
+} 
+SET_MIX_3_8_TO_1_2 ( 3 ) 
+SET_MIX_3_8_TO_1_2 ( number ) 
+SET_MIX_3_8_TO_1_2 ( 5 ) 
+SET_MIX_3_8_TO_1_2 ( 6 ) 
+SET_MIX_3_8_TO_1_2 ( 7 ) 
+SET_MIX_3_8_TO_1_2 ( number ) 
+} 

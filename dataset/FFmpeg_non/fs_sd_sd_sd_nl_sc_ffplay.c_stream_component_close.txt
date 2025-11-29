@@ -1,0 +1,52 @@
+static void func1 ( VideoState * var1 , int var2 ) 
+{ 
+AVFormatContext * var3 = var1 -> var3 ; 
+AVCodecParameters * var4 ; 
+if ( var2 < number || var2 >= var3 -> var5 ) 
+return ; 
+var4 = var3 -> var6 [ var2 ] -> var4 ; 
+switch ( var4 -> var7 ) { 
+case var8 : 
+func2 ( & var1 -> var9 , & var1 -> var10 ) ; 
+func3 ( ) ; 
+func4 ( & var1 -> var9 ) ; 
+func5 ( & var1 -> var11 ) ; 
+func6 ( & var1 -> var12 ) ; 
+var1 -> var13 = number ; 
+var1 -> var14 = var15 ; 
+if ( var1 -> var16 ) { 
+func7 ( var1 -> var16 ) ; 
+func6 ( & var1 -> var17 ) ; 
+var1 -> var16 = var15 ; 
+var1 -> var18 = number ; 
+} 
+break ; 
+case var19 : 
+func2 ( & var1 -> var20 , & var1 -> var21 ) ; 
+func4 ( & var1 -> var20 ) ; 
+break ; 
+case var22 : 
+func2 ( & var1 -> var23 , & var1 -> var24 ) ; 
+func4 ( & var1 -> var23 ) ; 
+break ; 
+var25 : 
+break ; 
+} 
+var3 -> var6 [ var2 ] -> var26 = var27 ; 
+switch ( var4 -> var7 ) { 
+case var8 : 
+var1 -> var28 = var15 ; 
+var1 -> var29 = - number ; 
+break ; 
+case var19 : 
+var1 -> var30 = var15 ; 
+var1 -> var31 = - number ; 
+break ; 
+case var22 : 
+var1 -> var32 = var15 ; 
+var1 -> var33 = - number ; 
+break ; 
+var25 : 
+break ; 
+} 
+} 

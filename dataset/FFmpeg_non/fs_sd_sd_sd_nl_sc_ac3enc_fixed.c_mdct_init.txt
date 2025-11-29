@@ -1,0 +1,6 @@
+av_cold int AC3_NAME ( func1 ) ( AC3EncodeContext * var1 ) 
+{ 
+int var2 = func2 ( & var1 -> var3 , number , number , - number ) ; 
+var1 -> var4 = var5 ; 
+return var2 ; 
+} 

@@ -1,0 +1,71 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+AVFilterLink * var2 = var1 -> var3 [ number ] ; 
+FifoContext * var4 = var1 -> var5 ; 
+AVFrame * var6 = var4 -> var7 . var8 ? var4 -> var7 . var8 -> var9 : var10 ; 
+AVFrame * var11 ; 
+int var12 ; 
+if ( ! var6 && ! var4 -> var11 ) 
+return var13 ; 
+if ( ! var4 -> var11 && 
+var6 -> var14 >= var2 -> var15 && 
+func2 ( var6 ) >= number ) { 
+if ( var6 -> var14 == var2 -> var15 ) { 
+var11 = var6 ; 
+func3 ( var4 ) ; 
+} else { 
+var11 = func4 ( var6 ) ; 
+if ( ! var11 ) 
+return func5 ( var16 ) ; 
+var11 -> var14 = var2 -> var15 ; 
+func6 ( var2 , var6 , var2 -> var15 ) ; 
+} 
+} else { 
+int var17 = func7 ( var2 -> var18 ) ; 
+if ( ! var4 -> var11 ) { 
+var4 -> var11 = func8 ( var2 , var2 -> var15 ) ; 
+if ( ! var4 -> var11 ) 
+return func5 ( var16 ) ; 
+var4 -> var11 -> var14 = number ; 
+var4 -> var11 -> var19 = var6 -> var19 ; 
+var4 -> var20 = var2 -> var15 ; 
+} else if ( var2 -> var15 != var4 -> var20 ) { 
+av_log ( var1 , AV_LOG_ERROR , str 
+str ) ; 
+return func5 ( var21 ) ; 
+} 
+while ( var4 -> var11 -> var14 < var4 -> var20 ) { 
+int var22 ; 
+if ( ! var4 -> var7 . var8 ) { 
+var12 = func9 ( var1 -> var23 [ number ] ) ; 
+if ( var12 == var13 ) { 
+func10 ( var4 -> var11 -> var24 , 
+var4 -> var11 -> var14 , 
+var4 -> var20 - 
+var4 -> var11 -> var14 , 
+var17 , var2 -> var25 ) ; 
+var4 -> var11 -> var14 = var4 -> var20 ; 
+break ; 
+} else if ( var12 < number ) 
+return var12 ; 
+func11 ( var4 -> var7 . var8 ) ; 
+} 
+var6 = var4 -> var7 . var8 -> var9 ; 
+var22 = func12 ( var4 -> var20 - var4 -> var11 -> var14 , 
+var6 -> var14 ) ; 
+func13 ( var4 -> var11 -> var24 , var6 -> var24 , 
+var4 -> var11 -> var14 , number , var22 , var17 , 
+var2 -> var25 ) ; 
+var4 -> var11 -> var14 += var22 ; 
+if ( var22 == var6 -> var14 ) { 
+func14 ( & var6 ) ; 
+func3 ( var4 ) ; 
+} else { 
+func6 ( var2 , var6 , var22 ) ; 
+} 
+} 
+var11 = var4 -> var11 ; 
+var4 -> var11 = var10 ; 
+} 
+return func15 ( var2 , var11 ) ; 
+} 

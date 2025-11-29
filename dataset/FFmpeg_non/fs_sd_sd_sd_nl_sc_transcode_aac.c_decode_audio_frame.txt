@@ -1,0 +1,29 @@
+static int func1 ( AVFrame * var1 , 
+AVFormatContext * var2 , 
+AVCodecContext * var3 , 
+int * var4 , int * var5 ) 
+{ 
+AVPacket var6 ; 
+int var7 ; 
+func2 ( & var6 ) ; 
+if ( ( var7 = func3 ( var2 , & var6 ) ) < number ) { 
+if ( var7 == var8 ) 
+* var5 = number ; 
+else { 
+fprintf ( var9 , str , 
+func4 ( var7 ) ) ; 
+return var7 ; 
+} 
+} 
+if ( ( var7 = func5 ( var3 , var1 , 
+var4 , & var6 ) ) < number ) { 
+fprintf ( var9 , str , 
+func4 ( var7 ) ) ; 
+func6 ( & var6 ) ; 
+return var7 ; 
+} 
+if ( * var5 && * var4 ) 
+* var5 = number ; 
+func6 ( & var6 ) ; 
+return number ; 
+} 

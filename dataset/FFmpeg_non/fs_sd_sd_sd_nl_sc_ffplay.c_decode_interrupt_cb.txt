@@ -1,0 +1,5 @@
+static int func1 ( void * var1 ) 
+{ 
+VideoState * var2 = var1 ; 
+return var2 -> var3 ; 
+} 

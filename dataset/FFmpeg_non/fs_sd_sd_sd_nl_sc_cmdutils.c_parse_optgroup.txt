@@ -1,0 +1,25 @@
+int func1 ( void * var1 , OptionGroup * var2 ) 
+{ 
+int var3 , var4 ; 
+func2 ( var5 , var6 , str , 
+var2 -> var7 -> var8 , var2 -> var9 ) ; 
+for ( var3 = number ; var3 < var2 -> var10 ; var3 ++ ) { 
+Option * var11 = & var2 -> var12 [ var3 ] ; 
+if ( var2 -> var7 -> var13 && 
+! ( var2 -> var7 -> var13 & var11 -> var14 -> var13 ) ) { 
+func2 ( var5 , AV_LOG_ERROR , str 
+str 
+str 
+str , var11 -> var15 , var11 -> var14 -> var16 , 
+var2 -> var7 -> var8 , var2 -> var9 ) ; 
+return func3 ( var17 ) ; 
+} 
+func2 ( var5 , var6 , str , 
+var11 -> var15 , var11 -> var14 -> var16 , var11 -> var18 ) ; 
+var4 = func4 ( var1 , var11 -> var14 , var11 -> var15 , var11 -> var18 ) ; 
+if ( var4 < number ) 
+return var4 ; 
+} 
+func2 ( var5 , var6 , str ) ; 
+return number ; 
+} 

@@ -1,0 +1,5 @@
+AVFilterFormats * func1 ( void ) 
+{ 
+AVFilterFormats * var1 = func2 ( sizeof ( * var1 ) ) ; 
+return var1 ; 
+} 

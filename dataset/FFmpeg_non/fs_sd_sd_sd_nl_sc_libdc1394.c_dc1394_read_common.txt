@@ -1,0 +1,61 @@
+static inline int func1 ( AVFormatContext * var1 , 
+struct dc1394_frame_format ** var2 , struct dc1394_frame_rate ** var3 ) 
+{ 
+dc1394_data * var4 = var1 -> var5 ; 
+AVStream * var6 ; 
+struct dc1394_frame_format * var7 ; 
+struct dc1394_frame_rate * var8 ; 
+enum AVPixelFormat var9 ; 
+int var10 , var11 ; 
+AVRational var12 ; 
+int var13 = number ; 
+if ( ( var9 = func2 ( var4 -> var14 ) ) == var15 ) { 
+func3 ( var1 , var16 , str , var4 -> var14 ) ; 
+var13 = func4 ( var17 ) ; 
+goto var18 ; 
+} 
+if ( ( var13 = func5 ( & var10 , & var11 , var4 -> var19 ) ) < number ) { 
+func3 ( var1 , var16 , str , var4 -> var19 ) ; 
+goto var18 ; 
+} 
+if ( ( var13 = func6 ( & var12 , var4 -> var12 ) ) < number ) { 
+func3 ( var1 , var16 , str , var4 -> var12 ) ; 
+goto var18 ; 
+} 
+var4 -> var21 = func7 ( number , var12 . var22 , var12 . var23 ) ; 
+for ( var7 = var24 ; var7 -> var10 ; var7 ++ ) 
+if ( var7 -> var9 == var9 && var7 -> var10 == var10 && var7 -> var11 == var11 ) 
+break ; 
+for ( var8 = var25 ; var8 -> var21 ; var8 ++ ) 
+if ( var8 -> var21 == var4 -> var21 ) 
+break ; 
+if ( ! var8 -> var21 || ! var7 -> var10 ) { 
+func3 ( var1 , var16 , str , func8 ( var9 ) , 
+var10 , var11 , var4 -> var21 ) ; 
+var13 = func4 ( var17 ) ; 
+goto var18 ; 
+} 
+var6 = func9 ( var1 , var26 ) ; 
+if ( ! var6 ) { 
+var13 = func4 ( var27 ) ; 
+goto var18 ; 
+} 
+func10 ( var6 , number , number , number ) ; 
+var6 -> var28 -> var29 = var30 ; 
+var6 -> var28 -> var31 = var32 ; 
+var6 -> var28 -> var33 . var23 = var12 . var22 ; 
+var6 -> var28 -> var33 . var22 = var12 . var23 ; 
+var6 -> var28 -> var10 = var7 -> var10 ; 
+var6 -> var28 -> var11 = var7 -> var11 ; 
+var6 -> var28 -> var9 = var7 -> var9 ; 
+func11 ( & var4 -> var34 ) ; 
+var4 -> var34 . var20 = func12 ( var7 -> var9 , var7 -> var10 , var7 -> var11 ) ; 
+var4 -> var34 . var35 = var6 -> var36 ; 
+var4 -> var34 . var37 |= var38 ; 
+var4 -> var39 = number ; 
+var6 -> var28 -> var40 = func7 ( var4 -> var34 . var20 * number , var8 -> var21 , number ) ; 
+* var3 = var8 ; 
+* var2 = var7 ; 
+var18 : 
+return var13 ; 
+} 

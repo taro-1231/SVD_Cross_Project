@@ -1,0 +1,6 @@
+static inline void func1 ( av_aes_block * var1 , const uint8_t * var2 , 
+const av_aes_block * var3 ) 
+{ 
+var1 -> var4 [ number ] = func2 ( var2 ) ^ var3 -> var4 [ number ] ; 
+var1 -> var4 [ number ] = func2 ( var2 + number ) ^ var3 -> var4 [ number ] ; 
+} 

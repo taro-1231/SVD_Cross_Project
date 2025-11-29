@@ -1,0 +1,116 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+AVBPrint var3 ; 
+char * var4 , * var5 ; 
+const char * var6 = var7 , * var8 = var7 ; 
+FILE * var9 = var7 , * var10 = var7 ; 
+const char * var11 = str ; 
+enum AVEscapeMode var12 = var13 ; 
+int var14 = number ; 
+int var15 = number ; 
+int var16 = number ; 
+char * var17 = var7 ; 
+int var18 ; 
+while ( ( var18 = func2 ( var1 , var2 , str ) ) != - number ) { 
+switch ( var18 ) { 
+case str : 
+var16 = number ; 
+break ; 
+case str : 
+func3 ( ) ; 
+return number ; 
+case str : 
+var8 = var19 ; 
+break ; 
+case str : 
+if ( ! strcmp ( var19 , str ) ) var14 |= var20 ; 
+else if ( ! strcmp ( var19 , str ) ) var14 |= var21 ; 
+else { 
+func4 ( var7 , var22 , 
+str 
+str , var19 ) ; 
+return number ; 
+} 
+break ; 
+case str : 
+{ 
+char * var23 ; 
+long int var24 = func5 ( var19 , & var23 , number ) ; 
+if ( * var23 || var24 > var25 || var24 < number ) { 
+func4 ( var7 , var22 , 
+str , 
+var19 ) ; 
+return number ; 
+} 
+var15 = var24 ; 
+break ; 
+} 
+case str : 
+if ( ! strcmp ( var19 , str ) ) var12 = var13 ; 
+else if ( ! strcmp ( var19 , str ) ) var12 = var26 ; 
+else if ( ! strcmp ( var19 , str ) ) var12 = var27 ; 
+else { 
+func4 ( var7 , var22 , 
+str 
+str , var19 ) ; 
+return number ; 
+} 
+break ; 
+case str : 
+var6 = var19 ; 
+break ; 
+case str : 
+var11 = var19 ; 
+break ; 
+case str : 
+var17 = var19 ; 
+break ; 
+case str : 
+return number ; 
+} 
+} 
+if ( ! var8 || ! strcmp ( var8 , str ) ) { 
+var8 = str ; 
+var10 = var28 ; 
+} else { 
+var10 = fopen ( var8 , str ) ; 
+} 
+if ( ! var10 ) { 
+func4 ( var7 , var22 , str , var8 , strerror ( var29 ) ) ; 
+return number ; 
+} 
+if ( ! var6 || ! strcmp ( var6 , str ) ) { 
+var6 = str ; 
+var9 = var30 ; 
+} else { 
+var9 = fopen ( var6 , str ) ; 
+} 
+if ( ! var9 ) { 
+func4 ( var7 , var22 , str , var6 , strerror ( var29 ) ) ; 
+return number ; 
+} 
+func6 ( & var3 , number , var31 ) ; 
+while ( ( var18 = fgetc ( var10 ) ) != var32 ) 
+func7 ( & var3 , var18 , number ) ; 
+func7 ( & var3 , number , number ) ; 
+if ( ! func8 ( & var3 ) ) { 
+func4 ( var7 , var22 , str ) ; 
+func9 ( & var3 , var7 ) ; 
+return number ; 
+} 
+func9 ( & var3 , & var4 ) ; 
+if ( var16 ) 
+fprintf ( var9 , str , var4 ) ; 
+var5 = var4 ; 
+while ( var15 -- ) { 
+if ( func10 ( & var5 , var4 , var17 , var12 , var14 ) < number ) { 
+func4 ( var7 , var22 , str ) ; 
+return number ; 
+} 
+func11 ( var4 ) ; 
+var4 = var5 ; 
+} 
+fprintf ( var9 , str , var11 , var5 ) ; 
+func11 ( var5 ) ; 
+return number ; 
+} 

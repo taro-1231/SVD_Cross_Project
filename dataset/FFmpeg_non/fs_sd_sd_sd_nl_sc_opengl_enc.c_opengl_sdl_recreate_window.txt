@@ -1,0 +1,15 @@
+static int func1 ( OpenGLContext * var1 , int var2 , int var3 ) 
+{ 
+var1 -> var4 = func2 ( var2 , var3 , 
+number , var5 | var6 ) ; 
+if ( ! var1 -> var4 ) { 
+func3 ( var1 , var7 , str , func4 ( ) ) ; 
+return var8 ; 
+} 
+func5 ( var9 , number ) ; 
+func5 ( var10 , number ) ; 
+func5 ( var11 , number ) ; 
+func5 ( var12 , number ) ; 
+func5 ( var13 , number ) ; 
+return number ; 
+} 

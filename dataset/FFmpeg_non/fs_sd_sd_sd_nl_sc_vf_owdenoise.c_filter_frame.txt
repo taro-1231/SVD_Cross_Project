@@ -1,0 +1,32 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+int var3 = number ; 
+AVFilterContext * var4 = var1 -> var5 ; 
+OWDenoiseContext * var6 = var4 -> var7 ; 
+AVFilterLink * var8 = var4 -> var9 [ number ] ; 
+AVFrame * var10 ; 
+const int var11 = func2 ( var1 -> var12 , var6 -> var13 ) ; 
+const int var14 = func2 ( var1 -> var15 , var6 -> var16 ) ; 
+if ( func3 ( var2 ) ) { 
+var3 = number ; 
+var10 = var2 ; 
+} else { 
+var10 = func4 ( var8 , var8 -> var12 , var8 -> var15 ) ; 
+if ( ! var10 ) { 
+func5 ( & var2 ) ; 
+return func6 ( var17 ) ; 
+} 
+func7 ( var10 , var2 ) ; 
+} 
+func8 ( var6 , var10 -> var18 [ number ] , var10 -> var19 [ number ] , var2 -> var18 [ number ] , var2 -> var19 [ number ] , var1 -> var12 , var1 -> var15 , var6 -> var20 ) ; 
+func8 ( var6 , var10 -> var18 [ number ] , var10 -> var19 [ number ] , var2 -> var18 [ number ] , var2 -> var19 [ number ] , var11 , var14 , var6 -> var21 ) ; 
+func8 ( var6 , var10 -> var18 [ number ] , var10 -> var19 [ number ] , var2 -> var18 [ number ] , var2 -> var19 [ number ] , var11 , var14 , var6 -> var21 ) ; 
+if ( ! var3 ) { 
+if ( var2 -> var18 [ number ] ) 
+func9 ( var10 -> var18 [ number ] , var10 -> var19 [ number ] , 
+var2 -> var18 [ number ] , var2 -> var19 [ number ] , 
+var1 -> var12 , var1 -> var15 ) ; 
+func5 ( & var2 ) ; 
+} 
+return func10 ( var8 , var10 ) ; 
+} 

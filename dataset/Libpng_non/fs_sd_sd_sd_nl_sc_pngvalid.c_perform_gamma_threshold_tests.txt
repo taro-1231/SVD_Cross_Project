@@ -1,0 +1,21 @@
+func1 ( png_modifier * var1 ) 
+{ 
+png_byte var2 = number ; 
+png_byte var3 = number ; 
+unsigned int var4 = number ; 
+while ( func2 ( & var2 , & var3 , & var4 , number ) 
+if ( var4 == number ) 
+{ 
+double var5 = number ; 
+while ( var5 >= number ) 
+{ 
+func3 ( var1 , var2 , var3 , var1 -> var6 , 
+var5 , number / var5 ) ; 
+var5 *= number ; 
+} 
+func3 ( var1 , var2 , var3 , var1 -> var6 , 
+number , number ) ; 
+if ( func4 ( var1 ) ) 
+return ; 
+} 
+} 

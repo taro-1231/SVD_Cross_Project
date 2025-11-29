@@ -1,0 +1,32 @@
+static void func1 ( AVFormatContext * var1 , EbmlList * var2 , 
+AVDictionary ** var3 , char * var4 ) 
+{ 
+MatroskaTag * var5 = var2 -> var6 ; 
+char var7 [ number ] ; 
+int var8 ; 
+for ( var8 = number ; var8 < var2 -> var9 ; var8 ++ ) { 
+const char * var10 = var5 [ var8 ] . var10 && 
+strcmp ( var5 [ var8 ] . var10 , str ) ? var5 [ var8 ] . var10 : var11 ; 
+if ( ! var5 [ var8 ] . var12 ) { 
+func2 ( var1 , var13 , str ) ; 
+continue ; 
+} 
+if ( var4 ) 
+snprintf ( var7 , sizeof ( var7 ) , str , var4 , var5 [ var8 ] . var12 ) ; 
+else 
+func3 ( var7 , var5 [ var8 ] . var12 , sizeof ( var7 ) ) ; 
+if ( var5 [ var8 ] . var14 || ! var10 ) { 
+func4 ( var3 , var7 , var5 [ var8 ] . var15 , number ) ; 
+if ( var5 [ var8 ] . var16 . var9 ) 
+func1 ( var1 , & var5 [ var8 ] . var16 , var3 , var7 ) ; 
+} 
+if ( var10 ) { 
+func5 ( var7 , str , sizeof ( var7 ) ) ; 
+func5 ( var7 , var10 , sizeof ( var7 ) ) ; 
+func4 ( var3 , var7 , var5 [ var8 ] . var15 , number ) ; 
+if ( var5 [ var8 ] . var16 . var9 ) 
+func1 ( var1 , & var5 [ var8 ] . var16 , var3 , var7 ) ; 
+} 
+} 
+func6 ( var3 , var11 , var17 ) ; 
+} 

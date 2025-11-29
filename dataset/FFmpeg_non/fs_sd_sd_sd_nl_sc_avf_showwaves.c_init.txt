@@ -1,0 +1,17 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ShowWavesContext * var2 = var1 -> var3 ; 
+if ( ! strcmp ( var1 -> var4 -> var5 , str ) ) { 
+var2 -> var6 = number ; 
+var2 -> var7 = var8 ; 
+} 
+switch ( var2 -> var7 ) { 
+case var9 : var2 -> var10 = var11 ; break ; 
+case var12 : var2 -> var10 = var13 ; break ; 
+case var14 : var2 -> var10 = var15 ; break ; 
+case var8 : var2 -> var10 = var16 ; break ; 
+var17 : 
+return var18 ; 
+} 
+return number ; 
+} 

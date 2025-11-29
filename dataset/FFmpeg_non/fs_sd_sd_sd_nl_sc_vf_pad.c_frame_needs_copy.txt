@@ -1,0 +1,10 @@
+static int func1 ( PadContext * var1 , AVFrame * var2 ) 
+{ 
+int var3 ; 
+if ( ! func2 ( var2 ) ) 
+return number ; 
+for ( var3 = number ; var3 < number && var2 -> var4 [ var3 ] ; var3 ++ ) 
+if ( func3 ( var1 , var2 , var2 -> var4 [ var3 ] ) ) 
+return number ; 
+return number ; 
+} 

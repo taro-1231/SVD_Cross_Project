@@ -1,0 +1,20 @@
+func1 ( png_structrp var1 , png_voidp var2 , 
+png_rw_ptr var3 ) 
+{ 
+if ( var1 == var4 ) 
+return ; 
+var1 -> var2 = var2 ; 
+if ( var3 != var4 ) 
+var1 -> var3 = var3 ; 
+else 
+var1 -> var3 = var5 ; 
+var1 -> var3 = var3 ; 
+if ( var1 -> var6 != var4 ) 
+{ 
+var1 -> var6 = var4 ; 
+png_warning ( var1 , 
+str 
+str ) ; 
+} 
+var1 -> var7 = var4 ; 
+} 

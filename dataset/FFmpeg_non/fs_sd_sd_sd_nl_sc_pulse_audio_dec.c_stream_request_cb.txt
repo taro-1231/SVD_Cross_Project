@@ -1,0 +1,4 @@
+static void func1 ( pa_stream * var1 , size_t var2 , void * var3 ) { 
+PulseData * var4 = var3 ; 
+func2 ( var4 -> var5 , number ) ; 
+} 

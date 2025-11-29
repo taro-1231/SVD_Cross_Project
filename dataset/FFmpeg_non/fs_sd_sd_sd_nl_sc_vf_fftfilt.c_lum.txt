@@ -1,0 +1,5 @@
+static inline double func1 ( void * var2 , double var3 , double var4 , int var5 ) 
+{ 
+FFTFILTContext * var1 = var2 ; 
+return var1 -> var6 [ var5 ] [ ( int ) var3 * var1 -> var7 [ var5 ] + ( int ) var4 ] ; 
+} 

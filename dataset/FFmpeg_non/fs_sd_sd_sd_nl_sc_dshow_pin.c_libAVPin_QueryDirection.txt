@@ -1,0 +1,8 @@
+func1 ( libAVPin * var1 , PIN_DIRECTION * var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+* var2 = var4 ; 
+return var5 ; 
+} 

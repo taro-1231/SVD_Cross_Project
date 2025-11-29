@@ -1,0 +1,100 @@
+static int func1 ( AACContext * var1 , IndividualChannelStream * var2 , 
+GetBitContext * var3 ) 
+{ 
+const MPEG4AudioConfig * const var4 = & var1 -> var5 [ number ] . var4 ; 
+const int var6 = var4 -> var7 ; 
+const int var8 = var4 -> var8 ; 
+if ( var6 != var9 ) { 
+if ( func2 ( var3 ) ) { 
+func3 ( var1 -> var10 , var11 , str ) ; 
+if ( var1 -> var10 -> var12 & var13 ) 
+return var14 ; 
+} 
+var2 -> var15 [ number ] = var2 -> var15 [ number ] ; 
+var2 -> var15 [ number ] = func4 ( var3 , number ) ; 
+if ( var6 == var16 && 
+var2 -> var15 [ number ] != var17 ) { 
+func3 ( var1 -> var10 , var11 , 
+str 
+str , var2 -> var15 [ number ] ) ; 
+var2 -> var15 [ number ] = var17 ; 
+return var14 ; 
+} 
+var2 -> var18 [ number ] = var2 -> var18 [ number ] ; 
+var2 -> var18 [ number ] = func2 ( var3 ) ; 
+} 
+var2 -> var19 = number ; 
+var2 -> var20 [ number ] = number ; 
+if ( var2 -> var15 [ number ] == var21 ) { 
+int var22 ; 
+var2 -> var23 = func4 ( var3 , number ) ; 
+for ( var22 = number ; var22 < number ; var22 ++ ) { 
+if ( func2 ( var3 ) ) { 
+var2 -> var20 [ var2 -> var19 - number ] ++ ; 
+} else { 
+var2 -> var19 ++ ; 
+var2 -> var20 [ var2 -> var19 - number ] = number ; 
+} 
+} 
+var2 -> var24 = number ; 
+var2 -> var25 = var26 [ var8 ] ; 
+var2 -> var27 = var28 [ var8 ] ; 
+var2 -> var29 = var30 [ var8 ] ; 
+var2 -> var31 = number ; 
+} else { 
+var2 -> var23 = func4 ( var3 , number ) ; 
+var2 -> var24 = number ; 
+if ( var6 == var16 || var6 == var9 ) { 
+if ( var4 -> var32 ) { 
+var2 -> var25 = var33 [ var8 ] ; 
+var2 -> var27 = var34 [ var8 ] ; 
+var2 -> var29 = var35 [ var8 ] ; 
+} else { 
+var2 -> var25 = var36 [ var8 ] ; 
+var2 -> var27 = var37 [ var8 ] ; 
+var2 -> var29 = var38 [ var8 ] ; 
+} 
+if ( ! var2 -> var27 || ! var2 -> var25 ) 
+return var39 ; 
+} else { 
+var2 -> var25 = var40 [ var8 ] ; 
+var2 -> var27 = var41 [ var8 ] ; 
+var2 -> var29 = var42 [ var8 ] ; 
+} 
+if ( var6 != var9 ) { 
+var2 -> var31 = func2 ( var3 ) ; 
+var2 -> var43 = number ; 
+} 
+if ( var2 -> var31 ) { 
+if ( var6 == var44 ) { 
+if ( func5 ( var1 , var2 , var3 ) ) { 
+goto var45 ; 
+} 
+} else if ( var6 == var46 || 
+var6 == var47 ) { 
+func3 ( var1 -> var10 , var11 , 
+str ) ; 
+goto var45 ; 
+} else { 
+if ( var6 == var16 ) { 
+func3 ( var1 -> var10 , var11 , 
+str ) ; 
+return var48 ; 
+} 
+if ( ( var2 -> var49 . var50 = func4 ( var3 , number ) ) ) 
+func6 ( & var2 -> var49 , var3 , var2 -> var23 ) ; 
+} 
+} 
+} 
+if ( var2 -> var23 > var2 -> var27 ) { 
+func3 ( var1 -> var10 , var11 , 
+str 
+str , 
+var2 -> var23 , var2 -> var27 ) ; 
+goto var45 ; 
+} 
+return number ; 
+var45 : 
+var2 -> var23 = number ; 
+return var14 ; 
+} 

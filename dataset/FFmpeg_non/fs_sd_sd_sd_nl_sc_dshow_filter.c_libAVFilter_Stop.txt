@@ -1,0 +1,6 @@
+func1 ( libAVFilter * var1 ) 
+{ 
+func2 ( str , var1 ) ; 
+var1 -> var2 = var3 ; 
+return var4 ; 
+} 

@@ -1,0 +1,6 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+OverlayContext * var3 = var1 -> var4 -> var5 ; 
+func2 ( var1 -> var4 , var6 , str , func3 ( var2 -> var7 , & var1 -> var8 ) , func4 ( var1 ) ) ; 
+return func5 ( & var3 -> var9 , var1 , var2 ) ; 
+} 

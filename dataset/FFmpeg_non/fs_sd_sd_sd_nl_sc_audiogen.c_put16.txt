@@ -1,0 +1,5 @@
+static void func1 ( int16_t var2 ) 
+{ 
+fputc ( var2 & number , var1 ) ; 
+fputc ( ( var2 >> number ) & number , var1 ) ; 
+} 

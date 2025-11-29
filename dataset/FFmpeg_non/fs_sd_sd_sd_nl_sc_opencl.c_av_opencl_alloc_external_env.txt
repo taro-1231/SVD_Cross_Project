@@ -1,0 +1,9 @@
+AVOpenCLExternalEnv * func1 ( void ) 
+{ 
+AVOpenCLExternalEnv * var1 = func2 ( sizeof ( AVOpenCLExternalEnv ) ) ; 
+if ( ! var1 ) { 
+func3 ( & var2 , var3 , 
+str ) ; 
+} 
+return var1 ; 
+} 

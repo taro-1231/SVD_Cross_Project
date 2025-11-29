@@ -1,0 +1,13 @@
+static int func1 ( URLContext * var1 , int var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+int var5 ; 
+func2 ( var1 , var6 , str , 
+var3 -> var7 ) ; 
+if ( ( var5 = func3 ( var1 , var3 , var2 , var3 -> var7 ) ) < number ) { 
+func2 ( var1 , var8 , str , 
+var3 -> var7 ) ; 
+return var5 ; 
+} 
+return number ; 
+} 

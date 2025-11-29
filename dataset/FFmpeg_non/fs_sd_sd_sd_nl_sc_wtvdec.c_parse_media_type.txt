@@ -1,0 +1,116 @@
+static AVStream * func1 ( AVFormatContext * var1 , AVStream * var2 , int var3 , 
+ff_asf_guid var4 , ff_asf_guid var5 , 
+ff_asf_guid var6 , uint64_t var7 ) 
+{ 
+WtvContext * var8 = var1 -> var9 ; 
+AVIOContext * var10 = var8 -> var10 ; 
+if ( ! func2 ( var5 , var11 ) && 
+! func2 ( var6 , var12 ) ) { 
+ff_asf_guid var13 ; 
+ff_asf_guid var14 ; 
+if ( var7 < number ) { 
+func3 ( var1 , var15 , str ) ; 
+func4 ( var10 , var7 ) ; 
+return var16 ; 
+} 
+func4 ( var10 , var7 - number ) ; 
+func5 ( var10 , & var13 ) ; 
+func5 ( var10 , & var14 ) ; 
+func6 ( var10 , - var7 , var17 ) ; 
+var2 = func1 ( var1 , var2 , var3 , var4 , var13 , var14 , var7 - number ) ; 
+func4 ( var10 , number ) ; 
+return var2 ; 
+} else if ( ! func2 ( var4 , var18 ) ) { 
+var2 = func7 ( var1 , var2 , var3 , var19 ) ; 
+if ( ! var2 ) 
+return var16 ; 
+if ( ! func2 ( var6 , var20 ) ) { 
+int var21 = func8 ( var1 , var10 , var2 -> var22 , var7 , number ) ; 
+if ( var21 < number ) 
+return var16 ; 
+} else { 
+if ( func2 ( var6 , var23 ) ) 
+func3 ( var1 , var15 , str FF_PRI_GUID str , FF_ARG_GUID ( var6 ) ) ; 
+func4 ( var10 , var7 ) ; 
+} 
+if ( ! memcmp ( var5 + 4 , ( const uint8_t [ ] ) { FF_MEDIASUBTYPE_BASE_GUID } , 12 ) ) { 
+var2 -> var22 -> var24 = func9 ( func10 ( var5 ) , var2 -> var22 -> var25 ) ; 
+} else if ( ! func2 ( var5 , var26 ) ) { 
+if ( var2 -> var22 -> var27 && var2 -> var22 -> var28 >= number ) 
+func11 ( var2 ) ; 
+else 
+func3 ( var1 , var15 , str ) ; 
+} else { 
+var2 -> var22 -> var24 = func12 ( var29 , var5 ) ; 
+if ( var2 -> var22 -> var24 == var30 ) 
+func3 ( var1 , var15 , str FF_PRI_GUID str , FF_ARG_GUID ( var5 ) ) ; 
+} 
+return var2 ; 
+} else if ( ! func2 ( var4 , ff_mediatype_video ) ) { 
+var2 = func7 ( var1 , var2 , var3 , AVMEDIA_TYPE_VIDEO ) ; 
+if ( ! var2 ) 
+return var16 ; 
+if ( ! func2 ( var6 , ff_format_videoinfo2 ) ) { 
+int consumed = parse_videoinfoheader2 ( var1 , var2 ) ; 
+func4 ( var10 , FFMAX ( var7 - consumed , number ) ) ; 
+} else if ( ! func2 ( var6 , ff_format_mpeg2_video ) ) { 
+uint64_t consumed = parse_videoinfoheader2 ( var1 , var2 ) ; 
+func4 ( var10 , FFMAX ( var7 - consumed , number ) ) ; 
+} else { 
+if ( func2 ( var6 , var23 ) ) 
+func3 ( var1 , var15 , str FF_PRI_GUID str , FF_ARG_GUID ( var6 ) ) ; 
+func4 ( var10 , var7 ) ; 
+} 
+if ( ! memcmp ( var5 + 4 , ( const uint8_t [ ] ) { FF_MEDIASUBTYPE_BASE_GUID } , 12 ) ) { 
+var2 -> var22 -> var24 = ff_codec_get_id ( ff_codec_bmp_tags , func10 ( var5 ) ) ; 
+} else { 
+var2 -> var22 -> var24 = func12 ( ff_video_guids , var5 ) ; 
+} 
+* / 
+static AVStream * func1 ( AVFormatContext * var1 , AVStream * var2 , int var3 , 
+ff_asf_guid var4 , ff_asf_guid var5 , 
+ff_asf_guid var6 , uint64_t var7 ) 
+{ 
+WtvContext * var8 = var1 -> var9 ; 
+AVIOContext * var10 = var8 -> var10 ; 
+if ( ! func2 ( var5 , var11 ) && 
+! func2 ( var6 , var12 ) ) { 
+ff_asf_guid var13 ; 
+ff_asf_guid var14 ; 
+if ( var7 < number ) { 
+func3 ( var1 , var15 , str ) ; 
+func4 ( var10 , var7 ) ; 
+return var16 ; 
+} 
+func4 ( var10 , var7 - number ) ; 
+func5 ( var10 , & var13 ) ; 
+func5 ( var10 , & var14 ) ; 
+func6 ( var10 , - var7 , var17 ) ; 
+var2 = func1 ( var1 , var2 , var3 , var4 , var13 , var14 , var7 - number ) ; 
+func4 ( var10 , number ) ; 
+return var2 ; 
+} else if ( ! func2 ( var4 , var18 ) ) { 
+var2 = func7 ( var1 , var2 , var3 , var19 ) ; 
+if ( ! var2 ) 
+return var16 ; 
+if ( ! func2 ( var6 , var20 ) ) { 
+int var21 = func8 ( var1 , var10 , var2 -> var22 , var7 , number ) ; 
+if ( var21 < number ) 
+return var16 ; 
+} else { 
+if ( func2 ( var6 , var23 ) ) 
+func3 ( var1 , var15 , str FF_PRI_GUID str , FF_ARG_GUID ( var6 ) ) ; 
+func4 ( var10 , var7 ) ; 
+} 
+if ( ! memcmp ( var5 + 4 , ( const uint8_t [ ] ) { FF_MEDIASUBTYPE_BASE_GUID } , 12 ) ) { 
+var2 -> var22 -> var24 = func9 ( func10 ( var5 ) , var2 -> var22 -> var25 ) ; 
+} else if ( ! func2 ( var5 , var26 ) ) { 
+if ( var2 -> var22 -> var27 && var2 -> var22 -> var28 >= number ) 
+func11 ( var2 ) ; 
+else 
+func3 ( var1 , var15 , str ) ; 
+} else { 
+var2 -> var22 -> var24 = func12 ( var29 , var5 ) ; 
+if ( var2 -> var22 -> var24 == var30 ) 
+func3 ( var1 , var15 , str FF_PRI_GUID str , FF_ARG_GUID ( var5 ) ) ; 
+} 

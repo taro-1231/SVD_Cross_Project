@@ -1,0 +1,18 @@
+func1 ( png_store * var1 , png_const_structp var2 ) 
+{ 
+if ( var1 -> var3 != var4 ) 
+{ 
+png_bytep var3 = var1 -> var3 ; 
+if ( var3 [ - number ] != number || var3 [ var1 -> var5 ] != number ) 
+{ 
+if ( var2 != var4 ) 
+func2 ( var2 , str ) ; 
+else 
+func3 ( var1 , var4 , str , number ) ; 
+} 
+var1 -> var3 = var4 ; 
+var1 -> var5 = number ; 
+-- var3 ; 
+free ( var3 ) ; 
+} 
+} 

@@ -1,0 +1,90 @@
+int func1 ( int var1 , char * var2 [ ] ) 
+{ 
+FILE * var3 = var4 ; 
+FILE * var5 = var6 ; 
+FILE * var7 = var8 ; 
+BOOL var9 = var10 ; 
+BOOL var11 = var12 ; 
+int var13 ; 
+for ( var13 = number ; var13 < var1 ; var13 ++ ) 
+{ 
+if ( var2 [ var13 ] [ number ] == str ) 
+{ 
+switch ( var2 [ var13 ] [ number ] ) 
+{ 
+case str : 
+var9 = var12 ; 
+break ; 
+case str : 
+var9 = var10 ; 
+break ; 
+case str : 
+var11 = var10 ; 
+var13 ++ ; 
+if ( ( var7 = fopen ( var2 [ var13 ] , str ) ) == var8 ) 
+{ 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str , 
+var2 [ var13 ] ) ; 
+exit ( number ) ; 
+} 
+break ; 
+case str : 
+case str : 
+func2 ( ) ; 
+exit ( number ) ; 
+break ; 
+var15 : 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str , var2 [ var13 ] ) ; 
+func2 ( ) ; 
+exit ( number ) ; 
+break ; 
+} 
+} 
+else if ( var3 == var4 ) 
+{ 
+if ( ( var3 = fopen ( var2 [ var13 ] , str ) ) == var8 ) 
+{ 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str , var2 [ var13 ] ) ; 
+exit ( number ) ; 
+} 
+} 
+else if ( var5 == var6 ) 
+{ 
+if ( ( var5 = fopen ( var2 [ var13 ] , str ) ) == var8 ) 
+{ 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str , var2 [ var13 ] ) ; 
+exit ( number ) ; 
+} 
+} 
+else 
+{ 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str ) ; 
+func2 ( ) ; 
+exit ( number ) ; 
+} 
+} 
+if ( var3 == var4 ) 
+{ 
+func3 ( var16 , var17 ) ; 
+} 
+if ( ( var9 ) && ( var5 == var6 ) ) 
+{ 
+func3 ( var18 , var17 ) ; 
+} 
+if ( func4 ( var3 , var5 , var7 , var9 , var11 ) == var12 ) 
+{ 
+fprintf ( var14 , str ) ; 
+fprintf ( var14 , str ) ; 
+exit ( number ) ; 
+} 
+fclose ( var3 ) ; 
+fclose ( var5 ) ; 
+if ( var11 ) 
+fclose ( var7 ) ; 
+return number ; 
+} 

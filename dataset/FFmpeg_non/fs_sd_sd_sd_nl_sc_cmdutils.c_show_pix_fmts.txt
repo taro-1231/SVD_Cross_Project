@@ -1,0 +1,25 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const AVPixFmtDescriptor * var4 = var5 ; 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str 
+str ) ; 
+while ( ( var4 = func4 ( var4 ) ) ) { 
+enum AVPixelFormat var6 = func5 ( var4 ) ; 
+printf ( str , 
+func2 ( var6 ) ? str : str , 
+func3 ( var6 ) ? str : str , 
+var4 -> var7 & var8 ? str : str , 
+var4 -> var7 & var9 ? str : str , 
+var4 -> var7 & var10 ? str : str , 
+var4 -> var11 , 
+var4 -> var12 , 
+func6 ( var4 ) ) ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,30 @@
+static int64_t func1 ( AVFormatContext * var1 , int var2 , 
+int64_t * var3 , int64_t var4 ) 
+{ 
+MpegTSContext * var5 = var1 -> var6 ; 
+int64_t var7 ; 
+int var8 = var5 -> var9 % var5 -> var10 ; 
+var7 = ( ( * var3 + var5 -> var10 - number - var8 ) / var5 -> var10 ) * var5 -> var10 + var8 ; 
+func2 ( var1 ) ; 
+if ( func3 ( var1 -> var11 , var7 , var12 ) < number ) 
+return var13 ; 
+while ( var7 < var4 ) { 
+int var14 ; 
+AVPacket var15 ; 
+func4 ( & var15 ) ; 
+var14 = func5 ( var1 , & var15 ) ; 
+if ( var14 < number ) 
+return var13 ; 
+func6 ( & var15 ) ; 
+if ( var15 . var16 != var13 && var15 . var7 >= number ) { 
+func7 ( var1 , var15 . var2 ) ; 
+func8 ( var1 -> var17 [ var15 . var2 ] , var15 . var7 , var15 . var16 , number , number , var18 ; 
+if ( var15 . var2 == var2 && var15 . var7 >= * var3 ) { 
+* var3 = var15 . var7 ; 
+return var15 . var16 ; 
+} 
+} 
+var7 = var15 . var7 ; 
+} 
+return var13 ; 
+} 

@@ -1,0 +1,63 @@
+static void func2 ( AudioStatsContext * var1 , AVDictionary ** var2 ) 
+{ 
+uint64_t var3 = number , var4 = number , var5 = number , var6 = number ; 
+double var7 = number , var8 = number , 
+var9 = var10 , var11 = var12 , var13 = var10 , var14 = number , 
+var15 = number , 
+var16 = number , 
+var17 = number , 
+var18 = number , 
+var19 = var10 , 
+var20 = var12 ; 
+int var21 ; 
+for ( var21 = number ; var21 < var1 -> var22 ; var21 ++ ) { 
+ChannelStats * var23 = & var1 -> var24 [ var21 ] ; 
+if ( var23 -> var6 < var1 -> var25 ) 
+var23 -> var19 = var23 -> var20 = var23 -> var18 / var23 -> var6 ; 
+var9 = func3 ( var9 , var23 -> var9 ) ; 
+var11 = func4 ( var11 , var23 -> var11 ) ; 
+var13 = func3 ( var13 , var23 -> var13 ) ; 
+var14 = func4 ( var14 , var23 -> var14 ) ; 
+var16 += var23 -> var16 , 
+var19 = func3 ( var19 , var23 -> var19 ) ; 
+var20 = func4 ( var20 , var23 -> var20 ) ; 
+var17 += var23 -> var17 ; 
+var18 += var23 -> var18 ; 
+var4 += var23 -> var4 ; 
+var5 += var23 -> var5 ; 
+var7 += var23 -> var7 ; 
+var8 += var23 -> var8 ; 
+var3 |= var23 -> var3 ; 
+var6 += var23 -> var6 ; 
+if ( fabs ( var23 -> var17 ) > fabs ( var15 ) ) 
+var15 = var23 -> var17 ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var17 / var23 -> var6 ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var9 ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var11 ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var13 ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var14 ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var16 / ( var23 -> var6 - number ) ) ; 
+func5 ( var2 , var21 + number , str , str , func1 ( func4 ( - var23 -> var9 , var23 -> var11 ) ) ) ; 
+func5 ( var2 , var21 + number , str , str , func1 ( sqrt ( var23 -> var18 / var23 -> var6 ) ) ) ; 
+func5 ( var2 , var21 + number , str , str , func1 ( sqrt ( var23 -> var20 ) ) ) ; 
+func5 ( var2 , var21 + number , str , str , func1 ( sqrt ( var23 -> var19 ) ) ) ; 
+func5 ( var2 , var21 + number , str , str , var23 -> var18 ? func4 ( - var23 -> var9 , var23 -> var11 ) / sqrt ( var23 -> var18 / var23 -> var6 ) : number ) ; 
+func5 ( var2 , var21 + number , str , str , func1 ( ( var23 -> var7 + var23 -> var8 ) / ( var23 -> var4 + var23 -> var5 ) ) ) ; 
+func5 ( var2 , var21 + number , str , str , ( float ) ( var23 -> var4 + var23 -> var5 ) ) ; 
+func5 ( var2 , var21 + number , str , str , func6 ( var23 -> var3 ) ) ; 
+} 
+func5 ( var2 , number , str , str , var15 / ( var6 / var1 -> var22 ) ) ; 
+func5 ( var2 , number , str , str , var9 ) ; 
+func5 ( var2 , number , str , str , var11 ) ; 
+func5 ( var2 , number , str , str , var13 ) ; 
+func5 ( var2 , number , str , str , var14 ) ; 
+func5 ( var2 , number , str , str , var16 / ( var6 - var1 -> var22 ) ) ; 
+func5 ( var2 , number , str , str , func1 ( func4 ( - var9 , var11 ) ) ) ; 
+func5 ( var2 , number , str , str , func1 ( sqrt ( var18 / var6 ) ) ) ; 
+func5 ( var2 , number , str , str , func1 ( sqrt ( var20 ) ) ) ; 
+func5 ( var2 , number , str , str , func1 ( sqrt ( var19 ) ) ) ; 
+func5 ( var2 , number , str , str , func1 ( ( var7 + var8 ) / ( var4 + var5 ) ) ) ; 
+func5 ( var2 , number , str , str , ( float ) ( var4 + var5 ) / ( double ) var1 -> var22 ) ; 
+func5 ( var2 , number , str , str , func6 ( var3 ) ) ; 
+func5 ( var2 , number , str , str , var6 / var1 -> var22 ) ; 
+} 

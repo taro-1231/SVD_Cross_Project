@@ -1,0 +1,16 @@
+static void func1 ( LUT3DContext * var1 , int var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+const float var6 = number / ( var2 - number ) ; 
+var1 -> var7 = var2 ; 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) { 
+for ( var4 = number ; var4 < var2 ; var4 ++ ) { 
+for ( var3 = number ; var3 < var2 ; var3 ++ ) { 
+struct rgbvec * var8 = & var1 -> var9 [ var5 ] [ var4 ] [ var3 ] ; 
+var8 -> var10 = var5 * var6 ; 
+var8 -> var11 = var4 * var6 ; 
+var8 -> var12 = var3 * var6 ; 
+} 
+} 
+} 
+} 

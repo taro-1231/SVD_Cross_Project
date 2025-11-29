@@ -1,0 +1,9 @@
+static inline int func1 ( int var1 , int var2 , int var3 , int var4 ) 
+{ 
+if ( ( var2 + number ) == var3 ) { 
+var1 = var4 ; 
+} else if ( var2 > var3 ) { 
+var1 = func2 ( var1 - number , number ) ; 
+} 
+return var1 ; 
+} 

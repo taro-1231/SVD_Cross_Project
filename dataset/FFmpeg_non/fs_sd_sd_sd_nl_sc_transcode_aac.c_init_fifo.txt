@@ -1,0 +1,9 @@
+static int func1 ( AVAudioFifo ** var1 , AVCodecContext * var2 ) 
+{ 
+if ( ! ( * var1 = func2 ( var2 -> var3 , 
+var2 -> var4 , number ) ) ) { 
+fprintf ( var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+return number ; 
+} 

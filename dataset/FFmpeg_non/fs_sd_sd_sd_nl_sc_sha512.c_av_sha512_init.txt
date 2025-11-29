@@ -1,0 +1,50 @@
+av_cold int func1 ( AVSHA512 * var1 , int var2 ) 
+{ 
+var1 -> var3 = var2 >> number ; 
+switch ( var2 ) { 
+case 224 : 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+break ; 
+case 256 : 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+break ; 
+case 384 : 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+break ; 
+case 512 : 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+var1 -> var4 [ number ] = func2 ( number ) ; 
+break ; 
+var5 : 
+return - number ; 
+} 
+var1 -> var6 = number ; 
+return number ; 
+} 

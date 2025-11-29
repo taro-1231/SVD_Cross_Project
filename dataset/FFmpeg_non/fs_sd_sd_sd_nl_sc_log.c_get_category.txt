@@ -1,0 +1,10 @@
+static int func1 ( void * var1 ) { 
+AVClass * var2 = * ( AVClass ** ) var1 ; 
+if ( ! var2 
+|| ( var2 -> var3 & number ) < number 
+|| var2 -> var3 < ( number << number | number << number ) 
+|| var2 -> var4 >= var5 ) return var6 + number ; 
+if ( var2 -> func1 ) 
+return var2 -> func1 ( var1 ) + number ; 
+return var2 -> var4 + number ; 
+} 

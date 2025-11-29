@@ -1,0 +1,38 @@
+static int func1 ( PadContext * var1 , AVFrame * var2 , AVBufferRef * var3 ) 
+{ 
+int var4 [ number ] = { - number , - number , - number , - number } , * var5 = var4 ; 
+int var6 , var7 ; 
+for ( var6 = number ; var6 < func2 ( var4 ) && var2 -> var8 [ var6 ] ; var6 ++ ) { 
+if ( func3 ( var2 , var6 ) == var3 ) 
+* var5 += var6 ; 
+} 
+for ( var6 = number ; var6 < func2 ( var4 ) && var4 [ var6 ] >= number ; var6 ++ ) { 
+int var9 = var1 -> var10 . var9 [ var4 [ var6 ] ] ; 
+int var11 = var1 -> var10 . var11 [ var4 [ var6 ] ] ; 
+uint8_t * var12 = var2 -> var8 [ var4 [ var6 ] ] ; 
+uint8_t * var13 = var12 + ( var2 -> var14 >> var11 ) * 
+var2 -> var15 [ var4 [ var6 ] ] ; 
+ptrdiff_t var16 = ( var1 -> var17 >> var9 ) * var1 -> var10 . var18 [ var4 [ var6 ] ] + 
+( var1 -> var19 >> var11 ) * var2 -> var15 [ var4 [ var6 ] ] ; 
+ptrdiff_t var20 = ( ( var1 -> var21 - var1 -> var17 - var2 -> var22 ) >> var9 ) * 
+var1 -> var10 . var18 [ var4 [ var6 ] ] + 
+( ( var1 -> var23 - var1 -> var19 - var2 -> var14 ) >> var11 ) * var2 -> var15 [ var4 [ var6 ] ] ; 
+if ( var2 -> var15 [ var4 [ var6 ] ] < ( var1 -> var21 >> var9 ) * var1 -> var10 . var18 [ var4 [ var6 ] ] ) 
+return number ; 
+if ( var12 - var3 -> var8 < var16 || 
+( var3 -> var8 + var3 -> var24 ) - var13 < var20 ) 
+return number ; 
+for ( var7 = number ; var7 < func2 ( var4 ) && var4 [ var7 ] >= number ; var7 ++ ) { 
+int var25 = var1 -> var10 . var11 [ var4 [ var7 ] ] ; 
+uint8_t * var26 = var2 -> var8 [ var4 [ var7 ] ] ; 
+uint8_t * var27 = var26 + ( var2 -> var14 >> var25 ) * 
+var2 -> var15 [ var4 [ var7 ] ] ; 
+if ( var6 == var7 ) 
+continue ; 
+if ( func4 ( var12 - var27 ) != func4 ( var12 - var27 - var16 ) || 
+func4 ( var13 - var26 ) != func4 ( var13 - var26 + var20 ) ) 
+return number ; 
+} 
+} 
+return number ; 
+} 

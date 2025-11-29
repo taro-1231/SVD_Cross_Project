@@ -1,0 +1,180 @@
+int func1 ( void ) 
+{ 
+int var1 ; 
+func2 ( var2 ) ; 
+func3 ( var3 ) ; 
+printf ( str ) ; 
+{ 
+TestContext var4 = { number } ; 
+var4 . class = & var5 ; 
+func4 ( & var4 ) ; 
+printf ( str , var4 . var6 ) ; 
+printf ( str , var4 . var7 ) ; 
+printf ( str , var4 . var8 ) ; 
+printf ( str , var4 . var9 ) ; 
+printf ( str , var4 . var10 ) ; 
+printf ( str , var4 . var11 . var6 , var4 . var11 . var12 ) ; 
+printf ( str , var4 . var13 . var6 , var4 . var13 . var12 ) ; 
+printf ( str , var4 . var14 , var4 . var15 ) ; 
+printf ( str , func5 ( var4 . var16 ) ) ; 
+printf ( str , func6 ( var4 . var17 ) ) ; 
+printf ( str PRId64 str , var4 . duration ) ; 
+printf ( str , var4 . var18 [ number ] , var4 . var18 [ number ] , var4 . var18 [ number ] , var4 . var18 [ number ] ) ; 
+printf ( str PRId64 str PRId64 str , var4 . channel_layout , ( int64_t ) AV_CH_LAYOUT_HEXAGONAL ) ; 
+if ( var4 . var19 ) 
+printf ( str , ( ( uint8_t * ) var4 . var19 ) [ number ] , ( ( uint8_t * ) var4 . var19 ) [ number ] , ( ( uint8_t * ) var4 . var19 ) [ number ] , ( ( uint8_t * ) var4 . var19 ) [ number ] ) ; 
+printf ( str , var4 . var20 ) ; 
+printf ( str PRId64 str , var4 . num64 ) ; 
+printf ( str , var4 . var21 ) ; 
+printf ( str , var4 . var22 ) ; 
+func7 ( & var4 , var23 , - number , number ) ; 
+func8 ( & var4 ) ; 
+} 
+printf ( str ) ; 
+{ 
+int var24 ; 
+TestContext var4 = { number } ; 
+const AVOption * var25 = var23 ; 
+var4 . class = & var5 ; 
+func2 ( var26 ) ; 
+while ( var25 = func9 ( & var4 , var25 ) ) { 
+var24 = func10 ( & var4 , var25 -> var27 , number ) ; 
+printf ( str , var25 -> var27 , ! ! var24 , var24 < number ? func11 ( var24 ) : str ) ; 
+} 
+func4 ( & var4 ) ; 
+while ( var25 = func9 ( & var4 , var25 ) ) { 
+var24 = func10 ( & var4 , var25 -> var27 , number ) ; 
+printf ( str , var25 -> var27 , ! ! var24 , var24 < number ? func11 ( var24 ) : str ) ; 
+} 
+func8 ( & var4 ) ; 
+} 
+printf ( str ) ; 
+{ 
+TestContext var4 = { number } ; 
+char * var28 ; 
+var4 . class = & var5 ; 
+func2 ( var26 ) ; 
+func4 ( & var4 ) ; 
+if ( func12 ( & var4 , number , number , & var28 , str , str ) >= number ) { 
+printf ( str , var28 ) ; 
+func8 ( & var4 ) ; 
+memset ( & var4 , number , sizeof ( var4 ) ) ; 
+var4 . class = & var5 ; 
+func13 ( & var4 , var28 , str , str ) ; 
+func14 ( var28 ) ; 
+if ( func12 ( & var4 , number , number , & var28 , str , str ) >= number ) { 
+printf ( str , var28 ) ; 
+func14 ( var28 ) ; 
+} 
+} 
+func8 ( & var4 ) ; 
+} 
+printf ( str ) ; 
+{ 
+TestContext var4 = { number } ; 
+static const char * const var29 [ ] = { 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+} ; 
+var4 . class = & var5 ; 
+func4 ( & var4 ) ; 
+func2 ( var26 ) ; 
+for ( var1 = number ; var1 < func15 ( var29 ) ; var1 ++ ) { 
+int var30 = ! strcmp ( var29 [ var1 ] , str ) ; 
+func16 ( & var4 , var2 , str , var29 [ var1 ] ) ; 
+if ( var30 ) 
+func3 ( var23 ) ; 
+if ( func13 ( & var4 , var29 [ var1 ] , str , str ) < number ) 
+printf ( str , var29 [ var1 ] ) ; 
+else 
+printf ( str , var29 [ var1 ] ) ; 
+func3 ( var3 ) ; 
+} 
+func8 ( & var4 ) ; 
+} 
+printf ( str ) ; 
+{ 
+TestContext var4 = { number } ; 
+static const char * const var29 [ ] = { 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str , 
+str 
+} ; 
+static const char * const var31 [ ] = { str , str , var23 } ; 
+var4 . class = & var5 ; 
+func4 ( & var4 ) ; 
+func2 ( var26 ) ; 
+for ( var1 = number ; var1 < func15 ( var29 ) ; var1 ++ ) { 
+func16 ( & var4 , var2 , str , var29 [ var1 ] ) ; 
+if ( func17 ( & var4 , var29 [ var1 ] , var31 , str , str ) < number ) 
+printf ( str , var29 [ var1 ] ) ; 
+else 
+printf ( str , var29 [ var1 ] ) ; 
+} 
+func8 ( & var4 ) ; 
+} 
+return number ; 
+} 

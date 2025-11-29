@@ -1,0 +1,14 @@
+static int func1 ( int var1 , int var2 , int var3 , int var4 , int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+const int var10 = ( var2 + var9 ) >> number ; 
+const int var11 = ( var3 + var8 ) >> number ; 
+const int var12 = ( var4 + var7 ) >> number ; 
+const int var13 = ( var5 + var6 ) >> number ; 
+const int var14 = ( var2 + var9 + number ) >> number ; 
+const int var15 = ( var3 + var8 + number ) >> number ; 
+const int var16 = ( var4 + var7 + number ) >> number ; 
+const int var17 = ( var5 + var6 + number ) >> number ; 
+const int var18 = func2 ( func2 ( var10 , var11 ) , func2 ( var12 , var13 ) ) ; 
+const int var19 = func3 ( func3 ( var14 , var15 ) , func3 ( var16 , var17 ) ) ; 
+return func4 ( var1 , var18 , var19 ) ; 
+} 

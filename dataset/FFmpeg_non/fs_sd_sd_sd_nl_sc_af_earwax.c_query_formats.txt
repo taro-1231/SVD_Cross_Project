@@ -1,0 +1,12 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+static const int var2 [ ] = { number , - number } ; 
+AVFilterFormats * var3 = var4 ; 
+AVFilterChannelLayouts * var5 = var4 ; 
+func2 ( & var3 , var6 ) ; 
+func3 ( var1 , var3 ) ; 
+func4 ( & var5 , var7 ) ; 
+func5 ( var1 , var5 ) ; 
+func6 ( var1 , func7 ( var2 ) ) ; 
+return number ; 
+} 

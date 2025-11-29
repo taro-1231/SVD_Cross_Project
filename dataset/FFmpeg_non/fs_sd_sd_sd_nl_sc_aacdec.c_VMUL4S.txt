@@ -1,0 +1,19 @@
+static inline float * func1 ( float * var1 , const float * var2 , unsigned var3 , 
+unsigned var4 , const float * var5 ) 
+{ 
+unsigned var6 = var3 >> number ; 
+union av_intfloat32 var7 = { . var8 = * var5 } ; 
+union av_intfloat32 var9 ; 
+var9 . var10 = var7 . var10 ^ ( var4 & number << number ) ; 
+* var1 += var2 [ var3 & number ] * var9 . var8 ; 
+var4 <<= var6 & number ; var6 >>= number ; 
+var9 . var10 = var7 . var10 ^ ( var4 & number << number ) ; 
+* var1 += var2 [ var3 >> number & number ] * var9 . var8 ; 
+var4 <<= var6 & number ; var6 >>= number ; 
+var9 . var10 = var7 . var10 ^ ( var4 & number << number ) ; 
+* var1 += var2 [ var3 >> number & number ] * var9 . var8 ; 
+var4 <<= var6 & number ; 
+var9 . var10 = var7 . var10 ^ ( var4 & number << number ) ; 
+* var1 += var2 [ var3 >> number & number ] * var9 . var8 ; 
+return var1 ; 
+} 

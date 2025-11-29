@@ -1,0 +1,29 @@
+static int func1 ( AVFilterContext * var1 , char ** var2 , int * var3 ) 
+{ 
+ZMQContext * var4 = var1 -> var5 ; 
+zmq_msg_t var6 ; 
+int var7 = number ; 
+if ( func2 ( & var6 ) == - number ) { 
+func3 ( var1 , var8 , 
+str , func4 ( var9 ) ) ; 
+return var10 ; 
+} 
+if ( func5 ( & var6 , var4 -> var11 , var12 ) == - number ) { 
+if ( var9 != var13 ) 
+func3 ( var1 , var8 , 
+str , func4 ( var9 ) ) ; 
+var7 = var10 ; 
+goto var14 ; 
+} 
+* var3 = func6 ( & var6 ) + number ; 
+* var2 = func7 ( * var3 ) ; 
+if ( ! * var2 ) { 
+var7 = func8 ( var15 ) ; 
+goto var14 ; 
+} 
+memcpy ( * var2 , func9 ( & var6 ) , * var3 ) ; 
+( * var2 ) [ * var3 - number ] = number ; 
+var14 : 
+func10 ( & var6 ) ; 
+return var7 ; 
+} 

@@ -1,0 +1,195 @@
+static void func1 ( VideoState * var1 ) 
+{ 
+SDL_Event var2 ; 
+double var3 , var4 , var5 ; 
+for ( ; ; ) { 
+double var6 ; 
+func2 ( var1 , & var2 ) ; 
+switch ( var2 . var7 ) { 
+case var8 : 
+if ( var9 ) { 
+func3 ( var1 ) ; 
+break ; 
+} 
+switch ( var2 . var10 . var11 . var12 ) { 
+case var13 : 
+case var14 : 
+func3 ( var1 ) ; 
+break ; 
+case var15 : 
+func4 ( var1 ) ; 
+var1 -> var16 = number ; 
+break ; 
+case var17 : 
+case var18 : 
+func5 ( var1 ) ; 
+break ; 
+case var19 : 
+func6 ( var1 ) ; 
+break ; 
+case var20 : 
+case var21 : 
+func7 ( var1 , number , var22 ) ; 
+break ; 
+case var23 : 
+case var24 : 
+func7 ( var1 , - number , var22 ) ; 
+break ; 
+case var25 : 
+func8 ( var1 ) ; 
+break ; 
+case var26 : 
+func9 ( var1 , var27 ) ; 
+break ; 
+case var28 : 
+func9 ( var1 , var29 ) ; 
+break ; 
+case var30 : 
+func9 ( var1 , var29 ) ; 
+func9 ( var1 , var27 ) ; 
+func9 ( var1 , var31 ) ; 
+break ; 
+case var32 : 
+func9 ( var1 , var31 ) ; 
+break ; 
+case var33 : 
+if ( var1 -> var34 == var35 && var1 -> var36 < var37 - number ) { 
+if ( ++ var1 -> var36 >= var37 ) 
+var1 -> var36 = number ; 
+} else { 
+var1 -> var36 = number ; 
+func10 ( var1 ) ; 
+} 
+func10 ( var1 ) ; 
+break ; 
+case var38 : 
+if ( var1 -> var39 -> var40 <= number ) { 
+var3 = number ; 
+goto var41 ; 
+} 
+func11 ( var1 , number ) ; 
+break ; 
+case var42 : 
+if ( var1 -> var39 -> var40 <= number ) { 
+var3 = - number ; 
+goto var41 ; 
+} 
+func11 ( var1 , - number ) ; 
+break ; 
+case var43 : 
+var3 = - number ; 
+goto var41 ; 
+case var44 : 
+var3 = number ; 
+goto var41 ; 
+case var45 : 
+var3 = number ; 
+goto var41 ; 
+case var46 : 
+var3 = - number ; 
+var41 : 
+if ( var47 ) { 
+var4 = - number ; 
+if ( var4 < number && var1 -> var48 >= number ) 
+var4 = func12 ( & var1 -> var49 ) ; 
+if ( var4 < number && var1 -> var50 >= number ) 
+var4 = func12 ( & var1 -> var51 ) ; 
+if ( var4 < number ) 
+var4 = func13 ( var1 -> var39 -> var52 ) ; 
+if ( var1 -> var39 -> var53 ) 
+var3 *= var1 -> var39 -> var53 / number ; 
+else 
+var3 *= number ; 
+var4 += var3 ; 
+func14 ( var1 , var4 , var3 , number ) ; 
+} else { 
+var4 = func15 ( var1 ) ; 
+if ( isnan ( var4 ) ) 
+var4 = ( double ) var1 -> var54 / var55 ; 
+var4 += var3 ; 
+if ( var1 -> var39 -> var56 != var57 && var4 < var1 -> var39 -> var56 / ( double ) var55 ) 
+var4 = var1 -> var39 -> var56 / ( double ) var55 ; 
+func14 ( var1 , ( int64_t ) ( var4 * var55 ) , ( int64_t ) ( var3 * var55 ) , number ) ; 
+} 
+break ; 
+var58 : 
+break ; 
+} 
+break ; 
+case var59 : 
+if ( var60 ) { 
+func3 ( var1 ) ; 
+break ; 
+} 
+if ( var2 . var61 . var61 == var62 ) { 
+static int64_t var63 = number ; 
+if ( func16 ( ) - var63 <= number ) { 
+func4 ( var1 ) ; 
+var1 -> var16 = number ; 
+var63 = number ; 
+} else { 
+var63 = func16 ( ) ; 
+} 
+} 
+case var64 : 
+if ( var65 ) { 
+func17 ( number ) ; 
+var65 = number ; 
+} 
+var66 = func16 ( ) ; 
+if ( var2 . var7 == var59 ) { 
+if ( var2 . var61 . var61 != var67 ) 
+break ; 
+var6 = var2 . var61 . var6 ; 
+} else { 
+if ( ! ( var2 . var68 . var69 & var70 ) ) 
+break ; 
+var6 = var2 . var68 . var6 ; 
+} 
+if ( var47 || var1 -> var39 -> var71 <= number ) { 
+uint64_t var72 = func18 ( var1 -> var39 -> var52 ) ; 
+func14 ( var1 , var72 * var6 / var1 -> var73 , number , number ) ; 
+} else { 
+int64_t var74 ; 
+int var75 , var76 , var77 , var78 ; 
+int var79 , var80 , var81 , var82 ; 
+var79 = var1 -> var39 -> var71 / 1000000LL ; 
+var80 = var79 / number ; 
+var81 = ( var79 % number ) / number ; 
+var82 = ( var79 % number ) ; 
+var5 = var6 / var1 -> var73 ; 
+var75 = var5 * var79 ; 
+var76 = var75 / number ; 
+var77 = ( var75 % number ) / number ; 
+var78 = ( var75 % number ) ; 
+func19 ( var83 , var84 , 
+str , var5 * number , 
+var76 , var77 , var78 , var80 , var81 , var82 ) ; 
+var74 = var5 * var1 -> var39 -> var71 ; 
+if ( var1 -> var39 -> var56 != var57 ) 
+var74 += var1 -> var39 -> var56 ; 
+func14 ( var1 , var74 , number , number ) ; 
+} 
+break ; 
+case var85 : 
+switch ( var2 . var86 . var2 ) { 
+case var87 : 
+var88 = var1 -> var73 = var2 . var86 . var89 ; 
+var90 = var1 -> var91 = var2 . var86 . var92 ; 
+if ( var1 -> var93 ) { 
+func20 ( var1 -> var93 ) ; 
+var1 -> var93 = var83 ; 
+} 
+case var94 : 
+var1 -> var16 = number ; 
+} 
+break ; 
+case var95 : 
+case var96 : 
+func3 ( var1 ) ; 
+break ; 
+var58 : 
+break ; 
+} 
+} 
+} 

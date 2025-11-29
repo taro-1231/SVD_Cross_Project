@@ -1,0 +1,21 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+AssContext * var2 = var1 -> var3 ; 
+if ( ! var2 -> var4 ) { 
+func2 ( var1 , var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+var2 -> var7 = func4 ( ) ; 
+if ( ! var2 -> var7 ) { 
+func2 ( var1 , var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+func5 ( var2 -> var7 , var8 , var1 ) ; 
+func6 ( var2 -> var7 , var2 -> var9 ) ; 
+var2 -> var10 = func7 ( var2 -> var7 ) ; 
+if ( ! var2 -> var10 ) { 
+func2 ( var1 , var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+return number ; 
+} 

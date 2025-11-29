@@ -1,0 +1,20 @@
+void func1 ( AVHashContext * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+switch ( var1 -> var4 ) { 
+case var5 : func2 ( var1 -> var1 , var2 , var3 ) ; break ; 
+case var6 : func3 ( var1 -> var1 , var2 , var3 ) ; break ; 
+case var7 : 
+case var8 : 
+case var9 : 
+case var10 : func4 ( var1 -> var1 , var2 , var3 ) ; break ; 
+case var11 : 
+case var12 : 
+case var13 : func5 ( var1 -> var1 , var2 , var3 ) ; break ; 
+case var14 : 
+case var15 : 
+case var16 : 
+case var17 : func6 ( var1 -> var1 , var2 , var3 ) ; break ; 
+case var18 : var1 -> var19 = func7 ( var1 -> var20 , var1 -> var19 , var2 , var3 ) ; break ; 
+case var21 : var1 -> var19 = func8 ( var1 -> var19 , var2 , var3 ) ; break ; 
+} 
+} 

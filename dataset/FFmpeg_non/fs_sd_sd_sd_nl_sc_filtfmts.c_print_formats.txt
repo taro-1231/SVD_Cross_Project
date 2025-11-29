@@ -1,0 +1,23 @@
+static void func1 ( AVFilterContext * var1 ) 
+{ 
+int var2 , var3 ; 
+AVFilterFormats * fmts = \ 
+for ( var3 = number ; var3 < fmts -> nb_formats ; var3 ++ ) \ 
+if ( av_get_pix_fmt_name ( fmts -> formats [ var3 ] ) ) \ 
+av_get_pix_fmt_name ( fmts -> formats [ var3 ] ) ) ; \ 
+AVFilterFormats * fmts ; \ 
+AVFilterChannelLayouts * layouts ; \ 
+\ 
+for ( var3 = number ; var3 < fmts -> nb_formats ; var3 ++ ) \ 
+av_get_sample_fmt_name ( fmts -> formats [ var3 ] ) ) ; \ 
+\ 
+for ( var3 = number ; var3 < layouts -> nb_channel_layouts ; var3 ++ ) { \ 
+char buf [ 256 ] ; \ 
+av_get_channel_layout_string ( buf , sizeof ( buf ) , - 1 , \ 
+layouts -> channel_layouts [ var3 ] ) ; \ 
+} \ 
+} \ 
+} \ 
+PRINT_FMTS ( in , out , IN ) ; 
+PRINT_FMTS ( out , in , OUT ) ; 
+} 

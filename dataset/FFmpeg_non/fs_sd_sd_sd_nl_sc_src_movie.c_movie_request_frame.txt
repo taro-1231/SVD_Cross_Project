@@ -1,0 +1,11 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+unsigned var4 = func2 ( var1 ) ; 
+int var5 ; 
+while ( number ) { 
+var5 = func3 ( var2 , var4 ) ; 
+if ( var5 ) 
+return func4 ( var5 , number ) ; 
+} 
+} 

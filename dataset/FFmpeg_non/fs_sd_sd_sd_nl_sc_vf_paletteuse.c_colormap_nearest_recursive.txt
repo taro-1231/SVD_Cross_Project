@@ -1,0 +1,6 @@
+static av_always_inline uint8_t func1 ( const struct color_node * var1 , const uint8_t * var2 ) 
+{ 
+struct nearest_color var3 = { . dist_sqd = INT_MAX , . var4 = - 1 } ; 
+func2 ( var1 , number , var2 , & var3 ) ; 
+return var1 [ var3 . var4 ] . var5 ; 
+} 

@@ -1,0 +1,25 @@
+static int func1 ( AVExpr ** var1 , Parser * var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+AVExpr * var6 , * var7 , * var8 ; 
+if ( ( var5 = func2 ( & var6 , var2 , & var3 ) ) < number ) 
+return var5 ; 
+while ( var2 -> var9 [ number ] == str ) { 
+var7 = var6 ; 
+var2 -> var9 ++ ; 
+if ( ( var5 = func2 ( & var8 , var2 , & var4 ) ) < number ) { 
+func3 ( var7 ) ; 
+return var5 ; 
+} 
+var6 = func4 ( var10 , number , var7 , var8 ) ; 
+if ( ! var6 ) { 
+func3 ( var7 ) ; 
+func3 ( var8 ) ; 
+return func5 ( var11 ) ; 
+} 
+if ( var6 -> var12 [ number ] ) var6 -> var12 [ number ] -> var13 *= ( var4 | number ) ; 
+} 
+if ( var6 ) var6 -> var13 *= ( var3 | number ) ; 
+* var1 = var6 ; 
+return number ; 
+} 

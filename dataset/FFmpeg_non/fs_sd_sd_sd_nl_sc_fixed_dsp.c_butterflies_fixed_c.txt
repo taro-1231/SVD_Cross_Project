@@ -1,0 +1,9 @@
+static void func1 ( int * var1 , int * var2 , int var3 ) 
+{ 
+int var4 ; 
+for ( var4 = number ; var4 < var3 ; var4 ++ ) { 
+int var5 = var1 [ var4 ] - var2 [ var4 ] ; 
+var1 [ var4 ] += var2 [ var4 ] ; 
+var2 [ var4 ] = var5 ; 
+} 
+} 

@@ -1,0 +1,43 @@
+static av_cold int func1 ( AVFilterContext * var2 ) 
+{ 
+int var3 ; 
+FILE * var4 ; 
+const char * var5 ; 
+LUT3DContext * var1 = var2 -> var6 ; 
+if ( ! var1 -> var7 ) { 
+func2 ( var1 , number ) ; 
+return number ; 
+} 
+var4 = fopen ( var1 -> var7 , str ) ; 
+if ( ! var4 ) { 
+var3 = func3 ( var8 ) ; 
+func4 ( var2 , var9 , str , var1 -> var7 , func5 ( var3 ) ) ; 
+return var3 ; 
+} 
+var5 = strrchr ( var1 -> var7 , str ) ; 
+if ( ! var5 ) { 
+func4 ( var2 , var9 , str ) ; 
+var3 = var10 ; 
+goto var11 ; 
+} 
+var5 ++ ; 
+if ( ! func6 ( var5 , str ) ) { 
+var3 = func7 ( var2 , var4 ) ; 
+} else if ( ! func6 ( var5 , str ) ) { 
+var3 = func8 ( var2 , var4 ) ; 
+} else if ( ! func6 ( var5 , str ) ) { 
+var3 = func9 ( var2 , var4 ) ; 
+} else if ( ! func6 ( var5 , str ) ) { 
+var3 = func10 ( var2 , var4 ) ; 
+} else { 
+func4 ( var2 , var9 , str , var5 ) ; 
+var3 = func3 ( var12 ) ; 
+} 
+if ( ! var3 && ! var1 -> var13 ) { 
+func4 ( var2 , var9 , str ) ; 
+var3 = var10 ; 
+} 
+var11 : 
+fclose ( var4 ) ; 
+return var3 ; 
+} 

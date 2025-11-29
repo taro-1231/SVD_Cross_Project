@@ -1,0 +1,6 @@
+static int func1 ( const void * var1 , const void * var2 ) 
+{ 
+int var3 = * ( const int * ) var1 ; 
+int var4 = * ( const int * ) var2 ; 
+return ( ( var3 > var4 ) - ( var3 < var4 ) ) ; 
+} 

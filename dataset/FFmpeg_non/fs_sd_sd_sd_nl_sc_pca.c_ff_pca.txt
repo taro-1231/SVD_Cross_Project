@@ -1,0 +1,82 @@
+int func1 ( PCA * var1 , double * var2 , double * var3 ) { 
+int var4 , var5 , var6 ; 
+int var7 = number ; 
+const int var8 = var1 -> var8 ; 
+double * var9 = var1 -> var9 ; 
+memset ( var2 , number , sizeof ( double ) * var8 * var8 ) ; 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) { 
+var1 -> var10 [ var5 ] /= var1 -> var11 ; 
+var2 [ var5 + var5 * var8 ] = number ; 
+for ( var4 = number ; var4 <= var5 ; var4 ++ ) { 
+var1 -> var12 [ var5 + var4 * var8 ] /= var1 -> var11 ; 
+var1 -> var12 [ var5 + var4 * var8 ] -= var1 -> var10 [ var4 ] * var1 -> var10 [ var5 ] ; 
+var1 -> var12 [ var4 + var5 * var8 ] = var1 -> var12 [ var5 + var4 * var8 ] ; 
+} 
+var3 [ var5 ] = var1 -> var12 [ var5 + var5 * var8 ] ; 
+var9 [ var5 ] = number ; 
+} 
+for ( var6 = number ; var6 < number ; var6 ++ ) { 
+double var13 = number ; 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) 
+for ( var5 = var4 + number ; var5 < var8 ; var5 ++ ) 
+var13 += fabs ( var1 -> var12 [ var5 + var4 * var8 ] ) ; 
+if ( var13 == number ) { 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+double var14 = - number ; 
+for ( var5 = var4 ; var5 < var8 ; var5 ++ ) { 
+if ( var3 [ var5 ] > var14 ) { 
+var14 = var3 [ var5 ] ; 
+var7 = var5 ; 
+} 
+} 
+var3 [ var7 ] = var3 [ var4 ] ; 
+var3 [ var4 ] = var14 ; 
+for ( var5 = number ; var5 < var8 ; var5 ++ ) { 
+double var15 = var2 [ var7 + var5 * var8 ] ; 
+var2 [ var7 + var5 * var8 ] = var2 [ var4 + var5 * var8 ] ; 
+var2 [ var4 + var5 * var8 ] = var15 ; 
+} 
+} 
+return var6 ; 
+} 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+for ( var5 = var4 + number ; var5 < var8 ; var5 ++ ) { 
+double var16 = var1 -> var12 [ var5 + var4 * var8 ] ; 
+double var17 , var18 , var19 , var20 , var21 , var22 ; 
+if ( var6 < number && fabs ( var16 ) < var13 / ( number * var8 * var8 ) ) 
+continue ; 
+if ( fabs ( var16 ) == number ) 
+continue ; 
+if ( var6 >= number && fabs ( ( var3 [ var5 ] + var9 [ var5 ] ) / var16 ) > ( 1LL << 32 ) && fabs ( ( var3 [ var4 ] + var9 [ var4 ] ) / var16 ) > ( 1LL << 32 ) ) { 
+var1 -> var12 [ var5 + var4 * var8 ] = number ; 
+continue ; 
+} 
+var22 = ( var3 [ var5 ] + var9 [ var5 ] ) - ( var3 [ var4 ] + var9 [ var4 ] ) ; 
+var21 = number * var22 / var16 ; 
+var17 = number / ( fabs ( var21 ) + sqrt ( number + var21 * var21 ) ) ; 
+if ( var21 < number ) var17 = - var17 ; 
+var18 = number / sqrt ( number + var17 * var17 ) ; 
+var19 = var17 * var18 ; 
+var20 = var19 / ( number + var18 ) ; 
+var9 [ var4 ] -= var17 * var16 ; 
+var9 [ var5 ] += var17 * var16 ; 
+double var25 = var23 [ var5 + var4 * var8 ] ; \ 
+double var22 = var23 [ var24 + var7 * var8 ] ; \ 
+var23 [ var5 + var4 * var8 ] = var25 - var19 * ( var22 + var25 * var20 ) ; \ 
+var23 [ var24 + var7 * var8 ] = var22 + var19 * ( var25 - var22 * var20 ) ; } 
+for ( var7 = number ; var7 < var8 ; var7 ++ ) { 
+if ( var7 != var4 && var7 != var5 ) { 
+ROTATE ( var1 -> var12 , FFMIN ( var7 , var4 ) , FFMAX ( var7 , var4 ) , FFMIN ( var7 , var5 ) , FFMAX ( var7 , var5 ) ) 
+} 
+ROTATE ( var2 , var7 , var4 , var7 , var5 ) 
+} 
+var1 -> var12 [ var5 + var4 * var8 ] = number ; 
+} 
+} 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+var3 [ var4 ] += var9 [ var4 ] ; 
+var9 [ var4 ] = number ; 
+} 
+} 
+return - number ; 
+} 

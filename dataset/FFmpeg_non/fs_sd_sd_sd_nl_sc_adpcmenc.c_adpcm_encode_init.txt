@@ -1,0 +1,78 @@
+static av_cold int func1 ( AVCodecContext * var1 ) ; 
+static av_cold int func2 ( AVCodecContext * var1 ) 
+{ 
+ADPCMEncodeContext * var2 = var1 -> var3 ; 
+uint8_t * var4 ; 
+int var5 ; 
+int var6 = func3 ( var7 ) ; 
+if ( var1 -> var8 > number ) { 
+func4 ( var1 , var9 , str ) ; 
+return func3 ( var10 ) ; 
+} 
+if ( var1 -> var11 && ( unsigned ) var1 -> var11 > number ) { 
+func4 ( var1 , var9 , str ) ; 
+return func3 ( var10 ) ; 
+} 
+if ( var1 -> var11 ) { 
+int var12 = number << var1 -> var11 ; 
+int var13 = var12 * var14 ; 
+func5 ( var1 , var2 -> var15 , 
+var13 * sizeof ( * var2 -> var15 ) , var16 ) ; 
+func5 ( var1 , var2 -> var17 , 
+number * var12 * sizeof ( * var2 -> var17 ) , var16 ) ; 
+func5 ( var1 , var2 -> var18 , 
+number * var12 * sizeof ( * var2 -> var18 ) , var16 ) ; 
+func5 ( var1 , var2 -> var19 , 
+number * sizeof ( * var2 -> var19 ) , var16 ) ; 
+} 
+var1 -> var20 = func6 ( var1 -> var21 -> var22 ) ; 
+switch ( var1 -> var21 -> var22 ) { 
+case var23 : 
+var1 -> var24 = ( var25 - number * var1 -> var8 ) * number / 
+( number * var1 -> var8 ) + number ; 
+var1 -> var26 = var25 ; 
+var1 -> var20 = number ; 
+break ; 
+case var27 : 
+var1 -> var24 = number ; 
+var1 -> var26 = number * var1 -> var8 ; 
+break ; 
+case var28 : 
+var1 -> var24 = ( var25 - number * var1 -> var8 ) * number / var1 -> var8 + number ; 
+var1 -> var20 = number ; 
+var1 -> var26 = var25 ; 
+if ( ! ( var1 -> var4 = func7 ( number + var29 ) ) ) 
+goto var16 ; 
+var1 -> var30 = number ; 
+var4 = var1 -> var4 ; 
+func8 ( & var4 , var1 -> var24 ) ; 
+func8 ( & var4 , number ) ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) { 
+func8 ( & var4 , var31 [ var5 ] * number ) ; 
+func8 ( & var4 , var32 [ var5 ] * number ) ; 
+} 
+break ; 
+case var33 : 
+var1 -> var24 = var25 * number / var1 -> var8 ; 
+var1 -> var26 = var25 ; 
+break ; 
+case var34 : 
+if ( var1 -> var35 != number && 
+var1 -> var35 != number && 
+var1 -> var35 != number ) { 
+func4 ( var1 , var9 , str 
+str ) ; 
+var6 = func3 ( var10 ) ; 
+goto var16 ; 
+} 
+var1 -> var24 = number * ( var1 -> var35 / number ) ; 
+break ; 
+var36 : 
+var6 = func3 ( var10 ) ; 
+goto var16 ; 
+} 
+return number ; 
+var16 : 
+func1 ( var1 ) ; 
+return var6 ; 
+} 

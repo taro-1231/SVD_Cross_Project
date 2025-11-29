@@ -1,0 +1,5 @@
+func1 ( png_const_structp var1 , png_byte var2 , 
+png_byte var3 ) 
+{ 
+return ( var4 * func2 ( var1 , var2 , var3 ) ) / number ; 
+} 

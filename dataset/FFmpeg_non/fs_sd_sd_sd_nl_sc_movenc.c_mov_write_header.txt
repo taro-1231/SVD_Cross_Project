@@ -1,0 +1,304 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+AVIOContext * var2 = var1 -> var2 ; 
+MOVMuxContext * var3 = var1 -> var4 ; 
+AVDictionaryEntry * var5 , * var6 = func2 ( var1 -> var7 , str , var8 , number ) ; 
+int var9 , var10 , var11 = number , var12 = number ; 
+var3 -> var13 = var1 ; 
+var3 -> var14 = var15 ; 
+if ( var1 -> var16 ) { 
+if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var18 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var18 | var19 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var20 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var21 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var22 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var23 ; 
+else if ( ! strcmp ( str , var1 -> var16 -> var17 ) ) var3 -> var14 = var24 ; 
+} 
+if ( var3 -> var25 & var26 ) 
+var3 -> var25 |= var27 ; 
+if ( var3 -> var28 || var3 -> var29 || 
+var3 -> var25 & ( var27 | 
+var30 | 
+var31 ) ) 
+var3 -> var25 |= var32 ; 
+if ( var3 -> var14 == var23 ) 
+var3 -> var25 |= var27 | var33 | 
+var32 ; 
+if ( var3 -> var25 & var34 ) 
+var3 -> var25 |= var32 | var27 | 
+var35 ; 
+if ( var3 -> var25 & var36 ) { 
+var3 -> var37 = - number ; 
+} 
+if ( var3 -> var38 < number ) { 
+var3 -> var38 = number ; 
+if ( var3 -> var25 & var32 && 
+! ( var3 -> var25 & var26 ) ) { 
+if ( var1 -> var40 == var41 || 
+var1 -> var40 == var42 ) 
+var3 -> var38 = number ; 
+} 
+} 
+if ( var3 -> var25 & var27 && 
+! ( var3 -> var25 & var26 ) && var3 -> var38 ) 
+func3 ( var1 , var43 , str ) ; 
+if ( ! var3 -> var38 && var1 -> var40 == var41 ) 
+var1 -> var40 = var42 ; 
+if ( var3 -> var25 & var44 && 
+var3 -> var25 & var35 ) 
+var3 -> var25 &= ~ var44 ; 
+if ( var3 -> var46 && 
+var3 -> var25 & ( var44 | var33 ) ) { 
+func3 ( var1 , var47 , 
+str 
+str ) ; 
+return func4 ( var48 ) ; 
+} 
+if ( ! var1 -> var2 -> var49 && 
+( ! ( var3 -> var25 & var32 ) || var3 -> var50 ) ) { 
+func3 ( var1 , var47 , str ) ; 
+return func4 ( var48 ) ; 
+} 
+if ( ! ( var3 -> var25 & var26 ) ) { 
+if ( ( var10 = func5 ( var2 , var1 ) ) < number ) 
+return var10 ; 
+} 
+var3 -> var51 = var1 -> var51 ; 
+if ( var3 -> var14 & ( var15 | var20 | var22 ) && var1 -> var52 ) 
+var3 -> var53 = var3 -> var51 ++ ; 
+if ( var3 -> var25 & var54 ) { 
+var11 = var3 -> var51 ; 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+if ( var55 -> var57 -> var58 == var59 || 
+var55 -> var57 -> var58 == var60 ) { 
+var3 -> var51 ++ ; 
+} 
+} 
+} 
+if ( var3 -> var14 == var20 ) { 
+var12 = var3 -> var51 ; 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+if ( var55 -> var57 -> var58 == var59 && 
+( var6 || func2 ( var55 -> var7 , str , var8 , number ) ) ) 
+var3 -> var61 ++ ; 
+} 
+if ( var3 -> var61 ) { 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+if ( var55 -> var57 -> var62 == func6 ( str , str , str , str ) ) { 
+func3 ( var1 , var43 , str 
+str ) ; 
+var3 -> var61 = number ; 
+} 
+} 
+} 
+var3 -> var51 += var3 -> var61 ; 
+} 
+var3 -> var39 = func7 ( ( var3 -> var51 + number ) , sizeof ( * var3 -> var39 ) ) ; 
+if ( ! var3 -> var39 ) 
+return func4 ( var64 ) ; 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+MOVTrack * var63 = & var3 -> var39 [ var9 ] ; 
+AVDictionaryEntry * var65 = func2 ( var55 -> var7 , str , var8 , number ) ; 
+var63 -> var55 = var55 ; 
+var63 -> var67 = var55 -> var57 ; 
+var63 -> var66 = func8 ( var65 ? var65 -> var68 : str , var3 -> var14 != var20 ) ; 
+if ( var63 -> var66 < number ) 
+var63 -> var66 = number ; 
+var63 -> var14 = var3 -> var14 ; 
+var63 -> var69 = func9 ( var1 , var63 ) ; 
+if ( ! var63 -> var69 ) { 
+func3 ( var1 , var47 , str 
+str , 
+avcodec_get_name ( var55 -> var57 -> var70 ) , var9 ) ; 
+var10 = func4 ( var48 ) ; 
+goto var71 ; 
+} 
+var63 -> var11 = - number ; 
+var63 -> var72 = var73 ; 
+var63 -> var74 = var73 ; 
+var63 -> var75 = var73 ; 
+if ( var55 -> var57 -> var58 == var59 ) { 
+if ( var63 -> var69 == func6 ( str , str , str , str ) || var63 -> var69 == func6 ( str , str , str , str ) || 
+var63 -> var69 == func6 ( str , str , str , str ) || var63 -> var69 == func6 ( str , str , str , str ) || 
+var63 -> var69 == func6 ( str , str , str , str ) || var63 -> var69 == func6 ( str , str , str , str ) ) { 
+if ( var55 -> var57 -> var76 != number || ( var55 -> var57 -> var77 != number && var55 -> var57 -> var77 != number ) ) { 
+func3 ( var1 , var47 , str ) ; 
+var10 = func4 ( var48 ) ; 
+goto var71 ; 
+} 
+var63 -> var77 = var63 -> var69 >> number == str ? number : number ; 
+} 
+if ( var3 -> var78 ) { 
+var63 -> var79 = var3 -> var78 ; 
+} else { 
+var63 -> var79 = var55 -> var80 . var81 ; 
+while ( var63 -> var79 < number ) 
+var63 -> var79 *= number ; 
+} 
+if ( var55 -> var57 -> var76 > number || var55 -> var57 -> var77 > number ) { 
+func3 ( var1 , var47 , str , var55 -> var57 -> var76 , var55 -> var57 -> var77 ) ; 
+var10 = func4 ( var48 ) ; 
+goto var71 ; 
+} 
+if ( var63 -> var14 == var20 && var63 -> var79 > number ) 
+func3 ( var1 , var43 , 
+str 
+str 
+str ) ; 
+} else if ( var55 -> var57 -> var58 == var60 ) { 
+var63 -> var79 = var55 -> var57 -> var82 ; 
+if ( ! var55 -> var57 -> var83 && ! func10 ( var55 -> var57 -> var70 ) ) { 
+func3 ( var1 , var43 , str , var9 ) ; 
+var63 -> var84 = number ; 
+} else if ( var55 -> var57 -> var70 == var85 || 
+var55 -> var57 -> var70 == var86 || 
+var55 -> var57 -> var70 == var87 ) { 
+if ( ! var55 -> var57 -> var88 ) { 
+func3 ( var1 , var47 , str , var9 ) ; 
+var10 = func4 ( var48 ) ; 
+goto var71 ; 
+} 
+var63 -> var89 = var55 -> var57 -> var88 ; 
+} else if ( var55 -> var57 -> var83 > number ) { 
+var63 -> var84 = number ; 
+} else { 
+var63 -> var89 = ( func10 ( var55 -> var57 -> var70 ) >> number ) * var55 -> var57 -> var90 ; 
+} 
+if ( var55 -> var57 -> var70 == var87 || 
+var55 -> var57 -> var70 == var91 ) { 
+var63 -> var84 = number ; 
+} 
+if ( var63 -> var14 != var20 && 
+var63 -> var67 -> var70 == var92 && var63 -> var79 < number ) { 
+if ( var63 -> var67 -> var93 >= var94 ) { 
+func3 ( var1 , var47 , str , 
+var9 , var63 -> var67 -> var82 ) ; 
+var10 = func4 ( var48 ) ; 
+goto var71 ; 
+} else { 
+func3 ( var1 , var43 , str , 
+var9 , var63 -> var67 -> var82 ) ; 
+} 
+} 
+} else if ( var55 -> var57 -> var58 == var95 ) { 
+var63 -> var79 = var55 -> var80 . var81 ; 
+} else if ( var55 -> var57 -> var58 == var96 ) { 
+var63 -> var79 = var55 -> var80 . var81 ; 
+} else { 
+var63 -> var79 = var97 ; 
+} 
+if ( ! var63 -> var77 ) 
+var63 -> var77 = var55 -> var57 -> var77 ; 
+if ( var3 -> var14 == var23 ) 
+var63 -> var79 = number ; 
+func11 ( var55 , number , number , var63 -> var79 ) ; 
+if ( var55 -> var57 -> var98 ) { 
+if ( var55 -> var57 -> var70 == var99 ) 
+func12 ( var63 , var55 ) ; 
+else if ( ! func13 ( var63 -> var69 ) && var55 -> var57 -> var70 != var100 ) { 
+var63 -> var101 = var55 -> var57 -> var98 ; 
+var63 -> var102 = func14 ( var63 -> var101 ) ; 
+if ( ! var63 -> var102 ) { 
+var10 = func4 ( var64 ) ; 
+goto var71 ; 
+} 
+memcpy ( var63 -> var102 , var55 -> var57 -> var103 , var63 -> var101 ) ; 
+} 
+} 
+} 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+int var104 ; 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+MOVTrack * var63 = & var3 -> var39 [ var9 ] ; 
+if ( var55 -> var57 -> var58 != var60 || 
+var63 -> var67 -> var105 != var106 ) 
+continue ; 
+for ( var104 = number ; var104 < var1 -> var51 ; var104 ++ ) { 
+AVStream * var107 = var1 -> var56 [ var104 ] ; 
+MOVTrack * var108 = & var3 -> var39 [ var104 ] ; 
+if ( var104 == var9 ) 
+continue ; 
+if ( var107 -> var57 -> var58 != var60 || 
+var108 -> var67 -> var105 != var106 || 
+var108 -> var66 != var63 -> var66 || 
+var108 -> var69 != var63 -> var69 
+) 
+continue ; 
+var63 -> var109 ++ ; 
+} 
+} 
+func15 ( var1 ) ; 
+if ( var3 -> var37 ) { 
+var3 -> var110 = func16 ( var2 ) ; 
+if ( var3 -> var37 > number ) 
+func17 ( var2 , var3 -> var37 ) ; 
+} 
+if ( var3 -> var25 & var32 ) { 
+if ( ! ( var3 -> var25 & ( var30 | 
+var31 ) ) && 
+! var3 -> var28 && ! var3 -> var29 ) 
+var3 -> var25 |= var30 ; 
+} else { 
+if ( var3 -> var25 & var36 ) 
+var3 -> var110 = func16 ( var2 ) ; 
+func18 ( var2 , var3 ) ; 
+} 
+if ( var5 = func2 ( var1 -> var7 , str , var8 , number ) ) { 
+var3 -> var111 = func19 ( var5 -> var68 ) ; 
+if ( var3 -> var111 < number ) { 
+func3 ( var1 , var43 , str , var5 -> var68 ) ; 
+var3 -> var111 = number ; 
+} 
+} 
+if ( var3 -> var111 ) 
+var3 -> var111 += number ; 
+if ( var3 -> var53 ) 
+if ( ( var10 = func20 ( var1 , var3 -> var53 ) ) < number ) 
+goto var71 ; 
+if ( var3 -> var25 & var54 ) { 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+if ( var55 -> var57 -> var58 == var59 || 
+var55 -> var57 -> var58 == var60 ) { 
+if ( ( var10 = func21 ( var1 , var11 , var9 ) ) < number ) 
+goto var71 ; 
+var11 ++ ; 
+} 
+} 
+} 
+if ( var3 -> var61 ) { 
+for ( var9 = number ; var9 < var1 -> var51 ; var9 ++ ) { 
+AVStream * var55 = var1 -> var56 [ var9 ] ; 
+var5 = var6 ; 
+if ( var55 -> var57 -> var58 == var59 ) { 
+if ( ! var5 ) 
+var5 = func2 ( var55 -> var7 , str , var8 , number ) ; 
+if ( ! var5 ) 
+continue ; 
+if ( ( var10 = func22 ( var1 , var12 , var9 , var5 -> var68 ) ) < number ) 
+goto var71 ; 
+var12 ++ ; 
+} 
+} 
+} 
+func23 ( var2 ) ; 
+if ( var3 -> var25 & var112 ) 
+func24 ( var2 , var3 ) ; 
+if ( var3 -> var25 & var27 && 
+! ( var3 -> var25 & var26 ) ) { 
+if ( ( var10 = func25 ( var2 , var3 , var1 ) ) < number ) 
+return var10 ; 
+var3 -> var113 = number ; 
+if ( var3 -> var25 & var114 ) 
+var3 -> var110 = func16 ( var2 ) ; 
+} 
+return number ; 
+var71 : 
+func26 ( var1 ) ; 
+return var10 ; 
+} 

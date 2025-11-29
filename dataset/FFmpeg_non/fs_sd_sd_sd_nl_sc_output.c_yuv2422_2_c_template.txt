@@ -1,0 +1,26 @@
+func1 ( SwsContext * var1 , const int16_t * var2 [ number ] , 
+const int16_t * var3 [ number ] , const int16_t * var4 [ number ] , 
+const int16_t * var5 [ number ] , uint8_t * var6 , int var7 , 
+int var8 , int var9 , int var10 , 
+enum AVPixelFormat var11 ) 
+{ 
+const int16_t * var12 = var2 [ number ] , * var13 = var2 [ number ] , 
+* var14 = var3 [ number ] , * var15 = var3 [ number ] , 
+* var16 = var4 [ number ] , * var17 = var4 [ number ] ; 
+int var18 = number - var8 ; 
+int var19 = number - var9 ; 
+int var20 ; 
+for ( var20 = number ; var20 < ( ( var7 + number ) >> number ) ; var20 ++ ) { 
+int var21 = ( var12 [ var20 * number ] * var18 + var13 [ var20 * number ] * var8 ) >> number ; 
+int var22 = ( var12 [ var20 * number + number ] * var18 + var13 [ var20 * number + number ] * var8 ) >> number ; 
+int var23 = ( var14 [ var20 ] * var19 + var15 [ var20 ] * var9 ) >> number ; 
+int var24 = ( var16 [ var20 ] * var19 + var17 [ var20 ] * var9 ) >> number ; 
+if ( ( var21 | var22 | var23 | var24 ) & number ) { 
+var21 = func2 ( var21 ) ; 
+var22 = func2 ( var22 ) ; 
+var23 = func2 ( var23 ) ; 
+var24 = func2 ( var24 ) ; 
+} 
+func3 ( var20 * number , var21 , var23 , var22 , var24 ) ; 
+} 
+} 

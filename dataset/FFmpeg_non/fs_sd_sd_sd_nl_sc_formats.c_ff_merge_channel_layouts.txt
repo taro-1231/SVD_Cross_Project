@@ -1,0 +1,72 @@
+var1 * func1 ( var1 * var2 , 
+var1 * var3 ) 
+{ 
+var1 * var4 = var5 ; 
+unsigned var6 = var2 -> var7 + var2 -> var8 ; 
+unsigned var9 = var3 -> var7 + var3 -> var8 ; 
+int var10 , var11 = number , var12 , var13 , var14 ; 
+if ( var2 == var3 ) return var2 ; 
+if ( var6 < var9 ) { 
+FFSWAP ( var1 * , var2 , var3 ) ; 
+FFSWAP ( unsigned , var6 , var9 ) ; 
+} 
+if ( var6 ) { 
+if ( var6 == number && ! var9 ) { 
+for ( var12 = var13 = number ; var12 < var3 -> var15 ; var12 ++ ) 
+if ( func2 ( var3 -> var16 [ var12 ] ) ) 
+var3 -> var16 [ var13 ++ ] = var3 -> var16 [ var12 ] ; 
+if ( ! var13 ) 
+return var5 ; 
+var3 -> var15 = var13 ; 
+} 
+func3 ( var3 , var2 , var16 , var1 , var17 ) ; 
+return var3 ; 
+} 
+var10 = var2 -> var15 + var3 -> var15 ; 
+if ( ! ( var4 = func4 ( sizeof ( * var4 ) ) ) || 
+! ( var4 -> var16 = func5 ( var10 , 
+sizeof ( * var4 -> var16 ) ) ) ) 
+goto var17 ; 
+for ( var12 = number ; var12 < var2 -> var15 ; var12 ++ ) { 
+if ( ! func2 ( var2 -> var16 [ var12 ] ) ) 
+continue ; 
+for ( var13 = number ; var13 < var3 -> var15 ; var13 ++ ) { 
+if ( var2 -> var16 [ var12 ] == var3 -> var16 [ var13 ] ) { 
+var4 -> var16 [ var11 ++ ] = var2 -> var16 [ var12 ] ; 
+var2 -> var16 [ var12 ] = var3 -> var16 [ var13 ] = number ; 
+} 
+} 
+} 
+for ( var14 = number ; var14 < number ; var14 ++ ) { 
+for ( var12 = number ; var12 < var2 -> var15 ; var12 ++ ) { 
+uint64_t var18 = var2 -> var16 [ var12 ] , var19 ; 
+if ( ! var18 || ! func2 ( var18 ) ) 
+continue ; 
+var19 = func6 ( func7 ( var18 ) ) ; 
+for ( var13 = number ; var13 < var3 -> var15 ; var13 ++ ) 
+if ( var3 -> var16 [ var13 ] == var19 ) 
+var4 -> var16 [ var11 ++ ] = var2 -> var16 [ var12 ] ; 
+} 
+FFSWAP ( var1 * , var2 , var3 ) ; 
+} 
+for ( var12 = number ; var12 < var2 -> var15 ; var12 ++ ) { 
+if ( func2 ( var2 -> var16 [ var12 ] ) ) 
+continue ; 
+for ( var13 = number ; var13 < var3 -> var15 ; var13 ++ ) 
+if ( var2 -> var16 [ var12 ] == var3 -> var16 [ var13 ] ) 
+var4 -> var16 [ var11 ++ ] = var2 -> var16 [ var12 ] ; 
+} 
+var4 -> var15 = var11 ; 
+if ( ! var4 -> var15 ) 
+goto var17 ; 
+func3 ( var4 , var2 , var16 , var1 , var17 ) ; 
+func3 ( var4 , var3 , var16 , var1 , var17 ) ; 
+return var4 ; 
+var17 : 
+if ( var4 ) { 
+func8 ( & var4 -> var20 ) ; 
+func8 ( & var4 -> var16 ) ; 
+} 
+func8 ( & var4 ) ; 
+return var5 ; 
+} 

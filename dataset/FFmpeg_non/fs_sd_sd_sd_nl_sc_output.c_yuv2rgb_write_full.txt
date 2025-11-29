@@ -1,0 +1,83 @@
+static av_always_inline void func1 ( SwsContext * var2 , 
+uint8_t * var3 , int var4 , int var5 , int var6 , int var7 , int var8 , 
+int var9 , enum AVPixelFormat var10 , int var11 , int var12 [ number ] ) 
+{ 
+int var13 , var14 , var15 ; 
+int var16 = var10 == var17 || var10 == var18 ; 
+var5 -= var2 -> var19 ; 
+var5 *= var2 -> var20 ; 
+var5 += number << number ; 
+var13 = var5 + var8 * var2 -> var21 ; 
+var14 = var5 + var8 * var2 -> var22 + var7 * var2 -> var23 ; 
+var15 = var5 + var7 * var2 -> var24 ; 
+if ( ( var13 | var14 | var15 ) & number ) { 
+var13 = func2 ( var13 , number ) ; 
+var14 = func2 ( var14 , number ) ; 
+var15 = func2 ( var15 , number ) ; 
+} 
+switch ( var10 ) { 
+case var25 : 
+var3 [ number ] = var11 ? var6 : number ; 
+var3 [ number ] = var13 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var15 >> number ; 
+break ; 
+case var26 : 
+var3 [ number ] = var13 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var15 >> number ; 
+break ; 
+case var27 : 
+var3 [ number ] = var13 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var15 >> number ; 
+var3 [ number ] = var11 ? var6 : number ; 
+break ; 
+case var28 : 
+var3 [ number ] = var11 ? var6 : number ; 
+var3 [ number ] = var15 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var13 >> number ; 
+break ; 
+case var29 : 
+var3 [ number ] = var15 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var13 >> number ; 
+break ; 
+case var30 : 
+var3 [ number ] = var15 >> number ; 
+var3 [ number ] = var14 >> number ; 
+var3 [ number ] = var13 >> number ; 
+var3 [ number ] = var11 ? var6 : number ; 
+break ; 
+case var31 : 
+case var1 : 
+case var17 : 
+case var18 : 
+{ 
+int var32 , var33 , var34 ; 
+switch ( var2 -> var35 ) { 
+var36 : 
+case var37 : 
+case var38 : 
+var13 >>= number ; 
+var14 >>= number ; 
+var15 >>= number ; 
+var13 += ( number * var12 [ number ] + number * var2 -> var39 [ number ] [ var4 ] + number * var2 -> var39 [ number ] [ var4 + number ] + number * var2 -> var39 [ number ] [ var4 + number ] ) >> number ; 
+var14 += ( number * var12 [ number ] + number * var2 -> var39 [ number ] [ var4 ] + number * var2 -> var39 [ number ] [ var4 + number ] + number * var2 -> var39 [ number ] [ var4 + number ] ) >> number ; 
+var15 += ( number * var12 [ number ] + number * var2 -> var39 [ number ] [ var4 ] + number * var2 -> var39 [ number ] [ var4 + number ] + number * var2 -> var39 [ number ] [ var4 + number ] ) >> number ; 
+var2 -> var39 [ number ] [ var4 ] = var12 [ number ] ; 
+var2 -> var39 [ number ] [ var4 ] = var12 [ number ] ; 
+var2 -> var39 [ number ] [ var4 ] = var12 [ number ] ; 
+var32 = var13 >> ( var16 ? number : number ) ; 
+var33 = var14 >> ( var16 ? number : number ) ; 
+var34 = var15 >> ( var16 ? number : number ) ; 
+var32 = func3 ( var32 , number , var16 ? number : number ) ; 
+var33 = func3 ( var33 , number , var16 ? number : number ) ; 
+var34 = func3 ( var34 , number , var16 ? number : number ) ; 
+var12 [ number ] = var13 - var32 * ( var16 ? number : number ) ; 
+var12 [ number ] = var14 - var33 * ( var16 ? number : number ) ; 
+var12 [ number ] = var15 - var34 * ( var16 ? number : number ) ; 
+break ; 
+case var40 : 
+if ( var16 ) { 

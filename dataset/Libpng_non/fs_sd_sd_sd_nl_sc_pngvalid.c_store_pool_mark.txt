@@ -1,0 +1,5 @@
+func1 ( png_bytep var1 ) 
+{ 
+static png_uint_32 var2 [ number ] = { number , number } ; 
+func2 ( var2 , var1 ) ; 
+} 

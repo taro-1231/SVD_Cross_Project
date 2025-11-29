@@ -1,0 +1,10 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+ANullContext * var2 = var1 -> var3 -> var4 ; 
+char var5 [ number ] ; 
+func2 ( var5 , sizeof ( var5 ) , number , var2 -> var6 ) ; 
+func3 ( var1 -> var3 , var7 , 
+str , 
+var2 -> var8 , var5 , var2 -> var9 ) ; 
+return number ; 
+} 

@@ -1,0 +1,7 @@
+func1 ( const char * var1 , const char * var2 ) 
+{ 
+fprintf ( stderr , str 
+str 
+str , var2 , var1 ) ; 
+exit ( number ) ; 
+} 

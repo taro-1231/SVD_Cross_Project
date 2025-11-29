@@ -1,0 +1,14 @@
+static int func1 ( int var1 , int var2 , int var3 , int var4 , int var5 , int var6 , int var7 , int var8 , int var9 ) 
+{ 
+const int var10 = func2 ( var2 - var9 ) ; 
+const int var11 = func2 ( var3 - var8 ) ; 
+const int var12 = func2 ( var4 - var7 ) ; 
+const int var13 = func3 ( func3 ( var10 , var11 ) , var12 ) ; 
+if ( var13 == var11 ) { 
+return ( var3 + var8 + number ) >> number ; 
+} 
+if ( var13 == var12 ) { 
+return ( var4 + var7 + number ) >> number ; 
+} 
+return ( var2 + var9 + number ) >> number ; 
+} 

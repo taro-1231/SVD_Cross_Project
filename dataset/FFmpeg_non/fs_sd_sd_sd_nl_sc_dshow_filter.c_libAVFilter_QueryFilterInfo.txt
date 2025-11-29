@@ -1,0 +1,10 @@
+func1 ( libAVFilter * var1 , FILTER_INFO * var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+if ( var1 -> var2 . var4 ) 
+func3 ( var1 -> var2 . var4 ) ; 
+* var2 = var1 -> var2 ; 
+return var5 ; 
+} 

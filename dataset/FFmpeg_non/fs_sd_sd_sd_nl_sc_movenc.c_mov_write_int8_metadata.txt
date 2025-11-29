@@ -1,0 +1,22 @@
+static int func1 ( AVFormatContext * var1 , AVIOContext * var2 , 
+const char * var3 , const char * var4 , 
+int var5 ) 
+{ 
+AVDictionaryEntry * var6 = var7 ; 
+uint8_t var8 ; 
+int var9 = number + var5 ; 
+if ( var5 != number && var5 != number ) 
+return - number ; 
+if ( ! ( var6 = func2 ( var1 -> var10 , var4 , var7 , number ) ) ) 
+return number ; 
+var8 = atoi ( var6 -> var11 ) ; 
+func3 ( var2 , var9 ) ; 
+func4 ( var2 , var3 ) ; 
+func3 ( var2 , var9 - number ) ; 
+func4 ( var2 , str ) ; 
+func3 ( var2 , number ) ; 
+func3 ( var2 , number ) ; 
+if ( var5 == number ) func3 ( var2 , var8 ) ; 
+else func5 ( var2 , var8 ) ; 
+return var9 ; 
+} 

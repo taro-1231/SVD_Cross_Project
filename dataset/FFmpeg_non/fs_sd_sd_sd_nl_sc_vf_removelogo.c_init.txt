@@ -1,0 +1,53 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+RemovelogoContext * var2 = var1 -> var3 ; 
+int ** var4 ; 
+int var5 = number ; 
+int var6 , var7 , var8 , var9 , var10 ; 
+int var11 , var12 ; 
+if ( ! var2 -> var13 ) { 
+func2 ( var1 , var14 , str ) ; 
+return func3 ( var15 ) ; 
+} 
+if ( ( var5 = func4 ( & var2 -> var16 , & var9 , & var10 , var2 -> var13 , var1 ) ) < number ) 
+return var5 ; 
+var2 -> var17 = var9 ; 
+var2 -> var18 = var10 ; 
+func5 ( var2 -> var16 , var9 , var9 , var10 , 
+number , & var11 ) ; 
+if ( ! ( var2 -> var19 = func6 ( var9 / number * var10 / number ) ) ) 
+return func3 ( var20 ) ; 
+func7 ( var2 -> var16 , var9 , 
+var2 -> var19 , var9 / number , 
+var9 , var10 , & var12 ) ; 
+var2 -> var21 = func8 ( var11 , var12 ) ; 
+var4 = ( int ** ) func9 ( var2 -> var21 + number , sizeof ( int ** ) ) ; 
+if ( ! var4 ) 
+return func3 ( var20 ) ; 
+for ( var6 = number ; var6 <= var2 -> var21 ; var6 ++ ) { 
+var4 [ var6 ] = ( int ** ) func9 ( ( var6 * number ) + number , sizeof ( int * ) ) ; 
+if ( ! var4 [ var6 ] ) { 
+func10 ( var4 ) ; 
+return func3 ( var20 ) ; 
+} 
+for ( var7 = - var6 ; var7 <= var6 ; var7 ++ ) { 
+var4 [ var6 ] [ var7 + var6 ] = ( int * ) func9 ( ( var6 * number ) + number , sizeof ( int ) ) ; 
+if ( ! var4 [ var6 ] [ var7 + var6 ] ) { 
+func10 ( var4 ) ; 
+return func3 ( var20 ) ; 
+} 
+for ( var8 = - var6 ; var8 <= var6 ; var8 ++ ) { 
+if ( ( var7 * var7 ) + ( var8 * var8 ) <= ( var6 * var6 ) ) 
+var4 [ var6 ] [ var7 + var6 ] [ var8 + var6 ] = number ; 
+else 
+var4 [ var6 ] [ var7 + var6 ] [ var8 + var6 ] = number ; 
+} 
+} 
+} 
+var2 -> var4 = var4 ; 
+func11 ( & var2 -> var22 , var2 -> var16 , var9 , var9 , var10 , number ) ; 
+func11 ( & var2 -> var23 , var2 -> var19 , var9 / number , var9 / number , var10 / number , number ) ; 
+func12 ( var24 ) ; 
+func12 ( var25 ) ; 
+return number ; 
+} 

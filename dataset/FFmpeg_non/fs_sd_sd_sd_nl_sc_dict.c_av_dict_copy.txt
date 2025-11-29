@@ -1,0 +1,6 @@
+void func1 ( AVDictionary ** var1 , const AVDictionary * var2 , int var3 ) 
+{ 
+AVDictionaryEntry * var4 = var5 ; 
+while ( ( var4 = func2 ( var2 , str , var4 , var6 ) ) ) 
+func3 ( var1 , var4 -> var7 , var4 -> var8 , var3 ) ; 
+} 

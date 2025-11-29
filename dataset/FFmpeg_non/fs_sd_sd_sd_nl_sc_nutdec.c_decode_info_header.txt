@@ -1,0 +1,109 @@
+static int func1 ( NUTContext * var1 ) 
+{ 
+AVFormatContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var2 -> var5 ; 
+uint64_t var6 , var7 , var8 ; 
+unsigned int var9 , var10 ; 
+int var11 , var12 , var13 = number ; 
+int64_t var14 , var15 ; 
+char var16 [ number ] , var17 [ number ] , var18 [ number ] ; 
+const char * var19 ; 
+int * var20 = var21 ; 
+AVChapter * var22 = var21 ; 
+AVStream * var23 = var21 ; 
+AVDictionary ** var24 = var21 ; 
+int var25 = number ; 
+var15 = func2 ( var1 , var4 , number , var26 ) ; 
+var15 += func3 ( var4 ) ; 
+func4 ( var9 , var6 <= var2 -> var27 ) ; 
+var11 = func5 ( var4 ) ; 
+var7 = func6 ( var4 ) ; 
+var8 = func6 ( var4 ) ; 
+var10 = func6 ( var4 ) ; 
+if ( var11 && ! var9 ) { 
+int64_t var28 = var7 / var1 -> var29 ; 
+var22 = func7 ( var2 , var11 , 
+var1 -> var30 [ var7 % 
+var1 -> var29 ] , 
+var28 , var28 + var8 , var21 ) ; 
+if ( ! var22 ) { 
+func8 ( var2 , var31 , str ) ; 
+return func9 ( var32 ) ; 
+} 
+var24 = & var22 -> var24 ; 
+} else if ( var9 ) { 
+var23 = var2 -> var33 [ var9 - number ] ; 
+var24 = & var23 -> var24 ; 
+var20 = & var23 -> var20 ; 
+var25 = var34 ; 
+} else { 
+var24 = & var2 -> var24 ; 
+var20 = & var2 -> var20 ; 
+var25 = var35 ; 
+} 
+for ( var12 = number ; var12 < var10 ; var12 ++ ) { 
+var13 = func10 ( var4 , var16 , sizeof ( var16 ) ) ; 
+if ( var13 < number ) { 
+func8 ( var2 , var31 , str ) ; 
+return var13 ; 
+} 
+var14 = func5 ( var4 ) ; 
+var17 [ number ] = number ; 
+if ( var14 == - number ) { 
+var19 = str ; 
+var13 = func10 ( var4 , var17 , sizeof ( var17 ) ) ; 
+} else if ( var14 == - number ) { 
+var13 = func10 ( var4 , var18 , sizeof ( var18 ) ) ; 
+if ( var13 < number ) { 
+func8 ( var2 , var31 , str ) ; 
+return var13 ; 
+} 
+var19 = var18 ; 
+var13 = func10 ( var4 , var17 , sizeof ( var17 ) ) ; 
+} else if ( var14 == - number ) { 
+var19 = str ; 
+var14 = func5 ( var4 ) ; 
+} else if ( var14 == - number ) { 
+var19 = str ; 
+var14 = func6 ( var4 ) ; 
+} else if ( var14 < - number ) { 
+var19 = str ; 
+func5 ( var4 ) ; 
+} else { 
+var19 = str ; 
+} 
+if ( var13 < number ) { 
+func8 ( var2 , var31 , str ) ; 
+return var13 ; 
+} 
+if ( var9 > var2 -> var27 ) { 
+func8 ( var2 , var31 , str ) ; 
+continue ; 
+} 
+if ( ! strcmp ( var19 , str ) ) { 
+if ( var11 == number && ! strcmp ( var16 , str ) ) { 
+func11 ( var2 , var17 , var9 - number ) ; 
+continue ; 
+} 
+if ( var9 && ! strcmp ( var16 , str ) ) { 
+sscanf ( var17 , str , & var23 -> var36 . var37 , & var23 -> var36 . var38 ) ; 
+if ( var23 -> var36 . var37 >= 1000LL * var23 -> var36 . var38 || 
+var23 -> var36 . var37 < number || var23 -> var36 . var37 < number ) 
+var23 -> var36 . var37 = var23 -> var36 . var38 = number ; 
+continue ; 
+} 
+if ( var24 && func12 ( var16 , str ) && 
+func12 ( var16 , str ) && func12 ( var16 , str ) ) { 
+if ( var20 ) 
+* var20 |= var25 ; 
+func13 ( var24 , var16 , var17 , number ) ; 
+} 
+} 
+} 
+if ( func14 ( var4 , var15 ) || func15 ( var4 ) ) { 
+func8 ( var2 , var31 , str ) ; 
+return var39 ; 
+} 
+var40 : 
+return func16 ( var13 , number ) ; 
+} 

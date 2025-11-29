@@ -1,0 +1,26 @@
+static int func1 ( AVFilterLink * var1 , AVFrame * var2 ) 
+{ 
+AVFilterLink * var3 = var1 -> var4 -> var5 [ number ] ; 
+int16_t * var6 , * var7 , * var8 , * var9 ; 
+AVFrame * var10 = func2 ( var1 , var2 -> var11 ) ; 
+int var12 ; 
+if ( ! var10 ) { 
+func3 ( & var2 ) ; 
+return func4 ( var13 ) ; 
+} 
+func5 ( var10 , var2 ) ; 
+var6 = ( ( EarwaxContext * ) var1 -> var4 -> var14 ) -> var6 ; 
+var9 = ( int16_t * ) var10 -> var15 [ number ] ; 
+var8 = ( int16_t * ) var2 -> var15 [ number ] ; 
+var12 = func6 ( var16 , number * var2 -> var11 ) ; 
+memcpy ( var6 + var16 , var8 , var12 * sizeof ( * var6 ) ) ; 
+var9 = func7 ( var6 , var6 + var12 , var9 ) ; 
+if ( number * var2 -> var11 >= var16 ) { 
+var7 = var8 + var2 -> var11 * number - var16 ; 
+func7 ( var8 , var7 , var9 ) ; 
+memcpy ( var6 , var7 , var16 * sizeof ( * var6 ) ) ; 
+} else 
+memmove ( var6 , var6 + number * var2 -> var11 , var16 * sizeof ( * var6 ) ) ; 
+func3 ( & var2 ) ; 
+return func8 ( var3 , var10 ) ; 
+} 

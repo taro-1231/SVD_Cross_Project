@@ -1,0 +1,7 @@
+static void func1 ( AVFrame * var1 ) 
+{ 
+func2 ( uint8_t * , var1 -> data [ number ] , var1 -> data [ number ] ) ; 
+func2 ( var2 , var1 -> var3 [ number ] , var1 -> var3 [ number ] ) ; 
+func2 ( var4 , var1 -> var5 [ number ] , var1 -> var5 [ number ] ) ; 
+func2 ( AVBufferRef * , var1 -> buf [ number ] , var1 -> buf [ number ] ) ; 
+} 

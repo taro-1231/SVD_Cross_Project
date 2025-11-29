@@ -1,0 +1,12 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+ADXContext * var2 = var1 -> var3 ; 
+if ( var1 -> var4 > number ) { 
+func2 ( var1 , var5 , str ) ; 
+return func3 ( var6 ) ; 
+} 
+var1 -> var7 = var8 ; 
+var2 -> var9 = number ; 
+func4 ( var2 -> var9 , var1 -> var10 , var11 , var2 -> var12 ) ; 
+return number ; 
+} 

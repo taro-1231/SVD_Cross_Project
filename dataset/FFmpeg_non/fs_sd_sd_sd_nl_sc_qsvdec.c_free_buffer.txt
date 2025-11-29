@@ -1,0 +1,6 @@
+static void func1 ( void * var1 , uint8_t * var2 ) 
+{ 
+int * var3 = var1 ; 
+* var3 = number ; 
+func2 ( & var2 ) ; 
+} 

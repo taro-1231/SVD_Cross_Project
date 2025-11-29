@@ -1,0 +1,4 @@
+void func1 ( AVFilterGraph * var1 , unsigned var2 ) 
+{ 
+var1 -> var3 = var2 ; 
+} 

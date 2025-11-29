@@ -1,0 +1,59 @@
+static int func1 ( AVFilterContext * var1 ) 
+{ 
+HistogramContext * var2 = var1 -> var3 ; 
+const enum AVPixelFormat * var4 ; 
+AVFilterFormats * var5 ; 
+switch ( var2 -> var6 ) { 
+case var7 : 
+var4 = var8 ; 
+break ; 
+case var9 : 
+{ 
+AVFilterFormats * var10 ; 
+const AVPixFmtDescriptor * var11 ; 
+const enum AVPixelFormat * var12 ; 
+int var13 , var14 , var15 ; 
+if ( ! var1 -> var16 [ number ] -> var17 || 
+! var1 -> var16 [ number ] -> var17 -> var18 ) { 
+return func2 ( var19 ) ; 
+} 
+if ( ! var1 -> var16 [ number ] -> var20 ) 
+func3 ( func4 ( var21 ) , & var1 -> var16 [ number ] -> var20 ) ; 
+var10 = var1 -> var16 [ number ] -> var17 ; 
+var11 = func5 ( var10 -> var22 [ number ] ) ; 
+var13 = var11 -> var23 & var24 ; 
+var15 = var11 -> var25 [ number ] . var26 ; 
+for ( var14 = number ; var14 < var10 -> var18 ; var14 ++ ) { 
+var11 = func5 ( var10 -> var22 [ var14 ] ) ; 
+if ( ( var13 != ( var11 -> var23 & var24 ) ) || 
+( var15 != var11 -> var25 [ number ] . var26 ) ) 
+return func2 ( var19 ) ; 
+} 
+if ( var13 && var15 == number ) 
+var12 = var27 ; 
+else if ( var13 && var15 == number ) 
+var12 = var28 ; 
+else if ( var13 && var15 == number ) 
+var12 = var29 ; 
+else if ( var15 == number ) 
+var12 = var30 ; 
+else if ( var15 == number ) 
+var12 = var31 ; 
+else 
+var12 = var32 ; 
+func3 ( func4 ( var12 ) , & var1 -> var33 [ number ] -> var17 ) ; 
+return number ; 
+} 
+break ; 
+case var34 : 
+case var35 : 
+var4 = var36 ; 
+break ; 
+var37 : 
+func6 ( number ) ; 
+} 
+var5 = func4 ( var4 ) ; 
+if ( ! var5 ) 
+return func2 ( var38 ) ; 
+return func7 ( var1 , var5 ) ; 
+} 

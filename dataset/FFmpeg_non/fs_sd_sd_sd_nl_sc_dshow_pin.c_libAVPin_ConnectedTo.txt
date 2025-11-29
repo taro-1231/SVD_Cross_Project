@@ -1,0 +1,11 @@
+func1 ( libAVPin * var1 , IPin ** var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+if ( ! var2 ) 
+return var3 ; 
+if ( ! var1 -> var4 ) 
+return var5 ; 
+func3 ( var1 -> var4 ) ; 
+* var2 = var1 -> var4 ; 
+return var6 ; 
+} 

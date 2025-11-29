@@ -1,0 +1,15 @@
+func1 ( png_uint_32 var1 , int var2 ) 
+{ 
+png_uint_32 var3 = var1 >> number ; 
+png_uint_32 var4 = number ; 
+unsigned int var5 , var6 ; 
+var1 &= number ; 
+++ var2 ; 
+for ( var5 = number ; var5 < number ; ++ var5 ) for ( var6 = number ; var6 < number ; ++ var6 ) if ( var7 [ var6 ] [ var5 ] == var2 ) 
+{ 
+var4 += var3 ; 
+if ( var5 < var1 ) ++ var4 ; 
+break ; 
+} 
+return var4 ; 
+} 

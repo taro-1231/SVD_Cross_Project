@@ -1,0 +1,12 @@
+static void func1 ( const AVFrame * var1 ) 
+{ 
+const int var2 = var1 -> var3 * func2 ( func3 ( var1 ) ) ; 
+const uint16_t * var4 = ( uint16_t * ) var1 -> var5 [ number ] ; 
+const uint16_t * var6 = var4 + var2 ; 
+while ( var4 < var6 ) { 
+fputc ( * var4 & number , var7 ) ; 
+fputc ( * var4 >> number & number , var7 ) ; 
+var4 ++ ; 
+} 
+fflush ( var7 ) ; 
+} 

@@ -1,0 +1,16 @@
+AVRational func1 ( double var1 , int var2 ) 
+{ 
+AVRational var3 ; 
+int var5 ; 
+int64_t var6 ; 
+if ( isnan ( var1 ) ) 
+return ( AVRational ) { number , number } ; 
+if ( fabs ( var1 ) > var7 + 3LL ) 
+return ( AVRational ) { var1 < number ? - 1 : 1 , number } ; 
+var5 = func2 ( ( int ) ( log ( fabs ( var1 ) + number ) / var4 ) , number ) ; 
+var6 = 1LL << ( number - var5 ) ; 
+func3 ( & var3 . var8 , & var3 . var6 , floor ( var1 * var6 + number ) , var6 , var2 ) ; 
+if ( ( ! var3 . var8 || ! var3 . var6 ) && var1 && var2 > number && var2 < var7 ) 
+func3 ( & var3 . var8 , & var3 . var6 , floor ( var1 * var6 + number ) , var6 , var7 ) ; 
+return var3 ; 
+} 

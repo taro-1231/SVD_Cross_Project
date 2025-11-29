@@ -1,0 +1,101 @@
+static ChannelElement * func1 ( AACContext * var1 , int var2 , int var3 ) 
+{ 
+if ( ! var1 -> var4 [ number ] . var5 . var6 ) { 
+return var1 -> var7 [ var2 ] [ var3 ] ; 
+} 
+if ( ! var1 -> var8 && var2 == var9 && 
+var1 -> var4 [ number ] . var5 . var6 == number ) { 
+uint8_t var10 [ var11 * number ] [ number ] ; 
+int var12 ; 
+func2 ( var1 ) ; 
+func3 ( var1 -> var13 , var14 , str ) ; 
+if ( func4 ( var1 -> var13 , var10 , 
+& var12 , number ) < number ) 
+return var15 ; 
+if ( func5 ( var1 , var10 , var12 , 
+var16 , number ) < number ) 
+return var15 ; 
+var1 -> var4 [ number ] . var5 . var6 = number ; 
+var1 -> var4 [ number ] . var5 . var17 = number ; 
+} 
+if ( ! var1 -> var8 && var2 == var18 && 
+var1 -> var4 [ number ] . var5 . var6 == number ) { 
+uint8_t var10 [ var11 * number ] [ number ] ; 
+int var12 ; 
+func2 ( var1 ) ; 
+func3 ( var1 -> var13 , var14 , str ) ; 
+if ( func4 ( var1 -> var13 , var10 , 
+& var12 , number ) < number ) 
+return var15 ; 
+if ( func5 ( var1 , var10 , var12 , 
+var16 , number ) < number ) 
+return var15 ; 
+var1 -> var4 [ number ] . var5 . var6 = number ; 
+if ( var1 -> var4 [ number ] . var5 . var19 ) 
+var1 -> var4 [ number ] . var5 . var17 = - number ; 
+} 
+switch ( var1 -> var4 [ number ] . var5 . var6 ) { 
+case 12 : 
+case 7 : 
+if ( var1 -> var8 == number && var2 == var9 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var9 ] [ var3 ] = var1 -> var20 [ var9 ] [ number ] ; 
+} 
+case number : 
+if ( var1 -> var8 == number && 
+var1 -> var4 [ number ] . var5 . var6 == number && 
+var2 == var18 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var18 ] [ var3 ] = var1 -> var20 [ var18 ] [ number ] ; 
+} 
+case 6 : 
+if ( var1 -> var8 == var21 [ var1 -> var4 [ number ] . var5 . var6 ] - number && ( var2 == var22 || var2 == var18 ) ) { 
+if ( ! var1 -> var23 && ( var2 != var22 || var3 != number ) ) { 
+func3 ( var1 -> var13 , var24 , 
+str , 
+var2 == var18 ? str : str , var3 ) ; 
+var1 -> var23 ++ ; 
+} 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var2 ] [ var3 ] = var1 -> var20 [ var22 ] [ number ] ; 
+} 
+case 5 : 
+if ( var1 -> var8 == number && var2 == var9 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var9 ] [ var3 ] = var1 -> var20 [ var9 ] [ number ] ; 
+} 
+case number : 
+if ( var1 -> var8 == var21 [ var1 -> var4 [ number ] . var5 . var6 ] - number && ( var2 == var22 || var2 == var18 ) ) { 
+if ( ! var1 -> var23 && ( var2 != var18 || var3 != number ) ) { 
+func3 ( var1 -> var13 , var24 , 
+str , 
+var2 == var18 ? str : str , var3 ) ; 
+var1 -> var23 ++ ; 
+} 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var2 ] [ var3 ] = var1 -> var20 [ var18 ] [ number ] ; 
+} 
+if ( var1 -> var8 == number && 
+var1 -> var4 [ number ] . var5 . var6 == number && 
+var2 == var18 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var18 ] [ var3 ] = var1 -> var20 [ var18 ] [ number ] ; 
+} 
+case number : 
+case number : 
+if ( var1 -> var8 == ( var1 -> var4 [ number ] . var5 . var6 != number ) && 
+var2 == var9 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var9 ] [ var3 ] = var1 -> var20 [ var9 ] [ number ] ; 
+} else if ( var1 -> var4 [ number ] . var5 . var6 == number ) { 
+return var15 ; 
+} 
+case number : 
+if ( ! var1 -> var8 && var2 == var18 ) { 
+var1 -> var8 ++ ; 
+return var1 -> var7 [ var18 ] [ var3 ] = var1 -> var20 [ var18 ] [ number ] ; 
+} 
+var25 : 
+return var15 ; 
+} 
+} 

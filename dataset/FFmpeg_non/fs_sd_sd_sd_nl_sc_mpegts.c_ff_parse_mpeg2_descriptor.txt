@@ -1,0 +1,214 @@
+int func1 ( AVFormatContext * var1 , AVStream * var2 , int var3 , 
+const uint8_t ** var4 , const uint8_t * var5 , 
+Mp4Descr * var6 , int var7 , int var8 , 
+MpegTSContext * var9 ) 
+{ 
+const uint8_t * var10 ; 
+int var11 , var12 , var13 , var14 , var15 , var16 ; 
+char var17 [ number ] ; 
+int var18 ; 
+var12 = func2 ( var4 , var5 ) ; 
+if ( var12 < number ) 
+return var19 ; 
+var11 = func2 ( var4 , var5 ) ; 
+if ( var11 < number ) 
+return var19 ; 
+var10 = * var4 + var11 ; 
+if ( var10 > var5 ) 
+return var19 ; 
+func3 ( var1 , var20 , str , var12 , var11 ) ; 
+if ( ( var2 -> var21 -> var22 == var23 || var2 -> var24 > number ) && 
+var3 == var25 ) 
+func4 ( var2 , var12 , var26 ) ; 
+switch ( var12 ) { 
+case 0x1E : 
+var13 = func5 ( var4 , var10 ) ; 
+if ( var13 < number ) 
+break ; 
+if ( var9 && var9 -> var27 [ var8 ] ) 
+var9 -> var27 [ var8 ] -> var28 = var13 ; 
+for ( var18 = number ; var18 < var7 ; var18 ++ ) 
+if ( var6 [ var18 ] . var29 && 
+var6 [ var18 ] . var28 == var13 ) { 
+AVIOContext var30 ; 
+func6 ( & var30 , var6 [ var18 ] . var31 , 
+var6 [ var18 ] . var29 , number , 
+var32 , var32 , var32 , var32 ) ; 
+func7 ( var1 , var2 , & var30 ) ; 
+if ( var2 -> var21 -> var22 == var33 && 
+var2 -> var21 -> var34 > number ) 
+var2 -> var35 = number ; 
+if ( var2 -> var21 -> var22 == var36 ) 
+func8 ( var9 , var8 , var37 , var9 , number ) ; 
+} 
+break ; 
+case 0x1F : 
+if ( func5 ( var4 , var10 ) < number ) 
+break ; 
+if ( var7 > number && 
+( var2 -> var21 -> var22 == var38 || 
+( var2 -> var24 == number && var2 -> var21 -> var22 == var23 ) || 
+var2 -> var24 > number ) && 
+var6 -> var29 && var6 -> var28 == var8 ) { 
+AVIOContext var30 ; 
+func6 ( & var30 , var6 -> var31 , 
+var6 -> var29 , number , 
+var32 , var32 , var32 , var32 ) ; 
+func7 ( var1 , var2 , & var30 ) ; 
+if ( var2 -> var21 -> var22 == var33 && 
+var2 -> var21 -> var34 > number ) { 
+var2 -> var24 = var2 -> var35 = number ; 
+var2 -> var21 -> var39 = var40 ; 
+} 
+} 
+break ; 
+case 0x56 : 
+{ 
+uint8_t * var41 = var32 ; 
+int var42 = var11 / number ; 
+if ( var11 > number && var11 % number != number ) 
+return var19 ; 
+if ( var42 > number ) { 
+func9 ( var42 <= sizeof ( var17 ) / number ) ; 
+if ( var2 -> var21 -> var41 == var32 ) { 
+if ( func10 ( var2 -> var21 , var42 * number ) ) { 
+return func11 ( var43 ) ; 
+} 
+} 
+if ( var2 -> var21 -> var34 < var42 * number ) 
+return var19 ; 
+var41 = var2 -> var21 -> var41 ; 
+for ( var18 = number ; var18 < var42 ; var18 ++ ) { 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = str ; 
+memcpy ( var41 , * var4 , number ) ; 
+var41 += number ; 
+* var4 += number ; 
+} 
+var17 [ var18 * number - number ] = number ; 
+func12 ( & var2 -> var44 , str , var17 , number ) ; 
+} 
+} 
+break ; 
+case 0x59 : 
+{ 
+int var42 = var11 / number ; 
+if ( var11 > number && var11 % number != number ) 
+return var19 ; 
+if ( var42 > number ) { 
+func13 ( var1 , str ) ; 
+} 
+if ( var42 > number ) { 
+uint8_t * var41 ; 
+func9 ( var42 <= sizeof ( var17 ) / number ) ; 
+if ( var2 -> var21 -> var41 == var32 ) { 
+if ( func10 ( var2 -> var21 , var42 * number ) ) { 
+return func11 ( var43 ) ; 
+} 
+} 
+if ( var2 -> var21 -> var34 < var42 * number ) 
+return var19 ; 
+var41 = var2 -> var21 -> var41 ; 
+for ( var18 = number ; var18 < var42 ; var18 ++ ) { 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 * number + number ] = str ; 
+switch ( * var4 [ number ] ) { 
+case 0x20 : 
+case 0x21 : 
+case 0x22 : 
+case 0x23 : 
+case 0x24 : 
+case 0x25 : 
+var2 -> var45 |= var46 ; 
+break ; 
+} 
+var41 [ number ] = func2 ( var4 , var10 ) ; 
+memcpy ( var41 , * var4 , number ) ; 
+var41 += number ; 
+* var4 += number ; 
+} 
+var17 [ var18 * number - number ] = number ; 
+func12 ( & var2 -> var44 , str , var17 , number ) ; 
+} 
+} 
+break ; 
+case 0x0a : 
+for ( var18 = number ; var18 + number <= var11 ; var18 += number ) { 
+var17 [ var18 + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 + number ] = func2 ( var4 , var10 ) ; 
+var17 [ var18 + number ] = str ; 
+switch ( func2 ( var4 , var10 ) ) { 
+case 0x01 : 
+var2 -> var45 |= var47 ; 
+break ; 
+case 0x02 : 
+var2 -> var45 |= var46 ; 
+break ; 
+case 0x03 : 
+var2 -> var45 |= var48 ; 
+break ; 
+} 
+} 
+if ( var18 && var17 [ number ] ) { 
+var17 [ var18 - number ] = number ; 
+func12 ( & var2 -> var44 , str , var17 , number ) ; 
+} 
+break ; 
+case 0x05 : 
+var2 -> var21 -> var49 = func14 ( var4 ) ; 
+func3 ( var1 , var20 , str , ( char * ) & var2 -> var21 -> var49 ) ; 
+if ( var2 -> var21 -> var22 == var23 || var2 -> var24 > number ) 
+func4 ( var2 , var2 -> var21 -> var49 , var50 ) ; 
+break ; 
+case 0x52 : 
+var2 -> var51 = number + func2 ( var4 , var10 ) ; 
+break ; 
+case 0x26 : 
+if ( func5 ( var4 , var10 ) == number ) 
+* var4 += number ; 
+if ( func2 ( var4 , var10 ) == number ) { 
+var2 -> var21 -> var49 = func14 ( var4 ) ; 
+if ( var2 -> var21 -> var22 == var23 ) 
+func4 ( var2 , var2 -> var21 -> var49 , var52 ) ; 
+} 
+break ; 
+case 0x7f : 
+var14 = func2 ( var4 , var10 ) ; 
+if ( var14 < number ) 
+return var19 ; 
+if ( var2 -> var21 -> var22 == var53 && 
+var14 == number ) { 
+if ( ! var2 -> var21 -> var41 ) { 
+var2 -> var21 -> var41 = func15 ( sizeof ( var54 ) + 
+var55 ) ; 
+if ( ! var2 -> var21 -> var41 ) 
+return func11 ( var43 ) ; 
+var2 -> var21 -> var34 = sizeof ( var54 ) ; 
+memcpy ( var2 -> var21 -> var41 , var54 , sizeof ( var54 ) ) ; 
+var16 = func2 ( var4 , var10 ) ; 
+if ( var16 < number ) 
+return var19 ; 
+if ( var16 <= number ) { 
+var2 -> var21 -> var41 [ number ] = var15 = var16 ? var16 : number ; 
+var2 -> var21 -> var41 [ number ] = var16 ? ( var15 > number ) : number ; 
+var2 -> var21 -> var41 [ number ] = var56 [ var16 ] ; 
+var2 -> var21 -> var41 [ number ] = var57 [ var16 ] ; 
+memcpy ( & var2 -> var21 -> var41 [ number ] , var58 [ var15 - number ] , var15 ) ; 
+} else { 
+func13 ( var1 , str ) ; 
+} 
+var2 -> var35 = var59 ; 
+} 
+} 
+break ; 
+var60 : 
+break ; 
+} 
+* var4 = var10 ; 
+return number ; 
+} 

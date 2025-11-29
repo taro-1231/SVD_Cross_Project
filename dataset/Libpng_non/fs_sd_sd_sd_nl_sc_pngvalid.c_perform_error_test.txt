@@ -1,0 +1,15 @@
+func1 ( png_modifier * var1 ) 
+{ 
+func2 ( var1 -> var2 . var3 , sizeof var1 -> var2 . var3 , number , str ) ; 
+if ( ! func3 ( var1 , number , number , var4 ) ) 
+return ; 
+if ( ! func3 ( var1 , number , number , var4 ) ) 
+return ; 
+if ( ! func3 ( var1 , number , number , number ) ) 
+return ; 
+if ( ! func3 ( var1 , number , number , var4 ) ) 
+return ; 
+if ( ! func3 ( var1 , number , number , var4 ) ) 
+return ; 
+UNUSED ( var1 ) 
+} 

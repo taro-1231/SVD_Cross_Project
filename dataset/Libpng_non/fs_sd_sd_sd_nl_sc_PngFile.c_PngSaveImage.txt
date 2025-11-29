@@ -1,0 +1,57 @@
+BOOL func1 ( PTSTR var1 , png_byte * var2 , 
+int var3 , int var4 , png_color var5 ) 
+{ 
+const int var6 = number ; 
+const int var7 = number ; 
+static FILE * var8 ; 
+png_uint_32 var9 ; 
+static png_byte ** var10 = var11 ; 
+int var12 ; 
+if ( ! var1 ) 
+return var13 ; 
+if ( ! ( var8 = fopen ( var1 , str ) ) ) 
+return var13 ; 
+var14 = func2 ( func3 ( var11 ) , var11 , 
+( png_error_ptr ) var15 , ( png_error_ptr ) var11 ) ; 
+if ( ! var14 ) 
+{ 
+fclose ( var8 ) ; 
+return var13 ; 
+} 
+var16 = func4 ( var14 ) ; 
+if ( ! var16 ) { 
+fclose ( var8 ) ; 
+func5 ( & var14 , ( png_infopp ) var11 ) ; 
+return var13 ; 
+} 
+Try 
+{ 
+func6 ( var14 , var8 ) ; 
+png_set_write_fn ( var14 , ( png_voidp ) var8 , png_write_data , png_flush ) ; 
+func7 ( var14 , var16 , var3 , var4 , var6 , 
+var17 , var18 , var19 , 
+var20 ) ; 
+func8 ( var14 , var16 ) ; 
+func9 ( var14 ) ; 
+var9 = var3 * var7 ; 
+if ( ( var10 = ( png_bytepp ) malloc ( var4 * sizeof ( png_bytep ) ) ) == var11 ) 
+Throw str ; 
+for ( var12 = number ; var12 < var4 ; var12 ++ ) 
+var10 [ var12 ] = var2 + var12 * ( ( ( var9 + number ) >> number ) << number ) ; 
+func10 ( var14 , var10 ) ; 
+func11 ( var14 , var16 ) ; 
+free ( var10 ) ; 
+var10 = var11 ; 
+func5 ( & var14 , ( png_infopp ) var11 ) ; 
+} 
+Catch ( msg ) 
+{ 
+func5 ( & var14 , ( png_infopp ) var11 ) ; 
+if ( var10 ) 
+free ( var10 ) ; 
+fclose ( var8 ) ; 
+return var13 ; 
+} 
+fclose ( var8 ) ; 
+return var21 ; 
+} 

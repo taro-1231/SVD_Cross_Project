@@ -1,0 +1,13 @@
+func1 ( png_modifier * var1 ) 
+{ 
+if ( ! func2 ( var1 , number , number , var2 ) ) 
+return ; 
+if ( ! func2 ( var1 , number , number , var2 ) ) 
+return ; 
+if ( ! func2 ( var1 , number , number , number ) ) 
+return ; 
+if ( ! func2 ( var1 , number , number , var2 ) ) 
+return ; 
+if ( ! func2 ( var1 , number , number , var2 ) ) 
+return ; 
+} 

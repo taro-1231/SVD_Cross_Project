@@ -1,0 +1,59 @@
+static void func1 ( uint16_t var1 [ 16 ] , uint8_t * var2 , 
+int var3 ) 
+{ 
+void * var4 , * var5 , * var6 , * var7 , * var8 , * var9 ; 
+int var10 , var11 ; 
+__asm__ volatile ( 
+str 
+PTR_ADDU str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDU str 
+str 
+PTR_ADDU str 
+str 
+str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+str 
+str 
+str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+PTR_ADDIU str 
+str 
+PTR_ADDU str 
+str 
+str 
+str 
+str 
+str 
+: [ var4 ] str ( var4 ) , [ var10 ] str ( var10 ) , 
+[ var5 ] str ( var5 ) , [ var11 ] str ( var11 ) , 
+[ var6 ] str ( var6 ) , [ var7 ] str ( var7 ) , 
+[ var8 ] str ( var8 ) , [ var9 ] str ( var9 ) 
+: [ var3 ] str ( var3 ) , [ var2 ] str ( var2 ) , 
+[ var1 ] str ( var1 ) 
+: str 
+) ; 
+} 

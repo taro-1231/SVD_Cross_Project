@@ -1,0 +1,72 @@
+func1 ( PNG_CONST image_transform * var1 , 
+transform_display * var2 , png_structp var3 , png_infop var4 ) 
+{ 
+PNG_CONST int var5 = number ; 
+var6 ( var3 , var5 , var7 . var8 , var7 . var9 ) ; 
+png_set_rgb_to_gray_fixed ( var3 , var5 , var7 . var8 , 
+var7 . var9 ) ; 
+if ( var2 -> pm -> current_encoding != 0 ) 
+{ 
+API_type rX , gX , bX ; 
+API_type rY , gY , bY ; 
+API_type rZ , gZ , bZ ; 
+if ( ( API_function ( var3 , var4 , & rX , & rY , & rZ , & gX , & gY , & gZ , & bX , & bY , & bZ ) 
+& PNG_INFO_cHRM ) != 0 ) 
+{ 
+double maxe ; 
+PNG_CONST char * el ; 
+color_encoding e , o ; 
+modifier_current_encoding ( var2 -> pm , & o ) ; 
+normalize_color_encoding ( & o ) ; 
+if ( var7 . var8 == - number && var7 . var9 == - number && 
+( fabs ( o . red . Y - var7 . red_coefficient ) > DBL_EPSILON || 
+fabs ( o . green . Y - var7 . green_coefficient ) > DBL_EPSILON || 
+fabs ( o . blue . Y - var7 . blue_coefficient ) > DBL_EPSILON ) ) 
+png_error ( var3 , str ) ; 
+e . gamma = o . gamma ; 
+e . red . X = API_cvt ( rX ) ; 
+e . red . Y = API_cvt ( rY ) ; 
+e . red . Z = API_cvt ( rZ ) ; 
+e . green . X = API_cvt ( gX ) ; 
+e . green . Y = API_cvt ( gY ) ; 
+e . green . Z = API_cvt ( gZ ) ; 
+e . blue . X = API_cvt ( bX ) ; 
+e . blue . Y = API_cvt ( bY ) ; 
+e . blue . Z = API_cvt ( bZ ) ; 
+maxe = 0 ; 
+el = str ; 
+{ \ 
+double err = fabs ( o . col . x - e . col . x ) ; \ 
+if ( err > maxe ) \ 
+{ \ 
+maxe = err ; \ 
+} \ 
+} 
+CHECK ( red , X ) 
+CHECK ( red , Y ) 
+CHECK ( red , Z ) 
+CHECK ( green , X ) 
+CHECK ( green , Y ) 
+CHECK ( green , Z ) 
+CHECK ( blue , X ) 
+CHECK ( blue , Y ) 
+CHECK ( blue , Z ) 
+if ( maxe >= 1E - 5 ) 
+{ 
+size_t pos = 0 ; 
+char buffer [ 256 ] ; 
+pos = safecat ( buffer , sizeof buffer , pos , API_form ) ; 
+pos = safecat ( buffer , sizeof buffer , pos , str ) ; 
+pos = safecat ( buffer , sizeof buffer , pos , el ) ; 
+pos = safecat ( buffer , sizeof buffer , pos , str ) ; 
+pos = safecatd ( buffer , sizeof buffer , pos , maxe , 7 ) ; 
+pos = safecat ( buffer , sizeof buffer , pos , str ) ; 
+pos = safecat_color_encoding ( buffer , sizeof buffer , pos , & o , 0 ) ; 
+pos = safecat ( buffer , sizeof buffer , pos , str ) ; 
+pos = safecat_color_encoding ( buffer , sizeof buffer , pos , & e , 0 ) ; 
+png_error ( var3 , buffer ) ; 
+} 
+} 
+} 
+var1 -> next -> set ( var1 -> next , var2 , var3 , var4 ) ; 
+} 

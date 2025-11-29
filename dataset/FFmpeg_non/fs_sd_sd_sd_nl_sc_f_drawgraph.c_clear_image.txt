@@ -1,0 +1,8 @@
+static void func1 ( DrawGraphContext * var1 , AVFrame * var2 , AVFilterLink * var3 ) 
+{ 
+int var4 , var5 ; 
+int var6 = func2 ( var1 -> var6 ) ; 
+for ( var4 = number ; var4 < var2 -> var7 ; var4 ++ ) 
+for ( var5 = number ; var5 < var2 -> var8 ; var5 ++ ) 
+func3 ( var2 -> var9 [ number ] + var4 * var2 -> var10 [ number ] + var5 * number , var6 ) ; 
+} 

@@ -1,0 +1,8 @@
+void func1 ( AVTreeNode * var1 ) 
+{ 
+if ( var1 ) { 
+func1 ( var1 -> var2 [ number ] ) ; 
+func1 ( var1 -> var2 [ number ] ) ; 
+func2 ( var1 ) ; 
+} 
+} 

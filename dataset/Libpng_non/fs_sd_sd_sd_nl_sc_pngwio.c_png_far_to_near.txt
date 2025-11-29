@@ -1,0 +1,23 @@
+void * func1 ( png_structp var1 , png_voidp var2 , int var3 ) 
+{ 
+void * var4 ; 
+void FAR * var5 ; 
+func2 ( var4 ) = func2 ( var2 ) ; 
+var5 = ( void FAR * ) var4 ; 
+if ( var3 != number ) 
+if ( func3 ( var2 ) != func3 ( var5 ) ) 
+func4 ( var1 , str ) ; 
+return ( var4 ) ; 
+} 
+} 
+void * func1 ( png_structp var1 , png_voidp var2 , int var3 ) 
+{ 
+void * var4 ; 
+void FAR * var5 ; 
+var4 = ( void FAR * ) var2 ; 
+var5 = ( void FAR * ) var4 ; 
+if ( var3 != number ) 
+if ( var5 != var2 ) 
+func4 ( var1 , str ) ; 
+return ( var4 ) ; 
+} 

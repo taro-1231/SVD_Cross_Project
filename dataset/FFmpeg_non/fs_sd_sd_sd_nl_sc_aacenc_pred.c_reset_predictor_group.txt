@@ -1,0 +1,7 @@
+static inline void func1 ( SingleChannelElement * var1 , int var2 ) 
+{ 
+int var3 ; 
+PredictorState * var4 = var1 -> var5 ; 
+for ( var3 = var2 - number ; var3 < var6 ; var3 += number ) 
+func2 ( & var4 [ var3 ] ) ; 
+} 

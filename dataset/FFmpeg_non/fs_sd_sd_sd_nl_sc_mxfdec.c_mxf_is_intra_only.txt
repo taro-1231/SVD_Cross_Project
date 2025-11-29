@@ -1,0 +1,7 @@
+static int func1 ( MXFDescriptor * var1 ) 
+{ 
+return func2 ( var2 , 
+& var1 -> var3 ) -> var4 != var5 || 
+func2 ( var6 , 
+& var1 -> var7 ) -> var4 != var5 ; 
+} 

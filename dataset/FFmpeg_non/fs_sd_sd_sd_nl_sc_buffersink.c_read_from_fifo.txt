@@ -1,0 +1,17 @@
+static int func1 ( AVFilterContext * var1 , AVFrame * var2 , 
+int var3 ) 
+{ 
+BufferSinkContext * var4 = var1 -> var5 ; 
+AVFilterLink * var6 = var1 -> var7 [ number ] ; 
+AVFrame * var8 ; 
+if ( ! ( var8 = func2 ( var6 , var3 ) ) ) 
+return func3 ( var9 ) ; 
+func4 ( var4 -> var10 , ( void ** ) var8 -> var11 , var3 ) ; 
+var8 -> var12 = var4 -> var13 ; 
+if ( var4 -> var13 != var14 ) 
+var4 -> var13 += av_rescale_q ( var3 , ( AVRational ) { 1 , var6 -> sample_rate } , 
+var6 -> time_base ) ; 
+func5 ( var2 , var8 ) ; 
+func6 ( & var8 ) ; 
+return number ; 
+} 

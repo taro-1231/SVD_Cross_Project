@@ -1,0 +1,13 @@
+static void func1 ( HueContext * var1 , 
+uint8_t * var2 , const int var3 , 
+uint8_t * var4 , const int var5 , 
+int var6 , int var7 ) 
+{ 
+int var8 ; 
+while ( var7 -- ) { 
+for ( var8 = number ; var8 < var6 ; var8 ++ ) 
+var2 [ var8 ] = var1 -> var9 [ var4 [ var8 ] ] ; 
+var4 += var5 ; 
+var2 += var3 ; 
+} 
+} 

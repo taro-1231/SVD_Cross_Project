@@ -1,0 +1,17 @@
+int func1 ( AVOpenCLDeviceList ** var1 ) 
+{ 
+int var2 = number ; 
+* var1 = func2 ( sizeof ( AVOpenCLDeviceList ) ) ; 
+if ( ! ( * var1 ) ) { 
+func3 ( & var3 , var4 , str ) ; 
+return func4 ( var5 ) ; 
+} 
+var2 = func5 ( * var1 ) ; 
+if ( var2 < number ) { 
+func3 ( & var3 , var4 , str ) ; 
+func6 ( * var1 ) ; 
+func7 ( var1 ) ; 
+return var2 ; 
+} 
+return var2 ; 
+} 

@@ -1,0 +1,85 @@
+static void func1 ( SpectralBandReplication * var1 , GetBitContext * var2 , 
+SBRData * var3 , int var4 ) 
+{ 
+int var5 ; 
+int var6 , var7 , var8 ; 
+func2 ( * var9 ) [ number ] , ( * var10 ) [ number ] ; 
+int var11 , var12 ; 
+const int var13 = ( var4 == number && var1 -> var14 == number ) + number ; 
+const int var15 = var1 -> var16 [ number ] & number ; 
+if ( var1 -> var14 && var4 ) { 
+if ( var3 -> var17 ) { 
+var5 = number ; 
+var9 = var18 [ var19 ] . var20 ; 
+var11 = var21 [ var19 ] ; 
+var10 = var18 [ var22 ] . var20 ; 
+var12 = var21 [ var22 ] ; 
+} else { 
+var5 = number ; 
+var9 = var18 [ var23 ] . var20 ; 
+var11 = var21 [ var23 ] ; 
+var10 = var18 [ var24 ] . var20 ; 
+var12 = var21 [ var24 ] ; 
+} 
+} else { 
+if ( var3 -> var17 ) { 
+var5 = number ; 
+var9 = var18 [ var25 ] . var20 ; 
+var11 = var21 [ var25 ] ; 
+var10 = var18 [ var26 ] . var20 ; 
+var12 = var21 [ var26 ] ; 
+} else { 
+var5 = number ; 
+var9 = var18 [ var27 ] . var20 ; 
+var11 = var21 [ var27 ] ; 
+var10 = var18 [ var28 ] . var20 ; 
+var12 = var21 [ var28 ] ; 
+} 
+} 
+for ( var6 = number ; var6 < var3 -> var29 ; var6 ++ ) { 
+if ( var3 -> var30 [ var6 ] ) { 
+if ( var3 -> var31 [ var6 + number ] == var3 -> var31 [ var6 ] ) { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) 
+var3 -> var32 [ var6 + number ] [ var7 ] . var33 = var3 -> var32 [ var6 ] [ var7 ] . var33 + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} else if ( var3 -> var31 [ var6 + number ] ) { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) { 
+var8 = ( var7 + var15 ) >> number ; 
+var3 -> var32 [ var6 + number ] [ var7 ] . var33 = var3 -> var32 [ var6 ] [ var8 ] . var33 + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} 
+} else { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) { 
+var8 = var7 ? number * var7 - var15 : number ; 
+var3 -> var32 [ var6 + number ] [ var7 ] . var33 = var3 -> var32 [ var6 ] [ var8 ] . var33 + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} 
+} 
+} else { 
+var3 -> var32 [ var6 + number ] [ number ] . var33 = var13 * func4 ( var2 , var5 ) ; 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) 
+var3 -> var32 [ var6 + number ] [ var7 ] . var33 = var3 -> var32 [ var6 + number ] [ var7 - number ] . var33 + var13 * ( func3 ( var2 , var10 , number , number ) - var12 ) ; 
+} 
+} 
+for ( var6 = number ; var6 < var3 -> var29 ; var6 ++ ) { 
+if ( var3 -> var30 [ var6 ] ) { 
+if ( var3 -> var31 [ var6 + number ] == var3 -> var31 [ var6 ] ) { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) 
+var3 -> var32 [ var6 + number ] [ var7 ] = var3 -> var32 [ var6 ] [ var7 ] + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} else if ( var3 -> var31 [ var6 + number ] ) { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) { 
+var8 = ( var7 + var15 ) >> number ; 
+var3 -> var32 [ var6 + number ] [ var7 ] = var3 -> var32 [ var6 ] [ var8 ] + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} 
+} else { 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) { 
+var8 = var7 ? number * var7 - var15 : number ; 
+var3 -> var32 [ var6 + number ] [ var7 ] = var3 -> var32 [ var6 ] [ var8 ] + var13 * ( func3 ( var2 , var9 , number , number ) - var11 ) ; 
+} 
+} 
+} else { 
+var3 -> var32 [ var6 + number ] [ number ] = var13 * func4 ( var2 , var5 ) ; 
+for ( var7 = number ; var7 < var1 -> var16 [ var3 -> var31 [ var6 + number ] ] ; var7 ++ ) 
+var3 -> var32 [ var6 + number ] [ var7 ] = var3 -> var32 [ var6 + number ] [ var7 - number ] + var13 * ( func3 ( var2 , var10 , number , number ) - var12 ) ; 
+} 
+} 
+memcpy ( var3 -> var32 [ number ] , var3 -> var32 [ var3 -> var29 ] , 
+sizeof ( var3 -> var32 [ number ] ) ) ; 
+} 

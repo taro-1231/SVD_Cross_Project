@@ -1,0 +1,15 @@
+static float func1 ( int var1 , int var2 , int var3 , int var4 ) 
+{ 
+static const float var5 = number * number * var6 * var6 * number ; 
+static const float var7 = number * number * var6 * var6 * number * number ; 
+static const int var5 = ( int ) ( number * number * var6 * var6 * number + . 5 ) ; 
+static const int var7 = ( int ) ( number * number * var6 * var6 * number * number + . 5 ) ; 
+type var8 = var1 ; 
+type var9 = var2 ; 
+type var10 = var3 ; 
+type var11 = var4 ; 
+type var12 = var10 * number - var8 * var8 - var9 * var9 ; 
+type var13 = var11 * number - var8 * var9 ; 
+return ( float ) ( number * var8 * var9 + var5 ) * ( float ) ( number * var13 + var7 ) 
+/ ( ( float ) ( var8 * var8 + var9 * var9 + var5 ) * ( float ) ( var12 + var7 ) ) ; 
+} 

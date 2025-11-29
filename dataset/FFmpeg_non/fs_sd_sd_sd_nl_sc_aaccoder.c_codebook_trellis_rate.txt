@@ -1,0 +1,126 @@
+static void func1 ( AACEncContext * var1 , SingleChannelElement * var2 , 
+int var3 , int var4 , const float var5 ) 
+{ 
+BandCodingPath var6 [ number ] [ var7 ] ; 
+int var8 , var9 , var10 , var11 , var12 ; 
+int var13 , var14 ; 
+const int var15 = var2 -> var16 . var15 ; 
+const int var17 = var2 -> var16 . var18 == number ? number : number ; 
+const int var19 = ( number << var17 ) - number ; 
+int var20 , var21 , var22 ; 
+int var23 [ number ] , var24 [ number ] , var25 ; 
+float var26 = var27 ; 
+int var28 = number ; 
+func2 ( var1 -> var29 , var2 -> var30 , number ) ; 
+var11 = var3 * number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) { 
+var6 [ number ] [ var10 ] . var31 = var17 + number ; 
+var6 [ number ] [ var10 ] . var32 = - number ; 
+var6 [ number ] [ var10 ] . var33 = number ; 
+} 
+for ( var9 = number ; var9 < var15 ; var9 ++ ) { 
+var12 = var2 -> var16 . var34 [ var9 ] ; 
+if ( var2 -> var35 [ var3 * number + var9 ] ) { 
+float var36 = var6 [ var9 ] [ number ] . var31 ; 
+float var37 = var26 + var17 + number ; 
+if ( var38 [ var2 -> var16 . var18 == number ] [ var6 [ var9 ] [ number ] . var33 ] 
+!= var38 [ var2 -> var16 . var18 == number ] [ var6 [ var9 ] [ number ] . var33 + number ] ) 
+var36 += var17 ; 
+if ( var37 < var36 ) { 
+var6 [ var9 + number ] [ number ] . var32 = var28 ; 
+var6 [ var9 + number ] [ number ] . var31 = var37 ; 
+var6 [ var9 + number ] [ number ] . var33 = number ; 
+} else { 
+var6 [ var9 + number ] [ number ] . var32 = number ; 
+var6 [ var9 + number ] [ number ] . var31 = var36 ; 
+var6 [ var9 + number ] [ number ] . var33 = var6 [ var9 ] [ number ] . var33 + number ; 
+} 
+var26 = var6 [ var9 + number ] [ number ] . var31 ; 
+var28 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) { 
+var6 [ var9 + number ] [ var10 ] . var31 = number ; 
+var6 [ var9 + number ] [ var10 ] . var32 = - number ; 
+var6 [ var9 + number ] [ var10 ] . var33 = number ; 
+} 
+} else { 
+float var39 = var26 ; 
+int var40 = var28 ; 
+int var41 = var2 -> var42 [ var3 * number + var9 ] ; 
+var41 = var43 [ var41 ] ; 
+var26 = var27 ; 
+var28 = number ; 
+for ( var10 = number ; var10 < var41 ; var10 ++ ) { 
+var6 [ var9 + number ] [ var10 ] . var31 = number ; 
+var6 [ var9 + number ] [ var10 ] . var32 = - number ; 
+var6 [ var9 + number ] [ var10 ] . var33 = number ; 
+} 
+for ( var10 = var41 ; var10 < var7 ; var10 ++ ) { 
+float var36 , var37 ; 
+float var44 = number ; 
+if ( var10 >= number && var2 -> var42 [ var3 * number + var9 ] != var45 [ var10 ] ) { 
+var6 [ var9 + number ] [ var10 ] . var31 = number ; 
+var6 [ var9 + number ] [ var10 ] . var32 = - number ; 
+var6 [ var9 + number ] [ var10 ] . var33 = number ; 
+continue ; 
+} 
+for ( var8 = number ; var8 < var4 ; var8 ++ ) { 
+var44 += func3 ( var1 , & var2 -> var30 [ var11 + var8 * number ] , 
+& var1 -> var29 [ var11 + var8 * number ] , var12 , 
+var2 -> var46 [ var3 * number + var9 ] , 
+var45 [ var10 ] , 
+number , var27 , var47 , number ) ; 
+} 
+var36 = var6 [ var9 ] [ var10 ] . var31 + var44 ; 
+var37 = var39 + var44 + var17 + number ; 
+if ( var38 [ var2 -> var16 . var18 == number ] [ var6 [ var9 ] [ var10 ] . var33 ] 
+!= var38 [ var2 -> var16 . var18 == number ] [ var6 [ var9 ] [ var10 ] . var33 + number ] ) 
+var36 += var17 ; 
+if ( var37 < var36 ) { 
+var6 [ var9 + number ] [ var10 ] . var32 = var40 ; 
+var6 [ var9 + number ] [ var10 ] . var31 = var37 ; 
+var6 [ var9 + number ] [ var10 ] . var33 = number ; 
+} else { 
+var6 [ var9 + number ] [ var10 ] . var32 = var10 ; 
+var6 [ var9 + number ] [ var10 ] . var31 = var36 ; 
+var6 [ var9 + number ] [ var10 ] . var33 = var6 [ var9 ] [ var10 ] . var33 + number ; 
+} 
+if ( var6 [ var9 + number ] [ var10 ] . var31 < var26 ) { 
+var26 = var6 [ var9 + number ] [ var10 ] . var31 ; 
+var28 = var10 ; 
+} 
+} 
+} 
+var11 += var2 -> var16 . var34 [ var9 ] ; 
+} 
+var25 = number ; 
+var20 = number ; 
+for ( var10 = number ; var10 < var7 ; var10 ++ ) 
+if ( var6 [ var15 ] [ var10 ] . var31 < var6 [ var15 ] [ var20 ] . var31 ) 
+var20 = var10 ; 
+var21 = var15 ; 
+while ( var21 > number ) { 
+func4 ( var20 >= number ) ; 
+var10 = var20 ; 
+var23 [ var25 ] = var6 [ var21 ] [ var10 ] . var33 ; 
+var24 [ var25 ] = var10 ; 
+var20 = var6 [ var21 - var6 [ var21 ] [ var10 ] . var33 + number ] [ var10 ] . var32 ; 
+var21 -= var6 [ var21 ] [ var10 ] . var33 ; 
+var25 ++ ; 
+} 
+var11 = number ; 
+for ( var13 = var25 - number ; var13 >= number ; var13 -- ) { 
+var10 = var45 [ var24 [ var13 ] ] ; 
+func5 ( & var1 -> var48 , number , var10 ) ; 
+var22 = var23 [ var13 ] ; 
+memset ( var2 -> var35 + var3 * number + var11 , ! var10 , var22 ) ; 
+for ( var14 = number ; var14 < var22 ; var14 ++ ) { 
+var2 -> var42 [ var3 * number + var11 ] = var10 ; 
+var11 ++ ; 
+} 
+while ( var22 >= var19 ) { 
+func5 ( & var1 -> var48 , var17 , var19 ) ; 
+var22 -= var19 ; 
+} 
+func5 ( & var1 -> var48 , var17 , var22 ) ; 
+} 
+} 

@@ -1,0 +1,20 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFStructuralComponent * var7 = var1 ; 
+switch ( var3 ) { 
+case 0x0202 : 
+var7 -> var8 = func2 ( var2 ) ; 
+break ; 
+case 0x1201 : 
+var7 -> var9 = func2 ( var2 ) ; 
+break ; 
+case 0x1101 : 
+func3 ( var2 , number ) ; 
+func4 ( var2 , var7 -> var10 , number ) ; 
+break ; 
+case 0x1102 : 
+var7 -> var11 = func5 ( var2 ) ; 
+break ; 
+} 
+return number ; 
+} 

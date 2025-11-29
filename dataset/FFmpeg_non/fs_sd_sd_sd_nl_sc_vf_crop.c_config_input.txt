@@ -1,0 +1,84 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+CropContext * var4 = var2 -> var5 ; 
+const AVPixFmtDescriptor * var6 = func2 ( var1 -> var7 ) ; 
+int var8 ; 
+const char * var9 ; 
+double var10 ; 
+var4 -> var11 [ var12 ] = var4 -> var11 [ var13 ] = var2 -> var14 [ number ] -> var15 ; 
+var4 -> var11 [ var16 ] = var4 -> var11 [ var17 ] = var2 -> var14 [ number ] -> var18 ; 
+var4 -> var11 [ var19 ] = ( float ) var1 -> var15 / var1 -> var18 ; 
+var4 -> var11 [ var20 ] = var1 -> var21 . var22 ? func3 ( var1 -> var21 ) : number ; 
+var4 -> var11 [ var23 ] = var4 -> var11 [ var19 ] * var4 -> var11 [ var20 ] ; 
+var4 -> var11 [ var24 ] = number << var6 -> var25 ; 
+var4 -> var11 [ var26 ] = number << var6 -> var27 ; 
+var4 -> var11 [ var28 ] = var29 ; 
+var4 -> var11 [ var30 ] = var29 ; 
+var4 -> var11 [ var31 ] = var4 -> var11 [ var32 ] = var29 ; 
+var4 -> var11 [ var33 ] = var4 -> var11 [ var34 ] = var29 ; 
+var4 -> var11 [ var35 ] = number ; 
+var4 -> var11 [ var36 ] = var29 ; 
+var4 -> var11 [ var37 ] = var29 ; 
+func4 ( var4 -> var38 , var39 , var6 ) ; 
+var4 -> var40 = var6 -> var25 ; 
+var4 -> var41 = var6 -> var27 ; 
+if ( ( var8 = func5 ( & var10 , ( var9 = var4 -> var42 ) , 
+var43 , var4 -> var11 , 
+var39 , var39 , var39 , var39 , var39 , number , var2 ) ) < number ) 
+goto var44 ; 
+var4 -> var11 [ var31 ] = var4 -> var11 [ var32 ] = var10 ; 
+if ( ( var8 = func5 ( & var10 , ( var9 = var4 -> var45 ) , 
+var43 , var4 -> var11 , 
+var39 , var39 , var39 , var39 , var39 , number , var2 ) ) < number ) 
+goto var44 ; 
+var4 -> var11 [ var33 ] = var4 -> var11 [ var34 ] = var10 ; 
+if ( ( var8 = func5 ( & var10 , ( var9 = var4 -> var42 ) , 
+var43 , var4 -> var11 , 
+var39 , var39 , var39 , var39 , var39 , number , var2 ) ) < number ) 
+goto var44 ; 
+var4 -> var11 [ var31 ] = var4 -> var11 [ var32 ] = var10 ; 
+if ( func6 ( & var4 -> var15 , var4 -> var11 [ var31 ] ) < number || 
+func6 ( & var4 -> var18 , var4 -> var11 [ var33 ] ) < number ) { 
+func7 ( var2 , var46 , 
+str 
+str , 
+var4 -> var42 , var4 -> var45 ) ; 
+return func8 ( var47 ) ; 
+} 
+var4 -> var15 &= ~ ( ( number << var4 -> var40 ) - number ) ; 
+var4 -> var18 &= ~ ( ( number << var4 -> var41 ) - number ) ; 
+func9 ( var4 -> var48 ) ; 
+func9 ( var4 -> var49 ) ; 
+var4 -> var48 = var4 -> var49 = var39 ; 
+if ( ( var8 = func10 ( & var4 -> var48 , var4 -> var50 , var43 , 
+var39 , var39 , var39 , var39 , number , var2 ) ) < number || 
+( var8 = func10 ( & var4 -> var49 , var4 -> var51 , var43 , 
+var39 , var39 , var39 , var39 , number , var2 ) ) < number ) 
+return func8 ( var47 ) ; 
+if ( var4 -> var52 ) { 
+AVRational var53 = av_mul_q ( var1 -> var21 , 
+( AVRational ) { var1 -> var15 , var1 -> var18 } ) ; 
+func11 ( & var4 -> var54 . var22 , & var4 -> var54 . var55 , 
+var53 . var22 * var4 -> var18 , var53 . var55 * var4 -> var15 , var56 ) ; 
+} else 
+var4 -> var54 = var1 -> var21 ; 
+func7 ( var2 , var57 , str , 
+var1 -> var15 , var1 -> var18 , var1 -> var21 . var22 , var1 -> var21 . var55 , 
+var4 -> var15 , var4 -> var18 , var4 -> var54 . var22 , var4 -> var54 . var55 ) ; 
+if ( var4 -> var15 <= number || var4 -> var18 <= number || 
+var4 -> var15 > var1 -> var15 || var4 -> var18 > var1 -> var18 ) { 
+func7 ( var2 , var46 , 
+str , 
+var4 -> var15 , var4 -> var18 ) ; 
+return func8 ( var47 ) ; 
+} 
+var4 -> var58 = ( var1 -> var15 - var4 -> var15 ) / number ; 
+var4 -> var59 = ( var1 -> var18 - var4 -> var18 ) / number ; 
+var4 -> var58 &= ~ ( ( number << var4 -> var40 ) - number ) ; 
+var4 -> var59 &= ~ ( ( number << var4 -> var41 ) - number ) ; 
+return number ; 
+var44 : 
+func7 ( var39 , var46 , str , var9 ) ; 
+return var8 ; 
+} 

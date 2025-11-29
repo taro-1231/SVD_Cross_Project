@@ -1,0 +1,20 @@
+static av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+Mpeg4DecContext * var2 = var1 -> var3 ; 
+MpegEncContext * var4 = & var2 -> var5 ; 
+int var6 ; 
+var2 -> var7 = 
+var2 -> var8 = 
+var2 -> var9 = 
+var2 -> var10 = - number ; 
+if ( ( var6 = func2 ( var1 ) ) < number ) 
+return var6 ; 
+func3 ( ) ; 
+var4 -> var11 = number ; 
+var4 -> var12 = number ; 
+var4 -> var13 = var14 ; 
+var2 -> var15 = number ; 
+var1 -> var16 = var17 ; 
+var1 -> var18 -> var19 = number ; 
+return number ; 
+} 

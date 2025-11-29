@@ -1,0 +1,48 @@
+static void func1 ( WriterContext * var1 , 
+AVCodecParameters * var2 , 
+const AVPacketSideData * var3 , 
+int var4 , 
+SectionID var5 , 
+SectionID var6 ) 
+{ 
+int var7 ; 
+func2 ( var1 , var5 ) ; 
+for ( var7 = number ; var7 < var4 ; var7 ++ ) { 
+const AVPacketSideData * var8 = & var3 [ var7 ] ; 
+const char * var9 = func3 ( var8 -> var10 ) ; 
+func2 ( var1 , var6 ) ; 
+func4 ( str , var9 ? var9 : str ) ; 
+if ( var8 -> var10 == var11 && var8 -> var12 >= number * number ) { 
+func5 ( var1 , str , var8 -> var13 , number , str , number , number , number ) ; 
+func6 ( str , func7 ( ( int32_t * ) var8 -> var13 ) ) ; 
+} else if ( var8 -> var10 == var14 ) { 
+const AVStereo3D * var15 = ( AVStereo3D * ) var8 -> var13 ; 
+func4 ( str , func8 ( var15 -> var10 ) ) ; 
+func6 ( str , ! ! ( var15 -> var16 & var17 ) ) ; 
+} else if ( var8 -> var10 == var18 ) { 
+const AVSphericalMapping * var19 = ( AVSphericalMapping * ) var8 -> var13 ; 
+func4 ( str , func9 ( var19 -> var20 ) ) ; 
+if ( var19 -> var20 == var21 ) { 
+func6 ( str , var19 -> var22 ) ; 
+} else if ( var19 -> var20 == var23 ) { 
+size_t var24 , var25 , var26 , var27 ; 
+func10 ( var19 , var2 -> var28 , var2 -> var29 , 
+& var24 , & var25 , & var26 , & var27 ) ; 
+func6 ( str , var24 ) ; 
+func6 ( str , var25 ) ; 
+func6 ( str , var26 ) ; 
+func6 ( str , var27 ) ; 
+} 
+func6 ( str , ( double ) var19 -> var30 / ( number << number ) ) ; 
+func6 ( str , ( double ) var19 -> var31 / ( number << number ) ) ; 
+func6 ( str , ( double ) var19 -> var32 / ( number << number ) ) ; 
+} else if ( var8 -> var10 == var33 && var8 -> var12 == number ) { 
+func6 ( str , func11 ( var8 -> var13 ) ) ; 
+func6 ( str , func11 ( var8 -> var13 + number ) ) ; 
+func6 ( str , func12 ( var8 -> var13 + number ) ) ; 
+func6 ( str , func12 ( var8 -> var13 + number ) ) ; 
+} 
+func13 ( var1 ) ; 
+} 
+func13 ( var1 ) ; 
+} 

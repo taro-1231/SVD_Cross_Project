@@ -1,0 +1,76 @@
+static void func1 ( AlacEncodeContext * var1 , 
+enum AlacRawDataBlockType var2 , int var3 , 
+const uint8_t * var4 , const uint8_t * var5 ) 
+{ 
+uint8_t const * var6 [ number ] = { var4 , var5 } ; 
+int var7 , var8 , var9 ; 
+int var10 = number ; 
+PutBitContext * var11 = & var1 -> var12 ; 
+var9 = var2 == var13 ? number : number ; 
+if ( var1 -> var14 ) { 
+func2 ( var1 , var2 , var3 ) ; 
+if ( var1 -> var15 -> var16 == var17 ) { 
+int var18 = number - var1 -> var15 -> var19 ; 
+int32_t const * var20 [ number ] = { ( const int32_t * ) var4 , 
+( const int32_t * ) var5 } ; 
+for ( var7 = number ; var7 < var1 -> var21 ; var7 ++ ) 
+for ( var8 = number ; var8 < var9 ; var8 ++ ) 
+func3 ( var11 , var1 -> var15 -> var19 , 
+var20 [ var8 ] [ var7 ] >> var18 ) ; 
+} else { 
+int16_t const * var22 [ number ] = { ( const int16_t * ) var4 , 
+( const int16_t * ) var5 } ; 
+for ( var7 = number ; var7 < var1 -> var21 ; var7 ++ ) 
+for ( var8 = number ; var8 < var9 ; var8 ++ ) 
+func3 ( var11 , var1 -> var15 -> var19 , 
+var22 [ var8 ] [ var7 ] ) ; 
+} 
+} else { 
+var1 -> var23 = var1 -> var15 -> var19 - var1 -> var24 + 
+var9 - number ; 
+func4 ( var1 , var9 , var6 ) ; 
+func2 ( var1 , var2 , var3 ) ; 
+if ( var1 -> var24 ) { 
+uint32_t var26 = ( number << var1 -> var24 ) - number ; 
+for ( var8 = number ; var8 < var9 ; var8 ++ ) { 
+int32_t * var25 = var1 -> var27 [ var8 ] ; 
+int32_t * var28 = var1 -> var29 [ var8 ] ; 
+for ( var7 = number ; var7 < var1 -> var21 ; var7 ++ ) { 
+var25 [ var7 ] = var28 [ var7 ] & var26 ; 
+var28 [ var7 ] >>= var1 -> var24 ; 
+} 
+} 
+} 
+if ( var9 == number ) 
+func5 ( var1 ) ; 
+else 
+var1 -> var30 = var1 -> var31 = number ; 
+func6 ( var11 , number , var1 -> var30 ) ; 
+func6 ( var11 , number , var1 -> var31 ) ; 
+for ( var7 = number ; var7 < var9 ; var7 ++ ) { 
+func7 ( var1 , var7 ) ; 
+func6 ( var11 , number , var10 ) ; 
+func6 ( var11 , number , var1 -> var32 [ var7 ] . var33 ) ; 
+func6 ( var11 , number , var1 -> var34 . var35 ) ; 
+func6 ( var11 , number , var1 -> var32 [ var7 ] . var36 ) ; 
+for ( var8 = number ; var8 < var1 -> var32 [ var7 ] . var36 ; var8 ++ ) 
+func3 ( var11 , number , var1 -> var32 [ var7 ] . var37 [ var8 ] ) ; 
+} 
+if ( var1 -> var24 ) { 
+for ( var7 = number ; var7 < var1 -> var21 ; var7 ++ ) { 
+for ( var8 = number ; var8 < var9 ; var8 ++ ) { 
+func6 ( var11 , var1 -> var24 , var1 -> var27 [ var8 ] [ var7 ] ) ; 
+} 
+} 
+} 
+for ( var7 = number ; var7 < var9 ; var7 ++ ) { 
+func8 ( var1 , var7 ) ; 
+if ( var10 == number ) { 
+int32_t * var38 = var1 -> var27 [ var7 ] ; 
+for ( var8 = var1 -> var21 - number ; var8 > number ; var8 -- ) 
+var38 [ var8 ] -= var38 [ var8 - number ] ; 
+} 
+func9 ( var1 , var7 ) ; 
+} 
+} 
+} 

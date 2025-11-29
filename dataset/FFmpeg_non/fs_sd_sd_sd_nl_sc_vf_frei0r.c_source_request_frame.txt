@@ -1,0 +1,12 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+Frei0rContext * var2 = var1 -> var3 -> var4 ; 
+AVFrame * var5 = func2 ( var1 , var1 -> var6 , var1 -> var7 ) ; 
+if ( ! var5 ) 
+return func3 ( var8 ) ; 
+var5 -> sample_aspect_ratio = ( AVRational ) { 1 , 1 } ; 
+var5 -> var9 = var2 -> var9 ++ ; 
+var2 -> update ( var2 -> instance , av_rescale_q ( var5 -> var9 , var2 -> time_base , ( AVRational ) { 1 , 1000 } ) , 
+NULL , ( uint32_t * ) var5 -> data [ 0 ] ) ; 
+return func4 ( var1 , var5 ) ; 
+} 

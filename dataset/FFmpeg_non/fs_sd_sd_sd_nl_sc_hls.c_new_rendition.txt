@@ -1,0 +1,58 @@
+static struct rendition * func1 ( HLSContext * var1 , struct rendition_info * var2 , 
+const char * var3 ) 
+{ 
+struct rendition * var4 ; 
+enum AVMediaType var5 = var6 ; 
+char * var7 ; 
+char * var8 ; 
+char * var9 ; 
+if ( ! strcmp ( var2 -> var5 , str ) ) 
+var5 = var10 ; 
+else if ( ! strcmp ( var2 -> var5 , str ) ) 
+var5 = var11 ; 
+else if ( ! strcmp ( var2 -> var5 , str ) ) 
+var5 = var12 ; 
+else if ( ! strcmp ( var2 -> var5 , str ) ) 
+return var13 ; 
+if ( var5 == var6 ) 
+return var13 ; 
+if ( var5 == var12 && ! var2 -> var14 [ number ] ) 
+return var13 ; 
+if ( var5 == var12 ) 
+return var13 ; 
+var4 = func2 ( sizeof ( struct rendition ) ) ; 
+if ( ! var4 ) 
+return var13 ; 
+func3 ( & var1 -> var15 , & var1 -> var16 , var4 ) ; 
+var4 -> var5 = var5 ; 
+strcpy ( var4 -> var17 , var2 -> var17 ) ; 
+strcpy ( var4 -> var18 , var2 -> var18 ) ; 
+strcpy ( var4 -> var19 , var2 -> var19 ) ; 
+if ( var2 -> var14 [ number ] ) { 
+var4 -> var20 = func4 ( var1 , var2 -> var14 , var3 ) ; 
+if ( var4 -> var20 ) 
+func3 ( & var4 -> var20 -> var15 , 
+& var4 -> var20 -> var16 , var4 ) ; 
+} 
+if ( var2 -> var21 [ number ] ) { 
+int var22 = strlen ( var4 -> var18 ) ; 
+if ( var22 < sizeof ( var4 -> var18 ) - number ) { 
+var4 -> var18 [ var22 ] = str ; 
+strncpy ( var4 -> var18 + var22 + number , var2 -> var21 , 
+sizeof ( var4 -> var18 ) - var22 - number ) ; 
+} 
+} 
+if ( ! strcmp ( var2 -> var23 , str ) ) 
+var4 -> var24 |= var25 ; 
+if ( ! strcmp ( var2 -> var26 , str ) ) 
+var4 -> var24 |= var27 ; 
+var8 = var2 -> var28 ; 
+while ( ( var7 = func5 ( var8 , str , & var9 ) ) ) { 
+if ( ! strcmp ( var7 , str ) ) 
+var4 -> var24 |= var29 ; 
+else if ( ! strcmp ( var7 , str ) ) 
+var4 -> var24 |= var30 ; 
+var8 = var13 ; 
+} 
+return var4 ; 
+} 

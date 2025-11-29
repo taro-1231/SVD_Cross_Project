@@ -1,0 +1,72 @@
+int func1 ( uint8_t * var2 , const char * var3 , int var4 , 
+void * var5 ) 
+{ 
+char * var6 , var7 [ number ] ; 
+const ColorEntry * var8 ; 
+int var9 , var10 = number ; 
+if ( var3 [ number ] == str ) { 
+var10 = number ; 
+} else if ( ! strncmp ( var3 , str , number ) ) 
+var10 = number ; 
+if ( var4 < number ) 
+var4 = strlen ( var3 ) ; 
+func2 ( var7 , var3 + var10 , 
+func3 ( var4 - var10 + number , sizeof ( var7 ) ) ) ; 
+if ( ( var6 = strchr ( var7 , var1 ) ) ) 
+* var6 += number ; 
+var9 = strlen ( var7 ) ; 
+var2 [ number ] = number ; 
+if ( ! func4 ( var7 , str ) || ! func4 ( var7 , str ) ) { 
+int var11 = func5 ( ) ; 
+var2 [ number ] = var11 >> number ; 
+var2 [ number ] = var11 >> number ; 
+var2 [ number ] = var11 >> number ; 
+var2 [ number ] = var11 ; 
+} else if ( var10 || 
+strspn ( var7 , str ) == var9 ) { 
+char * var6 ; 
+unsigned int var11 = func6 ( var7 , & var6 , number ) ; 
+if ( * var6 || ( var9 != number && var9 != number ) ) { 
+func7 ( var5 , var12 , str , var7 ) ; 
+return func8 ( var13 ) ; 
+} 
+if ( var9 == number ) { 
+var2 [ number ] = var11 ; 
+var11 >>= number ; 
+} 
+var2 [ number ] = var11 >> number ; 
+var2 [ number ] = var11 >> number ; 
+var2 [ number ] = var11 ; 
+} else { 
+var8 = bsearch ( var7 , 
+var14 , 
+func9 ( var14 ) , 
+sizeof ( ColorEntry ) , 
+var15 ) ; 
+if ( ! var8 ) { 
+func7 ( var5 , var12 , str , var7 ) ; 
+return func8 ( var13 ) ; 
+} 
+memcpy ( var2 , var8 -> var16 , number ) ; 
+} 
+if ( var6 ) { 
+double var17 ; 
+const char * var18 = var6 ; 
+if ( ! strncmp ( var18 , str , number ) ) { 
+var17 = func6 ( var18 , & var6 , number ) ; 
+} else { 
+double var19 = strtod ( var18 , & var6 ) ; 
+if ( var19 < number || var19 > number ) 
+var17 = number ; 
+else 
+var17 = number * var19 ; 
+} 
+if ( var6 == var18 || * var6 || var17 > number || var17 < number ) { 
+func7 ( var5 , var12 , str , 
+var18 , var3 ) ; 
+return func8 ( var13 ) ; 
+} 
+var2 [ number ] = var17 ; 
+} 
+return number ; 
+} 

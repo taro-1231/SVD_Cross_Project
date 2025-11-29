@@ -1,0 +1,22 @@
+func1 ( PNG_CONST png_store * var1 , png_const_structp var2 , int var3 ) 
+{ 
+png_const_bytep var4 = var1 -> var4 ; 
+if ( var4 [ - number ] != number || var4 [ var1 -> var5 ] != number ) 
+func2 ( var2 , str ) ; 
+else 
+{ 
+png_size_t var6 = var1 -> var7 ; 
+png_uint_32 var8 = var1 -> var9 ; 
+var4 += var3 * ( var6 + number ) * var1 -> var9 ; 
+var4 += number ; 
+while ( var8 -> number ) 
+{ 
+if ( var4 [ - number ] != number || var4 [ - number ] != number ) 
+func2 ( var2 , str ) ; 
+if ( var4 [ var6 ] != number || var4 [ var6 + number ] != number || 
+var4 [ var6 + number ] != number ) 
+func2 ( var2 , str ) ; 
+var4 += var6 + number ; 
+} 
+} 
+} 

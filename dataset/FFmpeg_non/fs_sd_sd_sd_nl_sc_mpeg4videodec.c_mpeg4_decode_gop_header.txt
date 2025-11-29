@@ -1,0 +1,16 @@
+static int func1 ( MpegEncContext * var1 , GetBitContext * var2 ) 
+{ 
+int var3 , var4 , var5 ; 
+if ( ! func2 ( var2 , number ) ) { 
+func3 ( var1 -> var6 , var7 , str ) ; 
+return - number ; 
+} 
+var3 = func4 ( var2 , number ) ; 
+var4 = func4 ( var2 , number ) ; 
+func5 ( var2 , str ) ; 
+var5 = func4 ( var2 , number ) ; 
+var1 -> var8 = var5 + number * ( var4 + number * var3 ) ; 
+func6 ( var2 ) ; 
+func6 ( var2 ) ; 
+return number ; 
+} 

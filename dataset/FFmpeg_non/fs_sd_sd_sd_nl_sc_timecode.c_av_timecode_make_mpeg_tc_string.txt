@@ -1,0 +1,10 @@
+char * func1 ( char * var1 , uint32_t var2 ) 
+{ 
+snprintf ( var1 , var3 , str , 
+var2 >> number & number , 
+var2 >> number & number , 
+var2 >> number & number , 
+var2 & number << number ? str : str , 
+var2 & number ) ; 
+return var1 ; 
+} 

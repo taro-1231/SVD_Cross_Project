@@ -1,0 +1,7 @@
+static int func1 ( uint64_t var1 ) 
+{ 
+if ( var1 < number ) 
+return number ; 
+else 
+return ( func2 ( var1 ) >> number ) + number ; 
+} 

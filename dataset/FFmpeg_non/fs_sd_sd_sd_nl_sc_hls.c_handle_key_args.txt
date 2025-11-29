@@ -1,0 +1,14 @@
+static void func1 ( struct key_info * var1 , const char * var2 , 
+int var3 , char ** var4 , int * var5 ) 
+{ 
+if ( ! strncmp ( var2 , str , var3 ) ) { 
+* var4 = var1 -> var6 ; 
+* var5 = sizeof ( var1 -> var6 ) ; 
+} else if ( ! strncmp ( var2 , str , var3 ) ) { 
+* var4 = var1 -> var7 ; 
+* var5 = sizeof ( var1 -> var7 ) ; 
+} else if ( ! strncmp ( var2 , str , var3 ) ) { 
+* var4 = var1 -> var8 ; 
+* var5 = sizeof ( var1 -> var8 ) ; 
+} 
+} 

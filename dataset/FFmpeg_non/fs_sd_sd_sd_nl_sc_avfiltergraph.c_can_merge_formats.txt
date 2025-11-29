@@ -1,0 +1,37 @@
+static int func1 ( AVFilterFormats * var1 , 
+AVFilterFormats * var2 , 
+enum AVMediaType var3 , 
+int var4 ) 
+{ 
+AVFilterFormats * var5 , * var6 , * var7 ; 
+if ( var1 == var2 ) 
+return number ; 
+var5 = func2 ( var1 ) ; 
+var6 = func2 ( var2 ) ; 
+if ( ! var5 || ! var6 ) { 
+if ( var5 ) 
+func3 ( & var5 -> var8 ) ; 
+if ( var6 ) 
+func3 ( & var6 -> var8 ) ; 
+func3 ( & var5 ) ; 
+func3 ( & var6 ) ; 
+return number ; 
+} 
+if ( var4 ) { 
+var7 = func4 ( var5 , var6 ) ; 
+} else { 
+var7 = func5 ( var5 , var6 , var3 ) ; 
+} 
+if ( var7 ) { 
+func3 ( & var7 -> var8 ) ; 
+func3 ( & var7 -> var9 ) ; 
+func3 ( & var7 ) ; 
+return number ; 
+} else { 
+func3 ( & var5 -> var8 ) ; 
+func3 ( & var6 -> var8 ) ; 
+func3 ( & var5 ) ; 
+func3 ( & var6 ) ; 
+return number ; 
+} 
+} 

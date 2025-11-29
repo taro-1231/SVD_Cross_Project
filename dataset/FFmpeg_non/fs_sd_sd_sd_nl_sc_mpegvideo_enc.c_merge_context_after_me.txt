@@ -1,0 +1,5 @@
+static void func2 ( MpegEncContext * var1 , MpegEncContext * var2 ) { 
+func1 ( var3 . var4 ) ; 
+func1 ( var3 . var5 ) ; 
+func1 ( var3 . var6 ) ; 
+} 

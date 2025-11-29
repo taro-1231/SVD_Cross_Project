@@ -1,0 +1,9 @@
+static void func1 ( INTFLOAT ( * var1 ) [ 2 ] , INTFLOAT ( * var2 ) [ 2 ] , INTFLOAT * var3 , 
+int var4 ) 
+{ 
+int var5 ; 
+for ( var5 = number ; var5 < var4 ; var5 ++ ) { 
+var1 [ var5 ] [ number ] = func2 ( var2 [ var5 ] [ number ] , var3 [ var5 ] ) ; 
+var1 [ var5 ] [ number ] = func2 ( var2 [ var5 ] [ number ] , var3 [ var5 ] ) ; 
+} 
+} 

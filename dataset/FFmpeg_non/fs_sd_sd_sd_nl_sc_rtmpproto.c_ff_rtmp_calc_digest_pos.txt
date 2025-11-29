@@ -1,0 +1,9 @@
+int func1 ( const uint8_t * var1 , int var2 , int var3 , 
+int var4 ) 
+{ 
+int var5 , var6 = number ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var6 += var1 [ var5 + var2 ] ; 
+var6 = var6 % var3 + var4 ; 
+return var6 ; 
+} 

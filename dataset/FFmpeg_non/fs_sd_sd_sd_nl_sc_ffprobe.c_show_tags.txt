@@ -1,0 +1,14 @@
+static inline int func1 ( WriterContext * var1 , AVDictionary * var2 , int var3 ) 
+{ 
+AVDictionaryEntry * var4 = var5 ; 
+int var6 = number ; 
+if ( ! var2 ) 
+return number ; 
+func2 ( var1 , var3 ) ; 
+while ( ( var4 = func3 ( var2 , str , var4 , var7 ) ) ) { 
+if ( ( var6 = func4 ( var4 -> var8 , var4 -> var9 ) ) < number ) 
+break ; 
+} 
+func5 ( var1 ) ; 
+return var6 ; 
+} 

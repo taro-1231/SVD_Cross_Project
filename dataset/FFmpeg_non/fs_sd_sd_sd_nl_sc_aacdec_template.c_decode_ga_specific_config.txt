@@ -1,0 +1,70 @@
+static int func1 ( AACContext * var1 , AVCodecContext * var2 , 
+GetBitContext * var3 , 
+MPEG4AudioConfig * var4 , 
+int var5 ) 
+{ 
+int var6 , var7 , var8 , var9 ; 
+uint8_t var10 [ var11 * number ] [ number ] ; 
+int var12 = number ; 
+if ( func2 ( var3 ) ) { 
+func3 ( var2 , str ) ; 
+return var13 ; 
+} 
+var4 -> var14 = number ; 
+if ( func2 ( var3 ) ) 
+func4 ( var3 , number ) ; 
+var6 = func2 ( var3 ) ; 
+if ( var4 -> var15 == var16 || 
+var4 -> var15 == var17 ) 
+func4 ( var3 , number ) ; 
+if ( var5 == number ) { 
+func4 ( var3 , number ) ; 
+var12 = func5 ( var2 , var4 , var10 , var3 ) ; 
+if ( var12 < number ) 
+return var12 ; 
+} else { 
+if ( ( var7 = func6 ( var2 , var10 , 
+& var12 , var5 ) ) ) 
+return var7 ; 
+} 
+if ( func7 ( var10 , var12 ) > number ) { 
+var4 -> var18 = number ; 
+} else if ( var4 -> var19 == number && var4 -> var18 == - number ) 
+var4 -> var18 = number ; 
+if ( var1 && ( var7 = func8 ( var1 , var10 , var12 , var20 , number ) ) ) 
+return var7 ; 
+if ( var6 ) { 
+switch ( var4 -> var15 ) { 
+case var21 : 
+func4 ( var3 , number ) ; 
+func4 ( var3 , number ) ; 
+break ; 
+case var22 : 
+case var23 : 
+case var17 : 
+case var24 : 
+var9 = func9 ( var3 , number ) ; 
+if ( var9 ) { 
+func10 ( var2 , 
+str , 
+var9 ) ; 
+return var13 ; 
+} 
+break ; 
+} 
+func11 ( var3 ) ; 
+} 
+switch ( var4 -> var15 ) { 
+case var22 : 
+case var23 : 
+case var17 : 
+case var24 : 
+var8 = func9 ( var3 , number ) ; 
+if ( var8 ) { 
+func10 ( var2 , 
+str , var8 ) ; 
+return var13 ; 
+} 
+} 
+return number ; 
+} 

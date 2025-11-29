@@ -1,0 +1,496 @@
+int func1 ( int var2 , char ** var3 ) 
+{ 
+FILE * var4 ; 
+FILE * var5 ; 
+char var6 [ number ] ; 
+char * var7 = var8 , var9 [ number ] ; 
+char * var10 , var11 , var12 [ number ] ; 
+char * var13 , * var14 = var8 ; 
+ulg var15 ; 
+int var16 , var17 = number ; 
+int var18 = number ; 
+int var19 = var20 ; 
+int var21 ; 
+double var22 ; 
+double var23 = number ; 
+double var24 ; 
+double var25 = number ; 
+var1 . var26 = var8 ; 
+var1 . var27 = var8 ; 
+var1 . var28 = var8 ; 
+var1 . var29 = var8 ; 
+var1 . var30 = var20 ; 
+var1 . var31 = var20 ; 
+var1 . var32 = var20 ; 
+var1 . var33 = var20 ; 
+var1 . var34 = number ; 
+var1 . var35 = number ; 
+var22 = number / number ; 
+var22 = number / number . number ; 
+var5 = fopen ( str , str ) ; 
+if ( var5 ) { 
+double sgi_gamma ; 
+fgets ( var6 , number , var5 ) ; 
+fclose ( var5 ) ; 
+sgi_gamma = atof ( var6 ) ; 
+if ( sgi_gamma > number ) 
+var22 = number / sgi_gamma ; 
+} 
+var22 = number . number / number . 61 ; 
+var22 = number ; 
+var24 = var22 * var23 ; 
+if ( ( var10 = getenv ( str ) ) != var8 ) { 
+double var37 = atof ( var10 ) ; 
+if ( var37 > number ) 
+var25 = number / var37 ; 
+} 
+if ( var25 == number ) 
+var25 = number / var24 ; 
+while ( * ++ var3 && ! var18 ) { 
+if ( ! strncmp ( * var3 , str , number ) ) { 
+var1 . var31 = var39 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+var1 . var40 = time ( var8 ) ; 
+var1 . var33 = var39 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+var19 = var39 ; 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var18 ; 
+else { 
+var1 . var35 = atof ( * var3 ) ; 
+if ( var1 . var35 <= number ) 
+++ var18 ; 
+else if ( var1 . var35 > number ) 
+fprintf ( var41 , var42 
+str ) ; 
+} 
+} else if ( ! strncmp ( * var3 , str , number ) ) { 
+if ( ! * ++ var3 ) 
+++ var18 ; 
+else { 
+var13 = * var3 ; 
+if ( strlen ( var13 ) != number || var13 [ number ] != str ) 
+++ var18 ; 
+else { 
+unsigned var36 , var43 , var44 ; 
+sscanf ( var13 + number , str , & var36 , & var43 , & var44 ) ; 
+var1 . var45 = ( uch ) var36 ; 
+var1 . var46 = ( uch ) var43 ; 
+var1 . var47 = ( uch ) var44 ; 
+var1 . var32 = var39 ; 
+} 
+} 
+} else { 
+if ( ** var3 != str ) { 
+var7 = * var3 ; 
+if ( var3 [ number ] ) 
+++ var18 ; 
+} else 
+++ var18 ; 
+} 
+} 
+if ( ! var7 ) { 
+if ( func2 ( number ) ) { 
+fprintf ( var41 , var42 
+str ) ; 
+++ var18 ; 
+} else { 
+func3 ( func4 ( var48 ) , var49 ) ; 
+func3 ( func4 ( var50 ) , var49 ) ; 
+if ( ( var1 . var26 = func5 ( func4 ( var48 ) , str ) ) == var8 ) { 
+fprintf ( var41 , var42 
+str ) ; 
+++ var18 ; 
+} else 
+if ( ( var1 . var27 = func5 ( func4 ( var50 ) , str ) ) == var8 ) { 
+fprintf ( var41 , var42 
+str ) ; 
+fclose ( var1 . var26 ) ; 
+++ var18 ; 
+} else 
+var1 . var30 = var39 ; 
+} 
+} else if ( ( var17 = strlen ( var7 ) ) > number ) { 
+fprintf ( var41 , var42 str , 
+var17 ) ; 
+++ var18 ; 
+} else if ( ! ( var1 . var26 = fopen ( var7 , str ) ) ) { 
+fprintf ( var41 , var42 str , var7 ) ; 
+++ var18 ; 
+} 
+if ( ! var18 ) { 
+fgets ( var12 , number , var1 . var26 ) ; 
+if ( var12 [ number ] != str || ( ( var11 = var12 [ number ] ) != str && 
+var11 != str && var11 != str ) ) 
+{ 
+fprintf ( var41 , var42 
+str , 
+var7 ) ; 
+++ var18 ; 
+} else { 
+var1 . var51 = ( int ) ( var11 - str ) ; 
+if ( var1 . var51 != number ) 
+var1 . var32 = var20 ; 
+do { 
+fgets ( var12 , number , var1 . var26 ) ; 
+} while ( var12 [ number ] == str ) ; 
+sscanf ( var12 , str , & var1 . var52 , & var1 . var53 ) ; 
+do { 
+fgets ( var12 , number , var1 . var26 ) ; 
+} while ( var12 [ number ] == str ) ; 
+sscanf ( var12 , str , & var21 ) ; 
+if ( var1 . var52 <= number || var1 . var53 <= number || 
+var21 != number ) 
+{ 
+fprintf ( var41 , var42 
+str ) ; 
+++ var18 ; 
+} 
+var1 . var54 = number ; 
+if ( ! var1 . var30 ) { 
+if ( ( var10 = strrchr ( var7 , str ) ) == var8 || 
+( var10 - var7 ) != ( var17 - number ) ) 
+{ 
+strcpy ( var9 , var7 ) ; 
+strcpy ( var9 + var17 , str ) ; 
+} else { 
+var17 -= number ; 
+strncpy ( var9 , var7 , var17 ) ; 
+strcpy ( var9 + var17 , str ) ; 
+} 
+if ( ( var1 . var27 = fopen ( var9 , str ) ) != var8 ) { 
+fprintf ( var41 , var42 str , 
+var9 ) ; 
+fclose ( var1 . var27 ) ; 
+++ var18 ; 
+} else if ( ! ( var1 . var27 = fopen ( var9 , str ) ) ) { 
+fprintf ( var41 , var42 str , 
+var9 ) ; 
+++ var18 ; 
+} 
+} 
+} 
+if ( var18 ) { 
+fclose ( var1 . var26 ) ; 
+var1 . var26 = var8 ; 
+if ( var1 . var30 ) { 
+fclose ( var1 . var27 ) ; 
+var1 . var27 = var8 ; 
+} 
+} 
+} 
+if ( var18 ) { 
+fprintf ( var41 , str , var42 , var55 , var56 ) ; 
+func6 ( ) ; 
+fprintf ( var41 , str 
+str 
+str 
+str var35 str 
+str % . 5f str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str . png str 
+str 
+str 
+str 
+str , var42 , var42 , var25 ) ; 
+exit ( number ) ; 
+} 
+if ( var19 && 
+( var4 = func5 ( func4 ( var41 ) , str ) ) != var8 && 
+( var14 = ( char * ) malloc ( ( number + 9 ) * 75 ) ) != var8 ) 
+{ 
+int var38 , var57 , var58 ; 
+fprintf ( var41 , 
+str ) ; 
+fprintf ( var41 , str ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var59 ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) { 
+if ( var10 [ var17 - number ] == str ) 
+var10 [ -- var17 ] = str ; 
+var1 . var60 = var10 ; 
+var1 . var34 |= var61 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var61 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var61 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var63 ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) { 
+if ( var10 [ var17 - number ] == str ) 
+var10 [ -- var17 ] = str ; 
+var1 . var64 = var10 ; 
+var1 . var34 |= var65 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var65 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var65 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var67 ; 
+fprintf ( var41 , str ) ; 
+for ( var38 = number ; var38 < number ; ++ var38 ) { 
+fprintf ( var41 , str , var38 ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) 
+var10 += var17 ; 
+else 
+break ; 
+} 
+if ( ( var17 = var10 - ( var14 + var67 ) ) > number ) { 
+if ( var10 [ - number ] == str ) { 
+var10 [ - number ] = str ; 
+-- var17 ; 
+} 
+var1 . var68 = var14 + var67 ; 
+var1 . var34 |= var69 ; 
+var10 = var14 + var67 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var69 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var69 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var71 ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) { 
+if ( var10 [ var17 - number ] == str ) 
+var10 [ -- var17 ] = str ; 
+var1 . var72 = var10 ; 
+var1 . var34 |= var73 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var73 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var73 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var75 ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) { 
+if ( var10 [ var17 - number ] == str ) 
+var10 [ -- var17 ] = str ; 
+var1 . var76 = var10 ; 
+var1 . var34 |= var77 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var77 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var77 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+do { 
+var57 = var39 ; 
+var10 = var14 + var79 ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( func7 ( var10 , number , var4 ) && ( var17 = strlen ( var10 ) ) > number ) { 
+if ( var10 [ var17 - number ] == str ) 
+var10 [ -- var17 ] = str ; 
+var1 . var80 = var10 ; 
+var1 . var34 |= var81 ; 
+if ( ( var58 = func8 ( ( uch * ) var10 , var17 ) ) >= number ) { 
+fprintf ( var41 , str var42 str 
+str 
+str , 
+( unsigned ) var10 [ var58 ] , ( var10 [ var58 ] == 27 ) ? str : str , 
+var58 + number ) ; 
+fflush ( var41 ) ; 
+var1 . var34 &= ~ var81 ; 
+var57 = var20 ; 
+if ( var10 [ var58 ] == 27 ) { 
+var1 . var34 &= ~ var81 ; 
+var57 = var20 ; 
+} 
+} 
+} 
+} while ( ! var57 ) ; 
+fclose ( var4 ) ; 
+} else if ( var19 ) { 
+fprintf ( var41 , var42 str ) ; 
+var19 = var20 ; 
+var1 . var34 = number ; 
+} 
+if ( ( var16 = func9 ( & var1 ) ) != number ) { 
+switch ( var16 ) { 
+case number : 
+fprintf ( var41 , var42 
+str ) ; 
+break ; 
+case number : 
+fprintf ( var41 , var42 str ) ; 
+break ; 
+case 11 : 
+fprintf ( var41 , var42 
+str ) ; 
+break ; 
+var83 : 
+fprintf ( var41 , var42 
+str ) ; 
+break ; 
+} 
+exit ( var16 ) ; 
+} 
+if ( var19 && var14 ) { 
+free ( var14 ) ; 
+var14 = var8 ; 
+} 
+if ( var1 . var51 == number ) 
+var15 = var1 . var52 ; 
+else if ( var1 . var51 == number ) 
+var15 = var1 . var52 * number ; 
+else 
+var15 = var1 . var52 * number ; 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+if ( var1 . var31 ) { 
+long var38 ; 
+ulg var84 ; 
+ulg var85 = var15 * var1 . var53 ; 
+var1 . var28 = ( uch * ) malloc ( var85 ) ; 
+var1 . var29 = ( uch ** ) malloc ( var1 . var53 * sizeof ( uch * ) ) ; 
+if ( var1 . var28 == var8 || var1 . var29 == var8 ) { 
+fprintf ( var41 , var42 str ) ; 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+exit ( number ) ; 
+} 
+for ( var38 = number ; var38 < var1 . var53 ; ++ var38 ) 
+var1 . var29 [ var38 ] = var1 . var28 + var38 * var15 ; 
+var84 = fread ( var1 . var28 , number , var85 , var1 . var26 ) ; 
+if ( var84 != var85 ) { 
+fprintf ( var41 , var42 str , 
+var85 , var84 ) ; 
+fprintf ( var41 , str ) ; 
+} 
+if ( func12 ( & var1 ) != number ) { 
+fprintf ( var41 , var42 
+str ) ; 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+exit ( number ) ; 
+} 
+} else { 
+long var86 ; 
+ulg var84 ; 
+var1 . var28 = ( uch * ) malloc ( var15 ) ; 
+if ( var1 . var28 == var8 ) { 
+fprintf ( var41 , var42 str ) ; 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+exit ( number ) ; 
+} 
+var18 = number ; 
+for ( var86 = var1 . var53 ; var86 > number ; -- var86 ) { 
+var84 = fread ( var1 . var28 , number , var15 , var1 . var26 ) ; 
+if ( var84 != var15 ) { 
+fprintf ( var41 , var42 
+str , var15 , 
+var84 , var1 . var53 - var86 ) ; 
+++ var18 ; 
+break ; 
+} 
+if ( func13 ( & var1 ) != number ) { 
+fprintf ( var41 , var42 
+str , 
+var1 . var53 - var86 ) ; 
+++ var18 ; 
+break ; 
+} 
+} 
+if ( var18 ) { 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+exit ( number ) ; 
+} 
+if ( func14 ( & var1 ) != number ) { 
+fprintf ( var41 , var42 str ) ; 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+exit ( number ) ; 
+} 
+} 
+fprintf ( var41 , str ) ; 
+fflush ( var41 ) ; 
+func10 ( & var1 ) ; 
+func11 ( ) ; 
+return number ; 
+} 

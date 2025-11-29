@@ -1,0 +1,5 @@
+static int func1 ( const char * var1 ) 
+{ 
+int var2 = func2 ( var1 , var3 , number ) ; 
+return func3 ( var2 , number ) ; 
+} 

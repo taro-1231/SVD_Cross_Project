@@ -1,0 +1,18 @@
+static const int * func1 ( const char * var1 , enum AVColorSpace var2 ) 
+{ 
+if ( ! var1 ) 
+var1 = str ; 
+if ( var1 && strstr ( var1 , str ) ) { 
+var2 = var3 ; 
+} else if ( var1 && strstr ( var1 , str ) ) { 
+var2 = var4 ; 
+} else if ( var1 && strstr ( var1 , str ) ) { 
+var2 = var5 ; 
+} else if ( var1 && ( strstr ( var1 , str ) || strstr ( var1 , str ) || strstr ( var1 , str ) ) ) { 
+var2 = var6 ; 
+} 
+if ( var2 < number || var2 > number ) { 
+var2 = var6 ; 
+} 
+return func2 ( var2 ) ; 
+} 

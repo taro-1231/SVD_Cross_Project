@@ -1,0 +1,22 @@
+static uint8_t * func1 ( uint8_t * var1 , 
+const uint8_t * var2 , int var3 , int var4 , 
+int var5 , int var6 , int var7 , int var8 ) 
+{ 
+int var9 = func2 ( var5 >> number , number , var7 ) ; 
+int var10 = func2 ( var6 >> number , number , var8 ) ; 
+int var11 = var5 & number ; 
+int var12 = var6 & number ; 
+int var13 ; 
+int var14 = func3 ( var9 + number , var7 ) ; 
+int var15 = func3 ( var10 + number , var8 ) ; 
+for ( var13 = number ; var13 < var4 ; var13 ++ ) { 
+int var16 = var2 [ var4 * var9 + var13 + var3 * var10 ] ; 
+int var17 = var2 [ var4 * var14 + var13 + var3 * var10 ] ; 
+int var18 = var2 [ var4 * var9 + var13 + var3 * var15 ] ; 
+int var19 = var2 [ var4 * var14 + var13 + var3 * var15 ] ; 
+int var20 = ( ( ( number << number ) - var11 ) * var16 + var11 * var17 ) ; 
+int var21 = ( ( ( number << number ) - var11 ) * var18 + var11 * var19 ) ; 
+var1 [ var13 ] = ( ( int64_t ) ( ( number << number ) - var12 ) * var20 + ( int64_t ) var12 * var21 ) >> number ; 
+} 
+return var1 ; 
+} 

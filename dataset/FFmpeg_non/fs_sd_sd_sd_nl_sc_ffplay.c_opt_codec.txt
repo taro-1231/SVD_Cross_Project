@@ -1,0 +1,21 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+const char * var4 = strchr ( var2 , str ) ; 
+if ( ! var4 ) { 
+func2 ( var5 , var6 , 
+str , 
+var3 , var2 ) ; 
+return func3 ( var7 ) ; 
+} 
+var4 ++ ; 
+switch ( var4 [ number ] ) { 
+case str : var8 = var3 ; break ; 
+case str : var9 = var3 ; break ; 
+case str : var10 = var3 ; break ; 
+var11 : 
+func2 ( var5 , var6 , 
+str , var4 , var2 ) ; 
+return func3 ( var7 ) ; 
+} 
+return number ; 
+} 

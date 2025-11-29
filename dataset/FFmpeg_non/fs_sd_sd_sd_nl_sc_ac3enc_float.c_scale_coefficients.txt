@@ -1,0 +1,8 @@
+static void func1 ( AC3EncodeContext * var1 ) 
+{ 
+int var2 = var3 * var1 -> var4 ; 
+int var5 = var1 -> var6 ; 
+var1 -> var7 . func2 ( var1 -> var8 + ( var2 * ! var5 ) , 
+var1 -> var9 + ( var2 * ! var5 ) , 
+var2 * ( var1 -> var10 + var5 ) ) ; 
+} 

@@ -1,0 +1,9 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+UnsharpContext * var2 = var1 -> var3 ; 
+if ( var4 && var2 -> var5 ) { 
+func2 ( var1 ) ; 
+} 
+func3 ( & var2 -> var6 ) ; 
+func3 ( & var2 -> var7 ) ; 
+} 

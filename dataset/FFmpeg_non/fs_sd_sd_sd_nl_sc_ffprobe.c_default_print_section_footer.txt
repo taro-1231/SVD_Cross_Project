@@ -1,0 +1,10 @@
+static void func1 ( WriterContext * var1 ) 
+{ 
+DefaultContext * var2 = var1 -> var3 ; 
+const struct var4 * var4 = var1 -> var4 [ var1 -> var5 ] ; 
+char var6 [ number ] ; 
+if ( var2 -> var7 || var2 -> var8 [ var1 -> var5 ] ) 
+return ; 
+if ( ! ( var4 -> var9 & ( var10 | var11 ) ) ) 
+printf ( str , func2 ( var6 , sizeof ( var6 ) , var4 -> var12 ) ) ; 
+} 

@@ -1,0 +1,15 @@
+double func1 ( AVStream * var1 ) 
+{ 
+uint8_t * var2 = func2 ( var1 , 
+var3 , var4 ) ; 
+double var5 = number ; 
+if ( var2 ) 
+var5 = - func3 ( ( int32_t * ) var2 ) ; 
+var5 -= number * floor ( var5 / number + number / number ) ; 
+if ( fabs ( var5 - number * round ( var5 / number ) ) > number ) 
+av_log ( var4 , AV_LOG_WARNING , str 
+str 
+str 
+str ) ; 
+return var5 ; 
+} 

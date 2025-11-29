@@ -1,0 +1,15 @@
+static void func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+XCBGrabContext * var3 = var1 -> var4 ; 
+int64_t var5 , var6 ; 
+int64_t var7 = func2 ( number , var3 -> var8 , var9 ) ; 
+var3 -> var10 += var7 ; 
+for ( ; ; ) { 
+var5 = func3 ( ) ; 
+var6 = var3 -> var10 - var5 ; 
+if ( var6 <= number ) 
+break ; 
+func4 ( var6 ) ; 
+} 
+var2 -> var11 = var5 ; 
+} 

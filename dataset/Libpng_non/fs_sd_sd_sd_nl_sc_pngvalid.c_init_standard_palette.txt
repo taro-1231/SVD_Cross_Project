@@ -1,0 +1,30 @@
+func1 ( png_store * var1 , png_structp var2 , png_infop var3 , int var4 , 
+int var5 ) 
+{ 
+store_palette_entry * var6 = func2 ( var1 , var4 , var5 ) ; 
+{ 
+int var7 ; 
+png_color var8 [ number ] ; 
+for ( var7 = number ; var7 < var4 ; ++ var7 ) 
+{ 
+var8 [ var7 ] . var9 = var6 [ var7 ] . var9 ; 
+var8 [ var7 ] . var10 = var6 [ var7 ] . var10 ; 
+var8 [ var7 ] . var11 = var6 [ var7 ] . var11 ; 
+} 
+for ( ; var7 < number ; ++ var7 ) 
+var8 [ var7 ] . var9 = var8 [ var7 ] . var10 = var8 [ var7 ] . var11 = number ; 
+func3 ( var2 , var3 , var8 , var4 ) ; 
+} 
+if ( var5 ) 
+{ 
+int var7 , var12 ; 
+png_byte var13 [ number ] ; 
+for ( var7 = var12 = number ; var7 < var4 ; ++ var7 ) 
+if ( ( var13 [ var7 ] = var6 [ var7 ] . var14 ) < number ) 
+var12 = var7 + number ; 
+for ( ; var7 < number ; ++ var7 ) 
+var13 [ var7 ] = number ; 
+if ( var12 > number ) 
+func4 ( var2 , var3 , var13 , var12 , number ; 
+} 
+} 

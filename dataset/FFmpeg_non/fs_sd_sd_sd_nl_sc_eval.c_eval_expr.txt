@@ -1,0 +1,140 @@
+static double func3 ( Parser * var1 , AVExpr * var2 ) 
+{ 
+switch ( var2 -> var3 ) { 
+case var4 : return var2 -> var5 ; 
+case var6 : return var2 -> var5 * var1 -> var7 [ var2 -> var8 . var9 ] ; 
+case var10 : return var2 -> var5 * var2 -> var8 . func4 ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var12 : return var2 -> var5 * var2 -> var8 . func3 ( var1 -> var13 , func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var14 : return var2 -> var5 * var2 -> var8 . func4 ( var1 -> var13 , func3 ( var1 , var2 -> var11 [ number ] ) , func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var15 : return number / ( number + exp ( number * func3 ( var1 , var2 -> var11 [ number ] ) ) ) ; 
+case var16 : { double var17 = func3 ( var1 , var2 -> var11 [ number ] ) ; return exp ( - var17 * var17 / number ) / sqrt ( number * var18 ) ; } 
+case var19 : return var2 -> var5 * var1 -> var20 [ func5 ( func3 ( var1 , var2 -> var11 [ number ] ) , number , var21 - number ) ] ; 
+case var22 : return var2 -> var5 * ! ! isnan ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var23 : return var2 -> var5 * ! ! isinf ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var24 : return var2 -> var5 * floor ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var25 : return var2 -> var5 * ceil ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var26 : return var2 -> var5 * trunc ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var27 : return var2 -> var5 * sqrt ( func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+case var28 : return var2 -> var5 * ( func3 ( var1 , var2 -> var11 [ number ] ) == number ) ; 
+case var29 : return var2 -> var5 * ( func3 ( var1 , var2 -> var11 [ number ] ) ? func3 ( var1 , var2 -> var11 [ number ] ) : 
+var2 -> var11 [ number ] ? func3 ( var1 , var2 -> var11 [ number ] ) : number ) ; 
+case var30 : return var2 -> var5 * ( ! func3 ( var1 , var2 -> var11 [ number ] ) ? func3 ( var1 , var2 -> var11 [ number ] ) : 
+var2 -> var11 [ number ] ? func3 ( var1 , var2 -> var11 [ number ] ) : number ) ; 
+case var31 : { 
+double var32 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+double var33 = func3 ( var1 , var2 -> var11 [ number ] ) , var34 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+if ( isnan ( var33 ) || isnan ( var34 ) || isnan ( var32 ) || var33 > var34 ) 
+return var35 ; 
+return var2 -> var5 * func6 ( func3 ( var1 , var2 -> var11 [ number ] ) , var33 , var34 ) ; 
+} 
+case var36 : { 
+double var17 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+return var2 -> var5 * ( var17 >= func3 ( var1 , var2 -> var11 [ number ] ) && 
+var17 <= func3 ( var1 , var2 -> var11 [ number ] ) ) ; 
+} 
+case var37 : { 
+double var32 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+int var38 = var2 -> var11 [ number ] ? func5 ( func3 ( var1 , var2 -> var11 [ number ] ) , var39 , var40 ) : var41 ; 
+func7 ( var1 , var38 , str , var32 ) ; 
+return var32 ; 
+} 
+case var42 : { 
+int var43 = func5 ( func3 ( var1 , var2 -> var11 [ number ] ) , number , var21 - number ) ; 
+uint64_t var44 = isnan ( var1 -> var20 [ var43 ] ) ? number : var1 -> var20 [ var43 ] ; 
+var44 = var44 * number + number ; 
+var1 -> var20 [ var43 ] = var44 ; 
+return var2 -> var5 * ( var44 * ( number / var45 ) ) ; 
+} 
+case var46 : { 
+double var17 = var35 ; 
+while ( func3 ( var1 , var2 -> var11 [ number ] ) ) 
+var17 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+return var17 ; 
+} 
+case var47 : { 
+double var48 = number , var17 = number , var49 ; 
+double var32 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+int var50 = var2 -> var11 [ number ] ? func5 ( func3 ( var1 , var2 -> var11 [ number ] ) , number , var21 - number ) : number ; 
+int var51 ; 
+double var52 = var1 -> var20 [ var50 ] ; 
+for ( var51 = number ; var51 < number ; var51 ++ ) { 
+double var53 = var17 ; 
+var1 -> var20 [ var50 ] = var51 ; 
+var49 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+var17 += var48 * var49 ; 
+if ( var53 == var17 && var49 ) 
+break ; 
+var48 *= var32 / ( var51 + number ) ; 
+} 
+var1 -> var20 [ var50 ] = var52 ; 
+return var17 ; 
+} 
+case var54 : { 
+int var51 , var55 ; 
+double var56 = - number , var57 = - number , var49 , var58 = - var59 , var60 = var59 ; 
+double var52 = var1 -> var20 [ number ] ; 
+double var61 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+for ( var51 = - number ; var51 < number ; var51 ++ ) { 
+if ( var51 < number ) { 
+var1 -> var20 [ number ] = var62 [ var51 & number ] * var61 / number ; 
+} else { 
+var1 -> var20 [ number ] = var61 * pow ( number , var51 - number ) ; 
+if ( var51 & number ) var1 -> var20 [ number ] *= - number ; 
+if ( var51 & number ) var1 -> var20 [ number ] += var56 ; 
+else var1 -> var20 [ number ] += var57 ; 
+} 
+var49 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+if ( var49 <= number && var49 > var58 ) { 
+var56 = var1 -> var20 [ number ] ; 
+var58 = var49 ; 
+} 
+if ( var49 >= number && var49 < var60 ) { 
+var57 = var1 -> var20 [ number ] ; 
+var60 = var49 ; 
+} 
+if ( var56 >= number && var57 >= number ) { 
+for ( var55 = number ; var55 < number ; var55 ++ ) { 
+var1 -> var20 [ number ] = ( var56 + var57 ) * number ; 
+if ( var56 == var1 -> var20 [ number ] || var57 == var1 -> var20 [ number ] ) 
+break ; 
+var49 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+if ( var49 <= number ) var56 = var1 -> var20 [ number ] ; 
+if ( var49 >= number ) var57 = var1 -> var20 [ number ] ; 
+if ( isnan ( var49 ) ) { 
+var56 = var57 = var49 ; 
+break ; 
+} 
+} 
+break ; 
+} 
+} 
+var1 -> var20 [ number ] = var52 ; 
+return - var58 < var60 ? var56 : var57 ; 
+} 
+var63 : { 
+double var17 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+double var64 = func3 ( var1 , var2 -> var11 [ number ] ) ; 
+switch ( var2 -> var3 ) { 
+case var65 : return var2 -> var5 * ( var17 - floor ( ( ! var66 || var64 ) ? var17 / var64 : var17 * var67 ) * var64 ) ; 
+case var68 : return var2 -> var5 * func8 ( var17 , var64 ) ; 
+case var69 : return var2 -> var5 * ( var17 > var64 ? var17 : var64 ) ; 
+case var70 : return var2 -> var5 * ( var17 < var64 ? var17 : var64 ) ; 
+case var71 : return var2 -> var5 * ( var17 == var64 ? number : number ) ; 
+case var72 : return var2 -> var5 * ( var17 > var64 ? number : number ) ; 
+case var73 : return var2 -> var5 * ( var17 >= var64 ? number : number ) ; 
+case var74 : return var2 -> var5 * ( var17 < var64 ? number : number ) ; 
+case var75 : return var2 -> var5 * ( var17 <= var64 ? number : number ) ; 
+case var76 : return var2 -> var5 * pow ( var17 , var64 ) ; 
+case var77 : return var2 -> var5 * ( var17 * var64 ) ; 
+case var78 : return var2 -> var5 * ( ( ! var66 || var64 ) ? ( var17 / var64 ) : var17 * var67 ) ; 
+case var79 : return var2 -> var5 * ( var17 + var64 ) ; 
+case var80 : return var2 -> var5 * var64 ; 
+case var81 : return var2 -> var5 * ( var1 -> var20 [ func5 ( var17 , number , var21 - number ) ] = var64 ) ; 
+case var82 : return var2 -> var5 * ( sqrt ( var17 * var17 + var64 * var64 ) ) ; 
+case var83 : return isnan ( var17 ) || isnan ( var64 ) ? var35 : var2 -> var5 * ( ( long int ) var17 & ( long int ) var64 ) ; 
+case var84 : return isnan ( var17 ) || isnan ( var64 ) ? var35 : var2 -> var5 * ( ( long int ) var17 | ( long int ) var64 ) ; 
+} 
+} 
+} 
+return var35 ; 
+} 

@@ -1,0 +1,16 @@
+static void func1 ( void ) 
+{ 
+printf ( str ) ; 
+printf ( str ) ; 
+printf ( str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+str ) ; 
+} 

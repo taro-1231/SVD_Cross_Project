@@ -1,0 +1,20 @@
+static inline void RENAME ( func1 ) ( uint8_t var1 [ ] , int var2 ) 
+{ 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+str 
+str 
+: str ( var1 ) 
+: str ( ( x86_reg ) - var2 ) 
+) ; 
+int i ; 
+uint8_t * p = var1 ; 
+for ( i = 0 ; i < 5 ; i ++ ) { 
+p -= var2 ; 
+memcpy ( p , var1 , 8 ) ; 
+} 
+} 

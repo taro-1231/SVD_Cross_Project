@@ -1,0 +1,36 @@
+static int func1 ( AVFormatContext * var1 , int var2 ) 
+{ 
+HLSContext * var3 = var1 -> var4 ; 
+int var5 , var6 = number ; 
+for ( var5 = number ; var5 < var3 -> var7 ; var5 ++ ) 
+var3 -> var8 [ var5 ] -> var9 = number ; 
+for ( var5 = number ; var5 < var1 -> var10 ; var5 ++ ) { 
+AVStream * var11 = var1 -> var12 [ var5 ] ; 
+struct playlist * var13 = var3 -> var8 [ var1 -> var12 [ var5 ] -> var14 ] ; 
+if ( var11 -> var15 < var16 ) 
+var13 -> var9 = number ; 
+} 
+for ( var5 = number ; var5 < var3 -> var7 ; var5 ++ ) { 
+struct playlist * var13 = var3 -> var8 [ var5 ] ; 
+if ( var13 -> var9 && ! var13 -> var17 ) { 
+var13 -> var17 = number ; 
+var6 = number ; 
+var13 -> var18 = func2 ( var3 , var13 ) ; 
+var13 -> var19 . var20 = number ; 
+if ( var3 -> var21 != var22 ) { 
+var13 -> var23 = var3 -> var21 ; 
+var13 -> var24 = var25 ; 
+var13 -> var26 = - number ; 
+} 
+func3 ( var1 , var27 , str , var5 , var13 -> var18 ) ; 
+} else if ( var2 && ! var13 -> var9 && var13 -> var17 ) { 
+if ( var13 -> var28 ) 
+func4 ( var13 -> var28 ) ; 
+var13 -> var28 = var29 ; 
+var13 -> var17 = number ; 
+var6 = number ; 
+func3 ( var1 , var27 , str , var5 ) ; 
+} 
+} 
+return var6 ; 
+} 

@@ -1,0 +1,27 @@
+static inline void func1 ( AC3DecodeContext * var1 , int var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 <= var2 ; var3 ++ ) { 
+if ( var1 -> var4 [ var3 ] ) { 
+int var5 ; 
+FFTSample * var6 = var1 -> var7 + number ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var6 [ var5 ] = var1 -> var8 [ var3 ] [ number * var5 ] ; 
+var1 -> var9 . func2 ( & var1 -> var9 , var1 -> var7 , var6 ) ; 
+var1 -> var10 -> func3 ( var1 -> var11 [ var3 - number ] , var1 -> var12 [ var3 - number ] , 
+var1 -> var7 , var1 -> var13 , number , number ) ; 
+var1 -> var10 -> vector_fmul_window ( var1 -> var11 [ var3 - number ] , var1 -> var12 [ var3 - number ] , 
+var1 -> var7 , var1 -> var13 , number ) ; 
+for ( var5 = number ; var5 < number ; var5 ++ ) 
+var6 [ var5 ] = var1 -> var8 [ var3 ] [ number * var5 + number ] ; 
+var1 -> var9 . func2 ( & var1 -> var9 , var1 -> var12 [ var3 - number ] , var6 ) ; 
+} else { 
+var1 -> var14 . func2 ( & var1 -> var14 , var1 -> var7 , var1 -> var8 [ var3 ] ) ; 
+var1 -> var10 -> func3 ( var1 -> var11 [ var3 - number ] , var1 -> var12 [ var3 - number ] , 
+var1 -> var7 , var1 -> var13 , number , number ) ; 
+var1 -> var10 -> vector_fmul_window ( var1 -> var11 [ var3 - number ] , var1 -> var12 [ var3 - number ] , 
+var1 -> var7 , var1 -> var13 , number ) ; 
+memcpy ( var1 -> var12 [ var3 - number ] , var1 -> var7 + number , number * sizeof ( FFTSample ) ) ; 
+} 
+} 
+} 

@@ -1,0 +1,5 @@
+static void func1 ( AVCodecContext * var1 ) 
+{ 
+ADPCMDecodeContext * var2 = var1 -> var3 ; 
+var2 -> var4 = number ; 
+} 

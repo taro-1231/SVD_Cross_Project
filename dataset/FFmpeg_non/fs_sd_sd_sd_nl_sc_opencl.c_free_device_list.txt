@@ -1,0 +1,19 @@
+static void func1 ( AVOpenCLDeviceList * var1 ) 
+{ 
+int var2 , var3 ; 
+if ( ! var1 ) 
+return ; 
+for ( var2 = number ; var2 < var1 -> var4 ; var2 ++ ) { 
+if ( ! var1 -> var5 [ var2 ] ) 
+continue ; 
+for ( var3 = number ; var3 < var1 -> var5 [ var2 ] -> var6 ; var3 ++ ) { 
+func2 ( & ( var1 -> var5 [ var2 ] -> var7 [ var3 ] -> var8 ) ) ; 
+func2 ( & ( var1 -> var5 [ var2 ] -> var7 [ var3 ] ) ) ; 
+} 
+func2 ( & var1 -> var5 [ var2 ] -> var7 ) ; 
+func2 ( & ( var1 -> var5 [ var2 ] -> var9 ) ) ; 
+func2 ( & var1 -> var5 [ var2 ] ) ; 
+} 
+func2 ( & var1 -> var5 ) ; 
+var1 -> var4 = number ; 
+} 

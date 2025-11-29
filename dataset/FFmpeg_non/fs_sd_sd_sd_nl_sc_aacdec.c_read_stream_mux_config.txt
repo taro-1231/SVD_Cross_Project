@@ -1,0 +1,64 @@
+static int func1 ( struct LATMContext * var1 , 
+GetBitContext * var2 ) 
+{ 
+int var3 , var4 = func2 ( var2 , number ) ; 
+var1 -> var5 = number ; 
+if ( var4 ) 
+var1 -> var5 = func2 ( var2 , number ) ; 
+if ( ! var1 -> var5 ) { 
+if ( var4 ) 
+func3 ( var2 ) ; 
+func4 ( var2 , number ) ; 
+func4 ( var2 , number ) ; 
+if ( func2 ( var2 , number ) ) { 
+func5 ( var1 -> var6 . var7 , str ) ; 
+return var8 ; 
+} 
+if ( func2 ( var2 , number ) ) { 
+func5 ( var1 -> var6 . var7 , str ) ; 
+return var8 ; 
+} 
+if ( ! var4 ) { 
+if ( ( var3 = func6 ( var1 , var2 , number ) ) < number ) 
+return var3 ; 
+} else { 
+int var9 = func3 ( var2 ) ; 
+if ( ( var3 = func6 ( var1 , var2 , var9 ) ) < number ) 
+return var3 ; 
+var9 -= var3 ; 
+func7 ( var2 , var9 ) ; 
+} 
+var1 -> var10 = func2 ( var2 , number ) ; 
+switch ( var1 -> var10 ) { 
+case number : 
+func4 ( var2 , number ) ; 
+break ; 
+case number : 
+var1 -> var11 = func2 ( var2 , number ) ; 
+break ; 
+case number : 
+case number : 
+case 5 : 
+func4 ( var2 , number ) ; 
+break ; 
+case number : 
+case 7 : 
+func4 ( var2 , number ) ; 
+break ; 
+} 
+if ( func2 ( var2 , number ) ) { 
+if ( var4 ) { 
+func3 ( var2 ) ; 
+} else { 
+int var12 ; 
+do { 
+var12 = func2 ( var2 , number ) ; 
+func4 ( var2 , number ) ; 
+} while ( var12 ) ; 
+} 
+} 
+if ( func2 ( var2 , number ) ) 
+func4 ( var2 , number ) ; 
+} 
+return number ; 
+} 

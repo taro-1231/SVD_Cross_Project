@@ -1,0 +1,163 @@
+static void func1 ( AVFilterContext * var1 , 
+AVFrame * var2 , const AVFrame * var3 , 
+int var4 , int var5 ) 
+{ 
+OverlayContext * var6 = var1 -> var7 ; 
+int var8 , var9 , var10 , var11 , var12 , var13 ; 
+const int var14 = var3 -> var15 ; 
+const int var16 = var3 -> var17 ; 
+const int var18 = var2 -> var15 ; 
+const int var19 = var2 -> var17 ; 
+if ( var4 >= var18 || var4 + var14 < number || 
+var5 >= var19 || var5 + var16 < number ) 
+return ; 
+if ( var6 -> var20 ) { 
+uint8_t var21 ; 
+const int var22 = var6 -> var23 [ var24 ] ; 
+const int var25 = var6 -> var23 [ var26 ] ; 
+const int var27 = var6 -> var23 [ var28 ] ; 
+const int var29 = var6 -> var23 [ var30 ] ; 
+const int var31 = var6 -> var32 [ number ] ; 
+const int var33 = var6 -> var34 [ var24 ] ; 
+const int var35 = var6 -> var34 [ var26 ] ; 
+const int var36 = var6 -> var34 [ var28 ] ; 
+const int var37 = var6 -> var34 [ var30 ] ; 
+const int var38 = var6 -> var39 [ number ] ; 
+const int var40 = var6 -> var40 ; 
+uint8_t * var6 , * var41 , * var42 , * var43 ; 
+var8 = func2 ( - var5 , number ) ; 
+var41 = var3 -> var44 [ number ] + var8 * var3 -> var45 [ number ] ; 
+var43 = var2 -> var44 [ number ] + ( var5 + var8 ) * var2 -> var45 [ number ] ; 
+for ( var9 = func3 ( - var5 + var19 , var16 ) ; var8 < var9 ; var8 ++ ) { 
+var10 = func2 ( - var4 , number ) ; 
+var6 = var41 + var10 * var38 ; 
+var42 = var43 + ( var4 + var10 ) * var31 ; 
+for ( var11 = func3 ( - var4 + var18 , var14 ) ; var10 < var11 ; var10 ++ ) { 
+var21 = var6 [ var37 ] ; 
+if ( var40 && var21 != number && var21 != number ) { 
+uint8_t var46 = var42 [ var29 ] ; 
+var21 = func4 ( var21 , var46 ) ; 
+} 
+switch ( var21 ) { 
+case number : 
+break ; 
+case number : 
+var42 [ var22 ] = var6 [ var33 ] ; 
+var42 [ var25 ] = var6 [ var35 ] ; 
+var42 [ var27 ] = var6 [ var36 ] ; 
+break ; 
+var47 : 
+var42 [ var22 ] = func5 ( var42 [ var22 ] * ( number - var21 ) + var6 [ var33 ] * var21 ) ; 
+var42 [ var25 ] = func5 ( var42 [ var25 ] * ( number - var21 ) + var6 [ var35 ] * var21 ) ; 
+var42 [ var27 ] = func5 ( var42 [ var27 ] * ( number - var21 ) + var6 [ var36 ] * var21 ) ; 
+} 
+if ( var40 ) { 
+switch ( var21 ) { 
+case number : 
+break ; 
+case number : 
+var42 [ var29 ] = var6 [ var37 ] ; 
+break ; 
+var47 : 
+var42 [ var29 ] += func5 ( ( number - var42 [ var29 ] ) * var6 [ var37 ] ) ; 
+} 
+} 
+var42 += var31 ; 
+var6 += var38 ; 
+} 
+var43 += var2 -> var45 [ number ] ; 
+var41 += var3 -> var45 [ number ] ; 
+} 
+} else { 
+const int var40 = var6 -> var40 ; 
+if ( var40 ) { 
+uint8_t var21 ; 
+uint8_t * var6 , * var37 , * var42 , * var29 ; 
+var8 = func2 ( - var5 , number ) ; 
+var37 = var3 -> var44 [ number ] + var8 * var3 -> var45 [ number ] ; 
+var29 = var2 -> var44 [ number ] + ( var5 + var8 ) * var2 -> var45 [ number ] ; 
+for ( var9 = func3 ( - var5 + var19 , var16 ) ; var8 < var9 ; var8 ++ ) { 
+var10 = func2 ( - var4 , number ) ; 
+var6 = var37 + var10 ; 
+var42 = var29 + var4 + var10 ; 
+for ( var11 = func3 ( - var4 + var18 , var14 ) ; var10 < var11 ; var10 ++ ) { 
+var21 = * var6 ; 
+if ( var21 != number && var21 != number ) { 
+uint8_t var46 = * var42 ; 
+var21 = func4 ( var21 , var46 ) ; 
+} 
+switch ( var21 ) { 
+case number : 
+break ; 
+case number : 
+* var42 = * var6 ; 
+break ; 
+var47 : 
+* var42 += func5 ( ( number - * var42 ) ** var6 ) ; 
+} 
+var42 += number ; 
+var6 += number ; 
+} 
+var29 += var2 -> var45 [ number ] ; 
+var37 += var3 -> var45 [ number ] ; 
+} 
+} 
+for ( var8 = number ; var8 < number ; var8 ++ ) { 
+int var48 = var8 ? var6 -> var48 : number ; 
+int var49 = var8 ? var6 -> var49 : number ; 
+int var50 = func6 ( var14 , var48 ) ; 
+int var51 = func6 ( var16 , var49 ) ; 
+int var52 = func6 ( var18 , var48 ) ; 
+int var53 = func6 ( var19 , var49 ) ; 
+int var54 = var5 >> var49 ; 
+int var55 = var4 >> var48 ; 
+uint8_t * var6 , * var41 , * var42 , * var43 , * var56 , * var57 ; 
+var10 = func2 ( - var54 , number ) ; 
+var41 = var3 -> var44 [ var8 ] + var10 * var3 -> var45 [ var8 ] ; 
+var43 = var2 -> var44 [ var8 ] + ( var54 + var10 ) * var2 -> var45 [ var8 ] ; 
+var57 = var3 -> var44 [ number ] + ( var10 << var49 ) * var3 -> var45 [ number ] ; 
+for ( var11 = func3 ( - var54 + var53 , var51 ) ; var10 < var11 ; var10 ++ ) { 
+var12 = func2 ( - var55 , number ) ; 
+var42 = var43 + var55 + var12 ; 
+var6 = var41 + var12 ; 
+var56 = var57 + ( var12 << var48 ) ; 
+for ( var13 = func3 ( - var55 + var52 , var50 ) ; var12 < var13 ; var12 ++ ) { 
+int var58 , var59 , var21 ; 
+if ( var48 && var49 && var10 + number < var51 && var12 + number < var50 ) { 
+var21 = ( var56 [ number ] + var56 [ var3 -> var45 [ number ] ] + 
+var56 [ number ] + var56 [ var3 -> var45 [ number ] + number ] ) >> number ; 
+} else if ( var48 || var49 ) { 
+var59 = var48 && var12 + number < var50 ? 
+( var56 [ number ] + var56 [ number ] ) >> number : var56 [ number ] ; 
+var58 = var49 && var10 + number < var51 ? 
+( var56 [ number ] + var56 [ var3 -> var45 [ number ] ] ) >> number : var56 [ number ] ; 
+var21 = ( var58 + var59 ) >> number ; 
+} else 
+var21 = var56 [ number ] ; 
+if ( var40 && var21 != number && var21 != number ) { 
+uint8_t var46 ; 
+if ( var48 && var49 && var10 + number < var51 && var12 + number < var50 ) { 
+var46 = ( var42 [ number ] + var42 [ var3 -> var45 [ number ] ] + 
+var42 [ number ] + var42 [ var3 -> var45 [ number ] + number ] ) >> number ; 
+} else if ( var48 || var49 ) { 
+var59 = var48 && var12 + number < var50 ? 
+( var42 [ number ] + var42 [ number ] ) >> number : var42 [ number ] ; 
+var58 = var49 && var10 + number < var51 ? 
+( var42 [ number ] + var42 [ var3 -> var45 [ number ] ] ) >> number : var42 [ number ] ; 
+var46 = ( var58 + var59 ) >> number ; 
+} else 
+var46 = var42 [ number ] ; 
+var21 = func4 ( var21 , var46 ) ; 
+} 
+* var42 = func5 ( * var42 * ( number - var21 ) + * var6 * var21 ) ; 
+var6 ++ ; 
+var42 ++ ; 
+var56 += number << var48 ; 
+} 
+var43 += var2 -> var45 [ var8 ] ; 
+var41 += var3 -> var45 [ var8 ] ; 
+var57 += ( number << var49 ) * var3 -> var45 [ number ] ; 
+} 
+} 
+} 
+} 

@@ -1,0 +1,184 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , AVPacket * var4 ) 
+{ 
+AVFrame * var5 = var2 ; 
+const uint8_t * var6 = var4 -> var2 ; 
+int var7 = var4 -> var8 ; 
+AC3DecodeContext * var9 = var1 -> var10 ; 
+int var11 , var12 , var13 , var14 ; 
+const uint8_t * var15 ; 
+const SHORTFLOAT * var16 [ var17 ] ; 
+enum AVMatrixEncoding var18 ; 
+AVDownmixInfo * var19 ; 
+if ( var7 >= number && func2 ( var6 ) == number ) { 
+int var20 = func3 ( var7 , var21 ) >> number ; 
+var9 -> var22 . func4 ( ( uint16_t * ) var9 -> var23 , 
+( const uint16_t * ) var6 , var20 ) ; 
+} else 
+memcpy ( var9 -> var23 , var6 , func3 ( var7 , var21 ) ) ; 
+var6 = var9 -> var23 ; 
+if ( ( var14 = func5 ( & var9 -> var24 , var6 , var7 ) ) < number ) 
+return var14 ; 
+var13 = func6 ( var9 ) ; 
+if ( var13 ) { 
+switch ( var13 ) { 
+case var25 : 
+func7 ( var1 , var26 , str ) ; 
+return var27 ; 
+case var28 : 
+func7 ( var1 , var26 , str ) ; 
+break ; 
+case var29 : 
+func7 ( var1 , var26 , str ) ; 
+break ; 
+case var30 : 
+func7 ( var1 , var26 , str ) ; 
+break ; 
+case var31 : 
+if ( var9 -> var32 == var33 || var9 -> var34 ) { 
+func7 ( var1 , AV_LOG_WARNING , str 
+str ) ; 
+* var3 = number ; 
+return var7 ; 
+} else { 
+func7 ( var1 , var26 , str ) ; 
+} 
+break ; 
+case var35 : 
+case var36 : 
+break ; 
+var37 : 
+* var3 = number ; 
+return var13 ; 
+} 
+} else { 
+if ( var9 -> var38 > var7 ) { 
+func7 ( var1 , var26 , str ) ; 
+var13 = var30 ; 
+} else if ( var1 -> var39 & ( var40 | var41 ) ) { 
+if ( func8 ( func9 ( var42 ) , number , & var6 [ number ] , 
+var9 -> var38 - number ) ) { 
+func7 ( var1 , var26 , str ) ; 
+if ( var1 -> var39 & var43 ) 
+return var27 ; 
+var13 = var35 ; 
+} 
+} 
+} 
+if ( ! var13 ) { 
+var1 -> var44 = var9 -> var44 ; 
+var1 -> var45 = var9 -> var45 ; 
+} 
+if ( ! var13 || ( var9 -> var46 && var9 -> var47 != var9 -> var46 ) ) { 
+var9 -> var47 = var9 -> var46 ; 
+var9 -> var48 = var9 -> var49 ; 
+if ( var9 -> var50 ) 
+var9 -> var48 |= var51 ; 
+if ( var9 -> var46 > number && 
+var1 -> var52 == var53 ) { 
+var9 -> var47 = number ; 
+var9 -> var48 = var54 ; 
+} else if ( var9 -> var46 > number && 
+var1 -> var52 == var55 ) { 
+var9 -> var47 = number ; 
+var9 -> var48 = var56 ; 
+} 
+var9 -> var57 = var58 [ var9 -> var59 ] ; 
+var9 -> var60 = var58 [ var9 -> var61 ] ; 
+var9 -> var62 = var63 ; 
+var9 -> var64 = var63 ; 
+if ( var9 -> var46 != var9 -> var47 && ! ( ( var9 -> var48 & var51 ) && 
+var9 -> var65 == var9 -> var47 ) ) { 
+func10 ( var9 ) ; 
+} 
+} else if ( ! var9 -> var46 ) { 
+func7 ( var1 , var26 , str ) ; 
+return var27 ; 
+} 
+var1 -> var46 = var9 -> var47 ; 
+var1 -> var66 = var67 [ var9 -> var48 & ~ var51 ] ; 
+if ( var9 -> var48 & var51 ) 
+var1 -> var66 |= var69 ; 
+var1 -> var70 = var9 -> var71 ; 
+if ( var9 -> var71 == number && var9 -> var46 > number ) 
+var1 -> var70 = var72 ; 
+var5 -> var73 = var9 -> var74 * var75 ; 
+if ( ( var14 = func11 ( var1 , var5 , number ) ) < number ) 
+return var14 ; 
+var15 = var76 [ var9 -> var48 & ~ var51 ] [ var9 -> var50 ] ; 
+for ( var12 = number ; var12 < var17 ; var12 ++ ) { 
+var16 [ var12 ] = var9 -> var16 [ var12 ] ; 
+var9 -> var77 [ var12 ] = var9 -> var16 [ var12 ] ; 
+} 
+for ( var12 = number ; var12 < var9 -> var46 ; var12 ++ ) { 
+if ( var12 < var9 -> var47 ) 
+var9 -> var77 [ var15 [ var12 ] ] = ( SHORTFLOAT * ) var5 -> var2 [ var12 ] ; 
+} 
+for ( var11 = number ; var11 < var9 -> var74 ; var11 ++ ) { 
+if ( ! var13 && func12 ( var9 , var11 ) ) { 
+func7 ( var1 , var26 , str ) ; 
+var13 = number ; 
+} 
+if ( var13 ) 
+for ( var12 = number ; var12 < var9 -> var47 ; var12 ++ ) 
+memcpy ( ( ( SHORTFLOAT * ) var5 -> var2 [ var12 ] ) + var75 * var11 , var16 [ var12 ] , var75 * sizeof ( SHORTFLOAT ) ) ; 
+for ( var12 = number ; var12 < var9 -> var47 ; var12 ++ ) 
+var16 [ var12 ] = var9 -> var77 [ var15 [ var12 ] ] ; 
+for ( var12 = number ; var12 < var9 -> var47 ; var12 ++ ) { 
+if ( ! var12 || var15 [ var12 ] ) 
+var9 -> var77 [ var15 [ var12 ] ] += var75 ; 
+} 
+} 
+func13 ( var5 , var13 ? var78 : number ) ; 
+for ( var12 = number ; var12 < var9 -> var47 ; var12 ++ ) 
+memcpy ( var9 -> var16 [ var12 ] , var16 [ var12 ] , var75 * sizeof ( SHORTFLOAT ) ) ; 
+var18 = var79 ; 
+if ( var9 -> var49 == var56 && 
+var9 -> var49 == ( var9 -> var48 & ~ var51 ) ) { 
+if ( var9 -> var80 == var81 ) 
+var18 = var82 ; 
+else if ( var9 -> var83 == var84 ) 
+var18 = var85 ; 
+} else if ( var9 -> var49 >= var86 && 
+var9 -> var49 == ( var9 -> var48 & ~ var51 ) ) { 
+switch ( var9 -> var87 ) { 
+case var88 : 
+var18 = var89 ; 
+break ; 
+case var90 : 
+var18 = var91 ; 
+break ; 
+var37 : 
+break ; 
+} 
+} 
+if ( ( var14 = func14 ( var5 , var18 ) ) < number ) 
+return var14 ; 
+if ( ( var19 = func15 ( var5 ) ) ) { 
+switch ( var9 -> var92 ) { 
+case var93 : 
+var19 -> var94 = var95 ; 
+break ; 
+case var96 : 
+var19 -> var94 = var97 ; 
+break ; 
+case var98 : 
+var19 -> var94 = var99 ; 
+break ; 
+var37 : 
+var19 -> var94 = var100 ; 
+break ; 
+} 
+var19 -> var59 = var58 [ var9 -> var59 ] ; 
+var19 -> var101 = var58 [ var9 -> var101 ] ; 
+var19 -> var61 = var58 [ var9 -> var61 ] ; 
+var19 -> var102 = var58 [ var9 -> var102 ] ; 
+if ( var9 -> var103 ) 
+var19 -> var104 = var105 [ var9 -> var104 ] ; 
+else 
+var19 -> var104 = number ; 
+} else 
+return func16 ( var106 ) ; 
+* var3 = number ; 
+return func3 ( var7 , var9 -> var38 ) ; 
+} 

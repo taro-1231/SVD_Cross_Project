@@ -1,0 +1,115 @@
+static int func1 ( MatroskaDemuxContext * var1 , uint8_t * var2 , 
+int var3 , int64_t var4 , uint64_t var5 , 
+uint64_t var6 , int var7 , 
+uint8_t * var8 , uint64_t var9 , int var10 , 
+int64_t var11 , int64_t var12 ) 
+{ 
+uint64_t var13 = var14 ; 
+MatroskaTrack * var15 ; 
+int var16 = number ; 
+AVStream * var17 ; 
+int16_t var18 ; 
+uint32_t * var19 = var20 ; 
+int var21 , var22 , var23 = number ; 
+uint64_t var24 ; 
+int var25 = number ; 
+if ( ( var21 = func2 ( var1 , var2 , var3 , & var24 ) ) < number ) { 
+func3 ( var1 -> var26 , var27 , str ) ; 
+return var21 ; 
+} 
+var2 += var21 ; 
+var3 -= var21 ; 
+var15 = func4 ( var1 , var24 ) ; 
+if ( ! var15 || ! var15 -> var28 ) { 
+func3 ( var1 -> var26 , AV_LOG_INFO , 
+str PRIu64 str , var24 , var3 ) ; 
+return var29 ; 
+} else if ( var3 <= number ) 
+return number ; 
+var17 = var15 -> var28 ; 
+if ( var17 -> var30 >= var31 ) 
+return var16 ; 
+func5 ( var6 != var14 ) ; 
+var18 = func6 ( func7 ( var2 ) , number ) ; 
+var2 += number ; 
+var22 = * var2 ++ ; 
+var3 -= number ; 
+if ( var7 == - number ) 
+var7 = var22 & number ? var32 : number ; 
+if ( var5 != ( uint64_t ) - number && 
+( var18 >= number || var5 >= - var18 ) ) { 
+var13 = var5 + var18 - var15 -> var33 ; 
+if ( var15 -> var34 == var35 && 
+var13 < var15 -> var36 ) 
+var7 = number ; 
+if ( var7 ) 
+func8 ( var17 , var11 , var13 , number , number , 
+var37 ) ; 
+} 
+if ( var1 -> var38 && 
+var15 -> var34 != var35 ) { 
+if ( var13 < var1 -> var39 ) 
+return var16 ; 
+if ( var7 ) 
+var1 -> var38 = number ; 
+else if ( ! var17 -> var38 ) { 
+func3 ( var1 -> var26 , var27 , str ) ; 
+var1 -> var38 = number ; 
+} 
+} 
+var16 = func9 ( var1 , & var2 , & var3 , ( var22 & number ) >> number , 
+& var19 , & var23 ) ; 
+if ( var16 ) 
+goto var40 ; 
+if ( var15 -> var41 . var42 == number ) { 
+if ( var17 -> var43 -> var44 == var45 ) { 
+if ( var15 -> var41 . var42 != var17 -> var43 -> var46 || ! var17 -> var43 -> var47 ) 
+var25 = number ; 
+} 
+} 
+if ( ! var6 && var25 ) 
+var6 = var15 -> var48 * var23 / var1 -> var49 ; 
+if ( var5 != ( uint64_t ) - number && ( var18 >= number || var5 >= - var18 ) ) 
+var15 -> var36 = 
+func10 ( var15 -> var36 , var13 + var6 ) ; 
+for ( var21 = number ; var21 < var23 ; var21 ++ ) { 
+int64_t var50 = var6 * ( var21 + number ) / var23 - var6 * var21 / var23 ; 
+if ( var19 [ var21 ] > var3 ) { 
+func3 ( var1 -> var26 , var27 , str ) ; 
+break ; 
+} 
+if ( ( var17 -> var43 -> var44 == var51 || 
+var17 -> var43 -> var44 == var52 || 
+var17 -> var43 -> var44 == var53 || 
+var17 -> var43 -> var44 == var54 ) && 
+var17 -> var43 -> var55 && var15 -> var41 . var56 ) { 
+var16 = func11 ( var1 , var15 , var17 , var2 , 
+var19 [ var21 ] , 
+var13 , var4 ) ; 
+if ( var16 ) 
+goto var40 ; 
+} else if ( var17 -> var43 -> var44 == var57 ) { 
+var16 = func12 ( var1 , var15 , var17 , 
+var2 , var19 [ var21 ] , 
+var13 , var50 , 
+var4 ) ; 
+if ( var16 ) 
+goto var40 ; 
+} else { 
+var16 = func13 ( var1 , var15 , var17 , var2 , var19 [ var21 ] , 
+var13 , var50 , var4 , 
+! var21 ? var7 : number , 
+var8 , var9 , var10 , 
+var12 ) ; 
+if ( var16 ) 
+goto var40 ; 
+} 
+if ( var13 != var14 ) 
+var13 = var50 ? var13 + var50 : var14 ; 
+var2 += var19 [ var21 ] ; 
+var3 -= var19 [ var21 ] ; 
+} 
+var40 : 
+func14 ( var19 ) ; 
+return var16 ; 
+} 

@@ -1,0 +1,10 @@
+static void * func1 ( size_t var1 ) 
+{ 
+void * var2 = calloc ( number , var1 ) ; 
+if ( ! var2 ) { 
+fprintf ( var3 , str ) ; 
+func2 ( var4 . var5 ) ; 
+exit ( number ) ; 
+} 
+return var2 ; 
+} 

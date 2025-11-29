@@ -1,0 +1,72 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+uint8_t * var3 [ number ] , * var4 [ number ] ; 
+int var5 [ number ] , var6 [ number ] ; 
+int var7 = number , var8 = number , var9 , var10 ; 
+enum AVPixelFormat var11 = var12 , var13 = var14 ; 
+const char * var15 = var16 ; 
+const char * var17 = var16 ; 
+FILE * var18 ; 
+int var19 ; 
+struct SwsContext * var20 ; 
+int var21 , var22 ; 
+if ( var1 != number ) { 
+fprintf ( var23 , str 
+str 
+str 
+str 
+str , var2 [ number ] ) ; 
+exit ( number ) ; 
+} 
+var17 = var2 [ number ] ; 
+var15 = var2 [ number ] ; 
+if ( func2 ( & var9 , & var10 , var15 ) < number ) { 
+fprintf ( var23 , 
+str , 
+var15 ) ; 
+exit ( number ) ; 
+} 
+var18 = fopen ( var17 , str ) ; 
+if ( ! var18 ) { 
+fprintf ( var23 , str , var17 ) ; 
+exit ( number ) ; 
+} 
+var20 = func3 ( var7 , var8 , var11 , 
+var9 , var10 , var13 , 
+var24 , var16 , var16 , var16 ) ; 
+if ( ! var20 ) { 
+fprintf ( var23 , 
+str 
+str , 
+av_get_pix_fmt_name ( var11 ) , var7 , var8 , 
+av_get_pix_fmt_name ( var13 ) , var9 , var10 ) ; 
+var22 = func4 ( var25 ) ; 
+goto var26 ; 
+} 
+if ( ( var22 = func5 ( var3 , var5 , 
+var7 , var8 , var11 , number ) ) < number ) { 
+fprintf ( var23 , str ) ; 
+goto var26 ; 
+} 
+if ( ( var22 = func5 ( var4 , var6 , 
+var9 , var10 , var13 , number ) ) < number ) { 
+fprintf ( var23 , str ) ; 
+goto var26 ; 
+} 
+var19 = var22 ; 
+for ( var21 = number ; var21 < number ; var21 ++ ) { 
+func6 ( var3 , var5 , var7 , var8 , var21 ) ; 
+sws_scale ( var20 , ( const uint8_t * const * ) var3 , 
+var5 , number , var8 , var4 , var6 ) ; 
+fwrite ( var4 [ number ] , number , var19 , var18 ) ; 
+} 
+fprintf ( var23 , str 
+str , 
+av_get_pix_fmt_name ( var13 ) , var9 , var10 , var17 ) ; 
+var26 : 
+fclose ( var18 ) ; 
+func7 ( & var3 [ number ] ) ; 
+func7 ( & var4 [ number ] ) ; 
+func8 ( var20 ) ; 
+return var22 < number ; 
+} 

@@ -1,0 +1,25 @@
+void func1 ( HWND var1 ) 
+{ 
+static TCHAR var2 [ ] = func2 ( str ) 
+func2 ( str ) ; 
+var3 . var4 = sizeof ( OPENFILENAME ) ; 
+var3 . var5 = var1 ; 
+var3 . var6 = var7 ; 
+var3 . var8 = var2 ; 
+var3 . var9 = var7 ; 
+var3 . var10 = number ; 
+var3 . var11 = number ; 
+var3 . var12 = var7 ; 
+var3 . var13 = var14 ; 
+var3 . var15 = var7 ; 
+var3 . var16 = var14 ; 
+var3 . var17 = var7 ; 
+var3 . var18 = var7 ; 
+var3 . var19 = number ; 
+var3 . var20 = number ; 
+var3 . var21 = number ; 
+var3 . var22 = func2 ( str ) ; 
+var3 . var23 = number ; 
+var3 . var24 = var7 ; 
+var3 . var25 = var7 ; 
+} 

@@ -1,0 +1,12 @@
+static double func1 ( const VignetteContext * var1 , int var2 , int var3 ) 
+{ 
+const int var4 = ( var2 - var1 -> var5 ) * var1 -> var6 ; 
+const int var7 = ( var3 - var1 -> var8 ) * var1 -> var9 ; 
+const double var10 = hypot ( var4 , var7 ) / var1 -> var11 ; 
+if ( var10 > number ) { 
+return number ; 
+} else { 
+const double var12 = cos ( var1 -> var13 * var10 ) ; 
+return ( var12 * var12 ) * ( var12 * var12 ) ; 
+} 
+} 

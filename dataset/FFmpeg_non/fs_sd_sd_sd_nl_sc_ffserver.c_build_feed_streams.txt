@@ -1,0 +1,124 @@
+static int func1 ( void ) 
+{ 
+FFServerStream * var1 , * var2 ; 
+int var3 , var4 ; 
+for ( var1 = var5 . var6 ; var1 ; var1 = var1 -> var7 ) { 
+var2 = var1 -> var2 ; 
+if ( ! var2 ) 
+continue ; 
+if ( var1 -> var8 ) { 
+for ( var3 = number ; var3 < var1 -> var9 ; var3 ++ ) 
+var1 -> var10 [ var3 ] = var3 ; 
+continue ; 
+} 
+for ( var3 = number ; var3 < var1 -> var9 ; var3 ++ ) 
+var1 -> var10 [ var3 ] = func2 ( var2 , var1 -> var11 [ var3 ] ) ; 
+} 
+for ( var2 = var5 . var12 ; var2 ; var2 = var2 -> var13 ) { 
+if ( func3 ( var2 -> var14 , var15 ) > number ) { 
+AVFormatContext * var16 = var17 ; 
+int var18 = number ; 
+if ( func4 ( & var16 , var2 -> var14 , var17 , var17 ) < number ) { 
+func5 ( str 
+str , 
+var2 -> var14 ) ; 
+goto var19 ; 
+} 
+if ( func6 ( var16 -> var20 , var21 ) < number ) { 
+func5 ( str ) ; 
+func7 ( & var16 ) ; 
+goto var22 ; 
+} 
+if ( var16 -> var9 != var2 -> var9 ) { 
+func5 ( str 
+str , 
+var2 -> var14 , var16 -> var9 , var2 -> var9 ) ; 
+goto var19 ; 
+} 
+var18 = number ; 
+for ( var3 = number ; var3 < var16 -> var9 ; var3 ++ ) { 
+AVStream * var23 ; 
+LayeredAVStream * var24 ; 
+var24 = var2 -> var11 [ var3 ] ; 
+var23 = var16 -> var11 [ var3 ] ; 
+if ( var24 -> var25 != var23 -> var25 || var24 -> var26 != var23 -> var26 ) { 
+func5 ( str , 
+var3 , var2 -> var14 ) ; 
+var18 = number ; 
+break ; 
+} 
+var18 = func8 ( var24 , var23 , var3 ) ; 
+if ( ! var18 ) 
+break ; 
+} 
+var19 : 
+if ( var16 ) 
+func7 ( & var16 ) ; 
+if ( ! var18 ) { 
+if ( var2 -> var27 ) { 
+func5 ( str , 
+var2 -> var14 ) ; 
+goto var22 ; 
+} 
+func9 ( var2 -> var14 ) ; 
+} 
+} 
+if ( func3 ( var2 -> var14 , var28 ) <= number ) { 
+AVFormatContext * var16 = func10 ( ) ; 
+if ( ! var16 ) { 
+func5 ( str ) ; 
+goto var22 ; 
+} 
+if ( var2 -> var27 ) { 
+func5 ( str 
+str , 
+var2 -> var14 ) ; 
+func11 ( var16 ) ; 
+goto var22 ; 
+} 
+if ( func12 ( & var16 -> var20 , var2 -> var14 , var28 ) < number ) { 
+func5 ( str , 
+var2 -> var14 ) ; 
+func11 ( var16 ) ; 
+goto var22 ; 
+} 
+var16 -> var29 = var2 -> var30 ; 
+for ( var3 = number ; var3 < var2 -> var9 ; var3 ++ ) { 
+AVStream * var31 = func14 ( var16 , var17 ) ; 
+if ( ! var31 ) { 
+func5 ( str ) ; 
+goto var22 ; 
+} 
+func15 ( var31 , var2 -> var11 [ var3 ] ) ; 
+} 
+if ( func16 ( var16 , var17 ) < number ) { 
+func5 ( str ) ; 
+func17 ( & var16 -> var20 ) ; 
+var16 -> var11 = var17 ; 
+var16 -> var9 = number ; 
+func11 ( var16 ) ; 
+goto var22 ; 
+} 
+func18 ( & var16 -> var32 ) ; 
+func17 ( & var16 -> var20 ) ; 
+var16 -> var11 = var17 ; 
+var16 -> var9 = number ; 
+func11 ( var16 ) ; 
+} 
+var4 = func13 ( var2 -> var14 , var33 ) ; 
+if ( var4 < number ) { 
+func5 ( str , 
+var2 -> var14 ) ; 
+goto var22 ; 
+} 
+var2 -> var34 = func19 ( func20 ( var4 ) , 
+var21 ) ; 
+var2 -> var35 = func21 ( var4 , number , var36 ) ; 
+if ( var2 -> var37 && var2 -> var37 < var2 -> var35 ) 
+var2 -> var37 = var2 -> var35 ; 
+func22 ( var4 ) ; 
+} 
+return number ; 
+var22 : 
+return - number ; 
+} 

@@ -1,0 +1,43 @@
+func1 ( int var1 , double var2 , double var3 , 
+double var4 , int * var5 ) 
+{ 
+switch ( var1 ) 
+{ 
+case var6 : 
+case var7 : 
+case var8 : 
+if ( var3 < number ) 
+{ 
+if ( var3 > number ) 
+{ 
+var2 = var2 * var3 + var4 * ( number - var3 ) ; 
+if ( var5 != var9 ) 
+* var5 = number ; 
+} 
+else 
+var2 = var4 ; 
+} 
+break ; 
+case ALPHA_MODE_OFFSET + var10 : 
+case ALPHA_MODE_OFFSET + var11 : 
+case ALPHA_MODE_OFFSET + var12 : 
+if ( var3 < number ) 
+{ 
+if ( var3 > number ) 
+{ 
+var2 *= var3 ; 
+if ( var5 != var9 ) 
+* var5 = number ; 
+} 
+else 
+var2 = number ; 
+} 
+break ; 
+var13 : 
+UNUSED ( var3 ) 
+UNUSED ( var4 ) 
+UNUSED ( var5 ) 
+break ; 
+} 
+return var2 ; 
+} 

@@ -1,0 +1,25 @@
+static av_always_inline void func1 ( int16_t * var1 , 
+int16_t * var2 , 
+const uint8_t * var3 , 
+int var4 , 
+enum AVPixelFormat var5 , 
+int var6 , int var7 , 
+int var8 , int var9 , 
+int var10 , int var11 , 
+int var12 , int var13 , 
+int var14 , int var15 , int var16 , 
+int32_t * var17 ) 
+{ 
+const int var18 = var17 [ var19 ] << var13 , var20 = var17 [ var21 ] << var14 , var22 = var17 [ var23 ] << var15 , 
+var24 = var17 [ var25 ] << var13 , var26 = var17 [ var27 ] << var14 , var28 = var17 [ var29 ] << var15 ; 
+const unsigned var30 = ( number << ( ( var16 ) - number ) ) + ( number << ( var16 - number ) ) ; 
+int var31 ; 
+for ( var31 = number ; var31 < var4 ; var31 ++ ) { 
+int var32 = func2 ( var31 ) >> var9 ; 
+int var33 = ( var32 & var12 ) >> var8 ; 
+int var34 = ( var32 & var11 ) >> var7 ; 
+int var35 = ( var32 & var10 ) >> var6 ; 
+var1 [ var31 ] = ( var18 * var35 + var20 * var34 + var22 * var33 + var30 ) >> ( ( var16 ) - number ) ; 
+var2 [ var31 ] = ( var24 * var35 + var26 * var34 + var28 * var33 + var30 ) >> ( ( var16 ) - number ) ; 
+} 
+} 

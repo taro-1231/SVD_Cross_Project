@@ -1,0 +1,8 @@
+static const uint8_t * func1 ( const EBUR128Context * var1 , int var2 , int var3 ) 
+{ 
+const int var4 = var3 > var1 -> var5 ; 
+const int var6 = var3 >= var2 ; 
+const int var7 = var1 -> var8 [ var3 ] || var3 == var1 -> var5 ; 
+const int var9 = number * var7 + number * var6 + var4 ; 
+return var10 + number * var9 ; 
+} 

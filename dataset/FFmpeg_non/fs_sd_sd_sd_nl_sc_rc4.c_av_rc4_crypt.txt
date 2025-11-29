@@ -1,0 +1,12 @@
+void func1 ( AVRC4 * var1 , var2 * var3 , const var2 * var4 , int var5 , var2 * var6 , int var7 ) { 
+var2 var8 = var1 -> var8 , var9 = var1 -> var9 ; 
+var2 * var10 = var1 -> var10 ; 
+while ( var5 -> number ) { 
+var2 var11 = var10 [ var8 ] + var10 [ var9 ] ; 
+func2 ( var2 , var10 [ var8 ] , var10 [ var9 ] ) ; 
+* var3 += var4 ? * var4 ++ ^ var10 [ var11 ] : var10 [ var11 ] ; 
+var8 ++ ; 
+var9 += var10 [ var8 ] ; 
+} 
+var1 -> var8 = var8 ; var1 -> var9 = var9 ; 
+} 

@@ -1,0 +1,4 @@
+void func1 ( FFDualInputContext * var1 ) 
+{ 
+func2 ( & var1 -> var2 ) ; 
+} 

@@ -1,0 +1,47 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , 
+ASFPacket * var3 ) 
+{ 
+ASFContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+int64_t var7 ; 
+uint64_t var8 ; 
+unsigned char * var9 ; 
+int var10 ; 
+if ( ! var3 -> var11 ) { 
+var3 -> var11 = var3 -> var12 = func2 ( var6 ) ; 
+if ( var3 -> var11 <= number ) 
+return var13 ; 
+if ( ( var10 = func3 ( & var3 -> var14 , var3 -> var11 ) ) < number ) 
+return var10 ; 
+} else 
+func4 ( var6 , number ) ; 
+var3 -> var15 = func2 ( var6 ) ; 
+if ( var4 -> var16 >= number ) 
+func4 ( var6 , var4 -> var16 - number ) ; 
+var7 = func5 ( var6 ) ; 
+if ( var4 -> var17 ) 
+var8 = var4 -> var17 - var7 + var4 -> var18 - var4 -> var19 ; 
+else 
+var8 = var4 -> var20 - var7 + var4 -> var18 - var4 -> var19 ; 
+if ( var8 > var4 -> var20 ) { 
+av_log ( var1 , AV_LOG_ERROR , 
+str PRId64 str , 
+func5 ( var6 ) ) ; 
+return var22 ; 
+} 
+var9 = var3 -> var14 . var21 + var3 -> var11 - var3 -> var12 ; 
+if ( var8 > var3 -> var12 ) 
+return var22 ; 
+if ( var3 -> var12 > var8 ) 
+var3 -> var12 -= var8 ; 
+else 
+var3 -> var12 = number ; 
+if ( ( var10 = func6 ( var6 , var9 , var8 ) ) < number ) 
+return var10 ; 
+if ( var1 -> var23 && var1 -> var24 == number ) 
+func7 ( var1 -> var23 , var9 , var10 ) ; 
+if ( var4 -> var17 ) 
+func4 ( var6 , var4 -> var20 - var4 -> var17 ) ; 
+func4 ( var6 , var4 -> var19 ) ; 
+return number ; 
+} 

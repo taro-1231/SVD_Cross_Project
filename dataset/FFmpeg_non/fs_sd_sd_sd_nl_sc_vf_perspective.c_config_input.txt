@@ -1,0 +1,107 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+func2 var2 , var3 , var4 , var5 , var6 , var7 , var8 , var9 , var10 , var11 ; 
+func2 var12 , var13 , var14 , var15 ; 
+AVFilterContext * var16 = var1 -> var17 ; 
+PerspectiveContext * var18 = var16 -> var19 ; 
+func2 ( * var20 ) [ number ] = var18 -> var20 ; 
+const AVPixFmtDescriptor * var21 = func3 ( var1 -> var22 ) ; 
+func2 var23 [ VAR_VARS_NB ] = { [ VAR_W ] = var1 -> var24 , [ VAR_H ] = var1 -> var25 } ; 
+int var25 = var1 -> var25 ; 
+int var24 = var1 -> var24 ; 
+int var26 , var27 , var28 , var29 , var30 ; 
+for ( var28 = number ; var28 < number ; var28 ++ ) { 
+for ( var29 = number ; var29 < number ; var29 ++ ) { 
+if ( ! var18 -> var31 [ var28 ] [ var29 ] ) 
+return func4 ( var32 ) ; 
+var30 = func5 ( & var18 -> var20 [ var28 ] [ var29 ] , var18 -> var31 [ var28 ] [ var29 ] , 
+var33 , & var23 [ number ] , 
+var34 , var34 , var34 , var34 , 
+number , number , var16 ) ; 
+if ( var30 < number ) 
+return var30 ; 
+} 
+} 
+var18 -> var35 = var21 -> var36 ; 
+var18 -> var37 = var21 -> var38 ; 
+var18 -> var39 = func6 ( var1 -> var22 ) ; 
+if ( ( var30 = func7 ( var18 -> var40 , var1 -> var22 , var1 -> var24 ) ) < number ) 
+return var30 ; 
+var18 -> var41 [ number ] = var18 -> var41 [ number ] = func8 ( var1 -> var25 , var21 -> var38 ) ; 
+var18 -> var41 [ number ] = var18 -> var41 [ number ] = var1 -> var25 ; 
+var18 -> var42 = func9 ( var18 -> var42 , var24 * var25 , number * sizeof ( * var18 -> var42 ) ) ; 
+if ( ! var18 -> var42 ) 
+return func4 ( var43 ) ; 
+switch ( var18 -> var44 ) { 
+case var45 : 
+var8 = ( ( var20 [ number ] [ number ] - var20 [ number ] [ number ] - var20 [ number ] [ number ] + var20 [ number ] [ number ] ) * 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) - 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] - var20 [ number ] [ number ] + var20 [ number ] [ number ] ) * 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ) * var25 ; 
+var9 = ( ( var20 [ number ] [ number ] - var20 [ number ] [ number ] - var20 [ number ] [ number ] + var20 [ number ] [ number ] ) * 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) - 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] - var20 [ number ] [ number ] + var20 [ number ] [ number ] ) * 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ) * var24 ; 
+var11 = ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) - 
+( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var2 = var11 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * var25 + var8 * var20 [ number ] [ number ] ; 
+var3 = var11 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * var24 + var9 * var20 [ number ] [ number ] ; 
+var4 = var11 * var20 [ number ] [ number ] * var24 * var25 ; 
+var5 = var11 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * var25 + var8 * var20 [ number ] [ number ] ; 
+var6 = var11 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) * var24 + var9 * var20 [ number ] [ number ] ; 
+var7 = var11 * var20 [ number ] [ number ] * var24 * var25 ; 
+var10 = var11 * var24 * var25 ; 
+break ; 
+case var46 : 
+var12 = var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var13 = var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var14 = var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var15 = var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var20 [ number ] [ number ] * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var2 = var12 * var13 * var24 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var3 = var12 * var13 * var24 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var4 = var12 * var13 * var24 * ( var20 [ number ] [ number ] * var20 [ number ] [ number ] - var20 [ number ] [ number ] * var20 [ number ] [ number ] ) ; 
+var5 = var13 * var14 * var25 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var6 = var13 * var14 * var25 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var7 = var13 * var14 * var25 * ( var20 [ number ] [ number ] * var20 [ number ] [ number ] - var20 [ number ] [ number ] * var20 [ number ] [ number ] ) ; 
+var8 = var13 * var14 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var12 * var15 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var9 = var13 * var14 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) + 
+var12 * var15 * ( var20 [ number ] [ number ] - var20 [ number ] [ number ] ) ; 
+var10 = var13 * var14 * ( var20 [ number ] [ number ] * var20 [ number ] [ number ] - var20 [ number ] [ number ] * var20 [ number ] [ number ] ) + 
+var12 * var15 * ( var20 [ number ] [ number ] * var20 [ number ] [ number ] - var20 [ number ] [ number ] * var20 [ number ] [ number ] ) ; 
+break ; 
+var47 : 
+func10 ( number ) ; 
+} 
+for ( var27 = number ; var27 < var25 ; var27 ++ ) { 
+for ( var26 = number ; var26 < var24 ; var26 ++ ) { 
+int var48 , var49 ; 
+var48 = ( int ) floor ( var50 * ( var2 * var26 + var3 * var27 + var4 ) / 
+( var8 * var26 + var9 * var27 + var10 ) + number ) ; 
+var49 = ( int ) floor ( var50 * ( var5 * var26 + var6 * var27 + var7 ) / 
+( var8 * var26 + var9 * var27 + var10 ) + number ) ; 
+var18 -> var42 [ var26 + var27 * var24 ] [ number ] = var48 ; 
+var18 -> var42 [ var26 + var27 * var24 ] [ number ] = var49 ; 
+} 
+} 
+for ( var28 = number ; var28 < var50 ; var28 ++ ) { 
+func2 var51 = var28 / ( func2 ) var50 ; 
+func2 var52 [ number ] ; 
+func2 var53 = number ; 
+for ( var29 = number ; var29 < number ; var29 ++ ) 
+var52 [ var29 ] = func11 ( var29 - var51 - number ) ; 
+for ( var29 = number ; var29 < number ; var29 ++ ) 
+var53 += var52 [ var29 ] ; 
+for ( var29 = number ; var29 < number ; var29 ++ ) 
+var18 -> var54 [ var28 ] [ var29 ] = ( int ) floor ( ( number << var55 ) * var52 [ var29 ] / var53 + number ) ; 
+} 
+return number ; 
+} 

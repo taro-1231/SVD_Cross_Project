@@ -1,0 +1,4 @@
+av_cold void func1 ( func2 ) ( PSContext * var1 ) 
+{ 
+func1 ( func3 ) ( & var1 -> var2 ) ; 
+} 

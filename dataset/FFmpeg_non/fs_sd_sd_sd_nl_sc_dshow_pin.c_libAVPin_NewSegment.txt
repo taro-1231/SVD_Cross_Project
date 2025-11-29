@@ -1,0 +1,6 @@
+func1 ( libAVPin * var1 , REFERENCE_TIME var2 , REFERENCE_TIME var3 , 
+double var4 ) 
+{ 
+func2 ( str , var1 ) ; 
+return var5 ; 
+} 

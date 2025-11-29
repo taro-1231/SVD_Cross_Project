@@ -1,0 +1,96 @@
+int func1 ( AVFilterContext * var1 , const char * var2 ) 
+{ 
+AVDictionary * var3 = var4 ; 
+AVDictionaryEntry * var5 ; 
+int var6 = number ; 
+if ( var2 && * var2 ) { 
+if ( ! var1 -> var1 -> var7 ) { 
+func2 ( var1 , var8 , str 
+str , var2 ) ; 
+return func3 ( var9 ) ; 
+} 
+if ( ! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) ) { 
+char * var11 = func4 ( var2 ) ; 
+char * var12 = var11 ; 
+int var13 = number ; 
+int var14 = number ; 
+if ( ! var11 ) { 
+var6 = func3 ( var15 ) ; 
+goto var16 ; 
+} 
+if ( ! strcmp ( var1 -> var1 -> var10 , str ) || 
+! strcmp ( var1 -> var1 -> var10 , str ) ) 
+var13 = number ; 
+else if ( ! strcmp ( var1 -> var1 -> var10 , str ) ) 
+var13 = number ; 
+while ( var13 -- ) { 
+var12 = strchr ( var12 , str ) ; 
+if ( ! var12 ) { 
+var12 = var11 + strlen ( var11 ) ; 
+break ; 
+} 
+var12 ++ ; 
+} 
+var14 = strchr ( var12 , str ) != var4 ; 
+if ( ! strcmp ( var1 -> var1 -> var10 , str ) ) { 
+var14 = number ; 
+while ( ( var12 = strchr ( var12 , str ) ) && var12 [ number ] != str ) { 
+const char * var17 = strchr ( var12 + number , str ) ; 
+const char * var18 = strchr ( var12 + number , str ) ; 
+const int var19 = var17 && ( ! var18 || var17 < var18 ) ; 
+if ( var19 ) { 
+var12 ++ ; 
+break ; 
+} 
+var14 = number ; 
+* var12 += str ; 
+} 
+if ( var12 && * var12 == str ) { 
+var14 = number ; 
+memmove ( var12 , var12 + number , strlen ( var12 ) ) ; 
+} 
+} else 
+while ( ( var12 = strchr ( var12 , str ) ) ) 
+* var12 += str ; 
+if ( var14 ) 
+func2 ( var1 , AV_LOG_WARNING , str 
+str ) ; 
+func2 ( var1 , var20 , str , var11 ) ; 
+var6 = func5 ( var1 , & var3 , var11 ) ; 
+if ( var14 ) { 
+func2 ( var1 , var8 , str 
+str , 
+var11 , var2 ) ; 
+var6 = func3 ( var9 ) ; 
+} else { 
+var6 = func5 ( var1 , & var3 , var11 ) ; 
+} 
+func6 ( & var11 ) ; 
+if ( var6 < number ) 
+goto var16 ; 
+} else 
+{ 
+var6 = func5 ( var1 , & var3 , var2 ) ; 
+if ( var6 < number ) 
+goto var16 ; 
+} 
+} 
+var6 = func7 ( var1 , & var3 ) ; 
+if ( var6 < number ) 
+goto var16 ; 
+if ( ( var5 = func8 ( var3 , str , var4 , var21 ) ) ) { 
+func2 ( var1 , var8 , str , var5 -> var22 ) ; 
+var6 = var23 ; 
+goto var16 ; 
+} 
+var16 : 
+func9 ( & var3 ) ; 
+return var6 ; 
+} 

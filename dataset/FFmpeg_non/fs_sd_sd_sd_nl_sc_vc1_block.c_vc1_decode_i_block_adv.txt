@@ -1,0 +1,154 @@
+static int func1 ( VC1Context * var1 , int16_t var2 [ number ] , int var3 , 
+int var4 , int var5 , int var6 ) 
+{ 
+GetBitContext * var7 = & var1 -> var8 . var7 ; 
+MpegEncContext * var8 = & var1 -> var8 ; 
+int var9 = number ; 
+int var10 ; 
+int16_t * var11 = var12 ; 
+int16_t * var13 , * var14 ; 
+int var15 ; 
+int var16 = var1 -> var16 , var17 = var1 -> var17 ; 
+int var18 = var8 -> var19 ; 
+int var20 ; 
+int var21 , var22 = number ; 
+int var23 = var8 -> var24 + var8 -> var25 * var8 -> var26 ; 
+if ( var3 < number ) { 
+var15 = func2 ( & var8 -> var7 , var27 [ var8 -> var28 ] . var29 , var30 , number ) ; 
+} else { 
+var15 = func2 ( & var8 -> var7 , var31 [ var8 -> var28 ] . var29 , var30 , number ) ; 
+} 
+if ( var15 < number ) { 
+func3 ( var8 -> var32 , var33 , str ) ; 
+return - number ; 
+} 
+if ( var15 ) { 
+const int var34 = ( var6 == number || var6 == number ) ? number - var6 : number ; 
+if ( var15 == number { 
+var15 = func4 ( var7 , number + var34 ) ; 
+} else { 
+if ( var34 ) 
+var15 = ( var15 << var34 ) + func4 ( var7 , var34 ) - ( ( number << var34 ) - number ) ; 
+} 
+if ( func5 ( var7 ) ) 
+var15 = - var15 ; 
+} 
+var15 += func6 ( & var1 -> var8 , var1 -> var35 , var6 , var3 , var1 -> var16 , var1 -> var17 , & var11 , & var9 ) ; 
+* var11 = var15 ; 
+if ( var3 < number ) 
+var20 = var8 -> var36 ; 
+else 
+var20 = var8 -> var37 ; 
+var2 [ number ] = var15 * var20 ; 
+if ( ! var16 && ! var17 ) 
+var18 = number ; 
+var20 = var6 * number + ( ( var6 == var1 -> var38 ) ? var1 -> var39 : number ) ; 
+var13 = var8 -> var13 [ number ] [ number ] + var8 -> var40 [ var3 ] * number ; 
+var14 = var13 ; 
+if ( var9 ) 
+var13 -= number ; 
+else 
+var13 -= number * var8 -> var41 [ var3 ] ; 
+var21 = var8 -> var42 . var43 [ var23 ] ; 
+if ( var3 == number ) 
+var22 = var21 ; 
+else if ( var9 ) { 
+if ( var3 == number ) 
+var22 = var21 ; 
+else if ( var17 && var23 ) 
+var22 = var8 -> var42 . var43 [ var23 - number ] ; 
+} else { 
+if ( var3 == number ) 
+var22 = var21 ; 
+else if ( var16 && var23 >= var8 -> var26 ) 
+var22 = var8 -> var42 . var43 [ var23 - var8 -> var26 ] ; 
+} 
+var10 = number ; 
+if ( var4 ) { 
+int var44 = number , var45 , var46 ; 
+const uint8_t * var47 ; 
+int var48 ; 
+if ( var1 -> var8 . var19 ) { 
+if ( ! var18 && var1 -> var49 == var50 ) { 
+var47 = var1 -> var51 ; 
+} else { 
+if ( ! var9 ) 
+var47 = var1 -> var52 [ number ] ; 
+else 
+var47 = var1 -> var52 [ number ] ; 
+} 
+} else { 
+if ( var1 -> var49 != var50 ) 
+var47 = var1 -> var52 [ number ] ; 
+else 
+var47 = var1 -> var51 ; 
+} 
+while ( ! var44 ) { 
+func7 ( var1 , & var44 , & var45 , & var46 , var5 ) ; 
+var10 += var45 ; 
+if ( var10 > number ) 
+break ; 
+var2 [ var47 [ var10 ++ ] ] = var46 ; 
+} 
+if ( var18 ) { 
+int var53 ; 
+if ( var9 ) { 
+var53 = var1 -> var54 ; 
+} else { 
+var53 = var1 -> var55 ; 
+var13 += number ; 
+} 
+if ( var22 && var21 != var22 ) { 
+var21 = var21 * number + ( ( var21 == var1 -> var38 ) ? var1 -> var39 : number ) - number ; 
+if ( var21 < number ) 
+return var56 ; 
+var22 = var22 * number + ( ( var22 == var1 -> var38 ) ? var1 -> var39 : number ) - number ; 
+for ( var48 = number ; var48 < number ; var48 ++ ) 
+var2 [ var48 << var53 ] += ( var13 [ var48 ] * var22 * var57 [ var21 - number ] + number ) >> number ; 
+} else { 
+for ( var48 = number ; var48 < number ; var48 ++ ) 
+var2 [ var48 << var53 ] += var13 [ var48 ] ; 
+} 
+} 
+for ( var48 = number ; var48 < number ; var48 ++ ) { 
+var14 [ var48 ] = var2 [ var48 << var1 -> var54 ] ; 
+var14 [ var48 + number ] = var2 [ var48 << var1 -> var55 ] ; 
+} 
+for ( var48 = number ; var48 < number ; var48 ++ ) 
+if ( var2 [ var48 ] ) { 
+var2 [ var48 ] *= var20 ; 
+if ( ! var1 -> var58 ) 
+var2 [ var48 ] += ( var2 [ var48 ] < number ) ? - var6 : var6 ; 
+} 
+} else { 
+int var48 ; 
+memset ( var14 , number , number * number ) ; 
+if ( var18 ) { 
+int var53 ; 
+if ( var9 ) { 
+var53 = var1 -> var54 ; 
+} else { 
+var53 = var1 -> var55 ; 
+var13 += number ; 
+var14 += number ; 
+} 
+memcpy ( var14 , var13 , number * number ) ; 
+if ( var22 && var21 != var22 ) { 
+var21 = var21 * number + ( ( var21 == var1 -> var38 ) ? var1 -> var39 : number ) - number ; 
+var22 = var22 * number + ( ( var22 == var1 -> var38 ) ? var1 -> var39 : number ) - number ; 
+if ( var21 < number ) 
+return var56 ; 
+for ( var48 = number ; var48 < number ; var48 ++ ) 
+var14 [ var48 ] = ( var14 [ var48 ] * var22 * var57 [ var21 - number ] + number ) >> number ; 
+} 
+for ( var48 = number ; var48 < number ; var48 ++ ) { 
+var2 [ var48 << var53 ] = var14 [ var48 ] * var20 ; 
+if ( ! var1 -> var58 && var2 [ var48 << var53 ] ) 
+var2 [ var48 << var53 ] += ( var2 [ var48 << var53 ] < number ) ? - var6 : var6 ; 
+} 
+} 
+} 
+if ( var18 ) var10 = number ; 
+var8 -> var59 [ var3 ] = var10 ; 
+return number ; 
+} 

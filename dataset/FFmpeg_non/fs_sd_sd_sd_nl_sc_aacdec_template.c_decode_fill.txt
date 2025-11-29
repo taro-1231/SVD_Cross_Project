@@ -1,0 +1,18 @@
+static int func1 ( AACContext * var1 , GetBitContext * var2 , int var3 ) { 
+uint8_t var4 [ number ] ; 
+int var5 , var6 , var7 ; 
+if ( var3 < number + number * number ) 
+goto var8 ; 
+func2 ( var2 , number ) ; var3 -= number ; 
+for ( var5 = number ; var5 + number < sizeof ( var4 ) && var3 >= number ; var5 ++ , var3 -= number ) 
+var4 [ var5 ] = func2 ( var2 , number ) ; 
+var4 [ var5 ] = number ; 
+if ( var1 -> var9 -> var10 & var11 ) 
+func3 ( var1 -> var9 , var12 , str , var4 ) ; 
+if ( sscanf ( var4 , str , & var6 , & var7 ) == number ) { 
+var1 -> var9 -> var13 -> var14 = number ; 
+} 
+var8 : 
+func4 ( var2 , var3 ) ; 
+return number ; 
+} 

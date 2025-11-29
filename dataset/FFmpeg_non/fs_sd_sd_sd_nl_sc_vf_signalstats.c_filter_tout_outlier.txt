@@ -1,0 +1,4 @@
+static int func1 ( uint8_t var1 , uint8_t var2 , uint8_t var3 ) 
+{ 
+return ( ( abs ( var1 - var2 ) + abs ( var3 - var2 ) ) / number ) - abs ( var3 - var1 ) > number ; 
+} 

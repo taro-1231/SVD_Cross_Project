@@ -1,0 +1,29 @@
+av_cold int func1 ( AVCodecContext * var1 ) 
+{ 
+MpegEncContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( var2 ) ; 
+func3 ( var2 ) ; 
+if ( var5 && 
+var2 -> var6 == var7 ) 
+func4 ( var2 ) ; 
+func5 ( & var1 -> var8 ) ; 
+for ( var4 = number ; var4 < func6 ( var2 -> var9 ) ; var4 ++ ) 
+func7 ( & var2 -> var9 [ var4 ] ) ; 
+func8 ( & var2 -> var10 ) ; 
+func9 ( var2 -> var1 , & var2 -> var10 ) ; 
+func5 ( & var2 -> var1 -> var11 ) ; 
+func5 ( & var2 -> var12 ) ; 
+if ( var2 -> var13 != var2 -> var14 ) func5 ( & var2 -> var13 ) ; 
+if ( var2 -> var15 != var2 -> var16 ) func5 ( & var2 -> var15 ) ; 
+var2 -> var13 = var17 ; 
+var2 -> var15 = var17 ; 
+func5 ( & var2 -> var14 ) ; 
+func5 ( & var2 -> var18 ) ; 
+func5 ( & var2 -> var16 ) ; 
+func5 ( & var2 -> var19 ) ; 
+func5 ( & var2 -> var20 ) ; 
+func5 ( & var2 -> var21 ) ; 
+func5 ( & var2 -> var22 ) ; 
+return number ; 
+} 

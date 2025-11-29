@@ -1,0 +1,45 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 , 
+ASFPacket * var3 ) 
+{ 
+ASFContext * var4 = var1 -> var5 ; 
+AVIOContext * var6 = var1 -> var6 ; 
+uint16_t var7 ; 
+unsigned char * var8 ; 
+int var9 ; 
+int var10 = number ; 
+if ( var4 -> var11 == number ) { 
+var4 -> var12 = number ; 
+var4 -> var13 = var14 ; 
+var2 -> var15 = var3 -> var15 ; 
+if ( ( var9 = func2 ( var1 , var2 , number ) ) < number ) 
+return var9 ; 
+} else { 
+if ( var4 -> var11 ) 
+if ( ( var9 = func3 ( var1 , var3 ) ) < number ) 
+return var9 ; 
+var7 = func4 ( var6 ) ; 
+if ( var7 > var4 -> var16 ) { 
+func5 ( var1 , var17 , 
+str PRIu16 str 
+str PRIu32 str PRId64 str , 
+var7 , var4 -> var16 , avio_tell ( var6 ) ) ; 
+return var19 ; 
+} 
+var8 = var3 -> var20 . var18 + var3 -> var21 - var3 -> var22 ; 
+if ( var7 > var3 -> var22 ) { 
+func5 ( var1 , var17 , 
+str , 
+var7 , var3 -> var22 ) ; 
+var10 = var7 - var3 -> var22 ; 
+var7 = var3 -> var22 ; 
+} 
+if ( ( var9 = func6 ( var6 , var8 , var7 ) ) < number ) 
+return var9 ; 
+if ( var1 -> var23 && var1 -> var24 == number ) 
+func7 ( var1 -> var23 , var8 , var9 ) ; 
+func8 ( var6 , var10 ) ; 
+var3 -> var22 -= var7 ; 
+var4 -> var25 -- ; 
+} 
+return number ; 
+} 

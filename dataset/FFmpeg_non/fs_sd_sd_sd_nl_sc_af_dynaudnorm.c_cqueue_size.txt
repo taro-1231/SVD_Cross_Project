@@ -1,0 +1,4 @@
+static int func1 ( cqueue * var1 ) 
+{ 
+return var1 -> var2 ; 
+} 

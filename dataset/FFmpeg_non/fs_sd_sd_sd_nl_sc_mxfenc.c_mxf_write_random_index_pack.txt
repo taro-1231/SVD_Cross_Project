@@ -1,0 +1,21 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+uint64_t var5 = func2 ( var4 ) ; 
+int var6 ; 
+func3 ( var4 , var7 , number ) ; 
+klv_encode_ber_length ( var4 , 28 + 12LL * var2 -> var8 ) ; 
+if ( var2 -> var9 && var1 -> var10 != & var11 ) 
+func4 ( var4 , number ) ; 
+else 
+func4 ( var4 , number ) ; 
+func5 ( var4 , number ) ; 
+for ( var6 = number ; var6 < var2 -> var8 ; var6 ++ ) { 
+func4 ( var4 , number ) ; 
+func5 ( var4 , var2 -> var12 [ var6 ] ) ; 
+} 
+func4 ( var4 , number ) ; 
+func5 ( var4 , var2 -> var13 ) ; 
+func4 ( var4 , func2 ( var4 ) - var5 + number ) ; 
+} 

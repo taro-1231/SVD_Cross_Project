@@ -1,0 +1,17 @@
+static int func1 ( struct sbg_parser * var1 , 
+struct sbg_script_synth * var2 ) 
+{ 
+double var3 ; 
+int var4 , var5 ; 
+if ( ! func2 ( var1 , str , number ) ) 
+return number ; 
+if ( ! func3 ( var1 , & var3 ) ) 
+return var6 ; 
+func4 ( func5 ( var1 , & var5 ) ) ; 
+if ( func6 ( var1 -> var7 , var3 , number , & var4 ) < number ) 
+return func7 ( var8 ) ; 
+var2 -> var9 = var10 ; 
+var2 -> var4 = var4 ; 
+var2 -> var5 = var5 ; 
+return number ; 
+} 

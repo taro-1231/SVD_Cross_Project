@@ -1,0 +1,7 @@
+void * func1 ( void * var1 , void * var2 ) 
+{ 
+const AVClass * var3 = * ( AVClass ** ) var1 ; 
+if ( var3 -> func2 ) 
+return var3 -> func2 ( var1 , var2 ) ; 
+return var4 ; 
+} 

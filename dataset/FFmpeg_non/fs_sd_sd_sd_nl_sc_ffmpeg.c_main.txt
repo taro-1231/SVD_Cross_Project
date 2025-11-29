@@ -1,0 +1,51 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 , var4 ; 
+int64_t var5 ; 
+func2 ( ) ; 
+func3 ( var6 ) ; 
+setvbuf ( var7 , var8 , var9 , number ) ; 
+func4 ( var10 ) ; 
+func5 ( var1 , var2 , var11 ) ; 
+if ( var1 > number && ! strcmp ( var2 [ number ] , str ) ) { 
+var12 = number ; 
+func6 ( var13 ) ; 
+var1 -- ; 
+var2 ++ ; 
+} 
+func7 ( ) ; 
+func8 ( ) ; 
+func9 ( ) ; 
+func10 ( ) ; 
+func11 ( ) ; 
+func12 ( var1 , var2 , var11 ) ; 
+var4 = func13 ( var1 , var2 ) ; 
+if ( var4 < number ) 
+func14 ( number ) ; 
+if ( var14 <= number && var15 == number ) { 
+func15 ( ) ; 
+func16 ( var8 , var16 , str , var17 ) ; 
+func14 ( number ) ; 
+} 
+if ( var14 <= number ) { 
+func16 ( var8 , var18 , str ) ; 
+func14 ( number ) ; 
+} 
+for ( var3 = number ; var3 < var14 ; var3 ++ ) { 
+if ( strcmp ( var19 [ var3 ] -> var20 -> var21 -> var22 , str ) ) 
+var23 = number ; 
+} 
+var24 = var5 = func17 ( ) ; 
+if ( func18 ( ) < number ) 
+func14 ( number ) ; 
+var5 = func17 ( ) - var5 ; 
+if ( var25 ) { 
+func16 ( var8 , var26 , str , var5 / number ) ; 
+} 
+func16 ( var8 , AV_LOG_DEBUG , str PRIu64 str PRIu64 str , 
+var27 [ number ] , var27 [ number ] ) ; 
+if ( ( var27 [ number ] + var27 [ number ] ) * var28 < var27 [ number ] ) 
+func14 ( number ) ; 
+func14 ( var29 ? number : var30 ) ; 
+return var30 ; 
+} 

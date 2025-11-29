@@ -1,0 +1,79 @@
+static int func1 ( AVFormatContext * var1 , AVPacket * var2 ) 
+{ 
+KLVPacket var3 ; 
+MXFContext * var4 = var1 -> var5 ; 
+int var6 ; 
+while ( ( var6 = func2 ( & var3 , var1 -> var7 ) ) == number ) { 
+func3 ( var1 , str , var3 . var8 ) ; 
+func4 ( var1 , AV_LOG_TRACE , str PRIu64 str PRIx64 str , var3 . var10 , var3 . var9 ) ; 
+if ( func5 ( var3 . var8 , var11 ) ) { 
+var6 = func6 ( var1 , var2 , & var3 ) ; 
+if ( var6 < number ) { 
+func4 ( var1 , var12 , str ) ; 
+return var6 ; 
+} 
+return number ; 
+} 
+if ( func5 ( var3 . var8 , var13 ) || 
+func5 ( var3 . var8 , var14 ) ) { 
+int var15 = func7 ( var1 , & var3 ) ; 
+int64_t var16 , var17 ; 
+AVStream * var18 ; 
+MXFTrack * var19 ; 
+AVCodecContext * var20 ; 
+if ( var15 < number ) { 
+func4 ( var1 , var12 , 
+str PRIu32 str , 
+AV_RB32 ( var3 . var8 + number ) ) ; 
+goto var21 ; 
+} 
+var18 = var1 -> var22 [ var15 ] ; 
+var19 = var18 -> var5 ; 
+if ( var1 -> var22 [ var15 ] -> var23 == var24 ) 
+goto var21 ; 
+var17 = func8 ( var1 -> var7 ) + var3 . var10 ; 
+var16 = func9 ( var4 , var3 . var9 ) ; 
+if ( var16 >= number && var17 > var16 ) { 
+avpriv_request_sample ( var1 , 
+str 
+str 
+str , 
+var4 -> var25 ) ; 
+var3 . var10 = var16 - func8 ( var1 -> var7 ) ; 
+} 
+if ( var3 . var8 [ number ] == number && var3 . var8 [ number ] == number && var3 . var8 [ number ] == number ) { 
+var6 = func10 ( var1 -> var7 , var1 -> var22 [ var15 ] , 
+var2 , var3 . var10 ) ; 
+if ( var6 < number ) { 
+func4 ( var1 , var12 , str ) ; 
+return var6 ; 
+} 
+} else { 
+var6 = func11 ( var1 -> var7 , var2 , var3 . var10 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+} 
+var2 -> var26 = var15 ; 
+var2 -> var27 = var3 . var9 ; 
+var20 = var18 -> var20 ; 
+if ( var20 -> var28 == var29 && var16 >= number ) { 
+MXFIndexTable * var30 = & var4 -> var31 [ number ] ; 
+if ( var4 -> var32 >= number && var4 -> var25 < var30 -> var33 ) { 
+var2 -> var34 = var4 -> var25 + var30 -> var35 ; 
+var2 -> var36 = var30 -> var37 [ var4 -> var25 ] ; 
+} else if ( var19 -> var38 ) { 
+var2 -> var36 = var4 -> var25 ; 
+} 
+} else if ( var20 -> var28 == var39 ) { 
+var6 = func12 ( var4 , var20 , var2 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+} 
+func13 ( var1 -> var7 , var17 , var40 ) ; 
+return number ; 
+} else 
+var21 : 
+func14 ( var1 -> var7 , var3 . var10 ) ; 
+} 
+return func15 ( var1 -> var7 ) ? var41 : var6 ; 
+} 

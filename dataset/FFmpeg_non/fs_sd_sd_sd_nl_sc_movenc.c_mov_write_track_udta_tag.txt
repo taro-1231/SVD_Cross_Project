@@ -1,0 +1,21 @@
+static int func1 ( AVIOContext * var1 , MOVMuxContext * var2 , 
+AVStream * var3 ) 
+{ 
+AVIOContext * var4 ; 
+int var5 , var6 ; 
+uint8_t * var7 ; 
+if ( ! var3 ) 
+return number ; 
+var5 = func2 ( & var4 ) ; 
+if ( var5 < number ) 
+return var5 ; 
+if ( var2 -> var8 & var9 ) 
+func3 ( var4 , var3 , str , str ) ; 
+if ( ( var6 = func4 ( var4 , & var7 ) ) > number ) { 
+func5 ( var1 , var6 + number ) ; 
+func6 ( var1 , str ) ; 
+func7 ( var1 , var7 , var6 ) ; 
+} 
+func8 ( var7 ) ; 
+return number ; 
+} 

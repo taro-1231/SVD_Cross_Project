@@ -1,0 +1,14 @@
+void func1 ( float * var1 , const float * var2 , 
+const float var3 [ 2 ] , 
+const float var4 [ 2 ] , 
+float var5 , float var6 [ 2 ] , int var7 ) 
+{ 
+int var8 ; 
+float var9 ; 
+for ( var8 = number ; var8 < var7 ; var8 ++ ) { 
+var9 = var5 * var2 [ var8 ] - var4 [ number ] * var6 [ number ] - var4 [ number ] * var6 [ number ] ; 
+var1 [ var8 ] = var9 + var3 [ number ] * var6 [ number ] + var3 [ number ] * var6 [ number ] ; 
+var6 [ number ] = var6 [ number ] ; 
+var6 [ number ] = var9 ; 
+} 
+} 

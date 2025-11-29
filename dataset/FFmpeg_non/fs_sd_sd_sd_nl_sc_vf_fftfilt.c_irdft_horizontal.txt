@@ -1,0 +1,14 @@
+static void func1 ( FFTFILTContext * var1 , AVFrame * var2 , int var3 , int var4 , int var5 ) 
+{ 
+int var6 , var7 ; 
+var1 -> var8 = func2 ( var1 -> var9 [ var5 ] , var10 ) ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) 
+func3 ( var1 -> var8 , var1 -> var11 [ var5 ] + var6 * var1 -> var12 [ var5 ] ) ; 
+for ( var6 = number ; var6 < var4 ; var6 ++ ) 
+for ( var7 = number ; var7 < var3 ; var7 ++ ) 
+* ( var2 -> var13 [ var5 ] + var2 -> var14 [ var5 ] * var6 + var7 ) = func4 ( var1 -> var11 [ var5 ] [ var6 
+* var1 -> var12 [ var5 ] + var7 ] * number / 
+( var1 -> var12 [ var5 ] * 
+var1 -> var15 [ var5 ] ) , number , number ) ; 
+func5 ( var1 -> var8 ) ; 
+} 

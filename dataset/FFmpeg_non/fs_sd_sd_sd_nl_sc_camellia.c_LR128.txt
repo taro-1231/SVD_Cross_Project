@@ -1,0 +1,15 @@
+static void func1 ( uint64_t var1 [ 2 ] , const uint64_t var2 [ 2 ] , int var3 ) 
+{ 
+int var4 = number ; 
+if ( number <= var3 && var3 < number ) { 
+var4 = number ; 
+var3 -= number ; 
+} 
+if ( var3 <= number || var3 >= number ) { 
+var1 [ number ] = var2 [ var4 ] ; 
+var1 [ number ] = var2 [ ! var4 ] ; 
+return ; 
+} 
+var1 [ number ] = ( var2 [ var4 ] << var3 | var2 [ ! var4 ] >> ( number - var3 ) ) ; 
+var1 [ number ] = ( var2 [ ! var4 ] << var3 | var2 [ var4 ] >> ( number - var3 ) ) ; 
+} 

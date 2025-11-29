@@ -1,0 +1,60 @@
+static int func1 ( AVFormatContext * var1 , AVStream * var2 , AVPacket * var3 ) 
+{ 
+MXFContext * var4 = var1 -> var5 ; 
+MXFStreamContext * var6 = var2 -> var5 ; 
+uint8_t * var7 , * var8 ; 
+int var9 , var10 , var11 , var12 , var13 ; 
+if ( var4 -> var14 ) 
+return number ; 
+if ( var3 -> var15 < number ) 
+return - number ; 
+var7 = var3 -> var16 + number * number + number ; 
+var8 = var3 -> var16 + number * number + number ; 
+var12 = var7 [ number ] & number ; 
+var13 = ( var7 [ number ] >> number ) & number ; 
+if ( ( var7 [ number ] & number ) == number ) 
+var6 -> aspect_ratio = ( AVRational ) { number , 9 } ; 
+else 
+var6 -> aspect_ratio = ( AVRational ) { number , number } ; 
+var6 -> var17 = ( var8 [ number ] >> number ) & number ; 
+switch ( var12 ) { 
+case 0x18 : 
+var10 = number + var13 ; 
+var11 = var13 ? number : number ; 
+if ( var6 -> var17 ) { 
+func2 ( var1 , var18 , str ) ; 
+var6 -> var17 = number ; 
+} 
+break ; 
+case 0x14 : 
+var10 = number + var13 ; 
+var11 = var13 ? number : number ; 
+break ; 
+case 0x04 : 
+var10 = number + var13 ; 
+var11 = var13 ? number : number ; 
+break ; 
+var20 : 
+var10 = number + var13 ; 
+var11 = var13 ? number : number ; 
+} 
+var6 -> var21 = var10 + number ; 
+var6 -> var22 = & var23 [ var6 -> var21 ] . var22 ; 
+if ( var1 -> var24 == & var25 ) { 
+var4 -> var26 = var11 ; 
+return number ; 
+} 
+var4 -> var26 = var27 ; 
+for ( var9 = number ; var9 < var1 -> var28 ; var9 ++ ) { 
+AVStream * var2 = var1 -> var29 [ var9 ] ; 
+MXFStreamContext * var6 = var2 -> var5 ; 
+if ( var2 -> var19 -> var30 == var31 ) { 
+var4 -> var26 += number + number + var6 -> var32 . var33 [ number ] * var6 -> var32 . var34 ; 
+var4 -> var26 += func3 ( var4 -> var26 ) ; 
+} else if ( var2 -> var19 -> var30 == var35 ) { 
+var4 -> var26 += number + number + var11 ; 
+var4 -> var26 += func3 ( var4 -> var26 ) ; 
+} 
+} 
+return number ; 
+} 

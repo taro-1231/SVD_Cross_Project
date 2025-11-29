@@ -1,0 +1,7 @@
+static inline int func1 ( MpegEncContext * var1 ) 
+{ 
+if ( func2 ( & var1 -> var2 ) ) 
+return number - ( func2 ( & var1 -> var2 ) << number ) ; 
+else 
+return number ; 
+} 

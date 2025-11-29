@@ -1,0 +1,10 @@
+static void func1 ( AVLFG * var1 , double * var2 , int var3 ) 
+{ 
+int var4 ; 
+double var5 [ number ] , var6 = number , var7 = number ; 
+for ( var4 = number ; var4 < var3 ; var4 += number ) { 
+func2 ( var1 , var5 ) ; 
+var2 [ var4 ] = var5 [ number ] * var6 + var7 ; 
+var2 [ var4 + number ] = var5 [ number ] * var6 + var7 ; 
+} 
+} 

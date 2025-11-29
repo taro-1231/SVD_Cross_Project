@@ -1,0 +1,17 @@
+static void func1 ( AVFormatContext * var1 , AVStream * var2 , const UID var3 , unsigned var4 ) 
+{ 
+MXFContext * var5 = var1 -> var6 ; 
+MXFStreamContext * var7 = var2 -> var6 ; 
+AVIOContext * var8 = var1 -> var8 ; 
+func2 ( var8 , var3 , number ) ; 
+func3 ( var8 , var4 + number + number + number + number ) ; 
+func4 ( var8 , number , number ) ; 
+func5 ( var8 , var9 , var2 -> var10 ) ; 
+func4 ( var8 , number , number ) ; 
+func6 ( var8 , var2 -> var10 + number ) ; 
+func4 ( var8 , number , number ) ; 
+func6 ( var8 , var5 -> var11 . var12 ) ; 
+func6 ( var8 , var5 -> var11 . var13 ) ; 
+func4 ( var8 , number , number ) ; 
+func2 ( var8 , var14 [ var7 -> var10 ] . var15 , number ) ; 
+} 

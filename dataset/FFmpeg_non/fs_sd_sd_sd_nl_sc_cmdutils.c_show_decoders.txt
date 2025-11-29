@@ -1,0 +1,5 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+func2 ( number ) ; 
+return number ; 
+} 

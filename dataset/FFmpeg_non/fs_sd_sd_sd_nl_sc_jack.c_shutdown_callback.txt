@@ -1,0 +1,5 @@
+static void func1 ( void * var1 ) 
+{ 
+JackData * var2 = var1 ; 
+var2 -> var3 = var4 ; 
+} 

@@ -1,0 +1,44 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+const ThreadData * var5 = var2 ; 
+const AVFrame * var6 = var5 -> var6 ; 
+AVFrame * var7 = var5 -> var7 ; 
+const int var8 = var6 -> var8 ; 
+const int var9 = var6 -> var9 ; 
+const int var10 = ( var8 * var3 ) / var4 ; 
+const int var11 = ( var8 * ( var3 + number ) ) / var4 ; 
+const int var12 = var6 -> var13 [ number ] ; 
+const int var14 = var6 -> var13 [ number ] ; 
+const unsigned char * var15 = var6 -> var16 [ number ] + var10 * var14 ; 
+const unsigned char * var17 = var6 -> var16 [ number ] + var10 * var14 ; 
+const unsigned char * var18 = var6 -> var16 [ number ] + var10 * var12 ; 
+const int var19 = var7 -> var13 [ number ] ; 
+const int var20 = var7 -> var13 [ number ] ; 
+unsigned char * var21 = var7 -> var16 [ number ] + var10 * var20 ; 
+unsigned char * var22 = var7 -> var16 [ number ] + var10 * var20 ; 
+unsigned char * var23 = var7 -> var16 [ number ] + var10 * var19 ; 
+const int var24 = var5 -> var24 ; 
+const int var25 = var5 -> var25 ; 
+const int var26 = var5 -> var26 ; 
+const int var27 = var5 -> var27 ; 
+const int var28 = var5 -> var28 ; 
+const int var29 = var5 -> var29 ; 
+int var30 , var31 ; 
+for ( var31 = var10 ; var31 < var11 ; var31 ++ ) { 
+for ( var30 = number ; var30 < var9 ; var30 ++ ) { 
+const int var32 = var15 [ var30 ] - number ; 
+const int var33 = var17 [ var30 ] - number ; 
+const int var34 = var24 * var32 + var25 * var33 + number ; 
+var23 [ var30 ] = func2 ( ( number * ( var18 [ var30 ] - number ) + var34 ) >> number ) ; 
+var21 [ var30 ] = func2 ( ( var26 * var32 + var27 * var33 + number ) >> number ) ; 
+var22 [ var30 ] = func2 ( ( var28 * var32 + var29 * var33 + number ) >> number ) ; 
+} 
+var18 += var12 ; 
+var23 += var19 ; 
+var15 += var14 ; 
+var17 += var14 ; 
+var21 += var20 ; 
+var22 += var20 ; 
+} 
+return number ; 
+} 

@@ -1,0 +1,12 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ThumbContext * var2 = var1 -> var3 ; 
+var2 -> var4 = func2 ( var2 -> var5 , sizeof ( * var2 -> var4 ) ) ; 
+if ( ! var2 -> var4 ) { 
+func3 ( var1 , var6 , 
+str ) ; 
+return func4 ( var7 ) ; 
+} 
+func3 ( var1 , var8 , str , var2 -> var5 ) ; 
+return number ; 
+} 

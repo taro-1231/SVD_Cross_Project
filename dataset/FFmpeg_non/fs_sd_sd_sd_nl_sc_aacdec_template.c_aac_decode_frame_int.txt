@@ -1,0 +1,151 @@
+static int func1 ( AVCodecContext * var1 , void * var2 , 
+int * var3 , GetBitContext * var4 , AVPacket * var5 ) 
+{ 
+AACContext * var6 = var1 -> var7 ; 
+ChannelElement * var8 = var9 , * var10 = var9 ; 
+enum RawDataBlockType var11 , var12 = var13 ; 
+int var14 , var15 ; 
+int var16 = number , var17 , var18 = number , var19 = number ; 
+int var20 , var21 = number ; 
+var6 -> var22 = var2 ; 
+if ( func2 ( var4 , number ) == number ) { 
+if ( ( var14 = func3 ( var6 , var4 ) ) < number ) { 
+func4 ( var1 , var23 , str ) ; 
+goto var24 ; 
+} 
+if ( var6 -> var25 [ number ] . var26 . var27 > number ) { 
+func4 ( var6 -> var1 , var23 , str , var6 -> var25 [ number ] . var26 . var27 ) ; 
+var14 = var28 ; 
+goto var24 ; 
+} 
+} 
+if ( ( var14 = func5 ( var1 ) ) < number ) 
+goto var24 ; 
+var6 -> var1 -> var30 = var6 -> var25 [ number ] . var26 . var29 - number ; 
+var6 -> var31 = number ; 
+while ( ( var11 = func6 ( var4 , number ) ) != var13 ) { 
+var15 = func6 ( var4 , number ) ; 
+if ( var1 -> var32 & var33 ) 
+func4 ( var1 , var34 , str , var11 , var15 ) ; 
+if ( ! var1 -> var35 && var11 != var36 ) { 
+var14 = var28 ; 
+goto var24 ; 
+} 
+if ( var11 < var37 ) { 
+if ( ! ( var8 = func7 ( var6 , var11 , var15 ) ) ) { 
+func4 ( var6 -> var1 , var23 , str , 
+var11 , var15 ) ; 
+var14 = var28 ; 
+goto var24 ; 
+} 
+var16 = number ; 
+var8 -> var38 = number ; 
+} 
+switch ( var11 ) { 
+case var39 : 
+var14 = func8 ( var6 , & var8 -> var40 [ number ] , var4 , number , number ) ; 
+var18 = number ; 
+var21 ++ ; 
+break ; 
+case var41 : 
+var14 = func9 ( var6 , var4 , var8 ) ; 
+var18 = number ; 
+break ; 
+case var42 : 
+var14 = func10 ( var6 , var4 , var8 ) ; 
+break ; 
+case var43 : 
+var14 = func8 ( var6 , & var8 -> var40 [ number ] , var4 , number , number ) ; 
+var18 = number ; 
+break ; 
+case var37 : 
+var14 = func11 ( var6 , var4 ) ; 
+break ; 
+case var36 : { 
+uint8_t var44 [ var45 * number ] [ number ] ; 
+int var46 ; 
+func12 ( var6 ) ; 
+var46 = func13 ( var1 , & var6 -> var25 [ number ] . var26 , var44 , var4 ) ; 
+if ( var46 < number ) { 
+var14 = var46 ; 
+break ; 
+} 
+if ( var19 ) { 
+func4 ( var1 , var23 , 
+str ) ; 
+} else { 
+var14 = func14 ( var6 , var44 , var46 , var47 , number ) ; 
+if ( ! var14 ) 
+var6 -> var25 [ number ] . var26 . var48 = number ; 
+var19 = number ; 
+} 
+break ; 
+} 
+case var49 : 
+if ( var15 == number ) 
+var15 += func6 ( var4 , number ) - number ; 
+if ( func15 ( var4 ) < number * var15 ) { 
+func4 ( var1 , var23 , str var50 ) ; 
+var14 = var28 ; 
+goto var24 ; 
+} 
+while ( var15 > number ) 
+var15 -= func16 ( var6 , var4 , var15 , var10 , var12 ) ; 
+var14 = number ; 
+break ; 
+var51 : 
+var14 = var52 ; 
+break ; 
+} 
+var10 = var8 ; 
+var12 = var11 ; 
+if ( var14 ) 
+goto var24 ; 
+if ( func15 ( var4 ) < number ) { 
+func4 ( var1 , var23 , var50 ) ; 
+var14 = var28 ; 
+goto var24 ; 
+} 
+} 
+if ( ! var1 -> var35 ) { 
+* var3 = number ; 
+return number ; 
+} 
+var17 = ( var6 -> var25 [ number ] . var26 . var53 == number ) ? var6 -> var25 [ number ] . var26 . var54 > var6 -> var25 [ number ] . var26 . var55 : number ; 
+var16 <<= var17 ; 
+func17 ( var6 , var16 ) ; 
+if ( var6 -> var25 [ number ] . var56 && var18 ) { 
+var1 -> var55 = var6 -> var25 [ number ] . var26 . var55 << var17 ; 
+var1 -> var57 = var16 ; 
+var6 -> var25 [ number ] . var56 = var58 ; 
+} 
+if ( var17 ) { 
+int var59 ; 
+const uint8_t * var60 = func18 ( var5 , var61 , & var59 ) ; 
+if ( var60 && var59 >= number ) 
+func19 ( var60 , number * func20 ( var60 ) ) ; 
+} 
+if ( ! var6 -> var22 -> var2 [ number ] && var16 ) { 
+func4 ( var1 , var23 , str ) ; 
+var14 = var28 ; 
+goto var24 ; 
+} 
+if ( var16 ) { 
+var6 -> var22 -> var62 = var16 ; 
+var6 -> var22 -> var55 = var1 -> var55 ; 
+} else 
+func21 ( var6 -> var22 ) ; 
+* var3 = ! ! var16 ; 
+var20 = var6 -> var63 && var21 == number && 
+var6 -> var25 [ number ] . var64 == ( var65 | var66 ) ; 
+if ( var20 ) { 
+if ( var6 -> var63 == number ) 
+( ( AVFrame * ) var2 ) -> var2 [ number ] = ( ( AVFrame * ) var2 ) -> var2 [ number ] ; 
+else if ( var6 -> var63 == number ) 
+( ( AVFrame * ) var2 ) -> var2 [ number ] = ( ( AVFrame * ) var2 ) -> var2 [ number ] ; 
+} 
+return number ; 
+var24 : 
+func22 ( var6 ) ; 
+return var14 ; 
+} 

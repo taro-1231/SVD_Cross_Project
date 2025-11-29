@@ -1,0 +1,35 @@
+func1 ( PNG_CONST image_transform * var1 , image_pixel * var2 , 
+png_const_structp var3 , PNG_CONST transform_display * var4 ) 
+{ 
+PNG_CONST unsigned int var5 = ( number << var2 -> var6 ) - number ; 
+UNUSED ( var1 ) 
+UNUSED ( var3 ) 
+UNUSED ( var4 ) 
+var2 -> var7 = func2 ( var2 -> var8 , var5 ) ; 
+var2 -> var9 += number / ( number * ( ( number << var2 -> var10 ) - number ) ) ; 
+if ( var2 -> var11 & var12 ) 
+{ 
+var2 -> var13 = func2 ( var2 -> var14 , var5 ) ; 
+var2 -> var15 = func2 ( var2 -> var16 , var5 ) ; 
+var2 -> var17 += number / ( number * ( ( number << var2 -> var18 ) - number ) ) ; 
+var2 -> var19 += number / ( number * ( ( number << var2 -> var20 ) - number ) ) ; 
+} 
+else 
+{ 
+var2 -> var15 = var2 -> var13 = var2 -> var7 ; 
+var2 -> var16 = var2 -> var14 = var2 -> var8 ; 
+var2 -> var19 = var2 -> var17 = var2 -> var9 ; 
+} 
+if ( ( var2 -> var11 & var21 ) || 
+var2 -> var11 == var22 ) 
+{ 
+var2 -> var23 = func2 ( var2 -> var24 , var5 ) ; 
+var2 -> var25 += number / ( number * ( ( number << var2 -> var26 ) - number ) ) ; 
+} 
+else 
+{ 
+var2 -> var23 = var5 ; 
+var2 -> var23 = number ; 
+var2 -> var25 = number ; 
+} 
+} 

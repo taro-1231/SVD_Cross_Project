@@ -1,0 +1,7 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+NoiseContext * var2 = var1 -> var3 ; 
+int var4 ; 
+for ( var4 = number ; var4 < number ; var4 ++ ) 
+func2 ( & var2 -> var5 [ var4 ] . var6 ) ; 
+} 

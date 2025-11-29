@@ -1,0 +1,58 @@
+func1 ( png_store * var1 , int var2 , int var3 ) 
+{ 
+static png_uint_32 var4 [ number ] = { number , number } ; 
+int var5 = number ; 
+png_byte var6 [ number ] [ number ] ; 
+for ( ; var5 < number ; ++ var5 ) 
+{ 
+var6 [ var5 ] [ number ] = ( png_byte ) ( ( var5 & number ) ? number : number ) ; 
+var6 [ var5 ] [ number ] = ( png_byte ) ( ( var5 & number ) ? number : number ) ; 
+var6 [ var5 ] [ number ] = ( png_byte ) ( ( var5 & number ) ? number : number ) ; 
+} 
+{ 
+int var7 = number ; 
+png_byte var8 [ number ] ; 
+png_byte var9 [ number ] ; 
+var9 [ number ] = number ; 
+memset ( var9 + number , number , ( sizeof var9 ) - number ) ; 
+var9 [ number ] = number ; 
+while ( var5 < number ) 
+{ 
+png_byte var10 ; 
+if ( var7 == number ) 
+{ 
+func2 ( var4 , var8 ) ; 
+var7 = number ; 
+} 
+var10 = var8 [ -- var7 ] ; 
+if ( var9 [ var10 ] ) 
+{ 
+var6 [ var5 ] [ number ] = var10 ; 
+var6 [ var5 ] [ number ] = var10 ; 
+var6 [ var5 ++ ] [ number ] = var10 ; 
+} 
+} 
+} 
+for ( ; var5 < number ; ++ var5 ) 
+func2 ( var4 , var6 [ var5 ] ) ; 
+{ 
+store_palette_entry * var11 ; 
+png_byte var12 [ number ] ; 
+func2 ( var4 , var12 ) ; 
+if ( var3 ) 
+for ( var5 = number ; var5 < number ; ++ var5 ) 
+var6 [ var5 ] [ number ] = ( png_byte ) ( var5 ^ var12 [ number ] ) ; 
+else 
+for ( var5 = number ; var5 < number ; ++ var5 ) 
+var6 [ var5 ] [ number ] = number ; 
+var11 = func3 ( var1 , var2 ) ; 
+for ( var5 = number ; var5 < var2 ; ++ var5 ) 
+{ 
+var11 [ var5 ] . var13 = var6 [ var5 ^ var12 [ number ] ] [ number ] ; 
+var11 [ var5 ] . var14 = var6 [ var5 ^ var12 [ number ] ] [ number ] ; 
+var11 [ var5 ] . var15 = var6 [ var5 ^ var12 [ number ] ] [ number ] ; 
+var11 [ var5 ] . var16 = var6 [ var5 ^ var12 [ number ] ] [ number ] ; 
+} 
+return var11 ; 
+} 
+} 

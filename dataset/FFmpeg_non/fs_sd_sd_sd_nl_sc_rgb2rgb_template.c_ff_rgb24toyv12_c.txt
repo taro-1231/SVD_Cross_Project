@@ -1,0 +1,49 @@
+void func1 ( const uint8_t * var1 , uint8_t * var2 , uint8_t * var3 , 
+uint8_t * var4 , int var5 , int var6 , int var7 , 
+int var8 , int var9 , int32_t * var10 ) 
+{ 
+int32_t var11 = var10 [ var12 ] , var13 = var10 [ var14 ] , var15 = var10 [ var16 ] ; 
+int32_t var17 = var10 [ var18 ] , var19 = var10 [ var20 ] , var21 = var10 [ var22 ] ; 
+int32_t var23 = var10 [ var24 ] , var25 = var10 [ var26 ] , var27 = var10 [ var28 ] ; 
+int var29 ; 
+const int var30 = var5 >> number ; 
+for ( var29 = number ; var29 < var6 ; var29 += number ) { 
+int var31 ; 
+for ( var31 = number ; var31 < var30 ; var31 ++ ) { 
+unsigned int var32 = var1 [ number * var31 + number ] ; 
+unsigned int var33 = var1 [ number * var31 + number ] ; 
+unsigned int var34 = var1 [ number * var31 + number ] ; 
+unsigned int var35 = ( ( var11 * var34 + var13 * var33 + var15 * var32 ) >> var36 ) + number ; 
+unsigned int var37 = ( ( var23 * var34 + var25 * var33 + var27 * var32 ) >> var36 ) + number ; 
+unsigned int var38 = ( ( var17 * var34 + var19 * var33 + var21 * var32 ) >> var36 ) + number ; 
+var3 [ var31 ] = var38 ; 
+var4 [ var31 ] = var37 ; 
+var2 [ number * var31 ] = var35 ; 
+var32 = var1 [ number * var31 + number ] ; 
+var33 = var1 [ number * var31 + number ] ; 
+var34 = var1 [ number * var31 + number ] ; 
+var35 = ( ( var11 * var34 + var13 * var33 + var15 * var32 ) >> var36 ) + number ; 
+var2 [ number * var31 + number ] = var35 ; 
+} 
+var2 += var7 ; 
+var1 += var9 ; 
+if ( var29 + number == var6 ) 
+break ; 
+for ( var31 = number ; var31 < var30 ; var31 ++ ) { 
+unsigned int var32 = var1 [ number * var31 + number ] ; 
+unsigned int var33 = var1 [ number * var31 + number ] ; 
+unsigned int var34 = var1 [ number * var31 + number ] ; 
+unsigned int var35 = ( ( var11 * var34 + var13 * var33 + var15 * var32 ) >> var36 ) + number ; 
+var2 [ number * var31 ] = var35 ; 
+var32 = var1 [ number * var31 + number ] ; 
+var33 = var1 [ number * var31 + number ] ; 
+var34 = var1 [ number * var31 + number ] ; 
+var35 = ( ( var11 * var34 + var13 * var33 + var15 * var32 ) >> var36 ) + number ; 
+var2 [ number * var31 + number ] = var35 ; 
+} 
+var3 += var8 ; 
+var4 += var8 ; 
+var2 += var7 ; 
+var1 += var9 ; 
+} 
+} 

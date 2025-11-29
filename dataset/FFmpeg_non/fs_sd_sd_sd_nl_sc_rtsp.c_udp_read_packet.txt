@@ -1,0 +1,84 @@
+static int func1 ( AVFormatContext * var1 , RTSPStream ** var2 , 
+uint8_t * var3 , int var4 , int64_t var5 ) 
+{ 
+RTSPState * var6 = var1 -> var7 ; 
+RTSPStream * var8 ; 
+int var9 , var10 , var11 , var12 , var13 = number ; 
+int var14 = number ; 
+struct pollfd * var15 = var6 -> var15 ; 
+int * var16 = var17 , var18 , var19 ; 
+for ( ; ; ) { 
+if ( func2 ( & var1 -> var20 ) ) 
+return var21 ; 
+if ( var5 && var5 - func3 ( ) < number ) 
+return func4 ( var22 ) ; 
+var14 = number ; 
+if ( var6 -> var23 ) { 
+var12 = func5 ( var6 -> var23 ) ; 
+var15 [ var14 ] . var24 = var12 ; 
+var15 [ var14 ++ ] . var25 = var26 ; 
+} else { 
+var12 = - number ; 
+} 
+for ( var10 = number ; var10 < var6 -> var27 ; var10 ++ ) { 
+var8 = var6 -> var28 [ var10 ] ; 
+if ( var8 -> var29 ) { 
+if ( var11 = func6 ( var8 -> var29 , 
+& var16 , & var18 ) ) { 
+func7 ( var1 , var30 , str ) ; 
+return var11 ; 
+} 
+if ( var18 != number ) { 
+func7 ( var1 , var30 , 
+str , var18 ) ; 
+return var31 ; 
+} 
+for ( var19 = number ; var19 < var18 ; var19 ++ ) { 
+var15 [ var14 ] . var24 = var16 [ var19 ] ; 
+var15 [ var14 ++ ] . var25 = var26 ; 
+} 
+func8 ( & var16 ) ; 
+} 
+} 
+var9 = func9 ( var15 , var14 , var32 ) ; 
+if ( var9 > number ) { 
+int var33 = number - ( var12 == - number ) ; 
+var13 = number ; 
+for ( var10 = number ; var10 < var6 -> var27 ; var10 ++ ) { 
+var8 = var6 -> var28 [ var10 ] ; 
+if ( var8 -> var29 ) { 
+if ( var15 [ var33 ] . var34 & var26 || var15 [ var33 + number ] . var34 & var26 ) { 
+var11 = func10 ( var8 -> var29 , var3 , var4 ) ; 
+if ( var11 > number ) { 
+* var2 = var8 ; 
+return var11 ; 
+} 
+} 
+var33 += number ; 
+} 
+} 
+if ( var12 != - number && var15 [ number ] . var34 & var26 ) { 
+if ( var6 -> var35 & var36 ) { 
+if ( var6 -> var37 == var38 ) { 
+if ( ! func11 ( var1 ) ) 
+return var39 ; 
+else 
+func7 ( var1 , var40 , 
+str ) ; 
+} else 
+return number ; 
+} else { 
+RTSPMessageHeader var41 ; 
+var11 = func12 ( var1 , & var41 , var17 , number , var17 ) ; 
+if ( var11 < number ) 
+return var11 ; 
+if ( var6 -> var37 != var38 ) 
+return number ; 
+} 
+} 
+} else if ( var9 == number && ++ var13 >= var42 ) { 
+return func4 ( var43 ) ; 
+} else if ( var9 < number && var44 != var45 ) 
+return func4 ( var44 ) ; 
+} 
+} 

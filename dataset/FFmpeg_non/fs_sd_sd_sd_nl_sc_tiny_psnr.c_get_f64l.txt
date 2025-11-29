@@ -1,0 +1,4 @@
+static double func1 ( uint8_t * var1 ) 
+{ 
+return func2 ( func3 ( var1 ) ) ; 
+} 

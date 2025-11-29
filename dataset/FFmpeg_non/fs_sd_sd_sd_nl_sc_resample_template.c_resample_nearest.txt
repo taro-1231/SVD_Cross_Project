@@ -1,0 +1,6 @@
+static void SET_TYPE ( func1 ) ( void * var1 , int var2 , const void * var3 , unsigned int var4 ) 
+{ 
+FELEM * var5 = var1 ; 
+const FELEM * var6 = var3 ; 
+var5 [ var2 ] = var6 [ var4 ] ; 
+} 

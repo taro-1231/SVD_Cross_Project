@@ -1,0 +1,68 @@
+static void func1 ( SPPContext * var1 , uint8_t * var2 , uint8_t * var3 , 
+int var4 , int var5 , int var6 , int var7 , 
+const uint8_t * var8 , int var9 , int var10 , int var11 ) 
+{ 
+int var12 , var13 , var14 ; 
+const int var15 = number << var1 -> var16 ; 
+const int var17 = var10 ? var1 -> var18 : func2 ( var6 + number , number ) ; 
+func3 ( number , var19 , var20 ) [ number ] ; 
+int16_t * var21 = ( int16_t * ) var20 ; 
+int16_t * var22 = ( int16_t * ) ( var20 + number ) ; 
+uint16_t * var23 = ( uint16_t * ) var1 -> var3 ; 
+const int var24 = ( var11 + number ) / number ; 
+for ( var13 = number ; var13 < var7 ; var13 ++ ) { 
+int var25 = number + number * var17 + var13 * var17 ; 
+memcpy ( var1 -> var3 + var25 * var24 , var3 + var13 * var5 , var6 * var24 ) ; 
+if ( var24 == number ) { 
+for ( var12 = number ; var12 < number ; var12 ++ ) { 
+var1 -> var3 [ var25 - var12 - number ] = var1 -> var3 [ var25 + var12 ] ; 
+var1 -> var3 [ var25 + var6 + var12 ] = var1 -> var3 [ var25 + var6 - var12 - number ] ; 
+} 
+} else { 
+for ( var12 = number ; var12 < number ; var12 ++ ) { 
+var23 [ var25 - var12 - number ] = var23 [ var25 + var12 ] ; 
+var23 [ var25 + var6 + var12 ] = var23 [ var25 + var6 - var12 - number ] ; 
+} 
+} 
+} 
+for ( var13 = number ; var13 < number ; var13 ++ ) { 
+memcpy ( var1 -> var3 + ( number - var13 ) * var17 * var24 , var1 -> var3 + ( var13 + number ) * var17 * var24 , var17 * var24 ) ; 
+memcpy ( var1 -> var3 + ( var7 + number + var13 ) * var17 * var24 , var1 -> var3 + ( var7 - var13 + number ) * var17 * var24 , var17 * var24 ) ; 
+} 
+for ( var13 = number ; var13 < var7 + number ; var13 += number ) { 
+memset ( var1 -> var26 + ( number + var13 ) * var17 , number , number * var17 * sizeof ( * var1 -> var26 ) ) ; 
+for ( var12 = number ; var12 < var6 + number ; var12 += number ) { 
+int var27 ; 
+if ( var1 -> var27 ) { 
+var27 = var1 -> var27 ; 
+} else { 
+const int var28 = number + var10 ; 
+var27 = var8 [ ( func4 ( var12 , var6 - number ) >> var28 ) + ( func4 ( var13 , var7 - number ) >> var28 ) * var9 ] ; 
+var27 = func5 ( number , func6 ( var27 , var1 -> var29 ) ) ; 
+} 
+for ( var14 = number ; var14 < var15 ; var14 ++ ) { 
+const int var30 = var12 + var31 [ var14 + var15 - number ] [ number ] ; 
+const int var32 = var13 + var31 [ var14 + var15 - number ] [ number ] ; 
+const int var25 = var30 + var32 * var17 ; 
+var1 -> var33 -> func7 ( var21 , var1 -> var3 + var24 * var25 , var24 * var17 ) ; 
+var1 -> var33 -> func8 ( var21 ) ; 
+var1 -> func9 ( var22 , var21 , var27 , var1 -> var33 -> var34 ) ; 
+var1 -> var33 -> func10 ( var22 ) ; 
+func11 ( var1 -> var26 + var25 , var17 , var22 ) ; 
+} 
+} 
+if ( var13 ) { 
+if ( var24 == number ) { 
+var1 -> func12 ( var2 + ( var13 - number ) * var4 , var1 -> var26 + number + var13 * var17 , 
+var4 , var17 , var6 , 
+func4 ( number , var7 + number - var13 ) , var35 - var1 -> var16 , 
+var36 ) ; 
+} else { 
+func13 ( ( uint16_t * ) ( var2 + ( var13 - number ) * var4 ) , var1 -> var26 + number + var13 * var17 , 
+var4 / number , var17 , var6 , 
+func4 ( number , var7 + number - var13 ) , var35 - var1 -> var16 , 
+var36 , var11 ) ; 
+} 
+} 
+} 
+} 

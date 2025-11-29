@@ -1,0 +1,76 @@
+static int func1 ( HLSContext * var1 , struct playlist * var2 ) 
+{ 
+AVDictionary * var3 = var4 ; 
+AVDictionary * var5 = var4 ; 
+int var6 ; 
+struct segment * var7 = var2 -> var8 [ var2 -> var9 - var2 -> var10 ] ; 
+func2 ( & var3 , str , var1 -> var11 , number ) ; 
+func2 ( & var3 , str , var1 -> var12 , number ) ; 
+func2 ( & var3 , str , var1 -> var13 , number ) ; 
+func2 ( & var3 , str , str , number ) ; 
+func3 ( & var5 , var3 , number ) ; 
+if ( var7 -> var15 >= number ) { 
+func4 ( & var3 , str , var7 -> var16 , number ) ; 
+func4 ( & var3 , str , var7 -> var16 + var7 -> var15 , number ) ; 
+} 
+func5 ( var2 -> var17 , AV_LOG_VERBOSE , str PRId64 str , 
+var7 -> var18 , var7 -> var16 , var2 -> index ) ; 
+if ( var7 -> var19 == var20 ) { 
+var6 = func6 ( var2 -> var17 -> var21 , & var2 -> var22 , var7 -> var18 , var3 ) ; 
+} else if ( var7 -> var19 == var23 ) { 
+char var24 [ number ] , var14 [ number ] , var18 [ var25 ] ; 
+if ( strcmp ( var7 -> var14 , var2 -> var26 ) ) { 
+URLContext * var27 ; 
+if ( func6 ( var2 -> var17 -> var21 , & var27 , var7 -> var14 , var5 ) == number ) { 
+if ( func7 ( var27 , var2 -> var14 , sizeof ( var2 -> var14 ) ) 
+!= sizeof ( var2 -> var14 ) ) { 
+func5 ( var4 , var28 , str , 
+var7 -> var14 ) ; 
+} 
+func8 ( & var1 -> var12 , str , var27 -> var21 ) ; 
+func2 ( & var3 , str , var1 -> var12 , number ) ; 
+func9 ( var27 ) ; 
+} else { 
+func5 ( var4 , var28 , str , 
+var7 -> var14 ) ; 
+} 
+func10 ( var2 -> var26 , var7 -> var14 , sizeof ( var2 -> var26 ) ) ; 
+} 
+func11 ( var24 , var7 -> var24 , sizeof ( var7 -> var24 ) , number ) ; 
+func11 ( var14 , var2 -> var14 , sizeof ( var2 -> var14 ) , number ) ; 
+var24 [ number ] = var14 [ number ] = str ; 
+if ( strstr ( var7 -> var18 , str 
+snprintf ( var18 , sizeof ( var18 ) , str , var7 -> var18 ) ; 
+else 
+snprintf ( var18 , sizeof ( var18 ) , str , var7 -> var18 ) ; 
+if ( ( var6 = func12 ( & var2 -> var22 , var18 , var29 , 
+& var2 -> var17 -> var30 ) ) < number ) 
+goto var31 ; 
+func13 ( var2 -> var22 -> var21 , str , var14 , number ) ; 
+func13 ( var2 -> var22 -> var21 , str , var24 , number ) ; 
+if ( ( var6 = func14 ( var2 , var1 -> var32 , var3 ) ) < number ) { 
+goto var31 ; 
+} 
+var6 = number ; 
+} else if ( var7 -> var19 == var33 ) { 
+func5 ( var2 -> var17 , var28 , 
+str ) ; 
+var6 = var34 ; 
+} 
+else 
+var6 = func15 ( var35 ) ; 
+if ( var6 == number && var7 -> var19 == var20 ) { 
+int var36 = func16 ( var2 -> var22 , var7 -> var16 , var37 ) ; 
+if ( var36 < number ) { 
+func5 ( var2 -> var17 , var28 , str PRId64 str % str , var7 -> var16 , var7 -> var18 ) ; 
+var6 = var36 ; 
+func9 ( var2 -> var22 ) ; 
+var2 -> var22 = var4 ; 
+} 
+} 
+var31 : 
+func17 ( & var3 ) ; 
+func17 ( & var5 ) ; 
+var2 -> var38 = number ; 
+return var6 ; 
+} 

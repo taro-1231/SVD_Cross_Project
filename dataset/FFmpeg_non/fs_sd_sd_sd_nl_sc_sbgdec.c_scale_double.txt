@@ -1,0 +1,11 @@
+static inline int func1 ( void * var1 , double var2 , double var3 , int * var4 ) 
+{ 
+var3 *= var2 * var5 ; 
+if ( var3 < var6 || var3 >= var7 ) { 
+if ( var1 ) 
+func2 ( var1 , var8 , str , var2 ) ; 
+return func3 ( var9 ) ; 
+} 
+* var4 = var3 ; 
+return number ; 
+} 

@@ -1,0 +1,12 @@
+static uint32_t func1 ( uint32_t var1 ) 
+{ 
+uint8_t var2 , var3 , var4 ; 
+int var5 , var6 , var7 ; 
+var2 = ( var1 >> number ) & number ; 
+var3 = ( var1 >> number ) & number ; 
+var4 = ( var1 ) & number ; 
+var5 = func2 ( ( number + number * var2 + number * var3 + number * var4 ) / number ) ; 
+var6 = func2 ( ( number - number * var2 - number * var3 + number * var4 ) / number ) ; 
+var7 = func2 ( ( number + number * var2 - number * var3 - number * var4 ) / number ) ; 
+return ( var5 << number ) | ( var7 << number ) | var6 ; 
+} 

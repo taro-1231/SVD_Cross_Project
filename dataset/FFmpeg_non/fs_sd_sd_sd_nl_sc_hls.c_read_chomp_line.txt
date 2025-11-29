@@ -1,0 +1,7 @@
+static int func1 ( AVIOContext * var1 , char * var2 , int var3 ) 
+{ 
+int var4 = func2 ( var1 , var2 , var3 ) ; 
+while ( var4 > number && func3 ( var2 [ var4 - number ] ) ) 
+var2 [ -- var4 ] = str ; 
+return var4 ; 
+} 

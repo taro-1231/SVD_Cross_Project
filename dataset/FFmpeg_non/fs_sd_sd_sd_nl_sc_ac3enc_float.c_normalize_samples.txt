@@ -1,0 +1,4 @@
+static int func1 ( AC3EncodeContext * var1 ) 
+{ 
+return number ; 
+} 

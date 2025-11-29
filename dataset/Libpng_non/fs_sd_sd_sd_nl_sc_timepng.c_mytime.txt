@@ -1,0 +1,8 @@
+static int func1 ( struct timespec * var1 ) 
+{ 
+if ( ! func2 ( var2 , var1 ) ) 
+return number ; 
+perror ( str ) ; 
+fprintf ( var3 , str ) ; 
+return number ; 
+} 

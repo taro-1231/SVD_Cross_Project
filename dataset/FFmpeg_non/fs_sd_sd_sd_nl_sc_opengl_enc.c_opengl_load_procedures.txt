@@ -1,0 +1,67 @@
+static int av_cold func1 ( OpenGLContext * var1 ) 
+{ 
+FFOpenGLFunctions * var2 = & var1 -> var3 ; 
+if ( ! var1 -> var4 ) 
+return func2 ( var1 ) ; 
+var2 -> var5 = var5 ; 
+var2 -> var6 = var6 ; 
+var2 -> var7 = var7 ; 
+var2 -> var8 = var8 ; 
+var2 -> var9 = var9 ; 
+var2 -> var10 = var10 ; 
+var2 -> var11 = var11 ; 
+var2 -> var12 = var12 ; 
+var2 -> var13 = var13 ; 
+var2 -> var14 = var14 ; 
+var2 -> var15 = var15 ; 
+var2 -> var16 = var16 ; 
+var2 -> var17 = var17 ; 
+var2 -> var18 = var18 ; 
+var2 -> var19 = var19 ; 
+var2 -> var20 = var20 ; 
+var2 -> var21 = var21 ; 
+var2 -> var22 = var22 ; 
+var2 -> var23 = var23 ; 
+var2 -> var24 = var24 ; 
+var2 -> var25 = var25 ; 
+var2 -> var26 = var26 ; 
+var2 -> var27 = var27 ; 
+var2 -> var28 = var28 ; 
+var2 -> var29 = ( FF_PFNGLVERTEXATTRIBPOINTERPROC ) var29 ; 
+return number ; 
+} 
+static int av_cold func1 ( OpenGLContext * var1 ) 
+{ 
+FFOpenGLFunctions * var2 = & var1 -> var3 ; 
+if ( ! var2 -> name ) { \ 
+return AVERROR ( ENOSYS ) ; \ 
+} 
+if ( ! var1 -> var4 ) 
+return func2 ( var1 ) ; 
+LOAD_OPENGL_FUN ( var5 , FF_PFNGLACTIVETEXTUREPROC ) 
+LOAD_OPENGL_FUN ( var6 , FF_PFNGLGENBUFFERSPROC ) 
+LOAD_OPENGL_FUN ( var7 , FF_PFNGLDELETEBUFFERSPROC ) 
+LOAD_OPENGL_FUN ( var8 , FF_PFNGLBUFFERDATAPROC ) 
+LOAD_OPENGL_FUN ( var9 , FF_PFNGLBINDBUFFERPROC ) 
+LOAD_OPENGL_FUN ( var10 , FF_PFNGLGETATTRIBLOCATIONPROC ) 
+LOAD_OPENGL_FUN ( var11 , FF_PFNGLGETUNIFORMLOCATIONPROC ) 
+LOAD_OPENGL_FUN ( var12 , FF_PFNGLUNIFORM1FPROC ) 
+LOAD_OPENGL_FUN ( var13 , FF_PFNGLUNIFORM1IPROC ) 
+LOAD_OPENGL_FUN ( var14 , FF_PFNGLUNIFORMMATRIX4FVPROC ) 
+LOAD_OPENGL_FUN ( var15 , FF_PFNGLCREATEPROGRAMPROC ) 
+LOAD_OPENGL_FUN ( var16 , FF_PFNGLDELETEPROGRAMPROC ) 
+LOAD_OPENGL_FUN ( var17 , FF_PFNGLUSEPROGRAMPROC ) 
+LOAD_OPENGL_FUN ( var18 , FF_PFNGLLINKPROGRAMPROC ) 
+LOAD_OPENGL_FUN ( var19 , FF_PFNGLGETPROGRAMIVPROC ) 
+LOAD_OPENGL_FUN ( var20 , FF_PFNGLGETPROGRAMINFOLOGPROC ) 
+LOAD_OPENGL_FUN ( var21 , FF_PFNGLATTACHSHADERPROC ) 
+LOAD_OPENGL_FUN ( var22 , FF_PFNGLCREATESHADERPROC ) 
+LOAD_OPENGL_FUN ( var23 , FF_PFNGLDELETESHADERPROC ) 
+LOAD_OPENGL_FUN ( var24 , FF_PFNGLCOMPILESHADERPROC ) 
+LOAD_OPENGL_FUN ( var25 , FF_PFNGLSHADERSOURCEPROC ) 
+LOAD_OPENGL_FUN ( var26 , FF_PFNGLGETSHADERIVPROC ) 
+LOAD_OPENGL_FUN ( var27 , FF_PFNGLGETSHADERINFOLOGPROC ) 
+LOAD_OPENGL_FUN ( var28 , FF_PFNGLENABLEVERTEXATTRIBARRAYPROC ) 
+LOAD_OPENGL_FUN ( var29 , FF_PFNGLVERTEXATTRIBPOINTERPROC ) 
+return number ; 
+} 

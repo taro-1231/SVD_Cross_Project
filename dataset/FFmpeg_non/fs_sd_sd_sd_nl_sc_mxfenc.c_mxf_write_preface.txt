@@ -1,0 +1,29 @@
+static void func1 ( AVFormatContext * var1 ) 
+{ 
+MXFContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+func2 ( var4 , number ) ; 
+func3 ( var1 , str , var4 -> var5 - number ) ; 
+klv_encode_ber_length ( var4 , 130 + 16LL * DESCRIPTOR_COUNT ( var2 -> essence_container_count ) ) ; 
+func4 ( var4 , number , number ) ; 
+func5 ( var4 , var6 , number ) ; 
+func3 ( var1 , str , var4 -> var5 - number ) ; 
+func4 ( var4 , number , number ) ; 
+func6 ( var4 , var2 -> var7 ) ; 
+func4 ( var4 , number , number ) ; 
+func7 ( var4 , number ) ; 
+func4 ( var4 , number + number , number ) ; 
+func8 ( var4 , number ) ; 
+func5 ( var4 , var8 , number ) ; 
+func4 ( var4 , number , number ) ; 
+func5 ( var4 , var9 , number ) ; 
+func4 ( var4 , number , number ) ; 
+if ( var1 -> var10 == & var11 ) 
+func9 ( var4 , var12 , number ) ; 
+else 
+func9 ( var4 , var13 , number ) ; 
+func4 ( var4 , number + 16LL * DESCRIPTOR_COUNT ( var2 -> essence_container_count ) , 0x3B0A ) ; 
+func10 ( var1 ) ; 
+func4 ( var4 , number , number ) ; 
+func6 ( var4 , number ) ; 
+} 

@@ -1,0 +1,59 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 = number , var4 ; 
+if ( var1 != number ) { 
+fprintf ( var5 , str , var2 [ number ] ) ; 
+exit ( number ) ; 
+} 
+var6 = var2 [ number ] ; 
+func2 ( ) ; 
+if ( func3 ( & var7 , var6 , var8 , var8 ) < number ) { 
+fprintf ( var5 , str , var6 ) ; 
+exit ( number ) ; 
+} 
+if ( func4 ( var7 , var8 ) < number ) { 
+fprintf ( var5 , str ) ; 
+exit ( number ) ; 
+} 
+if ( func5 ( & var9 , var7 , var10 ) >= number ) { 
+var11 = var7 -> var12 [ var9 ] ; 
+var13 = var11 -> var14 ; 
+} 
+func6 ( var7 , number , var6 , number ) ; 
+if ( ! var11 ) { 
+fprintf ( var5 , str ) ; 
+var3 = number ; 
+goto var15 ; 
+} 
+var16 = func7 ( ) ; 
+if ( ! var16 ) { 
+fprintf ( var5 , str ) ; 
+var3 = func8 ( var17 ) ; 
+goto var15 ; 
+} 
+printf ( str ) ; 
+func9 ( & var18 ) ; 
+var18 . var19 = var8 ; 
+var18 . var20 = number ; 
+while ( func10 ( var7 , & var18 ) >= number ) { 
+AVPacket var21 = var18 ; 
+do { 
+var3 = func11 ( & var4 , number ) ; 
+if ( var3 < number ) 
+break ; 
+var18 . var19 += var3 ; 
+var18 . var20 -= var3 ; 
+} while ( var18 . var20 > number ) ; 
+func12 ( & var21 ) ; 
+} 
+var18 . var19 = var8 ; 
+var18 . var20 = number ; 
+do { 
+func11 ( & var4 , number ) ; 
+} while ( var4 ) ; 
+var15 : 
+func13 ( var13 ) ; 
+func14 ( & var7 ) ; 
+func15 ( & var16 ) ; 
+return var3 < number ; 
+} 

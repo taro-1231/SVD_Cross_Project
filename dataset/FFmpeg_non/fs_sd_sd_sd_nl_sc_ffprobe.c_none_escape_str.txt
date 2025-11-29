@@ -1,0 +1,4 @@
+static const char * func1 ( AVBPrint * var1 , const char * var2 , const char var3 , void * var4 ) 
+{ 
+return var2 ; 
+} 

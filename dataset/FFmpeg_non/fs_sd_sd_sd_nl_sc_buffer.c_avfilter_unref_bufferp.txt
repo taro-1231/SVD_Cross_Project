@@ -1,0 +1,7 @@
+void func1 ( AVFilterBufferRef ** var1 ) 
+{ 
+FF_DISABLE_DEPRECATION_WARNINGS 
+var2 ( * var1 ) ; 
+FF_ENABLE_DEPRECATION_WARNINGS 
+* var1 = var3 ; 
+} 

@@ -1,0 +1,4 @@
+const char * func1 ( void ) 
+{ 
+return var1 ; 
+} 

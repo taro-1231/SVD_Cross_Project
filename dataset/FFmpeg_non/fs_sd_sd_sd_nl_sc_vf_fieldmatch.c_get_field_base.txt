@@ -1,0 +1,4 @@
+static int func1 ( int var1 , int var2 ) 
+{ 
+return var1 < number ? number - var2 : number + var2 ; 
+} 

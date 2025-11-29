@@ -1,0 +1,61 @@
+static int func1 ( AVFilterLink * var1 ) 
+{ 
+AVFilterContext * var2 = var1 -> var3 ; 
+JoinContext * var4 = var2 -> var5 ; 
+uint64_t * var6 ; 
+int var7 , var8 = number ; 
+if ( ! ( var6 = func2 ( var2 -> var9 , sizeof ( * var6 ) ) ) ) 
+return func3 ( var10 ) ; 
+for ( var7 = number ; var7 < var4 -> var11 ; var7 ++ ) { 
+ChannelMap * var12 = & var4 -> var13 [ var7 ] ; 
+AVFilterLink * var14 ; 
+if ( var12 -> var15 < number ) 
+continue ; 
+var14 = var2 -> var6 [ var12 -> var15 ] ; 
+if ( ! var12 -> var16 ) 
+var12 -> var16 = func4 ( var14 -> var17 , 
+var12 -> var18 ) ; 
+if ( ! ( var12 -> var16 & var14 -> var17 ) ) { 
+func5 ( var2 , AV_LOG_ERROR , str 
+str , func6 ( var12 -> var16 ) , 
+var12 -> var15 ) ; 
+var8 = func3 ( var19 ) ; 
+goto var20 ; 
+} 
+var6 [ var12 -> var15 ] |= var12 -> var16 ; 
+} 
+for ( var7 = number ; var7 < var4 -> var11 ; var7 ++ ) { 
+ChannelMap * var12 = & var4 -> var13 [ var7 ] ; 
+if ( var12 -> var15 < number ) 
+func7 ( var2 , var12 , var6 ) ; 
+} 
+for ( var7 = number ; var7 < var4 -> var11 ; var7 ++ ) { 
+ChannelMap * var12 = & var4 -> var13 [ var7 ] ; 
+if ( var12 -> var15 < number ) 
+func8 ( var2 , var12 , var6 ) ; 
+if ( var12 -> var15 < number ) { 
+func5 ( var2 , AV_LOG_ERROR , str 
+str , 
+func6 ( var12 -> var21 ) ) ; 
+goto var20 ; 
+} 
+var12 -> var18 = func9 ( var2 -> var6 [ var12 -> var15 ] -> var17 , 
+var12 -> var16 ) ; 
+} 
+func5 ( var2 , var22 , str ) ; 
+for ( var7 = number ; var7 < var4 -> var11 ; var7 ++ ) { 
+ChannelMap * var12 = & var4 -> var13 [ var7 ] ; 
+func5 ( var2 , var22 , str , var12 -> var15 , 
+func6 ( var12 -> var16 ) , 
+func6 ( var12 -> var21 ) ) ; 
+} 
+func5 ( var2 , var22 , str ) ; 
+for ( var7 = number ; var7 < var2 -> var9 ; var7 ++ ) { 
+if ( ! var6 [ var7 ] ) 
+func5 ( var2 , AV_LOG_WARNING , str 
+str , var7 ) ; 
+} 
+var20 : 
+func10 ( & var6 ) ; 
+return var8 ; 
+} 

@@ -1,0 +1,47 @@
+static int func1 ( MBContext * var1 , uint32_t * var2 , int var3 , int var4 , int var5 ) 
+{ 
+uint32_t var6 , var7 , var8 , var9 , var10 ; 
+uint32_t var11 = number ; 
+int var12 ; 
+if ( ! var3 || ! var4 || var3 + number == var1 -> var13 || var4 + number == var1 -> var14 ) 
+return number ; 
+var12 = func2 ( func3 ( var3 - ( var1 -> var13 >> number ) ) * var1 -> var14 , func3 ( var4 - ( var1 -> var14 >> number ) ) * var1 -> var13 ) ; 
+if ( var12 < ( var1 -> var13 * var1 -> var14 >> number ) ) 
+return number ; 
+var6 = var2 [ ( var3 + number ) + ( var4 + number ) * var5 ] ; 
+var7 = var2 [ ( var3 - number ) + ( var4 + number ) * var5 ] ; 
+var8 = var2 [ ( var3 + number ) + ( var4 + number ) * var5 ] ; 
+var9 = var2 [ ( var3 + number ) + ( var4 + number ) * var5 ] ; 
+if ( var6 && var8 ) { 
+var7 = var2 [ ( var3 - number ) + ( var4 + number ) * var5 ] ; 
+var9 = var2 [ ( var3 + number ) + ( var4 - number ) * var5 ] ; 
+} else if ( var7 && var9 ) { 
+var6 = var2 [ ( var3 + number ) + ( var4 - number ) * var5 ] ; 
+var8 = var2 [ ( var3 - number ) + ( var4 - number ) * var5 ] ; 
+} else if ( var8 ) { 
+var9 = var2 [ ( var3 + number ) + ( var4 - number ) * var5 ] ; 
+var6 = var2 [ ( var3 - number ) + ( var4 + number ) * var5 ] ; 
+var7 = var2 [ ( var3 + number ) + ( var4 - number ) * var5 ] ; 
+} else if ( var9 ) { 
+var8 = var2 [ ( var3 - number ) + ( var4 - number ) * var5 ] ; 
+var6 = var2 [ ( var3 - number ) + ( var4 + number ) * var5 ] ; 
+var7 = var2 [ ( var3 + number ) + ( var4 - number ) * var5 ] ; 
+} else 
+return number ; 
+for ( var10 = number ; var10 < number ; var10 ++ ) { 
+int var15 = number * var10 ; 
+uint8_t var16 = var6 >> var15 ; 
+uint8_t var17 = var7 >> var15 ; 
+uint8_t var18 = var8 >> var15 ; 
+uint8_t var19 = var9 >> var15 ; 
+int var20 = ( var16 + var17 ) ; 
+int var21 = ( var18 + var19 ) ; 
+if ( func3 ( var20 - var21 ) > number ) 
+return number ; 
+if ( func3 ( var16 - var17 ) + func3 ( var18 - var19 ) > number ) 
+return number ; 
+var11 |= ( ( var20 + var21 + number ) / number ) << var15 ; 
+} 
+var2 [ var3 + var4 * var5 ] = var11 ; 
+return number ; 
+} 

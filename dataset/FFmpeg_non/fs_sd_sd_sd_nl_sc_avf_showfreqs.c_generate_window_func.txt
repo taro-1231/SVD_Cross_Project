@@ -1,0 +1,72 @@
+static void func1 ( float * var1 , int var2 , int var3 , float * var4 ) 
+{ 
+int var5 ; 
+switch ( var3 ) { 
+case var6 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number ; 
+* var4 = number ; 
+break ; 
+case var7 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - func2 ( ( var5 - ( var2 - number ) / number ) / ( ( var2 - number ) / number ) ) ; 
+* var4 = number ; 
+break ; 
+case var8 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number * ( number - cos ( number * var9 * var5 / ( var2 - number ) ) ) ; 
+* var4 = number ; 
+break ; 
+case var10 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var11 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var12 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - ( var5 - ( var2 - number ) / number ) / ( ( var2 - number ) / number ) * ( var5 - ( var2 - number ) / number ) / ( ( var2 - number ) / number ) ; 
+* var4 = number ; 
+break ; 
+case var13 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - 
+number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - 
+number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - 
+number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - 
+number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var14 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var15 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var16 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * func2 ( var5 / ( double ) ( var2 - number ) - number ) - number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var17 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = sin ( var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+case var18 : 
+for ( var5 = number ; var5 < var2 ; var5 ++ ) 
+var1 [ var5 ] = number - number * cos ( number * var9 * var5 / ( var2 - number ) ) + number * cos ( number * var9 * var5 / ( var2 - number ) ) - number * cos ( number * var9 * var5 / ( var2 - number ) ) ; 
+* var4 = number ; 
+break ; 
+var19 : 
+func3 ( number ) ; 
+} 
+} 

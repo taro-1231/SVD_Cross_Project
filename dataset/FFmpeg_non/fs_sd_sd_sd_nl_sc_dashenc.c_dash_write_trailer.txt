@@ -1,0 +1,27 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+DASHContext * var2 = var1 -> var3 ; 
+if ( var1 -> var4 > number ) { 
+OutputStream * var5 = & var2 -> var6 [ number ] ; 
+if ( ! var2 -> var7 ) 
+var2 -> var7 = func2 ( var5 -> var8 - var5 -> var9 , 
+var1 -> var6 [ number ] -> var10 , 
+var11 ) ; 
+var2 -> var12 = func2 ( var5 -> var8 - var5 -> var13 , 
+var1 -> var6 [ number ] -> var10 , 
+var11 ) ; 
+} 
+func3 ( var1 , number , - number ) ; 
+if ( var2 -> var14 ) { 
+char var15 [ number ] ; 
+int var16 ; 
+for ( var16 = number ; var16 < var1 -> var4 ; var16 ++ ) { 
+OutputStream * var5 = & var2 -> var6 [ var16 ] ; 
+snprintf ( var15 , sizeof ( var15 ) , str , var2 -> var17 , var5 -> var18 ) ; 
+func4 ( var15 ) ; 
+} 
+func4 ( var1 -> var15 ) ; 
+} 
+func5 ( var1 ) ; 
+return number ; 
+} 

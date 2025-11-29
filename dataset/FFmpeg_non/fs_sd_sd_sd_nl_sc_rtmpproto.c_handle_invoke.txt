@@ -1,0 +1,27 @@
+static int func1 ( URLContext * var1 , RTMPPacket * var2 ) 
+{ 
+RTMPContext * var3 = var1 -> var4 ; 
+int var5 = number ; 
+if ( func2 ( var2 -> var6 , var2 -> var7 , str ) ) { 
+if ( ( var5 = func3 ( var1 , var2 ) ) < number ) 
+return var5 ; 
+} else if ( func2 ( var2 -> var6 , var2 -> var7 , str ) ) { 
+if ( ( var5 = func4 ( var1 , var2 ) ) < number ) 
+return var5 ; 
+} else if ( func2 ( var2 -> var6 , var2 -> var7 , str ) ) { 
+if ( ( var5 = func5 ( var1 , var2 ) ) < number ) 
+return var5 ; 
+} else if ( func2 ( var2 -> var6 , var2 -> var7 , str ) ) { 
+if ( ( var5 = func6 ( var1 , var3 ) ) < number ) 
+return var5 ; 
+} else if ( func2 ( var2 -> var6 , var2 -> var7 , str ) || 
+func2 ( var2 -> var6 , var2 -> var7 , str ) || 
+func2 ( var2 -> var6 , var2 -> var7 , str ) || 
+func2 ( var2 -> var6 , var2 -> var7 , str ) || 
+func2 ( var2 -> var6 , var2 -> var7 , str ) || 
+func2 ( var2 -> var6 , var2 -> var7 , str ) ) { 
+if ( ( var5 = func7 ( var1 , var2 ) ) < number ) 
+return var5 ; 
+} 
+return var5 ; 
+} 

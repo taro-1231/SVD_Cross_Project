@@ -1,0 +1,72 @@
+static int func1 ( AVFilterContext * var1 , uint8_t * var2 , const struct keypoint * var3 ) 
+{ 
+int var4 , var5 = number ; 
+const struct keypoint * var6 ; 
+func2 var7 = number ; 
+int var8 = func3 ( var3 ) ; 
+func2 ( * var9 ) [ number ] = func4 ( var8 , sizeof ( * var9 ) ) ; 
+func2 * var10 = func5 ( ( var8 - number ) * sizeof ( * var10 ) ) ; 
+func2 * var11 = func4 ( var8 , sizeof ( * var11 ) ) ; 
+if ( ! var9 || ! var10 || ! var11 ) { 
+var5 = func6 ( var12 ) ; 
+goto var13 ; 
+} 
+var4 = - number ; 
+for ( var6 = var3 ; var6 ; var6 = var6 -> var14 ) { 
+if ( var4 != - number ) 
+var10 [ var4 ] = var6 -> var15 - var7 ; 
+var7 = var6 -> var15 ; 
+var4 ++ ; 
+} 
+var6 = var3 ; 
+for ( var4 = number ; var4 < var8 - number ; var4 ++ ) { 
+func2 var16 = var6 -> var2 , 
+var17 = var6 -> var14 -> var2 , 
+var18 = var6 -> var14 -> var14 -> var2 ; 
+var11 [ var4 ] = number * ( ( var18 - var17 ) / var10 [ var4 ] - ( var17 - var16 ) / var10 [ var4 - number ] ) ; 
+var6 = var6 -> var14 ; 
+} 
+var9 [ number ] [ var20 ] = var9 [ var8 - number ] [ var20 ] = number ; 
+for ( var4 = number ; var4 < var8 - number ; var4 ++ ) { 
+var9 [ var4 ] [ var19 ] = var10 [ var4 - number ] ; 
+var9 [ var4 ] [ var20 ] = number * ( var10 [ var4 - number ] + var10 [ var4 ] ) ; 
+var9 [ var4 ] [ var21 ] = var10 [ var4 ] ; 
+} 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+func2 var22 = var9 [ var4 ] [ var20 ] - var9 [ var4 ] [ var19 ] * var9 [ var4 - number ] [ var21 ] ; 
+func2 var23 = var22 ? number / var22 : number ; 
+var9 [ var4 ] [ var21 ] *= var23 ; 
+var11 [ var4 ] = ( var11 [ var4 ] - var9 [ var4 ] [ var19 ] * var11 [ var4 - number ] ) * var23 ; 
+} 
+for ( var4 = var8 - number ; var4 >= number ; var4 -- ) 
+var11 [ var4 ] = var11 [ var4 ] - var9 [ var4 ] [ var21 ] * var11 [ var4 + number ] ; 
+var4 = number ; 
+var6 = var3 ; 
+func7 ( var6 -> var14 ) ; 
+while ( var6 -> var14 ) { 
+func2 var17 = var6 -> var2 ; 
+func2 var18 = var6 -> var14 -> var2 ; 
+func2 var24 = var17 ; 
+func2 var25 = ( var18 - var17 ) / var10 [ var4 ] - var10 [ var4 ] * var11 [ var4 ] / number - var10 [ var4 ] * ( var11 [ var4 + number ] - var11 [ var4 ] ) / number ; 
+func2 var26 = var11 [ var4 ] / number ; 
+func2 var27 = ( var11 [ var4 + number ] - var11 [ var4 ] ) / ( number * var10 [ var4 ] ) ; 
+int var15 ; 
+int var28 = var6 -> var15 * number ; 
+int var29 = var6 -> var14 -> var15 * number ; 
+func7 ( var28 >= number && var28 <= number && 
+var29 >= number && var29 <= number ) ; 
+for ( var15 = var28 ; var15 <= var29 ; var15 ++ ) { 
+func2 var30 = ( var15 - var28 ) * number / number ; 
+func2 var31 = var24 + var25 * var30 + var26 * var30 * var30 + var27 * var30 * var30 * var30 ; 
+var2 [ var15 ] = func8 ( var31 , number , number ) * number ; 
+func9 ( var1 , var32 , str , var30 , var31 , var15 , var2 [ var15 ] ) ; 
+} 
+var6 = var6 -> var14 ; 
+var4 ++ ; 
+} 
+var13 : 
+func10 ( var9 ) ; 
+func10 ( var10 ) ; 
+func10 ( var11 ) ; 
+return var5 ; 
+} 

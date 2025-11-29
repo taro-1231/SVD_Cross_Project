@@ -1,0 +1,15 @@
+static int func1 ( AVTreeNode * var1 ) 
+{ 
+if ( var1 ) { 
+int var2 = func1 ( var1 -> var3 [ number ] ) ; 
+int var4 = func1 ( var1 -> var3 [ number ] ) ; 
+if ( var2 > number || var4 > number ) 
+return number ; 
+if ( var4 - var2 != var1 -> var5 ) 
+return number ; 
+if ( var1 -> var5 > number || var1 -> var5 < - number ) 
+return number ; 
+return func2 ( var2 , var4 ) + number ; 
+} 
+return number ; 
+} 

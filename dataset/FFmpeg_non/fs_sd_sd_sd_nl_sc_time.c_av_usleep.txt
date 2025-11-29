@@ -1,0 +1,10 @@
+int func1 ( unsigned var1 ) 
+{ 
+struct timespec var2 = { var1 / number , var1 % number * number } ; 
+while ( func2 ( & var2 , & var2 ) < number && var3 == var4 ) ; 
+return number ; 
+return usleep ( var1 ) ; 
+Sleep ( var1 / number ) ; 
+return number ; 
+return AVERROR ( ENOSYS ) ; 
+} 

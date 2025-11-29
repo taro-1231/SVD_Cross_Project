@@ -1,0 +1,24 @@
+static int func1 ( const char * var1 , int64_t * var2 ) 
+{ 
+const char * var3 = var1 ; 
+char * var4 ; 
+int var5 , var6 ; 
+double var7 = number ; 
+if ( * var3 < var1 || * var3 > var1 ) 
+return number ; 
+var5 = func2 ( var3 , & var4 , number ) ; 
+if ( var4 == var3 || * var4 != var1 || var4 [ number ] < var1 || var4 [ number ] > var1 ) 
+return number ; 
+var3 = var4 + number ; 
+var6 = func2 ( var3 , & var4 , number ) ; 
+if ( var4 == var3 ) 
+return number ; 
+var3 = var4 ; 
+if ( * var4 == var1 ) { 
+var7 = strtod ( var3 + number , & var4 ) ; 
+if ( var4 > var3 + number ) 
+var3 = var4 ; 
+} 
+* var2 = ( var5 * number + var6 * number + var7 ) * var8 ; 
+return var3 - var1 ; 
+} 

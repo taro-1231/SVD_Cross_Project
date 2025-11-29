@@ -1,0 +1,56 @@
+static int func1 ( AVFilterContext * var1 , void * var2 , int var3 , int var4 ) 
+{ 
+RemoveGrainContext * func2 = var1 -> var5 ; 
+ThreadData * var6 = var2 ; 
+AVFrame * var7 = var6 -> var7 ; 
+AVFrame * var8 = var6 -> var8 ; 
+const int func3 = var6 -> var9 ; 
+const int var10 = func2 -> var11 [ func3 ] ; 
+const int var12 = var7 -> var13 [ func3 ] - number ; 
+const int var14 = var7 -> var13 [ func3 ] ; 
+const int var15 = var7 -> var13 [ func3 ] + number ; 
+int var16 = ( var10 * var3 ) / var4 ; 
+int var17 = ( var10 * ( var3 + number ) ) / var4 ; 
+int var18 , var19 ; 
+var16 = func4 ( number , var16 ) ; 
+var17 = func5 ( var10 - number , var17 ) ; 
+for ( var19 = var16 ; var19 < var17 ; var19 ++ ) { 
+uint8_t * var20 = var8 -> var21 [ func3 ] ; 
+uint8_t * var22 = var7 -> var21 [ func3 ] ; 
+var22 = var7 -> var21 [ func3 ] + var19 * var7 -> var13 [ func3 ] ; 
+var20 = var8 -> var21 [ func3 ] + var19 * var8 -> var13 [ func3 ] ; 
+if ( func2 -> var23 && ! ( var19 & number ) ) { 
+memcpy ( var20 , var22 , func2 -> var24 [ func3 ] ) ; 
+continue ; 
+} 
+if ( func2 -> var25 && var19 & number ) { 
+memcpy ( var20 , var22 , func2 -> var24 [ func3 ] ) ; 
+continue ; 
+} 
+* var20 += * var22 ++ ; 
+if ( func2 -> func6 [ func3 ] ) { 
+int var26 = ( func2 -> var24 [ func3 ] - number ) & var27 ; 
+func2 -> func6 [ func3 ] ( var20 , var22 , var7 -> var13 [ func3 ] , var26 ) ; 
+var18 = number + var26 ; 
+var20 += var26 ; 
+var22 += var26 ; 
+} else 
+var18 = number ; 
+for ( ; var18 < func2 -> var24 [ func3 ] - number ; var18 ++ ) { 
+const int var28 = var22 [ - var15 ] ; 
+const int var29 = var22 [ - var14 ] ; 
+const int var30 = var22 [ - var12 ] ; 
+const int var31 = var22 [ - number ] ; 
+const int var32 = var22 [ number ] ; 
+const int var33 = var22 [ number ] ; 
+const int var34 = var22 [ var12 ] ; 
+const int var35 = var22 [ var14 ] ; 
+const int var36 = var22 [ var15 ] ; 
+const int var37 = func2 -> func7 [ func3 ] ( var32 , var28 , var29 , var30 , var31 , var33 , var34 , var35 , var36 ) ; 
+* var20 = var37 ; 
+var20 ++ , var22 ++ ; 
+} 
+var20 [ number ] = var22 [ number ] ; 
+} 
+return number ; 
+} 

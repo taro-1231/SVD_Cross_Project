@@ -1,0 +1,9 @@
+static inline double func1 ( VignetteContext * var1 ) 
+{ 
+double var2 = number ; 
+if ( var1 -> var3 ) { 
+var2 = var1 -> var4 / ( double ) ( 1LL << 32 ) ; 
+var1 -> var4 = var1 -> var4 * number + number ; 
+} 
+return var2 ; 
+} 

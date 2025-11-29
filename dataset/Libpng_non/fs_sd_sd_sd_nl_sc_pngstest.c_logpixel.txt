@@ -1,0 +1,56 @@
+func1 ( const Transform * var1 , png_uint_32 var2 , png_uint_32 var3 , 
+const Pixel * var4 , const Pixel * var5 , const Pixel * var6 , const char * var7 ) 
+{ 
+const png_uint_32 var8 = var1 -> var9 -> var10 . var11 ; 
+const png_uint_32 var12 = var1 -> var13 -> var10 . var11 ; 
+png_uint_32 var14 = var12 & var15 ; 
+const char * var16 = str ; 
+char var17 [ number ] , var18 [ number ] , var19 [ number ] , var20 [ number ] ; 
+char var21 [ number ] ; 
+func2 ( var17 , var4 , var8 ) ; 
+func2 ( var18 , var5 , var12 ) ; 
+func2 ( var19 , var6 , var12 ) ; 
+if ( var1 -> var22 ) 
+sprintf ( var20 , str , ( unsigned long ) var3 ) ; 
+else 
+sprintf ( var20 , str , ( unsigned long ) var2 , ( unsigned long ) var3 ) ; 
+if ( var1 -> var23 != var24 ) 
+{ 
+var16 = str ; 
+var14 |= var25 ; 
+} 
+if ( var1 -> var26 != var24 ) 
+{ 
+Pixel var27 ; 
+char var28 [ number ] ; 
+var27 . var29 = var1 -> var26 -> var30 ; 
+var27 . var31 = var1 -> var26 -> var32 ; 
+var27 . var33 = var1 -> var26 -> var34 ; 
+var27 . var35 = - number ; 
+func2 ( var28 , & var27 , var14 ) ; 
+sprintf ( var21 , str , var28 ) ; 
+} 
+else 
+var21 [ number ] = number ; 
+if ( var1 -> var9 -> var36 != var1 -> var13 -> var36 ) 
+{ 
+char var37 [ number ] ; 
+sprintf ( var37 , 
+str 
+str , var20 , var7 , var16 , 
+var17 , var21 , var19 , var18 ) ; 
+return func3 ( var1 -> var9 , var1 -> var9 -> var36 , 
+var37 , var1 -> var13 -> var36 ) ; 
+} 
+else 
+{ 
+char var37 [ number ] ; 
+sprintf ( var37 , 
+str 
+str , 
+var20 , var7 , var16 , var17 , var21 , var19 , 
+var18 ) ; 
+return func3 ( var1 -> var9 , var1 -> var9 -> var36 , 
+var37 , str ) ; 
+} 
+} 

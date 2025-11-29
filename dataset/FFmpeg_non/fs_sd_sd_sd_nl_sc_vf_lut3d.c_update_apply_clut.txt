@@ -1,0 +1,7 @@
+static AVFrame * func1 ( AVFilterContext * var1 , AVFrame * var2 , 
+const AVFrame * var3 ) 
+{ 
+AVFilterLink * var4 = var1 -> var5 [ number ] ; 
+func2 ( var1 -> var6 , var3 ) ; 
+return func3 ( var4 , var2 ) ; 
+} 

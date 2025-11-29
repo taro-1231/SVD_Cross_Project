@@ -1,0 +1,156 @@
+static void func1 ( OptionsContext * var2 , AVFormatContext * var3 ) 
+{ 
+int var4 , var5 ; 
+for ( var4 = number ; var4 < var3 -> var6 ; var4 ++ ) { 
+AVStream * var7 = var3 -> var1 [ var4 ] ; 
+AVCodecParameters * var8 = var7 -> var9 ; 
+InputStream * var10 = func2 ( sizeof ( * var10 ) ) ; 
+char * var11 = var12 , * var13 = var12 , * var14 = var12 ; 
+char * var15 = var12 ; 
+char * var16 = var12 ; 
+char * var17 ; 
+char * var18 = var12 ; 
+const AVClass * var19 = func3 ( ) ; 
+const AVOption * var20 = func4 ( & var19 , var36 , var12 , number , number ) ; 
+if ( ! var10 ) 
+func5 ( number ) ; 
+func6 ( var21 , var22 ) ; 
+var21 [ var22 - number ] = var10 ; 
+var10 -> var7 = var7 ; 
+var10 -> var23 = var24 ; 
+var10 -> var25 = number ; 
+var7 -> var25 = var26 ; 
+var10 -> var27 = number ; 
+var10 -> var28 = var29 ; 
+var10 -> var30 = var31 ; 
+var10 -> var32 = number ; 
+func7 ( var32 , var33 , var10 -> var32 , var3 , var7 ) ; 
+var10 -> var34 = number ; 
+func7 ( var34 , var4 , var10 -> var34 , var3 , var7 ) ; 
+func7 ( var35 , var36 , var16 , var3 , var7 ) ; 
+if ( var16 ) { 
+uint32_t var37 = func8 ( var16 , & var17 , number ) ; 
+if ( * var17 ) 
+var37 = func9 ( var16 ) ; 
+var7 -> var9 -> var16 = var37 ; 
+} 
+var10 -> var38 = func10 ( var2 , var3 , var7 ) ; 
+var10 -> var39 = func11 ( var2 -> var40 -> var41 , var10 -> var7 -> var9 -> var42 , var3 , var7 , var10 -> var38 ) ; 
+var10 -> var43 = - number ; 
+func7 ( var43 , var4 , var10 -> var43 , var3 , var7 ) ; 
+func7 ( var25 , var36 , var18 , var3 , var7 ) ; 
+var10 -> var44 = var45 ; 
+if ( var18 && func12 ( & var19 , var20 , var18 , & var10 -> var44 ) < number ) { 
+func13 ( var12 , var46 , var36 , 
+var18 ) ; 
+func5 ( number ) ; 
+} 
+var10 -> var47 = var48 ; 
+var10 -> var49 = func14 ( var10 -> var38 ) ; 
+if ( ! var10 -> var49 ) { 
+func13 ( var12 , var46 , var36 ) ; 
+func5 ( number ) ; 
+} 
+var5 = func15 ( var10 -> var49 , var8 ) ; 
+if ( var5 < number ) { 
+func13 ( var12 , var46 , var36 ) ; 
+func5 ( number ) ; 
+} 
+switch ( var8 -> var50 ) { 
+case var51 : 
+if ( ! var10 -> var38 ) 
+var10 -> var38 = func16 ( var8 -> var42 ) ; 
+if ( func17 ( var7 -> var52 ) ) { 
+func18 ( var10 -> var49 , func17 ( var7 -> var52 ) ) ; 
+var10 -> var49 -> var53 = var7 -> var52 -> var53 ; 
+var10 -> var49 -> var54 = var7 -> var52 -> var54 ; 
+var10 -> var49 -> var55 = var7 -> var52 -> var55 ; 
+var10 -> var49 -> var56 = var7 -> var52 -> var56 ; 
+var10 -> var49 -> var57 |= var58 ; 
+} 
+var10 -> var49 -> var11 = var7 -> var59 ; 
+func7 ( var60 , var36 , var11 , var3 , var7 ) ; 
+if ( var11 && func19 ( & var10 -> var11 , 
+var11 ) < number ) { 
+func13 ( var12 , var46 , var36 , 
+var11 ) ; 
+func5 ( number ) ; 
+} 
+var10 -> var61 = - number ; 
+func7 ( var61 , var4 , var10 -> var61 , var3 , var7 ) ; 
+func7 ( var62 , var36 , var13 , var3 , var7 ) ; 
+if ( var13 ) { 
+if ( ! strcmp ( var13 , var36 ) ) 
+var10 -> var63 = var64 ; 
+else if ( ! strcmp ( var13 , var36 ) ) 
+var10 -> var63 = var65 ; 
+else { 
+int var4 ; 
+for ( var4 = number ; var62 [ var4 ] . var66 ; var4 ++ ) { 
+if ( ! strcmp ( var62 [ var4 ] . var66 , var13 ) ) { 
+var10 -> var63 = var62 [ var4 ] . var67 ; 
+break ; 
+} 
+} 
+if ( ! var10 -> var63 ) { 
+func13 ( var12 , var68 , var36 , 
+var13 ) ; 
+func13 ( var12 , var68 , var36 ) ; 
+for ( var4 = number ; var62 [ var4 ] . var66 ; var4 ++ ) 
+func13 ( var12 , var68 , var36 , var62 [ var4 ] . var66 ) ; 
+func13 ( var12 , var68 , var36 ) ; 
+func5 ( number ) ; 
+} 
+} 
+} 
+func7 ( var69 , var36 , var14 , var3 , var7 ) ; 
+if ( var14 ) { 
+var10 -> var14 = func20 ( var14 ) ; 
+if ( ! var10 -> var14 ) 
+func5 ( number ) ; 
+} 
+func7 ( var70 , var36 , 
+var15 , var3 , var7 ) ; 
+if ( var15 ) { 
+var10 -> var15 = func21 ( var15 ) ; 
+if ( var10 -> var15 == var71 ) { 
+func13 ( var12 , var68 , str 
+str , var15 ) ; 
+} 
+} else { 
+var10 -> var15 = var71 ; 
+} 
+var10 -> var72 = var71 ; 
+break ; 
+case var73 : 
+var10 -> var74 = var75 ; 
+func7 ( var74 , var4 , var10 -> var74 , var3 , var7 ) ; 
+func22 ( var10 ) ; 
+break ; 
+case var76 : 
+case var77 : { 
+char * var78 = var12 ; 
+if ( ! var10 -> var38 ) 
+var10 -> var38 = func16 ( var8 -> var42 ) ; 
+func7 ( var79 , var4 , var10 -> var79 , var3 , var7 ) ; 
+func7 ( var80 , var36 , var78 , var3 , var7 ) ; 
+if ( var78 && 
+func23 ( & var10 -> var49 -> var53 , & var10 -> var49 -> var54 , var78 ) < number ) { 
+func13 ( var12 , var68 , var36 , var78 ) ; 
+func5 ( number ) ; 
+} 
+break ; 
+} 
+case var81 : 
+case var82 : 
+break ; 
+var83 : 
+abort ( ) ; 
+} 
+var5 = func24 ( var8 , var10 -> var49 ) ; 
+if ( var5 < number ) { 
+func13 ( var12 , var46 , var36 ) ; 
+func5 ( number ) ; 
+} 
+} 
+} 

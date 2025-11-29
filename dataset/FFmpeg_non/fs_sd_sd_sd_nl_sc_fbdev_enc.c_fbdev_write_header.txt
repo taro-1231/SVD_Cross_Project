@@ -1,0 +1,48 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+FBDevContext * var2 = var1 -> var3 ; 
+enum AVPixelFormat var4 ; 
+int var5 , var6 = var7 ; 
+const char * var8 ; 
+if ( var1 -> var9 != number || var1 -> var10 [ number ] -> var11 -> var12 != var13 ) { 
+func2 ( var2 , var14 , str ) ; 
+return func3 ( var15 ) ; 
+} 
+if ( var1 -> var16 [ number ] ) 
+var8 = var1 -> var16 ; 
+else 
+var8 = func4 ( ) ; 
+if ( ( var2 -> var17 = func5 ( var8 , var6 ) ) == - number ) { 
+var5 = func3 ( var18 ) ; 
+func2 ( var1 , var14 , 
+str , 
+var8 , func6 ( var5 ) ) ; 
+return var5 ; 
+} 
+if ( func7 ( var2 -> var17 , var19 , & var2 -> var20 ) < number ) { 
+var5 = func3 ( var18 ) ; 
+func2 ( var1 , var14 , str , func6 ( var5 ) ) ; 
+goto var21 ; 
+} 
+if ( func7 ( var2 -> var17 , var22 , & var2 -> var23 ) < number ) { 
+var5 = func3 ( var18 ) ; 
+func2 ( var1 , var14 , str , func6 ( var5 ) ) ; 
+goto var21 ; 
+} 
+var4 = func8 ( & var2 -> var20 ) ; 
+if ( var4 == var24 ) { 
+var5 = func3 ( var15 ) ; 
+func2 ( var1 , var14 , str ) ; 
+goto var21 ; 
+} 
+var2 -> var25 = func9 ( var26 , var2 -> var23 . var27 , var28 , var29 , var2 -> var17 , number ) ; 
+if ( var2 -> var25 == var30 ) { 
+var5 = func3 ( var18 ) ; 
+func2 ( var1 , var14 , str , func6 ( var5 ) ) ; 
+goto var21 ; 
+} 
+return number ; 
+var21 : 
+func10 ( var2 -> var17 ) ; 
+return var5 ; 
+} 

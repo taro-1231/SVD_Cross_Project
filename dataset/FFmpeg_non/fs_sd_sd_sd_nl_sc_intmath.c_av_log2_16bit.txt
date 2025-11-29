@@ -1,0 +1,4 @@
+int func1 ( unsigned var1 ) 
+{ 
+return func2 ( var1 ) ; 
+} 

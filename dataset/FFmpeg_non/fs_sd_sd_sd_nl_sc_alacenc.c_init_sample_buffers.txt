@@ -1,0 +1,18 @@
+static void func1 ( AlacEncodeContext * var1 , int var2 , 
+uint8_t const * var3 [ 2 ] ) 
+{ 
+int var4 , var5 ; 
+int var6 = func2 ( var1 -> var7 -> var8 ) * number - 
+var1 -> var7 -> var9 ; 
+for ( var4 = number ; var4 < var2 ; var4 ++ ) { \ 
+var10 * var11 = var1 -> var12 [ var4 ] ; \ 
+const type * var13 = ( const type * ) var3 [ var4 ] ; \ 
+for ( var5 = number ; var5 < var1 -> var14 ; var5 ++ ) \ 
+var11 [ var5 ] = var13 [ var5 ] >> var6 ; \ 
+} \ 
+} while ( number ) 
+if ( var1 -> var7 -> var8 == var15 ) 
+func3 ( var10 ) ; 
+else 
+func3 ( var16 ) ; 
+} 

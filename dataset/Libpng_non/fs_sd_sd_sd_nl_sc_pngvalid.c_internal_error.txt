@@ -1,0 +1,8 @@
+func1 ( png_store * var1 , png_const_charp var2 ) 
+{ 
+func2 ( var1 , var3 , var2 , number ; 
+{ 
+struct var4 * var5 = & var1 -> var4 ; 
+Throw var1 ; 
+} 
+} 

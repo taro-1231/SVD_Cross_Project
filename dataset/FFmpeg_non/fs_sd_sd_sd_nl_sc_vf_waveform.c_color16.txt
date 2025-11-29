@@ -1,0 +1,81 @@
+static void func1 ( WaveformContext * var1 , AVFrame * var2 , AVFrame * var3 , 
+int var4 , int var5 , int var6 , int var7 ) 
+{ 
+const int var8 = var1 -> var9 -> var10 [ var4 ] . var8 ; 
+const int var11 = var1 -> var11 ; 
+const int var12 = var1 -> var13 - number ; 
+const uint16_t * var14 = ( const uint16_t * ) var2 -> var15 [ var8 + number ] ; 
+const uint16_t * var16 = ( const uint16_t * ) var2 -> var15 [ ( var8 + number ) % var1 -> var17 ] ; 
+const uint16_t * var18 = ( const uint16_t * ) var2 -> var15 [ ( var8 + number ) % var1 -> var17 ] ; 
+const int var19 = var2 -> var20 [ var8 + number ] / number ; 
+const int var21 = var2 -> var20 [ ( var8 + number ) % var1 -> var17 ] / number ; 
+const int var22 = var2 -> var20 [ ( var8 + number ) % var1 -> var17 ] / number ; 
+const int var23 = var3 -> var20 [ var8 + number ] / number ; 
+const int var24 = var3 -> var20 [ ( var8 + number ) % var1 -> var17 ] / number ; 
+const int var25 = var3 -> var20 [ ( var8 + number ) % var1 -> var17 ] / number ; 
+const int var26 = var2 -> var27 ; 
+const int var28 = var2 -> var29 ; 
+int var30 , var31 ; 
+if ( var1 -> var32 ) { 
+const int var33 = var23 * ( var11 == number ? - number : number ) ; 
+const int var34 = var24 * ( var11 == number ? - number : number ) ; 
+const int var35 = var25 * ( var11 == number ? - number : number ) ; 
+uint16_t * var36 = ( uint16_t * ) var3 -> var15 [ var8 ] + var6 * var23 ; 
+uint16_t * var37 = ( uint16_t * ) var3 -> var15 [ ( var8 + number ) % var1 -> var17 ] + var6 * var24 ; 
+uint16_t * var38 = ( uint16_t * ) var3 -> var15 [ ( var8 + number ) % var1 -> var17 ] + var6 * var25 ; 
+uint16_t * const var39 = var36 + var23 * ( var1 -> var40 - number ) ; 
+uint16_t * const var41 = ( var11 ? var39 : var36 ) ; 
+uint16_t * const var42 = var37 + var24 * ( var1 -> var40 - number ) ; 
+uint16_t * const var43 = ( var11 ? var42 : var37 ) ; 
+uint16_t * const var44 = var38 + var25 * ( var1 -> var40 - number ) ; 
+uint16_t * const var45 = ( var11 ? var44 : var38 ) ; 
+for ( var31 = number ; var31 < var26 ; var31 ++ ) { 
+for ( var30 = number ; var30 < var28 ; var30 ++ ) { 
+const int var46 = func2 ( var14 [ var30 ] , var12 ) ; 
+const int var47 = var16 [ var30 ] ; 
+const int var48 = var18 [ var30 ] ; 
+* ( var41 + var33 * var46 + var30 ) = var46 ; 
+* ( var43 + var34 * var46 + var30 ) = var47 ; 
+* ( var45 + var35 * var46 + var30 ) = var48 ; 
+} 
+var14 += var19 ; 
+var16 += var21 ; 
+var18 += var22 ; 
+var36 += var23 ; 
+var37 += var24 ; 
+var38 += var25 ; 
+} 
+} else { 
+uint16_t * var36 = ( uint16_t * ) var3 -> var15 [ var8 ] + var6 ; 
+uint16_t * var37 = ( uint16_t * ) var3 -> var15 [ ( var8 + number ) % var1 -> var17 ] + var6 ; 
+uint16_t * var38 = ( uint16_t * ) var3 -> var15 [ ( var8 + number ) % var1 -> var17 ] + var6 ; 
+if ( var11 ) { 
+var36 += var1 -> var40 - number ; 
+var37 += var1 -> var40 - number ; 
+var38 += var1 -> var40 - number ; 
+} 
+for ( var31 = number ; var31 < var26 ; var31 ++ ) { 
+for ( var30 = number ; var30 < var28 ; var30 ++ ) { 
+const int var46 = func2 ( var14 [ var30 ] , var12 ) ; 
+const int var47 = var16 [ var30 ] ; 
+const int var48 = var18 [ var30 ] ; 
+if ( var11 ) { 
+* ( var36 - var46 ) = var46 ; 
+* ( var37 - var46 ) = var47 ; 
+* ( var38 - var46 ) = var48 ; 
+} else { 
+* ( var36 + var46 ) = var46 ; 
+* ( var37 + var46 ) = var47 ; 
+* ( var38 + var46 ) = var48 ; 
+} 
+} 
+var14 += var19 ; 
+var16 += var21 ; 
+var18 += var22 ; 
+var36 += var23 ; 
+var37 += var24 ; 
+var38 += var25 ; 
+} 
+} 
+func3 ( var1 , var3 , var8 , var8 ) ; 
+} 

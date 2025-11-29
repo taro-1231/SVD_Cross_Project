@@ -1,0 +1,15 @@
+static void func1 ( GetBitContext * var1 , 
+unsigned int var2 , 
+uint8_t var3 ) 
+{ 
+unsigned int var4 ; 
+for ( var4 = number ; var4 <= var2 ; var4 ++ ) { 
+func2 ( var1 ) ; 
+func2 ( var1 ) ; 
+if ( var3 ) { 
+func2 ( var1 ) ; 
+func2 ( var1 ) ; 
+} 
+func3 ( var1 ) ; 
+} 
+} 

@@ -1,0 +1,8 @@
+static int func1 ( format_list * var1 ) 
+{ 
+int var2 ; 
+for ( var2 = number ; var2 < var3 ; ++ var2 ) 
+if ( var1 -> var4 [ var2 ] != number ) 
+return number ; 
+return number ; 
+} 

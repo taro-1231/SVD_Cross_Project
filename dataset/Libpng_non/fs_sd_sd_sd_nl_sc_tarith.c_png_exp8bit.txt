@@ -1,0 +1,4 @@
+static png_byte func1 ( png_uint_32 var1 ) 
+{ 
+return ( png_byte ) floor ( number + exp ( var1 * - var2 ) * number ) ; 
+} 

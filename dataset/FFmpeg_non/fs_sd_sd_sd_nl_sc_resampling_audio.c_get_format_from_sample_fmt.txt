@@ -1,0 +1,26 @@
+static int func1 ( const char ** var1 , 
+enum AVSampleFormat var2 ) 
+{ 
+int var3 ; 
+struct sample_fmt_entry { 
+enum AVSampleFormat var2 ; const char * var4 , * var5 ; 
+} var6 [ ] = { 
+{ AV_SAMPLE_FMT_U8 , str , str } , 
+{ AV_SAMPLE_FMT_S16 , str , str } , 
+{ AV_SAMPLE_FMT_S32 , str , str } , 
+{ AV_SAMPLE_FMT_FLT , str , str } , 
+{ AV_SAMPLE_FMT_DBL , str , str } , 
+} ; 
+* var1 = var7 ; 
+for ( var3 = number ; var3 < func2 ( var6 ) ; var3 ++ ) { 
+struct sample_fmt_entry * var8 = & var6 [ var3 ] ; 
+if ( var2 == var8 -> var2 ) { 
+* var1 = func3 ( var8 -> var4 , var8 -> var5 ) ; 
+return number ; 
+} 
+} 
+fprintf ( var9 , 
+str , 
+func4 ( var2 ) ) ; 
+return func5 ( var10 ) ; 
+} 

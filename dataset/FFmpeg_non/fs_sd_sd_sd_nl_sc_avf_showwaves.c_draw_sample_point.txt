@@ -1,0 +1,7 @@
+static void func1 ( uint8_t * var1 , int var2 , int var3 , 
+int16_t var4 , int16_t * var5 , int var6 ) 
+{ 
+const int var7 = var2 / number - func2 ( var4 , var2 / number , var8 ) ; 
+if ( var7 >= number && var7 < var2 ) 
+var1 [ var7 * var3 ] += var6 ; 
+} 

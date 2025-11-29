@@ -1,0 +1,54 @@
+static void func1 ( AVFormatContext * var1 , AVPacket * var2 , 
+xcb_query_pointer_reply_t * var3 , 
+xcb_get_geometry_reply_t * var4 ) 
+{ 
+XCBGrabContext * var5 = var1 -> var6 ; 
+uint32_t * var7 ; 
+uint8_t * var8 = var2 -> var9 ; 
+int var10 = var5 -> var11 / number ; 
+xcb_xfixes_get_cursor_image_cookie_t var12 ; 
+xcb_xfixes_get_cursor_image_reply_t * var13 ; 
+int var14 , var15 , var16 , var17 , var18 , var19 , var20 , var21 ; 
+var12 = func2 ( var5 -> var22 ) ; 
+var13 = func3 ( var5 -> var22 , var12 , var23 ) ; 
+if ( ! var13 ) 
+return ; 
+var7 = func4 ( var13 ) ; 
+if ( ! var7 ) 
+return ; 
+var14 = var13 -> var16 - var13 -> var24 ; 
+var15 = var13 -> var17 - var13 -> var25 ; 
+var16 = func5 ( var14 , var5 -> var16 ) ; 
+var17 = func5 ( var15 , var5 -> var17 ) ; 
+var18 = func6 ( var14 + var13 -> var26 , var5 -> var16 + var5 -> var26 ) - var16 ; 
+var19 = func6 ( var15 + var13 -> var27 , var5 -> var17 + var5 -> var27 ) - var17 ; 
+var20 = var16 - var14 ; 
+var21 = var16 - var5 -> var16 ; 
+var7 += ( var17 - var15 ) * var13 -> var26 ; 
+var8 += ( var17 - var5 -> var17 ) * var5 -> var26 * var10 ; 
+for ( var17 = number ; var17 < var19 ; var17 ++ ) { 
+var7 += var20 ; 
+var8 += var21 * var10 ; 
+for ( var16 = number ; var16 < var18 ; var16 ++ , var7 ++ , var8 += var10 ) { 
+int var28 , var29 , var30 , var31 ; 
+var28 = * var7 & number ; 
+var29 = ( * var7 >> number ) & number ; 
+var30 = ( * var7 >> number ) & number ; 
+var31 = ( * var7 >> number ) & number ; 
+if ( ! var31 ) 
+continue ; 
+if ( var31 == number ) { 
+var8 [ number ] = var28 ; 
+var8 [ number ] = var29 ; 
+var8 [ number ] = var30 ; 
+} else { 
+var8 [ number ] = func7 ( var28 , var8 [ number ] , var31 ) ; 
+var8 [ number ] = func7 ( var29 , var8 [ number ] , var31 ) ; 
+var8 [ number ] = func7 ( var30 , var8 [ number ] , var31 ) ; 
+} 
+} 
+var7 += var13 -> var26 - var18 - var20 ; 
+var8 += ( var5 -> var26 - var18 - var21 ) * var10 ; 
+} 
+free ( var13 ) ; 
+} 

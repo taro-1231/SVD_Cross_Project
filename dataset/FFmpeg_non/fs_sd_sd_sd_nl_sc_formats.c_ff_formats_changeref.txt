@@ -1,0 +1,4 @@
+void func1 ( AVFilterFormats ** var1 , AVFilterFormats ** var2 ) 
+{ 
+func2 ( var1 , var2 ) ; 
+} 

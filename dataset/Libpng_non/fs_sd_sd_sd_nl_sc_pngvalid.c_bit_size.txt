@@ -1,0 +1,12 @@
+func1 ( png_const_structp var1 , png_byte var2 , png_byte var3 ) 
+{ 
+switch ( var2 ) 
+{ 
+var4 : func2 ( var1 , str ) ; 
+case 0 : return var3 ; 
+case number : return number * var3 ; 
+case number : return var3 ; 
+case number : return number * var3 ; 
+case 6 : return number * var3 ; 
+} 
+} 

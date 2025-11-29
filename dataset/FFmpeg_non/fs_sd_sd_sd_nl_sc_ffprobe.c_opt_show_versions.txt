@@ -1,0 +1,6 @@
+static int func1 ( const char * var1 , const char * var2 ) 
+{ 
+func2 ( var3 , number , var4 ) ; 
+func2 ( var5 , number , var4 ) ; 
+return number ; 
+} 

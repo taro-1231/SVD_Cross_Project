@@ -1,0 +1,5 @@
+func1 ( libAVPin * var1 , const AM_MEDIA_TYPE * var2 ) 
+{ 
+func2 ( str , var1 ) ; 
+return var3 ; 
+} 

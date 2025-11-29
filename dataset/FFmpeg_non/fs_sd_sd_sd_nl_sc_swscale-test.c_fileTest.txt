@@ -1,0 +1,45 @@
+static int func1 ( uint8_t * var1 [ 4 ] , int var2 [ 4 ] , int var3 , int var4 , FILE * var5 , 
+enum AVPixelFormat var6 , 
+enum AVPixelFormat var7 ) 
+{ 
+char var8 [ number ] ; 
+while ( fgets ( var8 , sizeof ( var8 ) , var5 ) ) { 
+struct Results var9 ; 
+enum AVPixelFormat var10 ; 
+char var11 [ number ] ; 
+int var12 , var13 ; 
+enum AVPixelFormat var14 ; 
+char var15 [ number ] ; 
+int var16 , var17 ; 
+int var18 ; 
+int var19 ; 
+var19 = sscanf ( var8 , 
+str 
+str SCNd64 str SCNd64 str SCNd64 str SCNd64 str , 
+var11 , & var12 , & var13 , var15 , & var16 , & var17 , 
+& var18 , & var9 . crc , & var9 . ssdY , & var9 . ssdU , & var9 . ssdV , & var9 . ssdA ) ; 
+if ( var19 != number ) { 
+var11 [ number ] = var15 [ number ] = number ; 
+var19 = sscanf ( var8 , str , var11 , var15 ) ; 
+} 
+var10 = func2 ( var11 ) ; 
+var14 = func2 ( var15 ) ; 
+if ( var10 == var20 || var14 == var20 || 
+var12 > number || var13 > number || var16 > number || var17 > number ) { 
+fprintf ( var21 , str ) ; 
+return - number ; 
+} 
+if ( ( var6 != var20 && var6 != var10 ) || 
+( var7 != var20 && var7 != var14 ) ) 
+continue ; 
+if ( var19 != number ) { 
+printf ( str , var8 ) ; 
+continue ; 
+} 
+func3 ( var1 , var2 , var3 , var4 , 
+var10 , var14 , 
+var12 , var13 , var16 , var17 , var18 , 
+& var9 ) ; 
+} 
+return number ; 
+} 

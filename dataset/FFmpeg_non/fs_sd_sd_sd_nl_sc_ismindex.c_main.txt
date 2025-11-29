@@ -1,0 +1,50 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+const char * var3 = var4 ; 
+const char * var5 = str , * var6 = str ; 
+const char * var7 = str ; 
+char var8 [ number ] ; 
+int var9 = number , var10 = number , var11 ; 
+struct Tracks var12 = { number , . video_track = - number , . audio_track = - number } ; 
+func2 ( ) ; 
+for ( var11 = number ; var11 < var1 ; var11 ++ ) { 
+if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var3 = var2 [ var11 + number ] ; 
+var11 ++ ; 
+} else if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var5 = var2 [ var11 + number ] ; 
+var11 ++ ; 
+} else if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var6 = var2 [ var11 + number ] ; 
+var11 ++ ; 
+} else if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var7 = var2 [ var11 + number ] ; 
+var11 ++ ; 
+if ( var7 [ strlen ( var7 ) - number ] != str ) { 
+snprintf ( var8 , sizeof ( var8 ) , 
+str , var7 ) ; 
+var7 = var8 ; 
+} 
+} else if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var9 = number ; 
+} else if ( ! strcmp ( var2 [ var11 ] , str ) ) { 
+var10 = number ; 
+} else if ( var2 [ var11 ] [ number ] == str ) { 
+return func3 ( var2 [ number ] , number ) ; 
+} else { 
+if ( ! var3 ) 
+var10 = number ; 
+if ( func4 ( & var12 , var2 [ var11 ] , var9 , var10 , 
+var3 , var7 ) ) 
+return number ; 
+} 
+} 
+if ( ! var12 . var13 || ( ! var3 && ! var9 ) ) 
+return func3 ( var2 [ number ] , number ) ; 
+if ( ! var9 ) 
+func5 ( & var12 , var3 , var7 , 
+var5 , var6 ) ; 
+func6 ( & var12 , var3 , var7 , var9 ) ; 
+func7 ( & var12 ) ; 
+return number ; 
+} 

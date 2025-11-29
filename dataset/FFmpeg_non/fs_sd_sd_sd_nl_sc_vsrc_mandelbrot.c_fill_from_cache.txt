@@ -1,0 +1,17 @@
+static void func1 ( AVFilterContext * var1 , uint32_t * var2 , int * var3 , int * var4 , double var5 , double var6 ) { 
+MBContext * var7 = var1 -> var8 ; 
+if ( var7 -> var9 ) 
+return ; 
+for ( ; * var3 < var7 -> var10 ; ( * var3 ) ++ ) { 
+Point * var11 = & var7 -> var12 [ * var3 ] ; 
+int var13 ; 
+if ( var11 -> var11 [ number ] > var5 ) 
+break ; 
+var13 = round ( ( var11 -> var11 [ number ] - var7 -> var14 ) / var6 + var7 -> var15 / number ) ; 
+if ( var13 < number || var13 >= var7 -> var15 ) 
+continue ; 
+if ( var2 ) var2 [ var13 ] = var11 -> var16 ; 
+if ( var4 && * var4 < var7 -> var17 ) 
+var7 -> var18 [ ( * var4 ) ++ ] = * var11 ; 
+} 
+} 

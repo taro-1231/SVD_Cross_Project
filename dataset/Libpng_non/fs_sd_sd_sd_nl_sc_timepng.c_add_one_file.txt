@@ -1,0 +1,34 @@
+static int func1 ( FILE * var1 , char * var2 ) 
+{ 
+FILE * var3 = fopen ( var2 , str ) ; 
+if ( var3 != var4 ) 
+{ 
+int var5 ; 
+for ( ; ; ) 
+{ 
+var5 = getc ( var3 ) ; 
+if ( var5 == var6 ) break ; 
+putc ( var5 , var1 ) ; 
+} 
+if ( ferror ( var3 ) ) 
+{ 
+perror ( var2 ) ; 
+fprintf ( var7 , str , var2 ) ; 
+return number ; 
+} 
+( void ) fclose ( var3 ) ; 
+if ( ferror ( var1 ) ) 
+{ 
+perror ( str ) ; 
+fprintf ( var7 , str ) ; 
+return number ; 
+} 
+} 
+else 
+{ 
+perror ( var2 ) ; 
+fprintf ( var7 , str , var2 ) ; 
+return number ; 
+} 
+return number ; 
+} 

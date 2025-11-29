@@ -1,0 +1,42 @@
+static void func1 ( GetBitContext * var1 , 
+HEVCDecoderConfigurationRecord * var2 , 
+unsigned int var3 ) 
+{ 
+unsigned int var4 ; 
+if ( func2 ( var1 ) ) 
+if ( func3 ( var1 , number ) == number ) 
+func4 ( var1 , number ) ; 
+if ( func2 ( var1 ) ) 
+func5 ( var1 ) ; 
+if ( func2 ( var1 ) ) { 
+func6 ( var1 , number ) ; 
+if ( func2 ( var1 ) ) 
+func6 ( var1 , number ) ; 
+} 
+if ( func2 ( var1 ) ) { 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+} 
+func6 ( var1 , number ) ; 
+if ( func2 ( var1 ) ) { 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+} 
+if ( func2 ( var1 ) ) { 
+func8 ( var1 ) ; 
+if ( func2 ( var1 ) ) 
+func9 ( var1 , number , var3 ) ; 
+} 
+if ( func2 ( var1 ) ) { 
+func6 ( var1 , number ) ; 
+var4 = func7 ( var1 ) ; 
+var2 -> var4 = func10 ( var2 -> var4 , 
+var4 ) ; 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+func7 ( var1 ) ; 
+} 
+} 

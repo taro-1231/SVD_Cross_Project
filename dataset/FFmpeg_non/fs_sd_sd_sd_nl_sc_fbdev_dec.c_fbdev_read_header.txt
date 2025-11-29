@@ -1,0 +1,73 @@
+static av_cold int func1 ( AVFormatContext * var1 ) 
+{ 
+FBDevContext * var2 = var1 -> var3 ; 
+AVStream * var4 = var5 ; 
+enum AVPixelFormat var6 ; 
+int var7 , var8 = var9 ; 
+const char * var10 ; 
+if ( ! ( var4 = func2 ( var1 , var5 ) ) ) 
+return func3 ( var11 ) ; 
+func4 ( var4 , number , number , number ) ; 
+if ( var1 -> var8 & var12 ) 
+var8 |= var13 ; 
+if ( var1 -> var14 [ number ] ) 
+var10 = var1 -> var14 ; 
+else 
+var10 = func5 ( ) ; 
+if ( ( var2 -> var15 = func6 ( var10 , var8 ) ) == - number ) { 
+var7 = func3 ( var16 ) ; 
+func7 ( var1 , var17 , 
+str , 
+var10 , func8 ( var7 ) ) ; 
+return var7 ; 
+} 
+if ( func9 ( var2 -> var15 , var18 , & var2 -> var19 ) < number ) { 
+var7 = func3 ( var16 ) ; 
+func7 ( var1 , var17 , 
+str , func8 ( var7 ) ) ; 
+goto var20 ; 
+} 
+if ( func9 ( var2 -> var15 , var21 , & var2 -> var22 ) < number ) { 
+var7 = func3 ( var16 ) ; 
+func7 ( var1 , var17 , 
+str , func8 ( var7 ) ) ; 
+goto var20 ; 
+} 
+var6 = func10 ( & var2 -> var19 ) ; 
+if ( var6 == var23 ) { 
+var7 = func3 ( var24 ) ; 
+func7 ( var1 , var17 , 
+str ) ; 
+goto var20 ; 
+} 
+var2 -> var25 = var2 -> var19 . var26 ; 
+var2 -> var27 = var2 -> var19 . var28 ; 
+var2 -> var29 = ( var2 -> var19 . var30 + number ) >> number ; 
+var2 -> var31 = var2 -> var25 * var2 -> var29 ; 
+var2 -> var32 = var2 -> var31 * var2 -> var27 ; 
+var2 -> var33 = var34 ; 
+var2 -> var35 = func11 ( var5 , var2 -> var22 . var36 , var37 , var38 , var2 -> var15 , number ) ; 
+if ( var2 -> var35 == var39 ) { 
+var7 = func3 ( var16 ) ; 
+func7 ( var1 , var17 , str , func8 ( var7 ) ) ; 
+goto var20 ; 
+} 
+var4 -> var40 -> var41 = var42 ; 
+var4 -> var40 -> var43 = var44 ; 
+var4 -> var40 -> var25 = var2 -> var25 ; 
+var4 -> var40 -> var27 = var2 -> var27 ; 
+var4 -> var40 -> var6 = var6 ; 
+var4 -> var40 -> var45 = func12 ( var2 -> var46 ) ; 
+var4 -> var40 -> var47 = 
+var2 -> var25 * var2 -> var27 * var2 -> var29 * func13 ( var2 -> var46 ) * number ; 
+func7 ( var1 , var48 , 
+str , 
+var2 -> var25 , var2 -> var27 , var2 -> var19 . var30 , 
+func14 ( var6 ) , 
+var2 -> var46 . var49 , var2 -> var46 . var50 , 
+var4 -> var40 -> var47 ) ; 
+return number ; 
+var20 : 
+func15 ( var2 -> var15 ) ; 
+return var7 ; 
+} 

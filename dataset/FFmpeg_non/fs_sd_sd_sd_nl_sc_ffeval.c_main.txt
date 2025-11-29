@@ -1,0 +1,81 @@
+int func1 ( int var1 , char ** var2 ) 
+{ 
+int var3 = number ; 
+char * var4 = var5 ; 
+const char * var6 = var5 , * var7 = var5 ; 
+FILE * var8 = var5 , * var9 = var5 ; 
+const char * var10 = str ; 
+int var11 = number , var12 = number ; 
+int var13 ; 
+do { \ 
+if ( ! func3 ( ( void ** ) & var4 , & var3 , number , var5 ) ) { \ 
+func4 ( var5 , var14 , \ 
+str ) ; \ 
+return number ; \ 
+} \ 
+} while ( number ) 
+func2 ( ) ; 
+while ( ( var13 = func5 ( var1 , var2 , str ) ) != - number ) { 
+switch ( var13 ) { 
+case str : 
+var12 = number ; 
+break ; 
+case str : 
+func6 ( ) ; 
+return number ; 
+case str : 
+var7 = var15 ; 
+break ; 
+case str : 
+var6 = var15 ; 
+break ; 
+case str : 
+var10 = var15 ; 
+break ; 
+case str : 
+return number ; 
+} 
+} 
+if ( ! var7 || ! strcmp ( var7 , str ) ) { 
+var7 = str ; 
+var9 = var16 ; 
+} else { 
+var9 = fopen ( var7 , str ) ; 
+} 
+if ( ! var9 ) { 
+fprintf ( var17 , str , var7 , strerror ( var18 ) ) ; 
+return number ; 
+} 
+if ( ! var6 || ! strcmp ( var6 , str ) ) { 
+var6 = str ; 
+var8 = var19 ; 
+} else { 
+var8 = fopen ( var6 , str ) ; 
+} 
+if ( ! var8 ) { 
+fprintf ( var17 , str , var6 , strerror ( var18 ) ) ; 
+return number ; 
+} 
+while ( ( var13 = fgetc ( var9 ) ) != var20 ) { 
+if ( var13 == str ) { 
+double var21 ; 
+var4 [ var11 ] = number ; 
+if ( var4 [ number ] != str ) { 
+int var22 = func7 ( & var21 , var4 , 
+var5 , var5 , 
+var5 , var5 , var5 , var5 , var5 , number , var5 ) ; 
+if ( var12 ) 
+fprintf ( var8 , str , var4 ) ; 
+if ( var22 >= number ) fprintf ( var8 , str , var10 , var21 ) ; 
+else fprintf ( var8 , str , var10 , var21 , func8 ( var22 ) ) ; 
+} 
+var11 = number ; 
+} else { 
+if ( var11 >= var3 - number ) 
+func2 ( ) ; 
+var4 [ var11 ++ ] = var13 ; 
+} 
+} 
+func9 ( var4 ) ; 
+return number ; 
+} 

@@ -1,0 +1,8 @@
+static int func1 ( AVDictionary * var1 ) 
+{ 
+AVDictionaryEntry * var2 = var3 ; 
+while ( ( var2 = func2 ( var1 , str , var2 , var4 ) ) ) 
+if ( func3 ( var2 -> var5 , str ) && func3 ( var2 -> var5 , str ) ) 
+return number ; 
+return number ; 
+} 

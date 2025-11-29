@@ -1,0 +1,55 @@
+static int func1 ( FourXContext * var1 , const uint8_t * var2 , int var3 ) 
+{ 
+int var4 , var5 ; 
+const int var6 = var1 -> var7 -> var6 ; 
+const int var8 = var1 -> var7 -> var8 ; 
+uint16_t * var9 = var1 -> var10 ; 
+uint16_t * var11 ; 
+unsigned int var12 , var13 , var14 , var15 , 
+var16 , var17 ; 
+int var18 ; 
+var11 = var1 -> var19 ; 
+if ( var1 -> var20 > number ) { 
+var15 = number ; 
+if ( var3 < var15 ) 
+return var21 ; 
+var12 = func2 ( var2 + number ) ; 
+var14 = func2 ( var2 + number ) ; 
+var13 = func2 ( var2 + number ) ; 
+} else { 
+var15 = number ; 
+var12 = func3 ( var2 - number ) ; 
+var14 = func3 ( var2 - number ) ; 
+var13 = func4 ( var3 - var12 - var14 , number ) ; 
+} 
+if ( var12 > var3 || var12 >= var22 / number || 
+var13 > var3 - var12 || 
+var14 > var3 - var13 - var12 || 
+var15 > var3 - var13 - var12 - var14 ) { 
+func5 ( var1 -> var7 , var23 , str , var12 , var13 , var14 , 
+var12 + var13 + var14 - var3 ) ; 
+return var21 ; 
+} 
+func6 ( & var1 -> var24 , & var1 -> var25 , 
+var12 ) ; 
+if ( ! var1 -> var24 ) 
+return func7 ( var26 ) ; 
+var1 -> var27 . func8 ( var1 -> var24 , ( const uint32_t * ) ( var2 + var15 ) , 
+var12 / number ) ; 
+func9 ( & var1 -> var28 , var1 -> var24 , number * var12 ) ; 
+var17 = var15 + var12 ; 
+var16 = var15 + var12 + var14 ; 
+func10 ( & var1 -> var29 , var2 + var17 , 
+var3 - var17 ) ; 
+func10 ( & var1 -> var30 , var2 + var16 , 
+var3 - var16 ) ; 
+func11 ( var1 , var6 * number ) ; 
+for ( var5 = number ; var5 < var8 ; var5 += number ) { 
+for ( var4 = number ; var4 < var6 ; var4 += number ) 
+if ( ( var18 = func12 ( var1 , var9 + var4 , var11 + var4 , number , number , var6 ) ) < number ) 
+return var18 ; 
+var11 += number * var6 ; 
+var9 += number * var6 ; 
+} 
+return number ; 
+} 

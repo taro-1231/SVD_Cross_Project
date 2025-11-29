@@ -1,0 +1,23 @@
+static void func1 ( AVFormatContext * var1 , uint32_t var2 ) 
+{ 
+const struct video_data * var3 = var1 -> var4 ; 
+struct v4l2_frmsizeenum var5 = { . pixel_format = var2 } ; 
+while ( ! func2 ( var3 -> var6 , var7 , & var5 ) ) { 
+switch ( var5 . var8 ) { 
+case var9 : 
+func3 ( var1 , var10 , str , 
+var5 . var11 . var12 , var5 . var11 . var13 ) ; 
+break ; 
+case var14 : 
+case var15 : 
+func3 ( var1 , var10 , str , 
+var5 . var16 . var17 , 
+var5 . var16 . var18 , 
+var5 . var16 . var19 , 
+var5 . var16 . var20 , 
+var5 . var16 . var21 , 
+var5 . var16 . var22 ) ; 
+} 
+var5 . var23 ++ ; 
+} 
+} 

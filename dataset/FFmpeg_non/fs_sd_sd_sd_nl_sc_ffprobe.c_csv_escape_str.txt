@@ -1,0 +1,15 @@
+static const char * func1 ( AVBPrint * var1 , const char * var2 , const char var3 , void * var4 ) 
+{ 
+char var5 [ ] = { var3 , str str 
+int var6 = ! ! var2 [ strcspn ( var2 , var5 ) ] ; 
+if ( var6 ) 
+func2 ( var1 , str str 
+for ( ; * var2 ; var2 ++ ) { 
+if ( * var2 == str str 
+func2 ( var1 , str str 
+func2 ( var1 , * var2 , number ) ; 
+} 
+if ( var6 ) 
+func2 ( var1 , str str 
+return var1 -> var7 ; 
+} 

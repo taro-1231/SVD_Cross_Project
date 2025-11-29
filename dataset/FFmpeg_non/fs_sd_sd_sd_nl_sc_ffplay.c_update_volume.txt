@@ -1,0 +1,6 @@
+static void func1 ( VideoState * var1 , int var2 , double var3 ) 
+{ 
+double var4 = var1 -> var5 ? ( number * log ( var1 -> var5 / ( double ) var6 ) / log ( number ) ) : - number ; 
+int var7 = lrint ( var6 * pow ( number , ( var4 + var2 * var3 ) / number ) ) ; 
+var1 -> var5 = func2 ( var1 -> var5 == var7 ? ( var1 -> var5 + var2 ) : var7 , number , var6 ) ; 
+} 

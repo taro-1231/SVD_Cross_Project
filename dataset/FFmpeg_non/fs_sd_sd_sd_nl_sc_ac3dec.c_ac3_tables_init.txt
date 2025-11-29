@@ -1,0 +1,35 @@
+static av_cold void func1 ( void ) 
+{ 
+int var1 ; 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+var2 [ var1 ] [ number ] = var1 / number ; 
+var2 [ var1 ] [ number ] = ( var1 % number ) / number ; 
+var2 [ var1 ] [ number ] = ( var1 % number ) % number ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+var3 [ var1 ] [ number ] = func2 ( var4 [ var1 ] [ number ] , number ) ; 
+var3 [ var1 ] [ number ] = func2 ( var4 [ var1 ] [ number ] , number ) ; 
+var3 [ var1 ] [ number ] = func2 ( var4 [ var1 ] [ number ] , number ) ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+var5 [ var1 ] [ number ] = func2 ( var2 [ var1 ] [ number ] , number ) ; 
+var5 [ var1 ] [ number ] = func2 ( var2 [ var1 ] [ number ] , number ) ; 
+var5 [ var1 ] [ number ] = func2 ( var2 [ var1 ] [ number ] , number ) ; 
+var6 [ var1 ] [ number ] = func2 ( var1 / number , number ) ; 
+var6 [ var1 ] [ number ] = func2 ( var1 % number , number ) ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+var7 [ var1 ] = func2 ( var1 , number ) ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+var8 [ var1 ] = func2 ( var1 , number ) ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+int var9 = ( var1 >> number ) - ( ( var1 >> number ) << number ) - number ; 
+var10 [ var1 ] = func3 ( number , var9 ) * ( ( var1 & number ) | number ) ; 
+} 
+for ( var1 = number ; var1 < number ; var1 ++ ) { 
+int var9 = ( var1 >> number ) - ( ( var1 >> number ) << number ) - number ; 
+var11 [ var1 ] = func3 ( number , var9 ) * ( ( var1 & number ) | number ) ; 
+} 
+} 

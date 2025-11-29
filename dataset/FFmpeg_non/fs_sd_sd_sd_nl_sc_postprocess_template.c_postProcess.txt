@@ -1,0 +1,314 @@
+static void func1 ( func2 ) ( const uint8_t var1 [ ] , int var2 , uint8_t var3 [ ] , int var4 , int var5 , int var6 , 
+const QP_STORE_T var7 [ ] , int var8 , int var9 , var10 * var11 ) 
+{ 
+func3 ( number , var10 , var12 ) = * var11 ; 
+int var13 , var14 ; 
+const int var16 = var15 ; 
+const int var16 = var9 ? var12 . var17 . chromMode : var12 . var17 . lumMode ; 
+int var18 = number , var19 = number ; 
+int var20 = number * number ; 
+int var21 ; 
+int var23 ; 
+const int var24 = var9 ? number - var12 . var25 : number ; 
+const int var26 = var9 ? number - var12 . var27 : number ; 
+uint64_t * const var28 = var12 . var28 ; 
+uint8_t * const var29 = var2 > number ? var12 . var29 : var12 . var29 - number * var2 ; 
+uint8_t * const var30 = ( var4 > number ? var12 . var30 : var12 . var30 - number * var4 ) + number ; 
+if ( var16 & var31 ) { 
+if ( ! ( var16 & ( var32 | var33 ) ) || var22 ) { 
+func4 ( var11 , var34 , str ) ; 
+} 
+} 
+for ( var23 = number ; var23 < number ; var23 ++ ) { 
+int var35 = ( ( var23 * var12 . var17 . var36 ) >> number ) + number ; 
+int var37 = var35 * number + number ; 
+var12 . var38 [ var23 ] = number - var35 ; 
+var12 . var39 [ var23 ] = number - var37 ; 
+var12 . var38 [ var23 ] *= 0x0101010101010101LL ; 
+var12 . var39 [ var23 ] *= 0x0101010101010101LL ; 
+} 
+if ( var16 & var40 ) var21 = number ; 
+else if ( ( var16 & var41 ) 
+|| ( var16 & var42 ) 
+|| ( var16 & var43 ) ) var21 = number ; 
+else if ( ( var16 & var44 ) 
+|| ( var16 & var45 ) 
+|| ( var16 & var46 ) 
+|| ( var16 & var32 ) ) var21 = number ; 
+else if ( var16 & var47 ) var21 = number ; 
+else if ( var16 & var48 ) var21 = number ; 
+else var21 = number ; 
+var21 -= number ; 
+if ( ! var9 ) { 
+uint64_t var49 = number ; 
+int var23 ; 
+uint64_t var50 ; 
+uint64_t var51 ; 
+AVRational var52 ; 
+var12 . var53 ++ ; 
+if ( var12 . var53 == number ) var28 [ number ] = var5 * ( uint64_t ) var6 / number * number / number ; 
+for ( var23 = number ; var23 < number ; var23 ++ ) { 
+var49 += var28 [ var23 ] ; 
+} 
+var50 = func5 ( var49 , var12 . var17 . var54 . var55 , var12 . var17 . var54 . var56 ) ; 
+var51 = var49 ; 
+for ( var18 = number ; var18 > number ; var18 -- ) { 
+if ( var51 < var50 ) break ; 
+var51 -= var28 [ var18 ] ; 
+} 
+var51 = var49 ; 
+for ( var19 = number ; var19 < number ; var19 ++ ) { 
+if ( var51 < var50 ) break ; 
+var51 -= var28 [ var19 ] ; 
+} 
+var52 = ( AVRational ) { var12 . var17 . maxAllowedY - var12 . var17 . var57 , var19 - var18 } ; 
+var12 . var58 = ( uint16_t ) func5 ( var52 . var55 , number , var52 . var56 ) ; 
+var12 . var59 = ( ( ( var18 * var12 . var58 ) >> number ) - var12 . var17 . var57 ) & number ; 
+var12 . var58 = ( uint16_t ) func5 ( var52 . var55 , 1024 , var52 . var56 ) ; 
+var12 . var59 = ( var18 - var12 . var17 . var57 ) & number ; 
+var12 . var59 |= var12 . var59 << number ; 
+var12 . var59 |= var12 . var59 << number ; 
+var12 . var58 |= var12 . var58 << number ; 
+var12 . var58 |= var12 . var58 << number ; 
+if ( var16 & var60 ) var20 = ( int ) func5 ( var52 . var55 , number * number , var52 . var56 ) ; 
+else var20 = number * number ; 
+} else { 
+var12 . var58 = 0x0100010001000100LL ; 
+var12 . var59 = number ; 
+var20 = number * number ; 
+} 
+var14 = - var61 ; 
+{ 
+const uint8_t * var62 = & ( var1 [ var14 * var2 ] ) ; 
+uint8_t * var63 = var30 + var4 ; 
+for ( var13 = number ; var13 < var5 ; var13 += var61 ) { 
+func1 ( func6 ) ( var62 + ( ( ( var13 >> number ) & number ) + var21 ) * var2 + number ) ; 
+func1 ( func6 ) ( var62 + ( ( ( var13 >> number ) & number ) + var21 + number ) * var2 + number ) ; 
+func1 ( func7 ) ( var63 + ( ( ( var13 >> number ) & number ) + var21 ) * var4 + number ) ; 
+func1 ( func7 ) ( var63 + ( ( ( var13 >> number ) & number ) + var21 + number ) * var4 + number ) ; 
+func1 ( func8 ) ( var63 + var4 * number , var4 , 
+var62 + var2 * number , var2 , var16 & var60 , & var12 . var59 ) ; 
+func1 ( func9 ) ( var63 + var4 * number , var4 ) ; 
+if ( var16 & var45 ) 
+func1 ( func10 ) ( var63 , var4 ) ; 
+else if ( var16 & var41 ) 
+func1 ( func11 ) ( var63 , var4 , var12 . var64 + var13 ) ; 
+else if ( var16 & var46 ) 
+func1 ( func12 ) ( var63 , var4 ) ; 
+else if ( var16 & var40 ) 
+func1 ( func13 ) ( var63 , var4 ) ; 
+else if ( var16 & var42 ) 
+func1 ( func14 ) ( var63 , var4 , var12 . var64 + var13 ) ; 
+else if ( var16 & var43 ) 
+func1 ( func15 ) ( var63 , var4 , var12 . var64 + var13 , var12 . var64 + var5 + var13 ) ; 
+var63 += number ; 
+var62 += number ; 
+} 
+if ( var5 == func16 ( var4 ) ) 
+func17 ( var3 , var30 + number * var4 , var21 , var4 ) ; 
+else { 
+int var23 ; 
+for ( var23 = number ; var23 < var21 ; var23 ++ ) { 
+memcpy ( var3 + var23 * var4 , var30 + ( number + var23 ) * var4 , var5 ) ; 
+} 
+} 
+} 
+for ( var14 = number ; var14 < var6 ; var14 += var61 ) { 
+const uint8_t * var62 = & ( var1 [ var14 * var2 ] ) ; 
+uint8_t * var63 = & ( var3 [ var14 * var4 ] ) ; 
+uint8_t * var65 = var12 . var66 ; 
+uint8_t * var67 = var12 . var66 + number ; 
+const int8_t * var68 = & var7 [ ( var14 >> var26 ) * var8 ] ; 
+int8_t * var69 = & var12 . var70 [ ( var14 >> var26 ) * func16 ( var8 ) ] ; 
+int var71 = number , var72 = number ; 
+if ( var14 + number >= var6 ) { 
+int var23 ; 
+func17 ( var29 + var2 * var21 , var62 + var2 * var21 , 
+func18 ( var6 - var14 - var21 , number ) , var2 ) ; 
+for ( var23 = func18 ( var6 - var14 , number ) ; var23 < var21 + number ; var23 ++ ) 
+memcpy ( var29 + var2 * var23 , var1 + var2 * ( var6 - number ) , func16 ( var2 ) ) ; 
+func17 ( var30 , var63 - var4 , func19 ( var6 - var14 + number , var21 + number ) , var4 ) ; 
+for ( var23 = var6 - var14 + number ; var23 <= var21 ; var23 ++ ) 
+memcpy ( var30 + var4 * var23 , var3 + var4 * ( var6 - number ) , func16 ( var4 ) ) ; 
+var63 = var30 + var4 ; 
+var62 = var29 ; 
+} 
+for ( var13 = number ; var13 < var5 ; ) { 
+int var73 = var13 ; 
+int var74 = func19 ( var5 , var13 + number ) ; 
+uint8_t * var75 = var63 ; 
+const uint8_t * var76 = var62 ; 
+int var77 = number ; 
+for ( var77 = number ; var77 < ( var74 - var73 ) / var61 ; var77 ++ ) { 
+var71 = var68 [ ( var13 + var77 * var61 ) >> var24 ] ; 
+var72 = var69 [ ( var13 + var77 * var61 ) >> var24 ] ; 
+if ( ! var9 ) { 
+var71 = ( var71 * var20 + number * number ) >> number ; 
+var72 = ( var72 * var20 + number * number ) >> number ; 
+var28 [ ( var62 + var77 * number ) [ var2 * number + number ] ] ++ ; 
+} 
+var12 . var78 [ var77 ] = var71 ; 
+var12 . var79 [ var77 ] = var72 ; 
+__asm__ volatile ( 
+str 
+str 
+str 
+str 
+str 
+: str ( var12 . var81 [ var77 ] ) 
+: str ( var71 ) 
+) ; 
+} 
+for ( ; var13 < var74 ; var13 += var61 ) { 
+func1 ( func6 ) ( var62 + ( ( ( var13 >> number ) & number ) + var21 ) * var2 + number ) ; 
+func1 ( func6 ) ( var62 + ( ( ( var13 >> number ) & number ) + var21 + number ) * var2 + number ) ; 
+func1 ( func7 ) ( var63 + ( ( ( var13 >> number ) & number ) + var21 ) * var4 + number ) ; 
+func1 ( func7 ) ( var63 + ( ( ( var13 >> number ) & number ) + var21 + number ) * var4 + number ) ; 
+func1 ( func8 ) ( var63 + var4 * var21 , var4 , 
+var62 + var2 * var21 , var2 , var16 & var60 , & var12 . var59 ) ; 
+if ( var16 & var45 ) 
+func1 ( func10 ) ( var63 , var4 ) ; 
+else if ( var16 & var41 ) 
+func1 ( func11 ) ( var63 , var4 , var12 . var64 + var13 ) ; 
+else if ( var16 & var46 ) 
+func1 ( func12 ) ( var63 , var4 ) ; 
+else if ( var16 & var40 ) 
+func1 ( func13 ) ( var63 , var4 ) ; 
+else if ( var16 & var42 ) 
+func1 ( func14 ) ( var63 , var4 , var12 . var64 + var13 ) ; 
+else if ( var16 & var43 ) 
+func1 ( func15 ) ( var63 , var4 , var12 . var64 + var13 , var12 . var64 + var5 + var13 ) ; 
+var63 += number ; 
+var62 += number ; 
+} 
+var63 = var75 ; 
+var62 = var76 ; 
+for ( var13 = var73 , var77 = number ; var13 < var74 ; var13 += var61 , var77 ++ ) { 
+const int var82 = var4 ; 
+var12 . var71 = var12 . var78 [ var77 ] ; 
+var12 . var72 = var12 . var79 [ var77 ] ; 
+var12 . var83 = var12 . var81 [ var77 ] ; 
+var12 . var84 = var12 . var85 [ var77 ] ; 
+if ( var14 + number < var6 ) { 
+if ( var16 & var47 ) 
+func1 ( func20 ) ( var63 , var82 , & var12 ) ; 
+else if ( var16 & var44 ) { 
+const int var80 = func1 ( func21 ) ( var63 , var82 , & var12 ) ; 
+if ( var80 == number ) 
+func1 ( func22 ) ( var63 , var82 , & var12 ) ; 
+else if ( var80 == number ) 
+func1 ( func23 ) ( var63 , var82 , & var12 ) ; 
+} else if ( var16 & var32 ) { 
+func1 ( func24 ) ( var63 , var82 , number , & var12 , var16 ) ; 
+} 
+} 
+var63 += number ; 
+var62 += number ; 
+} 
+var63 = var75 ; 
+var62 = var76 ; 
+for ( var13 = var73 , var77 = number ; var13 < var74 ; var13 += var61 , var77 ++ ) { 
+const int var82 = var4 ; 
+av_unused uint8_t * var86 ; 
+var12 . var71 = var12 . var78 [ var77 ] ; 
+var12 . var72 = var12 . var79 [ var77 ] ; 
+var12 . var83 = var12 . var81 [ var77 ] ; 
+var12 . var84 = var12 . var85 [ var77 ] ; 
+func1 ( func25 ) ( var65 , var67 , var63 , var4 ) ; 
+if ( var13 - number >= number ) { 
+if ( var16 & var87 ) 
+func1 ( func20 ) ( var65 , number , & var12 ) ; 
+else if ( var16 & var88 ) { 
+const int var80 = func1 ( func21 ) ( var65 , number , & var12 ) ; 
+if ( var80 == number ) 
+func1 ( func22 ) ( var65 , number , & var12 ) ; 
+else if ( var80 == number ) 
+func1 ( func23 ) ( var65 , number , & var12 ) ; 
+} else if ( var16 & var33 ) { 
+func1 ( func24 ) ( var65 , number , number , & var12 , var16 ) ; 
+} 
+func1 ( func26 ) ( var63 - number , var4 , var65 + number * number ) ; 
+if ( var16 & var87 ) 
+horizX1Filter ( var63 - number , var82 , var12 . var71 ) ; 
+else if ( var16 & var88 ) { 
+func3 ( number , unsigned char , tempBlock ) [ 272 ] ; 
+int var80 ; 
+transpose_16x8_char_toPackedAlign_altivec ( tempBlock , var63 - ( number + number ) , var82 ) ; 
+var80 = vertClassify_altivec ( tempBlock - 48 , number , & var12 ) ; 
+if ( var80 == number ) { 
+doVertLowPass_altivec ( tempBlock - 48 , number , & var12 ) ; 
+transpose_8x16_char_fromPackedAlign_altivec ( var63 - ( number + number ) , tempBlock , var82 ) ; 
+} 
+else if ( var80 == number ) { 
+doVertDefFilter_altivec ( tempBlock - 48 , number , & var12 ) ; 
+transpose_8x16_char_fromPackedAlign_altivec ( var63 - ( number + number ) , tempBlock , var82 ) ; 
+} 
+const int var80 = func1 ( horizClassify ) ( var63 - number , var82 , & var12 ) ; 
+if ( var80 == number ) 
+func1 ( doHorizLowPass ) ( var63 - number , var82 , & var12 ) ; 
+else if ( var80 == number ) 
+func1 ( doHorizDefFilter ) ( var63 - number , var82 , & var12 ) ; 
+} else if ( var16 & var33 ) { 
+func1 ( func24 ) ( var63 - number , number , var82 , & var12 , var16 ) ; 
+} 
+if ( var16 & var48 ) { 
+if ( var14 > number ) func1 ( func27 ) ( var63 - var82 - number , var82 , & var12 ) ; 
+} 
+if ( var16 & var89 ) 
+{ 
+func1 ( func28 ) ( var63 - number , var82 , 
+var12 . var90 [ var9 ] + var14 * var4 + var13 , 
+var12 . var91 [ var9 ] + ( var14 >> number ) * number + ( var13 >> number ) + number , 
+var12 . var17 . var92 ) ; 
+} 
+} 
+var63 += number ; 
+var62 += number ; 
+var86 = var65 ; 
+var65 = var67 ; 
+var67 = var86 ; 
+} 
+} 
+if ( var16 & var48 ) { 
+if ( var14 > number ) func1 ( func27 ) ( var63 - var4 - number , var4 , & var12 ) ; 
+} 
+if ( ( var16 & var89 ) ) { 
+func1 ( func28 ) ( var63 - number , var4 , 
+var12 . var90 [ var9 ] + var14 * var4 + var13 , 
+var12 . var91 [ var9 ] + ( var14 >> number ) * number + ( var13 >> number ) + number , 
+var12 . var17 . var92 ) ; 
+} 
+if ( var14 + number >= var6 ) { 
+uint8_t * var63 = & ( var3 [ var14 * var4 ] ) ; 
+if ( var5 == func16 ( var4 ) ) 
+func17 ( var63 , var30 + var4 , var6 - var14 , var4 ) ; 
+else { 
+int var23 ; 
+for ( var23 = number ; var23 < var6 - var14 ; var23 ++ ) { 
+memcpy ( var63 + var23 * var4 , var30 + ( var23 + number ) * var4 , var5 ) ; 
+} 
+} 
+} 
+} 
+__asm__ volatile ( str ) ; 
+__asm__ volatile ( str ) ; 
+if ( ! var9 ) { 
+int var93 = number ; 
+int var23 ; 
+for ( var23 = number ; var23 < number ; var23 ++ ) 
+if ( var28 [ var23 ] > var93 ) var93 = var28 [ var23 ] ; 
+for ( var23 = number ; var23 < number ; var23 ++ ) { 
+int var13 ; 
+int var94 = var28 [ var23 - number ] / ( var93 / number + number ) ; 
+int var95 = var28 [ var23 ] / ( var93 / number + number ) ; 
+int var96 = var95 > var94 ? number : - number ; 
+for ( var13 = var94 ; var13 != var95 + var96 ; var13 += var96 ) 
+var3 [ var23 * var4 + var13 ] += number ; 
+} 
+for ( var23 = number ; var23 < number ; var23 += number ) { 
+var3 [ ( var19 ) * var4 + var23 ] += number ; 
+var3 [ ( var18 ) * var4 + var23 ] += number ; 
+} 
+} 
+* var11 = var12 ; 
+} 

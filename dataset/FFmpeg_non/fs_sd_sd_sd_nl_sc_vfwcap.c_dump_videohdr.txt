@@ -1,0 +1,14 @@
+static void func1 ( AVFormatContext * var1 , VIDEOHDR * var2 ) 
+{ 
+func2 ( var1 , var3 , str ) ; 
+func3 ( var1 , var2 , var4 , str ) ; 
+func3 ( var1 , var2 , var5 , str ) ; 
+func3 ( var1 , var2 , var6 , str ) ; 
+func3 ( var1 , var2 , var7 , str ) ; 
+func3 ( var1 , var2 , var8 , str ) ; 
+func3 ( var1 , var2 , var9 , str ) ; 
+func3 ( var1 , var2 , var10 [ number ] , str ) ; 
+func3 ( var1 , var2 , var10 [ number ] , str ) ; 
+func3 ( var1 , var2 , var10 [ number ] , str ) ; 
+func3 ( var1 , var2 , var10 [ number ] , str ) ; 
+} 

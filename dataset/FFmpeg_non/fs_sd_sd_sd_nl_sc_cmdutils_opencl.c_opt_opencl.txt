@@ -1,0 +1,17 @@
+int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+char * var4 , * var5 ; 
+const char * var6 = var3 ; 
+int var7 = number ; 
+while ( * var6 ) { 
+var7 = func2 ( & var6 , str , str , number , & var4 , & var5 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+var7 = func3 ( var4 , var5 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+if ( * var6 ) 
+var6 ++ ; 
+} 
+return var7 ; 
+} 

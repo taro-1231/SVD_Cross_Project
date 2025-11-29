@@ -1,0 +1,72 @@
+int func1 ( void * var1 , const char * var2 , int var3 , uint8_t ** var4 ) 
+{ 
+void * var5 , * var6 ; 
+const AVOption * var7 = func2 ( var1 , var2 , var8 , number , var3 , & var6 ) ; 
+uint8_t * var9 , var10 [ number ] ; 
+int var11 , var12 , var13 ; 
+int64_t var14 ; 
+if ( ! var7 || ! var6 || ( var7 -> var15 <= number && var7 -> var16 != var17 ) ) 
+return var18 ; 
+var5 = ( uint8_t * ) var6 + var7 -> var15 ; 
+var10 [ number ] = number ; 
+switch ( var7 -> var16 ) { 
+case var19 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , * ( int * ) var5 ) ; break ; 
+case var20 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , * ( int * ) var5 ) ; break ; 
+case var21 : var13 = snprintf ( var10 , sizeof ( var10 ) , str PRId64 , * ( int64_t * ) var5 ) ; break ; 
+case var22 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , * ( float * ) var5 ) ; break ; 
+case var23 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , * ( double * ) var5 ) ; break ; 
+case var24 : 
+case var25 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , ( ( AVRational * ) var5 ) -> var26 , ( ( AVRational * ) var5 ) -> var27 ) ; break ; 
+case var17 : var13 = snprintf ( var10 , sizeof ( var10 ) , str , var7 -> var28 . var29 ) ; break ; 
+case var30 : 
+if ( * ( uint8_t ** ) var5 ) 
+* var4 = func3 ( * ( uint8_t ** ) var5 ) ; 
+else 
+* var4 = func3 ( str ) ; 
+return * var4 ? number : func4 ( var31 ) ; 
+case var32 : 
+var11 = * ( int * ) ( ( ( uint8_t * ) var5 ) + sizeof ( uint8_t * ) ) ; 
+if ( ( uint64_t ) var11 * number + number > var33 ) 
+return func4 ( var34 ) ; 
+if ( ! ( * var4 = func5 ( var11 * number + number ) ) ) 
+return func4 ( var31 ) ; 
+if ( ! var11 ) { 
+* var4 [ number ] = str ; 
+return number ; 
+} 
+var9 = * ( uint8_t ** ) var5 ; 
+for ( var12 = number ; var12 < var11 ; var12 ++ ) 
+snprintf ( * var4 + var12 * number , number , str , var9 [ var12 ] ) ; 
+return number ; 
+case var35 : 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str , ( ( int * ) var5 ) [ number ] , ( ( int * ) var5 ) [ number ] ) ; 
+break ; 
+case var36 : 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str , ( char * ) func6 ( func7 ( * ( enum AVPixelFormat * ) var5 ) , str ) ) ; 
+break ; 
+case var37 : 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str , ( char * ) func6 ( func8 ( * ( enum AVSampleFormat * ) var5 ) , str ) ) ; 
+break ; 
+case var38 : 
+var14 = * ( int64_t * ) var5 ; 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str PRIi64 str , 
+var14 / 3600000000 , ( int ) ( ( var14 / 60000000 ) % 60 ) , 
+( int ) ( ( var14 / 1000000 ) % 60 ) , ( int ) ( var14 % 1000000 ) ) ; 
+break ; 
+case var39 : 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str , 
+( int ) ( ( uint8_t * ) var5 ) [ number ] , ( int ) ( ( uint8_t * ) var5 ) [ number ] , 
+( int ) ( ( uint8_t * ) var5 ) [ number ] , ( int ) ( ( uint8_t * ) var5 ) [ number ] ) ; 
+break ; 
+case var40 : 
+var14 = * ( int64_t * ) var5 ; 
+var13 = snprintf ( var10 , sizeof ( var10 ) , str PRIx64 , var14 ) ; 
+break ; 
+var41 : 
+return func4 ( var34 ) ; 
+} 
+if ( var13 >= sizeof ( var10 ) ) 
+return func4 ( var34 ) ; 
+* var4 = func3 ( var10 ) ; 
+return * var4 ? number : func4 ( var31 ) ; 
+} 

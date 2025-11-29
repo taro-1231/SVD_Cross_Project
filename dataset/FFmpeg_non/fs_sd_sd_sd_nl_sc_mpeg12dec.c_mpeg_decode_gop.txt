@@ -1,0 +1,19 @@
+static void func1 ( AVCodecContext * var1 , 
+const uint8_t * var2 , int var3 ) 
+{ 
+Mpeg1Context * var4 = var1 -> var5 ; 
+MpegEncContext * var6 = & var4 -> var7 ; 
+int var8 ; 
+int64_t var9 ; 
+func2 ( & var6 -> var10 , var2 , var3 * number ) ; 
+var9 = var1 -> var11 = func3 ( & var6 -> var10 , number ) ; 
+var6 -> var12 = func4 ( & var6 -> var10 ) ; 
+var8 = func4 ( & var6 -> var10 ) ; 
+if ( var6 -> var1 -> var13 & var14 ) { 
+char var15 [ var16 ] ; 
+func5 ( var15 , var9 ) ; 
+func6 ( var6 -> var1 , var17 , 
+str , 
+var15 , var6 -> var12 , var8 ) ; 
+} 
+} 

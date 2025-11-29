@@ -1,0 +1,26 @@
+static int func1 ( AVProbeData * var1 ) 
+{ 
+const int var2 = var1 -> var3 ; 
+int var4 = number ; 
+int var5 = number ; 
+int var6 ; 
+int var7 = var2 / var8 ; 
+if ( var7 < var9 ) 
+return number ; 
+for ( var6 = number ; var6 < var7 ; var6 += var10 ) { 
+int var11 = func2 ( var7 - var6 , var10 ) ; 
+int var12 = func3 ( var1 -> var13 + var14 * var6 , var14 * var11 , var14 , var15 , number ) ; 
+int var16 = func3 ( var1 -> var13 + var17 * var6 , var17 * var11 , var17 , var15 , number ) ; 
+int var18 = func3 ( var1 -> var13 + var8 * var6 , var8 * var11 , var8 , var15 , number ) ; 
+var12 = func4 ( var12 , var16 , var18 ) ; 
+var5 += var12 ; 
+var4 = func5 ( var4 , var12 ) ; 
+} 
+var5 = var5 * var9 / var7 ; 
+var4 = var4 * var9 / var10 ; 
+func6 ( number , str , var5 , var4 ) ; 
+if ( var5 > number ) return var19 + var5 - var9 ; 
+else if ( var4 > number ) return var19 / number + var5 - var9 ; 
+else 
+return number ; 
+} 

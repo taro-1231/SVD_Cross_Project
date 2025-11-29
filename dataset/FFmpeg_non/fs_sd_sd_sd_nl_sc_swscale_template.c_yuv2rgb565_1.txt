@@ -1,0 +1,45 @@
+static void RENAME ( func1 ) ( SwsContext * var1 , const int16_t * var2 , 
+const int16_t * var3 [ 2 ] , const int16_t * var4 [ 2 ] , 
+const int16_t * var5 , uint8_t * var6 , 
+int var7 , int var8 , int var9 ) 
+{ 
+const int16_t * var10 = var3 [ number ] ; 
+const int16_t * var11 = var2 ; 
+if ( var8 < number ) { 
+const int16_t * var12 = var3 [ number ] ; 
+__asm__ volatile ( 
+str REG_b str ( % 5 ) \ n \ t str 
+str REG_b str 
+str REG_BP str 
+YSCALEYUV2RGB1 ( % % REGBP , % 5 ) 
+str 
+str BLUE_DITHER str 
+str GREEN_DITHER str 
+str RED_DITHER str 
+WRITERGB16 ( % % REGb , DSTW_OFFSET str , % % REGBP ) 
+str REG_BP str 
+str ESP_OFFSET str REG_b str 
+:: str ( var2 ) , str ( var11 ) , str ( var10 ) , str ( var12 ) , str ( var6 ) , 
+str ( & var1 -> redDither ) 
+NAMED_CONSTRAINTS_ADD ( bF8 , bFC ) 
+) ; 
+} else { 
+const int16_t * var12 = var3 [ number ] ; 
+__asm__ volatile ( 
+str REG_b str ( % 5 ) \ n \ t str 
+str REG_b str 
+str REG_BP str 
+YSCALEYUV2RGB1b ( % % REGBP , % 5 ) 
+str 
+str BLUE_DITHER str 
+str GREEN_DITHER str 
+str RED_DITHER str 
+WRITERGB16 ( % % REGb , DSTW_OFFSET str , % % REGBP ) 
+str REG_BP str 
+str ESP_OFFSET str REG_b str 
+:: str ( var2 ) , str ( var11 ) , str ( var10 ) , str ( var12 ) , str ( var6 ) , 
+str ( & var1 -> redDither ) 
+NAMED_CONSTRAINTS_ADD ( bF8 , bFC ) 
+) ; 
+} 
+} 

@@ -1,0 +1,13 @@
+static MpegTSFilter * func1 ( MpegTSContext * var1 , unsigned int var2 , 
+PESCallback * var3 , 
+void * var4 ) 
+{ 
+MpegTSFilter * var5 ; 
+MpegTSPESFilter * var6 ; 
+if ( ! ( var5 = func2 ( var1 , var2 , var7 ) ) ) 
+return var8 ; 
+var6 = & var5 -> var9 . var10 ; 
+var6 -> var3 = var3 ; 
+var6 -> var4 = var4 ; 
+return var5 ; 
+} 

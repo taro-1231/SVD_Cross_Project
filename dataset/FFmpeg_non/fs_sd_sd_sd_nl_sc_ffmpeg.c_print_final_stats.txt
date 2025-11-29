@@ -1,0 +1,96 @@
+static void func1 ( int64_t var1 ) 
+{ 
+uint64_t var2 = number , var3 = number , var4 = number , var5 = number ; 
+uint64_t var6 = number ; 
+uint64_t var7 = number ; 
+float var8 = - number ; 
+int var9 , var10 ; 
+int var11 = number ; 
+for ( var9 = number ; var9 < var12 ; var9 ++ ) { 
+OutputStream * var13 = var14 [ var9 ] ; 
+switch ( var13 -> var15 -> var16 ) { 
+case var17 : var2 += var13 -> var7 ; break ; 
+case var18 : var3 += var13 -> var7 ; break ; 
+case var19 : var6 += var13 -> var7 ; break ; 
+var20 : var5 += var13 -> var7 ; break ; 
+} 
+var4 += var13 -> var15 -> var21 ; 
+var7 += var13 -> var7 ; 
+if ( ( var13 -> var15 -> var22 & ( var23 | var24 ) ) 
+!= var23 ) 
+var11 = number ; 
+} 
+if ( var7 && var1 > number && var1 >= var7 ) 
+var8 = number * ( var1 - var7 ) / var7 ; 
+func2 ( var25 , var26 , str , 
+var2 / number , 
+var3 / number , 
+var6 / number , 
+var5 / number , 
+var4 / number ) ; 
+if ( var8 >= number ) 
+func2 ( var25 , var26 , str , var8 ) ; 
+else 
+func2 ( var25 , var26 , str ) ; 
+func2 ( var25 , var26 , str ) ; 
+for ( var9 = number ; var9 < var28 ; var9 ++ ) { 
+InputFile * var27 = var29 [ var9 ] ; 
+uint64_t var30 = number , var1 = number ; 
+func2 ( var25 , var31 , str , 
+var9 , var27 -> var32 -> var33 ) ; 
+for ( var10 = number ; var10 < var27 -> var34 ; var10 ++ ) { 
+InputStream * var35 = var36 [ var27 -> var37 + var10 ] ; 
+enum AVMediaType var38 = var35 -> var39 -> var16 ; 
+var1 += var35 -> var7 ; 
+var30 += var35 -> var40 ; 
+func2 ( var25 , var31 , str , 
+var9 , var10 , func3 ( var38 ) ) ; 
+func2 ( var25 , var31 , str PRIu64 str PRIu64 str 
+var35 -> var40 , var35 -> var7 ) ; 
+if ( var35 -> var41 ) { 
+func2 ( var25 , var31 , str PRIu64 str , 
+var35 -> frames_decoded ) ; 
+if ( var38 == var18 ) 
+func2 ( var25 , var31 , str PRIu64 str , var35 -> samples_decoded ) ; 
+func2 ( var25 , var31 , str ) ; 
+} 
+func2 ( var25 , var31 , str ) ; 
+} 
+func2 ( var25 , var31 , str PRIu64 str PRIu64 str , 
+var30 , var1 ) ; 
+} 
+for ( var9 = number ; var9 < var42 ; var9 ++ ) { 
+OutputFile * var43 = var44 [ var9 ] ; 
+uint64_t var30 = number , var1 = number ; 
+func2 ( var25 , var31 , str , 
+var9 , var43 -> var32 -> var33 ) ; 
+for ( var10 = number ; var10 < var43 -> var32 -> var34 ; var10 ++ ) { 
+OutputStream * var13 = var14 [ var43 -> var45 + var10 ] ; 
+enum AVMediaType var38 = var13 -> var15 -> var16 ; 
+var1 += var13 -> var7 ; 
+var30 += var13 -> var46 ; 
+func2 ( var25 , var31 , str , 
+var9 , var10 , func3 ( var38 ) ) ; 
+if ( var13 -> var47 ) { 
+func2 ( var25 , var31 , str PRIu64 str , 
+var13 -> frames_encoded ) ; 
+if ( var38 == var18 ) 
+func2 ( var25 , var31 , str PRIu64 str , var13 -> samples_encoded ) ; 
+func2 ( var25 , var31 , str ) ; 
+} 
+func2 ( var25 , var31 , str PRIu64 str PRIu64 str 
+var13 -> var46 , var13 -> var7 ) ; 
+func2 ( var25 , var31 , str ) ; 
+} 
+func2 ( var25 , var31 , str PRIu64 str PRIu64 str , 
+var30 , var1 ) ; 
+} 
+if ( var2 + var7 + var3 + var6 + var4 == number ) { 
+func2 ( var25 , var48 , str ) ; 
+if ( var11 ) { 
+func2 ( var25 , var48 , str ) ; 
+} else { 
+func2 ( var25 , var48 , str ) ; 
+} 
+} 
+} 

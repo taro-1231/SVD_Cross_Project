@@ -1,0 +1,75 @@
+void func1 ( func2 ) ( AACContext * var1 , SpectralBandReplication * var2 , int var3 , 
+INTFLOAT * var4 , INTFLOAT * var5 ) 
+{ 
+int var6 = var1 -> var7 [ number ] . var8 . var9 < var2 -> var10 ; 
+int var11 ; 
+int var12 = ( var3 == var13 ) ? number : number ; 
+int var14 ; 
+if ( var3 != var2 -> var3 ) { 
+func3 ( var1 -> var15 , var16 , 
+str , var3 , var2 -> var3 ) ; 
+func4 ( var2 ) ; 
+} 
+if ( ! var2 -> var17 ) { 
+var2 -> var18 [ number ] = var2 -> var18 [ number ] ; 
+var2 -> var19 [ number ] = var2 -> var19 [ number ] ; 
+} else { 
+var2 -> var17 = number ; 
+} 
+if ( var2 -> var20 ) { 
+func5 ( var2 , var3 ) ; 
+} 
+for ( var11 = number ; var11 < var12 ; var11 ++ ) { 
+func6 ( var1 -> var21 , & var2 -> var22 , & var2 -> var23 , var11 ? var5 : var4 , var2 -> var24 [ var11 ] . var25 , 
+( INTFLOAT * ) var2 -> var26 , 
+var2 -> var24 [ var11 ] . var27 , var2 -> var24 [ var11 ] . var28 ) ; 
+var2 -> c . sbr_lf_gen ( var1 , var2 , var2 -> X_low , 
+( const INTFLOAT ( * ) [ 32 ] [ 32 ] [ number ] ) var2 -> var24 [ var11 ] . var27 , 
+var2 -> var24 [ var11 ] . var28 ) ; 
+var2 -> var24 [ var11 ] . var28 ^= number ; 
+if ( var2 -> var20 ) { 
+var2 -> c . sbr_hf_inverse_filter ( & var2 -> var23 , var2 -> alpha0 , var2 -> alpha1 , 
+( const INTFLOAT ( * ) [ 40 ] [ number ] ) var2 -> X_low , var2 -> k [ number ] ) ; 
+func7 ( var2 , & var2 -> var24 [ var11 ] ) ; 
+func8 ( var2 -> var24 [ var11 ] . var29 > number ) ; 
+sbr_hf_gen ( var1 , var2 , var2 -> var30 , 
+( const INTFLOAT ( * ) [ 40 ] [ number ] ) var2 -> X_low , 
+( const INTFLOAT ( * ) [ number ] ) var2 -> alpha0 , 
+( const INTFLOAT ( * ) [ number ] ) var2 -> alpha1 , 
+var2 -> var24 [ var11 ] . bw_array , var2 -> var24 [ var11 ] . t_env , 
+var2 -> var24 [ var11 ] . var29 ) ; 
+var14 = func9 ( var1 , var2 , & var2 -> var24 [ var11 ] , var2 -> var24 [ var11 ] . var31 ) ; 
+if ( ! var14 ) { 
+func10 ( var2 -> var32 , var2 -> var30 , var2 , & var2 -> var24 [ var11 ] ) ; 
+func11 ( var1 , var2 , & var2 -> var24 [ var11 ] , var2 -> var24 [ var11 ] . var31 ) ; 
+var2 -> c . sbr_hf_assemble ( var2 -> var24 [ var11 ] . Y [ var2 -> var24 [ var11 ] . var28 ] , 
+( const INTFLOAT ( * ) [ 40 ] [ number ] ) var2 -> var30 , 
+var2 , & var2 -> var24 [ var11 ] , 
+var2 -> var24 [ var11 ] . var31 ) ; 
+} 
+} 
+var2 -> c . sbr_x_gen ( var2 , var2 -> var33 [ var11 ] , 
+( const INTFLOAT ( * ) [ 64 ] [ number ] ) var2 -> var24 [ var11 ] . Y [ number - var2 -> var24 [ var11 ] . var28 ] , 
+( const INTFLOAT ( * ) [ 64 ] [ number ] ) var2 -> var24 [ var11 ] . Y [ var2 -> var24 [ var11 ] . var28 ] , 
+( const INTFLOAT ( * ) [ 40 ] [ number ] ) var2 -> X_low , var11 ) ; 
+} 
+if ( var1 -> var7 [ number ] . var8 . var34 == number ) { 
+if ( var2 -> var34 . var20 ) { 
+func1 ( func12 ) ( var1 -> var15 , & var2 -> var34 , var2 -> var33 [ number ] , var2 -> var33 [ number ] , var2 -> var18 [ number ] + var2 -> var19 [ number ] ) ; 
+} else { 
+memcpy ( var2 -> var33 [ number ] , var2 -> var33 [ number ] , sizeof ( var2 -> var33 [ number ] ) ) ; 
+} 
+var12 = number ; 
+} 
+func13 ( & var2 -> var35 , & var2 -> var23 , var1 -> var21 , 
+var4 , var2 -> var33 [ number ] , var2 -> var26 , 
+var2 -> var24 [ number ] . var36 , 
+& var2 -> var24 [ number ] . var37 , 
+var6 ) ; 
+if ( var12 == number ) 
+func13 ( & var2 -> var35 , & var2 -> var23 , var1 -> var21 , 
+var5 , var2 -> var33 [ number ] , var2 -> var26 , 
+var2 -> var24 [ number ] . var36 , 
+& var2 -> var24 [ number ] . var37 , 
+var6 ) ; 
+} 

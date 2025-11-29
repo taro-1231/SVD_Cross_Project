@@ -1,0 +1,7 @@
+static void func1 ( const AVDictionary * var1 ) 
+{ 
+AVDictionaryEntry * var2 = var3 ; 
+while ( ( var2 = func2 ( var1 , str , var2 , var4 ) ) ) 
+printf ( str , var2 -> var5 , var2 -> var6 ) ; 
+printf ( str ) ; 
+} 

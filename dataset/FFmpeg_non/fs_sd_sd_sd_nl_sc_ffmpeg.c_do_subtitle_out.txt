@@ -1,0 +1,65 @@
+static void func1 ( OutputFile * var1 , 
+OutputStream * var2 , 
+AVSubtitle * var3 ) 
+{ 
+int var4 = number * number ; 
+int var5 , var6 , var7 ; 
+AVCodecContext * var8 ; 
+AVPacket var9 ; 
+int64_t var10 ; 
+if ( var3 -> var10 == var11 ) { 
+func2 ( var12 , var13 , str ) ; 
+if ( var14 ) 
+func3 ( number ) ; 
+return ; 
+} 
+var8 = var2 -> var15 ; 
+if ( ! var16 ) { 
+var16 = func4 ( var4 ) ; 
+if ( ! var16 ) { 
+func2 ( var12 , var17 , str ) ; 
+func3 ( number ) ; 
+} 
+} 
+if ( var8 -> var18 == var19 ) 
+var6 = number ; 
+else 
+var6 = number ; 
+var10 = var3 -> var10 ; 
+if ( var20 [ var2 -> var21 ] -> var22 != var11 ) 
+var10 -= var20 [ var2 -> var21 ] -> var22 ; 
+for ( var7 = number ; var7 < var6 ; var7 ++ ) { 
+unsigned var23 = var3 -> var24 ; 
+var2 -> var25 = func5 ( var10 , var26 , var8 -> var27 ) ; 
+if ( ! func6 ( var2 ) ) 
+return ; 
+var3 -> var10 = var10 ; 
+var3 -> var10 += func5 ( var3 -> var28 , ( AVRational ) { number , 1000 } , var26 ) ; 
+var3 -> var29 -= var3 -> var28 ; 
+var3 -> var28 = number ; 
+if ( var7 == number ) 
+var3 -> var24 = number ; 
+var2 -> var30 ++ ; 
+var5 = func7 ( var8 , var16 , 
+var4 , var3 ) ; 
+if ( var7 == number ) 
+var3 -> var24 = var23 ; 
+if ( var5 < number ) { 
+func2 ( var12 , var17 , str ) ; 
+func3 ( number ) ; 
+} 
+func8 ( & var9 ) ; 
+var9 . var31 = var16 ; 
+var9 . var32 = var5 ; 
+var9 . var10 = func5 ( var3 -> var10 , var26 , var2 -> var33 ) ; 
+var9 . duration = func5 ( var3 -> var29 , ( AVRational ) { number , 1000 } , var2 -> var33 ) ; 
+if ( var8 -> var18 == var19 ) { 
+if ( var7 == number ) 
+var9 . var10 += func5 ( var3 -> var28 , ( AVRational ) { number , 1000 } , var2 -> var33 ) ; 
+else 
+var9 . var10 += func5 ( var3 -> var29 , ( AVRational ) { number , 1000 } , var2 -> var33 ) ; 
+} 
+var9 . var34 = var9 . var10 ; 
+func9 ( var1 , & var9 , var2 ) ; 
+} 
+} 

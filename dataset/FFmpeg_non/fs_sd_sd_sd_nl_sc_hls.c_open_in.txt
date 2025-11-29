@@ -1,0 +1,9 @@
+static int func1 ( HLSContext * var1 , AVIOContext ** var2 , const char * var3 ) 
+{ 
+AVDictionary * var4 = var5 ; 
+int var6 ; 
+func2 ( & var4 , var1 -> var7 , number ) ; 
+var6 = func3 ( var2 , var3 , var8 , var1 -> var9 , & var4 ) ; 
+func4 ( & var4 ) ; 
+return var6 ; 
+} 

@@ -1,0 +1,13 @@
+static void func1 ( AVStream * var1 , LayeredAVStream * var2 ) 
+{ 
+func2 ( & var1 -> var3 ) ; 
+func3 ( & var1 -> var4 ) ; 
+COPY ( index ) 
+COPY ( id ) 
+COPY ( var3 ) 
+COPY ( var4 ) 
+COPY ( time_base ) 
+COPY ( pts_wrap_bits ) 
+COPY ( sample_aspect_ratio ) 
+COPY ( recommended_encoder_configuration ) 
+} 

@@ -1,0 +1,18 @@
+static int func1 ( int * var1 , int * var2 , int * var3 , int * var4 , int var5 ) 
+{ 
+if ( * var1 > * var3 ) 
+return func1 ( var3 , var4 , var1 , var2 , var5 ) ; 
+if ( * var1 < number ) { 
+if ( * var3 < number ) 
+return number ; 
+* var2 = * var4 + ( * var2 - * var4 ) * ( int64_t ) * var3 / ( * var3 - * var1 ) ; 
+* var1 = number ; 
+} 
+if ( * var3 > var5 ) { 
+if ( * var1 > var5 ) 
+return number ; 
+* var4 = * var2 + ( * var4 - * var2 ) * ( int64_t ) ( var5 - * var1 ) / ( * var3 - * var1 ) ; 
+* var3 = var5 ; 
+} 
+return number ; 
+} 

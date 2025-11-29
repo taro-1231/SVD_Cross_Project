@@ -1,0 +1,7 @@
+AVRational func1 ( AVRational var1 , AVRational var2 ) 
+{ 
+func2 ( & var1 . var3 , & var1 . var4 , 
+var1 . var3 * ( int64_t ) var2 . var3 , 
+var1 . var4 * ( int64_t ) var2 . var4 , var5 ) ; 
+return var1 ; 
+} 

@@ -1,0 +1,4 @@
+const AVFilter * func1 ( const AVFilter * var1 ) 
+{ 
+return var1 ? var1 -> var2 : var3 ; 
+} 

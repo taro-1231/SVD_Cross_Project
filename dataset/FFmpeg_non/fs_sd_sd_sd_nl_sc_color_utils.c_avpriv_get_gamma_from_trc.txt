@@ -1,0 +1,27 @@
+double func1 ( enum AVColorTransferCharacteristic var1 ) 
+{ 
+double var2 ; 
+switch ( var1 ) { 
+case var3 : 
+case var4 : 
+case var5 : 
+case var6 : 
+case var7 : 
+case var8 : 
+var2 = number ; 
+break ; 
+case var9 : 
+case var10 : 
+var2 = number ; 
+break ; 
+case var11 : 
+var2 = number ; 
+break ; 
+case var12 : 
+var2 = number ; 
+break ; 
+var13 : 
+var2 = number ; 
+} 
+return var2 ; 
+} 

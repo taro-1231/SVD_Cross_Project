@@ -1,0 +1,83 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+MatroskaMuxContext * var2 = var1 -> var3 ; 
+AVIOContext * var4 = var1 -> var4 ; 
+int64_t var5 , var6 ; 
+int var7 ; 
+if ( var2 -> var8 . var9 > number ) { 
+var7 = func2 ( var1 , & var2 -> var8 , number ) ; 
+func3 ( & var2 -> var8 ) ; 
+if ( var7 < number ) { 
+func4 ( var1 , var10 , 
+str , var7 ) ; 
+return var7 ; 
+} 
+} 
+if ( var2 -> var11 ) { 
+func5 ( var2 -> var11 , var2 -> var12 ) ; 
+func6 ( var1 ) ; 
+} else if ( var2 -> var13 != - number ) { 
+func5 ( var4 , var2 -> var12 ) ; 
+} 
+if ( var2 -> var14 != var15 ) { 
+var7 = func7 ( var1 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+} 
+if ( var4 -> var16 ) { 
+if ( var2 -> var17 -> var18 ) { 
+if ( var2 -> var19 ) { 
+int64_t var20 ; 
+var5 = func8 ( var4 ) ; 
+func9 ( var4 , var2 -> var21 , var22 ) ; 
+var6 = func10 ( var1 , var2 -> var17 , var2 -> var23 , var1 -> var24 ) ; 
+var20 = func8 ( var4 ) ; 
+if ( var20 > var6 + var2 -> var19 ) { 
+func4 ( var1 , var10 , 
+str 
+str PRId64 str , 
+var2 -> var19 , var20 - var6 ) ; 
+return func11 ( var25 ) ; 
+} 
+if ( var20 < var6 + var2 -> var19 ) 
+func12 ( var4 , var2 -> var19 - 
+( var20 - var6 ) ) ; 
+func9 ( var4 , var5 , var22 ) ; 
+} else { 
+var6 = func10 ( var1 , var2 -> var17 , var2 -> var23 , var1 -> var24 ) ; 
+} 
+var7 = func13 ( var2 -> var26 , var27 , 
+var6 ) ; 
+if ( var7 < number ) 
+return var7 ; 
+} 
+func14 ( var4 , var2 ) ; 
+func4 ( var1 , AV_LOG_DEBUG , str PRIu64 str , var2 -> var28 ) ; 
+var5 = func8 ( var4 ) ; 
+func9 ( var4 , var2 -> var29 , var22 ) ; 
+func15 ( var4 , var30 , var2 -> var28 ) ; 
+if ( var2 -> var31 ) { 
+int var32 ; 
+for ( var32 = number ; var32 < var1 -> var24 ; ++ var32 ) { 
+AVStream * var33 = var1 -> var34 [ var32 ] ; 
+double var35 = var2 -> var31 [ var32 ] * func16 ( var33 -> var36 ) ; 
+char var37 [ number ] = str ; 
+func4 ( var1 , AV_LOG_DEBUG , str PRIu64 str , var32 , 
+var2 -> var31 [ var32 ] ) ; 
+if ( ! var2 -> var38 && var2 -> var39 [ var32 ] > number ) { 
+func9 ( var4 , var2 -> var39 [ var32 ] , var22 ) ; 
+snprintf ( var37 , number , str , 
+( int ) var35 / number , ( ( int ) var35 / number ) % number , 
+fmod ( var35 , number ) ) ; 
+func17 ( var4 , var40 , var37 , number ) ; 
+} 
+} 
+} 
+func9 ( var4 , var5 , var22 ) ; 
+} 
+if ( ! var2 -> var38 ) { 
+func5 ( var4 , var2 -> var41 ) ; 
+} 
+func18 ( var2 ) ; 
+return number ; 
+} 

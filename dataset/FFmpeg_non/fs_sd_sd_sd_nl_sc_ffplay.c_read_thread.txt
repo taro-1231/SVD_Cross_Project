@@ -1,0 +1,277 @@
+static int func1 ( void * var1 ) 
+{ 
+VideoState * var2 = var1 ; 
+AVFormatContext * var3 = var4 ; 
+int var5 , var6 , var7 ; 
+int var8 [ var9 ] ; 
+AVPacket var10 , * var11 = & var10 ; 
+int64_t var12 ; 
+int var13 = number ; 
+AVDictionaryEntry * var14 ; 
+AVDictionary ** var15 ; 
+int var16 ; 
+SDL_mutex * var17 = func2 ( ) ; 
+int var18 = number ; 
+int64_t var19 ; 
+if ( ! var17 ) { 
+func3 ( var4 , var20 , str , func4 ( ) ) ; 
+var7 = func5 ( var21 ) ; 
+goto var22 ; 
+} 
+memset ( var8 , - number , sizeof ( var8 ) ) ; 
+var2 -> var23 = var2 -> var24 = - number ; 
+var2 -> var25 = var2 -> var26 = - number ; 
+var2 -> var27 = var2 -> var28 = - number ; 
+var2 -> var29 = number ; 
+var3 = func6 ( ) ; 
+if ( ! var3 ) { 
+func3 ( var4 , var20 , str ) ; 
+var7 = func5 ( var21 ) ; 
+goto var22 ; 
+} 
+var3 -> var30 . var31 = var32 ; 
+var3 -> var30 . var33 = var2 ; 
+if ( ! func7 ( var34 , str , var4 , var35 ) ) { 
+func8 ( & var34 , str , str , var36 ) ; 
+var18 = number ; 
+} 
+var5 = func9 ( & var3 , var2 -> var37 , var2 -> var38 , & var34 ) ; 
+if ( var5 < number ) { 
+func10 ( var2 -> var37 , var5 ) ; 
+var7 = - number ; 
+goto var22 ; 
+} 
+if ( var18 ) 
+func8 ( & var34 , str , var4 , var35 ) ; 
+if ( ( var14 = func7 ( var34 , str , var4 , var39 ) ) ) { 
+func3 ( var4 , var40 , str , var14 -> var41 ) ; 
+var7 = var42 ; 
+goto var22 ; 
+} 
+var2 -> var3 = var3 ; 
+if ( var43 ) 
+var3 -> var44 |= var45 ; 
+func11 ( var3 ) ; 
+var15 = func12 ( var3 , var46 ) ; 
+var16 = var3 -> var47 ; 
+var5 = func13 ( var3 , var15 ) ; 
+for ( var6 = number ; var6 < var16 ; var6 ++ ) 
+func14 ( & var15 [ var6 ] ) ; 
+func15 ( & var15 ) ; 
+if ( var5 < number ) { 
+func3 ( var4 , var48 , 
+str , var2 -> var37 ) ; 
+var7 = - number ; 
+goto var22 ; 
+} 
+if ( var3 -> var49 ) 
+var3 -> var49 -> var50 = number ; 
+if ( var51 < number ) 
+var51 = ! ! ( var3 -> var38 -> var44 & var52 ) && strcmp ( str , var3 -> var38 -> var53 ) ; 
+var2 -> var54 = ( var3 -> var38 -> var44 & var52 ) ? number : number ; 
+if ( ! var55 && ( var14 = func7 ( var3 -> var56 , str , var4 , number ) ) ) 
+var55 = func16 ( str , var14 -> var57 , var58 ) ; 
+if ( var59 != var60 ) { 
+int64_t var61 ; 
+var61 = var59 ; 
+if ( var3 -> var59 != var60 ) 
+var61 += var3 -> var59 ; 
+var7 = func17 ( var3 , - number , var62 , var61 , var63 , number ) ; 
+if ( var7 < number ) { 
+func3 ( var4 , var48 , str , 
+var2 -> var37 , ( double ) var61 / var64 ) ; 
+} 
+} 
+var2 -> var65 = func18 ( var3 ) ; 
+if ( var66 ) 
+func19 ( var3 , number , var2 -> var37 , number ) ; 
+for ( var6 = number ; var6 < var3 -> var47 ; var6 ++ ) { 
+AVStream * var67 = var3 -> var68 [ var6 ] ; 
+enum AVMediaType var69 = var67 -> var70 -> var71 ; 
+var67 -> var72 = var73 ; 
+if ( var69 >= number && var74 [ var69 ] && var8 [ var69 ] == - number ) 
+if ( func20 ( var3 , var67 , var74 [ var69 ] ) > number ) 
+var8 [ var69 ] = var6 ; 
+} 
+for ( var6 = number ; var6 < var9 ; var6 ++ ) { 
+if ( var74 [ var6 ] && var8 [ var6 ] == - number ) { 
+func3 ( var4 , var40 , str , var74 [ var6 ] , func21 ( var6 ) ) ; 
+var8 [ var6 ] = var75 ; 
+} 
+} 
+if ( ! var76 ) 
+var8 [ var77 ] = 
+func22 ( var3 , var77 , 
+var8 [ var77 ] , - number , var4 , number ) ; 
+if ( ! var78 ) 
+var8 [ var79 ] = 
+func22 ( var3 , var79 , 
+var8 [ var79 ] , 
+var8 [ var77 ] , 
+var4 , number ) ; 
+if ( ! var76 && ! var80 ) 
+var8 [ var81 ] = 
+func22 ( var3 , var81 , 
+var8 [ var81 ] , 
+( var8 [ var79 ] >= number ? 
+var8 [ var79 ] : 
+var8 [ var77 ] ) , 
+var4 , number ) ; 
+var2 -> var82 = var82 ; 
+if ( var8 [ var77 ] >= number ) { 
+AVStream * var67 = var3 -> var68 [ var8 [ var77 ] ] ; 
+AVCodecParameters * var70 = var67 -> var70 ; 
+AVRational var83 = func23 ( var3 , var67 , var4 ) ; 
+if ( var70 -> var84 ) 
+func24 ( var70 -> var84 , var70 -> var85 , var83 ) ; 
+} 
+if ( var8 [ var79 ] >= number ) { 
+func25 ( var2 , var8 [ var79 ] ) ; 
+} 
+var7 = - number ; 
+if ( var8 [ var77 ] >= number ) { 
+var7 = func25 ( var2 , var8 [ var77 ] ) ; 
+} 
+if ( var2 -> var82 == var86 ) 
+var2 -> var82 = var7 >= number ? var87 : var88 ; 
+if ( var8 [ var81 ] >= number ) { 
+func25 ( var2 , var8 [ var81 ] ) ; 
+} 
+if ( var2 -> var24 < number && var2 -> var26 < number ) { 
+func3 ( var4 , var20 , str , 
+var2 -> var37 ) ; 
+var7 = - number ; 
+goto var22 ; 
+} 
+if ( var89 < number && var2 -> var65 ) 
+var89 = number ; 
+for ( ; ; ) { 
+if ( var2 -> var90 ) 
+break ; 
+if ( var2 -> var91 != var2 -> var92 ) { 
+var2 -> var92 = var2 -> var91 ; 
+if ( var2 -> var91 ) 
+var2 -> var93 = func26 ( var3 ) ; 
+else 
+func27 ( var3 ) ; 
+} 
+if ( var2 -> var91 && 
+( ! strcmp ( var3 -> var38 -> var53 , str ) || 
+( var3 -> var49 && ! strncmp ( var58 , str , number ) ) ) ) { 
+func28 ( number ) ; 
+continue ; 
+} 
+if ( var2 -> var94 ) { 
+int64_t var95 = var2 -> var96 ; 
+int64_t var97 = var2 -> var98 > number ? var95 - var2 -> var98 + number : var62 ; 
+int64_t var99 = var2 -> var98 < number ? var95 - var2 -> var98 - number : var63 ; 
+var7 = func17 ( var2 -> var3 , - number , var97 , var95 , var99 , var2 -> var100 ) ; 
+if ( var7 < number ) { 
+func3 ( var4 , var40 , 
+str , var2 -> var3 -> var37 ) ; 
+} else { 
+if ( var2 -> var26 >= number ) { 
+func29 ( & var2 -> var102 ) ; 
+func30 ( & var2 -> var102 , & var103 ) ; 
+} 
+if ( var2 -> var28 >= number ) { 
+func29 ( & var2 -> var104 ) ; 
+func30 ( & var2 -> var104 , & var103 ) ; 
+} 
+if ( var2 -> var24 >= number ) { 
+func29 ( & var2 -> var105 ) ; 
+func30 ( & var2 -> var105 , & var103 ) ; 
+} 
+if ( var2 -> var100 & var106 ) { 
+func31 ( & var2 -> var107 , var108 , number ) ; 
+} else { 
+func31 ( & var2 -> var107 , var95 / ( double ) var64 , number ) ; 
+} 
+} 
+var2 -> var94 = number ; 
+var2 -> var109 = number ; 
+var2 -> var29 = number ; 
+if ( var2 -> var91 ) 
+func32 ( var2 ) ; 
+} 
+if ( var2 -> var109 ) { 
+if ( var2 -> var110 && var2 -> var110 -> var111 & var112 ) { 
+AVPacket var113 ; 
+if ( ( var7 = func33 ( & var113 , & var2 -> var110 -> var114 ) ) < number ) 
+goto var22 ; 
+func30 ( & var2 -> var105 , & var113 ) ; 
+func34 ( & var2 -> var105 , var2 -> var24 ) ; 
+} 
+var2 -> var109 = number ; 
+} 
+if ( var89 < number && 
+( var2 -> var102 . var115 + var2 -> var105 . var115 + var2 -> var104 . var115 > var116 
+|| ( func35 ( var2 -> var117 , var2 -> var26 , & var2 -> var102 ) && 
+func35 ( var2 -> var110 , var2 -> var24 , & var2 -> var105 ) && 
+func35 ( var2 -> var118 , var2 -> var28 , & var2 -> var104 ) ) ) ) { 
+func36 ( var17 ) ; 
+func37 ( var2 -> var119 , var17 , number ) ; 
+func38 ( var17 ) ; 
+continue ; 
+} 
+if ( ! var2 -> var91 && 
+( ! var2 -> var117 || ( var2 -> var120 . var121 == var2 -> var102 . var122 && func39 ( & var2 -> var123 ) == number ) ) && 
+( ! var2 -> var110 || ( var2 -> var124 . var121 == var2 -> var105 . var122 && func39 ( & var2 -> var125 ) == number ) ) ) { 
+if ( var126 != number && ( ! var126 || -- var126 ) ) { 
+func40 ( var2 , var59 != var60 ? var59 : number , number , number ) ; 
+} else if ( var127 ) { 
+var7 = var128 ; 
+goto var22 ; 
+} 
+} 
+var7 = func41 ( var3 , var11 ) ; 
+if ( var7 < number ) { 
+if ( ( var7 == var128 || func42 ( var3 -> var49 ) ) && ! var2 -> var29 ) { 
+if ( var2 -> var24 >= number ) 
+func34 ( & var2 -> var105 , var2 -> var24 ) ; 
+if ( var2 -> var26 >= number ) 
+func34 ( & var2 -> var102 , var2 -> var26 ) ; 
+if ( var2 -> var28 >= number ) 
+func34 ( & var2 -> var104 , var2 -> var28 ) ; 
+var2 -> var29 = number ; 
+} 
+if ( var3 -> var49 && var3 -> var49 -> var101 ) 
+break ; 
+func36 ( var17 ) ; 
+func37 ( var2 -> var119 , var17 , number ) ; 
+func38 ( var17 ) ; 
+continue ; 
+} else { 
+var2 -> var29 = number ; 
+} 
+var12 = var3 -> var68 [ var11 -> var129 ] -> var59 ; 
+var19 = var11 -> var130 == var60 ? var11 -> var131 : var11 -> var130 ; 
+var13 = var132 == var60 || 
+( var19 - ( var12 != var60 ? var12 : number ) ) * 
+func43 ( var3 -> var68 [ var11 -> var129 ] -> var133 ) - 
+( double ) ( var59 != var60 ? var59 : number ) / number 
+<= ( ( double ) var132 / number ) ; 
+if ( var11 -> var129 == var2 -> var26 && var13 ) { 
+func30 ( & var2 -> var102 , var11 ) ; 
+} else if ( var11 -> var129 == var2 -> var24 && var13 
+&& ! ( var2 -> var110 -> var111 & var112 ) ) { 
+func30 ( & var2 -> var105 , var11 ) ; 
+} else if ( var11 -> var129 == var2 -> var28 && var13 ) { 
+func30 ( & var2 -> var104 , var11 ) ; 
+} else { 
+func44 ( var11 ) ; 
+} 
+} 
+var7 = number ; 
+var22 : 
+if ( var3 && ! var2 -> var3 ) 
+func45 ( & var3 ) ; 
+if ( var7 != number ) { 
+SDL_Event var134 ; 
+var134 . var69 = var135 ; 
+var134 . var136 . var137 = var2 ; 
+func46 ( & var134 ) ; 
+} 
+func47 ( var17 ) ; 
+return number ; 
+} 

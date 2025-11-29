@@ -1,0 +1,32 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+struct dshow_ctx * var2 = var1 -> var3 ; 
+char ** var4 = var2 -> var4 ; 
+char * var5 = func2 ( var1 -> var6 ) ; 
+char * var7 = var5 ; 
+int var8 = number ; 
+char * var9 ; 
+while ( ( var9 = strtok ( var7 , str ) ) ) { 
+char * var10 = strtok ( var11 , str ) ; 
+var7 = var11 ; 
+if ( ! strcmp ( var9 , str ) ) { 
+var4 [ number ] = var10 ; 
+} else if ( ! strcmp ( var9 , str ) ) { 
+var4 [ number ] = var10 ; 
+} else { 
+var4 [ number ] = var11 ; 
+var4 [ number ] = var11 ; 
+break ; 
+} 
+} 
+if ( ! var4 [ number ] && ! var4 [ number ] ) { 
+var8 = number ; 
+} else { 
+if ( var4 [ number ] ) 
+var4 [ number ] = func2 ( var4 [ number ] ) ; 
+if ( var4 [ number ] ) 
+var4 [ number ] = func2 ( var4 [ number ] ) ; 
+} 
+func3 ( var5 ) ; 
+return var8 ; 
+} 

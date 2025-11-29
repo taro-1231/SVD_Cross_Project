@@ -1,0 +1,15 @@
+static void BAYER_RENAME ( func1 ) ( const uint8_t * var1 , int var2 , uint8_t * var3 , int var4 , int var5 ) 
+{ 
+int var6 ; 
+BAYER_TO_RGB24_COPY 
+var1 += number * var7 ; 
+var3 += number ; 
+for ( var6 = number ; var6 < var5 - number ; var6 += number ) { 
+BAYER_TO_RGB24_INTERPOLATE 
+var1 += number * var7 ; 
+var3 += number ; 
+} 
+if ( var5 > number ) { 
+BAYER_TO_RGB24_COPY 
+} 
+} 

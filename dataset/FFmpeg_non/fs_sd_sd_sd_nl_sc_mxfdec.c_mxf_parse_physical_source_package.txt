@@ -1,0 +1,44 @@
+static int func1 ( MXFContext * var1 , MXFTrack * var2 , AVStream * var3 ) 
+{ 
+MXFPackage * var4 = var5 ; 
+MXFTrack * var6 = var5 ; 
+MXFStructuralComponent * var7 = var5 ; 
+MXFTimecodeComponent * var8 = var5 ; 
+int var9 , var10 , var11 ; 
+AVTimecode var12 ; 
+int var13 ; 
+int64_t var14 ; 
+for ( var9 = number ; var9 < var2 -> var15 -> var16 ; var9 ++ ) { 
+var7 = func2 ( var1 , & var2 -> var15 -> var17 [ var9 ] , var18 ) ; 
+if ( ! var7 ) 
+continue ; 
+if ( ! ( var4 = func3 ( var1 , var7 -> var19 ) ) ) 
+break ; 
+func4 ( & var3 -> var20 , str , var4 ) ; 
+if ( var4 -> var21 && var4 -> var21 [ number ] ) 
+func5 ( & var3 -> var20 , str , var4 -> var21 , number ) ; 
+for ( var10 = number ; var10 < var4 -> var22 ; var10 ++ ) { 
+if ( ! ( var6 = func2 ( var1 , & var4 -> var23 [ var10 ] , var24 ) ) ) { 
+func6 ( var1 -> var25 , var26 , str ) ; 
+continue ; 
+} 
+if ( ! ( var6 -> var15 = func2 ( var1 , & var6 -> var27 , var28 ) ) ) { 
+func6 ( var1 -> var25 , var26 , str ) ; 
+continue ; 
+} 
+for ( var11 = number ; var11 < var6 -> var15 -> var16 ; var11 ++ ) { 
+if ( ! ( var8 = func7 ( var1 , & var6 -> var15 -> var17 [ var11 ] ) ) ) 
+continue ; 
+var13 = var8 -> var29 == number ? var30 : number ; 
+var14 = func8 ( var7 -> var14 , 
+var6 -> var31 , 
+var2 -> var31 ) ; 
+if ( func9 ( & var12 , var8 -> var32 , var13 , var14 + var8 -> var33 , var1 -> var25 ) == number ) { 
+func10 ( & var3 -> var20 , str , & var12 ) ; 
+return number ; 
+} 
+} 
+} 
+} 
+return number ; 
+} 

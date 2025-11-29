@@ -1,0 +1,13 @@
+static struct color_ref ** func1 ( const struct hist_node * var1 , int var2 ) 
+{ 
+int var3 , var4 , var5 = number ; 
+struct color_ref ** var6 = func2 ( var2 , sizeof ( * var6 ) ) ; 
+if ( ! var6 ) 
+return var7 ; 
+for ( var4 = number ; var4 < var8 ; var4 ++ ) { 
+const struct hist_node * var9 = & var1 [ var4 ] ; 
+for ( var3 = number ; var3 < var9 -> var10 ; var3 ++ ) 
+var6 [ var5 ++ ] = & var9 -> var11 [ var3 ] ; 
+} 
+return var6 ; 
+} 

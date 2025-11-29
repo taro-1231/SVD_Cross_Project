@@ -1,0 +1,79 @@
+static int func1 ( AVFormatContext * var1 ) 
+{ 
+WtvContext * var2 = var1 -> var3 ; 
+int var4 , var5 ; 
+uint8_t var6 [ var7 ] ; 
+AVIOContext * var8 ; 
+int64_t var9 ; 
+int64_t var10 ; 
+var2 -> var11 = 
+var2 -> var12 = 
+var2 -> var13 = var14 ; 
+func2 ( var1 -> var8 , number ) ; 
+var5 = func3 ( var1 -> var8 ) ; 
+if ( var5 > sizeof ( var6 ) ) { 
+func4 ( var1 , var15 , str ) ; 
+return var17 ; 
+} 
+func2 ( var1 -> var8 , number ) ; 
+var4 = func3 ( var1 -> var8 ) ; 
+var10 = func5 ( var1 -> var8 , var4 , number ) ; 
+if ( var10 < number ) 
+return var10 ; 
+var5 = func6 ( var1 -> var8 , var6 , var5 ) ; 
+if ( var5 < number ) 
+return var17 ; 
+var2 -> var8 = func7 ( var1 , var6 , var5 , var18 ) ; 
+if ( ! var2 -> var8 ) { 
+func4 ( var1 , var15 , str ) ; 
+return var17 ; 
+} 
+var10 = func8 ( var1 , var19 , number , number ) ; 
+if ( var10 < number ) 
+return var10 ; 
+func9 ( var2 -> var8 , - number , var20 ) ; 
+var9 = func10 ( var1 -> var8 ) ; 
+var8 = func7 ( var1 , var6 , var5 , var21 ) ; 
+if ( var8 ) { 
+func11 ( var1 , var8 ) ; 
+func12 ( var8 ) ; 
+} 
+if ( var1 -> var22 ) { 
+AVStream * var23 = var1 -> var24 [ number ] ; 
+var8 = func7 ( var1 , var6 , var5 , var25 ) ; 
+if ( var8 ) { 
+while ( number ) { 
+uint64_t var26 = func13 ( var8 ) ; 
+uint64_t var27 = func13 ( var8 ) ; 
+if ( func14 ( var8 ) ) 
+break ; 
+func15 ( & var2 -> var28 , & var2 -> var29 , & var2 -> var30 , 
+number , var26 , var27 , number , var31 ) ; 
+} 
+func12 ( var8 ) ; 
+if ( var2 -> var29 ) { 
+var8 = func7 ( var1 , var6 , var5 , var32 ) ; 
+if ( var8 ) { 
+int var33 ; 
+while ( number ) { 
+uint64_t var27 = func13 ( var8 ) ; 
+uint64_t var34 = func13 ( var8 ) ; 
+if ( func14 ( var8 ) ) 
+break ; 
+for ( var33 = var2 -> var29 - number ; var33 >= number ; var33 -- ) { 
+AVIndexEntry * var35 = var2 -> var28 + var33 ; 
+if ( var27 > var35 -> var16 ) 
+break ; 
+if ( var34 > var35 -> var36 ) 
+var35 -> var36 = var34 ; 
+} 
+} 
+func12 ( var8 ) ; 
+var23 -> var37 = var2 -> var28 [ var2 -> var29 - number ] . var26 ; 
+} 
+} 
+} 
+} 
+func9 ( var1 -> var8 , var9 , var38 ) ; 
+return number ; 
+} 

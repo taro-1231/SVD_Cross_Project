@@ -1,0 +1,9 @@
+static av_cold void func1 ( AVFilterContext * var1 ) 
+{ 
+BlendContext * var2 = var1 -> var3 ; 
+int var4 ; 
+func2 ( & var2 -> var5 ) ; 
+func3 ( & var2 -> var6 ) ; 
+for ( var4 = number ; var4 < func4 ( var2 -> var7 ) ; var4 ++ ) 
+func5 ( var2 -> var7 [ var4 ] . var8 ) ; 
+} 

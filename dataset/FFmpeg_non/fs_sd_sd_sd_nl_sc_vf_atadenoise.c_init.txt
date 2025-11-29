@@ -1,0 +1,10 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+ATADenoiseContext * var2 = var1 -> var3 ; 
+if ( ! ( var2 -> var4 & number ) ) { 
+func2 ( var1 , var5 , str , var2 -> var4 ) ; 
+return func3 ( var6 ) ; 
+} 
+var2 -> var7 = var2 -> var4 / number + number ; 
+return number ; 
+} 

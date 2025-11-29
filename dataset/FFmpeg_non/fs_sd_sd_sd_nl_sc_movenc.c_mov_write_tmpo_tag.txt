@@ -1,0 +1,16 @@
+static int func1 ( AVIOContext * var1 , AVFormatContext * var2 ) 
+{ 
+AVDictionaryEntry * var3 = func2 ( var2 -> var4 , str , var6 , number ) ; 
+int var7 = number , var5 = var3 ? atoi ( var3 -> var8 ) : number ; 
+if ( var5 ) { 
+var7 = number ; 
+func3 ( var1 , var7 ) ; 
+func4 ( var1 , str ) ; 
+func3 ( var1 , var7 - number ) ; 
+func4 ( var1 , str ) ; 
+func3 ( var1 , number ) ; 
+func3 ( var1 , number ) ; 
+func5 ( var1 , var5 ) ; 
+} 
+return var7 ; 
+} 

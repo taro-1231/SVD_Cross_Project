@@ -1,0 +1,20 @@
+static av_cold int func1 ( AVFilterContext * var1 ) 
+{ 
+AMergeContext * var2 = var1 -> var3 ; 
+int var4 ; 
+var2 -> var5 = func2 ( var2 -> var6 , sizeof ( * var2 -> var5 ) ) ; 
+if ( ! var2 -> var5 ) 
+return func3 ( var7 ) ; 
+for ( var4 = number ; var4 < var2 -> var6 ; var4 ++ ) { 
+char * var8 = func4 ( str , var4 ) ; 
+AVFilterPad var9 = { 
+. var8 = var8 , 
+. type = AVMEDIA_TYPE_AUDIO , 
+. filter_frame = filter_frame , 
+} ; 
+if ( ! var8 ) 
+return func3 ( var7 ) ; 
+func5 ( var1 , var4 , & var9 ) ; 
+} 
+return number ; 
+} 

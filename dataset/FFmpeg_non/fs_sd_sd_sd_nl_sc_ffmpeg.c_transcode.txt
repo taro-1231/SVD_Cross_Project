@@ -1,0 +1,106 @@
+static int func1 ( void ) 
+{ 
+int var1 , var2 ; 
+AVFormatContext * var3 ; 
+OutputStream * var4 ; 
+InputStream * var5 ; 
+int64_t var6 ; 
+int64_t var7 = number ; 
+var1 = func2 ( ) ; 
+if ( var1 < number ) 
+goto var8 ; 
+if ( var9 ) { 
+func3 ( var10 , var11 , str ) ; 
+} 
+var6 = func4 ( ) ; 
+if ( ( var1 = func5 ( ) ) < number ) 
+goto var8 ; 
+while ( ! var12 ) { 
+int64_t var13 = func4 ( ) ; 
+if ( var9 ) 
+if ( func6 ( var13 ) < number ) 
+break ; 
+if ( ! func7 ( ) ) { 
+func3 ( var10 , var14 , str ) ; 
+break ; 
+} 
+var1 = func8 ( ) ; 
+if ( var1 < number && var1 != var15 ) { 
+char var16 [ number ] ; 
+func9 ( var1 , var16 , sizeof ( var16 ) ) ; 
+func3 ( var10 , var17 , str , var16 ) ; 
+break ; 
+} 
+func10 ( number , var6 , var13 ) ; 
+} 
+func11 ( ) ; 
+for ( var2 = number ; var2 < var18 ; var2 ++ ) { 
+var5 = var19 [ var2 ] ; 
+if ( ! var20 [ var5 -> var21 ] -> var22 && var5 -> var23 ) { 
+func12 ( var5 , var10 , number ) ; 
+} 
+} 
+func13 ( ) ; 
+func14 ( ) ; 
+for ( var2 = number ; var2 < var24 ; var2 ++ ) { 
+var3 = var25 [ var2 ] -> var26 ; 
+if ( ! var25 [ var2 ] -> var27 ) { 
+func3 ( var10 , var17 , 
+str 
+str , 
+var2 , var3 -> var28 ) ; 
+continue ; 
+} 
+if ( ( var1 = func15 ( var3 ) ) < number ) { 
+func3 ( var10 , var17 , str , var3 -> var28 , func16 ( var1 ) ) ; 
+if ( var29 ) 
+func17 ( number ) ; 
+} 
+} 
+func10 ( number , var6 , func4 ( ) ) ; 
+for ( var2 = number ; var2 < var30 ; var2 ++ ) { 
+var4 = var31 [ var2 ] ; 
+if ( var4 -> var32 ) { 
+func18 ( & var4 -> var33 -> var34 ) ; 
+} 
+var7 += var4 -> var35 ; 
+} 
+if ( ! var7 && ( var36 & var37 ) ) { 
+func3 ( var10 , var38 , str ) ; 
+func17 ( number ) ; 
+} 
+for ( var2 = number ; var2 < var18 ; var2 ++ ) { 
+var5 = var19 [ var2 ] ; 
+if ( var5 -> var23 ) { 
+func19 ( var5 -> var39 ) ; 
+if ( var5 -> func20 ) 
+var5 -> func20 ( var5 -> var39 ) ; 
+} 
+} 
+func21 ( & var40 ) ; 
+var1 = number ; 
+var8 : 
+func11 ( ) ; 
+if ( var31 ) { 
+for ( var2 = number ; var2 < var30 ; var2 ++ ) { 
+var4 = var31 [ var2 ] ; 
+if ( var4 ) { 
+if ( var4 -> var41 ) { 
+if ( fclose ( var4 -> var41 ) ) 
+func3 ( var10 , var17 , 
+str , 
+func16 ( func22 ( var42 ) ) ) ; 
+var4 -> var41 = var10 ; 
+} 
+func18 ( & var4 -> var43 ) ; 
+func18 ( & var4 -> var44 ) ; 
+func18 ( & var4 -> var45 ) ; 
+func23 ( & var4 -> var46 ) ; 
+func23 ( & var4 -> var47 ) ; 
+func23 ( & var4 -> var48 ) ; 
+func23 ( & var4 -> var49 ) ; 
+} 
+} 
+} 
+return var1 ; 
+} 

@@ -1,0 +1,4 @@
+func1 ( png_structp var1 , png_bytep var2 , png_size_t var3 ) 
+{ 
+func2 ( func3 ( var1 ) , func4 ( var1 ) , var2 , var3 ) ; 
+} 

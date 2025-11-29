@@ -1,0 +1,4 @@
+static double func1 ( double var1 ) 
+{ 
+return - number * log10 ( var1 ) ; 
+} 

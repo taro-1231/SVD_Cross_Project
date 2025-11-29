@@ -1,0 +1,72 @@
+int func1 ( AVFormatContext * var1 , int var2 , 
+const char * var3 ) 
+{ 
+OSSAudioData * var4 = var1 -> var5 ; 
+int var6 ; 
+int var7 , var8 ; 
+char * var9 = getenv ( str ) ; 
+if ( var2 ) 
+var6 = func2 ( var3 , var10 ) ; 
+else 
+var6 = func2 ( var3 , var11 ) ; 
+if ( var6 < number ) { 
+func3 ( var1 , var12 , str , var3 , func4 ( func5 ( var13 ) ) ) ; 
+return func5 ( var14 ) ; 
+} 
+if ( var9 && * var9 == str ) { 
+var4 -> var15 = number ; 
+} 
+if ( ! var2 ) { 
+if ( func6 ( var6 , var16 , var17 ) < number ) { 
+func3 ( var1 , var18 , str , var3 , func4 ( func5 ( var13 ) ) ) ; 
+} 
+} 
+var4 -> var19 = var20 ; 
+if ( var8 < number ) { \ 
+goto var21 ; \ 
+} 
+var8 = func7 ( var6 , var22 , & var7 ) ; 
+if ( var8 < number ) { 
+func3 ( var1 , var18 , str , func4 ( func5 ( var13 ) ) ) ; 
+} 
+if ( var7 & var23 ) { 
+var7 = var23 ; 
+} else if ( var7 & var24 ) { 
+var7 = var24 ; 
+} else { 
+var7 = number ; 
+} 
+if ( var7 & var24 ) { 
+var7 = var24 ; 
+} else if ( var7 & var23 ) { 
+var7 = var23 ; 
+} else { 
+var7 = number ; 
+} 
+switch ( var7 ) { 
+case var24 : 
+var4 -> var25 = var26 ; 
+break ; 
+case var23 : 
+var4 -> var25 = var27 ; 
+break ; 
+var28 : 
+func3 ( var1 , var12 , str ) ; 
+func8 ( var6 ) ; 
+return func5 ( var14 ) ; 
+} 
+var8 = func7 ( var6 , var29 , & var7 ) ; 
+CHECK_IOCTL_ERROR ( SNDCTL_DSP_SETFMTS ) 
+var7 = ( var4 -> var30 == number ) ; 
+var8 = func7 ( var6 , var31 , & var7 ) ; 
+CHECK_IOCTL_ERROR ( var31 ) 
+var7 = var4 -> var32 ; 
+var8 = func7 ( var6 , var33 , & var7 ) ; 
+CHECK_IOCTL_ERROR ( var33 ) 
+var4 -> var32 = var7 ; 
+var4 -> var34 = var6 ; 
+return number ; 
+var21 : 
+func8 ( var6 ) ; 
+return func5 ( var14 ) ; 
+} 

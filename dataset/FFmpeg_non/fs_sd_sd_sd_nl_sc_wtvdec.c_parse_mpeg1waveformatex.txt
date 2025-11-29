@@ -1,0 +1,19 @@
+static void func1 ( AVStream * var1 ) 
+{ 
+switch ( func2 ( var1 -> var2 -> var3 ) ) { 
+case 0x0001 : var1 -> var2 -> var4 = var5 ; break ; 
+case 0x0002 : var1 -> var2 -> var4 = var6 ; break ; 
+case 0x0004 : var1 -> var2 -> var4 = var7 ; break ; 
+} 
+var1 -> var2 -> var8 = func3 ( var1 -> var2 -> var3 + number ) ; 
+switch ( func2 ( var1 -> var2 -> var3 + number ) ) { 
+case number : 
+case number : 
+case 4 : var1 -> var2 -> var9 = number ; 
+var1 -> var2 -> var10 = var11 ; 
+break ; 
+case 8 : var1 -> var2 -> var9 = number ; 
+var1 -> var2 -> var10 = var12 ; 
+break ; 
+} 
+} 

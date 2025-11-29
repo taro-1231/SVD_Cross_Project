@@ -1,0 +1,9 @@
+void func1 ( const GUID * var1 ) 
+{ 
+const uint32_t * var2 = ( const uint32_t * ) & var1 -> var3 ; 
+const uint16_t * var4 = ( const uint16_t * ) & var1 -> var5 ; 
+const uint8_t * var6 = ( const uint8_t * ) & var1 -> var7 ; 
+func2 ( str , 
+var2 [ number ] , var4 [ number ] , var4 [ number ] , 
+var6 [ number ] , var6 [ number ] , var6 [ number ] , var6 [ number ] , var6 [ number ] , var6 [ number ] , var6 [ number ] , var6 [ number ] ) ; 
+} 

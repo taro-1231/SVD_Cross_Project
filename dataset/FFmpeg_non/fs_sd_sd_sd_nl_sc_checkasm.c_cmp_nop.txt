@@ -1,0 +1,4 @@
+static int func1 ( const void * var1 , const void * var2 ) 
+{ 
+return * ( const uint16_t * ) var1 - * ( const uint16_t * ) var2 ; 
+} 

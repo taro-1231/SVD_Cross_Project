@@ -1,0 +1,66 @@
+static inline void func1 ( ShowFreqsContext * var1 , int var2 , 
+double var3 , int var4 , uint8_t var5 [ 4 ] , int * var6 , 
+AVFrame * var7 , AVFilterLink * var8 ) 
+{ 
+const int var9 = var1 -> var9 ; 
+const float var10 = var1 -> var11 [ var2 ] [ var4 ] ; 
+const float var12 = func2 ( var1 , var4 ) ; 
+const int var13 = func3 ( var1 , var4 ) ; 
+int var14 , var15 , var16 ; 
+switch ( var1 -> var17 ) { 
+case var18 : 
+var3 = number - sqrt ( var3 ) ; 
+break ; 
+case var19 : 
+var3 = number - cbrt ( var3 ) ; 
+break ; 
+case var20 : 
+var3 = log ( func4 ( var3 , number , number ) ) / log ( number ) ; 
+break ; 
+case var21 : 
+var3 = number - var3 ; 
+break ; 
+} 
+var15 = var3 * var8 -> var22 - number ; 
+if ( var15 < number ) 
+return ; 
+switch ( var1 -> var10 ) { 
+case number : 
+var15 = var1 -> var11 [ var2 ] [ var4 ] = ! var8 -> var23 ? var15 : func5 ( var10 , var15 ) ; 
+break ; 
+case number : 
+break ; 
+var24 : 
+var1 -> var11 [ var2 ] [ var4 ] = var10 + var15 * ( var15 - var10 ) / ( func5 ( var8 -> var23 + number , var1 -> var10 ) * var15 ) ; 
+var15 = var1 -> var11 [ var2 ] [ var4 ] ; 
+break ; 
+} 
+switch ( var1 -> var25 ) { 
+case var26 : 
+if ( * var6 == - number ) { 
+* var6 = var15 ; 
+} 
+if ( var15 <= * var6 ) { 
+for ( var14 = var13 + number ; var14 < var13 + var12 && var14 < var9 ; var14 ++ ) 
+func6 ( var7 , var14 , var15 , var5 ) ; 
+for ( var16 = var15 ; var16 <= * var6 ; var16 ++ ) 
+func6 ( var7 , var13 , var16 , var5 ) ; 
+} else { 
+for ( var16 = * var6 ; var16 <= var15 ; var16 ++ ) 
+func6 ( var7 , var13 , var16 , var5 ) ; 
+for ( var14 = var13 + number ; var14 < var13 + var12 && var14 < var9 ; var14 ++ ) 
+func6 ( var7 , var14 , var16 - number , var5 ) ; 
+} 
+* var6 = var15 ; 
+break ; 
+case var27 : 
+for ( var14 = var13 ; var14 < var13 + var12 && var14 < var9 ; var14 ++ ) 
+for ( var16 = var15 ; var16 < var8 -> var22 ; var16 ++ ) 
+func6 ( var7 , var14 , var16 , var5 ) ; 
+break ; 
+case var28 : 
+for ( var14 = var13 ; var14 < var13 + var12 && var14 < var9 ; var14 ++ ) 
+func6 ( var7 , var14 , var15 , var5 ) ; 
+break ; 
+} 
+} 

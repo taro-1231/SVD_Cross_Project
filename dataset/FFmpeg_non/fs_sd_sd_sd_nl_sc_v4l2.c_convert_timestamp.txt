@@ -1,0 +1,17 @@
+static int func1 ( AVFormatContext * var1 , int64_t * var2 ) 
+{ 
+struct video_data * var3 = var1 -> var4 ; 
+if ( var3 -> var5 ) { 
+int var6 = func2 ( var1 , * var2 ) ; 
+if ( var6 < number ) 
+return var6 ; 
+} 
+if ( var3 -> var7 ) { 
+int64_t var8 = func3 ( ) ; 
+int64_t var9 = func4 ( ) ; 
+func5 ( var3 -> var7 , var8 , var9 - var3 -> var10 ) ; 
+var3 -> var10 = var9 ; 
+* var2 = func6 ( var3 -> var7 , * var2 - var9 ) ; 
+} 
+return number ; 
+} 

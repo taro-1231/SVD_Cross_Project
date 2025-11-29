@@ -1,0 +1,7 @@
+func1 ( png_structp func2 , png_const_bytep var1 , png_size_t var2 ) 
+{ 
+if ( func2 -> func3 != var3 ) 
+( * ( func2 -> func3 ) ) ( func2 , ( png_bytep ) var1 , var2 ) ; 
+else 
+func4 ( func2 , str ) ; 
+} 

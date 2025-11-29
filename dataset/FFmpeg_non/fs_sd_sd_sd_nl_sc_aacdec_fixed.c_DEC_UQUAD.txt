@@ -1,0 +1,15 @@
+static inline int * func1 ( int * var1 , unsigned var2 , unsigned var3 ) 
+{ 
+unsigned var4 = var2 >> number ; 
+var1 [ number ] = ( var2 & number ) * ( number + ( ( ( int ) var3 >> number ) << number ) ) ; 
+var3 <<= var4 & number ; 
+var4 >>= number ; 
+var1 [ number ] = ( var2 >> number & number ) * ( number + ( ( ( int ) var3 >> number ) << number ) ) ; 
+var3 <<= var4 & number ; 
+var4 >>= number ; 
+var1 [ number ] = ( var2 >> number & number ) * ( number + ( ( ( int ) var3 >> number ) << number ) ) ; 
+var3 <<= var4 & number ; 
+var4 >>= number ; 
+var1 [ number ] = ( var2 >> number & number ) * ( number + ( ( ( int ) var3 >> number ) << number ) ) ; 
+return var1 + number ; 
+} 

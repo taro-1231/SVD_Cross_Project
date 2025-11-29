@@ -1,0 +1,148 @@
+static void func1 ( AC3EncodeContext * var1 , int var2 ) 
+{ 
+int var3 , var4 , var5 , var6 , var7 , var8 ( var9 ) ; 
+AC3Block * var10 = & var1 -> var11 [ var2 ] ; 
+if ( ! var1 -> var12 ) { 
+for ( var3 = number ; var3 < var1 -> var13 ; var3 ++ ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+} 
+if ( ! var1 -> var12 ) { 
+for ( var3 = number ; var3 < var1 -> var13 ; var3 ++ ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+} 
+func2 ( & var1 -> var14 , number , number ) ; 
+if ( var1 -> var12 ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+if ( ! var1 -> var12 ) 
+func2 ( & var1 -> var14 , number , var10 -> var15 ) ; 
+if ( var10 -> var15 ) { 
+if ( ! var1 -> var12 ) 
+func2 ( & var1 -> var14 , number , var10 -> var16 ) ; 
+if ( var10 -> var16 ) { 
+int var17 , var18 ; 
+if ( var1 -> var12 ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+if ( ! var1 -> var12 || var1 -> var19 != var20 ) { 
+for ( var3 = number ; var3 <= var1 -> var13 ; var3 ++ ) 
+func2 ( & var1 -> var14 , number , var10 -> var21 [ var3 ] ) ; 
+} 
+if ( var1 -> var19 == var20 ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+var17 = ( var1 -> var22 [ var23 ] - number ) / number ; 
+var18 = ( var1 -> var24 - number ) / number ; 
+func2 ( & var1 -> var14 , number , var17 ) ; 
+func2 ( & var1 -> var14 , number , var18 - number ) ; 
+if ( var1 -> var12 ) { 
+func2 ( & var1 -> var14 , number , number ) ; 
+} else { 
+for ( var6 = var17 + number ; var6 < var18 ; var6 ++ ) 
+func2 ( & var1 -> var14 , number , var25 [ var6 ] ) ; 
+} 
+} 
+} 
+if ( var10 -> var16 ) { 
+for ( var3 = number ; var3 <= var1 -> var13 ; var3 ++ ) { 
+if ( var10 -> var21 [ var3 ] ) { 
+if ( ! var1 -> var12 || var10 -> var26 [ var3 ] != number ) 
+func2 ( & var1 -> var14 , number , var10 -> var26 [ var3 ] ) ; 
+if ( var10 -> var26 [ var3 ] ) { 
+func2 ( & var1 -> var14 , number , var10 -> var27 [ var3 ] ) ; 
+for ( var6 = number ; var6 < var1 -> var28 ; var6 ++ ) { 
+func2 ( & var1 -> var14 , number , var10 -> var29 [ var3 ] [ var6 ] ) ; 
+func2 ( & var1 -> var14 , number , var10 -> var30 [ var3 ] [ var6 ] ) ; 
+} 
+} 
+} 
+} 
+} 
+if ( var1 -> var19 == var20 ) { 
+if ( ! var1 -> var12 || var2 > number ) 
+func2 ( & var1 -> var14 , number , var10 -> var31 ) ; 
+if ( var10 -> var31 ) { 
+for ( var6 = number ; var6 < var10 -> var32 ; var6 ++ ) 
+func2 ( & var1 -> var14 , number , var10 -> var33 [ var6 ] ) ; 
+} 
+} 
+if ( ! var1 -> var12 ) { 
+for ( var3 = ! var10 -> var16 ; var3 <= var1 -> var13 ; var3 ++ ) 
+func2 ( & var1 -> var14 , number , var1 -> var34 [ var3 ] [ var2 ] ) ; 
+if ( var1 -> var35 ) 
+func2 ( & var1 -> var14 , number , var1 -> var34 [ var1 -> var36 ] [ var2 ] ) ; 
+} 
+for ( var3 = number ; var3 <= var1 -> var13 ; var3 ++ ) { 
+if ( var1 -> var34 [ var3 ] [ var2 ] != var37 && ! var10 -> var21 [ var3 ] ) 
+func2 ( & var1 -> var14 , number , var1 -> var38 ) ; 
+} 
+for ( var3 = ! var10 -> var16 ; var3 <= var1 -> var39 ; var3 ++ ) { 
+int var40 ; 
+int var41 = ( var3 == var23 ) ; 
+if ( var1 -> var34 [ var3 ] [ var2 ] == var37 ) 
+continue ; 
+func2 ( & var1 -> var14 , number , var10 -> var42 [ var3 ] [ number ] >> var41 ) ; 
+var40 = var43 [ var41 ] [ var1 -> var34 [ var3 ] [ var2 ] - number ] [ var10 -> var44 [ var3 ] - var1 -> var22 [ var3 ] ] ; 
+for ( var4 = number ; var4 <= var40 ; var4 ++ ) 
+func2 ( & var1 -> var14 , number , var10 -> var42 [ var3 ] [ var4 ] ) ; 
+if ( var3 != var1 -> var36 && ! var41 ) 
+func2 ( & var1 -> var14 , number , number ) ; 
+} 
+if ( ! var1 -> var12 ) { 
+var5 = ( var2 == number ) ; 
+func2 ( & var1 -> var14 , number , var5 ) ; 
+if ( var5 ) { 
+func2 ( & var1 -> var14 , number , var1 -> var45 ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var46 ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var47 ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var48 ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var49 ) ; 
+} 
+} 
+if ( ! var1 -> var12 ) { 
+func2 ( & var1 -> var14 , number , var10 -> var50 ) ; 
+if ( var10 -> var50 ) { 
+func2 ( & var1 -> var14 , number , var1 -> var51 ) ; 
+for ( var3 = ! var10 -> var16 ; var3 <= var1 -> var39 ; var3 ++ ) { 
+func2 ( & var1 -> var14 , number , var1 -> var52 [ var3 ] ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var53 [ var3 ] ) ; 
+} 
+} 
+} else { 
+func2 ( & var1 -> var14 , number , number ) ; 
+} 
+if ( var10 -> var16 ) { 
+if ( ! var1 -> var12 || var10 -> var54 != number ) 
+func2 ( & var1 -> var14 , number , var10 -> var54 ) ; 
+if ( var10 -> var54 ) { 
+func2 ( & var1 -> var14 , number , var1 -> var55 . var56 ) ; 
+func2 ( & var1 -> var14 , number , var1 -> var55 . var57 ) ; 
+} 
+} 
+if ( ! var1 -> var12 ) { 
+func2 ( & var1 -> var14 , number , number ) ; 
+func2 ( & var1 -> var14 , number , number ) ; 
+} 
+var7 = ! var10 -> var16 ; 
+for ( var3 = number ; var3 <= var1 -> var39 ; var3 ++ ) { 
+int var58 , var59 ; 
+if ( ! var7 && var3 > number && var10 -> var21 [ var3 - number ] ) { 
+var9 = var3 - number ; 
+var3 = var23 ; 
+var7 = number ; 
+} 
+for ( var4 = var1 -> var22 [ var3 ] ; var4 < var10 -> var44 [ var3 ] ; var4 ++ ) { 
+var59 = var10 -> var60 [ var3 ] [ var4 ] ; 
+var58 = var1 -> var61 [ var3 ] [ var2 ] [ var4 ] ; 
+switch ( var58 ) { 
+case number : break ; 
+case number : if ( var59 != number ) func2 ( & var1 -> var14 , number , var59 ) ; break ; 
+case number : if ( var59 != number ) func2 ( & var1 -> var14 , number , var59 ) ; break ; 
+case number : func3 ( & var1 -> var14 , number , var59 ) ; break ; 
+case number : if ( var59 != number ) func2 ( & var1 -> var14 , number , var59 ) ; break ; 
+case number : func3 ( & var1 -> var14 , number , var59 ) ; break ; 
+case 15 : func3 ( & var1 -> var14 , number , var59 ) ; break ; 
+var62 : func3 ( & var1 -> var14 , var58 - number , var59 ) ; break ; 
+} 
+} 
+if ( var3 == var23 ) 
+var3 = var9 ; 
+} 
+} 

@@ -1,0 +1,11 @@
+static int func1 ( void * var1 , const char * var2 , const char * var3 ) 
+{ 
+OptionsContext * var4 = var1 ; 
+if ( ! strcmp ( var2 , str ) ) { 
+func2 ( var5 , var6 , str ) ; 
+func3 ( & var4 -> var7 -> var8 , str , var3 , number ) ; 
+return number ; 
+} 
+func3 ( & var4 -> var7 -> var8 , var2 , var3 , number ) ; 
+return number ; 
+} 

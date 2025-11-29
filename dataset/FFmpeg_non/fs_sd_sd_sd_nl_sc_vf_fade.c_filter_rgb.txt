@@ -1,0 +1,22 @@
+static av_always_inline void func1 ( FadeContext * var1 , const AVFrame * var2 , 
+int var3 , int var4 , 
+int var5 , int var6 ) 
+{ 
+int var7 , var8 ; 
+const uint8_t var9 = var1 -> var10 [ var11 ] ; 
+const uint8_t var12 = var1 -> var10 [ var13 ] ; 
+const uint8_t var14 = var1 -> var10 [ var15 ] ; 
+const uint8_t var16 = var1 -> var10 [ var17 ] ; 
+const uint8_t * var18 = var1 -> var19 ; 
+for ( var7 = var3 ; var7 < var4 ; var7 ++ ) { 
+uint8_t * var20 = var2 -> var21 [ number ] + var7 * var2 -> var22 [ number ] ; 
+for ( var8 = number ; var8 < var2 -> var23 ; var8 ++ ) { 
+var20 [ var9 ] = func2 ( var9 , number ) ; 
+var20 [ var12 ] = func2 ( var12 , number ) ; 
+var20 [ var14 ] = func2 ( var14 , number ) ; 
+if ( var5 ) 
+var20 [ var16 ] = func2 ( var16 , number ) ; 
+var20 += var6 ; 
+} 
+} 
+} 

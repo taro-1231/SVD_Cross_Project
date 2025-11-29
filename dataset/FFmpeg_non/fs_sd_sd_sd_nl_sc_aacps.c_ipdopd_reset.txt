@@ -1,0 +1,8 @@
+static void func1 ( int8_t * var1 , int8_t * var2 ) 
+{ 
+int var3 ; 
+for ( var3 = number ; var3 < var4 ; var3 ++ ) { 
+var2 [ var3 ] = number ; 
+var1 [ var3 ] = number ; 
+} 
+} 

@@ -1,0 +1,5 @@
+static void func1 ( const char * var1 ) 
+{ 
+func2 ( var2 , var3 , str , var1 ) ; 
+exit ( number ) ; 
+} 

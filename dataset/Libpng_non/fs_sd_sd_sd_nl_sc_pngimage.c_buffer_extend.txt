@@ -1,0 +1,11 @@
+func1 ( struct buffer_list * var1 ) 
+{ 
+struct buffer_list * var2 ; 
+assert ( var1 -> var3 == var4 ) ; 
+var2 = NEW ( struct buffer_list ) ; 
+if ( var2 == var4 ) 
+return var4 ; 
+var2 -> var3 = var4 ; 
+var1 -> var3 = var2 ; 
+return var2 ; 
+} 

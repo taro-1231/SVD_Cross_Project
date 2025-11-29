@@ -1,0 +1,85 @@
+static int func1 ( void * var1 , AVIOContext * var2 , int var3 , int var4 , UID var5 , int64_t var6 ) 
+{ 
+MXFDescriptor * var7 = var1 ; 
+switch ( var3 ) { 
+case 0x3F01 : 
+return func2 ( var2 , & var7 -> var8 , 
+& var7 -> var9 ) ; 
+case 0x3002 : 
+var7 -> var10 = func3 ( var2 ) ; 
+break ; 
+case 0x3004 : 
+func4 ( var2 , var7 -> var11 , number ) ; 
+break ; 
+case 0x3005 : 
+func4 ( var2 , var7 -> var12 , number ) ; 
+break ; 
+case 0x3006 : 
+var7 -> var13 = func5 ( var2 ) ; 
+break ; 
+case 0x3201 : 
+func4 ( var2 , var7 -> var14 , number ) ; 
+break ; 
+case 0x3203 : 
+var7 -> var15 = func5 ( var2 ) ; 
+break ; 
+case 0x3202 : 
+var7 -> var16 = func5 ( var2 ) ; 
+break ; 
+case 0x320C : 
+var7 -> var17 = func6 ( var2 ) ; 
+break ; 
+case 0x320E : 
+var7 -> var18 . var19 = func5 ( var2 ) ; 
+var7 -> var18 . var20 = func5 ( var2 ) ; 
+break ; 
+case 0x3212 : 
+var7 -> var21 = func6 ( var2 ) ; 
+break ; 
+case 0x3301 : 
+var7 -> var22 = func5 ( var2 ) ; 
+break ; 
+case 0x3302 : 
+var7 -> var23 = func5 ( var2 ) ; 
+break ; 
+case 0x3308 : 
+var7 -> var24 = func5 ( var2 ) ; 
+break ; 
+case 0x3D03 : 
+var7 -> var25 . var19 = func5 ( var2 ) ; 
+var7 -> var25 . var20 = func5 ( var2 ) ; 
+break ; 
+case 0x3D06 : 
+func4 ( var2 , var7 -> var14 , number ) ; 
+break ; 
+case 0x3D07 : 
+var7 -> var26 = func5 ( var2 ) ; 
+break ; 
+case 0x3D01 : 
+var7 -> var27 = func5 ( var2 ) ; 
+break ; 
+case 0x3401 : 
+func7 ( var2 , var7 ) ; 
+break ; 
+var28 : 
+if ( func8 ( var5 , var29 ) ) { 
+if ( var7 -> var30 ) 
+func9 ( var31 , var32 , str ) ; 
+func10 ( var7 -> var30 ) ; 
+var7 -> var33 = number ; 
+var7 -> var30 = func11 ( var4 ) ; 
+if ( ! var7 -> var30 ) 
+return func12 ( var34 ) ; 
+var7 -> var33 = var4 ; 
+func4 ( var2 , var7 -> var30 , var4 ) ; 
+} 
+if ( func8 ( var5 , var35 ) ) { 
+uint32_t var36 = func13 ( var2 ) ; 
+if ( var36 == var37 || 
+var36 == var38 ) 
+var7 -> var39 = var40 ; 
+} 
+break ; 
+} 
+return number ; 
+} 

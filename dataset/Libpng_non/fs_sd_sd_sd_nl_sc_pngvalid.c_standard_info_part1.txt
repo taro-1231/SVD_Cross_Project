@@ -1,0 +1,92 @@
+func1 ( standard_display * var1 , png_structp var2 , png_infop var3 ) 
+{ 
+if ( func2 ( var2 , var3 ) != var1 -> var4 ) 
+func3 ( var2 , str ) ; 
+if ( func4 ( var2 , var3 ) != var1 -> var5 ) 
+func3 ( var2 , str ) ; 
+if ( func5 ( var2 , var3 ) != var6 ) 
+func3 ( var2 , str ) ; 
+if ( func6 ( var2 , var3 ) != var1 -> var7 ) 
+func3 ( var2 , str ) ; 
+if ( func7 ( var2 , var3 ) != var8 ) 
+func3 ( var2 , str ) ; 
+var1 -> var9 = func8 ( var2 , var3 ) ; 
+if ( var1 -> var9 != func9 ( var2 , var1 -> var10 ) ) 
+func3 ( var2 , str ) ; 
+var1 -> var11 = func10 ( var2 , var3 ) ; 
+if ( var1 -> var11 != func11 ( var2 , var1 -> var10 ) ) 
+func3 ( var2 , str ) ; 
+{ 
+png_color_8p var12 = number ; 
+if ( func12 ( var2 , var3 , & var12 ) & var13 ) 
+{ 
+int var14 = number ; 
+if ( var12 == number ) 
+func3 ( var2 , str ) ; 
+if ( var1 -> var5 & var15 ) 
+{ 
+if ( var12 -> var16 == number || var12 -> var16 > var1 -> var4 ) 
+var14 = number ; 
+else 
+var1 -> var17 = var12 -> var16 ; 
+if ( var12 -> var18 == number || var12 -> var18 > var1 -> var4 ) 
+var14 = number ; 
+else 
+var1 -> var19 = var12 -> var18 ; 
+if ( var12 -> var20 == number || var12 -> var20 > var1 -> var4 ) 
+var14 = number ; 
+else 
+var1 -> var21 = var12 -> var20 ; 
+} 
+else 
+{ 
+if ( var12 -> var22 == number || var12 -> var22 > var1 -> var4 ) 
+var14 = number ; 
+else 
+var1 -> var21 = var1 -> var19 = var1 -> var17 = var12 -> var22 ; 
+} 
+if ( var1 -> var5 & var23 ) 
+{ 
+if ( var12 -> var24 == number || var12 -> var24 > var1 -> var4 ) 
+var14 = number ; 
+else 
+var1 -> var25 = var12 -> var24 ; 
+} 
+if ( var14 ) 
+func3 ( var2 , str ) ; 
+} 
+} 
+if ( func13 ( var2 , var3 ) != func14 ( var2 , var1 -> var10 ) ) 
+func3 ( var2 , str ) ; 
+func15 ( var1 , var2 , var3 ) ; 
+{ 
+png_color_16p var26 = number ; 
+if ( func16 ( var2 , var3 , number , number , & var26 ) & var27 ) 
+{ 
+if ( var26 == number ) 
+func3 ( var2 , str ) ; 
+switch ( var1 -> var5 ) 
+{ 
+case number : 
+var1 -> var28 . var16 = var1 -> var28 . var18 = var1 -> var28 . var20 = 
+var26 -> var22 ; 
+var1 -> var29 = number ; 
+break ; 
+case 2 : 
+var1 -> var28 . var16 = var26 -> var16 ; 
+var1 -> var28 . var18 = var26 -> var18 ; 
+var1 -> var28 . var20 = var26 -> var20 ; 
+var1 -> var29 = number ; 
+break ; 
+case 3 : 
+func3 ( var2 , str ) ; 
+break ; 
+var30 : 
+func3 ( var2 , str ) ; 
+} 
+} 
+} 
+var1 -> var31 = func17 ( var2 , var1 -> var7 ) ; 
+if ( ! var1 -> var32 && var1 -> var31 != func18 ( var2 ) ) 
+func3 ( var2 , str ) ; 
+} 

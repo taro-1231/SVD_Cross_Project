@@ -1,0 +1,43 @@
+static int func1 ( AVCodecContext * var1 , int var2 ) 
+{ 
+int var3 = ( var2 & var4 ) ? number : number ; 
+int var5 = var2 & var6 ; 
+int var7 ; 
+if ( ! var1 -> var7 && ! var1 -> var8 ) 
+return number ; 
+if ( var1 -> var3 != var3 ) 
+return number ; 
+switch ( var5 ) { 
+case var9 : 
+var7 = var3 == number 
+? var10 
+: var11 ; 
+: var12 ; 
+return var7 == var1 -> var7 ; 
+case var13 : 
+var7 = var3 == number 
+? var10 
+: var12 ; 
+return var7 == var1 -> var7 ; 
+case var14 : 
+return var1 -> var7 == var15 ; 
+case var16 : 
+return var1 -> var7 == var17 ; 
+case var18 : 
+return var1 -> var7 == var19 ; 
+case var20 : 
+return var1 -> var7 == var21 ; 
+case var22 : 
+case var23 : 
+case var24 : 
+return var1 -> var7 == var25 ; 
+case var26 : 
+return var1 -> var27 == number && 
+var1 -> var7 == var28 ; 
+case var29 : 
+return var1 -> var27 == number && 
+var1 -> var7 == var30 ; 
+var31 : 
+return var1 -> var8 == ( var5 >> var32 ) ; 
+} 
+} 
