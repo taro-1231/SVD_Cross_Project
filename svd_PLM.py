@@ -45,7 +45,7 @@ class CodeBERTBinaryClassifier(nn.Module):
         hidden_size = self.encoder.config.hidden_size
         self.classifier = nn.Linear(hidden_size, 1)
 
-    def forward(self, input_ids, attention_mask, labels=None):
+    def forward(self, input_ids, attention_mask, labels=None): #学習時にmodel()を作るときに自動で実行
         outputs = self.encoder(
             input_ids=input_ids,
             attention_mask=attention_mask,
@@ -62,7 +62,7 @@ class CodeBERTBinaryClassifier(nn.Module):
 train_ds = VulDataset("libpng_train.csv")
 val_ds   = VulDataset("peg_test.csv")
 
-train_loader = DataLoader(train_ds, batch_size=16, shuffle=True)
+train_loader = DataLoader(train_ds, batch_size=16, shuffle=True) #データセットをバッチごとに分けてくれる。forで回すとバッチごとに送ってくれる
 val_loader   = DataLoader(val_ds, batch_size=32, shuffle=False)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
