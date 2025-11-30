@@ -258,6 +258,7 @@ def collate_fn(batch):
     }
 
 
+
 # =========================================
 # 5. 学習ループ
 # =========================================
@@ -396,6 +397,15 @@ def train(cfg: Config):
                     f"DA={da_loss.item():.4f} "
                     f"lambda_da={lambda_da:.3f}"
                 )
+         # ===== Epoch 終了時に評価（source 側） =====
+        metrics_source = evaluate_binary_classification(
+            model, source_loader, cfg
+        )
+        print(
+            f"[Epoch {epoch+1}/{cfg.num_epochs}] "
+            f"Source Acc={metrics_source['acc']:.4f} "
+            f"F1={metrics_source['f1']:.4f}"
+        )
 
     print("Training finished.")
     return model, tokenizer
