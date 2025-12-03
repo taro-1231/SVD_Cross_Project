@@ -11,6 +11,7 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import AutoModel, AutoTokenizer
 import pandas as pd
 
+import numpy as np
 
 
 # =========================================
@@ -19,10 +20,13 @@ import pandas as pd
 
 @dataclass
 class Config:
-    plm_name: str = "microsoft/codebert-base"  # 日本語なら "cl-tohoku/bert-base-japanese" とかに変更
+    plm_name: str = "microsoft/codebert-base" 
+    # plm_name: str = "microsoft/graphcodebert-base"
+
     max_length: int = 128
 
-    bottleneck_dim: int = 768 #128       # 次元削減後の次元 d
+    # bottleneck_dim: int = 768 #128       # 次元削減後の次元 d
+    bottleneck_dim: int = 128 
     rff_dim: int = 1024             # RFF の出力次元 M
     rff_gamma: float = 1.0          # カーネル幅 1 / (2 * sigma^2) 的なやつ
 
@@ -30,7 +34,7 @@ class Config:
 
     batch_size: int = 32
     lr: float = 2e-5
-    num_epochs: int = 3
+    num_epochs: int = 25
     lambda_da: float = 0.1          # Domain adversarial の重み
     C_margin: float = 1.0           # Max-margin の C 的な係数
     margin: float = 1.0             # hinge のマージン
@@ -174,6 +178,90 @@ class DANNMaxMarginRFFBinary(nn.Module):
             "h": h,
         }
 
+# ------------------------------
+# best_threshold
+# --------------------------------
+
+@torch.no_grad()
+def find_best_threshold(
+    model: DANNMaxMarginRFFBinary,
+    data_loader: DataLoader,
+    cfg: Config,
+    num_thresholds: int = 21,  # 0.0〜1.0 を 0.05 刻み とか
+):
+    model.eval()
+
+    all_labels = []
+    all_probs = []
+
+    for batch in data_loader:
+        input_ids = batch["input_ids"].to(cfg.device)
+        attention_mask = batch["attention_mask"].to(cfg.device)
+        labels = batch["labels"].to(cfg.device)
+
+        # label=-1 を無視（ターゲット unlabeled 対応）
+        valid_mask = labels >= 0
+        if valid_mask.sum() == 0:
+            continue
+
+        input_ids = input_ids[valid_mask]
+        attention_mask = attention_mask[valid_mask]
+        labels = labels[valid_mask]
+
+        outputs = model(input_ids, attention_mask, lambda_da=0.0)
+        logits = outputs["logits"].view(-1)  # (batch,)
+        probs = torch.sigmoid(logits)        # (batch,)
+
+        all_labels.append(labels.cpu())
+        all_probs.append(probs.cpu())
+
+    if len(all_labels) == 0:
+        return 0.5, {  # 適当な初期値
+            "best_f1": 0.0,
+            "best_acc": 0.0,
+            "pos_ratio": 0.0,
+        }
+
+    labels = torch.cat(all_labels).numpy().astype(int)   # (N,)
+    probs = torch.cat(all_probs).numpy()                 # (N,)
+
+    pos_ratio = labels.mean()
+
+    def calc_f1(y_true, y_pred):
+        tp = ((y_pred == 1) & (y_true == 1)).sum()
+        fp = ((y_pred == 1) & (y_true == 0)).sum()
+        fn = ((y_pred == 0) & (y_true == 1)).sum()
+
+        prec = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+        rec  = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+        if prec + rec == 0:
+            return 0.0
+        return 2 * prec * rec / (prec + rec)
+
+    best_th = None
+    best_f1 = -1.0
+    best_acc = 0.0
+
+    # 例えば 0.0〜1.0 を num_thresholds 個に分割
+    for th in np.linspace(0.0, 1.0, num_thresholds):
+        preds = (probs > th).astype(int)
+        acc = (preds == labels).mean()
+        f1 = calc_f1(labels, preds)
+
+        if f1 > best_f1:
+            best_f1 = f1
+            best_th = th
+            best_acc = acc
+
+    print(f"[TH-SWEEP] pos_ratio={pos_ratio:.4f} best_th={best_th:.3f} best_f1={best_f1:.4f} best_acc={best_acc:.4f}")
+
+    return best_th, {
+        "best_f1": best_f1,
+        "best_acc": best_acc,
+        "pos_ratio": pos_ratio,
+    }
+
+
 
 # =========================================
 # 3. Loss 関数
@@ -297,30 +385,33 @@ def evaluate_binary_classification(
     data_loader: DataLoader,
     cfg: Config,
 ) -> Dict[str, float]:
-    """
-    labels >= 0 のサンプルだけを使って Acc / F1 を計算する
-    （ターゲット側などで label=-1 を無視するため）
-    """
     model.eval()
 
     all_labels = []
     all_preds = []
-    all_logits = []
-    print(cfg.lambda_da)
+
     for batch in data_loader:
         input_ids = batch["input_ids"].to(cfg.device)
         attention_mask = batch["attention_mask"].to(cfg.device)
         labels = batch["labels"].to(cfg.device)
 
-        # 推論時は lambda_da は 0 で OK（GRL の backward だけに効くので）
+        valid_mask = labels >= 0
+        if valid_mask.sum() == 0:
+            continue
+
+        input_ids = input_ids[valid_mask]
+        attention_mask = attention_mask[valid_mask]
+        labels = labels[valid_mask]
+
         outputs = model(input_ids, attention_mask, lambda_da=0.0)
-        logits = outputs["logits"].view(-1)  # (batch,)
-        threshold = cfg.decision_threshold
-        preds = (logits > threshold).long()  # 0/1 に変換
+        logits = outputs["logits"].view(-1)       # (batch,)
+        probs = torch.sigmoid(logits)             # (batch,)
+
+        th = cfg.decision_threshold               # 0〜1 の確率
+        preds = (probs > th).long()               # 0/1 に変換
 
         all_labels.append(labels.cpu())
         all_preds.append(preds.cpu())
-        all_logits.append(logits.cpu())
 
     if len(all_labels) == 0:
         return {"acc": 0.0, "f1": 0.0}
@@ -328,10 +419,8 @@ def evaluate_binary_classification(
     labels = torch.cat(all_labels)  # (N,)
     preds = torch.cat(all_preds)    # (N,)
 
-    # Accuracy
     acc = (preds == labels).float().mean().item()
 
-    # F1 (positive=1 クラスの F1)
     tp = ((preds == 1) & (labels == 1)).sum().item()
     fp = ((preds == 1) & (labels == 0)).sum().item()
     fn = ((preds == 0) & (labels == 1)).sum().item()
@@ -342,14 +431,9 @@ def evaluate_binary_classification(
         f1 = 2 * precision * recall / (precision + recall)
     else:
         f1 = 0.0
-    
-    logits_all = torch.cat(all_logits)
-    # print("threshold =", cfg.decision_threshold)
-    # print("logits min/max =", float(logits_all.min()), float(logits_all.max()))
-    # print("num_pos_preds =", int(preds.sum()), "/", len(preds))
-
 
     return {"acc": acc, "f1": f1}
+
 
 
 # =========================================
@@ -361,10 +445,6 @@ def train(cfg: Config):
 
     tokenizer = AutoTokenizer.from_pretrained(cfg.plm_name)
 
-    # ---------------------------------------------
-    # ここは自前のデータで置き換えてください
-    # source: labeled (脆弱/非脆弱), target: unlabeled
-    # ---------------------------------------------
     df_src = pd.read_csv("../source_peg.csv")
     df_tgt = pd.read_csv("../target_png.csv")
 
@@ -373,14 +453,11 @@ def train(cfg: Config):
     pos_weight = num_neg / max(num_pos, 1)
     cfg.pos_weight = pos_weight
 
-
     src_dataset = TextDomainDataset(df_src["code"], df_src["label"], [1]*len(df_src), tokenizer, cfg.max_length)
     tgt_dataset = TextDomainDataset(df_tgt["code"], df_tgt["label"], [0]*len(df_tgt), tokenizer, cfg.max_length)
 
     source_loader = DataLoader(src_dataset, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
     target_loader = DataLoader(tgt_dataset, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
-
-
 
     model = DANNMaxMarginRFFBinary(cfg).to(cfg.device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=cfg.lr)
@@ -406,7 +483,6 @@ def train(cfg: Config):
             source_labels = batch["labels"].to(cfg.device)    # 0/1 or -1
             source_domains = batch["domains"].to(cfg.device)  # all 1
 
-            # ラベルが -1 のものは除外（念のため）
             valid_mask = source_labels >= 0
             source_input_ids = source_input_ids[valid_mask]
             source_attention_mask = source_attention_mask[valid_mask]
@@ -418,7 +494,7 @@ def train(cfg: Config):
             target_attention_mask = target_batch["attention_mask"].to(cfg.device)
             target_domains = target_batch["domains"].to(cfg.device)  # all 0
 
-            # ===== λ_da スケジューリング（DANN定番） =====
+            # ===== λ_da スケジューリング =====
             p = global_step / (cfg.num_epochs * len(source_loader))
             lambda_da = cfg.lambda_da * (2.0 / (1.0 + math.exp(-10 * p)) - 1.0)
 
@@ -428,25 +504,16 @@ def train(cfg: Config):
                 attention_mask=source_attention_mask,
                 lambda_da=lambda_da,
             )
-            logits_src = out_src["logits"]               # (batch,)
-            domain_logits_src = out_src["domain_logits"] # (batch,)
+            logits_src = out_src["logits"]
+            domain_logits_src = out_src["domain_logits"]
 
-            # Max-margin loss (source only)
-            # cls_loss = max_margin_binary_loss(
-            #     logits=logits_src,
-            #     labels=source_labels,
-            #     C=cfg.C_margin,
-            #     margin=cfg.margin,
-            # )
             cls_loss = max_margin_binary_loss(
                 logits=logits_src,
                 labels=source_labels,
                 margin=1.0,
-                pos_weight=cfg.pos_weight,  # ←追加
+                pos_weight=cfg.pos_weight,
             )
 
-
-            # Domain loss (source)
             da_loss_src = domain_adversarial_loss(
                 domain_logits_src,
                 source_domains,
@@ -474,30 +541,33 @@ def train(cfg: Config):
             loss.backward()
             optimizer.step()
 
-            # if global_step % 10 == 0:
-            #     print(
-            #         f"Epoch {epoch+1}/{cfg.num_epochs} "
-            #         f"Step {global_step} "
-            #         f"Loss={loss.item():.4f} "
-            #         f"Cls={cls_loss.item():.4f} "
-            #         f"DA={da_loss.item():.4f} "
-            #         f"lambda_da={lambda_da:.3f}"
-            #     )
-         # ===== Epoch 終了時に評価（source 側） =====
+        # ===== Epoch 終了時に評価 =====
 
-        metrics_source = evaluate_binary_classification(
-            model, source_loader, cfg
-        )
-
-        print(
-            f"[Epoch {epoch+1}/{cfg.num_epochs}] "
-            f"Source Acc={metrics_source['acc']:.4f} "
-            f"F1={metrics_source['f1']:.4f}"
-        )
+        # まずは th=0.5 でざっくり評価
+        cfg.decision_threshold = 0.5
+        metrics_source = evaluate_binary_classification(model, source_loader, cfg)
         metrics_tgt = evaluate_binary_classification(model, target_loader, cfg)
-        print(f"Target Acc={metrics_tgt['acc']:.4f} F1={metrics_tgt['f1']:.4f}")
+        print(
+            f"[Epoch {epoch+1}/{cfg.num_epochs}] (th=0.5) "
+            f"Source Acc={metrics_source['acc']:.4f} F1={metrics_source['f1']:.4f} | "
+            f"Target Acc={metrics_tgt['acc']:.4f} F1={metrics_tgt['f1']:.4f}"
+        )
 
+        # Target 側で F1 最大になる閾値を探索
+        best_th, info = find_best_threshold(model, target_loader, cfg, num_thresholds=21)
+        print(
+            f"[Epoch {epoch+1}] TH-SWEEP Target best_th={best_th:.3f} "
+            f"best_F1={info['best_f1']:.4f} best_Acc={info['best_acc']:.4f} "
+            f"(pos_ratio={info['pos_ratio']:.4f})"
+        )
 
+        # その best_th を使ったときの Target 成績も出しておく
+        cfg.decision_threshold = best_th
+        metrics_tgt_best = evaluate_binary_classification(model, target_loader, cfg)
+        print(
+            f"[Epoch {epoch+1}] (th={best_th:.3f}) "
+            f"Target Acc={metrics_tgt_best['acc']:.4f} F1={metrics_tgt_best['f1']:.4f}"
+        )
 
     print("Training finished.")
     return model, tokenizer
@@ -509,11 +579,11 @@ def train(cfg: Config):
 
 if __name__ == "__main__":
     cfg = Config()
-    for th in [-0.5]:
-        cfg.decision_threshold = th
-        for ld in [0.01, 0.5, 0.05]:
-            cfg.lambda_da = ld
-            # print(f'lambda_da = {ld}')
-
-        # print(cfg)
-            model, tokenizer = train(cfg)
+    # for th in [0.5]:
+    #     cfg.decision_threshold = th
+    # for bd in [32, 64, 256]:
+    #     cfg.bottleneck_dim = bd
+    for ld in [0.0, 0.01]:
+        cfg.lambda_da = ld
+        print(f'lambda_da = {ld}')
+        model, tokenizer = train(cfg)
