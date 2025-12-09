@@ -34,7 +34,7 @@ class Config:
 
     batch_size: int = 32
     lr: float = 2e-5
-    num_epochs: int = 25
+    num_epochs: int = 12
     lambda_da: float = 0.1          # Domain adversarial の重み
     C_margin: float = 1.0           # Max-margin の C 的な係数
     margin: float = 1.0             # hinge のマージン
@@ -434,7 +434,44 @@ def evaluate_binary_classification(
 
     return {"acc": acc, "f1": f1}
 
+# =======ヒストグラム===========
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
 
+def plot_confidence_histogram(model, epoch, dim, device,la, dataloader, title="Confidence Histogram"):
+    model.eval()
+    all_probs = []
+
+    with torch.no_grad():
+        for batch in dataloader:
+            # DataLoader から来る dict: input_ids, attention_mask, domains, labels
+            batch = {k: v.to(device) for k, v in batch.items()}
+
+            outputs = model(
+                input_ids=batch["input_ids"],
+                attention_mask=batch["attention_mask"],
+                lambda_da=0.0,   # 評価時は DA は0でOK
+            )
+            logits = outputs["logits"]  # (batch,)
+
+            probs = torch.sigmoid(logits).cpu().numpy()
+            all_probs.extend(probs.tolist())
+
+    plt.figure(figsize=(6, 4))
+    plt.hist(all_probs, bins=30, range=(0, 1), edgecolor='black')
+    plt.title(title)
+    plt.xlabel("Prediction confidence (sigmoid output)")
+    plt.ylabel("Count")
+    plt.grid(alpha=0.3)
+
+    plt.savefig(f"{dim}_{la}_{epoch+1}_histogram.png")
+
+    plt.show()
+
+
+    return np.array(all_probs)
+# =============================================
 
 # =========================================
 # 5. 学習ループ
@@ -445,16 +482,26 @@ def train(cfg: Config):
 
     tokenizer = AutoTokenizer.from_pretrained(cfg.plm_name)
 
-    df_src = pd.read_csv("../source_peg.csv")
-    df_tgt = pd.read_csv("../target_png.csv")
+    # df_src = pd.read_csv("../source_peg.csv")
+    # df_tgt = pd.read_csv("../target_png.csv")
 
-    num_pos = (df_src["label"] == 1).sum()
-    num_neg = (df_src["label"] == 0).sum()
+    # num_pos = (df_src["label"] == 1).sum()
+    # num_neg = (df_src["label"] == 0).sum()
+    # pos_weight = num_neg / max(num_pos, 1)
+    # cfg.pos_weight = pos_weight
+
+    # src_dataset = TextDomainDataset(df_src["code"], df_src["label"], [1]*len(df_src), tokenizer, cfg.max_length)
+    # tgt_dataset = TextDomainDataset(df_tgt["code"], df_tgt["label"], [0]*len(df_tgt), tokenizer, cfg.max_length)
+    df_src = pd.read_csv("../dataset_Devign/FFmpeg_functions_anon.csv")
+    df_tgt = pd.read_csv("../dataset_Devign/QEMU_functions_anon.csv")
+
+    num_pos = (df_src["target"] == 1).sum()
+    num_neg = (df_src["target"] == 0).sum()
     pos_weight = num_neg / max(num_pos, 1)
     cfg.pos_weight = pos_weight
 
-    src_dataset = TextDomainDataset(df_src["code"], df_src["label"], [1]*len(df_src), tokenizer, cfg.max_length)
-    tgt_dataset = TextDomainDataset(df_tgt["code"], df_tgt["label"], [0]*len(df_tgt), tokenizer, cfg.max_length)
+    src_dataset = TextDomainDataset(df_src["func"], df_src["target"], [1]*len(df_src), tokenizer, cfg.max_length)
+    tgt_dataset = TextDomainDataset(df_tgt["func"], df_tgt["target"], [0]*len(df_tgt), tokenizer, cfg.max_length)
 
     source_loader = DataLoader(src_dataset, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
     target_loader = DataLoader(tgt_dataset, batch_size=cfg.batch_size, shuffle=True, collate_fn=collate_fn)
@@ -569,8 +616,16 @@ def train(cfg: Config):
             f"Target Acc={metrics_tgt_best['acc']:.4f} F1={metrics_tgt_best['f1']:.4f}"
         )
 
+        plot_confidence_histogram(model, epoch, dim= cfg.bottleneck_dim ,dataloader = target_loader,la= cfg.lambda_da, device= cfg.device, 
+                            title="Confidence Histogram")
+    
+
+
+
     print("Training finished.")
-    return model, tokenizer
+    return model, tokenizer, target_loader
+
+
 
 
 # =========================================
@@ -581,9 +636,15 @@ if __name__ == "__main__":
     cfg = Config()
     # for th in [0.5]:
     #     cfg.decision_threshold = th
-    # for bd in [32, 64, 256]:
-    #     cfg.bottleneck_dim = bd
-    for ld in [0.0, 0.01]:
-        cfg.lambda_da = ld
-        print(f'lambda_da = {ld}')
-        model, tokenizer = train(cfg)
+    for bd in [128, 256, 768]:
+        cfg.bottleneck_dim = bd
+
+        for ld in [0, 0.01]:
+            cfg.lambda_da = ld
+            # print(f'lambda_da = {ld}')
+            model, tokenizer, target_loader = train(cfg)
+            print(f'dim = {bd}')
+    
+    # plot_confidence_histogram(model, target_loader, device = cfg.device,
+    #                       title="PLM + projection confidence distribution")
+
