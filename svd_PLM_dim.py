@@ -153,10 +153,49 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 #         f"val_acc={val_acc:.4f}  "
 #         f"val_f1={val_f1:.4f}"
 #     )
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+import os
 
 
-for proj_dim in [768]:
-# for proj_dim in [256, 128, 64, 32, 16]:
+def plot_confidence_histogram(model, epoch, dim, dataloader, title="Confidence Histogram"):
+    model.eval()
+    all_probs = []
+
+    with torch.no_grad():
+        for batch in dataloader:
+            # DataLoader から来る dict: input_ids, attention_mask, domains, labels
+            batch = {k: v.to(device) for k, v in batch.items()}
+
+            logits = model(
+                input_ids=batch["input_ids"],
+                attention_mask=batch["attention_mask"],
+            )
+
+            probs = torch.sigmoid(logits).cpu().numpy()
+            all_probs.extend(probs.tolist())
+
+    os.makedirs("hist_dim", exist_ok=True)  # ここを追加
+
+    plt.figure(figsize=(6, 4))
+    plt.hist(all_probs, bins=30, range=(0, 1), edgecolor='black')
+    plt.title(title)
+    plt.xlabel("Prediction confidence (sigmoid output)")
+    plt.ylabel("Count")
+    plt.grid(alpha=0.3)
+
+    plt.savefig(f"hist_dim/{dim}_{epoch+1}_histogram.png")
+
+    plt.show()
+
+
+    return np.array(all_probs)
+
+
+
+# for proj_dim in [768]:
+for proj_dim in [32, 16]:
     print(f"\n=== proj_dim = {proj_dim} ===")
     model = CodeBERTBinaryClassifier(
         freeze_encoder=False,
@@ -164,7 +203,7 @@ for proj_dim in [768]:
     ).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
 
-    for epoch in range(5):
+    for epoch in range(6):
         # ====== 学習フェーズ ======
         model.train()
         running_loss = 0.0
@@ -221,3 +260,4 @@ for proj_dim in [768]:
             f"val_acc={val_acc:.4f}  "
             f"val_f1={val_f1:.4f}"
         )
+        plot_confidence_histogram(model, epoch, proj_dim, dataloader=target_loader, title="Confidence Histogram")

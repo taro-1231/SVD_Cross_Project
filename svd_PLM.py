@@ -109,7 +109,7 @@ def plot_confidence_histogram(model, epoch, dataloader, title="Confidence Histog
     plt.ylabel("Count")
     plt.grid(alpha=0.3)
 
-    plt.savefig(f"hist/{epoch+1}_histogram.png")
+    plt.savefig(f"hist/QF_{epoch+1}_histogram.png")
 
     plt.show()
 
@@ -210,8 +210,8 @@ def train_and_eval(
 # FFmpeg → QEMU (F→Q) の CodeBERT ベースライン
 # =====================
 if __name__ == "__main__":
-    source_csv = "dataset_Devign/FFmpeg_functions_anon.csv"  # F
-    target_csv = "dataset_Devign/QEMU_functions_anon.csv"    # Q
+    source_csv = "dataset_Devign/QEMU_functions_anon.csv"  # F
+    target_csv = "dataset_Devign/FFmpeg_functions_anon.csv"    # Q
     # df = pd.read_csv(source_csv)
     # df = pd.read_csv(target_csv)
     # print(source_csv)
