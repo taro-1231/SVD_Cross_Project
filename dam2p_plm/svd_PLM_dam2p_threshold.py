@@ -26,15 +26,15 @@ class Config:
     max_length: int = 128
 
     # bottleneck_dim: int = 768 #128       # 次元削減後の次元 d
-    bottleneck_dim: int = 128 
-    rff_dim: int = 1024             # RFF の出力次元 M
-    rff_gamma: float = 1.0          # カーネル幅 1 / (2 * sigma^2) 的なやつ
+    bottleneck_dim: int = 256 
+    rff_dim: int = 64 #1024             # RFF の出力次元 M
+    rff_gamma: float = 0.5 #1.0          # カーネル幅 1 / (2 * sigma^2) 的なやつ
 
     domain_hidden_dim: int = 128    # ドメイン判別器の中間次元
 
     batch_size: int = 32
     lr: float = 2e-5
-    num_epochs: int = 12
+    num_epochs: int = 5
     lambda_da: float = 0.1          # Domain adversarial の重み
     C_margin: float = 1.0           # Max-margin の C 的な係数
     margin: float = 1.0             # hinge のマージン
@@ -130,6 +130,7 @@ class DANNMaxMarginRFFBinary(nn.Module):
             gamma=cfg.rff_gamma,
             trainable=False  # 必要なら True にしてもOK
         )
+        # self.rff = nn.Identity()
 
         # Max-margin 用線形分類器（二値なので 1 出力）
         self.classifier = nn.Linear(2 * cfg.rff_dim, 1)
@@ -165,6 +166,7 @@ class DANNMaxMarginRFFBinary(nn.Module):
         # 3. RFF + classifier
         rff_feat = self.rff(z)           # (batch, 2M)
         logits = self.classifier(rff_feat).squeeze(-1)  # (batch,) SVM の f(x)
+
 
         # 4. Domain adversarial
         self.grl.lambda_ = lambda_da
@@ -465,7 +467,7 @@ def plot_confidence_histogram(model, epoch, dim, device,la, dataloader, title="C
     plt.ylabel("Count")
     plt.grid(alpha=0.3)
 
-    plt.savefig(f"{dim}_{la}_{epoch+1}_histogram.png")
+    plt.savefig(f"hist/{dim}_{la}_{epoch+1}_histogram.png")
 
     plt.show()
 
@@ -554,12 +556,17 @@ def train(cfg: Config):
             logits_src = out_src["logits"]
             domain_logits_src = out_src["domain_logits"]
 
-            cls_loss = max_margin_binary_loss(
-                logits=logits_src,
-                labels=source_labels,
-                margin=1.0,
-                pos_weight=cfg.pos_weight,
+            # cls_loss = max_margin_binary_loss(
+            #     logits=logits_src,
+            #     labels=source_labels,
+            #     margin=1.0,
+            #     pos_weight=cfg.pos_weight,
+            # )
+            loss_fn = torch.nn.BCEWithLogitsLoss(
+                pos_weight=torch.tensor([cfg.pos_weight], device=logits_src.device)
             )
+            cls_loss = loss_fn(logits_src.view(-1), source_labels.float().view(-1))
+
 
             da_loss_src = domain_adversarial_loss(
                 domain_logits_src,
@@ -636,10 +643,10 @@ if __name__ == "__main__":
     cfg = Config()
     # for th in [0.5]:
     #     cfg.decision_threshold = th
-    for bd in [128, 256, 768]:
+    for bd in [64]:
         cfg.bottleneck_dim = bd
 
-        for ld in [0, 0.01]:
+        for ld in [0]:
             cfg.lambda_da = ld
             # print(f'lambda_da = {ld}')
             model, tokenizer, target_loader = train(cfg)

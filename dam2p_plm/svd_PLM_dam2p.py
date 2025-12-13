@@ -509,9 +509,9 @@ def train(cfg: Config):
 
 if __name__ == "__main__":
     cfg = Config()
-    for th in [-0.5]:
+    for th in [0.5]:
         cfg.decision_threshold = th
-        for ld in [0.01, 0.5, 0.05]:
+        for ld in [0.01, 0.05]:
             cfg.lambda_da = ld
             # print(f'lambda_da = {ld}')
 
